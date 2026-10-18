@@ -1,0 +1,118 @@
+{
+  "id": "harbor-office",
+  "order": 4,
+  "name_ko": "항만 사무소",
+  "name_en": "Harbor Office",
+  "category": "hero-buildings",
+  "role": "의뢰·귀항 명부·출항 안내의 기능 외관",
+  "build_method": "hero_meshy",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 4.5,
+    "depth": 4,
+    "height": 5.2,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "hero/harbor-office/model-repaired.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Existing downloaded Meshy hero GLB, inspected without source edits",
+  "triangles": 7661,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "node_count": 1,
+  "material_count": 1,
+  "texture_count": 1,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    }
+  ],
+  "vertex_color_primitive_count": 0,
+  "vertex_colors": false,
+  "animation_count": 0,
+  "bytes": 4007236,
+  "sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+  "mesh_definition_count": 1,
+  "unique_geometry_triangles": 7661,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 1,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.3918460011482239,
+        -0.47631800174713135,
+        -0.2673340141773224
+      ],
+      "max": [
+        0.3913570046424866,
+        0.47582998871803284,
+        0.2668460011482239
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/0/matrix"
+        }
+      ]
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 1,
+    "messages": [
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/0/matrix"
+      }
+    ]
+  },
+  "task_id": "01a14cdf-e3ff-7494-a0c6-a5ebe95638c1",
+  "operation_id": "3774e886-aee9-4940-97bf-473b951ae8c0",
+  "consumed_credits": 15,
+  "original_source_preserved": true,
+  "source_model": "hero/harbor-office/model.glb",
+  "source_sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+  "normal_repair": {
+    "log": "hero/harbor-office/repair-log.json",
+    "original_sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+    "repaired_sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+    "normal_vectors_repaired": 0,
+    "zero_normal_vectors": 0,
+    "non_unit_normal_vectors": 0,
+    "official_errors_after": 0
+  },
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration.",
+    "Generated hidden surfaces, part separation and exact ground pivot require visual review."
+  ]
+}

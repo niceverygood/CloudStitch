@@ -1,0 +1,173 @@
+{
+  "game_title": "Cloudstitch",
+  "completed_at_utc": "2026-10-18T01:58:20.867784+00:00",
+  "scope": "Six stage-one independent 3D weapon visual prototypes, completed one at a time.",
+  "status": "all_six_asset_prototypes_completed",
+  "weapon_count": 6,
+  "models": [
+    {
+      "id": "01-machine-gun",
+      "name_ko": "기관총",
+      "name_en": "Machine Gun",
+      "task_id": "01a14ca0-7c99-737b-840c-965493890ac5",
+      "triangles": 3945,
+      "mesh_count": 1,
+      "material_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "mode": "RGB"
+        }
+      ],
+      "animation_clips": 0,
+      "model_bytes": 3299860,
+      "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6",
+      "reported_consumed_credits": 15
+    },
+    {
+      "id": "02-deck-cannon",
+      "name_ko": "함포",
+      "name_en": "Deck Cannon",
+      "task_id": "01a14ca8-175e-7602-8fb6-ee97ee2f04c1",
+      "triangles": 3876,
+      "mesh_count": 1,
+      "material_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "mode": "RGB"
+        }
+      ],
+      "animation_clips": 0,
+      "model_bytes": 3961552,
+      "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+      "reported_consumed_credits": 15
+    },
+    {
+      "id": "03-mortar",
+      "name_ko": "박격포",
+      "name_en": "Mortar",
+      "task_id": "01a14cac-a92d-7426-80f2-0df226d219fc",
+      "triangles": 4009,
+      "mesh_count": 1,
+      "material_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "mode": "RGB"
+        }
+      ],
+      "animation_clips": 0,
+      "model_bytes": 3674748,
+      "sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f",
+      "reported_consumed_credits": 15
+    },
+    {
+      "id": "04-harpoon",
+      "name_ko": "작살포",
+      "name_en": "Harpoon Launcher",
+      "task_id": "01a14cb1-5edf-71f6-be3f-a6485dd4d0e5",
+      "triangles": 3943,
+      "mesh_count": 1,
+      "material_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "mode": "RGB"
+        }
+      ],
+      "animation_clips": 0,
+      "model_bytes": 3777952,
+      "sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64",
+      "reported_consumed_credits": 15
+    },
+    {
+      "id": "05-chain-shot",
+      "name_ko": "사슬탄 발사기",
+      "name_en": "Chain-Shot Launcher",
+      "task_id": "01a14cb4-596f-76d4-b682-6e8fa80d4db0",
+      "triangles": 4029,
+      "mesh_count": 1,
+      "material_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "mode": "RGB"
+        }
+      ],
+      "animation_clips": 0,
+      "model_bytes": 3654140,
+      "sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219",
+      "reported_consumed_credits": 15
+    },
+    {
+      "id": "06-flamethrower",
+      "name_ko": "화염방사기",
+      "name_en": "Flamethrower",
+      "task_id": "01a14cb7-95ee-73ae-9e55-c2156f120e8b",
+      "triangles": 3957,
+      "mesh_count": 1,
+      "material_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "mode": "RGB"
+        }
+      ],
+      "animation_clips": 0,
+      "model_bytes": 3776868,
+      "sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd",
+      "reported_consumed_credits": 15
+    }
+  ],
+  "total_weapon_triangles": 23759,
+  "total_model_bytes": 22145120,
+  "meshy_credits": {
+    "reported_total": 90,
+    "accepted_model_tasks": 6,
+    "paid_model_reruns": 0,
+    "final_account_balance": 4884,
+    "basis": "Sum of six successful Meshy task consumed_credits; final balance read through meshy-cli."
+  },
+  "verification": {
+    "individual_weapon_browser_QA_passed": 6,
+    "rotation_regression_cases": 24,
+    "frames_per_case": 120,
+    "all_changed_pixels_zero": true,
+    "outline_auto_clear": true,
+    "all_four_previews_present": true,
+    "JS_errors": 0,
+    "external_requests": 0,
+    "mobile_overflow": false,
+    "gallery_cards": 6,
+    "gallery_passed": true,
+    "prior_291_visual_asset_hashes_verified_unchanged": true
+  },
+  "selected_airship": {
+    "source": "../selected-airship-toon3d/airship.glb",
+    "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+    "original_preserved": true
+  },
+  "deliverables": {
+    "gallery": "gallery.html",
+    "workbench": "index.html",
+    "overview": "overview.png",
+    "archive": "Cloudstitch-weapons-6.zip",
+    "art_review": "art-review.txt",
+    "generation_trail": "Per-weapon manifest.json"
+  },
+  "limits": [
+    "All six generated originals have one mesh and no animation. Mechanical part separation, pivots, sockets, collision, engine import and firing behavior remain follow-up work.",
+    "Toon shading and outlines belong to the browser workbench runtime. Original GLBs preserve the generated geometry/material.",
+    "Mounted view is a relative-scale external deck placement study; the original airship and its baked-in gun remain intact.",
+    "No playable combat game or game engine selection is added."
+  ],
+  "recommended_next": "Separate the machine-gun base, yaw cradle and barrel assembly; define mount_root/yaw/pitch/muzzle and validate one usable mount before applying the workflow to other weapons.",
+  "git_status": "This weapon-production request did not create a commit or push. Existing historical uploads are separate."
+}

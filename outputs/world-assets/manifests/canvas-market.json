@@ -1,0 +1,118 @@
+{
+  "id": "canvas-market",
+  "order": 3,
+  "name_ko": "천 시장",
+  "name_en": "Canvas Market",
+  "category": "hero-buildings",
+  "role": "자원과 일반 부품 거래 공간의 손수 수선한 분위기",
+  "build_method": "hero_meshy",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 6.2,
+    "depth": 4.8,
+    "height": 4.6,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "hero/canvas-market/model-repaired.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Existing downloaded Meshy hero GLB, inspected without source edits",
+  "triangles": 7680,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "node_count": 1,
+  "material_count": 1,
+  "texture_count": 1,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    }
+  ],
+  "vertex_color_primitive_count": 0,
+  "vertex_colors": false,
+  "animation_count": 0,
+  "bytes": 3838872,
+  "sha256": "1b69ca4f8658ade79ae04d3e3c1014f52059e4c99fa99ec29a6c463f2bc7161a",
+  "mesh_definition_count": 1,
+  "unique_geometry_triangles": 7680,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 1,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.4748539924621582,
+        -0.2282709926366806,
+        -0.35522499680519104
+      ],
+      "max": [
+        0.4748539924621582,
+        0.22729499638080597,
+        0.35522499680519104
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/0/matrix"
+        }
+      ]
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 1,
+    "messages": [
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/0/matrix"
+      }
+    ]
+  },
+  "task_id": "01a14cdc-b5e4-77e8-b66a-cc6b3408c8a5",
+  "operation_id": "c443d3a6-a5ea-402b-90be-7591c9c819e9",
+  "consumed_credits": 15,
+  "original_source_preserved": true,
+  "source_model": "hero/canvas-market/model.glb",
+  "source_sha256": "83bc1fa94e56f8d136f38ba5aa530d87d14f1ca01c717d63075b8993b2e2d3dd",
+  "normal_repair": {
+    "log": "hero/canvas-market/repair-log.json",
+    "original_sha256": "83bc1fa94e56f8d136f38ba5aa530d87d14f1ca01c717d63075b8993b2e2d3dd",
+    "repaired_sha256": "1b69ca4f8658ade79ae04d3e3c1014f52059e4c99fa99ec29a6c463f2bc7161a",
+    "normal_vectors_repaired": 11,
+    "zero_normal_vectors": 11,
+    "non_unit_normal_vectors": 0,
+    "official_errors_after": 0
+  },
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration.",
+    "Generated hidden surfaces, part separation and exact ground pivot require visual review."
+  ]
+}

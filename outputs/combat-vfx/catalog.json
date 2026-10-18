@@ -1,0 +1,2440 @@
+{
+  "game_title": "Cloudstitch",
+  "type": "animated-mesh-vfx",
+  "items": [
+    {
+      "id": "machine-gun-muzzle",
+      "order": 1,
+      "name_ko": "기관총 포구 섬광",
+      "name_en": "Machine Gun Muzzle Flash",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "model": "assets/machine-gun-muzzle.glb",
+      "preview": "previews/machine-gun-muzzle.png",
+      "duration": 0.2,
+      "loop": false,
+      "purpose": "함포보다 작은 연사 시작을 읽힌다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 278,
+      "mesh_count": 10,
+      "node_count": 12,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 4,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 43532,
+      "animated_bounds": {
+        "min": [
+          -0.14290573063873332,
+          -0.4000900182039862,
+          -0.3234188713676376
+        ],
+        "max": [
+          1.0000752010613208,
+          0.28300493065381616,
+          0.32685858506805004
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          959,
+          501,
+          1606,
+          744
+        ]
+      }
+    },
+    {
+      "id": "machine-gun-projectile",
+      "order": 2,
+      "name_ko": "기관총 탄환 궤적",
+      "name_en": "Machine Gun Projectile",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "model": "assets/machine-gun-projectile.glb",
+      "preview": "previews/machine-gun-projectile.png",
+      "duration": 0.45,
+      "loop": false,
+      "purpose": "단일 소형 탄환의 방향을 나타낸다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 40,
+      "mesh_count": 2,
+      "node_count": 4,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 3,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 8856,
+      "animated_bounds": {
+        "min": [
+          -0.07000000029802322,
+          -0.07000000029802325,
+          -0.925000011920929
+        ],
+        "max": [
+          0.07000000029802322,
+          0.07000000029802325,
+          4.000125000005937
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          828,
+          607,
+          1214,
+          802
+        ]
+      }
+    },
+    {
+      "id": "machine-gun-hit",
+      "order": 3,
+      "name_ko": "기관총 집중 타격",
+      "name_en": "Machine Gun Hit",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "model": "assets/machine-gun-hit.glb",
+      "preview": "previews/machine-gun-hit.png",
+      "duration": 0.35,
+      "loop": false,
+      "purpose": "작은 반복 타격을 큰 폭발과 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 384,
+      "mesh_count": 12,
+      "node_count": 24,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 32,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 71820,
+      "animated_bounds": {
+        "min": [
+          -0.46864698850518555,
+          -0.16419394726447167,
+          -0.47180151737583664
+        ],
+        "max": [
+          0.35099999228521456,
+          0.38648542328012453,
+          0.4993782238523623
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          950,
+          377,
+          1405,
+          770
+        ]
+      }
+    },
+    {
+      "id": "cannon-muzzle",
+      "order": 4,
+      "name_ko": "함포 포구 충격",
+      "name_en": "Cannon Muzzle Blast",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "model": "assets/cannon-muzzle.glb",
+      "preview": "previews/cannon-muzzle.png",
+      "duration": 0.45,
+      "loop": false,
+      "purpose": "무거운 단발의 발사 시작을 강조한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 854,
+      "mesh_count": 15,
+      "node_count": 23,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 13,
+      "channel_paths": [
+        "scale",
+        "translation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 115812,
+      "animated_bounds": {
+        "min": [
+          -0.8343999510014383,
+          -0.8343999510014383,
+          -0.21195908952405032
+        ],
+        "max": [
+          0.8343999510014383,
+          0.8343999510014383,
+          1.7001123294958158
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          985,
+          444,
+          1288,
+          845
+        ]
+      }
+    },
+    {
+      "id": "cannon-projectile",
+      "order": 5,
+      "name_ko": "함포 포탄 비행",
+      "name_en": "Cannon Projectile",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "model": "assets/cannon-projectile.glb",
+      "preview": "previews/cannon-projectile.png",
+      "duration": 0.8,
+      "loop": false,
+      "purpose": "무거운 단일 포탄을 기관총 탄환과 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 944,
+      "mesh_count": 10,
+      "node_count": 12,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 17,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 120868,
+      "animated_bounds": {
+        "min": [
+          -0.2150000035762787,
+          -0.2150000035762787,
+          -0.30999999821186064
+        ],
+        "max": [
+          0.2150000035762787,
+          0.4001720059744753,
+          4.000199964225859
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          614,
+          619,
+          1166,
+          801
+        ]
+      }
+    },
+    {
+      "id": "cannon-hit",
+      "order": 6,
+      "name_ko": "함포 약점 파쇄",
+      "name_en": "Cannon Heavy Hit",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "model": "assets/cannon-hit.glb",
+      "preview": "previews/cannon-hit.png",
+      "duration": 0.75,
+      "loop": false,
+      "purpose": "한 번의 큰 충격과 연결부 파쇄 후보를 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1064,
+      "mesh_count": 29,
+      "node_count": 58,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 76,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 185004,
+      "animated_bounds": {
+        "min": [
+          -0.9679887079952598,
+          -0.14736216555673798,
+          -1.1699794161080375
+        ],
+        "max": [
+          1.063692843575285,
+          1.936930700433877,
+          1.095446313857347
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1067,
+          605,
+          1381,
+          903
+        ]
+      }
+    },
+    {
+      "id": "mortar-launch",
+      "order": 7,
+      "name_ko": "박격포 발사 퍼프",
+      "name_en": "Mortar Launch Puff",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "model": "assets/mortar-launch.glb",
+      "preview": "previews/mortar-launch.png",
+      "duration": 0.6,
+      "loop": false,
+      "purpose": "상향 곡사 발사를 직사포와 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 854,
+      "mesh_count": 15,
+      "node_count": 22,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 13,
+      "channel_paths": [
+        "scale",
+        "translation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 115688,
+      "animated_bounds": {
+        "min": [
+          -0.47679998723425654,
+          -0.13858864239285562,
+          -0.35818649281218456
+        ],
+        "max": [
+          0.47679998723425654,
+          2.850147889323144,
+          1.1767999889372431
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1097,
+          694,
+          1314,
+          990
+        ]
+      }
+    },
+    {
+      "id": "mortar-projectile",
+      "order": 8,
+      "name_ko": "박격포 곡사탄",
+      "name_en": "Mortar Arc Projectile",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "model": "assets/mortar-projectile.glb",
+      "preview": "previews/mortar-projectile.png",
+      "duration": 1.6,
+      "loop": false,
+      "purpose": "높이 올라갔다 내려오는 곡사 형태를 미리 본다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 912,
+      "mesh_count": 13,
+      "node_count": 16,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 17,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 120504,
+      "animated_bounds": {
+        "min": [
+          -0.24500000476837158,
+          -0.34306158727205927,
+          -0.37161152825103233
+        ],
+        "max": [
+          0.24500000476837158,
+          2.3755247013639176,
+          4.000360250648335
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          900,
+          430,
+          1208,
+          896
+        ]
+      }
+    },
+    {
+      "id": "mortar-hit",
+      "order": 9,
+      "name_ko": "박격포 착탄 폭발",
+      "name_en": "Mortar Impact Burst",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "model": "assets/mortar-hit.glb",
+      "preview": "previews/mortar-hit.png",
+      "duration": 1.2,
+      "loop": false,
+      "purpose": "느린 범위 공격의 착탄 순간을 나타낸다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1272,
+      "mesh_count": 35,
+      "node_count": 70,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 92,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 223176,
+      "animated_bounds": {
+        "min": [
+          -1.4747189527132054,
+          -0.24458477871179035,
+          -1.21560341989653
+        ],
+        "max": [
+          1.194270578898844,
+          2.9336618790948186,
+          1.4363145355051523
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1037,
+          652,
+          1325,
+          915
+        ]
+      }
+    },
+    {
+      "id": "harpoon-launch",
+      "order": 10,
+      "name_ko": "작살 발사 튕김",
+      "name_en": "Harpoon Launch Snap",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "model": "assets/harpoon-launch.glb",
+      "preview": "previews/harpoon-launch.png",
+      "duration": 0.35,
+      "loop": false,
+      "purpose": "폭약 섬광보다 레일과 밧줄의 힘을 전달한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 544,
+      "mesh_count": 5,
+      "node_count": 11,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 10,
+      "channel_paths": [
+        "translation",
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 69840,
+      "animated_bounds": {
+        "min": [
+          -0.32159311425661824,
+          -0.32159311425661824,
+          -0.00011423241889648868
+        ],
+        "max": [
+          0.32159311425661824,
+          0.32159311425661824,
+          1.1667526672001818
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          945,
+          438,
+          1300,
+          840
+        ]
+      }
+    },
+    {
+      "id": "harpoon-projectile",
+      "order": 11,
+      "name_ko": "작살 비행과 줄",
+      "name_en": "Harpoon Flight",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "model": "assets/harpoon-projectile.glb",
+      "preview": "previews/harpoon-projectile.png",
+      "duration": 1,
+      "loop": false,
+      "purpose": "단일 작살촉과 뒤따르는 짧은 줄을 보여준다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 324,
+      "mesh_count": 6,
+      "node_count": 9,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 4,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 44064,
+      "animated_bounds": {
+        "min": [
+          -0.2390832601998057,
+          -0.15999999642372137,
+          -0.4749999940395355
+        ],
+        "max": [
+          0.2390832601998057,
+          0.15999999642372137,
+          4.7650000035762785
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          572,
+          586,
+          1224,
+          923
+        ]
+      }
+    },
+    {
+      "id": "harpoon-hit",
+      "order": 12,
+      "name_ko": "작살 걸림 고리",
+      "name_en": "Harpoon Latch Hit",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "model": "assets/harpoon-hit.glb",
+      "preview": "previews/harpoon-hit.png",
+      "duration": 0.65,
+      "loop": false,
+      "purpose": "피격과 견인 가능 걸림 후보를 구별해 보인다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 696,
+      "mesh_count": 16,
+      "node_count": 29,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 35,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 110768,
+      "animated_bounds": {
+        "min": [
+          -0.5636346756319249,
+          -0.2,
+          -0.6168203770175901
+        ],
+        "max": [
+          0.6102957146468626,
+          0.8819357184372425,
+          0.5845723039834346
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1100,
+          379,
+          1383,
+          880
+        ]
+      }
+    },
+    {
+      "id": "chain-shot-launch",
+      "order": 13,
+      "name_ko": "사슬탄 발사 쌍섬광",
+      "name_en": "Chain-Shot Launch",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "model": "assets/chain-shot-launch.glb",
+      "preview": "previews/chain-shot-launch.png",
+      "duration": 0.5,
+      "loop": false,
+      "purpose": "연결된 두 탄구를 발사하는 성격을 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 454,
+      "mesh_count": 10,
+      "node_count": 12,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 3,
+      "channel_paths": [
+        "scale",
+        "translation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 61900,
+      "animated_bounds": {
+        "min": [
+          -0.6555999868800312,
+          -0.6555999868800312,
+          -0.15489318342113118
+        ],
+        "max": [
+          0.6555999868800312,
+          0.6555999868800312,
+          0.9000179761582222
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1044,
+          380,
+          1398,
+          814
+        ]
+      }
+    },
+    {
+      "id": "chain-shot-projectile",
+      "order": 14,
+      "name_ko": "사슬탄 회전 비행",
+      "name_en": "Chain-Shot Flight",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "model": "assets/chain-shot-projectile.glb",
+      "preview": "previews/chain-shot-projectile.png",
+      "duration": 1.1,
+      "loop": false,
+      "purpose": "두 탄구와 짧은 사슬의 연결을 유지한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1728,
+      "mesh_count": 9,
+      "node_count": 11,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 3,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 197460,
+      "animated_bounds": {
+        "min": [
+          -0.5200000071525575,
+          -0.5501724395444817,
+          -0.18000000715255737
+        ],
+        "max": [
+          0.5200000071525575,
+          0.5501724395444817,
+          4.000179944498006
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1008,
+          495,
+          1180,
+          836
+        ]
+      }
+    },
+    {
+      "id": "chain-shot-hit",
+      "order": 15,
+      "name_ko": "사슬탄 엔진 타격",
+      "name_en": "Chain-Shot Engine Hit",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "model": "assets/chain-shot-hit.glb",
+      "preview": "previews/chain-shot-hit.png",
+      "duration": 1,
+      "loop": false,
+      "purpose": "엔진 접촉의 얽힘 형태를 일반 선체 타격과 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 2400,
+      "mesh_count": 21,
+      "node_count": 33,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 50,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 306208,
+      "animated_bounds": {
+        "min": [
+          -0.6581895982745338,
+          -0.16051588813469958,
+          -0.5694411949522925
+        ],
+        "max": [
+          0.7265658375899807,
+          0.36936859851426196,
+          0.6339379024759582
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          803,
+          364,
+          1607,
+          842
+        ]
+      }
+    },
+    {
+      "id": "flamethrower-ignite",
+      "order": 16,
+      "name_ko": "화염방사 점화",
+      "name_en": "Flamethrower Ignition",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "model": "assets/flamethrower-ignite.glb",
+      "preview": "previews/flamethrower-ignite.png",
+      "duration": 0.4,
+      "loop": false,
+      "purpose": "짧은 노즐에서 분사가 시작되는 순간을 읽힌다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 244,
+      "mesh_count": 10,
+      "node_count": 12,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 2,
+      "channel_paths": [
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 38948,
+      "animated_bounds": {
+        "min": [
+          -0.10717929183960787,
+          -0.09389144846917699,
+          -0.07337045464028465
+        ],
+        "max": [
+          0.10192057447201842,
+          0.08648958278547034,
+          0.35385230474113316
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          861,
+          451,
+          1509,
+          869
+        ]
+      }
+    },
+    {
+      "id": "flamethrower-stream",
+      "order": 17,
+      "name_ko": "화염방사 짧은 원뿔",
+      "name_en": "Flamethrower Cone Stream",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "model": "assets/flamethrower-stream.glb",
+      "preview": "previews/flamethrower-stream.png",
+      "duration": 1.2,
+      "loop": true,
+      "purpose": "근거리의 짧고 넓은 분사 방향을 유지한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 720,
+      "mesh_count": 9,
+      "node_count": 19,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 18,
+      "channel_paths": [
+        "translation",
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 98396,
+      "animated_bounds": {
+        "min": [
+          -0.3519240454934825,
+          -0.40123171305638156,
+          0.11560002052362683
+        ],
+        "max": [
+          0.3750803590764604,
+          0.3829697838028274,
+          2.200720031150183
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          792,
+          317,
+          1638,
+          801
+        ]
+      }
+    },
+    {
+      "id": "flamethrower-hit",
+      "order": 18,
+      "name_ko": "화염 접촉 그을림",
+      "name_en": "Flamethrower Contact Hit",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "model": "assets/flamethrower-hit.glb",
+      "preview": "previews/flamethrower-hit.png",
+      "duration": 0.9,
+      "loop": false,
+      "purpose": "짧은 불꽃이 표면에 닿는 순간을 나타낸다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1120,
+      "mesh_count": 14,
+      "node_count": 30,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 28,
+      "channel_paths": [
+        "translation",
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 152336,
+      "animated_bounds": {
+        "min": [
+          -0.4761570403497946,
+          -0.00018214554459734106,
+          -0.38296978845530144
+        ],
+        "max": [
+          0.5188129481759756,
+          2.4085134095337106,
+          0.616808814444752
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1065,
+          321,
+          1319,
+          963
+        ]
+      }
+    },
+    {
+      "id": "wood-hit",
+      "order": 19,
+      "name_ko": "목재 피격",
+      "name_en": "Wood Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "model": "assets/wood-hit.glb",
+      "preview": "previews/wood-hit.png",
+      "duration": 0.7,
+      "loop": false,
+      "purpose": "목재와 금속의 타격 재질을 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 552,
+      "mesh_count": 26,
+      "node_count": 51,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 74,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 125780,
+      "animated_bounds": {
+        "min": [
+          -0.6700056729229954,
+          -0.16223415300099947,
+          -1.0462491467680939
+        ],
+        "max": [
+          1.0200927998056204,
+          0.7487704234863197,
+          0.9995750890221848
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1037,
+          371,
+          1434,
+          830
+        ]
+      }
+    },
+    {
+      "id": "metal-hit",
+      "order": 20,
+      "name_ko": "금속 피격",
+      "name_en": "Metal Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "model": "assets/metal-hit.glb",
+      "preview": "previews/metal-hit.png",
+      "duration": 0.45,
+      "loop": false,
+      "purpose": "일반 금속의 작은 불꽃을 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 572,
+      "mesh_count": 32,
+      "node_count": 64,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 92,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 144904,
+      "animated_bounds": {
+        "min": [
+          -1.204154749808945,
+          -0.19784799340303402,
+          -0.9750166224175113
+        ],
+        "max": [
+          1.0048242317345326,
+          0.6747729850557727,
+          1.1549860733371462
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          947,
+          498,
+          1412,
+          784
+        ]
+      }
+    },
+    {
+      "id": "fabric-hit",
+      "order": 21,
+      "name_ko": "천 피격",
+      "name_en": "Fabric Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "model": "assets/fabric-hit.glb",
+      "preview": "previews/fabric-hit.png",
+      "duration": 0.85,
+      "loop": false,
+      "purpose": "기낭 천의 찢김과 섬유를 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 780,
+      "mesh_count": 14,
+      "node_count": 15,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 34,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 116964,
+      "animated_bounds": {
+        "min": [
+          -0.910326681821882,
+          -0.10015764622588498,
+          -0.9907617513753187
+        ],
+        "max": [
+          0.9943845187740458,
+          0.5975095750955498,
+          0.979663024516376
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          965,
+          465,
+          1409,
+          728
+        ]
+      }
+    },
+    {
+      "id": "armor-hit",
+      "order": 22,
+      "name_ko": "장갑 피격",
+      "name_en": "Armor Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "model": "assets/armor-hit.glb",
+      "preview": "previews/armor-hit.png",
+      "duration": 0.6,
+      "loop": false,
+      "purpose": "단단한 장갑에 부딪힌 압축 충격을 나타낸다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 720,
+      "mesh_count": 25,
+      "node_count": 46,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 57,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 134764,
+      "animated_bounds": {
+        "min": [
+          -0.7454133169758035,
+          -0.2091648572574496,
+          -0.6997980325177876
+        ],
+        "max": [
+          0.6089112676897956,
+          0.37795859163742795,
+          0.7426533220206489
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          959,
+          404,
+          1385,
+          756
+        ]
+      }
+    },
+    {
+      "id": "ricochet-hit",
+      "order": 23,
+      "name_ko": "도탄 튕김",
+      "name_en": "Ricochet Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "model": "assets/ricochet-hit.glb",
+      "preview": "previews/ricochet-hit.png",
+      "duration": 0.5,
+      "loop": false,
+      "purpose": "접선으로 튕기는 방향을 정면 타격과 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 128,
+      "mesh_count": 3,
+      "node_count": 5,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 3,
+      "channel_paths": [
+        "scale",
+        "translation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 19036,
+      "animated_bounds": {
+        "min": [
+          -1.3000799523182958,
+          -0.055000004172325145,
+          -0.6800000220537186
+        ],
+        "max": [
+          0.48000000417232513,
+          0.5799999982118607,
+          0.5325100186225316
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1071,
+          586,
+          1455,
+          679
+        ]
+      }
+    },
+    {
+      "id": "weakpoint-hit",
+      "order": 24,
+      "name_ko": "약점 적중",
+      "name_en": "Weakpoint Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "model": "assets/weakpoint-hit.glb",
+      "preview": "previews/weakpoint-hit.png",
+      "duration": 0.8,
+      "loop": false,
+      "purpose": "약점 접촉을 별 모양과 안쪽 수축으로 읽힌다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 416,
+      "mesh_count": 16,
+      "node_count": 32,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 40,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 83828,
+      "animated_bounds": {
+        "min": [
+          -1.2000984946545195,
+          -0.14736216258829787,
+          -1.2000965873058964
+        ],
+        "max": [
+          1.2001000443752736,
+          0.5326945517669679,
+          1.2000995675381214
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          912,
+          475,
+          1525,
+          783
+        ]
+      }
+    },
+    {
+      "id": "cloud-miss",
+      "order": 25,
+      "name_ko": "구름 빗나감",
+      "name_en": "Cloud Miss Puff",
+      "category": "material-impact",
+      "weapon_id": null,
+      "model": "assets/cloud-miss.glb",
+      "preview": "previews/cloud-miss.png",
+      "duration": 1.1,
+      "loop": false,
+      "purpose": "구름 속으로 빠진 비명중을 파괴 효과와 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 800,
+      "mesh_count": 10,
+      "node_count": 21,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 20,
+      "channel_paths": [
+        "translation",
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 107972,
+      "animated_bounds": {
+        "min": [
+          -1.132170235296192,
+          -0.1685856520222767,
+          -1.161011704431854
+        ],
+        "max": [
+          1.0448226740829403,
+          0.6669826552169051,
+          1.3056223925024877
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          896,
+          403,
+          1474,
+          842
+        ]
+      }
+    },
+    {
+      "id": "penetration-exit",
+      "order": 26,
+      "name_ko": "관통 출구",
+      "name_en": "Penetration Exit",
+      "category": "material-impact",
+      "weapon_id": null,
+      "model": "assets/penetration-exit.glb",
+      "preview": "previews/penetration-exit.png",
+      "duration": 0.65,
+      "loop": false,
+      "purpose": "실제로 관통한 탄의 출구 방향을 보여준다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 468,
+      "mesh_count": 19,
+      "node_count": 38,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 51,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 97976,
+      "animated_bounds": {
+        "min": [
+          -0.7106449832862,
+          -0.12959211475724705,
+          -0.7393611325087553
+        ],
+        "max": [
+          0.550547133583627,
+          0.8550949788311999,
+          0.6414111557756218
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1023,
+          510,
+          1388,
+          848
+        ]
+      }
+    },
+    {
+      "id": "small-explosion",
+      "order": 27,
+      "name_ko": "소형 폭발",
+      "name_en": "Small Explosion",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "model": "assets/small-explosion.glb",
+      "preview": "previews/small-explosion.png",
+      "duration": 0.8,
+      "loop": false,
+      "purpose": "작은 장치 폭발의 짧은 힘을 나타낸다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1476,
+      "mesh_count": 26,
+      "node_count": 54,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 67,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 224208,
+      "animated_bounds": {
+        "min": [
+          -0.9316856851904507,
+          -0.0923394041554941,
+          -0.9316856851904507
+        ],
+        "max": [
+          0.9316856851904507,
+          1.5633644561381403,
+          1.0383135108210757
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1011,
+          523,
+          1407,
+          892
+        ]
+      }
+    },
+    {
+      "id": "large-explosion",
+      "order": 28,
+      "name_ko": "대형 폭발",
+      "name_en": "Large Explosion",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "model": "assets/large-explosion.glb",
+      "preview": "previews/large-explosion.png",
+      "duration": 1.8,
+      "loop": false,
+      "purpose": "큰 충격을 작은 타격보다 느리고 넓게 보여준다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 2144,
+      "mesh_count": 42,
+      "node_count": 86,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 112,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 338232,
+      "animated_bounds": {
+        "min": [
+          -1.731979736479119,
+          -0.17473349069412966,
+          -1.731979736479119
+        ],
+        "max": [
+          1.840359181347494,
+          2.9476084398315296,
+          1.731979736479119
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1016,
+          541,
+          1437,
+          891
+        ]
+      }
+    },
+    {
+      "id": "airburst",
+      "order": 29,
+      "name_ko": "공중 폭발",
+      "name_en": "Airburst",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "model": "assets/airburst.glb",
+      "preview": "previews/airburst.png",
+      "duration": 1.3,
+      "loop": false,
+      "purpose": "지면에 붙지 않는 전방위 폭발을 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 2368,
+      "mesh_count": 43,
+      "node_count": 88,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 113,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 363300,
+      "animated_bounds": {
+        "min": [
+          -1.4015632743311024,
+          0.08691161209455844,
+          -1.339811875938396
+        ],
+        "max": [
+          1.2541922183701422,
+          3.0740782990345723,
+          1.3002792915061083
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1045,
+          485,
+          1409,
+          891
+        ]
+      }
+    },
+    {
+      "id": "shrapnel-burst",
+      "order": 30,
+      "name_ko": "파편 분산",
+      "name_en": "Shrapnel Burst",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "model": "assets/shrapnel-burst.glb",
+      "preview": "previews/shrapnel-burst.png",
+      "duration": 1.1,
+      "loop": false,
+      "purpose": "큰 덩이보다 튀는 작은 단단한 조각을 강조한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1716,
+      "mesh_count": 46,
+      "node_count": 94,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 127,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 304264,
+      "animated_bounds": {
+        "min": [
+          -1.3582922877633032,
+          0.01043760159622903,
+          -1.7810409186141998
+        ],
+        "max": [
+          1.659336161968292,
+          1.926852960098062,
+          1.4727295816503667
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1077,
+          508,
+          1490,
+          843
+        ]
+      }
+    },
+    {
+      "id": "smoke-puff",
+      "order": 31,
+      "name_ko": "짧은 연기",
+      "name_en": "Smoke Puff",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "model": "assets/smoke-puff.glb",
+      "preview": "previews/smoke-puff.png",
+      "duration": 1.8,
+      "loop": false,
+      "purpose": "한 번 피어나는 가벼운 배기·폭발 연기를 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 800,
+      "mesh_count": 10,
+      "node_count": 21,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 28,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 113964,
+      "animated_bounds": {
+        "min": [
+          -0.7026236435495583,
+          -0.3250750041756081,
+          -0.9347732295064604
+        ],
+        "max": [
+          0.7272502895855635,
+          1.307152850422253,
+          1.0847153197139225
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          963,
+          524,
+          1430,
+          847
+        ]
+      }
+    },
+    {
+      "id": "steam-vent",
+      "order": 32,
+      "name_ko": "증기 배출",
+      "name_en": "Steam Vent",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "model": "assets/steam-vent.glb",
+      "preview": "previews/steam-vent.png",
+      "duration": 1.5,
+      "loop": false,
+      "purpose": "뜨거운 화염과 구별되는 밝은 증기를 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1784,
+      "mesh_count": 15,
+      "node_count": 30,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 36,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 229388,
+      "animated_bounds": {
+        "min": [
+          -0.6561467696480827,
+          -1.4901161138336505e-09,
+          -0.5203954787397879
+        ],
+        "max": [
+          0.562145672971475,
+          2.8260783735873294,
+          0.5670501562432562
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1102,
+          455,
+          1290,
+          972
+        ]
+      }
+    },
+    {
+      "id": "smoldering-fire",
+      "order": 33,
+      "name_ko": "잔불",
+      "name_en": "Smoldering Fire",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "model": "assets/smoldering-fire.glb",
+      "preview": "previews/smoldering-fire.png",
+      "duration": 2.4,
+      "loop": true,
+      "purpose": "폭발 뒤 남은 낮은 불꽃을 짧은 원형으로 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 688,
+      "mesh_count": 20,
+      "node_count": 39,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 48,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 123912,
+      "animated_bounds": {
+        "min": [
+          -0.5260072273220335,
+          0.04000000089406967,
+          -0.4780792222127382
+        ],
+        "max": [
+          0.6473028332136967,
+          1.7686916079327752,
+          0.468831410671402
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1074,
+          481,
+          1378,
+          981
+        ]
+      }
+    },
+    {
+      "id": "ember-drift",
+      "order": 34,
+      "name_ko": "불씨 흩날림",
+      "name_en": "Drifting Embers",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "model": "assets/ember-drift.glb",
+      "preview": "previews/ember-drift.png",
+      "duration": 2,
+      "loop": false,
+      "purpose": "눈처럼 작게 떠오르는 불씨로 마무리한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 440,
+      "mesh_count": 22,
+      "node_count": 45,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 66,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 106756,
+      "animated_bounds": {
+        "min": [
+          -0.8711623430416752,
+          0.04993393999620425,
+          -0.6995052460217596
+        ],
+        "max": [
+          0.7973698201003119,
+          2.0500590894485557,
+          0.8260784117030364
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1075,
+          561,
+          1287,
+          832
+        ]
+      }
+    },
+    {
+      "id": "burning-state",
+      "order": 35,
+      "name_ko": "불붙음 상태",
+      "name_en": "Burning State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "model": "assets/burning-state.glb",
+      "preview": "previews/burning-state.png",
+      "duration": 1.5,
+      "loop": true,
+      "purpose": "지속 점화 표시를 일회성 화염 접촉과 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 872,
+      "mesh_count": 29,
+      "node_count": 56,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 75,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 167904,
+      "animated_bounds": {
+        "min": [
+          -0.5538117359685926,
+          -0.051935011926508234,
+          -0.6088254874768552
+        ],
+        "max": [
+          0.690500227558958,
+          2.797199205896862,
+          0.6316382653150361
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1118,
+          457,
+          1343,
+          1002
+        ]
+      }
+    },
+    {
+      "id": "heavy-smoke-state",
+      "order": 36,
+      "name_ko": "짙은 연기 상태",
+      "name_en": "Heavy Smoke State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "model": "assets/heavy-smoke-state.glb",
+      "preview": "previews/heavy-smoke-state.png",
+      "duration": 3,
+      "loop": true,
+      "purpose": "손상 부위에서 계속 나는 짙은 연기를 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1680,
+      "mesh_count": 21,
+      "node_count": 40,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 53,
+      "channel_paths": [
+        "scale",
+        "rotation",
+        "translation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 234864,
+      "animated_bounds": {
+        "min": [
+          -0.9747567703689122,
+          -0.07396885638153533,
+          -1.111695470075826
+        ],
+        "max": [
+          1.1624456042266267,
+          3.0975625718694566,
+          0.8854462389452633
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1086,
+          457,
+          1351,
+          899
+        ]
+      }
+    },
+    {
+      "id": "gas-leak-state",
+      "order": 37,
+      "name_ko": "가스 누출 상태",
+      "name_en": "Gas Leak State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "model": "assets/gas-leak-state.glb",
+      "preview": "previews/gas-leak-state.png",
+      "duration": 2,
+      "loop": true,
+      "purpose": "기낭 구멍의 바깥 흐름을 연기와 다르게 읽힌다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 2096,
+      "mesh_count": 17,
+      "node_count": 34,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 41,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 268136,
+      "animated_bounds": {
+        "min": [
+          -0.14399999380111694,
+          1.7881393449270533e-09,
+          -0.6464578375672914
+        ],
+        "max": [
+          1.8798815959785888,
+          1.3786268138514397,
+          1.0625127872250961
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1070,
+          498,
+          1443,
+          998
+        ]
+      }
+    },
+    {
+      "id": "overheat-state",
+      "order": 38,
+      "name_ko": "과열 상태",
+      "name_en": "Overheat State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "model": "assets/overheat-state.glb",
+      "preview": "previews/overheat-state.png",
+      "duration": 1.2,
+      "loop": true,
+      "purpose": "기관부의 열 경고를 반복 도형과 위로 흐르는 조각으로 보인다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1992,
+      "mesh_count": 12,
+      "node_count": 22,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 20,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 239536,
+      "animated_bounds": {
+        "min": [
+          -0.4167417882611566,
+          0.020000002682209028,
+          -0.3153424861448381
+        ],
+        "max": [
+          0.4276456577439506,
+          1.792292956474395,
+          0.4783156363828742
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1061,
+          484,
+          1327,
+          1010
+        ]
+      }
+    },
+    {
+      "id": "short-circuit-state",
+      "order": 39,
+      "name_ko": "단락 상태",
+      "name_en": "Short Circuit State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "model": "assets/short-circuit-state.glb",
+      "preview": "previews/short-circuit-state.png",
+      "duration": 0.8,
+      "loop": true,
+      "purpose": "기계의 끊기는 동작을 짧고 각진 전기 모양으로 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 2200,
+      "mesh_count": 18,
+      "node_count": 35,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 35,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 276940,
+      "animated_bounds": {
+        "min": [
+          -0.30000001192092896,
+          -7.450580569168253e-10,
+          -0.3238319857914096
+        ],
+        "max": [
+          0.3222299692576543,
+          1.2422693525386155,
+          0.39022473805196295
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1025,
+          309,
+          1398,
+          1024
+        ]
+      }
+    },
+    {
+      "id": "engine-stall-state",
+      "order": 40,
+      "name_ko": "엔진 정지 상태",
+      "name_en": "Engine Stall State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "model": "assets/engine-stall-state.glb",
+      "preview": "previews/engine-stall-state.png",
+      "duration": 2.2,
+      "loop": true,
+      "purpose": "꺾인 배기와 멈칫하는 링으로 정지 표시를 보조한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 972,
+      "mesh_count": 15,
+      "node_count": 29,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 25,
+      "channel_paths": [
+        "rotation",
+        "translation",
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 136368,
+      "animated_bounds": {
+        "min": [
+          -1.0105187826351638,
+          -0.19414929301455436,
+          -1.0653390921607722
+        ],
+        "max": [
+          0.5093503486300014,
+          1.702568824920906,
+          0.35805206835269926
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1095,
+          476,
+          1451,
+          833
+        ]
+      }
+    },
+    {
+      "id": "envelope-rupture-state",
+      "order": 41,
+      "name_ko": "기낭 파열 상태",
+      "name_en": "Envelope Rupture State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "model": "assets/envelope-rupture-state.glb",
+      "preview": "previews/envelope-rupture-state.png",
+      "duration": 1.4,
+      "loop": false,
+      "purpose": "찢긴 천과 빠지는 흐름으로 기낭 손상을 보여준다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 680,
+      "mesh_count": 25,
+      "node_count": 44,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 49,
+      "channel_paths": [
+        "translation",
+        "rotation",
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 128884,
+      "animated_bounds": {
+        "min": [
+          -1.0500157043294573,
+          0.2007055768750848,
+          -0.9001427295941261
+        ],
+        "max": [
+          1.0501899093729055,
+          2.438065411207637,
+          0.9001682823012997
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1033,
+          504,
+          1403,
+          853
+        ]
+      }
+    },
+    {
+      "id": "module-detach-state",
+      "order": 42,
+      "name_ko": "부품 분리 순간",
+      "name_en": "Module Detach State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "model": "assets/module-detach-state.glb",
+      "preview": "previews/module-detach-state.png",
+      "duration": 1,
+      "loop": false,
+      "purpose": "부모 골조가 끊어지는 위치의 짧은 결합 해제를 표시한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 816,
+      "mesh_count": 23,
+      "node_count": 38,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 39,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 133624,
+      "animated_bounds": {
+        "min": [
+          -0.6782630646044078,
+          -0.00028081941925595544,
+          -0.7620570722989545
+        ],
+        "max": [
+          1.0002810297718407,
+          1.1921101260461977,
+          0.759529875006269
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          1082,
+          312,
+          1434,
+          907
+        ]
+      }
+    },
+    {
+      "id": "shield-pulse",
+      "order": 43,
+      "name_ko": "방패 펄스",
+      "name_en": "Shield Pulse",
+      "category": "defense-support",
+      "weapon_id": null,
+      "model": "assets/shield-pulse.glb",
+      "preview": "previews/shield-pulse.png",
+      "duration": 1.1,
+      "loop": false,
+      "purpose": "방어 반응을 공격 폭발과 다른 바깥 고리로 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 5996,
+      "mesh_count": 9,
+      "node_count": 14,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 4,
+      "channel_paths": [
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 659600,
+      "animated_bounds": {
+        "min": [
+          -0.939287117095215,
+          5.3000001817010315e-05,
+          -0.939287117095215
+        ],
+        "max": [
+          0.939287117095215,
+          1.0136342357167432,
+          0.939287117095215
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          832,
+          377,
+          1604,
+          959
+        ]
+      }
+    },
+    {
+      "id": "armor-block",
+      "order": 44,
+      "name_ko": "장갑 막음",
+      "name_en": "Armor Block",
+      "category": "defense-support",
+      "weapon_id": null,
+      "model": "assets/armor-block.glb",
+      "preview": "previews/armor-block.png",
+      "duration": 0.55,
+      "loop": false,
+      "purpose": "확정된 막음 반응을 일반 장갑 접촉보다 짧고 납작하게 보인다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 498,
+      "mesh_count": 20,
+      "node_count": 37,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 42,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 98556,
+      "animated_bounds": {
+        "min": [
+          -0.9546873949009351,
+          -0.016164524658721466,
+          -0.9635312488120275
+        ],
+        "max": [
+          0.8430669061508712,
+          0.43478765850887063,
+          0.992102914729791
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          925,
+          405,
+          1490,
+          809
+        ]
+      }
+    },
+    {
+      "id": "repair-stitch",
+      "order": 45,
+      "name_ko": "수리 봉합",
+      "name_en": "Repair Stitch",
+      "category": "defense-support",
+      "weapon_id": null,
+      "model": "assets/repair-stitch.glb",
+      "preview": "previews/repair-stitch.png",
+      "duration": 2,
+      "loop": false,
+      "purpose": "Cloudstitch의 수선 감성을 결합부 봉합으로 보여준다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 1758,
+      "mesh_count": 15,
+      "node_count": 29,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 14,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 213672,
+      "animated_bounds": {
+        "min": [
+          -0.44999999344348907,
+          6.108867667198401e-05,
+          -0.4800194056806995
+        ],
+        "max": [
+          0.44999999344348907,
+          0.3163077342053575,
+          0.4800239892725125
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          628,
+          432,
+          1808,
+          1027
+        ]
+      }
+    },
+    {
+      "id": "healing-pulse",
+      "order": 46,
+      "name_ko": "회복 펄스",
+      "name_en": "Recovery Pulse",
+      "category": "defense-support",
+      "weapon_id": null,
+      "model": "assets/healing-pulse.glb",
+      "preview": "previews/healing-pulse.png",
+      "duration": 1.8,
+      "loop": false,
+      "purpose": "회복 완료를 밝은 고리와 잎 모양으로 부드럽게 표현한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 812,
+      "mesh_count": 10,
+      "node_count": 21,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 20,
+      "channel_paths": [
+        "translation",
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 110112,
+      "animated_bounds": {
+        "min": [
+          -0.7035739213787691,
+          0.039974999104370364,
+          -0.7035739213787691
+        ],
+        "max": [
+          0.7035739213787691,
+          1.600025023843418,
+          0.7035739213787691
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          994,
+          514,
+          1442,
+          852
+        ]
+      }
+    },
+    {
+      "id": "salvage-tether",
+      "order": 47,
+      "name_ko": "회수 견인 흐름",
+      "name_en": "Salvage Tether",
+      "category": "defense-support",
+      "weapon_id": null,
+      "model": "assets/salvage-tether.glb",
+      "preview": "previews/salvage-tether.png",
+      "duration": 2,
+      "loop": true,
+      "purpose": "견인 줄의 방향과 회수 중임을 공격 궤적과 구별한다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 3480,
+      "mesh_count": 18,
+      "node_count": 34,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 16,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 403264,
+      "animated_bounds": {
+        "min": [
+          -0.2175000014901161,
+          -5.9604643443123e-10,
+          -0.1599999964237213
+        ],
+        "max": [
+          0.2175000014901161,
+          0.31216904878616336,
+          2.1443144907822766
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          472,
+          482,
+          1342,
+          1073
+        ]
+      }
+    },
+    {
+      "id": "mount-lock",
+      "order": 48,
+      "name_ko": "장착 잠금",
+      "name_en": "Mount Lock",
+      "category": "defense-support",
+      "weapon_id": null,
+      "model": "assets/mount-lock.glb",
+      "preview": "previews/mount-lock.png",
+      "duration": 1,
+      "loop": false,
+      "purpose": "실제 장착 확정의 잠금 감각을 짧게 보여준다.",
+      "status": "completed_mesh_animation_prototype",
+      "triangles": 816,
+      "mesh_count": 13,
+      "node_count": 21,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_channels": 10,
+      "channel_paths": [
+        "translation",
+        "scale"
+      ],
+      "vertex_colors": true,
+      "unlit_materials": true,
+      "texture_count": 0,
+      "bytes": 106712,
+      "animated_bounds": {
+        "min": [
+          -0.8162499752128496,
+          9.800000477395952e-05,
+          -0.8362499761069193
+        ],
+        "max": [
+          0.8162499752128496,
+          0.5568084219365445,
+          0.8162499752128496
+        ]
+      },
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          920,
+          503,
+          1522,
+          855
+        ]
+      }
+    }
+  ]
+}

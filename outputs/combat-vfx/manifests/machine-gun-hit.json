@@ -1,0 +1,66 @@
+{
+  "id": "machine-gun-hit",
+  "name_ko": "기관총 집중 타격",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/machine-gun-hit.glb",
+  "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d",
+  "bytes": 71820,
+  "triangles": 384,
+  "mesh_count": 12,
+  "node_count": 24,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 32,
+  "channel_paths": [
+    "scale",
+    "translation",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 0.35,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 0.3499999940395355,
+    "animated_bounds": {
+      "min": [
+        -0.46864698850518555,
+        -0.16419394726447167,
+        -0.47180151737583664
+      ],
+      "max": [
+        0.35099999228521456,
+        0.38648542328012453,
+        0.4993782238523623
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

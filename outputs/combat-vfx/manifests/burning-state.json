@@ -1,0 +1,66 @@
+{
+  "id": "burning-state",
+  "name_ko": "불붙음 상태",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/burning-state.glb",
+  "sha256": "63ef5ff24cca143094c3d5048c32b9ddd637941d0ab668da4075770dd80ab044",
+  "bytes": 167904,
+  "triangles": 872,
+  "mesh_count": 29,
+  "node_count": 56,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 75,
+  "channel_paths": [
+    "translation",
+    "scale",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 1.5,
+  "loop": true,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 5,
+    "clip_duration": 1.5,
+    "animated_bounds": {
+      "min": [
+        -0.5538117359685926,
+        -0.051935011926508234,
+        -0.6088254874768552
+      ],
+      "max": [
+        0.690500227558958,
+        2.797199205896862,
+        0.6316382653150361
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "63ef5ff24cca143094c3d5048c32b9ddd637941d0ab668da4075770dd80ab044"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

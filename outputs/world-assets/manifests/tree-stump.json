@@ -1,0 +1,84 @@
+{
+  "id": "tree-stump",
+  "order": 46,
+  "name_ko": "오래된 그루터기",
+  "name_en": "Old Tree Stump",
+  "category": "vegetation",
+  "role": "생활 공간과 잔해 지형의 오래된 목재 단서",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 1.6,
+    "depth": 1.5,
+    "height": 1,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/tree-stump.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 1948,
+  "mesh_count": 17,
+  "primitive_count": 17,
+  "node_count": 18,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 17,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 228564,
+  "sha256": "8be040234b996130a1a2f364e0cc86c7c94c1ebc010b7fbe81c3cd3494b8ac84",
+  "mesh_definition_count": 17,
+  "unique_geometry_triangles": 1948,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 17,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.6871337294578552,
+        -0.052408818155527115,
+        -0.7038388252258301
+      ],
+      "max": [
+        0.664315402507782,
+        0.7570000290870667,
+        0.6702809929847717
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

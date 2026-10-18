@@ -1,0 +1,490 @@
+{
+  "id": "lower-fog-mooring",
+  "game_title": "Cloudstitch",
+  "name_ko": "저층 안개 계류점",
+  "region_ko": "이름 없는 함대의 저층 안개",
+  "status": "completed_world_scene_prototype",
+  "model": "scenes/lower-fog-mooring.glb",
+  "source_spec": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "composition": "멀리 안개와 오래된 등대 실루엣, 작고 따뜻한 정박 갑판을 둔다. 기억 관측소 원형은 기존 기록/관측 기능의 외관 후보로 축소 배치할 수 있다.",
+  "limits": "거주 도시·유령 상점·새 동료를 확정하지 않는다. 부활/어머니/신에 관한 후반 증거를 장식으로 선공개하지 않는다.",
+  "triangles": 33342,
+  "mesh_count": 271,
+  "primitive_count": 271,
+  "node_count": 330,
+  "material_count": 14,
+  "texture_count": 2,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    }
+  ],
+  "vertex_color_primitive_count": 269,
+  "vertex_colors": false,
+  "animation_count": 0,
+  "bytes": 10533468,
+  "sha256": "5dcc77eea177d6c252c7f2aeeed1ac2c1f85a5af245943724fe665fc4799eef2",
+  "mesh_definition_count": 271,
+  "unique_geometry_triangles": 33342,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 271,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -7.92474845123291,
+        -3,
+        -3.4614084737880195
+      ],
+      "max": [
+        6.181381578063965,
+        6.379999999999999,
+        6.252499998807908
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/38/matrix"
+        },
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/40/matrix"
+        }
+      ]
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 2,
+    "messages": [
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/38/matrix"
+      },
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/40/matrix"
+      }
+    ]
+  },
+  "source_assets": [
+    {
+      "asset_id": "platform-round",
+      "model": "assets/platform-round.glb",
+      "sha256": "9e8464046580f58ffd821cd68104058fde2c815a527ebfa91de240d5dd6c9c5e",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "beacon-lighthouse",
+      "model": "hero/beacon-lighthouse/model-repaired.glb",
+      "sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+      "instances": 1,
+      "build_method": "hero_meshy",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "memory-observatory",
+      "model": "hero/memory-observatory/model-repaired.glb",
+      "sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+      "instances": 1,
+      "build_method": "hero_meshy",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "cloud-bank",
+      "model": "assets/cloud-bank.glb",
+      "sha256": "d4b4b4123a2a1af623c951e99464f2d154ed2570b60a96988083360cc9d48b15",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "fog-layer",
+      "model": "assets/fog-layer.glb",
+      "sha256": "c143d802570b4d6fc9f4526c51f56e5a79e0f5b8f5c9a758ff3ddb06ae0a563f",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "dock-straight",
+      "model": "assets/dock-straight.glb",
+      "sha256": "625888f3c74f0931367a3df9a35e3727f97f75ec2c072995db6f7ad4a45094fb",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "awning-repair",
+      "model": "assets/awning-repair.glb",
+      "sha256": "63883f2435a5a7449634a5a40ef5984462e363bcea0c6877ce2978495ae6901d",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "departure-console",
+      "model": "assets/departure-console.glb",
+      "sha256": "4955dfbd2a85e8779aa181d597db6a60920b216ecde72b2738a18559efa67b45",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "memory-desk",
+      "model": "assets/memory-desk.glb",
+      "sha256": "7288b0623411bc797738070245217ccc5b3ab95f94c458200adbbcf94407f4a1",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "canvas-roll",
+      "model": "assets/canvas-roll.glb",
+      "sha256": "efcd4ba6d082edd117e50e4a70c24236fcfdd3e87eec4cec2a7a463cbbc40b99",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "storage-chest",
+      "model": "assets/storage-chest.glb",
+      "sha256": "19a61567d003c6ca147bd3ddd546954b8f5a2a86b3e34d42e5454aad2ed3af27",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "beacon-buoy",
+      "model": "assets/beacon-buoy.glb",
+      "sha256": "7aa9d19e756a1f3c555d92ed855fca4d5eeb5dde793b58560b8f4846c7b131a3",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "lantern-hanging",
+      "model": "assets/lantern-hanging.glb",
+      "sha256": "7028c7aed1e1eb65c8eac7c80bccc597a35e365bcbf18b431de2872eeb46a829",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "mooring-ring",
+      "model": "assets/mooring-ring.glb",
+      "sha256": "0650e80f253da2b2ef3f7e51dc71af34691254e22e1cb5b55a627f0882bfc5be",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    }
+  ],
+  "placements": [
+    {
+      "asset_id": "platform-round",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.8,
+        1,
+        1.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "beacon-lighthouse",
+      "position": [
+        -2,
+        0.58,
+        -1.2
+      ],
+      "scale": [
+        6.097740508877731,
+        6.097740508877731,
+        6.097740508877731
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "memory-observatory",
+      "position": [
+        2.2,
+        0.58,
+        -1.4
+      ],
+      "scale": [
+        4.248966780592034,
+        4.248966780592034,
+        4.248966780592034
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "cloud-bank",
+      "position": [
+        4,
+        -3,
+        1
+      ],
+      "scale": [
+        1.2,
+        0.5,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "fog-layer",
+      "position": [
+        -6,
+        -1,
+        -2
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-straight",
+      "position": [
+        0,
+        0.25,
+        4.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "awning-repair",
+      "position": [
+        1,
+        0.58,
+        0.8
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "departure-console",
+      "position": [
+        -2.5,
+        0.58,
+        1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "memory-desk",
+      "position": [
+        -1.1,
+        0.58,
+        1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "canvas-roll",
+      "position": [
+        0.2999999999999998,
+        0.58,
+        1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "storage-chest",
+      "position": [
+        1.6999999999999993,
+        0.58,
+        1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "beacon-buoy",
+      "position": [
+        3.8,
+        0.3,
+        3.5
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "lantern-hanging",
+      "position": [
+        -0.2,
+        2.4,
+        2.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "mooring-ring",
+      "position": [
+        -2.8,
+        0.58,
+        2.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    }
+  ],
+  "unique_source_imports": 14,
+  "mesh_images_reused_per_source": true,
+  "original_sources_unchanged": true,
+  "engine_scope": "Relative visual layout only. No approved meters, colliders, navigation, interactions, simulation, menus or game progression."
+}

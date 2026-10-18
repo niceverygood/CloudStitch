@@ -1,0 +1,3604 @@
+{
+  "id": "jonghang-harbor",
+  "game_title": "Cloudstitch",
+  "name_ko": "종항 귀환 항구",
+  "region_ko": "종항 잔해해역",
+  "status": "completed_world_scene_prototype",
+  "model": "scenes/jonghang-harbor.glb",
+  "source_spec": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "composition": "부유 플랫폼의 중앙 계류 공간과 서로 이어지는 생활 통로. 시장·공방이 보이고 빈 종틀은 사건 단계에 맞춰 사용한다. 상층 도시 아래 매달린 종항의 시각 방향을 유지한다.",
+  "limits": "새 인물/시설 정사를 확정하거나 숙박비·허기 버프·시장 화폐를 추가하지 않는다. 실제 도보/항구 메뉴·저장은 미구현.",
+  "triangles": 165329,
+  "mesh_count": 1634,
+  "primitive_count": 858,
+  "node_count": 2122,
+  "material_count": 28,
+  "texture_count": 6,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    }
+  ],
+  "vertex_color_primitive_count": 852,
+  "vertex_colors": false,
+  "animation_count": 0,
+  "bytes": 28270444,
+  "sha256": "86c7d5aad58d70704a0d1e241d80c42c3151dbc09b7cad55f6f60f9221666c12",
+  "mesh_definition_count": 858,
+  "unique_geometry_triangles": 89985,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 1634,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -9.600000381469727,
+        -3.9,
+        -6.564999985694885
+      ],
+      "max": [
+        9.839269914346506,
+        10.294999992847442,
+        10.75
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 6,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/383/matrix"
+        },
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/395/matrix"
+        },
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/401/matrix"
+        },
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/403/matrix"
+        },
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/405/matrix"
+        },
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/2120/matrix"
+        }
+      ]
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 6,
+    "messages": [
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/383/matrix"
+      },
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/395/matrix"
+      },
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/401/matrix"
+      },
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/403/matrix"
+      },
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/405/matrix"
+      },
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/2120/matrix"
+      }
+    ]
+  },
+  "source_assets": [
+    {
+      "asset_id": "platform-square",
+      "model": "assets/platform-square.glb",
+      "sha256": "65f1778dfc241c22eea6c39e1ed7d09dc41cf77d42d0fcc1ada0bb56b78d59d6",
+      "instances": 5,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "platform-round",
+      "model": "assets/platform-round.glb",
+      "sha256": "9e8464046580f58ffd821cd68104058fde2c815a527ebfa91de240d5dd6c9c5e",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "harbor-inn",
+      "model": "hero/harbor-inn/model-closed-roof.glb",
+      "sha256": "8a37e533639a8da79e31e806d33887b3422af2d94f09f780fdc333f6b3a8f407",
+      "instances": 1,
+      "build_method": "hero_meshy",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "repair-workshop",
+      "model": "hero/repair-workshop/model-closed-roof.glb",
+      "sha256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+      "instances": 1,
+      "build_method": "hero_meshy",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "canvas-market",
+      "model": "hero/canvas-market/model-repaired.glb",
+      "sha256": "1b69ca4f8658ade79ae04d3e3c1014f52059e4c99fa99ec29a6c463f2bc7161a",
+      "instances": 1,
+      "build_method": "hero_meshy",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "harbor-office",
+      "model": "hero/harbor-office/model-repaired.glb",
+      "sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+      "instances": 1,
+      "build_method": "hero_meshy",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "beacon-lighthouse",
+      "model": "hero/beacon-lighthouse/model-repaired.glb",
+      "sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+      "instances": 1,
+      "build_method": "hero_meshy",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "dock-straight",
+      "model": "assets/dock-straight.glb",
+      "sha256": "625888f3c74f0931367a3df9a35e3727f97f75ec2c072995db6f7ad4a45094fb",
+      "instances": 3,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "bridge-arched",
+      "model": "assets/bridge-arched.glb",
+      "sha256": "bd2211a4e115a2d376dee81381a11d351969eb72e19cf00ee4d9664afc6c1c3c",
+      "instances": 2,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "dock-tee",
+      "model": "assets/dock-tee.glb",
+      "sha256": "a6bdff4fa51a3a64c3f2da265ab8db022ebece270726e272c82f433811d76008",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "dock-corner",
+      "model": "assets/dock-corner.glb",
+      "sha256": "be3d0bfc029d082adc06b1ed3ad8d969e7aa52302c7da1f34b9131cc3a9636f0",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "empty-bell-frame",
+      "model": "assets/empty-bell-frame.glb",
+      "sha256": "a264c59e762e353c4bdbee55f32e33c8599bb7db0e09c4c7e16336105a23364f",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "market-stall",
+      "model": "assets/market-stall.glb",
+      "sha256": "55371a57277827a748c15e5b6a31f1ad6ecaea524816660780c6eda7c62db5ec",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "repair-station",
+      "model": "assets/repair-station.glb",
+      "sha256": "edaf1e202015ab6618d91fabf866242abb494df7991a10ea495077fa28653c64",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "mission-board",
+      "model": "assets/mission-board.glb",
+      "sha256": "2d1ff4b59dad2ec6724977b021219387fb6a68006fbb8e8cb4f489a38c912031",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "memory-desk",
+      "model": "assets/memory-desk.glb",
+      "sha256": "7288b0623411bc797738070245217ccc5b3ab95f94c458200adbbcf94407f4a1",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "departure-console",
+      "model": "assets/departure-console.glb",
+      "sha256": "4955dfbd2a85e8779aa181d597db6a60920b216ecde72b2738a18559efa67b45",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "table-round",
+      "model": "assets/table-round.glb",
+      "sha256": "7530a070c3b2dfd427047091ff9b69a7882153b93952e20cee607f561d323bad",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "bench-wood",
+      "model": "assets/bench-wood.glb",
+      "sha256": "02f104a5e3f7b48842aa9d0a64e3995083aae6726fed9a0285b2ab95959c942a",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "lantern-hanging",
+      "model": "assets/lantern-hanging.glb",
+      "sha256": "7028c7aed1e1eb65c8eac7c80bccc597a35e365bcbf18b431de2872eeb46a829",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "flower-planter",
+      "model": "assets/flower-planter.glb",
+      "sha256": "9315ca25bee9ea3634565a224620053dd4acd07bc4cd9b58a6eee1b490fa6e5f",
+      "instances": 2,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "rail-rope",
+      "model": "assets/rail-rope.glb",
+      "sha256": "13bf755ce2cb56e81bcaeae00f6db79f06d262a20d93bbdc0986673800b4c1fe",
+      "instances": 3,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "@suspension-beam",
+      "model": null,
+      "sha256": "86cad0931d543f8d2a440d3a3cf86f212f0fbec5d30c82caa56dc551b5eacf4b",
+      "instances": 6,
+      "build_method": "scene_only_native_detail",
+      "counted_in_independent_96": false
+    },
+    {
+      "asset_id": "@suspension-link",
+      "model": null,
+      "sha256": "b4ee9509fe49256563fd1f6e64fa748709cda6dbff94c7fda89feaf3e3284972",
+      "instances": 128,
+      "build_method": "scene_only_native_detail",
+      "counted_in_independent_96": false
+    },
+    {
+      "asset_id": "cloud-bank",
+      "model": "assets/cloud-bank.glb",
+      "sha256": "d4b4b4123a2a1af623c951e99464f2d154ed2570b60a96988083360cc9d48b15",
+      "instances": 2,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "@selected-airship",
+      "model": "../selected-airship-toon3d/airship.glb",
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+      "embedded_copy_sha256": "0d9b4a6850e6fdd42a2d3f9072f248ad96dae3ff145c435689542c591e8899ca",
+      "copied_zero_normals_repaired": 2,
+      "instances": 1,
+      "build_method": "original_selected_airship_copy",
+      "counted_in_independent_96": false
+    }
+  ],
+  "placements": [
+    {
+      "asset_id": "platform-square",
+      "position": [
+        -6.3,
+        0,
+        -3.3
+      ],
+      "scale": [
+        1.38,
+        1,
+        1.3
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "platform-square",
+      "position": [
+        0,
+        0,
+        -3.3
+      ],
+      "scale": [
+        1.38,
+        1,
+        1.3
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "platform-square",
+      "position": [
+        6.3,
+        0,
+        -3.3
+      ],
+      "scale": [
+        1.38,
+        1,
+        1.3
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "platform-square",
+      "position": [
+        -6.3,
+        0,
+        3.7
+      ],
+      "scale": [
+        1.38,
+        1,
+        1.3
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "platform-round",
+      "position": [
+        0,
+        0,
+        3.7
+      ],
+      "scale": [
+        1.75,
+        1,
+        1.75
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "platform-square",
+      "position": [
+        6.3,
+        0,
+        3.7
+      ],
+      "scale": [
+        1.38,
+        1,
+        1.3
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "harbor-inn",
+      "position": [
+        -6.3,
+        0.58,
+        -3.3
+      ],
+      "scale": [
+        5.4362428117396995,
+        5.4362428117396995,
+        5.4362428117396995
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "repair-workshop",
+      "position": [
+        0,
+        0.58,
+        -3.3
+      ],
+      "scale": [
+        5.275630620300454,
+        5.275630620300454,
+        5.275630620300454
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "canvas-market",
+      "position": [
+        6.3,
+        0.58,
+        -3.3
+      ],
+      "scale": [
+        5.580662776487411,
+        5.580662776487411,
+        5.580662776487411
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "harbor-office",
+      "position": [
+        -6.3,
+        0.58,
+        3.7
+      ],
+      "scale": [
+        4.621130374754471,
+        4.621130374754471,
+        4.621130374754471
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "beacon-lighthouse",
+      "position": [
+        7.8,
+        0.58,
+        3.5
+      ],
+      "scale": [
+        7.359341993473124,
+        7.359341993473124,
+        7.359341993473124
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-straight",
+      "position": [
+        -3.15,
+        0.25,
+        -3.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "bridge-arched",
+      "position": [
+        -3.15,
+        0.24,
+        3.7
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-straight",
+      "position": [
+        3.15,
+        0.25,
+        -3.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "bridge-arched",
+      "position": [
+        3.15,
+        0.24,
+        3.7
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-straight",
+      "position": [
+        0,
+        0.25,
+        0.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-tee",
+      "position": [
+        0,
+        0.25,
+        1.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-corner",
+      "position": [
+        3.8,
+        0.25,
+        5.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "empty-bell-frame",
+      "position": [
+        -1.5,
+        0.58,
+        5.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "market-stall",
+      "position": [
+        4.5,
+        0.58,
+        0.2
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "repair-station",
+      "position": [
+        1.2,
+        0.58,
+        -0.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "mission-board",
+      "position": [
+        -3.8,
+        0.58,
+        1.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "memory-desk",
+      "position": [
+        -1.8,
+        0.58,
+        2.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "departure-console",
+      "position": [
+        1.1,
+        0.58,
+        5.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "table-round",
+      "position": [
+        -4.1,
+        0.58,
+        5.1
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "bench-wood",
+      "position": [
+        -3.8,
+        0.58,
+        6.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "lantern-hanging",
+      "position": [
+        2.7,
+        2.4,
+        4.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "flower-planter",
+      "position": [
+        -8.5,
+        0.58,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "flower-planter",
+      "position": [
+        7,
+        0.58,
+        0.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "rail-rope",
+      "position": [
+        -5,
+        0.58,
+        7
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "rail-rope",
+      "position": [
+        0,
+        0.58,
+        7
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "rail-rope",
+      "position": [
+        5,
+        0.58,
+        7
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "@suspension-beam",
+      "position": [
+        0,
+        10.1,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-beam",
+      "position": [
+        0,
+        -0.18,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-beam",
+      "position": [
+        0,
+        10.1,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-beam",
+      "position": [
+        0,
+        -0.18,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-beam",
+      "position": [
+        -9.2,
+        10.1,
+        0.4
+      ],
+      "scale": [
+        0.6979166666666667,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-beam",
+      "position": [
+        9.2,
+        10.1,
+        0.4
+      ],
+      "scale": [
+        0.6979166666666667,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        0.2,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        0.51,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        0.8200000000000001,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        1.13,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        1.44,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        1.75,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        2.06,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        2.37,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        2.68,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        2.99,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        3.3000000000000003,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        3.6100000000000003,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        3.92,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        4.23,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        4.54,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        4.8500000000000005,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        5.16,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        5.47,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        5.78,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        6.09,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        6.4,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        6.71,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        7.0200000000000005,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        7.33,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        7.64,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        7.95,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        8.26,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        8.569999999999999,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        8.879999999999999,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        9.19,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        9.5,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        9.809999999999999,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        0.2,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        0.51,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        0.8200000000000001,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        1.13,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        1.44,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        1.75,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        2.06,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        2.37,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        2.68,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        2.99,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        3.3000000000000003,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        3.6100000000000003,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        3.92,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        4.23,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        4.54,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        4.8500000000000005,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        5.16,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        5.47,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        5.78,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        6.09,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        6.4,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        6.71,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        7.0200000000000005,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        7.33,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        7.64,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        7.95,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        8.26,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        8.569999999999999,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        8.879999999999999,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        9.19,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        9.5,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        -9.2,
+        9.809999999999999,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        0.2,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        0.51,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        0.8200000000000001,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        1.13,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        1.44,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        1.75,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        2.06,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        2.37,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        2.68,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        2.99,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        3.3000000000000003,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        3.6100000000000003,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        3.92,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        4.23,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        4.54,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        4.8500000000000005,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        5.16,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        5.47,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        5.78,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        6.09,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        6.4,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        6.71,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        7.0200000000000005,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        7.33,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        7.64,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        7.95,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        8.26,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        8.569999999999999,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        8.879999999999999,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        9.19,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        9.5,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        9.809999999999999,
+        -6.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        0.2,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        0.51,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        0.8200000000000001,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        1.13,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        1.44,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        1.75,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        2.06,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        2.37,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        2.68,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        2.99,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        3.3000000000000003,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        3.6100000000000003,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        3.92,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        4.23,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        4.54,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        4.8500000000000005,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        5.16,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        5.47,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        5.78,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        6.09,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        6.4,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        6.71,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        7.0200000000000005,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        7.33,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        7.64,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        7.95,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        8.26,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        8.569999999999999,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        8.879999999999999,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        9.19,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        9.5,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "@suspension-link",
+      "position": [
+        9.2,
+        9.809999999999999,
+        7.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    },
+    {
+      "asset_id": "cloud-bank",
+      "position": [
+        -7,
+        -3.9,
+        2
+      ],
+      "scale": [
+        1.3,
+        0.32,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "cloud-bank",
+      "position": [
+        7,
+        -3.6,
+        2
+      ],
+      "scale": [
+        1.1,
+        0.3,
+        0.7
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "@selected-airship",
+      "position": [
+        2.2,
+        3,
+        8.4
+      ],
+      "scale": [
+        4.956535443811168,
+        4.956535443811168,
+        4.956535443811168
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "center"
+    }
+  ],
+  "unique_source_imports": 26,
+  "mesh_images_reused_per_source": true,
+  "original_sources_unchanged": true,
+  "selected_airship_source_sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+  "selected_airship_embedded_copy_sha256": "0d9b4a6850e6fdd42a2d3f9072f248ad96dae3ff145c435689542c591e8899ca",
+  "selected_airship_copy_zero_normals_repaired": 2,
+  "engine_scope": "Relative visual layout only. No approved meters, colliders, navigation, interactions, simulation, menus or game progression."
+}

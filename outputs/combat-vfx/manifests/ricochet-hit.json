@@ -1,0 +1,65 @@
+{
+  "id": "ricochet-hit",
+  "name_ko": "도탄 튕김",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/ricochet-hit.glb",
+  "sha256": "8e4c4dd2879cfc55eed368f5e8c79024d8fa17357cae9c6e3a3650334653d8ff",
+  "bytes": 19036,
+  "triangles": 128,
+  "mesh_count": 3,
+  "node_count": 5,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 3,
+  "channel_paths": [
+    "scale",
+    "translation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 0.5,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 0.5,
+    "animated_bounds": {
+      "min": [
+        -1.3000799523182958,
+        -0.055000004172325145,
+        -0.6800000220537186
+      ],
+      "max": [
+        0.48000000417232513,
+        0.5799999982118607,
+        0.5325100186225316
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "8e4c4dd2879cfc55eed368f5e8c79024d8fa17357cae9c6e3a3650334653d8ff"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

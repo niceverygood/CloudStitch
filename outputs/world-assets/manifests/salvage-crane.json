@@ -1,0 +1,84 @@
+{
+  "id": "salvage-crane",
+  "order": 93,
+  "name_ko": "인양 크레인",
+  "name_en": "Salvage Crane",
+  "category": "interactables",
+  "role": "항구 인양의 독립 장치 외형",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 2.6,
+    "depth": 2,
+    "height": 3.8,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/salvage-crane.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 1632,
+  "mesh_count": 36,
+  "primitive_count": 36,
+  "node_count": 42,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 36,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 211676,
+  "sha256": "f73806e687cae74fce88226636ab735d9ae1b9b740cd191d1e7259b1dedb582b",
+  "mesh_definition_count": 36,
+  "unique_geometry_triangles": 1632,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 36,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.9274999988079071,
+        0.02000000134110451,
+        -0.7024999988079071
+      ],
+      "max": [
+        1.4645837545394897,
+        3.244999995827675,
+        0.7024999988079071
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

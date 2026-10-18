@@ -1,0 +1,426 @@
+{
+  "id": "royal-service-deck",
+  "game_title": "Cloudstitch",
+  "name_ko": "황궁 외곽 서비스 갑판",
+  "region_ko": "황궁 검은 천정",
+  "status": "completed_world_scene_prototype",
+  "model": "scenes/royal-service-deck.glb",
+  "source_spec": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "composition": "크림 석재·황동·남청 봉인 덧댐의 낮은 서비스 갑판. 접힌 장비와 따뜻한 등불을 중심으로 작은 원정 정박소를 만든다.",
+  "limits": "활기찬 신규 도시가 아니며 결말의 지상 정착 풍경을 먼저 공개하지 않는다. 최종 선택·체크포인트·귀환 가능 범위를 구현한 장면도 아니다.",
+  "triangles": 20652,
+  "mesh_count": 403,
+  "primitive_count": 403,
+  "node_count": 489,
+  "material_count": 13,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 403,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 2654220,
+  "sha256": "64b57154f074a3641fe80d18f9cc0fef73cc13ed05deefca4c418327ceac4267",
+  "mesh_definition_count": 403,
+  "unique_geometry_triangles": 20652,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 403,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -4.1450000000000005,
+        0,
+        -2.56
+      ],
+      "max": [
+        3.1575669987541177,
+        2.5980000000447037,
+        4.1099999994039536
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "source_assets": [
+    {
+      "asset_id": "royal-stone-platform",
+      "model": "assets/royal-stone-platform.glb",
+      "sha256": "8db969d50f4c9a423e1d5791f2a58fe5bf2cf729c36d5025e96ae8d8d8297154",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "platform-square",
+      "model": "assets/platform-square.glb",
+      "sha256": "65f1778dfc241c22eea6c39e1ed7d09dc41cf77d42d0fcc1ada0bb56b78d59d6",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "sealed-stone-fragment",
+      "model": "assets/sealed-stone-fragment.glb",
+      "sha256": "54749f546c3a8b9c4a93ab0d27e51e43c5e6f891e1051403587288db977fac65",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "dock-stairs",
+      "model": "assets/dock-stairs.glb",
+      "sha256": "e85bfa5c514d699c7188730baea2b9b4590072774a1cd6d24c3279a37305ec8b",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "rail-rope",
+      "model": "assets/rail-rope.glb",
+      "sha256": "13bf755ce2cb56e81bcaeae00f6db79f06d262a20d93bbdc0986673800b4c1fe",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "storage-chest",
+      "model": "assets/storage-chest.glb",
+      "sha256": "19a61567d003c6ca147bd3ddd546954b8f5a2a86b3e34d42e5454aad2ed3af27",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "departure-console",
+      "model": "assets/departure-console.glb",
+      "sha256": "4955dfbd2a85e8779aa181d597db6a60920b216ecde72b2738a18559efa67b45",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "repair-station",
+      "model": "assets/repair-station.glb",
+      "sha256": "edaf1e202015ab6618d91fabf866242abb494df7991a10ea495077fa28653c64",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "canvas-roll",
+      "model": "assets/canvas-roll.glb",
+      "sha256": "efcd4ba6d082edd117e50e4a70c24236fcfdd3e87eec4cec2a7a463cbbc40b99",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "crate-wood",
+      "model": "assets/crate-wood.glb",
+      "sha256": "a3eeefbfb72e073624be485f3d160f6101e7798fab034120bedcec9037a0f7db",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "lantern-standing",
+      "model": "assets/lantern-standing.glb",
+      "sha256": "db2210580b831181792e1ad116a5f82a81acdfc83c405b20dcd53ec051cc5dec",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "safety-anchor",
+      "model": "assets/safety-anchor.glb",
+      "sha256": "1b1c0b8eb48e4744d1a33a281bc1d5e1c5b352107970538a258bc05825064435",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "compass-rose",
+      "model": "assets/compass-rose.glb",
+      "sha256": "6023a042ae8bbdad0507456e08bfb716d366738196c466fba0bd3d6d4157d2ca",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    }
+  ],
+  "placements": [
+    {
+      "asset_id": "royal-stone-platform",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.15,
+        1,
+        1.15
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "platform-square",
+      "position": [
+        0,
+        0.49,
+        0.5
+      ],
+      "scale": [
+        1.2,
+        0.7,
+        1.1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "sealed-stone-fragment",
+      "position": [
+        -3.2,
+        0,
+        -2
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-stairs",
+      "position": [
+        0,
+        0,
+        2.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "rail-rope",
+      "position": [
+        0,
+        0.9,
+        -2
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "storage-chest",
+      "position": [
+        -1.7,
+        0.9,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "departure-console",
+      "position": [
+        0,
+        0.9,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "repair-station",
+      "position": [
+        1.7,
+        0.9,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "canvas-roll",
+      "position": [
+        -1.7,
+        0.9,
+        -1.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "crate-wood",
+      "position": [
+        0,
+        0.9,
+        -1.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "lantern-standing",
+      "position": [
+        1.7,
+        0.9,
+        -1.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "safety-anchor",
+      "position": [
+        2.5,
+        0.9,
+        2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "compass-rose",
+      "position": [
+        0,
+        0.9,
+        2.1
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    }
+  ],
+  "unique_source_imports": 13,
+  "mesh_images_reused_per_source": true,
+  "original_sources_unchanged": true,
+  "engine_scope": "Relative visual layout only. No approved meters, colliders, navigation, interactions, simulation, menus or game progression."
+}

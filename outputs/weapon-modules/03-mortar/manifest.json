@@ -1,0 +1,237 @@
+{
+  "id": "03-mortar",
+  "game_title": "Cloudstitch",
+  "name_ko": "박격포",
+  "name_en": "Mortar",
+  "model": "weapon.glb",
+  "reference": "reference.png",
+  "meshy_render": "meshy-render.png",
+  "resource": "image-to-3d",
+  "task_id": "01a14cac-a92d-7426-80f2-0df226d219fc",
+  "operation_id": "ce634a73-5bad-4638-bd47-1db3fb0815ed",
+  "project_dir": "outputs/weapon-modules/03-mortar/meshy_output/20261018_104225_03-mortar_01a14cac",
+  "target_triangles": 4000,
+  "triangles": 4009,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "material_count": 1,
+  "texture_count": 1,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "mode": "RGB"
+    }
+  ],
+  "animation_clips": 0,
+  "model_bytes": 3674748,
+  "sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f",
+  "reported_consumed_credits": 15,
+  "status": "completed_asset_prototype",
+  "limitations": [
+    "Generated visual prototype. Mechanical part separation, pivots, firing sockets, collision and engine performance are not finalized.",
+    "Toon shading and outlines are runtime workbench materials, not universal shaders embedded in the original GLB.",
+    "Mounting view is an external deck placement study. The original single-mesh airship and its existing gun are preserved.",
+    "Unseen sides were inferred from one reference image."
+  ],
+  "local_runtime_note": "The Windows CLI can emit a libuv shutdown assertion after writing a successful result. Completion is verified from task snapshot, downloaded file length and GLB data; paid requests are not repeated because of shutdown noise.",
+  "verification": {
+    "id": "03-mortar",
+    "initial": {
+      "ready": true,
+      "offline": true,
+      "mode": "handdrawn",
+      "models": {
+        "__ship": {
+          "sourceBytes": 3645884,
+          "meshCount": 1,
+          "triangleCount": 11026,
+          "materialCount": 1,
+          "textureCount": 1,
+          "texturesReady": true,
+          "textures": [
+            {
+              "name": "",
+              "width": 2048,
+              "height": 2048,
+              "ready": true
+            }
+          ],
+          "animationClipCount": 0,
+          "originalBounds": {
+            "min": [
+              -0.4748539924621582,
+              -0.2595210075378418,
+              -0.1496579945087433
+            ],
+            "max": [
+              0.47338899970054626,
+              0.2600100040435791,
+              0.13598600029945374
+            ]
+          }
+        },
+        "01-machine-gun": {
+          "sourceBytes": 3299860,
+          "meshCount": 1,
+          "triangleCount": 3945,
+          "materialCount": 1,
+          "textureCount": 1,
+          "texturesReady": true,
+          "textures": [
+            {
+              "name": "",
+              "width": 2048,
+              "height": 2048,
+              "ready": true
+            }
+          ],
+          "animationClipCount": 0,
+          "originalBounds": {
+            "min": [
+              -0.4826659858226776,
+              -0.2087399959564209,
+              -0.25707998871803284
+            ],
+            "max": [
+              0.4787600040435791,
+              0.21362300217151642,
+              0.25756800174713135
+            ]
+          }
+        },
+        "03-mortar": {
+          "sourceBytes": 3674748,
+          "meshCount": 1,
+          "triangleCount": 4009,
+          "materialCount": 1,
+          "textureCount": 1,
+          "texturesReady": true,
+          "textures": [
+            {
+              "name": "",
+              "width": 2048,
+              "height": 2048,
+              "ready": true
+            }
+          ],
+          "animationClipCount": 0,
+          "originalBounds": {
+            "min": [
+              -0.4787600040435791,
+              -0.3381350040435791,
+              -0.3215329945087433
+            ],
+            "max": [
+              0.4792479872703552,
+              0.34008800983428955,
+              0.31957998871803284
+            ]
+          }
+        }
+      },
+      "selectedId": "03-mortar",
+      "mounted": false,
+      "outlineEnabled": true,
+      "outlinePixels": 1.2,
+      "autoRotate": false,
+      "yawDegrees": 0,
+      "mountScale": 1,
+      "placementPreviewOnly": false,
+      "sourceBytes": 3674748,
+      "meshCount": 1,
+      "triangleCount": 4009,
+      "materialCount": 1,
+      "textureCount": 1,
+      "texturesReady": true,
+      "textures": [
+        {
+          "name": "",
+          "width": 2048,
+          "height": 2048,
+          "ready": true
+        }
+      ],
+      "animationClipCount": 0,
+      "originalBounds": {
+        "min": [
+          -0.4787600040435791,
+          -0.3381350040435791,
+          -0.3215329945087433
+        ],
+        "max": [
+          0.4792479872703552,
+          0.34008800983428955,
+          0.31957998871803284
+        ]
+      },
+      "error": null
+    },
+    "downloadBytes": 3674748,
+    "shipComparison": true,
+    "regressions": [
+      {
+        "mode": "handdrawn",
+        "mounted": false,
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 0,
+        "cameraUnchanged": true,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "cel",
+        "mounted": false,
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 0,
+        "cameraUnchanged": true,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "original",
+        "mounted": false,
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 6.661338147750939e-16,
+        "cameraUnchanged": true,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "handdrawn",
+        "mounted": true,
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 0,
+        "cameraUnchanged": true,
+        "outlineAutoClear": true
+      }
+    ]
+  },
+  "verification_summary": {
+    "passed": true,
+    "errors": [],
+    "externalRequests": [],
+    "mobileOverflow": false
+  },
+  "previews": [
+    "preview-handdrawn.png",
+    "preview-cel.png",
+    "preview-original.png",
+    "preview-mounted.png"
+  ],
+  "preview_image": {
+    "width": 2436,
+    "height": 1248,
+    "bounds": [
+      925,
+      446,
+      1554,
+      1024
+    ]
+  }
+}

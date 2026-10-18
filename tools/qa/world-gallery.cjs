@@ -1,0 +1,16 @@
+const fs=require('node:fs'),path=require('node:path');
+const{pathToFileURL,fileURLToPath}=require('node:url');
+const{repoPath,launchBrowser,reportDirectory}=require('../lib/runtime.cjs');
+const dir=reportDirectory('world-gallery',process.argv[2]);
+const assert=(v,m)=>{if(!v)throw new Error(m)};
+(async()=>{const browser=await launchBrowser();const page=await browser.newPage({viewport:{width:1440,height:1050}});const errors=[],external=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))external.push(r.url())});let report={passed:false,errors,externalRequests:external};try{
+ const html=repoPath('outputs/world-assets/gallery.html');await page.goto(pathToFileURL(html).href);await page.waitForFunction(()=>window.__worldGallery);
+ const all=await page.evaluate(()=>({cards:[...document.querySelectorAll('.card')].map(x=>({id:x.dataset.id,kind:x.dataset.kind,visible:!x.hidden})),links:[...document.querySelectorAll('a[href],img[src],svg image[href]')].map(x=>x.href?.baseVal||x.href||x.src||x.getAttribute('href'))}));
+ assert(all.cards.filter(x=>x.kind==='asset').length===96,'Expected 96 asset cards');assert(all.cards.filter(x=>x.kind==='scene').length===7,'Expected 7 scene cards');
+ const broken=[];for(const link of all.links){if(!link||link.startsWith('#')||link.startsWith('data:'))continue;const u=new URL(link,pathToFileURL(html));if(u.protocol!=='file:')throw new Error('External gallery link');u.hash='';u.search='';if(!fs.existsSync(fileURLToPath(u)))broken.push(u.pathname)}assert(!broken.length,'Broken links: '+broken.join(','));
+ await page.check('#overview');assert((await page.evaluate(()=>window.__worldGallery.getVisibleIds())).length===13,'Overview must contain 6 heroes and 7 scenes');await page.uncheck('#overview');await page.selectOption('#category-filter','architecture');assert((await page.evaluate(()=>window.__worldGallery.getVisibleIds())).length===18,'Architecture filter failed');await page.selectOption('#category-filter','all');await page.fill('#search','항구 여관');assert((await page.evaluate(()=>window.__worldGallery.getVisibleIds())).join(',')==='harbor-inn','Search failed');await page.fill('#search','');
+ await page.locator('[data-spec]').first().click();assert(await page.locator('#spec-dialog').evaluate(x=>x.open),'Spec dialog failed');await page.click('#close-spec');
+ await page.check('#overview');await page.screenshot({path:path.join(dir,'overview-desktop.png'),fullPage:true});
+ await page.setViewportSize({width:390,height:844});const mobile=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth,width:innerWidth,documentWidth:document.documentElement.scrollWidth}));assert(!mobile.overflow,'Mobile overflow');await page.screenshot({path:path.join(dir,'overview-mobile.png'),fullPage:true});
+ assert(!errors.length&&!external.length,'Browser error or external request');report={...report,passed:true,assets:96,scenes:7,cards:103,links:all.links.length,brokenLinks:broken,overview:13,search:true,categoryFilter:true,specDialog:true,mobile};
+ }catch(e){report.failure=e.message;process.exitCode=1}finally{fs.writeFileSync(path.join(dir,'qa-result.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});

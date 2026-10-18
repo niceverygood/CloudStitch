@@ -1,0 +1,118 @@
+{
+  "id": "memory-observatory",
+  "order": 6,
+  "name_ko": "기억 관측소",
+  "name_en": "Memory Observatory",
+  "category": "hero-buildings",
+  "role": "기억 기록실·관측 기능의 외형 후보이며 새 정사 시설명을 확정하지 않는다",
+  "build_method": "hero_meshy",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 4.8,
+    "depth": 4.2,
+    "height": 5.8,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "hero/memory-observatory/model-repaired.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Existing downloaded Meshy hero GLB, inspected without source edits",
+  "triangles": 7284,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "node_count": 1,
+  "material_count": 1,
+  "texture_count": 1,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    }
+  ],
+  "vertex_color_primitive_count": 0,
+  "vertex_colors": false,
+  "animation_count": 0,
+  "bytes": 4198500,
+  "sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+  "mesh_definition_count": 1,
+  "unique_geometry_triangles": 7284,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 1,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.47241199016571045,
+        -0.3532710075378418,
+        -0.44897499680519104
+      ],
+      "max": [
+        0.47241199016571045,
+        0.3527829945087433,
+        0.44897499680519104
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/0/matrix"
+        }
+      ]
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 1,
+    "messages": [
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/0/matrix"
+      }
+    ]
+  },
+  "task_id": "01a14ce4-be59-7222-87b0-f4447ff124f8",
+  "operation_id": "ee2f3588-8c14-4d45-aca5-c672247a1914",
+  "consumed_credits": 15,
+  "original_source_preserved": true,
+  "source_model": "hero/memory-observatory/model.glb",
+  "source_sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+  "normal_repair": {
+    "log": "hero/memory-observatory/repair-log.json",
+    "original_sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+    "repaired_sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+    "normal_vectors_repaired": 0,
+    "zero_normal_vectors": 0,
+    "non_unit_normal_vectors": 0,
+    "official_errors_after": 0
+  },
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration.",
+    "Generated hidden surfaces, part separation and exact ground pivot require visual review."
+  ]
+}

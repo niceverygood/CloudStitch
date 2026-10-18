@@ -1,0 +1,66 @@
+{
+  "id": "machine-gun-muzzle",
+  "name_ko": "기관총 포구 섬광",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/machine-gun-muzzle.glb",
+  "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9",
+  "bytes": 43532,
+  "triangles": 278,
+  "mesh_count": 10,
+  "node_count": 12,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 4,
+  "channel_paths": [
+    "scale",
+    "translation",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 0.2,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 0.20000000298023224,
+    "animated_bounds": {
+      "min": [
+        -0.14290573063873332,
+        -0.4000900182039862,
+        -0.3234188713676376
+      ],
+      "max": [
+        1.0000752010613208,
+        0.28300493065381616,
+        0.32685858506805004
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

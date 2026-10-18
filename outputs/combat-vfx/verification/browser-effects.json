@@ -1,0 +1,4364 @@
+{
+  "viewer": "outputs\\combat-vfx\\index.html",
+  "catalog": "outputs\\combat-vfx\\catalog.json",
+  "expectedEffects": 48,
+  "models": [
+    {
+      "id": "machine-gun-muzzle",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "machine-gun-muzzle",
+        "currentTime": 0,
+        "duration": 0.20000000298023224,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 43532,
+        "nodeCount": 13,
+        "meshCount": 10,
+        "triangleCount": 278,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 4,
+        "animatedNodeCount": 2,
+        "activeClip": "machine-gun-muzzle",
+        "originalAnimationBounds": {
+          "min": [
+            -0.1479853182918664,
+            -0.40009002446223213,
+            -0.32398598911431364
+          ],
+          "max": [
+            1.0000752047841615,
+            0.2719159096575079,
+            0.3384767813825805
+          ]
+        },
+        "weaponId": "01-machine-gun",
+        "category": "weapon",
+        "catalogDuration": 0.2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.030000000447034835,
+          "actionTime": 0.030000000447034835,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 11441,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.13000000193715097,
+          "actionTime": 0.13000000193715097,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 1064,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 92,
+      "download": {
+        "bytes": 43532,
+        "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "machine-gun-muzzle.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 43532,
+        "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9"
+      }
+    },
+    {
+      "id": "machine-gun-projectile",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "machine-gun-projectile",
+        "currentTime": 0,
+        "duration": 0.44999998807907104,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 8856,
+        "nodeCount": 5,
+        "meshCount": 2,
+        "triangleCount": 40,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 3,
+        "animatedNodeCount": 1,
+        "activeClip": "machine-gun-projectile",
+        "originalAnimationBounds": {
+          "min": [
+            -0.07000000029802322,
+            -0.07000000029802325,
+            -0.925000011920929
+          ],
+          "max": [
+            0.07000000029802322,
+            0.07000000029802325,
+            4.000125000005937
+          ]
+        },
+        "weaponId": "01-machine-gun",
+        "category": "weapon",
+        "catalogDuration": 0.45,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.06749999821186066,
+          "actionTime": 0.06749999821186066,
+          "meshCount": 2,
+          "coloredMeshes": 2,
+          "unlitMeshes": 2,
+          "finite": true,
+          "visiblePixels": 3166,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.29249999225139617,
+          "actionTime": 0.29249999225139617,
+          "meshCount": 2,
+          "coloredMeshes": 2,
+          "unlitMeshes": 2,
+          "finite": true,
+          "visiblePixels": 3165,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 2,
+      "download": {
+        "bytes": 8856,
+        "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "machine-gun-projectile.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 8856,
+        "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b"
+      }
+    },
+    {
+      "id": "machine-gun-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "machine-gun-hit",
+        "currentTime": 0,
+        "duration": 0.3499999940395355,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 71820,
+        "nodeCount": 25,
+        "meshCount": 12,
+        "triangleCount": 384,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 32,
+        "animatedNodeCount": 12,
+        "activeClip": "machine-gun-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.46864698850518555,
+            -0.1569389531934164,
+            -0.47180151737583664
+          ],
+          "max": [
+            0.3392723930929377,
+            0.38263908713388406,
+            0.4993782238523623
+          ]
+        },
+        "weaponId": "01-machine-gun",
+        "category": "weapon",
+        "catalogDuration": 0.35,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.052499999105930326,
+          "actionTime": 0.052499999105930326,
+          "meshCount": 12,
+          "coloredMeshes": 12,
+          "unlitMeshes": 12,
+          "finite": true,
+          "visiblePixels": 18407,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.2274999961256981,
+          "actionTime": 0.2274999961256981,
+          "meshCount": 12,
+          "coloredMeshes": 12,
+          "unlitMeshes": 12,
+          "finite": true,
+          "visiblePixels": 18276,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 126,
+      "download": {
+        "bytes": 71820,
+        "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "machine-gun-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 71820,
+        "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d"
+      }
+    },
+    {
+      "id": "cannon-muzzle",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "cannon-muzzle",
+        "currentTime": 0,
+        "duration": 0.44999998807907104,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 115812,
+        "nodeCount": 24,
+        "meshCount": 15,
+        "triangleCount": 854,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 13,
+        "animatedNodeCount": 7,
+        "activeClip": "cannon-muzzle",
+        "originalAnimationBounds": {
+          "min": [
+            -0.8147207670863752,
+            -0.8147207670863752,
+            -0.21949318048608532
+          ],
+          "max": [
+            0.8147207670863752,
+            0.8147207670863752,
+            1.7001123294958158
+          ]
+        },
+        "weaponId": "02-deck-cannon",
+        "category": "weapon",
+        "catalogDuration": 0.45,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.06749999821186066,
+          "actionTime": 0.06749999821186066,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 11139,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.29249999225139617,
+          "actionTime": 0.29249999225139617,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 16818,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 114,
+      "download": {
+        "bytes": 115812,
+        "sha256": "2e4c5d1b6a78251f970207b1fc35c66ce0d37e92aeb2ab3497387f85ac61d479",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "cannon-muzzle.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 115812,
+        "sha256": "2e4c5d1b6a78251f970207b1fc35c66ce0d37e92aeb2ab3497387f85ac61d479"
+      }
+    },
+    {
+      "id": "cannon-projectile",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "cannon-projectile",
+        "currentTime": 0,
+        "duration": 0.800000011920929,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 120868,
+        "nodeCount": 13,
+        "meshCount": 10,
+        "triangleCount": 944,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 17,
+        "animatedNodeCount": 8,
+        "activeClip": "cannon-projectile",
+        "originalAnimationBounds": {
+          "min": [
+            -0.2150000035762787,
+            -0.2150000035762787,
+            -0.30999999821186064
+          ],
+          "max": [
+            0.2150000035762787,
+            0.4001720059744753,
+            4.000200000012479
+          ]
+        },
+        "weaponId": "02-deck-cannon",
+        "category": "weapon",
+        "catalogDuration": 0.8,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.12000000178813934,
+          "actionTime": 0.12000000178813934,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 7245,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.5200000077486039,
+          "actionTime": 0.5200000077486039,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 9557,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 35,
+      "download": {
+        "bytes": 120868,
+        "sha256": "cf543abd2fcca020693ad3c46eec6473d39afba172f998dee18fcf73600bf5b4",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "cannon-projectile.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 120868,
+        "sha256": "cf543abd2fcca020693ad3c46eec6473d39afba172f998dee18fcf73600bf5b4"
+      }
+    },
+    {
+      "id": "cannon-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "cannon-hit",
+        "currentTime": 0,
+        "duration": 0.75,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 185004,
+        "nodeCount": 59,
+        "meshCount": 29,
+        "triangleCount": 1064,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 76,
+        "animatedNodeCount": 29,
+        "activeClip": "cannon-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.9679887079952598,
+            -0.1628936866946767,
+            -1.1699794161080375
+          ],
+          "max": [
+            1.063692843575285,
+            1.936930700433877,
+            1.095446313857347
+          ]
+        },
+        "weaponId": "02-deck-cannon",
+        "category": "weapon",
+        "catalogDuration": 0.75,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.11249999999999999,
+          "actionTime": 0.11249999999999999,
+          "meshCount": 29,
+          "coloredMeshes": 29,
+          "unlitMeshes": 29,
+          "finite": true,
+          "visiblePixels": 5600,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.48750000000000004,
+          "actionTime": 0.48750000000000004,
+          "meshCount": 29,
+          "coloredMeshes": 29,
+          "unlitMeshes": 29,
+          "finite": true,
+          "visiblePixels": 30108,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 288,
+      "download": {
+        "bytes": 185004,
+        "sha256": "89f0bff8c05aed3c73fd09b80a984695d72ceb597ef349f188613e438d36369a",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "cannon-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 185004,
+        "sha256": "89f0bff8c05aed3c73fd09b80a984695d72ceb597ef349f188613e438d36369a"
+      }
+    },
+    {
+      "id": "mortar-launch",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "mortar-launch",
+        "currentTime": 0,
+        "duration": 0.6000000238418579,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 115688,
+        "nodeCount": 23,
+        "meshCount": 15,
+        "triangleCount": 854,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 13,
+        "animatedNodeCount": 7,
+        "activeClip": "mortar-launch",
+        "originalAnimationBounds": {
+          "min": [
+            -0.4655547577093039,
+            -0.14351477781596395,
+            -0.3581865090181811
+          ],
+          "max": [
+            0.4655547577093039,
+            2.8501480085324062,
+            1.1636332069918558
+          ]
+        },
+        "weaponId": "03-mortar",
+        "category": "weapon",
+        "catalogDuration": 0.6,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.09000000357627869,
+          "actionTime": 0.09000000357627869,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 3013,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.39000001549720764,
+          "actionTime": 0.39000001549720764,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 3930,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 114,
+      "download": {
+        "bytes": 115688,
+        "sha256": "40f966857dac52b207511c89845864706eea004a67dea3f540daefcaa6205fc0",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "mortar-launch.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 115688,
+        "sha256": "40f966857dac52b207511c89845864706eea004a67dea3f540daefcaa6205fc0"
+      }
+    },
+    {
+      "id": "mortar-projectile",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "mortar-projectile",
+        "currentTime": 0,
+        "duration": 1.600000023841858,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 120504,
+        "nodeCount": 17,
+        "meshCount": 13,
+        "triangleCount": 912,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 17,
+        "animatedNodeCount": 8,
+        "activeClip": "mortar-projectile",
+        "originalAnimationBounds": {
+          "min": [
+            -0.24500000476837158,
+            -0.34306158727205927,
+            -0.37161152825103233
+          ],
+          "max": [
+            0.24500000476837158,
+            2.3755247013639176,
+            4.000360267348819
+          ]
+        },
+        "weaponId": "03-mortar",
+        "category": "weapon",
+        "catalogDuration": 1.6,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.24000000357627868,
+          "actionTime": 0.24000000357627868,
+          "meshCount": 13,
+          "coloredMeshes": 13,
+          "unlitMeshes": 13,
+          "finite": true,
+          "visiblePixels": 3204,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.0400000154972078,
+          "actionTime": 1.0400000154972078,
+          "meshCount": 13,
+          "coloredMeshes": 13,
+          "unlitMeshes": 13,
+          "finite": true,
+          "visiblePixels": 3348,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 68,
+      "download": {
+        "bytes": 120504,
+        "sha256": "d49772da574e4cec3f42a2812c58151f1ffcac28e2fa4f0b913809747492602d",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "mortar-projectile.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 120504,
+        "sha256": "d49772da574e4cec3f42a2812c58151f1ffcac28e2fa4f0b913809747492602d"
+      }
+    },
+    {
+      "id": "mortar-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "mortar-hit",
+        "currentTime": 0,
+        "duration": 1.2000000476837158,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 223176,
+        "nodeCount": 71,
+        "meshCount": 35,
+        "triangleCount": 1272,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 92,
+        "animatedNodeCount": 35,
+        "activeClip": "mortar-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -1.474719003239588,
+            -0.26576412292385293,
+            -1.215603463452784
+          ],
+          "max": [
+            1.194270617778879,
+            2.933662011549584,
+            1.4363145879377675
+          ]
+        },
+        "weaponId": "03-mortar",
+        "category": "weapon",
+        "catalogDuration": 1.2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.18000000715255737,
+          "actionTime": 0.18000000715255737,
+          "meshCount": 35,
+          "coloredMeshes": 35,
+          "unlitMeshes": 35,
+          "finite": true,
+          "visiblePixels": 4955,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.7800000309944153,
+          "actionTime": 0.7800000309944153,
+          "meshCount": 35,
+          "coloredMeshes": 35,
+          "unlitMeshes": 35,
+          "finite": true,
+          "visiblePixels": 20840,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 348,
+      "download": {
+        "bytes": 223176,
+        "sha256": "3b7f007e2cdd93e1c1ec3944b910f418d40216d25a63262c830f72d2a2a182e8",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "mortar-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 223176,
+        "sha256": "3b7f007e2cdd93e1c1ec3944b910f418d40216d25a63262c830f72d2a2a182e8"
+      }
+    },
+    {
+      "id": "harpoon-launch",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "harpoon-launch",
+        "currentTime": 0,
+        "duration": 0.3499999940395355,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 69840,
+        "nodeCount": 12,
+        "meshCount": 5,
+        "triangleCount": 544,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 10,
+        "animatedNodeCount": 5,
+        "activeClip": "harpoon-launch",
+        "originalAnimationBounds": {
+          "min": [
+            -0.3623958428312716,
+            -0.3623958428312716,
+            -0.00011423241889648868
+          ],
+          "max": [
+            0.3623958428312716,
+            0.3623958428312716,
+            1.1667526672001818
+          ]
+        },
+        "weaponId": "04-harpoon",
+        "category": "weapon",
+        "catalogDuration": 0.35,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.052499999105930326,
+          "actionTime": 0.052499999105930326,
+          "meshCount": 5,
+          "coloredMeshes": 5,
+          "unlitMeshes": 5,
+          "finite": true,
+          "visiblePixels": 6391,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.2274999961256981,
+          "actionTime": 0.2274999961256981,
+          "meshCount": 5,
+          "coloredMeshes": 5,
+          "unlitMeshes": 5,
+          "finite": true,
+          "visiblePixels": 13493,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 28,
+      "download": {
+        "bytes": 69840,
+        "sha256": "df3f3c26cf5b1a0288f3346d1fb5ed5c834ce3888de833e426800dd838f18582",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "harpoon-launch.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 69840,
+        "sha256": "df3f3c26cf5b1a0288f3346d1fb5ed5c834ce3888de833e426800dd838f18582"
+      }
+    },
+    {
+      "id": "harpoon-projectile",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "harpoon-projectile",
+        "currentTime": 0,
+        "duration": 1,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 44064,
+        "nodeCount": 10,
+        "meshCount": 6,
+        "triangleCount": 324,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 4,
+        "animatedNodeCount": 2,
+        "activeClip": "harpoon-projectile",
+        "originalAnimationBounds": {
+          "min": [
+            -0.2390832601998057,
+            -0.15999999642372137,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.2390832601998057,
+            0.15999999642372137,
+            4.7650000035762785
+          ]
+        },
+        "weaponId": "04-harpoon",
+        "category": "weapon",
+        "catalogDuration": 1,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.15,
+          "actionTime": 0.15,
+          "meshCount": 6,
+          "coloredMeshes": 6,
+          "unlitMeshes": 6,
+          "finite": true,
+          "visiblePixels": 6026,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.65,
+          "actionTime": 0.65,
+          "meshCount": 6,
+          "coloredMeshes": 6,
+          "unlitMeshes": 6,
+          "finite": true,
+          "visiblePixels": 8346,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 6,
+      "download": {
+        "bytes": 44064,
+        "sha256": "415412f33532d6cb2698f8e136c57513b243b3e0b69257ca38f87bf67a310702",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "harpoon-projectile.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 44064,
+        "sha256": "415412f33532d6cb2698f8e136c57513b243b3e0b69257ca38f87bf67a310702"
+      }
+    },
+    {
+      "id": "harpoon-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "harpoon-hit",
+        "currentTime": 0,
+        "duration": 0.6499999761581421,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 110768,
+        "nodeCount": 30,
+        "meshCount": 16,
+        "triangleCount": 696,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 35,
+        "animatedNodeCount": 14,
+        "activeClip": "harpoon-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.5636346756319249,
+            -0.2,
+            -0.6168203770175901
+          ],
+          "max": [
+            0.6102957146468626,
+            0.9653375194505952,
+            0.5845723039834346
+          ]
+        },
+        "weaponId": "04-harpoon",
+        "category": "weapon",
+        "catalogDuration": 0.65,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.09749999642372131,
+          "actionTime": 0.09749999642372131,
+          "meshCount": 16,
+          "coloredMeshes": 16,
+          "unlitMeshes": 16,
+          "finite": true,
+          "visiblePixels": 8380,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.42249998450279236,
+          "actionTime": 0.42249998450279236,
+          "meshCount": 16,
+          "coloredMeshes": 16,
+          "unlitMeshes": 16,
+          "finite": true,
+          "visiblePixels": 13693,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 132,
+      "download": {
+        "bytes": 110768,
+        "sha256": "04c7ae0d0a5bd73fd57e5ecdff6a1488bc64ef5e42316674d67282c26fde4096",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "harpoon-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 110768,
+        "sha256": "04c7ae0d0a5bd73fd57e5ecdff6a1488bc64ef5e42316674d67282c26fde4096"
+      }
+    },
+    {
+      "id": "chain-shot-launch",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "chain-shot-launch",
+        "currentTime": 0,
+        "duration": 0.5,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 61900,
+        "nodeCount": 13,
+        "meshCount": 10,
+        "triangleCount": 454,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 3,
+        "animatedNodeCount": 2,
+        "activeClip": "chain-shot-launch",
+        "originalAnimationBounds": {
+          "min": [
+            -0.6401377807532741,
+            -0.6401377807532741,
+            -0.1603988645536979
+          ],
+          "max": [
+            0.6401377807532741,
+            0.6401377807532741,
+            0.9000179761582222
+          ]
+        },
+        "weaponId": "05-chain-shot",
+        "category": "weapon",
+        "catalogDuration": 0.5,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.075,
+          "actionTime": 0.075,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 11830,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.325,
+          "actionTime": 0.325,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 12812,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 84,
+      "download": {
+        "bytes": 61900,
+        "sha256": "892b0434490dd105440ff2833ce1a21bda13b5587ef42bb80f1aa8c66b3c8db0",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "chain-shot-launch.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 61900,
+        "sha256": "892b0434490dd105440ff2833ce1a21bda13b5587ef42bb80f1aa8c66b3c8db0"
+      }
+    },
+    {
+      "id": "chain-shot-projectile",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "chain-shot-projectile",
+        "currentTime": 0,
+        "duration": 1.100000023841858,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 197460,
+        "nodeCount": 12,
+        "meshCount": 9,
+        "triangleCount": 1728,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 3,
+        "animatedNodeCount": 1,
+        "activeClip": "chain-shot-projectile",
+        "originalAnimationBounds": {
+          "min": [
+            -0.540333245009355,
+            -0.5403332539629662,
+            -0.18000000715255737
+          ],
+          "max": [
+            0.540333245009355,
+            0.5403332539629662,
+            4.000180000015702
+          ]
+        },
+        "weaponId": "05-chain-shot",
+        "category": "weapon",
+        "catalogDuration": 1.1,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.16500000357627867,
+          "actionTime": 0.16500000357627867,
+          "meshCount": 9,
+          "coloredMeshes": 9,
+          "unlitMeshes": 9,
+          "finite": true,
+          "visiblePixels": 6264,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.7150000154972077,
+          "actionTime": 0.7150000154972077,
+          "meshCount": 9,
+          "coloredMeshes": 9,
+          "unlitMeshes": 9,
+          "finite": true,
+          "visiblePixels": 6265,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 27,
+      "download": {
+        "bytes": 197460,
+        "sha256": "f03e5354f4c1437afb108412c0d0f0cd8100b9ff76ab3c7f8f70520fe48965e5",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "chain-shot-projectile.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 197460,
+        "sha256": "f03e5354f4c1437afb108412c0d0f0cd8100b9ff76ab3c7f8f70520fe48965e5"
+      }
+    },
+    {
+      "id": "chain-shot-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "chain-shot-hit",
+        "currentTime": 0,
+        "duration": 1,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 306208,
+        "nodeCount": 34,
+        "meshCount": 21,
+        "triangleCount": 2400,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 50,
+        "animatedNodeCount": 21,
+        "activeClip": "chain-shot-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.6581895982745338,
+            -0.1526416933665119,
+            -0.5873332023620605
+          ],
+          "max": [
+            0.7265658375899807,
+            0.3710957773923765,
+            0.6491000354290009
+          ]
+        },
+        "weaponId": "05-chain-shot",
+        "category": "weapon",
+        "catalogDuration": 1,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.15,
+          "actionTime": 0.15,
+          "meshCount": 21,
+          "coloredMeshes": 21,
+          "unlitMeshes": 21,
+          "finite": true,
+          "visiblePixels": 28952,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.65,
+          "actionTime": 0.65,
+          "meshCount": 21,
+          "coloredMeshes": 21,
+          "unlitMeshes": 21,
+          "finite": true,
+          "visiblePixels": 35366,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 179,
+      "download": {
+        "bytes": 306208,
+        "sha256": "3a081a0265a901b0fbc47e943b6a9ad5f0d224a6195d052ff95967193f38001c",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "chain-shot-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 306208,
+        "sha256": "3a081a0265a901b0fbc47e943b6a9ad5f0d224a6195d052ff95967193f38001c"
+      }
+    },
+    {
+      "id": "flamethrower-ignite",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "flamethrower-ignite",
+        "currentTime": 0,
+        "duration": 0.4000000059604645,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 38948,
+        "nodeCount": 13,
+        "meshCount": 10,
+        "triangleCount": 244,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 2,
+        "animatedNodeCount": 2,
+        "activeClip": "flamethrower-ignite",
+        "originalAnimationBounds": {
+          "min": [
+            -0.11098898152818354,
+            -0.09722882154693296,
+            -0.0759784086553895
+          ],
+          "max": [
+            0.10554334296540259,
+            0.08956385642594286,
+            0.3589753809397172
+          ]
+        },
+        "weaponId": "06-flamethrower",
+        "category": "weapon",
+        "catalogDuration": 0.4,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.06000000089406967,
+          "actionTime": 0.06000000089406967,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 55103,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.26000000387430194,
+          "actionTime": 0.26000000387430194,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 4074,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 83,
+      "download": {
+        "bytes": 38948,
+        "sha256": "4f555ba6865758cab0f551bf4a8a174446b293571e98b471273a287174da9333",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "flamethrower-ignite.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 38948,
+        "sha256": "4f555ba6865758cab0f551bf4a8a174446b293571e98b471273a287174da9333"
+      }
+    },
+    {
+      "id": "flamethrower-stream",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "flamethrower-stream",
+        "currentTime": 0,
+        "duration": 1.2000000476837158,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 98396,
+        "nodeCount": 20,
+        "meshCount": 9,
+        "triangleCount": 720,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 18,
+        "animatedNodeCount": 9,
+        "activeClip": "flamethrower-stream",
+        "originalAnimationBounds": {
+          "min": [
+            -0.38719821635195845,
+            -0.3965875470872778,
+            0.1085999955485265
+          ],
+          "max": [
+            0.3938268396184355,
+            0.40221682015011473,
+            2.2515606555776424
+          ]
+        },
+        "weaponId": "06-flamethrower",
+        "category": "weapon",
+        "catalogDuration": 1.2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.18000000715255737,
+          "actionTime": 0.18000000715255737,
+          "meshCount": 9,
+          "coloredMeshes": 9,
+          "unlitMeshes": 9,
+          "finite": true,
+          "visiblePixels": 59488,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.7800000309944153,
+          "actionTime": 0.7800000309944153,
+          "meshCount": 9,
+          "coloredMeshes": 9,
+          "unlitMeshes": 9,
+          "finite": true,
+          "visiblePixels": 56073,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 54,
+      "download": {
+        "bytes": 98396,
+        "sha256": "c5f78003c4fb2edba318217ac142fc267e52d712d9d19be4a02fe0759fdee0ea",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "flamethrower-stream.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 98396,
+        "sha256": "c5f78003c4fb2edba318217ac142fc267e52d712d9d19be4a02fe0759fdee0ea"
+      }
+    },
+    {
+      "id": "flamethrower-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "flamethrower-hit",
+        "currentTime": 0,
+        "duration": 0.8999999761581421,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 152336,
+        "nodeCount": 31,
+        "meshCount": 14,
+        "triangleCount": 1120,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 28,
+        "animatedNodeCount": 14,
+        "activeClip": "flamethrower-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.4761570403497946,
+            -0.00018214554459734106,
+            -0.40221680743565924
+          ],
+          "max": [
+            0.5188129481759756,
+            2.4085134095337106,
+            0.616808814444752
+          ]
+        },
+        "weaponId": "06-flamethrower",
+        "category": "weapon",
+        "catalogDuration": 0.9,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.13499999642372132,
+          "actionTime": 0.13499999642372132,
+          "meshCount": 14,
+          "coloredMeshes": 14,
+          "unlitMeshes": 14,
+          "finite": true,
+          "visiblePixels": 24522,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.5849999845027923,
+          "actionTime": 0.5849999845027923,
+          "meshCount": 14,
+          "coloredMeshes": 14,
+          "unlitMeshes": 14,
+          "finite": true,
+          "visiblePixels": 26680,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 84,
+      "download": {
+        "bytes": 152336,
+        "sha256": "6f4225f2e835caa76dcd894d40bcae856b8dc342ffb5408a61550c3fa7543b33",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "flamethrower-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 152336,
+        "sha256": "6f4225f2e835caa76dcd894d40bcae856b8dc342ffb5408a61550c3fa7543b33"
+      }
+    },
+    {
+      "id": "wood-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "wood-hit",
+        "currentTime": 0,
+        "duration": 0.699999988079071,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 125780,
+        "nodeCount": 52,
+        "meshCount": 26,
+        "triangleCount": 552,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 74,
+        "animatedNodeCount": 26,
+        "activeClip": "wood-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.6700056729229954,
+            -0.15956423901823594,
+            -1.0462491467680939
+          ],
+          "max": [
+            1.0204140669716717,
+            0.8706041746510924,
+            0.9995750890221848
+          ]
+        },
+        "weaponId": "common",
+        "category": "material-impact",
+        "catalogDuration": 0.7,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.10499999821186065,
+          "actionTime": 0.10499999821186065,
+          "meshCount": 26,
+          "coloredMeshes": 26,
+          "unlitMeshes": 26,
+          "finite": true,
+          "visiblePixels": 10507,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.4549999922513962,
+          "actionTime": 0.4549999922513962,
+          "meshCount": 26,
+          "coloredMeshes": 26,
+          "unlitMeshes": 26,
+          "finite": true,
+          "visiblePixels": 11799,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 294,
+      "download": {
+        "bytes": 125780,
+        "sha256": "3bde0d4ebd511ecb357c27dc9628eab6f0f47b95d5878841e622224037fbb652",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "wood-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 125780,
+        "sha256": "3bde0d4ebd511ecb357c27dc9628eab6f0f47b95d5878841e622224037fbb652"
+      }
+    },
+    {
+      "id": "metal-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "metal-hit",
+        "currentTime": 0,
+        "duration": 0.44999998807907104,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 144904,
+        "nodeCount": 65,
+        "meshCount": 32,
+        "triangleCount": 572,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 92,
+        "animatedNodeCount": 32,
+        "activeClip": "metal-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -1.204154749808945,
+            -0.1916156707035796,
+            -0.9750166224175113
+          ],
+          "max": [
+            1.0048242317345326,
+            0.6747729850557727,
+            1.1549860733371462
+          ]
+        },
+        "weaponId": "common",
+        "category": "material-impact",
+        "catalogDuration": 0.45,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.06749999821186066,
+          "actionTime": 0.06749999821186066,
+          "meshCount": 32,
+          "coloredMeshes": 32,
+          "unlitMeshes": 32,
+          "finite": true,
+          "visiblePixels": 9696,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.29249999225139617,
+          "actionTime": 0.29249999225139617,
+          "meshCount": 32,
+          "coloredMeshes": 32,
+          "unlitMeshes": 32,
+          "finite": true,
+          "visiblePixels": 12176,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 366,
+      "download": {
+        "bytes": 144904,
+        "sha256": "47f624feff5b1709e9fbe9bb709007e34c3559b4811e4d34a741b63fdb6f86da",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "metal-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 144904,
+        "sha256": "47f624feff5b1709e9fbe9bb709007e34c3559b4811e4d34a741b63fdb6f86da"
+      }
+    },
+    {
+      "id": "fabric-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "fabric-hit",
+        "currentTime": 0,
+        "duration": 0.8500000238418579,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 116964,
+        "nodeCount": 16,
+        "meshCount": 14,
+        "triangleCount": 780,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 34,
+        "animatedNodeCount": 14,
+        "activeClip": "fabric-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.9103268033266839,
+            -0.10807041911010978,
+            -0.9907618080995224
+          ],
+          "max": [
+            0.9943845248676896,
+            0.6708053239328948,
+            0.962506446198327
+          ]
+        },
+        "weaponId": "common",
+        "category": "material-impact",
+        "catalogDuration": 0.85,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.1275000035762787,
+          "actionTime": 0.1275000035762787,
+          "meshCount": 14,
+          "coloredMeshes": 14,
+          "unlitMeshes": 14,
+          "finite": true,
+          "visiblePixels": 4870,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.5525000154972076,
+          "actionTime": 0.5525000154972076,
+          "meshCount": 14,
+          "coloredMeshes": 14,
+          "unlitMeshes": 14,
+          "finite": true,
+          "visiblePixels": 6082,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 138,
+      "download": {
+        "bytes": 116964,
+        "sha256": "18d9c13549e5edb18272c884303ec15a6b4b685fa43cf964fc5c4e19a25f1bfc",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "fabric-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 116964,
+        "sha256": "18d9c13549e5edb18272c884303ec15a6b4b685fa43cf964fc5c4e19a25f1bfc"
+      }
+    },
+    {
+      "id": "armor-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "armor-hit",
+        "currentTime": 0,
+        "duration": 0.6000000238418579,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 134764,
+        "nodeCount": 47,
+        "meshCount": 25,
+        "triangleCount": 720,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 57,
+        "animatedNodeCount": 21,
+        "activeClip": "armor-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.7454133387788536,
+            -0.2023458426999621,
+            -0.6997980515527421
+          ],
+          "max": [
+            0.6089112836502872,
+            0.37638959326748406,
+            0.7426533444576883
+          ]
+        },
+        "weaponId": "common",
+        "category": "material-impact",
+        "catalogDuration": 0.6,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.09000000357627869,
+          "actionTime": 0.09000000357627869,
+          "meshCount": 25,
+          "coloredMeshes": 25,
+          "unlitMeshes": 25,
+          "finite": true,
+          "visiblePixels": 31657,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.39000001549720764,
+          "actionTime": 0.39000001549720764,
+          "meshCount": 25,
+          "coloredMeshes": 25,
+          "unlitMeshes": 25,
+          "finite": true,
+          "visiblePixels": 19241,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 254,
+      "download": {
+        "bytes": 134764,
+        "sha256": "1aa2b599f8d41625d1f0d73555ac542e2da39d33bbac00e58deb9162fe77a47c",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "armor-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 134764,
+        "sha256": "1aa2b599f8d41625d1f0d73555ac542e2da39d33bbac00e58deb9162fe77a47c"
+      }
+    },
+    {
+      "id": "ricochet-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "ricochet-hit",
+        "currentTime": 0,
+        "duration": 0.5,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 19036,
+        "nodeCount": 6,
+        "meshCount": 3,
+        "triangleCount": 128,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 3,
+        "animatedNodeCount": 2,
+        "activeClip": "ricochet-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -1.3000799523182958,
+            -0.0661110900066525,
+            -0.6800000220537186
+          ],
+          "max": [
+            0.48000000417232513,
+            0.5799999982118607,
+            0.5562550197396949
+          ]
+        },
+        "weaponId": "common",
+        "category": "material-impact",
+        "catalogDuration": 0.5,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.075,
+          "actionTime": 0.075,
+          "meshCount": 3,
+          "coloredMeshes": 3,
+          "unlitMeshes": 3,
+          "finite": true,
+          "visiblePixels": 4592,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.325,
+          "actionTime": 0.325,
+          "meshCount": 3,
+          "coloredMeshes": 3,
+          "unlitMeshes": 3,
+          "finite": true,
+          "visiblePixels": 1344,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 30,
+      "download": {
+        "bytes": 19036,
+        "sha256": "8e4c4dd2879cfc55eed368f5e8c79024d8fa17357cae9c6e3a3650334653d8ff",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "ricochet-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 19036,
+        "sha256": "8e4c4dd2879cfc55eed368f5e8c79024d8fa17357cae9c6e3a3650334653d8ff"
+      }
+    },
+    {
+      "id": "weakpoint-hit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "weakpoint-hit",
+        "currentTime": 0,
+        "duration": 0.800000011920929,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 83828,
+        "nodeCount": 33,
+        "meshCount": 16,
+        "triangleCount": 416,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 40,
+        "animatedNodeCount": 16,
+        "activeClip": "weakpoint-hit",
+        "originalAnimationBounds": {
+          "min": [
+            -1.2000984979691915,
+            -0.16289368311410057,
+            -1.2000965906205587
+          ],
+          "max": [
+            1.2001000476899557,
+            0.5326945540159617,
+            1.2000995708527975
+          ]
+        },
+        "weaponId": "common",
+        "category": "material-impact",
+        "catalogDuration": 0.8,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.12000000178813934,
+          "actionTime": 0.12000000178813934,
+          "meshCount": 16,
+          "coloredMeshes": 16,
+          "unlitMeshes": 16,
+          "finite": true,
+          "visiblePixels": 13848,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.5200000077486039,
+          "actionTime": 0.5200000077486039,
+          "meshCount": 16,
+          "coloredMeshes": 16,
+          "unlitMeshes": 16,
+          "finite": true,
+          "visiblePixels": 22020,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 149,
+      "download": {
+        "bytes": 83828,
+        "sha256": "69c13b41011376ed9e737dc66129f1c4c82cf1880fc44813ee70ab63cb8c25be",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "weakpoint-hit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 83828,
+        "sha256": "69c13b41011376ed9e737dc66129f1c4c82cf1880fc44813ee70ab63cb8c25be"
+      }
+    },
+    {
+      "id": "cloud-miss",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "cloud-miss",
+        "currentTime": 0,
+        "duration": 1.100000023841858,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 107972,
+        "nodeCount": 22,
+        "meshCount": 10,
+        "triangleCount": 800,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 20,
+        "animatedNodeCount": 10,
+        "activeClip": "cloud-miss",
+        "originalAnimationBounds": {
+          "min": [
+            -1.1321702600265797,
+            -0.1785911905783747,
+            -1.1610117275551228
+          ],
+          "max": [
+            1.0448226961922595,
+            0.6669826696665168,
+            1.3056224177629827
+          ]
+        },
+        "weaponId": "common",
+        "category": "material-impact",
+        "catalogDuration": 1.1,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.16500000357627867,
+          "actionTime": 0.16500000357627867,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 15221,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.7150000154972077,
+          "actionTime": 0.7150000154972077,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 20659,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 60,
+      "download": {
+        "bytes": 107972,
+        "sha256": "285a2fc78263489b81e550e986677b61c54f4fc4594703edd3655b4131a9aa38",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "cloud-miss.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 107972,
+        "sha256": "285a2fc78263489b81e550e986677b61c54f4fc4594703edd3655b4131a9aa38"
+      }
+    },
+    {
+      "id": "penetration-exit",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "penetration-exit",
+        "currentTime": 0,
+        "duration": 0.6499999761581421,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 97976,
+        "nodeCount": 39,
+        "meshCount": 19,
+        "triangleCount": 468,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 51,
+        "animatedNodeCount": 19,
+        "activeClip": "penetration-exit",
+        "originalAnimationBounds": {
+          "min": [
+            -0.7106449832862,
+            -0.12383639432485216,
+            -0.7393611325087553
+          ],
+          "max": [
+            0.550547133583627,
+            0.9025474886767775,
+            0.6414111557756218
+          ]
+        },
+        "weaponId": "common",
+        "category": "material-impact",
+        "catalogDuration": 0.65,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.09749999642372131,
+          "actionTime": 0.09749999642372131,
+          "meshCount": 19,
+          "coloredMeshes": 19,
+          "unlitMeshes": 19,
+          "finite": true,
+          "visiblePixels": 14907,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.42249998450279236,
+          "actionTime": 0.42249998450279236,
+          "meshCount": 19,
+          "coloredMeshes": 19,
+          "unlitMeshes": 19,
+          "finite": true,
+          "visiblePixels": 15117,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 202,
+      "download": {
+        "bytes": 97976,
+        "sha256": "7bbf5af2d3b02ca6590160d54215f5e08c613601e5c276be9aa5d1dbb747092f",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "penetration-exit.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 97976,
+        "sha256": "7bbf5af2d3b02ca6590160d54215f5e08c613601e5c276be9aa5d1dbb747092f"
+      }
+    },
+    {
+      "id": "small-explosion",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "small-explosion",
+        "currentTime": 0,
+        "duration": 0.800000011920929,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 224208,
+        "nodeCount": 55,
+        "meshCount": 26,
+        "triangleCount": 1476,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 67,
+        "animatedNodeCount": 26,
+        "activeClip": "small-explosion",
+        "originalAnimationBounds": {
+          "min": [
+            -0.9610127995253417,
+            -0.08223840266803753,
+            -0.9610127995253417
+          ],
+          "max": [
+            0.9610127995253417,
+            1.5865645685323697,
+            1.0383135108210757
+          ]
+        },
+        "weaponId": "common",
+        "category": "explosion-environment",
+        "catalogDuration": 0.8,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.12000000178813934,
+          "actionTime": 0.12000000178813934,
+          "meshCount": 26,
+          "coloredMeshes": 26,
+          "unlitMeshes": 26,
+          "finite": true,
+          "visiblePixels": 7684,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.5200000077486039,
+          "actionTime": 0.5200000077486039,
+          "meshCount": 26,
+          "coloredMeshes": 26,
+          "unlitMeshes": 26,
+          "finite": true,
+          "visiblePixels": 18615,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 251,
+      "download": {
+        "bytes": 224208,
+        "sha256": "0d29ece131d7ebc128cd5dc04e3cf027bb99b75870ed33a3b528a0a84c03a74a",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "small-explosion.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 224208,
+        "sha256": "0d29ece131d7ebc128cd5dc04e3cf027bb99b75870ed33a3b528a0a84c03a74a"
+      }
+    },
+    {
+      "id": "large-explosion",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "large-explosion",
+        "currentTime": 0,
+        "duration": 1.7999999523162842,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 338232,
+        "nodeCount": 87,
+        "meshCount": 42,
+        "triangleCount": 2144,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 112,
+        "animatedNodeCount": 42,
+        "activeClip": "large-explosion",
+        "originalAnimationBounds": {
+          "min": [
+            -1.7864982005453083,
+            -0.15595599540134733,
+            -1.7864982005453083
+          ],
+          "max": [
+            1.8403591813474942,
+            2.9502513542038358,
+            1.7864982005453083
+          ]
+        },
+        "weaponId": "common",
+        "category": "explosion-environment",
+        "catalogDuration": 1.8,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.26999999284744264,
+          "actionTime": 0.26999999284744264,
+          "meshCount": 42,
+          "coloredMeshes": 42,
+          "unlitMeshes": 42,
+          "finite": true,
+          "visiblePixels": 8354,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.1699999690055847,
+          "actionTime": 1.1699999690055847,
+          "meshCount": 42,
+          "coloredMeshes": 42,
+          "unlitMeshes": 42,
+          "finite": true,
+          "visiblePixels": 22876,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 424,
+      "download": {
+        "bytes": 338232,
+        "sha256": "c52d07092b84c67ecdfb17a8c3999dd03f7cfcb4e3ab3c08d51787abe858d6a3",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "large-explosion.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 338232,
+        "sha256": "c52d07092b84c67ecdfb17a8c3999dd03f7cfcb4e3ab3c08d51787abe858d6a3"
+      }
+    },
+    {
+      "id": "airburst",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "airburst",
+        "currentTime": 0,
+        "duration": 1.2999999523162842,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 363300,
+        "nodeCount": 89,
+        "meshCount": 43,
+        "triangleCount": 2368,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 113,
+        "animatedNodeCount": 43,
+        "activeClip": "airburst",
+        "originalAnimationBounds": {
+          "min": [
+            -1.4015632743311024,
+            0.08443436779825286,
+            -1.339811875938396
+          ],
+          "max": [
+            1.2936712771364316,
+            3.1036020755384564,
+            1.3002792915061083
+          ]
+        },
+        "weaponId": "common",
+        "category": "explosion-environment",
+        "catalogDuration": 1.3,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.19499999284744263,
+          "actionTime": 0.19499999284744263,
+          "meshCount": 43,
+          "coloredMeshes": 43,
+          "unlitMeshes": 43,
+          "finite": true,
+          "visiblePixels": 6431,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.8449999690055847,
+          "actionTime": 0.8449999690055847,
+          "meshCount": 43,
+          "coloredMeshes": 43,
+          "unlitMeshes": 43,
+          "finite": true,
+          "visiblePixels": 21892,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 427,
+      "download": {
+        "bytes": 363300,
+        "sha256": "8f58822cf7624741127e7bea2e40afaa8c4d9d6c3c3fa18b665023caa637afb2",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "airburst.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 363300,
+        "sha256": "8f58822cf7624741127e7bea2e40afaa8c4d9d6c3c3fa18b665023caa637afb2"
+      }
+    },
+    {
+      "id": "shrapnel-burst",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "shrapnel-burst",
+        "currentTime": 0,
+        "duration": 1.100000023841858,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 304264,
+        "nodeCount": 95,
+        "meshCount": 46,
+        "triangleCount": 1716,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 127,
+        "animatedNodeCount": 46,
+        "activeClip": "shrapnel-burst",
+        "originalAnimationBounds": {
+          "min": [
+            -1.3582922877633032,
+            0.021833603636881277,
+            -1.7810409186141998
+          ],
+          "max": [
+            1.659336161968292,
+            1.960579010523884,
+            1.4727295816503667
+          ]
+        },
+        "weaponId": "common",
+        "category": "explosion-environment",
+        "catalogDuration": 1.1,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.16500000357627867,
+          "actionTime": 0.16500000357627867,
+          "meshCount": 46,
+          "coloredMeshes": 46,
+          "unlitMeshes": 46,
+          "finite": true,
+          "visiblePixels": 5623,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.7150000154972077,
+          "actionTime": 0.7150000154972077,
+          "meshCount": 46,
+          "coloredMeshes": 46,
+          "unlitMeshes": 46,
+          "finite": true,
+          "visiblePixels": 16868,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 491,
+      "download": {
+        "bytes": 304264,
+        "sha256": "b0e04ac28bc04ed5812247fface388e5175760c299330f9f3f56e085c5e529a0",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "shrapnel-burst.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 304264,
+        "sha256": "b0e04ac28bc04ed5812247fface388e5175760c299330f9f3f56e085c5e529a0"
+      }
+    },
+    {
+      "id": "smoke-puff",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "smoke-puff",
+        "currentTime": 0,
+        "duration": 1.7999999523162842,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 113964,
+        "nodeCount": 22,
+        "meshCount": 10,
+        "triangleCount": 800,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 28,
+        "animatedNodeCount": 10,
+        "activeClip": "smoke-puff",
+        "originalAnimationBounds": {
+          "min": [
+            -0.8479435443531266,
+            -0.3759106477941174,
+            -1.028586470872717
+          ],
+          "max": [
+            0.9089805881994288,
+            1.4414618755857258,
+            1.1718496232961368
+          ]
+        },
+        "weaponId": "common",
+        "category": "explosion-environment",
+        "catalogDuration": 1.8,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.26999999284744264,
+          "actionTime": 0.26999999284744264,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 9937,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.1699999690055847,
+          "actionTime": 1.1699999690055847,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 21314,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 111,
+      "download": {
+        "bytes": 113964,
+        "sha256": "e9eac110ce92f95715d8c7dcf288db5424f0a62d6da0a57e94eda66aabb02829",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "smoke-puff.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 113964,
+        "sha256": "e9eac110ce92f95715d8c7dcf288db5424f0a62d6da0a57e94eda66aabb02829"
+      }
+    },
+    {
+      "id": "steam-vent",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "steam-vent",
+        "currentTime": 0,
+        "duration": 1.5,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 229388,
+        "nodeCount": 31,
+        "meshCount": 15,
+        "triangleCount": 1784,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 36,
+        "animatedNodeCount": 13,
+        "activeClip": "steam-vent",
+        "originalAnimationBounds": {
+          "min": [
+            -0.8368615763895715,
+            -1.4901161138336505e-9,
+            -0.5636225238376668
+          ],
+          "max": [
+            0.649443718735806,
+            2.948513115664351,
+            0.675286063832591
+          ]
+        },
+        "weaponId": "common",
+        "category": "explosion-environment",
+        "catalogDuration": 1.5,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.22499999999999998,
+          "actionTime": 0.22499999999999998,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 5185,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.9750000000000001,
+          "actionTime": 0.9750000000000001,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 10000,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 135,
+      "download": {
+        "bytes": 229388,
+        "sha256": "628243b610f3240fec8ce945ef1fb97f3d50d443195d1f44717dba7301abfaca",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "steam-vent.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 229388,
+        "sha256": "628243b610f3240fec8ce945ef1fb97f3d50d443195d1f44717dba7301abfaca"
+      }
+    },
+    {
+      "id": "smoldering-fire",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "smoldering-fire",
+        "currentTime": 0,
+        "duration": 2.4000000953674316,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 123912,
+        "nodeCount": 40,
+        "meshCount": 20,
+        "triangleCount": 688,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 48,
+        "animatedNodeCount": 16,
+        "activeClip": "smoldering-fire",
+        "originalAnimationBounds": {
+          "min": [
+            -0.6531315146028207,
+            0.04000000089406967,
+            -0.5837766934364194
+          ],
+          "max": [
+            0.7090718247788721,
+            1.8419789108836035,
+            0.50554407055116
+          ]
+        },
+        "weaponId": "common",
+        "category": "explosion-environment",
+        "catalogDuration": 2.4,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.36000001430511475,
+          "actionTime": 0.36000001430511475,
+          "meshCount": 20,
+          "coloredMeshes": 20,
+          "unlitMeshes": 20,
+          "finite": true,
+          "visiblePixels": 12906,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.5600000619888306,
+          "actionTime": 1.5600000619888306,
+          "meshCount": 20,
+          "coloredMeshes": 20,
+          "unlitMeshes": 20,
+          "finite": true,
+          "visiblePixels": 22167,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 192,
+      "download": {
+        "bytes": 123912,
+        "sha256": "600b131806e3a02f562b1ce709ebeedffc62ff1426a2a843884180f1b4794e3d",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "smoldering-fire.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 123912,
+        "sha256": "600b131806e3a02f562b1ce709ebeedffc62ff1426a2a843884180f1b4794e3d"
+      }
+    },
+    {
+      "id": "ember-drift",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "ember-drift",
+        "currentTime": 0,
+        "duration": 2,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 106756,
+        "nodeCount": 46,
+        "meshCount": 22,
+        "triangleCount": 440,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 66,
+        "animatedNodeCount": 22,
+        "activeClip": "ember-drift",
+        "originalAnimationBounds": {
+          "min": [
+            -0.8711623430416752,
+            0.04993393999620424,
+            -0.6995052460217596
+          ],
+          "max": [
+            0.7973698201003119,
+            2.0500590894485557,
+            0.8260784117030364
+          ]
+        },
+        "weaponId": "common",
+        "category": "explosion-environment",
+        "catalogDuration": 2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.3,
+          "actionTime": 0.3,
+          "meshCount": 22,
+          "coloredMeshes": 22,
+          "unlitMeshes": 22,
+          "finite": true,
+          "visiblePixels": 496,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.3,
+          "actionTime": 1.3,
+          "meshCount": 22,
+          "coloredMeshes": 22,
+          "unlitMeshes": 22,
+          "finite": true,
+          "visiblePixels": 737,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 264,
+      "download": {
+        "bytes": 106756,
+        "sha256": "e5e1cdb7e46953faa0c9ea13a8d950c5e0ef570e6ed5ff50f4ea4e271a21817a",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "ember-drift.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 106756,
+        "sha256": "e5e1cdb7e46953faa0c9ea13a8d950c5e0ef570e6ed5ff50f4ea4e271a21817a"
+      }
+    },
+    {
+      "id": "burning-state",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "burning-state",
+        "currentTime": 0,
+        "duration": 1.5,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 167904,
+        "nodeCount": 57,
+        "meshCount": 29,
+        "triangleCount": 872,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 75,
+        "animatedNodeCount": 25,
+        "activeClip": "burning-state",
+        "originalAnimationBounds": {
+          "min": [
+            -0.5623683992704025,
+            -0.06384991257194544,
+            -0.6431698744205163
+          ],
+          "max": [
+            0.7598435797886122,
+            2.912470593108422,
+            0.7658873668861508
+          ]
+        },
+        "weaponId": "common",
+        "category": "damage-state",
+        "catalogDuration": 1.5,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.22499999999999998,
+          "actionTime": 0.22499999999999998,
+          "meshCount": 29,
+          "coloredMeshes": 29,
+          "unlitMeshes": 29,
+          "finite": true,
+          "visiblePixels": 10690,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.9750000000000001,
+          "actionTime": 0.9750000000000001,
+          "meshCount": 29,
+          "coloredMeshes": 29,
+          "unlitMeshes": 29,
+          "finite": true,
+          "visiblePixels": 17797,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 340,
+      "download": {
+        "bytes": 167904,
+        "sha256": "63ef5ff24cca143094c3d5048c32b9ddd637941d0ab668da4075770dd80ab044",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "burning-state.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 167904,
+        "sha256": "63ef5ff24cca143094c3d5048c32b9ddd637941d0ab668da4075770dd80ab044"
+      }
+    },
+    {
+      "id": "heavy-smoke-state",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "heavy-smoke-state",
+        "currentTime": 0,
+        "duration": 3,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 234864,
+        "nodeCount": 41,
+        "meshCount": 21,
+        "triangleCount": 1680,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 53,
+        "animatedNodeCount": 18,
+        "activeClip": "heavy-smoke-state",
+        "originalAnimationBounds": {
+          "min": [
+            -1.186751932368195,
+            -0.07821802474734935,
+            -1.2172047655852525
+          ],
+          "max": [
+            1.2857832591564333,
+            3.2926535246931357,
+            1.0519629868931526
+          ]
+        },
+        "weaponId": "common",
+        "category": "damage-state",
+        "catalogDuration": 3,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.44999999999999996,
+          "actionTime": 0.44999999999999996,
+          "meshCount": 21,
+          "coloredMeshes": 21,
+          "unlitMeshes": 21,
+          "finite": true,
+          "visiblePixels": 8308,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.9500000000000002,
+          "actionTime": 1.9500000000000002,
+          "meshCount": 21,
+          "coloredMeshes": 21,
+          "unlitMeshes": 21,
+          "finite": true,
+          "visiblePixels": 22882,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 252,
+      "download": {
+        "bytes": 234864,
+        "sha256": "95e79fefd88daa6357f0e6e7bc70985ca60f73778799d4c2e6bf9de7a6fe89b5",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "heavy-smoke-state.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 234864,
+        "sha256": "95e79fefd88daa6357f0e6e7bc70985ca60f73778799d4c2e6bf9de7a6fe89b5"
+      }
+    },
+    {
+      "id": "gas-leak-state",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "gas-leak-state",
+        "currentTime": 0,
+        "duration": 2,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 268136,
+        "nodeCount": 35,
+        "meshCount": 17,
+        "triangleCount": 2096,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 41,
+        "animatedNodeCount": 15,
+        "activeClip": "gas-leak-state",
+        "originalAnimationBounds": {
+          "min": [
+            -0.14399999380111694,
+            1.7881393449270533e-9,
+            -0.6944301159561045
+          ],
+          "max": [
+            1.958470175528366,
+            1.487894601750341,
+            1.158866360968559
+          ]
+        },
+        "weaponId": "common",
+        "category": "damage-state",
+        "catalogDuration": 2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.3,
+          "actionTime": 0.3,
+          "meshCount": 17,
+          "coloredMeshes": 17,
+          "unlitMeshes": 17,
+          "finite": true,
+          "visiblePixels": 6764,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.3,
+          "actionTime": 1.3,
+          "meshCount": 17,
+          "coloredMeshes": 17,
+          "unlitMeshes": 17,
+          "finite": true,
+          "visiblePixels": 30618,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 156,
+      "download": {
+        "bytes": 268136,
+        "sha256": "b9f0e0258fdb2cc6131ae6318b9adce6ba1b5c73cffab6895f851f2cc9d7a290",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "gas-leak-state.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 268136,
+        "sha256": "b9f0e0258fdb2cc6131ae6318b9adce6ba1b5c73cffab6895f851f2cc9d7a290"
+      }
+    },
+    {
+      "id": "overheat-state",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "overheat-state",
+        "currentTime": 0,
+        "duration": 1.2000000476837158,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 239536,
+        "nodeCount": 23,
+        "meshCount": 12,
+        "triangleCount": 1992,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 20,
+        "animatedNodeCount": 8,
+        "activeClip": "overheat-state",
+        "originalAnimationBounds": {
+          "min": [
+            -0.48113531878386107,
+            0.020000002682209028,
+            -0.35619687784112175
+          ],
+          "max": [
+            0.4932369900882999,
+            1.811195025915454,
+            0.49646605805080374
+          ]
+        },
+        "weaponId": "common",
+        "category": "damage-state",
+        "catalogDuration": 1.2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.18000000715255737,
+          "actionTime": 0.18000000715255737,
+          "meshCount": 12,
+          "coloredMeshes": 12,
+          "unlitMeshes": 12,
+          "finite": true,
+          "visiblePixels": 11436,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.7800000309944153,
+          "actionTime": 0.7800000309944153,
+          "meshCount": 12,
+          "coloredMeshes": 12,
+          "unlitMeshes": 12,
+          "finite": true,
+          "visiblePixels": 20031,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 64,
+      "download": {
+        "bytes": 239536,
+        "sha256": "ff778659a98705b0a061fa8e4022facd92d768226f6decbede6ed66c74befadc",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "overheat-state.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 239536,
+        "sha256": "ff778659a98705b0a061fa8e4022facd92d768226f6decbede6ed66c74befadc"
+      }
+    },
+    {
+      "id": "short-circuit-state",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "short-circuit-state",
+        "currentTime": 0,
+        "duration": 0.800000011920929,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 276940,
+        "nodeCount": 36,
+        "meshCount": 18,
+        "triangleCount": 2200,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 35,
+        "animatedNodeCount": 15,
+        "activeClip": "short-circuit-state",
+        "originalAnimationBounds": {
+          "min": [
+            -0.3332815460171756,
+            -7.450580569168253e-10,
+            -0.3842341426450129
+          ],
+          "max": [
+            0.38460514547700086,
+            1.2350548686694849,
+            0.46607518597695624
+          ]
+        },
+        "weaponId": "common",
+        "category": "damage-state",
+        "catalogDuration": 0.8,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.12000000178813934,
+          "actionTime": 0.12000000178813934,
+          "meshCount": 18,
+          "coloredMeshes": 18,
+          "unlitMeshes": 18,
+          "finite": true,
+          "visiblePixels": 13981,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.5200000077486039,
+          "actionTime": 0.5200000077486039,
+          "meshCount": 18,
+          "coloredMeshes": 18,
+          "unlitMeshes": 18,
+          "finite": true,
+          "visiblePixels": 23316,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 135,
+      "download": {
+        "bytes": 276940,
+        "sha256": "6bac2599d74024cbb044bd1910fd9ef36e6cf707944d4c0f5847e6d3f4beb710",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "short-circuit-state.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 276940,
+        "sha256": "6bac2599d74024cbb044bd1910fd9ef36e6cf707944d4c0f5847e6d3f4beb710"
+      }
+    },
+    {
+      "id": "engine-stall-state",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "engine-stall-state",
+        "currentTime": 0,
+        "duration": 2.200000047683716,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 136368,
+        "nodeCount": 30,
+        "meshCount": 15,
+        "triangleCount": 972,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 25,
+        "animatedNodeCount": 9,
+        "activeClip": "engine-stall-state",
+        "originalAnimationBounds": {
+          "min": [
+            -0.9995328131169443,
+            -0.19468259335479432,
+            -1.1037940633881445
+          ],
+          "max": [
+            0.5145100726779909,
+            1.7278762220407957,
+            0.35805206835269926
+          ]
+        },
+        "weaponId": "common",
+        "category": "damage-state",
+        "catalogDuration": 2.2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.33000000715255734,
+          "actionTime": 0.33000000715255734,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 16747,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.4300000309944154,
+          "actionTime": 1.4300000309944154,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 27920,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 118,
+      "download": {
+        "bytes": 136368,
+        "sha256": "8631484f882ed6971fe0b00ebb0717970783ba9cbd60ea6fdab6b1e22b154484",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "engine-stall-state.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 136368,
+        "sha256": "8631484f882ed6971fe0b00ebb0717970783ba9cbd60ea6fdab6b1e22b154484"
+      }
+    },
+    {
+      "id": "envelope-rupture-state",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "envelope-rupture-state",
+        "currentTime": 0,
+        "duration": 1.399999976158142,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 128884,
+        "nodeCount": 45,
+        "meshCount": 25,
+        "triangleCount": 680,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 49,
+        "animatedNodeCount": 17,
+        "activeClip": "envelope-rupture-state",
+        "originalAnimationBounds": {
+          "min": [
+            -1.0500157043294573,
+            0.2007055768750848,
+            -0.9001427295941261
+          ],
+          "max": [
+            1.0501899093729055,
+            2.42335788251845,
+            0.9001682823012997
+          ]
+        },
+        "weaponId": "common",
+        "category": "damage-state",
+        "catalogDuration": 1.4,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.2099999964237213,
+          "actionTime": 0.2099999964237213,
+          "meshCount": 25,
+          "coloredMeshes": 25,
+          "unlitMeshes": 25,
+          "finite": true,
+          "visiblePixels": 7232,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.9099999845027924,
+          "actionTime": 0.9099999845027924,
+          "meshCount": 25,
+          "coloredMeshes": 25,
+          "unlitMeshes": 25,
+          "finite": true,
+          "visiblePixels": 12223,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 294,
+      "download": {
+        "bytes": 128884,
+        "sha256": "50e5c1ddf4c227c7b49e70fa5e6afc17c90d9b2731b823dd48018325da92b642",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "envelope-rupture-state.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 128884,
+        "sha256": "50e5c1ddf4c227c7b49e70fa5e6afc17c90d9b2731b823dd48018325da92b642"
+      }
+    },
+    {
+      "id": "module-detach-state",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "module-detach-state",
+        "currentTime": 0,
+        "duration": 1,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 133624,
+        "nodeCount": 39,
+        "meshCount": 23,
+        "triangleCount": 816,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 39,
+        "animatedNodeCount": 13,
+        "activeClip": "module-detach-state",
+        "originalAnimationBounds": {
+          "min": [
+            -0.6782630646044078,
+            -0.00028081941925595544,
+            -0.7620570722989545
+          ],
+          "max": [
+            1.0002810297718407,
+            1.2004504956089617,
+            0.759529875006269
+          ]
+        },
+        "weaponId": "common",
+        "category": "damage-state",
+        "catalogDuration": 1,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.15,
+          "actionTime": 0.15,
+          "meshCount": 23,
+          "coloredMeshes": 23,
+          "unlitMeshes": 23,
+          "finite": true,
+          "visiblePixels": 19104,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.65,
+          "actionTime": 0.65,
+          "meshCount": 23,
+          "coloredMeshes": 23,
+          "unlitMeshes": 23,
+          "finite": true,
+          "visiblePixels": 18777,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 216,
+      "download": {
+        "bytes": 133624,
+        "sha256": "5ab66177070d315574612622b757517ab1c919a491300f722482d5d813cf8a21",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "module-detach-state.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 133624,
+        "sha256": "5ab66177070d315574612622b757517ab1c919a491300f722482d5d813cf8a21"
+      }
+    },
+    {
+      "id": "shield-pulse",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "shield-pulse",
+        "currentTime": 0,
+        "duration": 1.100000023841858,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 659600,
+        "nodeCount": 15,
+        "meshCount": 9,
+        "triangleCount": 5996,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 4,
+        "animatedNodeCount": 4,
+        "activeClip": "shield-pulse",
+        "originalAnimationBounds": {
+          "min": [
+            -0.9467621118564292,
+            0.000053000001817010315,
+            -0.9467621118564292
+          ],
+          "max": [
+            0.9467621118564292,
+            1.0217008965533168,
+            0.9467621118564292
+          ]
+        },
+        "weaponId": "common",
+        "category": "defense-support",
+        "catalogDuration": 1.1,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.16500000357627867,
+          "actionTime": 0.16500000357627867,
+          "meshCount": 9,
+          "coloredMeshes": 9,
+          "unlitMeshes": 9,
+          "finite": true,
+          "visiblePixels": 14460,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.7150000154972077,
+          "actionTime": 0.7150000154972077,
+          "meshCount": 9,
+          "coloredMeshes": 9,
+          "unlitMeshes": 9,
+          "finite": true,
+          "visiblePixels": 30254,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 28,
+      "download": {
+        "bytes": 659600,
+        "sha256": "3b04e24ba9dd5d8fc50a94b18fb9b6de06f65ac24de374bbf191578fe9bbebe0",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "shield-pulse.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 659600,
+        "sha256": "3b04e24ba9dd5d8fc50a94b18fb9b6de06f65ac24de374bbf191578fe9bbebe0"
+      }
+    },
+    {
+      "id": "armor-block",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "armor-block",
+        "currentTime": 0,
+        "duration": 0.550000011920929,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 98556,
+        "nodeCount": 38,
+        "meshCount": 20,
+        "triangleCount": 498,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 42,
+        "animatedNodeCount": 16,
+        "activeClip": "armor-block",
+        "originalAnimationBounds": {
+          "min": [
+            -0.9546873949009351,
+            -0.02185896546987888,
+            -0.9635312488120276
+          ],
+          "max": [
+            0.8430669061508713,
+            0.5016905919403789,
+            0.992102914729791
+          ]
+        },
+        "weaponId": "common",
+        "category": "defense-support",
+        "catalogDuration": 0.55,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.08250000178813933,
+          "actionTime": 0.08250000178813933,
+          "meshCount": 20,
+          "coloredMeshes": 20,
+          "unlitMeshes": 20,
+          "finite": true,
+          "visiblePixels": 22151,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.35750000774860385,
+          "actionTime": 0.35750000774860385,
+          "meshCount": 20,
+          "coloredMeshes": 20,
+          "unlitMeshes": 20,
+          "finite": true,
+          "visiblePixels": 21215,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 170,
+      "download": {
+        "bytes": 98556,
+        "sha256": "6ae0a31316887237d1a69004ec3bdefd49d9ac1e6b130568663757c2759ce19b",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "armor-block.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 98556,
+        "sha256": "6ae0a31316887237d1a69004ec3bdefd49d9ac1e6b130568663757c2759ce19b"
+      }
+    },
+    {
+      "id": "repair-stitch",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "repair-stitch",
+        "currentTime": 0,
+        "duration": 2,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 213672,
+        "nodeCount": 30,
+        "meshCount": 15,
+        "triangleCount": 1758,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 14,
+        "animatedNodeCount": 12,
+        "activeClip": "repair-stitch",
+        "originalAnimationBounds": {
+          "min": [
+            -0.44999999344348907,
+            0.00006108867667198401,
+            -0.4800194056806995
+          ],
+          "max": [
+            0.44999999344348907,
+            0.371142868632769,
+            0.4800239892725125
+          ]
+        },
+        "weaponId": "common",
+        "category": "defense-support",
+        "catalogDuration": 2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.3,
+          "actionTime": 0.3,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 88489,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.3,
+          "actionTime": 1.3,
+          "meshCount": 15,
+          "coloredMeshes": 15,
+          "unlitMeshes": 15,
+          "finite": true,
+          "visiblePixels": 89801,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 31,
+      "download": {
+        "bytes": 213672,
+        "sha256": "508616e3772786ed036f6c6047b2dfa36d46463ce89ac6c07c70031a56d458dd",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "repair-stitch.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 213672,
+        "sha256": "508616e3772786ed036f6c6047b2dfa36d46463ce89ac6c07c70031a56d458dd"
+      }
+    },
+    {
+      "id": "healing-pulse",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "healing-pulse",
+        "currentTime": 0,
+        "duration": 1.7999999523162842,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 110112,
+        "nodeCount": 22,
+        "meshCount": 10,
+        "triangleCount": 812,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 20,
+        "animatedNodeCount": 10,
+        "activeClip": "healing-pulse",
+        "originalAnimationBounds": {
+          "min": [
+            -0.707887295382866,
+            0.039974999104370364,
+            -0.707887295382866
+          ],
+          "max": [
+            0.707887295382866,
+            1.6261701597161384,
+            0.707887295382866
+          ]
+        },
+        "weaponId": "common",
+        "category": "defense-support",
+        "catalogDuration": 1.8,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.26999999284744264,
+          "actionTime": 0.26999999284744264,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 2264,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.1699999690055847,
+          "actionTime": 1.1699999690055847,
+          "meshCount": 10,
+          "coloredMeshes": 10,
+          "unlitMeshes": 10,
+          "finite": true,
+          "visiblePixels": 9792,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 67,
+      "download": {
+        "bytes": 110112,
+        "sha256": "e914ff7233861ca80d82631c0a545a9c270eaa29cdabadf4aaecf814cbaef46d",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "healing-pulse.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 110112,
+        "sha256": "e914ff7233861ca80d82631c0a545a9c270eaa29cdabadf4aaecf814cbaef46d"
+      }
+    },
+    {
+      "id": "salvage-tether",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "salvage-tether",
+        "currentTime": 0,
+        "duration": 2,
+        "playing": false,
+        "loop": true,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 403264,
+        "nodeCount": 35,
+        "meshCount": 18,
+        "triangleCount": 3480,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 16,
+        "animatedNodeCount": 14,
+        "activeClip": "salvage-tether",
+        "originalAnimationBounds": {
+          "min": [
+            -0.2175000014901161,
+            -5.9604643443123e-10,
+            -0.1599999964237213
+          ],
+          "max": [
+            0.2175000014901161,
+            0.31216904878616336,
+            2.1767268612429542
+          ]
+        },
+        "weaponId": "common",
+        "category": "defense-support",
+        "catalogDuration": 2,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.3,
+          "actionTime": 0.3,
+          "meshCount": 18,
+          "coloredMeshes": 18,
+          "unlitMeshes": 18,
+          "finite": true,
+          "visiblePixels": 30435,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 1.3,
+          "actionTime": 1.3,
+          "meshCount": 18,
+          "coloredMeshes": 18,
+          "unlitMeshes": 18,
+          "finite": true,
+          "visiblePixels": 38134,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 46,
+      "download": {
+        "bytes": 403264,
+        "sha256": "a09824bb95b1ffb69331c860e8337439185256d33bbb3b760e6942962fca717c",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "salvage-tether.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 403264,
+        "sha256": "a09824bb95b1ffb69331c860e8337439185256d33bbb3b760e6942962fca717c"
+      }
+    },
+    {
+      "id": "mount-lock",
+      "stats": {
+        "ready": true,
+        "offline": true,
+        "selectedId": "mount-lock",
+        "currentTime": 0,
+        "duration": 1,
+        "playing": false,
+        "loop": false,
+        "speed": 1,
+        "outlineEnabled": false,
+        "background": "cream",
+        "autoRotate": false,
+        "time": 0,
+        "target": "none",
+        "sourceBytes": 106712,
+        "nodeCount": 22,
+        "meshCount": 13,
+        "triangleCount": 816,
+        "textureCount": 0,
+        "texturesReady": true,
+        "textures": [],
+        "animationClipCount": 1,
+        "animationTrackCount": 10,
+        "animatedNodeCount": 6,
+        "activeClip": "mount-lock",
+        "originalAnimationBounds": {
+          "min": [
+            -0.8466799689075724,
+            0.00009800000477395952,
+            -0.8633499694048334
+          ],
+          "max": [
+            0.8466799689075724,
+            0.6113364753350756,
+            0.8466799689075724
+          ]
+        },
+        "weaponId": "common",
+        "category": "defense-support",
+        "catalogDuration": 1,
+        "error": null
+      },
+      "samples": [
+        {
+          "ratio": 0.15,
+          "time": 0.15,
+          "actionTime": 0.15,
+          "meshCount": 13,
+          "coloredMeshes": 13,
+          "unlitMeshes": 13,
+          "finite": true,
+          "visiblePixels": 40542,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        },
+        {
+          "ratio": 0.65,
+          "time": 0.65,
+          "actionTime": 0.65,
+          "meshCount": 13,
+          "coloredMeshes": 13,
+          "unlitMeshes": 13,
+          "finite": true,
+          "visiblePixels": 30860,
+          "maxAlpha": 255,
+          "pixelCount": 736890
+        }
+      ],
+      "changedMatrixElements": 28,
+      "download": {
+        "bytes": 106712,
+        "sha256": "47e29dab2cf93f0fdbef76fc8e67474db41c007e4d1d23a6fde62ededdeada9a",
+        "magic": [
+          103,
+          108,
+          84,
+          70
+        ],
+        "filename": "mount-lock.glb",
+        "urlType": "blob"
+      },
+      "source": {
+        "bytes": 106712,
+        "sha256": "47e29dab2cf93f0fdbef76fc8e67474db41c007e4d1d23a6fde62ededdeada9a"
+      }
+    }
+  ],
+  "ghosting": [
+    {
+      "id": "machine-gun-muzzle",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "cameraDelta": 0,
+      "cameraUnchanged": true,
+      "animationTimeUnchanged": true,
+      "outlineAutoClear": true
+    },
+    {
+      "id": "large-explosion",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "cameraDelta": 0,
+      "cameraUnchanged": true,
+      "animationTimeUnchanged": true,
+      "outlineAutoClear": true
+    },
+    {
+      "id": "heavy-smoke-state",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "cameraDelta": 0,
+      "cameraUnchanged": true,
+      "animationTimeUnchanged": true,
+      "outlineAutoClear": true
+    },
+    {
+      "id": "repair-stitch",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "cameraDelta": 0,
+      "cameraUnchanged": true,
+      "animationTimeUnchanged": true,
+      "outlineAutoClear": true
+    }
+  ],
+  "camera": [
+    {
+      "id": "machine-gun-muzzle",
+      "dragRotate": true,
+      "wheelZoom": true,
+      "reset": true,
+      "fit": true,
+      "autoRotate": true
+    },
+    {
+      "id": "large-explosion",
+      "dragRotate": true,
+      "wheelZoom": true,
+      "reset": true,
+      "fit": true,
+      "autoRotate": true
+    },
+    {
+      "id": "repair-stitch",
+      "dragRotate": true,
+      "wheelZoom": true,
+      "reset": true,
+      "fit": true,
+      "autoRotate": true
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "passed": true,
+  "transport": {
+    "id": "heavy-smoke-state",
+    "pause": true,
+    "lastFrame": {
+      "time": 3,
+      "duration": 3,
+      "actionTime": 3,
+      "playing": false
+    },
+    "oneShot": {
+      "time": 3,
+      "duration": 3,
+      "playing": false,
+      "loop": false
+    },
+    "looping": {
+      "time": 0.1800999999999997,
+      "duration": 3,
+      "playing": true,
+      "loop": true
+    },
+    "speedSelections": [
+      0.5,
+      2
+    ],
+    "play": true,
+    "replay": true,
+    "timeline": true
+  },
+  "presentation": {
+    "targets": [
+      "wood",
+      "metal",
+      "cloth",
+      "none"
+    ],
+    "backgrounds": [
+      "deepteal",
+      "cream"
+    ]
+  },
+  "filter": {
+    "weapon": "01-machine-gun",
+    "choices": 3,
+    "allChoices": 48
+  },
+  "buttonDownload": {
+    "id": "machine-gun-muzzle",
+    "filename": "machine-gun-muzzle.glb",
+    "bytes": 43532,
+    "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9",
+    "matchesSource": true
+  },
+  "mobile": {
+    "overflow": false,
+    "viewport": 390,
+    "documentWidth": 390,
+    "canvasWidth": 364,
+    "finiteProjection": true
+  },
+  "externalRequests": []
+}

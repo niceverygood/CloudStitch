@@ -1,0 +1,886 @@
+{
+  "id": "repair-workshop",
+  "order": 2,
+  "name_ko": "수리 공방",
+  "name_en": "Repair Workshop",
+  "category": "hero-buildings",
+  "role": "종항 정비소의 수리·제작 기능을 알아보는 외관",
+  "build_method": "hero_meshy",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 5.8,
+    "depth": 4.8,
+    "height": 4.8,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "hero/repair-workshop/model-closed-roof.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Existing downloaded Meshy hero GLB, inspected without source edits",
+  "triangles": 8052,
+  "mesh_count": 4,
+  "primitive_count": 4,
+  "node_count": 5,
+  "material_count": 2,
+  "texture_count": 1,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    }
+  ],
+  "vertex_color_primitive_count": 3,
+  "vertex_colors": false,
+  "animation_count": 0,
+  "bytes": 3838916,
+  "sha256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+  "mesh_definition_count": 4,
+  "unique_geometry_triangles": 8052,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 4,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.4748539924621582,
+        -0.32348600029945374,
+        -0.3527829945087433
+      ],
+      "max": [
+        0.47290000319480896,
+        0.32348600029945374,
+        0.35082998871803284
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/0/matrix"
+        }
+      ]
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 1,
+    "messages": [
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/0/matrix"
+      }
+    ]
+  },
+  "task_id": "01a14cda-51fc-77be-9f0c-7443469230d6",
+  "operation_id": "de1592bc-7124-44e5-9fb4-bfd946b42908",
+  "consumed_credits": 15,
+  "original_source_preserved": true,
+  "source_model": "hero/repair-workshop/model.glb",
+  "source_sha256": "d1a9324d7f976dca68032c7b08fb34f0c747690e5621bebc82976db695a97c68",
+  "normal_repair": {
+    "log": "hero/repair-workshop/repair-log.json",
+    "original_sha256": "d1a9324d7f976dca68032c7b08fb34f0c747690e5621bebc82976db695a97c68",
+    "repaired_sha256": "46246b50518dde393b08506a965e68de14abd521408fd71d0ea97d33a4acb6d2",
+    "normal_vectors_repaired": 14,
+    "zero_normal_vectors": 14,
+    "non_unit_normal_vectors": 0,
+    "official_errors_after": 0
+  },
+  "roof_repair_log": "hero/repair-workshop/roof-repair-log.json",
+  "roof_repair": {
+    "game_title": "Cloudstitch",
+    "id": "repair-workshop",
+    "tool": "tools/world-assets/close-hero-roof.mjs",
+    "original_source": {
+      "model": "hero/repair-workshop/model.glb",
+      "sha256": "d1a9324d7f976dca68032c7b08fb34f0c747690e5621bebc82976db695a97c68",
+      "bytes": 3788284
+    },
+    "base_normal_copy": {
+      "model": "hero/repair-workshop/model-repaired.glb",
+      "sha256": "46246b50518dde393b08506a965e68de14abd521408fd71d0ea97d33a4acb6d2",
+      "bytes": 3788224
+    },
+    "repaired_source": {
+      "model": "hero/repair-workshop/model-closed-roof.glb",
+      "sha256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+      "bytes": 3838916
+    },
+    "original_source_preserved": true,
+    "base_normal_copy_preserved": true,
+    "original_binary_prefix_preserved": true,
+    "added_geometry": {
+      "mesh_count": 3,
+      "triangles": 436,
+      "material_count": 1,
+      "materials": [
+        {
+          "type": "KHR_materials_unlit",
+          "vertex_colors": true,
+          "double_sided": true,
+          "colors": [
+            "#346b7d",
+            "#f0dfb5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "name": "left_recessed_roof_liner",
+          "kind": "Thin recessed teal roof liner",
+          "grid": [
+            7,
+            5
+          ],
+          "thickness": 0.003,
+          "source_surface_sample_clearance": 0.008,
+          "source_surface_fitted_vertices": 48,
+          "vertices": 48,
+          "coordinates": [
+            [
+              -0.445,
+              0.023639999999999998,
+              -0.3
+            ],
+            [
+              -0.4011428571428572,
+              0.0365052269891934,
+              -0.3
+            ],
+            [
+              -0.3572857142857143,
+              0.0530650718170076,
+              -0.3
+            ],
+            [
+              -0.31342857142857145,
+              0.08567026661450683,
+              -0.3
+            ],
+            [
+              -0.2695714285714286,
+              0.0816288778257705,
+              -0.3
+            ],
+            [
+              -0.22571428571428573,
+              0.11497329926346361,
+              -0.3
+            ],
+            [
+              -0.18185714285714288,
+              0.14650854814354414,
+              -0.3
+            ],
+            [
+              -0.138,
+              0.16607886076738632,
+              -0.3
+            ],
+            [
+              -0.445,
+              0.02684,
+              -0.182
+            ],
+            [
+              -0.4011428571428572,
+              0.03764064459889716,
+              -0.182
+            ],
+            [
+              -0.3572857142857143,
+              0.05214579863041952,
+              -0.182
+            ],
+            [
+              -0.31342857142857145,
+              0.08708087247926144,
+              -0.182
+            ],
+            [
+              -0.2695714285714286,
+              0.11104571428571429,
+              -0.182
+            ],
+            [
+              -0.22571428571428573,
+              0.11471265864120128,
+              -0.182
+            ],
+            [
+              -0.18185714285714288,
+              0.14662794746954427,
+              -0.182
+            ],
+            [
+              -0.138,
+              0.1645991462569042,
+              -0.182
+            ],
+            [
+              -0.445,
+              0.0029865958365695236,
+              -0.064
+            ],
+            [
+              -0.4011428571428572,
+              0.006578291599962378,
+              -0.064
+            ],
+            [
+              -0.3572857142857143,
+              0.021649279040926846,
+              -0.064
+            ],
+            [
+              -0.31342857142857145,
+              0.08563403111207502,
+              -0.064
+            ],
+            [
+              -0.2695714285714286,
+              0.11264571428571428,
+              -0.064
+            ],
+            [
+              -0.22571428571428573,
+              0.11824839510425855,
+              -0.064
+            ],
+            [
+              -0.18185714285714288,
+              0.14777896868560209,
+              -0.064
+            ],
+            [
+              -0.138,
+              0.16311943174642207,
+              -0.064
+            ],
+            [
+              -0.445,
+              0.004327828893150039,
+              0.05399999999999999
+            ],
+            [
+              -0.4011428571428572,
+              0.012593956136019886,
+              0.05399999999999999
+            ],
+            [
+              -0.3572857142857143,
+              0.03314289788343489,
+              0.05399999999999999
+            ],
+            [
+              -0.31342857142857145,
+              0.08430720798473956,
+              0.05399999999999999
+            ],
+            [
+              -0.2695714285714286,
+              0.11444571428571428,
+              0.05399999999999999
+            ],
+            [
+              -0.22571428571428573,
+              0.12178413156731582,
+              0.05399999999999999
+            ],
+            [
+              -0.18185714285714288,
+              0.14892998990165995,
+              0.05399999999999999
+            ],
+            [
+              -0.138,
+              0.16163971723594,
+              0.05399999999999999
+            ],
+            [
+              -0.445,
+              0.006673534619998152,
+              0.172
+            ],
+            [
+              -0.4011428571428572,
+              0.01860962067207745,
+              0.172
+            ],
+            [
+              -0.3572857142857143,
+              0.03893834798860669,
+              0.172
+            ],
+            [
+              -0.31342857142857145,
+              0.08298038485740411,
+              0.172
+            ],
+            [
+              -0.2695714285714286,
+              0.11677904761904762,
+              0.172
+            ],
+            [
+              -0.22571428571428573,
+              0.12520077762335546,
+              0.172
+            ],
+            [
+              -0.18185714285714288,
+              0.1504582303214715,
+              0.172
+            ],
+            [
+              -0.138,
+              0.16016000272545788,
+              0.172
+            ],
+            [
+              -0.445,
+              0.027874730371626917,
+              0.29
+            ],
+            [
+              -0.4011428571428572,
+              0.037851173164029146,
+              0.29
+            ],
+            [
+              -0.3572857142857143,
+              0.06236331618768815,
+              0.29
+            ],
+            [
+              -0.31342857142857145,
+              0.09646095238095237,
+              0.29
+            ],
+            [
+              -0.2695714285714286,
+              0.08862819330382632,
+              0.29
+            ],
+            [
+              -0.22571428571428573,
+              0.12635179883941328,
+              0.29
+            ],
+            [
+              -0.18185714285714288,
+              0.15175043848162706,
+              0.29
+            ],
+            [
+              -0.138,
+              0.16082353121138837,
+              0.29
+            ]
+          ],
+          "triangles": 188,
+          "color_hex": "#346b7d"
+        },
+        {
+          "name": "right_recessed_roof_liner",
+          "kind": "Thin recessed teal roof liner",
+          "grid": [
+            7,
+            5
+          ],
+          "thickness": 0.003,
+          "source_surface_sample_clearance": 0.008,
+          "source_surface_fitted_vertices": 48,
+          "vertices": 48,
+          "coordinates": [
+            [
+              -0.138,
+              0.16607886076738632,
+              -0.3
+            ],
+            [
+              -0.10185714285714287,
+              0.14673754330687733,
+              -0.3
+            ],
+            [
+              -0.06571428571428573,
+              0.12401428571428569,
+              -0.3
+            ],
+            [
+              -0.029571428571428575,
+              0.10052142857142855,
+              -0.3
+            ],
+            [
+              0.006571428571428561,
+              0.06582422800715537,
+              -0.3
+            ],
+            [
+              0.04271428571428571,
+              0.0316584345203172,
+              -0.3
+            ],
+            [
+              0.07885714285714285,
+              0.015578207534723061,
+              -0.3
+            ],
+            [
+              0.115,
+              0.006549999999999977,
+              -0.3
+            ],
+            [
+              -0.138,
+              0.1645991462569042,
+              -0.182
+            ],
+            [
+              -0.10185714285714287,
+              0.14066712230619782,
+              -0.182
+            ],
+            [
+              -0.06571428571428573,
+              0.11691209693689225,
+              -0.182
+            ],
+            [
+              -0.029571428571428575,
+              0.09315707156758662,
+              -0.182
+            ],
+            [
+              0.006571428571428561,
+              0.07392492455091598,
+              -0.182
+            ],
+            [
+              0.04271428571428571,
+              0.0494670429766419,
+              -0.182
+            ],
+            [
+              0.07885714285714285,
+              0.02664963834088164,
+              -0.182
+            ],
+            [
+              0.115,
+              0.0012388528146720715,
+              -0.182
+            ],
+            [
+              -0.138,
+              0.16311943174642207,
+              -0.064
+            ],
+            [
+              -0.10185714285714287,
+              0.1515816002066918,
+              -0.064
+            ],
+            [
+              -0.06571428571428573,
+              0.1288142857142857,
+              -0.064
+            ],
+            [
+              -0.029571428571428575,
+              0.10532142857142855,
+              -0.064
+            ],
+            [
+              0.006571428571428561,
+              0.07736393139932995,
+              -0.064
+            ],
+            [
+              0.04271428571428571,
+              0.058335714285714275,
+              -0.064
+            ],
+            [
+              0.07885714285714285,
+              0.030361356994273232,
+              -0.064
+            ],
+            [
+              0.115,
+              0.005597188861905807,
+              -0.064
+            ],
+            [
+              -0.138,
+              0.16163971723594,
+              0.05399999999999999
+            ],
+            [
+              -0.10185714285714287,
+              0.1489150653853178,
+              0.05399999999999999
+            ],
+            [
+              -0.06571428571428573,
+              0.13061428571428568,
+              0.05399999999999999
+            ],
+            [
+              -0.029571428571428575,
+              0.10712142857142855,
+              0.05399999999999999
+            ],
+            [
+              0.006571428571428561,
+              0.08120668225453037,
+              0.05399999999999999
+            ],
+            [
+              0.04271428571428571,
+              0.06013571428571428,
+              0.05399999999999999
+            ],
+            [
+              0.07885714285714285,
+              0.03407307564766488,
+              0.05399999999999999
+            ],
+            [
+              0.115,
+              0.005248242117468278,
+              0.05399999999999999
+            ],
+            [
+              -0.138,
+              0.16016000272545788,
+              0.172
+            ],
+            [
+              -0.10185714285714287,
+              0.1554190402959369,
+              0.172
+            ],
+            [
+              -0.06571428571428573,
+              0.13294761904761904,
+              0.172
+            ],
+            [
+              -0.029571428571428575,
+              0.10945476190476189,
+              0.172
+            ],
+            [
+              0.006571428571428561,
+              0.08504943310973084,
+              0.172
+            ],
+            [
+              0.04271428571428571,
+              0.043650080053220915,
+              0.172
+            ],
+            [
+              0.07885714285714285,
+              0.037784794301056475,
+              0.172
+            ],
+            [
+              0.115,
+              0.004899295373030695,
+              0.172
+            ],
+            [
+              -0.138,
+              0.16082353121138837,
+              0.29
+            ],
+            [
+              -0.10185714285714287,
+              0.15477087434763004,
+              0.29
+            ],
+            [
+              -0.06571428571428573,
+              0.1328321027207901,
+              0.29
+            ],
+            [
+              -0.029571428571428575,
+              0.11018809523809522,
+              0.29
+            ],
+            [
+              0.006571428571428561,
+              0.08669523809523808,
+              0.29
+            ],
+            [
+              0.04271428571428571,
+              0.04664307799739315,
+              0.29
+            ],
+            [
+              0.07885714285714285,
+              0.009923126710178871,
+              0.29
+            ],
+            [
+              0.115,
+              0.016216666666666643,
+              0.29
+            ]
+          ],
+          "triangles": 188,
+          "color_hex": "#346b7d"
+        },
+        {
+          "name": "narrow_recessed_ridge_infill",
+          "kind": "Local infill below existing ridge",
+          "coordinates": [
+            [
+              -0.183,
+              0.16999999999999998,
+              -0.3
+            ],
+            [
+              -0.093,
+              0.16999999999999998,
+              -0.3
+            ],
+            [
+              -0.183,
+              0.17146938775510204,
+              -0.21571428571428575
+            ],
+            [
+              -0.093,
+              0.17146938775510204,
+              -0.21571428571428575
+            ],
+            [
+              -0.183,
+              0.17244897959183672,
+              -0.13142857142857142
+            ],
+            [
+              -0.093,
+              0.17244897959183672,
+              -0.13142857142857142
+            ],
+            [
+              -0.183,
+              0.17293877551020406,
+              -0.047142857142857125
+            ],
+            [
+              -0.093,
+              0.17293877551020406,
+              -0.047142857142857125
+            ],
+            [
+              -0.183,
+              0.1741768707482993,
+              0.037142857142857116
+            ],
+            [
+              -0.093,
+              0.1741768707482993,
+              0.037142857142857116
+            ],
+            [
+              -0.183,
+              0.17649659863945577,
+              0.12142857142857143
+            ],
+            [
+              -0.093,
+              0.17649659863945577,
+              0.12142857142857143
+            ],
+            [
+              -0.183,
+              0.1783265306122449,
+              0.20571428571428568
+            ],
+            [
+              -0.093,
+              0.1783265306122449,
+              0.20571428571428568
+            ],
+            [
+              -0.183,
+              0.17966666666666664,
+              0.29
+            ],
+            [
+              -0.093,
+              0.17966666666666664,
+              0.29
+            ]
+          ],
+          "thickness": 0.003,
+          "triangles": 60,
+          "color_hex": "#346b7d"
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.4449999928474426,
+          -0.0017611471703276038,
+          -0.30000001192092896
+        ],
+        "max": [
+          0.11500000208616257,
+          0.179666668176651,
+          0.28999999165534973
+        ]
+      },
+      "units": "Original mesh-local design coordinates, not approved metres."
+    },
+    "changes": [
+      "Added only thin recessed teal roof backing and a narrow ridge strip.",
+      "Original textured tile surfaces, positions, UVs, triangles and materials retained. No wholesale cap of boundary loops."
+    ],
+    "before": {
+      "bounds": {
+        "min": [
+          -0.4748539924621582,
+          -0.32348600029945374,
+          -0.3527829945087433
+        ],
+        "max": [
+          0.47290000319480896,
+          0.32348600029945374,
+          0.35082998871803284
+        ]
+      },
+      "normal_copy_validator": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1,
+        "hints": 0,
+        "truncated": false,
+        "messages": [
+          {
+            "code": "NODE_MATRIX_DEFAULT",
+            "message": "Do not specify default transform matrix.",
+            "severity": 2,
+            "pointer": "/nodes/0/matrix"
+          }
+        ]
+      }
+    },
+    "after": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/0/matrix"
+        }
+      ],
+      "triangles": 8052,
+      "mesh_count": 4,
+      "material_count": 2,
+      "bounds": {
+        "min": [
+          -0.4748539924621582,
+          -0.32348600029945374,
+          -0.3527829945087433
+        ],
+        "max": [
+          0.47290000319480896,
+          0.32348600029945374,
+          0.35082998871803284
+        ]
+      },
+      "geometry_only_GLTFLoader_roundtrip": true
+    },
+    "visual_comparison": {
+      "status": "completed four-direction actual GLB render comparison",
+      "directory": "hero/repair-workshop/roof-review",
+      "page": "hero/repair-workshop/roof-review/index.html",
+      "base_normal_copy_sha256": "46246b50518dde393b08506a965e68de14abd521408fd71d0ea97d33a4acb6d2",
+      "repaired_source_sha256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+      "textures_decoded": true,
+      "browser_errors": [],
+      "external_requests": [],
+      "original_tiles_visually_preserved": true,
+      "views": [
+        {
+          "direction": "front-right",
+          "before": "hero/repair-workshop/roof-review/normal-front-right.png",
+          "after": "hero/repair-workshop/roof-review/closed-front-right.png",
+          "changed_pixels": 77,
+          "changed_fraction_of_original_model": 0.0007800628102522541,
+          "newly_visible_pixels": 3
+        },
+        {
+          "direction": "front-left",
+          "before": "hero/repair-workshop/roof-review/normal-front-left.png",
+          "after": "hero/repair-workshop/roof-review/closed-front-left.png",
+          "changed_pixels": 2102,
+          "changed_fraction_of_original_model": 0.023143407652078174,
+          "newly_visible_pixels": 0
+        },
+        {
+          "direction": "rear-left",
+          "before": "hero/repair-workshop/roof-review/normal-rear-left.png",
+          "after": "hero/repair-workshop/roof-review/closed-rear-left.png",
+          "changed_pixels": 2018,
+          "changed_fraction_of_original_model": 0.022983531126853602,
+          "newly_visible_pixels": 0
+        },
+        {
+          "direction": "rear-right",
+          "before": "hero/repair-workshop/roof-review/normal-rear-right.png",
+          "after": "hero/repair-workshop/roof-review/closed-rear-right.png",
+          "changed_pixels": 164,
+          "changed_fraction_of_original_model": 0.0018638269823050085,
+          "newly_visible_pixels": 0
+        }
+      ]
+    },
+    "limits": [
+      "Visual backing, not watertight remeshing; intended door, awning and window openings are not globally filled.",
+      "New backing uses a simple hand-painted teal/cream material rather than regenerating or modifying the 2K source texture.",
+      "Colliders, interiors, LOD, navigation, engine integration and gameplay remain unimplemented."
+    ]
+  },
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration.",
+    "Generated hidden surfaces, part separation and exact ground pivot require visual review."
+  ]
+}

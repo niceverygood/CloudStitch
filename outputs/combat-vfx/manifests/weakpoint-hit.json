@@ -1,0 +1,66 @@
+{
+  "id": "weakpoint-hit",
+  "name_ko": "약점 적중",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/weakpoint-hit.glb",
+  "sha256": "69c13b41011376ed9e737dc66129f1c4c82cf1880fc44813ee70ab63cb8c25be",
+  "bytes": 83828,
+  "triangles": 416,
+  "mesh_count": 16,
+  "node_count": 32,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 40,
+  "channel_paths": [
+    "scale",
+    "translation",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 0.8,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 0.800000011920929,
+    "animated_bounds": {
+      "min": [
+        -1.2000984946545195,
+        -0.14736216258829787,
+        -1.2000965873058964
+      ],
+      "max": [
+        1.2001000443752736,
+        0.5326945517669679,
+        1.2000995675381214
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "69c13b41011376ed9e737dc66129f1c4c82cf1880fc44813ee70ab63cb8c25be"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

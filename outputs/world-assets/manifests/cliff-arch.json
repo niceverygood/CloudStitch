@@ -1,0 +1,84 @@
+{
+  "id": "cliff-arch",
+  "order": 29,
+  "name_ko": "협곡 아치 절벽",
+  "name_en": "Cliff Arch",
+  "category": "terrain",
+  "role": "상승기류 협곡의 통과 전경 후보",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 8,
+    "depth": 3.2,
+    "height": 7,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/cliff-arch.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 1240,
+  "mesh_count": 23,
+  "primitive_count": 23,
+  "node_count": 26,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 23,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 158732,
+  "sha256": "71383a73b3742f869d8ab27a8340ce8d0f4a30f4d5d9717b64d7133d0bc2a671",
+  "mesh_definition_count": 23,
+  "unique_geometry_triangles": 1240,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 23,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -2.4272311211558693,
+        -3.365034580230713,
+        -1.055437028239901
+      ],
+      "max": [
+        2.427081969256643,
+        1.6300000190734862,
+        1.0552392126165795
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

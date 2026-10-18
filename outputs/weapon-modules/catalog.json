@@ -1,0 +1,180 @@
+{
+  "game_title": "Cloudstitch",
+  "selected_ship": "../selected-airship-toon3d/airship.glb",
+  "items": [
+    {
+      "id": "01-machine-gun",
+      "order": 1,
+      "name_ko": "기관총",
+      "name_en": "Machine Gun",
+      "model": "01-machine-gun/weapon.glb",
+      "reference": "01-machine-gun/reference.png",
+      "preview": "01-machine-gun/preview-handdrawn.png",
+      "triangles": 3945,
+      "role": "빠른 소형 적 추적과 지속 압박. 장갑 효율과 과열 관리가 약점이다.",
+      "status": "completed_asset_prototype",
+      "mount_length": 0.65,
+      "limitations": [
+        "Generated visual prototype. Mechanical part separation, pivots, firing sockets, collision and engine performance are not finalized.",
+        "Toon shading and outlines are runtime workbench materials, not universal shaders embedded in the original GLB.",
+        "Mounting view is an external deck placement study. The original single-mesh airship and its existing gun are preserved.",
+        "Unseen sides were inferred from one reference image."
+      ],
+      "preview_image": {
+        "width": 2436,
+        "height": 1248,
+        "bounds": [
+          836,
+          339,
+          1603,
+          979
+        ]
+      }
+    },
+    {
+      "id": "02-deck-cannon",
+      "order": 2,
+      "name_ko": "함포",
+      "name_en": "Deck Cannon",
+      "model": "02-deck-cannon/weapon.glb",
+      "reference": "02-deck-cannon/reference.png",
+      "preview": "02-deck-cannon/preview-handdrawn.png",
+      "triangles": 3876,
+      "role": "장갑·주요 부품·노출 약점을 한 발로 강하게 파괴한다. 무게와 느린 추적이 대가다.",
+      "status": "completed_asset_prototype",
+      "mount_length": 0.85,
+      "limitations": [
+        "Generated visual prototype. Mechanical part separation, pivots, firing sockets, collision and engine performance are not finalized.",
+        "Toon shading and outlines are runtime workbench materials, not universal shaders embedded in the original GLB.",
+        "Mounting view is an external deck placement study. The original single-mesh airship and its existing gun are preserved.",
+        "Unseen sides were inferred from one reference image."
+      ],
+      "preview_image": {
+        "width": 2436,
+        "height": 1248,
+        "bounds": [
+          816,
+          328,
+          1664,
+          927
+        ]
+      }
+    },
+    {
+      "id": "03-mortar",
+      "order": 3,
+      "name_ko": "박격포",
+      "name_en": "Mortar",
+      "model": "03-mortar/weapon.glb",
+      "reference": "03-mortar/reference.png",
+      "preview": "03-mortar/preview-handdrawn.png",
+      "triangles": 4009,
+      "role": "곡사와 범위 피해로 느린 밀집 적·여러 모듈을 압박한다. 최소사거리와 비행시간이 있다.",
+      "status": "completed_asset_prototype",
+      "mount_length": 0.6,
+      "limitations": [
+        "Generated visual prototype. Mechanical part separation, pivots, firing sockets, collision and engine performance are not finalized.",
+        "Toon shading and outlines are runtime workbench materials, not universal shaders embedded in the original GLB.",
+        "Mounting view is an external deck placement study. The original single-mesh airship and its existing gun are preserved.",
+        "Unseen sides were inferred from one reference image."
+      ],
+      "preview_image": {
+        "width": 2436,
+        "height": 1248,
+        "bounds": [
+          925,
+          446,
+          1554,
+          1024
+        ]
+      }
+    },
+    {
+      "id": "04-harpoon",
+      "order": 4,
+      "name_ko": "작살포",
+      "name_en": "Harpoon Launcher",
+      "model": "04-harpoon/weapon.glb",
+      "reference": "04-harpoon/reference.png",
+      "preview": "04-harpoon/preview-handdrawn.png",
+      "triangles": 3943,
+      "role": "피해보다 적 부품 견인·인양을 돕는 장치. 장력·질량 한도와 케이블 절단을 구분한다.",
+      "status": "completed_asset_prototype",
+      "mount_length": 0.75,
+      "limitations": [
+        "Generated visual prototype. Mechanical part separation, pivots, firing sockets, collision and engine performance are not finalized.",
+        "Toon shading and outlines are runtime workbench materials, not universal shaders embedded in the original GLB.",
+        "Mounting view is an external deck placement study. The original single-mesh airship and its existing gun are preserved.",
+        "Unseen sides were inferred from one reference image."
+      ],
+      "preview_image": {
+        "width": 2436,
+        "height": 1248,
+        "bounds": [
+          797,
+          292,
+          1601,
+          926
+        ]
+      }
+    },
+    {
+      "id": "05-chain-shot",
+      "order": 5,
+      "name_ko": "사슬탄 발사기",
+      "name_en": "Chain-Shot Launcher",
+      "model": "05-chain-shot/weapon.glb",
+      "reference": "05-chain-shot/reference.png",
+      "preview": "05-chain-shot/preview-handdrawn.png",
+      "triangles": 4029,
+      "role": "사슬로 연결된 두 탄구를 쏘아 명중한 엔진 출력을 방해한다. 선체에 맞으면 피해만 적용하는 기획이다.",
+      "status": "completed_asset_prototype",
+      "mount_length": 0.7,
+      "limitations": [
+        "Generated visual prototype. Mechanical part separation, pivots, firing sockets, collision and engine performance are not finalized.",
+        "Toon shading and outlines are runtime workbench materials, not universal shaders embedded in the original GLB.",
+        "Mounting view is an external deck placement study. The original single-mesh airship and its existing gun are preserved.",
+        "Unseen sides were inferred from one reference image."
+      ],
+      "preview_image": {
+        "width": 2436,
+        "height": 1248,
+        "bounds": [
+          791,
+          372,
+          1557,
+          1010
+        ]
+      }
+    },
+    {
+      "id": "06-flamethrower",
+      "order": 6,
+      "name_ko": "화염방사기",
+      "name_en": "Flamethrower",
+      "model": "06-flamethrower/weapon.glb",
+      "reference": "06-flamethrower/reference.png",
+      "preview": "06-flamethrower/preview-handdrawn.png",
+      "triangles": 3957,
+      "role": "근거리 외부 목재·노출 장치를 짧은 원뿔 분사로 압박한다. 분사 유지와 냉각의 틈이 있다.",
+      "status": "completed_asset_prototype",
+      "mount_length": 0.7,
+      "limitations": [
+        "Generated visual prototype. Mechanical part separation, pivots, firing sockets, collision and engine performance are not finalized.",
+        "Toon shading and outlines are runtime workbench materials, not universal shaders embedded in the original GLB.",
+        "Mounting view is an external deck placement study. The original single-mesh airship and its existing gun are preserved.",
+        "Unseen sides were inferred from one reference image."
+      ],
+      "preview_image": {
+        "width": 2436,
+        "height": 1248,
+        "bounds": [
+          863,
+          319,
+          1630,
+          992
+        ]
+      }
+    }
+  ]
+}

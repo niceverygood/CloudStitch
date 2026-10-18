@@ -1,0 +1,66 @@
+{
+  "id": "harpoon-hit",
+  "name_ko": "작살 걸림 고리",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/harpoon-hit.glb",
+  "sha256": "04c7ae0d0a5bd73fd57e5ecdff6a1488bc64ef5e42316674d67282c26fde4096",
+  "bytes": 110768,
+  "triangles": 696,
+  "mesh_count": 16,
+  "node_count": 29,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 35,
+  "channel_paths": [
+    "scale",
+    "translation",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 0.65,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 0.6499999761581421,
+    "animated_bounds": {
+      "min": [
+        -0.5636346756319249,
+        -0.2,
+        -0.6168203770175901
+      ],
+      "max": [
+        0.6102957146468626,
+        0.8819357184372425,
+        0.5845723039834346
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "04c7ae0d0a5bd73fd57e5ecdff6a1488bc64ef5e42316674d67282c26fde4096"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

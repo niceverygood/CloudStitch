@@ -1,0 +1,65 @@
+{
+  "id": "05-chain-shot",
+  "order": 5,
+  "name_ko": "사슬탄 공격",
+  "name_en": "Chain-Shot Launcher Attack Sequence",
+  "category": "weapon-sequence",
+  "weapon_id": "05-chain-shot",
+  "model": "sequences/05-chain-shot.glb",
+  "preview": "sequence-previews/05-chain-shot.png",
+  "duration": 2.8,
+  "loop": true,
+  "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+  "status": "completed_composed_animation_study",
+  "triangles": 8671,
+  "mesh_count": 46,
+  "animation_count": 1,
+  "bytes": 4242020,
+  "component_effects": [
+    {
+      "id": "chain-shot-launch",
+      "start": 0,
+      "end": 0.4
+    },
+    {
+      "id": "chain-shot-projectile",
+      "start": 0.2,
+      "end": 1.25
+    },
+    {
+      "id": "chain-shot-hit",
+      "start": 1.24,
+      "end": 2.7
+    }
+  ],
+  "approximate_muzzle": [
+    -0.016747484945607294,
+    0.9123164319584125,
+    -0.020826190379907406
+  ],
+  "source_weapon_sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219",
+  "copied_weapon_zero_normals_repaired": 4,
+  "sha256": "59d6e1ac08997f59ba893119aa38171c3fc35dc6ad94bf8c1de06f51048dbbbf",
+  "preview_image": {
+    "width": 2436,
+    "height": 1210,
+    "bounds": [
+      605,
+      172,
+      1839,
+      1022
+    ]
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 57,
+    "sha256": "59d6e1ac08997f59ba893119aa38171c3fc35dc6ad94bf8c1de06f51048dbbbf"
+  },
+  "browser_QA_passed": true,
+  "limits": [
+    "Composed choreography and estimated muzzle placement, not a combat game or finished weapon sockets.",
+    "Original weapon geometry/texture files remain unchanged. Four zero normals were repaired only in the chain-shot copy.",
+    "Weapon part separation, recoil rig, collisions and damage are not implemented."
+  ]
+}

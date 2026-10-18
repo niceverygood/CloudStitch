@@ -1,0 +1,84 @@
+{
+  "id": "canvas-roll",
+  "order": 57,
+  "name_ko": "캔버스 천 롤",
+  "name_en": "Canvas Roll",
+  "category": "props",
+  "role": "수선과 시장의 크림 천 물자",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 1.6,
+    "depth": 0.7,
+    "height": 0.7,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/canvas-roll.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 1464,
+  "mesh_count": 7,
+  "primitive_count": 7,
+  "node_count": 8,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 7,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 166096,
+  "sha256": "efcd4ba6d082edd117e50e4a70c24236fcfdd3e87eec4cec2a7a463cbbc40b99",
+  "mesh_definition_count": 7,
+  "unique_geometry_triangles": 1464,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 7,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.7697082161903381,
+        -0.03500000834465028,
+        -0.33500000834465027
+      ],
+      "max": [
+        0.7720000147819519,
+        0.6350000083446503,
+        0.33500000834465027
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

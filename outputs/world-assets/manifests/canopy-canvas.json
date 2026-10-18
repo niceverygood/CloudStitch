@@ -1,0 +1,84 @@
+{
+  "id": "canopy-canvas",
+  "order": 17,
+  "name_ko": "천막 캐노피",
+  "name_en": "Canvas Canopy",
+  "category": "architecture",
+  "role": "노점과 임시 정박지의 보호 처마",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 3.6,
+    "depth": 3,
+    "height": 3.2,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/canopy-canvas.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 3324,
+  "mesh_count": 93,
+  "primitive_count": 93,
+  "node_count": 100,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 93,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 448604,
+  "sha256": "e53ac4ce5e1d0d94dcf3c2f9395746f4a241374341ec6cd2ab08de0ae19bbedb",
+  "mesh_definition_count": 93,
+  "unique_geometry_triangles": 3324,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 93,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -1.5524999988079071,
+        -0.11000000357627869,
+        -1.452499998807907
+      ],
+      "max": [
+        1.5524999988079071,
+        2.8665000001341103,
+        1.452499998807907
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

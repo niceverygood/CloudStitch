@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "project_title": "Cloudstitch",
+  "title_ko": "클라우드스티치",
+  "created_date": "2026-10-18",
+  "purpose": "선택 비행선과 같은 손그림 인상의 실제 3D 장착 무기 6종을 한 번에 하나씩 제작하기 위한 아트 명세",
+  "status": "all_six_asset_prototypes_completed",
+  "production_policy": {
+    "sequence": "01-machine-gun → 02-deck-cannon → 03-mortar → 04-harpoon → 05-chain-shot → 06-flamethrower",
+    "one_work_item": "무기 1종의 단계1 기본 모델 한 개. 기준 그림 → 실제 3D 생성 → 구조·외형 확인 → 손그림 뷰어 확인을 끝내고 다음 무기로 진행한다.",
+    "scope_count": 6,
+    "stage": 1,
+    "upgrades": "단계2~4와 추가 변형은 이번 제작에 포함하지 않는다.",
+    "generation_status": "각 무기의 실제 성공·파일·삼각형·메시·재질·텍스처·비용은 생성 결과 기록에서 확인한다. 이 명세의 planned는 모델 완료를 뜻하지 않는다.",
+    "preservation": "기존 선체와 원화는 보존한다. 새로운 무기를 기존 통합 메시의 포탑 위에 겹쳐 놓은 모습을 최종 장착 완료로 표시하지 않는다."
+  },
+  "canonical_sources": [
+    "outputs/21-weapons-combat-roles.txt",
+    "outputs/72-weapon-mount-readability.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt",
+    "docs/HANDOFF.md"
+  ],
+  "art_reference": {
+    "airship_image": "outputs/selected-airship-toon3d/reference.png",
+    "airship_model": "outputs/selected-airship-toon3d/airship.glb",
+    "brand": "outputs/cloudstitch-title-screen/",
+    "direction": "실시간 3D 형태에 손으로 그린 베이스 컬러, 단순한 명암과 읽기 쉬운 윤곽선을 적용한 포근한 기계 판타지",
+    "palette": [
+      {
+        "name": "청록 금속",
+        "use": "회전대·주 몸체·크래들, 미세한 붓 자국과 가장자리 밝은 색"
+      },
+      {
+        "name": "황동",
+        "use": "포구 테두리·축·밸브·잠금 핀, 넓은 채색 하이라이트"
+      },
+      {
+        "name": "꿀빛 목재",
+        "use": "갑판 보강판·손잡이·지지 몸체, 적은 수의 굵은 나뭇결"
+      },
+      {
+        "name": "크림 천",
+        "use": "차가운 금속에서 떨어진 손잡이 감개·수선 패드"
+      },
+      {
+        "name": "산호색 천",
+        "use": "작은 수선 조각·급탄함 표시 등 절제된 포인트"
+      },
+      {
+        "name": "짙은 남청",
+        "use": "포신·구멍·깊은 틈·윤곽의 어두운 값"
+      }
+    ],
+    "shading": "반짝이는 PBR 금속보다 채색된 금속. 포토리얼 반사·검은 카본 군용 표면·현대 전술 레일을 배제한다.",
+    "detail_scale": "손잡이·급탄함·케이블·호스처럼 역할을 알려주는 큰 형태를 우선하고 아주 작은 나사·문자·장식은 줄인다.",
+    "silhouette_test": "사선 탑다운 55도는 비교용 후보 시점이다. 실제 게임 카메라 확정값이 아니다. 단색 실루엣에서도 6종의 핵심 형태가 달라야 한다."
+  },
+  "shared_mount_proposal": {
+    "status": "art_prototype_relative_scale_only",
+    "base_type": "갑판용 저상 회전대 한 종류를 기본으로 하며 무기별 상부 받침만 바꾼다.",
+    "base_shape": "낮고 넓은 청록 원형 회전링, 황동 잠금 핀, 꿀빛 목재 사각 보강판. 발사 역할을 가리지 않는 작은 받침.",
+    "relative_unit": "B = 정사각 목재 보강판의 한 변. 실제 미터·U·확정 소켓 크기로 변환하지 않는다.",
+    "base_ratios": {
+      "reinforcement_plate_width_B": 1,
+      "reinforcement_plate_depth_B": 1,
+      "reinforcement_plate_thickness_B": 0.08,
+      "turntable_diameter_B": 0.78,
+      "turntable_height_B": 0.16
+    },
+    "future_socket_origin": "분리 작업 뒤 목재 보강판 바닥 중앙을 장착 원점으로 제안한다. 생성 GLB가 이 원점을 가진다고 가정하지 않는다.",
+    "future_local_axes": "후속 편집 때 +Y 위, +Z 포구 전방, +X 무기 오른쪽으로 통일할 제안. 원본 GLB의 축은 수입 후 별도 측정한다.",
+    "future_mount_transform": "선택 선체의 표면·기낭·난간과의 실제 겹침을 확인해 위치와 크기를 정한다. 갑판 표시용 배치는 소켓·사격·충돌 구현이 아니다.",
+    "mount_modes": {
+      "included": "갑판 회전대 외형",
+      "later": [
+        "측면 거치대",
+        "외부 갑판 모듈 연결부"
+      ],
+      "compatibility": "72번의 호환성은 초기 가설이다. 모델을 돌릴 수 있다는 사실이 360도 발사 가능을 뜻하지 않는다."
+    }
+  },
+  "weapons": [
+    {
+      "id": "01-machine-gun",
+      "order": 1,
+      "name_ko": "기관총",
+      "name_en": "Machine Gun",
+      "stage": 1,
+      "status": "completed_asset_prototype",
+      "role": "빠른 소형 적 추적과 지속 압박. 장갑 효율과 과열 관리가 약점이다.",
+      "canonical_sources": [
+        "outputs/21-weapons-combat-roles.txt",
+        "outputs/72-weapon-mount-readability.txt"
+      ],
+      "design": {
+        "silhouette": "짧고 가는 단일 포신의 천공 냉각 재킷, 작은 측면 급탄함, 뒤쪽의 두 손잡이. 포구가 길고 굵은 함포와 분명히 다르다.",
+        "materials": "청록 U자 받침·급탄함, 짙은 남청 포신, 황동 포구 링·축, 꿀빛 목재 보강판과 손잡이. 후부 손잡이에만 크림 천 감개와 작은 산호색 수선.",
+        "construction": "단일 포신이 U자 크래들 위에서 상하로 기울고 하부 청록 링이 수평 회전하는 외형. 급탄함은 한쪽에만 둔다.",
+        "relative_envelope_B": {
+          "width": 1.1,
+          "length": 1.6,
+          "height": 0.85
+        },
+        "readability": "최우선 특징은 가는 천공 포신과 작은 급탄함. 탄띠가 필요하면 짧고 굵은 몇 마디만 보이며 바닥에 늘어뜨리지 않는다."
+      },
+      "part_targets": [
+        "목재 보강판",
+        "회전대 하부",
+        "수평 회전 요크",
+        "포신·기관부 묶음",
+        "측면 급탄함",
+        "후부 손잡이"
+      ],
+      "future_pivots": [
+        {
+          "name": "mount_root",
+          "location": "목재 보강판 바닥 중앙",
+          "purpose": "장착 위치"
+        },
+        {
+          "name": "yaw",
+          "location": "회전링 중앙의 수직축",
+          "purpose": "수평 조준"
+        },
+        {
+          "name": "pitch",
+          "location": "U자 크래들의 좌우 연결축",
+          "purpose": "상하 조준"
+        },
+        {
+          "name": "muzzle",
+          "location": "단일 포신 끝 중앙",
+          "purpose": "후속 탄환·작은 연사 섬광 출발점"
+        }
+      ],
+      "constraints": [
+        "포신 하나만",
+        "회전 개틀링 다연장 금지",
+        "대형 포방패·긴 함포 레일 금지",
+        "발사·섬광·인물·비행선·배경은 기준 그림에서 제외",
+        "천 감개를 포신이나 포구에 두지 않음"
+      ],
+      "reference_prompt": "Create one isolated stage-one airship deck machine gun for Cloudstitch, matching the supplied warm hand-painted airship reference. A short thin SINGLE dark navy barrel with a perforated cooling jacket, small teal side ammunition box, compact teal U-shaped cradle, brass pivot pins and muzzle ring, two honey-wood rear handles with a tiny cream cloth grip wrap and coral repair stitch. Low teal circular turntable on one square honey-wood reinforcement plate. Charming handmade engineering, broad painted highlights, simplified shading, readable dark contour, no photoreal PBR shine. Three-quarter view showing muzzle, side box and mount base clearly. One coherent weapon only, no ship, no person, no firing, no text, no collage, no extra variants, clean transparent background."
+    },
+    {
+      "id": "02-deck-cannon",
+      "order": 2,
+      "name_ko": "함포",
+      "name_en": "Deck Cannon",
+      "stage": 1,
+      "status": "completed_asset_prototype",
+      "role": "장갑·주요 부품·노출 약점을 한 발로 강하게 파괴한다. 무게와 느린 추적이 대가다.",
+      "canonical_sources": [
+        "outputs/21-weapons-combat-roles.txt",
+        "outputs/72-weapon-mount-readability.txt"
+      ],
+      "design": {
+        "silhouette": "굵고 긴 단일 포신, 눈에 보이는 두 줄의 낮은 반동 레일, 큼직한 후미 약실. 기관총의 가는 천공 재킷을 사용하지 않는다.",
+        "materials": "청록 칠 포신 외피와 포가, 짙은 포구 안, 황동 굵은 포구 테두리·레일 캡, 꿀빛 목재 보강판. 크림 천 패드와 작은 산호색 수선은 후미 손잡이에 둔다.",
+        "construction": "짧은 목재 받침 위에 청록 반동 레일과 두 측면 축을 얹고, 긴 포신의 반동 방향이 읽히게 한다.",
+        "relative_envelope_B": {
+          "width": 1.15,
+          "length": 2.25,
+          "height": 1.05
+        },
+        "readability": "긴 굵은 포신과 반동 레일이 가장 먼저 보인다. 끝에 총검·작살·천공 방열통을 붙이지 않는다."
+      },
+      "part_targets": [
+        "목재 보강판",
+        "회전대",
+        "수평 포가",
+        "상하 크래들",
+        "고정 반동 레일",
+        "포신·약실 슬라이더"
+      ],
+      "future_pivots": [
+        {
+          "name": "mount_root",
+          "location": "목재 보강판 바닥 중앙",
+          "purpose": "장착"
+        },
+        {
+          "name": "yaw",
+          "location": "회전링 수직 중앙축",
+          "purpose": "수평 조준"
+        },
+        {
+          "name": "pitch",
+          "location": "후미 좌우 포가 축",
+          "purpose": "상하 조준"
+        },
+        {
+          "name": "recoil",
+          "location": "포신 중심선을 따라 레일 전후",
+          "purpose": "후속 발사 반동 이동"
+        },
+        {
+          "name": "muzzle",
+          "location": "큰 단일 포구 중앙",
+          "purpose": "탄환·강한 단발 섬광"
+        }
+      ],
+      "constraints": [
+        "단계1 단일 포신",
+        "박격포처럼 급격히 위를 향하지 않음",
+        "전함 전체나 포탑 방을 만들지 않음",
+        "기관총보다 길고 굵지만 선체 크기를 넘는 과장 금지"
+      ],
+      "reference_prompt": "One isolated stage-one Cloudstitch airship deck cannon, consistent with the supplied hand-painted cream teal brass honey-wood airship. One long THICK single cannon barrel, large dark circular bore, teal painted body with brass muzzle rim, obvious paired low recoil rails and chunky breech. Compact teal trunnion cradle, low circular turntable, square honey-wood reinforcement plate. Tiny cream cloth pad and coral repair accent near rear grip only. Warm illustrated fantasy machinery, broad brush-painted highlights, simple shade bands, dark readable contour, no realistic metal reflections. Three-quarter object view with all support geometry visible. No machine-gun cooling perforations, no twin barrels, no harpoon, no firing, no people, no ship, no text, no layout, no alternate versions, transparent background."
+    },
+    {
+      "id": "03-mortar",
+      "order": 3,
+      "name_ko": "박격포",
+      "name_en": "Mortar",
+      "stage": 1,
+      "status": "completed_asset_prototype",
+      "role": "곡사와 범위 피해로 느린 밀집 적·여러 모듈을 압박한다. 최소사거리와 비행시간이 있다.",
+      "canonical_sources": [
+        "outputs/21-weapons-combat-roles.txt",
+        "outputs/72-weapon-mount-readability.txt"
+      ],
+      "design": {
+        "silhouette": "위로 가파르게 기운 짧고 굵은 단일 튜브, 낮고 넓은 삼각 각도 받침, 짧은 수동 조절 나사. 긴 수평 함포와 반대 방향의 실루엣.",
+        "materials": "청록 튜브, 황동 굵은 입구와 경사 조절 손잡이, 꿀빛 목재 받침판. 후부 작은 크림 천 패드와 산호색 수선 점.",
+        "construction": "포신 하단은 튼튼한 힌지, 한쪽에는 짧은 각도 조절 지지대. 상향 입구가 시선에서 가려지지 않게 한다.",
+        "relative_envelope_B": {
+          "width": 1.05,
+          "length": 1.25,
+          "height": 1.5
+        },
+        "readability": "상향 튜브와 삼각 받침이 핵심. 옆의 작은 둥근 탄 하나는 곡사포의 단서이며 실제 장전 기능이 아니다."
+      },
+      "part_targets": [
+        "목재 보강판",
+        "회전대",
+        "경사 지지대",
+        "튜브",
+        "각도 조절 손잡이"
+      ],
+      "future_pivots": [
+        {
+          "name": "mount_root",
+          "location": "목재 보강판 바닥 중앙",
+          "purpose": "장착"
+        },
+        {
+          "name": "yaw",
+          "location": "회전대 중앙 수직축",
+          "purpose": "수평 조준"
+        },
+        {
+          "name": "pitch",
+          "location": "튜브 하단 힌지",
+          "purpose": "상향 각도 조절"
+        },
+        {
+          "name": "muzzle",
+          "location": "상향 포구 중앙",
+          "purpose": "후속 곡사체 출발점"
+        }
+      ],
+      "constraints": [
+        "쌍열은 후속 단계4이므로 제외",
+        "수직 튜브가 기낭을 관통하는 장착 허용 금지",
+        "곡사 궤적·낙하 표식은 모델과 별도 기능",
+        "박격포 탄약 랙이 큰 사슬탄 랙처럼 보이지 않게 최소화"
+      ],
+      "reference_prompt": "One isolated stage-one Cloudstitch airship mortar in the supplied warm hand-painted teal brass honey-wood style. A SHORT THICK single tube angled steeply upward, clearly visible dark open bore with broad brass lip, triangular low adjustable teal support, small brass elevation screw wheel. Low teal round turntable on square honey-wood reinforcement plate, tiny cream padded rear rest with coral repair patch. Compact vertical silhouette, cozy handmade fantasy machine, broad painterly highlights and simple shadow shapes, readable dark contour, no glossy realism. Three-quarter view showing upward tube and triangular support. No long horizontal cannon, no twin tubes, no flames, no people, no ship, no labels, one weapon only, transparent background."
+    },
+    {
+      "id": "04-harpoon",
+      "order": 4,
+      "name_ko": "작살포",
+      "name_en": "Harpoon Launcher",
+      "stage": 1,
+      "status": "completed_asset_prototype",
+      "role": "피해보다 적 부품 견인·인양을 돕는 장치. 장력·질량 한도와 케이블 절단을 구분한다.",
+      "canonical_sources": [
+        "outputs/21-weapons-combat-roles.txt",
+        "outputs/72-weapon-mount-readability.txt",
+        "outputs/112-system-rules-reference.txt"
+      ],
+      "design": {
+        "silhouette": "앞으로 드러난 굵은 황동 작살 머리 한 개, 열린 발사 레일, 몸체 옆의 큰 권양 드럼과 감긴 크림 케이블. 가장 쉽게 작업 장치로 읽혀야 한다.",
+        "materials": "청록 개방형 레일과 윈치 틀, 황동 작살·축, 크림색 감긴 케이블, 꿀빛 목재 판과 손잡이. 산호색 수선 조각은 후부 손잡이.",
+        "construction": "케이블은 작살 후미에서 드럼으로 이어지는 짧고 읽기 쉬운 한 줄. 쓸데없이 장착 바닥을 여러 겹 돌지 않는다.",
+        "relative_envelope_B": {
+          "width": 1.3,
+          "length": 1.9,
+          "height": 1.05
+        },
+        "readability": "넓은 작살 머리와 큰 감개가 핵심. 뾰족한 소총 총검이나 화살 여러 개로 대체하지 않는다."
+      },
+      "part_targets": [
+        "목재 보강판",
+        "회전대",
+        "발사 레일",
+        "작살 머리·샤프트",
+        "윈치 드럼",
+        "짧은 케이블"
+      ],
+      "future_pivots": [
+        {
+          "name": "mount_root",
+          "location": "목재 보강판 바닥 중앙",
+          "purpose": "장착"
+        },
+        {
+          "name": "yaw",
+          "location": "회전대 중앙 수직축",
+          "purpose": "수평 조준"
+        },
+        {
+          "name": "pitch",
+          "location": "발사 레일 후미 축",
+          "purpose": "상하 조준"
+        },
+        {
+          "name": "winch",
+          "location": "권양 드럼의 중심축",
+          "purpose": "후속 감기 회전"
+        },
+        {
+          "name": "launch",
+          "location": "작살이 놓이는 발사 레일 전방",
+          "purpose": "작살 출발·케이블 시작점"
+        }
+      ],
+      "constraints": [
+        "이중 작살은 이번 단계에서 제외",
+        "케이블이 구조 부모 연결 골조라는 인상 금지",
+        "실제 장력·견인·소유권 이전은 미구현",
+        "회수했다고 자동 장착된 것으로 표시하지 않음"
+      ],
+      "reference_prompt": "One isolated stage-one Cloudstitch salvage harpoon launcher matching the supplied warm hand-painted airship. ONE broad exposed brass barbed harpoon resting in an open teal launch rail, one large visible side winch drum wrapped with thick cream cable, a short clear cable connection from harpoon tail to drum. Chunky brass axle, honey-wood hand grip, tiny coral repaired cloth accent at rear grip. Low teal circular turntable on one square honey-wood reinforcement plate. Readable silhouette dominated by harpoon head and winch, soft painted highlights and simplified shadows, dark illustrated contour, no chrome or realism. Three-quarter view. No closed cannon barrel hiding the harpoon, no twin harpoons, no ship, no people, no firing cable across background, no text, one coherent item, transparent background."
+    },
+    {
+      "id": "05-chain-shot",
+      "order": 5,
+      "name_ko": "사슬탄 발사기",
+      "name_en": "Chain-Shot Launcher",
+      "stage": 1,
+      "status": "completed_asset_prototype",
+      "role": "사슬로 연결된 두 탄구를 쏘아 명중한 엔진 출력을 방해한다. 선체에 맞으면 피해만 적용하는 기획이다.",
+      "canonical_sources": [
+        "outputs/21-weapons-combat-roles.txt",
+        "outputs/72-weapon-mount-readability.txt"
+      ],
+      "design": {
+        "silhouette": "짧고 넓게 벌어진 단일 포구, 옆 랙에 서로 사슬로 이어진 둥근 탄구 한 쌍. 넓은 입구와 두 탄구가 기관총·함포와 구분되는 핵심.",
+        "materials": "청록 넓은 포구와 랙 틀, 황동 입구 테두리·짧은 굵은 사슬, 짙은 남청 탄구, 꿀빛 목재 보강판. 랙 안쪽 크림 완충 천과 작은 산호색 수선.",
+        "construction": "탄구 둘은 나란히 놓인 한 쌍이며 굵은 사슬의 몇 개 링크로 이어진다. 두 개의 포신이나 번쩍이는 전기 코일로 표현하지 않는다.",
+        "relative_envelope_B": {
+          "width": 1.4,
+          "length": 1.45,
+          "height": 1.0
+        },
+        "readability": "옆 탄약 랙의 두 탄구와 사슬을 시선 방향에서 분명히 보여준다. 사슬을 치렁치렁한 장식으로 늘어뜨리지 않는다."
+      },
+      "part_targets": [
+        "목재 보강판",
+        "회전대",
+        "짧고 넓은 포신",
+        "측면 탄약 랙",
+        "탄구 한 쌍",
+        "탄구 연결 사슬"
+      ],
+      "future_pivots": [
+        {
+          "name": "mount_root",
+          "location": "목재 보강판 바닥 중앙",
+          "purpose": "장착"
+        },
+        {
+          "name": "yaw",
+          "location": "회전대 중앙 수직축",
+          "purpose": "수평 조준"
+        },
+        {
+          "name": "pitch",
+          "location": "짧은 포신 후미 축",
+          "purpose": "상하 조준"
+        },
+        {
+          "name": "muzzle",
+          "location": "넓은 단일 포구 중앙",
+          "purpose": "후속 연결탄 발사점"
+        }
+      ],
+      "constraints": [
+        "사슬탄은 탄종이며 모델은 발사기",
+        "두 탄구를 쏘는 단일 무기, 복수 발사기 아님",
+        "레이저·전기 빔·마법 탑 금지",
+        "복수 사슬탄의 단계4 형태는 제외",
+        "물리 사슬 외형이 상태 효과 구현을 뜻하지 않음"
+      ],
+      "reference_prompt": "One isolated stage-one Cloudstitch chain-shot launcher in the supplied hand-painted teal brass honey-wood style. One SHORT WIDE flared muzzle, compact teal breech, and a clearly visible side ammunition rack holding exactly TWO dark navy round cannonballs joined by several chunky brass chain links. The paired chained balls are the identifying feature. Brass muzzle rim, cream padded rack lining with tiny coral repair stitch, low teal turntable on square honey-wood plate. Warm illustrated handmade machinery, broad brush-painted highlights, simple shading and readable dark outline, no realistic reflections. Three-quarter view exposing rack and broad bore. No twin cannon barrels, no electricity, no lasers, no firing, no people, no ship, no words, no collage, transparent background."
+    },
+    {
+      "id": "06-flamethrower",
+      "order": 6,
+      "name_ko": "화염방사기",
+      "name_en": "Flamethrower",
+      "stage": 1,
+      "status": "completed_asset_prototype",
+      "role": "근거리 외부 목재·노출 장치를 짧은 원뿔 분사로 압박한다. 분사 유지와 냉각의 틈이 있다.",
+      "canonical_sources": [
+        "outputs/21-weapons-combat-roles.txt",
+        "outputs/72-weapon-mount-readability.txt"
+      ],
+      "design": {
+        "silhouette": "짧고 굵은 노즐, 분명한 황동 차단 밸브와 감긴 짧은 호스, 몸체 뒤쪽의 낮고 넓은 연료통 하나. 긴 함포나 가는 기관총과 구분된다.",
+        "materials": "청록 노즐 지지대와 연료통, 황동 노즐 테두리·차단 밸브, 짙은 호스, 꿀빛 목재 보강판. 연료통 밴드의 크림 천·산호색 수선 포인트.",
+        "construction": "연료통은 같은 회전대 안쪽에 낮게 얹고, 호스는 포신 뒤에서 통으로 이어지는 짧은 U자. 바닥을 가로지르는 긴 선은 피한다.",
+        "relative_envelope_B": {
+          "width": 1.3,
+          "length": 1.55,
+          "height": 1.1
+        },
+        "readability": "짧은 분사 노즐·호스·밸브·연료통을 함께 읽을 수 있게 한다. 불꽃은 모델 기준 그림에서 제거한다."
+      },
+      "part_targets": [
+        "목재 보강판",
+        "회전대",
+        "노즐 크래들",
+        "짧은 노즐",
+        "연료통",
+        "차단 밸브",
+        "연료 호스"
+      ],
+      "future_pivots": [
+        {
+          "name": "mount_root",
+          "location": "목재 보강판 바닥 중앙",
+          "purpose": "장착"
+        },
+        {
+          "name": "yaw",
+          "location": "회전대 중앙 수직축",
+          "purpose": "수평 조준"
+        },
+        {
+          "name": "pitch",
+          "location": "노즐 크래들 연결축",
+          "purpose": "상하 조준"
+        },
+        {
+          "name": "valve",
+          "location": "차단 밸브 손잡이 중심",
+          "purpose": "후속 밸브 작동 표현"
+        },
+        {
+          "name": "nozzle",
+          "location": "노즐 끝 중앙",
+          "purpose": "후속 짧은 원뿔 분사 시작점"
+        }
+      ],
+      "constraints": [
+        "쌍열 화염은 후속 단계4이므로 제외",
+        "호스가 단일 메시로 굳어 있으면 분리·변형 작업 필요",
+        "원화의 화염·연기 때문에 3D 실루엣이 오염되지 않게 효과 제외",
+        "화염은 무한 거리 빔이 아님",
+        "모델의 연료통 외형이 매발 연료 차감이라는 경제 규칙을 추가하지 않음"
+      ],
+      "reference_prompt": "One isolated stage-one Cloudstitch airship flamethrower matching the supplied warm hand-painted cream teal brass honey-wood palette. One SHORT chunky spray nozzle with brass lip, a very readable brass shutoff valve, one short dark flexible U-shaped hose connected to a LOW wide teal fuel canister on the same mount. Cream fabric canister strap with tiny coral repair patch, teal cradle and low round turntable on square honey-wood reinforcement plate. Compact industrial silhouette led by nozzle hose and fuel tank, cozy illustrated machinery, broad painted highlights, simple shadows, dark contour, no glossy photorealism. Three-quarter view showing valve and hose. No actual flame or smoke, no long cannon barrel, no twin nozzles, no people, no ship, no text, one item only, transparent background."
+    }
+  ],
+  "review_checklist": [
+    "파일별 종류·단계·제작 순서를 확인한다.",
+    "원화와 생성 모델을 구분하고 후면·틈·케이블·포구가 추정되었음을 기록한다.",
+    "실제 GLB의 파일 크기·삼각형·메시·재질·텍스처·애니메이션을 검사한다.",
+    "part_targets와 future_pivots는 분리 목표다. 생성 GLB에 실제로 구현됐는지 별도 검사한다.",
+    "기본·측면·후면·탑다운에서 종별 실루엣과 넓은 색 구획을 확인한다.",
+    "회전 뷰어의 손그림·셀 명암·원본 세 모드, 윤곽선·회전·확대와 잔상을 검사한다.",
+    "같은 저상 베이스와 재료가 유지되며 큰 장식이 무기 종류를 가리지 않는지 확인한다.",
+    "선체 장착 배치 시안과 실제 소켓·피벗·충돌·발사 기능을 구별해 안내한다."
+  ],
+  "known_limits": [
+    "실제 전투 게임·엔진·표준 미터 크기·성능 예산은 아직 없다.",
+    "선택 비행선은 11,026삼각형 단일 메시이며 기존 포탑도 통합되어 있다. 부품 교체와 최종 소켓 장착은 후속 편집이 필요하다.",
+    "생성 도구는 부품별 메시·회전축·정확한 포구 구멍·호스 경로를 보장하지 않는다. 단일 메시 결과라면 있는 그대로 기록한다.",
+    "각도와 B 비율은 아트 시제품 제안이다. 21번의 U 거리·무게·전력·피해 수치로 환산하지 않는다.",
+    "셀 셰이딩·윤곽선은 뷰어 런타임 표현이며 GLB를 엔진으로 옮기면 자동 적용되는 효과가 아니다.",
+    "기획의 화염·곡사·사슬·견인 효과와 실제 게임 규칙은 모델 제작으로 구현되지 않는다.",
+    "생성 상태와 비용은 실제 작업 결과를 저장한 뒤에만 완료·확정으로 갱신한다."
+  ],
+  "actual_art_review": {
+    "record": "art-review.txt",
+    "shared_base": "Round honey-wood pad rather than the earlier square B proposal. Original ratios and part targets remain planning references.",
+    "result_status": "Visual prototypes, not mechanically separated game assets."
+  }
+}

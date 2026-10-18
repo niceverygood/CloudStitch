@@ -1,0 +1,66 @@
+{
+  "id": "mortar-hit",
+  "name_ko": "박격포 착탄 폭발",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/mortar-hit.glb",
+  "sha256": "3b7f007e2cdd93e1c1ec3944b910f418d40216d25a63262c830f72d2a2a182e8",
+  "bytes": 223176,
+  "triangles": 1272,
+  "mesh_count": 35,
+  "node_count": 70,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 92,
+  "channel_paths": [
+    "scale",
+    "translation",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 1.2,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 1.2000000476837158,
+    "animated_bounds": {
+      "min": [
+        -1.4747189527132054,
+        -0.24458477871179035,
+        -1.21560341989653
+      ],
+      "max": [
+        1.194270578898844,
+        2.9336618790948186,
+        1.4363145355051523
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "3b7f007e2cdd93e1c1ec3944b910f418d40216d25a63262c830f72d2a2a182e8"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

@@ -1,0 +1,1430 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "created_date": "2026-10-18",
+  "purpose": "실제 3D 전투효과 48종과 무기 합성 공격 시연6종을 후속 엔진에 연결하기 위한 의미·좌표·생명주기 레시피",
+  "status": "integration_contract_without_game_engine",
+  "sources": [
+    "production-spec.json",
+    "catalog.json",
+    "sequence-catalog.json",
+    "README.txt",
+    "../../tools/combat-vfx/README.md",
+    "../21-weapons-combat-roles.txt",
+    "../72-weapon-mount-readability.txt"
+  ],
+  "counts": {
+    "effect_recipes": 48,
+    "weapon_sequence_recipes": 6
+  },
+  "integration_contract": {
+    "collision_authority": "충돌·접촉 위치·표면 법선·출구·약점·도탄·가림·대상은 실제 엔진 판정이 결정한다. 효과 표시가 판정을 역으로 만들지 않는다.",
+    "movement_authority": "투사체 효과의 내장 위치 키는 진행 시연이다. 실제 엔진 발사체 physics/루트 이동과 중복 이동하지 않도록 통합 시 로컬 이동 채널을 제거·재매핑하거나 시연 클립과 실제 이동형 표시를 분리한다.",
+    "muzzle_axis": "일반 +Y 위, 포구 +Z 발사 방향. 실제 포구 위치와 축은 무기 편집/엔진 소켓에서 제공한다.",
+    "target_normal_axis": "피격/출구 표면의 +Y=바깥 법선, +Z=진행 방향의 접선 투영. 월드 +Y를 모든 피격 법선으로 고정하지 않는다.",
+    "loop_stop": "상태/유효 분사가 끝나면 loop stop 한다. VFX 반복 설정으로 상태시간·효과·연료/탄약 소비를 연장하지 않는다.",
+    "pooling": "풀 반환에서 재생을 중지하고 animation time=0, action/mixer/loop 상태와 표시용 root transform(위치·회전·크기), 부착 부모·끝점 참조·시연용 표적 참조를 기본값으로 리셋한다. 다음 재생 때 실제 원점/축/스케일을 새로 부여한다.",
+    "time_size": "duration_seconds·타임라인·배율·도형 크기는 아트 시제품 가설이다. 사거리·탄속·장전·피해 반경·상태 지속시간·최종 게임 밸런스를 뜻하지 않는다.",
+    "ownership": "부품 절단→하위 묶음 분리→회수→화물→제작/소켓 장착은 서로 다른 실제 상태다. 표시 레시피가 소유권·부모·전리품을 변경하지 않는다.",
+    "material_selection": "무기 고유 명중과 공용 재질 피격은 기본적으로 하나를 주 효과로 선택한다. 추가 강조는 최소로 허용하고 큰 폭발·고리·연기 중복과 연결부 가림을 검사한다.",
+    "no_engine_completion": "실제 엔진·충돌·피해·소켓·파티클·오디오·풀링 구현은 아직 없다. 이 JSON은 연결할 의미의 명세이지 실행 가능한 게임 이벤트 코드가 아니다."
+  },
+  "common_hit_selection": {
+    "material_primary": {
+      "wood": "wood-hit",
+      "metal": "metal-hit",
+      "fabric": "fabric-hit",
+      "armor": "armor-hit"
+    },
+    "result_specific": {
+      "ricochet": "ricochet-hit",
+      "weakpoint": "weakpoint-hit",
+      "miss_in_cloud": "cloud-miss",
+      "successful_penetration_exit": "penetration-exit"
+    },
+    "precedence": "실제 결과를 먼저 분류한다. 빗나감에는 타격을 재생하지 않고, 도탄에는 정면 파괴를 자동 추가하지 않는다. 관통 출구는 계산된 출구에만 배치한다.",
+    "duplicate_rule": "각 결과에서 하나의 주 충격 효과를 선택한다. 고유 명중+재질 피격+일반 폭발을 모두 기본 재생하지 않는다. 필요할 때 작은 재질 조각만 보조하고 시야를 확인한다.",
+    "weakpoint_rule": "약점 표시는 실제 판정에서 선택하는 시각 강조다. 새 피해 배율이나 필수 단서 잠금을 만들지 않는다.",
+    "target_note": "작업대 목재·금속·천 표적은 비교 도형이며 실제 충돌·피격 재질 선택 로직이 아니다."
+  },
+  "effects": [
+    {
+      "id": "machine-gun-muzzle",
+      "order": 1,
+      "name_ko": "기관총 포구 섬광",
+      "name_en": "Machine Gun Muzzle Flash",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "purpose": "함포보다 작은 연사 시작을 읽힌다.",
+      "trigger": "유효한 기관총 발사 이벤트",
+      "duration_seconds": 0.2,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "model": "assets/machine-gun-muzzle.glb",
+      "semantic_end_condition": "발사 섬광 클립이 끝나면 종료한다. 발사 이벤트가 없으면 생성하지 않는다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "machine-gun-projectile",
+      "order": 2,
+      "name_ko": "기관총 탄환 궤적",
+      "name_en": "Machine Gun Projectile",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "purpose": "단일 소형 탄환의 방향을 나타낸다.",
+      "trigger": "기관총 탄환 생성 이벤트",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "model": "assets/machine-gun-projectile.glb",
+      "semantic_end_condition": "실제 탄환의 명중·빗나감·사거리 종료·취소에서 종료한다. 전시용 클립 길이가 실제 탄환 수명을 결정하지 않는다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "machine-gun-hit",
+      "order": 3,
+      "name_ko": "기관총 집중 타격",
+      "name_en": "Machine Gun Hit",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "purpose": "작은 반복 타격을 큰 폭발과 구별한다.",
+      "trigger": "기관총의 유효 접촉 이벤트",
+      "duration_seconds": 0.35,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/machine-gun-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "cannon-muzzle",
+      "order": 4,
+      "name_ko": "함포 포구 충격",
+      "name_en": "Cannon Muzzle Blast",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "purpose": "무거운 단발의 발사 시작을 강조한다.",
+      "trigger": "유효한 함포 발사 이벤트",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "model": "assets/cannon-muzzle.glb",
+      "semantic_end_condition": "단발 포구 충격 클립이 끝나면 종료한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "cannon-projectile",
+      "order": 5,
+      "name_ko": "함포 포탄 비행",
+      "name_en": "Cannon Projectile",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "purpose": "무거운 단일 포탄을 기관총 탄환과 구별한다.",
+      "trigger": "함포 포탄 생성 이벤트",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "model": "assets/cannon-projectile.glb",
+      "semantic_end_condition": "실제 포탄의 충돌·사거리 종료·취소에서 종료한다. 관통이 허용된 경우 다음 경로는 실제 전투 판정에서 결정한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "cannon-hit",
+      "order": 6,
+      "name_ko": "함포 약점 파쇄",
+      "name_en": "Cannon Heavy Hit",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "purpose": "한 번의 큰 충격과 연결부 파쇄 후보를 표현한다.",
+      "trigger": "함포 명중이 판정된 위치",
+      "duration_seconds": 0.75,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/cannon-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "mortar-launch",
+      "order": 7,
+      "name_ko": "박격포 발사 퍼프",
+      "name_en": "Mortar Launch Puff",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "purpose": "상향 곡사 발사를 직사포와 구별한다.",
+      "trigger": "유효한 박격포 발사 이벤트",
+      "duration_seconds": 0.6,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "model": "assets/mortar-launch.glb",
+      "semantic_end_condition": "상향 발사 퍼프 클립이 끝나면 종료한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "mortar-projectile",
+      "order": 8,
+      "name_ko": "박격포 곡사탄",
+      "name_en": "Mortar Arc Projectile",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "purpose": "높이 올라갔다 내려오는 곡사 형태를 미리 본다.",
+      "trigger": "박격포 곡사탄 생성 이벤트",
+      "duration_seconds": 1.6,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "model": "assets/mortar-projectile.glb",
+      "semantic_end_condition": "실제 착탄·요격·취소에서 종료한다. 내장 전시 포물선 끝을 실제 충돌로 채택하지 않는다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "mortar-hit",
+      "order": 9,
+      "name_ko": "박격포 착탄 폭발",
+      "name_en": "Mortar Impact Burst",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "purpose": "느린 범위 공격의 착탄 순간을 나타낸다.",
+      "trigger": "박격포의 실제 착탄 이벤트",
+      "duration_seconds": 1.2,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/mortar-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "harpoon-launch",
+      "order": 10,
+      "name_ko": "작살 발사 튕김",
+      "name_en": "Harpoon Launch Snap",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "purpose": "폭약 섬광보다 레일과 밧줄의 힘을 전달한다.",
+      "trigger": "유효한 작살 발사 이벤트",
+      "duration_seconds": 0.35,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "model": "assets/harpoon-launch.glb",
+      "semantic_end_condition": "레일 발사 튕김 클립이 끝나면 종료한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "harpoon-projectile",
+      "order": 11,
+      "name_ko": "작살 비행과 줄",
+      "name_en": "Harpoon Flight",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "purpose": "단일 작살촉과 뒤따르는 짧은 줄을 보여준다.",
+      "trigger": "작살 투사체 생성 이벤트",
+      "duration_seconds": 1,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "model": "assets/harpoon-projectile.glb",
+      "semantic_end_condition": "비행 단계는 실제 접촉·걸림·실패·거리 해제에서 종료한다. 걸림 뒤의 줄 유지가 필요하면 별도 tether 표시를 실제 두 끝점으로 유지한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "harpoon-hit",
+      "order": 12,
+      "name_ko": "작살 걸림 고리",
+      "name_en": "Harpoon Latch Hit",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "purpose": "피격과 견인 가능 걸림 후보를 구별해 보인다.",
+      "trigger": "작살 접촉 또는 걸림이 실제 판정된 이벤트",
+      "duration_seconds": 0.65,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/harpoon-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "chain-shot-launch",
+      "order": 13,
+      "name_ko": "사슬탄 발사 쌍섬광",
+      "name_en": "Chain-Shot Launch",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "purpose": "연결된 두 탄구를 발사하는 성격을 표현한다.",
+      "trigger": "유효한 사슬탄 발사 이벤트",
+      "duration_seconds": 0.5,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "model": "assets/chain-shot-launch.glb",
+      "semantic_end_condition": "넓은 포구 쌍섬광 클립이 끝나면 종료한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "chain-shot-projectile",
+      "order": 14,
+      "name_ko": "사슬탄 회전 비행",
+      "name_en": "Chain-Shot Flight",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "purpose": "두 탄구와 짧은 사슬의 연결을 유지한다.",
+      "trigger": "사슬탄 투사체 생성 이벤트",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "model": "assets/chain-shot-projectile.glb",
+      "semantic_end_condition": "실제 탄구 접촉·사거리 종료·취소에서 종료한다. 탄구와 사슬 회전은 물리 판정이 아니다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "chain-shot-hit",
+      "order": 15,
+      "name_ko": "사슬탄 엔진 타격",
+      "name_en": "Chain-Shot Engine Hit",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "purpose": "엔진 접촉의 얽힘 형태를 일반 선체 타격과 구별한다.",
+      "trigger": "사슬탄이 명중한 뒤 엔진 접촉 여부가 판정된 이벤트",
+      "duration_seconds": 1,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/chain-shot-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "flamethrower-ignite",
+      "order": 16,
+      "name_ko": "화염방사 점화",
+      "name_en": "Flamethrower Ignition",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "purpose": "짧은 노즐에서 분사가 시작되는 순간을 읽힌다.",
+      "trigger": "유효한 화염 분사 시작 이벤트",
+      "duration_seconds": 0.4,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "model": "assets/flamethrower-ignite.glb",
+      "semantic_end_condition": "점화 시작 클립이 끝나면 종료하고 유효 분사는 별도의 stream 표시로 이어간다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "flamethrower-stream",
+      "order": 17,
+      "name_ko": "화염방사 짧은 원뿔",
+      "name_en": "Flamethrower Cone Stream",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "purpose": "근거리의 짧고 넓은 분사 방향을 유지한다.",
+      "trigger": "엔진에서 유효 분사 중인 동안 표시",
+      "duration_seconds": 1.2,
+      "loop": true,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "model": "assets/flamethrower-stream.glb",
+      "semantic_end_condition": "실제 유효 분사 종료·입력 해제·냉각 진입·무기/호스트 제거에서 반복을 중지한다. VFX loop가 분사 시간·피해·연료 규칙을 연장하지 않는다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "flamethrower-hit",
+      "order": 18,
+      "name_ko": "화염 접촉 그을림",
+      "name_en": "Flamethrower Contact Hit",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "purpose": "짧은 불꽃이 표면에 닿는 순간을 나타낸다.",
+      "trigger": "화염 원뿔의 유효 접촉 이벤트",
+      "duration_seconds": 0.9,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/flamethrower-hit.glb",
+      "semantic_end_condition": "유효 접촉 이벤트의 짧은 그을림 클립이 끝나면 종료한다. 지속 점화 표시는 burning-state의 실제 상태와 별도로 관리한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "wood-hit",
+      "order": 19,
+      "name_ko": "목재 피격",
+      "name_en": "Wood Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "목재와 금속의 타격 재질을 구별한다.",
+      "trigger": "목재 표면 접촉이 판정된 이벤트",
+      "duration_seconds": 0.7,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/wood-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "metal-hit",
+      "order": 20,
+      "name_ko": "금속 피격",
+      "name_en": "Metal Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "일반 금속의 작은 불꽃을 표현한다.",
+      "trigger": "금속 표면 접촉이 판정된 이벤트",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/metal-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "fabric-hit",
+      "order": 21,
+      "name_ko": "천 피격",
+      "name_en": "Fabric Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "기낭 천의 찢김과 섬유를 구별한다.",
+      "trigger": "천 표면 접촉이 판정된 이벤트",
+      "duration_seconds": 0.85,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/fabric-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "armor-hit",
+      "order": 22,
+      "name_ko": "장갑 피격",
+      "name_en": "Armor Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "단단한 장갑에 부딪힌 압축 충격을 나타낸다.",
+      "trigger": "장갑 표면 접촉이 판정된 이벤트",
+      "duration_seconds": 0.6,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/armor-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "ricochet-hit",
+      "order": 23,
+      "name_ko": "도탄 튕김",
+      "name_en": "Ricochet Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "접선으로 튕기는 방향을 정면 타격과 구별한다.",
+      "trigger": "엔진에서 도탄이 실제 판정된 이벤트",
+      "duration_seconds": 0.5,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/ricochet-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "weakpoint-hit",
+      "order": 24,
+      "name_ko": "약점 적중",
+      "name_en": "Weakpoint Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "약점 접촉을 별 모양과 안쪽 수축으로 읽힌다.",
+      "trigger": "약점 유효 적중이 판정된 이벤트",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/weakpoint-hit.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "cloud-miss",
+      "order": 25,
+      "name_ko": "구름 빗나감",
+      "name_en": "Cloud Miss Puff",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "구름 속으로 빠진 비명중을 파괴 효과와 구별한다.",
+      "trigger": "실제 빗나감/구름 접촉 표시 요청",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/cloud-miss.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "penetration-exit",
+      "order": 26,
+      "name_ko": "관통 출구",
+      "name_en": "Penetration Exit",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "실제로 관통한 탄의 출구 방향을 보여준다.",
+      "trigger": "출구 면과 관통 성공이 계산된 이벤트",
+      "duration_seconds": 0.65,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/penetration-exit.glb",
+      "semantic_end_condition": "실제로 계산된 출구면의 짧은 클립이 끝나면 종료한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "small-explosion",
+      "order": 27,
+      "name_ko": "소형 폭발",
+      "name_en": "Small Explosion",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "작은 장치 폭발의 짧은 힘을 나타낸다.",
+      "trigger": "소형 폭발 표시 이벤트",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/small-explosion.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "large-explosion",
+      "order": 28,
+      "name_ko": "대형 폭발",
+      "name_en": "Large Explosion",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "큰 충격을 작은 타격보다 느리고 넓게 보여준다.",
+      "trigger": "대형 폭발 표시 이벤트",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/large-explosion.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "airburst",
+      "order": 29,
+      "name_ko": "공중 폭발",
+      "name_en": "Airburst",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "지면에 붙지 않는 전방위 폭발을 표현한다.",
+      "trigger": "공중 폭발 위치가 결정된 이벤트",
+      "duration_seconds": 1.3,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/airburst.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "shrapnel-burst",
+      "order": 30,
+      "name_ko": "파편 분산",
+      "name_en": "Shrapnel Burst",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "큰 덩이보다 튀는 작은 단단한 조각을 강조한다.",
+      "trigger": "파편 표시 요청 이벤트",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/shrapnel-burst.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "smoke-puff",
+      "order": 31,
+      "name_ko": "짧은 연기",
+      "name_en": "Smoke Puff",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "한 번 피어나는 가벼운 배기·폭발 연기를 표현한다.",
+      "trigger": "일회성 연기 표시 요청",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/smoke-puff.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "steam-vent",
+      "order": 32,
+      "name_ko": "증기 배출",
+      "name_en": "Steam Vent",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "뜨거운 화염과 구별되는 밝은 증기를 표현한다.",
+      "trigger": "배기구의 증기 배출 표시 요청",
+      "duration_seconds": 1.5,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/steam-vent.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "smoldering-fire",
+      "order": 33,
+      "name_ko": "잔불",
+      "name_en": "Smoldering Fire",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "폭발 뒤 남은 낮은 불꽃을 짧은 원형으로 표현한다.",
+      "trigger": "잔불 표시가 필요한 동안 요청",
+      "duration_seconds": 2.4,
+      "loop": true,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/smoldering-fire.glb",
+      "semantic_end_condition": "잔불 표시 상태 종료·화재 제거·호스트/장면 제거에서 반복을 중지한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "ember-drift",
+      "order": 34,
+      "name_ko": "불씨 흩날림",
+      "name_en": "Drifting Embers",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "눈처럼 작게 떠오르는 불씨로 마무리한다.",
+      "trigger": "일회성 불씨 표시 요청",
+      "duration_seconds": 2,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "model": "assets/ember-drift.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "burning-state",
+      "order": 35,
+      "name_ko": "불붙음 상태",
+      "name_en": "Burning State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "지속 점화 표시를 일회성 화염 접촉과 구별한다.",
+      "trigger": "실제 점화 상태가 유효한 동안 표시",
+      "duration_seconds": 1.5,
+      "loop": true,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "model": "assets/burning-state.glb",
+      "semantic_end_condition": "실제 점화 상태 해제·지속시간 만료·호스트 제거에서 반복을 중지한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "heavy-smoke-state",
+      "order": 36,
+      "name_ko": "짙은 연기 상태",
+      "name_en": "Heavy Smoke State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "손상 부위에서 계속 나는 짙은 연기를 표현한다.",
+      "trigger": "지속 연기 표시가 필요한 손상 이벤트",
+      "duration_seconds": 3,
+      "loop": true,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "model": "assets/heavy-smoke-state.glb",
+      "semantic_end_condition": "지속 손상 연기 표시가 해제되거나 호스트/장면이 제거되면 반복을 중지한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "gas-leak-state",
+      "order": 37,
+      "name_ko": "가스 누출 상태",
+      "name_en": "Gas Leak State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "기낭 구멍의 바깥 흐름을 연기와 다르게 읽힌다.",
+      "trigger": "실제 기낭 누출 표시가 요청된 동안",
+      "duration_seconds": 2,
+      "loop": true,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "model": "assets/gas-leak-state.glb",
+      "semantic_end_condition": "실제 누출 상태 해제·밀봉/복구·기낭 또는 호스트 제거에서 반복을 중지한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "overheat-state",
+      "order": 38,
+      "name_ko": "과열 상태",
+      "name_en": "Overheat State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "기관부의 열 경고를 반복 도형과 위로 흐르는 조각으로 보인다.",
+      "trigger": "실제 과열 상태/표시가 유효한 동안",
+      "duration_seconds": 1.2,
+      "loop": true,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "model": "assets/overheat-state.glb",
+      "semantic_end_condition": "실제 과열 상태 해제·냉각 완료·무기/호스트 제거에서 반복을 중지한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "short-circuit-state",
+      "order": 39,
+      "name_ko": "단락 상태",
+      "name_en": "Short Circuit State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "기계의 끊기는 동작을 짧고 각진 전기 모양으로 표현한다.",
+      "trigger": "실제 단락 또는 손상 전기 표시 요청",
+      "duration_seconds": 0.8,
+      "loop": true,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "model": "assets/short-circuit-state.glb",
+      "semantic_end_condition": "실제 단락/전기 손상 표시가 해제되거나 전원/호스트 상태에 따라 표시 요청이 취소되면 반복을 중지한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "engine-stall-state",
+      "order": 40,
+      "name_ko": "엔진 정지 상태",
+      "name_en": "Engine Stall State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "꺾인 배기와 멈칫하는 링으로 정지 표시를 보조한다.",
+      "trigger": "실제 엔진 정지 상태가 유효한 동안",
+      "duration_seconds": 2.2,
+      "loop": true,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "model": "assets/engine-stall-state.glb",
+      "semantic_end_condition": "실제 엔진 정지 상태 해제·재가동 또는 호스트 제거에서 반복을 중지한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "envelope-rupture-state",
+      "order": 41,
+      "name_ko": "기낭 파열 상태",
+      "name_en": "Envelope Rupture State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "찢긴 천과 빠지는 흐름으로 기낭 손상을 보여준다.",
+      "trigger": "실제 기낭 파열/파괴 이벤트",
+      "duration_seconds": 1.4,
+      "loop": false,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "model": "assets/envelope-rupture-state.glb",
+      "semantic_end_condition": "파열 순간 클립이 끝나면 종료한다. 지속 가스 누출은 실제 누출 상태에 따라 별도 표시한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "module-detach-state",
+      "order": 42,
+      "name_ko": "부품 분리 순간",
+      "name_en": "Module Detach State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "부모 골조가 끊어지는 위치의 짧은 결합 해제를 표시한다.",
+      "trigger": "실제 부모 연결 절단과 하위 묶음 분리가 확정된 이벤트",
+      "duration_seconds": 1,
+      "loop": false,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "model": "assets/module-detach-state.glb",
+      "semantic_end_condition": "실제 부모 연결 절단의 짧은 표시 클립이 끝나면 종료한다. 분리된 실물 모듈은 효과 인스턴스와 별개로 남는다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "shield-pulse",
+      "order": 43,
+      "name_ko": "방패 펄스",
+      "name_en": "Shield Pulse",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "방어 반응을 공격 폭발과 다른 바깥 고리로 표현한다.",
+      "trigger": "유효한 방패 방어 표시 이벤트",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "attachment": {
+        "mode": "target",
+        "origin": "표시 대상의 중심 또는 명시한 지원 기준점",
+        "axes": "+Y 위, +Z 대상 전방",
+        "integration": "대상 크기와 가림을 실제 장면에서 확인한다. 효과 중심이 곧 피해/회복 영역은 아니다."
+      },
+      "model": "assets/shield-pulse.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "armor-block",
+      "order": 44,
+      "name_ko": "장갑 막음",
+      "name_en": "Armor Block",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "확정된 막음 반응을 일반 장갑 접촉보다 짧고 납작하게 보인다.",
+      "trigger": "실제 장갑 막음/방어 결과가 계산된 이벤트",
+      "duration_seconds": 0.55,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "model": "assets/armor-block.glb",
+      "semantic_end_condition": "한 번 재생 클립이 끝나면 종료한다. 실제 판정/호스트/장면이 취소·제거되면 더 일찍 종료할 수 있다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "repair-stitch",
+      "order": 45,
+      "name_ko": "수리 봉합",
+      "name_en": "Repair Stitch",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "Cloudstitch의 수선 감성을 결합부 봉합으로 보여준다.",
+      "trigger": "실제 수리 진행/완료 표시 이벤트",
+      "duration_seconds": 2,
+      "loop": false,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "model": "assets/repair-stitch.glb",
+      "semantic_end_condition": "실제 수리 표시 이벤트의 봉합 클립이 끝나거나 수리가 취소·호스트가 제거되면 종료한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "healing-pulse",
+      "order": 46,
+      "name_ko": "회복 펄스",
+      "name_en": "Recovery Pulse",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "회복 완료를 밝은 고리와 잎 모양으로 부드럽게 표현한다.",
+      "trigger": "실제 회복/복구 표시 요청",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "attachment": {
+        "mode": "target",
+        "origin": "표시 대상의 중심 또는 명시한 지원 기준점",
+        "axes": "+Y 위, +Z 대상 전방",
+        "integration": "대상 크기와 가림을 실제 장면에서 확인한다. 효과 중심이 곧 피해/회복 영역은 아니다."
+      },
+      "model": "assets/healing-pulse.glb",
+      "semantic_end_condition": "실제 복구/회복 표시 이벤트의 펄스 클립이 끝나면 종료한다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "salvage-tether",
+      "order": 47,
+      "name_ko": "회수 견인 흐름",
+      "name_en": "Salvage Tether",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "견인 줄의 방향과 회수 중임을 공격 궤적과 구별한다.",
+      "trigger": "실제 견인/회수 중인 두 끝점 연결 이벤트",
+      "duration_seconds": 2,
+      "loop": true,
+      "attachment": {
+        "mode": "link",
+        "origin": "실제 견인 시작점",
+        "axes": "+Z 시작점에서 끝점으로, +Y는 그 축에 수직인 안정화 방향",
+        "integration": "끝점 사이 거리·방향은 엔진에서 갱신한다. Z축 길이 변환만으로 로프 물리를 구현하지 않는다."
+      },
+      "model": "assets/salvage-tether.glb",
+      "semantic_end_condition": "실제 견인 해제·줄 절단·거리 해제·회수 완료·한 끝점/호스트 제거에서 반복을 중지한다. 회수 완료를 소켓 장착으로 바꾸지 않는다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "해당 실제 상태가 유효한 동안 반복, 상태 종료에서 loop stop 후 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    },
+    {
+      "id": "mount-lock",
+      "order": 48,
+      "name_ko": "장착 잠금",
+      "name_en": "Mount Lock",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "실제 장착 확정의 잠금 감각을 짧게 보여준다.",
+      "trigger": "소켓 장착이 실제 검증·확정된 이벤트",
+      "duration_seconds": 1,
+      "loop": false,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "model": "assets/mount-lock.glb",
+      "semantic_end_condition": "실제 장착 확정 표시 클립이 끝나면 종료한다. 불허·미확정 소켓에는 재생하지 않는다.",
+      "engine_status": "후속 엔진 통합 계약. 현재는 실제 전투 이벤트 시스템에 연결되지 않은 표시 데이터다.",
+      "runtime_lifecycle": "실제 이벤트에서 한 번 재생, 실제 발사체·호스트 취소 또는 클립 완료에서 종료/풀 반환.",
+      "actual_asset_record": "실제 모델 경로·길이·채널·검사 상태는 catalog.json 및 manifests/의 최신 기록을 우선한다."
+    }
+  ],
+  "weapon_sequences": [
+    {
+      "id": "01-machine-gun",
+      "weapon_id": "01-machine-gun",
+      "name_ko": "기관총 공격",
+      "name_en": "Machine Gun Attack Sequence",
+      "model": "sequences/01-machine-gun.glb",
+      "catalog_duration_seconds": 2,
+      "catalog_loop": true,
+      "schedule_source": "sequence-catalog.json의 실제 component_effects.start/end를 복사한 전시 타임라인. 최종 실제 파일/카탈로그가 변경되면 그 값을 우선한다.",
+      "schedule": [
+        {
+          "id": "machine-gun-muzzle",
+          "start": 0,
+          "end": 0.2,
+          "semantic_stage": "발사"
+        },
+        {
+          "id": "machine-gun-projectile",
+          "start": 0.12,
+          "end": 0.85,
+          "semantic_stage": "비행"
+        },
+        {
+          "id": "machine-gun-hit",
+          "start": 0.84,
+          "end": 1.8,
+          "semantic_stage": "고유 명중"
+        }
+      ],
+      "approximate_muzzle": [
+        0.0007595372312182436,
+        0.6299396781481901,
+        -0.008382503840366984
+      ],
+      "core_rule": "발사→비행→고유 명중의 순서를 보여주는 고정 연출 시연. 스케줄 시간이 실제 충돌을 발생시키지 않는다.",
+      "common_hit_selection": "우선 무기 고유 명중 하나 또는 실제 재질 공용 피격 하나를 주 효과로 선택한다. 추가 재질 강조가 필요하면 작게 제한하고 동일 위치의 큰 폭발·고리를 중복하지 않는다.",
+      "special_condition": "작은 연사 섬광·작은 피격이 대형 폭발을 덮지 않게 유지한다. 전시 반복 주기는 실제 발사 속도가 아니다.",
+      "limitations": [
+        "기존 단일 메시 무기 원본을 보존한 별도 합성 GLB다.",
+        "포구는 시연을 위한 근사 위치이며 정확한 엔진 소켓·포신 분리·yaw/pitch·장전/반동 리그 완료가 아니다.",
+        "내장 효과 이동은 진행 시연이다. 엔진 발사체 물리와 동시에 중복 이동시키지 않는다.",
+        "표시 루프는 공격·피해·탄약/연료 소비를 실제 실행하지 않는다."
+      ]
+    },
+    {
+      "id": "02-deck-cannon",
+      "weapon_id": "02-deck-cannon",
+      "name_ko": "함포 공격",
+      "name_en": "Deck Cannon Attack Sequence",
+      "model": "sequences/02-deck-cannon.glb",
+      "catalog_duration_seconds": 2.8,
+      "catalog_loop": true,
+      "schedule_source": "sequence-catalog.json의 실제 component_effects.start/end를 복사한 전시 타임라인. 최종 실제 파일/카탈로그가 변경되면 그 값을 우선한다.",
+      "schedule": [
+        {
+          "id": "cannon-muzzle",
+          "start": 0,
+          "end": 0.55,
+          "semantic_stage": "발사"
+        },
+        {
+          "id": "cannon-projectile",
+          "start": 0.3,
+          "end": 1.25,
+          "semantic_stage": "비행"
+        },
+        {
+          "id": "cannon-hit",
+          "start": 1.24,
+          "end": 2.7,
+          "semantic_stage": "고유 명중"
+        }
+      ],
+      "approximate_muzzle": [
+        0.0037513940745979024,
+        0.5826191776634596,
+        -0.008071764725575914
+      ],
+      "core_rule": "발사→비행→고유 명중의 순서를 보여주는 고정 연출 시연. 스케줄 시간이 실제 충돌을 발생시키지 않는다.",
+      "common_hit_selection": "우선 무기 고유 명중 하나 또는 실제 재질 공용 피격 하나를 주 효과로 선택한다. 추가 재질 강조가 필요하면 작게 제한하고 동일 위치의 큰 폭발·고리를 중복하지 않는다.",
+      "special_condition": "관통 출구는 실제 관통이 허용되고 성공한 경우에만 추가한다. 기본 일반탄을 관통탄으로 바꾸지 않는다.",
+      "limitations": [
+        "기존 단일 메시 무기 원본을 보존한 별도 합성 GLB다.",
+        "포구는 시연을 위한 근사 위치이며 정확한 엔진 소켓·포신 분리·yaw/pitch·장전/반동 리그 완료가 아니다.",
+        "내장 효과 이동은 진행 시연이다. 엔진 발사체 물리와 동시에 중복 이동시키지 않는다.",
+        "표시 루프는 공격·피해·탄약/연료 소비를 실제 실행하지 않는다."
+      ]
+    },
+    {
+      "id": "03-mortar",
+      "weapon_id": "03-mortar",
+      "name_ko": "박격포 공격",
+      "name_en": "Mortar Attack Sequence",
+      "model": "sequences/03-mortar.glb",
+      "catalog_duration_seconds": 3.5,
+      "catalog_loop": true,
+      "schedule_source": "sequence-catalog.json의 실제 component_effects.start/end를 복사한 전시 타임라인. 최종 실제 파일/카탈로그가 변경되면 그 값을 우선한다.",
+      "schedule": [
+        {
+          "id": "mortar-launch",
+          "start": 0,
+          "end": 0.55,
+          "semantic_stage": "발사"
+        },
+        {
+          "id": "mortar-projectile",
+          "start": 0.3,
+          "end": 1.75,
+          "semantic_stage": "비행"
+        },
+        {
+          "id": "mortar-hit",
+          "start": 1.74,
+          "end": 3.4,
+          "semantic_stage": "고유 명중"
+        }
+      ],
+      "approximate_muzzle": [
+        0.05058962163923053,
+        1.2502621778112957,
+        -0.3191355178333415
+      ],
+      "core_rule": "발사→비행→고유 명중의 순서를 보여주는 고정 연출 시연. 스케줄 시간이 실제 충돌을 발생시키지 않는다.",
+      "common_hit_selection": "우선 무기 고유 명중 하나 또는 실제 재질 공용 피격 하나를 주 효과로 선택한다. 추가 재질 강조가 필요하면 작게 제한하고 동일 위치의 큰 폭발·고리를 중복하지 않는다.",
+      "special_condition": "곡사 도착·착탄 위치·범위 경고는 실제 엔진이 계산한다. 전시 타임라인은 사거리·탄도·범위 피해 명세가 아니다.",
+      "limitations": [
+        "기존 단일 메시 무기 원본을 보존한 별도 합성 GLB다.",
+        "포구는 시연을 위한 근사 위치이며 정확한 엔진 소켓·포신 분리·yaw/pitch·장전/반동 리그 완료가 아니다.",
+        "내장 효과 이동은 진행 시연이다. 엔진 발사체 물리와 동시에 중복 이동시키지 않는다.",
+        "표시 루프는 공격·피해·탄약/연료 소비를 실제 실행하지 않는다."
+      ]
+    },
+    {
+      "id": "04-harpoon",
+      "weapon_id": "04-harpoon",
+      "name_ko": "작살 견인",
+      "name_en": "Harpoon Launcher Attack Sequence",
+      "model": "sequences/04-harpoon.glb",
+      "catalog_duration_seconds": 2.8,
+      "catalog_loop": true,
+      "schedule_source": "sequence-catalog.json의 실제 component_effects.start/end를 복사한 전시 타임라인. 최종 실제 파일/카탈로그가 변경되면 그 값을 우선한다.",
+      "schedule": [
+        {
+          "id": "harpoon-launch",
+          "start": 0,
+          "end": 0.4,
+          "semantic_stage": "발사"
+        },
+        {
+          "id": "harpoon-projectile",
+          "start": 0.2,
+          "end": 1.3,
+          "visible_until": 2.7,
+          "semantic_stage": "비행"
+        },
+        {
+          "id": "harpoon-hit",
+          "start": 1.29,
+          "end": 2.7,
+          "semantic_stage": "고유 명중"
+        }
+      ],
+      "approximate_muzzle": [
+        0.08148356695017034,
+        0.7218403923108203,
+        0
+      ],
+      "core_rule": "발사→비행→고유 명중의 순서를 보여주는 고정 연출 시연. 스케줄 시간이 실제 충돌을 발생시키지 않는다.",
+      "common_hit_selection": "우선 무기 고유 명중 하나 또는 실제 재질 공용 피격 하나를 주 효과로 선택한다. 추가 재질 강조가 필요하면 작게 제한하고 동일 위치의 큰 폭발·고리를 중복하지 않는다.",
+      "special_condition": "harpoon-hit의 걸림 표시는 실제 걸림 판정에서 선택한다. 현재 sequence-catalog.json은 projectile 비행0.2~1.3초 뒤 visible_until2.7초까지 작살/줄을 유지하는 시연을 기록한다. 최종 실제 GLB/카탈로그가 바뀌면 그 값을 우선한다. 연출상 rope hold와 실제 장력·견인은 별개다.",
+      "limitations": [
+        "기존 단일 메시 무기 원본을 보존한 별도 합성 GLB다.",
+        "포구는 시연을 위한 근사 위치이며 정확한 엔진 소켓·포신 분리·yaw/pitch·장전/반동 리그 완료가 아니다.",
+        "내장 효과 이동은 진행 시연이다. 엔진 발사체 물리와 동시에 중복 이동시키지 않는다.",
+        "표시 루프는 공격·피해·탄약/연료 소비를 실제 실행하지 않는다."
+      ]
+    },
+    {
+      "id": "05-chain-shot",
+      "weapon_id": "05-chain-shot",
+      "name_ko": "사슬탄 공격",
+      "name_en": "Chain-Shot Launcher Attack Sequence",
+      "model": "sequences/05-chain-shot.glb",
+      "catalog_duration_seconds": 2.8,
+      "catalog_loop": true,
+      "schedule_source": "sequence-catalog.json의 실제 component_effects.start/end를 복사한 전시 타임라인. 최종 실제 파일/카탈로그가 변경되면 그 값을 우선한다.",
+      "schedule": [
+        {
+          "id": "chain-shot-launch",
+          "start": 0,
+          "end": 0.4,
+          "semantic_stage": "발사"
+        },
+        {
+          "id": "chain-shot-projectile",
+          "start": 0.2,
+          "end": 1.25,
+          "semantic_stage": "비행"
+        },
+        {
+          "id": "chain-shot-hit",
+          "start": 1.24,
+          "end": 2.7,
+          "semantic_stage": "고유 명중"
+        }
+      ],
+      "approximate_muzzle": [
+        -0.016747484945607294,
+        0.9123164319584125,
+        -0.020826190379907406
+      ],
+      "core_rule": "발사→비행→고유 명중의 순서를 보여주는 고정 연출 시연. 스케줄 시간이 실제 충돌을 발생시키지 않는다.",
+      "common_hit_selection": "우선 무기 고유 명중 하나 또는 실제 재질 공용 피격 하나를 주 효과로 선택한다. 추가 재질 강조가 필요하면 작게 제한하고 동일 위치의 큰 폭발·고리를 중복하지 않는다.",
+      "special_condition": "chain-shot-hit는 엔진 접촉 결과에 따른 얽힘 표시다. 일반 선체 접촉은 공용 재질 피격을 선택하고 엔진 출력 저하를 자동 적용하지 않는다.",
+      "limitations": [
+        "기존 단일 메시 무기 원본을 보존한 별도 합성 GLB다.",
+        "포구는 시연을 위한 근사 위치이며 정확한 엔진 소켓·포신 분리·yaw/pitch·장전/반동 리그 완료가 아니다.",
+        "내장 효과 이동은 진행 시연이다. 엔진 발사체 물리와 동시에 중복 이동시키지 않는다.",
+        "표시 루프는 공격·피해·탄약/연료 소비를 실제 실행하지 않는다."
+      ]
+    },
+    {
+      "id": "06-flamethrower",
+      "weapon_id": "06-flamethrower",
+      "name_ko": "화염 분사",
+      "name_en": "Flamethrower Attack Sequence",
+      "model": "sequences/06-flamethrower.glb",
+      "catalog_duration_seconds": 3,
+      "catalog_loop": true,
+      "schedule_source": "sequence-catalog.json의 실제 component_effects.start/end를 복사한 전시 타임라인. 최종 실제 파일/카탈로그가 변경되면 그 값을 우선한다.",
+      "schedule": [
+        {
+          "id": "flamethrower-ignite",
+          "start": 0,
+          "end": 0.4,
+          "semantic_stage": "발사"
+        },
+        {
+          "id": "flamethrower-stream",
+          "start": 0.15,
+          "end": 2.6,
+          "semantic_stage": "짧은 원뿔 전달/분사"
+        },
+        {
+          "id": "flamethrower-hit",
+          "start": 0.5,
+          "end": 2.9,
+          "semantic_stage": "고유 명중"
+        }
+      ],
+      "approximate_muzzle": [
+        0.11841320381106613,
+        0.6469771102689745,
+        -0.02150336848870915
+      ],
+      "core_rule": "점화→원뿔 분사와 접촉 표시가 겹치는 연출 시연. 독립 탄환 세 발을 쏘는 구조가 아니다.",
+      "common_hit_selection": "우선 무기 고유 명중 하나 또는 실제 재질 공용 피격 하나를 주 효과로 선택한다. 추가 재질 강조가 필요하면 작게 제한하고 동일 위치의 큰 폭발·고리를 중복하지 않는다.",
+      "special_condition": "접촉 표시는 실제 원뿔 접촉에서만 사용하고 지속 점화는 별도 상태가 유효할 때 선택한다. 불투명 불꽃이 연결부를 덮지 않게 조정한다.",
+      "limitations": [
+        "기존 단일 메시 무기 원본을 보존한 별도 합성 GLB다.",
+        "포구는 시연을 위한 근사 위치이며 정확한 엔진 소켓·포신 분리·yaw/pitch·장전/반동 리그 완료가 아니다.",
+        "내장 효과 이동은 진행 시연이다. 엔진 발사체 물리와 동시에 중복 이동시키지 않는다.",
+        "표시 루프는 공격·피해·탄약/연료 소비를 실제 실행하지 않는다."
+      ]
+    }
+  ],
+  "known_limits": [
+    "실제 합성 시연 타임라인은 기본 효과 단독 클립 길이와 다를 수 있다. 박격포 시연의3.5초를 기본48종0.2~3초 규칙 위반이나 실제 장전시간으로 읽지 않는다.",
+    "작살 시연은 현재 카탈로그의 visible_until2.7초까지 줄 유지를 기록한다. 최신 실제 GLB/카탈로그를 우선하며 시각 rope hold는 물리 견인·장력·소유권 변경을 뜻하지 않는다.",
+    "합성 GLB는 기존 무기 텍스처를 포함할 수 있고 기본48효과는 vertex color/unlit 표면을 사용한다. 작업대 재생/셰이더 지원은 엔진별로 검토해야 한다.",
+    "표준 glTF transform 키는 실제3D 동작이지만 파티클·동적 투명도·셰이더·깊이 페이드·블룸·오디오·진동·카메라·최종 성능 예산은 별도다.",
+    "검사 통과 횟수·최종 파일 수치·작업 합계는 루트의 최신 정식 검사 기록을 따른다. 이 레시피는 테스트 통과 값을 새로 선언하지 않는다."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "beacon-lighthouse",
+  "order": 5,
+  "name_ko": "항로 등대",
+  "name_en": "Beacon Lighthouse",
+  "category": "hero-buildings",
+  "role": "정박지의 위치를 읽는 등대 외관과 조용한 안전 지표",
+  "build_method": "hero_meshy",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 3.4,
+    "depth": 3.4,
+    "height": 8,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "hero/beacon-lighthouse/model-repaired.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Existing downloaded Meshy hero GLB, inspected without source edits",
+  "triangles": 7518,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "node_count": 1,
+  "material_count": 1,
+  "texture_count": 1,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "embedded": true
+    }
+  ],
+  "vertex_color_primitive_count": 0,
+  "vertex_colors": false,
+  "animation_count": 0,
+  "bytes": 4043752,
+  "sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+  "mesh_definition_count": 1,
+  "unique_geometry_triangles": 7518,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 1,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.2761229872703552,
+        -0.47582998871803284,
+        -0.2785640060901642
+      ],
+      "max": [
+        0.2780759930610657,
+        0.4753420054912567,
+        0.2761229872703552
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/0/matrix"
+        }
+      ]
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 1,
+    "messages": [
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/0/matrix"
+      }
+    ]
+  },
+  "task_id": "01a14ce2-9cda-70c2-a099-278cdebc8027",
+  "operation_id": "ebbd5dc8-fbb6-44fa-a4ff-1b4b9fb8e4de",
+  "consumed_credits": 15,
+  "original_source_preserved": true,
+  "source_model": "hero/beacon-lighthouse/model.glb",
+  "source_sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+  "normal_repair": {
+    "log": "hero/beacon-lighthouse/repair-log.json",
+    "original_sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+    "repaired_sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+    "normal_vectors_repaired": 0,
+    "zero_normal_vectors": 0,
+    "non_unit_normal_vectors": 0,
+    "official_errors_after": 0
+  },
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration.",
+    "Generated hidden surfaces, part separation and exact ground pivot require visual review."
+  ]
+}

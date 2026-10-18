@@ -1,0 +1,66 @@
+{
+  "id": "04-harpoon",
+  "order": 4,
+  "name_ko": "작살 견인",
+  "name_en": "Harpoon Launcher Attack Sequence",
+  "category": "weapon-sequence",
+  "weapon_id": "04-harpoon",
+  "model": "sequences/04-harpoon.glb",
+  "preview": "sequence-previews/04-harpoon.png",
+  "duration": 2.8,
+  "loop": true,
+  "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+  "status": "completed_composed_animation_study",
+  "triangles": 5567,
+  "mesh_count": 33,
+  "animation_count": 1,
+  "bytes": 4024428,
+  "component_effects": [
+    {
+      "id": "harpoon-launch",
+      "start": 0,
+      "end": 0.4
+    },
+    {
+      "id": "harpoon-projectile",
+      "start": 0.2,
+      "end": 1.3,
+      "visible_until": 2.7
+    },
+    {
+      "id": "harpoon-hit",
+      "start": 1.29,
+      "end": 2.7
+    }
+  ],
+  "approximate_muzzle": [
+    0.08148356695017034,
+    0.7218403923108203,
+    0
+  ],
+  "source_weapon_sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64",
+  "copied_weapon_zero_normals_repaired": 0,
+  "sha256": "0e62fc452465ea53c1464ff13bc17eb110cb2296b98aa40d1cda552142302c5e",
+  "preview_image": {
+    "width": 2436,
+    "height": 1210,
+    "bounds": [
+      658,
+      206,
+      1787,
+      1021
+    ]
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 50,
+    "sha256": "0e62fc452465ea53c1464ff13bc17eb110cb2296b98aa40d1cda552142302c5e"
+  },
+  "browser_QA_passed": true,
+  "limits": [
+    "Composed choreography and estimated muzzle placement, not a combat game or finished weapon sockets.",
+    "Original weapon geometry/texture files remain unchanged. Four zero normals were repaired only in the chain-shot copy.",
+    "Weapon part separation, recoil rig, collisions and damage are not implemented."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "armor-block",
+  "name_ko": "장갑 막음",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/armor-block.glb",
+  "sha256": "6ae0a31316887237d1a69004ec3bdefd49d9ac1e6b130568663757c2759ce19b",
+  "bytes": 98556,
+  "triangles": 498,
+  "mesh_count": 20,
+  "node_count": 37,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 42,
+  "channel_paths": [
+    "translation",
+    "scale",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 0.55,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 0.550000011920929,
+    "animated_bounds": {
+      "min": [
+        -0.9546873949009351,
+        -0.016164524658721466,
+        -0.9635312488120275
+      ],
+      "max": [
+        0.8430669061508712,
+        0.43478765850887063,
+        0.992102914729791
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "6ae0a31316887237d1a69004ec3bdefd49d9ac1e6b130568663757c2759ce19b"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

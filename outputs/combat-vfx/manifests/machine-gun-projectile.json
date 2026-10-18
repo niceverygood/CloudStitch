@@ -1,0 +1,66 @@
+{
+  "id": "machine-gun-projectile",
+  "name_ko": "기관총 탄환 궤적",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/machine-gun-projectile.glb",
+  "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b",
+  "bytes": 8856,
+  "triangles": 40,
+  "mesh_count": 2,
+  "node_count": 4,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 3,
+  "channel_paths": [
+    "translation",
+    "scale",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 0.45,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 0.44999998807907104,
+    "animated_bounds": {
+      "min": [
+        -0.07000000029802322,
+        -0.07000000029802325,
+        -0.925000011920929
+      ],
+      "max": [
+        0.07000000029802322,
+        0.07000000029802325,
+        4.000125000005937
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

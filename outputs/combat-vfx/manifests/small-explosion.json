@@ -1,0 +1,66 @@
+{
+  "id": "small-explosion",
+  "name_ko": "소형 폭발",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/small-explosion.glb",
+  "sha256": "0d29ece131d7ebc128cd5dc04e3cf027bb99b75870ed33a3b528a0a84c03a74a",
+  "bytes": 224208,
+  "triangles": 1476,
+  "mesh_count": 26,
+  "node_count": 54,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 67,
+  "channel_paths": [
+    "scale",
+    "translation",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 0.8,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 0.800000011920929,
+    "animated_bounds": {
+      "min": [
+        -0.9316856851904507,
+        -0.0923394041554941,
+        -0.9316856851904507
+      ],
+      "max": [
+        0.9316856851904507,
+        1.5633644561381403,
+        1.0383135108210757
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "0d29ece131d7ebc128cd5dc04e3cf027bb99b75870ed33a3b528a0a84c03a74a"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

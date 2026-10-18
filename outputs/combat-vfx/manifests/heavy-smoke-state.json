@@ -1,0 +1,66 @@
+{
+  "id": "heavy-smoke-state",
+  "name_ko": "짙은 연기 상태",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/heavy-smoke-state.glb",
+  "sha256": "95e79fefd88daa6357f0e6e7bc70985ca60f73778799d4c2e6bf9de7a6fe89b5",
+  "bytes": 234864,
+  "triangles": 1680,
+  "mesh_count": 21,
+  "node_count": 40,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 53,
+  "channel_paths": [
+    "scale",
+    "rotation",
+    "translation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 3,
+  "loop": true,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 5,
+    "clip_duration": 3,
+    "animated_bounds": {
+      "min": [
+        -0.9747567703689122,
+        -0.07396885638153533,
+        -1.111695470075826
+      ],
+      "max": [
+        1.1624456042266267,
+        3.0975625718694566,
+        0.8854462389452633
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "95e79fefd88daa6357f0e6e7bc70985ca60f73778799d4c2e6bf9de7a6fe89b5"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}
