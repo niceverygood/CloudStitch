@@ -1,0 +1,12 @@
+{
+  "status": "design-only templates",
+  "hazards": [
+    {"id":"cloud","telegraph":"visible boundary","effect":"line-of-sight break after delay","projectilesPersist":true},
+    {"id":"updraft","telegraph":"curling ribbons and arrow","effect":"temporary movement and sinking-grace assistance","permanentLift":false},
+    {"id":"crosswind","telegraphSecondsInitial":3,"effect":"additional lateral movement","inputInversion":false},
+    {"id":"lightning","telegraphSecondsInitial":2,"shape":"hatched circle","effect":"damage and brief support power loss","fullControlLock":false},
+    {"id":"icing","stages":3,"effect":"gradual engine efficiency loss","countermeasures":["warm pocket","preheat","repair"]},
+    {"id":"vent","telegraphSecondsInitial":2,"activeSecondsInitial":2,"shape":"cone or lane","countermeasures":["timing","pump disabling"]}
+  ],
+  "constraints": ["At least one safe route during combined hazards", "Flash reduction preserves warning shapes", "Mandatory traversal does not require optional weapon", "Gameplay cloud differs from decorative cloud"]
+}

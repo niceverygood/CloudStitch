@@ -1,0 +1,88 @@
+{
+  "game_title": "Cloudstitch",
+  "korean_title": "클라우드스티치",
+  "created_date": "2026-10-18",
+  "generator": "built-in image_gen",
+  "generation_calls": 3,
+  "generation_notes": "Two new bitmap assets, followed by a targeted cleanup of a small isolated mark below the logo. Original generated files are retained at the tool output locations.",
+  "reference_airship": "../selected-airship-toon3d/reference.png",
+  "title_screen_render": "1920x1080 browser render of index.html with the generated logo and background. Native HTML menu text; no raster lettering edits.",
+  "scope": "Logo, title-screen artwork, and a local title/prologue UI prototype. No playable combat, campaign engine, or save system.",
+  "prompt_files": [
+    "prompts.json",
+    "logo-cleanup-prompt.txt"
+  ],
+  "files": [
+    {
+      "file": "cloudstitch-logo.png",
+      "bytes": 1423138,
+      "sha256": "4f88e4851165708945dfd14b1037a9d6ee6c2eaa02ea84e2add11948f35baf1c",
+      "width": 1945,
+      "height": 809,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "nonempty_bounds": [
+        47,
+        48,
+        1930,
+        791
+      ],
+      "transparent_pixel_fraction": 0.5671
+    },
+    {
+      "file": "title-background.png",
+      "bytes": 2413172,
+      "sha256": "9625e0f301a2020fcf2c7500443732619796056fcf73ea93dc75b85ab2b23369",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "file": "start-screen.png",
+      "bytes": 2829740,
+      "sha256": "5aea298ac67e333d2a07cc25e7874c64d5e2322321b940686fe6f0b9caac5454",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "file": "index.html",
+      "bytes": 17624,
+      "sha256": "a97d767e42fbf510149cbd14a6401d97a3627efa024c41589a98bb9ea7270148"
+    },
+    {
+      "file": "README.txt",
+      "bytes": 2816,
+      "sha256": "9d1a960250d89658650f22bd4378c176ba9abed7cd5f4b81ffafbd429eb2140d"
+    },
+    {
+      "file": "prompts.json",
+      "bytes": 4361,
+      "sha256": "dd87f62fc0374ec77fad077c88671050849442e6d5e2b4cbc4ee94909e873801"
+    },
+    {
+      "file": "logo-cleanup-prompt.txt",
+      "bytes": 704,
+      "sha256": "ba1e51a1c1f31788da00732a8cd70fd2e175530a4e261d3052af1f9018b48480"
+    }
+  ],
+  "verification": {
+    "errors": [],
+    "external": [],
+    "disabled": true,
+    "prologue": true,
+    "credits": true,
+    "motionToggle": true,
+    "motionDisabled": true,
+    "keyboardSkipsDisabled": true,
+    "fullscreen": true,
+    "mobileOverflow": false,
+    "mobilePrologueFits": true,
+    "reducedDefault": true,
+    "reducedOptIn": true,
+    "passed": true
+  }
+}

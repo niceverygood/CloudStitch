@@ -1,0 +1,116 @@
+{
+  "model": "airship.glb",
+  "viewer": "viewer-v2.html",
+  "resource": "image-to-3d",
+  "task_id": "01a14c5b-2c4e-711b-8651-8c4fb67058a0",
+  "operation_id": "effd2c3e-2ada-4588-9844-9a4d16f5f877",
+  "project_folder": "outputs/selected-airship-toon3d/meshy_output/20261018_091328_selected-airship-toon_01a14c5b",
+  "triangles": 11026,
+  "mesh_count": 1,
+  "material_count": 1,
+  "texture_count": 1,
+  "texture_size": [
+    2048,
+    2048
+  ],
+  "animation_clips": 0,
+  "model_bytes": 3645884,
+  "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+  "reported_consumed_credits": 15,
+  "balance_before": 4989,
+  "balance_after": 4974,
+  "balance_difference": 15,
+  "qa": {
+    "initial": {
+      "ready": true,
+      "sourceBytes": 3645884,
+      "mode": "handdrawn",
+      "offline": true,
+      "meshCount": 1,
+      "triangleCount": 11026,
+      "textureCount": 1,
+      "texturesReady": true,
+      "textures": [
+        {
+          "name": "",
+          "width": 2048,
+          "height": 2048,
+          "ready": true
+        }
+      ],
+      "materialCount": 1,
+      "animationClipCount": 0,
+      "originalBounds": {
+        "min": [
+          -0.4748539924621582,
+          -0.2595210075378418,
+          -0.1496579945087433
+        ],
+        "max": [
+          0.47338899970054626,
+          0.2600100040435791,
+          0.13598600029945374
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -2,
+          -1.0957761161967587,
+          -0.6024700359909113
+        ],
+        "max": [
+          2,
+          1.0957761161967587,
+          0.6024700359909113
+        ]
+      },
+      "renderer": "WebGL2",
+      "autoRotate": false,
+      "outlineEnabled": true,
+      "outlinePixels": 1.2
+    },
+    "errors": [],
+    "externalRequests": [],
+    "mobileOverflow": false,
+    "dragRotate": true,
+    "wheelZoom": true,
+    "downloadBytes": 3645884,
+    "passed": true
+  },
+  "ghosting_regression": {
+    "results": [
+      {
+        "mode": "handdrawn",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 1.3877787807814457e-17,
+        "cameraUnchanged": true,
+        "pixelCount": 567378
+      },
+      {
+        "mode": "cel",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 0,
+        "cameraUnchanged": true,
+        "pixelCount": 567378
+      },
+      {
+        "mode": "original",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 0,
+        "cameraUnchanged": true,
+        "pixelCount": 567378
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "viewer_fix": "윤곽선 기본 패스의 프레임 자동 지우기를 활성화하여 회전 잔상 누적 수정. 모델 파일은 동일.",
+  "limitation": "통합 메시. 포탑·프로펠러의 독립 움직임에는 메시 분리와 피벗 설정 필요. 2D 표현은 뷰어 재질 설정이며 원본 GLB의 범용 셰이더가 아님. 단일 이미지의 보이지 않는 면은 생성 추정.",
+  "game_title": "Cloudstitch"
+}

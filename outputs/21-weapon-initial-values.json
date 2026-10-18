@@ -1,0 +1,54 @@
+{
+  "status": "untested starting assumptions; ignores heat, misses, armor and area damage",
+  "distanceUnit": "U; typical ship length about 10U",
+  "weapons": [
+    {
+      "name": "기관총",
+      "damage": 8,
+      "interval": 0.2,
+      "theoreticalDps": 40,
+      "expected": 40,
+      "consistent": true
+    },
+    {
+      "name": "함포",
+      "damage": 90,
+      "interval": 3,
+      "theoreticalDps": 30,
+      "expected": 30,
+      "consistent": true
+    },
+    {
+      "name": "박격포",
+      "damage": 70,
+      "interval": 4,
+      "theoreticalDps": 17.5,
+      "expected": 17.5,
+      "consistent": true
+    },
+    {
+      "name": "작살포",
+      "damage": 15,
+      "interval": 5,
+      "theoreticalDps": 3,
+      "expected": 3,
+      "consistent": true
+    },
+    {
+      "name": "사슬탄",
+      "damage": 30,
+      "interval": 5,
+      "theoreticalDps": 6,
+      "expected": 6,
+      "consistent": true
+    },
+    {
+      "name": "화염방사기",
+      "damage": 24,
+      "interval": 1,
+      "theoreticalDps": 24,
+      "expected": 24,
+      "consistent": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "design template, not implemented AI",
+  "encounterId": "industrial_retrieval_intro",
+  "roles": ["scout", "harpoon_ship", "broadside_ship"],
+  "phases": [
+    {"id":"observe","objective":"identify exposed winch","largeAttackTokens":1},
+    {"id":"tether","objective":"cut cable or destroy winch","largeAttackTokens":1},
+    {"id":"counter","objective":"attack rear engine during reload","largeAttackTokens":2},
+    {"id":"recover","objective":"salvage and repair","largeAttackTokens":0}
+  ],
+  "constraints": [
+    "Enemy cannot fire through own hull",
+    "High-damage offscreen attacks require direction warning",
+    "Cloud concealment uses last-seen location",
+    "Recovery pocket must not overlap active attack telegraph"
+  ],
+  "telemetryCandidates": ["unexplainedHits", "offscreenHits", "simultaneousTelegraphs", "roleRecognition", "safePathAvailability"]
+}

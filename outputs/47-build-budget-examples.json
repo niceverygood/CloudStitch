@@ -1,0 +1,172 @@
+{
+  "status": "paper-budget examples only; not simulated combat balance",
+  "units": "abstract design units",
+  "parts": {
+    "hull": {
+      "weight": 24
+    },
+    "balloon": {
+      "weight": 6,
+      "lift": 65
+    },
+    "engine": {
+      "weight": 8,
+      "generation": 14,
+      "power": 6
+    },
+    "machinegun": {
+      "weight": 8,
+      "power": 2
+    },
+    "cannon": {
+      "weight": 18,
+      "power": 3
+    },
+    "mortar": {
+      "weight": 20,
+      "power": 3
+    },
+    "harpoon": {
+      "weight": 12,
+      "power": 4
+    },
+    "chainshot": {
+      "weight": 14,
+      "power": 2
+    },
+    "flame": {
+      "weight": 12,
+      "power": 4
+    },
+    "hook": {
+      "weight": 4,
+      "power": 2
+    },
+    "repair": {
+      "weight": 8,
+      "power": 3
+    },
+    "armor": {
+      "weight": 6
+    },
+    "smoke": {
+      "weight": 4,
+      "power": 1
+    },
+    "rescue": {
+      "weight": 8,
+      "power": 1
+    }
+  },
+  "builds": [
+    {
+      "name": "구름 정찰선",
+      "parts": {
+        "hull": 1,
+        "balloon": 1,
+        "engine": 1,
+        "machinegun": 1,
+        "hook": 1,
+        "smoke": 1
+      },
+      "weight": 54,
+      "lift": 65,
+      "generation": 14,
+      "power": 11,
+      "liftMargin": 11,
+      "powerMargin": 3
+    },
+    {
+      "name": "혼성 습격선",
+      "parts": {
+        "hull": 1,
+        "balloon": 2,
+        "engine": 2,
+        "machinegun": 2,
+        "cannon": 1,
+        "hook": 1,
+        "armor": 1
+      },
+      "weight": 96,
+      "lift": 130,
+      "generation": 28,
+      "power": 21,
+      "liftMargin": 34,
+      "powerMargin": 7
+    },
+    {
+      "name": "측면 전함",
+      "parts": {
+        "hull": 1,
+        "balloon": 3,
+        "engine": 2,
+        "cannon": 3,
+        "armor": 4,
+        "hook": 1
+      },
+      "weight": 140,
+      "lift": 195,
+      "generation": 28,
+      "power": 23,
+      "liftMargin": 55,
+      "powerMargin": 5
+    },
+    {
+      "name": "구조 공방선",
+      "parts": {
+        "hull": 1,
+        "balloon": 3,
+        "engine": 3,
+        "cannon": 1,
+        "harpoon": 1,
+        "hook": 1,
+        "repair": 2,
+        "rescue": 1,
+        "armor": 2
+      },
+      "weight": 136,
+      "lift": 195,
+      "generation": 42,
+      "power": 34,
+      "liftMargin": 59,
+      "powerMargin": 8
+    },
+    {
+      "name": "전장 통제선",
+      "parts": {
+        "hull": 1,
+        "balloon": 2,
+        "engine": 2,
+        "chainshot": 2,
+        "mortar": 1,
+        "hook": 1,
+        "armor": 2,
+        "smoke": 1
+      },
+      "weight": 120,
+      "lift": 130,
+      "generation": 28,
+      "power": 22,
+      "liftMargin": 10,
+      "powerMargin": 6
+    },
+    {
+      "name": "근접 화염선",
+      "parts": {
+        "hull": 1,
+        "balloon": 2,
+        "engine": 2,
+        "flame": 2,
+        "armor": 3,
+        "hook": 1,
+        "smoke": 1
+      },
+      "weight": 102,
+      "lift": 130,
+      "generation": 28,
+      "power": 23,
+      "liftMargin": 28,
+      "powerMargin": 5
+    }
+  ]
+}

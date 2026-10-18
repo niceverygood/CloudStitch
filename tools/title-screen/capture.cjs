@@ -1,0 +1,21 @@
+const path = require('node:path');
+const {pathToFileURL} = require('node:url');
+const fs=require('node:fs');
+const {repoPath,launchBrowser}=require('../lib/runtime.cjs');
+const input=repoPath(process.argv[2] || 'outputs/cloudstitch-title-screen/index.html');
+const output=repoPath(process.argv[3] || 'outputs/cloudstitch-title-screen/start-screen.png');
+fs.mkdirSync(path.dirname(output),{recursive:true});
+(async()=>{
+  const browser=await launchBrowser();
+  const context=await browser.newContext({viewport:{width:1920,height:1080},deviceScaleFactor:1,reducedMotion:'reduce'});
+  const page=await context.newPage();
+  await page.goto(pathToFileURL(input).href);
+  await page.locator('.sky img').evaluate(image=>image.decode());
+  await page.locator('.brand img').evaluate(image=>image.decode());
+  await page.mouse.move(1850,50);
+  await page.evaluate(()=>{if(document.activeElement instanceof HTMLElement)document.activeElement.blur();});
+  await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+  await page.screenshot({path:output});
+  console.log(JSON.stringify({width:1920,height:1080,deviceScaleFactor:1,motion:'off',file:output}));
+  await browser.close();
+})().catch(error=>{console.error(error);process.exit(1);});

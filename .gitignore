@@ -1,0 +1,24 @@
+# Local experiments, dependencies, and generated QA captures
+/work/
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Credentials must stay on each computer
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ZIPs duplicate the individually versioned assets and documents
+*.zip
+
+# Local generation sessions and machine-specific state
+/outputs/**/meshy_output/
+/outputs/**/state.json
+/outputs/**/*-state.json
+/outputs/**/cli-last-stderr.txt
+

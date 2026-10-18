@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>귀환호 · 입체감 있는 2D 비행선 9종</title>
+  <style>
+    :root{--ink:#292b28;--muted:#676c65;--paper:#f6f4ee;--line:#d9ddd3;--green:#536958;--warm:#a67b53;--rust:#876756;--blue:#537785}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;line-height:1.65}
+    main{max-width:1420px;margin:auto;padding:54px 36px 36px}
+    header{max-width:960px;margin-bottom:34px}
+    .eyebrow{font-size:13px;letter-spacing:.1em;color:var(--green);font-weight:700;margin:0 0 10px}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.25;letter-spacing:-.045em;margin:0 0 15px}
+    .lead{font-size:17px;margin:0 0 16px;color:#4f574d}
+    .notice{border-left:3px solid #ad8b55;background:#eeece3;padding:12px 16px;font-size:14px;margin:0 0 17px}
+    .notice strong{display:block;color:#5d553e}
+    a{color:#355c4a;text-underline-offset:3px}
+    a:hover{color:#142f23}
+    a:focus-visible{outline:3px solid #cfad70;outline-offset:4px;border-radius:2px}
+    .guide{font-size:14px;font-weight:700}
+    nav{display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0;margin-bottom:33px}
+    nav a{padding:4px 12px;background:#e9ece3;border-radius:20px;text-decoration:none;font-size:13px}
+    section{margin:0 0 42px;scroll-margin-top:24px}
+    .section-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:15px}
+    h2{font-size:21px;letter-spacing:-.025em;margin:0}
+    .tone-letter{color:var(--warm);font-size:14px;letter-spacing:.1em;font-weight:800;margin-right:8px}
+    #tone-b .tone-letter{color:var(--rust)}
+    #tone-c .tone-letter{color:var(--blue)}
+    .section-head p{font-size:13px;color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    article{background:#fdfcf9;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    .image{aspect-ratio:4/3;display:grid;place-items:center;position:relative;overflow:hidden;background-color:#edece6;background-image:conic-gradient(#e5e6df 25%,transparent 0 50%,#e5e6df 0 75%,transparent 0);background-size:24px 24px}
+    .image img{width:100%;height:100%;object-fit:contain;display:block;position:absolute;inset:0;padding:8px}
+    .image img[hidden]{display:none}
+    .pending-text{display:none;color:#707769;font-size:14px;text-align:center;padding:20px}
+    .image.pending .pending-text{display:block}
+    .card-body{padding:16px 18px 17px}
+    .source{font-size:11px;color:var(--muted);margin:0 0 4px;letter-spacing:.025em}
+    h3{font-size:18px;margin:0 0 7px;letter-spacing:-.025em}
+    h3 span{font-size:12px;color:var(--green);display:inline-block;margin-right:8px}
+    .shape{font-size:13px;color:#5d635a;margin:0 0 14px;min-height:43px}
+    .shape b{color:#444c41;font-weight:600}
+    .downloads{display:flex;gap:12px;font-size:12px;align-items:center}
+    .downloads a{font-weight:700}
+    .status{font-size:11px;color:#777c71;margin-left:auto}
+    .footnote{font-size:13px;color:var(--muted);max-width:980px;margin:0 0 12px}
+    .gameplay{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#e6e9e5;margin:15px 0 11px}
+    .gameplay img{display:block;width:100%;height:auto;object-fit:contain}
+    .gameplay-caption{font-size:13px;color:var(--muted);margin:0 0 12px}
+    footer{border-top:1px solid var(--line);padding-top:22px}
+    @media(max-width:900px){main{padding:32px 22px}.grid{gap:12px}.card-body{padding:13px}.shape{min-height:65px}}
+    @media(max-width:650px){main{padding:26px 16px}.grid{grid-template-columns:1fr}.image{aspect-ratio:4/3}.shape{min-height:0}.section-head{gap:2px}h2{width:100%;font-size:20px}.lead{font-size:15px}nav{gap:6px}nav a{padding:4px 9px;font-size:12px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">귀환호 · 형태와 분위기 비교</p>
+    <h1>입체감 있는 2D 정지 콘셉트 9종</h1>
+    <p class="lead">포근한 수작업선, 거친 인양 작업선, 날렵한 바람 배달선.<br>세 분위기와 각 세 형태에서 다음에 제작할 비행선을 고릅니다.</p>
+    <p class="notice"><strong>9종 정지 시안 저장 완료 · 투명 배경 PNG</strong>완성 애니메이션·스프라이트 시트 아님. 부품별 컷아웃, 방향별 모습, 피벗과 장착 기준점은 후속 제작이 필요합니다.</p>
+    <a class="guide" href="pipeline-guide.txt">2D처럼 보이는 입체감과 제작 방식 안내 읽기 ↗</a>
+  </header>
+  <nav aria-label="분위기별 바로가기">
+    <a href="#tone-a">A · 포근한 수작업선</a>
+    <a href="#tone-b">B · 거친 인양 작업선</a>
+    <a href="#tone-c">C · 날렵한 바람 배달선</a>
+    <a href="#gameplay">게임 화면 스타일 참고</a>
+  </nav>
+  <section id="tone-a" aria-labelledby="title-a">
+    <div class="section-head"><h2 id="title-a"><span class="tone-letter">A</span>포근한 수작업선</h2><p>크림빛 천 · 따뜻한 목재 · 부드러운 수선 흔적</p></div>
+    <div class="grid">
+      <article><div class="image"><img src="A1.png" alt="A1 둥근 귀환호 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">A1 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID A1 · designs.json</p><h3><span>A1</span>둥근 귀환호</h3><p class="shape"><b>원안 형태</b> · 통통한 타원 기낭, 숟가락처럼 둥근 뱃머리와 아치형 선실.</p><div class="downloads"><a href="A1.png" download="A1-둥근-귀환호.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+      <article><div class="image"><img src="A2.png" alt="A2 낮은 구름선 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">A2 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID A2 · designs.json</p><h3><span>A2</span>낮은 구름선</h3><p class="shape"><b>원안 형태</b> · 넓고 납작한 기낭, 길고 얕은 목재 선체와 낮은 선실.</p><div class="downloads"><a href="A2.png" download="A2-낮은-구름선.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+      <article><div class="image"><img src="A3.png" alt="A3 높은 뱃머리 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">A3 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID A3 · designs.json</p><h3><span>A3</span>높은 뱃머리</h3><p class="shape"><b>원안 형태</b> · 짧고 둥근 기낭, 깊게 휜 선체와 높이 올라간 뱃머리.</p><div class="downloads"><a href="A3.png" download="A3-높은-뱃머리.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+    </div>
+  </section>
+  <section id="tone-b" aria-labelledby="title-b">
+    <div class="section-head"><h2 id="title-b"><span class="tone-letter">B</span>거친 인양 작업선</h2><p>어두운 목재 · 철제 보강 · 오래 버틴 작업 도구</p></div>
+    <div class="grid">
+      <article><div class="image"><img src="B1.png" alt="B1 쇠테 인양선 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">B1 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID B1 · designs.json</p><h3><span>B1</span>쇠테 인양선</h3><p class="shape"><b>원안 형태</b> · 수평 타원 기낭, 각진 뱃머리와 굵은 외부 철제 보강대.</p><div class="downloads"><a href="B1.png" download="B1-쇠테-인양선.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+      <article><div class="image"><img src="B2.png" alt="B2 깊은 용골 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">B2 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID B2 · designs.json</p><h3><span>B2</span>깊은 용골</h3><p class="shape"><b>원안 형태</b> · 날씬한 기낭, 깊고 좁은 V자 선체와 두드러진 용골.</p><div class="downloads"><a href="B2.png" download="B2-깊은-용골.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+      <article><div class="image"><img src="B3.png" alt="B3 무딘 작업선 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">B3 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID B3 · designs.json</p><h3><span>B3</span>무딘 작업선</h3><p class="shape"><b>원안 형태</b> · 넓은 기낭, 둔하고 둥근 뱃머리와 짧은 작업 갑판.</p><div class="downloads"><a href="B3.png" download="B3-무딘-작업선.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+    </div>
+  </section>
+  <section id="tone-c" aria-labelledby="title-c">
+    <div class="section-head"><h2 id="title-c"><span class="tone-letter">C</span>날렵한 바람 배달선</h2><p>가벼운 실루엣 · 옅은 목재 · 절제한 청록과 황동</p></div>
+    <div class="grid">
+      <article><div class="image"><img src="C1.png" alt="C1 바늘뱃머리 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">C1 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID C1 · designs.json</p><h3><span>C1</span>바늘뱃머리</h3><p class="shape"><b>원안 형태</b> · 길고 가는 기낭, 좁은 선체와 날카롭게 뻗은 뱃머리.</p><div class="downloads"><a href="C1.png" download="C1-바늘뱃머리.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+      <article><div class="image"><img src="C2.png" alt="C2 초승달 선체 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">C2 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID C2 · designs.json</p><h3><span>C2</span>초승달 선체</h3><p class="shape"><b>원안 형태</b> · 아담한 기낭, 초승달처럼 휘어진 선체와 낮은 중앙 갑판.</p><div class="downloads"><a href="C2.png" download="C2-초승달-선체.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+      <article><div class="image"><img src="C3.png" alt="C3 날렵한 재봉선 정지 콘셉트" onerror="this.hidden=true;this.parentElement.classList.add('pending')"><span class="pending-text">C3 이미지 준비 중<br>생성 후 새로고침하면 표시됩니다.</span></div><div class="card-body"><p class="source">원안 ID C3 · designs.json</p><h3><span>C3</span>날렵한 재봉선</h3><p class="shape"><b>원안 형태</b> · 끝이 가늘어지는 기낭, 얕고 곧은 선체와 경사진 낮은 지붕.</p><div class="downloads"><a href="C3.png" download="C3-날렵한-재봉선.png">PNG 다운로드</a><span class="status">정지 콘셉트</span></div></div></article>
+    </div>
+  </section>
+  <section id="gameplay" aria-labelledby="title-gameplay">
+    <div class="section-head"><h2 id="title-gameplay">게임 화면 스타일 참고</h2><p>비행선·적·배경·전투 효과를 함께 본 정지 장면</p></div>
+    <div class="gameplay"><img src="gameplay-style.png" alt="구름과 떠 있는 섬 사이에서 여러 비행선이 전투하는 게임 화면 스타일 정지 콘셉트" loading="lazy"></div>
+    <p class="gameplay-caption">입체감과 윤곽선, 색의 대비를 게임 화면 규모에서 검토하는 참고 이미지입니다. 실제 게임 실행 화면이나 작동하는 UI는 아닙니다.</p>
+    <div class="downloads"><a href="gameplay-style.png" download="gameplay-style.png">게임 화면 스타일 PNG 다운로드</a><a href="gameplay-style-prompt.txt">생성 프롬프트 보기</a></div>
+  </section>
+  <footer>
+    <p class="footnote">각 카드는 원안 ID와 이름을 유지합니다. ‘원안 형태’는 설계 설명이며 생성 이미지의 완전한 일치를 보증하지 않습니다. 밝은 격자 배경은 PNG의 투명 영역을 확인하기 위한 표시입니다.</p>
+    <p class="footnote">그림의 외관만으로 참고 게임의 실제 엔진이나 제작 방식을 확정하지 않습니다. 이 9종은 형태·색·분위기 선택용 정지 시안이며, 게임 자산으로 쓰려면 후속 제작과 검증이 필요합니다. 파일 규격과 검사 결과는 <a href="manifest.json">검사 기록</a>에 담았습니다.</p>
+    <a class="guide" href="pipeline-guide.txt">제작 방식 비교와 Meshy 활용 안내 ↗</a>
+  </footer>
+</main>
+</body>
+</html>

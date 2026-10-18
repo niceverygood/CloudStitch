@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Cloudstitch — 귀환호 3D 툰 뷰어</title>
+  <style>
+    :root{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;color:#263943;background:#e9e7e0;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0}button,a,input{ -webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}
+    button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #68899a;outline-offset:4px}
+    .shell{max-width:1440px;margin:auto;padding:30px 36px 22px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:24px}
+    .eyebrow{font-size:11px;font-weight:700;letter-spacing:2.6px;color:#708087;margin-bottom:8px}
+    h1{margin:0;font-size:26px;font-weight:650;letter-spacing:-1px}h1 span{font-weight:400;color:#7b868a;font-size:18px;margin-left:9px}
+    .download{display:inline-flex;align-items:center;gap:10px;border:1px solid #b9c0bd;border-radius:7px;padding:11px 16px;color:#2d434e;text-decoration:none;font-size:13px;font-weight:600;background:#f2f1eb}
+    .download[aria-disabled=true]{opacity:.5;pointer-events:none}.download svg{width:16px;height:16px}
+    main{background:#f8f7f1;border:1px solid #c9ceca;border-radius:14px;overflow:hidden;box-shadow:0 12px 38px #273d4710}
+    .toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #d9ddd6;background:#fbfaf5}
+    .segmented{display:flex;background:#eaece6;padding:4px;border-radius:8px;gap:3px}.mode{border:0;border-radius:6px;background:transparent;color:#6e7a7d;font-size:13px;font-weight:600;padding:9px 18px;white-space:nowrap}
+    .mode[aria-pressed=true]{background:#344f5b;color:#fff;box-shadow:0 2px 5px #344f5b24}.meta{font-size:12px;color:#84908f;display:flex;align-items:center;gap:8px}.meta i{width:6px;height:6px;border-radius:100%;background:#94a982}
+    .stage{position:relative;width:100%;height:min(65vh,670px);min-height:390px;background:radial-gradient(ellipse at 48% 39%,#fdfcf6 0%,#f7f5ed 60%,#edece4 100%);overflow:hidden}
+    canvas{display:block;position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+    .stage-label{position:absolute;top:24px;left:26px;z-index:1;pointer-events:none}.stage-label strong{display:block;font-size:13px;font-weight:600;color:#637677}.stage-label p{font-size:11px;letter-spacing:.4px;color:#98a39d;margin:6px 0 0}
+    .view-tools{position:absolute;right:20px;top:20px;display:flex;gap:6px;z-index:2}.tool{display:flex;align-items:center;gap:7px;background:#fbfaf3e8;border:1px solid #cfd5ce;border-radius:6px;padding:9px 11px;color:#566b70;font-size:12px}.tool svg{width:14px;height:14px}.tool[aria-pressed=true]{color:#fff;background:#58736f;border-color:#58736f}
+    .caption{position:absolute;bottom:20px;left:26px;font-size:11px;letter-spacing:.1px;color:#899691;pointer-events:none}
+    .loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;background:#f7f5ed;z-index:3;color:#5d7276;font-size:13px}.loading[hidden]{display:none}.spinner{width:26px;height:26px;border:2px solid #d6ddd5;border-top-color:#5f7a7c;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+    .error .spinner{display:none}.error{padding:30px;text-align:center;line-height:1.7}
+    .controls{display:flex;align-items:center;justify-content:space-between;gap:28px;border-top:1px solid #d9ddd6;padding:19px 25px;background:#fbfaf5;min-height:81px}
+    .mode-info strong{display:block;font-size:13px;color:#354d55;font-weight:650}.mode-info p{margin:6px 0 0;font-size:12px;color:#8a9490}
+    .outline-controls{display:flex;align-items:center;gap:18px;font-size:12px;color:#6f7e7f;white-space:nowrap}.toggle{display:flex;gap:7px;align-items:center;cursor:pointer}.toggle input{accent-color:#446872;width:15px;height:15px;margin:0}.weight{display:flex;align-items:center;gap:10px}.weight input{width:95px;accent-color:#5f7c80;cursor:pointer}.weight output{min-width:20px;font-variant-numeric:tabular-nums;font-size:11px;color:#8c9896}
+    footer{display:flex;justify-content:space-between;gap:18px;padding:16px 3px 0;font-size:11px;color:#8a9591}footer span:last-child{text-align:right}
+    @media(max-width:760px){.shell{padding:20px 13px}header{margin-bottom:18px;gap:12px}h1{font-size:22px}h1 span{font-size:13px;margin-left:6px}.download{padding:10px;font-size:11px}.eyebrow{font-size:9px;letter-spacing:2px}.toolbar{padding:12px;gap:7px}.mode{padding:8px 10px;font-size:12px}.meta{font-size:10px}.meta span{display:none}.stage{height:60vh;min-height:350px}.stage-label{top:18px;left:17px}.stage-label strong{font-size:11px}.stage-label p{font-size:10px}.view-tools{top:auto;bottom:44px;right:13px;gap:5px}.tool{padding:8px;font-size:11px}.caption{left:17px;bottom:17px;font-size:9px}.controls{padding:15px;flex-direction:column;align-items:flex-start;gap:16px}.outline-controls{width:100%;justify-content:space-between;gap:10px}.mode-info p{font-size:11px}footer{font-size:9px;line-height:1.7}.weight input{width:110px}}
+    @media(prefers-reduced-motion:reduce){.spinner{animation:none}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header><div><div class="eyebrow">CLOUDSTITCH · TOON VIEWER</div><h1>Cloudstitch · 귀환호 <span>실제 3D 모델 · 표시 방식 비교</span></h1></div><a class="download" id="download" href="airship.glb" download="airship.glb" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg>GLB 다운로드</a></header>
+    <main>
+      <nav class="toolbar" aria-label="표시 방식"><div class="segmented"><button class="mode" data-mode="handdrawn" aria-pressed="true">손그림</button><button class="mode" data-mode="cel" aria-pressed="false">셀 명암</button><button class="mode" data-mode="original" aria-pressed="false">원본 재질</button></div><div class="meta"><i></i><span>오프라인 뷰어</span></div></nav>
+      <section class="stage" id="stage" aria-label="회전 가능한 비행선 3D 모델">
+        <div class="stage-label"><strong>형태는 3D, 분위기는 2D.</strong><p>자유롭게 돌려 보세요</p></div>
+        <div class="view-tools"><button class="tool" id="reset" title="처음 각도와 크기로 돌아가기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></svg>처음 시점</button><button class="tool" id="fit" title="현재 각도에서 모델을 화면에 맞추기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg>화면 맞춤</button><button class="tool" id="rotate" aria-pressed="false" title="자동 회전 켜기 또는 끄기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10a8 8 0 0 1 14-5l2 3m0-5v5h-5M20 14a8 8 0 0 1-14 5l-2-3m0 5v-5h5"/></svg>자동 회전</button></div>
+        <div class="caption">드래그 회전 · 휠 확대 · 오른쪽 드래그 이동</div>
+        <div class="loading" id="loading" role="status"><div class="spinner"></div><span id="loading-text">3D 모델과 텍스처를 준비하고 있습니다</span></div>
+      </section>
+      <div class="controls"><div class="mode-info"><strong id="mode-title">손그림</strong><p id="mode-description">빛 반사 없이 텍스처의 색과 선을 그대로 보여줍니다.</p></div><div class="outline-controls"><label class="toggle"><input id="outline" type="checkbox" checked>윤곽선</label><label class="weight">선 두께 <input id="thickness" type="range" min="0.5" max="3.5" step="0.1" value="1.2" aria-label="윤곽선 두께"><output id="thickness-value" for="thickness">1.2</output></label></div></div>
+    </main>
+    <footer><span id="model-stats">내장된 GLB를 불러오는 중</span><span>정투영 시점 · 모델과 텍스처 내장</span></footer>
+  </div>
+  <script>/* BUNDLED_VIEWER */</script>
+</body>
+</html>

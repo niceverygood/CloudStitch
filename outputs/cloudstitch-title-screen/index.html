@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ecebdb">
+  <title>Cloudstitch · 클라우드스티치</title>
+  <style>
+    :root{--ink:#344f4e;--muted:#62716a;--brass:#9d7950;--paper:#f7f3e7;--seam:#b7ab8b;--ease:cubic-bezier(.22,.68,.24,1)}
+    *{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:#e8ebdf;color:var(--ink)}body{font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif}button{font:inherit;color:inherit}button,[tabindex]{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:2px solid #547a73;outline-offset:6px}button{cursor:pointer}button:disabled{cursor:default}button:focus:not(:focus-visible){outline:none}
+    .screen{position:relative;isolation:isolate;min-height:100svh;overflow:hidden;background:#e8ebdf}.sky{position:absolute;inset:0;z-index:-3;overflow:hidden}.sky img{width:100%;height:100%;object-fit:cover;object-position:62% center;display:block;animation:drift 28s ease-in-out infinite alternate;transform:scale(1.025);transform-origin:70% 50%}.wash{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(249,247,237,.85),rgba(249,247,237,.64) 23%,rgba(249,247,237,.19) 45%,rgba(249,247,237,0) 62%),linear-gradient(0deg,rgba(245,243,230,.48),transparent 25%)}.grain{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.19;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.28' filter='url(%23n)'/%3E%3C/svg%3E")}
+    .title-area{position:relative;width:min(44vw,560px);padding:clamp(48px,12vh,132px) 0 108px;margin-left:clamp(40px,6.6vw,132px);animation:arrive 1.1s var(--ease) both}.brand{margin:0;width:min(100%,440px)}.brand img{display:block;width:100%;height:auto;max-height:210px;object-fit:contain;object-position:left center;filter:drop-shadow(0 2px 9px rgba(250,249,239,.3))}.subtitle{margin:17px 0 0 7px;font-size:13px;font-weight:500;letter-spacing:.42em;color:#4d6864}.stitched{display:flex;align-items:center;gap:12px;margin:29px 0 32px 7px;width:128px;color:var(--brass)}.stitched:before,.stitched:after{content:"";height:1px;flex:1;background:repeating-linear-gradient(90deg,#ac9774 0 5px,transparent 5px 10px)}.stitched span{font-family:Georgia,serif;font-size:14px;transform:rotate(-10deg)}
+    .menu{display:flex;align-items:flex-start;flex-direction:column;gap:12px;margin-left:3px}.menu-button{position:relative;display:flex;align-items:center;min-height:43px;padding:5px 24px 5px 4px;border:0;background:none;text-align:left;letter-spacing:.065em;font-size:clamp(17px,1.4vw,21px);font-weight:500;transition:color .2s,transform .3s var(--ease)}.menu-button:before{content:"";position:absolute;width:6px;height:6px;left:-17px;top:50%;border:1px solid #aa8055;transform:translateY(-50%) rotate(45deg) scale(.45);opacity:0;transition:opacity .2s,transform .2s}.menu-button:after{content:"";position:absolute;left:4px;bottom:2px;height:1px;width:calc(100% - 28px);background:repeating-linear-gradient(90deg,#ac9774 0 7px,transparent 7px 11px);transform:scaleX(0);transform-origin:left;transition:transform .3s}.menu-button:not(:disabled):is(:hover,:focus-visible){color:#805e38;transform:translateX(7px)}.menu-button:not(:disabled):is(:hover,:focus-visible):before{opacity:1;transform:translateY(-50%) rotate(45deg) scale(1)}.menu-button:not(:disabled):is(:hover,:focus-visible):after{transform:scaleX(1)}.menu-button:disabled{color:#8a958b;opacity:.65}.menu-button .saved-note{font-size:10px;font-weight:400;letter-spacing:.02em;margin-left:13px;opacity:0;transition:opacity .2s}.menu-button:disabled:hover .saved-note{opacity:1}
+    .footer{position:absolute;bottom:28px;left:clamp(40px,6.6vw,132px);right:clamp(32px,4.3vw,80px);display:flex;align-items:center;justify-content:space-between;gap:24px}.tagline{font-family:Georgia,"Malgun Gothic",serif;font-size:12px;letter-spacing:.14em;color:#5e746d;margin:0}.fullscreen{border:1px solid rgba(97,116,105,.32);background:rgba(248,247,237,.35);width:34px;height:34px;display:grid;place-items:center;border-radius:50%;transition:background .2s,color .2s}.fullscreen:hover{background:rgba(248,247,237,.8);color:#805e38}.fullscreen svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.3}.fullscreen:disabled{opacity:.35}
+    dialog{border:1px solid rgba(151,132,99,.38);border-radius:3px;padding:0;max-width:calc(100vw - 40px);width:460px;background:var(--paper);color:var(--ink);box-shadow:0 18px 75px rgba(28,49,47,.17)}dialog::backdrop{background:rgba(29,49,48,.35);backdrop-filter:blur(5px)}dialog[open]{animation:open .3s var(--ease)}.dialog-inner{padding:44px 40px 32px;position:relative}.dialog-inner:before{content:"";position:absolute;inset:12px;pointer-events:none;border:1px dashed rgba(174,152,112,.35)}.dialog-topline{font-family:Georgia,serif;font-style:italic;font-size:12px;color:var(--brass);letter-spacing:.08em;margin:0 0 10px}.dialog-title{margin:0 0 30px;font-size:24px;font-weight:500;letter-spacing:.03em}.close{position:absolute;top:18px;right:20px;width:32px;height:32px;border:0;background:transparent;font-size:25px;line-height:1;color:#728176}.setting-row{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:15px 0;border-top:1px solid rgba(174,152,112,.25)}.setting-label{font-size:14px;line-height:1.65}.setting-label small{display:block;font-size:11px;color:#718078;letter-spacing:.01em}.switch{width:46px;height:26px;padding:3px;flex-shrink:0;border:1px solid #8c9c8f;background:#d8dfd4;border-radius:20px;transition:background .2s}.switch span{display:block;width:18px;height:18px;border-radius:50%;background:#f9f6e9;box-shadow:0 1px 2px #56695144;transition:transform .25s var(--ease)}.switch[aria-checked="true"]{background:#5e7d70;border-color:#5e7d70}.switch[aria-checked="true"] span{transform:translateX(19px)}.quiet-button{border:1px solid #a4ac98;border-radius:2px;background:transparent;letter-spacing:.05em;padding:11px 24px;font-size:13px;transition:background .2s}.quiet-button:hover{background:#e5e8db}.dialog-actions{margin-top:30px;display:flex;justify-content:flex-end}.credits{text-align:center;padding-top:16px;padding-bottom:8px}.credits .small-brand{font-family:Georgia,serif;font-size:34px;font-weight:400;letter-spacing:-.04em;margin:0 0 24px}.credits p{font-size:14px;line-height:1.9;letter-spacing:.04em}.credits .seam{color:var(--brass);font-family:Georgia,serif;font-size:24px;margin:16px 0}.credits .credits-line{font-size:12px;color:#748078}
+    #prologue{width:650px}.prologue-inner{padding:52px 54px 38px}.chapter-label{font-size:10px;font-weight:500;letter-spacing:.3em;color:#8c7759;margin:0 0 18px}.prologue-heading{font-family:Georgia,"Malgun Gothic",serif;font-size:30px;font-weight:400;letter-spacing:.04em;margin:0 0 28px}.prologue-copy{font-family:Georgia,"Malgun Gothic",serif;font-size:15px;line-height:2.15;letter-spacing:.015em;color:#536560}.prologue-copy p{margin:0 0 14px}.prologue-copy .knock{text-align:center;margin:27px 0 22px;color:#967548;font-size:13px;letter-spacing:.7em}.prologue-copy blockquote{margin:0 0 20px;padding:0;text-align:center;font-size:19px;color:#344f4e}.prologue-copy .last-line{color:#7f785e}.prologue-actions{justify-content:center;margin-top:28px}
+    body.still .sky img{animation:none;transform:scale(1.025)}body.still .title-area,body.still dialog[open]{animation:none}body.still *,body.still *:before,body.still *:after{scroll-behavior:auto!important;transition:none!important}.status{position:fixed;bottom:23px;left:50%;transform:translateX(-50%);max-width:calc(100vw - 40px);padding:9px 16px;background:#f9f5e7;border:1px solid #aeb8a4;font-size:12px;box-shadow:0 3px 12px #344f4e16;z-index:10}.status:empty{display:none}
+    @keyframes drift{from{transform:scale(1.025) translate3d(0,0,0)}to{transform:scale(1.055) translate3d(-.5%,-.4%,0)}}@keyframes arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes open{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    @media(min-width:1600px){.title-area{padding-top:16vh}.brand{width:470px}.menu{gap:15px}.stitched{margin-top:38px;margin-bottom:38px}.menu-button{font-size:22px}}
+    @media(max-width:760px){.screen{min-height:100svh}.sky img{object-position:73% center}.wash{background:linear-gradient(90deg,rgba(249,247,237,.9),rgba(249,247,237,.7) 35%,rgba(249,247,237,.1) 100%),linear-gradient(0deg,rgba(245,243,230,.65),transparent 38%)}.title-area{width:min(67vw,390px);margin-left:32px;padding-top:clamp(48px,11vh,92px);padding-bottom:110px}.brand{width:100%;max-width:340px}.brand img{max-height:155px}.subtitle{font-size:10px;letter-spacing:.3em;margin-top:11px}.stitched{margin-top:24px;margin-bottom:23px;width:98px}.menu{gap:8px}.menu-button{font-size:17px;min-height:44px}.menu-button .saved-note{display:none}.footer{left:32px;right:24px;bottom:24px}.tagline{max-width:230px;font-size:10px;letter-spacing:.07em;line-height:1.7}.dialog-inner{padding:38px 28px 26px}.prologue-inner{padding:42px 30px 30px}.prologue-heading{font-size:25px}.prologue-copy{font-size:14px;line-height:1.95}.prologue-copy .knock{margin:20px 0}.dialog-title{font-size:22px}dialog{max-height:calc(100svh - 36px);overflow-y:auto}.prologue-copy p{margin-bottom:11px}}
+    @media(max-height:580px) and (min-width:761px){.title-area{padding-top:28px;padding-bottom:60px}.brand{width:320px}.brand img{max-height:120px}.subtitle{margin-top:10px;font-size:11px}.stitched{margin-top:17px;margin-bottom:16px}.menu{gap:4px}.menu-button{font-size:17px;min-height:36px}.footer{bottom:17px}.dialog-inner{padding-top:32px;padding-bottom:24px}dialog{max-height:calc(100svh - 28px);overflow-y:auto}}
+    @media(prefers-reduced-motion:reduce){body:not(.motion-enabled) .sky img,body:not(.motion-enabled) .title-area,body:not(.motion-enabled) dialog[open]{animation:none}body:not(.motion-enabled) *,body:not(.motion-enabled) *:before,body:not(.motion-enabled) *:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="screen" aria-label="Cloudstitch 시작 화면">
+    <div class="sky" aria-hidden="true"><img src="title-background.png" alt="" fetchpriority="high"></div>
+    <div class="wash" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+    <section class="title-area" aria-label="주 메뉴">
+      <h1 class="brand"><img src="cloudstitch-logo.png" alt="Cloudstitch"></h1>
+      <p class="subtitle">클라우드스티치</p>
+      <div class="stitched" aria-hidden="true"><span>✦</span></div>
+      <nav class="menu" aria-label="항해 메뉴">
+        <button class="menu-button" type="button" data-open="prologue">새로운 항해</button>
+        <button class="menu-button" type="button" disabled title="아직 저장된 항해가 없습니다" aria-label="이어하기, 아직 저장된 항해가 없습니다">이어하기 <span class="saved-note" aria-hidden="true">아직 남겨진 항해가 없어요</span></button>
+        <button class="menu-button" type="button" data-open="settings">설정</button>
+        <button class="menu-button" type="button" data-open="credits">만든 사람들</button>
+      </nav>
+    </section>
+    <footer class="footer"><p class="tagline">구름을 꿰매며, 다시 집으로.</p><button class="fullscreen" type="button" id="fullscreen" aria-label="전체 화면" title="전체 화면"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg></button></footer>
+  </main>
+  <dialog id="settings" aria-labelledby="settings-title">
+    <div class="dialog-inner"><button type="button" class="close" data-close aria-label="설정 닫기">×</button><p class="dialog-topline">A little adjustment</p><h2 class="dialog-title" id="settings-title">설정</h2>
+      <div class="setting-row"><div class="setting-label" id="motion-label">하늘의 움직임<small>천천히 흐르는 배경과 화면 전환</small></div><button class="switch" id="motion-switch" type="button" role="switch" aria-checked="true" aria-labelledby="motion-label"><span></span></button></div>
+      <div class="dialog-actions"><button class="quiet-button" type="button" data-close>돌아가기</button></div>
+    </div>
+  </dialog>
+  <dialog id="credits" aria-labelledby="credits-title"><div class="dialog-inner"><button type="button" class="close" data-close aria-label="만든 사람들 닫기">×</button><div class="credits"><h2 class="small-brand" id="credits-title">Cloudstitch</h2><p>구름을 꿰매며,<br>다시 집으로.</p><div class="seam" aria-hidden="true">⌁</div><p class="credits-line">작은 배에 담은, 우리의 하늘 이야기.</p></div><div class="dialog-actions"><button class="quiet-button" type="button" data-close>돌아가기</button></div></div></dialog>
+  <dialog id="prologue" aria-labelledby="prologue-title"><div class="dialog-inner prologue-inner"><button type="button" class="close" data-close aria-label="타이틀로 돌아가기">×</button><p class="chapter-label">PROLOGUE · 첫 번째 항해</p><h2 class="prologue-heading" id="prologue-title">돌아온 배</h2><div class="prologue-copy"><p>어머니가 사라진 뒤, 그 배가 돌아왔다.<br>누가 몰고 왔는지는 아무도 보지 못했다.</p><p>갑판의 밧줄 세 가닥은 안쪽에서 끊어져 있었다.<br>식탁에는 수프 한 그릇. 선장실 문에는 경고문 하나.</p><p class="knock" aria-label="똑">똑.</p><blockquote>“돌아가.”</blockquote><p class="last-line">문 안쪽에서, 낮은 목소리가 들렸다.</p></div><div class="dialog-actions prologue-actions"><button class="quiet-button" type="button" data-close>타이틀로 돌아가기</button></div></div></dialog>
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+  <script>
+    (() => {
+      'use strict';
+      const motionSwitch = document.getElementById('motion-switch');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const storageKey = 'cloudstitch.title.motion';
+      let savedMotion = null;
+      try { savedMotion = localStorage.getItem(storageKey); } catch (_) {}
+      let motionOn = savedMotion === null ? !reducedMotion.matches : savedMotion === 'on';
+      function applyMotion() {
+        document.body.classList.toggle('still', !motionOn);
+        document.body.classList.toggle('motion-enabled', motionOn);
+        motionSwitch.setAttribute('aria-checked', String(motionOn));
+      }
+      applyMotion();
+      motionSwitch.addEventListener('click', () => {
+        motionOn = !motionOn;
+        applyMotion();
+        try { localStorage.setItem(storageKey, motionOn ? 'on' : 'off'); } catch (_) {}
+      });
+      reducedMotion.addEventListener('change', (event) => {
+        let stored = null;
+        try { stored = localStorage.getItem(storageKey); } catch (_) {}
+        if (stored === null) { motionOn = !event.matches; applyMotion(); }
+      });
+      document.querySelectorAll('[data-open]').forEach((button) => {
+        button.addEventListener('click', () => document.getElementById(button.dataset.open).showModal());
+      });
+      document.querySelectorAll('[data-close]').forEach((button) => {
+        button.addEventListener('click', () => button.closest('dialog').close());
+      });
+      document.querySelectorAll('dialog').forEach((dialog) => {
+        dialog.addEventListener('click', (event) => {
+          if (event.target !== dialog) return;
+          const rect = dialog.getBoundingClientRect();
+          if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+        });
+      });
+      const menuButtons = [...document.querySelectorAll('.menu-button:not(:disabled)')];
+      document.querySelector('.menu').addEventListener('keydown', (event) => {
+        if (!['ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        const current = menuButtons.indexOf(document.activeElement);
+        const next = event.key === 'Home' ? 0 : event.key === 'End' ? menuButtons.length - 1 : (current + (event.key === 'ArrowDown' ? 1 : -1) + menuButtons.length) % menuButtons.length;
+        menuButtons[next].focus();
+      });
+      const fullscreen = document.getElementById('fullscreen');
+      const status = document.getElementById('status');
+      let statusTimer;
+      function message(text) {
+        clearTimeout(statusTimer); status.textContent = text;
+        statusTimer = setTimeout(() => { status.textContent = ''; }, 4000);
+      }
+      if (!document.fullscreenEnabled) { fullscreen.disabled = true; fullscreen.title = '이 창에서는 전체 화면을 지원하지 않습니다'; }
+      fullscreen.addEventListener('click', async () => {
+        try { if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen(); }
+        catch (_) { message('이 창에서는 전체 화면으로 전환할 수 없어요.'); }
+      });
+      document.addEventListener('fullscreenchange', () => {
+        const label = document.fullscreenElement ? '전체 화면 나가기' : '전체 화면';
+        fullscreen.setAttribute('aria-label', label); fullscreen.title = label;
+      });
+    })();
+  </script>
+</body>
+</html>

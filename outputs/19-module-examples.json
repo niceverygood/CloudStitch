@@ -1,0 +1,17 @@
+{
+  "status": "design example, not implemented physics",
+  "modules": [
+    {"id":"hull","parent":null,"type":"core"},
+    {"id":"right_truss","parent":"hull","type":"coupling"},
+    {"id":"external_deck","parent":"right_truss","type":"deck"},
+    {"id":"cannon","parent":"external_deck","type":"weapon"},
+    {"id":"aux_engine","parent":"external_deck","type":"engine"},
+    {"id":"main_balloon","parent":"hull","type":"lift"}
+  ],
+  "expectedDetachWhenRightTrussDestroyed": ["external_deck", "cannon", "aux_engine"],
+  "damagedTrussBecomesScrap": true,
+  "weaponDestroyedDoesNotDetachSiblings": true,
+  "liftOutput": {"health50to100percent":"full", "health0to50percent":"linear to zero"},
+  "graceSecondsInitial": 7,
+  "severeAccidentMinimumResponseSecondsInitial": 3
+}
