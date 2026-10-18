@@ -52,7 +52,14 @@ npm run verify:encounters
 
 검증 상태
 ENCOUNTERS_QA_START
-최종 코어·브라우저 통합 검사 대기.
-소스/카탈로그 범위 확인과 실제6판·입력·GLB·모바일 통과를 구분한다.
-최종 캡처와 검사 기록이 준비되면 이 구역을 갱신한다.
+인수인계 체크포인트로 추가 개발을 멈췄다.
+코어6판 상태 전환·양 보스 각1회 등장·정비·패배/재도전 부분 검사는 통과했다.
+실제 무기 경로·GLB 렌더·입력·모바일 통합 검사는 마감 중이다.
+core-only 통과를 전체 통과로 읽지 않는다. 최종 보고서/manifest를 확인한다.
+실제 preview-battle/boss/palace/mobile PNG4장을 보존한다.
 ENCOUNTERS_QA_END
+
+다음 후보(이번에 미수정): 중앙 보스 접근 배너/첫 예고 겹침,
+충각 중 표시 선체 방향을 chargeAngle에 고정하는 검토.
+새 PC에서 재현하고 사용자의 다음 요청에 따라 진행한다.
+짧은 인수인계: outputs/handoff/DESKTOP_CONTINUE_PROMPT-2026-10-18.txt

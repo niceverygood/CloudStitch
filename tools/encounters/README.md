@@ -80,5 +80,7 @@ python3 -m http.server 8840 --bind 127.0.0.1
 `node tools/qa/encounters.cjs --core-only`는 코어 부분 검사다. 전체 브라우저 검사와 혼동하지 않는다. 최종 결과는 실제 검사 JSON과 빌드 manifest를 다시 확인한다. 기존 함대의 구조/리깅 QA 통과도 이번 전투 흐름·입력·성능 검사와 별도다.
 
 <!-- ENCOUNTERS_QA_START -->
-검증 상태: 최종 코어·브라우저 통합 검사 대기. 구현 소스와 카탈로그 범위를 확인했으며, 아직 전체6판·입력·실제 GLB 로딩·모바일 회귀가 모두 통과했다고 기록하지 않는다. 실제 캡처와 최종 검사 결과가 준비되면 이 구역을 갱신한다.
+검증 상태: 인수인계를 위해 추가 개발을 멈춘 체크포인트다. 코어6판 상태 전환·양 보스 각1회 등장·정비·패배/재도전 부분 검사는 통과했고 실제 무기 경로·GLB 렌더·입력·모바일 통합 검사는 마감 중이다. `core-only` 통과를 전체 통과로 읽지 않는다. 사용자 확인용 실제 PNG4장(`preview-battle.png`, `preview-boss.png`, `preview-palace.png`, `preview-mobile.png`)을 출력 폴더에 저장했다. 최종 보고서와 manifest를 확인해 이 구역을 마감한다.
 <!-- ENCOUNTERS_QA_END -->
+
+현재 수정하지 않고 넘긴 후보는 `app.js` 중앙 보스 접근 배너와 첫 공격 예고의 겹침(예고가 있으면 배너 숨기기 검토), `scene.js` 충각 중 선체 표시 방향(`e.chargeAngle` 고정 검토)이다. 새 PC에서 재현하고 사용자의 다음 요청에 따라 처리한다. 자세한 인수인계는 [데스크톱 프롬프트](../../outputs/handoff/DESKTOP_CONTINUE_PROMPT-2026-10-18.txt)를 따른다.

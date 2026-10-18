@@ -269,7 +269,9 @@ npm run verify:title
 재현은 `npm run build:encounters`, 검사는 `npm run verify:encounters`다. 저장소 루트에서 `python3 -m http.server 8840 --bind 127.0.0.1`을 실행하고 `http://127.0.0.1:8840/outputs/encounters-v1/`로 연다. 기존 단일 HTML 오프라인 뷰어와 달리 기존 함대 GLB를 로컬 HTTP 상대 경로로 읽는다. 외부 CDN·유료 생성 API를 사용하지 않는다. 상세 조작·판별 표·파일 역할은 [교전 도구 안내](../tools/encounters/README.md), 원문 근거와 편성은 `tools/encounters/catalog.json`에 있다.
 
 <!-- ENCOUNTERS_QA_START -->
-최종 코어·브라우저 통합 검증 대기다. 구현 소스·카탈로그 확인을 전체6판·실제 모델 로딩·입력·모바일 검사 통과로 기록하지 않는다. 최종 보고서와 실제 캡처가 준비되면 이 구역을 갱신한다.
+추가 개발을 멈춘 인수인계 체크포인트다. 코어6판 상태 전환·보스 각1회 등장·정비·패배/재도전 부분 검사는 통과했고 실제 무기 경로 완주와 GLB 렌더·입력·모바일 통합 검사는 마감 중이다. `--core-only`의 `passed=true`를 전체 브라우저 통과로 읽지 않는다. 실제 `preview-battle.png`, `preview-boss.png`, `preview-palace.png`, `preview-mobile.png`4장을 `outputs/encounters-v1/`에 저장했다. 최종 검사 JSON/manifest를 확인해 이 구역을 마감한다.
 <!-- ENCOUNTERS_QA_END -->
 
 이번 시제품에는 모듈 절단·회수·소유권·화물·제작/장착·양력·경제·정산/P1~P4 순환이 없다. 전체 캠페인·최종 엔진 선택·실기기 성능·재미/장기 밸런스 검증은 후속이다. 기존 리깅·함대·원화의 검증 기록은 각 전용 문서를 보존한다.
+
+이번 체크포인트에서 수정하지 않고 넘긴 후보는 중앙 보스 접근 배너와 첫 공격 예고의 겹침(`app.js`, 예고가 있으면 배너를 숨기는 방향), 충각 중 선체 표시 방향(`scene.js`, `e.chargeAngle` 고정 방향)이다. 수정 완료로 기록하지 않고 다음 세션에서 재현한다. 바로 전달할 프롬프트는 [데스크톱 이어가기](../outputs/handoff/DESKTOP_CONTINUE_PROMPT-2026-10-18.txt)다. `tools/battlefield/`와 `outputs/battlefield-v1/`는 다른 동시 작업 범위이며 이번 encounters의 구현/검증에 합치지 않는다.
