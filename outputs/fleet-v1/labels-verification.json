@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "id": "civil-relief",
+      "clips": 7,
+      "supported": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "WinchCycle"
+      ],
+      "buttons": [
+        {
+          "profile": "FloatIdle",
+          "label": "잔잔한 정박",
+          "disabled": false
+        },
+        {
+          "profile": "Cruise",
+          "label": "느긋한 순항",
+          "disabled": false
+        },
+        {
+          "profile": "BankTurn",
+          "label": "관성 있는 선회",
+          "disabled": false
+        },
+        {
+          "profile": "GustRecovery",
+          "label": "돌풍과 자세 회복",
+          "disabled": false
+        },
+        {
+          "profile": "TurretScan",
+          "label": "포탑 탐색",
+          "disabled": true
+        },
+        {
+          "profile": "WinchCycle",
+          "label": "인양·지원 작업",
+          "disabled": false
+        },
+        {
+          "profile": "FireBurst",
+          "label": "장치 반응",
+          "disabled": true
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "enemy-union-repair",
+      "clips": 7,
+      "supported": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "WinchCycle"
+      ],
+      "buttons": [
+        {
+          "profile": "FloatIdle",
+          "label": "잔잔한 정박",
+          "disabled": false
+        },
+        {
+          "profile": "Cruise",
+          "label": "느긋한 순항",
+          "disabled": false
+        },
+        {
+          "profile": "BankTurn",
+          "label": "관성 있는 선회",
+          "disabled": false
+        },
+        {
+          "profile": "GustRecovery",
+          "label": "돌풍과 자세 회복",
+          "disabled": false
+        },
+        {
+          "profile": "TurretScan",
+          "label": "포탑 탐색",
+          "disabled": true
+        },
+        {
+          "profile": "WinchCycle",
+          "label": "인양·지원 작업",
+          "disabled": false
+        },
+        {
+          "profile": "FireBurst",
+          "label": "장치 반응",
+          "disabled": true
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "player-homeward",
+      "clips": 7,
+      "supported": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "buttons": [
+        {
+          "profile": "FloatIdle",
+          "label": "잔잔한 정박",
+          "disabled": false
+        },
+        {
+          "profile": "Cruise",
+          "label": "느긋한 순항",
+          "disabled": false
+        },
+        {
+          "profile": "BankTurn",
+          "label": "관성 있는 선회",
+          "disabled": false
+        },
+        {
+          "profile": "GustRecovery",
+          "label": "돌풍과 자세 회복",
+          "disabled": false
+        },
+        {
+          "profile": "TurretScan",
+          "label": "포탑 탐색",
+          "disabled": false
+        },
+        {
+          "profile": "WinchCycle",
+          "label": "갈고리 내림과 회수",
+          "disabled": false
+        },
+        {
+          "profile": "FireBurst",
+          "label": "포격 반동",
+          "disabled": false
+        }
+      ],
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "localHttpGallery": {
+    "cards": 71,
+    "loadedViewers": 1,
+    "currentId": "player-homeward",
+    "overflow": false,
+    "errors": [],
+    "externalRequests": [],
+    "url": "http://127.0.0.1:59306/outputs/fleet-v1/index.html"
+  }
+}

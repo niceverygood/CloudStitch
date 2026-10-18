@@ -20,7 +20,7 @@ def digest(path):
 def create_inventory():
     assets = []
     for path in sorted((ROOT / 'outputs').rglob('*')):
-        if path.is_file() and path.suffix.lower() in ('.png', '.glb') and 'meshy_output' not in path.parts:
+        if path.is_file() and path.suffix.lower() in ('.png', '.glb', '.webm') and 'meshy_output' not in path.parts:
             assets.append({'path': path.relative_to(ROOT).as_posix(), 'bytes': path.stat().st_size, 'sha256': digest(path)})
     result = {'project': 'Cloudstitch', 'asset_count': len(assets), 'total_bytes': sum(x['bytes'] for x in assets), 'assets': assets}
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)

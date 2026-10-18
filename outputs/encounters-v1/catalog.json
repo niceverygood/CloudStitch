@@ -1,0 +1,1091 @@
+{
+  "schemaVersion": 1,
+  "title": "Cloudstitch · 단계별 교전 시제품 카탈로그",
+  "scopeNote": "지역6개를 별도6플레이판으로 재편성한 브라우저 교전 시제품이다. 모든 판은 일반 적→중간 지휘선→수동 정비→후반 적→최종 지휘선→교전 승리를 갖는다. 모든 보스는 정사 외형을 참고한 교전 역할 변형이며 원문 캠페인 보스의 전체 기믹/서사/사망/결말을 구현 완료한 것으로 기록하지 않는다. 최종 엔진·플랫폼·출시 밸런스를 확정하지 않는다.",
+  "sourceScope": {
+    "regions": 6,
+    "basicLayoutCount": 6,
+    "basicLayoutSource": "outputs/33-level-layouts.txt",
+    "basicLayouts": [
+      "L1 잔해 삼거리",
+      "L2 사슬 협곡",
+      "L3 폭풍 인양장",
+      "L4 공업 환기실",
+      "L5 안개 묘지",
+      "L6 종항 외곽 방어"
+    ],
+    "additionalBossLayoutSources": [
+      "outputs/14-living-shipyard-boss.txt",
+      "outputs/31-act3-main-quests.txt",
+      "outputs/43-final-boss-encounter.txt"
+    ],
+    "canonicalTotalBattlefieldCount": null,
+    "note": "지역6개와기본전장6개는1:1대응이아니다. L6는종항방어이며황궁전장은43에서별도참고한다. 원문은전체게임의전장총수를확정하지않았다."
+  },
+  "stageFlow": [
+    "opening",
+    "midBoss",
+    "maintenance",
+    "late",
+    "finalBoss",
+    "victory"
+  ],
+  "maintenance": {
+    "manual": true,
+    "name": "수동 정비",
+    "description": "중간 지휘선 교전 후 사용자가 정비/다음 구간을 선택하는 별도 시제품 흐름. 실제 항구 경제·부품 편집·저장을 자동 구현한 것으로 보지 않음."
+  },
+  "prototypeArena": {
+    "axes": "XZ",
+    "xMin": -18,
+    "xMax": 18,
+    "zMin": -12,
+    "zMax": 12,
+    "units": "교전 시제품 월드 단위; 원문U/실제미터/최종엔진변환미정",
+    "protectedPoints": [
+      {
+        "x": 0,
+        "z": 0,
+        "label": "중앙 회피로"
+      },
+      {
+        "x": -10,
+        "z": -7,
+        "label": "스폰 여유"
+      },
+      {
+        "x": -10,
+        "z": 7,
+        "label": "스폰 여유"
+      },
+      {
+        "x": 10,
+        "z": -7,
+        "label": "스폰 여유"
+      },
+      {
+        "x": 10,
+        "z": 7,
+        "label": "스폰 여유"
+      }
+    ],
+    "maxObstacles": 3,
+    "obstacleRadiusRange": [
+      1,
+      2
+    ]
+  },
+  "combatPolicy": {
+    "sourceRefs": [
+      "outputs/25-enemy-ai-encounters.txt",
+      "outputs/48-mission-composition-rules.txt",
+      "outputs/91-boss-attack-readability.txt",
+      "outputs/111-difficulty-assistance.txt",
+      "outputs/112-system-rules-reference.txt"
+    ],
+    "spawnBudget": {
+      "maxUnitsPerOpeningOrLateWave": 4,
+      "bossCountPerBossPhase": 1
+    },
+    "warnings": [
+      "준비→공간 예고→작동→회복 순서",
+      "예고 뒤 위험 범위를 무근거로 확대하지 않음",
+      "화면 밖 고위력 공격은 방향과 충분한 지연 필요",
+      "소리/색/섬광 하나만으로 대응을 요구하지 않음",
+      "일시정지 중 위험·공격 타이머도 정지",
+      "어려운 난이도도 예고를 숨기지 않고 조타 입력을 뒤집지 않음"
+    ],
+    "initialTimingReferences": {
+      "broadsideWarningSeconds": [
+        1.5,
+        2
+      ],
+      "chargerWarningMinimumSeconds": 1.2,
+      "lightningWarningSeconds": 2,
+      "palacePressurePrepareActiveRecoverSeconds": [
+        2,
+        1,
+        3
+      ]
+    },
+    "timingAuthority": "25/28/43의검증전초기값을참고한시제품가설이다. 경고배율을적용한뒤에도돌진최소1.2초·광역최소1.5초와안전회피방향을보존한다. 공격토큰초반1/후반2는모든난이도에서동일하다.",
+    "canonBoundary": "전투시제품의체력0은무력화판정이며정사선장사망/승객구조/기억반환/3결말완료를의미하지않는다.",
+    "telegraphFloorsSeconds": {
+      "charge": 1.2,
+      "area": 1.5
+    },
+    "majorAttackTokens": {
+      "opening": 1,
+      "midBoss": 1,
+      "maintenance": 0,
+      "late": 2,
+      "finalBoss": 2
+    }
+  },
+  "enemyRoles": {
+    "scout": {
+      "name": "정찰·측면 연사",
+      "behavior": "측후방 접근→짧은 연사→거리 벌림",
+      "warning": "포신 방향·짧은 준비 동작·추적선",
+      "counterplay": "선회 방향을 읽고 후방 엔진 또는 사각 접근",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "blockade": {
+      "name": "봉쇄·부채꼴 포격",
+      "behavior": "항로 가로막기→측면 노출→일제 포격→긴 장전",
+      "warning": "굵은 부채꼴 외곽·낮은 불투명 내부·포신 고정",
+      "counterplay": "포격 뒤 후방 접근·넓은 우회",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "salvage": {
+      "name": "작살·견인",
+      "behavior": "거리 유지→작살 조준→발사→견인→회복",
+      "warning": "길고 얇은 선·갈고리 표식·케이블 고정점",
+      "counterplay": "조준선 이탈·공격 뒤 반격. 실제 케이블 절단 구현과 구분",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "repair": {
+      "name": "수리 지원",
+      "behavior": "손상 동료 우선→연결선→제한된 수리→재배치",
+      "warning": "수리 대상과 용접 연결선",
+      "counterplay": "지원선 압박 또는 다른 약점 선택·무한 수리 금지",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "charger": {
+      "name": "직선 돌진",
+      "behavior": "준비→목표 고정→직선 돌진→관성 회복",
+      "warning": "기낭/돛 준비·굵은 진행 띠",
+      "counterplay": "횡이동 후 노출된 측면 공략",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "ambush": {
+      "name": "위장 잔해 전개",
+      "behavior": "정지→경계 징후→무장 전개→짧은 사격",
+      "warning": "잔해의 불규칙 등·작은 움직임·전개 경계",
+      "counterplay": "징후 확인 후 안전한 거리 확보·무징후 즉사 금지",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "artillery": {
+      "name": "방향 고정 포격",
+      "behavior": "사격 위치 확보→조준 고정→느린 포격→장전",
+      "warning": "포신과 부채꼴/직선 위험선",
+      "counterplay": "조준 고정 뒤 경계 밖 이동",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "flame": {
+      "name": "근거리 화염",
+      "behavior": "접근→펌프 가동→짧은 원뿔→냉각",
+      "warning": "연료 펌프 준비·짧은 원뿔·냉각 상태",
+      "counterplay": "거리 확보와 냉각 틈 공략",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "bell": {
+      "name": "종·충격파",
+      "behavior": "종실/포신 준비→띠 또는 넓은 포격→회복",
+      "warning": "공간 띠와 안전 틈·HUD 경고. 소리만 요구하지 않음",
+      "counterplay": "안전 간격 유지 후 장치 회복 틈 반격",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "shipyard": {
+      "name": "조선소 지휘·충각",
+      "behavior": "충각·외곽 포격·작살의 순환",
+      "warning": "굵은 진행 띠·포격 경계·얇은 작살선 구분",
+      "counterplay": "공격이 겹쳐도 열려 있는 방향으로 회피",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "king": {
+      "name": "함대 왕 견인",
+      "behavior": "이동 포격→작살 견인→회복",
+      "warning": "포격과 케이블 경고를 다른 선으로 표시",
+      "counterplay": "고정 후 조준선 이탈·회복 틈 반격. 원문 기억 모듈 목표 별도",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    "heart": {
+      "name": "봉인 심장 압력",
+      "behavior": "준비된 압력 공격→장력 공격→노출/회복",
+      "warning": "직선/부채꼴 압력과 장력 방향. 안전 방향 최소1개",
+      "counterplay": "압력 경계 밖 이동 후 노출부 반격. 원문3단계 장치 공략 별도",
+      "sourceRefs": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    }
+  },
+  "difficultyProfiles": [
+    {
+      "id": "easy",
+      "name": "여유로운 항해",
+      "sourceRefs": [
+        "outputs/111-difficulty-assistance.txt"
+      ],
+      "sourceTuning": null,
+      "description": "같은 예고와 장치를 유지하며 판단·복구 시간을 늘리는 후보. 자동 승리/무한 무료 수리는 추가하지 않음.",
+      "prototypeTuning": {
+        "enemyHealth": 0.85,
+        "enemyDamage": 0.7,
+        "telegraphTime": 1.2
+      }
+    },
+    {
+      "id": "normal",
+      "name": "표준 항해",
+      "sourceRefs": [
+        "outputs/111-difficulty-assistance.txt",
+        "outputs/25-enemy-ai-encounters.txt"
+      ],
+      "sourceTuning": null,
+      "description": "원문 초기 규칙을 시작점으로 하는 교전 시험. 출시 정상 난이도 배율 검증과 구분.",
+      "prototypeTuning": {
+        "enemyHealth": 1,
+        "enemyDamage": 1,
+        "telegraphTime": 1
+      }
+    },
+    {
+      "id": "hard",
+      "name": "거친 항해",
+      "sourceRefs": [
+        "outputs/111-difficulty-assistance.txt"
+      ],
+      "sourceTuning": null,
+      "description": "위치 선택·공격 간격·제한된 회복 틈을 조합한다. 예고를 숨기거나 입력을 뒤집거나 체력만 크게 늘리지 않음.",
+      "prototypeTuning": {
+        "enemyHealth": 1.2,
+        "enemyDamage": 1.2,
+        "telegraphTime": 1
+      }
+    }
+  ],
+  "difficultyTuningAuthority": "difficultyPrototypeTuning과각profile.prototypeTuning은이번브라우저교전시제품의제작용가설값이다.111은정확한배율미정이며출시밸런스로채택하지않는다. 공격토큰은난이도와무관하게초반1/후반2로고정하고돌진예고최소1.2초·광역예고최소1.5초를모든난이도에서유지한다. 판별개성은역할조합·회복창·장치패턴으로결정한다. 접근성은난이도와별도다.",
+  "stages": [
+    {
+      "id": "stage-01-harbor",
+      "name": "1 · 종항 잔해해역",
+      "region": "종항 잔해해역",
+      "subtitle": "정찰선의 기동을 읽고 장례 함대의 포격을 피하는 항해",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/17-prologue-mission-script.txt",
+        "outputs/23-act1-main-quests.txt",
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/10-first-boss.txt",
+        "outputs/68-bell-boss-arena.txt"
+      ],
+      "sourceLayouts": [
+        "L1 잔해 삼거리",
+        "L6 종항 외곽 방어"
+      ],
+      "environment": {
+        "skyColor": "#c2dcdd",
+        "cloudColor": "#faf4e5",
+        "accent": "#c77955",
+        "landmark": "종항의 빈 종틀과 잔해 삼거리",
+        "obstacles": [
+          {
+            "x": -5,
+            "z": 3,
+            "r": 1.4,
+            "label": "난파선 잔해",
+            "kind": "wreck"
+          },
+          {
+            "x": 5,
+            "z": -3,
+            "r": 1.4,
+            "label": "부유 목재",
+            "kind": "wreck"
+          },
+          {
+            "x": 0,
+            "z": 8.3,
+            "r": 1.1,
+            "label": "종항 보호 기둥",
+            "kind": "pillar"
+          }
+        ]
+      },
+      "opening": [
+        {
+          "assetId": "enemy-pirate-scout",
+          "role": "scout",
+          "count": 2,
+          "name": "해적 정찰선"
+        }
+      ],
+      "late": [
+        {
+          "assetId": "enemy-pirate-scout",
+          "role": "scout",
+          "count": 1,
+          "name": "해적 정찰선"
+        },
+        {
+          "assetId": "enemy-cult-blockade",
+          "role": "blockade",
+          "count": 1,
+          "name": "교단 봉쇄선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "mini-funeral-guard",
+        "role": "blockade",
+        "name": "소형 장례 경비선",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/40-demo-flow-playtest.txt",
+          "outputs/25-enemy-ai-encounters.txt"
+        ],
+        "roleVariantOf": "mini-funeral-guard",
+        "mechanics": [
+          "느린 방향 전환 뒤 부채꼴 포격",
+          "발사 전 포신 방향과 경계 고정",
+          "장전 뒤 후방 접근 기회"
+        ],
+        "sourceConcept": "원문 데모 미니보스 외형을 이번 판의 중간 교전 역할로 편성",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "finalBoss": {
+        "assetId": "boss-bell-devourer",
+        "role": "bell",
+        "name": "종을 삼킨 자",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/10-first-boss.txt",
+          "outputs/68-bell-boss-arena.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "boss-bell-devourer",
+        "mechanics": [
+          "측면 포격 예고와 회복 틈",
+          "넓은 충격파 띠에 안전 간격 유지",
+          "종소리 없이도 경계·HUD로 대응"
+        ],
+        "sourceConcept": "원문 첫 본편 보스의 외형·경고 언어를 참고한 교전 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "designNote": "L1과L6를 하나의 시험 판에 묶는 편성은 이번 사용자 요청에 따른 제작용 흐름이다. 프롤로그 전체·승객 구조·종 지지대 공략·마지막45초 구조 성공을 구현 완료한 것으로 기록하지 않는다."
+    },
+    {
+      "id": "stage-02-canyon",
+      "name": "2 · 청록빛 상승기류 협곡",
+      "region": "청록빛 상승기류 협곡",
+      "subtitle": "넓은 우회를 남기고 작살과 포격의 우선순위를 고르는 항해",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/28-weather-and-hazards.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/102-advanced-encounter.txt",
+        "outputs/103-bridge-mission-script.txt"
+      ],
+      "sourceLayouts": [
+        "L2 사슬 협곡"
+      ],
+      "environment": {
+        "skyColor": "#beddd9",
+        "cloudColor": "#edf5e9",
+        "accent": "#4c9690",
+        "landmark": "굽은 사슬 항로와 청록 계류등",
+        "obstacles": [
+          {
+            "x": -6,
+            "z": 0,
+            "r": 1.7,
+            "label": "서쪽 협곡 암초",
+            "kind": "rock"
+          },
+          {
+            "x": 6,
+            "z": 0,
+            "r": 1.7,
+            "label": "동쪽 협곡 암초",
+            "kind": "rock"
+          },
+          {
+            "x": 0,
+            "z": 8.5,
+            "r": 1,
+            "label": "사슬 계류 기둥",
+            "kind": "pillar"
+          }
+        ]
+      },
+      "opening": [
+        {
+          "assetId": "enemy-pirate-scout",
+          "role": "scout",
+          "count": 2,
+          "name": "협곡 정찰선"
+        },
+        {
+          "assetId": "enemy-union-salvage",
+          "role": "salvage",
+          "count": 1,
+          "name": "연합 인양선"
+        }
+      ],
+      "late": [
+        {
+          "assetId": "enemy-union-salvage",
+          "role": "salvage",
+          "count": 1,
+          "name": "연합 인양선"
+        },
+        {
+          "assetId": "enemy-tax-cutter",
+          "role": "artillery",
+          "count": 1,
+          "name": "녹슨 징세정"
+        },
+        {
+          "assetId": "enemy-union-repair",
+          "role": "repair",
+          "count": 1,
+          "name": "연합 수리선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "enemy-tax-cutter",
+        "role": "artillery",
+        "name": "협곡 관문 지휘정",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/65-enemy-modular-anatomy.txt",
+          "outputs/102-advanced-encounter.txt",
+          "outputs/25-enemy-ai-encounters.txt"
+        ],
+        "roleVariantOf": "enemy-tax-cutter",
+        "mechanics": [
+          "방향 고정 뒤 느린 포탄",
+          "포격 뒤 회복 중 측후방 접근",
+          "사격 위험과 안전 우회가 함께 보임"
+        ],
+        "sourceConcept": "표준 징세정 외형의 새 제작용 지휘 역할. 새 고유 정사 함명을 추가하지 않음",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "finalBoss": {
+        "assetId": "enemy-union-salvage",
+        "role": "salvage",
+        "name": "사슬협곡 인양 지휘선",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/09-enemies.txt",
+          "outputs/25-enemy-ai-encounters.txt",
+          "outputs/33-level-layouts.txt"
+        ],
+        "roleVariantOf": "enemy-union-salvage",
+        "mechanics": [
+          "작살의 얇은 선과 발사 방향 표시",
+          "견인 중 입력 전체 봉쇄 금지",
+          "케이블 공격 뒤 긴 회복 틈"
+        ],
+        "sourceConcept": "일반 인양선 외형의 새 제작용 최종 교전 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "designNote": "원문L2는 민간선 호위 전장이고 별도 협곡 정사 보스는 없다. 이번 중간/최종 지휘선은 전투 시제품용 역할 변형이며 민간선 호위AI·실제 케이블 절단·회수 기능 구현 여부와 별도로 검수한다."
+    },
+    {
+      "id": "stage-03-storm",
+      "name": "3 · 천둥 폭풍벽",
+      "region": "천둥 폭풍벽",
+      "subtitle": "돌진과 봉쇄선의 다른 예고를 읽으며 열린 공간을 지키는 항해",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/28-weather-and-hazards.txt",
+        "outputs/91-boss-attack-readability.txt",
+        "outputs/102-advanced-encounter.txt"
+      ],
+      "sourceLayouts": [
+        "L3 폭풍 인양장"
+      ],
+      "environment": {
+        "skyColor": "#aebed0",
+        "cloudColor": "#e3e7ed",
+        "accent": "#d4af61",
+        "landmark": "폭풍 전선과 부서진 피뢰 계류장",
+        "obstacles": [
+          {
+            "x": -5,
+            "z": -4,
+            "r": 1.6,
+            "label": "서쪽 금속 잔해",
+            "kind": "wreck"
+          },
+          {
+            "x": 6,
+            "z": 4,
+            "r": 1.4,
+            "label": "피뢰 잔해",
+            "kind": "pillar"
+          },
+          {
+            "x": 0,
+            "z": 8.5,
+            "r": 1.1,
+            "label": "북쪽 잔해",
+            "kind": "wreck"
+          }
+        ]
+      },
+      "opening": [
+        {
+          "assetId": "enemy-pirate-scout",
+          "role": "scout",
+          "count": 1,
+          "name": "폭풍 정찰선"
+        },
+        {
+          "assetId": "enemy-union-salvage",
+          "role": "salvage",
+          "count": 1,
+          "name": "인양선"
+        },
+        {
+          "assetId": "enemy-ghost-chaser",
+          "role": "charger",
+          "count": 1,
+          "name": "망령 추격선"
+        }
+      ],
+      "late": [
+        {
+          "assetId": "enemy-cult-blockade",
+          "role": "blockade",
+          "count": 1,
+          "name": "교단 봉쇄선"
+        },
+        {
+          "assetId": "role-enemy-artillery",
+          "role": "artillery",
+          "count": 1,
+          "name": "폭풍 포격선"
+        },
+        {
+          "assetId": "enemy-disguised-wreck",
+          "role": "ambush",
+          "count": 1,
+          "name": "위장 잔해선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "mission-bridge-tug",
+        "role": "salvage",
+        "name": "폭풍 견인대장",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/102-advanced-encounter.txt",
+          "outputs/103-bridge-mission-script.txt",
+          "outputs/28-weather-and-hazards.txt"
+        ],
+        "roleVariantOf": "mission-bridge-tug",
+        "mechanics": [
+          "먼 윈치의 준비 동작과 작살 방향 예고",
+          "견인 뒤 선회/회복 틈",
+          "환경과 공격이 모든 회피 방향을 동시에 막지 않음"
+        ],
+        "sourceConcept": "교량 견인정 외형의 폭풍 판 제작용 지휘 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "finalBoss": {
+        "assetId": "enemy-cult-blockade",
+        "role": "blockade",
+        "name": "폭풍 봉쇄 지휘선",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/09-enemies.txt",
+          "outputs/25-enemy-ai-encounters.txt",
+          "outputs/28-weather-and-hazards.txt"
+        ],
+        "roleVariantOf": "enemy-cult-blockade",
+        "mechanics": [
+          "넓은 측면 포격과 긴 재장전",
+          "돌아가는 선체와 포신이 같은 방향을 가리킴",
+          "공격 종료 뒤 분명한 회피·반격 기회"
+        ],
+        "sourceConcept": "일반 봉쇄선 외형의 새 제작용 최종 교전 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "designNote": "원문L3는 인양·철수 선택 전장이며 이 지역의 정사 중간/최종 보스는 확정하지 않았다. 폭풍 화면 효과와 실제 낙뢰·횡풍·착빙 판정 구현을 혼동하지 않는다. 이 판의 지휘선 두 척은 새 제작용 역할이다."
+    },
+    {
+      "id": "stage-04-industry",
+      "name": "4 · 쇠갈비 공업지대",
+      "region": "쇠갈비 공업지대",
+      "subtitle": "수리 지원을 끊고 서로 다른 산업 장치의 경고를 읽는 항해",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/27-act2-main-quests.txt",
+        "outputs/14-living-shipyard-boss.txt",
+        "outputs/28-weather-and-hazards.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ],
+      "sourceLayouts": [
+        "L4 공업 환기실",
+        "14의 진입 정비장·환기실·발사 도크"
+      ],
+      "environment": {
+        "skyColor": "#c8c2b2",
+        "cloudColor": "#eee9dc",
+        "accent": "#a9674d",
+        "landmark": "갈비뼈 도크와 번갈아 열리는 환기구",
+        "obstacles": [
+          {
+            "x": -6,
+            "z": -1,
+            "r": 1.7,
+            "label": "좌현 환기 설비",
+            "kind": "vent"
+          },
+          {
+            "x": 6,
+            "z": 1,
+            "r": 1.7,
+            "label": "우현 환기 설비",
+            "kind": "vent"
+          },
+          {
+            "x": 0,
+            "z": 8,
+            "r": 1.2,
+            "label": "후방 배전 기둥",
+            "kind": "pillar"
+          }
+        ]
+      },
+      "opening": [
+        {
+          "assetId": "mission-union-guard",
+          "role": "artillery",
+          "count": 1,
+          "name": "연합 경비선"
+        },
+        {
+          "assetId": "enemy-union-repair",
+          "role": "repair",
+          "count": 1,
+          "name": "연합 수리선"
+        },
+        {
+          "assetId": "enemy-union-salvage",
+          "role": "salvage",
+          "count": 1,
+          "name": "연합 인양선"
+        }
+      ],
+      "late": [
+        {
+          "assetId": "mission-union-guard",
+          "role": "artillery",
+          "count": 2,
+          "name": "연합 경비선"
+        },
+        {
+          "assetId": "rival-night-shift",
+          "role": "flame",
+          "count": 1,
+          "name": "화염 작업선 역할 변형"
+        },
+        {
+          "assetId": "enemy-union-repair",
+          "role": "repair",
+          "count": 1,
+          "name": "연합 수리선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "enemy-union-repair",
+        "role": "repair",
+        "name": "도크 수리 지휘정",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/14-living-shipyard-boss.txt",
+          "outputs/25-enemy-ai-encounters.txt"
+        ],
+        "roleVariantOf": "enemy-union-repair",
+        "mechanics": [
+          "손상 동료를 향한 눈에 보이는 수리 연결",
+          "무한 수리·전투 무한 반복 금지",
+          "기동과 지원 대상 선택으로 역할 구분"
+        ],
+        "sourceConcept": "원문 조선소 수리선의 새 제작용 중간 지휘 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "finalBoss": {
+        "assetId": "boss-shipwright-command",
+        "role": "shipyard",
+        "name": "수석 조선공의 지휘함",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/14-living-shipyard-boss.txt",
+          "outputs/27-act2-main-quests.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "boss-shipwright-command",
+        "mechanics": [
+          "충각의 굵은 진행 띠",
+          "외곽 포격과 작살의 별도 경고",
+          "장치 공격 뒤 핵심부 반격 틈"
+        ],
+        "sourceConcept": "거신의 늑골3단계 지휘함 외형을 참고한 단독 교전 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "designNote": "거신의 늑골 전체시설·격벽 퍼즐·환기구3개/펌프2개 공략·노동자 구조를 이 전투판의 완료로 대신하지 않는다. 야간조 GLB를 쓰는 화염 작업선은 하덴의 정사 필수 등장/사망이 아니라 시각 에셋을 빌린 적 역할 변형이다."
+    },
+    {
+      "id": "stage-05-fog",
+      "name": "5 · 이름 없는 함대의 저층 안개",
+      "region": "이름 없는 함대의 저층 안개",
+      "subtitle": "돌진과 잔해 전조를 구별하고 왕의 견인 공격을 피하는 항해",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/31-act3-main-quests.txt",
+        "outputs/20-faction-quest-chains.txt",
+        "outputs/39-story-canon-timeline.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ],
+      "sourceLayouts": [
+        "L5 안개 묘지",
+        "31 O4의 왕의 시험"
+      ],
+      "environment": {
+        "skyColor": "#a7b7c5",
+        "cloudColor": "#e4e9ea",
+        "accent": "#749ba8",
+        "landmark": "고장난 등대와 잔광 없는 함대 묘지",
+        "obstacles": [
+          {
+            "x": -6,
+            "z": 3.5,
+            "r": 1.3,
+            "label": "서쪽 묘지 잔해",
+            "kind": "wreck"
+          },
+          {
+            "x": 5,
+            "z": -4,
+            "r": 1.3,
+            "label": "남쪽 묘지 잔해",
+            "kind": "wreck"
+          },
+          {
+            "x": 0,
+            "z": 8.5,
+            "r": 1.2,
+            "label": "고장난 등대",
+            "kind": "pillar"
+          }
+        ]
+      },
+      "opening": [
+        {
+          "assetId": "enemy-ghost-chaser",
+          "role": "charger",
+          "count": 2,
+          "name": "망령 추격선"
+        },
+        {
+          "assetId": "enemy-disguised-wreck",
+          "role": "ambush",
+          "count": 1,
+          "name": "위장 잔해선"
+        }
+      ],
+      "late": [
+        {
+          "assetId": "mission-ghost-artillery",
+          "role": "artillery",
+          "count": 2,
+          "name": "망령 포격선"
+        },
+        {
+          "assetId": "enemy-ghost-chaser",
+          "role": "charger",
+          "count": 1,
+          "name": "망령 추격선"
+        },
+        {
+          "assetId": "mission-cult-purifier",
+          "role": "flame",
+          "count": 1,
+          "name": "도크 정화선 역할 변형"
+        }
+      ],
+      "midBoss": {
+        "assetId": "enemy-ghost-chaser",
+        "role": "charger",
+        "name": "안개 돌격대장",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/25-enemy-ai-encounters.txt",
+          "outputs/31-act3-main-quests.txt"
+        ],
+        "roleVariantOf": "enemy-ghost-chaser",
+        "mechanics": [
+          "돛과 잔광으로 돌진 준비 표시",
+          "굵은 직선 경고 뒤 목표 고정",
+          "돌진 종료 뒤 관성 회복과 측면 노출"
+        ],
+        "sourceConcept": "일반 망령 추격선의 새 제작용 중간 지휘 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "finalBoss": {
+        "assetId": "boss-fleet-king",
+        "role": "king",
+        "name": "죽은 함대 왕의 배",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/31-act3-main-quests.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "boss-fleet-king",
+        "mechanics": [
+          "이동 포격과 견인 작살의 서로 다른 선",
+          "공격마다 한 방향 이상 회피 공간",
+          "케이블 방향과 회복 틈"
+        ],
+        "sourceConcept": "왕의 시험 외형·공격 언어를 참고한 교전 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "designNote": "원문O4 목표는 왕을 죽이는 것이 아니라 봉인 연결부와 기억 모듈 회수·전달이다. 이 시제품의 체력0/무력화 승리는 왕의 정사 사망이나 기억3개 반환 완료를 뜻하지 않는다. 정화선의 화염 역할도 미정 원문무장이 아닌 이번 제작용 배치다. 비적대 망령선 전체를 적으로 규정하지 않는다."
+    },
+    {
+      "id": "stage-06-palace",
+      "name": "6 · 황궁 검은 천정",
+      "region": "황궁 검은 천정",
+      "subtitle": "압력과 포격의 겹침 속에서 마지막 봉인 장치를 무력화하는 항해",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/35-act4-palace-truth.txt",
+        "outputs/43-final-boss-encounter.txt",
+        "outputs/15-endings-and-final-mission.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ],
+      "sourceLayouts": [
+        "43 황궁 외곽 원형 항로·심장·봉인탑3개"
+      ],
+      "environment": {
+        "skyColor": "#9caaaf",
+        "cloudColor": "#dce2df",
+        "accent": "#c6a35d",
+        "landmark": "검은 천정 아래 황궁 봉인탑",
+        "obstacles": [
+          {
+            "x": -7,
+            "z": -2,
+            "r": 1.5,
+            "label": "서쪽 봉인 기둥",
+            "kind": "seal"
+          },
+          {
+            "x": 7,
+            "z": -2,
+            "r": 1.5,
+            "label": "동쪽 봉인 기둥",
+            "kind": "seal"
+          },
+          {
+            "x": 0,
+            "z": 7,
+            "r": 1.5,
+            "label": "북쪽 봉인 기둥",
+            "kind": "seal"
+          }
+        ]
+      },
+      "opening": [
+        {
+          "assetId": "enemy-cult-blockade",
+          "role": "blockade",
+          "count": 1,
+          "name": "교단 잔존 봉쇄선"
+        },
+        {
+          "assetId": "mission-cult-purifier",
+          "role": "flame",
+          "count": 1,
+          "name": "정화선 역할 변형"
+        },
+        {
+          "assetId": "role-enemy-artillery",
+          "role": "artillery",
+          "count": 1,
+          "name": "황궁 경비 포격선"
+        }
+      ],
+      "late": [
+        {
+          "assetId": "enemy-cult-blockade",
+          "role": "blockade",
+          "count": 1,
+          "name": "교단 잔존 봉쇄선"
+        },
+        {
+          "assetId": "mission-ghost-artillery",
+          "role": "artillery",
+          "count": 1,
+          "name": "회수 포격선 역할 변형"
+        },
+        {
+          "assetId": "enemy-ghost-chaser",
+          "role": "charger",
+          "count": 1,
+          "name": "추격선 역할 변형"
+        }
+      ],
+      "midBoss": {
+        "assetId": "mini-funeral-guard",
+        "role": "bell",
+        "name": "황궁 외곽 종 관문함",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/40-demo-flow-playtest.txt",
+          "outputs/35-act4-palace-truth.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "mini-funeral-guard",
+        "mechanics": [
+          "측면 포격 전 포신 경고",
+          "종/장치 반응과 넓은 압력 경계",
+          "회복 틈에 관문함 반격"
+        ],
+        "sourceConcept": "소형 장례 경비선 외형을 빌린 새 제작용 황궁 관문 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "finalBoss": {
+        "assetId": "boss-last-inhale",
+        "role": "heart",
+        "name": "마지막 들숨 · 봉인 심장",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/43-final-boss-encounter.txt",
+          "outputs/35-act4-palace-truth.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "boss-last-inhale",
+        "mechanics": [
+          "직선/부채꼴 압력 예고",
+          "장력 공격의 고정점·방향 표시",
+          "넓은 공격 사이 안전한 회전 방향 유지"
+        ],
+        "sourceConcept": "원숨 순환 장치의 시설 외형을 참고한 최종 교전 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "designNote": "황궁은33번L6가 아니라43번 별도 전장이다. 표시용 봉인 기둥3개와 실제 원문3탑/코어/연결점 단계 공략을 혼동하지 않는다. 최종 교전 승리는3결말 구현/황녀 처형/세계 전체 사건 완료를 뜻하지 않는다. 화면의 검은 비와 실제 환경 판정은 별도 구현 항목이다."
+    }
+  ],
+  "difficultyPrototypeTuning": {
+    "easy": {
+      "enemyHealth": 0.85,
+      "enemyDamage": 0.7,
+      "telegraphTime": 1.2
+    },
+    "normal": {
+      "enemyHealth": 1,
+      "enemyDamage": 1,
+      "telegraphTime": 1
+    },
+    "hard": {
+      "enemyHealth": 1.2,
+      "enemyDamage": 1.2,
+      "telegraphTime": 1
+    }
+  }
+}

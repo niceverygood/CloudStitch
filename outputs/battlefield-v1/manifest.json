@@ -1,0 +1,77 @@
+{
+  "title": "Cloudstitch · 첫 바람의 항로",
+  "version": "0.1.0",
+  "status": "verified local combat prototype; no persistent save or campaign",
+  "verifiedAt": "2026-10-18T05:58:31.458Z",
+  "entry": "outputs/battlefield-v1/index.html",
+  "sources": "tools/battlefield/",
+  "buildSha256": "4e0d92009c13018f2497a04f2155f9cc3edbe60170f49140df5606c583a4285a",
+  "verification": {
+    "rulesPassed": 16,
+    "browserPassed": 30,
+    "report": "outputs/battlefield-v1/verification.json",
+    "actualDeviceTested": false
+  },
+  "inputs": [
+    {
+      "path": "outputs/fleet-v1/ships/player-homeward.glb",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+      "bytes": 7587232,
+      "sha256": "82e9d32173a6eeb2e7352ab8db1498e24d57e35108a8b48901b529642f3bfc50"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+      "bytes": 6699020,
+      "sha256": "bce2d9891de2225d6823cb1c347a4b8d6b7e3dd2f59e056db78530661d131923"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/enemy-union-salvage.glb",
+      "bytes": 8922572,
+      "sha256": "abc322a91da27a88799300b9f2b339a76b07394236d6924b9051d0ffaeb14382"
+    }
+  ],
+  "files": [
+    {
+      "path": "outputs/battlefield-v1/README.txt",
+      "bytes": 2160,
+      "sha256": "5eb5af589394711df67ab809403a5ab351c5fac436dfd5c506016274fffab8c3"
+    },
+    {
+      "path": "outputs/battlefield-v1/battlefield.js",
+      "bytes": 807671,
+      "sha256": "4e0d92009c13018f2497a04f2155f9cc3edbe60170f49140df5606c583a4285a"
+    },
+    {
+      "path": "outputs/battlefield-v1/index.html",
+      "bytes": 6589,
+      "sha256": "401e61b3b1a972e00e8d0dbf22258c05e5eec1523786e8e886630a307d202df2"
+    },
+    {
+      "path": "outputs/battlefield-v1/preview.png",
+      "bytes": 1071713,
+      "sha256": "796764fec550dd0b706dd3b33e63dd51b3b751677e9e5cfa95d4254581dfa581"
+    },
+    {
+      "path": "outputs/battlefield-v1/style.css",
+      "bytes": 13649,
+      "sha256": "f62e71e4fc0e39a836b348f22654b1e6191f895bfeb7bb47d516be91ec835c59"
+    },
+    {
+      "path": "outputs/battlefield-v1/verification.json",
+      "bytes": 20170,
+      "sha256": "a6095b16dfd1fe2b1f413dbe065bb94cb7743362cfe58830db193995c0a2a6ef"
+    }
+  ],
+  "limits": [
+    "temporary planar collision proxies",
+    "cargo recovery is not equipment attachment",
+    "no persistent save",
+    "no full campaign",
+    "no final weapon-specific effects",
+    "engine/platform/performance budget undecided"
+  ]
+}

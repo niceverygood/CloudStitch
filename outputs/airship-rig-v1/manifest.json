@@ -1,0 +1,537 @@
+{
+  "gameTitle": "Cloudstitch",
+  "revision": 1,
+  "sourceSha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+  "sourceTriangles": 11026,
+  "jointCount": 9,
+  "joints": [
+    {
+      "name": "RigRoot",
+      "parent": null,
+      "worldPivot": [
+        0,
+        0,
+        0
+      ],
+      "localBind": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "HullMotion",
+      "parent": "RigRoot",
+      "worldPivot": [
+        0,
+        -0.1,
+        0.0078
+      ],
+      "localBind": {
+        "position": [
+          0,
+          -0.1,
+          0.0078
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "EnvelopeFlex",
+      "parent": "HullMotion",
+      "worldPivot": [
+        0,
+        0.13,
+        0.0078
+      ],
+      "localBind": {
+        "position": [
+          0,
+          0.23,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "EngineVibration",
+      "parent": "HullMotion",
+      "worldPivot": [
+        0.384766,
+        -0.1430665,
+        0.0080565
+      ],
+      "localBind": {
+        "position": [
+          0.384766,
+          -0.04306650000000001,
+          0.0002564999999999998
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "PropellerSpin",
+      "parent": "EngineVibration",
+      "worldPivot": [
+        0.451,
+        -0.136719,
+        0.0078125
+      ],
+      "localBind": {
+        "position": [
+          0.06623400000000002,
+          0.006347500000000006,
+          -0.00024399999999999943
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "TurretYaw",
+      "parent": "HullMotion",
+      "worldPivot": [
+        -0.2868655,
+        -0.103,
+        0.0097655
+      ],
+      "localBind": {
+        "position": [
+          -0.2868655,
+          -0.002999999999999989,
+          0.0019655000000000002
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "GunRecoil",
+      "parent": "TurretYaw",
+      "worldPivot": [
+        -0.3125,
+        -0.0537105,
+        0.0080565
+      ],
+      "localBind": {
+        "position": [
+          -0.025634500000000005,
+          0.04928949999999999,
+          -0.0017090000000000004
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "WinchDrum",
+      "parent": "HullMotion",
+      "worldPivot": [
+        0.0004885,
+        -0.117432,
+        -0.10791
+      ],
+      "localBind": {
+        "position": [
+          0.0004885,
+          -0.01743199999999999,
+          -0.11571000000000001
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "HookSwing",
+      "parent": "HullMotion",
+      "worldPivot": [
+        0.002441,
+        -0.153076,
+        -0.121338
+      ],
+      "localBind": {
+        "position": [
+          0.002441,
+          -0.053075999999999984,
+          -0.129138
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "parts": [
+    {
+      "name": "HullAndCabin",
+      "joint": "HullMotion",
+      "triangles": 6282,
+      "vertices": 8319
+    },
+    {
+      "name": "EnvelopeAndBands",
+      "joint": "EnvelopeFlex",
+      "triangles": 1597,
+      "vertices": 1851
+    },
+    {
+      "name": "EngineHousing",
+      "joint": "EngineVibration",
+      "triangles": 1035,
+      "vertices": 1082
+    },
+    {
+      "name": "PropellerAssembly",
+      "joint": "PropellerSpin",
+      "triangles": 642,
+      "vertices": 615
+    },
+    {
+      "name": "TurretAssembly",
+      "joint": "TurretYaw",
+      "triangles": 382,
+      "vertices": 489
+    },
+    {
+      "name": "GunBarrel",
+      "joint": "GunRecoil",
+      "triangles": 324,
+      "vertices": 400
+    },
+    {
+      "name": "WinchDrumMesh",
+      "joint": "WinchDrum",
+      "triangles": 334,
+      "vertices": 375
+    },
+    {
+      "name": "HookAndChain",
+      "joint": "HookSwing",
+      "triangles": 430,
+      "vertices": 491
+    },
+    {
+      "name": "WovenCable_1",
+      "joint": "HullMotion / HookSwing",
+      "triangles": 320,
+      "vertices": 198,
+      "addedGeometry": true
+    },
+    {
+      "name": "WovenCable_2",
+      "joint": "HullMotion / HookSwing",
+      "triangles": 320,
+      "vertices": 198,
+      "addedGeometry": true
+    },
+    {
+      "name": "WovenCable_3",
+      "joint": "HullMotion / HookSwing",
+      "triangles": 320,
+      "vertices": 198,
+      "addedGeometry": true
+    }
+  ],
+  "profiles": [
+    {
+      "name": "FloatIdle",
+      "duration": 10,
+      "label": "잔잔한 정박",
+      "rpm": 120
+    },
+    {
+      "name": "Cruise",
+      "duration": 8,
+      "label": "느긋한 순항",
+      "rpm": 240
+    },
+    {
+      "name": "BankTurn",
+      "duration": 12,
+      "label": "관성 있는 선회",
+      "rpm": 240
+    },
+    {
+      "name": "GustRecovery",
+      "duration": 12,
+      "label": "돌풍과 자세 회복",
+      "rpm": 210
+    },
+    {
+      "name": "TurretScan",
+      "duration": 12,
+      "label": "포탑 탐색",
+      "rpm": 180
+    },
+    {
+      "name": "WinchCycle",
+      "duration": 16,
+      "label": "갈고리 내림과 회수",
+      "rpm": 120
+    },
+    {
+      "name": "FireBurst",
+      "duration": 8,
+      "label": "포격 반동",
+      "description": "짧은 후퇴와 천천히 돌아오는 포신",
+      "rpm": 240
+    }
+  ],
+  "clips": [
+    {
+      "name": "FloatIdle",
+      "duration": 10,
+      "tracks": 15
+    },
+    {
+      "name": "Cruise",
+      "duration": 8,
+      "tracks": 15
+    },
+    {
+      "name": "BankTurn",
+      "duration": 12,
+      "tracks": 15
+    },
+    {
+      "name": "GustRecovery",
+      "duration": 12,
+      "tracks": 15
+    },
+    {
+      "name": "TurretScan",
+      "duration": 12,
+      "tracks": 15
+    },
+    {
+      "name": "WinchCycle",
+      "duration": 16,
+      "tracks": 15
+    },
+    {
+      "name": "FireBurst",
+      "duration": 8,
+      "tracks": 15
+    }
+  ],
+  "addedCableTriangles": 960,
+  "sockets": [
+    {
+      "name": "Socket_W1",
+      "parent": "HullMotion",
+      "pivot": [
+        -0.2868655,
+        -0.103,
+        0.0097655
+      ],
+      "provisional": true
+    },
+    {
+      "name": "Socket_E1",
+      "parent": "HullMotion",
+      "pivot": [
+        0.269043,
+        -0.142578,
+        0.0080565
+      ],
+      "provisional": true
+    },
+    {
+      "name": "Socket_L1",
+      "parent": "HullMotion",
+      "pivot": [
+        0,
+        0.006,
+        0.0078
+      ],
+      "provisional": true
+    },
+    {
+      "name": "Socket_S1",
+      "parent": "HullMotion",
+      "pivot": [
+        0.0004885,
+        -0.117432,
+        -0.10791
+      ],
+      "provisional": true
+    },
+    {
+      "name": "Muzzle",
+      "parent": "GunRecoil",
+      "pivot": [
+        -0.436768,
+        -0.027588,
+        -0.001953
+      ],
+      "provisional": true
+    },
+    {
+      "name": "HookGrip",
+      "parent": "HookSwing",
+      "pivot": [
+        0.0026855,
+        -0.224,
+        -0.1264645
+      ],
+      "provisional": true
+    }
+  ],
+  "model": "airship-rigged.glb",
+  "modelBytes": 4672852,
+  "sha256": "8f131dca0c6dc2c8277ed9bb144b94830a45634048e3922fa8ace34b54a994f1",
+  "scope": "Reusable skinned GLB with embedded animation clips and provisional attachment nodes. Engine import, gameplay, collision and LOD are not yet verified.",
+  "verification": {
+    "passed": true,
+    "report": "verification.json",
+    "gltfValidator": "gltf-validation.json",
+    "originalPositionUvTrianglesExact": true,
+    "errorCount": 0,
+    "externalRequestCount": 0,
+    "previewVideoDecoded": true
+  },
+  "files": [
+    {
+      "file": "README.txt",
+      "bytes": 3632,
+      "sha256": "89f5aa65d4a6e6a5061e7b73e51d3036e4f26579630471cb7d5e0d19600e05b9"
+    },
+    {
+      "file": "airship-rigged.glb",
+      "bytes": 4672852,
+      "sha256": "8f131dca0c6dc2c8277ed9bb144b94830a45634048e3922fa8ace34b54a994f1"
+    },
+    {
+      "file": "gltf-validation.json",
+      "bytes": 1064,
+      "sha256": "4fed7aae7ace842658731302909577bfccdcacf31e57d4b6da574c2de4fb8e7c"
+    },
+    {
+      "file": "motion-preview.webm",
+      "bytes": 5001577,
+      "sha256": "76dada840ea5e104a23753fca10670d47249a30cfd26d0373e800ad0b82d4451",
+      "width": 1280,
+      "height": 720,
+      "durationSeconds": 33.333625
+    },
+    {
+      "file": "preview-handdrawn.png",
+      "bytes": 743706,
+      "sha256": "1aaa6737c72ff67e2b09469a82a7b120de201ab69787dd2ad1fa4f20fca94a5a",
+      "width": 1440,
+      "height": 1158
+    },
+    {
+      "file": "preview-rig.png",
+      "bytes": 814900,
+      "sha256": "1055aeb7ae061243c8d231cac51bdd4a7551eb6eed17d74e61f2c00699443201",
+      "width": 1440,
+      "height": 1158
+    },
+    {
+      "file": "preview-winch.png",
+      "bytes": 753038,
+      "sha256": "8ba297b8de0b5b8c596cf18523ba0f685af68357b233cd4789aba8892790dfb5",
+      "width": 1440,
+      "height": 1158
+    },
+    {
+      "file": "verification.json",
+      "bytes": 46054,
+      "sha256": "96548ca42a84ae463d9ea2eae375c874833bfc474406ec280e6c93a6f9fdabfa"
+    },
+    {
+      "file": "viewer.html",
+      "bytes": 6865664,
+      "sha256": "6c02e5dbe0ad0d199bc313f1d1e507c24d1861d9f7eeb605900d3baf2c4b273f"
+    }
+  ]
+}

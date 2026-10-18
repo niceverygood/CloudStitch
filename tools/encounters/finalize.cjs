@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');const{repoPath}=require('../lib/paths.cjs');
+const out=repoPath('outputs/encounters-v1'),reportFile=repoPath(process.argv[2]||'work/verification/encounters/qa-result.json'),report=JSON.parse(fs.readFileSync(reportFile));
+if(!report.passed||!report.fullCoveragePassed)throw new Error('Complete encounter QA is required.');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex'),manifest=JSON.parse(fs.readFileSync(path.join(out,'manifest.json')));
+if(manifest.indexSha256!==sha(fs.readFileSync(path.join(out,'index.html'))))throw new Error('Index changed after its build.');
+for(const file of ['preview-battle.png','preview-boss.png','preview-palace.png','preview-mobile.png'])if(!fs.existsSync(path.join(out,file)))throw new Error('Missing capture '+file);
+fs.copyFileSync(reportFile,path.join(out,'verification.json'));
+manifest.verification={passed:true,report:'verification.json',verifiedAt:new Date().toISOString(),scope:'Simulation and local browser/input/asset verification. No full campaign, economy, modular salvage, final balance or native-device certification.'};
+manifest.files=['index.html','catalog.json','README.txt','verification.json','preview-battle.png','preview-boss.png','preview-palace.png','preview-mobile.png'].map(file=>{const bytes=fs.readFileSync(path.join(out,file));return{file,bytes:bytes.length,sha256:sha(bytes)}});
+fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');console.log(JSON.stringify({stages:manifest.stageCount,bosses:manifest.bossCount,normalSpawns:manifest.normalSpawns,passed:true}));
