@@ -1,0 +1,84 @@
+{
+  "id": "cloud-column",
+  "order": 36,
+  "name_ko": "상승 구름 기둥",
+  "name_en": "Cloud Column",
+  "category": "terrain",
+  "role": "상승기류의 세로 흐름을 나타내는 정적 형태",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 3,
+    "depth": 3,
+    "height": 6.5,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/cloud-column.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 1620,
+  "mesh_count": 9,
+  "primitive_count": 9,
+  "node_count": 11,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 9,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 185364,
+  "sha256": "5c5b8142452c0ad6d729c1cbeaa3c30763b0304a2b81eb760d3a7f5995a9fd27",
+  "mesh_definition_count": 9,
+  "unique_geometry_triangles": 1620,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 9,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.801978521347046,
+        -0.3222333431243898,
+        -0.9505823874484393
+      ],
+      "max": [
+        0.801978521347046,
+        3.6182333431243903,
+        0.9739061377045081
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

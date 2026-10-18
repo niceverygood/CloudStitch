@@ -1,0 +1,84 @@
+{
+  "id": "wreckage-shoal",
+  "order": 39,
+  "name_ko": "잔해해역 부유 더미",
+  "name_en": "Floating Wreckage Shoal",
+  "category": "terrain",
+  "role": "종항 잔해해역의 단순 부유 잔해 지형",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 4.5,
+    "depth": 3,
+    "height": 1.2,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/wreckage-shoal.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 1344,
+  "mesh_count": 18,
+  "primitive_count": 18,
+  "node_count": 20,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 18,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 164712,
+  "sha256": "2049c0d6eb1efac43abae2e5fe36a2a1ec58d574f8a740be0ce93fc84c5168e7",
+  "mesh_definition_count": 18,
+  "unique_geometry_triangles": 1344,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 18,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -1.8414877653121948,
+        -0.6928012371063232,
+        -1.3916049003601074
+      ],
+      "max": [
+        1.781678557395935,
+        0.8986128807177145,
+        1.5000000238418578
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

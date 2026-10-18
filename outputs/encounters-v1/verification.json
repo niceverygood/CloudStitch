@@ -1,0 +1,1679 @@
+{
+  "scope": "Small offline encounter prototype; no full campaign, engine selection, P0–P4 module loop or production-performance certification.",
+  "mode": "core-and-browser",
+  "passed": true,
+  "fullCoveragePassed": true,
+  "failures": [],
+  "catalog": {
+    "sha256": "d20a707fba219927519e409756eec3662e3fe8ea85cb5540c321b05800c95b37",
+    "stages": [
+      "stage-01-harbor",
+      "stage-02-canyon",
+      "stage-03-storm",
+      "stage-04-industry",
+      "stage-05-fog",
+      "stage-06-palace"
+    ],
+    "bosses": [
+      {
+        "stageId": "stage-01-harbor",
+        "tier": "midBoss",
+        "assetId": "mini-funeral-guard",
+        "role": "blockade",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-01-harbor",
+        "tier": "finalBoss",
+        "assetId": "boss-bell-devourer",
+        "role": "bell",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-02-canyon",
+        "tier": "midBoss",
+        "assetId": "enemy-tax-cutter",
+        "role": "artillery",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-02-canyon",
+        "tier": "finalBoss",
+        "assetId": "enemy-union-salvage",
+        "role": "salvage",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-03-storm",
+        "tier": "midBoss",
+        "assetId": "mission-bridge-tug",
+        "role": "salvage",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-03-storm",
+        "tier": "finalBoss",
+        "assetId": "enemy-cult-blockade",
+        "role": "blockade",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-04-industry",
+        "tier": "midBoss",
+        "assetId": "enemy-union-repair",
+        "role": "repair",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-04-industry",
+        "tier": "finalBoss",
+        "assetId": "boss-shipwright-command",
+        "role": "shipyard",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-05-fog",
+        "tier": "midBoss",
+        "assetId": "enemy-ghost-chaser",
+        "role": "charger",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-05-fog",
+        "tier": "finalBoss",
+        "assetId": "boss-fleet-king",
+        "role": "king",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-06-palace",
+        "tier": "midBoss",
+        "assetId": "mini-funeral-guard",
+        "role": "bell",
+        "sourceKind": "prototypeCommander"
+      },
+      {
+        "stageId": "stage-06-palace",
+        "tier": "finalBoss",
+        "assetId": "boss-last-inhale",
+        "role": "heart",
+        "sourceKind": "prototypeCommander"
+      }
+    ],
+    "sourceReferences": [
+      "outputs/08-world-map.txt",
+      "outputs/33-level-layouts.txt",
+      "outputs/25-enemy-ai-encounters.txt",
+      "outputs/48-mission-composition-rules.txt",
+      "outputs/112-system-rules-reference.txt",
+      "outputs/114-production-decision-register.txt",
+      "outputs/17-prologue-mission-script.txt",
+      "outputs/23-act1-main-quests.txt",
+      "outputs/40-demo-flow-playtest.txt",
+      "outputs/10-first-boss.txt",
+      "outputs/68-bell-boss-arena.txt",
+      "outputs/91-boss-attack-readability.txt",
+      "outputs/28-weather-and-hazards.txt",
+      "outputs/65-enemy-modular-anatomy.txt",
+      "outputs/102-advanced-encounter.txt",
+      "outputs/103-bridge-mission-script.txt",
+      "outputs/09-enemies.txt",
+      "outputs/27-act2-main-quests.txt",
+      "outputs/14-living-shipyard-boss.txt",
+      "outputs/31-act3-main-quests.txt",
+      "outputs/20-faction-quest-chains.txt",
+      "outputs/39-story-canon-timeline.txt",
+      "outputs/35-act4-palace-truth.txt",
+      "outputs/43-final-boss-encounter.txt",
+      "outputs/15-endings-and-final-mission.txt"
+    ]
+  },
+  "implementation": [
+    {
+      "path": "tools/encounters/core.js",
+      "sha256": "16ad0e70334fd5b7fb4c1cb52206f6f45ee9b64b33ccd61c9e48a289a805a2bf"
+    },
+    {
+      "path": "tools/encounters/app.js",
+      "sha256": "98da1c9356f9e1721ffcaa1bb653287fba8a14d762c269b2e6e257585075660e"
+    },
+    {
+      "path": "tools/encounters/scene.js",
+      "sha256": "66006f35a3529dd978d2dfaa666d6ade66505849a6704eebd707625fd182a6f1"
+    },
+    {
+      "path": "tools/encounters/template.html",
+      "sha256": "aedf81ae6ff22c3d99db1c75f9732724cf6999fc227c3345931c467b20fe6c50"
+    }
+  ],
+  "output": {
+    "indexBytes": 700188,
+    "indexSha256": "8f221a012644db0f80ff9c777aceab349636222aab58458ac09ba2d053d2f5b9",
+    "stageCount": 6,
+    "bossCount": 12,
+    "normalSpawns": 36,
+    "assetCount": 19,
+    "assets": [
+      {
+        "id": "player-homeward",
+        "bytes": 4675348,
+        "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004"
+      },
+      {
+        "id": "enemy-pirate-scout",
+        "bytes": 6699020,
+        "sha256": "bce2d9891de2225d6823cb1c347a4b8d6b7e3dd2f59e056db78530661d131923"
+      },
+      {
+        "id": "enemy-cult-blockade",
+        "bytes": 8808632,
+        "sha256": "4ec693e705c8d83da58a5a74d87f3248e9775bb5ca93dec60ec48eb1cc2feac8"
+      },
+      {
+        "id": "mini-funeral-guard",
+        "bytes": 6937200,
+        "sha256": "e7d21258a49351ed966f60b3c66d3b9351a8ba38bb6457c280cea9d8dc022139"
+      },
+      {
+        "id": "boss-bell-devourer",
+        "bytes": 13800368,
+        "sha256": "da116ad02e6f4e130988c6c634863f6fbe03df3ef08bc2a1c12d9bb6dcb6b3b6"
+      },
+      {
+        "id": "enemy-union-salvage",
+        "bytes": 8922572,
+        "sha256": "abc322a91da27a88799300b9f2b339a76b07394236d6924b9051d0ffaeb14382"
+      },
+      {
+        "id": "enemy-tax-cutter",
+        "bytes": 7587232,
+        "sha256": "82e9d32173a6eeb2e7352ab8db1498e24d57e35108a8b48901b529642f3bfc50"
+      },
+      {
+        "id": "enemy-union-repair",
+        "bytes": 8206696,
+        "sha256": "5d63d412b28c69141d013f84209278cc3f2b4d49dd2280f4853c4afc195ebf8d"
+      },
+      {
+        "id": "enemy-ghost-chaser",
+        "bytes": 7121960,
+        "sha256": "f372e83c0026a36ce72cb33ec826bfcea98416d7d05f2c81861672c11455492e"
+      },
+      {
+        "id": "role-enemy-artillery",
+        "bytes": 7168560,
+        "sha256": "dd910a1f6a70fa5cf18e144e20e114c2de84d2f8870f1cfd67d53beb367f32bd"
+      },
+      {
+        "id": "enemy-disguised-wreck",
+        "bytes": 7100040,
+        "sha256": "b0426a691baaca6c0ad4ef9e8c6724900f9108ab5626c9abeff38c77eef220f5"
+      },
+      {
+        "id": "mission-bridge-tug",
+        "bytes": 7097168,
+        "sha256": "2c9941b42c4a98d4c63987595dd2f87052ec287037a7f22eda05e302426655e8"
+      },
+      {
+        "id": "mission-union-guard",
+        "bytes": 6141340,
+        "sha256": "ba521a6e6bc1f9eefd3307f8e0ded5cd219c4a58118561e6bd7365379ad31b3d"
+      },
+      {
+        "id": "rival-night-shift",
+        "bytes": 8288468,
+        "sha256": "f512f3081465a4310fe29d069654c28685098fa6759873edc2936e88590f2184"
+      },
+      {
+        "id": "boss-shipwright-command",
+        "bytes": 10187192,
+        "sha256": "d6240f4ec7611155a5694d3f0630d56c557d1375cd7882db3568e492c865e2f2"
+      },
+      {
+        "id": "mission-ghost-artillery",
+        "bytes": 7542280,
+        "sha256": "9493b52eab1fa9c1e0511bcbb26b3dc8f726ed26ddea2723ffb5e904c2593f23"
+      },
+      {
+        "id": "mission-cult-purifier",
+        "bytes": 7172724,
+        "sha256": "00ed4d0481d3941bf9355508fedf570a6d97c8aa747118b7a26dcab50d1e8d6c"
+      },
+      {
+        "id": "boss-fleet-king",
+        "bytes": 10938244,
+        "sha256": "4bc4ec164b14d1c5630ea331c7459007bc8bde611e510f6c261d0682acfe5f0e"
+      },
+      {
+        "id": "boss-last-inhale",
+        "bytes": 5528760,
+        "sha256": "0631ec4f85d291407a5a7184c54c9cd79f276f3851d2b35cf41fb639048d1ff9"
+      }
+    ]
+  },
+  "core": {
+    "passed": true,
+    "tests": [
+      {
+        "name": "deep-snapshot-isolation",
+        "passed": true
+      },
+      {
+        "name": "stage:stage-01-harbor:mandatory-two-bosses",
+        "passed": true,
+        "stageId": "stage-01-harbor",
+        "runId": 2,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "opening": {
+          "kills": 2,
+          "simulationSeconds": 0.016666666666666666,
+          "after": "midboss"
+        },
+        "midboss": {
+          "kills": 1,
+          "simulationSeconds": 0.01666666666666667,
+          "after": "maintenance"
+        },
+        "late": {
+          "kills": 2,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "finalboss"
+        },
+        "finalboss": {
+          "kills": 1,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "victory"
+        },
+        "spawnedEnemies": 6
+      },
+      {
+        "name": "stage:stage-02-canyon:mandatory-two-bosses",
+        "passed": true,
+        "stageId": "stage-02-canyon",
+        "runId": 3,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "opening": {
+          "kills": 3,
+          "simulationSeconds": 0.016666666666666666,
+          "after": "midboss"
+        },
+        "midboss": {
+          "kills": 1,
+          "simulationSeconds": 0.01666666666666667,
+          "after": "maintenance"
+        },
+        "late": {
+          "kills": 3,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "finalboss"
+        },
+        "finalboss": {
+          "kills": 1,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "victory"
+        },
+        "spawnedEnemies": 8
+      },
+      {
+        "name": "stage:stage-03-storm:mandatory-two-bosses",
+        "passed": true,
+        "stageId": "stage-03-storm",
+        "runId": 4,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "opening": {
+          "kills": 3,
+          "simulationSeconds": 0.016666666666666666,
+          "after": "midboss"
+        },
+        "midboss": {
+          "kills": 1,
+          "simulationSeconds": 0.01666666666666667,
+          "after": "maintenance"
+        },
+        "late": {
+          "kills": 3,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "finalboss"
+        },
+        "finalboss": {
+          "kills": 1,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "victory"
+        },
+        "spawnedEnemies": 8
+      },
+      {
+        "name": "stage:stage-04-industry:mandatory-two-bosses",
+        "passed": true,
+        "stageId": "stage-04-industry",
+        "runId": 5,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "opening": {
+          "kills": 3,
+          "simulationSeconds": 0.016666666666666666,
+          "after": "midboss"
+        },
+        "midboss": {
+          "kills": 1,
+          "simulationSeconds": 0.01666666666666667,
+          "after": "maintenance"
+        },
+        "late": {
+          "kills": 4,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "finalboss"
+        },
+        "finalboss": {
+          "kills": 1,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "victory"
+        },
+        "spawnedEnemies": 9
+      },
+      {
+        "name": "stage:stage-05-fog:mandatory-two-bosses",
+        "passed": true,
+        "stageId": "stage-05-fog",
+        "runId": 6,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "opening": {
+          "kills": 3,
+          "simulationSeconds": 0.016666666666666666,
+          "after": "midboss"
+        },
+        "midboss": {
+          "kills": 1,
+          "simulationSeconds": 0.01666666666666667,
+          "after": "maintenance"
+        },
+        "late": {
+          "kills": 4,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "finalboss"
+        },
+        "finalboss": {
+          "kills": 1,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "victory"
+        },
+        "spawnedEnemies": 9
+      },
+      {
+        "name": "stage:stage-06-palace:mandatory-two-bosses",
+        "passed": true,
+        "stageId": "stage-06-palace",
+        "runId": 7,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "opening": {
+          "kills": 3,
+          "simulationSeconds": 0.016666666666666666,
+          "after": "midboss"
+        },
+        "midboss": {
+          "kills": 1,
+          "simulationSeconds": 0.01666666666666667,
+          "after": "maintenance"
+        },
+        "late": {
+          "kills": 3,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "finalboss"
+        },
+        "finalboss": {
+          "kills": 1,
+          "simulationSeconds": 0.016666666666666663,
+          "after": "victory"
+        },
+        "spawnedEnemies": 8
+      },
+      {
+        "name": "death-retry-clears-prior-run",
+        "passed": true,
+        "oldRunId": 8,
+        "newRunId": 9
+      },
+      {
+        "name": "rapid-stage-switch-and-reset",
+        "passed": true,
+        "runIds": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "movement-is-actual-fixed-step-input",
+        "passed": true,
+        "displacement": 0.6272059405366142,
+        "requestedSeconds": 0.2
+      }
+    ],
+    "stagesChecked": 6
+  },
+  "attackRules": {
+    "passed": true,
+    "tests": [
+      {
+        "name": "shape-boundaries-use-front-negative-X",
+        "passed": true,
+        "shapes": [
+          "line",
+          "cone",
+          "circle",
+          "ring"
+        ]
+      },
+      {
+        "name": "real-player-projectile-damages-target",
+        "passed": true,
+        "shots": 5,
+        "hits": 3,
+        "targetHpBefore": 90,
+        "targetHpAfter": 54
+      },
+      {
+        "name": "swept-projectile-cannot-tunnel-through-narrow-cover",
+        "passed": true,
+        "shotTravelPerStep": 0.45,
+        "obstacleRadius": 0.02,
+        "openShotsInFlight": 1,
+        "blockedShotsInFlight": 0
+      },
+      {
+        "name": "source-destruction-cancels-pending-warning",
+        "passed": true,
+        "warningCanceled": true
+      },
+      {
+        "name": "projectile-range-lock-and-fired-shot-persistence",
+        "passed": true,
+        "cases": [
+          {
+            "role": "blockade",
+            "emitted": true,
+            "lockedAimSamples": 23,
+            "maximumObservedDistance": 11.883333333333344,
+            "shownLength": 12,
+            "alreadyFiredShotPersisted": true,
+            "newSourceShotsPrevented": true
+          },
+          {
+            "role": "salvage",
+            "emitted": true,
+            "lockedAimSamples": 23,
+            "maximumObservedDistance": 13.749999999999996,
+            "shownLength": 14,
+            "alreadyFiredShotPersisted": true,
+            "newSourceShotsPrevented": true
+          }
+        ]
+      },
+      {
+        "name": "warning-floors-token-budget-and-locked-geometry",
+        "passed": true,
+        "difficulties": [
+          "easy",
+          "normal",
+          "hard"
+        ],
+        "warningsObserved": 86,
+        "lockedObserved": 54,
+        "maximumOpening": 1,
+        "maximumLate": 2,
+        "patterns": [
+          "shot",
+          "fan",
+          "harpoon",
+          "mortar",
+          "charge",
+          "flame"
+        ]
+      },
+      {
+        "name": "boss-charge-damage-stays-inside-displayed-corridor",
+        "passed": true,
+        "lockObserved": true,
+        "hit": {
+          "across": 2.0638239171843695,
+          "along": 9.007125585886827,
+          "warningWidth": 3.2,
+          "warningLength": 11.35,
+          "playerRadius": 0.7
+        },
+        "avoidedWithoutDamage": false
+      }
+    ]
+  },
+  "weaponRoutes": {
+    "passed": true,
+    "stageCount": 6,
+    "usedDamageOrDefeatHooks": false,
+    "limitSimulationSeconds": 200,
+    "stages": [
+      {
+        "stageId": "stage-01-harbor",
+        "result": "victory",
+        "simTime": 14.600000000000305,
+        "minimumHp": 150,
+        "shots": 72,
+        "hits": 48,
+        "kills": 6,
+        "expectedKills": 6,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "bossDefeatCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-02-canyon",
+        "result": "victory",
+        "simTime": 18.683333333333554,
+        "minimumHp": 150,
+        "shots": 94,
+        "hits": 62,
+        "kills": 8,
+        "expectedKills": 8,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "bossDefeatCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-03-storm",
+        "result": "victory",
+        "simTime": 20.033333333333477,
+        "minimumHp": 150,
+        "shots": 104,
+        "hits": 73,
+        "kills": 8,
+        "expectedKills": 8,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "bossDefeatCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-04-industry",
+        "result": "victory",
+        "simTime": 23.849999999999927,
+        "minimumHp": 138,
+        "shots": 116,
+        "hits": 84,
+        "kills": 9,
+        "expectedKills": 9,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "bossDefeatCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-05-fog",
+        "result": "victory",
+        "simTime": 26.299999999999788,
+        "minimumHp": 129,
+        "shots": 133,
+        "hits": 90,
+        "kills": 9,
+        "expectedKills": 9,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "bossDefeatCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-06-palace",
+        "result": "victory",
+        "simTime": 25.533333333333164,
+        "minimumHp": 138,
+        "shots": 131,
+        "hits": 95,
+        "kills": 8,
+        "expectedKills": 8,
+        "phases": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "bossDefeatCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      }
+    ],
+    "limitation": "Deterministic functional weapon-path proof; not human playtesting or difficulty/fun/fairness certification."
+  },
+  "browser": {
+    "simulation": {
+      "passed": true,
+      "tests": [
+        {
+          "name": "deep-snapshot-isolation",
+          "passed": true
+        },
+        {
+          "name": "stage:stage-01-harbor:mandatory-two-bosses",
+          "passed": true,
+          "stageId": "stage-01-harbor",
+          "runId": 2,
+          "phases": [
+            "opening",
+            "midboss",
+            "maintenance",
+            "late",
+            "finalboss",
+            "victory"
+          ],
+          "opening": {
+            "kills": 2,
+            "simulationSeconds": 0.016666666666666666,
+            "after": "midboss"
+          },
+          "midboss": {
+            "kills": 1,
+            "simulationSeconds": 0.01666666666666667,
+            "after": "maintenance"
+          },
+          "late": {
+            "kills": 2,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "finalboss"
+          },
+          "finalboss": {
+            "kills": 1,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "victory"
+          },
+          "spawnedEnemies": 6
+        },
+        {
+          "name": "stage:stage-02-canyon:mandatory-two-bosses",
+          "passed": true,
+          "stageId": "stage-02-canyon",
+          "runId": 3,
+          "phases": [
+            "opening",
+            "midboss",
+            "maintenance",
+            "late",
+            "finalboss",
+            "victory"
+          ],
+          "opening": {
+            "kills": 3,
+            "simulationSeconds": 0.016666666666666666,
+            "after": "midboss"
+          },
+          "midboss": {
+            "kills": 1,
+            "simulationSeconds": 0.01666666666666667,
+            "after": "maintenance"
+          },
+          "late": {
+            "kills": 3,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "finalboss"
+          },
+          "finalboss": {
+            "kills": 1,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "victory"
+          },
+          "spawnedEnemies": 8
+        },
+        {
+          "name": "stage:stage-03-storm:mandatory-two-bosses",
+          "passed": true,
+          "stageId": "stage-03-storm",
+          "runId": 4,
+          "phases": [
+            "opening",
+            "midboss",
+            "maintenance",
+            "late",
+            "finalboss",
+            "victory"
+          ],
+          "opening": {
+            "kills": 3,
+            "simulationSeconds": 0.016666666666666666,
+            "after": "midboss"
+          },
+          "midboss": {
+            "kills": 1,
+            "simulationSeconds": 0.01666666666666667,
+            "after": "maintenance"
+          },
+          "late": {
+            "kills": 3,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "finalboss"
+          },
+          "finalboss": {
+            "kills": 1,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "victory"
+          },
+          "spawnedEnemies": 8
+        },
+        {
+          "name": "stage:stage-04-industry:mandatory-two-bosses",
+          "passed": true,
+          "stageId": "stage-04-industry",
+          "runId": 5,
+          "phases": [
+            "opening",
+            "midboss",
+            "maintenance",
+            "late",
+            "finalboss",
+            "victory"
+          ],
+          "opening": {
+            "kills": 3,
+            "simulationSeconds": 0.016666666666666666,
+            "after": "midboss"
+          },
+          "midboss": {
+            "kills": 1,
+            "simulationSeconds": 0.01666666666666667,
+            "after": "maintenance"
+          },
+          "late": {
+            "kills": 4,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "finalboss"
+          },
+          "finalboss": {
+            "kills": 1,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "victory"
+          },
+          "spawnedEnemies": 9
+        },
+        {
+          "name": "stage:stage-05-fog:mandatory-two-bosses",
+          "passed": true,
+          "stageId": "stage-05-fog",
+          "runId": 6,
+          "phases": [
+            "opening",
+            "midboss",
+            "maintenance",
+            "late",
+            "finalboss",
+            "victory"
+          ],
+          "opening": {
+            "kills": 3,
+            "simulationSeconds": 0.016666666666666666,
+            "after": "midboss"
+          },
+          "midboss": {
+            "kills": 1,
+            "simulationSeconds": 0.01666666666666667,
+            "after": "maintenance"
+          },
+          "late": {
+            "kills": 4,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "finalboss"
+          },
+          "finalboss": {
+            "kills": 1,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "victory"
+          },
+          "spawnedEnemies": 9
+        },
+        {
+          "name": "stage:stage-06-palace:mandatory-two-bosses",
+          "passed": true,
+          "stageId": "stage-06-palace",
+          "runId": 7,
+          "phases": [
+            "opening",
+            "midboss",
+            "maintenance",
+            "late",
+            "finalboss",
+            "victory"
+          ],
+          "opening": {
+            "kills": 3,
+            "simulationSeconds": 0.016666666666666666,
+            "after": "midboss"
+          },
+          "midboss": {
+            "kills": 1,
+            "simulationSeconds": 0.01666666666666667,
+            "after": "maintenance"
+          },
+          "late": {
+            "kills": 3,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "finalboss"
+          },
+          "finalboss": {
+            "kills": 1,
+            "simulationSeconds": 0.016666666666666663,
+            "after": "victory"
+          },
+          "spawnedEnemies": 8
+        },
+        {
+          "name": "death-retry-clears-prior-run",
+          "passed": true,
+          "oldRunId": 8,
+          "newRunId": 9
+        },
+        {
+          "name": "rapid-stage-switch-and-reset",
+          "passed": true,
+          "runIds": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "name": "movement-is-actual-fixed-step-input",
+          "passed": true,
+          "displacement": 0.6272059405366142,
+          "requestedSeconds": 0.2
+        }
+      ],
+      "stagesChecked": 6
+    },
+    "stageRenders": [
+      {
+        "stageId": "stage-01-harbor",
+        "phase": "opening",
+        "enemyAssetIds": [
+          "enemy-pirate-scout",
+          "enemy-pirate-scout"
+        ],
+        "actors": 3,
+        "triangles": 85274,
+        "cachedAssets": 2,
+        "rendererMemory": {
+          "geometries": 70,
+          "textures": 13,
+          "calls": 148,
+          "glbBytes": 11374368,
+          "geometryBytes": 2982700,
+          "decodedImageBytes": 23068672
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-01-harbor-opening.png",
+        "bossSpawnCounts": {
+          "midboss": 0,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-01-harbor",
+        "phase": "midboss",
+        "enemyAssetIds": [
+          "mini-funeral-guard"
+        ],
+        "actors": 2,
+        "triangles": 50066,
+        "cachedAssets": 3,
+        "rendererMemory": {
+          "geometries": 130,
+          "textures": 13,
+          "calls": 112,
+          "glbBytes": 18311568,
+          "geometryBytes": 5248068,
+          "decodedImageBytes": 29360128
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-01-harbor-midboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-01-harbor",
+        "phase": "late",
+        "enemyAssetIds": [
+          "enemy-cult-blockade",
+          "enemy-pirate-scout"
+        ],
+        "actors": 3,
+        "triangles": 106394,
+        "cachedAssets": 4,
+        "rendererMemory": {
+          "geometries": 217,
+          "textures": 15,
+          "calls": 186,
+          "glbBytes": 27120200,
+          "geometryBytes": 8786372,
+          "decodedImageBytes": 35651584
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-01-harbor-late.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-01-harbor",
+        "phase": "finalboss",
+        "enemyAssetIds": [
+          "boss-bell-devourer"
+        ],
+        "actors": 2,
+        "triangles": 121846,
+        "cachedAssets": 5,
+        "rendererMemory": {
+          "geometries": 387,
+          "textures": 15,
+          "calls": 222,
+          "glbBytes": 40920568,
+          "geometryBytes": 15442908,
+          "decodedImageBytes": 41943040
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-01-harbor-finalboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-02-canyon",
+        "phase": "opening",
+        "enemyAssetIds": [
+          "enemy-pirate-scout",
+          "enemy-pirate-scout",
+          "enemy-union-salvage"
+        ],
+        "actors": 4,
+        "triangles": 142006,
+        "cachedAssets": 3,
+        "rendererMemory": {
+          "geometries": 144,
+          "textures": 15,
+          "calls": 216,
+          "glbBytes": 20296940,
+          "geometryBytes": 6336676,
+          "decodedImageBytes": 29360128
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-02-canyon-opening.png",
+        "bossSpawnCounts": {
+          "midboss": 0,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-02-canyon",
+        "phase": "midboss",
+        "enemyAssetIds": [
+          "enemy-tax-cutter"
+        ],
+        "actors": 2,
+        "triangles": 55746,
+        "cachedAssets": 4,
+        "rendererMemory": {
+          "geometries": 204,
+          "textures": 14,
+          "calls": 106,
+          "glbBytes": 27884172,
+          "geometryBytes": 9097116,
+          "decodedImageBytes": 35651584
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-02-canyon-midboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-02-canyon",
+        "phase": "late",
+        "enemyAssetIds": [
+          "enemy-tax-cutter",
+          "enemy-union-repair",
+          "enemy-union-salvage"
+        ],
+        "actors": 4,
+        "triangles": 159450,
+        "cachedAssets": 5,
+        "rendererMemory": {
+          "geometries": 279,
+          "textures": 17,
+          "calls": 253,
+          "glbBytes": 36090868,
+          "geometryBytes": 11925660,
+          "decodedImageBytes": 41943040
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-02-canyon-late.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-02-canyon",
+        "phase": "finalboss",
+        "enemyAssetIds": [
+          "enemy-union-salvage"
+        ],
+        "actors": 2,
+        "triangles": 68718,
+        "cachedAssets": 5,
+        "rendererMemory": {
+          "geometries": 279,
+          "textures": 15,
+          "calls": 120,
+          "glbBytes": 36090868,
+          "geometryBytes": 11925660,
+          "decodedImageBytes": 41943040
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-02-canyon-finalboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-03-storm",
+        "phase": "opening",
+        "enemyAssetIds": [
+          "enemy-ghost-chaser",
+          "enemy-pirate-scout",
+          "enemy-union-salvage"
+        ],
+        "actors": 4,
+        "triangles": 141718,
+        "cachedAssets": 4,
+        "rendererMemory": {
+          "geometries": 192,
+          "textures": 16,
+          "calls": 223,
+          "glbBytes": 27418900,
+          "geometryBytes": 8662148,
+          "decodedImageBytes": 35651584
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-03-storm-opening.png",
+        "bossSpawnCounts": {
+          "midboss": 0,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-03-storm",
+        "phase": "midboss",
+        "enemyAssetIds": [
+          "mission-bridge-tug"
+        ],
+        "actors": 2,
+        "triangles": 50386,
+        "cachedAssets": 5,
+        "rendererMemory": {
+          "geometries": 247,
+          "textures": 15,
+          "calls": 109,
+          "glbBytes": 34516068,
+          "geometryBytes": 10859940,
+          "decodedImageBytes": 41943040
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-03-storm-midboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-03-storm",
+        "phase": "late",
+        "enemyAssetIds": [
+          "enemy-cult-blockade",
+          "enemy-disguised-wreck",
+          "role-enemy-artillery"
+        ],
+        "actors": 4,
+        "triangles": 153534,
+        "cachedAssets": 8,
+        "rendererMemory": {
+          "geometries": 453,
+          "textures": 20,
+          "calls": 258,
+          "glbBytes": 57593300,
+          "geometryBytes": 19116852,
+          "decodedImageBytes": 60817408
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-03-storm-late.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-03-storm",
+        "phase": "finalboss",
+        "enemyAssetIds": [
+          "enemy-cult-blockade"
+        ],
+        "actors": 2,
+        "triangles": 69750,
+        "cachedAssets": 8,
+        "rendererMemory": {
+          "geometries": 453,
+          "textures": 18,
+          "calls": 141,
+          "glbBytes": 57593300,
+          "geometryBytes": 19116852,
+          "decodedImageBytes": 60817408
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-03-storm-finalboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-04-industry",
+        "phase": "opening",
+        "enemyAssetIds": [
+          "enemy-union-repair",
+          "enemy-union-salvage",
+          "mission-union-guard"
+        ],
+        "actors": 4,
+        "triangles": 145506,
+        "cachedAssets": 4,
+        "rendererMemory": {
+          "geometries": 214,
+          "textures": 16,
+          "calls": 243,
+          "glbBytes": 27945956,
+          "geometryBytes": 8891628,
+          "decodedImageBytes": 35651584
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-04-industry-opening.png",
+        "bossSpawnCounts": {
+          "midboss": 0,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-04-industry",
+        "phase": "midboss",
+        "enemyAssetIds": [
+          "enemy-union-repair"
+        ],
+        "actors": 2,
+        "triangles": 58958,
+        "cachedAssets": 4,
+        "rendererMemory": {
+          "geometries": 214,
+          "textures": 14,
+          "calls": 127,
+          "glbBytes": 27945956,
+          "geometryBytes": 8891628,
+          "decodedImageBytes": 35651584
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-04-industry-midboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-04-industry",
+        "phase": "late",
+        "enemyAssetIds": [
+          "enemy-union-repair",
+          "mission-union-guard",
+          "mission-union-guard",
+          "rival-night-shift"
+        ],
+        "actors": 5,
+        "triangles": 170734,
+        "cachedAssets": 5,
+        "rendererMemory": {
+          "geometries": 298,
+          "textures": 18,
+          "calls": 299,
+          "glbBytes": 36234424,
+          "geometryBytes": 12127188,
+          "decodedImageBytes": 41943040
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-04-industry-late.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-04-industry",
+        "phase": "finalboss",
+        "enemyAssetIds": [
+          "boss-shipwright-command"
+        ],
+        "actors": 2,
+        "triangles": 78014,
+        "cachedAssets": 6,
+        "rendererMemory": {
+          "geometries": 407,
+          "textures": 16,
+          "calls": 163,
+          "glbBytes": 46421616,
+          "geometryBytes": 16184132,
+          "decodedImageBytes": 48234496
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-04-industry-finalboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-05-fog",
+        "phase": "opening",
+        "enemyAssetIds": [
+          "enemy-disguised-wreck",
+          "enemy-ghost-chaser",
+          "enemy-ghost-chaser"
+        ],
+        "actors": 4,
+        "triangles": 126410,
+        "cachedAssets": 3,
+        "rendererMemory": {
+          "geometries": 129,
+          "textures": 15,
+          "calls": 208,
+          "glbBytes": 18897348,
+          "geometryBytes": 5601836,
+          "decodedImageBytes": 29360128
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-05-fog-opening.png",
+        "bossSpawnCounts": {
+          "midboss": 0,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-05-fog",
+        "phase": "midboss",
+        "enemyAssetIds": [
+          "enemy-ghost-chaser"
+        ],
+        "actors": 2,
+        "triangles": 48342,
+        "cachedAssets": 3,
+        "rendererMemory": {
+          "geometries": 129,
+          "textures": 13,
+          "calls": 102,
+          "glbBytes": 18897348,
+          "geometryBytes": 5601836,
+          "decodedImageBytes": 29360128
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-05-fog-midboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-05-fog",
+        "phase": "late",
+        "enemyAssetIds": [
+          "enemy-ghost-chaser",
+          "mission-cult-purifier",
+          "mission-ghost-artillery",
+          "mission-ghost-artillery"
+        ],
+        "actors": 5,
+        "triangles": 183334,
+        "cachedAssets": 5,
+        "rendererMemory": {
+          "geometries": 260,
+          "textures": 18,
+          "calls": 300,
+          "glbBytes": 33612352,
+          "geometryBytes": 10437052,
+          "decodedImageBytes": 41943040
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-05-fog-late.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-05-fog",
+        "phase": "finalboss",
+        "enemyAssetIds": [
+          "boss-fleet-king"
+        ],
+        "actors": 2,
+        "triangles": 87214,
+        "cachedAssets": 6,
+        "rendererMemory": {
+          "geometries": 372,
+          "textures": 16,
+          "calls": 168,
+          "glbBytes": 44550596,
+          "geometryBytes": 15149740,
+          "decodedImageBytes": 48234496
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-05-fog-finalboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      },
+      {
+        "stageId": "stage-06-palace",
+        "phase": "opening",
+        "enemyAssetIds": [
+          "enemy-cult-blockade",
+          "mission-cult-purifier",
+          "role-enemy-artillery"
+        ],
+        "actors": 4,
+        "triangles": 154222,
+        "cachedAssets": 4,
+        "rendererMemory": {
+          "geometries": 231,
+          "textures": 16,
+          "calls": 258,
+          "glbBytes": 27825264,
+          "geometryBytes": 9003340,
+          "decodedImageBytes": 35651584
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-06-palace-opening.png",
+        "bossSpawnCounts": {
+          "midboss": 0,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-06-palace",
+        "phase": "midboss",
+        "enemyAssetIds": [
+          "mini-funeral-guard"
+        ],
+        "actors": 2,
+        "triangles": 50066,
+        "cachedAssets": 5,
+        "rendererMemory": {
+          "geometries": 291,
+          "textures": 15,
+          "calls": 110,
+          "glbBytes": 34762464,
+          "geometryBytes": 11268708,
+          "decodedImageBytes": 41943040
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-06-palace-midboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-06-palace",
+        "phase": "late",
+        "enemyAssetIds": [
+          "enemy-cult-blockade",
+          "enemy-ghost-chaser",
+          "mission-ghost-artillery"
+        ],
+        "actors": 4,
+        "triangles": 152402,
+        "cachedAssets": 7,
+        "rendererMemory": {
+          "geometries": 406,
+          "textures": 19,
+          "calls": 250,
+          "glbBytes": 49426704,
+          "geometryBytes": 16133124,
+          "decodedImageBytes": 54525952
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-06-palace-late.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 0
+        }
+      },
+      {
+        "stageId": "stage-06-palace",
+        "phase": "finalboss",
+        "enemyAssetIds": [
+          "boss-last-inhale"
+        ],
+        "actors": 2,
+        "triangles": 23246,
+        "cachedAssets": 8,
+        "rendererMemory": {
+          "geometries": 450,
+          "textures": 18,
+          "calls": 94,
+          "glbBytes": 54955464,
+          "geometryBytes": 16696788,
+          "decodedImageBytes": 60817408
+        },
+        "colorsAtLeast": 256,
+        "screenshot": "/Users/seungsoohan/Games/CloudStitch/work/verification/encounters/stage-06-palace-finalboss.png",
+        "bossSpawnCounts": {
+          "midboss": 1,
+          "finalboss": 1
+        }
+      }
+    ],
+    "controls": [
+      {
+        "name": "keyboard-move-fire-escape-pause-resume",
+        "passed": true,
+        "movedX": 0.9077762801165946,
+        "shots": 2
+      },
+      {
+        "name": "difficulty-applies-restart-and-death-retry",
+        "passed": true,
+        "easy": "easy",
+        "hard": "hard"
+      },
+      {
+        "name": "stage-card-maintenance-victory-next",
+        "passed": true
+      },
+      {
+        "name": "mobile-joystick-fire-release-dash",
+        "passed": true
+      }
+    ],
+    "render": {
+      "width": 1089,
+      "height": 714,
+      "stats": {
+        "ready": true,
+        "loading": 0,
+        "loadedAssets": [
+          "player-homeward",
+          "enemy-pirate-scout"
+        ],
+        "cachedAssets": 2,
+        "errors": [],
+        "rendererMemory": {
+          "geometries": 70,
+          "textures": 13,
+          "calls": 148,
+          "glbBytes": 11374368,
+          "geometryBytes": 2982700,
+          "decodedImageBytes": 23068672
+        },
+        "actors": 3,
+        "triangleCount": 85274,
+        "actorModels": [
+          {
+            "id": "player",
+            "assetId": "player-homeward",
+            "tier": "player",
+            "state": "loaded",
+            "normalizationScale": 3.6910370521142744,
+            "triangles": 11986
+          },
+          {
+            "id": "31-enemy-1",
+            "assetId": "enemy-pirate-scout",
+            "tier": "normal",
+            "role": "scout",
+            "state": "loaded",
+            "normalizationScale": 0.3150314977419001,
+            "triangles": 36644
+          },
+          {
+            "id": "31-enemy-2",
+            "assetId": "enemy-pirate-scout",
+            "tier": "normal",
+            "role": "scout",
+            "state": "loaded",
+            "normalizationScale": 0.3150314977419001,
+            "triangles": 36644
+          }
+        ],
+        "outlineAutoClear": true,
+        "canvasWidth": 1089,
+        "canvasHeight": 714,
+        "reducedMotion": true,
+        "stageId": "stage-01-harbor",
+        "renderedFrames": 1627,
+        "cameraElevationDegrees": 55,
+        "obstacleCount": 3,
+        "aimReticleVisible": true,
+        "renderedStageId": "stage-01-harbor",
+        "renderedPhase": "opening",
+        "controlsReady": true
+      },
+      "text": "CLOUDSTITCH · COMBAT STUDY 01\n여섯 항로의 교전 구름 위에서, 다음 항구까지\n\n6개 지역 · 판마다 중간보스와 최종보스 · 직접 조작하는 3D 전투 시제품\n\n함대 제작실\n사용 안내\n항로 고르기\n\n어느 판이든 바로 출항해 적 편성을 확인할 수 있습니다.\n\n항로 01 · 확보 완료\n종항 잔해해역\n중간 · 소형 장례 경비선\n최종 · 종을 삼킨 자\n항로 02 · 확보 완료\n청록빛 상승기류 협곡\n중간 · 협곡 관문 지휘정\n최종 · 사슬협곡 인양 지휘선\n항로 03 · 확보 완료\n천둥 폭풍벽\n중간 · 폭풍 견인대장\n최종 · 폭풍 봉쇄 지휘선\n항로 04 · 확보 완료\n쇠갈비 공업지대\n중간 · 도크 수리 지휘정\n최종 · 수석 조선공의 지휘함\n항로 05 · 확보 완료\n이름 없는 함대의 저층 안개\n중간 · 안개 돌격대장\n최종 · 죽은 함대 왕의 배\n항로 06 · 확보 완료\n황궁 검은 천정\n중간 · 황궁 외곽 종 관문함\n최종 · 마지막 들숨 · 봉인 심장\n기획의 지역을 묶은 교전 시험판입니다. 본편 임무·이야기의 완료 상태와 구분합니다.\n종항 잔해해역\n\n정찰선의 기동을 읽고 장례 함대의 포격을 피하는 항해\n\n일시정지\n다시 출항\n귀환호 · 핵심 선체\n150 / 150\n정상\n항로를 여는 적 편대를 격파하세요\n전반 교전 · 남은 적 2\n긴급기동 준비 · Space\n격파 0 · 수리 부표 0\nWASD / 방향키 이동 · 마우스 누르기 / J 사격 · Space 긴급기동 · Esc 일시정지\n주황 경계는 적 공격, 청록 부표는 수리입니다. 예고가 멈춘 마지막 순간에 회피하세요.\n자동 조준\n동작 줄이기\n난이도\n여유로운 항해\n표준 항해\n거친 항해\n이번 판의 적 역할\n정찰·측면 기동\n봉쇄·일제 포격\n\n전반 2척 · 후반 2척 · 두 보스는 각 1회 등장\n\n보스 편성\n\n중간보스 · 소형 장례 경비선 / 최종보스 · 종을 삼킨 자\n\n원문 외형을 활용한 교전용 역할 변형입니다. 전투 수치·판별 편성은 제작 가설이며 본편의 보스 전체 기믹·서사·경제·부품 절단은 후속 단계입니다.\n\n전반 교전",
+      "canvasCount": 1
+    },
+    "loadingGate": {
+      "passed": true,
+      "heldRequests": 2,
+      "simulatedSecondsDuringLoading": 0,
+      "resumedAfterReady": true
+    },
+    "pausedPixelChanges": 0,
+    "errors": [],
+    "externalRequests": [],
+    "failedLocalRequests": [],
+    "mobileOverflow": false,
+    "serving": "Isolated local HTTP server; no internet asset dependency."
+  }
+}

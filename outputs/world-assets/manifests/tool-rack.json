@@ -1,0 +1,84 @@
+{
+  "id": "tool-rack",
+  "order": 64,
+  "name_ko": "공구 걸이",
+  "name_en": "Tool Rack",
+  "category": "props",
+  "role": "공방 기능을 작은 화면에서 알아보는 소품",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 1.6,
+    "depth": 0.5,
+    "height": 1.6,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/tool-rack.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 1708,
+  "mesh_count": 28,
+  "primitive_count": 28,
+  "node_count": 35,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 28,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 213408,
+  "sha256": "259c6a77503752bbd111072b96d07cdd0b172f9aae554dd3a1ceb32c8301b112",
+  "mesh_definition_count": 28,
+  "unique_geometry_triangles": 1708,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 28,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -0.800000011920929,
+        2.384185793236071e-8,
+        -0.27718348232628304
+      ],
+      "max": [
+        0.800000011920929,
+        1.5700000003725292,
+        0.27718348232628304
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

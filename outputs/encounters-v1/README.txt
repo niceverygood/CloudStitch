@@ -53,9 +53,13 @@ npm run verify:encounters
 검증 상태
 ENCOUNTERS_QA_START
 인수인계 체크포인트로 추가 개발을 멈췄다.
-코어6판 상태 전환·양 보스 각1회 등장·정비·패배/재도전 부분 검사는 통과했다.
-실제 무기 경로·GLB 렌더·입력·모바일 통합 검사는 마감 중이다.
-core-only 통과를 전체 통과로 읽지 않는다. 최종 보고서/manifest를 확인한다.
+최종 코어·브라우저 기능 검사 passed=true/fullCoveragePassed=true, 실패0.
+코어10개 시나리오·공격규칙7개 검사와 강제 피해/격파 없이 실제 무기로
+6판·48회 격파를 완주했다. GLB24단계 렌더·키보드/터치·정비·패배/재도전,
+난이도 재출항·일시정지·모델 로딩 중 전투 시간 정지/준비 후 재개도 통과했다.
+브라우저 오류/외부 요청/로컬 로딩 실패/모바일 넘침0, 일시정지 픽셀 차이0.
+verification.json과 manifest.json을 확인한다. 결정적 기능 검사이며 사람의
+재미·공정성·장기 밸런스·실기기 성능 인증은 아니다.
 실제 preview-battle/boss/palace/mobile PNG4장을 보존한다.
 ENCOUNTERS_QA_END
 

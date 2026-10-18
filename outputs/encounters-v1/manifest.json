@@ -124,7 +124,51 @@
   "scope": "지역6개를 별도6플레이판으로 재편성한 브라우저 교전 시제품이다. 모든 판은 일반 적→중간 지휘선→수동 정비→후반 적→최종 지휘선→교전 승리를 갖는다. 모든 보스는 정사 외형을 참고한 교전 역할 변형이며 원문 캠페인 보스의 전체 기믹/서사/사망/결말을 구현 완료한 것으로 기록하지 않는다. 최종 엔진·플랫폼·출시 밸런스를 확정하지 않는다.",
   "requires": "Local HTTP server from repository root; fleet GLBs remain separate and local.",
   "verification": {
-    "passed": false,
-    "status": "pending"
-  }
+    "passed": true,
+    "report": "verification.json",
+    "verifiedAt": "2026-10-18T06:00:47.846Z",
+    "scope": "Simulation and local browser/input/asset verification. No full campaign, economy, modular salvage, final balance or native-device certification."
+  },
+  "files": [
+    {
+      "file": "index.html",
+      "bytes": 700188,
+      "sha256": "8f221a012644db0f80ff9c777aceab349636222aab58458ac09ba2d053d2f5b9"
+    },
+    {
+      "file": "catalog.json",
+      "bytes": 37829,
+      "sha256": "69f8f593f833ae228eb240cc1de8c4e7d88313460933e392adc3763dce2bb17e"
+    },
+    {
+      "file": "README.txt",
+      "bytes": 3979,
+      "sha256": "1109a14d13b58fa3589334f26cbac161a5aebf385185c569d359d804753b3f0a"
+    },
+    {
+      "file": "verification.json",
+      "bytes": 48544,
+      "sha256": "d4c3525dcb306de8c2f0a685f3e0cd7e80ec44a91c5c87814d1d91c06c72a7fa"
+    },
+    {
+      "file": "preview-battle.png",
+      "bytes": 442504,
+      "sha256": "e44e5cdbab8f8037af94595873fe9e3acb3df9fd516d08e0b5b2b3c9d9e805c3"
+    },
+    {
+      "file": "preview-boss.png",
+      "bytes": 443522,
+      "sha256": "bb847cb10db39e24b21fad0e822b6e32227f2987e4ce3e8294de84f7e4ae67c2"
+    },
+    {
+      "file": "preview-palace.png",
+      "bytes": 450389,
+      "sha256": "4d74af9b5eb4c102924b08ed83b462d35ad269f517a4dc339c8362e5ff62d8dc"
+    },
+    {
+      "file": "preview-mobile.png",
+      "bytes": 186792,
+      "sha256": "d96aefd836b750bd53764bfe0b601b9ab61417e4350a2de7ba40b74fe5c88653"
+    }
+  ]
 }

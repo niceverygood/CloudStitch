@@ -1,0 +1,84 @@
+{
+  "id": "wall-timber",
+  "order": 21,
+  "name_ko": "목재 벽판",
+  "name_en": "Timber Wall",
+  "category": "architecture",
+  "role": "건물 외관을 확장하는 판재 벽",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 3,
+    "depth": 0.35,
+    "height": 2.8,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/wall-timber.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 756,
+  "mesh_count": 7,
+  "primitive_count": 7,
+  "node_count": 8,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 7,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 88768,
+  "sha256": "231444624b29170f3621a5ecdb5f8ca5006a2cb40d95df74f96fa0e80fd47379",
+  "mesh_definition_count": 7,
+  "unique_geometry_triangles": 756,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 7,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -1.375,
+        -0.025000023841857955,
+        -0.14000000059604645
+      ],
+      "max": [
+        1.375,
+        2.425000023841858,
+        0.14000000059604645
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

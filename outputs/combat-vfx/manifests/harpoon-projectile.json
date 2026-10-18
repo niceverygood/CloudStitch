@@ -1,0 +1,66 @@
+{
+  "id": "harpoon-projectile",
+  "name_ko": "작살 비행과 줄",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/harpoon-projectile.glb",
+  "sha256": "415412f33532d6cb2698f8e136c57513b243b3e0b69257ca38f87bf67a310702",
+  "bytes": 44064,
+  "triangles": 324,
+  "mesh_count": 6,
+  "node_count": 9,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 4,
+  "channel_paths": [
+    "scale",
+    "translation",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 1,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 1,
+    "animated_bounds": {
+      "min": [
+        -0.2390832601998057,
+        -0.15999999642372137,
+        -0.4749999940395355
+      ],
+      "max": [
+        0.2390832601998057,
+        0.15999999642372137,
+        4.7650000035762785
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "415412f33532d6cb2698f8e136c57513b243b3e0b69257ca38f87bf67a310702"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}

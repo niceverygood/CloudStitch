@@ -1,0 +1,499 @@
+{
+  "id": "iron-rib-yard",
+  "game_title": "Cloudstitch",
+  "name_ko": "쇠갈비 공용 작업장",
+  "region_ko": "쇠갈비 공업지대",
+  "status": "completed_world_scene_prototype",
+  "model": "scenes/iron-rib-yard.glb",
+  "source_spec": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "composition": "굽은 철골 반복 사이에 공구·작업대·짧은 통로를 둔다. 큰 조선소 전체가 아니라 작은 원정 정비 구획이다.",
+  "limits": "노동자를 적으로 확정하지 않고 새 생산량·화폐·세력 인물을 만들지 않는다. 정비·인양 장치의 실제 동작은 미구현.",
+  "triangles": 23908,
+  "mesh_count": 481,
+  "primitive_count": 468,
+  "node_count": 573,
+  "material_count": 15,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 468,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 2944188,
+  "sha256": "3148d8355fcc0f18d460e17f5f5d2780b24cbd01cec184e23d698e473936db03",
+  "mesh_definition_count": 468,
+  "unique_geometry_triangles": 22732,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 481,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -6.961999999046326,
+        -0.09999999999999998,
+        -3.2649999991059304
+      ],
+      "max": [
+        5.272499989271164,
+        3.139562107473612,
+        5.512494724677812
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "source_assets": [
+    {
+      "asset_id": "platform-square",
+      "model": "assets/platform-square.glb",
+      "sha256": "65f1778dfc241c22eea6c39e1ed7d09dc41cf77d42d0fcc1ada0bb56b78d59d6",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "industrial-rib",
+      "model": "assets/industrial-rib.glb",
+      "sha256": "4730020835a1c58d895ef53abb27eb148f36eebe8be84f8cb8ed5f21759cfa7b",
+      "instances": 2,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "rubble-mound",
+      "model": "assets/rubble-mound.glb",
+      "sha256": "8748ed493990f74a7d9d31ea92a4d23ca2bc463710252ad663b75ed322bfa698",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "bridge-short",
+      "model": "assets/bridge-short.glb",
+      "sha256": "e3c26d8a642e4e400433d18a20278f6a9ea0548ea93de93be326d697c10e2e9c",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "dock-ramp",
+      "model": "assets/dock-ramp.glb",
+      "sha256": "4f53bac5377fc7c4370c30f899e0adb06f39387012a0c317c4c89f0a4dde09a7",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "rail-rope",
+      "model": "assets/rail-rope.glb",
+      "sha256": "13bf755ce2cb56e81bcaeae00f6db79f06d262a20d93bbdc0986673800b4c1fe",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "repair-station",
+      "model": "assets/repair-station.glb",
+      "sha256": "edaf1e202015ab6618d91fabf866242abb494df7991a10ea495077fa28653c64",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "crafting-anvil",
+      "model": "assets/crafting-anvil.glb",
+      "sha256": "2cdaf16238688ca34055b7316c3ddd79e858e2bbfad7c1856673451ddc60e2f8",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "workbench-static",
+      "model": "assets/workbench-static.glb",
+      "sha256": "ca8f8c5c1b3bf7ba0ef22c76b01c598e181ffe1fbe002e9643834ea8dcc82b33",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "tool-rack",
+      "model": "assets/tool-rack.glb",
+      "sha256": "259c6a77503752bbd111072b96d07cdd0b172f9aae554dd3a1ceb32c8301b112",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "scrap-bin",
+      "model": "assets/scrap-bin.glb",
+      "sha256": "b0f58ba57b8a8803050d78d2a493a93e2ed2f51043023d0519414d9f4c362f6a",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "fuel-pump",
+      "model": "assets/fuel-pump.glb",
+      "sha256": "7780ac24d438023769316a303d090be0ab2dca43b6bab3f37b7d222144f1437b",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "lantern-standing",
+      "model": "assets/lantern-standing.glb",
+      "sha256": "db2210580b831181792e1ad116a5f82a81acdfc83c405b20dcd53ec051cc5dec",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "harbor-sign",
+      "model": "assets/harbor-sign.glb",
+      "sha256": "30e7b5bebae6042ae0e5469cfee57b8b55c8522c05b95cfe622983c415a8be52",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "salvage-crane",
+      "model": "assets/salvage-crane.glb",
+      "sha256": "f73806e687cae74fce88226636ab735d9ae1b9b740cd191d1e7259b1dedb582b",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    }
+  ],
+  "placements": [
+    {
+      "asset_id": "platform-square",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        2,
+        1,
+        1.65
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "industrial-rib",
+      "position": [
+        -3.9,
+        0.5,
+        -0.8
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "industrial-rib",
+      "position": [
+        3.9,
+        0.5,
+        -0.8
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "rubble-mound",
+      "position": [
+        -5.5,
+        -0.1,
+        -2
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "bridge-short",
+      "position": [
+        -5,
+        0.25,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-ramp",
+      "position": [
+        0,
+        0.25,
+        4
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "rail-rope",
+      "position": [
+        0,
+        0.58,
+        -3.1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "repair-station",
+      "position": [
+        -3,
+        0.58,
+        -1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "crafting-anvil",
+      "position": [
+        -1,
+        0.58,
+        -1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "workbench-static",
+      "position": [
+        1,
+        0.58,
+        -1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "tool-rack",
+      "position": [
+        3,
+        0.58,
+        -1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "scrap-bin",
+      "position": [
+        -3,
+        0.58,
+        1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "fuel-pump",
+      "position": [
+        -1,
+        0.58,
+        1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "lantern-standing",
+      "position": [
+        1,
+        0.58,
+        1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "harbor-sign",
+      "position": [
+        3,
+        0.58,
+        1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "salvage-crane",
+      "position": [
+        3,
+        0.58,
+        1.3
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    }
+  ],
+  "unique_source_imports": 15,
+  "mesh_images_reused_per_source": true,
+  "original_sources_unchanged": true,
+  "engine_scope": "Relative visual layout only. No approved meters, colliders, navigation, interactions, simulation, menus or game progression."
+}

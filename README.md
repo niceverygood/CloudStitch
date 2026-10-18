@@ -4,21 +4,27 @@
 
 구름 위에서 낡은 비행선을 수리하고, 적의 부품을 인양해 배를 키우며, 잃어버린 기억을 따라가는 싱글플레이어 액션 RPG 프로젝트입니다. 크림색 천, 청록색 기계, 따뜻한 목재와 황동으로 만든 감성적인 손그림 세계를 지향합니다.
 
-현재 저장소는 **게임 기획·스토리보드·무드보드·리깅 에셋·함대 제작판·시작화면과 별도6개 판 브라우저 전투 시제품**을 보관합니다. 전투 시제품은 이동·사격·공격 예고·피격과 판별 두 보스의 교전을 시험합니다. 최종 게임 엔진과 플랫폼은 미정이며 Unity/Godot 프로젝트나 전체 캠페인을 완성한 상태는 아닙니다. 전투 시제품의 최종 통합 검증은 아래 상태 기록을 확인하세요.
+현재 저장소는 **게임 기획·스토리보드·무드보드·리깅 에셋·함대 제작판·무기·전투 효과·월드 자료와 브라우저 전투 시제품**을 보관합니다. 첫 전장 `battlefield-v1`은 이동·사격·부품 절단·인양·화물·과적·부두 귀환을 시험하고, 별도 `encounters-v1`은 6개 판과 판별 중간보스·최종보스의 교전을 시험합니다. 최종 게임 엔진과 플랫폼은 미정이며 Unity/Godot 프로젝트나 전체 캠페인을 완성한 상태는 아닙니다. 두 시제품의 구현 범위와 실제 검사 기록은 아래 안내에서 구분합니다.
 
 정식 제목은 **Cloudstitch**, 한글 음역은 **클라우드스티치**입니다. ‘구름을 꿰매는 배’는 설명 문구입니다. 기존 문서에 남아 있는 ‘검은 부력 / Black Buoyancy’와 ‘홈와드 / Homeward’는 이전 작업명입니다.
 
 ## 바로 보기
 
-저장소를 내려받은 뒤 기존 아트 뷰어 HTML은 브라우저로 바로 열 수 있습니다. **6개 판 전투 시제품은 저장소 루트의 로컬 HTTP 서버에서 여세요.** 실행 방법은 [교전 시제품 안내](tools/encounters/README.md)에 있습니다.
+저장소를 내려받은 뒤 기존 아트 뷰어 HTML은 브라우저로 바로 열 수 있습니다. **첫 전장과 6개 판 교전 시제품은 저장소 루트의 로컬 HTTP 서버에서 여세요.** 실행 방법은 [첫 전장 안내](tools/battlefield/README.md)와 [6개 판 교전 안내](tools/encounters/README.md)에 있습니다.
 
 | 자료 | 위치 | 확인할 내용 |
 |---|---|---|
+| 첫 전장 플레이 시제품 | [첫 바람의 항로](outputs/battlefield-v1/index.html) | 실제 비행선 4개 GLB, 이동·사격·골조 절단·묶음 인양·화물·과적·귀환; 로컬 HTTP 필요 |
 | 6개 판 전투 시제품 | [항로별 교전](outputs/encounters-v1/index.html) | 일반 적 → 중간보스 → 수동 정비 → 후반 적 → 최종보스, 이동·사격·회피·재도전; 로컬 HTTP 필요 |
 | 최신 브랜드 시작화면 | [시작화면](outputs/cloudstitch-title-screen/index.html) | 손그림 로고, 비행선 배경, 한글 메뉴와 짧은 도입 패널 |
 | 움직이는 비행선 에셋 v1 | [리깅·애니메이션 미리보기](outputs/airship-rig-v1/viewer.html) | 9개 제어 뼈대, 7개 내장 동작, 부품별 제어와 인양 케이블 |
 | 전체 비행선 제작판 | [함대 갤러리](outputs/fleet-v1/index.html) | 주인공·적군·라이벌·보스·민간·기존 디자인 대안, 문서 기준과 제작용 배치 비교 |
 | 현재 선택 비행선 | [3D 손그림 뷰어 v2](outputs/selected-airship-toon3d/viewer-v2.html) | 실제 3D 모델 회전·확대, 손그림·셀 명암·원본 재질 비교 |
+| 비행선 장착 무기 | [무기 모음](outputs/weapon-modules/gallery.html) · [3D 작업대](outputs/weapon-modules/index.html) | 독립 무기 GLB의 손그림·셀 명암·원본 재질, 비행선 배치 시안 |
+| 전투 효과 48종 | [효과 갤러리](outputs/combat-vfx/gallery.html) · [효과 작업대](outputs/combat-vfx/index.html) | 발사·비행·피격·폭발·상태·방어·수리의 실제 메시 애니메이션 |
+| 무기별 공격 시연 | [6가지 공격 시연](outputs/combat-vfx/attack-sequences.html) | 기존 무기와 발사→비행→명중 효과를 연결한 GLB 시연 |
+| 월드 기본팩 96종 | [월드 갤러리](outputs/world-assets/gallery.html) · [3D 작업대](outputs/world-assets/index.html) | 주요 건물6·모듈90의 실제3D 외형 원형 |
+| 월드 조립 장면 7종 | [지역·지도 조립 비교](outputs/world-assets/scenes.html) | 정사6지역과 지도 디오라마, 독립 자산과 별도 집계 |
 | 감성판 최종 기획서 | [전체 기획서](outputs/emotional-edition/FINAL-emotional-game-design.html) | 상세 기획 전문과 122장 감성판 보드 |
 | 전체 무드보드 비교 | [원본 / 감성판](outputs/emotional-edition/moodboard-comparison.html) | 같은 소재의 두 아트 방향 비교 |
 | 비행선 2D 콘셉트 9종 | [입체감 있는 2D 갤러리](outputs/2d-volume-airships/index.html) | 투명 배경 시안 9종과 별도 게임 장면 |
@@ -39,11 +45,11 @@ git lfs pull
 git status
 ```
 
-PNG·GLB 등 큰 자산은 Git LFS를 사용합니다. 다운로드한 PNG가 열리지 않거나 GLB가 짧은 텍스트로 보이면 `git lfs pull`이 완료되었는지 확인하세요. ZIP은 같은 파일을 묶은 중복 배포물이라 Git에서 제외합니다.
+PNG·GLB·영상과 일부 큰 무기·VFX·월드 뷰어 HTML은 `.gitattributes`에 따라 Git LFS를 사용합니다. 다운로드한 파일이 짧은 포인터 텍스트로 보이면 `git lfs pull`이 완료되었는지 확인하세요. ZIP은 같은 파일을 묶은 중복 배포물이라 Git에서 제외합니다. 맥북의 열람·개발·QA 준비는 [맥북 시작 안내](outputs/handoff/MACBOOK_START.txt)를 따르세요.
 
-현재 전체 자산 목록은 PNG 358개, GLB 82개, 미리보기 영상 1개로 총441개, 1,705,790,471bytes(약1.706GB)입니다. [자산 목록](docs/asset-inventory.json)에 크기와 SHA-256을 기록했습니다. Python 3가 있으면 `python tools/verify-assets.py`로 다운로드한441개 파일의 무결성을 검사할 수 있습니다. 함대 제작판의 항목별 파일·수치·제작 배치는 `outputs/fleet-v1/catalog.json`을 확인합니다.
+현재 전체 미디어의 파일 수·형식별 집계·크기·SHA-256은 [자산 목록](docs/asset-inventory.json)을 기준으로 확인합니다. `python3 tools/verify-assets.py`로 실제 파일의 무결성을 검사할 수 있습니다. 원본·법선 수정본·지붕 보강본·합성 장면은 별도 파일이므로 전체 파일 수와 독립 게임 자산 수는 다릅니다. 함대 항목별 제작 배치는 `outputs/fleet-v1/catalog.json`, 무기·VFX·월드의 범위는 각각의 출력 폴더 README와 manifest를 확인합니다. 실제 원격 반영 커밋은 `git log -1 --oneline`과 `origin/main`으로 확인합니다.
 
-Codex에서 이 저장소 폴더를 열고 [이어가기 프롬프트](docs/CONTINUE_PROMPT.md)를 붙여넣으면 됩니다. 자세한 진행 이력과 제한은 [인수인계 문서](docs/HANDOFF.md), 작업 기준은 [AGENTS.md](AGENTS.md)에 있습니다. 사용자 전달용 사본도 [outputs/handoff](outputs/handoff)에 있습니다.
+첫 전장을 데스크톱에서 이어갈 때는 [전장 전용 이어가기 프롬프트](docs/BATTLEFIELD_DESKTOP_CONTINUE-2026-10-18.txt)와 [전장 전용 인수인계](docs/BATTLEFIELD_DESKTOP_HANDOFF-2026-10-18.md)를 먼저 확인합니다. 6개 판 교전은 별도 [데스크톱 이어가기 프롬프트](docs/DESKTOP_CONTINUE_PROMPT-2026-10-18.txt)와 [데스크톱 인수인계](docs/DESKTOP_HANDOFF-2026-10-18.md)를 따릅니다. 일반 [이어가기 프롬프트](docs/CONTINUE_PROMPT.md), [인수인계 문서](docs/HANDOFF.md), 작업 기준 [AGENTS.md](AGENTS.md)도 보존합니다. 사용자 전달용 사본은 [outputs/handoff](outputs/handoff)에 있습니다.
 
 ## 폴더 구조
 
@@ -58,14 +64,18 @@ outputs/                     기획 원문과 사용자 확인용 완성 산출�
   selected-airship-toon3d/   선택한 저밀도 3D 원형과 오프라인 뷰어
   airship-rig-v1/            선택 원형을 보존한 리깅·애니메이션 파생본
   fleet-v1/                  전체 기획 함대 제작판·개별 GLB·뷰어·미리보기
+  battlefield-v1/            첫 전장: 부품 절단·인양·화물·과적·부두 귀환
   encounters-v1/             기존 함대를 사용하는 별도6개 판 브라우저 교전
   cloudstitch-title-screen/  Cloudstitch 로고·시작화면·원화
+  weapon-modules/           비행선과 같은 감성의 독립 3D 무기 원형과 작업대
+  combat-vfx/               메시 애니메이션 효과 48종과 기존 무기 합성 시연 6종
+  world-assets/             주요 건물6·로컬 모듈90·조립 장면7과 오프라인 작업대
   handoff/                  인수인계 문서 사용자 전달용 사본
 ```
 
 `work/`는 원래 작업 머신의 중간 파일·의존성 폴더이며 Git에서 제외합니다. 재사용할 소스는 `tools/`로 선별해 보관합니다.
 
-뷰어·시작화면 소스를 수정할 때는 Node.js 20 이상에서 아래 명령을 사용합니다. 상세 내용과 옵션은 [tools/README.md](tools/README.md)를 참고하세요.
+재현 도구는 Node.js 20 이상과 npm을 사용합니다. 아래는 기존 뷰어·시작화면·무기 작업대의 명령이며, 전체 도구와 옵션은 [tools/README.md](tools/README.md)를 참고하세요.
 
 ```sh
 npm ci
@@ -74,11 +84,13 @@ npm run build:viewer
 npm run verify:viewer
 npm run verify:ghosting
 npm run verify:title
+npm run build:weapons
+npm run verify:weapons
 ```
 
-`npm run capture:title`은 시작화면 PNG를 다시 캡처합니다. 위 명령은 기존 뷰어/시작화면용입니다. 별도 교전 시제품은 `npm run build:encounters`, `npm run verify:encounters`로 빌드·검사하고, 저장소 루트에서 `python3 -m http.server 8840 --bind 127.0.0.1` 실행 후 `http://127.0.0.1:8840/outputs/encounters-v1/`을 엽니다. 검사 결과와 중간 화면은 `work/verification/`에 저장합니다.
+`npm run capture:title`은 시작화면 PNG를 다시 캡처합니다. 첫 전장은 `node tools/battlefield/build.cjs`, 규칙 검사는 `node --test tools/battlefield/sim.test.mjs`를 사용합니다. 6개 판 교전은 `npm run build:encounters`, `npm run verify:encounters`로 빌드·검사합니다. 저장소 루트에서 `python3 -m http.server 8080 --bind 127.0.0.1`을 실행한 뒤 `http://127.0.0.1:8080/outputs/battlefield-v1/` 또는 `/outputs/encounters-v1/`을 엽니다. 포트는 현재 PC에서 사용 가능한 값으로 바꿀 수 있습니다. 검사 결과와 중간 화면은 `work/verification/`에 저장합니다.
 
-## 가장 가까운 다음 단계
+## 구현 상태와 다음 단계
 
 2026-10-18에 선택 비행선의 별도 [리깅 파생본](outputs/airship-rig-v1/README.txt)을 추가했습니다. 원본의 위치·UV와 11,026삼각형을 보존하고 케이블 960삼각형을 더해 11,986삼각형, 9개 뼈대와 7개 GLB 내장 클립으로 구성했습니다. 부유·순항·선회·돌풍 회복·포탑 조준·인양·포신 반동을 실제 모델로 재생할 수 있습니다. 임시 장착 노드는 위치 검토용이며 실제 치수·충돌·LOD·엔진 재질과 플레이 구현은 후속입니다. 재현은 `npm run build:rig`, 검사는 `npm run verify:rig`와 `npm run verify:gltf`를 사용합니다.
 
@@ -86,10 +98,14 @@ npm run verify:title
 전체 기획 함대는 [제작판 갤러리](outputs/fleet-v1/index.html)에서 검토합니다. GLB71개·개별 뷰어71개와 미리보기PNG71개를 만들었고 [전체71개·갤러리 독립 검사](outputs/fleet-v1/verification.json)를 통과했습니다(glTF 오류·경고0). 목록은 고유 정사 선박71척이 아니라 핵심 함선24·형태/디자인 변형14·역할/지원29·시설3·기록1입니다. 모델은 8,192~109,860삼각형, 4~58본, 각7개 내장 클립이며 실제 지원 동작은 장치에 따라 다릅니다. 미정 수는 `modules: null`, 표현용 배치는 `artModules`로 구분합니다. 재현·검사·한계는 [함대 도구 안내](tools/fleet/README.md)를 따릅니다.
 <!-- FLEET_SUMMARY_END -->
 
+<!-- BATTLEFIELD_SUMMARY_START -->
+[첫 전장](outputs/battlefield-v1/index.html)은 기존 귀환호·적선3종 GLB를 읽어 이동·기관총·포격 예고·연결부 절단·하위 묶음 분리·인양·소유권·화물·과적/투하·부두 귀환을 구현합니다. 인양은 화물 적재이며 자동 장착이 아닙니다. [브라우저 검사 기록](outputs/battlefield-v1/verification.json)에서 실제 입력 검사와 시험용 상태 배치를 구분합니다. 충돌과 수치는 임시이며 장착 편집·전체 항구경제/정산·영속저장·캠페인·패드·무기별 완성 효과는 없습니다. 새로고침하면 초기화됩니다. [소스·조작·검증 범위](tools/battlefield/README.md), [전장 전용 데스크톱 인수인계](docs/BATTLEFIELD_DESKTOP_HANDOFF-2026-10-18.md)를 확인하세요.
+<!-- BATTLEFIELD_SUMMARY_END -->
+
 <!-- ENCOUNTERS_SUMMARY_START -->
-[6개 판 교전 시제품](outputs/encounters-v1/index.html)은 기존 함대 GLB로 일반 적36회와 중간보스6회·최종보스6회의 등장을 구성합니다. 키보드/마우스/터치로 이동·사격·긴급기동하고, 피격·패배·재도전과 일시정지를 시험합니다. 모든 보스는 정사 외형을 참고한 교전 역할 변형이며 원문 전체 기믹·서사·결말 완성이 아닙니다. 중간 무료 완전 수리는 이번 시험용 구제이고, 저장은 판별 승리 표시만입니다. 현재는 인수인계 체크포인트로 추가 개발을 멈췄습니다. 코어6판 상태 전환 부분 검사는 통과했고 실제 무기 경로·GLB 렌더·입력·모바일 통합 검사는 마감 중입니다. 실제 교전 미리보기4장을 저장했습니다. [소스·조작·검증 범위](tools/encounters/README.md), [데스크톱 이어가기 프롬프트](outputs/handoff/DESKTOP_CONTINUE_PROMPT-2026-10-18.txt)를 확인하세요.
+[6개 판 교전 시제품](outputs/encounters-v1/index.html)은 기존 함대 GLB로 일반 적36회와 중간보스6회·최종보스6회의 등장을 구성합니다. 키보드/마우스/터치로 이동·사격·긴급기동하고, 피격·패배·재도전과 일시정지를 시험합니다. 모든 보스는 정사 외형을 참고한 교전 역할 변형이며 원문 전체 기믹·서사·결말 완성이 아닙니다. 중간 무료 완전 수리는 이번 시험용 구제이고, 저장은 판별 승리 표시만입니다. [최종 검사 기록](outputs/encounters-v1/verification.json)은 코어·공격 규칙·6판 무기 경로·GLB 렌더·브라우저/터치 입력 검사의 통과를 기록합니다. 실제 교전 미리보기4장도 저장했습니다. [소스·조작·검증 범위](tools/encounters/README.md), [데스크톱 이어가기 프롬프트](docs/DESKTOP_CONTINUE_PROMPT-2026-10-18.txt)를 확인하세요.
 <!-- ENCOUNTERS_SUMMARY_END -->
 
-다음 개발은 현재 교전 시제품의 조작·가독성을 확인한 뒤 `outputs/67-playable-slice-priorities.txt`의 P1~P4로 이어갑니다. 부품 연결/절단 → 회수/장착 → 양력 위험/복구 → 귀환/정산/저장을 한 항해로 검증하는 순서입니다. 이번 교전에는 이 순환과 정사 경제가 없습니다. 선택 원본은 11,026개 삼각형의 단일 메시로 보존하며, 게임에 가져올 부품·피벗·동작은 위 파생본에서 검토할 수 있습니다.
+다음 개발은 두 시제품의 조작·가독성을 실제로 확인한 뒤 `outputs/67-playable-slice-priorities.txt`의 미완료 항목을 이어갑니다. 첫 전장은 P0/P1과 P2의 회수·소유권·화물, 과적 대응·귀환의 일부를 구현했고, 장착·전체 복구 체계·정산·안전 경계 저장은 후속입니다. 6개 판 교전은 별도 구현으로 이 부품 순환과 정사 경제가 없습니다. 두 소스를 임의로 덮어쓰거나 통합하지 않습니다. 선택 원본은 11,026개 삼각형의 단일 메시로 보존하며, 게임에 가져올 부품·피벗·동작은 위 리깅 파생본에서 검토할 수 있습니다.
 
 기존 수치·지역·스킬·스토리 분량은 기획 가설입니다. PNG의 완성도나 뷰어 테스트를 실제 게임의 재미·성능·밸런스 검증으로 해석하지 않습니다.

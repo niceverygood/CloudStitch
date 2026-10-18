@@ -1,0 +1,42 @@
+Cloudstitch · 클라우드스티치 월드 3D 기본팩
+
+실제 완료 범위
+- 독립 자산 96개: Meshy hero 건물 6개 + 로컬 정점 채색 모듈 90개
+- 재사용 조립 장면 7개: 정사 6지역의 비교 배치 + 별도 월드 맵 디오라마
+- 등록 GLB 103개 / 실제 브라우저 렌더 RGBA PNG 103장 / hero 기준 그림 6장
+- hero 원본 6개 보존. 사용한 normal 수정본·변경 수·해시는 각 repair-log와 manifest에 기록.
+- 여관·공방 지붕 안감 파생본 2개를 등록. normal-only 복사본도 보존하며 추가 비교 PNG 16장은 주 프리뷰 103장과 별도 집계.
+- 보고된 Meshy 비용: hero 6회 × 15 = 90 크레딧. 로컬 모듈/장면 추가 비용 0.
+
+열기: gallery.html → index.html(독립 자산) / scenes.html(조립 장면)
+HTML은 실제 GLB와 Three.js를 내장하여 로컬 file://에서 열 수 있습니다.
+
+실제 검증
+- 등록 GLB 103개 공식 형식 검사: 오류 0, 경고 0, 정보 15
+- 두 뷰어의 전체 모델·세 표시 모드·텍스처·다운로드 SHA-256 일치
+- 대표 120프레임 회전 잔상 차이 픽셀 0 / 외부 요청 0 / 모바일 넘침 없음
+- 등록 원본/수정본/프리뷰 bytes·SHA-256과 안전한 작업 ID·비용 근거: asset-manifest.json
+
+정사 기준 링크(저장소 원문 / ZIP 내 canonical 사본)
+- outputs/04-harbor.txt / canonical/04-harbor.txt
+- outputs/08-world-map.txt / canonical/08-world-map.txt
+- outputs/39-story-canon-timeline.txt / canonical/39-story-canon-timeline.txt
+- outputs/64-harbor-cast.txt / canonical/64-harbor-cast.txt
+- outputs/69-regional-harbors.txt / canonical/69-regional-harbors.txt
+- outputs/86-region-story-transitions.txt / canonical/86-region-story-transitions.txt
+- outputs/107-story-evidence-order-audit.txt / canonical/107-story-evidence-order-audit.txt
+- outputs/112-system-rules-reference.txt / canonical/112-system-rules-reference.txt
+- outputs/114-production-decision-register.txt / canonical/114-production-decision-register.txt
+
+한계
+- 실행 가능한 게임이 아닌 정적 월드 3D 아트 원형과 조립 배치 비교입니다.
+- 96개 독립 자산과 7개 재사용 조립 장면을 별도 집계합니다. 조립 장면을 새 독립 자산으로 세지 않습니다.
+- 엔진·플랫폼·미터/U·성능 예산·일정은 미확정입니다. 상대 단위 배치만 기록했습니다.
+- 충돌·navmesh·LOD·건물 내부·상호작용·물리·저장·전투·최종 소켓은 미구현입니다.
+- 손그림·셀 명암·윤곽선은 HTML 뷰어 런타임 기능이며 GLB만 가져오면 자동 재현되지 않습니다.
+- hero 원본의 작은 normal 오류는 별도 수정본과 로그로 구별합니다. 원본 bytes는 보존합니다.
+- 여관·공방은 normal-only 복사본 위에 국소 지붕 안감을 더한 별도 등록본입니다. 방수 리메시나 완성 실내가 아닙니다.
+- 선택 비행선은 종항 합성 GLB 내부 복사본에 포함됩니다. 원본 파일은 변경하지 않았습니다.
+- 후반 4곳은 원정 정박 시안이며 새 도시·새 정사 시설·진행 잠금을 추가하지 않습니다.
+- PNG는 실제 GLB의 브라우저 렌더이며 읽기 전용 메타 검사 외에 이미지 후편집하지 않았습니다.
+- 뷰어·파일 검증은 실제 게임 재미·밸런스·최종 엔진 성능 검증이 아닙니다.

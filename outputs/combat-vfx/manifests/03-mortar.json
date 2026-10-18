@@ -1,0 +1,65 @@
+{
+  "id": "03-mortar",
+  "order": 3,
+  "name_ko": "박격포 공격",
+  "name_en": "Mortar Attack Sequence",
+  "category": "weapon-sequence",
+  "weapon_id": "03-mortar",
+  "model": "sequences/03-mortar.glb",
+  "preview": "sequence-previews/03-mortar.png",
+  "duration": 3.5,
+  "loop": true,
+  "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+  "status": "completed_composed_animation_study",
+  "triangles": 7107,
+  "mesh_count": 69,
+  "animation_count": 1,
+  "bytes": 4169176,
+  "component_effects": [
+    {
+      "id": "mortar-launch",
+      "start": 0,
+      "end": 0.55
+    },
+    {
+      "id": "mortar-projectile",
+      "start": 0.3,
+      "end": 1.75
+    },
+    {
+      "id": "mortar-hit",
+      "start": 1.74,
+      "end": 3.4
+    }
+  ],
+  "approximate_muzzle": [
+    0.05058962163923053,
+    1.2502621778112957,
+    -0.3191355178333415
+  ],
+  "source_weapon_sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f",
+  "copied_weapon_zero_normals_repaired": 0,
+  "sha256": "1e5d92c00abfe468ac31675f68126714032244444791fbfdbdbd9060b97a44b3",
+  "preview_image": {
+    "width": 2436,
+    "height": 1210,
+    "bounds": [
+      886,
+      318,
+      1579,
+      986
+    ]
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 123,
+    "sha256": "1e5d92c00abfe468ac31675f68126714032244444791fbfdbdbd9060b97a44b3"
+  },
+  "browser_QA_passed": true,
+  "limits": [
+    "Composed choreography and estimated muzzle placement, not a combat game or finished weapon sockets.",
+    "Original weapon geometry/texture files remain unchanged. Four zero normals were repaired only in the chain-shot copy.",
+    "Weapon part separation, recoil rig, collisions and damage are not implemented."
+  ]
+}

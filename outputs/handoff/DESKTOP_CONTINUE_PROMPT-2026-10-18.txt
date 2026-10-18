@@ -1,0 +1,40 @@
+Cloudstitch · 클라우드스티치 작업을 현재 저장소 체크포인트부터 이어가줘.
+저장소: https://github.com/niceverygood/CloudStitch
+브랜치: main. 기준 커밋: 원격 main 최신 커밋.
+
+새 PC라면 Git/Git LFS와 Node.js20 이상을 설치하고 다음을 실행해줘.
+git lfs install
+git clone --branch main https://github.com/niceverygood/CloudStitch.git
+cd CloudStitch
+git lfs pull
+npm ci
+npm run setup:browser
+python3 -m http.server 8840 --bind 127.0.0.1
+http://127.0.0.1:8840/outputs/encounters-v1/ 을 열어줘.
+기존 작업 폴더는 중복 clone/초기화하지 말고 git status부터 확인해줘.
+
+AGENTS.md, README.md, docs/HANDOFF.md, docs/CONTINUE_PROMPT.md와
+tools/encounters/README.md를 읽고 원본·기존 수정·검사 기록을 보존해줘.
+현재 별도6판 브라우저 교전 시제품은 일반 적36회와 중간보스6회/최종보스6회,
+전반→중간보스→수동 정비→후반→최종보스→승리 흐름이야.
+WASD/방향키 이동, 마우스/J 사격, Space 기동, 자동 조준, 터치 입력,
+일시정지·피격·패배·재도전이 있고 실제 PNG4장도 저장했어.
+각 보스는 정사 외형을 참고한 교전 역할 변형이며 전체 정사 기믹·결말은 없어.
+무료 완전 수리는 교전 시험용이고 저장은 localStorage의 판별 승리 표시뿐이야.
+최종 게임 엔진/플랫폼·전체 캠페인·모듈 절단/회수/장착/양력/경제는 미완성이야.
+
+최종 코어·브라우저 기능 검사 passed=true/fullCoveragePassed=true, 실패0이야.
+강제 피해/격파 없이 실제 무기 경로로6판·48회 격파, GLB24단계 렌더,
+키보드/터치·정비·패배/재도전이 통과했고 오류/외부 요청/로컬 로딩 실패/
+모바일 넘침은0이야. verification.json과 manifest.json을 다시 확인해줘.
+기능 검사이며 사람의 재미·공정성·장기 밸런스·실기기 성능 인증은 아니야.
+재현: npm run build:encounters / npm run verify:encounters.
+HTML 직접 열기가 아니라 저장소 루트 HTTP로 상대 GLB를 읽어야 해.
+
+다음 후보2개는 이번에 수정하지 않았어. 중앙 보스 접근 배너가 첫 공격 예고와
+겹칠 때 telegraphs가 있으면 숨기기, 충각 중 선체 방향을 e.chargeAngle에
+고정하기야. 새 PC에서 먼저 재현하고 사용자의 다음 요청에 따라 진행해줘.
+선택 원본/리깅·71항목 함대 및 통과한 QA는 보존하고 새 유료 생성은 하지 마.
+따뜻한 손그림·크림/청록/꿀빛 목재/황동/산호색 방향을 유지해줘.
+다른 동시 작업의 battlefield 폴더가 있으면 encounters와 섞지 말고 출처 확인해줘.
+먼저 실제 로딩·현재 검사 상태·남은 한계를 짧게 보고하고 다음 요청을 기다려줘.

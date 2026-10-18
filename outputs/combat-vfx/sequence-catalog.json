@@ -1,0 +1,325 @@
+{
+  "game_title": "Cloudstitch",
+  "purpose": "Six composed weapon/VFX choreography studies. Original weapon sources preserved.",
+  "items": [
+    {
+      "id": "01-machine-gun",
+      "order": 1,
+      "name_ko": "기관총 공격",
+      "name_en": "Machine Gun Attack Sequence",
+      "category": "weapon-sequence",
+      "weapon_id": "01-machine-gun",
+      "model": "sequences/01-machine-gun.glb",
+      "preview": "sequence-previews/01-machine-gun.png",
+      "duration": 2,
+      "loop": true,
+      "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+      "status": "completed_composed_animation_study",
+      "triangles": 4707,
+      "mesh_count": 30,
+      "animation_count": 1,
+      "bytes": 3444188,
+      "component_effects": [
+        {
+          "id": "machine-gun-muzzle",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "machine-gun-projectile",
+          "start": 0.12,
+          "end": 0.85
+        },
+        {
+          "id": "machine-gun-hit",
+          "start": 0.84,
+          "end": 1.8
+        }
+      ],
+      "approximate_muzzle": [
+        0.0007595372312182436,
+        0.6299396781481901,
+        -0.008382503840366984
+      ],
+      "source_weapon_sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6",
+      "copied_weapon_zero_normals_repaired": 0,
+      "sha256": "ab8307c1ab29c94f9d4aba9c30a4b75b6fd67e98725ad6114f429175905bbc65",
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          689,
+          170,
+          1908,
+          981
+        ]
+      }
+    },
+    {
+      "id": "02-deck-cannon",
+      "order": 2,
+      "name_ko": "함포 공격",
+      "name_en": "Deck Cannon Attack Sequence",
+      "category": "weapon-sequence",
+      "weapon_id": "02-deck-cannon",
+      "model": "sequences/02-deck-cannon.glb",
+      "preview": "sequence-previews/02-deck-cannon.png",
+      "duration": 2.8,
+      "loop": true,
+      "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+      "status": "completed_composed_animation_study",
+      "triangles": 6798,
+      "mesh_count": 60,
+      "animation_count": 1,
+      "bytes": 4414328,
+      "component_effects": [
+        {
+          "id": "cannon-muzzle",
+          "start": 0,
+          "end": 0.55
+        },
+        {
+          "id": "cannon-projectile",
+          "start": 0.3,
+          "end": 1.25
+        },
+        {
+          "id": "cannon-hit",
+          "start": 1.24,
+          "end": 2.7
+        }
+      ],
+      "approximate_muzzle": [
+        0.0037513940745979024,
+        0.5826191776634596,
+        -0.008071764725575914
+      ],
+      "source_weapon_sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+      "copied_weapon_zero_normals_repaired": 0,
+      "sha256": "ab07861e5fea19d1ac6aadf5722f52cf6849e0f859afc988ae3baa2d0bcc5b7d",
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          799,
+          266,
+          1736,
+          892
+        ]
+      }
+    },
+    {
+      "id": "03-mortar",
+      "order": 3,
+      "name_ko": "박격포 공격",
+      "name_en": "Mortar Attack Sequence",
+      "category": "weapon-sequence",
+      "weapon_id": "03-mortar",
+      "model": "sequences/03-mortar.glb",
+      "preview": "sequence-previews/03-mortar.png",
+      "duration": 3.5,
+      "loop": true,
+      "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+      "status": "completed_composed_animation_study",
+      "triangles": 7107,
+      "mesh_count": 69,
+      "animation_count": 1,
+      "bytes": 4169176,
+      "component_effects": [
+        {
+          "id": "mortar-launch",
+          "start": 0,
+          "end": 0.55
+        },
+        {
+          "id": "mortar-projectile",
+          "start": 0.3,
+          "end": 1.75
+        },
+        {
+          "id": "mortar-hit",
+          "start": 1.74,
+          "end": 3.4
+        }
+      ],
+      "approximate_muzzle": [
+        0.05058962163923053,
+        1.2502621778112957,
+        -0.3191355178333415
+      ],
+      "source_weapon_sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f",
+      "copied_weapon_zero_normals_repaired": 0,
+      "sha256": "1e5d92c00abfe468ac31675f68126714032244444791fbfdbdbd9060b97a44b3",
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          886,
+          318,
+          1579,
+          986
+        ]
+      }
+    },
+    {
+      "id": "04-harpoon",
+      "order": 4,
+      "name_ko": "작살 견인",
+      "name_en": "Harpoon Launcher Attack Sequence",
+      "category": "weapon-sequence",
+      "weapon_id": "04-harpoon",
+      "model": "sequences/04-harpoon.glb",
+      "preview": "sequence-previews/04-harpoon.png",
+      "duration": 2.8,
+      "loop": true,
+      "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+      "status": "completed_composed_animation_study",
+      "triangles": 5567,
+      "mesh_count": 33,
+      "animation_count": 1,
+      "bytes": 4024428,
+      "component_effects": [
+        {
+          "id": "harpoon-launch",
+          "start": 0,
+          "end": 0.4
+        },
+        {
+          "id": "harpoon-projectile",
+          "start": 0.2,
+          "end": 1.3,
+          "visible_until": 2.7
+        },
+        {
+          "id": "harpoon-hit",
+          "start": 1.29,
+          "end": 2.7
+        }
+      ],
+      "approximate_muzzle": [
+        0.08148356695017034,
+        0.7218403923108203,
+        0
+      ],
+      "source_weapon_sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64",
+      "copied_weapon_zero_normals_repaired": 0,
+      "sha256": "0e62fc452465ea53c1464ff13bc17eb110cb2296b98aa40d1cda552142302c5e",
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          658,
+          206,
+          1787,
+          1021
+        ]
+      }
+    },
+    {
+      "id": "05-chain-shot",
+      "order": 5,
+      "name_ko": "사슬탄 공격",
+      "name_en": "Chain-Shot Launcher Attack Sequence",
+      "category": "weapon-sequence",
+      "weapon_id": "05-chain-shot",
+      "model": "sequences/05-chain-shot.glb",
+      "preview": "sequence-previews/05-chain-shot.png",
+      "duration": 2.8,
+      "loop": true,
+      "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+      "status": "completed_composed_animation_study",
+      "triangles": 8671,
+      "mesh_count": 46,
+      "animation_count": 1,
+      "bytes": 4242020,
+      "component_effects": [
+        {
+          "id": "chain-shot-launch",
+          "start": 0,
+          "end": 0.4
+        },
+        {
+          "id": "chain-shot-projectile",
+          "start": 0.2,
+          "end": 1.25
+        },
+        {
+          "id": "chain-shot-hit",
+          "start": 1.24,
+          "end": 2.7
+        }
+      ],
+      "approximate_muzzle": [
+        -0.016747484945607294,
+        0.9123164319584125,
+        -0.020826190379907406
+      ],
+      "source_weapon_sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219",
+      "copied_weapon_zero_normals_repaired": 4,
+      "sha256": "59d6e1ac08997f59ba893119aa38171c3fc35dc6ad94bf8c1de06f51048dbbbf",
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          605,
+          172,
+          1839,
+          1022
+        ]
+      }
+    },
+    {
+      "id": "06-flamethrower",
+      "order": 6,
+      "name_ko": "화염 분사",
+      "name_en": "Flamethrower Attack Sequence",
+      "category": "weapon-sequence",
+      "weapon_id": "06-flamethrower",
+      "model": "sequences/06-flamethrower.glb",
+      "preview": "sequence-previews/06-flamethrower.png",
+      "duration": 3,
+      "loop": true,
+      "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+      "status": "completed_composed_animation_study",
+      "triangles": 6101,
+      "mesh_count": 39,
+      "animation_count": 1,
+      "bytes": 4088896,
+      "component_effects": [
+        {
+          "id": "flamethrower-ignite",
+          "start": 0,
+          "end": 0.4
+        },
+        {
+          "id": "flamethrower-stream",
+          "start": 0.15,
+          "end": 2.6
+        },
+        {
+          "id": "flamethrower-hit",
+          "start": 0.5,
+          "end": 2.9
+        }
+      ],
+      "approximate_muzzle": [
+        0.11841320381106613,
+        0.6469771102689745,
+        -0.02150336848870915
+      ],
+      "source_weapon_sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd",
+      "copied_weapon_zero_normals_repaired": 0,
+      "sha256": "fb112cfaf9b31b967148f55687942d71a49b1856533cd88d4dd169a4ac5b47c8",
+      "preview_image": {
+        "width": 2436,
+        "height": 1210,
+        "bounds": [
+          769,
+          196,
+          1747,
+          979
+        ]
+      }
+    }
+  ]
+}

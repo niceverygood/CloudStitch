@@ -1,0 +1,2479 @@
+{
+  "schema_version": 1,
+  "project_title": "Cloudstitch",
+  "title_ko": "클라우드스티치",
+  "created_date": "2026-10-18",
+  "purpose": "여섯 무기와 재질 피격·폭발·상태·방어 지원을 연결하는 실제 3D 메시 전투효과 원형 48종의 제작 명세",
+  "status": "48_mesh_animation_prototypes_completed",
+  "scope_count": 48,
+  "category_counts": {
+    "weapon": 18,
+    "material-impact": 8,
+    "explosion-environment": 8,
+    "damage-state": 8,
+    "defense-support": 6
+  },
+  "source_type": "로컬 제작 저폴리 3D 메시 + glTF 표준 transform 애니메이션. 이번 범위에 신규 Meshy 유료 생성·이미지 생성·외부 에셋 다운로드는 없다.",
+  "canonical_sources": [
+    "outputs/21-weapons-combat-roles.txt",
+    "outputs/72-weapon-mount-readability.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt",
+    "outputs/weapon-modules/catalog.json",
+    "outputs/weapon-modules/art-review.txt",
+    "outputs/selected-airship-toon3d/reference.png"
+  ],
+  "art_direction": {
+    "style": "기존 비행선·무기의 크림 천, 청록 기계, 꿀빛 목재, 황동, 산호 수선 포인트를 잇는 입체 손그림 인상. 단순한 명암과 역할이 읽히는 넓은 도형을 사용한다.",
+    "palette": {
+      "cream": {
+        "name_ko": "크림",
+        "hex": "#F4E7CA"
+      },
+      "teal": {
+        "name_ko": "청록",
+        "hex": "#4C8084"
+      },
+      "honey": {
+        "name_ko": "꿀빛 목재",
+        "hex": "#BA8046"
+      },
+      "brass": {
+        "name_ko": "황동",
+        "hex": "#D7AA4D"
+      },
+      "coral": {
+        "name_ko": "산호",
+        "hex": "#D77661"
+      },
+      "navy": {
+        "name_ko": "남청",
+        "hex": "#344552"
+      }
+    },
+    "geometry": "구·원뿔·다면체 쐐기·입체 고리·두께 있는 조각을 활용한 작은 실제3D 메시 묶음. PNG 카드·스프라이트 시트·외부 파티클 팩을 실제 메시로 주장하지 않는다.",
+    "relative_size": "효과 단위 E는 전시·비교용 상대 단위다. 최종 미터·U·장착 소켓·피해 반경·화면 픽셀 예산은 미정이다.",
+    "readability": [
+      "기관총 작은 섬광은 함포 큰 단발을 덮지 않는다.",
+      "박격포는 상향 곡사, 작살은 단일 촉과 줄, 사슬탄은 연결된 두 탄구, 화염은 짧은 원뿔을 유지한다.",
+      "손상·방어·지원은 도형·방향·동작으로도 구별하고 색만으로 상태를 전달하지 않는다.",
+      "원본은 불투명 메시일 수 있으므로 연기·화염이 기낭과 연결부를 가리는 문제는 실제 엔진 장면에서 다시 검증한다.",
+      "청록/크림 견인선은 산호/황동 공격 불꽃과 다른 연결 형태를 유지한다."
+    ],
+    "originality": "Cloudstitch의 기존 원화와 재료를 기준으로 하는 자체 효과 도형이다. 타 작품 고유 로고·캐릭터·장면·효과 자산을 복제하지 않는다."
+  },
+  "coordinate_contract": {
+    "asset_axes": "+Y up, +Z forward",
+    "impact_axes": "피격면에서는 +Y가 바깥 법선, +Z가 입사 방향의 접선",
+    "transform_only": true,
+    "no_rig_required": "단단한 효과 조각의 위치·회전·크기만 움직이며 스킨/본 리깅은 이번 범위가 아니다.",
+    "animation_time": "duration_seconds는 한 번 재생 또는 loop 한 주기의 아트 길이다. 기존 상태효과 지속시간과 다르다.",
+    "loop_note": "glTF 표준 애니메이션은 반복 정책을 강제하지 않는다. loop는 작업대/엔진용 메타데이터다.",
+    "end_state": "효과 조각을 작은 양의 스케일로 줄이는 것을 기본으로 한다. 표시 종료·풀 반환·루프 중지·재시작은 뷰어/엔진 통합 단계에서 관리한다."
+  },
+  "event_policy": {
+    "trigger_status": "trigger는 후속 통합 시 연결할 의미상의 이벤트 설명이며 실행 코드·확정 엔진 API가 아니다.",
+    "combat_rules": "21/72의 사거리·포각·장전·가림·탄약/연료·피해·상태 규칙을 유지한다. 새로운 DPS·탄약 구매·연료 차감·무적·회복량 규칙을 추가하지 않는다.",
+    "result_separation": "시각 피격·약점·도탄·관통·막음·분리·수리·회수·장착은 서로 다른 실제 판정의 결과를 표시한다. 효과 재생 자체가 판정을 만들지 않는다.",
+    "lifecycle": "공용 재질 피격과 무기 고유 명중을 함께 재생할 때 중복 강조와 가림을 검사한다. 반복 효과는 실제 상태 종료에서 엔진이 중지한다."
+  },
+  "effects": [
+    {
+      "id": "machine-gun-muzzle",
+      "order": 1,
+      "name_ko": "기관총 포구 섬광",
+      "name_en": "Machine Gun Muzzle Flash",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "purpose": "함포보다 작은 연사 시작을 읽힌다.",
+      "duration_seconds": 0.2,
+      "loop": false,
+      "trigger": "유효한 기관총 발사 이벤트",
+      "readable_shape": "짧은 5갈래 입체 별과 가는 전방 원뿔",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        }
+      ],
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "별과 원뿔을 짧게 확대 후 축소하고 작은 조각을 +Z로 이동한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "장전·과열·발사 속도를 클립 길이로 정하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "machine-gun-projectile",
+      "order": 2,
+      "name_ko": "기관총 탄환 궤적",
+      "name_en": "Machine Gun Projectile",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "purpose": "단일 소형 탄환의 방향을 나타낸다.",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "trigger": "기관총 탄환 생성 이벤트",
+      "readable_shape": "가느다란 황동 캡슐과 짧은 크림 꼬리",
+      "colors": [
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "캡슐과 꼬리를 로컬 +Z로 이동하고 꼬리 길이를 빠르게 늘렸다 줄인다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "로컬 이동은 전시용이다. 실제 탄속·거리·충돌은 엔진이 결정한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "machine-gun-hit",
+      "order": 3,
+      "name_ko": "기관총 집중 타격",
+      "name_en": "Machine Gun Hit",
+      "category": "weapon",
+      "weapon_id": "01-machine-gun",
+      "purpose": "작은 반복 타격을 큰 폭발과 구별한다.",
+      "duration_seconds": 0.35,
+      "loop": false,
+      "trigger": "기관총의 유효 접촉 이벤트",
+      "readable_shape": "작은 남청 홈 둘레에 짧은 황동 쐐기 5개",
+      "colors": [
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "쐐기를 피격면의 +Y 방향과 접선으로 짧게 분산시킨 뒤 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "재질별 공용 피격과 중복 재생할지는 엔진에서 결정한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "cannon-muzzle",
+      "order": 4,
+      "name_ko": "함포 포구 충격",
+      "name_en": "Cannon Muzzle Blast",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "purpose": "무거운 단발의 발사 시작을 강조한다.",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "trigger": "유효한 함포 발사 이벤트",
+      "readable_shape": "기관총보다 넓은 입체 별·짧은 황동 충격 고리",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        }
+      ],
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "전방 원뿔을 +Z로 짧게 밀고 포구 고리를 확대 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "이 효과는 실제 포신 반동이나 피해량을 구현하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "cannon-projectile",
+      "order": 5,
+      "name_ko": "함포 포탄 비행",
+      "name_en": "Cannon Projectile",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "purpose": "무거운 단일 포탄을 기관총 탄환과 구별한다.",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "trigger": "함포 포탄 생성 이벤트",
+      "readable_shape": "굵은 남청 포탄·황동 띠·짧은 크림 공기 꼬리",
+      "colors": [
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "포탄을 로컬 +Z로 옮기며 완만히 회전하고 후미 조각을 작게 맥동한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "일반탄과 철갑 특수탄의 관통 규칙을 모델 외형으로 새로 추가하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "cannon-hit",
+      "order": 6,
+      "name_ko": "함포 약점 파쇄",
+      "name_en": "Cannon Heavy Hit",
+      "category": "weapon",
+      "weapon_id": "02-deck-cannon",
+      "purpose": "한 번의 큰 충격과 연결부 파쇄 후보를 표현한다.",
+      "duration_seconds": 0.75,
+      "loop": false,
+      "trigger": "함포 명중이 판정된 위치",
+      "readable_shape": "큰 꺾인 충격 별·짧은 파편 쐐기·낮은 입체 고리",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "중앙 별을 한 번 크게 확대하고 파편을 +Y 밖으로 분산·회전시킨 뒤 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "실제 약점 파괴·자식 모듈 분리는 별도 규칙 이벤트가 있어야 한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "mortar-launch",
+      "order": 7,
+      "name_ko": "박격포 발사 퍼프",
+      "name_en": "Mortar Launch Puff",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "purpose": "상향 곡사 발사를 직사포와 구별한다.",
+      "duration_seconds": 0.6,
+      "loop": false,
+      "trigger": "유효한 박격포 발사 이벤트",
+      "readable_shape": "포구를 둘러싼 크림 구름 덩이와 짧은 황동 비늘",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "구름 덩이를 포구 +Z 방향으로 밀면서 확대·회전 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "박격포 포구의 실제 상향 축에 붙인다. 최소사거리와 장전시간은 별도다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "mortar-projectile",
+      "order": 8,
+      "name_ko": "박격포 곡사탄",
+      "name_en": "Mortar Arc Projectile",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "purpose": "높이 올라갔다 내려오는 곡사 형태를 미리 본다.",
+      "duration_seconds": 1.6,
+      "loop": false,
+      "trigger": "박격포 곡사탄 생성 이벤트",
+      "readable_shape": "짧고 통통한 포탄·황동 띠·세 개의 크림 공기 덩이",
+      "colors": [
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "로컬 +Z로 진행하면서 +Y를 올렸다 내리는 포물선 형태의 위치 키와 포탄 회전을 둔다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "전시 궤적과 시간은 예시다. 실제 탄도·표식·화면 밖 경고·명중은 엔진에서 계산한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "mortar-hit",
+      "order": 9,
+      "name_ko": "박격포 착탄 폭발",
+      "name_en": "Mortar Impact Burst",
+      "category": "weapon",
+      "weapon_id": "03-mortar",
+      "purpose": "느린 범위 공격의 착탄 순간을 나타낸다.",
+      "duration_seconds": 1.2,
+      "loop": false,
+      "trigger": "박격포의 실제 착탄 이벤트",
+      "readable_shape": "낮고 넓은 황동 충격 고리·크림 부풀음·꿀빛 짧은 파편",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "고리를 피격면 접선 방향으로 넓히고 덩이와 파편을 +Y로 띄운 뒤 각각 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "고리 크기는 아트 가설이다. 피해 반경·다중 모듈 피해를 확정하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "harpoon-launch",
+      "order": 10,
+      "name_ko": "작살 발사 튕김",
+      "name_en": "Harpoon Launch Snap",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "purpose": "폭약 섬광보다 레일과 밧줄의 힘을 전달한다.",
+      "duration_seconds": 0.35,
+      "loop": false,
+      "trigger": "유효한 작살 발사 이벤트",
+      "readable_shape": "얇은 청록 기류 쐐기·작은 크림 로프 고리",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "기류 쐐기를 +Z로 짧게 밀고 로프 고리를 회전·확대 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "무기 모델의 윈치·레일 반동과 케이블 물리를 대신하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "harpoon-projectile",
+      "order": 11,
+      "name_ko": "작살 비행과 줄",
+      "name_en": "Harpoon Flight",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "purpose": "단일 작살촉과 뒤따르는 짧은 줄을 보여준다.",
+      "duration_seconds": 1,
+      "loop": false,
+      "trigger": "작살 투사체 생성 이벤트",
+      "readable_shape": "굵은 남청 작살촉·황동 목·크림 짧은 케이블 구간",
+      "colors": [
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        }
+      ],
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "촉을 로컬 +Z로 이동하고 뒤쪽 줄 구간을 +Z 축 길이로 늘린다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "가변 길이·처짐·절단·장력과 발사체 좌표는 엔진에서 관리한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "harpoon-hit",
+      "order": 12,
+      "name_ko": "작살 걸림 고리",
+      "name_en": "Harpoon Latch Hit",
+      "category": "weapon",
+      "weapon_id": "04-harpoon",
+      "purpose": "피격과 견인 가능 걸림 후보를 구별해 보인다.",
+      "duration_seconds": 0.65,
+      "loop": false,
+      "trigger": "작살 접촉 또는 걸림이 실제 판정된 이벤트",
+      "readable_shape": "접촉점의 작은 황동 쐐기와 벌어졌다 닫히는 청록 C자 고리",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "C자 조각을 회전해 닫고 작은 쐐기를 +Y로 튀긴 뒤 줄여 사라지게 한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "표시만으로 소유권 변경·회수 완료·자동 장착을 만들지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "chain-shot-launch",
+      "order": 13,
+      "name_ko": "사슬탄 발사 쌍섬광",
+      "name_en": "Chain-Shot Launch",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "purpose": "연결된 두 탄구를 발사하는 성격을 표현한다.",
+      "duration_seconds": 0.5,
+      "loop": false,
+      "trigger": "유효한 사슬탄 발사 이벤트",
+      "readable_shape": "넓은 포구 앞의 두 작은 별과 세 개의 황동 링크",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "양옆 별을 벌리고 링크를 짧게 회전시키며 +Z로 내보낸 뒤 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "별이 두 개여도 별도 이중 발사기나 추가 탄환 규칙을 뜻하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "chain-shot-projectile",
+      "order": 14,
+      "name_ko": "사슬탄 회전 비행",
+      "name_en": "Chain-Shot Flight",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "purpose": "두 탄구와 짧은 사슬의 연결을 유지한다.",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "trigger": "사슬탄 투사체 생성 이벤트",
+      "readable_shape": "남청 탄구 두 개·가운데 굵은 황동 링크 몇 개",
+      "colors": [
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "연결된 탄구 그룹을 로컬 +Z로 이동하며 진행축 둘레로 회전시킨다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "링크 회전은 장식이다. 실제 사슬 물리·두 충돌체·제어 효과는 별도 구현한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "chain-shot-hit",
+      "order": 15,
+      "name_ko": "사슬탄 엔진 타격",
+      "name_en": "Chain-Shot Engine Hit",
+      "category": "weapon",
+      "weapon_id": "05-chain-shot",
+      "purpose": "엔진 접촉의 얽힘 형태를 일반 선체 타격과 구별한다.",
+      "duration_seconds": 1,
+      "loop": false,
+      "trigger": "사슬탄이 명중한 뒤 엔진 접촉 여부가 판정된 이벤트",
+      "readable_shape": "청록 초승달 두 개·황동 짧은 사슬·남청 접촉 쐐기",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "초승달과 링크를 접촉점 둘레로 감듯 회전·축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "엔진 출력 저하의 강도·지속·갱신과 선체 명중 예외는21번을 따른다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "flamethrower-ignite",
+      "order": 16,
+      "name_ko": "화염방사 점화",
+      "name_en": "Flamethrower Ignition",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "purpose": "짧은 노즐에서 분사가 시작되는 순간을 읽힌다.",
+      "duration_seconds": 0.4,
+      "loop": false,
+      "trigger": "유효한 화염 분사 시작 이벤트",
+      "readable_shape": "노즐 가까이의 짧은 산호 불꽃 잎과 크림 심지",
+      "colors": [
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "불꽃 잎을 +Z로 펴며 약간 회전시키고 작게 수축한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "점화 모델은 연료 차감이나 추가 상태 피해 규칙을 만들지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "flamethrower-stream",
+      "order": 17,
+      "name_ko": "화염방사 짧은 원뿔",
+      "name_en": "Flamethrower Cone Stream",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "purpose": "근거리의 짧고 넓은 분사 방향을 유지한다.",
+      "duration_seconds": 1.2,
+      "loop": true,
+      "trigger": "엔진에서 유효 분사 중인 동안 표시",
+      "readable_shape": "짧은 원뿔 안의 산호·꿀빛 입체 불꽃 잎과 크림 중심",
+      "colors": [
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "불꽃 잎을 +Z 방향으로 순차 이동·회전·크기 변화시키고 클립을 반복한다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "클립 반복 시간은 실제3초 분사·냉각·피해 판정이 아니다. 불투명 메시 가림과 겹침을 별도 조정한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "flamethrower-hit",
+      "order": 18,
+      "name_ko": "화염 접촉 그을림",
+      "name_en": "Flamethrower Contact Hit",
+      "category": "weapon",
+      "weapon_id": "06-flamethrower",
+      "purpose": "짧은 불꽃이 표면에 닿는 순간을 나타낸다.",
+      "duration_seconds": 0.9,
+      "loop": false,
+      "trigger": "화염 원뿔의 유효 접촉 이벤트",
+      "readable_shape": "피격면 가까운 남청 그을림 덩이·산호 짧은 불꽃·황동 불씨",
+      "colors": [
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "불꽃을 표면 +Y로 짧게 솟게 하고 불씨를 접선 방향으로 흩뿌린 뒤 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "실제 점화 여부·목재 상성·지속 피해는 전투 이벤트가 결정한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "wood-hit",
+      "order": 19,
+      "name_ko": "목재 피격",
+      "name_en": "Wood Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "목재와 금속의 타격 재질을 구별한다.",
+      "duration_seconds": 0.7,
+      "loop": false,
+      "trigger": "목재 표면 접촉이 판정된 이벤트",
+      "readable_shape": "꿀빛 길쭉한 나무 조각 5개와 작은 크림 먼지",
+      "colors": [
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "목재 조각을 +Y와 접선으로 분산·회전시키고 먼지는 확대 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "장식 파편은 회수 가능한 스크랩 드롭이나 실제 선체 절단이 아니다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "metal-hit",
+      "order": 20,
+      "name_ko": "금속 피격",
+      "name_en": "Metal Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "일반 금속의 작은 불꽃을 표현한다.",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "trigger": "금속 표면 접촉이 판정된 이벤트",
+      "readable_shape": "짧고 가는 황동 입체 불꽃과 작은 남청 조각",
+      "colors": [
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "짧은 쐐기를 +Y 바깥으로 튀기며 회전시키고 빠르게 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "금속 피격 외형만으로 피해 무효·관통·상태 이상을 확정하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "fabric-hit",
+      "order": 21,
+      "name_ko": "천 피격",
+      "name_en": "Fabric Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "기낭 천의 찢김과 섬유를 구별한다.",
+      "duration_seconds": 0.85,
+      "loop": false,
+      "trigger": "천 표면 접촉이 판정된 이벤트",
+      "readable_shape": "짧은 크림 천 조각·산호 수선편·가느다란 입체 실 조각",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "천 조각을 +Y로 띄우고 느리게 회전·축소하며 실 조각을 짧게 벌린다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "실제 천 변형·찢어진 선체 메시·양력 감소는 별도 손상 시스템이다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "armor-hit",
+      "order": 22,
+      "name_ko": "장갑 피격",
+      "name_en": "Armor Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "단단한 장갑에 부딪힌 압축 충격을 나타낸다.",
+      "duration_seconds": 0.6,
+      "loop": false,
+      "trigger": "장갑 표면 접촉이 판정된 이벤트",
+      "readable_shape": "낮고 넓은 청록 접시 조각·황동 짧은 쐐기·크림 압축 고리",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "고리를 피격면 방향으로 넓혔다 줄이고 쐐기를 짧은 거리만 밀어낸다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "장갑 등급·최소 피해 비율과 최종 피해는21번 초기 규칙을 실제 구현한 결과로 결정한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "ricochet-hit",
+      "order": 23,
+      "name_ko": "도탄 튕김",
+      "name_en": "Ricochet Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "접선으로 튕기는 방향을 정면 타격과 구별한다.",
+      "duration_seconds": 0.5,
+      "loop": false,
+      "trigger": "엔진에서 도탄이 실제 판정된 이벤트",
+      "readable_shape": "한 방향으로 휘는 황동 쐐기와 작은 크림 꺾인 궤적",
+      "colors": [
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "쐐기를 피격면의 +Z 접선으로 빠르게 이동·회전 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "도탄은 표시 후보다. 확률·각도·피해 재판정·새 발사체 규칙을 추가하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "weakpoint-hit",
+      "order": 24,
+      "name_ko": "약점 적중",
+      "name_en": "Weakpoint Impact",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "약점 접촉을 별 모양과 안쪽 수축으로 읽힌다.",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "trigger": "약점 유효 적중이 판정된 이벤트",
+      "readable_shape": "황동 마름모 별·청록 안쪽 고리·크림 짧은 조각",
+      "colors": [
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "안쪽 고리를 중앙으로 모으고 별을 한 번 확대 후 작게 줄인다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "색만으로 약점을 식별시키지 않는다. 피해 배율·중요 단서 잠금을 새로 만들지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "cloud-miss",
+      "order": 25,
+      "name_ko": "구름 빗나감",
+      "name_en": "Cloud Miss Puff",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "구름 속으로 빠진 비명중을 파괴 효과와 구별한다.",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "trigger": "실제 빗나감/구름 접촉 표시 요청",
+      "readable_shape": "벌어지는 크림 다면체 구름 덩이 세 개와 옅은 청록 꼬리",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "구름 덩이를 +Y와 옆으로 느리게 벌리며 확대 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "실제 구름 충돌·탄환 삭제·사거리 종료는 엔진 규칙이며 이 모델이 결정하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "penetration-exit",
+      "order": 26,
+      "name_ko": "관통 출구",
+      "name_en": "Penetration Exit",
+      "category": "material-impact",
+      "weapon_id": null,
+      "purpose": "실제로 관통한 탄의 출구 방향을 보여준다.",
+      "duration_seconds": 0.65,
+      "loop": false,
+      "trigger": "출구 면과 관통 성공이 계산된 이벤트",
+      "readable_shape": "출구의 좁은 크림 원뿔·황동 쐐기·남청 작은 조각",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "출구 법선 +Y를 따라 조각을 강하게 뻗고 짧게 회전·축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "함포 일반탄에 관통을 자동 추가하지 않는다. 철갑 특수탄 등 실제 규칙의 성공 이벤트에만 붙인다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "small-explosion",
+      "order": 27,
+      "name_ko": "소형 폭발",
+      "name_en": "Small Explosion",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "작은 장치 폭발의 짧은 힘을 나타낸다.",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "trigger": "소형 폭발 표시 이벤트",
+      "readable_shape": "작은 크림 별·산호 중심·황동 짧은 조각",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "중앙을 짧게 확대하고 조각을 방사 이동·회전 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "크기는 아트 가설이다. 범위 피해·연쇄 폭발·낙하물 생성을 구현하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "large-explosion",
+      "order": 28,
+      "name_ko": "대형 폭발",
+      "name_en": "Large Explosion",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "큰 충격을 작은 타격보다 느리고 넓게 보여준다.",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "trigger": "대형 폭발 표시 이벤트",
+      "readable_shape": "층이 다른 크림·산호 덩이와 두 겹의 황동 입체 고리",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "큰 덩이와 고리를 시간차로 확대하고 외곽 조각을 분산·회전시킨 뒤 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "보스 파괴·카메라 흔들림·대미지·환경 파괴를 모델이 자동 실행하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "airburst",
+      "order": 29,
+      "name_ko": "공중 폭발",
+      "name_en": "Airburst",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "지면에 붙지 않는 전방위 폭발을 표현한다.",
+      "duration_seconds": 1.3,
+      "loop": false,
+      "trigger": "공중 폭발 위치가 결정된 이벤트",
+      "readable_shape": "중심을 둘러싼 크림 입체 구름·황동 짧은 별 조각",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "조각과 구름을 모든 방향으로 분산시키고 구름만 약간 늦게 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "고도별 물리와 실제 요격·범위 피해 판정은 후속 엔진 작업이다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "shrapnel-burst",
+      "order": 30,
+      "name_ko": "파편 분산",
+      "name_en": "Shrapnel Burst",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "큰 덩이보다 튀는 작은 단단한 조각을 강조한다.",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "trigger": "파편 표시 요청 이벤트",
+      "readable_shape": "꿀빛 목재·청록 금속·황동 다면체 조각의 짧은 묶음",
+      "colors": [
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "조각별 위치·회전 키를 달리해 퍼뜨린 후 모두 작은 크기로 줄인다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "실제 충돌체·스스로 피해를 주는 파편·전리품은 포함하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "smoke-puff",
+      "order": 31,
+      "name_ko": "짧은 연기",
+      "name_en": "Smoke Puff",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "한 번 피어나는 가벼운 배기·폭발 연기를 표현한다.",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "trigger": "일회성 연기 표시 요청",
+      "readable_shape": "작은 남청·청록 다면체 연기 덩이 4개",
+      "colors": [
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "덩이를 +Y로 올리고 회전하며 커졌다 작아지게 한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "반투명 연기·깊이 부드러움·바람·시야 차단은 셰이더와 엔진의 후속 기능이다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "steam-vent",
+      "order": 32,
+      "name_ko": "증기 배출",
+      "name_en": "Steam Vent",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "뜨거운 화염과 구별되는 밝은 증기를 표현한다.",
+      "duration_seconds": 1.5,
+      "loop": false,
+      "trigger": "배기구의 증기 배출 표시 요청",
+      "readable_shape": "좁은 줄기로 늘어선 크림 구름 덩이·청록 작은 고리",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "크림 덩이를 +Y로 연속 이동·확대 후 축소하고 작은 고리를 흔들듯 회전한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "증기 피해·압력 게이지·연료 소모를 새 규칙으로 추가하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "smoldering-fire",
+      "order": 33,
+      "name_ko": "잔불",
+      "name_en": "Smoldering Fire",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "폭발 뒤 남은 낮은 불꽃을 짧은 원형으로 표현한다.",
+      "duration_seconds": 2.4,
+      "loop": true,
+      "trigger": "잔불 표시가 필요한 동안 요청",
+      "readable_shape": "낮은 산호 불꽃 잎·꿀빛 작은 탄화 덩이·크림 심지",
+      "colors": [
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "낮은 불꽃 잎을 제자리에서 번갈아 늘리고 줄이며 작은 각도로 회전한다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "반복 표시가 실제 점화 지속시간·접촉 피해·화재 전파를 결정하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "ember-drift",
+      "order": 34,
+      "name_ko": "불씨 흩날림",
+      "name_en": "Drifting Embers",
+      "category": "explosion-environment",
+      "weapon_id": null,
+      "purpose": "눈처럼 작게 떠오르는 불씨로 마무리한다.",
+      "duration_seconds": 2,
+      "loop": false,
+      "trigger": "일회성 불씨 표시 요청",
+      "readable_shape": "황동·산호 작은 입체 마름모 7개",
+      "colors": [
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "마름모를 +Y로 띄우며 천천히 회전하고 끝에서 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "실제 파티클 시스템·열원·추가 발화·바람 시뮬레이션은 없다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "burning-state",
+      "order": 35,
+      "name_ko": "불붙음 상태",
+      "name_en": "Burning State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "지속 점화 표시를 일회성 화염 접촉과 구별한다.",
+      "duration_seconds": 1.5,
+      "loop": true,
+      "trigger": "실제 점화 상태가 유효한 동안 표시",
+      "readable_shape": "호스트 표면 둘레의 산호 불꽃 잎과 크림 작은 심지",
+      "colors": [
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        }
+      ],
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "각 불꽃을 표면 법선 +Y로 교대로 늘려 올리고 회전·크기 키를 반복한다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "점화 초당 피해·지속·중첩은21번 실제 상태 구현이 관리한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "heavy-smoke-state",
+      "order": 36,
+      "name_ko": "짙은 연기 상태",
+      "name_en": "Heavy Smoke State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "손상 부위에서 계속 나는 짙은 연기를 표현한다.",
+      "duration_seconds": 3,
+      "loop": true,
+      "trigger": "지속 연기 표시가 필요한 손상 이벤트",
+      "readable_shape": "큰 남청 다면체 덩이·청록 외곽 덩이의 좁은 기둥",
+      "colors": [
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "연기 덩이를 +Y로 올리며 단계적으로 커졌다 줄고 반복 시작에서 다시 작은 크기로 되돌린다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "불투명 덩이가 연결부를 가릴 수 있다. 실제 시야 차단·호스트 피해 단계는 별도다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "gas-leak-state",
+      "order": 37,
+      "name_ko": "가스 누출 상태",
+      "name_en": "Gas Leak State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "기낭 구멍의 바깥 흐름을 연기와 다르게 읽힌다.",
+      "duration_seconds": 2,
+      "loop": true,
+      "trigger": "실제 기낭 누출 표시가 요청된 동안",
+      "readable_shape": "표면 밖으로 뻗는 크림 긴 방울·청록 가는 곡선 조각",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        }
+      ],
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "긴 방울을 +Y로 밀며 늘렸다 줄이고 곡선 조각을 조금씩 회전한다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "가스 입자·누출량·양력 감소·복구 조건은 이 클립이 계산하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "overheat-state",
+      "order": 38,
+      "name_ko": "과열 상태",
+      "name_en": "Overheat State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "기관부의 열 경고를 반복 도형과 위로 흐르는 조각으로 보인다.",
+      "duration_seconds": 1.2,
+      "loop": true,
+      "trigger": "실제 과열 상태/표시가 유효한 동안",
+      "readable_shape": "세 개의 꺾인 산호 열 기둥·황동 테두리 조각",
+      "colors": [
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "꺾인 열 조각을 +Y로 올리고 폭을 번갈아 늘리며 작은 회전을 반복한다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "실제 열100·냉각1.5초 등은21번 초기 규칙의 엔진 구현에서 관리한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "short-circuit-state",
+      "order": 39,
+      "name_ko": "단락 상태",
+      "name_en": "Short Circuit State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "기계의 끊기는 동작을 짧고 각진 전기 모양으로 표현한다.",
+      "duration_seconds": 0.8,
+      "loop": true,
+      "trigger": "실제 단락 또는 손상 전기 표시 요청",
+      "readable_shape": "짧은 청록·크림 번개형 입체 쐐기와 황동 접점",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "번개 쐐기들을 번갈아 확대·축소하며 작은 회전으로 접점을 튕긴다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "새 전기 무기·전력 차감·감전 피해·조작 방해 규칙을 추가하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "engine-stall-state",
+      "order": 40,
+      "name_ko": "엔진 정지 상태",
+      "name_en": "Engine Stall State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "꺾인 배기와 멈칫하는 링으로 정지 표시를 보조한다.",
+      "duration_seconds": 2.2,
+      "loop": true,
+      "trigger": "실제 엔진 정지 상태가 유효한 동안",
+      "readable_shape": "청록 반원 두 조각·작은 남청 기침 구름·크림 짧은 틱",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "남청",
+          "hex": "#344552"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "반원은 작은 각도로 흔들다 멈추고 구름은 간헐적으로 +Y 이동·축소한다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "실제 프로펠러 정지·출력0·이동 불가를 이 표시가 만들지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "envelope-rupture-state",
+      "order": 41,
+      "name_ko": "기낭 파열 상태",
+      "name_en": "Envelope Rupture State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "찢긴 천과 빠지는 흐름으로 기낭 손상을 보여준다.",
+      "duration_seconds": 1.4,
+      "loop": false,
+      "trigger": "실제 기낭 파열/파괴 이벤트",
+      "readable_shape": "크림 천 조각·산호 수선편·청록 바깥 흐름 쐐기",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        }
+      ],
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "천 조각을 +Y로 벌리고 회전시키며 바깥 흐름을 늘렸다 줄인다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "기낭 원본 메시를 찢거나 양력·침하 유예·영구 파괴 상태를 구현하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "module-detach-state",
+      "order": 42,
+      "name_ko": "부품 분리 순간",
+      "name_en": "Module Detach State",
+      "category": "damage-state",
+      "weapon_id": null,
+      "purpose": "부모 골조가 끊어지는 위치의 짧은 결합 해제를 표시한다.",
+      "duration_seconds": 1,
+      "loop": false,
+      "trigger": "실제 부모 연결 절단과 하위 묶음 분리가 확정된 이벤트",
+      "readable_shape": "갈라지는 황동 잠금 조각·꿀빛 골조편·크림 작은 먼지",
+      "colors": [
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "꿀빛 목재",
+          "hex": "#BA8046"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        }
+      ],
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "잠금 조각과 골조편을 접선 양쪽으로 벌리고 +Y로 조금 띄워 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "단일 부모 트리·하위 묶음 분리·소유권·새 드롭 생성은 실제 시스템이 수행한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "shield-pulse",
+      "order": 43,
+      "name_ko": "방패 펄스",
+      "name_en": "Shield Pulse",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "방어 반응을 공격 폭발과 다른 바깥 고리로 표현한다.",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "trigger": "유효한 방패 방어 표시 이벤트",
+      "readable_shape": "청록 분절 돔·크림 가장자리·황동 짧은 방패형 조각",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "target",
+        "origin": "표시 대상의 중심 또는 명시한 지원 기준점",
+        "axes": "+Y 위, +Z 대상 전방",
+        "integration": "대상 크기와 가림을 실제 장면에서 확인한다. 효과 중심이 곧 피해/회복 영역은 아니다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "분절 돔을 바깥으로 확대하고 각 조각을 약간 회전한 뒤 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "실제 방패 내구도·피해 흡수·무적 프레임·새 스킬을 추가하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "armor-block",
+      "order": 44,
+      "name_ko": "장갑 막음",
+      "name_en": "Armor Block",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "확정된 막음 반응을 일반 장갑 접촉보다 짧고 납작하게 보인다.",
+      "duration_seconds": 0.55,
+      "loop": false,
+      "trigger": "실제 장갑 막음/방어 결과가 계산된 이벤트",
+      "readable_shape": "청록 납작한 방패 쐐기·양옆으로 튕기는 황동 짧은 선",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        }
+      ],
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "방패 쐐기를 작은 폭으로 밀었다 되돌리고 짧은 선을 접선 양옆으로 이동·축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "모든 장갑 타격을 피해0으로 만들지 않는다. 장갑 피격과 막음의 선택은 전투 판정이 한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "repair-stitch",
+      "order": 45,
+      "name_ko": "수리 봉합",
+      "name_en": "Repair Stitch",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "Cloudstitch의 수선 감성을 결합부 봉합으로 보여준다.",
+      "duration_seconds": 2,
+      "loop": false,
+      "trigger": "실제 수리 진행/완료 표시 이벤트",
+      "readable_shape": "크림 입체 실 조각·산호 작은 수선편·황동 바늘 같은 쐐기",
+      "colors": [
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        }
+      ],
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "벌어진 실 조각을 차례로 중앙으로 모으고 수선편을 짧게 확대 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "수리 견적·스크랩 차감·복구 내구도·수리 범위는 기존 경제/수리 시스템이 결정한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "healing-pulse",
+      "order": 46,
+      "name_ko": "회복 펄스",
+      "name_en": "Recovery Pulse",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "회복 완료를 밝은 고리와 잎 모양으로 부드럽게 표현한다.",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "trigger": "실제 회복/복구 표시 요청",
+      "readable_shape": "청록 잎 조각·크림 상승 고리·작은 황동 중심",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "target",
+        "origin": "표시 대상의 중심 또는 명시한 지원 기준점",
+        "axes": "+Y 위, +Z 대상 전방",
+        "integration": "대상 크기와 가림을 실제 장면에서 확인한다. 효과 중심이 곧 피해/회복 영역은 아니다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "잎과 고리를 +Y로 천천히 올리면서 바깥으로 펴고 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "인물 체력 시스템·새 회복 스킬·소모품·수리와의 이중 보상을 추가하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "salvage-tether",
+      "order": 47,
+      "name_ko": "회수 견인 흐름",
+      "name_en": "Salvage Tether",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "견인 줄의 방향과 회수 중임을 공격 궤적과 구별한다.",
+      "duration_seconds": 2,
+      "loop": true,
+      "trigger": "실제 견인/회수 중인 두 끝점 연결 이벤트",
+      "readable_shape": "청록 짧은 화살표 조각·크림 입체 줄 구간·황동 연결 고리",
+      "colors": [
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        }
+      ],
+      "attachment": {
+        "mode": "link",
+        "origin": "실제 견인 시작점",
+        "axes": "+Z 시작점에서 끝점으로, +Y는 그 축에 수직인 안정화 방향",
+        "integration": "끝점 사이 거리·방향은 엔진에서 갱신한다. Z축 길이 변환만으로 로프 물리를 구현하지 않는다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "크림 줄 구간을 +Z로 늘리고 청록 조각을 +Z로 순차 이동·축소해 반복한다.",
+        "loop_behavior": "클립 길이는 반복 한 주기다. 반복 여부와 종료는 뷰어/엔진이 제어하며 glTF 자체는 무한 루프를 강제하지 않는다."
+      },
+      "integration_limits": [
+        "실제 줄 길이·처짐·장력·거리 해제·회수 소유권·화물 적재는 엔진에서 별도로 처리한다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    },
+    {
+      "id": "mount-lock",
+      "order": 48,
+      "name_ko": "장착 잠금",
+      "name_en": "Mount Lock",
+      "category": "defense-support",
+      "weapon_id": null,
+      "purpose": "실제 장착 확정의 잠금 감각을 짧게 보여준다.",
+      "duration_seconds": 1,
+      "loop": false,
+      "trigger": "소켓 장착이 실제 검증·확정된 이벤트",
+      "readable_shape": "양쪽에서 닫히는 황동 잠금편·청록 작은 고리·크림 짧은 틱",
+      "colors": [
+        {
+          "name_ko": "황동",
+          "hex": "#D7AA4D"
+        },
+        {
+          "name_ko": "청록",
+          "hex": "#4C8084"
+        },
+        {
+          "name_ko": "크림",
+          "hex": "#F4E7CA"
+        },
+        {
+          "name_ko": "산호",
+          "hex": "#D77661"
+        }
+      ],
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "embedded_animation_description": {
+        "channels": [
+          "translation",
+          "rotation",
+          "scale"
+        ],
+        "description": "잠금편을 중앙으로 이동·회전시키고 작은 고리를 수축 후 축소한다.",
+        "loop_behavior": "한 번 재생 후 작은 크기로 축소한다. 엔진은 클립 완료 뒤 인스턴스를 제거하거나 풀로 반환한다."
+      },
+      "integration_limits": [
+        "회수 완료와 장착 완료는 다른 이벤트다. 소켓 호환·충돌·중량·전력을 확인하지 않고 재생하지 않는다.",
+        "시간과 크기는 아트 시제품 가설이며 실제 피해·사거리·자원·상태 지속시간을 정하지 않는다.",
+        "glTF 표준 translation/rotation/scale 키만 사용한다. 파티클·셰이더/재질/불투명도 애니메이션·오디오는 포함하지 않는다.",
+        "장면 표시 모델과 클립이며 실제 엔진 전투·충돌·물리·상태 시스템은 별도다."
+      ],
+      "status": "completed_mesh_animation_prototype"
+    }
+  ],
+  "verification_plan": [
+    "GLB를 실제 파싱해 메시·재질·삼각형·텍스처 유무·애니메이션 채널·클립 길이·파일 크기·SHA256을 기록한다.",
+    "48개의 ID/order/category/weapon_id와 중복/누락, duration_seconds 0.2~3초를 확인한다.",
+    "기준 시점·측면·후면에서 3D 도형과 동작을 확인한다. 브라우저 화면만 보고 엔진 임포트 완료라고 주장하지 않는다.",
+    "손그림/셀/원본 표시와 재생/일시정지/다시보기/반복의 실제 기능, 모바일 넘침·외부 요청·오류·잔상을 검사한다.",
+    "제작 명세의 planned와 실제 생성/검사 완료를 구별하고 actual manifest/catalog를 사실 기준으로 사용한다."
+  ],
+  "known_limits": [
+    "정확히48종의 기본 효과 원형 범위다. 모든 스킬·보스·지역·게임 연출을 완성한 범위가 아니다.",
+    "표준 transform 클립은 실제3D 동작 데이터지만 최종 엔진 파티클·셰이더·블렌딩·깊이 페이드·발광·왜곡·바람·오디오·카메라 연출을 포함하지 않는다.",
+    "기존 무기 GLB는 단일 메시다. 포구·피격면·부품·케이블·장착 소켓은 후속 엔진/모델 편집에서 정해야 한다.",
+    "게임 엔진·플랫폼·성능 예산·최대 동시 효과 수는 미정이다. 로컬 뷰어 검사를 실제 전투 성능·밸런스 검증으로 표현하지 않는다.",
+    "실제 성공·수치·파일·채널·검사 이력은 제작 후 manifest/catalog에 기록한다. 이 기획 파일만으로 완료를 선언하지 않는다."
+  ],
+  "actual_implementation": {
+    "geometry": "48 locally authored 3D mesh effects with unlit vertex paint and standard transform clips. No image generation or paid Meshy tasks.",
+    "preview_repeat": "Viewer repeats previews by default; recipe loop policies are unchanged.",
+    "actual_palette": "tools/combat-vfx/core.mjs PALETTE; vertex RGB is clamped to [0,1].",
+    "additional_compositions": 6,
+    "verification": "verification.json"
+  }
+}

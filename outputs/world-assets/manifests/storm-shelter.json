@@ -1,0 +1,480 @@
+{
+  "id": "storm-shelter",
+  "game_title": "Cloudstitch",
+  "name_ko": "폭풍벽 차폐 정박소",
+  "region_ko": "천둥 폭풍벽",
+  "status": "completed_world_scene_prototype",
+  "model": "scenes/storm-shelter.glb",
+  "source_spec": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "composition": "큰 폭풍 구름 앞에 두꺼운 방풍 천과 작은 수리대·보관함을 놓는다. 낮은 등불과 차폐 실루엣으로 안전 경계를 나타낸다.",
+  "limits": "후반 원정 정박 시안이며 새 도시가 아니다. 실제 낙뢰·섬광·접지·기후 피해·저장 경계는 미구현.",
+  "triangles": 24872,
+  "mesh_count": 452,
+  "primitive_count": 452,
+  "node_count": 520,
+  "material_count": 15,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 452,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 3155432,
+  "sha256": "9211fa314c5e491f16a165a6c0ded8a0e441cec10addd1104d1572d02f17d8f9",
+  "mesh_definition_count": 452,
+  "unique_geometry_triangles": 24872,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 452,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -5.817817981719971,
+        -2.4,
+        -9.376376312024123
+      ],
+      "max": [
+        3.5937499991059303,
+        4.010000066757202,
+        5.152499998807907
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "source_assets": [
+    {
+      "asset_id": "platform-square",
+      "model": "assets/platform-square.glb",
+      "sha256": "65f1778dfc241c22eea6c39e1ed7d09dc41cf77d42d0fcc1ada0bb56b78d59d6",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "storm-cloud-mass",
+      "model": "assets/storm-cloud-mass.glb",
+      "sha256": "1e60abca92b21a8c925e4cc63d23e0602b39bbd7afa1bfc9d6c8b04cd70b655e",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "cloud-bank",
+      "model": "assets/cloud-bank.glb",
+      "sha256": "d4b4b4123a2a1af623c951e99464f2d154ed2570b60a96988083360cc9d48b15",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "wall-timber",
+      "model": "assets/wall-timber.glb",
+      "sha256": "231444624b29170f3621a5ecdb5f8ca5006a2cb40d95df74f96fa0e80fd47379",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "canopy-canvas",
+      "model": "assets/canopy-canvas.glb",
+      "sha256": "e53ac4ce5e1d0d94dcf3c2f9395746f4a241374341ec6cd2ab08de0ae19bbedb",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "awning-repair",
+      "model": "assets/awning-repair.glb",
+      "sha256": "63883f2435a5a7449634a5a40ef5984462e363bcea0c6877ce2978495ae6901d",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "dock-endcap",
+      "model": "assets/dock-endcap.glb",
+      "sha256": "a6c870e5187b6185372e5a004f31a91bed0ce4d79a96305bd341576c8295facb",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "boundary-marker",
+      "model": "assets/boundary-marker.glb",
+      "sha256": "2ea4dfc3c41eafc3b5749f3e7dab78430c15fa2c6678705d20a5b49482357788",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "beacon-buoy",
+      "model": "assets/beacon-buoy.glb",
+      "sha256": "7aa9d19e756a1f3c555d92ed855fca4d5eeb5dde793b58560b8f4846c7b131a3",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "lantern-standing",
+      "model": "assets/lantern-standing.glb",
+      "sha256": "db2210580b831181792e1ad116a5f82a81acdfc83c405b20dcd53ec051cc5dec",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "canvas-roll",
+      "model": "assets/canvas-roll.glb",
+      "sha256": "efcd4ba6d082edd117e50e4a70c24236fcfdd3e87eec4cec2a7a463cbbc40b99",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "rope-coil",
+      "model": "assets/rope-coil.glb",
+      "sha256": "406184dad17f0786ddd6a9c4561da0e168b850259638f4f030a890e953eb8959",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "repair-station",
+      "model": "assets/repair-station.glb",
+      "sha256": "edaf1e202015ab6618d91fabf866242abb494df7991a10ea495077fa28653c64",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "storage-chest",
+      "model": "assets/storage-chest.glb",
+      "sha256": "19a61567d003c6ca147bd3ddd546954b8f5a2a86b3e34d42e5454aad2ed3af27",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "safety-anchor",
+      "model": "assets/safety-anchor.glb",
+      "sha256": "1b1c0b8eb48e4744d1a33a281bc1d5e1c5b352107970538a258bc05825064435",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    }
+  ],
+  "placements": [
+    {
+      "asset_id": "platform-square",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.65,
+        1,
+        1.65
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "storm-cloud-mass",
+      "position": [
+        0,
+        0.4,
+        -7.5
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "cloud-bank",
+      "position": [
+        -4,
+        -2.4,
+        1
+      ],
+      "scale": [
+        1,
+        0.5,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "wall-timber",
+      "position": [
+        0,
+        0.58,
+        -2
+      ],
+      "scale": [
+        1.4,
+        1.4,
+        1.4
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "canopy-canvas",
+      "position": [
+        -1,
+        0.58,
+        -0.4
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "awning-repair",
+      "position": [
+        1.5,
+        0.58,
+        -1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-endcap",
+      "position": [
+        0,
+        0.25,
+        4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "boundary-marker",
+      "position": [
+        -2.7,
+        0.58,
+        2.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "beacon-buoy",
+      "position": [
+        3.2,
+        0.5,
+        2.5
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "lantern-standing",
+      "position": [
+        -2,
+        0.58,
+        1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "canvas-roll",
+      "position": [
+        -2.3,
+        0.58,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "rope-coil",
+      "position": [
+        -1.1999999999999997,
+        0.58,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "repair-station",
+      "position": [
+        -0.09999999999999964,
+        0.58,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "storage-chest",
+      "position": [
+        1.0000000000000004,
+        0.58,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "safety-anchor",
+      "position": [
+        2.1000000000000005,
+        0.58,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    }
+  ],
+  "unique_source_imports": 15,
+  "mesh_images_reused_per_source": true,
+  "original_sources_unchanged": true,
+  "engine_scope": "Relative visual layout only. No approved meters, colliders, navigation, interactions, simulation, menus or game progression."
+}

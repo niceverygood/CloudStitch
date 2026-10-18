@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "generated_at_utc": "2026-10-18T02:56:21.183337+00:00",
+  "independent_assets": 96,
+  "composed_scenes": 7,
+  "registered_models": 103,
+  "hero_buildings": 6,
+  "local_modules": 90,
+  "new_meshy_credits": 90,
+  "new_AI_image_generations": 6,
+  "image_count_basis": "Six existing hero reference PNGs for this requested world pack; native GLB browser captures are not counted as AI image generation.",
+  "git": "Local uncommitted/unpushed world-pack outputs; this finalizer does not commit or push.",
+  "canonical_sources": [
+    {
+      "repository_path": "outputs/04-harbor.txt",
+      "package_path": "canonical/04-harbor.txt",
+      "bytes": 1229,
+      "sha256": "5543d03f7fd70ddef35889f947b11ae8e65935c994ea23c7eef16b50daa2a75f"
+    },
+    {
+      "repository_path": "outputs/08-world-map.txt",
+      "package_path": "canonical/08-world-map.txt",
+      "bytes": 1001,
+      "sha256": "0b8c8560f124055dcd6e306de5adcd8c3a0d1dee3c42a5c63a1a6e3fa6575a09"
+    },
+    {
+      "repository_path": "outputs/39-story-canon-timeline.txt",
+      "package_path": "canonical/39-story-canon-timeline.txt",
+      "bytes": 5754,
+      "sha256": "822fa74d89efb0b7859625a17f5f9629331a800dc8e30bb8f03e601836c23055"
+    },
+    {
+      "repository_path": "outputs/64-harbor-cast.txt",
+      "package_path": "canonical/64-harbor-cast.txt",
+      "bytes": 7258,
+      "sha256": "4be19f9a4345dd938035dc8fd3e869a349a479f13236c8bb1e57dee676d99f41"
+    },
+    {
+      "repository_path": "outputs/69-regional-harbors.txt",
+      "package_path": "canonical/69-regional-harbors.txt",
+      "bytes": 5194,
+      "sha256": "6e1ecbd23112b316af558c7a36c81a6fa1a71fa4e77e0711c0e4afd4b7dd889d"
+    },
+    {
+      "repository_path": "outputs/86-region-story-transitions.txt",
+      "package_path": "canonical/86-region-story-transitions.txt",
+      "bytes": 4198,
+      "sha256": "38ab7df997f3a3384bc3b2f74de6f28b191f85a54958d12659f89472c001c91d"
+    },
+    {
+      "repository_path": "outputs/107-story-evidence-order-audit.txt",
+      "package_path": "canonical/107-story-evidence-order-audit.txt",
+      "bytes": 5020,
+      "sha256": "5f467e923be884bfcf8c06cb556ce9c9a8c0d60ba7be0c4cc5990f6066a1638e"
+    },
+    {
+      "repository_path": "outputs/112-system-rules-reference.txt",
+      "package_path": "canonical/112-system-rules-reference.txt",
+      "bytes": 5713,
+      "sha256": "aade3699fc7962c18e0b30f658c3b399e4b784b650ab9a1f754a9ba9939f91a0"
+    },
+    {
+      "repository_path": "outputs/114-production-decision-register.txt",
+      "package_path": "canonical/114-production-decision-register.txt",
+      "bytes": 4858,
+      "sha256": "ea0fc62c73fccc7d90412adbdd0d80c8c222436e2eaa06a365553194f901fd0b"
+    }
+  ],
+  "task_trail": [
+    {
+      "id": "harbor-inn",
+      "task_id": "01a14cd7-5dd7-70d0-9b7b-9e2fb92e838e",
+      "operation_id": "9d34bd3c-c6b1-4d5a-90cc-230587402edd",
+      "consumed_credits": 15
+    },
+    {
+      "id": "repair-workshop",
+      "task_id": "01a14cda-51fc-77be-9f0c-7443469230d6",
+      "operation_id": "de1592bc-7124-44e5-9fb4-bfd946b42908",
+      "consumed_credits": 15
+    },
+    {
+      "id": "canvas-market",
+      "task_id": "01a14cdc-b5e4-77e8-b66a-cc6b3408c8a5",
+      "operation_id": "c443d3a6-a5ea-402b-90be-7591c9c819e9",
+      "consumed_credits": 15
+    },
+    {
+      "id": "harbor-office",
+      "task_id": "01a14cdf-e3ff-7494-a0c6-a5ebe95638c1",
+      "operation_id": "3774e886-aee9-4940-97bf-473b951ae8c0",
+      "consumed_credits": 15
+    },
+    {
+      "id": "beacon-lighthouse",
+      "task_id": "01a14ce2-9cda-70c2-a099-278cdebc8027",
+      "operation_id": "ebbd5dc8-fbb6-44fa-a4ff-1b4b9fb8e4de",
+      "consumed_credits": 15
+    },
+    {
+      "id": "memory-observatory",
+      "task_id": "01a14ce4-be59-7222-87b0-f4447ff124f8",
+      "operation_id": "ee2f3588-8c14-4d45-aca5-c672247a1914",
+      "consumed_credits": 15
+    }
+  ],
+  "entrypoints": {
+    "gallery": "gallery.html",
+    "assets": "index.html",
+    "scenes": "scenes.html"
+  },
+  "verification": "verification.json",
+  "asset_manifest": "asset-manifest.json",
+  "limits": [
+    "실행 가능한 게임이 아닌 정적 월드 3D 아트 원형과 조립 배치 비교입니다.",
+    "96개 독립 자산과 7개 재사용 조립 장면을 별도 집계합니다. 조립 장면을 새 독립 자산으로 세지 않습니다.",
+    "엔진·플랫폼·미터/U·성능 예산·일정은 미확정입니다. 상대 단위 배치만 기록했습니다.",
+    "충돌·navmesh·LOD·건물 내부·상호작용·물리·저장·전투·최종 소켓은 미구현입니다.",
+    "손그림·셀 명암·윤곽선은 HTML 뷰어 런타임 기능이며 GLB만 가져오면 자동 재현되지 않습니다.",
+    "hero 원본의 작은 normal 오류는 별도 수정본과 로그로 구별합니다. 원본 bytes는 보존합니다.",
+    "여관·공방은 normal-only 복사본 위에 국소 지붕 안감을 더한 별도 등록본입니다. 방수 리메시나 완성 실내가 아닙니다.",
+    "선택 비행선은 종항 합성 GLB 내부 복사본에 포함됩니다. 원본 파일은 변경하지 않았습니다.",
+    "후반 4곳은 원정 정박 시안이며 새 도시·새 정사 시설·진행 잠금을 추가하지 않습니다.",
+    "PNG는 실제 GLB의 브라우저 렌더이며 읽기 전용 메타 검사 외에 이미지 후편집하지 않았습니다.",
+    "뷰어·파일 검증은 실제 게임 재미·밸런스·최종 엔진 성능 검증이 아닙니다."
+  ]
+}

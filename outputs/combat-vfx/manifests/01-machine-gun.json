@@ -1,0 +1,65 @@
+{
+  "id": "01-machine-gun",
+  "order": 1,
+  "name_ko": "기관총 공격",
+  "name_en": "Machine Gun Attack Sequence",
+  "category": "weapon-sequence",
+  "weapon_id": "01-machine-gun",
+  "model": "sequences/01-machine-gun.glb",
+  "preview": "sequence-previews/01-machine-gun.png",
+  "duration": 2,
+  "loop": true,
+  "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+  "status": "completed_composed_animation_study",
+  "triangles": 4707,
+  "mesh_count": 30,
+  "animation_count": 1,
+  "bytes": 3444188,
+  "component_effects": [
+    {
+      "id": "machine-gun-muzzle",
+      "start": 0,
+      "end": 0.2
+    },
+    {
+      "id": "machine-gun-projectile",
+      "start": 0.12,
+      "end": 0.85
+    },
+    {
+      "id": "machine-gun-hit",
+      "start": 0.84,
+      "end": 1.8
+    }
+  ],
+  "approximate_muzzle": [
+    0.0007595372312182436,
+    0.6299396781481901,
+    -0.008382503840366984
+  ],
+  "source_weapon_sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6",
+  "copied_weapon_zero_normals_repaired": 0,
+  "sha256": "ab8307c1ab29c94f9d4aba9c30a4b75b6fd67e98725ad6114f429175905bbc65",
+  "preview_image": {
+    "width": 2436,
+    "height": 1210,
+    "bounds": [
+      689,
+      170,
+      1908,
+      981
+    ]
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 40,
+    "sha256": "ab8307c1ab29c94f9d4aba9c30a4b75b6fd67e98725ad6114f429175905bbc65"
+  },
+  "browser_QA_passed": true,
+  "limits": [
+    "Composed choreography and estimated muzzle placement, not a combat game or finished weapon sockets.",
+    "Original weapon geometry/texture files remain unchanged. Four zero normals were repaired only in the chain-shot copy.",
+    "Weapon part separation, recoil rig, collisions and damage are not implemented."
+  ]
+}

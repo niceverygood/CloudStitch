@@ -1,0 +1,84 @@
+{
+  "id": "island-grass-medium",
+  "order": 26,
+  "name_ko": "넓은 초지 부유섬",
+  "name_en": "Medium Grass Island",
+  "category": "terrain",
+  "role": "작은 정박 판과 식생을 배치할 상대 지형",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 7,
+    "depth": 6,
+    "height": 5,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/island-grass-medium.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 624,
+  "mesh_count": 13,
+  "primitive_count": 13,
+  "node_count": 15,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 13,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 82044,
+  "sha256": "3cfef1ee6a6144646e292a418032e47d751ae95f2a06bab0474f774c406ce8c6",
+  "mesh_definition_count": 13,
+  "unique_geometry_triangles": 624,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 13,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -2.9560561180114746,
+        -2.3753185272216797,
+        -2.261873245239258
+      ],
+      "max": [
+        2.828798770904541,
+        0.18000000149011613,
+        2.4133200645446777
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

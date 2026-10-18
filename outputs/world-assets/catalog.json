@@ -1,0 +1,5754 @@
+{
+  "game_title": "Cloudstitch",
+  "type": "world-assets",
+  "independent_asset_count": 96,
+  "scene_assets_counted_separately": true,
+  "source_spec": "production-spec.json",
+  "items": [
+    {
+      "id": "harbor-inn",
+      "order": 1,
+      "name_ko": "항구 여관",
+      "name_en": "Harbor Inn",
+      "category": "hero-buildings",
+      "role": "귀환의 안도감과 생활 공간을 나타내는 외관 시안",
+      "build_method": "hero_meshy",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 5.2,
+        "depth": 4.5,
+        "height": 5.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "hero/harbor-inn/model-closed-roof.glb",
+      "preview": "previews/harbor-inn.png",
+      "manifest": "manifests/harbor-inn.json",
+      "reference": "hero/harbor-inn/reference.png",
+      "source_model": "hero/harbor-inn/model.glb",
+      "source_sha256": "1a038ddf794335b19ec5c31658781d01c3ba4dc564ba308f3c3fd60197f397bb",
+      "normal_repair": {
+        "log": "hero/harbor-inn/repair-log.json",
+        "original_sha256": "1a038ddf794335b19ec5c31658781d01c3ba4dc564ba308f3c3fd60197f397bb",
+        "repaired_sha256": "6552f60b59a1b847285c4b042098acbdd5f7a16cdff88deffb845ffca7ef7aef",
+        "normal_vectors_repaired": 14,
+        "zero_normal_vectors": 14,
+        "non_unit_normal_vectors": 0,
+        "official_errors_after": 0
+      },
+      "roof_repair_log": "hero/harbor-inn/roof-repair-log.json",
+      "roof_repair": {
+        "game_title": "Cloudstitch",
+        "id": "harbor-inn",
+        "tool": "tools/world-assets/close-hero-roof.mjs",
+        "original_source": {
+          "model": "hero/harbor-inn/model.glb",
+          "sha256": "1a038ddf794335b19ec5c31658781d01c3ba4dc564ba308f3c3fd60197f397bb",
+          "bytes": 3409600
+        },
+        "base_normal_copy": {
+          "model": "hero/harbor-inn/model-repaired.glb",
+          "sha256": "6552f60b59a1b847285c4b042098acbdd5f7a16cdff88deffb845ffca7ef7aef",
+          "bytes": 3409544
+        },
+        "repaired_source": {
+          "model": "hero/harbor-inn/model-closed-roof.glb",
+          "sha256": "8a37e533639a8da79e31e806d33887b3422af2d94f09f780fdc333f6b3a8f407",
+          "bytes": 3472740
+        },
+        "original_source_preserved": true,
+        "base_normal_copy_preserved": true,
+        "original_binary_prefix_preserved": true,
+        "added_geometry": {
+          "mesh_count": 9,
+          "triangles": 500,
+          "material_count": 1,
+          "materials": [
+            {
+              "type": "KHR_materials_unlit",
+              "vertex_colors": true,
+              "double_sided": true,
+              "colors": [
+                "#346b7d",
+                "#f0dfb5"
+              ]
+            }
+          ],
+          "parts": [
+            {
+              "name": "front_recessed_roof_liner",
+              "kind": "Thin recessed teal roof liner",
+              "grid": [
+                7,
+                5
+              ],
+              "thickness": 0.003,
+              "source_surface_sample_clearance": 0.008,
+              "source_surface_fitted_vertices": 45,
+              "vertices": 48,
+              "coordinates": [
+                [
+                  -0.35,
+                  0.20311731209075928,
+                  -0.005
+                ],
+                [
+                  -0.25,
+                  0.2162581632653061,
+                  -0.005
+                ],
+                [
+                  -0.15000000000000002,
+                  0.2191969387755102,
+                  -0.005
+                ],
+                [
+                  -0.04999999999999999,
+                  0.22066632653061224,
+                  -0.005
+                ],
+                [
+                  0.04999999999999999,
+                  0.22066632653061224,
+                  -0.005
+                ],
+                [
+                  0.15000000000000002,
+                  0.17769023847640852,
+                  -0.005
+                ],
+                [
+                  0.24999999999999997,
+                  0.1729560651625882,
+                  -0.005
+                ],
+                [
+                  0.35,
+                  0.21184999999999998,
+                  -0.005
+                ],
+                [
+                  -0.35,
+                  0.17697969933490892,
+                  0.046
+                ],
+                [
+                  -0.25,
+                  0.1704251577295786,
+                  0.046
+                ],
+                [
+                  -0.15000000000000002,
+                  0.13162082619265936,
+                  0.046
+                ],
+                [
+                  -0.04999999999999999,
+                  0.19159632653061226,
+                  0.046
+                ],
+                [
+                  0.04999999999999999,
+                  0.19159632653061226,
+                  0.046
+                ],
+                [
+                  0.15000000000000002,
+                  0.1610672788885676,
+                  0.046
+                ],
+                [
+                  0.24999999999999997,
+                  0.18718816326530613,
+                  0.046
+                ],
+                [
+                  0.35,
+                  0.18278,
+                  0.046
+                ],
+                [
+                  -0.35,
+                  0.15370999999999999,
+                  0.097
+                ],
+                [
+                  -0.25,
+                  0.15781255586212783,
+                  0.097
+                ],
+                [
+                  -0.15000000000000002,
+                  0.13207375240836228,
+                  0.097
+                ],
+                [
+                  -0.04999999999999999,
+                  0.16252632653061225,
+                  0.097
+                ],
+                [
+                  0.04999999999999999,
+                  0.11411162776578898,
+                  0.097
+                ],
+                [
+                  0.15000000000000002,
+                  0.15600578756949662,
+                  0.097
+                ],
+                [
+                  0.24999999999999997,
+                  0.15811816326530612,
+                  0.097
+                ],
+                [
+                  0.35,
+                  0.15370999999999999,
+                  0.097
+                ],
+                [
+                  -0.35,
+                  0.11744207311338495,
+                  0.148
+                ],
+                [
+                  -0.25,
+                  0.12278379378110421,
+                  0.148
+                ],
+                [
+                  -0.15000000000000002,
+                  0.12812724164170708,
+                  0.148
+                ],
+                [
+                  -0.04999999999999999,
+                  0.093722347087146,
+                  0.148
+                ],
+                [
+                  0.04999999999999999,
+                  0.11273682666786117,
+                  0.148
+                ],
+                [
+                  0.15000000000000002,
+                  0.1319869387755102,
+                  0.148
+                ],
+                [
+                  0.24999999999999997,
+                  0.12904816326530613,
+                  0.148
+                ],
+                [
+                  0.35,
+                  0.1125729495603105,
+                  0.148
+                ],
+                [
+                  -0.35,
+                  0.09090207704108183,
+                  0.199
+                ],
+                [
+                  -0.25,
+                  0.08812571826190929,
+                  0.199
+                ],
+                [
+                  -0.15000000000000002,
+                  0.08681419492827791,
+                  0.199
+                ],
+                [
+                  -0.04999999999999999,
+                  0.09417527330284892,
+                  0.199
+                ],
+                [
+                  0.04999999999999999,
+                  0.09208363857720042,
+                  0.199
+                ],
+                [
+                  0.15000000000000002,
+                  0.10291693877551021,
+                  0.199
+                ],
+                [
+                  0.24999999999999997,
+                  0.0893783766233836,
+                  0.199
+                ],
+                [
+                  0.35,
+                  0.08178231655917756,
+                  0.199
+                ],
+                [
+                  -0.35,
+                  0.06650000000000002,
+                  0.25
+                ],
+                [
+                  -0.25,
+                  0.07090816326530613,
+                  0.25
+                ],
+                [
+                  -0.15000000000000002,
+                  0.07384693877551021,
+                  0.25
+                ],
+                [
+                  -0.04999999999999999,
+                  0.06612793319696675,
+                  0.25
+                ],
+                [
+                  0.04999999999999999,
+                  0.05777851984698346,
+                  0.25
+                ],
+                [
+                  0.15000000000000002,
+                  0.07384693877551021,
+                  0.25
+                ],
+                [
+                  0.24999999999999997,
+                  0.0675173320205209,
+                  0.25
+                ],
+                [
+                  0.35,
+                  0.06650000000000002,
+                  0.25
+                ]
+              ],
+              "triangles": 188,
+              "color_hex": "#346b7d"
+            },
+            {
+              "name": "rear_recessed_roof_liner",
+              "kind": "Thin recessed teal roof liner",
+              "grid": [
+                7,
+                5
+              ],
+              "thickness": 0.003,
+              "source_surface_sample_clearance": 0.008,
+              "source_surface_fitted_vertices": 41,
+              "vertices": 48,
+              "coordinates": [
+                [
+                  -0.35,
+                  0.05204731525656454,
+                  -0.305
+                ],
+                [
+                  -0.25,
+                  0.060129307363290314,
+                  -0.305
+                ],
+                [
+                  -0.15000000000000002,
+                  0.06058916483652433,
+                  -0.305
+                ],
+                [
+                  -0.04999999999999999,
+                  0.06773274729019646,
+                  -0.305
+                ],
+                [
+                  0.04999999999999999,
+                  0.07446632653061226,
+                  -0.305
+                ],
+                [
+                  0.15000000000000002,
+                  0.07299693877551022,
+                  -0.305
+                ],
+                [
+                  0.24999999999999997,
+                  0.07005816326530614,
+                  -0.305
+                ],
+                [
+                  0.35,
+                  0.06565000000000003,
+                  -0.305
+                ],
+                [
+                  -0.35,
+                  0.08395859336826317,
+                  -0.245
+                ],
+                [
+                  -0.25,
+                  0.09825816326530613,
+                  -0.245
+                ],
+                [
+                  -0.15000000000000002,
+                  0.10119693877551021,
+                  -0.245
+                ],
+                [
+                  -0.04999999999999999,
+                  0.095224538217769,
+                  -0.245
+                ],
+                [
+                  0.04999999999999999,
+                  0.10019173983518709,
+                  -0.245
+                ],
+                [
+                  0.15000000000000002,
+                  0.08455261848907847,
+                  -0.245
+                ],
+                [
+                  0.24999999999999997,
+                  0.08526889447966562,
+                  -0.245
+                ],
+                [
+                  0.35,
+                  0.07628814511358745,
+                  -0.245
+                ],
+                [
+                  -0.35,
+                  0.10337267620552215,
+                  -0.185
+                ],
+                [
+                  -0.25,
+                  0.12645816326530612,
+                  -0.185
+                ],
+                [
+                  -0.15000000000000002,
+                  0.123019119366162,
+                  -0.185
+                ],
+                [
+                  -0.04999999999999999,
+                  0.09761031591094432,
+                  -0.185
+                ],
+                [
+                  0.04999999999999999,
+                  0.12171346913080128,
+                  -0.185
+                ],
+                [
+                  0.15000000000000002,
+                  0.11723500465892034,
+                  -0.185
+                ],
+                [
+                  0.24999999999999997,
+                  0.10195756049869875,
+                  -0.185
+                ],
+                [
+                  0.35,
+                  0.12205,
+                  -0.185
+                ],
+                [
+                  -0.35,
+                  0.15017487583228317,
+                  -0.125
+                ],
+                [
+                  -0.25,
+                  0.15362968196339222,
+                  -0.125
+                ],
+                [
+                  -0.15000000000000002,
+                  0.13010219123412592,
+                  -0.125
+                ],
+                [
+                  -0.04999999999999999,
+                  0.15906632653061226,
+                  -0.125
+                ],
+                [
+                  0.04999999999999999,
+                  0.1200960560744157,
+                  -0.125
+                ],
+                [
+                  0.15000000000000002,
+                  0.14419920929427266,
+                  -0.125
+                ],
+                [
+                  0.24999999999999997,
+                  0.14341413854327162,
+                  -0.125
+                ],
+                [
+                  0.35,
+                  0.14134841258717457,
+                  -0.125
+                ],
+                [
+                  -0.35,
+                  0.16564637772352558,
+                  -0.06499999999999999
+                ],
+                [
+                  -0.25,
+                  0.18285816326530613,
+                  -0.06499999999999999
+                ],
+                [
+                  -0.15000000000000002,
+                  0.1857969387755102,
+                  -0.06499999999999999
+                ],
+                [
+                  -0.04999999999999999,
+                  0.18726632653061226,
+                  -0.06499999999999999
+                ],
+                [
+                  0.04999999999999999,
+                  0.18726632653061226,
+                  -0.06499999999999999
+                ],
+                [
+                  0.15000000000000002,
+                  0.1857969387755102,
+                  -0.06499999999999999
+                ],
+                [
+                  0.24999999999999997,
+                  0.16668494945774398,
+                  -0.06499999999999999
+                ],
+                [
+                  0.35,
+                  0.16887902304956193,
+                  -0.06499999999999999
+                ],
+                [
+                  -0.35,
+                  0.20311731209075928,
+                  -0.005
+                ],
+                [
+                  -0.25,
+                  0.21105816326530613,
+                  -0.005
+                ],
+                [
+                  -0.15000000000000002,
+                  0.2139969387755102,
+                  -0.005
+                ],
+                [
+                  -0.04999999999999999,
+                  0.21546632653061226,
+                  -0.005
+                ],
+                [
+                  0.04999999999999999,
+                  0.21546632653061226,
+                  -0.005
+                ],
+                [
+                  0.15000000000000002,
+                  0.17769023847640852,
+                  -0.005
+                ],
+                [
+                  0.24999999999999997,
+                  0.1729560651625882,
+                  -0.005
+                ],
+                [
+                  0.35,
+                  0.20665,
+                  -0.005
+                ]
+              ],
+              "triangles": 188,
+              "color_hex": "#346b7d"
+            },
+            {
+              "name": "narrow_recessed_ridge_infill",
+              "kind": "Local infill below existing ridge",
+              "coordinates": [
+                [
+                  -0.345,
+                  0.211,
+                  -0.018
+                ],
+                [
+                  -0.24642857142857144,
+                  0.21246938775510205,
+                  -0.018
+                ],
+                [
+                  -0.14785714285714285,
+                  0.21344897959183673,
+                  -0.018
+                ],
+                [
+                  -0.049285714285714294,
+                  0.21393877551020407,
+                  -0.018
+                ],
+                [
+                  0.049285714285714266,
+                  0.21393877551020407,
+                  -0.018
+                ],
+                [
+                  0.14785714285714285,
+                  0.21344897959183673,
+                  -0.018
+                ],
+                [
+                  0.24642857142857136,
+                  0.21246938775510205,
+                  -0.018
+                ],
+                [
+                  0.345,
+                  0.211,
+                  -0.018
+                ],
+                [
+                  -0.345,
+                  0.211,
+                  0.008
+                ],
+                [
+                  -0.24642857142857144,
+                  0.21246938775510205,
+                  0.008
+                ],
+                [
+                  -0.14785714285714285,
+                  0.21344897959183673,
+                  0.008
+                ],
+                [
+                  -0.049285714285714294,
+                  0.21393877551020407,
+                  0.008
+                ],
+                [
+                  0.049285714285714266,
+                  0.21393877551020407,
+                  0.008
+                ],
+                [
+                  0.14785714285714285,
+                  0.21344897959183673,
+                  0.008
+                ],
+                [
+                  0.24642857142857136,
+                  0.21246938775510205,
+                  0.008
+                ],
+                [
+                  0.345,
+                  0.211,
+                  0.008
+                ]
+              ],
+              "thickness": 0.003,
+              "triangles": 60,
+              "color_hex": "#346b7d"
+            },
+            {
+              "name": "left_dormer_inset_backwall",
+              "kind": "Inset teal dormer rear backing; front window preserved",
+              "coordinates": [
+                [
+                  -0.28600000000000003,
+                  0.17,
+                  0.045
+                ],
+                [
+                  -0.17800000000000002,
+                  0.17,
+                  0.045
+                ],
+                [
+                  -0.232,
+                  0.24,
+                  0.045
+                ]
+              ],
+              "thickness": 0.003,
+              "triangles": 8,
+              "color_hex": "#346b7d"
+            },
+            {
+              "name": "left_dormer_inset_cheek_-1",
+              "kind": "Local cream dormer side backing",
+              "coordinates": [
+                [
+                  -0.28600000000000003,
+                  0.105,
+                  0.181
+                ],
+                [
+                  -0.28600000000000003,
+                  0.165,
+                  0.181
+                ],
+                [
+                  -0.28600000000000003,
+                  0.205,
+                  0.045
+                ],
+                [
+                  -0.28600000000000003,
+                  0.17,
+                  0.045
+                ]
+              ],
+              "thickness": 0.0025,
+              "triangles": 12,
+              "color_hex": "#f0dfb5"
+            },
+            {
+              "name": "left_dormer_inset_cheek_1",
+              "kind": "Local cream dormer side backing",
+              "coordinates": [
+                [
+                  -0.17800000000000002,
+                  0.105,
+                  0.181
+                ],
+                [
+                  -0.17800000000000002,
+                  0.165,
+                  0.181
+                ],
+                [
+                  -0.17800000000000002,
+                  0.205,
+                  0.045
+                ],
+                [
+                  -0.17800000000000002,
+                  0.17,
+                  0.045
+                ]
+              ],
+              "thickness": 0.0025,
+              "triangles": 12,
+              "color_hex": "#f0dfb5"
+            },
+            {
+              "name": "right_dormer_inset_backwall",
+              "kind": "Inset teal dormer rear backing; front window preserved",
+              "coordinates": [
+                [
+                  0.15699999999999997,
+                  0.17,
+                  0.045
+                ],
+                [
+                  0.253,
+                  0.17,
+                  0.045
+                ],
+                [
+                  0.205,
+                  0.23,
+                  0.045
+                ]
+              ],
+              "thickness": 0.003,
+              "triangles": 8,
+              "color_hex": "#346b7d"
+            },
+            {
+              "name": "right_dormer_inset_cheek_-1",
+              "kind": "Local cream dormer side backing",
+              "coordinates": [
+                [
+                  0.15699999999999997,
+                  0.097,
+                  0.208
+                ],
+                [
+                  0.15699999999999997,
+                  0.16,
+                  0.208
+                ],
+                [
+                  0.15699999999999997,
+                  0.195,
+                  0.045
+                ],
+                [
+                  0.15699999999999997,
+                  0.17,
+                  0.045
+                ]
+              ],
+              "thickness": 0.0025,
+              "triangles": 12,
+              "color_hex": "#f0dfb5"
+            },
+            {
+              "name": "right_dormer_inset_cheek_1",
+              "kind": "Local cream dormer side backing",
+              "coordinates": [
+                [
+                  0.253,
+                  0.097,
+                  0.208
+                ],
+                [
+                  0.253,
+                  0.16,
+                  0.208
+                ],
+                [
+                  0.253,
+                  0.195,
+                  0.045
+                ],
+                [
+                  0.253,
+                  0.17,
+                  0.045
+                ]
+              ],
+              "thickness": 0.0025,
+              "triangles": 12,
+              "color_hex": "#f0dfb5"
+            }
+          ],
+          "bounds": {
+            "min": [
+              -0.3499999940395355,
+              0.0490473136305809,
+              -0.3050000071525574
+            ],
+            "max": [
+              0.3499999940395355,
+              0.23999999463558197,
+              0.25
+            ]
+          },
+          "units": "Original mesh-local design coordinates, not approved metres."
+        },
+        "changes": [
+          "Added only thin recessed teal roof backing and a narrow ridge strip.",
+          "Added local teal rear and cream lower-side backing inside the two dormers, leaving original front windows untouched.",
+          "Original textured tile surfaces, positions, UVs, triangles and materials retained. No wholesale cap of boundary loops."
+        ],
+        "before": {
+          "bounds": {
+            "min": [
+              -0.4431149959564209,
+              -0.36743199825286865,
+              -0.4821780025959015
+            ],
+            "max": [
+              0.4431149959564209,
+              0.3688960075378418,
+              0.4743649959564209
+            ]
+          },
+          "normal_copy_validator": {
+            "errors": 0,
+            "warnings": 0,
+            "infos": 1,
+            "hints": 0,
+            "truncated": false,
+            "messages": [
+              {
+                "code": "NODE_MATRIX_DEFAULT",
+                "message": "Do not specify default transform matrix.",
+                "severity": 2,
+                "pointer": "/nodes/0/matrix"
+              }
+            ]
+          }
+        },
+        "after": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 1,
+          "messages": [
+            {
+              "code": "NODE_MATRIX_DEFAULT",
+              "message": "Do not specify default transform matrix.",
+              "severity": 2,
+              "pointer": "/nodes/0/matrix"
+            }
+          ],
+          "triangles": 7880,
+          "mesh_count": 10,
+          "material_count": 2,
+          "bounds": {
+            "min": [
+              -0.4431149959564209,
+              -0.36743199825286865,
+              -0.4821780025959015
+            ],
+            "max": [
+              0.4431149959564209,
+              0.3688960075378418,
+              0.4743649959564209
+            ]
+          },
+          "geometry_only_GLTFLoader_roundtrip": true
+        },
+        "visual_comparison": {
+          "status": "completed four-direction actual GLB render comparison",
+          "directory": "hero/harbor-inn/roof-review",
+          "page": "hero/harbor-inn/roof-review/index.html",
+          "base_normal_copy_sha256": "6552f60b59a1b847285c4b042098acbdd5f7a16cdff88deffb845ffca7ef7aef",
+          "repaired_source_sha256": "8a37e533639a8da79e31e806d33887b3422af2d94f09f780fdc333f6b3a8f407",
+          "textures_decoded": true,
+          "browser_errors": [],
+          "external_requests": [],
+          "original_tiles_visually_preserved": true,
+          "views": [
+            {
+              "direction": "front-right",
+              "before": "hero/harbor-inn/roof-review/normal-front-right.png",
+              "after": "hero/harbor-inn/roof-review/closed-front-right.png",
+              "changed_pixels": 935,
+              "changed_fraction_of_original_model": 0.011539648256710892,
+              "newly_visible_pixels": 20
+            },
+            {
+              "direction": "front-left",
+              "before": "hero/harbor-inn/roof-review/normal-front-left.png",
+              "after": "hero/harbor-inn/roof-review/closed-front-left.png",
+              "changed_pixels": 398,
+              "changed_fraction_of_original_model": 0.004531842455848696,
+              "newly_visible_pixels": 4
+            },
+            {
+              "direction": "rear-left",
+              "before": "hero/harbor-inn/roof-review/normal-rear-left.png",
+              "after": "hero/harbor-inn/roof-review/closed-rear-left.png",
+              "changed_pixels": 1329,
+              "changed_fraction_of_original_model": 0.016103040069791956,
+              "newly_visible_pixels": 0
+            },
+            {
+              "direction": "rear-right",
+              "before": "hero/harbor-inn/roof-review/normal-rear-right.png",
+              "after": "hero/harbor-inn/roof-review/closed-rear-right.png",
+              "changed_pixels": 1295,
+              "changed_fraction_of_original_model": 0.015727471459800826,
+              "newly_visible_pixels": 0
+            }
+          ]
+        },
+        "limits": [
+          "Visual backing, not watertight remeshing; intended door, awning and window openings are not globally filled.",
+          "New backing uses a simple hand-painted teal/cream material rather than regenerating or modifying the 2K source texture.",
+          "Colliders, interiors, LOD, navigation, engine integration and gameplay remain unimplemented."
+        ]
+      },
+      "triangles": 7880,
+      "mesh_count": 10,
+      "material_count": 2,
+      "texture_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "vertex_colors": false,
+      "animation_count": 0,
+      "bytes": 3472740,
+      "sha256": "8a37e533639a8da79e31e806d33887b3422af2d94f09f780fdc333f6b3a8f407",
+      "bounds": {
+        "min": [
+          -0.4431149959564209,
+          -0.36743199825286865,
+          -0.4821780025959015
+        ],
+        "max": [
+          0.4431149959564209,
+          0.3688960075378418,
+          0.4743649959564209
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "repair-workshop",
+      "order": 2,
+      "name_ko": "수리 공방",
+      "name_en": "Repair Workshop",
+      "category": "hero-buildings",
+      "role": "종항 정비소의 수리·제작 기능을 알아보는 외관",
+      "build_method": "hero_meshy",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 5.8,
+        "depth": 4.8,
+        "height": 4.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "hero/repair-workshop/model-closed-roof.glb",
+      "preview": "previews/repair-workshop.png",
+      "manifest": "manifests/repair-workshop.json",
+      "reference": "hero/repair-workshop/reference.png",
+      "source_model": "hero/repair-workshop/model.glb",
+      "source_sha256": "d1a9324d7f976dca68032c7b08fb34f0c747690e5621bebc82976db695a97c68",
+      "normal_repair": {
+        "log": "hero/repair-workshop/repair-log.json",
+        "original_sha256": "d1a9324d7f976dca68032c7b08fb34f0c747690e5621bebc82976db695a97c68",
+        "repaired_sha256": "46246b50518dde393b08506a965e68de14abd521408fd71d0ea97d33a4acb6d2",
+        "normal_vectors_repaired": 14,
+        "zero_normal_vectors": 14,
+        "non_unit_normal_vectors": 0,
+        "official_errors_after": 0
+      },
+      "roof_repair_log": "hero/repair-workshop/roof-repair-log.json",
+      "roof_repair": {
+        "game_title": "Cloudstitch",
+        "id": "repair-workshop",
+        "tool": "tools/world-assets/close-hero-roof.mjs",
+        "original_source": {
+          "model": "hero/repair-workshop/model.glb",
+          "sha256": "d1a9324d7f976dca68032c7b08fb34f0c747690e5621bebc82976db695a97c68",
+          "bytes": 3788284
+        },
+        "base_normal_copy": {
+          "model": "hero/repair-workshop/model-repaired.glb",
+          "sha256": "46246b50518dde393b08506a965e68de14abd521408fd71d0ea97d33a4acb6d2",
+          "bytes": 3788224
+        },
+        "repaired_source": {
+          "model": "hero/repair-workshop/model-closed-roof.glb",
+          "sha256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+          "bytes": 3838916
+        },
+        "original_source_preserved": true,
+        "base_normal_copy_preserved": true,
+        "original_binary_prefix_preserved": true,
+        "added_geometry": {
+          "mesh_count": 3,
+          "triangles": 436,
+          "material_count": 1,
+          "materials": [
+            {
+              "type": "KHR_materials_unlit",
+              "vertex_colors": true,
+              "double_sided": true,
+              "colors": [
+                "#346b7d",
+                "#f0dfb5"
+              ]
+            }
+          ],
+          "parts": [
+            {
+              "name": "left_recessed_roof_liner",
+              "kind": "Thin recessed teal roof liner",
+              "grid": [
+                7,
+                5
+              ],
+              "thickness": 0.003,
+              "source_surface_sample_clearance": 0.008,
+              "source_surface_fitted_vertices": 48,
+              "vertices": 48,
+              "coordinates": [
+                [
+                  -0.445,
+                  0.023639999999999998,
+                  -0.3
+                ],
+                [
+                  -0.4011428571428572,
+                  0.0365052269891934,
+                  -0.3
+                ],
+                [
+                  -0.3572857142857143,
+                  0.0530650718170076,
+                  -0.3
+                ],
+                [
+                  -0.31342857142857145,
+                  0.08567026661450683,
+                  -0.3
+                ],
+                [
+                  -0.2695714285714286,
+                  0.0816288778257705,
+                  -0.3
+                ],
+                [
+                  -0.22571428571428573,
+                  0.11497329926346361,
+                  -0.3
+                ],
+                [
+                  -0.18185714285714288,
+                  0.14650854814354414,
+                  -0.3
+                ],
+                [
+                  -0.138,
+                  0.16607886076738632,
+                  -0.3
+                ],
+                [
+                  -0.445,
+                  0.02684,
+                  -0.182
+                ],
+                [
+                  -0.4011428571428572,
+                  0.03764064459889716,
+                  -0.182
+                ],
+                [
+                  -0.3572857142857143,
+                  0.05214579863041952,
+                  -0.182
+                ],
+                [
+                  -0.31342857142857145,
+                  0.08708087247926144,
+                  -0.182
+                ],
+                [
+                  -0.2695714285714286,
+                  0.11104571428571429,
+                  -0.182
+                ],
+                [
+                  -0.22571428571428573,
+                  0.11471265864120128,
+                  -0.182
+                ],
+                [
+                  -0.18185714285714288,
+                  0.14662794746954427,
+                  -0.182
+                ],
+                [
+                  -0.138,
+                  0.1645991462569042,
+                  -0.182
+                ],
+                [
+                  -0.445,
+                  0.0029865958365695236,
+                  -0.064
+                ],
+                [
+                  -0.4011428571428572,
+                  0.006578291599962378,
+                  -0.064
+                ],
+                [
+                  -0.3572857142857143,
+                  0.021649279040926846,
+                  -0.064
+                ],
+                [
+                  -0.31342857142857145,
+                  0.08563403111207502,
+                  -0.064
+                ],
+                [
+                  -0.2695714285714286,
+                  0.11264571428571428,
+                  -0.064
+                ],
+                [
+                  -0.22571428571428573,
+                  0.11824839510425855,
+                  -0.064
+                ],
+                [
+                  -0.18185714285714288,
+                  0.14777896868560209,
+                  -0.064
+                ],
+                [
+                  -0.138,
+                  0.16311943174642207,
+                  -0.064
+                ],
+                [
+                  -0.445,
+                  0.004327828893150039,
+                  0.05399999999999999
+                ],
+                [
+                  -0.4011428571428572,
+                  0.012593956136019886,
+                  0.05399999999999999
+                ],
+                [
+                  -0.3572857142857143,
+                  0.03314289788343489,
+                  0.05399999999999999
+                ],
+                [
+                  -0.31342857142857145,
+                  0.08430720798473956,
+                  0.05399999999999999
+                ],
+                [
+                  -0.2695714285714286,
+                  0.11444571428571428,
+                  0.05399999999999999
+                ],
+                [
+                  -0.22571428571428573,
+                  0.12178413156731582,
+                  0.05399999999999999
+                ],
+                [
+                  -0.18185714285714288,
+                  0.14892998990165995,
+                  0.05399999999999999
+                ],
+                [
+                  -0.138,
+                  0.16163971723594,
+                  0.05399999999999999
+                ],
+                [
+                  -0.445,
+                  0.006673534619998152,
+                  0.172
+                ],
+                [
+                  -0.4011428571428572,
+                  0.01860962067207745,
+                  0.172
+                ],
+                [
+                  -0.3572857142857143,
+                  0.03893834798860669,
+                  0.172
+                ],
+                [
+                  -0.31342857142857145,
+                  0.08298038485740411,
+                  0.172
+                ],
+                [
+                  -0.2695714285714286,
+                  0.11677904761904762,
+                  0.172
+                ],
+                [
+                  -0.22571428571428573,
+                  0.12520077762335546,
+                  0.172
+                ],
+                [
+                  -0.18185714285714288,
+                  0.1504582303214715,
+                  0.172
+                ],
+                [
+                  -0.138,
+                  0.16016000272545788,
+                  0.172
+                ],
+                [
+                  -0.445,
+                  0.027874730371626917,
+                  0.29
+                ],
+                [
+                  -0.4011428571428572,
+                  0.037851173164029146,
+                  0.29
+                ],
+                [
+                  -0.3572857142857143,
+                  0.06236331618768815,
+                  0.29
+                ],
+                [
+                  -0.31342857142857145,
+                  0.09646095238095237,
+                  0.29
+                ],
+                [
+                  -0.2695714285714286,
+                  0.08862819330382632,
+                  0.29
+                ],
+                [
+                  -0.22571428571428573,
+                  0.12635179883941328,
+                  0.29
+                ],
+                [
+                  -0.18185714285714288,
+                  0.15175043848162706,
+                  0.29
+                ],
+                [
+                  -0.138,
+                  0.16082353121138837,
+                  0.29
+                ]
+              ],
+              "triangles": 188,
+              "color_hex": "#346b7d"
+            },
+            {
+              "name": "right_recessed_roof_liner",
+              "kind": "Thin recessed teal roof liner",
+              "grid": [
+                7,
+                5
+              ],
+              "thickness": 0.003,
+              "source_surface_sample_clearance": 0.008,
+              "source_surface_fitted_vertices": 48,
+              "vertices": 48,
+              "coordinates": [
+                [
+                  -0.138,
+                  0.16607886076738632,
+                  -0.3
+                ],
+                [
+                  -0.10185714285714287,
+                  0.14673754330687733,
+                  -0.3
+                ],
+                [
+                  -0.06571428571428573,
+                  0.12401428571428569,
+                  -0.3
+                ],
+                [
+                  -0.029571428571428575,
+                  0.10052142857142855,
+                  -0.3
+                ],
+                [
+                  0.006571428571428561,
+                  0.06582422800715537,
+                  -0.3
+                ],
+                [
+                  0.04271428571428571,
+                  0.0316584345203172,
+                  -0.3
+                ],
+                [
+                  0.07885714285714285,
+                  0.015578207534723061,
+                  -0.3
+                ],
+                [
+                  0.115,
+                  0.006549999999999977,
+                  -0.3
+                ],
+                [
+                  -0.138,
+                  0.1645991462569042,
+                  -0.182
+                ],
+                [
+                  -0.10185714285714287,
+                  0.14066712230619782,
+                  -0.182
+                ],
+                [
+                  -0.06571428571428573,
+                  0.11691209693689225,
+                  -0.182
+                ],
+                [
+                  -0.029571428571428575,
+                  0.09315707156758662,
+                  -0.182
+                ],
+                [
+                  0.006571428571428561,
+                  0.07392492455091598,
+                  -0.182
+                ],
+                [
+                  0.04271428571428571,
+                  0.0494670429766419,
+                  -0.182
+                ],
+                [
+                  0.07885714285714285,
+                  0.02664963834088164,
+                  -0.182
+                ],
+                [
+                  0.115,
+                  0.0012388528146720715,
+                  -0.182
+                ],
+                [
+                  -0.138,
+                  0.16311943174642207,
+                  -0.064
+                ],
+                [
+                  -0.10185714285714287,
+                  0.1515816002066918,
+                  -0.064
+                ],
+                [
+                  -0.06571428571428573,
+                  0.1288142857142857,
+                  -0.064
+                ],
+                [
+                  -0.029571428571428575,
+                  0.10532142857142855,
+                  -0.064
+                ],
+                [
+                  0.006571428571428561,
+                  0.07736393139932995,
+                  -0.064
+                ],
+                [
+                  0.04271428571428571,
+                  0.058335714285714275,
+                  -0.064
+                ],
+                [
+                  0.07885714285714285,
+                  0.030361356994273232,
+                  -0.064
+                ],
+                [
+                  0.115,
+                  0.005597188861905807,
+                  -0.064
+                ],
+                [
+                  -0.138,
+                  0.16163971723594,
+                  0.05399999999999999
+                ],
+                [
+                  -0.10185714285714287,
+                  0.1489150653853178,
+                  0.05399999999999999
+                ],
+                [
+                  -0.06571428571428573,
+                  0.13061428571428568,
+                  0.05399999999999999
+                ],
+                [
+                  -0.029571428571428575,
+                  0.10712142857142855,
+                  0.05399999999999999
+                ],
+                [
+                  0.006571428571428561,
+                  0.08120668225453037,
+                  0.05399999999999999
+                ],
+                [
+                  0.04271428571428571,
+                  0.06013571428571428,
+                  0.05399999999999999
+                ],
+                [
+                  0.07885714285714285,
+                  0.03407307564766488,
+                  0.05399999999999999
+                ],
+                [
+                  0.115,
+                  0.005248242117468278,
+                  0.05399999999999999
+                ],
+                [
+                  -0.138,
+                  0.16016000272545788,
+                  0.172
+                ],
+                [
+                  -0.10185714285714287,
+                  0.1554190402959369,
+                  0.172
+                ],
+                [
+                  -0.06571428571428573,
+                  0.13294761904761904,
+                  0.172
+                ],
+                [
+                  -0.029571428571428575,
+                  0.10945476190476189,
+                  0.172
+                ],
+                [
+                  0.006571428571428561,
+                  0.08504943310973084,
+                  0.172
+                ],
+                [
+                  0.04271428571428571,
+                  0.043650080053220915,
+                  0.172
+                ],
+                [
+                  0.07885714285714285,
+                  0.037784794301056475,
+                  0.172
+                ],
+                [
+                  0.115,
+                  0.004899295373030695,
+                  0.172
+                ],
+                [
+                  -0.138,
+                  0.16082353121138837,
+                  0.29
+                ],
+                [
+                  -0.10185714285714287,
+                  0.15477087434763004,
+                  0.29
+                ],
+                [
+                  -0.06571428571428573,
+                  0.1328321027207901,
+                  0.29
+                ],
+                [
+                  -0.029571428571428575,
+                  0.11018809523809522,
+                  0.29
+                ],
+                [
+                  0.006571428571428561,
+                  0.08669523809523808,
+                  0.29
+                ],
+                [
+                  0.04271428571428571,
+                  0.04664307799739315,
+                  0.29
+                ],
+                [
+                  0.07885714285714285,
+                  0.009923126710178871,
+                  0.29
+                ],
+                [
+                  0.115,
+                  0.016216666666666643,
+                  0.29
+                ]
+              ],
+              "triangles": 188,
+              "color_hex": "#346b7d"
+            },
+            {
+              "name": "narrow_recessed_ridge_infill",
+              "kind": "Local infill below existing ridge",
+              "coordinates": [
+                [
+                  -0.183,
+                  0.16999999999999998,
+                  -0.3
+                ],
+                [
+                  -0.093,
+                  0.16999999999999998,
+                  -0.3
+                ],
+                [
+                  -0.183,
+                  0.17146938775510204,
+                  -0.21571428571428575
+                ],
+                [
+                  -0.093,
+                  0.17146938775510204,
+                  -0.21571428571428575
+                ],
+                [
+                  -0.183,
+                  0.17244897959183672,
+                  -0.13142857142857142
+                ],
+                [
+                  -0.093,
+                  0.17244897959183672,
+                  -0.13142857142857142
+                ],
+                [
+                  -0.183,
+                  0.17293877551020406,
+                  -0.047142857142857125
+                ],
+                [
+                  -0.093,
+                  0.17293877551020406,
+                  -0.047142857142857125
+                ],
+                [
+                  -0.183,
+                  0.1741768707482993,
+                  0.037142857142857116
+                ],
+                [
+                  -0.093,
+                  0.1741768707482993,
+                  0.037142857142857116
+                ],
+                [
+                  -0.183,
+                  0.17649659863945577,
+                  0.12142857142857143
+                ],
+                [
+                  -0.093,
+                  0.17649659863945577,
+                  0.12142857142857143
+                ],
+                [
+                  -0.183,
+                  0.1783265306122449,
+                  0.20571428571428568
+                ],
+                [
+                  -0.093,
+                  0.1783265306122449,
+                  0.20571428571428568
+                ],
+                [
+                  -0.183,
+                  0.17966666666666664,
+                  0.29
+                ],
+                [
+                  -0.093,
+                  0.17966666666666664,
+                  0.29
+                ]
+              ],
+              "thickness": 0.003,
+              "triangles": 60,
+              "color_hex": "#346b7d"
+            }
+          ],
+          "bounds": {
+            "min": [
+              -0.4449999928474426,
+              -0.0017611471703276038,
+              -0.30000001192092896
+            ],
+            "max": [
+              0.11500000208616257,
+              0.179666668176651,
+              0.28999999165534973
+            ]
+          },
+          "units": "Original mesh-local design coordinates, not approved metres."
+        },
+        "changes": [
+          "Added only thin recessed teal roof backing and a narrow ridge strip.",
+          "Original textured tile surfaces, positions, UVs, triangles and materials retained. No wholesale cap of boundary loops."
+        ],
+        "before": {
+          "bounds": {
+            "min": [
+              -0.4748539924621582,
+              -0.32348600029945374,
+              -0.3527829945087433
+            ],
+            "max": [
+              0.47290000319480896,
+              0.32348600029945374,
+              0.35082998871803284
+            ]
+          },
+          "normal_copy_validator": {
+            "errors": 0,
+            "warnings": 0,
+            "infos": 1,
+            "hints": 0,
+            "truncated": false,
+            "messages": [
+              {
+                "code": "NODE_MATRIX_DEFAULT",
+                "message": "Do not specify default transform matrix.",
+                "severity": 2,
+                "pointer": "/nodes/0/matrix"
+              }
+            ]
+          }
+        },
+        "after": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 1,
+          "messages": [
+            {
+              "code": "NODE_MATRIX_DEFAULT",
+              "message": "Do not specify default transform matrix.",
+              "severity": 2,
+              "pointer": "/nodes/0/matrix"
+            }
+          ],
+          "triangles": 8052,
+          "mesh_count": 4,
+          "material_count": 2,
+          "bounds": {
+            "min": [
+              -0.4748539924621582,
+              -0.32348600029945374,
+              -0.3527829945087433
+            ],
+            "max": [
+              0.47290000319480896,
+              0.32348600029945374,
+              0.35082998871803284
+            ]
+          },
+          "geometry_only_GLTFLoader_roundtrip": true
+        },
+        "visual_comparison": {
+          "status": "completed four-direction actual GLB render comparison",
+          "directory": "hero/repair-workshop/roof-review",
+          "page": "hero/repair-workshop/roof-review/index.html",
+          "base_normal_copy_sha256": "46246b50518dde393b08506a965e68de14abd521408fd71d0ea97d33a4acb6d2",
+          "repaired_source_sha256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+          "textures_decoded": true,
+          "browser_errors": [],
+          "external_requests": [],
+          "original_tiles_visually_preserved": true,
+          "views": [
+            {
+              "direction": "front-right",
+              "before": "hero/repair-workshop/roof-review/normal-front-right.png",
+              "after": "hero/repair-workshop/roof-review/closed-front-right.png",
+              "changed_pixels": 77,
+              "changed_fraction_of_original_model": 0.0007800628102522541,
+              "newly_visible_pixels": 3
+            },
+            {
+              "direction": "front-left",
+              "before": "hero/repair-workshop/roof-review/normal-front-left.png",
+              "after": "hero/repair-workshop/roof-review/closed-front-left.png",
+              "changed_pixels": 2102,
+              "changed_fraction_of_original_model": 0.023143407652078174,
+              "newly_visible_pixels": 0
+            },
+            {
+              "direction": "rear-left",
+              "before": "hero/repair-workshop/roof-review/normal-rear-left.png",
+              "after": "hero/repair-workshop/roof-review/closed-rear-left.png",
+              "changed_pixels": 2018,
+              "changed_fraction_of_original_model": 0.022983531126853602,
+              "newly_visible_pixels": 0
+            },
+            {
+              "direction": "rear-right",
+              "before": "hero/repair-workshop/roof-review/normal-rear-right.png",
+              "after": "hero/repair-workshop/roof-review/closed-rear-right.png",
+              "changed_pixels": 164,
+              "changed_fraction_of_original_model": 0.0018638269823050085,
+              "newly_visible_pixels": 0
+            }
+          ]
+        },
+        "limits": [
+          "Visual backing, not watertight remeshing; intended door, awning and window openings are not globally filled.",
+          "New backing uses a simple hand-painted teal/cream material rather than regenerating or modifying the 2K source texture.",
+          "Colliders, interiors, LOD, navigation, engine integration and gameplay remain unimplemented."
+        ]
+      },
+      "triangles": 8052,
+      "mesh_count": 4,
+      "material_count": 2,
+      "texture_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "vertex_colors": false,
+      "animation_count": 0,
+      "bytes": 3838916,
+      "sha256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+      "bounds": {
+        "min": [
+          -0.4748539924621582,
+          -0.32348600029945374,
+          -0.3527829945087433
+        ],
+        "max": [
+          0.47290000319480896,
+          0.32348600029945374,
+          0.35082998871803284
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "canvas-market",
+      "order": 3,
+      "name_ko": "천 시장",
+      "name_en": "Canvas Market",
+      "category": "hero-buildings",
+      "role": "자원과 일반 부품 거래 공간의 손수 수선한 분위기",
+      "build_method": "hero_meshy",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 6.2,
+        "depth": 4.8,
+        "height": 4.6,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "hero/canvas-market/model-repaired.glb",
+      "preview": "previews/canvas-market.png",
+      "manifest": "manifests/canvas-market.json",
+      "reference": "hero/canvas-market/reference.png",
+      "source_model": "hero/canvas-market/model.glb",
+      "source_sha256": "83bc1fa94e56f8d136f38ba5aa530d87d14f1ca01c717d63075b8993b2e2d3dd",
+      "normal_repair": {
+        "log": "hero/canvas-market/repair-log.json",
+        "original_sha256": "83bc1fa94e56f8d136f38ba5aa530d87d14f1ca01c717d63075b8993b2e2d3dd",
+        "repaired_sha256": "1b69ca4f8658ade79ae04d3e3c1014f52059e4c99fa99ec29a6c463f2bc7161a",
+        "normal_vectors_repaired": 11,
+        "zero_normal_vectors": 11,
+        "non_unit_normal_vectors": 0,
+        "official_errors_after": 0
+      },
+      "triangles": 7680,
+      "mesh_count": 1,
+      "material_count": 1,
+      "texture_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "vertex_colors": false,
+      "animation_count": 0,
+      "bytes": 3838872,
+      "sha256": "1b69ca4f8658ade79ae04d3e3c1014f52059e4c99fa99ec29a6c463f2bc7161a",
+      "bounds": {
+        "min": [
+          -0.4748539924621582,
+          -0.2282709926366806,
+          -0.35522499680519104
+        ],
+        "max": [
+          0.4748539924621582,
+          0.22729499638080597,
+          0.35522499680519104
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "harbor-office",
+      "order": 4,
+      "name_ko": "항만 사무소",
+      "name_en": "Harbor Office",
+      "category": "hero-buildings",
+      "role": "의뢰·귀항 명부·출항 안내의 기능 외관",
+      "build_method": "hero_meshy",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 4.5,
+        "depth": 4,
+        "height": 5.2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "hero/harbor-office/model-repaired.glb",
+      "preview": "previews/harbor-office.png",
+      "manifest": "manifests/harbor-office.json",
+      "reference": "hero/harbor-office/reference.png",
+      "source_model": "hero/harbor-office/model.glb",
+      "source_sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+      "normal_repair": {
+        "log": "hero/harbor-office/repair-log.json",
+        "original_sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+        "repaired_sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+        "normal_vectors_repaired": 0,
+        "zero_normal_vectors": 0,
+        "non_unit_normal_vectors": 0,
+        "official_errors_after": 0
+      },
+      "triangles": 7661,
+      "mesh_count": 1,
+      "material_count": 1,
+      "texture_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "vertex_colors": false,
+      "animation_count": 0,
+      "bytes": 4007236,
+      "sha256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+      "bounds": {
+        "min": [
+          -0.3918460011482239,
+          -0.47631800174713135,
+          -0.2673340141773224
+        ],
+        "max": [
+          0.3913570046424866,
+          0.47582998871803284,
+          0.2668460011482239
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "beacon-lighthouse",
+      "order": 5,
+      "name_ko": "항로 등대",
+      "name_en": "Beacon Lighthouse",
+      "category": "hero-buildings",
+      "role": "정박지의 위치를 읽는 등대 외관과 조용한 안전 지표",
+      "build_method": "hero_meshy",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.4,
+        "depth": 3.4,
+        "height": 8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "hero/beacon-lighthouse/model-repaired.glb",
+      "preview": "previews/beacon-lighthouse.png",
+      "manifest": "manifests/beacon-lighthouse.json",
+      "reference": "hero/beacon-lighthouse/reference.png",
+      "source_model": "hero/beacon-lighthouse/model.glb",
+      "source_sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+      "normal_repair": {
+        "log": "hero/beacon-lighthouse/repair-log.json",
+        "original_sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+        "repaired_sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+        "normal_vectors_repaired": 0,
+        "zero_normal_vectors": 0,
+        "non_unit_normal_vectors": 0,
+        "official_errors_after": 0
+      },
+      "triangles": 7518,
+      "mesh_count": 1,
+      "material_count": 1,
+      "texture_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "vertex_colors": false,
+      "animation_count": 0,
+      "bytes": 4043752,
+      "sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+      "bounds": {
+        "min": [
+          -0.2761229872703552,
+          -0.47582998871803284,
+          -0.2785640060901642
+        ],
+        "max": [
+          0.2780759930610657,
+          0.4753420054912567,
+          0.2761229872703552
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "memory-observatory",
+      "order": 6,
+      "name_ko": "기억 관측소",
+      "name_en": "Memory Observatory",
+      "category": "hero-buildings",
+      "role": "기억 기록실·관측 기능의 외형 후보이며 새 정사 시설명을 확정하지 않는다",
+      "build_method": "hero_meshy",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 4.8,
+        "depth": 4.2,
+        "height": 5.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "hero/memory-observatory/model-repaired.glb",
+      "preview": "previews/memory-observatory.png",
+      "manifest": "manifests/memory-observatory.json",
+      "reference": "hero/memory-observatory/reference.png",
+      "source_model": "hero/memory-observatory/model.glb",
+      "source_sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+      "normal_repair": {
+        "log": "hero/memory-observatory/repair-log.json",
+        "original_sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+        "repaired_sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+        "normal_vectors_repaired": 0,
+        "zero_normal_vectors": 0,
+        "non_unit_normal_vectors": 0,
+        "official_errors_after": 0
+      },
+      "triangles": 7284,
+      "mesh_count": 1,
+      "material_count": 1,
+      "texture_count": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "vertex_colors": false,
+      "animation_count": 0,
+      "bytes": 4198500,
+      "sha256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+      "bounds": {
+        "min": [
+          -0.47241199016571045,
+          -0.3532710075378418,
+          -0.44897499680519104
+        ],
+        "max": [
+          0.47241199016571045,
+          0.3527829945087433,
+          0.44897499680519104
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "dock-straight",
+      "order": 7,
+      "name_ko": "직선 부두",
+      "name_en": "Straight Dock",
+      "category": "architecture",
+      "role": "부유 항구 통로의 반복 단위",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 3,
+        "height": 0.4,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/dock-straight.glb",
+      "preview": "previews/dock-straight.png",
+      "manifest": "manifests/dock-straight.json",
+      "triangles": 2112,
+      "mesh_count": 50,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 275952,
+      "sha256": "625888f3c74f0931367a3df9a35e3727f97f75ec2c072995db6f7ad4a45094fb",
+      "bounds": {
+        "min": [
+          -1.252499998807907,
+          -0.11000000357627869,
+          -1.5524999988079071
+        ],
+        "max": [
+          1.252499998807907,
+          1.3350000001490117,
+          1.5524999988079071
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "dock-corner",
+      "order": 8,
+      "name_ko": "모서리 부두",
+      "name_en": "Corner Dock",
+      "category": "architecture",
+      "role": "통로를 직각으로 꺾는 모듈",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3,
+        "depth": 3,
+        "height": 0.4,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/dock-corner.glb",
+      "preview": "previews/dock-corner.png",
+      "manifest": "manifests/dock-corner.json",
+      "triangles": 2736,
+      "mesh_count": 82,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 374008,
+      "sha256": "be3d0bfc029d082adc06b1ed3ad8d969e7aa52302c7da1f34b9131cc3a9636f0",
+      "bounds": {
+        "min": [
+          -1.252499998807907,
+          0.1200000013411045,
+          -1.252499998807907
+        ],
+        "max": [
+          2.752499998807907,
+          1.3350000001490117,
+          1.252499998807907
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "dock-tee",
+      "order": 9,
+      "name_ko": "갈림 부두",
+      "name_en": "T Junction Dock",
+      "category": "architecture",
+      "role": "세 방향으로 갈라지는 생활 동선",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.5,
+        "depth": 3,
+        "height": 0.4,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/dock-tee.glb",
+      "preview": "previews/dock-tee.png",
+      "manifest": "manifests/dock-tee.json",
+      "triangles": 3264,
+      "mesh_count": 110,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 457024,
+      "sha256": "a6bdff4fa51a3a64c3f2da265ab8db022ebece270726e272c82f433811d76008",
+      "bounds": {
+        "min": [
+          -2.552499998807907,
+          -0.11000000357627869,
+          -1.9774999988079072
+        ],
+        "max": [
+          2.552499998807907,
+          1.3650000001490117,
+          1.952499998807907
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "dock-endcap",
+      "order": 10,
+      "name_ko": "부두 끝판",
+      "name_en": "Dock End Cap",
+      "category": "architecture",
+      "role": "막다른 부두의 끝을 형태로 알린다",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 1.5,
+        "height": 0.6,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/dock-endcap.glb",
+      "preview": "previews/dock-endcap.png",
+      "manifest": "manifests/dock-endcap.json",
+      "triangles": 2688,
+      "mesh_count": 58,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 346040,
+      "sha256": "a6c870e5187b6185372e5a004f31a91bed0ce4d79a96305bd341576c8295facb",
+      "bounds": {
+        "min": [
+          -1.252499998807907,
+          -0.11000000357627869,
+          -1.1524999988079072
+        ],
+        "max": [
+          1.252499998807907,
+          1.3350000001490117,
+          1.1524999988079072
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "dock-ramp",
+      "order": 11,
+      "name_ko": "완만한 부두 경사판",
+      "name_en": "Dock Ramp",
+      "category": "architecture",
+      "role": "서로 다른 높이의 갑판을 연결하는 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 3,
+        "height": 1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/dock-ramp.glb",
+      "preview": "previews/dock-ramp.png",
+      "manifest": "manifests/dock-ramp.json",
+      "triangles": 2088,
+      "mesh_count": 48,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 271748,
+      "sha256": "4f53bac5377fc7c4370c30f899e0adb06f39387012a0c317c4c89f0a4dde09a7",
+      "bounds": {
+        "min": [
+          -1.1099999994039536,
+          -0.07500001192092898,
+          -1.7773566225850868
+        ],
+        "max": [
+          1.1099999994039536,
+          2.0557649983931827,
+          1.5837427655878276
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "dock-stairs",
+      "order": 12,
+      "name_ko": "부두 계단",
+      "name_en": "Dock Stairs",
+      "category": "architecture",
+      "role": "생활 공간의 작은 높이 차를 표현한다",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 2.6,
+        "height": 1.4,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/dock-stairs.glb",
+      "preview": "previews/dock-stairs.png",
+      "manifest": "manifests/dock-stairs.json",
+      "triangles": 1784,
+      "mesh_count": 19,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 211296,
+      "sha256": "e85bfa5c514d699c7188730baea2b9b4590072774a1cd6d24c3279a37305ec8b",
+      "bounds": {
+        "min": [
+          -1.2599999994039535,
+          -1.0728836041806744e-8,
+          -1.3099999994039535
+        ],
+        "max": [
+          1.149999976158142,
+          1.5456507205963135,
+          1.3099999994039535
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "bridge-short",
+      "order": 13,
+      "name_ko": "짧은 로프 다리",
+      "name_en": "Short Rope Bridge",
+      "category": "architecture",
+      "role": "가까운 정박 판 사이를 연결하는 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.6,
+        "depth": 4,
+        "height": 1.2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/bridge-short.glb",
+      "preview": "previews/bridge-short.png",
+      "manifest": "manifests/bridge-short.json",
+      "triangles": 3096,
+      "mesh_count": 58,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 390220,
+      "sha256": "e3c26d8a642e4e400433d18a20278f6a9ea0548ea93de93be326d697c10e2e9c",
+      "bounds": {
+        "min": [
+          -0.9024999988079071,
+          -0.11000000357627869,
+          -2.452499998807907
+        ],
+        "max": [
+          0.9024999988079071,
+          1.3350000001490117,
+          2.452499998807907
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "bridge-arched",
+      "order": 14,
+      "name_ko": "아치 다리",
+      "name_en": "Arched Bridge",
+      "category": "architecture",
+      "role": "둥근 곡선으로 작은 항구의 중심 동선을 만든다",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 4.5,
+        "height": 1.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/bridge-arched.glb",
+      "preview": "previews/bridge-arched.png",
+      "manifest": "manifests/bridge-arched.json",
+      "triangles": 3324,
+      "mesh_count": 37,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 395144,
+      "sha256": "bd2211a4e115a2d376dee81381a11d351969eb72e19cf00ee4d9664afc6c1c3c",
+      "bounds": {
+        "min": [
+          -0.9899999994039536,
+          -0.08264857530593872,
+          -2.418308973312378
+        ],
+        "max": [
+          1,
+          1.5350000001490116,
+          2.418308973312378
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "platform-round",
+      "order": 15,
+      "name_ko": "원형 갑판",
+      "name_en": "Round Platform",
+      "category": "architecture",
+      "role": "건물·작업대가 놓이는 공통 원형 바닥",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 4.5,
+        "depth": 4.5,
+        "height": 0.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/platform-round.glb",
+      "preview": "previews/platform-round.png",
+      "manifest": "manifests/platform-round.json",
+      "triangles": 1572,
+      "mesh_count": 28,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 197656,
+      "sha256": "9e8464046580f58ffd821cd68104058fde2c815a527ebfa91de240d5dd6c9c5e",
+      "bounds": {
+        "min": [
+          -1.649999976158142,
+          0.009999996423721319,
+          -1.649999976158142
+        ],
+        "max": [
+          1.649999976158142,
+          0.2999999986588955,
+          1.649999976158142
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "platform-square",
+      "order": 16,
+      "name_ko": "사각 갑판",
+      "name_en": "Square Platform",
+      "category": "architecture",
+      "role": "넓은 작업 공간과 건물 연결 바닥",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 4.5,
+        "depth": 4.5,
+        "height": 0.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/platform-square.glb",
+      "preview": "previews/platform-square.png",
+      "manifest": "manifests/platform-square.json",
+      "triangles": 2040,
+      "mesh_count": 62,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 279864,
+      "sha256": "65f1778dfc241c22eea6c39e1ed7d09dc41cf77d42d0fcc1ada0bb56b78d59d6",
+      "bounds": {
+        "min": [
+          -1.952499998807907,
+          -0.11000000357627869,
+          -1.952499998807907
+        ],
+        "max": [
+          1.952499998807907,
+          0.8350000001490117,
+          1.952499998807907
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "canopy-canvas",
+      "order": 17,
+      "name_ko": "천막 캐노피",
+      "name_en": "Canvas Canopy",
+      "category": "architecture",
+      "role": "노점과 임시 정박지의 보호 처마",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.6,
+        "depth": 3,
+        "height": 3.2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/canopy-canvas.glb",
+      "preview": "previews/canopy-canvas.png",
+      "manifest": "manifests/canopy-canvas.json",
+      "triangles": 3324,
+      "mesh_count": 93,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 448604,
+      "sha256": "e53ac4ce5e1d0d94dcf3c2f9395746f4a241374341ec6cd2ab08de0ae19bbedb",
+      "bounds": {
+        "min": [
+          -1.5524999988079071,
+          -0.11000000357627869,
+          -1.452499998807907
+        ],
+        "max": [
+          1.5524999988079071,
+          2.8665000001341103,
+          1.452499998807907
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "awning-repair",
+      "order": 18,
+      "name_ko": "수선 처마",
+      "name_en": "Repaired Awning",
+      "category": "architecture",
+      "role": "공방과 시장의 작은 입구 차양",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3,
+        "depth": 1.6,
+        "height": 0.9,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/awning-repair.glb",
+      "preview": "previews/awning-repair.png",
+      "manifest": "manifests/awning-repair.json",
+      "triangles": 1868,
+      "mesh_count": 46,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 246332,
+      "sha256": "63883f2435a5a7449634a5a40ef5984462e363bcea0c6877ce2978495ae6901d",
+      "bounds": {
+        "min": [
+          -1.25,
+          0,
+          -0.970509906413482
+        ],
+        "max": [
+          1.25,
+          2.198269331930547,
+          0.9452539451527505
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "roof-teal-gable",
+      "order": 19,
+      "name_ko": "청록 박공지붕",
+      "name_en": "Teal Gable Roof",
+      "category": "architecture",
+      "role": "작은 건물의 읽기 쉬운 지붕 모듈",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.5,
+        "depth": 3.3,
+        "height": 1.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/roof-teal-gable.glb",
+      "preview": "previews/roof-teal-gable.png",
+      "manifest": "manifests/roof-teal-gable.json",
+      "triangles": 6800,
+      "mesh_count": 63,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 797224,
+      "sha256": "00ee13797567750dbf5685399cda20f9078385e87efe7343300a598349356ea2",
+      "bounds": {
+        "min": [
+          -1.7203830480575562,
+          -0.003298804908990857,
+          -1.598541021347046
+        ],
+        "max": [
+          1.7203830480575562,
+          0.8199999809265137,
+          1.6100000143051147
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "roof-teal-curve",
+      "order": 20,
+      "name_ko": "청록 곡선지붕",
+      "name_en": "Curved Teal Roof",
+      "category": "architecture",
+      "role": "그림 같은 둥근 건물 지붕 모듈",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.5,
+        "depth": 3.2,
+        "height": 1.7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/roof-teal-curve.glb",
+      "preview": "previews/roof-teal-curve.png",
+      "manifest": "manifests/roof-teal-curve.json",
+      "triangles": 6800,
+      "mesh_count": 63,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 799224,
+      "sha256": "6a9df4d6a9a969edc327277bb3a358809120f26c9c86996b2ee075f9f3af8d11",
+      "bounds": {
+        "min": [
+          -1.7698721885681152,
+          -0.003491368889808652,
+          -1.4485410451889038
+        ],
+        "max": [
+          1.7698721885681152,
+          0.8199999809265137,
+          1.4600000381469727
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "wall-timber",
+      "order": 21,
+      "name_ko": "목재 벽판",
+      "name_en": "Timber Wall",
+      "category": "architecture",
+      "role": "건물 외관을 확장하는 판재 벽",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3,
+        "depth": 0.35,
+        "height": 2.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/wall-timber.glb",
+      "preview": "previews/wall-timber.png",
+      "manifest": "manifests/wall-timber.json",
+      "triangles": 756,
+      "mesh_count": 7,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 88768,
+      "sha256": "231444624b29170f3621a5ecdb5f8ca5006a2cb40d95df74f96fa0e80fd47379",
+      "bounds": {
+        "min": [
+          -1.375,
+          -0.025000023841857955,
+          -0.14000000059604645
+        ],
+        "max": [
+          1.375,
+          2.425000023841858,
+          0.14000000059604645
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "wall-window-round",
+      "order": 22,
+      "name_ko": "둥근 창 벽판",
+      "name_en": "Round Window Wall",
+      "category": "architecture",
+      "role": "빛과 생활감을 주는 창 포함 외벽",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3,
+        "depth": 0.4,
+        "height": 2.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/wall-window-round.glb",
+      "preview": "previews/wall-window-round.png",
+      "manifest": "manifests/wall-window-round.json",
+      "triangles": 724,
+      "mesh_count": 9,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 87588,
+      "sha256": "0443b90db6e36e7e2cbe17d21b4b8c11b125d8f9b90dd2bdeec311ed7ce3739b",
+      "bounds": {
+        "min": [
+          -1.25,
+          0,
+          -0.15000000596046448
+        ],
+        "max": [
+          1.25,
+          2.5,
+          0.4399999988079071
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "door-round",
+      "order": 23,
+      "name_ko": "둥근 출입문",
+      "name_en": "Rounded Door",
+      "category": "architecture",
+      "role": "통행 가능한 듯 보이는 입구 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.5,
+        "depth": 0.35,
+        "height": 2.4,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/door-round.glb",
+      "preview": "previews/door-round.png",
+      "manifest": "manifests/door-round.json",
+      "triangles": 1216,
+      "mesh_count": 11,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 142852,
+      "sha256": "5b56dd1185f00ff30874db7cc37c63012ec77498d53119558553051bc5a4f63a",
+      "bounds": {
+        "min": [
+          -0.8377604484558105,
+          -0.03999999910593033,
+          -0.02500000037252903
+        ],
+        "max": [
+          0.8377604484558105,
+          2.285595178604126,
+          0.38500000536441803
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "rail-rope",
+      "order": 24,
+      "name_ko": "로프 난간",
+      "name_en": "Rope Rail",
+      "category": "architecture",
+      "role": "위험한 갑판 경계를 읽는 난간 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3,
+        "depth": 0.3,
+        "height": 1.1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/rail-rope.glb",
+      "preview": "previews/rail-rope.png",
+      "manifest": "manifests/rail-rope.json",
+      "triangles": 648,
+      "mesh_count": 8,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 78412,
+      "sha256": "13bf755ce2cb56e81bcaeae00f6db79f06d262a20d93bbdc0986673800b4c1fe",
+      "bounds": {
+        "min": [
+          -1.5099999994039535,
+          0,
+          -0.10999999940395355
+        ],
+        "max": [
+          1.5099999994039535,
+          1.0350000001490116,
+          0.10999999940395355
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "island-grass-small",
+      "order": 25,
+      "name_ko": "작은 초지 부유섬",
+      "name_en": "Small Grass Island",
+      "category": "terrain",
+      "role": "항로의 작은 식생 지형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 4.5,
+        "depth": 4,
+        "height": 3.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/island-grass-small.glb",
+      "preview": "previews/island-grass-small.png",
+      "manifest": "manifests/island-grass-small.json",
+      "triangles": 384,
+      "mesh_count": 10,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 52968,
+      "sha256": "3753c90d7d02495811fce6b455ebe52dd141b221751d533fc9d7e96f2aabb805",
+      "bounds": {
+        "min": [
+          -1.5345731973648071,
+          -1.7814888954162598,
+          -1.3400639295578003
+        ],
+        "max": [
+          1.4847321510314941,
+          -1.7881393449270533e-9,
+          1.356077790260315
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "island-grass-medium",
+      "order": 26,
+      "name_ko": "넓은 초지 부유섬",
+      "name_en": "Medium Grass Island",
+      "category": "terrain",
+      "role": "작은 정박 판과 식생을 배치할 상대 지형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 7,
+        "depth": 6,
+        "height": 5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/island-grass-medium.glb",
+      "preview": "previews/island-grass-medium.png",
+      "manifest": "manifests/island-grass-medium.json",
+      "triangles": 624,
+      "mesh_count": 13,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 82044,
+      "sha256": "3cfef1ee6a6144646e292a418032e47d751ae95f2a06bab0474f774c406ce8c6",
+      "bounds": {
+        "min": [
+          -2.9560561180114746,
+          -2.3753185272216797,
+          -2.261873245239258
+        ],
+        "max": [
+          2.828798770904541,
+          0.18000000149011613,
+          2.4133200645446777
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "island-rock-small",
+      "order": 27,
+      "name_ko": "작은 암석 부유섬",
+      "name_en": "Small Rock Island",
+      "category": "terrain",
+      "role": "생활 자산과 떨어진 작은 장애 지형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3,
+        "depth": 2.7,
+        "height": 3.6,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/island-rock-small.glb",
+      "preview": "previews/island-rock-small.png",
+      "manifest": "manifests/island-rock-small.json",
+      "triangles": 384,
+      "mesh_count": 10,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 52960,
+      "sha256": "be0e5762c96cb875da3ab7c790c63525c9d72a7606a3a2cdefefeee05d28dc17",
+      "bounds": {
+        "min": [
+          -1.4317033290863037,
+          -2.177375316619873,
+          -1.260116696357727
+        ],
+        "max": [
+          1.4807108640670776,
+          -1.7881393449270533e-9,
+          1.199142575263977
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "island-rock-tall",
+      "order": 28,
+      "name_ko": "긴 암석 부유섬",
+      "name_en": "Tall Rock Island",
+      "category": "terrain",
+      "role": "고도감과 멀리 보이는 지형 실루엣",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.2,
+        "depth": 3,
+        "height": 7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/island-rock-tall.glb",
+      "preview": "previews/island-rock-tall.png",
+      "manifest": "manifests/island-rock-tall.json",
+      "triangles": 744,
+      "mesh_count": 13,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 94812,
+      "sha256": "185e754e8ebdb5586ce52b115fc4e9276747c0c657a575849c76a3e6aeaedd4b",
+      "bounds": {
+        "min": [
+          -1.3857500553131104,
+          -5.740353107452393,
+          -1.3205469846725464
+        ],
+        "max": [
+          1.4532195329666138,
+          -1.7881393449270533e-9,
+          1.2772947549819946
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "cliff-arch",
+      "order": 29,
+      "name_ko": "협곡 아치 절벽",
+      "name_en": "Cliff Arch",
+      "category": "terrain",
+      "role": "상승기류 협곡의 통과 전경 후보",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 8,
+        "depth": 3.2,
+        "height": 7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/cliff-arch.glb",
+      "preview": "previews/cliff-arch.png",
+      "manifest": "manifests/cliff-arch.json",
+      "triangles": 1240,
+      "mesh_count": 23,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 158732,
+      "sha256": "71383a73b3742f869d8ab27a8340ce8d0f4a30f4d5d9717b64d7133d0bc2a671",
+      "bounds": {
+        "min": [
+          -2.4272311211558693,
+          -3.365034580230713,
+          -1.055437028239901
+        ],
+        "max": [
+          2.427081969256643,
+          1.6300000190734862,
+          1.0552392126165795
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "cliff-ledge",
+      "order": 30,
+      "name_ko": "절벽 정박 턱",
+      "name_en": "Cliff Ledge",
+      "category": "terrain",
+      "role": "협곡 측면 정박대의 지형 배경",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 5.5,
+        "depth": 3.6,
+        "height": 4.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/cliff-ledge.glb",
+      "preview": "previews/cliff-ledge.png",
+      "manifest": "manifests/cliff-ledge.json",
+      "triangles": 768,
+      "mesh_count": 20,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 104944,
+      "sha256": "391e0f5bf3a20ced78936124df6645a4552b353f53b865f7270a2c6d3512e3c0",
+      "bounds": {
+        "min": [
+          -2.307105302810669,
+          -3.365034580230713,
+          -1.055437028239901
+        ],
+        "max": [
+          2.286161422729492,
+          -1.7881393449270533e-9,
+          2.1221724722721844
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "island-soil-flat",
+      "order": 31,
+      "name_ko": "흙판 부유 지형",
+      "name_en": "Flat Soil Island",
+      "category": "terrain",
+      "role": "정원과 작은 시설을 얹는 둥근 흙판",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 4,
+        "depth": 3.5,
+        "height": 1.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/island-soil-flat.glb",
+      "preview": "previews/island-soil-flat.png",
+      "manifest": "manifests/island-soil-flat.json",
+      "triangles": 384,
+      "mesh_count": 10,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 52960,
+      "sha256": "51b5db685f03f01a687bf7ca0da302de1130c204695f532c8bf4395c378ed028",
+      "bounds": {
+        "min": [
+          -2.382253646850586,
+          -0.8412586450576782,
+          -1.9813950061798096
+        ],
+        "max": [
+          2.3445305824279785,
+          -1.7881393449270533e-9,
+          1.9292845726013184
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "garden-plot",
+      "order": 32,
+      "name_ko": "작은 텃밭 판",
+      "name_en": "Garden Plot",
+      "category": "terrain",
+      "role": "항구 생활감을 위한 장식 정원",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.6,
+        "depth": 2,
+        "height": 0.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/garden-plot.glb",
+      "preview": "previews/garden-plot.png",
+      "manifest": "manifests/garden-plot.json",
+      "triangles": 860,
+      "mesh_count": 9,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 101900,
+      "sha256": "de25ed75993713151d6d36c21b6ebd677eb536e849491b24733858c67848c310",
+      "bounds": {
+        "min": [
+          -1.2649999976158142,
+          0.059999998509883884,
+          -1.0149999976158142
+        ],
+        "max": [
+          1.2649999976158142,
+          0.41000000178813933,
+          1.0149999976158142
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "mineral-outcrop-teal",
+      "order": 33,
+      "name_ko": "청록 광물 노출암",
+      "name_en": "Teal Mineral Outcrop",
+      "category": "terrain",
+      "role": "협곡의 청록 광물 재질 단서",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.4,
+        "depth": 2,
+        "height": 2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/mineral-outcrop-teal.glb",
+      "preview": "previews/mineral-outcrop-teal.png",
+      "manifest": "manifests/mineral-outcrop-teal.json",
+      "triangles": 454,
+      "mesh_count": 17,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 68080,
+      "sha256": "6c8ccbe42d7da1502ec40a6f9fe5d133d4a7ea93fb8368c03bf70885ec84037f",
+      "bounds": {
+        "min": [
+          -1.0349227648221802,
+          -0.7917728424072266,
+          -0.8892639844264468
+        ],
+        "max": [
+          1.034723895623212,
+          1.2185853191570768,
+          0.8891057319277896
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "rubble-mound",
+      "order": 34,
+      "name_ko": "잔해 더미",
+      "name_en": "Rubble Mound",
+      "category": "terrain",
+      "role": "부서진 작업장과 항로 잔해의 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3,
+        "depth": 2.5,
+        "height": 1.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/rubble-mound.glb",
+      "preview": "previews/rubble-mound.png",
+      "manifest": "manifests/rubble-mound.json",
+      "triangles": 300,
+      "mesh_count": 15,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 50416,
+      "sha256": "8748ed493990f74a7d9d31ea92a4d23ca2bc463710252ad663b75ed322bfa698",
+      "bounds": {
+        "min": [
+          -1.1372198514296303,
+          -0.31145440918337486,
+          -1.0107268171864903
+        ],
+        "max": [
+          1.3820627966672805,
+          1.0275064292578167,
+          1.1424530215481798
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "cloud-bank",
+      "order": 35,
+      "name_ko": "구름 둑",
+      "name_en": "Cloud Bank",
+      "category": "terrain",
+      "role": "항로 가장자리의 밝은 구름 볼륨",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 6,
+        "depth": 3,
+        "height": 2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/cloud-bank.glb",
+      "preview": "previews/cloud-bank.png",
+      "manifest": "manifests/cloud-bank.json",
+      "triangles": 1620,
+      "mesh_count": 9,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 185512,
+      "sha256": "d4b4b4123a2a1af623c951e99464f2d154ed2570b60a96988083360cc9d48b15",
+      "bounds": {
+        "min": [
+          -1.8178179817199709,
+          -0.2203722238540649,
+          -1.3664621819571312
+        ],
+        "max": [
+          1.8178179817199709,
+          0.43637222385406493,
+          1.3999900729502301
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "cloud-column",
+      "order": 36,
+      "name_ko": "상승 구름 기둥",
+      "name_en": "Cloud Column",
+      "category": "terrain",
+      "role": "상승기류의 세로 흐름을 나타내는 정적 형태",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3,
+        "depth": 3,
+        "height": 6.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/cloud-column.glb",
+      "preview": "previews/cloud-column.png",
+      "manifest": "manifests/cloud-column.json",
+      "triangles": 1620,
+      "mesh_count": 9,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 185364,
+      "sha256": "5c5b8142452c0ad6d729c1cbeaa3c30763b0304a2b81eb760d3a7f5995a9fd27",
+      "bounds": {
+        "min": [
+          -0.801978521347046,
+          -0.3222333431243898,
+          -0.9505823874484393
+        ],
+        "max": [
+          0.801978521347046,
+          3.6182333431243903,
+          0.9739061377045081
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "fog-layer",
+      "order": 37,
+      "name_ko": "저층 안개판",
+      "name_en": "Low Fog Layer",
+      "category": "terrain",
+      "role": "저층 안개의 얇고 긴 실루엣",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 7,
+        "depth": 4,
+        "height": 1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/fog-layer.glb",
+      "preview": "previews/fog-layer.png",
+      "manifest": "manifests/fog-layer.json",
+      "triangles": 1620,
+      "mesh_count": 9,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 185500,
+      "sha256": "c143d802570b4d6fc9f4526c51f56e5a79e0f5b8f5c9a758ff3ddb06ae0a563f",
+      "bounds": {
+        "min": [
+          -2.1386093902587895,
+          -0.02313908350467682,
+          -1.6041077788192413
+        ],
+        "max": [
+          2.1386093902587895,
+          0.04581908350467682,
+          1.6434666073763573
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "storm-cloud-mass",
+      "order": 38,
+      "name_ko": "폭풍 구름 덩이",
+      "name_en": "Storm Cloud Mass",
+      "category": "terrain",
+      "role": "천둥 폭풍벽의 먼 전경 후보",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 6.5,
+        "depth": 4,
+        "height": 5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/storm-cloud-mass.glb",
+      "preview": "previews/storm-cloud-mass.png",
+      "manifest": "manifests/storm-cloud-mass.json",
+      "triangles": 2160,
+      "mesh_count": 12,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 247124,
+      "sha256": "1e60abca92b21a8c925e4cc63d23e0602b39bbd7afa1bfc9d6c8b04cd70b655e",
+      "bounds": {
+        "min": [
+          -1.8178179817199709,
+          -0.5142018556594847,
+          -1.5446963796037139
+        ],
+        "max": [
+          1.8178179817199709,
+          1.187659239768982,
+          1.5825974737698254
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "wreckage-shoal",
+      "order": 39,
+      "name_ko": "잔해해역 부유 더미",
+      "name_en": "Floating Wreckage Shoal",
+      "category": "terrain",
+      "role": "종항 잔해해역의 단순 부유 잔해 지형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 4.5,
+        "depth": 3,
+        "height": 1.2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/wreckage-shoal.glb",
+      "preview": "previews/wreckage-shoal.png",
+      "manifest": "manifests/wreckage-shoal.json",
+      "triangles": 1344,
+      "mesh_count": 18,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 164712,
+      "sha256": "2049c0d6eb1efac43abae2e5fe36a2a1ec58d574f8a740be0ce93fc84c5168e7",
+      "bounds": {
+        "min": [
+          -1.8414877653121948,
+          -0.6928012371063232,
+          -1.3916049003601074
+        ],
+        "max": [
+          1.781678557395935,
+          0.8986128807177145,
+          1.5000000238418578
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "industrial-rib",
+      "order": 40,
+      "name_ko": "공업 철골 갈비",
+      "name_en": "Industrial Rib",
+      "category": "terrain",
+      "role": "쇠갈비 공업지대의 특징적인 큰 반복 구조",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 4,
+        "depth": 2,
+        "height": 7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/industrial-rib.glb",
+      "preview": "previews/industrial-rib.png",
+      "manifest": "manifests/industrial-rib.json",
+      "triangles": 1176,
+      "mesh_count": 13,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 140104,
+      "sha256": "4730020835a1c58d895ef53abb27eb148f36eebe8be84f8cb8ed5f21759cfa7b",
+      "bounds": {
+        "min": [
+          -1.524999988079071,
+          -1.4901161138336505e-9,
+          -0.4000000059604645
+        ],
+        "max": [
+          1.524999988079071,
+          2.932846784591675,
+          0.4000000059604645
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "royal-stone-platform",
+      "order": 41,
+      "name_ko": "왕실 서비스 석재판",
+      "name_en": "Royal Service Stone Platform",
+      "category": "terrain",
+      "role": "황궁 외곽의 조용한 최종 준비 바닥",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 5,
+        "depth": 4,
+        "height": 0.7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/royal-stone-platform.glb",
+      "preview": "previews/royal-stone-platform.png",
+      "manifest": "manifests/royal-stone-platform.json",
+      "triangles": 1080,
+      "mesh_count": 10,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 126464,
+      "sha256": "8db969d50f4c9a423e1d5791f2a58fe5bf2cf729c36d5025e96ae8d8d8297154",
+      "bounds": {
+        "min": [
+          -1.899999976158142,
+          6.5565109175214076e-9,
+          -1.649999976158142
+        ],
+        "max": [
+          1.899999976158142,
+          0.5299999986588955,
+          1.649999976158142
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "sealed-stone-fragment",
+      "order": 42,
+      "name_ko": "봉인 석재 조각",
+      "name_en": "Sealed Stone Fragment",
+      "category": "terrain",
+      "role": "후반 건축 언어의 무문자 외형 후보",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 1.5,
+        "height": 2.4,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/sealed-stone-fragment.glb",
+      "preview": "previews/sealed-stone-fragment.png",
+      "manifest": "manifests/sealed-stone-fragment.json",
+      "triangles": 308,
+      "mesh_count": 3,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 37084,
+      "sha256": "54749f546c3a8b9c4a93ab0d27e51e43c5e6f891e1051403587288db977fac65",
+      "bounds": {
+        "min": [
+          -1.35,
+          0,
+          -0.8
+        ],
+        "max": [
+          1.35,
+          1.3023921251296997,
+          0.8
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "tree-round",
+      "order": 43,
+      "name_ko": "둥근 수관 나무",
+      "name_en": "Round Canopy Tree",
+      "category": "vegetation",
+      "role": "작은 부유섬의 편안한 식생",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.5,
+        "depth": 2.2,
+        "height": 4,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/tree-round.glb",
+      "preview": "previews/tree-round.png",
+      "manifest": "manifests/tree-round.json",
+      "triangles": 2080,
+      "mesh_count": 20,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 246080,
+      "sha256": "71bd6f8921a4e33745daf04ddb149b6d6c6511943526f7c900ecd071c937d4e5",
+      "bounds": {
+        "min": [
+          -1.100000011920929,
+          -0.05120344087481499,
+          -0.8999999761581421
+        ],
+        "max": [
+          0.9208817053199201,
+          3.6649999797344206,
+          0.8999999761581421
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "tree-windswept",
+      "order": 44,
+      "name_ko": "바람 기운 나무",
+      "name_en": "Windswept Tree",
+      "category": "vegetation",
+      "role": "협곡의 바람 방향을 정적 실루엣으로 표현",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.2,
+        "depth": 2,
+        "height": 3.6,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/tree-windswept.glb",
+      "preview": "previews/tree-windswept.png",
+      "manifest": "manifests/tree-windswept.json",
+      "triangles": 1840,
+      "mesh_count": 18,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 218328,
+      "sha256": "b530b7ba7882f4daf1ee779a9f77c8af795069950b27f4be6be4594bab1c959a",
+      "bounds": {
+        "min": [
+          -0.5663270354270935,
+          -0.051319241523742676,
+          -0.8383619412928234
+        ],
+        "max": [
+          2.4175000369548796,
+          3.0941249939203264,
+          0.807500022649765
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "tree-tall",
+      "order": 45,
+      "name_ko": "키 큰 나무",
+      "name_en": "Tall Tree",
+      "category": "vegetation",
+      "role": "섬의 수직 높이를 나타내는 식생",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/tree-tall.glb",
+      "preview": "previews/tree-tall.png",
+      "manifest": "manifests/tree-tall.json",
+      "triangles": 2568,
+      "mesh_count": 31,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 310900,
+      "sha256": "1f82b3a7007696e6fbedc58d55ef0b62160b504d6c570867674a557257b47cea",
+      "bounds": {
+        "min": [
+          -0.8799999833106995,
+          -0.05143816024065018,
+          -0.6877561807632446
+        ],
+        "max": [
+          0.9650812200301502,
+          4.8999999999999995,
+          0.6849999785423279
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "tree-stump",
+      "order": 46,
+      "name_ko": "오래된 그루터기",
+      "name_en": "Old Tree Stump",
+      "category": "vegetation",
+      "role": "생활 공간과 잔해 지형의 오래된 목재 단서",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.6,
+        "depth": 1.5,
+        "height": 1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/tree-stump.glb",
+      "preview": "previews/tree-stump.png",
+      "manifest": "manifests/tree-stump.json",
+      "triangles": 1948,
+      "mesh_count": 17,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 228564,
+      "sha256": "8be040234b996130a1a2f364e0cc86c7c94c1ebc010b7fbe81c3cd3494b8ac84",
+      "bounds": {
+        "min": [
+          -0.6871337294578552,
+          -0.052408818155527115,
+          -0.7038388252258301
+        ],
+        "max": [
+          0.664315402507782,
+          0.7570000290870667,
+          0.6702809929847717
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "bush-round",
+      "order": 47,
+      "name_ko": "둥근 관목",
+      "name_en": "Round Bush",
+      "category": "vegetation",
+      "role": "바닥 빈 공간의 낮은 식생",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.5,
+        "depth": 1.4,
+        "height": 1.1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/bush-round.glb",
+      "preview": "previews/bush-round.png",
+      "manifest": "manifests/bush-round.json",
+      "triangles": 720,
+      "mesh_count": 12,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 91568,
+      "sha256": "c46b19b32837709e4c0bafbc6f7c459a0852ed9544f19b7e4d400e86b9307b83",
+      "bounds": {
+        "min": [
+          -0.6465247453119635,
+          -0.030000000000000006,
+          -0.6862958114496212
+        ],
+        "max": [
+          0.6999999868869782,
+          1.04100000500679,
+          0.6862958114496212
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "bush-long",
+      "order": 48,
+      "name_ko": "긴 관목",
+      "name_en": "Long Bush",
+      "category": "vegetation",
+      "role": "통로 옆의 낮은 녹지 경계",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.8,
+        "depth": 1,
+        "height": 1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/bush-long.glb",
+      "preview": "previews/bush-long.png",
+      "manifest": "manifests/bush-long.json",
+      "triangles": 912,
+      "mesh_count": 15,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 114932,
+      "sha256": "1ffe7946fbb799e51f6d5708efeaf4ebe3afb04447d87028e06fd6d4104f1822",
+      "bounds": {
+        "min": [
+          -1.3500000059604644,
+          -0.0010000005364418016,
+          -0.43671394733746915
+        ],
+        "max": [
+          1.3500000059604644,
+          0.8200000050663947,
+          0.4327437995104726
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "grass-tuft",
+      "order": 49,
+      "name_ko": "풀 묶음",
+      "name_en": "Grass Tuft",
+      "category": "vegetation",
+      "role": "섬 윗면의 작은 식생 디테일",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.8,
+        "depth": 0.7,
+        "height": 0.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/grass-tuft.glb",
+      "preview": "previews/grass-tuft.png",
+      "manifest": "manifests/grass-tuft.json",
+      "triangles": 1040,
+      "mesh_count": 13,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 129416,
+      "sha256": "538e27c854f5f5b354d8b1ff635091cb945e341e2053d1abc7246f849fe9ce54",
+      "bounds": {
+        "min": [
+          -0.4060772448859864,
+          -0.044795643791722684,
+          -0.32763457038403165
+        ],
+        "max": [
+          0.23000000417232513,
+          0.732784443714685,
+          0.35792154828429207
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "reed-clump",
+      "order": 50,
+      "name_ko": "갈대 묶음",
+      "name_en": "Reed Clump",
+      "category": "vegetation",
+      "role": "정원과 바람 부는 가장자리의 세로 식생",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1,
+        "depth": 0.8,
+        "height": 1.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/reed-clump.glb",
+      "preview": "previews/reed-clump.png",
+      "manifest": "manifests/reed-clump.json",
+      "triangles": 1424,
+      "mesh_count": 22,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 179260,
+      "sha256": "e7cac4404fabfe43ce0b7e1dd0bc68b5e9f1844e88efe199ab0008c98754391e",
+      "bounds": {
+        "min": [
+          -0.3994279655045281,
+          -0.004499998986721043,
+          -0.2974999949336052
+        ],
+        "max": [
+          0.6347015902050221,
+          1.7749008533824238,
+          0.2974999949336052
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "hanging-vine",
+      "order": 51,
+      "name_ko": "매달린 덩굴",
+      "name_en": "Hanging Vine",
+      "category": "vegetation",
+      "role": "부유섬 아래와 처마의 내려오는 장식",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 0.8,
+        "height": 2.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/hanging-vine.glb",
+      "preview": "previews/hanging-vine.png",
+      "manifest": "manifests/hanging-vine.json",
+      "triangles": 2268,
+      "mesh_count": 25,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 274164,
+      "sha256": "c03166da4a7fed59300027a1c92d2a1d8f53a466f6344a3567faefddadb4921f",
+      "bounds": {
+        "min": [
+          -0.6221797532160238,
+          0.06872905517899647,
+          -0.09000000357627869
+        ],
+        "max": [
+          0.6221797532160238,
+          2.5399999991059303,
+          0.14219246804714203
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "flower-planter",
+      "order": 52,
+      "name_ko": "꽃 화분 상자",
+      "name_en": "Flower Planter",
+      "category": "vegetation",
+      "role": "귀환 거점의 포근한 생활 소품",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.8,
+        "depth": 0.8,
+        "height": 1.1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/flower-planter.glb",
+      "preview": "previews/flower-planter.png",
+      "manifest": "manifests/flower-planter.json",
+      "triangles": 5792,
+      "mesh_count": 92,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 724608,
+      "sha256": "9315ca25bee9ea3634565a224620053dd4acd07bc4cd9b58a6eee1b490fa6e5f",
+      "bounds": {
+        "min": [
+          -0.8600000001490116,
+          0.010000000894069674,
+          -0.34499999932944775
+        ],
+        "max": [
+          0.8600000001490116,
+          0.8812447707680986,
+          0.34499999932944775
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "moss-cluster",
+      "order": 53,
+      "name_ko": "이끼 덩이",
+      "name_en": "Moss Cluster",
+      "category": "vegetation",
+      "role": "암반과 목재 가장자리의 오래된 표면 장식",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.4,
+        "depth": 1,
+        "height": 0.3,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/moss-cluster.glb",
+      "preview": "previews/moss-cluster.png",
+      "manifest": "manifests/moss-cluster.json",
+      "triangles": 720,
+      "mesh_count": 9,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 88436,
+      "sha256": "d83aee6b54413dd84ec818660ad32f435d4951c855f9bf7e9814b485fcf47298",
+      "bounds": {
+        "min": [
+          -0.6959782213114927,
+          -0.038434943258762344,
+          -0.5111086995701105
+        ],
+        "max": [
+          0.8076629970176146,
+          0.19843494325876235,
+          0.45149171876276806
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "potted-sapling",
+      "order": 54,
+      "name_ko": "화분 묘목",
+      "name_en": "Potted Sapling",
+      "category": "vegetation",
+      "role": "부두·여관·시장 입구의 생활감",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 1.2,
+        "height": 2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/potted-sapling.glb",
+      "preview": "previews/potted-sapling.png",
+      "manifest": "manifests/potted-sapling.json",
+      "triangles": 1088,
+      "mesh_count": 10,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 128732,
+      "sha256": "a70c2b138ecdc38bf29cb98625000055fd2e5b9b041a6f3216b346f13d4ae972",
+      "bounds": {
+        "min": [
+          -0.4602079689502716,
+          0,
+          -0.38999998569488525
+        ],
+        "max": [
+          0.46171459555625916,
+          1.838000011444092,
+          0.38999998569488525
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "crate-wood",
+      "order": 55,
+      "name_ko": "목재 화물상자",
+      "name_en": "Wood Cargo Crate",
+      "category": "props",
+      "role": "보급과 생활 물자의 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 1,
+        "height": 1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/crate-wood.glb",
+      "preview": "previews/crate-wood.png",
+      "manifest": "manifests/crate-wood.json",
+      "triangles": 4284,
+      "mesh_count": 113,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 573484,
+      "sha256": "a3eeefbfb72e073624be485f3d160f6101e7798fab034120bedcec9037a0f7db",
+      "bounds": {
+        "min": [
+          -0.6274999988079071,
+          5.960464455334602e-9,
+          -0.5250000001490116
+        ],
+        "max": [
+          0.6274999988079071,
+          1.0440000000949947,
+          0.5599999993294478
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "barrel-brass-banded",
+      "order": 56,
+      "name_ko": "황동 띠 통",
+      "name_en": "Brass Banded Barrel",
+      "category": "props",
+      "role": "저장 용기의 공통 소품",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1,
+        "depth": 1,
+        "height": 1.3,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/barrel-brass-banded.glb",
+      "preview": "previews/barrel-brass-banded.png",
+      "manifest": "manifests/barrel-brass-banded.json",
+      "triangles": 2108,
+      "mesh_count": 22,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 250396,
+      "sha256": "c64d266c90639ffa884f5046a35170db26069c91b191a65947a4454c8b4316a0",
+      "bounds": {
+        "min": [
+          -0.4645000100135803,
+          0,
+          -0.4645000100135803
+        ],
+        "max": [
+          0.4645000100135803,
+          1.2699999995529652,
+          0.4645000100135803
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "canvas-roll",
+      "order": 57,
+      "name_ko": "캔버스 천 롤",
+      "name_en": "Canvas Roll",
+      "category": "props",
+      "role": "수선과 시장의 크림 천 물자",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.6,
+        "depth": 0.7,
+        "height": 0.7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/canvas-roll.glb",
+      "preview": "previews/canvas-roll.png",
+      "manifest": "manifests/canvas-roll.json",
+      "triangles": 1464,
+      "mesh_count": 7,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 166096,
+      "sha256": "efcd4ba6d082edd117e50e4a70c24236fcfdd3e87eec4cec2a7a463cbbc40b99",
+      "bounds": {
+        "min": [
+          -0.7697082161903381,
+          -0.03500000834465028,
+          -0.33500000834465027
+        ],
+        "max": [
+          0.7720000147819519,
+          0.6350000083446503,
+          0.33500000834465027
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "rope-coil",
+      "order": 58,
+      "name_ko": "계류줄 뭉치",
+      "name_en": "Mooring Rope Coil",
+      "category": "props",
+      "role": "항구와 작살 장치의 밧줄 디테일",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.1,
+        "depth": 1,
+        "height": 0.35,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/rope-coil.glb",
+      "preview": "previews/rope-coil.png",
+      "manifest": "manifests/rope-coil.json",
+      "triangles": 1152,
+      "mesh_count": 7,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 132380,
+      "sha256": "406184dad17f0786ddd6a9c4561da0e168b850259638f4f030a890e953eb8959",
+      "bounds": {
+        "min": [
+          -0.5049999952316284,
+          0.00799999929964542,
+          -0.5049999952316284
+        ],
+        "max": [
+          0.7770000007003546,
+          0.16200000037252904,
+          0.5799999993294478
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "mooring-ring",
+      "order": 59,
+      "name_ko": "계류 고리",
+      "name_en": "Mooring Ring",
+      "category": "props",
+      "role": "정박 위치를 보여주는 부착 장식",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.65,
+        "depth": 0.45,
+        "height": 0.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/mooring-ring.glb",
+      "preview": "previews/mooring-ring.png",
+      "manifest": "manifests/mooring-ring.json",
+      "triangles": 476,
+      "mesh_count": 11,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 63288,
+      "sha256": "0650e80f253da2b2ef3f7e51dc71af34691254e22e1cb5b55a627f0882bfc5be",
+      "bounds": {
+        "min": [
+          -0.2750000059604645,
+          6.705522526129215e-10,
+          -0.1899999976158142
+        ],
+        "max": [
+          0.2750000059604645,
+          0.5350000047683716,
+          0.1899999976158142
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "dock-bollard",
+      "order": 60,
+      "name_ko": "부두 계류 말뚝",
+      "name_en": "Dock Bollard",
+      "category": "props",
+      "role": "계류줄이 감길 듯 보이는 부두 끝 소품",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.8,
+        "depth": 0.6,
+        "height": 0.9,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/dock-bollard.glb",
+      "preview": "previews/dock-bollard.png",
+      "manifest": "manifests/dock-bollard.json",
+      "triangles": 1000,
+      "mesh_count": 8,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 116916,
+      "sha256": "c7f352faf601a899e9bad8231845ecdd62bbd92d5905f611601ce6d2c08be41a",
+      "bounds": {
+        "min": [
+          -0.40799999952316285,
+          8.940696724635266e-10,
+          -0.25
+        ],
+        "max": [
+          0.40799999952316285,
+          0.8569999995827675,
+          0.25
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "lantern-hanging",
+      "order": 61,
+      "name_ko": "매다는 랜턴",
+      "name_en": "Hanging Lantern",
+      "category": "props",
+      "role": "따뜻한 귀환 불빛의 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.55,
+        "depth": 0.55,
+        "height": 0.9,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/lantern-hanging.glb",
+      "preview": "previews/lantern-hanging.png",
+      "manifest": "manifests/lantern-hanging.json",
+      "triangles": 600,
+      "mesh_count": 10,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 75960,
+      "sha256": "7028c7aed1e1eb65c8eac7c80bccc597a35e365bcbf18b431de2872eeb46a829",
+      "bounds": {
+        "min": [
+          -0.23999999463558197,
+          0.07250000014901162,
+          -0.23999999463558197
+        ],
+        "max": [
+          0.23999999463558197,
+          1.009258508682251,
+          0.23999999463558197
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "lantern-standing",
+      "order": 62,
+      "name_ko": "서 있는 랜턴",
+      "name_en": "Standing Lantern",
+      "category": "props",
+      "role": "낮은 조명 기둥의 공통 소품",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.65,
+        "depth": 0.65,
+        "height": 1.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/lantern-standing.glb",
+      "preview": "previews/lantern-standing.png",
+      "manifest": "manifests/lantern-standing.json",
+      "triangles": 772,
+      "mesh_count": 19,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 103464,
+      "sha256": "db2210580b831181792e1ad116a5f82a81acdfc83c405b20dcd53ec051cc5dec",
+      "bounds": {
+        "min": [
+          -0.23999999463558197,
+          6.705522526129215e-10,
+          -0.23999999463558197
+        ],
+        "max": [
+          0.23999999463558197,
+          1.6980000007152558,
+          0.23999999463558197
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "cargo-basket",
+      "order": 63,
+      "name_ko": "화물 바구니",
+      "name_en": "Cargo Basket",
+      "category": "props",
+      "role": "회수품과 생활 물자의 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 1,
+        "height": 1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/cargo-basket.glb",
+      "preview": "previews/cargo-basket.png",
+      "manifest": "manifests/cargo-basket.json",
+      "triangles": 1732,
+      "mesh_count": 22,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 211440,
+      "sha256": "2dc6b1a8cfbb290ad50bb8e440d136de7f0be8074a30aec872c54d7547153bc0",
+      "bounds": {
+        "min": [
+          -0.5466046333312988,
+          0,
+          -0.4934999942779541
+        ],
+        "max": [
+          0.5490180253982544,
+          0.8475713133811951,
+          0.4934999942779541
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "tool-rack",
+      "order": 64,
+      "name_ko": "공구 걸이",
+      "name_en": "Tool Rack",
+      "category": "props",
+      "role": "공방 기능을 작은 화면에서 알아보는 소품",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.6,
+        "depth": 0.5,
+        "height": 1.6,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/tool-rack.glb",
+      "preview": "previews/tool-rack.png",
+      "manifest": "manifests/tool-rack.json",
+      "triangles": 1708,
+      "mesh_count": 28,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 213408,
+      "sha256": "259c6a77503752bbd111072b96d07cdd0b172f9aae554dd3a1ceb32c8301b112",
+      "bounds": {
+        "min": [
+          -0.800000011920929,
+          2.384185793236071e-8,
+          -0.27718348232628304
+        ],
+        "max": [
+          0.800000011920929,
+          1.5700000003725292,
+          0.27718348232628304
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "workbench-static",
+      "order": 65,
+      "name_ko": "장식 작업대",
+      "name_en": "Static Workbench",
+      "category": "props",
+      "role": "정비 생활감을 주는 비작동 가구",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.1,
+        "depth": 1.1,
+        "height": 1.2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/workbench-static.glb",
+      "preview": "previews/workbench-static.png",
+      "manifest": "manifests/workbench-static.json",
+      "triangles": 1976,
+      "mesh_count": 49,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 261044,
+      "sha256": "ca8f8c5c1b3bf7ba0ef22c76b01c598e181ffe1fbe002e9643834ea8dcc82b33",
+      "bounds": {
+        "min": [
+          -1,
+          0,
+          -0.5249999761581421
+        ],
+        "max": [
+          1,
+          1.4100000001490116,
+          0.5249999761581421
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "fuel-canister",
+      "order": 66,
+      "name_ko": "연료 용기",
+      "name_en": "Fuel Canister",
+      "category": "props",
+      "role": "기존 연료F 물자의 장식 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.9,
+        "depth": 0.75,
+        "height": 1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/fuel-canister.glb",
+      "preview": "previews/fuel-canister.png",
+      "manifest": "manifests/fuel-canister.json",
+      "triangles": 652,
+      "mesh_count": 9,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 80244,
+      "sha256": "6f1039039a673f39e7638495dc25c6756beb006505e2cbe863c05fc1014ee17e",
+      "bounds": {
+        "min": [
+          -0.3499999940395355,
+          0.025000000000000022,
+          -0.25999999046325684
+        ],
+        "max": [
+          0.3499999940395355,
+          1.0519813299179077,
+          0.25999999046325684
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "scrap-bin",
+      "order": 67,
+      "name_ko": "스크랩 바구니",
+      "name_en": "Scrap Bin",
+      "category": "props",
+      "role": "기존 스크랩S 물자의 장식 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 1,
+        "height": 0.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/scrap-bin.glb",
+      "preview": "previews/scrap-bin.png",
+      "manifest": "manifests/scrap-bin.json",
+      "triangles": 1572,
+      "mesh_count": 13,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 184244,
+      "sha256": "b0f58ba57b8a8803050d78d2a493a93e2ed2f51043023d0519414d9f4c362f6a",
+      "bounds": {
+        "min": [
+          -0.6303784251213074,
+          0,
+          -0.527999997138977
+        ],
+        "max": [
+          0.6310052275657654,
+          0.8200941691581075,
+          0.527999997138977
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "table-round",
+      "order": 68,
+      "name_ko": "둥근 식탁",
+      "name_en": "Round Table",
+      "category": "props",
+      "role": "안전 항구의 함께 머무는 생활감",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.8,
+        "depth": 1.8,
+        "height": 1.1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/table-round.glb",
+      "preview": "previews/table-round.png",
+      "manifest": "manifests/table-round.json",
+      "triangles": 572,
+      "mesh_count": 10,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 72188,
+      "sha256": "7530a070c3b2dfd427047091ff9b69a7882153b93952e20cee607f561d323bad",
+      "bounds": {
+        "min": [
+          -0.8199999928474426,
+          0.02000000134110451,
+          -0.8199999928474426
+        ],
+        "max": [
+          0.8199999928474426,
+          1.0729999992251396,
+          0.8199999928474426
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "bench-wood",
+      "order": 69,
+      "name_ko": "목재 벤치",
+      "name_en": "Wood Bench",
+      "category": "props",
+      "role": "여관과 식탁 주변의 좌석 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.2,
+        "depth": 0.7,
+        "height": 1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/bench-wood.glb",
+      "preview": "previews/bench-wood.png",
+      "manifest": "manifests/bench-wood.json",
+      "triangles": 1544,
+      "mesh_count": 35,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 201496,
+      "sha256": "02f104a5e3f7b48842aa9d0a64e3995083aae6726fed9a0285b2ab95959c942a",
+      "bounds": {
+        "min": [
+          -1.0499999523162842,
+          9.536743172944284e-9,
+          -0.2750000017881393
+        ],
+        "max": [
+          1.0499999523162842,
+          1.094000000094995,
+          0.3349999988079071
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "market-stall",
+      "order": 70,
+      "name_ko": "작은 노점",
+      "name_en": "Market Stall",
+      "category": "props",
+      "role": "시장의 반복 판매 공간 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.6,
+        "depth": 1.5,
+        "height": 2.6,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/market-stall.glb",
+      "preview": "previews/market-stall.png",
+      "manifest": "manifests/market-stall.json",
+      "triangles": 3472,
+      "mesh_count": 110,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 481468,
+      "sha256": "55371a57277827a748c15e5b6a31f1ad6ecaea524816660780c6eda7c62db5ec",
+      "bounds": {
+        "min": [
+          -1.274999976158142,
+          5.960464455334602e-9,
+          -0.7749999761581421
+        ],
+        "max": [
+          1.274999976158142,
+          2.416000000759959,
+          0.7749999761581421
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "cooking-pot",
+      "order": 71,
+      "name_ko": "항구 수프 솥",
+      "name_en": "Harbor Soup Pot",
+      "category": "props",
+      "role": "급식 생활감의 소품이며 능력 버프가 아니다",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 1.2,
+        "height": 1.2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/cooking-pot.glb",
+      "preview": "previews/cooking-pot.png",
+      "manifest": "manifests/cooking-pot.json",
+      "triangles": 952,
+      "mesh_count": 10,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 114252,
+      "sha256": "49378628c56a459f40f589182af2dd32e11c814122b3ff9803be509cb1952d06",
+      "bounds": {
+        "min": [
+          -0.6250000011920929,
+          0.04257956367681642,
+          -0.4724999964237213
+        ],
+        "max": [
+          0.6250000011920929,
+          1.4225406646728516,
+          0.4724999964237213
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "empty-bell-frame",
+      "order": 72,
+      "name_ko": "빈 종틀",
+      "name_en": "Empty Bell Frame",
+      "category": "props",
+      "role": "종 도난 이후 종항의 빈자리 실루엣",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.4,
+        "depth": 1.2,
+        "height": 3.2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/empty-bell-frame.glb",
+      "preview": "previews/empty-bell-frame.png",
+      "manifest": "manifests/empty-bell-frame.json",
+      "triangles": 1080,
+      "mesh_count": 15,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 132424,
+      "sha256": "a264c59e762e353c4bdbee55f32e33c8599bb7db0e09c4c7e16336105a23364f",
+      "bounds": {
+        "min": [
+          -1.2200000119209289,
+          2.3841857821338408e-8,
+          -0.3499999940395355
+        ],
+        "max": [
+          1.2200000119209289,
+          3.2446162700653076,
+          0.3499999940395355
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "world-map-table",
+      "order": 73,
+      "name_ko": "입체 항해도 탁자",
+      "name_en": "World Map Table",
+      "category": "navigation",
+      "role": "항로 비교용3D 지도 받침",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.6,
+        "depth": 2.6,
+        "height": 1.2,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/world-map-table.glb",
+      "preview": "previews/world-map-table.png",
+      "manifest": "manifests/world-map-table.json",
+      "triangles": 2316,
+      "mesh_count": 42,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 293756,
+      "sha256": "10bddcd72adeda9ca6b42c36b6ebb3ba7d6a5eeac0fdf4a2e1a4d02c1b8d3835",
+      "bounds": {
+        "min": [
+          -1.625,
+          0,
+          -1.100000023841858
+        ],
+        "max": [
+          1.625,
+          1.2850000035762787,
+          1.100000023841858
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "route-node",
+      "order": 74,
+      "name_ko": "항로 거점 마커",
+      "name_en": "Route Node Marker",
+      "category": "navigation",
+      "role": "지도상의 거점을 나타내는 입체 표식",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.65,
+        "depth": 0.65,
+        "height": 0.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/route-node.glb",
+      "preview": "previews/route-node.png",
+      "manifest": "manifests/route-node.json",
+      "triangles": 304,
+      "mesh_count": 4,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 37944,
+      "sha256": "a101f79d407d130f71309c8d25bac2861e0ca5ccb0bf32c665fdde981cbe9038",
+      "bounds": {
+        "min": [
+          -0.26846787333488464,
+          -2.98023217215615e-10,
+          -0.3100000023841858
+        ],
+        "max": [
+          0.26846787333488464,
+          0.5479999953508378,
+          0.31999999821186065
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "route-segment",
+      "order": 75,
+      "name_ko": "항로 선분",
+      "name_en": "Route Segment",
+      "category": "navigation",
+      "role": "선택 항로의 연결을 나타내는 두께 있는 선",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.25,
+        "depth": 1.6,
+        "height": 0.25,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/route-segment.glb",
+      "preview": "previews/route-segment.png",
+      "manifest": "manifests/route-segment.json",
+      "triangles": 840,
+      "mesh_count": 8,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 99700,
+      "sha256": "9ca13141c90fffe560cf3fe52770ebccb303c3758c45908e3b0823b2f056cb32",
+      "bounds": {
+        "min": [
+          -0.10999999940395355,
+          0.005000000447034837,
+          -0.7599999994039536
+        ],
+        "max": [
+          0.10999999940395355,
+          0.17711901664733887,
+          0.7599999994039536
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "route-fork",
+      "order": 76,
+      "name_ko": "항로 갈림 표식",
+      "name_en": "Route Fork Marker",
+      "category": "navigation",
+      "role": "2~3개의 선택 경로를 읽는 갈림 도형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 1.3,
+        "height": 0.3,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/route-fork.glb",
+      "preview": "previews/route-fork.png",
+      "manifest": "manifests/route-fork.json",
+      "triangles": 680,
+      "mesh_count": 8,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 82288,
+      "sha256": "6e1ffbb01e597744ae5a503d0e2172925cf936bae499049fd54f192040979599",
+      "bounds": {
+        "min": [
+          -0.5850000008940697,
+          0.004999999850988389,
+          -0.6850000008940696
+        ],
+        "max": [
+          0.5850000008940697,
+          0.1550000011920929,
+          0.5650000008940697
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "route-gate",
+      "order": 77,
+      "name_ko": "항로 관문 표식",
+      "name_en": "Route Gate Marker",
+      "category": "navigation",
+      "role": "통과 방향을 나타내는 지도용 아치 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 0.6,
+        "height": 1.3,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/route-gate.glb",
+      "preview": "previews/route-gate.png",
+      "manifest": "manifests/route-gate.json",
+      "triangles": 746,
+      "mesh_count": 7,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 88204,
+      "sha256": "e0f9c4af943bc944031b9749435968c8dfc22111d645dc5e180f9213417c4b62",
+      "bounds": {
+        "min": [
+          -0.5900000005960464,
+          6.705522526129215e-10,
+          -0.15000000596046448
+        ],
+        "max": [
+          0.5900000005960464,
+          1.2818186283111572,
+          0.1799999982118607
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "compass-rose",
+      "order": 78,
+      "name_ko": "입체 나침반판",
+      "name_en": "Compass Rose",
+      "category": "navigation",
+      "role": "항해도 전방을 읽는3D 방향 장식",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.2,
+        "depth": 1.2,
+        "height": 0.25,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/compass-rose.glb",
+      "preview": "previews/compass-rose.png",
+      "manifest": "manifests/compass-rose.json",
+      "triangles": 400,
+      "mesh_count": 11,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 56232,
+      "sha256": "6023a042ae8bbdad0507456e08bfb716d366738196c466fba0bd3d6d4157d2ca",
+      "bounds": {
+        "min": [
+          -0.5199999809265137,
+          8.940696724635266e-10,
+          -0.5199999809265137
+        ],
+        "max": [
+          0.5199999809265137,
+          0.19500000357627872,
+          0.5199999809265137
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "wind-vane",
+      "order": 79,
+      "name_ko": "풍향계",
+      "name_en": "Wind Vane",
+      "category": "navigation",
+      "role": "협곡의 흐름 방향을 상징하는 정적 소품",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.4,
+        "depth": 0.6,
+        "height": 1.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/wind-vane.glb",
+      "preview": "previews/wind-vane.png",
+      "manifest": "manifests/wind-vane.json",
+      "triangles": 558,
+      "mesh_count": 7,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 68232,
+      "sha256": "35f84c76565a59500a0202b67a811466abd013770eea232d3bf9aca68162b385",
+      "bounds": {
+        "min": [
+          -0.6339572355224162,
+          -1.490116086078075e-10,
+          -0.20000000298023224
+        ],
+        "max": [
+          0.7100000005960464,
+          1.7449999976158141,
+          0.20000000298023224
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "signal-flag",
+      "order": 80,
+      "name_ko": "신호 깃발",
+      "name_en": "Signal Flag",
+      "category": "navigation",
+      "role": "출항과 계류의 읽기 쉬운 시각 소품",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.3,
+        "depth": 0.5,
+        "height": 2.1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/signal-flag.glb",
+      "preview": "previews/signal-flag.png",
+      "manifest": "manifests/signal-flag.json",
+      "triangles": 1256,
+      "mesh_count": 37,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 171932,
+      "sha256": "4f0adeb3a604a1b2c044ad87b7732bd313c8b04d723dd39b691d5baae9f2f5ad",
+      "bounds": {
+        "min": [
+          -0.22499999403953552,
+          0,
+          -0.20000000298023224
+        ],
+        "max": [
+          1.02,
+          2.1249999976158143,
+          0.20000000298023224
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "beacon-buoy",
+      "order": 81,
+      "name_ko": "항로 계류등",
+      "name_en": "Route Beacon Buoy",
+      "category": "navigation",
+      "role": "지역 안전 경계와 거점의 등불 후보",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.1,
+        "depth": 1.1,
+        "height": 1.7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/beacon-buoy.glb",
+      "preview": "previews/beacon-buoy.png",
+      "manifest": "manifests/beacon-buoy.json",
+      "triangles": 1288,
+      "mesh_count": 15,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 155444,
+      "sha256": "7aa9d19e756a1f3c555d92ed855fca4d5eeb5dde793b58560b8f4846c7b131a3",
+      "bounds": {
+        "min": [
+          -0.524999998807907,
+          0.004000004827976217,
+          -0.47999998927116394
+        ],
+        "max": [
+          0.524999998807907,
+          1.779258508682251,
+          0.47999998927116394
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "harbor-sign",
+      "order": 82,
+      "name_ko": "항구 안내판",
+      "name_en": "Harbor Sign",
+      "category": "navigation",
+      "role": "메뉴 기능 위치를 형태로 알려주는 무문자 표지",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.6,
+        "depth": 0.5,
+        "height": 1.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/harbor-sign.glb",
+      "preview": "previews/harbor-sign.png",
+      "manifest": "manifests/harbor-sign.json",
+      "triangles": 1056,
+      "mesh_count": 13,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 127744,
+      "sha256": "30e7b5bebae6042ae0e5469cfee57b8b55c8522c05b95cfe622983c415a8be52",
+      "bounds": {
+        "min": [
+          -0.7749999761581421,
+          -2.384185793236071e-8,
+          -0.27718348232628304
+        ],
+        "max": [
+          0.7749999761581421,
+          1.720000000372529,
+          0.27718348232628304
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "warning-arch",
+      "order": 83,
+      "name_ko": "경계 안내 아치",
+      "name_en": "Boundary Warning Arch",
+      "category": "navigation",
+      "role": "안전/위험 구역 전환을 표시할 외형 후보",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 3.2,
+        "depth": 0.8,
+        "height": 2.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/warning-arch.glb",
+      "preview": "previews/warning-arch.png",
+      "manifest": "manifests/warning-arch.json",
+      "triangles": 1836,
+      "mesh_count": 25,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 223204,
+      "sha256": "e844a0d01bf43145e4fad0195147d8977c6e8d732d2a81415d38aedba991b35a",
+      "bounds": {
+        "min": [
+          -1.55,
+          8.940696724635266e-10,
+          -0.25
+        ],
+        "max": [
+          1.55,
+          2.739000000094995,
+          0.25
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "boundary-marker",
+      "order": 84,
+      "name_ko": "안전 경계 말뚝",
+      "name_en": "Safety Boundary Marker",
+      "category": "navigation",
+      "role": "시각 경계와 임시 정박 선을 표시한다",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 0.7,
+        "depth": 0.7,
+        "height": 1.1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/boundary-marker.glb",
+      "preview": "previews/boundary-marker.png",
+      "manifest": "manifests/boundary-marker.json",
+      "triangles": 400,
+      "mesh_count": 5,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 49180,
+      "sha256": "2ea4dfc3c41eafc3b5749f3e7dab78430c15fa2c6678705d20a5b49482357788",
+      "bounds": {
+        "min": [
+          -0.26629582047462463,
+          -1.490116086078075e-10,
+          -0.2800000011920929
+        ],
+        "max": [
+          0.26629582047462463,
+          1.034999998807907,
+          0.2800000011920929
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "repair-station",
+      "order": 85,
+      "name_ko": "정비 작업대",
+      "name_en": "Repair Station",
+      "category": "interactables",
+      "role": "수리 메뉴의 가시 접점 후보",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.2,
+        "depth": 1.3,
+        "height": 1.6,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/repair-station.glb",
+      "preview": "previews/repair-station.png",
+      "manifest": "manifests/repair-station.json",
+      "triangles": 2728,
+      "mesh_count": 83,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 374948,
+      "sha256": "edaf1e202015ab6618d91fabf866242abb494df7991a10ea495077fa28653c64",
+      "bounds": {
+        "min": [
+          -1.0499999523162842,
+          2.384185793236071e-8,
+          -0.6000000238418579
+        ],
+        "max": [
+          1.0499999523162842,
+          1.4600000001490117,
+          0.6000000238418579
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "crafting-anvil",
+      "order": 86,
+      "name_ko": "제작 모루대",
+      "name_en": "Crafting Anvil",
+      "category": "interactables",
+      "role": "부품 제작의 가시 접점 후보",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.6,
+        "depth": 1.2,
+        "height": 1.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/crafting-anvil.glb",
+      "preview": "previews/crafting-anvil.png",
+      "manifest": "manifests/crafting-anvil.json",
+      "triangles": 992,
+      "mesh_count": 11,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 119100,
+      "sha256": "2cdaf16238688ca34055b7316c3ddd79e858e2bbfad7c1856673451ddc60e2f8",
+      "bounds": {
+        "min": [
+          -0.6800000029802322,
+          5.960464455334602e-9,
+          -0.47999998927116394
+        ],
+        "max": [
+          0.7763584979929399,
+          1.4250000035762787,
+          0.47999998927116394
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "mission-board",
+      "order": 87,
+      "name_ko": "의뢰 게시판",
+      "name_en": "Mission Board",
+      "category": "interactables",
+      "role": "주임무·선택 임무 안내의 가시 접점",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 0.7,
+        "height": 2.3,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/mission-board.glb",
+      "preview": "previews/mission-board.png",
+      "manifest": "manifests/mission-board.json",
+      "triangles": 1828,
+      "mesh_count": 24,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 221880,
+      "sha256": "2d1ff4b59dad2ec6724977b021219387fb6a68006fbb8e8cb4f489a38c912031",
+      "bounds": {
+        "min": [
+          -0.9750000238418579,
+          0,
+          -0.27718348232628304
+        ],
+        "max": [
+          0.9750000238418579,
+          2.270000000372529,
+          0.27718348232628304
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "trade-counter",
+      "order": 88,
+      "name_ko": "거래 창구",
+      "name_en": "Trade Counter",
+      "category": "interactables",
+      "role": "기존 자원·부품 거래 메뉴의 외형 접점",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.4,
+        "depth": 1.1,
+        "height": 1.5,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/trade-counter.glb",
+      "preview": "previews/trade-counter.png",
+      "manifest": "manifests/trade-counter.json",
+      "triangles": 2380,
+      "mesh_count": 49,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 305440,
+      "sha256": "bdf85ad8ac06d6314c03c1d63d85692b70f7b10f3d7dcf167cb451c302fcb645",
+      "bounds": {
+        "min": [
+          -1.100000023841858,
+          0,
+          -0.5
+        ],
+        "max": [
+          1.100000023841858,
+          1.675000000372529,
+          0.525000000372529
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "storage-chest",
+      "order": 89,
+      "name_ko": "보관 상자",
+      "name_en": "Storage Chest",
+      "category": "interactables",
+      "role": "보관 메뉴의 외형 접점",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.6,
+        "depth": 1.1,
+        "height": 1.1,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/storage-chest.glb",
+      "preview": "previews/storage-chest.png",
+      "manifest": "manifests/storage-chest.json",
+      "triangles": 1500,
+      "mesh_count": 15,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 177944,
+      "sha256": "19a61567d003c6ca147bd3ddd546954b8f5a2a86b3e34d42e5454aad2ed3af27",
+      "bounds": {
+        "min": [
+          -0.7819999998807907,
+          0.02999998807907106,
+          -0.5199999993294477
+        ],
+        "max": [
+          0.7819999998807907,
+          1.1449999856948851,
+          0.5679999992251397
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "departure-console",
+      "order": 90,
+      "name_ko": "출항 항법대",
+      "name_en": "Departure Console",
+      "category": "interactables",
+      "role": "항로와 위험 요약의 가시 접점",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.8,
+        "depth": 1.4,
+        "height": 1.6,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/departure-console.glb",
+      "preview": "previews/departure-console.png",
+      "manifest": "manifests/departure-console.json",
+      "triangles": 2532,
+      "mesh_count": 39,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 314484,
+      "sha256": "4955dfbd2a85e8779aa181d597db6a60920b216ecde72b2738a18559efa67b45",
+      "bounds": {
+        "min": [
+          -0.9911274313926697,
+          5.960464455334602e-9,
+          -0.6442820098860937
+        ],
+        "max": [
+          0.9911274313926697,
+          1.4662529473525219,
+          0.6442820098860937
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "memory-desk",
+      "order": 91,
+      "name_ko": "기억 기록대",
+      "name_en": "Memory Record Desk",
+      "category": "interactables",
+      "role": "이미 발견한 기록 검토의 가시 접점",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2,
+        "depth": 1.2,
+        "height": 1.7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/memory-desk.glb",
+      "preview": "previews/memory-desk.png",
+      "manifest": "manifests/memory-desk.json",
+      "triangles": 1888,
+      "mesh_count": 30,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 234112,
+      "sha256": "7288b0623411bc797738070245217ccc5b3ab95f94c458200adbbcf94407f4a1",
+      "bounds": {
+        "min": [
+          -0.9750000238418579,
+          0,
+          -0.550000011920929
+        ],
+        "max": [
+          0.9750000238418579,
+          1.9249999856948852,
+          0.550000011920929
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "mooring-winch",
+      "order": 92,
+      "name_ko": "계류 윈치",
+      "name_en": "Mooring Winch",
+      "category": "interactables",
+      "role": "계류 장치의 조작 가능한 듯한 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.8,
+        "depth": 1.4,
+        "height": 1.3,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/mooring-winch.glb",
+      "preview": "previews/mooring-winch.png",
+      "manifest": "manifests/mooring-winch.json",
+      "triangles": 1256,
+      "mesh_count": 17,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 153704,
+      "sha256": "a7ce49f9a0ed3f07441072df4301f9afb962ab693963669db05f45b0601601b6",
+      "bounds": {
+        "min": [
+          -0.7250000238418579,
+          1.341104505225843e-9,
+          -0.5249999761581421
+        ],
+        "max": [
+          0.8349999988079071,
+          0.9250000017881393,
+          0.7775034308433533
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "salvage-crane",
+      "order": 93,
+      "name_ko": "인양 크레인",
+      "name_en": "Salvage Crane",
+      "category": "interactables",
+      "role": "항구 인양의 독립 장치 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.6,
+        "depth": 2,
+        "height": 3.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/salvage-crane.glb",
+      "preview": "previews/salvage-crane.png",
+      "manifest": "manifests/salvage-crane.json",
+      "triangles": 1632,
+      "mesh_count": 36,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 211676,
+      "sha256": "f73806e687cae74fce88226636ab735d9ae1b9b740cd191d1e7259b1dedb582b",
+      "bounds": {
+        "min": [
+          -0.9274999988079071,
+          0.02000000134110451,
+          -0.7024999988079071
+        ],
+        "max": [
+          1.4645837545394897,
+          3.244999995827675,
+          0.7024999988079071
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "fuel-pump",
+      "order": 94,
+      "name_ko": "연료 보급기",
+      "name_en": "Fuel Pump",
+      "category": "interactables",
+      "role": "기존 연료 보급 메뉴의 가시 접점",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.4,
+        "depth": 1.1,
+        "height": 1.8,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/fuel-pump.glb",
+      "preview": "previews/fuel-pump.png",
+      "manifest": "manifests/fuel-pump.json",
+      "triangles": 948,
+      "mesh_count": 12,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 115216,
+      "sha256": "7780ac24d438023769316a303d090be0ab2dca43b6bab3f37b7d222144f1437b",
+      "bounds": {
+        "min": [
+          -0.5249999761581421,
+          -7.450580569168253e-10,
+          -0.4000000059604645
+        ],
+        "max": [
+          0.6801234483718872,
+          1.697500001490116,
+          0.4000000059604645
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "lift-platform",
+      "order": 95,
+      "name_ko": "화물 승강판",
+      "name_en": "Cargo Lift Platform",
+      "category": "interactables",
+      "role": "정박 시설의 승강 장치 외형 후보",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 2.4,
+        "depth": 2,
+        "height": 3.3,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/lift-platform.glb",
+      "preview": "previews/lift-platform.png",
+      "manifest": "manifests/lift-platform.json",
+      "triangles": 1892,
+      "mesh_count": 43,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 246496,
+      "sha256": "c1203e10d4d9e1465445cfdf3183136654f4ed6fd1b82b0a718541b70e51e927",
+      "bounds": {
+        "min": [
+          -1.1980000072717667,
+          0.04999995231628418,
+          -0.8524999988079072
+        ],
+        "max": [
+          1.1980000072717667,
+          3.1980000072717667,
+          0.8524999988079072
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    },
+    {
+      "id": "safety-anchor",
+      "order": 96,
+      "name_ko": "안전 고정 닻",
+      "name_en": "Safety Anchor",
+      "category": "interactables",
+      "role": "정박 경계를 읽는 고정 장치 외형",
+      "build_method": "local_mesh",
+      "relative_size_hint": {
+        "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+        "width": 1.5,
+        "depth": 1.1,
+        "height": 1.7,
+        "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+      },
+      "model": "assets/safety-anchor.glb",
+      "preview": "previews/safety-anchor.png",
+      "manifest": "manifests/safety-anchor.json",
+      "triangles": 1112,
+      "mesh_count": 14,
+      "material_count": 1,
+      "texture_count": 0,
+      "textures": [],
+      "vertex_colors": true,
+      "animation_count": 0,
+      "bytes": 134900,
+      "sha256": "1b1c0b8eb48e4744d1a33a281bc1d5e1c5b352107970538a258bc05825064435",
+      "bounds": {
+        "min": [
+          -0.651580401965328,
+          1.341104505225843e-9,
+          -0.42500001192092896
+        ],
+        "max": [
+          0.6635535955429077,
+          1.6519999951124191,
+          0.42500001192092896
+        ]
+      },
+      "status": "completed_world_asset_prototype"
+    }
+  ]
+}

@@ -1,0 +1,623 @@
+{
+  "id": "world-map-diorama",
+  "game_title": "Cloudstitch",
+  "name_ko": "6지역 항로 입체 비교",
+  "region_ko": null,
+  "status": "completed_world_scene_prototype",
+  "model": "scenes/world-map-diorama.glb",
+  "source_spec": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "composition": "항해도 탁자 위에6지역을 상징하는 작은 입체 지형/마커를 놓고 거점 사이2~3개 선택 항로를 도형으로 예시한다. 마커 배치와 연결은 비교용이다.",
+  "limits": "실제 지리·게임 좌표·고도·항해 거리·연료 소비·진행 해금은 미확정이다. 지도 정보 공개/항로 선택/세이브 구현을 뜻하지 않는다.",
+  "triangles": 19114,
+  "mesh_count": 224,
+  "primitive_count": 172,
+  "node_count": 285,
+  "material_count": 13,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 172,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 1746668,
+  "sha256": "788898953c4aaf734b189630bb7655ecf40eaadaae15e25635b4df3eee4a8d9c",
+  "mesh_definition_count": 172,
+  "unique_geometry_triangles": 14234,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 224,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -1.625,
+        0,
+        -1.100000023841858
+      ],
+      "max": [
+        1.625,
+        1.599652421951294,
+        1.100000023841858
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "messages": [
+        {
+          "code": "NODE_MATRIX_DEFAULT",
+          "message": "Do not specify default transform matrix.",
+          "severity": 2,
+          "pointer": "/nodes/51/matrix"
+        }
+      ]
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 1,
+    "messages": [
+      {
+        "code": "NODE_MATRIX_DEFAULT",
+        "message": "Do not specify default transform matrix.",
+        "severity": 2,
+        "pointer": "/nodes/51/matrix"
+      }
+    ]
+  },
+  "source_assets": [
+    {
+      "asset_id": "world-map-table",
+      "model": "assets/world-map-table.glb",
+      "sha256": "10bddcd72adeda9ca6b42c36b6ebb3ba7d6a5eeac0fdf4a2e1a4d02c1b8d3835",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "island-grass-small",
+      "model": "assets/island-grass-small.glb",
+      "sha256": "3753c90d7d02495811fce6b455ebe52dd141b221751d533fc9d7e96f2aabb805",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "route-node",
+      "model": "assets/route-node.glb",
+      "sha256": "a101f79d407d130f71309c8d25bac2861e0ca5ccb0bf32c665fdde981cbe9038",
+      "instances": 6,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "cliff-arch",
+      "model": "assets/cliff-arch.glb",
+      "sha256": "71383a73b3742f869d8ab27a8340ce8d0f4a30f4d5d9717b64d7133d0bc2a671",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "storm-cloud-mass",
+      "model": "assets/storm-cloud-mass.glb",
+      "sha256": "1e60abca92b21a8c925e4cc63d23e0602b39bbd7afa1bfc9d6c8b04cd70b655e",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "industrial-rib",
+      "model": "assets/industrial-rib.glb",
+      "sha256": "4730020835a1c58d895ef53abb27eb148f36eebe8be84f8cb8ed5f21759cfa7b",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "fog-layer",
+      "model": "assets/fog-layer.glb",
+      "sha256": "c143d802570b4d6fc9f4526c51f56e5a79e0f5b8f5c9a758ff3ddb06ae0a563f",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "royal-stone-platform",
+      "model": "assets/royal-stone-platform.glb",
+      "sha256": "8db969d50f4c9a423e1d5791f2a58fe5bf2cf729c36d5025e96ae8d8d8297154",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "route-segment",
+      "model": "assets/route-segment.glb",
+      "sha256": "9ca13141c90fffe560cf3fe52770ebccb303c3758c45908e3b0823b2f056cb32",
+      "instances": 5,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "route-fork",
+      "model": "assets/route-fork.glb",
+      "sha256": "6e1ffbb01e597744ae5a503d0e2172925cf936bae499049fd54f192040979599",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "route-gate",
+      "model": "assets/route-gate.glb",
+      "sha256": "e0f9c4af943bc944031b9749435968c8dfc22111d645dc5e180f9213417c4b62",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "compass-rose",
+      "model": "assets/compass-rose.glb",
+      "sha256": "6023a042ae8bbdad0507456e08bfb716d366738196c466fba0bd3d6d4157d2ca",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "beacon-buoy",
+      "model": "assets/beacon-buoy.glb",
+      "sha256": "7aa9d19e756a1f3c555d92ed855fca4d5eeb5dde793b58560b8f4846c7b131a3",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    }
+  ],
+  "placements": [
+    {
+      "asset_id": "world-map-table",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "island-grass-small",
+      "position": [
+        -1.15,
+        1.25,
+        -0.65
+      ],
+      "scale": [
+        0.13,
+        0.13,
+        0.13
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 1
+    },
+    {
+      "asset_id": "route-node",
+      "position": [
+        -1.15,
+        1.25,
+        -0.41000000000000003
+      ],
+      "scale": [
+        0.24,
+        0.24,
+        0.24
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 1
+    },
+    {
+      "asset_id": "cliff-arch",
+      "position": [
+        -0.4,
+        1.25,
+        -0.65
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 2
+    },
+    {
+      "asset_id": "route-node",
+      "position": [
+        -0.4,
+        1.25,
+        -0.41000000000000003
+      ],
+      "scale": [
+        0.24,
+        0.24,
+        0.24
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 2
+    },
+    {
+      "asset_id": "storm-cloud-mass",
+      "position": [
+        0.4,
+        1.25,
+        -0.65
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 3
+    },
+    {
+      "asset_id": "route-node",
+      "position": [
+        0.4,
+        1.25,
+        -0.41000000000000003
+      ],
+      "scale": [
+        0.24,
+        0.24,
+        0.24
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 3
+    },
+    {
+      "asset_id": "industrial-rib",
+      "position": [
+        1.15,
+        1.25,
+        -0.45
+      ],
+      "scale": [
+        0.09,
+        0.09,
+        0.09
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 4
+    },
+    {
+      "asset_id": "route-node",
+      "position": [
+        1.15,
+        1.25,
+        -0.21000000000000002
+      ],
+      "scale": [
+        0.24,
+        0.24,
+        0.24
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 4
+    },
+    {
+      "asset_id": "fog-layer",
+      "position": [
+        0.72,
+        1.25,
+        0.52
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 5
+    },
+    {
+      "asset_id": "route-node",
+      "position": [
+        0.72,
+        1.25,
+        0.76
+      ],
+      "scale": [
+        0.24,
+        0.24,
+        0.24
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 5
+    },
+    {
+      "asset_id": "royal-stone-platform",
+      "position": [
+        -0.48,
+        1.25,
+        0.52
+      ],
+      "scale": [
+        0.13,
+        0.13,
+        0.13
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 6
+    },
+    {
+      "asset_id": "route-node",
+      "position": [
+        -0.48,
+        1.25,
+        0.76
+      ],
+      "scale": [
+        0.24,
+        0.24,
+        0.24
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center",
+      "region_order": 6
+    },
+    {
+      "asset_id": "route-segment",
+      "position": [
+        -0.7749999999999999,
+        1.25,
+        -0.41000000000000003
+      ],
+      "scale": [
+        0.28,
+        0.28,
+        0.4687499999999999
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "route-segment",
+      "position": [
+        0,
+        1.25,
+        -0.41000000000000003
+      ],
+      "scale": [
+        0.28,
+        0.28,
+        0.5
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "route-segment",
+      "position": [
+        0.7749999999999999,
+        1.25,
+        -0.31000000000000005
+      ],
+      "scale": [
+        0.28,
+        0.28,
+        0.4851304592581256
+      ],
+      "rotation_radians": [
+        0,
+        1.3101939350475555,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "route-segment",
+      "position": [
+        0.9349999999999999,
+        1.25,
+        0.275
+      ],
+      "scale": [
+        0.28,
+        0.28,
+        0.6631482677350516
+      ],
+      "rotation_radians": [
+        0,
+        -0.4172673920722847,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "route-segment",
+      "position": [
+        0.12,
+        1.25,
+        0.76
+      ],
+      "scale": [
+        0.28,
+        0.28,
+        0.7499999999999999
+      ],
+      "rotation_radians": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "route-fork",
+      "position": [
+        0,
+        1.25,
+        0.1
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "route-gate",
+      "position": [
+        1.15,
+        1.25,
+        -0.13
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "compass-rose",
+      "position": [
+        -1.2,
+        1.25,
+        0.6
+      ],
+      "scale": [
+        0.32,
+        0.32,
+        0.32
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "beacon-buoy",
+      "position": [
+        0.15,
+        1.25,
+        0.63
+      ],
+      "scale": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    }
+  ],
+  "unique_source_imports": 13,
+  "mesh_images_reused_per_source": true,
+  "original_sources_unchanged": true,
+  "engine_scope": "Relative visual layout only. No approved meters, colliders, navigation, interactions, simulation, menus or game progression."
+}

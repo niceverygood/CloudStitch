@@ -1,0 +1,237 @@
+{
+  "id": "02-deck-cannon",
+  "game_title": "Cloudstitch",
+  "name_ko": "함포",
+  "name_en": "Deck Cannon",
+  "model": "weapon.glb",
+  "reference": "reference.png",
+  "meshy_render": "meshy-render.png",
+  "resource": "image-to-3d",
+  "task_id": "01a14ca8-175e-7602-8fb6-ee97ee2f04c1",
+  "operation_id": "9a8ede0e-c279-4e9b-95cd-490fee857f89",
+  "project_dir": "outputs/weapon-modules/02-deck-cannon/meshy_output/20261018_103729_02-deck-cannon_01a14ca8",
+  "target_triangles": 4000,
+  "triangles": 3876,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "material_count": 1,
+  "texture_count": 1,
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "mode": "RGB"
+    }
+  ],
+  "animation_clips": 0,
+  "model_bytes": 3961552,
+  "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+  "reported_consumed_credits": 15,
+  "status": "completed_asset_prototype",
+  "limitations": [
+    "Generated visual prototype. Mechanical part separation, pivots, firing sockets, collision and engine performance are not finalized.",
+    "Toon shading and outlines are runtime workbench materials, not universal shaders embedded in the original GLB.",
+    "Mounting view is an external deck placement study. The original single-mesh airship and its existing gun are preserved.",
+    "Unseen sides were inferred from one reference image."
+  ],
+  "local_runtime_note": "The Windows CLI can emit a libuv shutdown assertion after writing a successful result. Completion is verified from task snapshot, downloaded file length and GLB data; paid requests are not repeated because of shutdown noise.",
+  "verification": {
+    "id": "02-deck-cannon",
+    "initial": {
+      "ready": true,
+      "offline": true,
+      "mode": "handdrawn",
+      "models": {
+        "__ship": {
+          "sourceBytes": 3645884,
+          "meshCount": 1,
+          "triangleCount": 11026,
+          "materialCount": 1,
+          "textureCount": 1,
+          "texturesReady": true,
+          "textures": [
+            {
+              "name": "",
+              "width": 2048,
+              "height": 2048,
+              "ready": true
+            }
+          ],
+          "animationClipCount": 0,
+          "originalBounds": {
+            "min": [
+              -0.4748539924621582,
+              -0.2595210075378418,
+              -0.1496579945087433
+            ],
+            "max": [
+              0.47338899970054626,
+              0.2600100040435791,
+              0.13598600029945374
+            ]
+          }
+        },
+        "01-machine-gun": {
+          "sourceBytes": 3299860,
+          "meshCount": 1,
+          "triangleCount": 3945,
+          "materialCount": 1,
+          "textureCount": 1,
+          "texturesReady": true,
+          "textures": [
+            {
+              "name": "",
+              "width": 2048,
+              "height": 2048,
+              "ready": true
+            }
+          ],
+          "animationClipCount": 0,
+          "originalBounds": {
+            "min": [
+              -0.4826659858226776,
+              -0.2087399959564209,
+              -0.25707998871803284
+            ],
+            "max": [
+              0.4787600040435791,
+              0.21362300217151642,
+              0.25756800174713135
+            ]
+          }
+        },
+        "02-deck-cannon": {
+          "sourceBytes": 3961552,
+          "meshCount": 1,
+          "triangleCount": 3876,
+          "materialCount": 1,
+          "textureCount": 1,
+          "texturesReady": true,
+          "textures": [
+            {
+              "name": "",
+              "width": 2048,
+              "height": 2048,
+              "ready": true
+            }
+          ],
+          "animationClipCount": 0,
+          "originalBounds": {
+            "min": [
+              -0.47729501128196716,
+              -0.1940920054912567,
+              -0.2287600040435791
+            ],
+            "max": [
+              0.4787600040435791,
+              0.19213899970054626,
+              0.22973600029945374
+            ]
+          }
+        }
+      },
+      "selectedId": "02-deck-cannon",
+      "mounted": false,
+      "outlineEnabled": true,
+      "outlinePixels": 1.2,
+      "autoRotate": false,
+      "yawDegrees": 0,
+      "mountScale": 1,
+      "placementPreviewOnly": false,
+      "sourceBytes": 3961552,
+      "meshCount": 1,
+      "triangleCount": 3876,
+      "materialCount": 1,
+      "textureCount": 1,
+      "texturesReady": true,
+      "textures": [
+        {
+          "name": "",
+          "width": 2048,
+          "height": 2048,
+          "ready": true
+        }
+      ],
+      "animationClipCount": 0,
+      "originalBounds": {
+        "min": [
+          -0.47729501128196716,
+          -0.1940920054912567,
+          -0.2287600040435791
+        ],
+        "max": [
+          0.4787600040435791,
+          0.19213899970054626,
+          0.22973600029945374
+        ]
+      },
+      "error": null
+    },
+    "downloadBytes": 3961552,
+    "shipComparison": true,
+    "regressions": [
+      {
+        "mode": "handdrawn",
+        "mounted": false,
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 0,
+        "cameraUnchanged": true,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "cel",
+        "mounted": false,
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 4.440892098500626e-16,
+        "cameraUnchanged": true,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "original",
+        "mounted": false,
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 0,
+        "cameraUnchanged": true,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "handdrawn",
+        "mounted": true,
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "cameraDelta": 0,
+        "cameraUnchanged": true,
+        "outlineAutoClear": true
+      }
+    ]
+  },
+  "verification_summary": {
+    "passed": true,
+    "errors": [],
+    "externalRequests": [],
+    "mobileOverflow": false
+  },
+  "previews": [
+    "preview-handdrawn.png",
+    "preview-cel.png",
+    "preview-original.png",
+    "preview-mounted.png"
+  ],
+  "preview_image": {
+    "width": 2436,
+    "height": 1248,
+    "bounds": [
+      816,
+      328,
+      1664,
+      927
+    ]
+  }
+}

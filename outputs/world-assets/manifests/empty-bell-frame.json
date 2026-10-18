@@ -1,0 +1,84 @@
+{
+  "id": "empty-bell-frame",
+  "order": 72,
+  "name_ko": "빈 종틀",
+  "name_en": "Empty Bell Frame",
+  "category": "props",
+  "role": "종 도난 이후 종항의 빈자리 실루엣",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 2.4,
+    "depth": 1.2,
+    "height": 3.2,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/empty-bell-frame.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 1080,
+  "mesh_count": 15,
+  "primitive_count": 15,
+  "node_count": 18,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 15,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 132424,
+  "sha256": "a264c59e762e353c4bdbee55f32e33c8599bb7db0e09c4c7e16336105a23364f",
+  "mesh_definition_count": 15,
+  "unique_geometry_triangles": 1080,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 15,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -1.2200000119209289,
+        2.3841857821338408e-8,
+        -0.3499999940395355
+      ],
+      "max": [
+        1.2200000119209289,
+        3.2446162700653076,
+        0.3499999940395355
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

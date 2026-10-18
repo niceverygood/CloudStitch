@@ -1,0 +1,65 @@
+{
+  "id": "06-flamethrower",
+  "order": 6,
+  "name_ko": "화염 분사",
+  "name_en": "Flamethrower Attack Sequence",
+  "category": "weapon-sequence",
+  "weapon_id": "06-flamethrower",
+  "model": "sequences/06-flamethrower.glb",
+  "preview": "sequence-previews/06-flamethrower.png",
+  "duration": 3,
+  "loop": true,
+  "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+  "status": "completed_composed_animation_study",
+  "triangles": 6101,
+  "mesh_count": 39,
+  "animation_count": 1,
+  "bytes": 4088896,
+  "component_effects": [
+    {
+      "id": "flamethrower-ignite",
+      "start": 0,
+      "end": 0.4
+    },
+    {
+      "id": "flamethrower-stream",
+      "start": 0.15,
+      "end": 2.6
+    },
+    {
+      "id": "flamethrower-hit",
+      "start": 0.5,
+      "end": 2.9
+    }
+  ],
+  "approximate_muzzle": [
+    0.11841320381106613,
+    0.6469771102689745,
+    -0.02150336848870915
+  ],
+  "source_weapon_sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd",
+  "copied_weapon_zero_normals_repaired": 0,
+  "sha256": "fb112cfaf9b31b967148f55687942d71a49b1856533cd88d4dd169a4ac5b47c8",
+  "preview_image": {
+    "width": 2436,
+    "height": 1210,
+    "bounds": [
+      769,
+      196,
+      1747,
+      979
+    ]
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 49,
+    "sha256": "fb112cfaf9b31b967148f55687942d71a49b1856533cd88d4dd169a4ac5b47c8"
+  },
+  "browser_QA_passed": true,
+  "limits": [
+    "Composed choreography and estimated muzzle placement, not a combat game or finished weapon sockets.",
+    "Original weapon geometry/texture files remain unchanged. Four zero normals were repaired only in the chain-shot copy.",
+    "Weapon part separation, recoil rig, collisions and damage are not implemented."
+  ]
+}

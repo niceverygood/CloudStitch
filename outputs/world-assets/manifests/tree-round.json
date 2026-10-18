@@ -1,0 +1,84 @@
+{
+  "id": "tree-round",
+  "order": 43,
+  "name_ko": "둥근 수관 나무",
+  "name_en": "Round Canopy Tree",
+  "category": "vegetation",
+  "role": "작은 부유섬의 편안한 식생",
+  "build_method": "local_mesh",
+  "relative_size_hint": {
+    "unit": "D = 비교용 아트 조립 단위(직선 부두 폭 2D)",
+    "width": 2.5,
+    "depth": 2.2,
+    "height": 4,
+    "status": "제안값이며 실제 생성 크기·최종 미터/U/소켓 치수가 아니다."
+  },
+  "game_title": "Cloudstitch",
+  "model": "assets/tree-round.glb",
+  "status": "completed_world_asset_prototype",
+  "source": "Original local static vertex-painted multipart geometry",
+  "triangles": 2080,
+  "mesh_count": 20,
+  "primitive_count": 20,
+  "node_count": 21,
+  "material_count": 1,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 20,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 246080,
+  "sha256": "71bd6f8921a4e33745daf04ddb149b6d6c6511943526f7c900ecd071c937d4e5",
+  "mesh_definition_count": 20,
+  "unique_geometry_triangles": 2080,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 20,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -1.100000011920929,
+        -0.05120344087481499,
+        -0.8999999761581421
+      ],
+      "max": [
+        0.9208817053199201,
+        3.6649999797344206,
+        0.8999999761581421
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "consumed_credits": 0,
+  "original_source_preserved": false,
+  "spec_source": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "axes_and_units": "Y up, Z front; relative design units. Actual generated bounds measured; final engine units and sockets are not approved.",
+  "limits": [
+    "Visual static world asset prototype. Collider, navigation, LOD, interiors, interaction, physics and engine performance are not implemented.",
+    "Handdrawn/cel outline effects are viewer runtime materials. Original geometry and embedded colors/textures are separate from engine integration."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "02-deck-cannon",
+  "order": 2,
+  "name_ko": "함포 공격",
+  "name_en": "Deck Cannon Attack Sequence",
+  "category": "weapon-sequence",
+  "weapon_id": "02-deck-cannon",
+  "model": "sequences/02-deck-cannon.glb",
+  "preview": "sequence-previews/02-deck-cannon.png",
+  "duration": 2.8,
+  "loop": true,
+  "purpose": "기존 무기와 발사→비행→명중을 연결한 연출 시연. 실제 충돌·피해·리깅은 미구현.",
+  "status": "completed_composed_animation_study",
+  "triangles": 6798,
+  "mesh_count": 60,
+  "animation_count": 1,
+  "bytes": 4414328,
+  "component_effects": [
+    {
+      "id": "cannon-muzzle",
+      "start": 0,
+      "end": 0.55
+    },
+    {
+      "id": "cannon-projectile",
+      "start": 0.3,
+      "end": 1.25
+    },
+    {
+      "id": "cannon-hit",
+      "start": 1.24,
+      "end": 2.7
+    }
+  ],
+  "approximate_muzzle": [
+    0.0037513940745979024,
+    0.5826191776634596,
+    -0.008071764725575914
+  ],
+  "source_weapon_sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+  "copied_weapon_zero_normals_repaired": 0,
+  "sha256": "ab07861e5fea19d1ac6aadf5722f52cf6849e0f859afc988ae3baa2d0bcc5b7d",
+  "preview_image": {
+    "width": 2436,
+    "height": 1210,
+    "bounds": [
+      799,
+      266,
+      1736,
+      892
+    ]
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 107,
+    "sha256": "ab07861e5fea19d1ac6aadf5722f52cf6849e0f859afc988ae3baa2d0bcc5b7d"
+  },
+  "browser_QA_passed": true,
+  "limits": [
+    "Composed choreography and estimated muzzle placement, not a combat game or finished weapon sockets.",
+    "Original weapon geometry/texture files remain unchanged. Four zero normals were repaired only in the chain-shot copy.",
+    "Weapon part separation, recoil rig, collisions and damage are not implemented."
+  ]
+}

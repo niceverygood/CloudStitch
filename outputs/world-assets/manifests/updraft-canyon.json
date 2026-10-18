@@ -1,0 +1,499 @@
+{
+  "id": "updraft-canyon",
+  "game_title": "Cloudstitch",
+  "name_ko": "상승기류 협곡 정박대",
+  "region_ko": "청록빛 상승기류 협곡",
+  "status": "completed_world_scene_prototype",
+  "model": "scenes/updraft-canyon.glb",
+  "source_spec": "production-spec.json",
+  "canonical_sources": [
+    "outputs/04-harbor.txt",
+    "outputs/08-world-map.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/64-harbor-cast.txt",
+    "outputs/69-regional-harbors.txt",
+    "outputs/86-region-story-transitions.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt"
+  ],
+  "composition": "절벽 측면 턱에 작은 정박대와 천막, 풍향 표식·넓게 벌어진 계류 고리를 놓는다. 섬 표면을 완성된 대도시로 만들지 않는다.",
+  "limits": "바람 시뮬레이션·배의 강제 이동·항로/착륙·날씨 판정은 없다. 안전 메뉴 중 배가 떠밀리는 새 규칙을 넣지 않는다.",
+  "triangles": 24754,
+  "mesh_count": 456,
+  "primitive_count": 439,
+  "node_count": 526,
+  "material_count": 15,
+  "texture_count": 0,
+  "textures": [],
+  "vertex_color_primitive_count": 439,
+  "vertex_colors": true,
+  "animation_count": 0,
+  "bytes": 3097200,
+  "sha256": "4495f6e4205505ca17e4a5928d752f2fba4e43cf5912a95d2f5ac84c00ae0450",
+  "mesh_definition_count": 439,
+  "unique_geometry_triangles": 24300,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "geometry_only_check_did_not_modify_source": true,
+    "loaded_meshes": 456,
+    "finite_transforms_and_bounds": true,
+    "bounds": {
+      "min": [
+        -7.641582817077637,
+        -5,
+        -3.002571214406828
+      ],
+      "max": [
+        5.7559600353240965,
+        5.381200002968312,
+        3.095874998390675
+      ]
+    },
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    "passed": true
+  },
+  "standard_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "source_assets": [
+    {
+      "asset_id": "cliff-arch",
+      "model": "assets/cliff-arch.glb",
+      "sha256": "71383a73b3742f869d8ab27a8340ce8d0f4a30f4d5d9717b64d7133d0bc2a671",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "cliff-ledge",
+      "model": "assets/cliff-ledge.glb",
+      "sha256": "391e0f5bf3a20ced78936124df6645a4552b353f53b865f7270a2c6d3512e3c0",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "cloud-column",
+      "model": "assets/cloud-column.glb",
+      "sha256": "5c5b8142452c0ad6d729c1cbeaa3c30763b0304a2b81eb760d3a7f5995a9fd27",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "mineral-outcrop-teal",
+      "model": "assets/mineral-outcrop-teal.glb",
+      "sha256": "6c8ccbe42d7da1502ec40a6f9fe5d133d4a7ea93fb8368c03bf70885ec84037f",
+      "instances": 2,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "dock-straight",
+      "model": "assets/dock-straight.glb",
+      "sha256": "625888f3c74f0931367a3df9a35e3727f97f75ec2c072995db6f7ad4a45094fb",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "bridge-short",
+      "model": "assets/bridge-short.glb",
+      "sha256": "e3c26d8a642e4e400433d18a20278f6a9ea0548ea93de93be326d697c10e2e9c",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "canopy-canvas",
+      "model": "assets/canopy-canvas.glb",
+      "sha256": "e53ac4ce5e1d0d94dcf3c2f9395746f4a241374341ec6cd2ab08de0ae19bbedb",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "mooring-ring",
+      "model": "assets/mooring-ring.glb",
+      "sha256": "0650e80f253da2b2ef3f7e51dc71af34691254e22e1cb5b55a627f0882bfc5be",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "mooring-winch",
+      "model": "assets/mooring-winch.glb",
+      "sha256": "a7ce49f9a0ed3f07441072df4301f9afb962ab693963669db05f45b0601601b6",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "wind-vane",
+      "model": "assets/wind-vane.glb",
+      "sha256": "35f84c76565a59500a0202b67a811466abd013770eea232d3bf9aca68162b385",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "signal-flag",
+      "model": "assets/signal-flag.glb",
+      "sha256": "4f0adeb3a604a1b2c044ad87b7732bd313c8b04d723dd39b691d5baae9f2f5ad",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "tree-windswept",
+      "model": "assets/tree-windswept.glb",
+      "sha256": "b530b7ba7882f4daf1ee779a9f77c8af795069950b27f4be6be4594bab1c959a",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "hanging-vine",
+      "model": "assets/hanging-vine.glb",
+      "sha256": "c03166da4a7fed59300027a1c92d2a1d8f53a466f6344a3567faefddadb4921f",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "storage-chest",
+      "model": "assets/storage-chest.glb",
+      "sha256": "19a61567d003c6ca147bd3ddd546954b8f5a2a86b3e34d42e5454aad2ed3af27",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    },
+    {
+      "asset_id": "departure-console",
+      "model": "assets/departure-console.glb",
+      "sha256": "4955dfbd2a85e8779aa181d597db6a60920b216ecde72b2738a18559efa67b45",
+      "instances": 1,
+      "build_method": "local_mesh",
+      "counted_in_independent_96": true
+    }
+  ],
+  "placements": [
+    {
+      "asset_id": "cliff-arch",
+      "position": [
+        -3.5,
+        -3.2,
+        -2
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "cliff-ledge",
+      "position": [
+        3,
+        -2,
+        1
+      ],
+      "scale": [
+        1.2,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "cloud-column",
+      "position": [
+        -7,
+        -5,
+        1
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "mineral-outcrop-teal",
+      "position": [
+        -5,
+        0.7,
+        -1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "mineral-outcrop-teal",
+      "position": [
+        1.4,
+        1.4,
+        -1.5
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "dock-straight",
+      "position": [
+        3.6,
+        2.6,
+        1
+      ],
+      "scale": [
+        1.4,
+        1,
+        1.35
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "bridge-short",
+      "position": [
+        0.8,
+        2.6,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "canopy-canvas",
+      "position": [
+        3.8,
+        3,
+        -0.6
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "mooring-ring",
+      "position": [
+        4.8,
+        3.05,
+        2.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "mooring-winch",
+      "position": [
+        2.5,
+        3.05,
+        2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "wind-vane",
+      "position": [
+        4.2,
+        3.05,
+        -1.3
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "signal-flag",
+      "position": [
+        0.3,
+        3.05,
+        2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "tree-windswept",
+      "position": [
+        -5,
+        0.15,
+        -2
+      ],
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "hanging-vine",
+      "position": [
+        -1.3,
+        2.4,
+        1.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "storage-chest",
+      "position": [
+        4,
+        3.05,
+        1.5
+      ],
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    },
+    {
+      "asset_id": "departure-console",
+      "position": [
+        3,
+        3.05,
+        -0.8
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "anchor": "ground-center"
+    }
+  ],
+  "unique_source_imports": 15,
+  "mesh_images_reused_per_source": true,
+  "original_sources_unchanged": true,
+  "engine_scope": "Relative visual layout only. No approved meters, colliders, navigation, interactions, simulation, menus or game progression."
+}

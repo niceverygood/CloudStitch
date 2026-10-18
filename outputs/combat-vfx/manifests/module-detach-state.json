@@ -1,0 +1,66 @@
+{
+  "id": "module-detach-state",
+  "name_ko": "부품 분리 순간",
+  "source": "Original local procedural mesh authored for Cloudstitch",
+  "status": "completed_mesh_animation_prototype",
+  "model": "assets/module-detach-state.glb",
+  "sha256": "5ab66177070d315574612622b757517ab1c919a491300f722482d5d813cf8a21",
+  "bytes": 133624,
+  "triangles": 816,
+  "mesh_count": 23,
+  "node_count": 38,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_channels": 39,
+  "channel_paths": [
+    "translation",
+    "scale",
+    "rotation"
+  ],
+  "vertex_colors": true,
+  "unlit_materials": true,
+  "texture_count": 0,
+  "duration": 1,
+  "loop": false,
+  "axes": "+Y up, +Z forward; surface impact normal +Y",
+  "verification": {
+    "GLTFLoader_roundtrip": true,
+    "animation_changes_transforms": true,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "unique_sample_states": 6,
+    "clip_duration": 1,
+    "animated_bounds": {
+      "min": [
+        -0.6782630646044078,
+        -0.00028081941925595544,
+        -0.7620570722989545
+      ],
+      "max": [
+        1.0002810297718407,
+        1.1921101260461977,
+        0.759529875006269
+      ]
+    },
+    "browser_QA_passed": true,
+    "standard_validator": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "sha256": "5ab66177070d315574612622b757517ab1c919a491300f722482d5d813cf8a21"
+    }
+  },
+  "meshy_credits_used": 0,
+  "limits": [
+    "Visual mesh animation prototype. No collision, damage, fluid simulation, engine particle graph or sound.",
+    "Opacity and lighting/shader parameters are not animated. Appearance/disappearance uses mesh scale.",
+    "Unlit vertex paint is embedded. Optional viewer outline is a runtime effect.",
+    "Duration/size are art preview values; they do not change gameplay rules."
+  ]
+}
