@@ -3,9 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "description": "Offline Cloudstitch art prototypes and portable verification tools",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build:viewer": "node tools/toon-viewer/build.cjs",
+    "build:rig": "node tools/airship-rig/build.cjs",
+    "build:fleet": "node tools/fleet/build.cjs",
+    "capture:fleet": "node tools/fleet/capture.cjs",
+    "verify:fleet": "node tools/qa/fleet.cjs",
+    "build:encounters": "node tools/encounters/build.cjs",
+    "verify:encounters": "node tools/qa/encounters.cjs",
+    "capture:encounters": "node tools/encounters/capture.cjs",
+    "finalize:encounters": "node tools/encounters/finalize.cjs",
+    "overview:fleet": "node tools/fleet/overview.cjs",
+    "finalize:fleet": "node tools/fleet/finalize.cjs",
+    "verify:fleet-ghosting": "node tools/qa/fleet-ghosting.cjs",
+    "verify:rig": "node tools/qa/airship-rig.cjs",
+    "verify:gltf": "node tools/qa/gltf.cjs",
+    "verify:rig-video": "node tools/qa/rig-video.cjs",
     "verify:viewer": "node tools/qa/viewer.cjs",
     "verify:ghosting": "node tools/qa/ghosting.cjs",
     "verify:title": "node tools/qa/title-screen.cjs",
@@ -31,6 +47,7 @@
     "three": "0.180.0"
   },
   "devDependencies": {
+    "gltf-validator": "2.0.0-dev.3.10",
     "playwright": "1.62.1"
   }
 }
