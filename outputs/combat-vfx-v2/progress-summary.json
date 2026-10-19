@@ -1,0 +1,2395 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "generated_at_utc": "2026-10-18T08:03:06.833Z",
+  "scope": {
+    "effects": 48,
+    "weapon_sequences": 6,
+    "total": 54
+  },
+  "completion_rule": "Actual GLB presence and TRS structure are reported separately. This script does not declare art review, browser verification or game integration complete.",
+  "counts": {
+    "models_present": 54,
+    "animated_models_present": 54,
+    "pending": 0,
+    "animation_pending": 0,
+    "invalid_models": 0
+  },
+  "representatives": [
+    {
+      "id": "machine-gun-muzzle",
+      "order": 1,
+      "name_ko": "기관총 포구 섬광",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+        "bytes": 3733736,
+        "sha256": "b77da528fb42f4befdfbbefc162fbaa22e367903911300b53db912f650c4a7a8",
+        "triangles": 2210,
+        "mesh_count": 4,
+        "node_count": 11,
+        "material_count": 4,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "machine-gun-muzzle",
+            "duration_seconds": 0.20000000298023224,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "smoke-puff",
+      "order": 31,
+      "name_ko": "짧은 연기",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/smoke-puff.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/smoke-puff.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/smoke-puff.glb",
+        "bytes": 3703500,
+        "sha256": "c57c974af690a604784d1f81ad1e83fa65177a63082b85820ab120e94fec6647",
+        "triangles": 1679,
+        "mesh_count": 1,
+        "node_count": 9,
+        "material_count": 1,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "smoke-puff",
+            "duration_seconds": 1.7999999523162842,
+            "channels": 6,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "cannon-hit",
+      "order": 6,
+      "name_ko": "함포 약점 파쇄",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/cannon-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+        "bytes": 7474808,
+        "sha256": "f6429ec4bbeb84524c09738822851a062d11efb2f94fcdb964cb1d66fede22ac",
+        "triangles": 4225,
+        "mesh_count": 6,
+        "node_count": 21,
+        "material_count": 6,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "cannon-hit",
+            "duration_seconds": 0.75,
+            "channels": 14,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "flamethrower-stream",
+      "order": 17,
+      "name_ko": "화염방사 짧은 원뿔",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/flamethrower-stream.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+        "bytes": 3690504,
+        "sha256": "160308a30de3080c7307766c52f67e47c0305d7f6ebba56aca3d89729ec9c077",
+        "triangles": 1790,
+        "mesh_count": 2,
+        "node_count": 23,
+        "material_count": 2,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "flamethrower-stream",
+            "duration_seconds": 1.2000000476837158,
+            "channels": 11,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "shield-pulse",
+      "order": 43,
+      "name_ko": "방패 펄스",
+      "category": "defense-support",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/shield-pulse.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/shield-pulse.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/shield-pulse.glb",
+        "bytes": 338628,
+        "sha256": "85960acbf58e9192d78d9673a315028657103081ce62fb59f1a32b1751d5af81",
+        "triangles": 3024,
+        "mesh_count": 6,
+        "node_count": 13,
+        "material_count": 6,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "shield-pulse",
+            "duration_seconds": 1.100000023841858,
+            "channels": 9,
+            "channel_paths": [
+              "translation",
+              "scale"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "repair-stitch",
+      "order": 45,
+      "name_ko": "수리 봉합",
+      "category": "defense-support",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/repair-stitch.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/repair-stitch.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/repair-stitch.glb",
+        "bytes": 188308,
+        "sha256": "4f306bc541434dbf953a2d28e3acb5bc7d6e11c3018565778002e414f7e08418",
+        "triangles": 1624,
+        "mesh_count": 7,
+        "node_count": 15,
+        "material_count": 7,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "repair-stitch",
+            "duration_seconds": 2,
+            "channels": 8,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "machine-gun-muzzle",
+      "order": 1,
+      "name_ko": "기관총 포구 섬광",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+        "bytes": 3733736,
+        "sha256": "b77da528fb42f4befdfbbefc162fbaa22e367903911300b53db912f650c4a7a8",
+        "triangles": 2210,
+        "mesh_count": 4,
+        "node_count": 11,
+        "material_count": 4,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "machine-gun-muzzle",
+            "duration_seconds": 0.20000000298023224,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "machine-gun-projectile",
+      "order": 2,
+      "name_ko": "기관총 탄환 궤적",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb",
+        "bytes": 59028,
+        "sha256": "9fede02363cd212d3ac628ecc51c7114c47f5646aa91944ee2c00f815138dbac",
+        "triangles": 504,
+        "mesh_count": 2,
+        "node_count": 4,
+        "material_count": 2,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "machine-gun-projectile",
+            "duration_seconds": 0.44999998807907104,
+            "channels": 4,
+            "channel_paths": [
+              "translation",
+              "scale"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "machine-gun-hit",
+      "order": 3,
+      "name_ko": "기관총 집중 타격",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb",
+        "bytes": 117336,
+        "sha256": "10561ff655c101b7efef1805e774d3aec6ebef2dcf0e5c7886da4f0dcc87e4b0",
+        "triangles": 1008,
+        "mesh_count": 4,
+        "node_count": 8,
+        "material_count": 4,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "machine-gun-hit",
+            "duration_seconds": 0.3499999940395355,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "cannon-muzzle",
+      "order": 4,
+      "name_ko": "함포 포구 충격",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/cannon-muzzle.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb",
+        "bytes": 7464616,
+        "sha256": "845495596e9d801f0f19ebcfb9aa55efc3d59bd6f1cb44e9a1fbeffd09c0a42b",
+        "triangles": 4141,
+        "mesh_count": 6,
+        "node_count": 16,
+        "material_count": 6,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "cannon-muzzle",
+            "duration_seconds": 0.44999998807907104,
+            "channels": 13,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "cannon-projectile",
+      "order": 5,
+      "name_ko": "함포 포탄 비행",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/cannon-projectile.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/cannon-projectile.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/cannon-projectile.glb",
+        "bytes": 56460,
+        "sha256": "1f449737c11086ef72f598808075a28280757e8480d17bd923b9ee60e2c0a2a9",
+        "triangles": 468,
+        "mesh_count": 3,
+        "node_count": 5,
+        "material_count": 3,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "cannon-projectile",
+            "duration_seconds": 0.800000011920929,
+            "channels": 5,
+            "channel_paths": [
+              "translation",
+              "scale",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "cannon-hit",
+      "order": 6,
+      "name_ko": "함포 약점 파쇄",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/cannon-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+        "bytes": 7474808,
+        "sha256": "f6429ec4bbeb84524c09738822851a062d11efb2f94fcdb964cb1d66fede22ac",
+        "triangles": 4225,
+        "mesh_count": 6,
+        "node_count": 21,
+        "material_count": 6,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "cannon-hit",
+            "duration_seconds": 0.75,
+            "channels": 14,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "mortar-launch",
+      "order": 7,
+      "name_ko": "박격포 발사 퍼프",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/mortar-launch.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/mortar-launch.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/mortar-launch.glb",
+        "bytes": 7384308,
+        "sha256": "f173a10601cae51241647778a1f2557a709d226e9c9212532f52ef64d80cce2e",
+        "triangles": 3469,
+        "mesh_count": 3,
+        "node_count": 10,
+        "material_count": 3,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "mortar-launch",
+            "duration_seconds": 0.6000000238418579,
+            "channels": 5,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "mortar-projectile",
+      "order": 8,
+      "name_ko": "박격포 곡사탄",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/mortar-projectile.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/mortar-projectile.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/mortar-projectile.glb",
+        "bytes": 56468,
+        "sha256": "f307ff488a9886da937a1ce927fff16b463bf4214aab687d53ec717ebcb1cece",
+        "triangles": 468,
+        "mesh_count": 3,
+        "node_count": 5,
+        "material_count": 3,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "mortar-projectile",
+            "duration_seconds": 1.600000023841858,
+            "channels": 5,
+            "channel_paths": [
+              "translation",
+              "scale",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "mortar-hit",
+      "order": 9,
+      "name_ko": "박격포 착탄 폭발",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/mortar-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/mortar-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/mortar-hit.glb",
+        "bytes": 7533452,
+        "sha256": "dec91a6aa76c1c7799184da23e02cb128f8a636fe981876614bb5c66e8bf40cd",
+        "triangles": 4729,
+        "mesh_count": 8,
+        "node_count": 24,
+        "material_count": 8,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "mortar-hit",
+            "duration_seconds": 1.2000000476837158,
+            "channels": 18,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "harpoon-launch",
+      "order": 10,
+      "name_ko": "작살 발사 튕김",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/harpoon-launch.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+        "bytes": 98004,
+        "sha256": "a78f2da80c6992880763342e248082374891d6943e754d373834dd8caca4fdfd",
+        "triangles": 840,
+        "mesh_count": 3,
+        "node_count": 6,
+        "material_count": 3,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "harpoon-launch",
+            "duration_seconds": 0.3499999940395355,
+            "channels": 7,
+            "channel_paths": [
+              "translation",
+              "scale",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "harpoon-projectile",
+      "order": 11,
+      "name_ko": "작살 비행과 줄",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/harpoon-projectile.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb",
+        "bytes": 77784,
+        "sha256": "467da74e607d66f8ff28997d88a981bb6ce4f2a0495f4e7468f0ba45c637dd59",
+        "triangles": 672,
+        "mesh_count": 3,
+        "node_count": 5,
+        "material_count": 3,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "harpoon-projectile",
+            "duration_seconds": 1,
+            "channels": 3,
+            "channel_paths": [
+              "translation",
+              "scale"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "harpoon-hit",
+      "order": 12,
+      "name_ko": "작살 걸림 고리",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/harpoon-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/harpoon-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/harpoon-hit.glb",
+        "bytes": 135556,
+        "sha256": "cc0066892b398e4fa5a56c40b9f0a3098c4c75eea13d58bd53033c1b5b220dd0",
+        "triangles": 1176,
+        "mesh_count": 4,
+        "node_count": 8,
+        "material_count": 4,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "harpoon-hit",
+            "duration_seconds": 0.6499999761581421,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "rotation",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "chain-shot-launch",
+      "order": 13,
+      "name_ko": "사슬탄 발사 쌍섬광",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/chain-shot-launch.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb",
+        "bytes": 3782916,
+        "sha256": "7206afd2353256e2e2584557016288a931bb95e2333b273d9e87cd3c7424a39f",
+        "triangles": 2630,
+        "mesh_count": 5,
+        "node_count": 16,
+        "material_count": 5,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "chain-shot-launch",
+            "duration_seconds": 0.5,
+            "channels": 12,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "chain-shot-projectile",
+      "order": 14,
+      "name_ko": "사슬탄 회전 비행",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/chain-shot-projectile.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb",
+        "bytes": 68460,
+        "sha256": "0e95f9735bd403a096c94c92d287ee6cd8ef5726a728be4c82271e226184c08a",
+        "triangles": 568,
+        "mesh_count": 4,
+        "node_count": 6,
+        "material_count": 4,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "chain-shot-projectile",
+            "duration_seconds": 1.100000023841858,
+            "channels": 5,
+            "channel_paths": [
+              "translation",
+              "scale",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "chain-shot-hit",
+      "order": 15,
+      "name_ko": "사슬탄 엔진 타격",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/chain-shot-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb",
+        "bytes": 174012,
+        "sha256": "ba2c4afb7cc93880eaf94f7262f7b6dde4f6ab1746b3eac1b6e7826eccd02c27",
+        "triangles": 1512,
+        "mesh_count": 5,
+        "node_count": 10,
+        "material_count": 5,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "chain-shot-hit",
+            "duration_seconds": 1,
+            "channels": 9,
+            "channel_paths": [
+              "scale",
+              "rotation",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "flamethrower-ignite",
+      "order": 16,
+      "name_ko": "화염방사 점화",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/flamethrower-ignite.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+        "bytes": 3676304,
+        "sha256": "b3a36205afe2b98fe756a8d219880a26911888c3df5b16e5accc83399a4ddf50",
+        "triangles": 1706,
+        "mesh_count": 2,
+        "node_count": 10,
+        "material_count": 2,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "flamethrower-ignite",
+            "duration_seconds": 0.4000000059604645,
+            "channels": 5,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "flamethrower-stream",
+      "order": 17,
+      "name_ko": "화염방사 짧은 원뿔",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/flamethrower-stream.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+        "bytes": 3690504,
+        "sha256": "160308a30de3080c7307766c52f67e47c0305d7f6ebba56aca3d89729ec9c077",
+        "triangles": 1790,
+        "mesh_count": 2,
+        "node_count": 23,
+        "material_count": 2,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "flamethrower-stream",
+            "duration_seconds": 1.2000000476837158,
+            "channels": 11,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "flamethrower-hit",
+      "order": 18,
+      "name_ko": "화염 접촉 그을림",
+      "category": "weapon",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/flamethrower-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+        "bytes": 7348288,
+        "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97",
+        "triangles": 3133,
+        "mesh_count": 2,
+        "node_count": 12,
+        "material_count": 2,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "flamethrower-hit",
+            "duration_seconds": 0.8999999761581421,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "wood-hit",
+      "order": 19,
+      "name_ko": "목재 피격",
+      "category": "material-impact",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/wood-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/wood-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/wood-hit.glb",
+        "bytes": 237116,
+        "sha256": "39914f632fdf50a39fae3c4b1c810111dead56a2739249ca0fe44077cd07e4d9",
+        "triangles": 2016,
+        "mesh_count": 8,
+        "node_count": 16,
+        "material_count": 8,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "wood-hit",
+            "duration_seconds": 0.699999988079071,
+            "channels": 20,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "metal-hit",
+      "order": 20,
+      "name_ko": "금속 피격",
+      "category": "material-impact",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/metal-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/metal-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/metal-hit.glb",
+        "bytes": 88432,
+        "sha256": "75368afde95659266e7441cc1bab3a54ce2f3faeb463db6b1f37195a99dc195d",
+        "triangles": 756,
+        "mesh_count": 3,
+        "node_count": 6,
+        "material_count": 3,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "metal-hit",
+            "duration_seconds": 0.44999998807907104,
+            "channels": 6,
+            "channel_paths": [
+              "translation",
+              "scale"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "fabric-hit",
+      "order": 21,
+      "name_ko": "천 피격",
+      "category": "material-impact",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/fabric-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/fabric-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/fabric-hit.glb",
+        "bytes": 76644,
+        "sha256": "f61b2aa03e9a68e3e1f8e64296a3ff554c315590f2ae008fadb65f40ac14d2a0",
+        "triangles": 588,
+        "mesh_count": 5,
+        "node_count": 10,
+        "material_count": 5,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "fabric-hit",
+            "duration_seconds": 0.8500000238418579,
+            "channels": 15,
+            "channel_paths": [
+              "translation",
+              "scale",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "armor-hit",
+      "order": 22,
+      "name_ko": "장갑 피격",
+      "category": "material-impact",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/armor-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/armor-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/armor-hit.glb",
+        "bytes": 134208,
+        "sha256": "5621205cb7f0846fd9e8614ce56bc80b0ef6f06a9ef6362affb431b9bc438317",
+        "triangles": 1176,
+        "mesh_count": 4,
+        "node_count": 8,
+        "material_count": 4,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "armor-hit",
+            "duration_seconds": 0.6000000238418579,
+            "channels": 4,
+            "channel_paths": [
+              "scale"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "ricochet-hit",
+      "order": 23,
+      "name_ko": "도탄 튕김",
+      "category": "material-impact",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/ricochet-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/ricochet-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/ricochet-hit.glb",
+        "bytes": 68120,
+        "sha256": "274d91bc0cd8fa90281b7db50fc2c04b0a9f20a08836091d951d75f94996677a",
+        "triangles": 588,
+        "mesh_count": 2,
+        "node_count": 4,
+        "material_count": 2,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "ricochet-hit",
+            "duration_seconds": 0.5,
+            "channels": 4,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "weakpoint-hit",
+      "order": 24,
+      "name_ko": "약점 적중",
+      "category": "material-impact",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/weakpoint-hit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/weakpoint-hit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/weakpoint-hit.glb",
+        "bytes": 147244,
+        "sha256": "bd4647202806e7752600064ef7cdf3deb76519fd9ee01b76d956966762c6f45a",
+        "triangles": 1260,
+        "mesh_count": 5,
+        "node_count": 10,
+        "material_count": 5,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "weakpoint-hit",
+            "duration_seconds": 0.800000011920929,
+            "channels": 10,
+            "channel_paths": [
+              "translation",
+              "scale"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "cloud-miss",
+      "order": 25,
+      "name_ko": "구름 빗나감",
+      "category": "material-impact",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/cloud-miss.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/cloud-miss.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/cloud-miss.glb",
+        "bytes": 3701360,
+        "sha256": "bff21b1716ae2be7a3527962e3e98704d027d920edad91c2128d7a92d7bb453e",
+        "triangles": 1679,
+        "mesh_count": 1,
+        "node_count": 4,
+        "material_count": 1,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "cloud-miss",
+            "duration_seconds": 1.100000023841858,
+            "channels": 3,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "penetration-exit",
+      "order": 26,
+      "name_ko": "관통 출구",
+      "category": "material-impact",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/penetration-exit.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/penetration-exit.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/penetration-exit.glb",
+        "bytes": 3789612,
+        "sha256": "c734ec24519c87a3a36a2420e92014025c34029e0e770567c89535b52a0add4b",
+        "triangles": 2435,
+        "mesh_count": 4,
+        "node_count": 10,
+        "material_count": 4,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "penetration-exit",
+            "duration_seconds": 0.6499999761581421,
+            "channels": 9,
+            "channel_paths": [
+              "translation",
+              "scale",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "small-explosion",
+      "order": 27,
+      "name_ko": "소형 폭발",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/small-explosion.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/small-explosion.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/small-explosion.glb",
+        "bytes": 7434008,
+        "sha256": "70c3fd2eef32965198db376913461c1d8359a33731c6453dc9d8067d2a9fdd32",
+        "triangles": 3889,
+        "mesh_count": 5,
+        "node_count": 15,
+        "material_count": 5,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "small-explosion",
+            "duration_seconds": 0.800000011920929,
+            "channels": 8,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "large-explosion",
+      "order": 28,
+      "name_ko": "대형 폭발",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/large-explosion.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/large-explosion.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/large-explosion.glb",
+        "bytes": 7468008,
+        "sha256": "f5659a1ea44bd023d953ca5afdac4548d10d806a1cc23047fc639ebf8a21ffbb",
+        "triangles": 4141,
+        "mesh_count": 6,
+        "node_count": 29,
+        "material_count": 6,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "large-explosion",
+            "duration_seconds": 1.7999999523162842,
+            "channels": 15,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "airburst",
+      "order": 29,
+      "name_ko": "공중 폭발",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/airburst.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/airburst.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/airburst.glb",
+        "bytes": 7462320,
+        "sha256": "9c8b39f7284cf8176438aa35264e118031819c3957c84b291925ecac8c78faf5",
+        "triangles": 4141,
+        "mesh_count": 6,
+        "node_count": 18,
+        "material_count": 6,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "airburst",
+            "duration_seconds": 1.2999999523162842,
+            "channels": 8,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "shrapnel-burst",
+      "order": 30,
+      "name_ko": "파편 분산",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/shrapnel-burst.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb",
+        "bytes": 133576,
+        "sha256": "097a4dca6e22dabd183a19a3349d86c34965ce78caeae7b2afe75f72d27c5816",
+        "triangles": 1072,
+        "mesh_count": 8,
+        "node_count": 17,
+        "material_count": 8,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "shrapnel-burst",
+            "duration_seconds": 1.100000023841858,
+            "channels": 17,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "smoke-puff",
+      "order": 31,
+      "name_ko": "짧은 연기",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/smoke-puff.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/smoke-puff.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/smoke-puff.glb",
+        "bytes": 3703500,
+        "sha256": "c57c974af690a604784d1f81ad1e83fa65177a63082b85820ab120e94fec6647",
+        "triangles": 1679,
+        "mesh_count": 1,
+        "node_count": 9,
+        "material_count": 1,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "smoke-puff",
+            "duration_seconds": 1.7999999523162842,
+            "channels": 6,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "steam-vent",
+      "order": 32,
+      "name_ko": "증기 배출",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/steam-vent.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/steam-vent.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/steam-vent.glb",
+        "bytes": 3805964,
+        "sha256": "36209b19d6ee6f366eb8f452b309b2abcb80c2ab1bf11769be0f7c1511dd7a58",
+        "triangles": 2603,
+        "mesh_count": 4,
+        "node_count": 9,
+        "material_count": 4,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "steam-vent",
+            "duration_seconds": 1.5,
+            "channels": 5,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "smoldering-fire",
+      "order": 33,
+      "name_ko": "잔불",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/smoldering-fire.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/smoldering-fire.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/smoldering-fire.glb",
+        "bytes": 7423508,
+        "sha256": "b0ab9a6cfb7d07e024fbc2f4d6c3c4372780ee3d721b402f0c9e85aa4c3ccb09",
+        "triangles": 3805,
+        "mesh_count": 4,
+        "node_count": 12,
+        "material_count": 4,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "smoldering-fire",
+            "duration_seconds": 2.4000000953674316,
+            "channels": 8,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "ember-drift",
+      "order": 34,
+      "name_ko": "불씨 흩날림",
+      "category": "explosion-environment",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/ember-drift.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/ember-drift.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/ember-drift.glb",
+        "bytes": 17884,
+        "sha256": "dde95e7313f3b4b959c82431b0e68adcb81e9d5a3a9bae0e1fde183e9522814b",
+        "triangles": 64,
+        "mesh_count": 4,
+        "node_count": 9,
+        "material_count": 4,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "ember-drift",
+            "duration_seconds": 2,
+            "channels": 13,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "burning-state",
+      "order": 35,
+      "name_ko": "불붙음 상태",
+      "category": "damage-state",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/burning-state.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/burning-state.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/burning-state.glb",
+        "bytes": 3725064,
+        "sha256": "f94fdc6ab253aa6832b2feb55e30c87e50ccdbe0fe4204f99e9833509293c09f",
+        "triangles": 2126,
+        "mesh_count": 3,
+        "node_count": 12,
+        "material_count": 3,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "burning-state",
+            "duration_seconds": 1.5,
+            "channels": 9,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "heavy-smoke-state",
+      "order": 36,
+      "name_ko": "짙은 연기 상태",
+      "category": "damage-state",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/heavy-smoke-state.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/heavy-smoke-state.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/heavy-smoke-state.glb",
+        "bytes": 3779356,
+        "sha256": "e5407f69f039fbe276b96f960abe1b254c44f57bf5331357ca6e50f20e96f487",
+        "triangles": 2351,
+        "mesh_count": 3,
+        "node_count": 12,
+        "material_count": 3,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "heavy-smoke-state",
+            "duration_seconds": 3,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "gas-leak-state",
+      "order": 37,
+      "name_ko": "가스 누출 상태",
+      "category": "damage-state",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/gas-leak-state.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/gas-leak-state.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/gas-leak-state.glb",
+        "bytes": 191336,
+        "sha256": "5bab4cd843f18e6baa0c60537d4a914f718dd4a6ef0bd014d8a7ec63276c929c",
+        "triangles": 1680,
+        "mesh_count": 5,
+        "node_count": 9,
+        "material_count": 5,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "gas-leak-state",
+            "duration_seconds": 2,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "overheat-state",
+      "order": 38,
+      "name_ko": "과열 상태",
+      "category": "damage-state",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/overheat-state.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/overheat-state.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/overheat-state.glb",
+        "bytes": 79080,
+        "sha256": "36780e44690785a4d41728892b7fa24f7bd04e43975b422b8765707d502fe43a",
+        "triangles": 672,
+        "mesh_count": 2,
+        "node_count": 5,
+        "material_count": 2,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "overheat-state",
+            "duration_seconds": 1.2000000476837158,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "short-circuit-state",
+      "order": 39,
+      "name_ko": "단락 상태",
+      "category": "damage-state",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/short-circuit-state.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/short-circuit-state.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/short-circuit-state.glb",
+        "bytes": 116340,
+        "sha256": "b7c56e88d0dedd3507e96074e3eb3a71911e91cb0854e776e601aff0ef5a8eb4",
+        "triangles": 1008,
+        "mesh_count": 3,
+        "node_count": 7,
+        "material_count": 3,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "short-circuit-state",
+            "duration_seconds": 0.800000011920929,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "engine-stall-state",
+      "order": 40,
+      "name_ko": "엔진 정지 상태",
+      "category": "damage-state",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/engine-stall-state.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/engine-stall-state.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/engine-stall-state.glb",
+        "bytes": 3760560,
+        "sha256": "b8aea700a4994f51b8df91f90d952f1edcc82b25f1b5cffa53a3413b148dca8a",
+        "triangles": 2183,
+        "mesh_count": 3,
+        "node_count": 9,
+        "material_count": 3,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "engine-stall-state",
+            "duration_seconds": 2.200000047683716,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "envelope-rupture-state",
+      "order": 41,
+      "name_ko": "기낭 파열 상태",
+      "category": "damage-state",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/envelope-rupture-state.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/envelope-rupture-state.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/envelope-rupture-state.glb",
+        "bytes": 180160,
+        "sha256": "c2f60de2b0fa997dd48a8f86cdc9bf37452f1c1c68544e5d3763e2f0865d65e7",
+        "triangles": 1544,
+        "mesh_count": 7,
+        "node_count": 12,
+        "material_count": 7,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "envelope-rupture-state",
+            "duration_seconds": 1.399999976158142,
+            "channels": 10,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "module-detach-state",
+      "order": 42,
+      "name_ko": "부품 분리 순간",
+      "category": "damage-state",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/module-detach-state.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/module-detach-state.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/module-detach-state.glb",
+        "bytes": 3769348,
+        "sha256": "a220c36206c0c83f3625da1a9258e8878bd31c743ca06a228942abe27ccd32e0",
+        "triangles": 2215,
+        "mesh_count": 5,
+        "node_count": 13,
+        "material_count": 5,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "module-detach-state",
+            "duration_seconds": 1,
+            "channels": 14,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "shield-pulse",
+      "order": 43,
+      "name_ko": "방패 펄스",
+      "category": "defense-support",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/shield-pulse.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/shield-pulse.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/shield-pulse.glb",
+        "bytes": 338628,
+        "sha256": "85960acbf58e9192d78d9673a315028657103081ce62fb59f1a32b1751d5af81",
+        "triangles": 3024,
+        "mesh_count": 6,
+        "node_count": 13,
+        "material_count": 6,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "shield-pulse",
+            "duration_seconds": 1.100000023841858,
+            "channels": 9,
+            "channel_paths": [
+              "translation",
+              "scale"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "armor-block",
+      "order": 44,
+      "name_ko": "장갑 막음",
+      "category": "defense-support",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/armor-block.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/armor-block.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/armor-block.glb",
+        "bytes": 116360,
+        "sha256": "e82779236fe594050f6394a102ece92fe205a56fd0d206928544a248d56775e7",
+        "triangles": 1008,
+        "mesh_count": 4,
+        "node_count": 7,
+        "material_count": 4,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "armor-block",
+            "duration_seconds": 0.550000011920929,
+            "channels": 5,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "repair-stitch",
+      "order": 45,
+      "name_ko": "수리 봉합",
+      "category": "defense-support",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/repair-stitch.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/repair-stitch.glb",
+      "catalog_status": "representative_comparison_verified",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/repair-stitch.glb",
+        "bytes": 188308,
+        "sha256": "4f306bc541434dbf953a2d28e3acb5bc7d6e11c3018565778002e414f7e08418",
+        "triangles": 1624,
+        "mesh_count": 7,
+        "node_count": 15,
+        "material_count": 7,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "repair-stitch",
+            "duration_seconds": 2,
+            "channels": 8,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "healing-pulse",
+      "order": 46,
+      "name_ko": "회복 펄스",
+      "category": "defense-support",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/healing-pulse.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/healing-pulse.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/healing-pulse.glb",
+        "bytes": 228876,
+        "sha256": "21e146879e89f2e7825b53d7d6200536d8b1175eccbd741e448f9ade20d5d6d5",
+        "triangles": 2016,
+        "mesh_count": 6,
+        "node_count": 10,
+        "material_count": 6,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "healing-pulse",
+            "duration_seconds": 1.7999999523162842,
+            "channels": 7,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "salvage-tether",
+      "order": 47,
+      "name_ko": "회수 견인 흐름",
+      "category": "defense-support",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/salvage-tether.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/salvage-tether.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/salvage-tether.glb",
+        "bytes": 161104,
+        "sha256": "28a2959fbc285dee5fc5fa3d30480df6e87e7dd03401aea5f267d850f56bf66b",
+        "triangles": 1428,
+        "mesh_count": 3,
+        "node_count": 6,
+        "material_count": 3,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "salvage-tether",
+            "duration_seconds": 2,
+            "channels": 6,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "mount-lock",
+      "order": 48,
+      "name_ko": "장착 잠금",
+      "category": "defense-support",
+      "kind": "effect",
+      "original_model": "outputs/combat-vfx/assets/mount-lock.glb",
+      "expected_model": "outputs/combat-vfx-v2/assets/mount-lock.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/assets/mount-lock.glb",
+        "bytes": 145316,
+        "sha256": "5890a8b06f4b18d5c89cf4fcabcd4b7b9dbecf03a740667f8bc2d3679be9ed83",
+        "triangles": 1260,
+        "mesh_count": 5,
+        "node_count": 9,
+        "material_count": 5,
+        "texture_count": 0,
+        "image_count": 0,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "mount-lock",
+            "duration_seconds": 1,
+            "channels": 6,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    }
+  ],
+  "sequences": [
+    {
+      "id": "01-machine-gun",
+      "order": 1,
+      "name_ko": "기관총 공격",
+      "category": "weapon-sequence",
+      "kind": "sequence",
+      "original_model": "outputs/combat-vfx/sequences/01-machine-gun.glb",
+      "expected_model": "outputs/combat-vfx-v2/sequences/01-machine-gun.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/sequences/01-machine-gun.glb",
+        "bytes": 7226956,
+        "sha256": "d3946392df4a6e7d973c1735c7e346b9a2f1c06885b6bd85f06d60755068db37",
+        "triangles": 7727,
+        "mesh_count": 16,
+        "node_count": 35,
+        "material_count": 12,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "01-machine-gun_attack_sequence_v2",
+            "duration_seconds": 2,
+            "channels": 21,
+            "channel_paths": [
+              "scale",
+              "translation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "02-deck-cannon",
+      "order": 2,
+      "name_ko": "함포 공격",
+      "category": "weapon-sequence",
+      "kind": "sequence",
+      "original_model": "outputs/combat-vfx/sequences/02-deck-cannon.glb",
+      "expected_model": "outputs/combat-vfx-v2/sequences/02-deck-cannon.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/sequences/02-deck-cannon.glb",
+        "bytes": 18976932,
+        "sha256": "e021f143d7db755ffc21ac2744d70853408f08f2d5729439d0c947f03faa8624",
+        "triangles": 12770,
+        "mesh_count": 21,
+        "node_count": 54,
+        "material_count": 17,
+        "texture_count": 5,
+        "image_count": 5,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "02-deck-cannon_attack_sequence_v2",
+            "duration_seconds": 2.799999952316284,
+            "channels": 35,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "03-mortar",
+      "order": 3,
+      "name_ko": "박격포 공격",
+      "category": "weapon-sequence",
+      "kind": "sequence",
+      "original_model": "outputs/combat-vfx/sequences/03-mortar.glb",
+      "expected_model": "outputs/combat-vfx-v2/sequences/03-mortar.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/sequences/03-mortar.glb",
+        "bytes": 18668044,
+        "sha256": "cd8fa19eb187ab27abb1d465070f89a83fdc6f35b22fc208d7961d1b39ddbd97",
+        "triangles": 12735,
+        "mesh_count": 20,
+        "node_count": 51,
+        "material_count": 16,
+        "texture_count": 5,
+        "image_count": 5,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "03-mortar_attack_sequence_v2",
+            "duration_seconds": 3.5,
+            "channels": 31,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "04-harpoon",
+      "order": 4,
+      "name_ko": "작살 견인",
+      "category": "weapon-sequence",
+      "kind": "sequence",
+      "original_model": "outputs/combat-vfx/sequences/04-harpoon.glb",
+      "expected_model": "outputs/combat-vfx-v2/sequences/04-harpoon.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/sequences/04-harpoon.glb",
+        "bytes": 4106052,
+        "sha256": "d01221a85927780a799748c383050f0ccadbe373d07f85d906f342b0b86a304f",
+        "triangles": 6691,
+        "mesh_count": 16,
+        "node_count": 31,
+        "material_count": 12,
+        "texture_count": 1,
+        "image_count": 1,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "04-harpoon_attack_sequence_v2",
+            "duration_seconds": 2.799999952316284,
+            "channels": 20,
+            "channel_paths": [
+              "translation",
+              "scale",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "05-chain-shot",
+      "order": 5,
+      "name_ko": "사슬탄 공격",
+      "category": "weapon-sequence",
+      "kind": "sequence",
+      "original_model": "outputs/combat-vfx/sequences/05-chain-shot.glb",
+      "expected_model": "outputs/combat-vfx-v2/sequences/05-chain-shot.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/sequences/05-chain-shot.glb",
+        "bytes": 7697952,
+        "sha256": "8bb31b9555f6bef35918a33a1fbdbfab66f5536bd68eb7511b69b0fdd155e7dc",
+        "triangles": 8799,
+        "mesh_count": 20,
+        "node_count": 44,
+        "material_count": 16,
+        "texture_count": 2,
+        "image_count": 2,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "05-chain-shot_attack_sequence_v2",
+            "duration_seconds": 2.799999952316284,
+            "channels": 29,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    },
+    {
+      "id": "06-flamethrower",
+      "order": 6,
+      "name_ko": "화염 분사",
+      "category": "weapon-sequence",
+      "kind": "sequence",
+      "original_model": "outputs/combat-vfx/sequences/06-flamethrower.glb",
+      "expected_model": "outputs/combat-vfx-v2/sequences/06-flamethrower.glb",
+      "catalog_status": "residual_source_reviewed_render_pending",
+      "art_review": "not_inferred_from_file_presence",
+      "browser_verification": "not_inferred_from_file_presence",
+      "status": "model_present_verification_pending",
+      "model_present": true,
+      "actual": {
+        "path": "outputs/combat-vfx-v2/sequences/06-flamethrower.glb",
+        "bytes": 18510076,
+        "sha256": "f3de4241a4b14922a79b8edf0fffb30baa30ca65601f7fbc90057c13c46a2273",
+        "triangles": 10646,
+        "mesh_count": 12,
+        "node_count": 57,
+        "material_count": 8,
+        "texture_count": 5,
+        "image_count": 5,
+        "animation_count": 1,
+        "animations": [
+          {
+            "name": "06-flamethrower_attack_sequence_v2",
+            "duration_seconds": 3,
+            "channels": 26,
+            "channel_paths": [
+              "scale",
+              "translation",
+              "rotation"
+            ],
+            "standard_trs_only": true
+          }
+        ],
+        "embedded_resources": true
+      }
+    }
+  ]
+}

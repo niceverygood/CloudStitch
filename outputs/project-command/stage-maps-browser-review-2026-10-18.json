@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:22:55Z",
+  "status": "normal browser matrix PASS; 6 loading/pause fault checks pending",
+  "metadata": {
+    "path": "outputs/stage-maps-browser-qa-v1/verification.json",
+    "bytes": 503774,
+    "sha256": "36d10c33cabf7125b8d34f0c2a912db8f814ef3a536bdd0adb8a49a55ca3fd2e",
+    "passed": true,
+    "checkCount": 133,
+    "failedChecks": [],
+    "errors": [],
+    "externalRequests": [],
+    "failedRequests": [],
+    "summary": null,
+    "scope": "One private Chrome context. Six actual harbor map-card selections; two input-driven recovery/retreat voyages on map 1 with explicit driverMode; six independent combat/active-checkpoint smoke entries. Smoke entries use independent goto after pending checkpoints and do not prove six-region or boss completion. Route/raw fixtures modify only private-context stage slots. No v1 artifact or source is written.",
+    "keys": [
+      "schemaVersion",
+      "title",
+      "startedAt",
+      "passed",
+      "testedArtifacts",
+      "servedArtifacts",
+      "protectedIntegration",
+      "finishedAt",
+      "completed",
+      "checks",
+      "samples",
+      "screenshots",
+      "errors",
+      "expectedFixtureErrors",
+      "externalRequests",
+      "httpErrors",
+      "failedRequests",
+      "baselineSave",
+      "scope",
+      "limitations"
+    ]
+  },
+  "protectedV1": {
+    "ownerReportedUnchangedFiles": 40,
+    "baselineSaveUnchangedReported": true,
+    "interpretation": "report explicitly protects original delivery39 files plus delivery-manifest.json itself: total40; changed list is empty",
+    "delegatedReadConfirmed": true
+  },
+  "scopeNotes": [
+    "one private Chrome context",
+    "six harbor card selections plus independent combat/active-checkpoint smoke entries",
+    "map1 two input-driven recovery/retreat voyages with explicit driverMode",
+    "route/raw save fixtures only in private stage slots",
+    "not six-region or boss completion"
+  ],
+  "commandReview": "read report/provenance metadata and SHA only; no duplicate browser execution",
+  "delegatedScopeReview": {
+    "browserRepairs": "skipped both voyages because there was no damage; not browser repair-cost verification",
+    "browserEquip": "actually performed in first voyage only",
+    "routeFixtures": "six foreign current routes and one foreign backup blocked with originals preserved in private stage slots",
+    "pending": "loading/pause z-index and GLB/connector fault regressions are outside normal133; separate fault report pending"
+  }
+}

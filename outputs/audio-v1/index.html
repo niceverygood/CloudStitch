@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cloudstitch · 소리 작업대</title><link rel="stylesheet" href="../../tools/audio/style.css"></head><body><main>
+<header><div class="eyebrow">CLOUDSTITCH · SOUND WORKSHOP 01</div><h1>작은 배에 깃드는 소리</h1><span class="badge">임시 절차 합성 SFX · 음악과 음성 제외</span><p class="intro">마른 나무의 울림, 팽팽한 천, 황동 장치와 바람.<br>먼저 여섯 가지 재료와 동작을 듣고, 항해와 공방의 나머지 소리를 비교하세요. 실제 녹음·최종 상용 사운드는 아닙니다.</p></header>
+<section class="audio-panel" id="audio-panel" aria-label="음향 설정"></section>
+<div class="status-strip"><button id="stop">모든 소리 멈추기</button><button id="pause">청취 일시정지</button><button id="overlap">위험·피격·발사 3개 겹침 비교</button></div>
+<p class="muted-text">겹침 비교는 청취용 fixture입니다. 실제 전투 발사·피해를 만들지 않습니다. 활성화 전 입력한 소리는 나중에 몰아서 재생하지 않습니다.</p>
+<h2>01 — 먼저 들을 여섯 가지</h2><div class="cards" id="representatives"></div>
+<details open><summary>02 — 항해·분리·귀환·공방 소리 더 듣기</summary><div class="cards" id="extended"></div></details>
+<h2>지금 들리는 소리</h2><p id="visual-cue" class="warning" role="status" aria-live="polite">소리가 없어도 이름과 위험 표시를 확인할 수 있습니다.</p><pre class="log" id="log" aria-label="최근 청취 기록">아직 재생하지 않았습니다.</pre>
+<nav class="links"><a href="../../tools/audio/host.html">실제 controller 연결 예시</a><a href="../../tools/audio/offline-check.html">OfflineAudioContext 수치 검사</a><a href="catalog.json">음원·출처 카탈로그</a><a href="../../tools/audio/HANDOFF.md">연결 규격과 검증 한계</a></nav>
+<footer class="page-footer">결정적 seed · 로컬 코드 합성 · 외부 음원 0 · 최종 믹싱/청취 QA 대기<br>Web Audio 활성화 후 재생됩니다. WAV 링크는 짧은 원형을 내려받습니다. 실제 전장·항구 화면 연결은 다음 통합 revision에 인계합니다.</footer>
+</main><script type="module" src="../../tools/audio/audition.mjs"></script></body></html>

@@ -1,0 +1,8 @@
+// Run only in the integration-approved bulk I/O slot.
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const root=new URL('../../../',import.meta.url),hash=b=>createHash('sha256').update(b).digest('hex'),path='outputs/audio-grand-v4/delivery-manifest.json',b=await fs.readFile(new URL(path,root)),m=JSON.parse(b);
+if(hash(b)!=='c7bec6defed1cd135de57330ced6b0f3fb1685093dc2ec28a5100eeac832ab71')throw Error('v4 manifest changed');
+let checked=0;for(const f of m.files){const bytes=await fs.readFile(new URL(f.path,root));if(bytes.length!==f.bytes||hash(bytes)!==f.sha256)throw Error('v4 changed '+f.path);checked++;}
+const pp='outputs/audio-cinematic-v5/prototype-r1/delivery-manifest.json',pb=await fs.readFile(new URL(pp,root)),pm=JSON.parse(pb);if(hash(pb)!=='859bce80802a5b612af5a18ddb7e4b46b827b28e8ef13d7fba6c6594763b48d9')throw Error('Prototype manifest changed');for(const f of pm.files){const bytes=await fs.readFile(new URL(f.path,root));if(bytes.length!==f.bytes||hash(bytes)!==f.sha256)throw Error('Prototype changed '+f.path);}
+await fs.writeFile(new URL('outputs/audio-cinematic-v5/preservation.json',root),JSON.stringify({passed:true,previousV4:{manifest:path,sha256:hash(b),listed:checked,includingManifest:checked+1,bytes:m.totalBytes,status:'expression rejected, all original evidence retained'},prototype:{manifest:pp,sha256:hash(pb),listed:pm.files.length,includingManifest:pm.files.length+1,bytes:pm.totalBytes,status:'first actual audible direction, unapproved'},priorSourcesRewritten:0},null,2)+'\n');console.log(JSON.stringify({v4:checked+1,prototype:pm.files.length+1,passed:true}));

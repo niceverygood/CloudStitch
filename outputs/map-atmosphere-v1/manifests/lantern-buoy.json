@@ -1,0 +1,42 @@
+{
+  "id": "lantern-buoy",
+  "name_ko": "왕관등 항로 부표",
+  "category": "props",
+  "role": "작은 부력낭과 왕관형 황동등·리본·균형추가 층을 이루는 항로 등.",
+  "motion_ko": "전체 부표가 떠오르고 내려오며 긴 리본이 늦게 따라 흔들립니다.",
+  "order": 21,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/lantern-buoy.glb",
+  "preview": "previews/lantern-buoy.png",
+  "triangles": 29848,
+  "mesh_count": 152,
+  "vertices": 89544,
+  "material_count": 1,
+  "animation_count": 6,
+  "animation_duration": 7,
+  "encoded_color_components": 0,
+  "bytes": 3381012,
+  "sha256": "23dc4a9b16ce4dc94de0b49bf4cf1af602f65e20a15254432e53290ad7b840e4",
+  "bounds": {
+    "min": [
+      -1.095015121839692,
+      -2.103999997973442,
+      -1.2798944579208644
+    ],
+    "max": [
+      1.3123205553368988,
+      2.432589018344879,
+      1.0890000343322754
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

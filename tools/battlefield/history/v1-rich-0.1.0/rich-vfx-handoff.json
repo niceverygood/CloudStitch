@@ -1,0 +1,243 @@
+{
+  "version": "battlefield-v1-rich-0.1.0",
+  "status": "READY_SOURCE_BROWSER_PENDING",
+  "checkedAt": "2026-10-18T08:54:11.386Z",
+  "runtimeContractVersion": "battlefield-authority-0.2.1",
+  "userDirection": "Keep v1 original geometry and palette; make effects larger and richer",
+  "runtime": {
+    "factory": "createCombatVfx(THREE, scene, {presentation:'rich'})",
+    "effectScale": 1,
+    "actualWeapons": [
+      "01-machine-gun",
+      "02-deck-cannon"
+    ],
+    "actualEffectCount": 6,
+    "assetBase": "../combat-vfx/",
+    "muzzleScale": 1.4,
+    "projectileScale": 1.35,
+    "impactScale": 1.5,
+    "movementAuthority": "battlefield simulation",
+    "physicsDamageRangeChanged": false,
+    "caps": {
+      "activeOneShotsPerEffect": 32,
+      "activeProjectilesPerEffect": 64,
+      "idlePoolPerEffect": 24
+    }
+  },
+  "preview": {
+    "effects": 48,
+    "build": "node tools/battlefield/build-rich-preview.cjs",
+    "output": "outputs/battlefield-rich-vfx-v1/preview.html",
+    "combatSimulation": false,
+    "ship": "outputs/selected-airship-toon3d/airship.glb"
+  },
+  "validation": {
+    "passed": 72,
+    "failed": 0,
+    "baseline": 48,
+    "richProfiles": 10,
+    "realThreeRuntime": {
+      "passed": 14,
+      "parentTests": 1,
+      "childTests": 13,
+      "browser": false,
+      "stress": {
+        "submittedShots": 100,
+        "activeMuzzles": 32,
+        "activeProjectiles": 64,
+        "droppedVisuals": 104,
+        "idlePerEffectMax": 24,
+        "culledAfterReturn": 48,
+        "activeAfterDrain": 0,
+        "combatDataMutated": false
+      }
+    },
+    "originalGlbBindings": {
+      "passed": true,
+      "checkedAssets": 9,
+      "assets": [
+        {
+          "path": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+          "bytes": 43532,
+          "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9",
+          "runtimePolicy": "one-shot original AnimationMixer clip"
+        },
+        {
+          "path": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+          "bytes": 8856,
+          "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b",
+          "runtimePolicy": "clone carrier subtree only; do not play translation/scale/end or demo smoke",
+          "carrier": "machine-gun-projectile_projectile_carrier_0",
+          "authoredCarrierChannels": [
+            "translation",
+            "scale",
+            "rotation"
+          ]
+        },
+        {
+          "path": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+          "bytes": 71820,
+          "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d",
+          "runtimePolicy": "one-shot original AnimationMixer clip"
+        },
+        {
+          "path": "outputs/combat-vfx/assets/cannon-muzzle.glb",
+          "bytes": 115812,
+          "sha256": "2e4c5d1b6a78251f970207b1fc35c66ce0d37e92aeb2ab3497387f85ac61d479",
+          "runtimePolicy": "one-shot original AnimationMixer clip"
+        },
+        {
+          "path": "outputs/combat-vfx/assets/cannon-projectile.glb",
+          "bytes": 120868,
+          "sha256": "cf543abd2fcca020693ad3c46eec6473d39afba172f998dee18fcf73600bf5b4",
+          "runtimePolicy": "clone carrier subtree only; do not play translation/scale/end or demo smoke",
+          "carrier": "cannon-projectile_projectile_carrier_0",
+          "authoredCarrierChannels": [
+            "translation",
+            "scale",
+            "rotation"
+          ]
+        },
+        {
+          "path": "outputs/combat-vfx/assets/cannon-hit.glb",
+          "bytes": 185004,
+          "sha256": "89f0bff8c05aed3c73fd09b80a984695d72ceb597ef349f188613e438d36369a",
+          "runtimePolicy": "one-shot original AnimationMixer clip"
+        },
+        {
+          "path": "outputs/fleet-v1/ships/player-homeward.glb",
+          "bytes": 4675348,
+          "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004",
+          "muzzle": {
+            "name": "Muzzle",
+            "parent": "GunRecoil",
+            "localTranslation": [
+              -0.12426799999999999,
+              0.0261225,
+              -0.0100095
+            ],
+            "forward": "-X",
+            "up": "+Y",
+            "provisional": true
+          }
+        },
+        {
+          "path": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+          "bytes": 3299860,
+          "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6",
+          "runtimePolicy": "preserved independent source; not a real mounted socket"
+        },
+        {
+          "path": "outputs/weapon-modules/02-deck-cannon/weapon.glb",
+          "bytes": 3961552,
+          "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+          "runtimePolicy": "preserved independent source; not a real mounted socket"
+        }
+      ]
+    },
+    "browser": "pending integration owner single slot",
+    "npmBuild": "not run by battlefield owner"
+  },
+  "checks": [
+    "v1 exact 48 IDs and immutable display profiles",
+    "actual sim shot: one contact and one damage",
+    "real Three.js AnimationMixer, local +Y echoes, source clip lifetime",
+    "projectile carrier only, no authored demo translation or extra velocity integration",
+    "duplicate delivery and stale generation rejected before seq cursor",
+    "pool child/root transforms and references reset",
+    "active and idle caps distinct",
+    "resource disposal and failed load cleanup/retry",
+    "preview source review: original/rich shared time/camera/anchor, harpoon rope length compensation, loading failure cleanup"
+  ],
+  "scopeLimits": [
+    "48 effect art workbench; actual combat supports 6 machine-gun/cannon effects",
+    "Browser rendering, mobile overflow, ghosting and actual combat integrated QA pending",
+    "v1/v2 GLBs, frozen outputs and original source art preserved",
+    "No paid generation, dependencies install, push or deploy"
+  ],
+  "baselineSourceFiles": [
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "path": "tools/battlefield/assets.js",
+      "bytes": 15505,
+      "sha256": "624532b463d498c5b0ad3ccc1c2ade75ea903af819b6871b6c0fb6aff0f3834b"
+    }
+  ],
+  "previousFrozenReceipt": {
+    "path": "tools/battlefield/handoff-files.json",
+    "bytes": 5038,
+    "sha256": "005485d3f43ec354e906f47a8d4bbf2bd4df8fa63750ae9d9a147557d9425cc7"
+  },
+  "files": [
+    {
+      "path": "tools/battlefield/vfx.js",
+      "bytes": 17648,
+      "sha256": "f823fc73778d886c81a0f32100764264634eeefa9865f35d439ef8bab8e4601b"
+    },
+    {
+      "path": "tools/battlefield/vfx-contract.mjs",
+      "bytes": 7041,
+      "sha256": "d8d173bd83830cdbb37802523a959e0cef2c41d57e55b0918055ccc8372f23c4"
+    },
+    {
+      "path": "tools/battlefield/vfx-contract.test.mjs",
+      "bytes": 7389,
+      "sha256": "618a38236c90b90471edeb3c82cde2aee9a5b5006e1ffa4b87a865ad51edc8e2"
+    },
+    {
+      "path": "tools/battlefield/vfx-rich-profiles.mjs",
+      "bytes": 4397,
+      "sha256": "33afe74e8918a76c26f5b4a48b14110c490345428760fd50b4ab01d08883a2b1"
+    },
+    {
+      "path": "tools/battlefield/vfx-rich-profiles.test.mjs",
+      "bytes": 6547,
+      "sha256": "25ba37642042da32ed333b5e17ddfad409c671384a7de6c717348ce6076d76aa"
+    },
+    {
+      "path": "tools/battlefield/vfx-runtime.test.mjs",
+      "bytes": 23189,
+      "sha256": "e70a31eded20612e87d5e6574645f6fdb83f730d7ea977260912efc9e7169269"
+    },
+    {
+      "path": "tools/battlefield/rich-preview.js",
+      "bytes": 28615,
+      "sha256": "d12e6faf3df802f0e245bd24d0c111ada09ad1dc0d386d10a22ff339db53ae1b"
+    },
+    {
+      "path": "tools/battlefield/rich-preview.html",
+      "bytes": 7005,
+      "sha256": "3711a0aa128a13d0b5e68f9f1caf93e0a6f46a7b1336296c716f6704deaadd51"
+    },
+    {
+      "path": "tools/battlefield/build-rich-preview.cjs",
+      "bytes": 1337,
+      "sha256": "ca44a6d99d258d5f04bbb6e21a76c5aa5da7d664f6915208861fc83b35ad7464"
+    },
+    {
+      "path": "tools/battlefield/rich-preview-README.md",
+      "bytes": 5299,
+      "sha256": "22fb6284689d7b1aecfa0922f85ba78fbdcd9f0d7c5dbf5bea9d32dd7ac47a79"
+    },
+    {
+      "path": "tools/battlefield/RICH-VFX-HANDOFF.md",
+      "bytes": 4615,
+      "sha256": "95c976f087248e3113c56096616896a8b249f798432ed430a7df55373090c46d"
+    },
+    {
+      "path": "tools/battlefield/verify-bindings.mjs",
+      "bytes": 5156,
+      "sha256": "a666a1815759c24f6032d4d20c757f1608ee73fe9d394308329a09deab384aa9"
+    }
+  ],
+  "excludedDraft": "tools/battlefield/vfx-painted-contract.mjs is an unused superseded v2 draft; not imported or shipped"
+}

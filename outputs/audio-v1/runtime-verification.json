@@ -1,0 +1,158 @@
+{
+  "schema": "cloudstitch.audio.runtime-verification.v1",
+  "checkedAt": "2026-10-18T07:13:28.935Z",
+  "status": "passed",
+  "scope": "Node scheduling/lifecycle assertions using an injected fake AudioContext; no browser launched.",
+  "limitations": [
+    "No human listening result.",
+    "No native Web Audio rendering or peak/RMS result.",
+    "No browser, hardware, long-duration or integration QA."
+  ],
+  "passed": 17,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "settings defaults and malformed values",
+      "status": "passed",
+      "evidence": {
+        "master": 1,
+        "sfx": 0,
+        "ambience": 0.35,
+        "muted": false,
+        "mono": false,
+        "lowDynamicRange": true
+      }
+    },
+    {
+      "name": "corrupt and denied storage recover without throwing",
+      "status": "passed",
+      "evidence": "Both invalid JSON and SecurityError-like storage failures preserve usable defaults/settings."
+    },
+    {
+      "name": "user unlock gate drops old one-shots",
+      "status": "passed",
+      "evidence": "No locked cue backlog; first unlocked cue schedules one source."
+    },
+    {
+      "name": "unlock can retry after context creation failure",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "name": "dispose wins a pending unlock/resume race",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "name": "concurrent unlock requests share one context resume",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "name": "mute discards cue backlog and restores on next cue",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "name": "burst rate limit and total voice cap",
+      "status": "passed",
+      "evidence": {
+        "sameInstantStarts": 1,
+        "activeVoiceHighWater": 3,
+        "withReleaseTailsHighWater": 5,
+        "logicalVoiceCap": 12,
+        "releaseTailCap": 24
+      }
+    },
+    {
+      "name": "three critical cue ceiling and priority admission",
+      "status": "passed",
+      "evidence": {
+        "warningAdmitted": true,
+        "totalActiveHighWater": 3,
+        "criticalHighWater": 3,
+        "debug": {
+          "version": "audio-v1.0.0-ready",
+          "unlocked": true,
+          "locked": false,
+          "contextState": "running",
+          "paused": false,
+          "disposed": false,
+          "muted": false,
+          "activeVoices": 3,
+          "activeImportant": 3,
+          "activeCritical": 3,
+          "activeLoops": [],
+          "releasing": 12,
+          "bufferCache": 18,
+          "throttleKeys": 15,
+          "counts": {
+            "played": 28,
+            "droppedLocked": 0,
+            "droppedMuted": 0,
+            "droppedRate": 0,
+            "droppedCap": 2,
+            "stolen": 13,
+            "loopStarts": 0,
+            "clears": 0
+          },
+          "unlockError": null,
+          "storageError": null,
+          "limits": {
+            "voices": 12,
+            "important": 3,
+            "critical": 3,
+            "buffers": 64,
+            "releaseTails": 24
+          }
+        }
+      }
+    },
+    {
+      "name": "three important cues ceiling protects critical cues from lower priority replacement",
+      "status": "passed",
+      "evidence": {
+        "importantHighWater": 3,
+        "lowerPriorityRejectedOverThreeCritical": true
+      }
+    },
+    {
+      "name": "loop idempotence, update and explicit stop",
+      "status": "passed",
+      "evidence": "Repeated loop update does not start another source."
+    },
+    {
+      "name": "three ambience loops remain bounded across state updates",
+      "status": "passed",
+      "evidence": {
+        "updates": 1500,
+        "sourceStarts": 3
+      }
+    },
+    {
+      "name": "pause/resume clears sources and drops old hits",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "name": "clear and dispose remove all sources and reject future playback",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "name": "settings patches retain other valid fields",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "name": "mono re-centers existing and future panners; invalid IDs do not allocate",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "name": "weapon-specific one-shot playback rate is bounded independently of loop rate",
+      "status": "passed",
+      "evidence": null
+    }
+  ]
+}

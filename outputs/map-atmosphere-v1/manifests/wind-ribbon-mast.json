@@ -1,0 +1,42 @@
+{
+  "id": "wind-ribbon-mast",
+  "name_ko": "겹리본 풍향 표주",
+  "category": "props",
+  "role": "여러 높이의 천 리본, 깃털 풍향계와 황동 종을 가진 바람 표지.",
+  "motion_ko": "리본과 작은 종이 엇갈린 주기로 흔들립니다.",
+  "order": 22,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/wind-ribbon-mast.glb",
+  "preview": "previews/wind-ribbon-mast.png",
+  "triangles": 14096,
+  "mesh_count": 99,
+  "vertices": 42288,
+  "material_count": 1,
+  "animation_count": 15,
+  "animation_duration": 4.6,
+  "encoded_color_components": 0,
+  "bytes": 1634116,
+  "sha256": "0368d5f2a27586b9b7a68dda1ebe82937f3918e935374b6b7a861aa64e277135",
+  "bounds": {
+    "min": [
+      -1.8494739100200182,
+      -1.8599999986588955,
+      -1.2155034343821103
+    ],
+    "max": [
+      2.2367632607611756,
+      3.2453024236140253,
+      0.9092584036553756
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

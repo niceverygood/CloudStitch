@@ -1,0 +1,312 @@
+{
+  "title": "Cloudstitch · 1막 적군 함대",
+  "coordinate": "+Y up,-X bow,+X stern; relative art units",
+  "appearance": "matte vertex painted; cel and outline are viewer runtime",
+  "gameplayImplemented": false,
+  "models": [
+    {
+      "id": "chapter1-scout",
+      "kind": "scout",
+      "name": "가시까마귀",
+      "role": "정찰정",
+      "assetPath": "ships/scout.glb",
+      "viewerPath": "ships/scout.html",
+      "previewPath": "previews/scout.png",
+      "bytes": 14985920,
+      "sha256": "9f7de20425f2bd0916dc6f39d4054e3fae68853e008d100a4fc93fe1b35be7ef",
+      "triangles": 95890,
+      "meshes": 22,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        18,
+        10.650000214576721,
+        6
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "9f7de20425f2bd0916dc6f39d4054e3fae68853e008d100a4fc93fe1b35be7ef",
+      "previewSha256": "a6dfa901dbfb21674e0dc5305fb644b6bc246b728af062be6b09f152a1f75b0f",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-command",
+      "kind": "command",
+      "name": "검은 종 지휘정",
+      "role": "지휘정",
+      "assetPath": "ships/command.glb",
+      "viewerPath": "ships/command.html",
+      "previewPath": "previews/command.png",
+      "bytes": 17669160,
+      "sha256": "7f21359648650537998d27400fe4d6bf6905f97782a96d7ce3d548c8ee984c88",
+      "triangles": 116180,
+      "meshes": 26,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        15.329999831318855,
+        13.40499997138977,
+        5.963533639907837
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "7f21359648650537998d27400fe4d6bf6905f97782a96d7ce3d548c8ee984c88",
+      "previewSha256": "52613020a78e64bfc7a3510523869e5e6027786d5ff67b1805fb99e3f0c0205a",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-executor",
+      "kind": "executor",
+      "name": "장례 집행관",
+      "role": "중간보스 · 장례 호위함",
+      "assetPath": "ships/executor.glb",
+      "viewerPath": "ships/executor.html",
+      "previewPath": "previews/executor.png",
+      "bytes": 34898816,
+      "sha256": "8d55e6f12084e1ff7c5b55f10acbe22591b267163a98938bdbd74af70b47b68d",
+      "triangles": 246628,
+      "meshes": 34,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 2
+      },
+      "bounds": [
+        25.06381416618824,
+        15.051567554473877,
+        13.889999961853027
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/miniboss-executor.png",
+      "previewSourceSha256": "8d55e6f12084e1ff7c5b55f10acbe22591b267163a98938bdbd74af70b47b68d",
+      "previewSha256": "5c802dbf9f22ea779bd27f8df024599f14656cb06a27708c3ef441a842b794ca",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-ram",
+      "kind": "ram",
+      "name": "철턱 들이받이",
+      "role": "돌격정",
+      "assetPath": "ships/ram.glb",
+      "viewerPath": "ships/ram.html",
+      "previewPath": "previews/ram.png",
+      "bytes": 16703716,
+      "sha256": "42f62695d494c8ddc9bda1c4e56ea68fe3eb49c88c0194ac8b1815606547e2a9",
+      "triangles": 108868,
+      "meshes": 25,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 2
+      },
+      "bounds": [
+        13.766667655110359,
+        8.890000104904175,
+        10.179999828338623
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "42f62695d494c8ddc9bda1c4e56ea68fe3eb49c88c0194ac8b1815606547e2a9",
+      "previewSha256": "17bec3403925b922749bb1b2087b0e33ac1694a281744c9ff963454980dad494",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-cannon",
+      "kind": "cannon",
+      "name": "검은 관 포격함",
+      "role": "함포정",
+      "assetPath": "ships/cannon.glb",
+      "viewerPath": "ships/cannon.html",
+      "previewPath": "previews/cannon.png",
+      "bytes": 15622976,
+      "sha256": "be438975f513de613687b3c35fed21c795b99e32f15776aa800dbb6e593c0a52",
+      "triangles": 100644,
+      "meshes": 30,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        14.22399998009205,
+        8.344933271408081,
+        7.764664649963379
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "be438975f513de613687b3c35fed21c795b99e32f15776aa800dbb6e593c0a52",
+      "previewSha256": "449bce8057e5119789ecb08833d9b2738b06a23dc6083fb3192d26b90e68369d",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-tow",
+      "kind": "tow",
+      "name": "갈고리 사냥꾼",
+      "role": "견인정",
+      "assetPath": "ships/tow.glb",
+      "viewerPath": "ships/tow.html",
+      "previewPath": "previews/tow.png",
+      "bytes": 21173252,
+      "sha256": "7e41c8fb1a2b0ef6f7de0eda79b60f97eedc79698014901e50543419d87b7b8f",
+      "triangles": 142728,
+      "meshes": 26,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        16.46999969780445,
+        10.086663961410522,
+        7.107428312301636
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "7e41c8fb1a2b0ef6f7de0eda79b60f97eedc79698014901e50543419d87b7b8f",
+      "previewSha256": "63b04d0a86cdb161cc6e287d7765762ff75d342c24c2248ef50f6fa28b4a4f2d",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-shield",
+      "kind": "shield",
+      "name": "장송 방패함",
+      "role": "방어정",
+      "assetPath": "ships/shield.glb",
+      "viewerPath": "ships/shield.html",
+      "previewPath": "previews/shield.png",
+      "bytes": 14564040,
+      "sha256": "4f063323aa3952ce15bace1c854c9c54a5943ccf518b1981aaa8da87e9342cca",
+      "triangles": 92712,
+      "meshes": 20,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        11.61500006020069,
+        9.707924604415894,
+        8.567572593688965
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "4f063323aa3952ce15bace1c854c9c54a5943ccf518b1981aaa8da87e9342cca",
+      "previewSha256": "1eb9207c68f0217587e84f92092306122507b5fc62c44035d2d61a86ace4872c",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-fire",
+      "kind": "fire",
+      "name": "향로 불씨함",
+      "role": "화염정",
+      "assetPath": "ships/fire.glb",
+      "viewerPath": "ships/fire.html",
+      "previewPath": "previews/fire.png",
+      "bytes": 21020780,
+      "sha256": "62aa5d096112e1bba0acff3fcd7a8017b07465018fa369599624397d9e792b0e",
+      "triangles": 141564,
+      "meshes": 27,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        14.837999966740608,
+        9.125000238418579,
+        7.507445335388184
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "62aa5d096112e1bba0acff3fcd7a8017b07465018fa369599624397d9e792b0e",
+      "previewSha256": "f0c0ad862e1da2cfb7a494e531187cb8ca493ddb9572b05585734f5015edddcc",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-mortar",
+      "kind": "mortar",
+      "name": "묘지기 박격함",
+      "role": "박격포정",
+      "assetPath": "ships/mortar.glb",
+      "viewerPath": "ships/mortar.html",
+      "previewPath": "previews/mortar.png",
+      "bytes": 13563204,
+      "sha256": "9add55a7930a4f0021f1f399f2d4a2aad065a4ff87b55e2b1436e0609c8b077d",
+      "triangles": 85048,
+      "meshes": 29,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        11.269999888539314,
+        9.781706602409097,
+        8.97641658782959
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "9add55a7930a4f0021f1f399f2d4a2aad065a4ff87b55e2b1436e0609c8b077d",
+      "previewSha256": "ee7f0f478d22c2a5b5ed5fde87364ccf3e7748828150a563d8e3d8e9f3f785c9",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-chain",
+      "kind": "chain",
+      "name": "사슬 거미함",
+      "role": "사슬탄정",
+      "assetPath": "ships/chain.glb",
+      "viewerPath": "ships/chain.html",
+      "previewPath": "previews/chain.png",
+      "bytes": 24107884,
+      "sha256": "72bb626564e7031eed76cb70938694206461fe348e82b856eadeb8654bc989f8",
+      "triangles": 164904,
+      "meshes": 32,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        14.679999831318856,
+        6.637002229690552,
+        11.899999618530273
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "72bb626564e7031eed76cb70938694206461fe348e82b856eadeb8654bc989f8",
+      "previewSha256": "33ea1433ef136ff495fd7b72502837120b1342eb06886c01a69ae79397cc3776",
+      "embeddedPaintMaps": 5
+    },
+    {
+      "id": "chapter1-repair",
+      "kind": "repair",
+      "name": "봉인 수복선",
+      "role": "수리 지원정",
+      "assetPath": "ships/repair.glb",
+      "viewerPath": "ships/repair.html",
+      "previewPath": "previews/repair.png",
+      "bytes": 17664404,
+      "sha256": "b46422ea988113343b35445e99d4482ef4e67038e168b9d0e4421e7842fe7433",
+      "triangles": 116128,
+      "meshes": 28,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        14.33999996483326,
+        12.519999742507935,
+        8.10077428817749
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "b46422ea988113343b35445e99d4482ef4e67038e168b9d0e4421e7842fe7433",
+      "previewSha256": "4101957535d51407db961bc1cbca44470f20586e730f536ca6d0f5ee490c5727",
+      "embeddedPaintMaps": 5
+    }
+  ],
+  "quality": "v1 detail improvement; not final moodboard-equivalent art approval",
+  "humanArtApproval": "pending",
+  "verificationScopes": {
+    "representatives": 53,
+    "remaining8": 61,
+    "closeupImages": 9
+  }
+}

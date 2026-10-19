@@ -1,0 +1,83 @@
+{
+  "revision": "chapter2-volley-r1",
+  "status": "SOURCE_READY",
+  "date": "2026-10-19",
+  "files": [
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/arm.cjs",
+      "bytes": 12143,
+      "sha256": "746432552c78adf7f31ebd86172524705e7fa885bbdc60641a2d14f703399792"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/build.cjs",
+      "bytes": 1885,
+      "sha256": "c9dfa8477a00185890ce718dfe132f1260ce7760876e4015570c37bdf03ecc3d"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/finalize.cjs",
+      "bytes": 3089,
+      "sha256": "5744377de4b0ca3a39da4c38ef3b3449323928c599e063fa7127ef9521a89821"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/inspect.cjs",
+      "bytes": 5100,
+      "sha256": "ed2a90f2a512176a686a13159f08532b7834276c224204d0d8d4b710382afcc6"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/qa.cjs",
+      "bytes": 32404,
+      "sha256": "e591684fabe4a8bbe2237b3d853ece22e16a4e23063eb38d4d78a4366f59c563"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/README.txt",
+      "bytes": 2014,
+      "sha256": "93be227afbc0e891c3b1e1b5d9f40b7ef88d860aa37235efcea9f68a28d3a762"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/review.js",
+      "bytes": 23879,
+      "sha256": "0b1427727cb40426b18bf44daf3355ed602efa5a71f419ac9ab2ee02bb2977be"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/source-ready.cjs",
+      "bytes": 1192,
+      "sha256": "af8f56678afd81e298cd182aea4f4eb1cf9cd75eeedf6ee129b43c3356393d71"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/template.html",
+      "bytes": 25761,
+      "sha256": "8a8e9d66c0ae970c12b0f382af63b4ce25b291d83fbf17653fe9ae159356e679"
+    }
+  ],
+  "readOnly": [
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/enemy-base.glb",
+      "bytes": 47284180,
+      "sha256": "d478dfa063f9f475f962da048493fb4de898da1dcc38d73c2e40de4df65143de"
+    },
+    {
+      "path": "tools/lib/runtime.cjs",
+      "bytes": 1969,
+      "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+    },
+    {
+      "path": "tools/qa/world-gltf.cjs",
+      "bytes": 10543,
+      "sha256": "72e8832121aac1e845aac79b8a244716f571337ccd06607891b22abba93eb6f4"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/chapter2-volley-r1/reference.png",
+    "bytes": 3613828,
+    "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+  },
+  "scope": "Additive real GLB arrow racks and an 8-second standard transform animation; 48 racks, 24 ports, four bursts, 4608 arrows/cycle. Visual demonstration only.",
+  "coordination": "Central thread unavailable twice; only this thread active, recorded shared slot available. Independent serialized local work, no shared source/servers/deps changes.",
+  "commands": [
+    "node tools/enemy-base/chapter2-volley-r1/arm.cjs",
+    "node tools/enemy-base/chapter2-volley-r1/inspect.cjs",
+    "node tools/enemy-base/chapter2-volley-r1/build.cjs",
+    "node tools/enemy-base/chapter2-volley-r1/qa.cjs",
+    "node tools/enemy-base/chapter2-volley-r1/finalize.cjs"
+  ]
+}

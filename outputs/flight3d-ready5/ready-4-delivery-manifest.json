@@ -1,0 +1,189 @@
+{
+  "version": "flight3d-ready-4",
+  "scope": "Left-button grab camera, release-to-fire click and explicit continuous fire; original helm/physics retained",
+  "browserQA": "pending: outputs/flight3d-ready4-browser-qa-v1/browser-verification.json",
+  "previousPlayable": "outputs/flight3d-ready3/index.html",
+  "files": [
+    {
+      "path": "tools/flight3d/HANDOFF.md",
+      "bytes": 9445,
+      "sha256": "7e1f5037b75c8df4d94518c0ddb068e793ba9626b1ef77982cb8206e5555efe3"
+    },
+    {
+      "path": "tools/flight3d/app.js",
+      "bytes": 12579,
+      "sha256": "28b9dcbd811f3bed427334bb54d535010ec5f443d063272841e2110c56f5cd3a"
+    },
+    {
+      "path": "tools/flight3d/build.cjs",
+      "bytes": 1722,
+      "sha256": "bba65d9ea313c69b30b8c8c4198ad4b37bd64770025e220b2b07d6c8b7656d65"
+    },
+    {
+      "path": "tools/flight3d/camera-geometry.mjs",
+      "bytes": 3523,
+      "sha256": "a2c4d670c27595bbea56e3b830a9cf04b2459c32d399e035c3e70e110d01c21f"
+    },
+    {
+      "path": "tools/flight3d/camera-geometry.test.mjs",
+      "bytes": 3850,
+      "sha256": "e1d3fe15228f840a3db9058480726213edf0a686d5b08b15627dbee8014751f8"
+    },
+    {
+      "path": "tools/flight3d/helm-route.test.mjs",
+      "bytes": 2307,
+      "sha256": "8f8381b3eb234573c37abd83667a5900133a3f804bf8b1803496430ac102854b"
+    },
+    {
+      "path": "tools/flight3d/renderer.js",
+      "bytes": 14297,
+      "sha256": "57cf2862b01b705cf204411a2c29a27d4c84218487fa4a563a9b6e7022533674"
+    },
+    {
+      "path": "tools/flight3d/sim.mjs",
+      "bytes": 27606,
+      "sha256": "23bbbfe1f98493f4e6a0b26f0dd1090b3a1ee6a9da87bf4670b6e7576e42fc44"
+    },
+    {
+      "path": "tools/flight3d/sim.test.mjs",
+      "bytes": 23963,
+      "sha256": "f83aecc31df6a0bcac901d8a642f52e49d460f1ef22d47be436bbae925b69164"
+    },
+    {
+      "path": "tools/flight3d/snapshot.mjs",
+      "bytes": 1727,
+      "sha256": "56b5dfbb4fa8f2f40a457dabaf5f61f9e613d2706a14c00a10dfe9ba48a45701"
+    },
+    {
+      "path": "tools/flight3d/style.css",
+      "bytes": 19037,
+      "sha256": "bf176be46deb6a57e1fc95144294b7805f68e2d01626fd6e0c3157b65f8a95f2"
+    },
+    {
+      "path": "tools/flight3d/template.html",
+      "bytes": 8634,
+      "sha256": "de5b713969b30318f070602bc3779cf7873f4e3b67949a0b256c00d674bf6827"
+    },
+    {
+      "path": "tools/flight3d/verify-browser.cjs",
+      "bytes": 6897,
+      "sha256": "9cdce4a15363c97da00c9dcdedc1ddaae797fa900dc5222ba10089818582b5c8"
+    },
+    {
+      "path": "tools/flight3d/verify-grab-browser.cjs",
+      "bytes": 15896,
+      "sha256": "04ab6aeb3ff81aa3b70743c8401e16b965370249084cedb38b2fbebae0e62dd1"
+    },
+    {
+      "path": "tools/flight3d/verify-helm-browser.cjs",
+      "bytes": 8041,
+      "sha256": "1285087af633f353a07e45338051e75710d7bc32f8dcfb202de78b6466b94f57"
+    },
+    {
+      "path": "tools/flight3d/verify-source.mjs",
+      "bytes": 2659,
+      "sha256": "847dfcc52aa6638f142ecc6ddc3546d42dc767a338d974be4ebb7746badc991b"
+    },
+    {
+      "path": "outputs/flight3d-v1/browser-verification.json",
+      "bytes": 4958,
+      "sha256": "bdd6014693bf2f33d45a47671d45e0089eecd556b6385e45923ada462cb9ead9"
+    },
+    {
+      "path": "outputs/flight3d-v1/build-manifest.json",
+      "bytes": 3620,
+      "sha256": "795debafe19d44066932dcffa3ee113f8007a470008d599422fe0c0540fed936"
+    },
+    {
+      "path": "outputs/flight3d-v1/flight.js",
+      "bytes": 793335,
+      "sha256": "b92fecd8124ecc66bb28efe32a95b0d37e5ea2236d079b2cbb381f9ada434a85"
+    },
+    {
+      "path": "outputs/flight3d-v1/index.html",
+      "bytes": 8634,
+      "sha256": "de5b713969b30318f070602bc3779cf7873f4e3b67949a0b256c00d674bf6827"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-flight.png",
+      "bytes": 227055,
+      "sha256": "b0a403cef464f51bb75e61266200c5a896b6d858e283fde3fa2a17e2aff07ffa"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-iab.jpg",
+      "bytes": 73327,
+      "sha256": "0e938896b5d49b47a1b609010509cc8292df0d045d9fec03aba30cfa4a233162"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-mobile.png",
+      "bytes": 118267,
+      "sha256": "834fd36a2e77720fd00d6a2c157d90fd64053a4cb632ed01331f5450adc80999"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-ready2.jpg",
+      "bytes": 66872,
+      "sha256": "6da7ca26fc2b4b13e7caeadab261201212396fffd0c9cbb018ac8ca1793c17ad"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-ready3-iab.jpg",
+      "bytes": 73986,
+      "sha256": "8ab580d6ca9213da0722617e1c4ae5711f35834305de53eda756212ca9002c05"
+    },
+    {
+      "path": "outputs/flight3d-v1/qa-summary.json",
+      "bytes": 806,
+      "sha256": "73178222db29258eda7b66b717b41eca1a58a3459dd19f3b9cb280fd67e4f9e8"
+    },
+    {
+      "path": "outputs/flight3d-v1/ready-1-delivery-manifest.json",
+      "bytes": 4032,
+      "sha256": "23e2ff04f42764e37b5a810420da611d45cd0474e3e24e4f2c255babf9327874"
+    },
+    {
+      "path": "outputs/flight3d-v1/ready-2-delivery-manifest.json",
+      "bytes": 4605,
+      "sha256": "015a0e28694b17f64e3202e3fe4537fe7c9ad98e3b1a7210e154a27b7cb29724"
+    },
+    {
+      "path": "outputs/flight3d-v1/ready-3-delivery-manifest.json",
+      "bytes": 6270,
+      "sha256": "a47437d6d8832b8bccef03881273ff524782854f564a281e84c6c5e57acc4921"
+    },
+    {
+      "path": "outputs/flight3d-v1/source-verification.json",
+      "bytes": 1111,
+      "sha256": "afcee11c7d4616b0fde27293e0555bf5cdb04d238420f67be406c48d8eb878c0"
+    },
+    {
+      "path": "outputs/flight3d-v1/style.css",
+      "bytes": 19037,
+      "sha256": "bf176be46deb6a57e1fc95144294b7805f68e2d01626fd6e0c3157b65f8a95f2"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "tools/battlefield/assets.js",
+      "role": "read-only shared GLB loader bundled into flight.js",
+      "bytes": 15505,
+      "sha256": "624532b463d498c5b0ad3ccc1c2ade75ea903af819b6871b6c0fb6aff0f3834b"
+    },
+    {
+      "path": "outputs/fleet-v1/catalog.json",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 469686,
+      "sha256": "d73ea3d133167ce78d468c8df25ecae6dffb058457050993349fd2a138e1fda9"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/player-homeward.glb",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 6699020,
+      "sha256": "bce2d9891de2225d6823cb1c347a4b8d6b7e3dd2f59e056db78530661d131923"
+    }
+  ]
+}

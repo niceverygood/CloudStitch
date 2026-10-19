@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "method": "Supported Cua UI interactions and screenshot inspection; CPU real-GLB authority test recorded separately",
+  "url": "http://127.0.0.1:8843/",
+  "hero": "star4-artillery",
+  "checks": [
+    {
+      "name": "Latest actual hero and mounted original MG visible",
+      "passed": true
+    },
+    {
+      "name": "Fire scene .05 seconds, shots1/hits0/projectiles1; muzzle visible",
+      "passed": true
+    },
+    {
+      "name": "Flight scene .22 seconds, painted bullet visibly in flight",
+      "passed": true
+    },
+    {
+      "name": "Hit scene .53 seconds, shots1/hits1/HP99992/projectiles0; nonzero visible impact and surface attachment",
+      "passed": true
+    },
+    {
+      "name": "Burst observed25shots25hits HP99800",
+      "passed": true
+    },
+    {
+      "name": "Miss observed1shot0hits HP100000, projectile expired, no hit",
+      "passed": true
+    },
+    {
+      "name": "3 display modes select and retain contact result",
+      "passed": true
+    },
+    {
+      "name": "Pause and reset to0shots0hits HP100000; final speed.25",
+      "passed": true
+    },
+    {
+      "name": "390x844 mobile impact and wrapped controls visible, viewport restored",
+      "passed": true
+    }
+  ],
+  "visualCorrection": "Replaced bounding-sphere fit with projected-corner fit; closer flight/hit views. Runtime effectScale1.5 within established contract.",
+  "notVerified": [
+    "GPU numeric plane-normal and opacity inspection unavailable through supported DOM inspection",
+    "No performance budget measurement or human art approval",
+    "No production sockets or campaign equipment installation"
+  ],
+  "policyRecord": {
+    "fileURL": "Blocked by browser URL policy; file protocol not accessed",
+    "http": "Allowed protocol loopback review-only HTML server. No filesystem browser access.",
+    "oldShellRejection": "Preserved prior v2 rejection; did not retry old command"
+  },
+  "delivery": {
+    "tab": 6,
+    "paused": true,
+    "url": "http://127.0.0.1:8843/",
+    "serverSession": 14669,
+    "server": "only / and /index.html; bound127.0.0.1:8843"
+  },
+  "screenshotEvidence": "Visual screenshots emitted during UI verification; no local image export available in supported capture interface"
+}

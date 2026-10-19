@@ -1,0 +1,25 @@
+{
+  "id": "lift-warning",
+  "startedAt": "2026-10-18T08:53:47.218Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A short mechanical airship lift warning: brief tight canvas strain followed by two distinct muted brass warning-pin ticks, first strong then short. Urgent but not piercing, no electronic beep, no melody. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 0.9,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:48.955Z",
+  "output": {
+    "file": "audio/lift-warning.mp3",
+    "bytes": 15089,
+    "sha256": "a29c0d96cdf351db4d5230f50200aedb124c9446aba240c3554d51ea2e65c275",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "9"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "engine-cruise-loop",
+  "startedAt": "2026-10-18T08:53:36.719Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A small propeller airship engine cruising steadily: light rhythmic blade thrum, warm mid-low mechanical rotation and fine bearing chatter. Faster than idle but gentle and stable, no acceleration sweep or jet roar. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 6,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:40.746Z",
+  "output": {
+    "file": "audio/engine-cruise-loop.mp3",
+    "bytes": 97009,
+    "sha256": "263112425f0905519cf5408190fd7174077241139ad9244f3647a4eab588392a",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "60"
+}

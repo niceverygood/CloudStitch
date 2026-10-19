@@ -1,0 +1,79 @@
+import * as T from 'three';
+import {createLibrary as oldLibrary} from '../ranks-1to5-v2/models.js';
+import {TYPES} from './catalog.js';
+export {TYPES};
+const V=a=>new T.Vector3(...a), C={wood:0xbd8745,trim:0x77503a,teal:0x377c7e,dark:0x254d53,cream:0xf5e6c9,brass:0xd3aa60,coral:0xc97257,light:0xffdb8c};
+export function createLibrary(gltf){
+ const old=oldLibrary(gltf),owned=new Set(),maps=new Map();
+ function texture(kind){if(maps.has(kind))return maps.get(kind);const n=128,a=new Uint8Array(n*n*4);for(let y=0;y<n;y++)for(let x=0;x<n;x++){const brush=kind==='wood'?Math.sin(y*.4+Math.sin(x*.05)*2)*16:kind==='cloth'?((x%12===0||y%12===0)?-17:0):Math.sin(y*.19+Math.sin(x*.09))*9;const v=T.MathUtils.clamp(238+brush+Math.sin(x*2.7+y*3.1)*4,194,255),i=(y*n+x)*4;a[i]=a[i+1]=a[i+2]=v;a[i+3]=255;}const t=new T.DataTexture(a,n,n);t.colorSpace=T.SRGBColorSpace;t.wrapS=t.wrapT=T.RepeatWrapping;t.needsUpdate=true;maps.set(kind,t);owned.add(t);return t;}
+ const mats=Object.fromEntries(Object.entries(C).map(([k,c])=>{const m=new T.MeshBasicMaterial({name:'Grand hand-painted '+k,color:c,map:texture(['wood','trim'].includes(k)?'wood':['cream','coral'].includes(k)?'cloth':'metal'),vertexColors:true,side:T.DoubleSide});owned.add(m);return[k,m];}));
+ function create(id){
+  const meta=TYPES.find(t=>t.id===id);if(!meta)throw Error(id);const {rank:r,branch:b}=meta;
+  const base=r===1?old.create('starter-r1'):old.createOriginal(),root=new T.Group();root.name='Cloudstitch_Grand_'+id;root.add(base.root);
+  root.userData={assetId:id,star:r,lineage:b,up:'+Y',forward:'-X',units:'source relative units',visualAsset:true,designLength:Math.pow(1.6,r-1),richnessTarget:1.5};
+  function geo(g){g.computeVertexNormals();const p=g.attributes.position,n=g.attributes.normal,a=[];for(let i=0;i<p.count;i++){const l=n.getY(i)*.7-n.getX(i)*.2-n.getZ(i)*.3,v=T.MathUtils.clamp((l>.4?1:l>-.3?.88:.70)+Math.sin(p.getX(i)*93+p.getY(i)*127+p.getZ(i)*37)*.017,0,1);a.push(v,v*.99,v*.96);}g.setAttribute('color',new T.Float32BufferAttribute(a,3));owned.add(g);return g;}
+  function group(name,p=[0,0,0],parent=root){const g=new T.Group();g.name=name;g.position.fromArray(p);parent.add(g);return g;}
+  function mesh(g,k,p=[0,0,0],s=[1,1,1],parent=root,name=k){const o=new T.Mesh(geo(g),mats[k]);o.name=name;o.position.fromArray(p);o.scale.fromArray(s);parent.add(o);return o;}
+  const box=(p,s,k='wood',parent=root)=>mesh(new T.BoxGeometry(),k,p,s,parent);
+  const ell=(p,s,k='brass',parent=root)=>mesh(new T.SphereGeometry(1,24,14),k,p,s,parent);
+  function rod(a,b,rad=.01,k='brass',parent=root){const d=V(b).sub(V(a)),o=mesh(new T.CylinderGeometry(rad,rad,d.length(),8),k,V(a).add(V(b)).multiplyScalar(.5).toArray(),[1,1,1],parent);o.quaternion.setFromUnitVectors(V([0,1,0]),d.normalize());return o;}
+  function line(points,rad=.01,k='brass',parent=root){return mesh(new T.TubeGeometry(new T.CatmullRomCurve3(points.map(V)),24,rad,6,false),k,[0,0,0],[1,1,1],parent);}
+  function ring(p,rad,k='brass',axis='x',parent=root,tube=rad*.07){const o=mesh(new T.TorusGeometry(rad,tube,6,32),k,p,[1,1,1],parent);o.rotation.set(axis==='y'?Math.PI/2:0,axis==='x'?Math.PI/2:0,0);return o;}
+  function sail(points,k,parent=root){const g=new T.BufferGeometry(),p=[],uv=[];const a=V(points[0]),c=V(points[1]),d=V(points[2]);for(let j=0;j<=10;j++){const v=j/10;for(let i=0;i<=12;i++){const u=i/12,q=a.clone().lerp(c,u).lerp(d,v);q.y+=Math.sin(u*Math.PI)*Math.sin(v*Math.PI)*.10;p.push(...q.toArray());uv.push(u,v);}}const ix=[];for(let j=0;j<10;j++)for(let i=0;i<12;i++){const n=j*13+i;ix.push(n,n+13,n+1,n+1,n+13,n+14);}g.setAttribute('position',new T.Float32BufferAttribute(p,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.setIndex(ix);mesh(g,k,[0,0,0],[1,1,1],parent,'Tensioned sewn wind foil');for(let i=0;i<3;i++)rod(points[i],points[(i+1)%3],.012,'brass',parent);}
+  function rotor(p,rad,parent=root){const g=group('Grand propeller rotor',p,parent);g.userData.viewerMotion='rotorX';for(let i=0;i<4;i++){const a=i*Math.PI/2,o=ell([0,Math.cos(a)*rad*.52,Math.sin(a)*rad*.52],[.025,rad*.48,rad*.15],'teal',g);o.rotation.x=a;}ell([0,0,0],[rad*.2,rad*.18,rad*.18],'brass',g);ring([0,0,0],rad*1.09,'brass','x',g);return g;}
+  function deck(p,len,w,parent=root){const g=group('Planked inhabited deck',p,parent);ell([0,-.012,0],[len*.5,.035,w*.5],'wood',g);for(let i=1;i<14;i++){const x=(i/14-.5)*len,z=w*.47*Math.sqrt(1-Math.pow(x/(len*.5),2));rod([x,.015,-z],[x,.015,z],.0035,'trim',g);}for(const s of[-1,1]){const pts=Array.from({length:17},(_,i)=>{const u=i/16*Math.PI;return[-Math.cos(u)*len*.48,.07,Math.sin(u)*w*.48*s];});line(pts,.009,'brass',g);for(let i=1;i<8;i++){const a=i/8*Math.PI;rod([-Math.cos(a)*len*.48,.01,Math.sin(a)*w*.48*s],[-Math.cos(a)*len*.48,.07,Math.sin(a)*w*.48*s],.006,'trim',g);}}return g;}
+  function lamp(p,rad=.025,parent=root){ell(p,[rad,rad*1.4,rad],'light',parent);ring(p,rad*1.15,'brass','y',parent);}
+  function bag(p,len,width,parent=root){const g=group('Banded cream buoyancy envelope',p,parent);ell([0,0,0],[len*.5,width*.53,width*.5],'cream',g);for(const u of[-.34,-.12,.12,.34]){const q=Math.sqrt(1-Math.pow(u*2,2));const o=ring([u*len,0,0],width*.52*q,'trim','x',g,width*.022);o.scale.y=1.02;for(const s of[-1,1])rod([u*len,-width*.4,s*width*.25],[u*len,-width*.78,s*width*.23],width*.025,'brass',g);}ell([len*.43,width*.02,0],[len*.07,width*.34,width*.33],'coral',g);return g;}
+  function cannon(p,len,rad,parent=root){const g=group('Recoil supported grand cannon',p,parent);rod([len*.20,0,0],[-len,0,0],rad,'dark',g);for(const x of[-len,-len*.72,-len*.28,.08])ring([x,0,0],rad*1.12,'brass','x',g);ell([-len-.005,0,0],[.007,rad*.79,rad*.79],'trim',g);box([0,-rad*.9,0],[len*.9,rad*.40,rad*2.5],'wood',g);for(const s of[-1,1])rod([len*.3,-rad,s*rad],[-len*.35,-rad,s*rad],rad*.14,'brass',g);return g;}
+  function claw(p,size,parent=root){const g=group('Recovery articulated claw',p,parent);ell([0,0,0],[size*.25,size*.23,size*.25],'teal',g);for(let i=0;i<3;i++){const a=i*Math.PI*2/3;line([[0,0,0],[Math.cos(a)*size*.55,-size*.3,Math.sin(a)*size*.55],[Math.cos(a)*size*.62,-size*.7,Math.sin(a)*size*.62],[Math.cos(a)*size*.20,-size,Math.sin(a)*size*.20]],size*.065,'brass',g);}return g;}
+  if(r>=2){
+   const L=Math.pow(1.6,r-1),w=L*(b==='mobility'?.27:b==='artillery'?.40:.44),h=L*.15;
+   base.root.position.set(L*.22,.055,0);for(const name of ['EnvelopeAndBands','TurretAssembly','EngineHousing','PropellerAssembly','HookAndChain','WinchDrumMesh'])if(base.parts[name])base.parts[name].visible=false;
+   const chassis=group('Tiered grand flagship hull');ell([0,-h*.53,0],[L*.51,h*.70,w*.51],'wood',chassis);
+   // The lower hull is newly authored geometry; root scale and the original cabin stay unchanged.
+   for(const s of[-1,1]){line([[-L*.51,-h*.06,0],[-L*.37,-h*.9,s*w*.35],[L*.24,-h*1.03,s*w*.43],[L*.49,-h*.18,s*w*.13]],L*.014,'dark',chassis);line([[-L*.51,-h*.02,0],[-L*.30,-h*.25,s*w*.48],[L*.3,-h*.24,s*w*.48],[L*.50,.01,0]],L*.009,'brass',chassis);for(let i=0;i<r*3;i++){const x=(i/(r*3-1)-.5)*L*.78,z=s*w*.49*Math.sqrt(1-Math.pow(x/(L*.55),2));rod([x,-h*.02,z],[x,-h*.75,z*.80],L*.005,'brass',chassis);if(i%2===0)lamp([x,-h*.30,z],L*.010,chassis);}line([[-L*.37,-h*.25,s*w*.35],[-L*.59,-h*.03,s*w*.17],[-L*.58,h*.22,s*w*.12],[-L*.51,h*.24,s*w*.12]],L*.023,'wood',chassis);}
+   deck([0,0,0],L*.94,w);for(let tier=1;tier<r-1;tier++){const x=L*(.13+tier*.035),y=tier*L*.055,len=L*(.47-tier*.035),dw=w*(.90-tier*.08);deck([x,y,0],len,dw);for(const s of[-1,1])for(const dx of[-len*.32,len*.32])rod([x+dx,y-L*.055,s*dw*.38],[x+dx,y,s*dw*.38],L*.008,'trim');}
+   // Close the formerly empty tier frames into inhabited wooden galleries.
+   // Their bottoms rest on each lower deck and the next deck is their roof.
+   for(let tier=1;tier<r-1;tier++){
+    const y=(tier-.5)*L*.055,x=L*(.13+tier*.035),len=L*(.41-tier*.035),gw=w*(.67-tier*.045);
+    box([x,y,0],[len,L*.048,gw],'wood');
+    for(const side of[-1,1]){rod([x-len*.5,y-L*.019,side*gw*.51],[x+len*.5,y-L*.019,side*gw*.51],L*.004,'brass');for(let j=0;j<r+1;j++){const px=x+(j/r-.5)*len*.82;ell([px,y,side*gw*.51],[L*.010,L*.015,L*.004],'light');ring([px,y,side*gw*.515],L*.015,'brass','z');}}
+   }
+   const cy=(r-2)*L*.055,house=group('Inhabited captain gallery',[L*.25,cy,0]);
+   box([0,L*.037,0],[L*.20,L*.075,w*.48],'wood',house);ell([0,L*.079,0],[L*.13,L*.026,w*.32],'teal',house);
+   for(const side of[-1,1])for(let j=0;j<3;j++){const px=(j-1)*L*.055;ell([px,L*.037,side*w*.246],[L*.017,L*.022,L*.004],'light',house);ring([px,L*.037,side*w*.25],L*.021,'brass','z',house);rod([px,L*.02,side*w*.254],[px,L*.055,side*w*.254],L*.002,'trim',house);}
+   for(const x of[-L*.10,L*.10])rod([x,0,-w*.24],[x,L*.07,-w*.24],L*.006,'trim',house);
+   const bagY=L*(.30+(r-2)*.025),bagW=L*.24;bag([L*.04,bagY,0],L*.88,bagW);
+   for(const s of[-1,1])for(const x of[-L*.26,L*.28]){rod([x,.025,s*w*.31],[x,bagY-bagW*.36,s*bagW*.30],L*.008,'trim');rod([x-L*.08,.02,s*w*.35],[x,bagY-bagW*.36,s*bagW*.30],L*.004,'brass');}
+   if(r>=4)for(const s of[-1,1]){bag([L*.14,bagY*.80,s*w*.64],L*(r===5?.64:.46),L*.14);for(const x of[-.07,.29])rod([L*x,L*.06,s*w*.26],[L*x,bagY*.80-L*.05,s*w*.64],L*.009,'trim');}
+   const mast=group('Coral pennant signal mast',[L*.36,L*.17,0]);rod([0,0,0],[0,L*.32,0],L*.005,'brass',mast);sail([[0,L*.30,0],[L*.20,L*.34,0],[L*.14,L*.23,0]],'coral',mast);lamp([0,L*.32,0],L*.014,mast);
+   if(b==='mobility'){
+    for(const s of[-1,1]){const hub=[L*.04,L*.025,s*w*.43];ell(hub,[L*.07,L*.055,L*.07],'teal');for(let j=0;j<r-1;j++){const x=L*(-.32+j*.16),tip=[x+L*.06,L*(.03+j*.038),s*L*(.35+j*.065)];sail([[x-L*.14,L*.025,s*w*.35],[x+L*.20,L*.04,s*w*.37],tip],j%2?'teal':'cream');rod(hub,tip,L*.012,'trim');rod([L*.25,0,s*w*.25],tip,L*.005,'brass');}for(let j=0;j<Math.max(1,r-2);j++){const p=[L*(.34-j*.13),L*.035,s*L*(.18+j*.09)];rod([L*.22,0,s*w*.30],p,L*.024,'wood');ell(p,[L*.11,L*.04,L*.045],'teal');rotor([p[0]+L*.11,p[1],p[2]],L*(.08+j*.007));}}
+    sail([[-L*.54,.01,0],[-L*.24,.01,-w*.22],[-L*.24,.02,w*.22]],'teal');
+   }else if(b==='artillery'){
+    const battery=group(r===2?'Bow single battery':r===3?'Revolving battery':r===4?'Siege rail battery':'Cathedral twin battery',[-L*.25,L*.07,0]);ell([0,0,0],[L*.17,L*.10,w*.42],'teal',battery);
+    const n=r===2?1:r===3?3:r===4?1:2;for(let j=0;j<n;j++){const z=(j-(n-1)/2)*L*.065; cannon([-L*.06,L*.025,z],L*(r===4?.31:.25),L*(r===4?.053:r===5?.047:.035),battery);}
+    for(const s of[-1,1]){ell([L*.04,-L*.03,s*w*.40],[L*.18,L*.10,w*.12],'dark',battery);ring([L*.04,-L*.03,s*w*.50],L*.075,'brass','z',battery);for(let j=0;j<r-1;j++){const x=L*(-.05+j*.125);box([x,-h*.30,s*w*.49],[L*.12,h*.90,L*.025],'teal');rod([x-L*.05,-h*.67,s*w*.51],[x+L*.05,-h*.67,s*w*.51],L*.008,'brass');}if(r>=4)for(const x of[-.18,.25]){rod([x*L,-h*.5,s*w*.37],[(x+.05)*L,-h*1.5,s*w*.65],L*.027,'teal');box([(x+.05)*L,-h*1.5,s*w*.65],[L*.12,L*.025,L*.12],'brass');}}
+    for(let j=0;j<r-1;j++)box([L*(.02+j*.075),L*.05,0],[L*.045,L*.06,w*.45],'brass');
+   }else{
+    const dock=group('Open recovery throat',[-L*.44,-h*.50,0]);for(const s of[-1,1]){box([-L*.12,0,s*w*.29],[L*.46,L*.045,L*.065],'teal',dock);for(let j=0;j<r+1;j++)rod([-L*.30+j*L*.075,L*.025,s*w*.21],[-L*.30+j*L*.075,L*.025,s*w*.36],L*.017,'brass',dock);rod([L*.10,L*.06,s*w*.23],[L*.18,h*.48,s*w*.26],L*.024,'wood',dock);}
+    for(const s of[-1,1]){const g=group('Load bearing articulated recovery crane',[L*.08,L*.055,s*w*.36]);const elbow=[-L*.06,L*(.20+r*.02),s*L*.06],end=[-L*.45,L*(.15+r*.015),s*L*.07];rod([0,0,0],elbow,L*.028,'wood',g);rod(elbow,end,L*.022,'teal',g);rod([L*.07,0,0],elbow,L*.012,'brass',g);ring(elbow,L*.045,'brass','z',g);rod(end,[end[0],-L*.02,end[2]],L*.004,'trim',g);if(r===2){ring([end[0],-L*.04,end[2]],L*.035,'brass','z',g);}else claw([end[0],-L*.02,end[2]],L*.13,g);ell([0,0,s*L*.035],[L*.065,L*.065,L*.025],'teal',g);ring([0,0,s*L*.06],L*.06,'brass','z',g);}
+    if(r>=3){const y=-h*1.55;deck([0,y,0],L*.52,w*.76);for(const s of[-1,1])for(const x of[-L*.20,L*.20])rod([x,y,s*w*.29],[x,0,s*w*.29],L*.006,'trim');for(let j=0;j<r-2;j++){box([L*(-.13+j*.12),y+L*.04,0],[L*.095,L*.075,w*.40],'wood');}}
+    if(r>=4){const x=L*.31,y=L*(.14+(r-4)*.035);box([x,y,0],[L*.26,L*.025,w*.63],'coral');for(const s of[-1,1])for(const dx of[-L*.11,L*.11])rod([x+dx,L*.07,s*w*.27],[x+dx,y,s*w*.27],L*.008,'trim');}
+    if(r===5)for(const s of[-1,1]){
+     const arm=group(s<0?'Grand auxiliary holding arm':'Grand repair tool arm',[L*.20,L*.065,s*w*.44]);
+     const elbow=[L*.01,L*.15,s*L*.065],tip=[-L*.13,L*.09,s*L*.16];
+     rod([0,0,0],elbow,L*.024,'wood',arm);rod(elbow,tip,L*.020,'teal',arm);rod([L*.05,0,0],elbow,L*.008,'brass',arm);ring(elbow,L*.037,'brass','z',arm);ell([0,0,0],[L*.05,L*.05,L*.04],'teal',arm);
+     if(s<0)for(const j of[-1,1])line([tip,[tip[0]-L*.06,tip[1]+j*L*.05,tip[2]],[tip[0]-L*.13,tip[1]+j*L*.025,tip[2]]],L*.012,'brass',arm);else{rod(tip,[tip[0]-L*.10,tip[1],tip[2]],L*.022,'brass',arm);ring([tip[0]-L*.1,tip[1],tip[2]],L*.033,'teal','x',arm);}
+     const table=group('Open workshop bench',[L*.30,L*.06,s*w*.31]);box([0,0,0],[L*.18,L*.035,L*.09],'wood',table);for(const dx of[-L*.07,L*.07])for(const z of[-L*.03,L*.03])rod([dx,-L*.06,z],[dx,0,z],L*.006,'trim',table);for(let j=0;j<3;j++)ell([(j-1)*L*.05,L*.04,0],[L*.016,L*.02,L*.018],j===1?'teal':'brass',table);
+    }
+   }
+  }
+  // All inherited COLOR_0 values are copied before clamping; frozen V2 data stays intact.
+  root.traverse(n=>{if(!n.isMesh)return;const c=n.geometry.attributes.color;if(c){const g=n.geometry.clone(),a=c.clone();for(let i=0;i<a.array.length;i++)a.array[i]=T.MathUtils.clamp(a.array[i],0,1);g.setAttribute('color',a);n.geometry=g;owned.add(g);}});
+  root.updateMatrixWorld(true);let triangles=0,meshes=0;root.traverseVisible(n=>{if(n.isMesh){meshes++;triangles+=(n.geometry.index?.count||n.geometry.attributes.position.count)/3;}});const rotors=[];root.traverse(n=>{if(n.userData.viewerMotion==='rotorX')rotors.push({n,q:n.quaternion.clone()});});
+  return{root,parts:base.parts,meta,counts:{triangles,meshes,sourceTriangles:11026},update(t=0){base.update(t);for(const {n,q}of rotors)n.quaternion.copy(q).multiply(new T.Quaternion().setFromAxisAngle(V([1,0,0]),t*6*Math.PI));},dispose(){root.removeFromParent();base.dispose();}};
+ }
+ return{create,createOriginal:()=>old.createOriginal(),dispose(){old.dispose();owned.forEach(o=>o.dispose());}};
+}

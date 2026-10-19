@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "revision": "hero-skill-tree-v1",
+  "status": "PASS",
+  "checkedAt": "2026-10-19T03:28:18.287Z",
+  "scope": "Node data and allocation logic only; not battle-effect implementation or gameplay balance.",
+  "browser": {
+    "executed": false,
+    "reason": "No browser slot used; UI interaction, rendering and responsive layout remain unverified."
+  },
+  "artApproval": false,
+  "results": [
+    {
+      "name": "21 canonical skills, costs, cooldowns, and previous-tier OR prerequisites",
+      "status": "PASS"
+    },
+    {
+      "name": "Lv1..9 earns level−1 points, independent of appearance growth",
+      "status": "PASS"
+    },
+    {
+      "name": "Every branch supports both OR predecessors and rejects siblings/skipping",
+      "status": "PASS"
+    },
+    {
+      "name": "Ultimate requires Lv6, two remaining points, and global limit one",
+      "status": "PASS"
+    },
+    {
+      "name": "Exhaustive Lv9 eight-point allocations: 192 + 96 + 96 = 384",
+      "status": "PASS"
+    },
+    {
+      "name": "Refund cancels descendants only and clears affected Q/E assignments",
+      "status": "PASS"
+    },
+    {
+      "name": "Level reduction removes unavailable ultimate and refunds reverse-order overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Three learned actives are allowed, Q/E equip two, unique assignment is maintained",
+      "status": "PASS"
+    },
+    {
+      "name": "Six presets are complete five-plus-three builds with two learned equipped actives",
+      "status": "PASS"
+    },
+    {
+      "name": "Validation rejects malformed rule states",
+      "status": "PASS"
+    }
+  ]
+}

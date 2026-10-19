@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:37:35Z",
+  "sample": "outputs/fleet-v2/ships/boss-bell-devourer.html",
+  "pattern": "outputs/fleet-v2/ships/*.html",
+  "integrationCheckout": {
+    "filter": "lfs",
+    "diff": "lfs",
+    "merge": "lfs",
+    "text": "unset",
+    "change": "one new pattern only; existing rules unchanged"
+  },
+  "sharedCheckout": {
+    "filter": "unspecified",
+    "diff": "unspecified",
+    "merge": "unspecified",
+    "text": "auto"
+  },
+  "next": "include only this new rule in selected handoff before any shared-checkout commit; no automatic broad copy/reset",
+  "verification": "git check-attr in both observed checkouts plus integration git diff",
+  "bulkIoAndGallery": "not yet run; keep1.58GB full hashing/import out of browser/audio QA slot"
+}

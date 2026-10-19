@@ -1,0 +1,68 @@
+{
+  "revision": "detail-source-r2-remaining8",
+  "files": [
+    {
+      "path": "tools/chapter1-fleet-detail-v2/build.cjs",
+      "bytes": 3467,
+      "sha256": "a7b87e66872bcd76ea27179c2f4660b8af5bf72087ae90df2f4625e26d02c036"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/closeups.cjs",
+      "bytes": 1752,
+      "sha256": "a5b4a824803b10e0d91fc5574b9af775942c993fc4f3558af70698d040288941"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/generate.mjs",
+      "bytes": 3246,
+      "sha256": "6bdffbbbf5cfee1963884e4f3b4f05c6c5c88d428f71e13c0009ffc001ec1faa"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/models.mjs",
+      "bytes": 27732,
+      "sha256": "bace63baa260f715e1d0131152408ae0a321a80c5e1e54a6c97090ee23b117e8"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/paint.cjs",
+      "bytes": 2838,
+      "sha256": "56e0a9ff555312ddbd847e74921bf152453d64040032380a1418c15c957ec0b1"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/qa.cjs",
+      "bytes": 8517,
+      "sha256": "36f3e28637f4b387b6d68aed62c7e9eafe1aa99dc7abeded7b6bfb63adfb5f88"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/review.js",
+      "bytes": 23763,
+      "sha256": "c4306dd90a633dc7414c33d187e69c1fefadfb277f5d653696827d516b9aa68d"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/template.html",
+      "bytes": 25533,
+      "sha256": "5aaf959e0b7180d911a978ea2bc9938915d56d77f2b671ce93f882faac0fdb8f"
+    }
+  ],
+  "representativesPreserved": [
+    {
+      "path": "outputs/chapter1-fleet-detail-v2/ships/scout.glb",
+      "sha256": "9f7de20425f2bd0916dc6f39d4054e3fae68853e008d100a4fc93fe1b35be7ef",
+      "bytes": 14985920
+    },
+    {
+      "path": "outputs/chapter1-fleet-detail-v2/ships/command.glb",
+      "sha256": "7f21359648650537998d27400fe4d6bf6905f97782a96d7ce3d548c8ee984c88",
+      "bytes": 17669160
+    },
+    {
+      "path": "outputs/chapter1-fleet-detail-v2/ships/executor.glb",
+      "sha256": "8d55e6f12084e1ff7c5b55f10acbe22591b267163a98938bdbd74af70b47b68d",
+      "bytes": 34898816
+    }
+  ],
+  "commands": [
+    "FLEET_REMAINING=1 node tools/chapter1-fleet-detail-v2/build.cjs --execute",
+    "FLEET_REMAINING=1 node tools/chapter1-fleet-detail-v2/qa.cjs"
+  ],
+  "budget": "8 sequential exports only; 8 load/maps/3modes/clip/PNG, final11gallery; no representative53rerun",
+  "visualGate": "details read in actual9closeups; direction accepted for extension, final human art approval pending"
+}

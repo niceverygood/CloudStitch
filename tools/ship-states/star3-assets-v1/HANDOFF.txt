@@ -1,0 +1,17 @@
+범위 tools/ship-states/star3-assets-v1/ → outputs/ship-states-v1/star3-assets-v1/.
+기존 원선체+2성3GLB+기준무드보드를 읽기 사용. 기존2성/공통소스 변경 없음.
+검토용 3성장착 API createLibrary(gltf).create('mobility'|'artillery'|'salvage'), root/parts/counts/update/dispose.
+기동: 관절 안정돛 + 두 기울기 추진대 + 원후방추진 제거.
+포격: 삼실 약실 + 활성 포신1 + 후방급탄캐러셀. 재장전/발사규칙 구현 아님.
+인양: U받침 제거→선수 로프가이드, 후방/측면 굴절 크레인/슬링/플랫폼.
+목재/천/도색금속 grain+vertex명암+unlit은GLB에포함. 윤곽선/셀/프로펠러는runtime.
+마운트는원형좌표의검토원점, socket/미터/충돌/LOD/리깅/손상트리미확정.
+
+기존 NODE_PATH work/combat-vfx-v2/deps/node_modules 사용, 설치0:
+node tools/ship-states/star3-assets-v1/check-source.cjs
+node tools/ship-states/star3-assets-v1/build.cjs --authoring
+명시 START 뒤: node tools/ship-states/star3-assets-v1/export-verify.cjs
+단 browser/page에서 새3모델export→productionbuild→실제새3GLBreload, 이전2성비교9표시, 3×120frame잔상,
+조작/윤곽/회전/프로펠러/확대·맞춤/모바일390·768·1440/외부요청/PNG9·overview. 예산약90초~3분.
+close+postpin확인후슬롯반환, 로컬PNG미술읽기후최종deliveryREADY.
+실패raw/PNG보존, 좁은원인수정과후속슬롯만요청. 이전2성/hero52/전프로젝트자산재검사0.

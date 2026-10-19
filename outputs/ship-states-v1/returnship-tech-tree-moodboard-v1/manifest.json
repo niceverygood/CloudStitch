@@ -1,0 +1,55 @@
+{
+  "title": "Cloudstitch",
+  "revision": "returnship-tech-tree-moodboard-v1",
+  "tool": "Built-in image_gen",
+  "type": "2D rank and tech-tree concept",
+  "files": [
+    {
+      "path": "outputs/ship-states-v1/returnship-tech-tree-moodboard-v1/tech-tree.png",
+      "bytes": 2180860,
+      "sha256": "ef35d14f4bbe74b7cf54e0f15777fd3e291eb92b94909dedbd5f817f8f5e2be3"
+    },
+    {
+      "path": "outputs/ship-states-v1/returnship-tech-tree-moodboard-v1/reference-returnship.png",
+      "bytes": 62703,
+      "sha256": "51e249d04a26a375372e6fe8b4a788f25bc39efa5c305b69e2b6e22e62de4d83"
+    },
+    {
+      "path": "outputs/ship-states-v1/returnship-tech-tree-moodboard-v1/prompt.txt",
+      "bytes": 4828,
+      "sha256": "c808bd90350e8dbad7538f9c585e260155797e5af756de10db65ccde93b795ba"
+    },
+    {
+      "path": "outputs/ship-states-v1/returnship-tech-tree-moodboard-v1/DESIGN.txt",
+      "bytes": 3804,
+      "sha256": "def8b77e28a4439f164f90845a508311eff7f156b4bc9348fefac00281e46859"
+    }
+  ],
+  "branches": [
+    "mobility",
+    "artillery",
+    "salvage"
+  ],
+  "rankThresholdsProposal": [
+    1,
+    6,
+    12,
+    20,
+    30
+  ],
+  "representativeForms": 13,
+  "visuallyInspected": true,
+  "visualChecks": [
+    "Common original1-star ship",
+    "Three labeled branches",
+    "Four specialized rank rows with level labels",
+    "Original cream envelope and teal cabin identity"
+  ],
+  "humanArtApproved": false,
+  "gameplayImplemented": false,
+  "limits": [
+    "Thresholds and Lv1–30 rules are proposals replacing, not silently coexisting with, the older Lv1–9 plan.",
+    "Image equipment counts are illustrative.",
+    "No new 3D/gameplay/save implementation."
+  ]
+}

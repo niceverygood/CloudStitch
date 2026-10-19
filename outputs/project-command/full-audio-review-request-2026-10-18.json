@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T08:49:36Z",
+  "authorization": {
+    "directHumanRead": true,
+    "sourceThreadId": "01a14dd0-fc09-7c51-8f63-cdfff1bc8e6f",
+    "turnId": "01a14e30-8d56-7d50-84df-8db2b98f0fa5",
+    "messageId": "01a14e30-8e32-70d2-9789-e2e39a827f6e",
+    "request": "기타 필요한 음향효과를 전체 만들어서 검수 할수 있게 해줘"
+  },
+  "scope": {
+    "ownerPlan": "about40 practical sound cues across weapons/material hits/cut/salvage/environment/danger/harbor/UI",
+    "exactGeneratedCount": null,
+    "existingMachinegunCandidate": "preserve/reuse original MP3/single-shot audition; edited6shot remains audition fixture",
+    "newOutput": "outputs/audio-review-v2/",
+    "newSource": "tools/audio/review-v2/",
+    "excluded": [
+      "music",
+      "voice",
+      "automatic game installation"
+    ],
+    "reviewUi": [
+      "individual cues",
+      "categories",
+      "overlap listening",
+      "notes",
+      "JSON export"
+    ]
+  },
+  "ownership": {
+    "audio": "source/cue IDs/provider generation/asset manifest/review UI/lightweight checks",
+    "integration": "single-slot native decode/browser QA after exact READY",
+    "command": "verified request/coordination/evidence only"
+  },
+  "status": "generation/review artifact implementation reported active; no full pack QA or hearing approval claimed",
+  "qualityBoundaries": [
+    "per cue generation/output/technical validation/human listening/game installation distinct",
+    "one-shot and burst/loop roles explicit",
+    "cue duration/cooldown/overlap/context documented",
+    "cueID/provider job/status/actual usage/source edits hashes logged without authentication data",
+    "no duplicate successful generation or unbounded retry"
+  ],
+  "qaOrder": "v1-rich runtime6 READY/current actual gameplay check first; audio-review-v2 native QA after its exact handoff, one browser owner",
+  "preserved": [
+    "audio-v1 source/output",
+    "frozen integration39",
+    "follow-up339 report/12-file index",
+    "existing ElevenLabs machinegun candidate"
+  ],
+  "security": "no credentials/user keys/auth logs/account cache read, stored or shared by command; no new provider calls by command",
+  "notifiedOwnerAndIntegration": true
+}

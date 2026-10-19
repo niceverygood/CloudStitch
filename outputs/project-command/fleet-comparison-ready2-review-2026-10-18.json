@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:17:16Z",
+  "version": "fleet-comparison READY2",
+  "source": "tools/fleet-comparison/",
+  "output": "outputs/fleet-comparison-v1/",
+  "manifest": {
+    "sha256": "78ef52ad845b97c563fabdc1426006296f8ed122e860bf33e34cc6ef9a125af3",
+    "declaredFiles": 95,
+    "sourceFiles": 9,
+    "outputFiles": 86,
+    "withManifest": 96
+  },
+  "staticReviewer": "stage_ready_review",
+  "mainRoster": {
+    "entries": 71,
+    "latestV2": 62,
+    "v1RigAlternatives": 9,
+    "missingOriginalIds": 0,
+    "duplicateIds": 0,
+    "groups": {
+      "friendly": 12,
+      "enemy": 19,
+      "neutral": 29,
+      "reference": 11
+    },
+    "notSimultaneousFleetOrUniqueShipTypes": true
+  },
+  "separateReference": {
+    "highDensityOriginals": 9,
+    "ids": "A1-C3",
+    "usesExistingPngAndGlb": true,
+    "differentFromMainAlternative9": true,
+    "doNotCall80UniqueShipTypes": true
+  },
+  "regionalRoles": {
+    "encounterSlots": 12,
+    "regions": 6,
+    "canonSlots": 12,
+    "canonUndecided": 8,
+    "confirmedFinals": [
+      "종을 삼킨 자",
+      "살아 있는 조선소",
+      "왕의 시험",
+      "마지막 들숨"
+    ],
+    "shipwrightCommand": "shipyard component, not automatically standalone canon boss",
+    "sources": "roster encounter data and112/114,39/107/regional detail references",
+    "campaignGameplayImplemented": false
+  },
+  "ownerLightChecks": {
+    "pass": 39,
+    "total": 39,
+    "pngPaths": 80,
+    "scope": "paths/source links/metadata"
+  },
+  "protection": {
+    "originalV2ManifestSha256": "916c3e9790818490ee6d4457b7e41d8fe23cc49130996f64512a3c2a2657f68e",
+    "declared174ProtectedByManifestDigest": true,
+    "wholeOriginalAssetsRehashed": false
+  },
+  "integrationReportedImport": {
+    "passed": true,
+    "withManifestFiles": 96
+  },
+  "acceptance": {
+    "staticReady": true,
+    "browserUi": false,
+    "humanArt": false
+  },
+  "next": [
+    "actual image decode and DOM71/ref9",
+    "12 encounter/8unknown canon slots visible",
+    "filter/friendly-enemy comparison",
+    "single3D/mobile/disposal"
+  ],
+  "newPaidGeneration": false
+}

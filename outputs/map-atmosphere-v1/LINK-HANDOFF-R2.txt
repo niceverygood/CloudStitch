@@ -1,0 +1,11 @@
+UI 링크 후속 r2 / 2026-10-18
+
+동결된 READY1의129payload와 index.html/build.cjs는 원바이트를 그대로 유지한다.
+후속 화면은 linked-r2.html, 소스는 tools/map-atmosphere-v1/build-linked-r2.cjs이다.
+새 화면은 기존 리뷰에 ../map-weather-v1/index.html 링크 한 개를 추가한 파생본이다.
+기존 모델·애니메이션·뷰어 로직·무드보드·미리보기·전후비교는 변경하지 않았다.
+HTML JS구문, href,8860의 실제 HTTP목표200,부모129파일SHA불변을 link-verification-r2.json으로 확인했다.
+추가브라우저/모델전수검사0. 기존53검사/46클립/9잔상 결과는 READY1에 귀속되며 후속의새브라우저검사로중복계산하지 않는다.
+실제 열람: http://127.0.0.1:8860/outputs/map-atmosphere-v1/linked-r2.html
+weather의돌아오기 링크도 linked-r2.html을목표로하면왕복연결된다.
+중앙은동결READY1을선별import한뒤후속5파일만추가하고새진입점을연결할수있다. 원index를조용히덮어쓰지않는다.

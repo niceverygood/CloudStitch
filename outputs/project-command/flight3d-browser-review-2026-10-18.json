@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18T09:36:00Z",
+  "scope": "independent XYZ flight READY2 experiment, separate from integrated voyage",
+  "source": {
+    "manifest": "outputs/flight3d-v1/delivery-manifest.json",
+    "sha256": "015a0e28694b17f64e3202e3fe4537fe7c9ad98e3b1a7210e154a27b7cb29724",
+    "ownedFiles": 20,
+    "readOnlyDependencies": 4
+  },
+  "receipt": {
+    "path": "outputs/flight3d-browser-qa-v1/verification.json",
+    "sha256": "d3d89e6d351ae248a21103e3ba9ad53e645d3ea87130ffa3327cd3de627b77c0",
+    "rawSha256": "bdd6014693bf2f33d45a47671d45e0089eecd556b6385e45923ada462cb9ead9",
+    "checks": 17,
+    "passed": 17,
+    "failed": 0
+  },
+  "review": {
+    "rootSmallReportShaMatched": true,
+    "delegatedStaticScopeReviewComplete": true,
+    "newBrowserRunByCommand": false,
+    "largeAssetHashRepeated": false
+  },
+  "observed": [
+    "Q/E ascent8to16.745/descent7.035, W+Q, shortD and heading limits",
+    "right-drag aiming, reset focus, pause, optional enemyattack cleanup",
+    "different-altitude target7shots/3hits/1kill",
+    "390x844 nooverflow/mobilebutton through mouse, not physical touch",
+    "no external or failed requests"
+  ],
+  "authority": "flight3d/sim.mjs owns standalone state; battlefield sim is not also running in this experiment",
+  "collision": "XYZ swept sphere/ellipsoid/box, not precise GLB mesh/aerodynamics",
+  "preservation": {
+    "ownerReportedOwned20PostQaChanges": 0,
+    "readOnly4ImportShaBothRootsMatched": true,
+    "readOnlyDependenciesCopied": 0,
+    "readOnly4NotIncludedInOwned20PostCheck": true,
+    "earlierReady1GuardFailurePreserved": true
+  },
+  "limits": [
+    "not integrated harbor/salvage/cargo/crafting/save/campaign",
+    "not dynamic altitude AI",
+    "not engine adoption/performance/art approval"
+  ],
+  "aggregateQaPass": null
+}

@@ -1,0 +1,36 @@
+{
+  "revision": "ui-weather-link-r2",
+  "parent_ready": "outputs/map-atmosphere-v1/READY.json",
+  "parent_ready_sha256": "e2e903cd429c7318165cd94097cf51d08f3f75e5c82dc5430064fd4e0b30748d",
+  "new_browser_tests": 0,
+  "new_model_tests": 0,
+  "viewer_logic_changed": false,
+  "payload": [
+    {
+      "path": "tools/map-atmosphere-v1/build-linked-r2.cjs",
+      "bytes": 9832,
+      "sha256": "47677e8f45f14344811312afe9bccf32a1c4a74a07a75022e8086f1ac2ba760b"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/history/build-ready1.cjs",
+      "bytes": 9641,
+      "sha256": "81109ab8eb373bd26c34b84e627d597ec9cd84f106738b5394dc0b2038e20c34"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/linked-r2.html",
+      "bytes": 16260325,
+      "sha256": "aa5efbb4e2984d1acfce605c14673e6322cdd61a8313512be2211dd498c86ea0"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/link-verification-r2.json",
+      "bytes": 1169,
+      "sha256": "19369a7424fb799e3a7a81681d059c5e635b76a094bb90beb27e57fd91da2117"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/LINK-HANDOFF-R2.txt",
+      "bytes": 1047,
+      "sha256": "07755fdd2cbb117419d8999437db602816cd770aa3bce4b52fb0ddc42bc7c00c"
+    }
+  ],
+  "read_only_parent_files": 129
+}

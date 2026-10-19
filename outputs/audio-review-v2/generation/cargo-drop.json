@@ -1,0 +1,25 @@
+{
+  "id": "cargo-drop",
+  "startedAt": "2026-10-18T08:53:34.955Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A cargo bundle is released from a small airship: brass latch unlocks, rope slackens, a padded wooden frame slides outward with a brief air swish. It drifts into open air, no ground impact. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:36.702Z",
+  "output": {
+    "file": "audio/cargo-drop.mp3",
+    "bytes": 17179,
+    "sha256": "aa6d1facdeb64ed436bcbf941792eebbc926b8bbc83a611d7351564c1bd230b7",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "10"
+}

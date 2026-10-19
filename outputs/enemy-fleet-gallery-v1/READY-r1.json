@@ -1,0 +1,175 @@
+{
+  "revision": "READY-r1",
+  "ownerThreadId": "01a14ec4-81b5-7583-8d51-e35ad3b30d55",
+  "entry": "outputs/enemy-fleet-gallery-v1/index.html",
+  "handoff": "outputs/enemy-fleet-gallery-v1/HANDOFF.md",
+  "state": "Owner complete; prior local QA PASS; integration import/QA pending.",
+  "counts": {
+    "enemy": 19,
+    "context": 7,
+    "total": 26,
+    "standard": 7,
+    "mission": 7,
+    "boss": 5
+  },
+  "files": [
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/HANDOFF.md",
+      "bytes": 7231,
+      "sha256": "28159f8ac04d4b0bb56c89df1774c9c35a82f141d4df918517b201d4e11ff899"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/README.txt",
+      "bytes": 1723,
+      "sha256": "efe0fd8dccdbed4689c5d8d2fce6daf5c7a7d53f5921e2fab339b90ac9c7608d"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/capture.json",
+      "bytes": 243,
+      "sha256": "adb861a2b90404c40771239f8584a53f1a96d929b01417d8238aa4276f103093"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/catalog.json",
+      "bytes": 32098,
+      "sha256": "ea48a624bf473e5eac4824634990fcbab3282c92d79e4928029ff588054ed885"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/comparison-preview.png",
+      "bytes": 552662,
+      "sha256": "c385bb16f12ccd31be4b6aae478fc7f67e8ed73b017d4cad241c078a4f9405f3"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/gallery-preview.png",
+      "bytes": 1109912,
+      "sha256": "6c370d111970506b4ecf102f4c9567fa901bd64740d6d61081567ebdc4462723"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/index.html",
+      "bytes": 45950,
+      "sha256": "1f6763911245369cd17eac41ac1b6a6fc84c87aab9ede4c59d526b895bdd5fbe"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/lightweight-checks.json",
+      "bytes": 1661,
+      "sha256": "e97c8caff162d4a490edbb7729161fa456aea7481a597aab752265aa89631f97"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/overview.png",
+      "bytes": 1484017,
+      "sha256": "55d6f45ce6cf5a70240727738004bd71f4069865e2c542d6b8e053f9a4383915"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/source-manifest.json",
+      "bytes": 15591,
+      "sha256": "33e09996ea6b0d6556f73e7acce6e384262edaad43eda0b034e1c87e0d04ba00"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/verification.json",
+      "bytes": 44716,
+      "sha256": "26907b1725ff65bcdf7d1547d1ea3ac93bd5a0be5f9885ed3795fe26f1978f6d"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/README.md",
+      "bytes": 2019,
+      "sha256": "b0efa720e0d367d7d95c753e4c85b18cce7ec7de961de4db9af9e41455ff047b"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/build.cjs",
+      "bytes": 5331,
+      "sha256": "a9da1993425a0e37ad03eb6133db657f75c53fb288211e5b13fece074d044b5f"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/capture.cjs",
+      "bytes": 2126,
+      "sha256": "03644c62b98a2197aaf75344806f2ca8cc696254f52b9e18c2e7e24dbbdee855"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/freeze.cjs",
+      "bytes": 6056,
+      "sha256": "0e89110e3865530dfae00bc6c0d38ed9026d419df285a38e81c0be3ff351cd06"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/qa.cjs",
+      "bytes": 22089,
+      "sha256": "8ec4c4daa0dbb12f4dadd0230d5cb188839626a6638efba438538ec278c0b5f3"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/template.html",
+      "bytes": 20128,
+      "sha256": "6794c1917adab90b8553e487cddeeac21f622f505040a502c84d0e831a30d71d"
+    }
+  ],
+  "readOnlyDependencies": [
+    "outputs/fleet-comparison-v1/inventory.json",
+    "outputs/fleet-comparison-v1/previews/",
+    "outputs/enemy-fleet-reference-v1/catalog.json",
+    "outputs/enemy-fleet-reference-v1/previews/",
+    "outputs/enemy-fleet-reference-v1/ships/",
+    "outputs/fleet-v2/ships/",
+    "tools/lib/runtime.cjs",
+    "tools/lib/paths.cjs",
+    "existing Playwright/browser runtime"
+  ],
+  "externalDependencyEvidence": "outputs/enemy-fleet-gallery-v1/source-manifest.json",
+  "priorExecution": {
+    "kind": "Completed owner-local QA before coordination; not central integration QA",
+    "startedAt": "2026-10-18T11:32:57.986Z",
+    "completedAt": "2026-10-18T11:34:00.885Z",
+    "harness": {
+      "path": "tools/enemy-fleet-gallery/qa.cjs",
+      "bytes": 22089,
+      "sha256": "8ec4c4daa0dbb12f4dadd0230d5cb188839626a6638efba438538ec278c0b5f3"
+    },
+    "report": {
+      "path": "outputs/enemy-fleet-gallery-v1/verification.json",
+      "bytes": 44716,
+      "sha256": "26907b1725ff65bcdf7d1547d1ea3ac93bd5a0be5f9885ed3795fe26f1978f6d"
+    },
+    "captureReport": {
+      "path": "outputs/enemy-fleet-gallery-v1/capture.json",
+      "bytes": 243,
+      "sha256": "adb861a2b90404c40771239f8584a53f1a96d929b01417d8238aa4276f103093"
+    },
+    "route": {
+      "protocol": "http:",
+      "hostname": "127.0.0.1",
+      "pathname": "/outputs/enemy-fleet-gallery-v1/index.html",
+      "port": "assigned by listen(0); numeric port not preserved in prior report"
+    },
+    "captureRoute": {
+      "protocol": "file:",
+      "repositoryPath": "outputs/enemy-fleet-gallery-v1/index.html",
+      "sheetQuery": "?sheet=1"
+    },
+    "conditions": {
+      "desktop": {
+        "width": 1440,
+        "height": 1080
+      },
+      "mobile": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 1,
+      "reducedMotion": "reduce",
+      "browsers": 1,
+      "pages": 1,
+      "concurrentViewers": 1
+    },
+    "htmlAndCatalogChangedAfterRun": false,
+    "reportOutputOverrideSupported": false
+  },
+  "qa": {
+    "harness": "tools/enemy-fleet-gallery/qa.cjs",
+    "priorReport": "outputs/enemy-fleet-gallery-v1/verification.json",
+    "priorChecks": 68,
+    "representativeViewers": 2,
+    "ghostingCases": 6,
+    "slotOwnerThreadId": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+    "newRun": false,
+    "automaticRepeat": false,
+    "integrationScope": "Selective import route/link checks; only missing coverage. Use independent harness and output path."
+  },
+  "sharedChangesRequired": [],
+  "browserActive": false
+}

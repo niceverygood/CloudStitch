@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "title": "Cloudstitch · 적조의 왕관",
+  "revision": "chapter2-r2",
+  "asset_status": "static_3d_art_prototype",
+  "source": {
+    "reference": "outputs/enemy-base-v1/chapter2-r2/reference.png",
+    "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192",
+    "preserved": true,
+    "method": "original code-authored volumetric architecture and vertex painting"
+  },
+  "model": {
+    "path": "enemy-base.glb",
+    "bytes": 47284132,
+    "sha256": "c441078575bc15ed6277a4dc04fc043caa118d7399b166163711ab7b1f7b956b",
+    "triangles": 739244,
+    "vertices": 851623,
+    "meshes": 57,
+    "materials": 22,
+    "textures": 1,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -41.490203857421875,
+        -22.394376754760742,
+        -24.286903381347656
+      ],
+      "max": [
+        36.590553283691406,
+        57.88899230957031,
+        25.54034996032715
+      ],
+      "size": [
+        78.08075714111328,
+        80.28336906433105,
+        49.827253341674805
+      ]
+    },
+    "coordinates": "+Y up, +Z front/dock; relative design units",
+    "authored_components": 7464,
+    "semantic_groups": [
+      {
+        "id": "hull",
+        "nodeName": "hull",
+        "name_ko": "포식자의 산호초",
+        "description": "찢긴 암초와 뼈 용골",
+        "triangles": 56224,
+        "meshes": 7
+      },
+      {
+        "id": "buoyancy",
+        "nodeName": "buoyancy",
+        "name_ko": "하늘해파리 부력막",
+        "description": "늘어진 진주빛 막과 해초 뿌리",
+        "triangles": 55848,
+        "meshes": 5
+      },
+      {
+        "id": "keep",
+        "nodeName": "keep",
+        "name_ko": "진주층 거주 테라스",
+        "description": "비대칭 패각 회랑과 거주 구역",
+        "triangles": 389580,
+        "meshes": 11
+      },
+      {
+        "id": "bell_tower",
+        "nodeName": "bell_tower",
+        "name_ko": "나선 패각 왕관",
+        "description": "거대한 입체 앵무조개와 성장선",
+        "triangles": 53840,
+        "meshes": 7
+      },
+      {
+        "id": "bastions",
+        "nodeName": "bastions",
+        "name_ko": "붉은 산호 포대",
+        "description": "속이 빈 산호 나팔 포신과 가지 방벽",
+        "triangles": 81552,
+        "meshes": 3
+      },
+      {
+        "id": "dock",
+        "nodeName": "dock",
+        "name_ko": "생체발광 항구",
+        "description": "포식자의 관문과 잔교·청록 항로",
+        "triangles": 43296,
+        "meshes": 11
+      },
+      {
+        "id": "machinery",
+        "nodeName": "machinery",
+        "name_ko": "뼈 기중기와 인양망",
+        "description": "대형 골격 기중기와 포획선",
+        "triangles": 8800,
+        "meshes": 4
+      },
+      {
+        "id": "banners",
+        "nodeName": "banners",
+        "name_ko": "해초 직물과 장식",
+        "description": "찢긴 천·진주 장신구·봉제 무늬",
+        "triangles": 50104,
+        "meshes": 9
+      }
+    ],
+    "texture_images": 1
+  },
+  "appearance": {
+    "surfaces": "Original coloured vertex painting plus one embedded 1024x1024 procedural hand-painted nacre/bone/coral/fibre atlas.",
+    "palette": "pearl ivory and rose, red coral, indigo reef, cyan bioluminescence, warm amber cave windows",
+    "material": "glTF metallic-roughness, roughness 1, metalness 0; review can replace with hand-painted unlit or toon shading",
+    "runtime": "Outline and cel shading belong to review runtime; they are not automatically reproduced by importing the GLB into an engine.",
+    "atlas": {
+      "path": "painted-atlas.png",
+      "bytes": 1046725,
+      "sha256": "236f041f9f34f73b8fcb0f47d3cf0bbb8aa7417d97674435f494ddb1fd8907b3",
+      "width": 1024,
+      "height": 1024
+    },
+    "textureSource": "Deterministic canvas drawing, seed91843; no API image generation, no chapter-one textures."
+  },
+  "limitations": [
+    "Art review prototype only; no gameplay or enemy AI.",
+    "No authored collision, LOD, navmesh, engine sockets, gameplay statistics or destruction.",
+    "Static geometry; no rig or animation; the bone cranes, shell crown, textiles and coral cannons are modeled in a fixed pose.",
+    "Building interiors are not authored; open harbour is an exterior architectural cavity without playable interior.",
+    "Artist/user approval is still required."
+  ],
+  "storage": {
+    "method": "Exact bitwise duplicate-vertex indexing; no quantization, decimation or shape change. UVs exactly follow the frozen first-paint per-triangle formula; UV is part of each welding key. Material primitives remain separate.",
+    "beforeSha256": "acbfd123d4085a63267e531edffe231ecb5bc355f35308d67720e28d085fac0f",
+    "afterSha256": "6f40fd171d80293a89bb8dd4acb74426ee943cc83ab4a9aa6ef03674cf2f2a7f",
+    "beforeBytes": 79900904,
+    "afterBytes": 46231848,
+    "beforeVertices": 2217732,
+    "afterVertices": 851623,
+    "triangles": 739244,
+    "checkedComponents": 24264732,
+    "expandedPositionNormalColourBytesIdentical": true,
+    "expectedFrozenTriangleUVBytesIdentical": true,
+    "materialBoundariesPreserved": true
+  }
+}

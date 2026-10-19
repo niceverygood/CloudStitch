@@ -1,0 +1,797 @@
+{
+  "version": "enemy-fleet-gallery-1",
+  "title": "Cloudstitch · 적 함선 한눈에",
+  "ships": [
+    {
+      "id": "enemy-pirate-scout",
+      "name": "해적 정찰선",
+      "shortName": "해적 정찰선",
+      "group": "standard",
+      "groupLabel": "일반 적선",
+      "index": 1,
+      "faction": "해적(세부 소속 미정)",
+      "description": "가벼운 정찰·측후방 접근·짧은 연사·후퇴",
+      "context": "",
+      "detail": "",
+      "category": "enemy-archetype",
+      "visual": "그림 기반 최신 외형",
+      "latest": true,
+      "previewPath": "../enemy-fleet-reference-v1/previews/enemy-pirate-scout.png",
+      "viewerPath": "../enemy-fleet-reference-v1/ships/enemy-pirate-scout.html",
+      "assetPath": "../enemy-fleet-reference-v1/ships/enemy-pirate-scout.glb",
+      "sourceModelSha256": "c2c8e5cd4392cd5715884911c28811e46aecd6affd612add739c9bc45c08983c",
+      "sourcePreviewSha256": "5d1a7a7471d2b2da6a38e91ead635c7e6b5f896d8fad8f65b41d127c196daf7c",
+      "weakpoints": [
+        "노출 후방 엔진"
+      ],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "metrics": {
+        "triangles": 28848
+      }
+    },
+    {
+      "id": "enemy-cult-blockade",
+      "name": "교단 봉쇄선",
+      "shortName": "교단 봉쇄선",
+      "group": "standard",
+      "groupLabel": "일반 적선",
+      "index": 2,
+      "faction": "마지막 숨 교단",
+      "description": "전면을 보호하고 측면 일제 포격으로 항로를 막는 중장갑선",
+      "context": "",
+      "detail": "",
+      "category": "enemy-archetype",
+      "visual": "그림 기반 최신 외형",
+      "latest": true,
+      "previewPath": "../enemy-fleet-reference-v1/previews/enemy-cult-blockade.png",
+      "viewerPath": "../enemy-fleet-reference-v1/ships/enemy-cult-blockade.html",
+      "assetPath": "../enemy-fleet-reference-v1/ships/enemy-cult-blockade.glb",
+      "sourceModelSha256": "26d5a1ef979ef51fc6c16b04e66d4d9f1ce909ddbd88f8002eb871a7e4b2c5db",
+      "sourcePreviewSha256": "8fd65c5677b73398fe9fe7f7ef541aa2c6f1c5c0b16d1d1637f5f1a53c8ed289",
+      "weakpoints": [
+        "후방 추진부",
+        "노출 종 지지대"
+      ],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "metrics": {
+        "triangles": 66312
+      }
+    },
+    {
+      "id": "enemy-union-salvage",
+      "name": "연합 인양선",
+      "shortName": "연합 인양선",
+      "group": "standard",
+      "groupLabel": "일반 적선",
+      "index": 3,
+      "faction": "쇠갈비 연합",
+      "description": "작살과 견인 케이블로 이동을 제한하는 산업선",
+      "context": "",
+      "detail": "",
+      "category": "enemy-archetype",
+      "visual": "그림 기반 최신 외형",
+      "latest": true,
+      "previewPath": "../enemy-fleet-reference-v1/previews/enemy-union-salvage.png",
+      "viewerPath": "../enemy-fleet-reference-v1/ships/enemy-union-salvage.html",
+      "assetPath": "../enemy-fleet-reference-v1/ships/enemy-union-salvage.glb",
+      "sourceModelSha256": "452d699009053773abd7d5c34cac6ed040bbeee03eb4c2fb7ebc694bea3b1177",
+      "sourcePreviewSha256": "d47fe9fb6da2b9be5d600b2d00c01b8fa6c1e563303c9f61dca606aa3196ccc3",
+      "weakpoints": [
+        "노출 케이블 드럼",
+        "크레인·견인 케이블"
+      ],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "metrics": {
+        "triangles": 53856
+      }
+    },
+    {
+      "id": "enemy-union-repair",
+      "name": "연합 수리선",
+      "shortName": "연합 수리선",
+      "group": "standard",
+      "groupLabel": "일반 적선",
+      "index": 4,
+      "faction": "쇠갈비 연합",
+      "description": "손상 동료를 제한된 수리량으로 지원하는 작업선",
+      "context": "",
+      "detail": "",
+      "category": "enemy-archetype",
+      "visual": "그림 기반 최신 외형",
+      "latest": true,
+      "previewPath": "../enemy-fleet-reference-v1/previews/enemy-union-repair.png",
+      "viewerPath": "../enemy-fleet-reference-v1/ships/enemy-union-repair.html",
+      "assetPath": "../enemy-fleet-reference-v1/ships/enemy-union-repair.glb",
+      "sourceModelSha256": "18ebc6cb6a3ca37aba27ad868fcaf2496b6f69d445e3bdd6211479abe90863f3",
+      "sourcePreviewSha256": "c5e77d2f4956548fed53fdc4e10590c5932447ab5842962b07b5910426373411",
+      "weakpoints": [
+        "측면 수리 장치",
+        "하부 수리팔 관절"
+      ],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "metrics": {
+        "triangles": 49100
+      }
+    },
+    {
+      "id": "enemy-ghost-chaser",
+      "name": "망령 추격선",
+      "shortName": "망령 추격선",
+      "group": "standard",
+      "groupLabel": "일반 적선",
+      "index": 5,
+      "faction": "이름 없는 함대",
+      "description": "잔광·돛의 부풀음 후 직선 돌진하는 함선",
+      "context": "",
+      "detail": "",
+      "category": "enemy-archetype",
+      "visual": "그림 기반 최신 외형",
+      "latest": true,
+      "previewPath": "../enemy-fleet-reference-v1/previews/enemy-ghost-chaser.png",
+      "viewerPath": "../enemy-fleet-reference-v1/ships/enemy-ghost-chaser.html",
+      "assetPath": "../enemy-fleet-reference-v1/ships/enemy-ghost-chaser.glb",
+      "sourceModelSha256": "c05629e92252812fa8e1abb8d6b1f20163f2cbcee6167f9c5ee4295eded72edd",
+      "sourcePreviewSha256": "0ad7901a486d663d687eddfda1d0824b12fc793af3d343de4b82bde7a9c178a6",
+      "weakpoints": [
+        "노출 측면 연결 골조",
+        "후방 노출 추진부"
+      ],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "metrics": {
+        "triangles": 24220
+      }
+    },
+    {
+      "id": "enemy-disguised-wreck",
+      "name": "위장 잔해선",
+      "shortName": "위장 잔해선",
+      "group": "standard",
+      "groupLabel": "일반 적선",
+      "index": 6,
+      "faction": "이름 없는 함대",
+      "description": "잔해처럼 대기하다 무장을 전개하는 적",
+      "context": "",
+      "detail": "",
+      "category": "enemy-archetype",
+      "visual": "그림 기반 최신 외형",
+      "latest": true,
+      "previewPath": "../enemy-fleet-reference-v1/previews/enemy-disguised-wreck.png",
+      "viewerPath": "../enemy-fleet-reference-v1/ships/enemy-disguised-wreck.html",
+      "assetPath": "../enemy-fleet-reference-v1/ships/enemy-disguised-wreck.glb",
+      "sourceModelSha256": "4bdd357b3a5f3fb1fe7c875db1dfd54755e153b3685c010bb0f408a68a107a8a",
+      "sourcePreviewSha256": "1718a368a2720b108aabfc79c02501312c67115e95d55751eb5e4737a39aaf61",
+      "weakpoints": [
+        "전개 후 드러나는 후방 추진부",
+        "위장 외피 안의 함포"
+      ],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "metrics": {
+        "triangles": 33904
+      }
+    },
+    {
+      "id": "enemy-tax-cutter",
+      "name": "녹슨 징세정",
+      "shortName": "녹슨 징세정",
+      "group": "standard",
+      "groupLabel": "일반 적선",
+      "index": 7,
+      "faction": "세부 소속 미정",
+      "description": "단일 부모 연결 구조를 보여주는 표준 중형 적. 세력 스타일은 별도 변형으로 기록한다.",
+      "context": "",
+      "detail": "",
+      "category": "enemy-standard",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/enemy-tax-cutter.png",
+      "viewerPath": "../fleet-v2/ships/enemy-tax-cutter.html",
+      "assetPath": "../fleet-v2/ships/enemy-tax-cutter.glb",
+      "sourceModelSha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+      "sourcePreviewSha256": "bf9302c8309a636663ad3e41544013175c3f7025ec208ef66c5eb05f235aeeb3",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/67-playable-slice-priorities.txt",
+        "outputs/102-advanced-encounter.txt",
+        "outputs/103-bridge-mission-script.txt"
+      ],
+      "metrics": {
+        "triangles": 39412
+      }
+    },
+    {
+      "id": "mission-union-guard",
+      "name": "연합 경비선",
+      "shortName": "연합 경비선",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 1,
+      "faction": "쇠갈비 연합",
+      "description": "노동자 도크 사건/오르 임무에서 포격하는 경비 비행선",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/mission-union-guard.png",
+      "viewerPath": "../fleet-v2/ships/mission-union-guard.html",
+      "assetPath": "../fleet-v2/ships/mission-union-guard.glb",
+      "sourceModelSha256": "aeae096526a7bc3414395dacc05aaff69a867aae93387e3c2e69db9aaf976acd",
+      "sourcePreviewSha256": "4f76f48e04e553bb37d63ab38676049f3e173614daed5bc62458bd4172614c50",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/27-act2-main-quests.txt",
+        "outputs/61-or-personal-quest.txt"
+      ],
+      "metrics": {
+        "triangles": 51524
+      }
+    },
+    {
+      "id": "mission-bridge-tug",
+      "name": "교량 견인정",
+      "shortName": "교량 견인정",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 2,
+      "faction": "소속 미정",
+      "description": "윈치로 교량 잔해를 당겨 안쪽 길을 좁히는 적",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/mission-bridge-tug.png",
+      "viewerPath": "../fleet-v2/ships/mission-bridge-tug.html",
+      "assetPath": "../fleet-v2/ships/mission-bridge-tug.glb",
+      "sourceModelSha256": "fb17a797ab6e73a90c5b2d9db41e30977db1c717fefc3a1ad50f9f9608be675e",
+      "sourcePreviewSha256": "c8c9fde0ad34a4ca387880a5e662414954e96539cc7923da0b824aaeebbf93e9",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/102-advanced-encounter.txt",
+        "outputs/103-bridge-mission-script.txt"
+      ],
+      "metrics": {
+        "triangles": 33088
+      }
+    },
+    {
+      "id": "mission-guard-scout",
+      "name": "경비 정찰선·정찰정",
+      "shortName": "경비 정찰선",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 3,
+      "faction": "소속 미정",
+      "description": "경량 정찰선/정찰정 역할; 해적 소속과 동일 선체라고 확정하지 않음",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/mission-guard-scout.png",
+      "viewerPath": "../fleet-v2/ships/mission-guard-scout.html",
+      "assetPath": "../fleet-v2/ships/mission-guard-scout.glb",
+      "sourceModelSha256": "b2b12705ff4a9a6ac2553ec6e07577fdfaeaea3afa4799be1d458459fc550c34",
+      "sourcePreviewSha256": "f50dbcd38e4ab14c181dba8a9330722f162592fa60b8f421a2ca470da913a352",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/62-eda-personal-quest.txt",
+        "outputs/102-advanced-encounter.txt",
+        "outputs/103-bridge-mission-script.txt",
+        "outputs/17-prologue-mission-script.txt"
+      ],
+      "metrics": {
+        "triangles": 27188
+      }
+    },
+    {
+      "id": "mission-cult-purifier",
+      "name": "교단 정화선",
+      "shortName": "교단 정화선",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 4,
+      "faction": "마지막 숨 교단",
+      "description": "포탑 반환 사건의 잔해 도크에 접근하는 교단 함선. 정화라는 이름만으로 화염 무장을 확정하지 않음",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/mission-cult-purifier.png",
+      "viewerPath": "../fleet-v2/ships/mission-cult-purifier.html",
+      "assetPath": "../fleet-v2/ships/mission-cult-purifier.glb",
+      "sourceModelSha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+      "sourcePreviewSha256": "da4075ddd3c7cc0c4b70eb540c234b41f9d0482f3b64e1e12e8b97cfbccff244",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/31-act3-main-quests.txt"
+      ],
+      "metrics": {
+        "triangles": 38652
+      }
+    },
+    {
+      "id": "mission-ghost-artillery",
+      "name": "망령 포격선",
+      "shortName": "망령 포격선",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 5,
+      "faction": "이름 없는 함대",
+      "description": "왕의 시험에서 이동하며 포격하는 함선",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/mission-ghost-artillery.png",
+      "viewerPath": "../fleet-v2/ships/mission-ghost-artillery.html",
+      "assetPath": "../fleet-v2/ships/mission-ghost-artillery.glb",
+      "sourceModelSha256": "9904a65b67e7e2d4ac2da36825f4d68cf65a1bb2321edbe4e761b964866a8037",
+      "sourcePreviewSha256": "f6e76ca9c8df61e227d80e7501c2badf39f751f3f23863bc5571b040313476b4",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/31-act3-main-quests.txt"
+      ],
+      "metrics": {
+        "triangles": 41288
+      }
+    },
+    {
+      "id": "role-enemy-artillery",
+      "name": "일반 포격선 역할",
+      "shortName": "일반 포격선 역할",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 6,
+      "faction": "소속 미정",
+      "description": "인양선과 조합되는 포격선이라는 역할만 존재. 별도 함명·독자 선체는 미정",
+      "context": "",
+      "detail": "함명 · 독자 선체 미정",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/role-enemy-artillery.png",
+      "viewerPath": "../fleet-v2/ships/role-enemy-artillery.html",
+      "assetPath": "../fleet-v2/ships/role-enemy-artillery.glb",
+      "sourceModelSha256": "88690c94770cf0d841fc56043cee1397bdc8140e23ca9f297240664527d2f278",
+      "sourcePreviewSha256": "60d0aa9409c7f746839ae189cbb7247ea0f105bc18ea73129b2314772cff87a7",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt"
+      ],
+      "metrics": {
+        "triangles": 38164
+      }
+    },
+    {
+      "id": "role-enemy-defense",
+      "name": "일반 방어선 역할",
+      "shortName": "일반 방어선 역할",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 7,
+      "faction": "소속 미정",
+      "description": "정찰선과 조합되는 방어선이라는 역할만 존재. 봉쇄선 재사용 여부 미정",
+      "context": "",
+      "detail": "함명 · 독자 선체 미정",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/role-enemy-defense.png",
+      "viewerPath": "../fleet-v2/ships/role-enemy-defense.html",
+      "assetPath": "../fleet-v2/ships/role-enemy-defense.glb",
+      "sourceModelSha256": "914264be543cd2fdaee0e1a685c39f51e5b33cab396ccb4f12f1fd9b79b3da16",
+      "sourcePreviewSha256": "d1ba8bd7d879535209150b9b2777909b58c1aa17983df3845a437ce66bae0c48",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt"
+      ],
+      "metrics": {
+        "triangles": 40752
+      }
+    },
+    {
+      "id": "mini-funeral-guard",
+      "name": "소형 장례 경비선",
+      "shortName": "소형 장례 경비선",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 1,
+      "faction": "마지막 숨 교단",
+      "description": "첫 공개 데모 후보의 미니보스. 본편 장례전함을 축소한 동일 보스로 합치지 않는다.",
+      "context": "",
+      "detail": "중간보스",
+      "category": "mini-boss",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/mini-funeral-guard.png",
+      "viewerPath": "../fleet-v2/ships/mini-funeral-guard.html",
+      "assetPath": "../fleet-v2/ships/mini-funeral-guard.glb",
+      "sourceModelSha256": "1cbe87cd77948a6b8f1e9638826b1e90e8435125c7ef4255762374895712e42d",
+      "sourcePreviewSha256": "b10a629af2cc4670b37a1228702003a705725f7f9339af2ce110dd03f62f29e3",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/97-visual-production-scope.txt"
+      ],
+      "metrics": {
+        "triangles": 42032
+      }
+    },
+    {
+      "id": "boss-bell-devourer",
+      "name": "종을 삼킨 자 — 장례전함",
+      "shortName": "종을 삼킨 자",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 2,
+      "faction": "마지막 숨 교단",
+      "description": "종항에서 훔친 큰 종이 선체 안에 매달린 첫 본편 보스. 종을 삼킨 자는 보스 조우명이다.",
+      "context": "",
+      "detail": "장례전함",
+      "category": "boss-vessel",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/boss-bell-devourer.png",
+      "viewerPath": "../fleet-v2/ships/boss-bell-devourer.html",
+      "assetPath": "../fleet-v2/ships/boss-bell-devourer.glb",
+      "sourceModelSha256": "e0eeb724714cc5364dc7334c1e5f0d66d3cffc970395dea6210b9873b82ce245",
+      "sourcePreviewSha256": "a87a2a8ed22cfc06dc7ede976aae483ec545e0eac6556a767d0665f8bc439ea9",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/10-first-boss.txt",
+        "outputs/23-act1-main-quests.txt",
+        "outputs/68-bell-boss-arena.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ],
+      "metrics": {
+        "triangles": 108764
+      }
+    },
+    {
+      "id": "boss-shipyard-ribs",
+      "name": "거신의 늑골 — 살아 있는 조선소",
+      "shortName": "거신의 늑골",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 3,
+      "faction": "쇠갈비 연합·수석 조선공",
+      "description": "한 척의 비행선이 아닌 갈비뼈형 부유 조선소/전장 보스 시설.",
+      "context": "",
+      "detail": "살아 있는 조선소 · 시설",
+      "category": "boss-facility",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/boss-shipyard-ribs.png",
+      "viewerPath": "../fleet-v2/ships/boss-shipyard-ribs.html",
+      "assetPath": "../fleet-v2/ships/boss-shipyard-ribs.glb",
+      "sourceModelSha256": "e679afa86e3ce0ad2c3699cc239804e6cb6574e22ebef23b27e47587a00cde94",
+      "sourcePreviewSha256": "d18677c4bf99625aa0c83f0826d5142fcb1266b5aa201304bbbb6b4184bb5efa",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/14-living-shipyard-boss.txt",
+        "outputs/27-act2-main-quests.txt"
+      ],
+      "metrics": {
+        "triangles": 40288
+      }
+    },
+    {
+      "id": "boss-shipwright-command",
+      "name": "수석 조선공의 지휘함",
+      "shortName": "수석 조선공의 지휘함",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 4,
+      "faction": "쇠갈비 연합·수석 조선공",
+      "description": "외곽 발사 도크에서 크레인과 결합해 출구를 막는 지휘함. 거신의 늑골 시설 전체와 구분한다.",
+      "context": "",
+      "detail": "",
+      "category": "boss-vessel",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/boss-shipwright-command.png",
+      "viewerPath": "../fleet-v2/ships/boss-shipwright-command.html",
+      "assetPath": "../fleet-v2/ships/boss-shipwright-command.glb",
+      "sourceModelSha256": "8516d86bbcea0acd155cc8ae50ee46943c8b89f8d81153129f017737688207ae",
+      "sourcePreviewSha256": "7140758052c159dd1673ad8585aaad59abd1de659d065e595ae26b45ac6a5536",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/14-living-shipyard-boss.txt",
+        "outputs/27-act2-main-quests.txt"
+      ],
+      "metrics": {
+        "triangles": 84708
+      }
+    },
+    {
+      "id": "boss-last-inhale",
+      "name": "마지막 들숨 — 원숨 순환 장치",
+      "shortName": "마지막 들숨",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 5,
+      "faction": "황궁·원숨",
+      "description": "황궁과 접합선이 연결된 원숨 순환 장치. 인간형 신이나 비행선으로 대체하지 않는다.",
+      "context": "",
+      "detail": "원숨 순환 장치 · 시설",
+      "category": "boss-facility",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/boss-last-inhale.png",
+      "viewerPath": "../fleet-v2/ships/boss-last-inhale.html",
+      "assetPath": "../fleet-v2/ships/boss-last-inhale.glb",
+      "sourceModelSha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+      "sourcePreviewSha256": "0db5c4bb40c9dbda6a1b461bb6fad9c0f7677bbab287b696cc26623662cd9c9f",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/43-final-boss-encounter.txt",
+        "outputs/35-act4-palace-truth.txt",
+        "outputs/96-final-departure-preparation.txt"
+      ],
+      "metrics": {
+        "triangles": 35860
+      }
+    },
+    {
+      "id": "rival-change",
+      "name": "거스름돈",
+      "shortName": "거스름돈",
+      "group": "context",
+      "groupLabel": "라이벌 · 시험",
+      "index": 1,
+      "faction": "해적·상인 벨라",
+      "description": "겹장갑과 전개 방벽, 근거리 산탄, 장갑 투하 뒤 경량화",
+      "context": "벨라는 항복 후 거래하고 생존하면 이동 상인 후보다. 초반 선택 사냥 배치이며 전 판 필수 적이 아니다.",
+      "detail": "",
+      "category": "rival",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/rival-change.png",
+      "viewerPath": "../fleet-v2/ships/rival-change.html",
+      "assetPath": "../fleet-v2/ships/rival-change.glb",
+      "sourceModelSha256": "08945d2aef9919af8cfb3117580b94c0bbd07a23d80a1196d7d2b6c3865b9756",
+      "sourcePreviewSha256": "1bb6c9d428497496090331d0f0666634792b808302a6b9ce86072666d0e1dbca",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/32-rival-captains.txt",
+        "outputs/84-rival-character-silhouettes.txt"
+      ],
+      "metrics": {
+        "triangles": 29040
+      }
+    },
+    {
+      "id": "rival-debts-end",
+      "name": "빚의 끝",
+      "shortName": "빚의 끝",
+      "group": "context",
+      "groupLabel": "라이벌 · 시험",
+      "index": 2,
+      "faction": "견인선 선장 카르(세부 소속 미정)",
+      "description": "이중 윈치로 묶고 엄폐물로 끌어가는 견인선",
+      "context": "카르는 윈치 파괴 후 협상하거나 거짓 빚 문서로 전투를 단축할 수 있다. 지역 고정 중간보스로 배정되지 않았다.",
+      "detail": "",
+      "category": "rival",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/rival-debts-end.png",
+      "viewerPath": "../fleet-v2/ships/rival-debts-end.html",
+      "assetPath": "../fleet-v2/ships/rival-debts-end.glb",
+      "sourceModelSha256": "a428a10b62d0a4c991fc3728efc4ab22e1cff307e5d7b442046f44a4a60bfdfb",
+      "sourcePreviewSha256": "f8dc9b80a8430f7b24e5ef777414fc83cbe2946724277c70a7912402b9c5eefc",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/32-rival-captains.txt",
+        "outputs/84-rival-character-silhouettes.txt"
+      ],
+      "metrics": {
+        "triangles": 57836
+      }
+    },
+    {
+      "id": "rival-quiet-answer",
+      "name": "고요한 답",
+      "shortName": "고요한 답",
+      "group": "context",
+      "groupLabel": "라이벌 · 시험",
+      "index": 3,
+      "faction": "마지막 숨 교단·감찰관 세라",
+      "description": "종 예고 뒤 정밀 포격·연막 재배치",
+      "context": "세라는 구조 기록과 증거로 휴전 가능하며4막에도 관계가 반영된다. 교단 소속만으로 상시 적군 확정하지 않는다.",
+      "detail": "",
+      "category": "rival",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/rival-quiet-answer.png",
+      "viewerPath": "../fleet-v2/ships/rival-quiet-answer.html",
+      "assetPath": "../fleet-v2/ships/rival-quiet-answer.glb",
+      "sourceModelSha256": "83362b371fbd58209292c5a483ff5bee372858bba582a09476c1525200548b47",
+      "sourcePreviewSha256": "846b6cca6a41b7a50f4e8ada7115434cf54220fb1297aa90f2caad194dba5b18",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/32-rival-captains.txt",
+        "outputs/84-rival-character-silhouettes.txt"
+      ],
+      "metrics": {
+        "triangles": 37812
+      }
+    },
+    {
+      "id": "rival-night-shift",
+      "name": "야간조",
+      "shortName": "야간조",
+      "group": "context",
+      "groupLabel": "라이벌 · 시험",
+      "index": 4,
+      "faction": "쇠갈비 연합·용광로 기사 하덴",
+      "description": "이중 화염과 짧은 돌진, 냉각 펌프 약점",
+      "context": "하덴은 노동자 구조에 따라 협상 경로가 있다. 4판 후반의 동일 assetId는 화염 작업선 역할 변형이며 하덴 본인의 필수 출현/사망이 아니다.",
+      "detail": "",
+      "category": "rival",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/rival-night-shift.png",
+      "viewerPath": "../fleet-v2/ships/rival-night-shift.html",
+      "assetPath": "../fleet-v2/ships/rival-night-shift.glb",
+      "sourceModelSha256": "4aa59e5b0c3efeea751a61f553896ee10e6bb71ebf0e8666711d73fdb3ceab93",
+      "sourcePreviewSha256": "6d16eca718ba94518ded28042f459cf986ea4986e39464a080c8d600029e92cb",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/32-rival-captains.txt",
+        "outputs/84-rival-character-silhouettes.txt"
+      ],
+      "metrics": {
+        "triangles": 47316
+      }
+    },
+    {
+      "id": "rival-go-first",
+      "name": "먼저 간다",
+      "shortName": "먼저 간다",
+      "group": "context",
+      "groupLabel": "라이벌 · 시험",
+      "index": 5,
+      "faction": "이름 없는 함대·로웬",
+      "description": "삼각 연속 기동과 냉각 뒤 느린 선회가 읽히는 정찰선",
+      "context": "로웬은 오래된 편지 전달로 적대를 해제할 수 있다. 모든 망령선을 적으로 확대하지 않는다.",
+      "detail": "",
+      "category": "rival",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/rival-go-first.png",
+      "viewerPath": "../fleet-v2/ships/rival-go-first.html",
+      "assetPath": "../fleet-v2/ships/rival-go-first.glb",
+      "sourceModelSha256": "6525e0cdecbd29fa3e3ae3e2212bdca8d40c332f396005330c926c03af4d3605",
+      "sourcePreviewSha256": "a3fc9a03f18e39eefb8d2c54c35348c80cdcdd2830524bc8dbf0c31405c7ebf1",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/32-rival-captains.txt",
+        "outputs/84-rival-character-silhouettes.txt"
+      ],
+      "metrics": {
+        "triangles": 30052
+      }
+    },
+    {
+      "id": "rival-unfinished",
+      "name": "완성되지 않은 것",
+      "shortName": "완성되지 않은 것",
+      "group": "context",
+      "groupLabel": "라이벌 · 시험",
+      "index": 6,
+      "faction": "조선공 제자 이브렌",
+      "description": "전투 중 한정 잔해 회수와 포대 교체를 하는 공방선",
+      "context": "이브렌은 생존시키면 독립 조선공 후보다.2~4막 교차 등장 구상이며 특정6판 고정 보스가 아니다.",
+      "detail": "",
+      "category": "rival",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/rival-unfinished.png",
+      "viewerPath": "../fleet-v2/ships/rival-unfinished.html",
+      "assetPath": "../fleet-v2/ships/rival-unfinished.glb",
+      "sourceModelSha256": "9a456b8dfd9de675161081f16bf91f70c4fb44093fc803fe533b34161118861b",
+      "sourcePreviewSha256": "03269e062adcf115e5ead46b4062ef9c8ffa994e9c8cf430dd05d73cac36b2d8",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/32-rival-captains.txt",
+        "outputs/84-rival-character-silhouettes.txt"
+      ],
+      "metrics": {
+        "triangles": 51716
+      }
+    },
+    {
+      "id": "boss-fleet-king",
+      "name": "죽은 함대 왕의 배",
+      "shortName": "죽은 함대 왕의 배",
+      "group": "context",
+      "groupLabel": "라이벌 · 시험",
+      "index": 7,
+      "faction": "이름 없는 함대",
+      "description": "왕의 시험에서 작살로 부품을 당기는 왕의 배. 고유 함명은 아직 없다.",
+      "context": "3막 왕의 시험에서는 대련 상대지만 목표는 왕 살해가 아니라 봉인 연결부 절단·기억 회수/전달이다. 이후 함대가 탈출 항로를 열어 준다. 훈련판에서는 적 슬롯을 사용한다.",
+      "detail": "비살상 시험 · 후속 협력",
+      "category": "boss-vessel",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "../fleet-comparison-v1/previews/boss-fleet-king.png",
+      "viewerPath": "../fleet-v2/ships/boss-fleet-king.html",
+      "assetPath": "../fleet-v2/ships/boss-fleet-king.glb",
+      "sourceModelSha256": "b0063fd4ee2bf859449b363306d100dcf1adb8327ba4095954a2be31192418a3",
+      "sourcePreviewSha256": "80ef7cb62a306e6c37c5a4f7bbce925656bda2f77d0bae339ed400892057a2ff",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/31-act3-main-quests.txt",
+        "outputs/20-faction-quest-chains.txt",
+        "tools/encounters/catalog.json"
+      ],
+      "metrics": {
+        "triangles": 87604
+      }
+    }
+  ],
+  "counts": {
+    "enemy": 19,
+    "context": 7,
+    "total": 26,
+    "standard": 7,
+    "mission": 7,
+    "boss": 5
+  },
+  "note": "적 교전 역할 19항목과 협상 가능한 라이벌·시험 상대 7항목. 역할·시설을 포함하며 고유 정사 함선 26종이라는 뜻은 아닙니다."
+}

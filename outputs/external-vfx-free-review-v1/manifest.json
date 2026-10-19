@@ -1,0 +1,272 @@
+{
+  "revision": "free-vfx-review-v1",
+  "cost": 0,
+  "packs": [
+    {
+      "id": "brackeys",
+      "url": "https://brackeysgames.itch.io/brackeys-vfx-bundle",
+      "license": "CC0",
+      "archiveBytes": 28227919,
+      "archiveSha256": "ac0fbf5d5a07688a5d4d35fd0bbae783597d819a3d8a92893b05eb69ddb144c5",
+      "crcPassed": true,
+      "flipbookSourceFiles": 14,
+      "predrawnSheets": 14,
+      "selectedSheets": 8,
+      "sourceArchiveStored": "work/external-vfx-free-review-v1/brackeys_vfx_bundle.zip"
+    },
+    {
+      "id": "craftpix",
+      "url": "https://free-game-assets.itch.io/free-2d-cartoon-smoke-effects-pack",
+      "licenseURL": "https://craftpix.net/file-licenses/",
+      "license": "Craftpix Freebie custom terms, commercial game use allowed; source redistribution restricted, not CC0",
+      "archiveBytes": 48155799,
+      "archiveSha256": "d8d9cc8b2ec33465ec5098f09f59b4f8cfb62ad6e736be07d2ea8634145fb9c5",
+      "crcPassed": true,
+      "animations": {
+        "Chemical Smoke": {
+          "frameCount": 8,
+          "dimensions": [
+            [
+              640,
+              360
+            ]
+          ]
+        },
+        "Poisonous Smoke": {
+          "frameCount": 12,
+          "dimensions": [
+            [
+              640,
+              480
+            ]
+          ]
+        },
+        "Smoke": {
+          "frameCount": 10,
+          "dimensions": [
+            [
+              640,
+              640
+            ]
+          ]
+        },
+        "Smoke Blow": {
+          "frameCount": 12,
+          "dimensions": [
+            [
+              800,
+              240
+            ]
+          ]
+        },
+        "Smoke Explosion": {
+          "frameCount": 16,
+          "dimensions": [
+            [
+              800,
+              800
+            ]
+          ]
+        },
+        "Smoke Spell": {
+          "frameCount": 10,
+          "dimensions": [
+            [
+              640,
+              320
+            ]
+          ]
+        }
+      },
+      "sourceArchiveStored": "work/external-vfx-free-review-v1/free-cartoon-smoke-effects-asset-pack.zip",
+      "rawArtInOutputs": false
+    }
+  ],
+  "items": [
+    {
+      "id": "explosion_01_8x8",
+      "label": "폭발 01",
+      "purpose": "함포 명중 후보",
+      "src": "assets/explosion_01_8x8.png",
+      "width": 1024,
+      "height": 1024,
+      "columns": 8,
+      "rows": 8,
+      "frames": 64,
+      "previewFPS": 30,
+      "fpsIsPreviewAssumption": true,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceEntry": "flipbooks/explosion_01_8x8.tga",
+      "sourceSha256": "4af82af6311c0fb4d106de7768dda851c26f65cf2c1679938294878c250482ec",
+      "pngSha256": "6d6a070a49add91df9b5f274d94d4eb3d88dbc5fb1384d5b877685baa056c289",
+      "conversion": "lossless RGBA TGA/PNG -> PNG; decoded pixels identical",
+      "blendRecommendation": "normal-alpha"
+    },
+    {
+      "id": "explosion_02_8x8",
+      "label": "폭발 02",
+      "purpose": "대형 파열 후보",
+      "src": "assets/explosion_02_8x8.png",
+      "width": 1024,
+      "height": 1024,
+      "columns": 8,
+      "rows": 8,
+      "frames": 64,
+      "previewFPS": 30,
+      "fpsIsPreviewAssumption": true,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceEntry": "flipbooks/explosion_02_8x8.tga",
+      "sourceSha256": "4537d8d58b17244862526b15b16df342e8c93527ac2a808e2858149824c13467",
+      "pngSha256": "2797fd42e449e6be198814118b0f0f298694a7d5b9bf56c02287d9a18ef5ed0e",
+      "conversion": "lossless RGBA TGA/PNG -> PNG; decoded pixels identical",
+      "blendRecommendation": "normal-alpha"
+    },
+    {
+      "id": "fire_01_8x8",
+      "label": "화염 덩어리",
+      "purpose": "화염·불씨 후보",
+      "src": "assets/fire_01_8x8.png",
+      "width": 1024,
+      "height": 1024,
+      "columns": 8,
+      "rows": 8,
+      "frames": 64,
+      "previewFPS": 30,
+      "fpsIsPreviewAssumption": true,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceEntry": "flipbooks/fire_01_8x8.tga",
+      "sourceSha256": "74eaf8aea246368edc30abd5fdc29db3e12b0275a0de7490020ea004d1b23d43",
+      "pngSha256": "ce60d86cc13b91798077ea01416681dbe96595046cbaf2de0ef8d04647f6f88b",
+      "conversion": "lossless RGBA TGA/PNG -> PNG; decoded pixels identical",
+      "blendRecommendation": "additive"
+    },
+    {
+      "id": "flame_01_16x4",
+      "label": "화염 기둥",
+      "purpose": "분사·지속 화염 후보",
+      "src": "assets/flame_01_16x4.png",
+      "width": 2048,
+      "height": 1024,
+      "columns": 16,
+      "rows": 4,
+      "frames": 64,
+      "previewFPS": 30,
+      "fpsIsPreviewAssumption": true,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sourceEntry": "flipbooks/flame_01_16x4.tga",
+      "sourceSha256": "6ae2158bc06e0b035196db2695c19e7cb29a23f59b345d4c5c2764c6c10ce3a6",
+      "pngSha256": "83b579fb46c6a590d5a612a31ae2721a3c5d22786854a57e8618162e25cfdf02",
+      "conversion": "lossless RGBA TGA/PNG -> PNG; decoded pixels identical",
+      "blendRecommendation": "normal-alpha"
+    },
+    {
+      "id": "explosion_smoke_01_8x8",
+      "label": "폭발 연기",
+      "purpose": "명중 뒤 연기 후보",
+      "src": "assets/explosion_smoke_01_8x8.png",
+      "width": 1024,
+      "height": 1024,
+      "columns": 8,
+      "rows": 8,
+      "frames": 64,
+      "previewFPS": 30,
+      "fpsIsPreviewAssumption": true,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceEntry": "flipbooks/explosion_smoke_01_8x8.tga",
+      "sourceSha256": "d733cb17bd7764089fa3747627fd139f7313d6ccff7f360cd01fbaba422e96ee",
+      "pngSha256": "aed2c3bdfcf2f73064d0567e60b4963d776c0656dfd8464bf0b5f6d3ba94cf13",
+      "conversion": "lossless RGBA TGA/PNG -> PNG; decoded pixels identical",
+      "blendRecommendation": "normal-alpha"
+    },
+    {
+      "id": "wispy_smoke_01_8x8",
+      "label": "옅은 연기",
+      "purpose": "포구 뒤 잔연기 후보",
+      "src": "assets/wispy_smoke_01_8x8.png",
+      "width": 1024,
+      "height": 1024,
+      "columns": 8,
+      "rows": 8,
+      "frames": 64,
+      "previewFPS": 30,
+      "fpsIsPreviewAssumption": true,
+      "alphaExtrema": [
+        0,
+        243
+      ],
+      "sourceEntry": "flipbooks/wispy_smoke_01_8x8.tga",
+      "sourceSha256": "8274f0e67635fc72071b1790960f3bfddec907e113929b7c29ab8962ab411788",
+      "pngSha256": "ae3d22d5cb622034ef65f71a2b067d55c6d75f789c9272cd432aa682d4c09ae1",
+      "conversion": "lossless RGBA TGA/PNG -> PNG; decoded pixels identical",
+      "blendRecommendation": "normal-alpha"
+    },
+    {
+      "id": "explosion_6x5",
+      "label": "그린 폭발",
+      "purpose": "카툰 폭발·화풍 비교",
+      "src": "assets/explosion_6x5.png",
+      "width": 2130,
+      "height": 1775,
+      "columns": 6,
+      "rows": 5,
+      "frames": 30,
+      "previewFPS": 30,
+      "fpsIsPreviewAssumption": true,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceEntry": "predrawn/explosion_6x5.png",
+      "sourceSha256": "09037c2791964dedb0e2db2f41221f665163200a0f8c178b05566cb6f807cefc",
+      "pngSha256": "d541a07c78a3e143d326cef9b9287d9f656ec7864069122b6acb100a5fa8bcce",
+      "conversion": "lossless RGBA TGA/PNG -> PNG; decoded pixels identical",
+      "blendRecommendation": "normal-alpha"
+    },
+    {
+      "id": "fire_ring_6x5",
+      "label": "그린 화염 고리",
+      "purpose": "발사·폭발 보조 후보",
+      "src": "assets/fire_ring_6x5.png",
+      "width": 2526,
+      "height": 2125,
+      "columns": 6,
+      "rows": 5,
+      "frames": 30,
+      "previewFPS": 30,
+      "fpsIsPreviewAssumption": true,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceEntry": "predrawn/fire_ring_6x5.png",
+      "sourceSha256": "e6eee268e1fb45d28cae252f629b29a3ba9c3221208a07310617cd835541b5ca",
+      "pngSha256": "10c4127bbb64d68c97f3c4d125ecd9f2b3bdcb765abbf0b9673bb3668151d221",
+      "conversion": "lossless RGBA TGA/PNG -> PNG; decoded pixels identical",
+      "blendRecommendation": "normal-alpha"
+    }
+  ],
+  "previewOnly": true,
+  "gameplayInstalled": false,
+  "artApproved": false,
+  "otherChatsMessaged": false,
+  "excludedSheets": {
+    "predrawn/impact_white_6x4.png": "1746x1505 not evenly divisible by declared6x4; manual layout review needed",
+    "predrawn/star_explosion_6x5.png": "840x654 not evenly divisible by declared6x5; manual layout review needed"
+  },
+  "selectionNotes": "Brackeys smooth simulated flame/smoke for first runtime test; predrawn sheets may show a pixel-art mismatch. Craftpix cartoon smoke is a separate style candidate with custom license. Existing Kenney packs remain supplementary textures."
+}

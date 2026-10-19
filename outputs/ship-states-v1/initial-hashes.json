@@ -1,0 +1,26 @@
+{
+  "purpose": "Initial preliminary QA evidence preserved before followup harness work",
+  "capturedAt": "2026-10-18T11:39:00.663Z",
+  "initialReport": {
+    "path": "outputs/ship-states-v1/initial-verification.json",
+    "sha256": "60539642a8611b76f595a83a362362538f60e929c6e80149010b1f1972661361"
+  },
+  "initialFailure": {
+    "path": "outputs/ship-states-v1/initial-failure.png",
+    "sha256": "d31ae80c7a7600f1b1d9a2431dc0867e36fe3e986d15c43b1ac30a9b083a4879"
+  },
+  "harnessSnapshot": {
+    "path": "work\\verification\\ship-states\\initial-preservation-verify.cjs",
+    "sha256": "3c008d4382f4bed1d664adf8bcf90ee6ad6cc1009db74b704c7a6e0f6e0d6e69",
+    "note": "Preservation-time harness includes debug/report improvements made after the first run; this is not attested as the exact first-run harness."
+  },
+  "firstRunViewerSha256": "460deb8649948a6b59f4c6c33c2bf842f75715aaf8a915f0f7d093788d5e760a",
+  "note": "First-run harness SHA is unknown. Preserved first HTML matches root-recorded initial build identity.",
+  "firstRunViewer": {
+    "path": "work/verification/ship-states/initial-viewer.html",
+    "bytes": 5673426,
+    "sha256": "460deb8649948a6b59f4c6c33c2bf842f75715aaf8a915f0f7d093788d5e760a",
+    "identity": "Matches root-recorded first build before rebuild"
+  },
+  "firstRunHarnessSha256": null
+}

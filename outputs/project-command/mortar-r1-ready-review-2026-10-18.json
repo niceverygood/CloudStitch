@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:17:16Z",
+  "humanFeedback": {
+    "directRead": true,
+    "threadId": "01a14dd0-fc09-7c51-8f63-cdfff1bc8e6f",
+    "turnId": "01a14e45-370a-73e3-be25-ead7336cd506",
+    "messageId": "01a14e45-37a3-7202-b4dc-cd0d7cac3dd2",
+    "quote": "박격포 소리 완전이상해",
+    "clarificationMessageId": "01a14e46-8dd6-7c90-b691-16c8707fd533",
+    "clarification": "발사음 — ‘둔한 출발’",
+    "scope": "launch cue only, not all mortar fall/impact cues"
+  },
+  "version": "mortar-r1-ready",
+  "manifest": {
+    "path": "outputs/audio-mortar-r1/delivery-manifest.json",
+    "sha256": "d26e06f53b14d37a01613ae7b2e94768fe82cd23bbcde172b51ae661f3d8ae2e",
+    "selfExcluded": true,
+    "files": 18,
+    "bytes": 81549,
+    "independentPathsSizesMatched": 18,
+    "smallSourceShaMatched": 11,
+    "mp3OrOriginal113HashesRepeated": false
+  },
+  "candidates": {
+    "new": 2,
+    "reusedOriginalLaunch": 1,
+    "A": "ignition and tube pressure",
+    "B": "adds small wooden base impact",
+    "requestedSeconds": [
+      0.65,
+      0.75
+    ],
+    "compressedFrameApproxSeconds": [
+      0.705,
+      0.784
+    ],
+    "paddingMeansNotExactRequestedDuration": true
+  },
+  "ownerReportedGeneration": {
+    "requests": 2,
+    "success": 2,
+    "failure": 0,
+    "automaticPaidRetries": 0,
+    "responseCharacterCost": 14,
+    "characterCostIsCurrency": false
+  },
+  "reviewUi": {
+    "source": "tools/audio/mortar-r1/",
+    "output": "outputs/audio-mortar-r1/",
+    "url": "http://127.0.0.1:8865/outputs/audio-mortar-r1/",
+    "features": [
+      "A/B/original playback",
+      "A/B/bothhold verdict",
+      "separate notes"
+    ],
+    "fakeAttackTimelineOrGameHook": false
+  },
+  "preservationReported": {
+    "original113": true,
+    "otherFallImpactCuesUnchanged": true
+  },
+  "acceptance": {
+    "static": true,
+    "native": false,
+    "humanApproved": false,
+    "gameplayInstalled": false,
+    "oldLaunchHumanRejected": true
+  },
+  "integrationReportedSelectiveImport": true,
+  "next": "candidate3 narrow native/UI QA after47; human chooses A/B/hold; do not auto-install"
+}

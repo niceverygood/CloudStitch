@@ -1,0 +1,713 @@
+{
+  "testedAt": "2026-10-18T05:58:31.458Z",
+  "url": "http://127.0.0.1:59306/outputs/battlefield-v1/index.html",
+  "passed": true,
+  "buildSha256": "4e0d92009c13018f2497a04f2155f9cc3edbe60170f49140df5606c583a4285a",
+  "scope": "Local browser integration. UI input and deterministic state fixtures are labelled separately. Not device, campaign, save or gameplay-fun certification.",
+  "checks": [
+    {
+      "name": "Welcome keeps the native Tab navigation available",
+      "passed": true,
+      "prevented": false,
+      "focus": "stage"
+    },
+    {
+      "name": "Actual four fleet GLBs loaded",
+      "passed": true,
+      "assets": [
+        "enemy-tax-cutter",
+        "enemy-pirate-scout",
+        "enemy-union-salvage",
+        "player-homeward"
+      ],
+      "outline": true,
+      "canvas": 1
+    },
+    {
+      "name": "Explicit OutlineEffect autoClear enabled",
+      "passed": true
+    },
+    {
+      "name": "One WebGL canvas",
+      "passed": true
+    },
+    {
+      "name": "Real keyboard movement changes player position",
+      "passed": true,
+      "before": {
+        "x": 0,
+        "time": 0.31666666666666665
+      },
+      "after": {
+        "x": 3.495765051566149,
+        "time": 0.8000000000000008
+      }
+    },
+    {
+      "name": "Fire button produces a simulation shot",
+      "passed": true
+    },
+    {
+      "name": "Overview toggle updates actual runtime",
+      "passed": true
+    },
+    {
+      "name": "Keyboard returns from overview",
+      "passed": true
+    },
+    {
+      "name": "Desktop has no JS errors or external network requests",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "externalRequests": [],
+      "glbResponses": [
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-union-salvage.glb",
+          "status": 200
+        }
+      ],
+      "expectedFailure": false,
+      "metrics": {
+        "triangles": 188128,
+        "drawCalls": 202,
+        "frameMs": [
+          0,
+          2416.7,
+          433.4000000000001,
+          174.9000000000001,
+          175.0999999999999,
+          166.69999999999982,
+          241.5,
+          175.0999999999999,
+          158.30000000000018,
+          158.30000000000018,
+          0,
+          208.19999999999982,
+          166.69999999999982,
+          166.60000000000036,
+          150,
+          158.29999999999927,
+          140.90000000000055,
+          150.5,
+          150.30000000000018,
+          166.69999999999982,
+          166,
+          175.69999999999982,
+          233.30000000000018,
+          158.30000000000018,
+          191.69999999999982,
+          208.39999999999964,
+          166.60000000000036,
+          183.39999999999964,
+          216.60000000000036,
+          266.59999999999945,
+          208.5,
+          182.5,
+          450.7000000000007,
+          208,
+          217,
+          190.79999999999927,
+          175.10000000000036,
+          250.79999999999927,
+          200,
+          241.70000000000073,
+          200,
+          199.20000000000073,
+          175.79999999999927,
+          191.70000000000073,
+          208.29999999999927,
+          449.89999999999964,
+          266.8000000000011,
+          316.59999999999854,
+          274,
+          317.8000000000011,
+          274.89999999999964,
+          283.2999999999993,
+          366.5,
+          341.8000000000011,
+          325,
+          308.39999999999964,
+          325,
+          416.7000000000007,
+          333.1999999999989,
+          233.3000000000011,
+          250,
+          250.09999999999854,
+          216.40000000000146,
+          308.5,
+          225,
+          216.70000000000073,
+          200.09999999999854,
+          199.90000000000146,
+          233.39999999999782,
+          233.29999999999927,
+          233.3000000000029,
+          191.6999999999971
+        ],
+        "viewport": [
+          1440,
+          960
+        ]
+      }
+    },
+    {
+      "name": "Empty-hold harbor return keeps the voyage active with a clear UI reason",
+      "passed": true,
+      "message": "부품을 하나 이상 인양하거나 적선을 모두 무력화한 뒤 귀환하세요."
+    },
+    {
+      "name": "Fixture real UI shot severs connector and canonical child bundle",
+      "passed": true,
+      "keys": [
+        "aux-balloon",
+        "cannon",
+        "deck",
+        "engine"
+      ],
+      "owner": "tax-1",
+      "connectorDestroyed": true,
+      "detached": [
+        "connector",
+        "deck",
+        "cannon",
+        "engine",
+        "aux-balloon"
+      ],
+      "mainEngineAttached": true,
+      "mainBalloonAttached": true,
+      "damageHP": [
+        [
+          "deck",
+          40,
+          40
+        ],
+        [
+          "cannon",
+          32,
+          32
+        ],
+        [
+          "engine",
+          32,
+          32
+        ],
+        [
+          "aux-balloon",
+          24,
+          24
+        ]
+      ]
+    },
+    {
+      "name": "Pause keeps the native Tab navigation available",
+      "passed": true,
+      "prevented": false,
+      "focus": "resume"
+    },
+    {
+      "name": "Overload fixture starts an active grace timer and visible danger UI",
+      "passed": true,
+      "sinking": 0.2333333333333333,
+      "message": "양력 부족 · 6.8초 / Esc에서 화물 투하"
+    },
+    {
+      "name": "Pause freezes simulation, projectile, debris and risk timers",
+      "passed": true,
+      "paused": {
+        "time": 3.26666666666666,
+        "ttl": 19.76666666666668,
+        "remaining": 94.56666666666669,
+        "sinking": 0.2333333333333333
+      },
+      "still": {
+        "time": 3.26666666666666,
+        "ttl": 19.76666666666668,
+        "remaining": 94.56666666666669,
+        "sinking": 0.2333333333333333
+      }
+    },
+    {
+      "name": "Resume advances paused timers",
+      "passed": true
+    },
+    {
+      "name": "UI salvage transfers ownership and keeps cargo separate from equipment",
+      "passed": true,
+      "status": "cargo",
+      "owner": "player",
+      "partOwners": [
+        "player",
+        "player",
+        "player",
+        "player"
+      ],
+      "cargo": 1,
+      "recovered": 1,
+      "weight": 58,
+      "hp": [
+        [
+          "deck",
+          40,
+          40
+        ],
+        [
+          "cannon",
+          32,
+          32
+        ],
+        [
+          "engine",
+          32,
+          32
+        ],
+        [
+          "aux-balloon",
+          24,
+          24
+        ]
+      ]
+    },
+    {
+      "name": "Repeated salvage does not duplicate cargo or rewards",
+      "passed": true
+    },
+    {
+      "name": "UI harbor return shows actual cargo outcome",
+      "passed": true,
+      "outcome": "victory",
+      "cargo": 1,
+      "title": "무사히 돌아왔어요.",
+      "text": "부품 묶음 1개를 화물로 싣고 귀환했습니다.",
+      "stats": "0무력화한 적선1회수한 묶음0:06항해 시간"
+    },
+    {
+      "name": "Restart from overview restores camera zoom and toggle state",
+      "passed": true,
+      "overview": false,
+      "halfHeight": 30,
+      "pressed": "false"
+    },
+    {
+      "name": "Three repeated UI restarts reset cleanly without canvas or asset accumulation",
+      "passed": true,
+      "counts": [
+        {
+          "cargo": 0,
+          "debris": 0,
+          "projectiles": 0,
+          "hp": 100,
+          "shots": 0,
+          "kills": 0,
+          "assets": 4,
+          "canvases": 1,
+          "labels": 9,
+          "drawCalls": 202,
+          "triangles": 188128,
+          "outcome": "sailing"
+        },
+        {
+          "cargo": 0,
+          "debris": 0,
+          "projectiles": 0,
+          "hp": 100,
+          "shots": 0,
+          "kills": 0,
+          "assets": 4,
+          "canvases": 1,
+          "labels": 9,
+          "drawCalls": 202,
+          "triangles": 188128,
+          "outcome": "sailing"
+        },
+        {
+          "cargo": 0,
+          "debris": 0,
+          "projectiles": 0,
+          "hp": 100,
+          "shots": 0,
+          "kills": 0,
+          "assets": 4,
+          "canvases": 1,
+          "labels": 9,
+          "drawCalls": 202,
+          "triangles": 188128,
+          "outcome": "sailing"
+        }
+      ]
+    },
+    {
+      "name": "Cannon-first fixture initially keeps its sibling engine intact",
+      "passed": true,
+      "fixture": "cannon already destroyed; original connector health and radii; actual UI shots",
+      "engineAttached": true,
+      "engineHp": 32
+    },
+    {
+      "name": "Destroyed cannon remains absent from later detached art while surviving engine is preserved",
+      "passed": true,
+      "canonical": [
+        "enemy-tax-cutter-external-deck",
+        "enemy-tax-cutter-engine-2",
+        "enemy-tax-cutter-balloon-2"
+      ],
+      "bundleKeys": [
+        "deck",
+        "engine",
+        "aux-balloon"
+      ],
+      "engineHp": 32,
+      "mainEngineAttached": true
+    },
+    {
+      "name": "Fixture paths have no JS errors or external requests",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "externalRequests": [],
+      "glbResponses": [
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-union-salvage.glb",
+          "status": 200
+        }
+      ],
+      "expectedFailure": false,
+      "setup": {
+        "fixture": "empty lane and 18U initial distance; original health, hit radii and user UI fire remain actual",
+        "connector": {
+          "id": "tax-1:connector",
+          "key": "connector",
+          "parentId": "tax-1:root",
+          "type": "connector",
+          "name": "연결 골조",
+          "hp": 24,
+          "maxHp": 24,
+          "localX": 1.3244952102395633,
+          "localZ": 0.20705456757543722,
+          "radius": 0.42,
+          "weight": 1,
+          "attached": true,
+          "detached": false,
+          "destroyed": false,
+          "owner": "tax-1",
+          "source": {
+            "enemyId": "tax-1",
+            "assetId": "enemy-tax-cutter"
+          }
+        }
+      }
+    },
+    {
+      "name": "390x844 mobile layout has no document overflow",
+      "passed": true,
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "innerHeight": 844,
+      "scrollHeight": 844,
+      "coarse": true,
+      "stick": true
+    },
+    {
+      "name": "Trusted browser touch stick moves the ship",
+      "passed": true,
+      "before": {
+        "x": 0,
+        "time": 0.6333333333333336
+      },
+      "after": {
+        "x": 6.7107759627103265,
+        "time": 1.5833333333333326
+      }
+    },
+    {
+      "name": "Trusted mobile touch fire produces shots",
+      "passed": true
+    },
+    {
+      "name": "Mobile has no JS errors or external network requests",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "externalRequests": [],
+      "glbResponses": [
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-union-salvage.glb",
+          "status": 200
+        }
+      ],
+      "expectedFailure": false
+    },
+    {
+      "name": "Missing GLB produces visible failure without fake ready state",
+      "passed": true,
+      "ready": false,
+      "error": "비행선 에셋을 불러오지 못했습니다 (player-homeward): fetch for \"http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb\" responded with 404: Not Found",
+      "visible": true,
+      "message": "전장을 준비하지 못했습니다. 로컬 HTTP 주소로 열고 에셋 파일을 확인해 주세요. 비행선 에셋을 불러오지 못했습니다 (player-homeward): fetch for \"http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb\" responded with 404: Not Found",
+      "welcomeHidden": true
+    },
+    {
+      "name": "Expected missing GLB has no unhandled JS exception",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Error: 비행선 에셋을 불러오지 못했습니다 (player-homeward): fetch for \"http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb\" responded with 404: Not Found\n    at http://127.0.0.1:59306/outputs/battlefield-v1/battlefield.js:3834:64360\n    at async I0 (http://127.0.0.1:59306/outputs/battlefield-v1/battlefield.js:3834:66272)\n    at async cw (http://127.0.0.1:59306/outputs/battlefield-v1/battlefield.js:3834:103501)"
+      ],
+      "externalRequests": [],
+      "glbResponses": [
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb",
+          "status": 404
+        }
+      ],
+      "expectedFailure": true
+    },
+    {
+      "name": "The tested bundle stayed unchanged throughout browser QA",
+      "passed": true,
+      "sha256": "4e0d92009c13018f2497a04f2155f9cc3edbe60170f49140df5606c583a4285a"
+    }
+  ],
+  "sections": {
+    "desktop": {
+      "errors": [],
+      "consoleErrors": [],
+      "externalRequests": [],
+      "glbResponses": [
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-union-salvage.glb",
+          "status": 200
+        }
+      ],
+      "expectedFailure": false,
+      "metrics": {
+        "triangles": 188128,
+        "drawCalls": 202,
+        "frameMs": [
+          0,
+          2416.7,
+          433.4000000000001,
+          174.9000000000001,
+          175.0999999999999,
+          166.69999999999982,
+          241.5,
+          175.0999999999999,
+          158.30000000000018,
+          158.30000000000018,
+          0,
+          208.19999999999982,
+          166.69999999999982,
+          166.60000000000036,
+          150,
+          158.29999999999927,
+          140.90000000000055,
+          150.5,
+          150.30000000000018,
+          166.69999999999982,
+          166,
+          175.69999999999982,
+          233.30000000000018,
+          158.30000000000018,
+          191.69999999999982,
+          208.39999999999964,
+          166.60000000000036,
+          183.39999999999964,
+          216.60000000000036,
+          266.59999999999945,
+          208.5,
+          182.5,
+          450.7000000000007,
+          208,
+          217,
+          190.79999999999927,
+          175.10000000000036,
+          250.79999999999927,
+          200,
+          241.70000000000073,
+          200,
+          199.20000000000073,
+          175.79999999999927,
+          191.70000000000073,
+          208.29999999999927,
+          449.89999999999964,
+          266.8000000000011,
+          316.59999999999854,
+          274,
+          317.8000000000011,
+          274.89999999999964,
+          283.2999999999993,
+          366.5,
+          341.8000000000011,
+          325,
+          308.39999999999964,
+          325,
+          416.7000000000007,
+          333.1999999999989,
+          233.3000000000011,
+          250,
+          250.09999999999854,
+          216.40000000000146,
+          308.5,
+          225,
+          216.70000000000073,
+          200.09999999999854,
+          199.90000000000146,
+          233.39999999999782,
+          233.29999999999927,
+          233.3000000000029,
+          191.6999999999971
+        ],
+        "viewport": [
+          1440,
+          960
+        ]
+      }
+    },
+    "deterministicFixture": {
+      "errors": [],
+      "consoleErrors": [],
+      "externalRequests": [],
+      "glbResponses": [
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-union-salvage.glb",
+          "status": 200
+        }
+      ],
+      "expectedFailure": false,
+      "setup": {
+        "fixture": "empty lane and 18U initial distance; original health, hit radii and user UI fire remain actual",
+        "connector": {
+          "id": "tax-1:connector",
+          "key": "connector",
+          "parentId": "tax-1:root",
+          "type": "connector",
+          "name": "연결 골조",
+          "hp": 24,
+          "maxHp": 24,
+          "localX": 1.3244952102395633,
+          "localZ": 0.20705456757543722,
+          "radius": 0.42,
+          "weight": 1,
+          "attached": true,
+          "detached": false,
+          "destroyed": false,
+          "owner": "tax-1",
+          "source": {
+            "enemyId": "tax-1",
+            "assetId": "enemy-tax-cutter"
+          }
+        }
+      }
+    },
+    "mobile390x844": {
+      "errors": [],
+      "consoleErrors": [],
+      "externalRequests": [],
+      "glbResponses": [
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/enemy-union-salvage.glb",
+          "status": 200
+        }
+      ],
+      "expectedFailure": false
+    },
+    "missingGLB": {
+      "errors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Error: 비행선 에셋을 불러오지 못했습니다 (player-homeward): fetch for \"http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb\" responded with 404: Not Found\n    at http://127.0.0.1:59306/outputs/battlefield-v1/battlefield.js:3834:64360\n    at async I0 (http://127.0.0.1:59306/outputs/battlefield-v1/battlefield.js:3834:66272)\n    at async cw (http://127.0.0.1:59306/outputs/battlefield-v1/battlefield.js:3834:103501)"
+      ],
+      "externalRequests": [],
+      "glbResponses": [
+        {
+          "url": "http://127.0.0.1:59306/outputs/fleet-v1/ships/player-homeward.glb",
+          "status": 404
+        }
+      ],
+      "expectedFailure": true
+    }
+  },
+  "failures": [],
+  "screenshots": [
+    "work/verification/battlefield/desktop-overview.png",
+    "work/verification/battlefield/desktop-playing.png",
+    "work/verification/battlefield/fixture-return-result.png",
+    "work/verification/battlefield/mobile390x844-playing.png",
+    "work/verification/battlefield/missing-glb-error.png"
+  ],
+  "completedAt": "2026-10-18T05:59:42.340Z"
+}

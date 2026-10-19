@@ -1,0 +1,25 @@
+{
+  "id": "lift-danger-loop",
+  "startedAt": "2026-10-18T08:53:46.860Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "Heavy airship canvas and suspension rope straining under too much weight: close dry fabric tension, low rope groans and a restrained uneven stress pulse. Clear material warning texture, no breaking or explosion, no electronic alarm. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 4,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:49.732Z",
+  "output": {
+    "file": "audio/lift-danger-loop.mp3",
+    "bytes": 65244,
+    "sha256": "dd2fde52a8e3600abf6f831336683e42b896a45719343ff55e33e4a7695c4d91",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "40"
+}

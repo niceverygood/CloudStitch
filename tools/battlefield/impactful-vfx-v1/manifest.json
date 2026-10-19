@@ -1,0 +1,266 @@
+{
+  "version": "battlefield-impactful-display-0.1.0",
+  "status": "READY_SOURCE_BROWSER_PENDING",
+  "checkedAt": "2026-10-18T11:52:38.717Z",
+  "requests": [
+    "Make all effects more abundant/exaggerated and strengthen firing/impact feel",
+    "Make the harpoon launch action understandable"
+  ],
+  "artDirection": "docs/ART_DIRECTION.txt; warm handcrafted fantasy and 2D-looking 3D, richer rhythm/volume while preserving readable targets",
+  "runtime": {
+    "weapons": [
+      "01-machine-gun",
+      "02-deck-cannon"
+    ],
+    "meshFactory": "createCombatVfx(THREE,scene,{presentation:'impactful',effectScale:1})",
+    "presentationFactory": "createCombatPresentation({meshVfx,softMachineGunVfx,feedback,camera})",
+    "feedbackFactory": "createCombatFeedback({reducedMotion})",
+    "singleClock": "battlefield sim.time delta",
+    "cameraAim": "stable base camera only",
+    "softMGOwner": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/manifest.json; separate exact READY required",
+    "limits": {
+      "activeOneShotsPerEffect": 32,
+      "activeProjectilesPerEffect": 64,
+      "idlePoolPerEffect": 24,
+      "pulseCapacity": 32,
+      "pulseLifetime": 0.34
+    },
+    "simDamageCollisionRangeOrProjectileCoordinatesModified": false
+  },
+  "preview": {
+    "effects": 48,
+    "build": "node tools/battlefield/harpoon-launch-readable-v1/build.cjs",
+    "output": "outputs/combat-impactful-v1/preview.html?effect=harpoon-launch",
+    "harpoon": {
+      "sourceLaunchClipDuration": 0.35,
+      "contextDuration": 1.25,
+      "projectileCount": 1,
+      "ropeCount": 1,
+      "actualCombat": false
+    }
+  },
+  "validation": {
+    "profiles": 9,
+    "realThreeRuntime": 15,
+    "runtimeParentCount": 1,
+    "runtimeChildCount": 14,
+    "feedback": 13,
+    "harpoonMotion": 8,
+    "composite": 14,
+    "totalNodeChecks": 59,
+    "originalGlbBindings": 12,
+    "browser": "pending integration single slot",
+    "npmBuildOrExport": "not run by battlefield owner"
+  },
+  "preserved": {
+    "previousReceipt": {
+      "path": "tools/battlefield/rich-vfx-handoff.json",
+      "bytes": 8988,
+      "sha256": "a5cd43acce2903c882196f60ed844b3c12fe53c4a872f46312a9daa8495bfd6f"
+    },
+    "previousFilesChecked": 12,
+    "allUnchanged": true
+  },
+  "readDependencies": [
+    {
+      "path": "tools/battlefield/vfx-contract.mjs",
+      "bytes": 7041,
+      "sha256": "d8d173bd83830cdbb37802523a959e0cef2c41d57e55b0918055ccc8372f23c4"
+    },
+    {
+      "path": "tools/battlefield/vfx-rich-profiles.mjs",
+      "bytes": 4397,
+      "sha256": "33afe74e8918a76c26f5b4a48b14110c490345428760fd50b4ab01d08883a2b1"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    }
+  ],
+  "originalAssets": [
+    {
+      "path": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+      "bytes": 43532,
+      "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9",
+      "runtimePolicy": "one-shot original AnimationMixer clip"
+    },
+    {
+      "path": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+      "bytes": 8856,
+      "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b",
+      "runtimePolicy": "clone carrier subtree only; do not play translation/scale/end or demo smoke",
+      "carrier": "machine-gun-projectile_projectile_carrier_0",
+      "authoredCarrierChannels": [
+        "translation",
+        "scale",
+        "rotation"
+      ]
+    },
+    {
+      "path": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+      "bytes": 71820,
+      "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d",
+      "runtimePolicy": "one-shot original AnimationMixer clip"
+    },
+    {
+      "path": "outputs/combat-vfx/assets/cannon-muzzle.glb",
+      "bytes": 115812,
+      "sha256": "2e4c5d1b6a78251f970207b1fc35c66ce0d37e92aeb2ab3497387f85ac61d479",
+      "runtimePolicy": "one-shot original AnimationMixer clip"
+    },
+    {
+      "path": "outputs/combat-vfx/assets/cannon-projectile.glb",
+      "bytes": 120868,
+      "sha256": "cf543abd2fcca020693ad3c46eec6473d39afba172f998dee18fcf73600bf5b4",
+      "runtimePolicy": "clone carrier subtree only; do not play translation/scale/end or demo smoke",
+      "carrier": "cannon-projectile_projectile_carrier_0",
+      "authoredCarrierChannels": [
+        "translation",
+        "scale",
+        "rotation"
+      ]
+    },
+    {
+      "path": "outputs/combat-vfx/assets/cannon-hit.glb",
+      "bytes": 185004,
+      "sha256": "89f0bff8c05aed3c73fd09b80a984695d72ceb597ef349f188613e438d36369a",
+      "runtimePolicy": "one-shot original AnimationMixer clip"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/player-homeward.glb",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004",
+      "muzzle": {
+        "name": "Muzzle",
+        "parent": "GunRecoil",
+        "localTranslation": [
+          -0.12426799999999999,
+          0.0261225,
+          -0.0100095
+        ],
+        "forward": "-X",
+        "up": "+Y",
+        "provisional": true
+      }
+    },
+    {
+      "path": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+      "bytes": 3299860,
+      "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6",
+      "runtimePolicy": "preserved independent source; not a real mounted socket"
+    },
+    {
+      "path": "outputs/weapon-modules/02-deck-cannon/weapon.glb",
+      "bytes": 3961552,
+      "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+      "runtimePolicy": "preserved independent source; not a real mounted socket"
+    },
+    {
+      "path": "outputs/combat-vfx/assets/harpoon-launch.glb",
+      "bytes": 69840,
+      "sha256": "df3f3c26cf5b1a0288f3346d1fb5ed5c834ce3888de833e426800dd838f18582",
+      "clipCount": 1
+    },
+    {
+      "path": "outputs/combat-vfx/assets/harpoon-projectile.glb",
+      "bytes": 44064,
+      "sha256": "415412f33532d6cb2698f8e136c57513b243b3e0b69257ca38f87bf67a310702",
+      "clipCount": 1
+    },
+    {
+      "path": "outputs/weapon-modules/04-harpoon/weapon.glb",
+      "bytes": 3777952,
+      "sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64"
+    }
+  ],
+  "files": [
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/profiles.mjs",
+      "bytes": 4490,
+      "sha256": "eaedf9b65194fd85dabdb148bcb4ee6d1b5453815355c105e60cc14f9c0f4d12"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/profiles.test.mjs",
+      "bytes": 5869,
+      "sha256": "fc9cd3bf17ed8cb259627171fe206ea1b794f398229d00ecf1697f82b0c42a43"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/vfx.js",
+      "bytes": 17859,
+      "sha256": "388006bff66eb713e3c2888b815d027a147ff89f27e88db631b898d272a3d607"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/vfx-runtime.test.mjs",
+      "bytes": 24814,
+      "sha256": "678c4aeaa712140cc5168e6abd65e197d232dc137b0e65b127d155b9db92646a"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/feedback.mjs",
+      "bytes": 8799,
+      "sha256": "4f2df2e520f82ba1a6feef2307aae176fc3b5649c27979969da26be4d6d33f50"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/feedback.test.mjs",
+      "bytes": 9937,
+      "sha256": "6a4ed3804215f70e9d1a76eadb0c3c4676f06c6bddb46d655eb97c120f8ffd2c"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/presentation.mjs",
+      "bytes": 10844,
+      "sha256": "4688893278aa00b2a9262a40c0a1ef5ad9dbd2ea9060296104d77bd26bc6be3e"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/presentation.test.mjs",
+      "bytes": 12826,
+      "sha256": "7544ce6985ac5db0d7637a9f7e35371093886fa6bc3e02c8e3d9e3f8f6be3c4c"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/HANDOFF.md",
+      "bytes": 7914,
+      "sha256": "48990022ac97d171cf5cbeae79776caf9b7ddf9e492836ae1fdca44edc4f4464"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/preview.js",
+      "bytes": 35693,
+      "sha256": "de3d46ccd76d83b60fea22b0dd12bac21300452497969dc067b759d9f2815de2"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/preview.html",
+      "bytes": 7157,
+      "sha256": "cfd6d02d799c029afef12c42d97dc99fd2d48ab15d1e0e71a88ccfd9aae0b275"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/build.cjs",
+      "bytes": 1321,
+      "sha256": "3c40a9e4a0fb06c531f40a6bbd64e76a55430d683c2e127c33467b4e096af5e6"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/README.md",
+      "bytes": 2464,
+      "sha256": "b0690fbce732d32663b45084735fa8e3c11b03c2903ba0f276fe4a288e1a8e88"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/harpoon-motion.mjs",
+      "bytes": 2953,
+      "sha256": "222d7129c4fd7cf09c9c0061d3a93be1069f3ec6caab174361a1e3e2296c8f01"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/harpoon-motion.test.mjs",
+      "bytes": 5033,
+      "sha256": "0ed43923ea937d2142a55dfd6b81cedf0dcdbc4bfc5fbc850bbe474e07f136aa"
+    }
+  ],
+  "softMachineGunReady": {
+    "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/manifest.json",
+    "bytes": 6949,
+    "sha256": "97c285c820a6053ee2ea67d6393a481005a284f217726e5706e5bdc4b1badcaf"
+  },
+  "remaining": [
+    "Browser-visible readability, control feel and target readability require integration QA and human review",
+    "48 art effects are display profiles; actual combat only MG/cannon",
+    "Harpoon context is an art demonstration with no hit/latch/tow or weapon gameplay",
+    "Soft MG runtime and textures remain separately owned/frozen by VFX art owner",
+    "No new paid generation, dependency install, push, deploy, full-asset regeneration or shared renderer edits"
+  ]
+}

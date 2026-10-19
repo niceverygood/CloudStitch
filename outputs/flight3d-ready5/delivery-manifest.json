@@ -1,0 +1,260 @@
+{
+  "version": "flight3d-ready-5",
+  "scope": "Painted cloud layers, floating route-life props, close/far world parallax and same-state rich/basic comparison; original helm/physics retained",
+  "browserQA": "pending: outputs/flight3d-ready5-browser-qa-v1/browser-verification.json",
+  "previousPlayable": "outputs/flight3d-ready4/index.html",
+  "environmentProvenance": "tools/flight3d/environment-source/provenance.json",
+  "files": [
+    {
+      "path": "outputs/flight3d-v1/browser-verification.json",
+      "bytes": 4958,
+      "sha256": "bdd6014693bf2f33d45a47671d45e0089eecd556b6385e45923ada462cb9ead9"
+    },
+    {
+      "path": "outputs/flight3d-v1/build-manifest.json",
+      "bytes": 5704,
+      "sha256": "e6481bc3301554b50e18929d855dda3e847d36732b00fa5a8d5d4120b6bb743f"
+    },
+    {
+      "path": "outputs/flight3d-v1/environment-node-verification.json",
+      "bytes": 1211,
+      "sha256": "ce9c98f873c5b37571d37e64f91aa3d0202575203e6dcec02455979d3199ebf0"
+    },
+    {
+      "path": "outputs/flight3d-v1/flight.js",
+      "bytes": 899959,
+      "sha256": "0d4022ec97033d1a3deeb30268b8dd41a992b32226b3655ed91fcabb02872ac5"
+    },
+    {
+      "path": "outputs/flight3d-v1/index.html",
+      "bytes": 8835,
+      "sha256": "3ab2bb7537c9bd36589b4d6a835d005bb6b5c6426799e90a12e539c969889524"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-flight.png",
+      "bytes": 227055,
+      "sha256": "b0a403cef464f51bb75e61266200c5a896b6d858e283fde3fa2a17e2aff07ffa"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-iab.jpg",
+      "bytes": 73327,
+      "sha256": "0e938896b5d49b47a1b609010509cc8292df0d045d9fec03aba30cfa4a233162"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-mobile.png",
+      "bytes": 118267,
+      "sha256": "834fd36a2e77720fd00d6a2c157d90fd64053a4cb632ed01331f5450adc80999"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-ready2.jpg",
+      "bytes": 66872,
+      "sha256": "6da7ca26fc2b4b13e7caeadab261201212396fffd0c9cbb018ac8ca1793c17ad"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-ready3-iab.jpg",
+      "bytes": 73986,
+      "sha256": "8ab580d6ca9213da0722617e1c4ae5711f35834305de53eda756212ca9002c05"
+    },
+    {
+      "path": "outputs/flight3d-v1/qa-summary.json",
+      "bytes": 806,
+      "sha256": "73178222db29258eda7b66b717b41eca1a58a3459dd19f3b9cb280fd67e4f9e8"
+    },
+    {
+      "path": "outputs/flight3d-v1/ready-1-delivery-manifest.json",
+      "bytes": 4032,
+      "sha256": "23e2ff04f42764e37b5a810420da611d45cd0474e3e24e4f2c255babf9327874"
+    },
+    {
+      "path": "outputs/flight3d-v1/ready-2-delivery-manifest.json",
+      "bytes": 4605,
+      "sha256": "015a0e28694b17f64e3202e3fe4537fe7c9ad98e3b1a7210e154a27b7cb29724"
+    },
+    {
+      "path": "outputs/flight3d-v1/ready-3-delivery-manifest.json",
+      "bytes": 6270,
+      "sha256": "a47437d6d8832b8bccef03881273ff524782854f564a281e84c6c5e57acc4921"
+    },
+    {
+      "path": "outputs/flight3d-v1/ready-4-delivery-manifest.json",
+      "bytes": 6647,
+      "sha256": "d1c7b8a4c51ec5140fbaf2bb1c43b5446da7f12bd5e45a2021e2b81daa9c8c3c"
+    },
+    {
+      "path": "outputs/flight3d-v1/source-verification.json",
+      "bytes": 1676,
+      "sha256": "cd41fb1214950c8554f3a5c7bec75918d70f37d5be8930c77729c48378dc1cf4"
+    },
+    {
+      "path": "outputs/flight3d-v1/style.css",
+      "bytes": 19037,
+      "sha256": "bf176be46deb6a57e1fc95144294b7805f68e2d01626fd6e0c3157b65f8a95f2"
+    },
+    {
+      "path": "tools/flight3d/HANDOFF.md",
+      "bytes": 15213,
+      "sha256": "8b42a63e3aa7a2cee0dd726e9ce73836d756bbefd12c1d58fd2353312d218d73"
+    },
+    {
+      "path": "tools/flight3d/app.js",
+      "bytes": 12911,
+      "sha256": "b101b141a5d1fd391140682daf95b667b92c6319470f6338c9760bb1397fa838"
+    },
+    {
+      "path": "tools/flight3d/build.cjs",
+      "bytes": 2015,
+      "sha256": "38a37cb3a2d5d88796b193c4119c6b13f139e3e150d3916ea29c631a1678469a"
+    },
+    {
+      "path": "tools/flight3d/camera-geometry.mjs",
+      "bytes": 3523,
+      "sha256": "a2c4d670c27595bbea56e3b830a9cf04b2459c32d399e035c3e70e110d01c21f"
+    },
+    {
+      "path": "tools/flight3d/camera-geometry.test.mjs",
+      "bytes": 3850,
+      "sha256": "e1d3fe15228f840a3db9058480726213edf0a686d5b08b15627dbee8014751f8"
+    },
+    {
+      "path": "tools/flight3d/environment-layout.mjs",
+      "bytes": 9654,
+      "sha256": "449ec795708f52f823ffa451ac1caaaee70a5d7101e5c58b7683091251242cd9"
+    },
+    {
+      "path": "tools/flight3d/environment-layout.test.mjs",
+      "bytes": 8015,
+      "sha256": "78e66f29deb735187d37fcc3e46cc8665ef832615b6e6ac360833839b7b49e8c"
+    },
+    {
+      "path": "tools/flight3d/environment-models.js",
+      "bytes": 11371,
+      "sha256": "a504e52a25a7a505c001ac5020e49b7a767c59ad85320cc19e02153ec1b7ebeb"
+    },
+    {
+      "path": "tools/flight3d/environment-models.test.mjs",
+      "bytes": 7911,
+      "sha256": "244b49d56a0e24f171fa9775414f7d0ad709887781f17a03310448e5bbac79a8"
+    },
+    {
+      "path": "tools/flight3d/environment-source/core.mjs",
+      "bytes": 7840,
+      "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c"
+    },
+    {
+      "path": "tools/flight3d/environment-source/props.mjs",
+      "bytes": 40911,
+      "sha256": "83b91fedef9e2613bd283e1e5cedc8abeaeffceb67d6aed1122704b137cea326"
+    },
+    {
+      "path": "tools/flight3d/environment-source/provenance.json",
+      "bytes": 1376,
+      "sha256": "a1416b216cd7e0472e4709aa83596976ca743564cf96daf3a71de3835d8b7cd2"
+    },
+    {
+      "path": "tools/flight3d/environment-source/sky.mjs",
+      "bytes": 26359,
+      "sha256": "6fdb50cdff504c6e8da2917917de0aa4cb8eef2449dde27697d9a25e4ddd6f5e"
+    },
+    {
+      "path": "tools/flight3d/environment-source/terrain.mjs",
+      "bytes": 34613,
+      "sha256": "de025448731fc8185248e958312f8aae73575e816342b8f9165fb49d07d8ae6c"
+    },
+    {
+      "path": "tools/flight3d/environment.js",
+      "bytes": 9139,
+      "sha256": "1363ab6cfd0abb7ba9beb2adf3d47304a261d946d3d700ad288c793c1bd79af8"
+    },
+    {
+      "path": "tools/flight3d/environment.test.mjs",
+      "bytes": 2151,
+      "sha256": "73dfa3fa45cfa9ef58625b36725d5231f91fb0742669aa5ae91eb7c68a6cd185"
+    },
+    {
+      "path": "tools/flight3d/helm-route.test.mjs",
+      "bytes": 2307,
+      "sha256": "8f8381b3eb234573c37abd83667a5900133a3f804bf8b1803496430ac102854b"
+    },
+    {
+      "path": "tools/flight3d/renderer.js",
+      "bytes": 14054,
+      "sha256": "56460c6dafa2d4dfe2da76535dfc30e04b783e78fc5af9a4fc76d7977685536a"
+    },
+    {
+      "path": "tools/flight3d/sim.mjs",
+      "bytes": 27606,
+      "sha256": "23bbbfe1f98493f4e6a0b26f0dd1090b3a1ee6a9da87bf4670b6e7576e42fc44"
+    },
+    {
+      "path": "tools/flight3d/sim.test.mjs",
+      "bytes": 23963,
+      "sha256": "f83aecc31df6a0bcac901d8a642f52e49d460f1ef22d47be436bbae925b69164"
+    },
+    {
+      "path": "tools/flight3d/snapshot.mjs",
+      "bytes": 1941,
+      "sha256": "4f89209d1bcde32b2a2334bde11ccf1fd2ab3793dc96fee54432c90556030fc8"
+    },
+    {
+      "path": "tools/flight3d/style.css",
+      "bytes": 19037,
+      "sha256": "bf176be46deb6a57e1fc95144294b7805f68e2d01626fd6e0c3157b65f8a95f2"
+    },
+    {
+      "path": "tools/flight3d/template.html",
+      "bytes": 8835,
+      "sha256": "3ab2bb7537c9bd36589b4d6a835d005bb6b5c6426799e90a12e539c969889524"
+    },
+    {
+      "path": "tools/flight3d/verify-browser.cjs",
+      "bytes": 6897,
+      "sha256": "9cdce4a15363c97da00c9dcdedc1ddaae797fa900dc5222ba10089818582b5c8"
+    },
+    {
+      "path": "tools/flight3d/verify-environment-browser.cjs",
+      "bytes": 14041,
+      "sha256": "394d4347ec201ef34fa5a1cab38c0f3fd30e9bfa117a19ec8b361c0b999373e7"
+    },
+    {
+      "path": "tools/flight3d/verify-grab-browser.cjs",
+      "bytes": 15896,
+      "sha256": "04ab6aeb3ff81aa3b70743c8401e16b965370249084cedb38b2fbebae0e62dd1"
+    },
+    {
+      "path": "tools/flight3d/verify-helm-browser.cjs",
+      "bytes": 8041,
+      "sha256": "1285087af633f353a07e45338051e75710d7bc32f8dcfb202de78b6466b94f57"
+    },
+    {
+      "path": "tools/flight3d/verify-source.mjs",
+      "bytes": 4336,
+      "sha256": "20b656943d4f97fa20d7aae59fa0e60df3403cd79aa9e43f42e4868d8610deee"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "tools/battlefield/assets.js",
+      "role": "read-only shared GLB loader bundled into flight.js",
+      "bytes": 15505,
+      "sha256": "624532b463d498c5b0ad3ccc1c2ade75ea903af819b6871b6c0fb6aff0f3834b"
+    },
+    {
+      "path": "outputs/fleet-v1/catalog.json",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 469686,
+      "sha256": "d73ea3d133167ce78d468c8df25ecae6dffb058457050993349fd2a138e1fda9"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/player-homeward.glb",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 6699020,
+      "sha256": "bce2d9891de2225d6823cb1c347a4b8d6b7e3dd2f59e056db78530661d131923"
+    }
+  ]
+}

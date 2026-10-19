@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "status": "ready-for-integration",
+  "snapshot": "2026-10-18-levels-v1-ready-4",
+  "baseline": "fb850f7",
+  "restoredSourceReference": "e65ab87d2af0c4b08e51f312c9eb0998aa895c69",
+  "scope": [
+    "tools/levels/",
+    "outputs/levels-v1/"
+  ],
+  "excludedBasenamePattern": "^playable-",
+  "browserQA": "ready-3-22-checks-passed-by-integration-owner; pending-ready-4-reselection-resource-rerun",
+  "selfExcluded": "outputs/levels-v1/handoff-files.json",
+  "files": [
+    {
+      "path": "tools/levels/HANDOFF.md",
+      "bytes": 11616,
+      "sha256": "9ebcdc5b4be6bfd77d8f58177c7bb67a5721411b82a5533887968ab0da355f1b"
+    },
+    {
+      "path": "tools/levels/README.md",
+      "bytes": 3561,
+      "sha256": "2d7c62d57a708f1532f0f654b37885198bd2917e55334cda6041f269e0dfc052"
+    },
+    {
+      "path": "tools/levels/adapter.mjs",
+      "bytes": 7845,
+      "sha256": "1eb56909f8d82913141796f4efb89e6c334da056f07f638d644fc278990462e6"
+    },
+    {
+      "path": "tools/levels/adapter.test.mjs",
+      "bytes": 3684,
+      "sha256": "d4882c995dc62fdc3fa4d5fdf5f44cb0b9b590ede708855be8dbaf35bde83af2"
+    },
+    {
+      "path": "tools/levels/build-data.mjs",
+      "bytes": 5369,
+      "sha256": "03098d03867c08244b48831fb8780087d93ed6ff17ce4c2c63f7a553591ab8b7"
+    },
+    {
+      "path": "tools/levels/build.cjs",
+      "bytes": 1395,
+      "sha256": "e614bcb15fbb0b23babcdc049eb2185a3246cef53d85bcad5f8970e94d734dba"
+    },
+    {
+      "path": "tools/levels/contract.json",
+      "bytes": 3599,
+      "sha256": "c6186e208d6cf5c03adf1f00fb1a4f26f748856fb9b9218ae523d0356d3f007c"
+    },
+    {
+      "path": "tools/levels/host-example.mjs",
+      "bytes": 2200,
+      "sha256": "6b3978cdb87c7249e13b0836783b1e3d7449c8986e3a338a1d153076f4f20bd4"
+    },
+    {
+      "path": "tools/levels/levels.mjs",
+      "bytes": 8567,
+      "sha256": "bd628ba20f5ae4ac745f962cf463265471791ebc208c6f059e2711f021a9a1fd"
+    },
+    {
+      "path": "tools/levels/snapshot.mjs",
+      "bytes": 1439,
+      "sha256": "cf2067e5949e75484776d2a28e6ebfbeb76ef8a9040f40bab58e5c97f9314ade"
+    },
+    {
+      "path": "tools/levels/template.html",
+      "bytes": 4886,
+      "sha256": "5ac8cba46c4e10f87c70eaededdfb2c167d5c8c0dfdd52d78be993d2eb86536f"
+    },
+    {
+      "path": "tools/levels/validate.mjs",
+      "bytes": 26596,
+      "sha256": "c40d49bf447dbf419ed389287712431369971f4c87faf45b96d04559c7ae3b40"
+    },
+    {
+      "path": "tools/levels/verify-browser.cjs",
+      "bytes": 6246,
+      "sha256": "a3d4136edc07e62fe7cfd180ac7968075e1097c4a7540b13d579757ac749ba21"
+    },
+    {
+      "path": "tools/levels/viewer.js",
+      "bytes": 26352,
+      "sha256": "4ef19549a0b76b360b00326312d8c3eaaa977cbc312e0cca3675b055a15387bc"
+    },
+    {
+      "path": "outputs/levels-v1/index.html",
+      "bytes": 645643,
+      "sha256": "29a1391b9380c266265a4323c9a0ae9e9a1dfc3900897b55ab6df0b8078fbe52"
+    },
+    {
+      "path": "outputs/levels-v1/level-package.json",
+      "bytes": 43824,
+      "sha256": "b09cd1cf59369903e1f99dd1d944297ef3cf6d9440482c15163320a677bc0815"
+    },
+    {
+      "path": "outputs/levels-v1/spatial-verification.json",
+      "bytes": 60350,
+      "sha256": "dde6f6e069a21a18c9846ff2addf50f6119d5279cd037c4473080077871a8a6f"
+    }
+  ]
+}

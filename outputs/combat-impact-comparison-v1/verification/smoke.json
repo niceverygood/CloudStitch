@@ -1,0 +1,74 @@
+{
+  "scope": "first visual smoke",
+  "checks": [
+    {
+      "name": "actual ship/2 weapons/legacy GLBs loaded",
+      "passed": true
+    },
+    {
+      "name": "single authority cannon shot/hit",
+      "passed": true,
+      "data": {
+        "shots": 1,
+        "hits": 1,
+        "damage": 9,
+        "damagePerShot": 9,
+        "burstDuration": 0,
+        "cooldown": null,
+        "finalProjectiles": 0,
+        "finalTargetHp": 91
+      }
+    },
+    {
+      "name": "same canonical muzzle on A/B",
+      "passed": true
+    },
+    {
+      "name": "MG 2s exactly ten shots/hits and damage80",
+      "passed": true,
+      "data": {
+        "shots": 10,
+        "hits": 10,
+        "damage": 80,
+        "damagePerShot": 8,
+        "burstDuration": 2,
+        "cooldown": 0.22,
+        "finalProjectiles": 0,
+        "finalTargetHp": 99920
+      }
+    },
+    {
+      "name": "no browser JS/GL errors",
+      "passed": true,
+      "data": [
+        "Error: Failed: no external network requests\n    at check (C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\combat-impact-comparison-v1\\qa.cjs:7:80)\n    at C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\combat-impact-comparison-v1\\qa.cjs:31:59"
+      ]
+    },
+    {
+      "name": "no external network requests",
+      "passed": false,
+      "data": [
+        "blob:http://127.0.0.1:57176/003d6482-2874-4c46-8bce-70385d2b9956",
+        "blob:http://127.0.0.1:57176/4511a72d-b0fd-4817-8b59-db2bc71e6eeb",
+        "blob:http://127.0.0.1:57176/a2fdbcee-1956-4905-81ca-f6ba36f344a3",
+        "blob:http://127.0.0.1:57176/2c8219a4-16fe-40cb-b56a-f09827ec4764",
+        "blob:http://127.0.0.1:57176/e9cb1c78-0d91-4ca1-afed-c7ef93c6afa7"
+      ]
+    }
+  ],
+  "passed": false,
+  "errors": [
+    "Error: Failed: no external network requests\n    at check (C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\combat-impact-comparison-v1\\qa.cjs:7:80)\n    at C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\combat-impact-comparison-v1\\qa.cjs:31:59"
+  ],
+  "externalRequests": [
+    "blob:http://127.0.0.1:57176/003d6482-2874-4c46-8bce-70385d2b9956",
+    "blob:http://127.0.0.1:57176/4511a72d-b0fd-4817-8b59-db2bc71e6eeb",
+    "blob:http://127.0.0.1:57176/a2fdbcee-1956-4905-81ca-f6ba36f344a3",
+    "blob:http://127.0.0.1:57176/2c8219a4-16fe-40cb-b56a-f09827ec4764",
+    "blob:http://127.0.0.1:57176/e9cb1c78-0d91-4ca1-afed-c7ef93c6afa7"
+  ],
+  "browserClosed": true,
+  "serverClosed": true,
+  "humanArtApproved": false,
+  "humanListeningApproved": false
+}

@@ -1,0 +1,35 @@
+{
+  "version": "flight3d-ready-3",
+  "deliveryManifest": "outputs/flight3d-v1/delivery-manifest.json",
+  "deliveryManifestSha256": "a47437d6d8832b8bccef03881273ff524782854f564a281e84c6c5e57acc4921",
+  "testedUrl": "http://127.0.0.1:8840/outputs/flight3d-ready3/index.html",
+  "playableUrl": "http://127.0.0.1:8860/outputs/flight3d-v1/index.html",
+  "equivalence": "Integration root copied 29 owned files byte-for-byte into a separate READY3 namespace and verified all 4 read-only dependencies; shared source is frozen.",
+  "nodeChecks": {
+    "passed": 37,
+    "total": 37
+  },
+  "sourceChecks": {
+    "passed": 5,
+    "total": 5
+  },
+  "browserChecks": {
+    "passed": 20,
+    "total": 20
+  },
+  "scope": "Short functional checks for ship-relative helm, buoyancy display, spring bank/pitch, braking, camera, 3D aiming and mobile layout. Human play feel and long-session performance remain for user testing.",
+  "evidence": [
+    {
+      "path": "outputs/flight3d-ready3-browser-qa-v1/browser-verification.json",
+      "sha256": "a983072c612a9e15ee8de85446c53ef4cb2dc0ea863ad4c1fd69ecf352f664e2"
+    },
+    {
+      "path": "outputs/flight3d-ready3-browser-qa-v1/preview-helm.png",
+      "sha256": "388e59963f672274ce4ee94f41cec461b6616408861dc550c3265ca946049be3"
+    },
+    {
+      "path": "outputs/flight3d-ready3-browser-qa-v1/preview-mobile.png",
+      "sha256": "dfffd684103332d4927a8bf8cfe7881ed49d66f19d5043afc2a6ae7e4ed74b0d"
+    }
+  ]
+}

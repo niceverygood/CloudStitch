@@ -1,0 +1,88 @@
+{
+  "id": "harpoon-launch",
+  "original_id": "harpoon-launch",
+  "order": 10,
+  "name_ko": "작살 발사 튕김",
+  "name_en": "Harpoon Launch Snap",
+  "category": "weapon",
+  "weapon_id": "04-harpoon",
+  "model": "assets/harpoon-launch.glb",
+  "duration": 0.35,
+  "loop": false,
+  "purpose": "폭약 섬광보다 레일과 밧줄의 힘을 전달한다.",
+  "status": "residual_source_reviewed_render_pending",
+  "representative": false,
+  "placement_scale": 0.32,
+  "authored_silhouette_scale": 1,
+  "triangles": 840,
+  "mesh_count": 3,
+  "animation_count": 1,
+  "bytes": 98004,
+  "sha256": "a78f2da80c6992880763342e248082374891d6943e754d373834dd8caca4fdfd",
+  "meshy_bases": [],
+  "runtime_features": [
+    "node extras.runtime_fade drives viewer opacity; standard GLB uses TRS alone"
+  ],
+  "source_type": "Local authored swept brush/fabric volumes and TRS",
+  "task_ids": [],
+  "new_paid_task_for_this_effect": false,
+  "axes": "+Y up, +Z forward, +Y impact surface normal",
+  "limits": [
+    "Art choreography prototype; runtime combat integration pending.",
+    "GLB embeds standardTRS only. Runtime opacity/outline/cel are separate browser features.",
+    "Fixed projectile movement belongs to preview clip; disable root translation when gameplay projectile owns motion.",
+    "Only representative6 initially receives direct visual review; catalog status records later checks."
+  ],
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/core.cjs",
+      "bytes": 9366,
+      "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+    },
+    {
+      "path": "tools/combat-vfx-v2/generate.cjs",
+      "bytes": 4019,
+      "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/primary.cjs",
+      "bytes": 13239,
+      "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+    }
+  ],
+  "output_file": {
+    "path": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+    "bytes": 98004,
+    "sha256": "a78f2da80c6992880763342e248082374891d6943e754d373834dd8caca4fdfd"
+  },
+  "visual_reviewed": false,
+  "art_preflight_review": {
+    "audit_report": "tools/combat-vfx-v2/review-primary.json",
+    "status": "source_binary_reviewed_new_render_required",
+    "changes": [
+      "Replace the fire/smoke burst by two tapered teal/cream tension flicks and a loose rope curl.",
+      "Move and relax the curl/flicks along +Z with a short staged release."
+    ],
+    "concerns": [
+      "Existing binary had the same one-flame/one-smoke/spark recipe as chain launch, with only one additional tension stroke. It read as a gun blast instead of released tension."
+    ],
+    "expected_observations": [
+      "A dry taut release and small cream curl are distinct from cannon/flamethrower fire.",
+      "The bore stays visible and the rope hint travels forward rather than forming a large solid halo."
+    ],
+    "loop_boundary_sample_seconds": null,
+    "sample_times_seconds": [
+      0,
+      0.042,
+      0.1575,
+      0.2625,
+      0.35
+    ],
+    "current_output": {
+      "path": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+      "bytes": 98004,
+      "sha256": "a78f2da80c6992880763342e248082374891d6943e754d373834dd8caca4fdfd"
+    },
+    "scope": "Source/binary review only; queued fresh renders are not completed art approval."
+  }
+}

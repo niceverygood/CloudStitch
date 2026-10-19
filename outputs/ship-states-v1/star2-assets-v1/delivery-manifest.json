@@ -1,0 +1,334 @@
+{
+  "title": "Cloudstitch",
+  "revision": "star2-assets-v1-ART-REVIEW",
+  "entryPoint": "outputs/ship-states-v1/star2-assets-v1/index.html",
+  "logicalAssets": 3,
+  "models": [
+    {
+      "id": "mobility",
+      "bytes": 2419328,
+      "sha256": "4f65fa51524e941e611b55d0f46e460e45cecc1bc32091df1749f91b38ea0132",
+      "triangles": 28120,
+      "meshes": 68,
+      "nodes": 78,
+      "images": 4,
+      "materials": 7,
+      "unlit": 7,
+      "clips": 0,
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-mobility.glb"
+    },
+    {
+      "id": "artillery",
+      "bytes": 2084092,
+      "sha256": "3f39b816b1dbb9aa58ca3b3c850b8466a8e846e144f97d52e93173fd12476946",
+      "triangles": 20420,
+      "meshes": 49,
+      "nodes": 59,
+      "images": 3,
+      "materials": 7,
+      "unlit": 7,
+      "clips": 0,
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-artillery.glb"
+    },
+    {
+      "id": "salvage",
+      "bytes": 2240688,
+      "sha256": "b4e5e940106d9d23daf1ecc5e58b47ce88335cdfb13e67e3a71f309c67167fea",
+      "triangles": 24312,
+      "meshes": 64,
+      "nodes": 73,
+      "images": 4,
+      "materials": 7,
+      "unlit": 7,
+      "clips": 0,
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-salvage.glb"
+    }
+  ],
+  "sourcePassed": true,
+  "browserPassed": true,
+  "humanArtApproved": false,
+  "originalPreserved": true,
+  "files": [
+    {
+      "path": "tools/ship-states/star2-assets-v1/build.cjs",
+      "bytes": 2280,
+      "sha256": "ba97b4b14dea90ae4e63763d7863a1685c8fc692b64dc8c306b2e16db437b6ed"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/check-source.cjs",
+      "bytes": 2206,
+      "sha256": "cb3c9faf151a45684b9089459bb621c8d7350116506a7b9e2cb0d9a20a5f2abb"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/export-verify.cjs",
+      "bytes": 6976,
+      "sha256": "1b719c02820927cfce00303dddc0cdc51ba2e0aa54d480a889228be83e4bdec0"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/finalize.cjs",
+      "bytes": 2908,
+      "sha256": "61c0c1c7387b11e266022fa1d4b1f495b8d20d4719ec3a63060184b2bacedc70"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/HANDOFF.txt",
+      "bytes": 1556,
+      "sha256": "fbe6d9db0fbfc4161c26a8eaa0cf17a8b550c89955b578f5c51a288ad1fdb991"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/models.js",
+      "bytes": 11475,
+      "sha256": "6ccfa6387b16a34c541c113a2c80c5567509ddcda2f9f49c40317650f9797a94"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/parse-glb.cjs",
+      "bytes": 3674,
+      "sha256": "6f9dd7fb4d560b55e258c452230a63e7bea2b009d8dcdde5e0d968de432972b8"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/template.html",
+      "bytes": 5560,
+      "sha256": "88bfabfb6c798f0937c66d2688d01e5c1e4cbe2e12fefe46f6581cc1b6e3a8b1"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/verify-materials.cjs",
+      "bytes": 4403,
+      "sha256": "ee2580cb9605c9f2c565e337bf30be11afa5a0b989dde0c7c051bc0ce3dafe3a"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/viewer.js",
+      "bytes": 9489,
+      "sha256": "672631048a454781f3c9d05015a2ea5a8a1919a31076b6e95747eddf8e1dc608"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/artillery-cel.png",
+      "bytes": 395386,
+      "sha256": "5ee7866cc890ea445bb8d0ea5d7140a082ae0e1eb3b567e18986daf475b285a1"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/artillery-original.png",
+      "bytes": 402131,
+      "sha256": "972a9646c240c3c0cee371011754c77ad3a25732db90f17462e6422007fed64b"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/artillery-painted.png",
+      "bytes": 402131,
+      "sha256": "972a9646c240c3c0cee371011754c77ad3a25732db90f17462e6422007fed64b"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/build-manifest.json",
+      "bytes": 1750,
+      "sha256": "98676b3d50c0eb6a2df5639ef43d860c08c0968318f713e818ee28f331b793dc"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/index.html",
+      "bytes": 14659233,
+      "sha256": "336cc8e56647f517e55770223b2d24acf2a0595270f3d1a16c927b22d8d19060"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/mobility-cel.png",
+      "bytes": 362712,
+      "sha256": "5e6bfff2730d97789356f5f67c5eebd1fcf7a21c5e5b826be2b3265620945f54"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/mobility-original.png",
+      "bytes": 369063,
+      "sha256": "d6c7be55cafaa17b21123ecb80cae2a269d610abe06cfc85c95aeaf1ad6f456d"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/mobility-painted.png",
+      "bytes": 369063,
+      "sha256": "d6c7be55cafaa17b21123ecb80cae2a269d610abe06cfc85c95aeaf1ad6f456d"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/overview.png",
+      "bytes": 709659,
+      "sha256": "fd215492d94581bd769f17beaedea890ef4747114051bafa4a3aa8102a23c5bf"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/.gitattributes",
+      "bytes": 44,
+      "sha256": "f02781b96a28e940178d14b31964e5f05f3b46406910e0c9c25d620cc22efd1c"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/artillery-cel.png",
+      "bytes": 358446,
+      "sha256": "f389489a1f9143f6246a98e33a507c331ad303eba8ccd5ffc042d8f6239f603b"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/artillery-original.png",
+      "bytes": 364948,
+      "sha256": "5622e96bb1c2426eed0cf3d54a40a81fd2758e45719673c8af4f0aa8510daedb"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/artillery-painted.png",
+      "bytes": 364948,
+      "sha256": "5622e96bb1c2426eed0cf3d54a40a81fd2758e45719673c8af4f0aa8510daedb"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/build-manifest.json",
+      "bytes": 1750,
+      "sha256": "a51bb51647b419762601bb5dac15cb0dd4b676f7e43eff8494665c4958660eb8"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/index.html",
+      "bytes": 14414586,
+      "sha256": "16cf0a9fefc77ffac3240180dcb18ba90a52492a8e384927a9b58a6c11b5f94e"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/mobility-cel.png",
+      "bytes": 321597,
+      "sha256": "c0278dceaf7e4bfc018fa7ff279279435f8b1512386520f12a1efc1c98e86ae4"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/mobility-original.png",
+      "bytes": 328469,
+      "sha256": "41229a1d1bbb15d3f2603cabb3c77d13f7fdc1cfee196074f9fab87697391249"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/mobility-painted.png",
+      "bytes": 328469,
+      "sha256": "41229a1d1bbb15d3f2603cabb3c77d13f7fdc1cfee196074f9fab87697391249"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/models.before.js",
+      "bytes": 10405,
+      "sha256": "d87c46523a59850eb9311f4921d86c82c0c90aaa0a339cdb140786c15dfe4d0f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/overview.png",
+      "bytes": 634578,
+      "sha256": "fdc054d23656c88f7d86321ff45576306c5e8e74af02410a32b716e0387e0f0f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/salvage-cel.png",
+      "bytes": 268458,
+      "sha256": "4355b76be295476634d569e9d65e090dfed471cf5b46ba72fdd5d432acdb5789"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/salvage-original.png",
+      "bytes": 273393,
+      "sha256": "360774b24c466c8c1d80eed2160e9689c15e64d546c0fb4f0991a69f0965dc75"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/salvage-painted.png",
+      "bytes": 273393,
+      "sha256": "360774b24c466c8c1d80eed2160e9689c15e64d546c0fb4f0991a69f0965dc75"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/source-verification.json",
+      "bytes": 1242,
+      "sha256": "a98b77d02a05af664c731008b1d83b81107511f7ba29e5878cdc08df8bd6137a"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/star2-artillery.glb",
+      "bytes": 2044032,
+      "sha256": "0cc0a2b7550c4686ae19f39752843c7489ca2568bc8ffa67d3588e03be38a4af"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/star2-mobility.glb",
+      "bytes": 2335744,
+      "sha256": "ff35705b562325f2f752dc40d3628304620607b5ea8c0553b0860c39b32eeee5"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/star2-salvage.glb",
+      "bytes": 2181488,
+      "sha256": "55a3454d41ca8e725d1c25e651caffa03a669704b58087dc25b3125f28a2760b"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/qa-initial/verification.json",
+      "bytes": 6920,
+      "sha256": "4d358aa7529e919c610cd1fc5a1156e22a71f588d6529b90a7fd6371103116ae"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/README.txt",
+      "bytes": 4043,
+      "sha256": "ed12657234820dfdf6597c50f75243096a4b0acc6e836f3cea4fe332b781e9c2"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/salvage-cel.png",
+      "bytes": 312384,
+      "sha256": "68e6a3fab6eb401905da96d62f5b34bb96f9397914b296da04c7e070e541694c"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/salvage-original.png",
+      "bytes": 316475,
+      "sha256": "1440eb605034a9c094ce3d32eb5538534c9144441a41eecc2b65aedf220afc62"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/salvage-painted.png",
+      "bytes": 316475,
+      "sha256": "1440eb605034a9c094ce3d32eb5538534c9144441a41eecc2b65aedf220afc62"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/source-verification.json",
+      "bytes": 1242,
+      "sha256": "1f4c408ed8f100dbb530ebf362867a4eca11322fb20ee107757e164e0450dca6"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-artillery.glb",
+      "bytes": 2084092,
+      "sha256": "3f39b816b1dbb9aa58ca3b3c850b8466a8e846e144f97d52e93173fd12476946"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-mobility.glb",
+      "bytes": 2419328,
+      "sha256": "4f65fa51524e941e611b55d0f46e460e45cecc1bc32091df1749f91b38ea0132"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-salvage.glb",
+      "bytes": 2240688,
+      "sha256": "b4e5e940106d9d23daf1ecc5e58b47ce88335cdfb13e67e3a71f309c67167fea"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/verification-materials.json",
+      "bytes": 6411,
+      "sha256": "11070a8970dbaadb3218ffea217eeb59d966feb0a338adcb425f1ce17a9319ab"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/verification.json",
+      "bytes": 6920,
+      "sha256": "4d358aa7529e919c610cd1fc5a1156e22a71f588d6529b90a7fd6371103116ae"
+    }
+  ],
+  "readOnly": [
+    {
+      "path": "tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "path": "tools/airship-rig/part-map.json",
+      "bytes": 98796,
+      "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+    },
+    {
+      "path": "outputs/selected-airship-toon3d/airship.glb",
+      "bytes": 3645884,
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74"
+    },
+    {
+      "path": "outputs/ship-states-v1/star-rank-refits-moodboard-v1/star-rank-refits.png",
+      "bytes": 2734905,
+      "sha256": "a4779b8cea7cde1ba502fdf779b9d2b301f5c43b8954bbfca4c68c40b23b3c96"
+    }
+  ],
+  "limits": [
+    "Static2-star visual GLBs; no actual star rank/HP/weapon/save integration.",
+    "Unlit painted textures and new vertex-colour shading are included in each GLB. Viewer outlines/cel mode/propeller motion are runtime features.",
+    "Source units and review part origins; no production sockets, collisions, LOD or certified metre scale.",
+    "Procedurally modelled variants based on selected artwork, not exact reconstructed replicas."
+  ],
+  "qaScope": {
+    "initial": {
+      "path": "outputs/ship-states-v1/star2-assets-v1/verification.json",
+      "bytes": 6920,
+      "sha256": "4d358aa7529e919c610cd1fc5a1156e22a71f588d6529b90a7fd6371103116ae"
+    },
+    "finalMaterialRegression": {
+      "path": "outputs/ship-states-v1/star2-assets-v1/verification-materials.json",
+      "bytes": 6411,
+      "sha256": "11070a8970dbaadb3218ffea217eeb59d966feb0a338adcb425f1ce17a9319ab"
+    },
+    "note": "Initial3GLB export/reload9modes,3x120opaque ghosting,controls,mobile; final3export/reload9modes after painted maps/cannon colour/carved bow strokes only. Unchanged viewer/template controls checks inherited, not rerun."
+  }
+}

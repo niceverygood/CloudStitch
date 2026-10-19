@@ -1,0 +1,184 @@
+{
+  "version": "stage-maps-v1",
+  "routeVersion": 1,
+  "controllerPolicy": "Original controller source preserved; only its contract and levels imports are redirected in this bundle.",
+  "rendererPolicy": "Original renderer source preserved; own presentation bridge uses its reset API when enemy IDs disappear to clear stale connector markers and labels.",
+  "interceptedImports": [
+    "tools/integration/session.mjs -> ./contract.mjs",
+    "tools/integration/session.mjs -> ../levels/levels.mjs"
+  ],
+  "inputs": [
+    {
+      "scope": "stage-maps",
+      "path": "tools/harbor/fixtures.mjs",
+      "sha256": "e70474fdb940c021b4abd9230f4a41f722a14d36cc04deac4cf0286d1a409930"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/save/save.mjs",
+      "sha256": "8d975cd44dcc88590e96a8fd2ba6772051a9f3051cff669688c0ba3be3073414"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/maps.mjs",
+      "sha256": "004f21544639c3516662e8d731967b3163aaab6a6ebdfdcd98bbfd0fabe66004"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/shipyard/shipyard.mjs",
+      "sha256": "413839ac4b7a6208036562b9bf50ea364384a7fcdff7af84b5faa19b6ab788d9"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/harbor/core.mjs",
+      "sha256": "9cae5e9bcb1c6fe453795a8fe4eb8eedcff9bb1e5c06958344125be8c5429a7c"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/selection.mjs",
+      "sha256": "af22b87af3d515fede9d13ced6f33b3a89cb1963e9034028407ff5a799b25088"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/encounters/catalog.json",
+      "sha256": "d20a707fba219927519e409756eec3662e3fe8ea85cb5540c321b05800c95b37"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/encounters/attack-intents.mjs",
+      "sha256": "4ee7c439d3d7a7d991db94f720ab085de33466fb46af9f6d8ab3b5115cca90fd"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/encounters/director.mjs",
+      "sha256": "e8a0cdb2c951994896cc06d35e6a5120fc372d26747e647ca4ee5f6a5f389e4f"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/encounters/attack-budget.mjs",
+      "sha256": "4d98568fc15a4316a20c310dc5f8ce1db625a2410f9b8acbea91b1e72e1cb5c4"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/sim.mjs",
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/integration.mjs",
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/levels/levels.mjs",
+      "sha256": "bd628ba20f5ae4ac745f962cf463265471791ebc208c6f059e2711f021a9a1fd"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/levels-bridge.mjs",
+      "sha256": "39f0344e76c2da6fc99de2a7ee5fd01726235efaf1507ad6b2db5ce6268463ef"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/harbor/fixtures.mjs",
+      "sha256": "e70474fdb940c021b4abd9230f4a41f722a14d36cc04deac4cf0286d1a409930"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/shipyard/shipyard.mjs",
+      "sha256": "413839ac4b7a6208036562b9bf50ea364384a7fcdff7af84b5faa19b6ab788d9"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/harbor/core.mjs",
+      "sha256": "9cae5e9bcb1c6fe453795a8fe4eb8eedcff9bb1e5c06958344125be8c5429a7c"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/harbor/adapters.mjs",
+      "sha256": "aac641234a776f0089eb3ac17d5746861789f2f9159ce05490d7eb2cc5197ab7"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/save/save.mjs",
+      "sha256": "8d975cd44dcc88590e96a8fd2ba6772051a9f3051cff669688c0ba3be3073414"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/integration/contract.mjs",
+      "sha256": "4cc138ee25d478aa3623072243d0e1565bab7664b029c59b1b00f0c9193dcb26"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/contract-bridge.mjs",
+      "sha256": "1cdb73355485de7846b87961ec3a3c6d10c3b6d1804cfeb911f4b80ad065d439"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/integration/session.mjs",
+      "sha256": "04a419d1c7158b65f450ccb23981b2d7ece5137ac35edb1fa1ab250b82f279f8"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/session-bridge.mjs",
+      "sha256": "eb8e6dff6c95e59c535d0fc7569980c454fe1fe64a18effd4b084702e74152c4"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/assets.js",
+      "sha256": "624532b463d498c5b0ad3ccc1c2ade75ea903af819b6871b6c0fb6aff0f3834b"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/integration/renderer.js",
+      "sha256": "f1cf7b08799f5624f4f86aa938ae372cdc0cca92693c95d256c1ec292d935cf0"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/renderer-bridge.mjs",
+      "sha256": "1d37518ad78e9a3c0a496cc37de0d915ee9a3deaeb12dee18515f4c51d62f76c"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/vfx-contract.mjs",
+      "sha256": "d8d173bd83830cdbb37802523a959e0cef2c41d57e55b0918055ccc8372f23c4"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/vfx.js",
+      "sha256": "982595ffa38eff702bb7133aa61639b786cd098e724da891400ad5e12c200813"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/navigation.mjs",
+      "sha256": "59c4bad4d79d4f04e68606d56519776f6285955c87cb37b7b14e9e4e2bf65957"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/app.js",
+      "sha256": "ac557055c58919540e2c984d780be4bf3061289d2a9e6d5bbb1bf84bf8b57569"
+    },
+    {
+      "scope": "stage-maps",
+      "path": "tools/stage-maps/entry.js",
+      "sha256": "c2dce9e3c604db5531701a39054cf8e741a0be26c5438c96b431c258287eb188"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "index.html",
+      "sha256": "19e3763afa82a4c69fe6cb095933f456d009aeeee29842bfe6df26f5f461bbcf",
+      "bytes": 9356
+    },
+    {
+      "path": "style.css",
+      "sha256": "c55f33dc9da1c996d66bb3c61c7f5347a6804fc72cd8e500ff8d4e298756db9f",
+      "bytes": 21258
+    },
+    {
+      "path": "stage-maps.js",
+      "sha256": "2b5e564c9a532ed7396cda3ef1654f84b1d440ae68b0efb9e6df165f974f8cf6",
+      "bytes": 1001743
+    }
+  ]
+}

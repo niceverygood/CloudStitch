@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T08:47:35Z",
+  "locationRef": "local-locations.json",
+  "artifactLocation": "desktop integration worktree",
+  "artifactBase": "outputs/audio-machinegun-elevenlabs-v1/",
+  "scope": "independent audition candidate; no game installation/human listening approval",
+  "reviewer": "audio_contract_review",
+  "delivery": {
+    "path": "outputs/audio-machinegun-elevenlabs-v1/delivery-manifest.json",
+    "reportedSha256": "a1bcf4a57cfea2577970df3f146ac41fb5730ec3161483f65ef6b8269ad0567d",
+    "filesExcludingManifest": 7,
+    "independentSizeShaMatches": 7
+  },
+  "originalMp3": {
+    "bytes": 13835,
+    "sha256": "bd3a66b2b94b175b1e45ba17bfd93a8654d2efd0d33d287d14407a548c224d22",
+    "ownerReportedNativeDecode": {
+      "durationSeconds": 0.8,
+      "sampleRate": 44100,
+      "channels": 2,
+      "finite": true,
+      "nonempty": true,
+      "peakApprox": 0.991,
+      "rmsApprox": 0.12
+    }
+  },
+  "wavHeaderIndependentRead": {
+    "single": {
+      "bytes": 70604,
+      "channels": 1,
+      "sampleRate": 44100,
+      "format": "PCM16",
+      "durationSeconds": 0.8
+    },
+    "burst": {
+      "bytes": 167626,
+      "channels": 1,
+      "sampleRate": 44100,
+      "format": "PCM16",
+      "durationSecondsApprox": 1.9,
+      "spacingSeconds": 0.22,
+      "shots": 6
+    }
+  },
+  "generationReport": {
+    "effectiveGenerations": 1,
+    "rejectedRequests": 1,
+    "successfulRequests": 1,
+    "responseCharacterCost": 8,
+    "providerLogsIndependentlyQueried": false
+  },
+  "scopeLimits": {
+    "gameplayInstalled": false,
+    "humanListeningPerformed": false,
+    "burst": "edited audition fixture; must not be played once per single-shot event",
+    "unreviewed": [
+      "whether perceived as exactly one shot",
+      "timbre/tail/burst intelligibility",
+      "real game timing"
+    ],
+    "protected97Changed0": "owner report only; not independently rehashed"
+  },
+  "securityScope": "no credential/account cache/auth log/user key content read or copied; no new provider call/playback/redecode",
+  "integrationOwnerNotified": true
+}

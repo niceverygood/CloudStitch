@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "started_at_utc": "2026-10-18T11:50:23.588Z",
+  "passed": true,
+  "completed": true,
+  "scope": "CPU-only actual Three.js authority, scene graph, surface alignment and lifecycle tests with injected DataTexture fixtures. No browser, WebGL or visual-art approval.",
+  "browser_run": false,
+  "visual_art_approved": false,
+  "cases": [
+    {
+      "name": "one fire uses its event frame while the bullet follows actual state for any age",
+      "passed": true,
+      "duration_ms": 32.772
+    },
+    {
+      "name": "duplicate fire/hit and terminal replays never add logical effects",
+      "passed": true,
+      "duration_ms": 17.308
+    },
+    {
+      "name": "expiry, disappearance and cancelled projectiles do not invent contact",
+      "passed": true,
+      "duration_ms": 13.884
+    },
+    {
+      "name": "combat-clear, defeat and harbor-return hide all layers and bar stale state replay",
+      "passed": true,
+      "duration_ms": 10.425
+    },
+    {
+      "name": "missing projectile height and zero velocity use the fire frame without changing sim data",
+      "passed": true,
+      "duration_ms": 4.092
+    },
+    {
+      "name": "generation filters stale high sequences before current events and allows retry IDs",
+      "passed": true,
+      "duration_ms": 11.301
+    },
+    {
+      "name": "dt0 pauses ages and opacity; normal update resumes only once",
+      "passed": true,
+      "duration_ms": 5.257
+    },
+    {
+      "name": "hit core and six soft spark planes keep actual surface normals while orbiting",
+      "passed": true,
+      "duration_ms": 3.191
+    },
+    {
+      "name": "reset detaches and clears references; reused effects match a fresh instance",
+      "passed": true,
+      "duration_ms": 14.169
+    },
+    {
+      "name": "unsupported weapons and invalid contacts do not attach soft MG effects",
+      "passed": true,
+      "duration_ms": 1.273
+    },
+    {
+      "name": "simultaneous shots respect active/pool caps while receipts and input stay independent",
+      "passed": true,
+      "duration_ms": 198.102
+    },
+    {
+      "name": "real swept sim contact alone creates a soft impact and cannot be mutated by display",
+      "passed": true,
+      "duration_ms": 10.641
+    },
+    {
+      "name": "dispose is idempotent and owns only cloned textures, not caller atlases",
+      "passed": true,
+      "duration_ms": 6.304
+    }
+  ],
+  "sources": [
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.js",
+      "bytes": 12956,
+      "sha256": "1bfe6f5f7678946ee142f6886b392b027df7747f84c9a43607a983b5737a78c7"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/painted-effects.js",
+      "bytes": 19321,
+      "sha256": "210e4a2a69ee3932bd66a3cda8540e687fc1bb78b373e85835732a323d519d6a"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.test.cjs",
+      "bytes": 24549,
+      "sha256": "059a43ee8dae9ba3a267c255d91309350bb7922a10f78de253bcbdb401c168e6"
+    }
+  ],
+  "limits": [
+    "Generated atlas pixels, shader compilation, actual browser rendering and game-screen readability are not checked by texture fixtures.",
+    "These tests do not connect or modify the integration renderer, original sim, damage, audio or camera impulse."
+  ],
+  "fetch_calls": 0,
+  "finished_at_utc": "2026-10-18T11:50:23.946Z",
+  "case_count": 13,
+  "passed_cases": 13,
+  "failed_cases": 0
+}

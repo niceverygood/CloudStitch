@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:02:01Z",
+  "locationRef": "local-locations.json",
+  "outputBase": "outputs/integration-rich-vfx-v1/",
+  "protectedBaseline": {
+    "path": "outputs/integration-rich-vfx-v1/protected-baseline.json",
+    "sha256": "ec3b7217af02078b087ae189a80987967784e1b54bac9f749ad4b48f03ed2dad",
+    "rootSmallReportHashMatched": true,
+    "writeOnceAtKst": "17:55:07",
+    "ownerRecheckAtKst": "17:57:08",
+    "uniqueFiles": 202,
+    "duplicates": 0,
+    "changed": 0,
+    "compareBasis": "current actual byte snapshot at baseline creation, not historical CRLF-declared metadata bytes",
+    "scope": {
+      "frozenIntegration": 39,
+      "priorFollowupIndexFiles": 12,
+      "audioV1": 46,
+      "playableBattlefield": 25,
+      "stageMapsOutputs": 7,
+      "manifestBodies": 5,
+      "legacyVfxPackage": 63,
+      "legacyRuntimeSource": 4,
+      "legacyRuntimeReceipt": 1
+    },
+    "legacyVfx63": "effects48GLB+sequence6GLB+metadata9; distinct from VFX-v2 original63 ship/weapon/reference preservation set",
+    "excluded": [
+      "new rich code/vendor/output",
+      "entire fleet",
+      "whole original asset corpus"
+    ]
+  },
+  "lineEndingExceptions": {
+    "count": 6,
+    "paths": [
+      "outputs/combat-vfx/production-spec.json",
+      "outputs/combat-vfx/catalog.json",
+      "outputs/combat-vfx/sequence-catalog.json",
+      "outputs/combat-vfx/progress.json",
+      "outputs/combat-vfx/delivery-summary.json",
+      "outputs/combat-vfx/verification.json"
+    ],
+    "independentReviewer": "integration_audit",
+    "independentlyComparedAll6": true,
+    "actualLfEqualsHeadAndBaseline": true,
+    "reconstructCrlfEqualsDeclaredBytesAndSha": true,
+    "memoryOnlyAlgorithm": "UTF8(text.replace(/\\r?\\n/g,'\\r\\n'))",
+    "sourceFilesWritten": false,
+    "scope": "metadata only, exact reconstructed declared SHA/size required; no GLB/content mismatch waiver",
+    "fullExpectedAndActualHashes": "protected-baseline.json lineEndingNormalizations"
+  },
+  "credentialPatternScan": {
+    "newRichTextFiles": 30,
+    "detectedSpecifiedPatterns": 0,
+    "scope": "not whole repository credential absence proof"
+  },
+  "sourceOrAssetBulkHashRepeatedByCommand": false,
+  "currentQa": {
+    "actualBrowser": {
+      "path": "outputs/integration-rich-vfx-v1/verification-browser.json",
+      "sha256": "612faeb7e3f3f906fc06868a51087fa9d0c06924dd5fbc94e54f2f36da21bf33",
+      "passed": true,
+      "checks": 13,
+      "completedAt": "2026-10-18T09:00:32.407Z",
+      "scope": "accelerated public-input playerMG and enemytrainingcannon lifecycles; not human real-time play"
+    },
+    "buildManifest": {
+      "path": "outputs/integration-rich-vfx-v1/build-manifest.json",
+      "sha256": "b47b6140b6eec44fabca7d50992520dac0778ab4f38a0643d3bd7ffe21887056"
+    },
+    "importReport": {
+      "path": "outputs/integration-rich-vfx-v1/import-verification.json",
+      "sha256": "5829db63911a3399b36bf0fb7c139627c96ba4d0b7ba6b3aab2d89d139b02376"
+    },
+    "preview48": "sequential browser QA in progress / final report pending",
+    "finalAccepted": false
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:10:21Z",
+  "version": "battlefield-v1-rich-0.1.1",
+  "manifest": {
+    "path": "tools/battlefield/rich-vfx-handoff.json",
+    "sha256": "a5cd43acce2903c882196f60ed844b3c12fe53c4a872f46312a9daa8495bfd6f",
+    "bytes": 8988,
+    "declaredSourceFiles": 12,
+    "rootSizeShaCompared": 12,
+    "mismatches": []
+  },
+  "changedSourceFiles": [
+    "tools/battlefield/rich-preview.js",
+    "tools/battlefield/rich-preview-README.md",
+    "tools/battlefield/RICH-VFX-HANDOFF.md"
+  ],
+  "unchangedFiles": 9,
+  "codeDiffIndependentlyRead": {
+    "onlyExecutionChange": "initialDirection(8,5.5,8)→(8,5.5,-8)",
+    "additionalChange": "explanatory comment",
+    "runtimeProfileTestsUnchanged": true,
+    "physicsOrActualRuntimeChanged": false
+  },
+  "reason": {
+    "ownerNodeGlbMeasurement": "cannonhit at.22s .907*.32=.290<woodboard.43, impact normal-Z hidden fromcamera+Z",
+    "scope": "preview camera only; do not change actual hit authority/normal"
+  },
+  "priorArchive": {
+    "directory": "tools/battlefield/history/v1-rich-0.1.0/",
+    "manifestSha256": "43a3ca2d3ca630a474f36d4a453008b8a93a29189191229e7c6017b6413d80b7",
+    "oldManifestAnd3ChangedFilesIndependentlyHashMatched": true
+  },
+  "priorPreviewReport": {
+    "path": "outputs/battlefield-rich-vfx-v1/verification-browser.json",
+    "observedSha256": "64e59c20c1d526febb6f769cc471f1e1294e0474ee2667940e9555cc4d3bec45",
+    "passed": true,
+    "checks": 66,
+    "composition": {
+      "options": 1,
+      "all48HanddrawnClip37PercentStaticSamples": 48,
+      "representative5Times3Modes": 15,
+      "mobileCannonHit": 1,
+      "requestsErrors": 1
+    },
+    "notCovered": [
+      "rotation/zoom/reset/fit/autorotate/play controls separate pass",
+      "repeat-selection GPU plateau",
+      "pixel rotating ghosting comparison",
+      "actual disposal counts0"
+    ],
+    "disposalField": "readyfalse only"
+  },
+  "strictImpact": {
+    "path": "outputs/integration-rich-vfx-v1/impact-verification.json",
+    "observedSha256": "ad53a51468cf3a22ec98fce6d5342cb8f52c844b2ace94bd933c0b8c35302c99",
+    "passed": false,
+    "total": 8,
+    "pass": 7,
+    "fail": 1,
+    "failure": "repeated-fixed-draw PNG encoded-byte equality"
+  },
+  "fixedClearDiagnostic": {
+    "path": "outputs/integration-rich-vfx-v1/fixed-clear-verification.json",
+    "observedSha256": "eea6cb6e2a4bd717009405f9fa38b082216a802e1f4fdeb69bc696d2fdad2965",
+    "simTime": 0.125,
+    "sceneTrsClockFixed": true,
+    "rawGl16Draw": {
+      "changedPixels": 2,
+      "maxChannelDifference": 1
+    },
+    "draw64": {
+      "changedPixels": 0,
+      "pngEqual": true
+    },
+    "withinDiagnosticBand": true,
+    "cancelsOriginalFailure": false,
+    "allRotationModesCertified": false
+  },
+  "nextAffectedChecks": [
+    "samecannonhit.22/front-back-close photographic comparison",
+    "READY2default/close/mobile target effect visibility",
+    "representative UI rotation/zoom/reset/fit/autorotate/play/outline and short rotation3modes perAGENTS",
+    "final report/source/build/import digest binding"
+  ],
+  "staticSourceAccepted": true,
+  "finalBrowserAccepted": false,
+  "full13Or66RerunRequested": false
+}

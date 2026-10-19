@@ -1,0 +1,2744 @@
+{
+  "schemaVersion": 1,
+  "passed": false,
+  "sourceExpectation": "READY-2, root must verify final APIs and hashes before execution",
+  "scope": "One private Chromium context. Targeted regressions only; normal-flow READY-1 18-pass report remains untouched.",
+  "checks": [
+    {
+      "name": "guidance-without-connector-does-not-demand-orange-connector",
+      "passed": true,
+      "kind": "pure-read-only-fixture",
+      "detail": {
+        "title": "적선을 무력화하고 부품 확보하기",
+        "detail": "이 배에는 외부 연결부가 없습니다. 선체를 겨냥하세요. T로 표적을 바꿀 수 있어요.",
+        "target": {
+          "x": 12,
+          "z": 0,
+          "id": "fixture-scout",
+          "kind": "enemy",
+          "label": "예시 정찰선"
+        },
+        "action": "fire"
+      }
+    },
+    {
+      "name": "guidance-query-does-not-mutate-input",
+      "passed": true,
+      "kind": "pure-read-only-fixture",
+      "detail": {}
+    },
+    {
+      "name": "remaining-debris-before-empty-enemy-return",
+      "passed": true,
+      "kind": "pure-read-only-fixture",
+      "detail": {
+        "title": "떠다니는 부품 인양하기",
+        "detail": "노란 회수 표식에 다가가 F를 누르세요.",
+        "target": {
+          "id": "fixture-bundle",
+          "x": 3,
+          "z": 4,
+          "remaining": 20,
+          "salvaged": false,
+          "lost": false,
+          "kind": "salvage",
+          "label": "회수할 부품"
+        },
+        "action": "salvage",
+        "inRange": true
+      }
+    },
+    {
+      "name": "loaded-cargo-keeps-return-priority",
+      "passed": true,
+      "kind": "pure-read-only-fixture",
+      "detail": {
+        "title": "종항으로 돌아가기",
+        "detail": "화물은 귀환 뒤 창고에 보관하고 장착할 수 있어요.",
+        "target": {
+          "x": 0,
+          "z": 48,
+          "radius": 12,
+          "kind": "return",
+          "label": "종항 귀환 부표"
+        },
+        "action": "return",
+        "inRange": false
+      }
+    },
+    {
+      "name": "ready2-required-browser-apis",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "driver": "function",
+        "fixed": "function",
+        "projection": "function",
+        "dispatch": "undefined"
+      }
+    },
+    {
+      "name": "one-GLB-aborted-with-explicit-recovery-control",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "abortCount": 1,
+        "abortedURL": "http://127.0.0.1:8840/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+        "before": {
+          "time": 0,
+          "hp": 100,
+          "paused": true,
+          "driverMode": false,
+          "error": true,
+          "heading": "비행선을 불러오지 못했어요",
+          "message": "배와 공격의 시간을 멈췄습니다. 출항할 때 저장한 상태에서 다시 불러올 수 있어요."
+        }
+      }
+    },
+    {
+      "name": "failed-actor-stops-production-time-and-damage",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "before": {
+          "time": 0,
+          "hp": 100,
+          "paused": true,
+          "driverMode": false,
+          "error": true,
+          "heading": "비행선을 불러오지 못했어요",
+          "message": "배와 공격의 시간을 멈췄습니다. 출항할 때 저장한 상태에서 다시 불러올 수 있어요."
+        },
+        "after": {
+          "time": 0,
+          "hp": 100,
+          "paused": true,
+          "driverMode": false
+        }
+      }
+    },
+    {
+      "name": "reload-recovers-same-voyage-checkpoint",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "departure": {
+          "action": {
+            "ok": true
+          },
+          "voyageId": "example-captain:voyage-1",
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          },
+          "parts": "[{\"id\":\"homeward:hull\",\"kind\":\"hull\",\"name\":\"귀환호 핵심 선체\",\"hp\":100,\"maxHp\":100,\"weight\":24,\"lift\":0,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":null,\"socketId\":null},{\"id\":\"homeward:balloon\",\"kind\":\"balloon\",\"name\":\"패치 부양낭\",\"hp\":100,\"maxHp\":100,\"weight\":6,\"lift\":65,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"L1\"},{\"id\":\"homeward:engine\",\"kind\":\"engine\",\"name\":\"청록 엔진\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":14,\"powerDemand\":6,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"E1\"},{\"id\":\"homeward:gun\",\"kind\":\"machinegun\",\"name\":\"경량 기관총\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"W1\"},{\"id\":\"homeward:hook\",\"kind\":\"hook\",\"name\":\"회수 갈고리\",\"hp\":100,\"maxHp\":100,\"weight\":4,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"S1\"}]",
+          "hp": 100,
+          "position": {
+            "x": 0,
+            "z": 35
+          },
+          "driverMode": false
+        },
+        "recovered": {
+          "phase": "sailing",
+          "voyageId": "example-captain:voyage-1",
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          },
+          "parts": "[{\"id\":\"homeward:hull\",\"kind\":\"hull\",\"name\":\"귀환호 핵심 선체\",\"hp\":100,\"maxHp\":100,\"weight\":24,\"lift\":0,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":null,\"socketId\":null},{\"id\":\"homeward:balloon\",\"kind\":\"balloon\",\"name\":\"패치 부양낭\",\"hp\":100,\"maxHp\":100,\"weight\":6,\"lift\":65,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"L1\"},{\"id\":\"homeward:engine\",\"kind\":\"engine\",\"name\":\"청록 엔진\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":14,\"powerDemand\":6,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"E1\"},{\"id\":\"homeward:gun\",\"kind\":\"machinegun\",\"name\":\"경량 기관총\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"W1\"},{\"id\":\"homeward:hook\",\"kind\":\"hook\",\"name\":\"회수 갈고리\",\"hp\":100,\"maxHp\":100,\"weight\":4,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"S1\"}]",
+          "hp": 100,
+          "position": {
+            "x": 0,
+            "z": 35
+          },
+          "actorLoadFailed": false,
+          "models": 2,
+          "modelErrors": {}
+        }
+      }
+    },
+    {
+      "name": "actual-warning-created-by-authoritative-enemy-fire",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "warnings": [
+          {
+            "id": "encounter-1-stage-01-harbor-opening-0",
+            "name": "해적 정찰선",
+            "x": -31.10695818517815,
+            "z": -12.357954069821885,
+            "telegraph": {
+              "fromX": -30.81640167731923,
+              "fromZ": -9.12781880705953,
+              "targetX": 0,
+              "targetZ": 35,
+              "remaining": 1.2666666666666668,
+              "duration": 1.3
+            }
+          }
+        ],
+        "phase": "sailing",
+        "time": 1.2500000000000004,
+        "hp": 100,
+        "paused": false,
+        "stats": {
+          "frameCount": 115,
+          "firstReadyMs": 343,
+          "worldReadyMs": 49,
+          "meshes": 186,
+          "visibleMeshes": 185,
+          "textures": 20,
+          "estimatedTextureBytes": 123090325,
+          "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+          "drawCalls": 344,
+          "triangles": 258462,
+          "gpuMemory": {
+            "geometries": 429,
+            "textures": 121
+          },
+          "pendingLoads": 0,
+          "loadedWorldVisuals": 4,
+          "worldVisualIds": [
+            "return-buoy-west",
+            "return-buoy-east",
+            "wreck-marker",
+            "north-beacon"
+          ],
+          "worldVisualLimit": 12,
+          "enemyViews": 2,
+          "debrisViews": 0,
+          "projectileViews": 0,
+          "modelErrors": {},
+          "loads": [
+            {
+              "kind": "fleet",
+              "assetId": "player-homeward",
+              "durationMs": 222,
+              "fallback": false
+            },
+            {
+              "kind": "world",
+              "assetId": "repair-workshop",
+              "path": "hero/repair-workshop/model-closed-roof.glb",
+              "bytes": 3838916,
+              "durationMs": 138
+            },
+            {
+              "kind": "world",
+              "assetId": "canvas-market",
+              "path": "hero/canvas-market/model-repaired.glb",
+              "bytes": 3838872,
+              "durationMs": 235
+            },
+            {
+              "kind": "world",
+              "assetId": "dock-straight",
+              "path": "assets/dock-straight.glb",
+              "bytes": 275952,
+              "durationMs": 43
+            },
+            {
+              "kind": "world",
+              "assetId": "dock-endcap",
+              "path": "assets/dock-endcap.glb",
+              "bytes": 346040,
+              "durationMs": 10
+            },
+            {
+              "kind": "world",
+              "assetId": "platform-square",
+              "path": "assets/platform-square.glb",
+              "bytes": 279864,
+              "durationMs": 31
+            },
+            {
+              "kind": "world",
+              "assetId": "repair-station",
+              "path": "assets/repair-station.glb",
+              "bytes": 374948,
+              "durationMs": 17
+            },
+            {
+              "kind": "world",
+              "assetId": "storage-chest",
+              "path": "assets/storage-chest.glb",
+              "bytes": 177944,
+              "durationMs": 10
+            },
+            {
+              "kind": "world",
+              "assetId": "departure-console",
+              "path": "assets/departure-console.glb",
+              "bytes": 314484,
+              "durationMs": 16
+            },
+            {
+              "kind": "world",
+              "assetId": "mooring-ring",
+              "path": "assets/mooring-ring.glb",
+              "bytes": 63288,
+              "durationMs": 14
+            },
+            {
+              "kind": "world",
+              "assetId": "beacon-lighthouse",
+              "path": "hero/beacon-lighthouse/model-repaired.glb",
+              "bytes": 4043752,
+              "durationMs": 184
+            },
+            {
+              "kind": "world",
+              "assetId": "beacon-buoy",
+              "path": "assets/beacon-buoy.glb",
+              "bytes": 155444,
+              "durationMs": 26
+            },
+            {
+              "kind": "world",
+              "assetId": "wreckage-shoal",
+              "path": "assets/wreckage-shoal.glb",
+              "bytes": 164712,
+              "durationMs": 9
+            },
+            {
+              "kind": "world",
+              "assetId": "boundary-marker",
+              "path": "assets/boundary-marker.glb",
+              "bytes": 49180,
+              "durationMs": 10
+            },
+            {
+              "kind": "fleet",
+              "assetId": "enemy-pirate-scout",
+              "durationMs": 600,
+              "fallback": false
+            },
+            {
+              "kind": "fleet",
+              "assetId": "enemy-pirate-scout",
+              "durationMs": 15,
+              "fallback": false
+            }
+          ],
+          "effects": {
+            "state": "ready",
+            "loaded": true,
+            "lastError": null,
+            "eventCursor": 3,
+            "supportedWeapons": [
+              "01-machine-gun",
+              "02-deck-cannon"
+            ],
+            "mappedWeaponCount": 6,
+            "loadedEffects": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "machine-gun-hit",
+              "cannon-muzzle",
+              "cannon-hit",
+              "cannon-projectile"
+            ],
+            "activeOneShots": 0,
+            "activeProjectiles": 0,
+            "projectileIds": [],
+            "terminalProjectileCount": 0,
+            "firedProjectileCount": 0,
+            "fireEventCount": 0,
+            "terminalReceiptCapacity": 2048,
+            "pooled": {},
+            "created": 0,
+            "reused": 0,
+            "returned": 0,
+            "hitEffects": 0,
+            "unsupportedEvents": 0,
+            "movementAuthority": "battlefield-projectile-state",
+            "projectileAnimationApplied": false,
+            "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+          },
+          "frameCpuMs": {
+            "average": 5.999130431983782,
+            "p95": 12.199999988079071
+          },
+          "camera": {
+            "projection": "orthographic",
+            "position": [
+              -10.925779900463928,
+              55,
+              53.7824090609154
+            ],
+            "target": [
+              -10.925779900463928,
+              0,
+              15.272409060915402
+            ],
+            "halfHeight": 31.142839889962534,
+            "occluderIds": []
+          },
+          "clearing": {
+            "rendererAutoClear": true,
+            "outlineAutoClear": true
+          },
+          "level": "first-voyage"
+        }
+      }
+    },
+    {
+      "name": "narrow-warning-remains-visible-or-pinned",
+      "passed": false,
+      "kind": "observed-browser",
+      "detail": {
+        "warnings": [
+          {
+            "id": "encounter-1-stage-01-harbor-opening-0",
+            "projected": {
+              "x": -17.917739832115437,
+              "y": 149.1288346695912,
+              "depth": -0.686051970857112
+            },
+            "labelPresent": true,
+            "labelHidden": false,
+            "offscreen": "true",
+            "box": {
+              "x": -10.2109375,
+              "y": 195.375,
+              "right": 103.8046875,
+              "bottom": 227.875
+            }
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        }
+      }
+    },
+    {
+      "name": "actual-sailing-capture-has-no-pause-overlay",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "timeBefore": 1.2500000000000004,
+        "narrow": {
+          "paused": false,
+          "time": 1.2500000000000004,
+          "hp": 100,
+          "driverMode": true,
+          "player": {
+            "x": 309.64931218620666,
+            "y": 590.8603041350085,
+            "depth": -0.7766994856266828
+          },
+          "scene": {
+            "width": 390,
+            "height": 844
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "dpr": 1
+          },
+          "overlays": {
+            "pause": false,
+            "loading": false,
+            "defeat": false
+          },
+          "warnings": [
+            {
+              "id": "encounter-1-stage-01-harbor-opening-0",
+              "projected": {
+                "x": -17.917739832115437,
+                "y": 149.1288346695912,
+                "depth": -0.686051970857112
+              },
+              "labelPresent": true,
+              "labelHidden": false,
+              "offscreen": "true",
+              "box": {
+                "x": -10.2109375,
+                "y": 195.375,
+                "right": 103.8046875,
+                "bottom": 227.875
+              }
+            }
+          ],
+          "stats": {
+            "frameCount": 176,
+            "firstReadyMs": 343,
+            "worldReadyMs": 49,
+            "meshes": 186,
+            "visibleMeshes": 185,
+            "textures": 20,
+            "estimatedTextureBytes": 123090325,
+            "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+            "drawCalls": 310,
+            "triangles": 254894,
+            "gpuMemory": {
+              "geometries": 429,
+              "textures": 121
+            },
+            "pendingLoads": 0,
+            "loadedWorldVisuals": 4,
+            "worldVisualIds": [
+              "return-buoy-west",
+              "return-buoy-east",
+              "wreck-marker",
+              "north-beacon"
+            ],
+            "worldVisualLimit": 12,
+            "enemyViews": 2,
+            "debrisViews": 0,
+            "projectileViews": 0,
+            "modelErrors": {},
+            "loads": [
+              {
+                "kind": "fleet",
+                "assetId": "player-homeward",
+                "durationMs": 222,
+                "fallback": false
+              },
+              {
+                "kind": "world",
+                "assetId": "repair-workshop",
+                "path": "hero/repair-workshop/model-closed-roof.glb",
+                "bytes": 3838916,
+                "durationMs": 138
+              },
+              {
+                "kind": "world",
+                "assetId": "canvas-market",
+                "path": "hero/canvas-market/model-repaired.glb",
+                "bytes": 3838872,
+                "durationMs": 235
+              },
+              {
+                "kind": "world",
+                "assetId": "dock-straight",
+                "path": "assets/dock-straight.glb",
+                "bytes": 275952,
+                "durationMs": 43
+              },
+              {
+                "kind": "world",
+                "assetId": "dock-endcap",
+                "path": "assets/dock-endcap.glb",
+                "bytes": 346040,
+                "durationMs": 10
+              },
+              {
+                "kind": "world",
+                "assetId": "platform-square",
+                "path": "assets/platform-square.glb",
+                "bytes": 279864,
+                "durationMs": 31
+              },
+              {
+                "kind": "world",
+                "assetId": "repair-station",
+                "path": "assets/repair-station.glb",
+                "bytes": 374948,
+                "durationMs": 17
+              },
+              {
+                "kind": "world",
+                "assetId": "storage-chest",
+                "path": "assets/storage-chest.glb",
+                "bytes": 177944,
+                "durationMs": 10
+              },
+              {
+                "kind": "world",
+                "assetId": "departure-console",
+                "path": "assets/departure-console.glb",
+                "bytes": 314484,
+                "durationMs": 16
+              },
+              {
+                "kind": "world",
+                "assetId": "mooring-ring",
+                "path": "assets/mooring-ring.glb",
+                "bytes": 63288,
+                "durationMs": 14
+              },
+              {
+                "kind": "world",
+                "assetId": "beacon-lighthouse",
+                "path": "hero/beacon-lighthouse/model-repaired.glb",
+                "bytes": 4043752,
+                "durationMs": 184
+              },
+              {
+                "kind": "world",
+                "assetId": "beacon-buoy",
+                "path": "assets/beacon-buoy.glb",
+                "bytes": 155444,
+                "durationMs": 26
+              },
+              {
+                "kind": "world",
+                "assetId": "wreckage-shoal",
+                "path": "assets/wreckage-shoal.glb",
+                "bytes": 164712,
+                "durationMs": 9
+              },
+              {
+                "kind": "world",
+                "assetId": "boundary-marker",
+                "path": "assets/boundary-marker.glb",
+                "bytes": 49180,
+                "durationMs": 10
+              },
+              {
+                "kind": "fleet",
+                "assetId": "enemy-pirate-scout",
+                "durationMs": 600,
+                "fallback": false
+              },
+              {
+                "kind": "fleet",
+                "assetId": "enemy-pirate-scout",
+                "durationMs": 15,
+                "fallback": false
+              }
+            ],
+            "effects": {
+              "state": "ready",
+              "loaded": true,
+              "lastError": null,
+              "eventCursor": 3,
+              "supportedWeapons": [
+                "01-machine-gun",
+                "02-deck-cannon"
+              ],
+              "mappedWeaponCount": 6,
+              "loadedEffects": [
+                "machine-gun-muzzle",
+                "machine-gun-projectile",
+                "machine-gun-hit",
+                "cannon-muzzle",
+                "cannon-hit",
+                "cannon-projectile"
+              ],
+              "activeOneShots": 0,
+              "activeProjectiles": 0,
+              "projectileIds": [],
+              "terminalProjectileCount": 0,
+              "firedProjectileCount": 0,
+              "fireEventCount": 0,
+              "terminalReceiptCapacity": 2048,
+              "pooled": {},
+              "created": 0,
+              "reused": 0,
+              "returned": 0,
+              "hitEffects": 0,
+              "unsupportedEvents": 0,
+              "movementAuthority": "battlefield-projectile-state",
+              "projectileAnimationApplied": false,
+              "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+            },
+            "frameCpuMs": {
+              "average": 6.694886360994794,
+              "p95": 11.5
+            },
+            "camera": {
+              "projection": "orthographic",
+              "position": [
+                -10.887515512202016,
+                55,
+                53.93439772486533
+              ],
+              "target": [
+                -10.887515512202016,
+                0,
+                15.424397724865328
+              ],
+              "halfHeight": 40.07465425250073,
+              "occluderIds": []
+            },
+            "clearing": {
+              "rendererAutoClear": true,
+              "outlineAutoClear": true
+            },
+            "level": "first-voyage"
+          }
+        }
+      }
+    },
+    {
+      "name": "narrow-camera-keeps-player-in-frame",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "x": 309.64931218620666,
+        "y": 590.8603041350085,
+        "depth": -0.7766994856266828
+      }
+    },
+    {
+      "name": "actual-selected-target-guidance-matches-topology",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "label": "해적 정찰선",
+        "enemyId": "encounter-1-stage-01-harbor-opening-0",
+        "connector": false,
+        "title": "적선을 무력화하고 부품 확보하기",
+        "detail": "이 배에는 외부 연결부가 없습니다. 선체를 겨냥하세요. T로 표적을 바꿀 수 있어요."
+      }
+    },
+    {
+      "name": "browser-defeat-comes-from-actual-warned-shots",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "before": {
+          "voyageId": "example-captain:voyage-1",
+          "generation": 1,
+          "runId": 1,
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          },
+          "parts": "[{\"id\":\"homeward:hull\",\"kind\":\"hull\",\"name\":\"귀환호 핵심 선체\",\"hp\":100,\"maxHp\":100,\"weight\":24,\"lift\":0,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":null,\"socketId\":null},{\"id\":\"homeward:balloon\",\"kind\":\"balloon\",\"name\":\"패치 부양낭\",\"hp\":100,\"maxHp\":100,\"weight\":6,\"lift\":65,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"L1\"},{\"id\":\"homeward:engine\",\"kind\":\"engine\",\"name\":\"청록 엔진\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":14,\"powerDemand\":6,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"E1\"},{\"id\":\"homeward:gun\",\"kind\":\"machinegun\",\"name\":\"경량 기관총\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"W1\"},{\"id\":\"homeward:hook\",\"kind\":\"hook\",\"name\":\"회수 갈고리\",\"hp\":100,\"maxHp\":100,\"weight\":4,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"S1\"}]"
+        },
+        "phase": "defeat",
+        "shots": 12,
+        "steps": 306,
+        "damageTaken": 100,
+        "enemies": 0,
+        "projectiles": 0
+      }
+    },
+    {
+      "name": "retry-increments-identities-and-restores-checkpoint",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "before": {
+          "voyageId": "example-captain:voyage-1",
+          "generation": 1,
+          "runId": 1,
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          },
+          "parts": "[{\"id\":\"homeward:hull\",\"kind\":\"hull\",\"name\":\"귀환호 핵심 선체\",\"hp\":100,\"maxHp\":100,\"weight\":24,\"lift\":0,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":null,\"socketId\":null},{\"id\":\"homeward:balloon\",\"kind\":\"balloon\",\"name\":\"패치 부양낭\",\"hp\":100,\"maxHp\":100,\"weight\":6,\"lift\":65,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"L1\"},{\"id\":\"homeward:engine\",\"kind\":\"engine\",\"name\":\"청록 엔진\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":14,\"powerDemand\":6,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"E1\"},{\"id\":\"homeward:gun\",\"kind\":\"machinegun\",\"name\":\"경량 기관총\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"W1\"},{\"id\":\"homeward:hook\",\"kind\":\"hook\",\"name\":\"회수 갈고리\",\"hp\":100,\"maxHp\":100,\"weight\":4,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"S1\"}]"
+        },
+        "retried": {
+          "phase": "sailing",
+          "voyageId": "example-captain:voyage-1",
+          "generation": 2,
+          "runId": 2,
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          },
+          "parts": "[{\"id\":\"homeward:hull\",\"kind\":\"hull\",\"name\":\"귀환호 핵심 선체\",\"hp\":100,\"maxHp\":100,\"weight\":24,\"lift\":0,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":null,\"socketId\":null},{\"id\":\"homeward:balloon\",\"kind\":\"balloon\",\"name\":\"패치 부양낭\",\"hp\":100,\"maxHp\":100,\"weight\":6,\"lift\":65,\"powerSupply\":0,\"powerDemand\":0,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"L1\"},{\"id\":\"homeward:engine\",\"kind\":\"engine\",\"name\":\"청록 엔진\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":14,\"powerDemand\":6,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"E1\"},{\"id\":\"homeward:gun\",\"kind\":\"machinegun\",\"name\":\"경량 기관총\",\"hp\":100,\"maxHp\":100,\"weight\":8,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"W1\"},{\"id\":\"homeward:hook\",\"kind\":\"hook\",\"name\":\"회수 갈고리\",\"hp\":100,\"maxHp\":100,\"weight\":4,\"lift\":0,\"powerSupply\":0,\"powerDemand\":2,\"ownerId\":\"player\",\"source\":{\"originId\":\"starter-support\",\"assetId\":\"player-homeward\",\"acquiredVoyageId\":null},\"location\":\"installed\",\"parentId\":\"homeward:hull\",\"socketId\":\"S1\"}]",
+          "hp": 100,
+          "time": 0,
+          "cargo": 0,
+          "x": 0,
+          "z": 35,
+          "actorLoadFailed": false
+        }
+      }
+    },
+    {
+      "name": "four-actual-input-returns-use-one-renderer",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": [
+        {
+          "round": 1,
+          "voyageId": "example-captain:voyage-1",
+          "steps": 173,
+          "observed": {
+            "hits": 14,
+            "detached": 1,
+            "recovered": 1,
+            "shots": 14,
+            "damage": 0
+          },
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          }
+        },
+        {
+          "round": 2,
+          "voyageId": "example-captain:voyage-2",
+          "steps": 173,
+          "observed": {
+            "hits": 14,
+            "detached": 1,
+            "recovered": 1,
+            "shots": 14,
+            "damage": 0
+          },
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          }
+        },
+        {
+          "round": 3,
+          "voyageId": "example-captain:voyage-3",
+          "steps": 173,
+          "observed": {
+            "hits": 14,
+            "detached": 1,
+            "recovered": 1,
+            "shots": 14,
+            "damage": 0
+          },
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          }
+        },
+        {
+          "round": 4,
+          "voyageId": "example-captain:voyage-4",
+          "steps": 173,
+          "observed": {
+            "hits": 14,
+            "detached": 1,
+            "recovered": 1,
+            "shots": 14,
+            "damage": 0
+          },
+          "resources": {
+            "S": 120,
+            "F": 40,
+            "C": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "warm-return-GPU-resources-plateau",
+      "passed": true,
+      "kind": "observed-browser",
+      "detail": {
+        "warm": [
+          {
+            "round": 2,
+            "geometries": 500,
+            "textures": 21,
+            "programs": 12,
+            "meshes": 418
+          },
+          {
+            "round": 3,
+            "geometries": 500,
+            "textures": 21,
+            "programs": 12,
+            "meshes": 418
+          },
+          {
+            "round": 4,
+            "geometries": 500,
+            "textures": 21,
+            "programs": 12,
+            "meshes": 418
+          }
+        ],
+        "spread": {
+          "geometries": 0,
+          "textures": 0,
+          "programs": 0,
+          "meshes": 0
+        },
+        "tolerance": {
+          "geometries": 2,
+          "textures": 2,
+          "programs": 1,
+          "meshes": 0
+        },
+        "note": "Rounds 2–4 at the same harbor, after queued loads and two RAFs. Small bounded tolerance is not a long-run performance guarantee."
+      }
+    },
+    {
+      "name": "fixture-starts-with-real-tax-connector-display",
+      "passed": true,
+      "kind": "explicit-clear-combat-fixture",
+      "detail": {
+        "taxId": "playable-display-tax-fixture",
+        "markers": 1,
+        "labels": 1
+      }
+    },
+    {
+      "name": "same-sim-clear-removes-old-connector-art-and-label",
+      "passed": true,
+      "kind": "explicit-clear-combat-fixture",
+      "detail": {
+        "before": {
+          "taxId": "playable-display-tax-fixture",
+          "markers": 1,
+          "labels": 1
+        },
+        "action": {
+          "ok": true,
+          "value": true,
+          "generation": 6
+        },
+        "after": {
+          "sameSim": true,
+          "enemies": 0,
+          "markers": 0,
+          "labels": 0
+        },
+        "injectedTaxPresentationFixture": true
+      }
+    },
+    {
+      "name": "expected-fault-abort-count",
+      "passed": true,
+      "kind": "network-accounting",
+      "detail": [
+        {
+          "case": "one-actor-GLB-failure-and-boundary-recovery",
+          "url": "http://127.0.0.1:8840/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+          "reason": "net::ERR_FAILED"
+        }
+      ]
+    },
+    {
+      "name": "unexpected-browser-page-errors-zero",
+      "passed": true,
+      "kind": "network-accounting",
+      "detail": []
+    },
+    {
+      "name": "HTTP-errors-including-404-zero",
+      "passed": true,
+      "kind": "network-accounting",
+      "detail": []
+    },
+    {
+      "name": "external-requests-zero",
+      "passed": true,
+      "kind": "network-accounting",
+      "detail": []
+    },
+    {
+      "name": "unexpected-local-request-failures-zero",
+      "passed": true,
+      "kind": "network-accounting",
+      "detail": []
+    }
+  ],
+  "samples": [
+    {
+      "case": "initial-load",
+      "navigation": {
+        "name": "http://127.0.0.1:8840/outputs/playable-battlefield-v1/index.html",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 22024.80000001192,
+        "navigationId": 989,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.5999999642372131,
+        "domainLookupStart": 21234.19999998808,
+        "domainLookupEnd": 21234.19999998808,
+        "connectStart": 21234.19999998808,
+        "secureConnectionStart": 0,
+        "connectEnd": 21234.19999998808,
+        "requestStart": 21234.30000001192,
+        "responseStart": 21235.099999964237,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 21235.099999964237,
+        "responseEnd": 21235.69999998808,
+        "transferSize": 11766,
+        "encodedBodySize": 11466,
+        "decodedBodySize": 11466,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 22022.69999998808,
+        "domContentLoadedEventStart": 22022.69999998808,
+        "domContentLoadedEventEnd": 22022.80000001192,
+        "domComplete": 22024.80000001192,
+        "loadEventStart": 22024.80000001192,
+        "loadEventEnd": 22024.80000001192,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "stats": {
+        "frameCount": 160,
+        "firstReadyMs": 1176,
+        "worldReadyMs": 2637,
+        "meshes": 418,
+        "visibleMeshes": 399,
+        "textures": 9,
+        "estimatedTextureBytes": 89535869,
+        "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+        "drawCalls": 798,
+        "triangles": 103248,
+        "gpuMemory": {
+          "geometries": 345,
+          "textures": 20
+        },
+        "pendingLoads": 0,
+        "loadedWorldVisuals": 11,
+        "worldVisualIds": [
+          "workshop",
+          "market",
+          "dock-main",
+          "dock-end",
+          "platform-west",
+          "platform-east",
+          "repair-point",
+          "storage-point",
+          "service-console",
+          "mooring-point",
+          "lighthouse"
+        ],
+        "worldVisualLimit": 12,
+        "enemyViews": 0,
+        "debrisViews": 0,
+        "projectileViews": 0,
+        "modelErrors": {},
+        "loads": [
+          {
+            "kind": "fleet",
+            "assetId": "player-homeward",
+            "durationMs": 635,
+            "fallback": false
+          },
+          {
+            "kind": "world",
+            "assetId": "repair-workshop",
+            "path": "hero/repair-workshop/model-closed-roof.glb",
+            "bytes": 3838916,
+            "durationMs": 363
+          },
+          {
+            "kind": "world",
+            "assetId": "canvas-market",
+            "path": "hero/canvas-market/model-repaired.glb",
+            "bytes": 3838872,
+            "durationMs": 858
+          },
+          {
+            "kind": "world",
+            "assetId": "dock-straight",
+            "path": "assets/dock-straight.glb",
+            "bytes": 275952,
+            "durationMs": 45
+          },
+          {
+            "kind": "world",
+            "assetId": "dock-endcap",
+            "path": "assets/dock-endcap.glb",
+            "bytes": 346040,
+            "durationMs": 25
+          },
+          {
+            "kind": "world",
+            "assetId": "platform-square",
+            "path": "assets/platform-square.glb",
+            "bytes": 279864,
+            "durationMs": 15
+          },
+          {
+            "kind": "world",
+            "assetId": "repair-station",
+            "path": "assets/repair-station.glb",
+            "bytes": 374948,
+            "durationMs": 21
+          },
+          {
+            "kind": "world",
+            "assetId": "storage-chest",
+            "path": "assets/storage-chest.glb",
+            "bytes": 177944,
+            "durationMs": 20
+          },
+          {
+            "kind": "world",
+            "assetId": "departure-console",
+            "path": "assets/departure-console.glb",
+            "bytes": 314484,
+            "durationMs": 111
+          },
+          {
+            "kind": "world",
+            "assetId": "mooring-ring",
+            "path": "assets/mooring-ring.glb",
+            "bytes": 63288,
+            "durationMs": 65
+          },
+          {
+            "kind": "world",
+            "assetId": "beacon-lighthouse",
+            "path": "hero/beacon-lighthouse/model-repaired.glb",
+            "bytes": 4043752,
+            "durationMs": 1021
+          }
+        ],
+        "effects": {
+          "state": "ready",
+          "loaded": true,
+          "lastError": null,
+          "eventCursor": 0,
+          "supportedWeapons": [
+            "01-machine-gun",
+            "02-deck-cannon"
+          ],
+          "mappedWeaponCount": 6,
+          "loadedEffects": [
+            "cannon-hit",
+            "machine-gun-projectile",
+            "machine-gun-muzzle",
+            "machine-gun-hit",
+            "cannon-projectile",
+            "cannon-muzzle"
+          ],
+          "activeOneShots": 0,
+          "activeProjectiles": 0,
+          "projectileIds": [],
+          "terminalProjectileCount": 0,
+          "firedProjectileCount": 0,
+          "fireEventCount": 0,
+          "terminalReceiptCapacity": 2048,
+          "pooled": {},
+          "created": 0,
+          "reused": 0,
+          "returned": 0,
+          "hitEffects": 0,
+          "unsupportedEvents": 0,
+          "movementAuthority": "battlefield-projectile-state",
+          "projectileAnimationApplied": false,
+          "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+        },
+        "frameCpuMs": {
+          "average": 5.518124999105931,
+          "p95": 9.799999952316284
+        },
+        "camera": {
+          "projection": "orthographic",
+          "position": [
+            0,
+            55,
+            95.50999999999999
+          ],
+          "target": [
+            0,
+            0,
+            57
+          ],
+          "halfHeight": 24,
+          "occluderIds": []
+        },
+        "clearing": {
+          "rendererAutoClear": true,
+          "outlineAutoClear": true
+        },
+        "level": "jonghang-harbor"
+      }
+    },
+    {
+      "case": "unpaused-narrow-camera-and-actual-warning",
+      "wide": {
+        "frameCount": 115,
+        "firstReadyMs": 343,
+        "worldReadyMs": 49,
+        "meshes": 186,
+        "visibleMeshes": 185,
+        "textures": 20,
+        "estimatedTextureBytes": 123090325,
+        "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+        "drawCalls": 344,
+        "triangles": 258462,
+        "gpuMemory": {
+          "geometries": 429,
+          "textures": 121
+        },
+        "pendingLoads": 0,
+        "loadedWorldVisuals": 4,
+        "worldVisualIds": [
+          "return-buoy-west",
+          "return-buoy-east",
+          "wreck-marker",
+          "north-beacon"
+        ],
+        "worldVisualLimit": 12,
+        "enemyViews": 2,
+        "debrisViews": 0,
+        "projectileViews": 0,
+        "modelErrors": {},
+        "loads": [
+          {
+            "kind": "fleet",
+            "assetId": "player-homeward",
+            "durationMs": 222,
+            "fallback": false
+          },
+          {
+            "kind": "world",
+            "assetId": "repair-workshop",
+            "path": "hero/repair-workshop/model-closed-roof.glb",
+            "bytes": 3838916,
+            "durationMs": 138
+          },
+          {
+            "kind": "world",
+            "assetId": "canvas-market",
+            "path": "hero/canvas-market/model-repaired.glb",
+            "bytes": 3838872,
+            "durationMs": 235
+          },
+          {
+            "kind": "world",
+            "assetId": "dock-straight",
+            "path": "assets/dock-straight.glb",
+            "bytes": 275952,
+            "durationMs": 43
+          },
+          {
+            "kind": "world",
+            "assetId": "dock-endcap",
+            "path": "assets/dock-endcap.glb",
+            "bytes": 346040,
+            "durationMs": 10
+          },
+          {
+            "kind": "world",
+            "assetId": "platform-square",
+            "path": "assets/platform-square.glb",
+            "bytes": 279864,
+            "durationMs": 31
+          },
+          {
+            "kind": "world",
+            "assetId": "repair-station",
+            "path": "assets/repair-station.glb",
+            "bytes": 374948,
+            "durationMs": 17
+          },
+          {
+            "kind": "world",
+            "assetId": "storage-chest",
+            "path": "assets/storage-chest.glb",
+            "bytes": 177944,
+            "durationMs": 10
+          },
+          {
+            "kind": "world",
+            "assetId": "departure-console",
+            "path": "assets/departure-console.glb",
+            "bytes": 314484,
+            "durationMs": 16
+          },
+          {
+            "kind": "world",
+            "assetId": "mooring-ring",
+            "path": "assets/mooring-ring.glb",
+            "bytes": 63288,
+            "durationMs": 14
+          },
+          {
+            "kind": "world",
+            "assetId": "beacon-lighthouse",
+            "path": "hero/beacon-lighthouse/model-repaired.glb",
+            "bytes": 4043752,
+            "durationMs": 184
+          },
+          {
+            "kind": "world",
+            "assetId": "beacon-buoy",
+            "path": "assets/beacon-buoy.glb",
+            "bytes": 155444,
+            "durationMs": 26
+          },
+          {
+            "kind": "world",
+            "assetId": "wreckage-shoal",
+            "path": "assets/wreckage-shoal.glb",
+            "bytes": 164712,
+            "durationMs": 9
+          },
+          {
+            "kind": "world",
+            "assetId": "boundary-marker",
+            "path": "assets/boundary-marker.glb",
+            "bytes": 49180,
+            "durationMs": 10
+          },
+          {
+            "kind": "fleet",
+            "assetId": "enemy-pirate-scout",
+            "durationMs": 600,
+            "fallback": false
+          },
+          {
+            "kind": "fleet",
+            "assetId": "enemy-pirate-scout",
+            "durationMs": 15,
+            "fallback": false
+          }
+        ],
+        "effects": {
+          "state": "ready",
+          "loaded": true,
+          "lastError": null,
+          "eventCursor": 3,
+          "supportedWeapons": [
+            "01-machine-gun",
+            "02-deck-cannon"
+          ],
+          "mappedWeaponCount": 6,
+          "loadedEffects": [
+            "machine-gun-muzzle",
+            "machine-gun-projectile",
+            "machine-gun-hit",
+            "cannon-muzzle",
+            "cannon-hit",
+            "cannon-projectile"
+          ],
+          "activeOneShots": 0,
+          "activeProjectiles": 0,
+          "projectileIds": [],
+          "terminalProjectileCount": 0,
+          "firedProjectileCount": 0,
+          "fireEventCount": 0,
+          "terminalReceiptCapacity": 2048,
+          "pooled": {},
+          "created": 0,
+          "reused": 0,
+          "returned": 0,
+          "hitEffects": 0,
+          "unsupportedEvents": 0,
+          "movementAuthority": "battlefield-projectile-state",
+          "projectileAnimationApplied": false,
+          "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+        },
+        "frameCpuMs": {
+          "average": 5.999130431983782,
+          "p95": 12.199999988079071
+        },
+        "camera": {
+          "projection": "orthographic",
+          "position": [
+            -10.925779900463928,
+            55,
+            53.7824090609154
+          ],
+          "target": [
+            -10.925779900463928,
+            0,
+            15.272409060915402
+          ],
+          "halfHeight": 31.142839889962534,
+          "occluderIds": []
+        },
+        "clearing": {
+          "rendererAutoClear": true,
+          "outlineAutoClear": true
+        },
+        "level": "first-voyage"
+      },
+      "narrow": {
+        "frameCount": 176,
+        "firstReadyMs": 343,
+        "worldReadyMs": 49,
+        "meshes": 186,
+        "visibleMeshes": 185,
+        "textures": 20,
+        "estimatedTextureBytes": 123090325,
+        "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+        "drawCalls": 310,
+        "triangles": 254894,
+        "gpuMemory": {
+          "geometries": 429,
+          "textures": 121
+        },
+        "pendingLoads": 0,
+        "loadedWorldVisuals": 4,
+        "worldVisualIds": [
+          "return-buoy-west",
+          "return-buoy-east",
+          "wreck-marker",
+          "north-beacon"
+        ],
+        "worldVisualLimit": 12,
+        "enemyViews": 2,
+        "debrisViews": 0,
+        "projectileViews": 0,
+        "modelErrors": {},
+        "loads": [
+          {
+            "kind": "fleet",
+            "assetId": "player-homeward",
+            "durationMs": 222,
+            "fallback": false
+          },
+          {
+            "kind": "world",
+            "assetId": "repair-workshop",
+            "path": "hero/repair-workshop/model-closed-roof.glb",
+            "bytes": 3838916,
+            "durationMs": 138
+          },
+          {
+            "kind": "world",
+            "assetId": "canvas-market",
+            "path": "hero/canvas-market/model-repaired.glb",
+            "bytes": 3838872,
+            "durationMs": 235
+          },
+          {
+            "kind": "world",
+            "assetId": "dock-straight",
+            "path": "assets/dock-straight.glb",
+            "bytes": 275952,
+            "durationMs": 43
+          },
+          {
+            "kind": "world",
+            "assetId": "dock-endcap",
+            "path": "assets/dock-endcap.glb",
+            "bytes": 346040,
+            "durationMs": 10
+          },
+          {
+            "kind": "world",
+            "assetId": "platform-square",
+            "path": "assets/platform-square.glb",
+            "bytes": 279864,
+            "durationMs": 31
+          },
+          {
+            "kind": "world",
+            "assetId": "repair-station",
+            "path": "assets/repair-station.glb",
+            "bytes": 374948,
+            "durationMs": 17
+          },
+          {
+            "kind": "world",
+            "assetId": "storage-chest",
+            "path": "assets/storage-chest.glb",
+            "bytes": 177944,
+            "durationMs": 10
+          },
+          {
+            "kind": "world",
+            "assetId": "departure-console",
+            "path": "assets/departure-console.glb",
+            "bytes": 314484,
+            "durationMs": 16
+          },
+          {
+            "kind": "world",
+            "assetId": "mooring-ring",
+            "path": "assets/mooring-ring.glb",
+            "bytes": 63288,
+            "durationMs": 14
+          },
+          {
+            "kind": "world",
+            "assetId": "beacon-lighthouse",
+            "path": "hero/beacon-lighthouse/model-repaired.glb",
+            "bytes": 4043752,
+            "durationMs": 184
+          },
+          {
+            "kind": "world",
+            "assetId": "beacon-buoy",
+            "path": "assets/beacon-buoy.glb",
+            "bytes": 155444,
+            "durationMs": 26
+          },
+          {
+            "kind": "world",
+            "assetId": "wreckage-shoal",
+            "path": "assets/wreckage-shoal.glb",
+            "bytes": 164712,
+            "durationMs": 9
+          },
+          {
+            "kind": "world",
+            "assetId": "boundary-marker",
+            "path": "assets/boundary-marker.glb",
+            "bytes": 49180,
+            "durationMs": 10
+          },
+          {
+            "kind": "fleet",
+            "assetId": "enemy-pirate-scout",
+            "durationMs": 600,
+            "fallback": false
+          },
+          {
+            "kind": "fleet",
+            "assetId": "enemy-pirate-scout",
+            "durationMs": 15,
+            "fallback": false
+          }
+        ],
+        "effects": {
+          "state": "ready",
+          "loaded": true,
+          "lastError": null,
+          "eventCursor": 3,
+          "supportedWeapons": [
+            "01-machine-gun",
+            "02-deck-cannon"
+          ],
+          "mappedWeaponCount": 6,
+          "loadedEffects": [
+            "machine-gun-muzzle",
+            "machine-gun-projectile",
+            "machine-gun-hit",
+            "cannon-muzzle",
+            "cannon-hit",
+            "cannon-projectile"
+          ],
+          "activeOneShots": 0,
+          "activeProjectiles": 0,
+          "projectileIds": [],
+          "terminalProjectileCount": 0,
+          "firedProjectileCount": 0,
+          "fireEventCount": 0,
+          "terminalReceiptCapacity": 2048,
+          "pooled": {},
+          "created": 0,
+          "reused": 0,
+          "returned": 0,
+          "hitEffects": 0,
+          "unsupportedEvents": 0,
+          "movementAuthority": "battlefield-projectile-state",
+          "projectileAnimationApplied": false,
+          "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+        },
+        "frameCpuMs": {
+          "average": 6.694886360994794,
+          "p95": 11.5
+        },
+        "camera": {
+          "projection": "orthographic",
+          "position": [
+            -10.887515512202016,
+            55,
+            53.93439772486533
+          ],
+          "target": [
+            -10.887515512202016,
+            0,
+            15.424397724865328
+          ],
+          "halfHeight": 40.07465425250073,
+          "occluderIds": []
+        },
+        "clearing": {
+          "rendererAutoClear": true,
+          "outlineAutoClear": true
+        },
+        "level": "first-voyage"
+      },
+      "warningPlacement": [
+        {
+          "id": "encounter-1-stage-01-harbor-opening-0",
+          "projected": {
+            "x": -17.917739832115437,
+            "y": 149.1288346695912,
+            "depth": -0.686051970857112
+          },
+          "labelPresent": true,
+          "labelHidden": false,
+          "offscreen": "true",
+          "box": {
+            "x": -10.2109375,
+            "y": 195.375,
+            "right": 103.8046875,
+            "bottom": 227.875
+          }
+        }
+      ]
+    },
+    {
+      "case": "four-real-returns-one-renderer-warm-resource-plateau",
+      "rounds": [
+        {
+          "round": 1,
+          "sortie": {
+            "done": true,
+            "returned": true,
+            "steps": 173,
+            "observed": {
+              "hits": 14,
+              "detached": 1,
+              "recovered": 1,
+              "shots": 14,
+              "damage": 0
+            },
+            "sameRenderer": true
+          },
+          "port": {
+            "store": {
+              "ok": true
+            },
+            "repair": {
+              "ok": true,
+              "skipped": "No affordable repair needed"
+            },
+            "stats": {
+              "frameCount": 749,
+              "firstReadyMs": 343,
+              "worldReadyMs": 10,
+              "meshes": 418,
+              "visibleMeshes": 399,
+              "textures": 9,
+              "estimatedTextureBytes": 89535869,
+              "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+              "drawCalls": 798,
+              "triangles": 103248,
+              "gpuMemory": {
+                "geometries": 500,
+                "textures": 21
+              },
+              "pendingLoads": 0,
+              "loadedWorldVisuals": 11,
+              "worldVisualIds": [
+                "workshop",
+                "market",
+                "dock-main",
+                "dock-end",
+                "platform-west",
+                "platform-east",
+                "repair-point",
+                "storage-point",
+                "service-console",
+                "mooring-point",
+                "lighthouse"
+              ],
+              "worldVisualLimit": 12,
+              "enemyViews": 0,
+              "debrisViews": 0,
+              "projectileViews": 0,
+              "modelErrors": {},
+              "loads": [
+                {
+                  "kind": "fleet",
+                  "assetId": "player-homeward",
+                  "durationMs": 222,
+                  "fallback": false
+                },
+                {
+                  "kind": "world",
+                  "assetId": "repair-workshop",
+                  "path": "hero/repair-workshop/model-closed-roof.glb",
+                  "bytes": 3838916,
+                  "durationMs": 138
+                },
+                {
+                  "kind": "world",
+                  "assetId": "canvas-market",
+                  "path": "hero/canvas-market/model-repaired.glb",
+                  "bytes": 3838872,
+                  "durationMs": 235
+                },
+                {
+                  "kind": "world",
+                  "assetId": "dock-straight",
+                  "path": "assets/dock-straight.glb",
+                  "bytes": 275952,
+                  "durationMs": 43
+                },
+                {
+                  "kind": "world",
+                  "assetId": "dock-endcap",
+                  "path": "assets/dock-endcap.glb",
+                  "bytes": 346040,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "world",
+                  "assetId": "platform-square",
+                  "path": "assets/platform-square.glb",
+                  "bytes": 279864,
+                  "durationMs": 31
+                },
+                {
+                  "kind": "world",
+                  "assetId": "repair-station",
+                  "path": "assets/repair-station.glb",
+                  "bytes": 374948,
+                  "durationMs": 17
+                },
+                {
+                  "kind": "world",
+                  "assetId": "storage-chest",
+                  "path": "assets/storage-chest.glb",
+                  "bytes": 177944,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "world",
+                  "assetId": "departure-console",
+                  "path": "assets/departure-console.glb",
+                  "bytes": 314484,
+                  "durationMs": 16
+                },
+                {
+                  "kind": "world",
+                  "assetId": "mooring-ring",
+                  "path": "assets/mooring-ring.glb",
+                  "bytes": 63288,
+                  "durationMs": 14
+                },
+                {
+                  "kind": "world",
+                  "assetId": "beacon-lighthouse",
+                  "path": "hero/beacon-lighthouse/model-repaired.glb",
+                  "bytes": 4043752,
+                  "durationMs": 184
+                },
+                {
+                  "kind": "world",
+                  "assetId": "beacon-buoy",
+                  "path": "assets/beacon-buoy.glb",
+                  "bytes": 155444,
+                  "durationMs": 26
+                },
+                {
+                  "kind": "world",
+                  "assetId": "wreckage-shoal",
+                  "path": "assets/wreckage-shoal.glb",
+                  "bytes": 164712,
+                  "durationMs": 9
+                },
+                {
+                  "kind": "world",
+                  "assetId": "boundary-marker",
+                  "path": "assets/boundary-marker.glb",
+                  "bytes": 49180,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 600,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 15,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 18,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 13,
+                  "fallback": false
+                }
+              ],
+              "effects": {
+                "state": "ready",
+                "loaded": true,
+                "lastError": null,
+                "eventCursor": 0,
+                "supportedWeapons": [
+                  "01-machine-gun",
+                  "02-deck-cannon"
+                ],
+                "mappedWeaponCount": 6,
+                "loadedEffects": [
+                  "machine-gun-muzzle",
+                  "machine-gun-projectile",
+                  "machine-gun-hit",
+                  "cannon-muzzle",
+                  "cannon-hit",
+                  "cannon-projectile"
+                ],
+                "activeOneShots": 0,
+                "activeProjectiles": 0,
+                "projectileIds": [],
+                "terminalProjectileCount": 0,
+                "firedProjectileCount": 0,
+                "fireEventCount": 0,
+                "terminalReceiptCapacity": 2048,
+                "pooled": {
+                  "cannon-muzzle": 1,
+                  "cannon-projectile": 2,
+                  "cannon-hit": 1,
+                  "machine-gun-muzzle": 2,
+                  "machine-gun-projectile": 6,
+                  "machine-gun-hit": 4
+                },
+                "created": 0,
+                "reused": 0,
+                "returned": 0,
+                "hitEffects": 0,
+                "unsupportedEvents": 0,
+                "movementAuthority": "battlefield-projectile-state",
+                "projectileAnimationApplied": false,
+                "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+              },
+              "frameCpuMs": {
+                "average": 5.507333333094914,
+                "p95": 10.300000011920929
+              },
+              "camera": {
+                "projection": "orthographic",
+                "position": [
+                  0,
+                  55,
+                  95.50999999999999
+                ],
+                "target": [
+                  0,
+                  0,
+                  57
+                ],
+                "halfHeight": 24,
+                "occluderIds": []
+              },
+              "clearing": {
+                "rendererAutoClear": true,
+                "outlineAutoClear": true
+              },
+              "level": "jonghang-harbor"
+            },
+            "programs": 12,
+            "voyageId": "example-captain:voyage-1",
+            "resources": {
+              "S": 120,
+              "F": 40,
+              "C": 2
+            }
+          }
+        },
+        {
+          "round": 2,
+          "sortie": {
+            "done": true,
+            "returned": true,
+            "steps": 173,
+            "observed": {
+              "hits": 14,
+              "detached": 1,
+              "recovered": 1,
+              "shots": 14,
+              "damage": 0
+            },
+            "sameRenderer": true
+          },
+          "port": {
+            "store": {
+              "ok": true
+            },
+            "repair": {
+              "ok": true,
+              "skipped": "No affordable repair needed"
+            },
+            "stats": {
+              "frameCount": 947,
+              "firstReadyMs": 343,
+              "worldReadyMs": 8,
+              "meshes": 418,
+              "visibleMeshes": 399,
+              "textures": 9,
+              "estimatedTextureBytes": 89535869,
+              "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+              "drawCalls": 798,
+              "triangles": 103248,
+              "gpuMemory": {
+                "geometries": 500,
+                "textures": 21
+              },
+              "pendingLoads": 0,
+              "loadedWorldVisuals": 11,
+              "worldVisualIds": [
+                "workshop",
+                "market",
+                "dock-main",
+                "dock-end",
+                "platform-west",
+                "platform-east",
+                "repair-point",
+                "storage-point",
+                "service-console",
+                "mooring-point",
+                "lighthouse"
+              ],
+              "worldVisualLimit": 12,
+              "enemyViews": 0,
+              "debrisViews": 0,
+              "projectileViews": 0,
+              "modelErrors": {},
+              "loads": [
+                {
+                  "kind": "fleet",
+                  "assetId": "player-homeward",
+                  "durationMs": 222,
+                  "fallback": false
+                },
+                {
+                  "kind": "world",
+                  "assetId": "repair-workshop",
+                  "path": "hero/repair-workshop/model-closed-roof.glb",
+                  "bytes": 3838916,
+                  "durationMs": 138
+                },
+                {
+                  "kind": "world",
+                  "assetId": "canvas-market",
+                  "path": "hero/canvas-market/model-repaired.glb",
+                  "bytes": 3838872,
+                  "durationMs": 235
+                },
+                {
+                  "kind": "world",
+                  "assetId": "dock-straight",
+                  "path": "assets/dock-straight.glb",
+                  "bytes": 275952,
+                  "durationMs": 43
+                },
+                {
+                  "kind": "world",
+                  "assetId": "dock-endcap",
+                  "path": "assets/dock-endcap.glb",
+                  "bytes": 346040,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "world",
+                  "assetId": "platform-square",
+                  "path": "assets/platform-square.glb",
+                  "bytes": 279864,
+                  "durationMs": 31
+                },
+                {
+                  "kind": "world",
+                  "assetId": "repair-station",
+                  "path": "assets/repair-station.glb",
+                  "bytes": 374948,
+                  "durationMs": 17
+                },
+                {
+                  "kind": "world",
+                  "assetId": "storage-chest",
+                  "path": "assets/storage-chest.glb",
+                  "bytes": 177944,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "world",
+                  "assetId": "departure-console",
+                  "path": "assets/departure-console.glb",
+                  "bytes": 314484,
+                  "durationMs": 16
+                },
+                {
+                  "kind": "world",
+                  "assetId": "mooring-ring",
+                  "path": "assets/mooring-ring.glb",
+                  "bytes": 63288,
+                  "durationMs": 14
+                },
+                {
+                  "kind": "world",
+                  "assetId": "beacon-lighthouse",
+                  "path": "hero/beacon-lighthouse/model-repaired.glb",
+                  "bytes": 4043752,
+                  "durationMs": 184
+                },
+                {
+                  "kind": "world",
+                  "assetId": "beacon-buoy",
+                  "path": "assets/beacon-buoy.glb",
+                  "bytes": 155444,
+                  "durationMs": 26
+                },
+                {
+                  "kind": "world",
+                  "assetId": "wreckage-shoal",
+                  "path": "assets/wreckage-shoal.glb",
+                  "bytes": 164712,
+                  "durationMs": 9
+                },
+                {
+                  "kind": "world",
+                  "assetId": "boundary-marker",
+                  "path": "assets/boundary-marker.glb",
+                  "bytes": 49180,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 600,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 15,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 18,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 13,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 12,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 13,
+                  "fallback": false
+                }
+              ],
+              "effects": {
+                "state": "ready",
+                "loaded": true,
+                "lastError": null,
+                "eventCursor": 0,
+                "supportedWeapons": [
+                  "01-machine-gun",
+                  "02-deck-cannon"
+                ],
+                "mappedWeaponCount": 6,
+                "loadedEffects": [
+                  "machine-gun-muzzle",
+                  "machine-gun-projectile",
+                  "machine-gun-hit",
+                  "cannon-muzzle",
+                  "cannon-hit",
+                  "cannon-projectile"
+                ],
+                "activeOneShots": 0,
+                "activeProjectiles": 0,
+                "projectileIds": [],
+                "terminalProjectileCount": 0,
+                "firedProjectileCount": 0,
+                "fireEventCount": 0,
+                "terminalReceiptCapacity": 2048,
+                "pooled": {
+                  "cannon-muzzle": 1,
+                  "cannon-projectile": 2,
+                  "cannon-hit": 1,
+                  "machine-gun-muzzle": 2,
+                  "machine-gun-projectile": 6,
+                  "machine-gun-hit": 4
+                },
+                "created": 0,
+                "reused": 0,
+                "returned": 0,
+                "hitEffects": 0,
+                "unsupportedEvents": 0,
+                "movementAuthority": "battlefield-projectile-state",
+                "projectileAnimationApplied": false,
+                "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+              },
+              "frameCpuMs": {
+                "average": 4.952000001867612,
+                "p95": 10.199999988079071
+              },
+              "camera": {
+                "projection": "orthographic",
+                "position": [
+                  0,
+                  55,
+                  95.50999999999999
+                ],
+                "target": [
+                  0,
+                  0,
+                  57
+                ],
+                "halfHeight": 24,
+                "occluderIds": []
+              },
+              "clearing": {
+                "rendererAutoClear": true,
+                "outlineAutoClear": true
+              },
+              "level": "jonghang-harbor"
+            },
+            "programs": 12,
+            "voyageId": "example-captain:voyage-2",
+            "resources": {
+              "S": 120,
+              "F": 40,
+              "C": 2
+            }
+          }
+        },
+        {
+          "round": 3,
+          "sortie": {
+            "done": true,
+            "returned": true,
+            "steps": 173,
+            "observed": {
+              "hits": 14,
+              "detached": 1,
+              "recovered": 1,
+              "shots": 14,
+              "damage": 0
+            },
+            "sameRenderer": true
+          },
+          "port": {
+            "store": {
+              "ok": true
+            },
+            "repair": {
+              "ok": true,
+              "skipped": "No affordable repair needed"
+            },
+            "stats": {
+              "frameCount": 1146,
+              "firstReadyMs": 343,
+              "worldReadyMs": 5,
+              "meshes": 418,
+              "visibleMeshes": 399,
+              "textures": 9,
+              "estimatedTextureBytes": 89535869,
+              "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+              "drawCalls": 798,
+              "triangles": 103248,
+              "gpuMemory": {
+                "geometries": 500,
+                "textures": 21
+              },
+              "pendingLoads": 0,
+              "loadedWorldVisuals": 11,
+              "worldVisualIds": [
+                "workshop",
+                "market",
+                "dock-main",
+                "dock-end",
+                "platform-west",
+                "platform-east",
+                "repair-point",
+                "storage-point",
+                "service-console",
+                "mooring-point",
+                "lighthouse"
+              ],
+              "worldVisualLimit": 12,
+              "enemyViews": 0,
+              "debrisViews": 0,
+              "projectileViews": 0,
+              "modelErrors": {},
+              "loads": [
+                {
+                  "kind": "fleet",
+                  "assetId": "player-homeward",
+                  "durationMs": 222,
+                  "fallback": false
+                },
+                {
+                  "kind": "world",
+                  "assetId": "repair-workshop",
+                  "path": "hero/repair-workshop/model-closed-roof.glb",
+                  "bytes": 3838916,
+                  "durationMs": 138
+                },
+                {
+                  "kind": "world",
+                  "assetId": "canvas-market",
+                  "path": "hero/canvas-market/model-repaired.glb",
+                  "bytes": 3838872,
+                  "durationMs": 235
+                },
+                {
+                  "kind": "world",
+                  "assetId": "dock-straight",
+                  "path": "assets/dock-straight.glb",
+                  "bytes": 275952,
+                  "durationMs": 43
+                },
+                {
+                  "kind": "world",
+                  "assetId": "dock-endcap",
+                  "path": "assets/dock-endcap.glb",
+                  "bytes": 346040,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "world",
+                  "assetId": "platform-square",
+                  "path": "assets/platform-square.glb",
+                  "bytes": 279864,
+                  "durationMs": 31
+                },
+                {
+                  "kind": "world",
+                  "assetId": "repair-station",
+                  "path": "assets/repair-station.glb",
+                  "bytes": 374948,
+                  "durationMs": 17
+                },
+                {
+                  "kind": "world",
+                  "assetId": "storage-chest",
+                  "path": "assets/storage-chest.glb",
+                  "bytes": 177944,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "world",
+                  "assetId": "departure-console",
+                  "path": "assets/departure-console.glb",
+                  "bytes": 314484,
+                  "durationMs": 16
+                },
+                {
+                  "kind": "world",
+                  "assetId": "mooring-ring",
+                  "path": "assets/mooring-ring.glb",
+                  "bytes": 63288,
+                  "durationMs": 14
+                },
+                {
+                  "kind": "world",
+                  "assetId": "beacon-lighthouse",
+                  "path": "hero/beacon-lighthouse/model-repaired.glb",
+                  "bytes": 4043752,
+                  "durationMs": 184
+                },
+                {
+                  "kind": "world",
+                  "assetId": "beacon-buoy",
+                  "path": "assets/beacon-buoy.glb",
+                  "bytes": 155444,
+                  "durationMs": 26
+                },
+                {
+                  "kind": "world",
+                  "assetId": "wreckage-shoal",
+                  "path": "assets/wreckage-shoal.glb",
+                  "bytes": 164712,
+                  "durationMs": 9
+                },
+                {
+                  "kind": "world",
+                  "assetId": "boundary-marker",
+                  "path": "assets/boundary-marker.glb",
+                  "bytes": 49180,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 600,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 15,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 18,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 13,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 12,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 13,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 20,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 12,
+                  "fallback": false
+                }
+              ],
+              "effects": {
+                "state": "ready",
+                "loaded": true,
+                "lastError": null,
+                "eventCursor": 0,
+                "supportedWeapons": [
+                  "01-machine-gun",
+                  "02-deck-cannon"
+                ],
+                "mappedWeaponCount": 6,
+                "loadedEffects": [
+                  "machine-gun-muzzle",
+                  "machine-gun-projectile",
+                  "machine-gun-hit",
+                  "cannon-muzzle",
+                  "cannon-hit",
+                  "cannon-projectile"
+                ],
+                "activeOneShots": 0,
+                "activeProjectiles": 0,
+                "projectileIds": [],
+                "terminalProjectileCount": 0,
+                "firedProjectileCount": 0,
+                "fireEventCount": 0,
+                "terminalReceiptCapacity": 2048,
+                "pooled": {
+                  "cannon-muzzle": 1,
+                  "cannon-projectile": 2,
+                  "cannon-hit": 1,
+                  "machine-gun-muzzle": 2,
+                  "machine-gun-projectile": 6,
+                  "machine-gun-hit": 4
+                },
+                "created": 0,
+                "reused": 0,
+                "returned": 0,
+                "hitEffects": 0,
+                "unsupportedEvents": 0,
+                "movementAuthority": "battlefield-projectile-state",
+                "projectileAnimationApplied": false,
+                "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+              },
+              "frameCpuMs": {
+                "average": 4.568666667540868,
+                "p95": 9.599999964237213
+              },
+              "camera": {
+                "projection": "orthographic",
+                "position": [
+                  0,
+                  55,
+                  95.50999999999999
+                ],
+                "target": [
+                  0,
+                  0,
+                  57
+                ],
+                "halfHeight": 24,
+                "occluderIds": []
+              },
+              "clearing": {
+                "rendererAutoClear": true,
+                "outlineAutoClear": true
+              },
+              "level": "jonghang-harbor"
+            },
+            "programs": 12,
+            "voyageId": "example-captain:voyage-3",
+            "resources": {
+              "S": 120,
+              "F": 40,
+              "C": 2
+            }
+          }
+        },
+        {
+          "round": 4,
+          "sortie": {
+            "done": true,
+            "returned": true,
+            "steps": 173,
+            "observed": {
+              "hits": 14,
+              "detached": 1,
+              "recovered": 1,
+              "shots": 14,
+              "damage": 0
+            },
+            "sameRenderer": true
+          },
+          "port": {
+            "store": {
+              "ok": true
+            },
+            "repair": {
+              "ok": true,
+              "skipped": "No affordable repair needed"
+            },
+            "stats": {
+              "frameCount": 1344,
+              "firstReadyMs": 343,
+              "worldReadyMs": 6,
+              "meshes": 418,
+              "visibleMeshes": 399,
+              "textures": 9,
+              "estimatedTextureBytes": 89535869,
+              "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+              "drawCalls": 798,
+              "triangles": 103248,
+              "gpuMemory": {
+                "geometries": 500,
+                "textures": 21
+              },
+              "pendingLoads": 0,
+              "loadedWorldVisuals": 11,
+              "worldVisualIds": [
+                "workshop",
+                "market",
+                "dock-main",
+                "dock-end",
+                "platform-west",
+                "platform-east",
+                "repair-point",
+                "storage-point",
+                "service-console",
+                "mooring-point",
+                "lighthouse"
+              ],
+              "worldVisualLimit": 12,
+              "enemyViews": 0,
+              "debrisViews": 0,
+              "projectileViews": 0,
+              "modelErrors": {},
+              "loads": [
+                {
+                  "kind": "fleet",
+                  "assetId": "player-homeward",
+                  "durationMs": 222,
+                  "fallback": false
+                },
+                {
+                  "kind": "world",
+                  "assetId": "repair-workshop",
+                  "path": "hero/repair-workshop/model-closed-roof.glb",
+                  "bytes": 3838916,
+                  "durationMs": 138
+                },
+                {
+                  "kind": "world",
+                  "assetId": "canvas-market",
+                  "path": "hero/canvas-market/model-repaired.glb",
+                  "bytes": 3838872,
+                  "durationMs": 235
+                },
+                {
+                  "kind": "world",
+                  "assetId": "dock-straight",
+                  "path": "assets/dock-straight.glb",
+                  "bytes": 275952,
+                  "durationMs": 43
+                },
+                {
+                  "kind": "world",
+                  "assetId": "dock-endcap",
+                  "path": "assets/dock-endcap.glb",
+                  "bytes": 346040,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "world",
+                  "assetId": "platform-square",
+                  "path": "assets/platform-square.glb",
+                  "bytes": 279864,
+                  "durationMs": 31
+                },
+                {
+                  "kind": "world",
+                  "assetId": "repair-station",
+                  "path": "assets/repair-station.glb",
+                  "bytes": 374948,
+                  "durationMs": 17
+                },
+                {
+                  "kind": "world",
+                  "assetId": "storage-chest",
+                  "path": "assets/storage-chest.glb",
+                  "bytes": 177944,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "world",
+                  "assetId": "departure-console",
+                  "path": "assets/departure-console.glb",
+                  "bytes": 314484,
+                  "durationMs": 16
+                },
+                {
+                  "kind": "world",
+                  "assetId": "mooring-ring",
+                  "path": "assets/mooring-ring.glb",
+                  "bytes": 63288,
+                  "durationMs": 14
+                },
+                {
+                  "kind": "world",
+                  "assetId": "beacon-lighthouse",
+                  "path": "hero/beacon-lighthouse/model-repaired.glb",
+                  "bytes": 4043752,
+                  "durationMs": 184
+                },
+                {
+                  "kind": "world",
+                  "assetId": "beacon-buoy",
+                  "path": "assets/beacon-buoy.glb",
+                  "bytes": 155444,
+                  "durationMs": 26
+                },
+                {
+                  "kind": "world",
+                  "assetId": "wreckage-shoal",
+                  "path": "assets/wreckage-shoal.glb",
+                  "bytes": 164712,
+                  "durationMs": 9
+                },
+                {
+                  "kind": "world",
+                  "assetId": "boundary-marker",
+                  "path": "assets/boundary-marker.glb",
+                  "bytes": 49180,
+                  "durationMs": 10
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 600,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 15,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 18,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 13,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 12,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 13,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 20,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 12,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 13,
+                  "fallback": false
+                },
+                {
+                  "kind": "fleet",
+                  "assetId": "enemy-pirate-scout",
+                  "durationMs": 12,
+                  "fallback": false
+                }
+              ],
+              "effects": {
+                "state": "ready",
+                "loaded": true,
+                "lastError": null,
+                "eventCursor": 0,
+                "supportedWeapons": [
+                  "01-machine-gun",
+                  "02-deck-cannon"
+                ],
+                "mappedWeaponCount": 6,
+                "loadedEffects": [
+                  "machine-gun-muzzle",
+                  "machine-gun-projectile",
+                  "machine-gun-hit",
+                  "cannon-muzzle",
+                  "cannon-hit",
+                  "cannon-projectile"
+                ],
+                "activeOneShots": 0,
+                "activeProjectiles": 0,
+                "projectileIds": [],
+                "terminalProjectileCount": 0,
+                "firedProjectileCount": 0,
+                "fireEventCount": 0,
+                "terminalReceiptCapacity": 2048,
+                "pooled": {
+                  "cannon-muzzle": 1,
+                  "cannon-projectile": 2,
+                  "cannon-hit": 1,
+                  "machine-gun-muzzle": 2,
+                  "machine-gun-projectile": 6,
+                  "machine-gun-hit": 4
+                },
+                "created": 0,
+                "reused": 0,
+                "returned": 0,
+                "hitEffects": 0,
+                "unsupportedEvents": 0,
+                "movementAuthority": "battlefield-projectile-state",
+                "projectileAnimationApplied": false,
+                "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+              },
+              "frameCpuMs": {
+                "average": 4.5556666654348374,
+                "p95": 8.199999988079071
+              },
+              "camera": {
+                "projection": "orthographic",
+                "position": [
+                  0,
+                  55,
+                  95.50999999999999
+                ],
+                "target": [
+                  0,
+                  0,
+                  57
+                ],
+                "halfHeight": 24,
+                "occluderIds": []
+              },
+              "clearing": {
+                "rendererAutoClear": true,
+                "outlineAutoClear": true
+              },
+              "level": "jonghang-harbor"
+            },
+            "programs": 12,
+            "voyageId": "example-captain:voyage-4",
+            "resources": {
+              "S": 120,
+              "F": 40,
+              "C": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "case": "one-actor-GLB-failure-and-boundary-recovery",
+      "path": "work/verification/playable-targeted/expected-actor-load-failure.png"
+    },
+    {
+      "case": "unpaused-narrow-camera-and-actual-warning",
+      "path": "work/verification/playable-targeted/actual-sailing-wide-no-pause-overlay.png"
+    },
+    {
+      "case": "unpaused-narrow-camera-and-actual-warning",
+      "path": "work/verification/playable-targeted/actual-sailing-narrow-warning-no-pause-overlay.png"
+    }
+  ],
+  "pageErrors": [],
+  "httpErrors": [],
+  "externalRequests": [],
+  "expectedAborts": [
+    {
+      "case": "one-actor-GLB-failure-and-boundary-recovery",
+      "url": "http://127.0.0.1:8840/outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+      "reason": "net::ERR_FAILED"
+    }
+  ],
+  "unexpectedRequestFailures": [],
+  "caseErrors": [],
+  "limitations": [
+    "Accelerated authoritative controller inputs are not real-time human play.",
+    "The clear-combat and pure guidance cases are explicit fixtures, not combat completion evidence.",
+    "Four repeated returns can establish a short warm resource plateau only; no device/performance-budget certification.",
+    "Screenshots and on-screen bounds do not certify human readability or fairness."
+  ],
+  "testedArtifacts": {
+    "outputs/playable-battlefield-v1/handoff-files.json": {
+      "bytes": 4703,
+      "sha256": "f6cde1344ed4fb0bc6dea3793390129fbc9b8e14c31cebfc20b595615c329b45"
+    },
+    "outputs/playable-battlefield-v1/playable.js": {
+      "bytes": 968577,
+      "sha256": "cd567104a951de8b5be602322e98134c6b29dee05e1437722b9f96bc05df59a9"
+    },
+    "tools/levels/playable-presentation.mjs": {
+      "bytes": 3748,
+      "sha256": "36a399b0c2cc8cc5f718fdee7f2150845955a24d901bff240f75f0e87347c758"
+    }
+  }
+}

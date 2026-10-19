@@ -1,0 +1,42 @@
+{
+  "id": "cargo-crane",
+  "name_ko": "목재 항로 하역기",
+  "category": "props",
+  "role": "겹목재 받침과 황동 윈치·도르래·그물 상자가 읽히는 작은 크레인.",
+  "motion_ko": "매달린 화물과 아래 고리가 관성으로 조금씩 흔들립니다.",
+  "order": 20,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/cargo-crane.glb",
+  "preview": "previews/cargo-crane.png",
+  "triangles": 15908,
+  "mesh_count": 216,
+  "vertices": 47724,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_duration": 6.4,
+  "encoded_color_components": 0,
+  "bytes": 1931456,
+  "sha256": "0466435da3540390391c36ed26fa0a0bd5d44df509ca22fd4d3f2a6cdb151b11",
+  "bounds": {
+    "min": [
+      -2.0318186742067335,
+      -1.5099999986588954,
+      -1.0524999988079071
+    ],
+    "max": [
+      2.2674999988079074,
+      2.664577293395996,
+      1.5600000059604644
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

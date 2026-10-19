@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:49:16Z",
+  "reviewer": "Cloudstitch 총괄 지휘",
+  "locationRef": "local-locations.json",
+  "evidenceLocation": "desktop integration worktree",
+  "version": "fleet-v2-art-ready-1",
+  "sourceManifest": {
+    "path": "outputs/fleet-v2/source-manifest.json",
+    "sha256": "916c3e9790818490ee6d4457b7e41d8fe23cc49130996f64512a3c2a2657f68e"
+  },
+  "import": {
+    "path": "outputs/fleet-v2-browser-qa-v1/import-verification.json",
+    "sha256": "7c867b7158de979ce85f6c09ccf528f8823275f15f9bf93bb17605585675a28e",
+    "passed": true,
+    "files": 174,
+    "totalBytes": 1582909019,
+    "originalInputs": 10,
+    "preservedFrozenCommonPackages": 2,
+    "failures": [],
+    "scope": "owner streamed size/SHA verification before and after selective copy; root read report, did not duplicate1.58GB hash/import"
+  },
+  "originalBrowser": {
+    "path": "outputs/fleet-v2-browser-qa-v1/verification.json",
+    "sha256": "fc737a4dbfa3f0aa56674d504ddb3399f4ea85385792bd9fef08794ae0c5e36a",
+    "passed": false,
+    "checks": 553,
+    "pass": 528,
+    "fail": 25,
+    "failedNames": "paused-png-repeatability:{handdrawn,cel,original}",
+    "failedShips": 9,
+    "representatives": 13,
+    "full62ModelInspection": false,
+    "errors": {
+      "page": 0,
+      "externalRequests": 0,
+      "failedRequests": 0,
+      "aborts": 0,
+      "http": 0,
+      "console": 0
+    }
+  },
+  "decodedFollowup": {
+    "path": "outputs/fleet-v2-browser-qa-v1/decoded-followup/verification.json",
+    "sha256": "a28931b5b3818ad205bae7edb86d48029f1d375a31cb31ad966a29419d7c4eff",
+    "pairs": 25,
+    "allPairsWithinDiagnosticBand": true,
+    "diagnosticBand": {
+      "maxChannelDifference": 1,
+      "maxChangedPixelFraction": 0.0001,
+      "requiresExactPoseCameraTime": true
+    },
+    "observed": {
+      "width": 1210,
+      "height": 660,
+      "changedPixelsMin": 6,
+      "changedPixelsMax": 8,
+      "maxChannelDifference": 1,
+      "allEncodedEqual": false,
+      "time": 2,
+      "playing": false
+    },
+    "rootJsonCrossCheck": "all25 before/between/after camera/quaternion/target/pose/canvas/scroll JSON equality and time/playing checked; decoded pixels are owner output, not root re-decode",
+    "scope": "fresh fixed setup; does not replay every original UI interaction; no original failure overwrite"
+  },
+  "staticReview": {
+    "reviewer": "integration_audit",
+    "source": "tools/fleet-v2/browser-qa.cjs",
+    "findings": [
+      "original screenshot assertion only Buffer.equals",
+      "RAF4 waits did not record exact time/camera/pose",
+      "original failure evidence lacks decoded diff or both full states",
+      "no rotating-frame accumulation/clean-rerender test"
+    ]
+  },
+  "decision": "preserve original passed:false and separate narrow diagnostic; no current justification for production asset changes or whole-suite retest",
+  "remaining": [
+    "final protection/evidence seal by integration owner",
+    "human art/role review",
+    "all62 full browser coverage if subsequently required",
+    "gameplay bounds/axis/socket/collider/cut tree integration",
+    "rotating ghosting/performance tests outside this run",
+    "shared checkout selective LFS rule handoff before commit"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "script": {
+    "path": "tools/chapter1-fleet-detail-v2/closeups.cjs",
+    "sha256": "a5b4a824803b10e0d91fc5574b9af775942c993fc4f3558af70698d040288941"
+  },
+  "targets": [
+    {
+      "kind": "scout",
+      "viewerPath": "outputs/chapter1-fleet-detail-v2/ships/scout.html",
+      "viewerBytes": 24573691,
+      "viewerSha256": "6d5145898ebcbb70464f456f1642bc949864695e399d4b884be56c132229d1cc",
+      "GLBsha256": "9f7de20425f2bd0916dc6f39d4054e3fae68853e008d100a4fc93fe1b35be7ef"
+    },
+    {
+      "kind": "command",
+      "viewerPath": "outputs/chapter1-fleet-detail-v2/ships/command.html",
+      "viewerBytes": 28327071,
+      "viewerSha256": "f7622eb7d5a6ad880b81115b8f77a281be4e3b806062206c9d46f4750a3e4416",
+      "GLBsha256": "7f21359648650537998d27400fe4d6bf6905f97782a96d7ce3d548c8ee984c88"
+    },
+    {
+      "kind": "executor",
+      "viewerPath": "outputs/chapter1-fleet-detail-v2/ships/executor.html",
+      "viewerBytes": 51204742,
+      "viewerSha256": "ec2eda643b35c53a335fd7316039200aa8109705af78db45ac0fddfc52e8bb8a",
+      "GLBsha256": "8d55e6f12084e1ff7c5b55f10acbe22591b267163a98938bdbd74af70b47b68d"
+    }
+  ],
+  "budget": "one browser context,3ships x3groups=9PNG; no exporter; no QA53 rerun",
+  "groups": "keep/dock,buoyancy,machinery"
+}

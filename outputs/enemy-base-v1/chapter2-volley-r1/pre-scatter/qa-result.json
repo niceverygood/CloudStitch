@@ -1,0 +1,2309 @@
+{
+  "schema": "cloudstitch-enemy-base-browser-qa-1",
+  "startedAt": "2026-10-19T03:06:15.456Z",
+  "harness": "tools/enemy-base/chapter2-volley-r1/qa.cjs",
+  "harnessSha256": "41b55aee913917239b1965195074dd27a63159cce9774af0e9b4ad009d54cd49",
+  "entry": "outputs/enemy-base-v1/chapter2-volley-r1/index.html",
+  "checks": [
+    {
+      "name": "glb-v2-nonempty-triangle-geometry",
+      "passed": true,
+      "detail": {
+        "bytes": 48333588,
+        "sha256": "487c2cfc38f81d1f27c0134db50857c619be9add00bd3f6a9e850a3c26cd711d",
+        "version": "2.0",
+        "binaryBytes": 47964132,
+        "nodesInScene": 406,
+        "primitiveInstances": 298,
+        "triangleCount": 1020908,
+        "vertexInstances": 1696615,
+        "meshDefinitions": 60,
+        "materials": 23,
+        "images": 1,
+        "animations": 1,
+        "nonTriangleModes": [],
+        "externalUris": []
+      }
+    },
+    {
+      "name": "glb-self-contained",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "model-manifest-present-and-valid-json",
+      "passed": true
+    },
+    {
+      "name": "actual-glb-loaded-and-rendered",
+      "passed": true,
+      "detail": {
+        "meshes": 298,
+        "vertices": 1696615,
+        "triangles": 1020908,
+        "badCoordinates": 0,
+        "min": [
+          -41.490203857421875,
+          -22.394376754760742,
+          -25.149999618530273
+        ],
+        "max": [
+          36.590553283691406,
+          57.88899230957031,
+          25.54034996032715
+        ],
+        "size": [
+          78.08075714111328,
+          80.28336906433105,
+          50.69034957885742
+        ],
+        "renderCalls": 298,
+        "rootChildren": 1,
+        "stats": {
+          "triangles": 1020908,
+          "meshes": 298,
+          "materials": 23,
+          "vertices": 1696615,
+          "geometries": 60,
+          "bytes": 48333588,
+          "animations": 1,
+          "groups": [
+            "hull",
+            "buoyancy",
+            "keep",
+            "bell_tower",
+            "bastions",
+            "dock",
+            "machinery",
+            "banners",
+            "arrow_batteries",
+            "arrow_rain"
+          ],
+          "bounds": [
+            78.08075714111328,
+            80.28336906433105,
+            50.69034957885742
+          ],
+          "mode": "handdrawn",
+          "view": "iso",
+          "focus": null,
+          "outline": true,
+          "outlineEnabled": true
+        },
+        "effectAutoClear": true
+      }
+    },
+    {
+      "name": "finite-nonempty-world-bounds",
+      "passed": true,
+      "detail": {
+        "min": [
+          -41.490203857421875,
+          -22.394376754760742,
+          -25.149999618530273
+        ],
+        "max": [
+          36.590553283691406,
+          57.88899230957031,
+          25.54034996032715
+        ],
+        "size": [
+          78.08075714111328,
+          80.28336906433105,
+          50.69034957885742
+        ],
+        "badCoordinates": 0
+      }
+    },
+    {
+      "name": "outline-effect-explicit-auto-clear",
+      "passed": true
+    },
+    {
+      "name": "embedded-painted-atlas-decoded-in-browser",
+      "passed": true,
+      "detail": {
+        "images": [
+          {
+            "width": 1024,
+            "height": 1024
+          }
+        ],
+        "uvMeshes": 49,
+        "badUv": 0
+      }
+    },
+    {
+      "name": "painted-mesh-uvs-finite",
+      "passed": true,
+      "detail": {
+        "images": [
+          {
+            "width": 1024,
+            "height": 1024
+          }
+        ],
+        "uvMeshes": 49,
+        "badUv": 0
+      }
+    },
+    {
+      "name": "model-isolation-api",
+      "passed": true
+    },
+    {
+      "name": "display-mode:handdrawn",
+      "passed": true,
+      "detail": {
+        "position": [
+          -131.40016416151545,
+          90.63228192394621,
+          196.42395171927922
+        ],
+        "target": [
+          -2.4498252868652344,
+          17.747307777404785,
+          0.1951751708984375
+        ],
+        "zoom": 1,
+        "distance": 245.8579713938588,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 298,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "actual-display-materials:handdrawn",
+      "passed": true,
+      "detail": [
+        "MeshBasicMaterial"
+      ]
+    },
+    {
+      "name": "120-frame-rotation-clean-render:handdrawn",
+      "passed": true,
+      "detail": {
+        "mode": "handdrawn",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 133190,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 444.0153886091236,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "name": "display-mode:cel",
+      "passed": true,
+      "detail": {
+        "position": [
+          219.9864800064272,
+          90.63228192394605,
+          -75.01129216423465
+        ],
+        "target": [
+          -2.4498252868652344,
+          17.747307777404785,
+          0.1951751708984375
+        ],
+        "zoom": 1,
+        "distance": 245.85797139385826,
+        "autoRotate": false,
+        "mode": "cel",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 298,
+        "materialTypes": [
+          "MeshToonMaterial"
+        ]
+      }
+    },
+    {
+      "name": "actual-display-materials:cel",
+      "passed": true,
+      "detail": [
+        "MeshToonMaterial"
+      ]
+    },
+    {
+      "name": "120-frame-rotation-clean-render:cel",
+      "passed": true,
+      "detail": {
+        "mode": "cel",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 132691,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 441.598739955229,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "name": "display-mode:original",
+      "passed": true,
+      "detail": {
+        "position": [
+          222.20471271554393,
+          90.63228192394627,
+          -68.10022142715673
+        ],
+        "target": [
+          -2.4498252868652344,
+          17.747307777404785,
+          0.1951751708984375
+        ],
+        "zoom": 1,
+        "distance": 245.85797139385897,
+        "autoRotate": false,
+        "mode": "original",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 298,
+        "materialTypes": [
+          "MeshStandardMaterial"
+        ]
+      }
+    },
+    {
+      "name": "120-frame-rotation-clean-render:original",
+      "passed": true,
+      "detail": {
+        "mode": "original",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 132710,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 441.65894019715495,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "name": "pointer-drag-rotates-model-camera",
+      "passed": true,
+      "detail": {
+        "before": [
+          -131.40016416151545,
+          90.63228192394621,
+          196.42395171927922
+        ],
+        "after": [
+          -207.92753359547365,
+          142.55833638222703,
+          51.64671183164558
+        ]
+      }
+    },
+    {
+      "name": "wheel-zooms-model",
+      "passed": true,
+      "detail": {
+        "before": {
+          "zoom": 1,
+          "distance": 245.85797139385886
+        },
+        "after": {
+          "zoom": 1.0967244118415387,
+          "distance": 245.8579713938589
+        }
+      }
+    },
+    {
+      "name": "reset-restores-initial-camera-and-stops-rotation",
+      "passed": true,
+      "detail": {
+        "position": [
+          -131.40016416151545,
+          90.63228192394621,
+          196.42395171927922
+        ],
+        "target": [
+          -2.4498252868652344,
+          17.747307777404785,
+          0.1951751708984375
+        ],
+        "zoom": 1,
+        "distance": 245.8579713938588,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 298,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "automatic-rotation-toggle-and-movement",
+      "passed": true,
+      "detail": {
+        "start": [
+          -137.51229834916674,
+          90.63228192394621,
+          192.26821078979148
+        ],
+        "end": [
+          -198.80737734101183,
+          90.63228192394621,
+          128.94933779434368
+        ]
+      }
+    },
+    {
+      "name": "automatic-rotation-can-stop",
+      "passed": true
+    },
+    {
+      "name": "outline-toggle-off",
+      "passed": true
+    },
+    {
+      "name": "outline-toggle-on",
+      "passed": true
+    },
+    {
+      "name": "outline-width-control",
+      "passed": true
+    },
+    {
+      "name": "view-preset:front",
+      "passed": true,
+      "detail": {
+        "position": [
+          -2.4498252868652344,
+          17.7473077774048,
+          246.05314656475724
+        ],
+        "target": [
+          -2.4498252868652344,
+          17.747307777404785,
+          0.1951751708984375
+        ],
+        "zoom": 1,
+        "distance": 245.8579713938588,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "front",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 298,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "view-preset:back",
+      "passed": true,
+      "detail": {
+        "position": [
+          -2.449825286865204,
+          17.7473077774048,
+          -245.66279622296037
+        ],
+        "target": [
+          -2.4498252868652344,
+          17.747307777404785,
+          0.1951751708984375
+        ],
+        "zoom": 1,
+        "distance": 245.8579713938588,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "back",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 298,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "view-preset:top",
+      "passed": true,
+      "detail": {
+        "position": [
+          -2.4498252868652344,
+          263.5284525567142,
+          6.340984220618746
+        ],
+        "target": [
+          -2.4498252868652344,
+          17.747307777404785,
+          0.1951751708984375
+        ],
+        "zoom": 1,
+        "distance": 245.8579713938588,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "top",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 298,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "view-preset:iso",
+      "passed": true,
+      "detail": {
+        "position": [
+          -131.40016416151545,
+          90.63228192394621,
+          196.42395171927922
+        ],
+        "target": [
+          -2.4498252868652344,
+          17.747307777404785,
+          0.1951751708984375
+        ],
+        "zoom": 1,
+        "distance": 245.8579713938588,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 298,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "front-and-back-face-opposite-directions",
+      "passed": true,
+      "detail": {
+        "cosine": -1
+      }
+    },
+    {
+      "name": "top-view-looks-down-on-model",
+      "passed": true,
+      "detail": {
+        "direction": [
+          0,
+          245.78114477930944,
+          6.145809049720309
+        ]
+      }
+    },
+    {
+      "name": "fit-keeps-entire-model-bounds-in-viewport",
+      "passed": true,
+      "detail": {
+        "ndcCorners": [
+          [
+            -0.6041541987096606,
+            -0.7177376077811921,
+            -0.8603724165029173
+          ],
+          [
+            -0.24281873152225844,
+            -0.9523809523809524,
+            -0.882313800567125
+          ],
+          [
+            -0.6041541987096606,
+            0.7148682933195839,
+            -0.8732798421006452
+          ],
+          [
+            -0.24281873152225844,
+            0.4802249487198236,
+            -0.895221226164853
+          ],
+          [
+            0.24281873152225808,
+            -0.4802249487198236,
+            -0.8381627242507637
+          ],
+          [
+            0.6041541987096604,
+            -0.7148682933195839,
+            -0.8601041083149714
+          ],
+          [
+            0.24281873152225808,
+            0.9523809523809524,
+            -0.8510701498484916
+          ],
+          [
+            0.6041541987096604,
+            0.7177376077811921,
+            -0.8730115339126994
+          ]
+        ],
+        "maxXY": 0.9523809523809524,
+        "allInDepth": true
+      }
+    },
+    {
+      "name": "detail-focus:keep",
+      "passed": true,
+      "detail": {
+        "before": {
+          "position": [
+            -131.40016416151545,
+            90.63228192394621,
+            196.42395171927922
+          ],
+          "target": [
+            -2.4498252868652344,
+            17.747307777404785,
+            0.1951751708984375
+          ],
+          "zoom": 1,
+          "distance": 245.8579713938588,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 298,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        },
+        "after": {
+          "position": [
+            -81.07331261019014,
+            65.33156343505925,
+            122.22145572015496
+          ],
+          "target": [
+            -0.1322145462036133,
+            19.582247138023376,
+            -0.9497804641723634
+          ],
+          "zoom": 1,
+          "distance": 154.3230855077278,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 298,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        }
+      }
+    },
+    {
+      "name": "detail-focus:bell_tower",
+      "passed": true,
+      "detail": {
+        "before": {
+          "position": [
+            -131.40016416151545,
+            90.63228192394621,
+            196.42395171927922
+          ],
+          "target": [
+            -2.4498252868652344,
+            17.747307777404785,
+            0.1951751708984375
+          ],
+          "zoom": 1,
+          "distance": 245.8579713938588,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 298,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        },
+        "after": {
+          "position": [
+            -52.828805477806846,
+            68.35622181788979,
+            72.61873200486589
+          ],
+          "target": [
+            0.47778987884521484,
+            38.226407051086426,
+            -8.500000059604645
+          ],
+          "zoom": 1,
+          "distance": 101.63487363177602,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 230,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        }
+      }
+    },
+    {
+      "name": "detail-focus:dock",
+      "passed": true,
+      "detail": {
+        "before": {
+          "position": [
+            -131.40016416151545,
+            90.63228192394621,
+            196.42395171927922
+          ],
+          "target": [
+            -2.4498252868652344,
+            17.747307777404785,
+            0.1951751708984375
+          ],
+          "zoom": 1,
+          "distance": 245.8579713938588,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 298,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        },
+        "after": {
+          "position": [
+            -70.30905249593344,
+            53.3334761151412,
+            115.08869797454324
+          ],
+          "target": [
+            0,
+            13.59357687830925,
+            8.096661567687988
+          ],
+          "zoom": 1,
+          "distance": 134.0519239276905,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 298,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        }
+      }
+    },
+    {
+      "name": "detail-focus:machinery",
+      "passed": true,
+      "detail": {
+        "before": {
+          "position": [
+            -131.40016416151545,
+            90.63228192394621,
+            196.42395171927922
+          ],
+          "target": [
+            -2.4498252868652344,
+            17.747307777404785,
+            0.1951751708984375
+          ],
+          "zoom": 1,
+          "distance": 245.8579713938588,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 298,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        },
+        "after": {
+          "position": [
+            -88.36814611998147,
+            61.595483501756675,
+            130.9536629762525
+          ],
+          "target": [
+            -2.4498252868652344,
+            13.03295433521271,
+            0.20839214324951175
+          ],
+          "zoom": 1,
+          "distance": 163.81270689122084,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 298,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        }
+      }
+    },
+    {
+      "name": "structure-group-can-hide",
+      "passed": true
+    },
+    {
+      "name": "structure-group-can-show",
+      "passed": true
+    },
+    {
+      "name": "reference-modal-opens-with-decoded-original",
+      "passed": true,
+      "detail": {
+        "width": 1536,
+        "height": 1024,
+        "embedded": true
+      }
+    },
+    {
+      "name": "reference-modal-closes",
+      "passed": true
+    },
+    {
+      "name": "review-note-and-check-persist-after-reload",
+      "passed": true
+    },
+    {
+      "name": "review-json-export-matches-saved-opinion",
+      "passed": true,
+      "detail": {
+        "path": "work/verification/enemy-base-v1/chapter2-volley-r1/qa-review-export.json",
+        "bytes": 1085,
+        "sha256": "afea1e1794aef18abcf10b500034b0495a28e7fb85eb790872c09173b55bbad3",
+        "suggestedFilename": "cloudstitch-enemy-base-review.json",
+        "exportedKeys": [
+          "schema",
+          "asset",
+          "title",
+          "checks",
+          "comment",
+          "updatedAt",
+          "view",
+          "assetStats",
+          "localOnly"
+        ]
+      }
+    },
+    {
+      "name": "download-is-exact-source-glb",
+      "passed": true,
+      "detail": {
+        "path": "work/verification/enemy-base-v1/chapter2-volley-r1/qa-download.glb",
+        "bytes": 48333588,
+        "sha256": "487c2cfc38f81d1f27c0134db50857c619be9add00bd3f6a9e850a3c26cd711d",
+        "suggestedFilename": "enemy-base.glb"
+      }
+    },
+    {
+      "name": "mobile-390-no-horizontal-overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": {
+          "left": 12,
+          "right": 378,
+          "width": 366
+        },
+        "passed": true
+      }
+    },
+    {
+      "name": "mobile-review-dialog-fits-viewport",
+      "passed": true,
+      "detail": {
+        "left": 14,
+        "right": 376,
+        "width": 362,
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "volley-real-glb-animation-present",
+      "passed": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 0,
+        "activeArrows": 0,
+        "sectors": 0,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.000009999999747378752,
+            0.000009999999747378752,
+            0.000009999999747378752
+          ]
+        },
+        "racks": 48,
+        "recoiling": 0,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-rest-has-no-detached-arrows",
+      "passed": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 0,
+        "activeArrows": 0,
+        "sectors": 0,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.000009999999747378752,
+            0.000009999999747378752,
+            0.000009999999747378752
+          ]
+        },
+        "racks": 48,
+        "recoiling": 0,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-racks-have-prelaunch-motion",
+      "passed": true,
+      "detail": {
+        "time": 0.72,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 0,
+        "activeArrows": 0,
+        "sectors": 0,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.000009999999747378752,
+            0.000009999999747378752,
+            0.000009999999747378752
+          ]
+        },
+        "racks": 48,
+        "recoiling": 42,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-thousands-of-real-arrows",
+      "passed": true,
+      "detail": {
+        "time": 2.65,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 156,
+        "activeArrows": 3744,
+        "sectors": 48,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": true,
+          "position": [
+            0,
+            -3.1111115820615884,
+            42.622222740267745
+          ],
+          "scale": [
+            2.3533333707738846,
+            1.9022222083291953,
+            1
+          ]
+        },
+        "racks": 48,
+        "recoiling": 32,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-all-48-directions-engaged",
+      "passed": true,
+      "detail": {
+        "time": 2.65,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 156,
+        "activeArrows": 3744,
+        "sectors": 48,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": true,
+          "position": [
+            0,
+            -3.1111115820615884,
+            42.622222740267745
+          ],
+          "scale": [
+            2.3533333707738846,
+            1.9022222083291953,
+            1
+          ]
+        },
+        "racks": 48,
+        "recoiling": 32,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-projectiles-travel-away-from-ports",
+      "passed": true,
+      "detail": {
+        "name": "arrow_cloud_0_0_0",
+        "active": true,
+        "position": [
+          0,
+          -3.1111115820615884,
+          42.622222740267745
+        ],
+        "scale": [
+          2.3533333707738846,
+          1.9022222083291953,
+          1
+        ]
+      }
+    },
+    {
+      "name": "volley-play-advances-time",
+      "passed": true,
+      "detail": {
+        "time": 1.4002000000000008,
+        "playing": true,
+        "clouds": 192,
+        "activeClouds": 50,
+        "activeArrows": 1200,
+        "sectors": 48,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": true,
+          "position": [
+            0,
+            4.062472523730248,
+            13.749817189114083
+          ],
+          "scale": [
+            1.4583272123187037,
+            1.2437454704584192,
+            1
+          ]
+        },
+        "racks": 48,
+        "recoiling": 34,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-pause-holds-exact-time",
+      "passed": true,
+      "detail": {
+        "time": 1.4335,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 52,
+        "activeArrows": 1248,
+        "sectors": 48,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": true,
+          "position": [
+            0,
+            4.171454348473501,
+            14.476362706649322
+          ],
+          "scale": [
+            1.482545394793029,
+            1.2619091055097678,
+            1
+          ]
+        },
+        "racks": 48,
+        "recoiling": 32,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-stop-resets-all-arrows",
+      "passed": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 0,
+        "activeArrows": 0,
+        "sectors": 0,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.000009999999747378752,
+            0.000009999999747378752,
+            0.000009999999747378752
+          ]
+        },
+        "racks": 48,
+        "recoiling": 0,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-scrub-displays-selected-time",
+      "passed": true
+    },
+    {
+      "name": "volley-loop-wraps-without-old-arrows",
+      "passed": true,
+      "detail": {
+        "time": 0.20680000000000043,
+        "playing": true,
+        "clouds": 192,
+        "activeClouds": 0,
+        "activeArrows": 0,
+        "sectors": 0,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.000009999999747378752,
+            0.000009999999747378752,
+            0.000009999999747378752
+          ]
+        },
+        "racks": 48,
+        "recoiling": 48,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-repeated-seeks-do-not-allocate-nodes",
+      "passed": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 0,
+        "activeArrows": 0,
+        "sectors": 0,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.000009999999747378752,
+            0.000009999999747378752,
+            0.000009999999747378752
+          ]
+        },
+        "racks": 48,
+        "recoiling": 0,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "volley-full-range-button-opens-peak",
+      "passed": true,
+      "detail": {
+        "time": 2.65,
+        "playing": false,
+        "clouds": 192,
+        "activeClouds": 156,
+        "activeArrows": 3744,
+        "sectors": 48,
+        "first": {
+          "name": "arrow_cloud_0_0_0",
+          "active": true,
+          "position": [
+            0,
+            -3.1111115820615884,
+            42.622222740267745
+          ],
+          "scale": [
+            2.3533333707738846,
+            1.9022222083291953,
+            1
+          ]
+        },
+        "racks": 48,
+        "recoiling": 32,
+        "geometries": 60,
+        "meshes": 298
+      }
+    },
+    {
+      "name": "no-external-http-requests",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-page-errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-console-errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-failed-requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "ghosting": [
+    {
+      "mode": "handdrawn",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 133190,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 444.0153886091236,
+      "outlineAutoClear": true
+    },
+    {
+      "mode": "cel",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 132691,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 441.598739955229,
+      "outlineAutoClear": true
+    },
+    {
+      "mode": "original",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 132710,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 441.65894019715495,
+      "outlineAutoClear": true
+    }
+  ],
+  "screenshots": [
+    "work/verification/enemy-base-v1/chapter2-volley-r1/review-desktop.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/model-iso.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/model-back.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/model-front.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/detail-shell.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/detail-harbour.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/detail-coral.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/review-mobile-390.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/volley-peak.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/volley-review.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/volley-top.png",
+    "work/verification/enemy-base-v1/chapter2-volley-r1/detail-arrow-rack.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "limits": [
+    "Static 3D asset and local review page verification only; no campaign, combat, collision or game balance is tested.",
+    "The 390px viewport is browser emulation, not a physical mobile-device performance test.",
+    "Same-pose canvas pixels before and after a clean render detect accumulated frames; they do not substitute for human art approval."
+  ],
+  "model": {
+    "path": "outputs/enemy-base-v1/chapter2-volley-r1/enemy-base.glb",
+    "bytes": 48333588,
+    "sha256": "487c2cfc38f81d1f27c0134db50857c619be9add00bd3f6a9e850a3c26cd711d",
+    "version": "2.0",
+    "binaryBytes": 47964132,
+    "nodesInScene": 406,
+    "primitiveInstances": 298,
+    "triangleCount": 1020908,
+    "vertexInstances": 1696615,
+    "meshDefinitions": 60,
+    "materials": 23,
+    "images": 1,
+    "animations": 1,
+    "nonTriangleModes": [],
+    "externalUris": []
+  },
+  "modelManifest": {
+    "revision": "chapter2-volley-r1",
+    "source": {
+      "path": "outputs/enemy-base-v1/chapter2-r2/enemy-base.glb",
+      "sha256": "d478dfa063f9f475f962da048493fb4de898da1dcc38d73c2e40de4df65143de",
+      "binaryAndOriginalMeshesMaterialsImagesPreserved": true
+    },
+    "model": {
+      "path": "enemy-base.glb",
+      "bytes": 48333588,
+      "sha256": "487c2cfc38f81d1f27c0134db50857c619be9add00bd3f6a9e850a3c26cd711d",
+      "animations": 1
+    },
+    "presentation": {
+      "duration": 8,
+      "actualBatteries": 48,
+      "portsPerBattery": 24,
+      "bursts": 4,
+      "arrowsPerCycle": 4608,
+      "cloudNodes": 192,
+      "arrowsPerCloud": 24,
+      "cycle": "wind-up → four travelling sector volleys → drifting tails → reload → reset",
+      "noDamage": true,
+      "noEquipmentRuleChange": true
+    },
+    "placements": [
+      {
+        "tier": 0,
+        "sector": 0,
+        "position": [
+          0,
+          8.5,
+          23.2
+        ],
+        "quaternion": [
+          -0.11474668839366382,
+          0,
+          0,
+          0.9933947843142158
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.82
+      },
+      {
+        "tier": 0,
+        "sector": 1,
+        "position": [
+          11.289161254770148,
+          8.5,
+          21.43400515426185
+        ],
+        "quaternion": [
+          -0.11254186295152167,
+          0.19380170836100263,
+          0.0223859683890042,
+          0.9743069820847248
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.875
+      },
+      {
+        "tier": 0,
+        "sector": 2,
+        "position": [
+          20.85965004500315,
+          8.5,
+          16.404877323527902
+        ],
+        "quaternion": [
+          -0.10601211683035643,
+          0.38015572575494216,
+          0.043911656567014686,
+          0.9177771089313682
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.9299999999999999
+      },
+      {
+        "tier": 0,
+        "sector": 3,
+        "position": [
+          27.25444620908296,
+          8.5,
+          8.878255630870084
+        ],
+        "quaternion": [
+          -0.09540838451168063,
+          0.5519005718019063,
+          0.0637498444090955,
+          0.8259775761771115
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.985
+      },
+      {
+        "tier": 0,
+        "sector": 4,
+        "position": [
+          29.5,
+          8.5,
+          1.4205902870109297e-15
+        ],
+        "quaternion": [
+          -0.0811381614818594,
+          0.7024361883839297,
+          0.08113816148185939,
+          0.7024361883839298
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.04
+      },
+      {
+        "tier": 0,
+        "sector": 5,
+        "position": [
+          27.25444620908296,
+          8.5,
+          -8.87825563087008
+        ],
+        "quaternion": [
+          -0.06374984440909551,
+          0.8259775761771115,
+          0.09540838451168063,
+          0.5519005718019064
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.095
+      },
+      {
+        "tier": 0,
+        "sector": 6,
+        "position": [
+          20.859650045003153,
+          8.5,
+          -16.404877323527902
+        ],
+        "quaternion": [
+          -0.043911656567014686,
+          0.9177771089313682,
+          0.10601211683035643,
+          0.3801557257549422
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.15
+      },
+      {
+        "tier": 0,
+        "sector": 7,
+        "position": [
+          11.289161254770152,
+          8.5,
+          -21.43400515426185
+        ],
+        "quaternion": [
+          -0.02238596838900421,
+          0.9743069820847248,
+          0.11254186295152167,
+          0.19380170836100272
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.205
+      },
+      {
+        "tier": 0,
+        "sector": 8,
+        "position": [
+          3.6127080574846916e-15,
+          8.5,
+          -23.2
+        ],
+        "quaternion": [
+          -7.026208232702958e-18,
+          0.9933947843142158,
+          0.11474668839366382,
+          6.082788714500398e-17
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.82
+      },
+      {
+        "tier": 0,
+        "sector": 9,
+        "position": [
+          -11.289161254770145,
+          8.5,
+          -21.434005154261854
+        ],
+        "quaternion": [
+          0.022385968389004196,
+          0.9743069820847248,
+          0.11254186295152167,
+          -0.19380170836100258
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.875
+      },
+      {
+        "tier": 0,
+        "sector": 10,
+        "position": [
+          -20.85965004500315,
+          8.5,
+          -16.404877323527906
+        ],
+        "quaternion": [
+          0.04391165656701468,
+          0.9177771089313682,
+          0.10601211683035643,
+          -0.3801557257549421
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.9299999999999999
+      },
+      {
+        "tier": 0,
+        "sector": 11,
+        "position": [
+          -27.254446209082953,
+          8.5,
+          -8.878255630870095
+        ],
+        "quaternion": [
+          0.06374984440909547,
+          0.8259775761771116,
+          0.09540838451168064,
+          -0.5519005718019061
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.985
+      },
+      {
+        "tier": 0,
+        "sector": 12,
+        "position": [
+          -29.5,
+          8.5,
+          -4.261770861032789e-15
+        ],
+        "quaternion": [
+          0.08113816148185939,
+          0.7024361883839298,
+          0.0811381614818594,
+          -0.7024361883839297
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.04
+      },
+      {
+        "tier": 0,
+        "sector": 13,
+        "position": [
+          -27.254446209082957,
+          8.5,
+          8.878255630870088
+        ],
+        "quaternion": [
+          0.09540838451168064,
+          0.5519005718019063,
+          0.0637498444090955,
+          -0.8259775761771116
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.095
+      },
+      {
+        "tier": 0,
+        "sector": 14,
+        "position": [
+          -20.859650045003157,
+          8.5,
+          16.4048773235279
+        ],
+        "quaternion": [
+          0.10601211683035643,
+          0.3801557257549423,
+          0.04391165656701469,
+          -0.9177771089313682
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.15
+      },
+      {
+        "tier": 0,
+        "sector": 15,
+        "position": [
+          -11.289161254770166,
+          8.5,
+          21.434005154261847
+        ],
+        "quaternion": [
+          0.11254186295152167,
+          0.193801708361003,
+          0.02238596838900424,
+          -0.9743069820847248
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.205
+      },
+      {
+        "tier": 1,
+        "sector": 0,
+        "position": [
+          3.418806308783794,
+          17.2,
+          18.616060728797578
+        ],
+        "quaternion": [
+          -0.1687680215369814,
+          0.06893460489015323,
+          0.011833095212998083,
+          0.9831710700650278
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.855
+      },
+      {
+        "tier": 1,
+        "sector": 1,
+        "position": [
+          12.442576951535791,
+          17.2,
+          16.195061727513764
+        ],
+        "quaternion": [
+          -0.16321666897069542,
+          0.2594172064426025,
+          0.04453073327419302,
+          0.9508312393719978
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.91
+      },
+      {
+        "tier": 1,
+        "sector": 2,
+        "position": [
+          19.572078045657406,
+          17.2,
+          11.30851138681612
+        ],
+        "quaternion": [
+          -0.1513929913488281,
+          0.439930550234308,
+          0.07551708022878365,
+          0.8819514973822042
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.965
+      },
+      {
+        "tier": 1,
+        "sector": 3,
+        "position": [
+          23.721907678656976,
+          17.2,
+          4.700342699386712
+        ],
+        "quaternion": [
+          -0.13375136597159304,
+          0.603537609696404,
+          0.10360134814064863,
+          0.7791788539521105
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.02
+      },
+      {
+        "tier": 1,
+        "sector": 4,
+        "position": [
+          24.26029190720961,
+          17.2,
+          -2.623410555311647
+        ],
+        "quaternion": [
+          -0.11096975060869982,
+          0.7439510572856581,
+          0.12770427434377388,
+          0.6464628041331727
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.075
+      },
+      {
+        "tier": 1,
+        "sector": 5,
+        "position": [
+          21.105266612983364,
+          17.2,
+          -9.547773334239713
+        ],
+        "quaternion": [
+          -0.08392362996246738,
+          0.8557748829559838,
+          0.14689959690125,
+          0.4889035512919143
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.13
+      },
+      {
+        "tier": 1,
+        "sector": 6,
+        "position": [
+          14.737155796648667,
+          17.2,
+          -15.018574173810581
+        ],
+        "quaternion": [
+          -0.053652371281691216,
+          0.9347117597983945,
+          0.16044965033205416,
+          0.31255600915477794
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.1849999999999998
+      },
+      {
+        "tier": 1,
+        "sector": 7,
+        "position": [
+          6.125446602924174,
+          17.2,
+          -18.2029332391327
+        ],
+        "quaternion": [
+          -0.02131928206115612,
+          0.977728187904147,
+          0.16783371368179803,
+          0.12419711486925283
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.24
+      },
+      {
+        "tier": 1,
+        "sector": 8,
+        "position": [
+          -3.418806308783794,
+          17.2,
+          -18.616060728797578
+        ],
+        "quaternion": [
+          0.011833095212998083,
+          0.9831710700650278,
+          0.1687680215369814,
+          -0.06893460489015323
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.855
+      },
+      {
+        "tier": 1,
+        "sector": 9,
+        "position": [
+          -12.442576951535791,
+          17.2,
+          -16.195061727513764
+        ],
+        "quaternion": [
+          0.04453073327419302,
+          0.9508312393719978,
+          0.16321666897069542,
+          -0.2594172064426025
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.91
+      },
+      {
+        "tier": 1,
+        "sector": 10,
+        "position": [
+          -19.5720780456574,
+          17.2,
+          -11.308511386816125
+        ],
+        "quaternion": [
+          0.07551708022878362,
+          0.8819514973822044,
+          0.15139299134882814,
+          -0.4399305502343078
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.965
+      },
+      {
+        "tier": 1,
+        "sector": 11,
+        "position": [
+          -23.72190767865697,
+          17.2,
+          -4.700342699386731
+        ],
+        "quaternion": [
+          0.10360134814064854,
+          0.7791788539521107,
+          0.13375136597159307,
+          -0.6035376096964036
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.02
+      },
+      {
+        "tier": 1,
+        "sector": 12,
+        "position": [
+          -24.260291907209613,
+          17.2,
+          2.623410555311637
+        ],
+        "quaternion": [
+          0.12770427434377382,
+          0.6464628041331729,
+          0.11096975060869986,
+          -0.7439510572856579
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.075
+      },
+      {
+        "tier": 1,
+        "sector": 13,
+        "position": [
+          -21.105266612983364,
+          17.2,
+          9.54777333423971
+        ],
+        "quaternion": [
+          0.14689959690124998,
+          0.4889035512919143,
+          0.08392362996246738,
+          -0.8557748829559837
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.13
+      },
+      {
+        "tier": 1,
+        "sector": 14,
+        "position": [
+          -14.737155796648677,
+          17.2,
+          15.018574173810576
+        ],
+        "quaternion": [
+          0.16044965033205416,
+          0.3125560091547782,
+          0.05365237128169126,
+          -0.9347117597983945
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.1849999999999998
+      },
+      {
+        "tier": 1,
+        "sector": 15,
+        "position": [
+          -6.125446602924199,
+          17.2,
+          18.202933239132694
+        ],
+        "quaternion": [
+          0.16783371368179803,
+          0.12419711486925333,
+          0.021319282061156207,
+          -0.9777281879041468
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.24
+      },
+      {
+        "tier": 2,
+        "sector": 0,
+        "position": [
+          0,
+          25.5,
+          14.2
+        ],
+        "quaternion": [
+          -0.2133474283007823,
+          0,
+          0,
+          0.9769763942068623
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.8899999999999999
+      },
+      {
+        "tier": 2,
+        "sector": 1,
+        "position": [
+          7.194448528463688,
+          25.5,
+          13.11908936166027
+        ],
+        "quaternion": [
+          -0.20924801728929085,
+          0.19059863934797264,
+          0.04162201848851245,
+          0.9582040667395144
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.9450000000000001
+      },
+      {
+        "tier": 2,
+        "sector": 2,
+        "position": [
+          13.293607486307092,
+          25.5,
+          10.040916292848975
+        ],
+        "quaternion": [
+          -0.19710732232101202,
+          0.3738726798747511,
+          0.08164452614840827,
+          0.9026084943543986
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1
+      },
+      {
+        "tier": 2,
+        "sector": 3,
+        "position": [
+          17.368935211212193,
+          25.5,
+          5.434104739584275
+        ],
+        "quaternion": [
+          -0.17739190349499653,
+          0.5427790029841573,
+          0.11852948045519848,
+          0.8123261837199184
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.055
+      },
+      {
+        "tier": 2,
+        "sector": 4,
+        "position": [
+          18.8,
+          25.5,
+          8.694992273946208e-16
+        ],
+        "quaternion": [
+          -0.15085941330019392,
+          0.6908266334028539,
+          0.1508594133001939,
+          0.690826633402854
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.11
+      },
+      {
+        "tier": 2,
+        "sector": 5,
+        "position": [
+          17.368935211212193,
+          25.5,
+          -5.434104739584273
+        ],
+        "quaternion": [
+          -0.11852948045519851,
+          0.8123261837199184,
+          0.17739190349499653,
+          0.5427790029841574
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.165
+      },
+      {
+        "tier": 2,
+        "sector": 6,
+        "position": [
+          13.293607486307096,
+          25.5,
+          -10.040916292848973
+        ],
+        "quaternion": [
+          -0.08164452614840828,
+          0.9026084943543986,
+          0.19710732232101202,
+          0.37387267987475115
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.22
+      },
+      {
+        "tier": 2,
+        "sector": 7,
+        "position": [
+          7.19444852846369,
+          25.5,
+          -13.11908936166027
+        ],
+        "quaternion": [
+          -0.04162201848851247,
+          0.9582040667395144,
+          0.20924801728929085,
+          0.1905986393479727
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.2750000000000001
+      },
+      {
+        "tier": 2,
+        "sector": 8,
+        "position": [
+          2.3023359823970243e-15,
+          25.5,
+          -14.2
+        ],
+        "quaternion": [
+          -1.3063762258743623e-17,
+          0.9769763942068623,
+          0.2133474283007823,
+          5.982255070039783e-17
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.8899999999999999
+      },
+      {
+        "tier": 2,
+        "sector": 9,
+        "position": [
+          -7.194448528463686,
+          25.5,
+          -13.119089361660272
+        ],
+        "quaternion": [
+          0.041622018488512436,
+          0.9582040667395144,
+          0.20924801728929085,
+          -0.19059863934797258
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 0.9450000000000001
+      },
+      {
+        "tier": 2,
+        "sector": 10,
+        "position": [
+          -13.293607486307092,
+          25.5,
+          -10.040916292848976
+        ],
+        "quaternion": [
+          0.08164452614840825,
+          0.9026084943543986,
+          0.19710732232101202,
+          -0.37387267987475103
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1
+      },
+      {
+        "tier": 2,
+        "sector": 11,
+        "position": [
+          -17.368935211212186,
+          25.5,
+          -5.434104739584282
+        ],
+        "quaternion": [
+          0.11852948045519844,
+          0.8123261837199185,
+          0.17739190349499653,
+          -0.542779002984157
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.055
+      },
+      {
+        "tier": 2,
+        "sector": 12,
+        "position": [
+          -18.8,
+          25.5,
+          -2.608497682183862e-15
+        ],
+        "quaternion": [
+          0.1508594133001939,
+          0.690826633402854,
+          0.15085941330019392,
+          -0.6908266334028539
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.11
+      },
+      {
+        "tier": 2,
+        "sector": 13,
+        "position": [
+          -17.36893521121219,
+          25.5,
+          5.434104739584278
+        ],
+        "quaternion": [
+          0.17739190349499653,
+          0.5427790029841573,
+          0.11852948045519848,
+          -0.8123261837199185
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.165
+      },
+      {
+        "tier": 2,
+        "sector": 14,
+        "position": [
+          -13.293607486307097,
+          25.5,
+          10.040916292848971
+        ],
+        "quaternion": [
+          0.19710732232101202,
+          0.3738726798747512,
+          0.08164452614840828,
+          -0.9026084943543986
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.22
+      },
+      {
+        "tier": 2,
+        "sector": 15,
+        "position": [
+          -7.1944485284637,
+          25.5,
+          13.119089361660269
+        ],
+        "quaternion": [
+          0.20924801728929085,
+          0.19059863934797297,
+          0.041622018488512526,
+          -0.9582040667395144
+        ],
+        "ports": 24,
+        "bursts": 4,
+        "launch": 1.2750000000000001
+      }
+    ],
+    "limits": [
+      "Art-only authored projectile flight; not physics or collision",
+      "Batched 24 arrows share a flight transform; slight batch fan expansion is a visual effect",
+      "Painted speed streaks are opaque mesh geometry, not engine particles",
+      "No sound generated; no combat/sim integration"
+    ]
+  },
+  "modelManifestSha256": "b8126c3ab98bebe37be010ca0a65ff712444411c9e76f4dd24cedef29ff91685",
+  "browser": {
+    "version": "155.0.8059.40",
+    "desktop": {
+      "width": 1440,
+      "height": 1050
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    },
+    "deviceScaleFactor": 1,
+    "entryProtocol": "file:"
+  },
+  "renderedGeometry": {
+    "meshes": 298,
+    "vertices": 1696615,
+    "triangles": 1020908,
+    "badCoordinates": 0,
+    "min": [
+      -41.490203857421875,
+      -22.394376754760742,
+      -25.149999618530273
+    ],
+    "max": [
+      36.590553283691406,
+      57.88899230957031,
+      25.54034996032715
+    ],
+    "size": [
+      78.08075714111328,
+      80.28336906433105,
+      50.69034957885742
+    ],
+    "renderCalls": 298,
+    "rootChildren": 1,
+    "stats": {
+      "triangles": 1020908,
+      "meshes": 298,
+      "materials": 23,
+      "vertices": 1696615,
+      "geometries": 60,
+      "bytes": 48333588,
+      "animations": 1,
+      "groups": [
+        "hull",
+        "buoyancy",
+        "keep",
+        "bell_tower",
+        "bastions",
+        "dock",
+        "machinery",
+        "banners",
+        "arrow_batteries",
+        "arrow_rain"
+      ],
+      "bounds": [
+        78.08075714111328,
+        80.28336906433105,
+        50.69034957885742
+      ],
+      "mode": "handdrawn",
+      "view": "iso",
+      "focus": null,
+      "outline": true,
+      "outlineEnabled": true
+    },
+    "effectAutoClear": true
+  },
+  "download": {
+    "path": "work/verification/enemy-base-v1/chapter2-volley-r1/qa-download.glb",
+    "bytes": 48333588,
+    "sha256": "487c2cfc38f81d1f27c0134db50857c619be9add00bd3f6a9e850a3c26cd711d",
+    "suggestedFilename": "enemy-base.glb"
+  },
+  "volleyPeak": {
+    "time": 2.65,
+    "playing": false,
+    "clouds": 192,
+    "activeClouds": 156,
+    "activeArrows": 3744,
+    "sectors": 48,
+    "first": {
+      "name": "arrow_cloud_0_0_0",
+      "active": true,
+      "position": [
+        0,
+        -3.1111115820615884,
+        42.622222740267745
+      ],
+      "scale": [
+        2.3533333707738846,
+        1.9022222083291953,
+        1
+      ]
+    },
+    "racks": 48,
+    "recoiling": 32,
+    "geometries": 60,
+    "meshes": 298
+  },
+  "completedAt": "2026-10-19T03:06:43.448Z",
+  "summary": {
+    "total": 62,
+    "passed": 62,
+    "failed": 0
+  },
+  "passed": true
+}

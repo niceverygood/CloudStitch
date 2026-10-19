@@ -1,0 +1,331 @@
+{
+  "revision": "chapter2-r2",
+  "status": "READY_art_review",
+  "ownership": [
+    "tools/enemy-base/chapter2-r2/",
+    "outputs/enemy-base-v1/chapter2-r2/"
+  ],
+  "sourceReady": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/SOURCE_READY.json",
+    "bytes": 6971,
+    "sha256": "5f29328e7e3c080a5a27fe157c49e0da2d2918bc4b5077a26f1b4f95fe073fd2"
+  },
+  "readOnlyDependencies": [
+    {
+      "path": "tools/lib/runtime.cjs",
+      "bytes": 1969,
+      "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+    },
+    {
+      "path": "tools/qa/world-gltf.cjs",
+      "bytes": 10543,
+      "sha256": "72e8832121aac1e845aac79b8a244716f571337ccd06607891b22abba93eb6f4"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-moodboard-v1/moodboard.png",
+      "bytes": 3613828,
+      "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/model-iso.png",
+      "bytes": 497827,
+      "sha256": "1a8d0b857ab9be23428ceb4987957a5ed489f3c13a921a911e93082cf8c1d9d8"
+    }
+  ],
+  "modelSha256": "d478dfa063f9f475f962da048493fb4de898da1dcc38d73c2e40de4df65143de",
+  "verification": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/verification.json",
+    "bytes": 6399,
+    "sha256": "08fea91df9858a13587250210e1de205fdfd0d9b0e15006f74c3b806903999e5"
+  },
+  "files": [
+    {
+      "path": "tools/enemy-base/chapter2-r2/build.cjs",
+      "bytes": 1864,
+      "sha256": "83f5fc9004e54adfe72750c6387e70861401131624a0aa1185b8db4d6b30917e"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/finalize.cjs",
+      "bytes": 5479,
+      "sha256": "b9473f07220d75ca765ef63858f625850d52f38e8b67949dce9c0681c9c051cb"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/finish-orientation.cjs",
+      "bytes": 2255,
+      "sha256": "f6b4f26ed45635ed32a75122e40d735692e91a64ba780f78113c0b7ddfc90579"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/generate.cjs",
+      "bytes": 1209,
+      "sha256": "23ba823f04264510412065751e6fac17e236f452f8e10d4462db925e75f86bfe"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/generate.mjs",
+      "bytes": 4817,
+      "sha256": "38ebc2fbd6f1ff2e2d6549b58596bc62ab04febce90fec5636571a107b168a8f"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/index-exact.cjs",
+      "bytes": 5094,
+      "sha256": "17b9c013b1a8087f3289e13194a49be050b6a2122d3d95fba54053faae6ce2f6"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/inspect.cjs",
+      "bytes": 5079,
+      "sha256": "69a89cf114aee74634feb35ac786238a2e60c8e964e7f752cd1c107d1ed5f55e"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/model.mjs",
+      "bytes": 24304,
+      "sha256": "035fa5bca2b31840c4ddf97a3bcfc6bc3cb7df22e77f2b4eaa81e0d81e54b234"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/paint-export.js",
+      "bytes": 3214,
+      "sha256": "bac6c9f4d2fb234e59c1830b326b315b862d5c3bc364d26f0494dd2ca39916c3"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/paint.cjs",
+      "bytes": 2481,
+      "sha256": "54529e29f472cc3fb83c1a304bc1fbc2aad0544cb5d020cab18734ffb42ddab4"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/qa.cjs",
+      "bytes": 28078,
+      "sha256": "cc4a5358967a813d663ce6432f0d571cc43f238d89c118cf2b1d5e7666ac6326"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/README.txt",
+      "bytes": 1538,
+      "sha256": "99decc9d317e2567462f51147d1cd1ef5fe1d52577d83aa2f71a449d0fa9f41c"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/review.js",
+      "bytes": 22069,
+      "sha256": "d22b087b3e7d7282c81f142893c9c09314a5fbc77fc82cbe7882177c482acd71"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/source-ready.cjs",
+      "bytes": 2263,
+      "sha256": "034bb3ece306e80bb8aec66e807fbf1f1bcda00c63b5c6a9dce72765399347b2"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/template.html",
+      "bytes": 24824,
+      "sha256": "ce01378c637243950cad3abc4cd2fd08932e62322bf5cec29bc787dbd6b532d2"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/verify-surface.cjs",
+      "bytes": 1976,
+      "sha256": "3787c9ef95c79fdaecc9072d8c88a9a2ff5a2144f90b55b810bfb8d61b3a595b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/browser-verification.json",
+      "bytes": 31123,
+      "sha256": "1573478a5d0451b32dd0c1c3d8e11bcb863e1f6850c4df6a71dbb83608f61b17"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/chapter1-iso.png",
+      "bytes": 497827,
+      "sha256": "1a8d0b857ab9be23428ceb4987957a5ed489f3c13a921a911e93082cf8c1d9d8"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/comparison.html",
+      "bytes": 1546,
+      "sha256": "2d285f88ce0673b78bc5c7e1856f5f4b3369dec69fca46d83f6f064e1f16c79b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-coral.png",
+      "bytes": 520393,
+      "sha256": "fb58f2f4038a3976bb85ab0259929ec6f1caaab45c350f5be376a7195f681e5f"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-harbour.png",
+      "bytes": 1114306,
+      "sha256": "c764f7f8bd41df54825ba5ffb84545560ea4d984c008d014aa2e27714d1d991b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-shell.png",
+      "bytes": 667166,
+      "sha256": "9f657efc012b3908b3833398c59272ca96caea8b2d712eecc65a8e947b0f7e46"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/enemy-base.glb",
+      "bytes": 47284180,
+      "sha256": "d478dfa063f9f475f962da048493fb4de898da1dcc38d73c2e40de4df65143de"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/geometry-baseline/enemy-base.glb",
+      "bytes": 79900904,
+      "sha256": "acbfd123d4085a63267e531edffe231ecb5bc355f35308d67720e28d085fac0f"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/geometry-baseline/model-manifest.json",
+      "bytes": 4029,
+      "sha256": "d91ff6fd2520a8063a929d7d1c5546057c1cd29442c47dd3fae7b44f2d8551f9"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/HANDOFF.txt",
+      "bytes": 1579,
+      "sha256": "2f5e65e778fd3a0f8f5a41c678734fb3a0b48a82e94a3f61bbcf0a91447c4bbf"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/index-preservation.json",
+      "bytes": 716,
+      "sha256": "b85562131eb102ecea0dcd3b0edaebc5dcc4ca94afa07a89be4a5db9b463c868"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/index.html",
+      "bytes": 68498035,
+      "sha256": "ec7e5932cec86f6815408d4e3b39706f7fecbeefd2832ee3a19b317840740749"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-back.png",
+      "bytes": 568667,
+      "sha256": "2701062b405abef4b648ba7a38822b7f3d572f8ddd01cf78096593217a9b4483"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-front.png",
+      "bytes": 566363,
+      "sha256": "b198d69206d5e49dddf0d041378e1a53bccdc48342cea549bd5c826fae9c7852"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-iso.png",
+      "bytes": 374870,
+      "sha256": "dea791cf439ce358f804c352fdb6932f45c58adb51d667452f6ca7730f55b28a"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-manifest.json",
+      "bytes": 5843,
+      "sha256": "fd0c9533d102c024abe5cbbd94266634eda14f468ff741d524f3790cb8cabc59"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/orientation-preservation.json",
+      "bytes": 626,
+      "sha256": "d2b3b07d952814416743068ea190ae3458439598c6bd7370da1c0b6671bdc0bc"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/painted-atlas.png",
+      "bytes": 1046725,
+      "sha256": "236f041f9f34f73b8fcb0f47d3cf0bbb8aa7417d97674435f494ddb1fd8907b3"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/browser-verification.json",
+      "bytes": 30394,
+      "sha256": "f4de436e0f3d51a772ea130910d1c6eb7d48ebf7f032efb4071891c639c8c930"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/enemy-base.glb",
+      "bytes": 47284132,
+      "sha256": "c441078575bc15ed6277a4dc04fc043caa118d7399b166163711ab7b1f7b956b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/model-back.png",
+      "bytes": 568539,
+      "sha256": "408c420f1d27145b8cc64ebc795c605ae5be519ce7acf20f3d2fb129998261cd"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/model-iso.png",
+      "bytes": 387035,
+      "sha256": "e2b17a7cf749dc44b9c8e6fddb6df818ece0cee9ea546d5893ad74fe08f0187b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/model-manifest.json",
+      "bytes": 5159,
+      "sha256": "ddcf92f7b16fbf56a9dcf2f92bd7680888f85ba61c58b4f1b7aa8abc2a822b0e"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/review-desktop.png",
+      "bytes": 865989,
+      "sha256": "e5bc5fc6965fd377f8f92088dab7ec7856638137fae31c5e268804e91a543bf9"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/SOURCE_READY.json",
+      "bytes": 6971,
+      "sha256": "5f29328e7e3c080a5a27fe157c49e0da2d2918bc4b5077a26f1b4f95fe073fd2"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/structure-verification.json",
+      "bytes": 1777,
+      "sha256": "b53fe4622296017c3a634a5ffc3ee7088d23e0a55e1884a2d8c1dd645c00abf3"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/pre-orientation/verification.json",
+      "bytes": 4577,
+      "sha256": "785be6ec6c3605d8a99feae0d59c31b72af1a14518ef790d344857d48493be0c"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/reference.png",
+      "bytes": 3613828,
+      "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/review-desktop.png",
+      "bytes": 855482,
+      "sha256": "3068dae5d339bc394c7fc0443f847a335d6aaa6e6ba939a884a9031ffefacd58"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/review-mobile-390.png",
+      "bytes": 271153,
+      "sha256": "5f236a06770c9f24e33047a1b0ffeccf63622c3bf6be582bebb3d9d648464327"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/SOURCE_READY-before-crown.json",
+      "bytes": 5540,
+      "sha256": "c93e31740349c6239ea4a54eb83ad78485c36c7221ef4cc958fc0156ad385c21"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/SOURCE_READY-crown.json",
+      "bytes": 6971,
+      "sha256": "5f29328e7e3c080a5a27fe157c49e0da2d2918bc4b5077a26f1b4f95fe073fd2"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/SOURCE_READY.json",
+      "bytes": 6971,
+      "sha256": "5f29328e7e3c080a5a27fe157c49e0da2d2918bc4b5077a26f1b4f95fe073fd2"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/structure-verification.json",
+      "bytes": 1777,
+      "sha256": "377dd76096f8c26c565d71d1eac7d60d2c6882da90d8cfb44c6dee44b2e5c0cc"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/surface-baseline/enemy-base.glb",
+      "bytes": 46231848,
+      "sha256": "6f40fd171d80293a89bb8dd4acb74426ee943cc83ab4a9aa6ef03674cf2f2a7f"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/surface-baseline/model-manifest.json",
+      "bytes": 4784,
+      "sha256": "488b12c76e27d3ba11ce53ded716b451c58a2834e1d09317201b66efacbf7fba"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/surface-preservation.json",
+      "bytes": 441,
+      "sha256": "7c4f11e77337643928ebf6ebbbcbb27a972e98bfd0b08624a8322c73a23e699d"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/verification.json",
+      "bytes": 6399,
+      "sha256": "08fea91df9858a13587250210e1de205fdfd0d9b0e15006f74c3b806903999e5"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/ART_REVIEW.txt",
+      "bytes": 2173,
+      "sha256": "7c2725dc45bec45f6a93d075e0c181e551e269f5882cda7e567f2d0120f6c8fe"
+    }
+  ],
+  "scope": "All owned files recursively excluding this manifest itself; user art approval separate.",
+  "visualReview": {
+    "actualRendersInspected": true,
+    "userArtApproval": false
+  },
+  "finalModelSha256": "d478dfa063f9f475f962da048493fb4de898da1dcc38d73c2e40de4df65143de",
+  "orientationException": "Only bell_tower rigid transform changed intentionally; all binary data and other JSON exact.",
+  "comparisonLinksVerified": [
+    "index.html",
+    "../dense-r4/index.html",
+    "chapter1-iso.png",
+    "model-iso.png"
+  ]
+}

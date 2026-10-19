@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "gameTitle": "Cloudstitch",
+  "status": "new-independent-spatial-layer-over-preserved-e65ab87-source",
+  "scope": "독립 공간 데이터와 읽기 전용 질의. 전투/이동/피해/등장순서/정산/저장 구현은 담당 호스트 소유.",
+  "coordinates": {
+    "frameId": "levels-lu-yup-v1",
+    "axes": { "right": "+X", "up": "+Y", "forward": "+Z", "flightPlane": "XZ" },
+    "unit": "LU (시제품 공간 비교 단위, 최종 미터/엔진 단위 미확정)",
+    "artUnit": "D (기존 아트 조립 비교 단위)",
+    "transformRequired": ["origin[x,y,z]", "unitsPerArtUnit > 0", "yawRadians"],
+    "artScaleIsNotMeters": true,
+    "battlefieldBridge": { "origin": [0, 0], "unitsPerLU": 1, "ySign": 1, "status": "identity-XZ-existing-sim", "output": "{x,z}" },
+    "screenPlaneBridge": "toScreenPlane/fromScreenPlane return x/y only for presentation. Both simulation hosts use x/z.",
+    "headings": { "levelsAndBattlefield": "0=+Z, positive yaw turns toward +X", "encountersLegacy": "direction(angle)=[-cos(angle),-sin(angle)] in XZ; thetaLevels=-angle-PI/2; convert explicitly" }
+  },
+  "levelRequiredFields": ["id", "frameId", "bounds", "visuals", "colliders", "spawnAnchors", "triggers", "corridors", "camera"],
+  "visual": {
+    "required": ["id", "assetId", "position", "yawRadians", "longestLU", "priority", "anchor"],
+    "bounds": "GLB visible bounds are measured; longestLU is an explicit uniform layout normalization, not source meters.",
+    "priorityOrder": ["required", "landmark", "decoration"],
+    "sourceSelection": "catalog.items[].model; never overwrite model.glb/model-repaired.glb/model-closed-roof.glb",
+    "collision": "No implicit collider is generated from visible geometry."
+  },
+  "collider": {
+    "shape": "aabb",
+    "required": ["id", "kind", "center", "halfExtents", "visualIds", "occludesCamera"],
+    "kinds": ["solid", "camera-only"],
+    "contact": "touching counts as contact; clearance should add an explicit margin",
+    "responseOwner": "battlefield",
+    "cameraPolicy": "Fade visuals only. Do not remove physical solids or change hit logic."
+  },
+  "spawnAnchor": {
+    "required": ["id", "position", "headingRadians", "tags"],
+    "owner": "encounters",
+    "rules": "Spatial anchors carry no order/timing/enemy balance. Re-query against occupied bodies immediately before spawning."
+  },
+  "trigger": {
+    "required": ["id", "type", "center", "halfExtents", "target", "requiresConfirmation"],
+    "types": ["return-request", "harbor-interaction", "departure-request"],
+    "owner": "harbor (services/settlement/save), encounters (departure/return transition)",
+    "rules": "Overlap only advertises availability. No automatic settlement, cargo ownership change, repair, fabrication or save."
+  },
+  "hostCalls": {
+    "encounters": ["availableSpawns(level, halfExtents, occupied)", "nearbyTriggers(level, position, halfExtents)"],
+    "battlefield": ["placementReport(level, position, halfExtents)", "sweepSolids(level, start, end, halfExtents)", "toBattlefield(point, explicitBridge)"],
+    "harbor": ["nearbyTriggers(level, position, halfExtents)"],
+    "presentation": ["cameraOccluders(level, cameraPosition, targetPosition)"]
+  },
+  "implementationLimits": [
+    "AABB slab queries only; no physics solver, navmesh, damage, combat loop or engine adoption.",
+    "Body half-extents are supplied by the host; rotated body clearance should use conservative XZ radius or an OBB implementation.",
+    "Pixel readability, live load timing and rendered occlusion require integrated browser verification."
+  ]
+}

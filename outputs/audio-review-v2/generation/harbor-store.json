@@ -1,0 +1,25 @@
+{
+  "id": "harbor-store",
+  "startedAt": "2026-10-18T08:53:52.766Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A small wooden cargo crate placed into a dock storage rack: low padded wood thunk, short rope slide and a small inventory drawer latch closing. Close physical storage action, no coins, no reward jingle. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:54.321Z",
+  "output": {
+    "file": "audio/harbor-store.mp3",
+    "bytes": 20105,
+    "sha256": "0c7d4cc43d098fd59f8563b2e20478b637def237b10fe5bb18f788b24ca1f7a7",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "12"
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-18T12:14:10.740Z",
+  "authorization": "latest direct human request: all sessions using ultra, optimize per role reasoning levels",
+  "modelChanged": false,
+  "settings": [
+    {
+      "threadId": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+      "role": "통합·QA",
+      "thinking": "high",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14da1-0f0d-72e2-8712-76a46fe4463c",
+      "role": "전장",
+      "thinking": "high",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14da1-193b-77e3-818c-ae25dc7dac62",
+      "role": "함대·교전",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14da1-2962-70f0-8405-eae46ad90ba5",
+      "role": "지도·비행",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14da1-40b3-7193-aff8-ae79a119b6d9",
+      "role": "항구·장착·저장",
+      "thinking": "high",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14dc6-cc26-78e3-b031-d346860e1af1",
+      "role": "전투효과 아트",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14dd0-fc09-7c51-8f63-cdfff1bc8e6f",
+      "role": "음향",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14ec4-81b5-7583-8d51-e35ad3b30d55",
+      "role": "적 함선 전체 갤러리",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14ec2-d205-74b1-9054-ce509b544b01",
+      "role": "주인공 상태 갤러리",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14eca-49db-7ab3-b6e7-ea6c7d4d6d1b",
+      "role": "적 기지·요새",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14ed1-7324-70e2-b00b-403141be4086",
+      "role": "맵 환경·생활 소품",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14ee2-1775-78f1-9012-1b8093c51e7b",
+      "role": "기상 효과·환경 계약",
+      "thinking": "high",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14ee4-3cad-72a2-856f-fb8f3fe26cc3",
+      "role": "1막 보스 원화·3D 리뷰",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true,
+      "reason": "scope grew from completed image to actual3D implementation"
+    },
+    {
+      "threadId": "01a14dc7-786a-72d1-a413-d016665d2cfe",
+      "role": "총괄",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    },
+    {
+      "threadId": "01a14ef7-0b81-72a3-97ca-ee45fc21d6e4",
+      "role": "절제된 수공예 무기12",
+      "thinking": "medium",
+      "overrideAcceptedByTool": true
+    }
+  ],
+  "counts": {
+    "high": 4,
+    "medium": 11,
+    "low": 0
+  },
+  "mechanism": "send_message_to_thread thinking override; model omitted",
+  "currentlyInFlightEffortVerified": false,
+  "limitation": "already running response may retain original effort until response/turn boundary; no token saving percentage claimed",
+  "policy": [
+    "no standing ultra/max/xhigh",
+    "small explicit subtask context; low collection/manifest, medium normal assets/audio/viewers, high complex sim/debug/integration",
+    "no redundant status messages/polls or repeated completed QA",
+    "preserve tenfold expression quality requirement and existing work"
+  ],
+  "rootReviewAgentsActive": 0,
+  "officialReference": "https://learn.chatgpt.com/docs/config-file/config-reference",
+  "updatedAt": "2026-10-18T12:52:32.254Z"
+}

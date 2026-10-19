@@ -1,0 +1,70 @@
+{
+  "asset": "outputs/enemy-base-v1/chapter2-volley-r1/enemy-base.glb",
+  "bytes": 48484232,
+  "sha256": "1ad20985307c5d0f4113181fd3dffd172010faed151e418d7316a3c05287101f",
+  "meshes": 298,
+  "triangles": 1020908,
+  "vertices": 1696615,
+  "vertexColorMeshes": 298,
+  "animations": 1,
+  "bounds": {
+    "min": [
+      -41.490203857421875,
+      -22.394376754760742,
+      -25.149999618530273
+    ],
+    "max": [
+      36.590553283691406,
+      57.88899230957031,
+      25.54034996032715
+    ],
+    "size": [
+      78.08075714111328,
+      80.28336906433105,
+      50.69034957885742
+    ]
+  },
+  "groups": [
+    "hull",
+    "buoyancy",
+    "keep",
+    "bell_tower",
+    "bastions",
+    "dock",
+    "machinery",
+    "banners"
+  ],
+  "embedded": true,
+  "finite": true,
+  "validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "reference": {
+    "path": "outputs/enemy-base-v1/chapter2-volley-r1/reference.png",
+    "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192",
+    "preserved": true
+  },
+  "dependencies": {
+    "three": {
+      "version": "0.180.0",
+      "source": "existing read-only Node dependency resolved through NODE_PATH or node_modules"
+    },
+    "esbuild": {
+      "version": "0.25.10",
+      "source": "existing read-only Node dependency resolved through NODE_PATH or node_modules"
+    },
+    "playwright": {
+      "version": "1.62.1",
+      "source": "existing read-only Node dependency resolved through NODE_PATH or node_modules"
+    },
+    "gltf-validator": {
+      "version": "2.0.0-dev.3.10",
+      "source": "existing read-only Node dependency resolved through NODE_PATH or node_modules"
+    }
+  },
+  "scope": "GLB format and geometry check only; no gameplay or engine performance test.",
+  "passed": true
+}

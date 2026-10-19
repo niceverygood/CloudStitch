@@ -1,0 +1,21 @@
+Cloudstitch · 무료 VFX 후보 수급
+최신 사용자 범위: “일단 무료에셋부터 찾아줘”. 유료 AKCL은 보류. 결제·가입·다른 채팅 메시지·게임 설치·배포 없음.
+
+완료:
+- Brackeys VFX Bundle 28,227,919bytes 실제 다운로드/CRC 검사, 번들 LICENSE & CREDITS의 CC0 확인.
+- 실제 flipbook TGA14개 + predrawn PNG14개. 대표8시트만 PNG로 무손실 변환하고 픽셀 바이트 일치/알파/격자 크기를 검사.
+- Craftpix 무료 카툰 연기 48,155,799bytes 실제 다운로드/CRC, 6애니메이션 8/12/10/12/16/10프레임과 각 크기 확인. 원본은 work에만 보관. 일반 CC0가 아니며 제작자 Freebie license의 상업 프로젝트 허용과 원본 재배포 제한을 구분.
+- 8종 재생 HTML 생성, 자체 JS 문법 검사 통과. Source atlas의 행 순서와 재생속도는 실제 장면 적용 전에 확인해야 하므로 검토용30fps/행 뒤집기 선택을 제공.
+- fire_01은 알파255라 가산 합성 권고. 단순 alpha합성에서 검은 사각형을 남길 수 있음.
+- impact_white_6x4(1746x1505), star_explosion_6x5(840x654)는 파일명 격자 불일치로 대표 선택에서 제외.
+
+제한:
+- Chrome 자동화가 file: protocol을 보안 정책으로 거절했다. 다른 브라우저/로컬서버로 우회하지 않았다. 이 HTML의 실제 브라우저 재생은 미검수. 사용자가 index.html을 직접 열어 검토할 수 있다.
+- 원본 그림·정적 strip은 직접 읽었으며, 최종 손그림 화풍/강도 승인이나 게임 내 효과 연결을 완료했다고 주장하지 않는다.
+- 기존 Kenney2팩은 별도 정지 입자 소재로 유지. 새 animated 후보와 중복 집계하지 않는다.
+- 새 소스 tools/external-vfx-intake-v1/free_review.py. 원 ZIP은 work/external-vfx-free-review-v1, 원 Downloads 파일은 보존. 계정별 다운로드 URL/인증은 문서·소스에 보관하지 않는다.
+
+우선순위:
+1. Brackeys flame_01·wispy_smoke_01·explosion_smoke_01로 실제 움직임 베이스 비교.
+2. Craftpix Smoke Explosion/Smoke Blow로 카툰 화풍 비교. 공개 원본 갤러리/다운로드 재배포 금지.
+3. 기존 Kenney의 작은 불씨·먼지·압력 획을 보조층으로 활용.

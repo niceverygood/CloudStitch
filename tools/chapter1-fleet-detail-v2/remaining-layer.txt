@@ -1,0 +1,25 @@
+ // Role-specific structural density for the other eight ships.
+ if(kind==='ram'){
+  cabin([1,2.4,0],[2.7,2.3,2.7]);for(const s of[-1,1]){gear('keep',[-3.4,1,s*2.8],.8);tube('keep','brass',[[-1.5,1.8,s*2.3],[-3.4,2.6,s*2.8],[-5.1,1.6,s*2.1]],.16);box('keep','dark',[-3.9,2.3,s*2.5],[2.6,.45,.7],[0,s*.25,-.12]);for(let j=0;j<4;j++)add(new T.ConeGeometry(.28,.85,4),'edge','keep',[-4.4-j*.5,1,s*(1.6-j*.18)],[s>0?Math.PI/2:-Math.PI/2,0,0]);lamp([1,3.6,s*1.6],.4);}
+ }
+ if(kind==='cannon'){
+  cabin([2,2.6,-.3],[2.5,2.1,2.9]);for(const s of[-1,1]){gear('bastions',[-2,2.4,s*2.2],.68);rod('bastions','iron',[-4,1.3,s*2],[-1,3,s*2],.2);tube('bastions','brass',[[-3,1.4,s*2.1],[-1,1.8,s*2.1],[.4,1.8,s*1.8]],.09);for(let i=0;i<4;i++){cyl('bastions','brass',[1+i*.4,1.2,s*2.5],.12,.12,.65);add(new T.ConeGeometry(.12,.25,12),'iron','bastions',[1+i*.4,1.65,s*2.5]);}lamp([2,3.9,s*1.9],.35);}for(let x=-5;x<-1;x+=.7)ring('bastions','dark',[x,2.5,0],.9,.09,[0,Math.PI/2,0]);
+ }
+ if(kind==='tow'){
+  cabin([3,2.4,0],[2.4,2.2,2.1]);for(const s of[-1,1]){tube('dock','brass',[[3,1,s*2.3],[-1,7.3,s*2.3],[-5,7.3,s*.85]],.08);for(let j=0;j<6;j++)rod('dock','iron',[2-j*.55,2+j*.6,s*2],[-j*.65,3+j*.6,s*2],.08);gear('dock',[-1,2,s*1.5],.85);ring('dock','brass',[-5,6.5,s*.85],.55,.13);tube('dock','dark',[[-1,2,s],[-3,6,s*.8],[-5,6.5,s*.85],[-5,3,s*.85]],.055);lamp([3,4,s*1.3],.32);}for(let i=0;i<12;i++)ring('dock','dark',[-1,2,(i-5.5)*.17],.85,.08);
+ }
+ if(kind==='shield'){
+  cabin([1.2,2.5,0],[2.5,2.2,2.3]);for(const s of[-1,1]){rod('keep','iron',[-3,4,s*2.7],[1,1.6,s*2],.3);rod('keep','brass',[-3,3,s*2.8],[0,2,s*2.2],.11);gear('keep',[-3,2,s*3],.7);for(let j=0;j<7;j++)ell('keep','brass',[-5.25,1+j*.6,s*(3.6-j*.15)],[.065,.08,.08]);lamp([.8,3.8,s*1.5],.35);}for(let j=0;j<4;j++)box('keep','iron',[-4.7,1.4+j*.2,0],[.2,.07,2.8]);
+ }
+ if(kind==='fire'){
+  cabin([3,2.7,-.1],[2,2.1,2.4]);for(let i=0;i<3;i++){const x=-2.5+i*2.6;for(const s of[-1,1]){rod('machinery','iron',[x-.7,1.3,s],[x,4.2,s*1.2],.12);ring('machinery','brass',[x,3,s*1.45],.33,.07);gear('machinery',[x,3,s*1.55],.24);tube('machinery','brass',[[x,4.2,0],[x,4.6,s*1.7],[x-1,3,s*1.9]],.12);}cyl('machinery','dark',[x,4.6,0],.45,.45,.18);for(let j=0;j<6;j++){const a=j*Math.PI/3;ell('machinery','brass',[x+Math.cos(a)*.37,4.72,Math.sin(a)*.37],[.04,.04,.04]);}}for(const s of[-1,1]){box('bastions','iron',[-5,1.2,s*1.1],[2.5,1.6,.3]);for(let j=0;j<5;j++)box('bastions','ember',[-5.8+j*.35,1.2,s*1.29],[.12,.9,.025]);lamp([3,3.8,s*1.5],.3);}
+ }
+ if(kind==='mortar'){
+  cabin([2.1,2,-1.1],[2.1,1.7,1.8]);for(const s of[-1,1]){gear('bastions',[-.7,2.8,s*2.5],.8);tube('bastions','brass',[[-3,1,s*2.6],[-2,2.5,s*2.6],[-.7,2.8,s*2.5],[1,1,s*2.6]],.14);for(let j=0;j<3;j++){cyl('bastions','iron',[2+j*.5,1,s*2.7],.2,.2,.8);add(new T.ConeGeometry(.2,.35,12),'brass','bastions',[2+j*.5,1.55,s*2.7]);}lamp([2,3.1,s*2],.35);}for(let j=0;j<8;j++){const a=j*Math.PI/4;box('MortarTilt','dark',[Math.cos(a)*1.7,1.5,Math.sin(a)*1.7],[.22,2.1,.22]);}
+ }
+ if(kind==='chain'){
+  cabin([2.2,1.9,0],[2.3,1.9,2.2]);for(const s of[-1,1])for(const a of[-1,1]){gear('dock',[a*3,1,s*2.8],.55);tube('dock','brass',[[a*3,1.3,s*2.8],[a*4,4.3,s*5.1],[a*6,3.8,s*5.5]],.07);rod('dock','iron',[a*3.5,1,s*3],[a*4.6,3,s*4.5],.14);ring('dock','brass',[a*5,3.5,s*5.5],.5,.1);ell('dock','dark',[a*5,-.2,s*5.5],[.45,.45,.45]);for(let j=0;j<6;j++){const ang=j*Math.PI/3;add(new T.ConeGeometry(.1,.45,4),'brass','dock',[a*5+Math.cos(ang)*.46,-.2+Math.sin(ang)*.46,s*5.5],[0,0,-ang]);}}for(let j=0;j<12;j++)ring('dock','dark',[0,2,(j-5.5)*.23],1.2,.1);lamp([2.2,3.1,1.4],.4);
+ }
+ if(kind==='repair'){
+  cabin([2,3.4,0],[2.7,2.8,2.7]);for(const s of[-1,1]){lamp([2.2,5,s*1.7],.4);for(let i=0;i<3;i++){box('keep','iron',[-1+i*1.3,1.4,s*3],[1,.2,1.3]);cyl('keep','brass',[-1+i*1.3,1.8,s*3],.12,.12,.7);}rod('hull','dark',[-2,1,s*3.2],[-2,4,s*3.2],.13);}for(const p of[[2,8,-3],[-2,9,-3],[-5,7,-3]]){gear('dock',[p[0],p[1],p[2]+.24],.6);box('dock','dark',p,[.75,.75,.6]);}tube('dock','dark',[[2,4,-2.2],[2.4,8,-3.4],[-2,9.4,-3.4],[-5.4,7,-3.4]],.1);for(let j=0;j<7;j++)ring('dock','cloth',[-2,3,.3+j*.23],1.03,.025);box('dock','dark',[-2,1.8,1],[2.6,.25,3.4]);
+ }

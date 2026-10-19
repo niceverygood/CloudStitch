@@ -1,0 +1,93 @@
+{
+  "revision": "ship-weapon-harmony-source-r1",
+  "status": "SOURCE_READY",
+  "date": "2026-10-19",
+  "source_files": [
+    {
+      "path": "tools/ship-weapon-harmony-v1/assembly.js",
+      "bytes": 5831,
+      "sha256": "0fb7a6d17fd8353bff4dd9a116d0249f747c9cacf214a6219b479636eec6409e"
+    },
+    {
+      "path": "tools/ship-weapon-harmony-v1/build.cjs",
+      "bytes": 2539,
+      "sha256": "36b533bb0f98422f615570a429c1d7b63446f7d0cbb7fc373bae3b0a2d2a8dfd"
+    },
+    {
+      "path": "tools/ship-weapon-harmony-v1/check-source.cjs",
+      "bytes": 728,
+      "sha256": "0f44321f570819b8d0cbd4cfedae70391960eb687fcc3639aa98ffeca82effab"
+    },
+    {
+      "path": "tools/ship-weapon-harmony-v1/check-source.mjs",
+      "bytes": 1810,
+      "sha256": "cfc63a8d152ea488a60b1edd611d21c50678c6fe4a362865b4e31392b2ebdaa3"
+    },
+    {
+      "path": "tools/ship-weapon-harmony-v1/template.html",
+      "bytes": 4225,
+      "sha256": "3807fa94257f139ecc73aeb442973d88c04253c0c66d2b636cee67d5f7ad506e"
+    },
+    {
+      "path": "tools/ship-weapon-harmony-v1/verify.cjs",
+      "bytes": 9284,
+      "sha256": "2e775ebc365cc06d9831794d895bea53761da179c93a5fd2679b9ed34e768805"
+    },
+    {
+      "path": "tools/ship-weapon-harmony-v1/viewer.js",
+      "bytes": 8653,
+      "sha256": "b27c98ce78a6eb58439e20e08e1ed57aa64796d3f454b52682463f07068055ff"
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/source-geometry.json",
+      "bytes": 7314,
+      "sha256": "9b7363b3cee42a42c6bc9cf9dd1cbc4673e2f6c7ed5a14c0fcb2beb981e6e84e"
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/build-manifest.json",
+      "bytes": 1457,
+      "sha256": "22af0871f5232cadf41b5dd12e4674dc400b7986414d0e8729e74d508922794b"
+    }
+  ],
+  "readonly_sources": [
+    {
+      "path": "outputs/ship-states-v1/ranks-1to5-v2/mobility-r5.glb",
+      "bytes": 5039104,
+      "sha256": "7b73b0500c382d689ed8e395595343c89582bb098dbffdf94199e099ac97acbc"
+    },
+    {
+      "path": "outputs/grounded-weapons-v1/assets/03-repeating-crossbow.glb",
+      "bytes": 2745896,
+      "sha256": "c757745a51cebbf053e40d9e3956be4639f848c79b6589891d55b73eefd4b277"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-1to5-v2/artillery-r5.glb",
+      "bytes": 3171964,
+      "sha256": "3aa2f9091edc07f5c8798599300a388b2df00dbea93f48138fc35e14153fcc98"
+    },
+    {
+      "path": "outputs/grounded-weapons-v2/assets/13-comet-rocket-rack.glb",
+      "bytes": 4174696,
+      "sha256": "8f09f6693ba1bd5f4b5f5dc175c03a57f79852933e574bee7ea7485ed4f0f059"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-1to5-v2/salvage-r5.glb",
+      "bytes": 3336532,
+      "sha256": "a65659468b40062765ad0035096029f76bbcf711087ebf9b86006eabcf8cf77b"
+    },
+    {
+      "path": "outputs/grounded-weapons-v1/assets/04-harpoon-winch.glb",
+      "bytes": 3095440,
+      "sha256": "b90101534883fa6ae24864dc5599abe69ad9050a726254237814f6678bfe092a"
+    }
+  ],
+  "contract": {
+    "path": "docs/SHIP_WEAPON_MOUNTING.json",
+    "sha256": "cad9db05b14e956c31af02fdbb6d380d12bbc62f5071c02cad4eba888e2d418c"
+  },
+  "source_geometry": "3 finite copied assemblies; artillery removes exactly 2 copied cannon barrel groups",
+  "export_browser_used": false,
+  "expected": "3 actual textured assembled GLBs, 9 actual comparisons, shared camera viewer and 9 display modes/download3/mobile/representative3ghost",
+  "estimated_runtime": "2-3 minutes, not measured",
+  "command": "node tools/ship-weapon-harmony-v1/verify.cjs --slot-start"
+}

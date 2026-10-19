@@ -1,0 +1,25 @@
+{
+  "id": "mortar-impact",
+  "startedAt": "2026-10-18T08:53:28.598Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A single small mortar shell detonates against a wooden airship deck: tight low pressure burst, snapping planks, several tiny brass fragments and a short open-air decay. Compact scale, no massive sub bass, no long cinematic tail. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 1.5,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:30.117Z",
+  "output": {
+    "file": "audio/mortar-impact.mp3",
+    "bytes": 24702,
+    "sha256": "d627442320dfeabb593c0aacb3e844198c3534cd5a0f7f00420e0388e1d81e0a",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "15"
+}

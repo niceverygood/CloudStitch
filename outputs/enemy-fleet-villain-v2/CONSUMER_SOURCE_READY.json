@@ -1,0 +1,44 @@
+{
+  "revision": "BOLD-V2-CONSUMER-SOURCE-READY-1",
+  "state": "Source only; actual19 model and PNG inputs pending. No browser or gallery output execution.",
+  "ownedModelCount": 12,
+  "readOnlyReferenceModels": 6,
+  "readOnlyIndependentBoss": 1,
+  "targetGalleryCount": 19,
+  "artApproval": "PENDING_HUMAN_REVIEW",
+  "files": [
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/gallery.cjs",
+      "bytes": 16017,
+      "sha256": "79afc75708a5036e8a35781306fd7a3a1b96996c21789c5406f56c9ad3143752"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/bind-previews.cjs",
+      "bytes": 2108,
+      "sha256": "b57e1f68b3042a7fbd94d29e411385f8ddac10f5817cd027a7969b6ae9339945"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v2/GALLERY_CONSUMER_HANDOFF.md",
+      "bytes": 2375,
+      "sha256": "69a9ce471a9d62ec212d938738d37f36e61c0f3ce72c6335ae281303b34430d6"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "tools/enemy-fleet-gallery/template.html",
+      "bytes": 20128,
+      "sha256": "6794c1917adab90b8553e487cddeeac21f622f505040a502c84d0e831a30d71d"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/catalog.json",
+      "bytes": 32098,
+      "sha256": "ea48a624bf473e5eac4824634990fcbab3282c92d79e4928029ff588054ed885"
+    }
+  ],
+  "unresolvedActualInputs": [
+    "reference-v3 catalog with model/preview hashes",
+    "chapter1 boss actual catalog with model/preview hashes",
+    "own12 actual models and source-bound previews",
+    "same-camera comparison reports covering exactly19 unique IDs"
+  ]
+}

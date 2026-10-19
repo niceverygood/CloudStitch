@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "name": "scout:exact-GLB",
+      "passed": true
+    },
+    {
+      "name": "scout:actual-model",
+      "passed": true,
+      "detail": {
+        "triangles": 26452,
+        "meshes": 18,
+        "materials": 8,
+        "vertices": 79356,
+        "geometries": 18,
+        "bytes": 2875424,
+        "animations": 1,
+        "groups": [
+          "hull",
+          "buoyancy",
+          "keep",
+          "bell_tower",
+          "bastions",
+          "dock",
+          "machinery",
+          "banners"
+        ],
+        "bounds": [
+          18,
+          10.650000214576721,
+          6
+        ],
+        "mode": "handdrawn",
+        "view": "iso",
+        "focus": null,
+        "outline": true,
+        "outlineEnabled": true
+      }
+    },
+    {
+      "name": "scout:mode:handdrawn",
+      "passed": true
+    },
+    {
+      "name": "scout:mode:cel",
+      "passed": true
+    },
+    {
+      "name": "scout:mode:original",
+      "passed": true
+    },
+    {
+      "name": "scout:GLB-rotor-clip",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "closed": true,
+  "failure": "locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('#outline-alpha')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"1\" value=\"1\" step=\"0.05\" type=\"range\" id=\"outline-alpha\" aria-label=\"윤곽선 농도\"/>\u001b[22m\n\u001b[2m    - fill(\".5\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\chapter1-fleet-assets\\qa.cjs:14:259",
+  "passed": false
+}

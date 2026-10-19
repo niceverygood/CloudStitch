@@ -1,0 +1,59 @@
+{
+  "revision": "flight3d-ready-6",
+  "passed": true,
+  "actualRuns": [
+    {
+      "command": "node --test tools/flight3d/sim.test.mjs tools/flight3d/helm-route.test.mjs tools/flight3d/camera-geometry.test.mjs",
+      "passed": 37,
+      "failed": 0
+    },
+    {
+      "command": "node --test tools/flight3d/motion.test.mjs",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "command": "node tools/flight3d/verify-source.mjs",
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "command": "node tools/flight3d/build.cjs",
+      "exitCode": 0
+    }
+  ],
+  "route": {
+    "finishTime": 34.683,
+    "checkpoints": 5,
+    "collisions": 0,
+    "hp": 100
+  },
+  "comparison": {
+    "turnLeftRadians": {
+      "before": 0.099805153,
+      "after": 0.402853463
+    },
+    "turnRightRadians": {
+      "before": -0.115440678,
+      "after": -0.416692732
+    },
+    "rise1_2secThenCoast2sec": {
+      "before": 6.216473124,
+      "after": 7.550014803
+    },
+    "suspensionAfter": {
+      "loadedHeave": -0.38914765,
+      "rebound": 0.424043994
+    }
+  },
+  "browser": {
+    "status": "pending coordinated integration slot",
+    "harness": "tools/flight3d/verify-environment-browser.cjs",
+    "expectedChecks": 18
+  },
+  "limits": [
+    "Simplified balanced buoyancy, drag and damped suspension; not full aerodynamics",
+    "Bank/pitch/heave are visual offsets; vertical momentum changes actual world Y",
+    "Actual browser/human control feel pending"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "connector-cut",
+  "startedAt": "2026-10-18T08:53:30.139Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A stressed wooden airship connector snaps: one sharp structural wood crack, a taut rope releases with a low twang, three tiny brass bolts scatter and settle quickly. Clear release, no explosion. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:31.715Z",
+  "output": {
+    "file": "audio/connector-cut.mp3",
+    "bytes": 18433,
+    "sha256": "e77be730c82c49245ed78ba08b126c7f5f4497f8abe67489760ab1f73bc4f1c1",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "11"
+}

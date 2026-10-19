@@ -1,0 +1,75 @@
+{
+  "title": "Cloudstitch · 2탄 적군 함선 무드보드",
+  "status": "static_concepts_for_user_review",
+  "planningReference": "outputs/chapter2-enemy-fleet-plan-v1/PLAN.txt",
+  "regularEnemies": [
+    {
+      "id": "C2-01",
+      "name": "붉은바늘 정찰정",
+      "panel": "top-left",
+      "board": "fleet-hunters-4.png"
+    },
+    {
+      "id": "C2-02",
+      "name": "집게갈고리 포획선",
+      "panel": "top-right",
+      "board": "fleet-hunters-4.png"
+    },
+    {
+      "id": "C2-03",
+      "name": "거울패각 방패함",
+      "panel": "bottom-left",
+      "board": "fleet-hunters-4.png"
+    },
+    {
+      "id": "C2-04",
+      "name": "적산호 나팔함",
+      "panel": "bottom-right",
+      "board": "fleet-hunters-4.png"
+    },
+    {
+      "id": "C2-05",
+      "name": "소라 곡사함",
+      "panel": "top-left",
+      "board": "fleet-specialists-4.png"
+    },
+    {
+      "id": "C2-06",
+      "name": "해파리 등불함",
+      "panel": "top-right",
+      "board": "fleet-specialists-4.png"
+    },
+    {
+      "id": "C2-07",
+      "name": "톱지느러미 사슬정",
+      "panel": "bottom-left",
+      "board": "fleet-specialists-4.png"
+    },
+    {
+      "id": "C2-08",
+      "name": "진주 실잣기 수복선",
+      "panel": "bottom-right",
+      "board": "fleet-specialists-4.png"
+    }
+  ],
+  "miniboss": {
+    "id": "C2-MINI-01",
+    "name": "적조의 문지기",
+    "board": "miniboss-gatekeeper.png",
+    "detailPanels": [
+      "포획 윈치",
+      "산호 함포",
+      "갑판 연결 골조"
+    ]
+  },
+  "prompts": [
+    "fleet-hunters-4-prompt.txt",
+    "fleet-specialists-4-prompt.txt",
+    "miniboss-gatekeeper-prompt.txt"
+  ],
+  "limitations": [
+    "정지 콘셉트. 실제3D·전투·AI·치수·무장 수 확정 아님.",
+    "사용자 미술 승인 대기.",
+    "톱지느러미의 폭·길이와 나팔함의 선체 높이는 후속 모델 단계에서 기획과 다시 대조."
+  ]
+}

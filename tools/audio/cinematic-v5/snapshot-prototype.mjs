@@ -1,0 +1,15 @@
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const out=new URL('../../../outputs/audio-cinematic-v5/',import.meta.url),dest=new URL('prototype-r1/',out),hash=b=>createHash('sha256').update(b).digest('hex');
+await fs.mkdir(new URL('player/',dest),{recursive:true});
+const catalog=JSON.parse(await fs.readFile(new URL('prototype-catalog.json',out),'utf8'));
+const pairs=JSON.parse(await fs.readFile(new URL('audition-catalog.json',out),'utf8'));
+for(const file of [...catalog.assets.flatMap(a=>[a.file,a.source.file]),...pairs.pairs.map(p=>p.file)]){const target=new URL(file,dest);await fs.mkdir(new URL('./',target),{recursive:true});await fs.copyFile(new URL(file,out),target,fs.constants.COPYFILE_EXCL);}
+await fs.writeFile(new URL('catalog.json',dest),JSON.stringify(catalog,null,2)+'\n',{flag:'wx'});
+await fs.copyFile(new URL('audition-catalog.json',out),new URL('audition-catalog.json',dest),fs.constants.COPYFILE_EXCL);
+await fs.copyFile(new URL('file-verification.json',out),new URL('file-verification.json',dest),fs.constants.COPYFILE_EXCL);
+await fs.copyFile(new URL('player-verification.json',out),new URL('player-verification.json',dest),fs.constants.COPYFILE_EXCL);
+for(const f of ['review.mjs','review.css'])await fs.copyFile(new URL(f,import.meta.url),new URL('player/'+f,dest),fs.constants.COPYFILE_EXCL);
+let html=await fs.readFile(new URL('index.html',out),'utf8');html=html.replaceAll('../../tools/audio/cinematic-v5/','player/').replace('<section class="context panel"','<section hidden class="context panel"').replace('id="play-three"','disabled id="play-three"');await fs.writeFile(new URL('index.html',dest),html,{flag:'wx'});
+await fs.mkdir(new URL('source/',dest),{recursive:true});for(const f of ['dsp.mjs','render.mjs','wav.mjs','verify.mjs','auditions.mjs'])await fs.copyFile(new URL(f,import.meta.url),new URL('source/'+f,dest),fs.constants.COPYFILE_EXCL);
+const files=[];async function walk(url,prefix){for(const f of await fs.readdir(url,{withFileTypes:true})){if(f.name==='delivery-manifest.json')continue;const relative=prefix+f.name;if(f.isDirectory())await walk(new URL(f.name+'/',url),relative+'/');else{const b=await fs.readFile(new URL(f.name,url));files.push({path:'outputs/audio-cinematic-v5/prototype-r1/'+relative,bytes:b.length,sha256:hash(b)});}}}await walk(dest,'');files.sort((a,b)=>a.path.localeCompare(b.path));const manifest={version:'cinematic-v5-prototype-r1',scope:'Three audible prototypes only; immutable while full49 is built separately',files,totalBytes:files.reduce((s,f)=>s+f.bytes,0),entry:'outputs/audio-cinematic-v5/prototype-r1/index.html',sourceCodeSnapshot:'source/ is provenance, not a standalone runnable repository',humanApproval:false,gameplayInstalled:false};const b=Buffer.from(JSON.stringify(manifest,null,2)+'\n');await fs.writeFile(new URL('delivery-manifest.json',dest),b,{flag:'wx'});console.log(JSON.stringify({listed:files.length,bytes:manifest.totalBytes,manifestBytes:b.length,sha256:hash(b)}));

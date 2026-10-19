@@ -1,0 +1,900 @@
+{
+  "game_title": "Cloudstitch",
+  "revision": "map-atmosphere-v1-rich-r2",
+  "date": "2026-10-18",
+  "type": "environment_visual_prototypes",
+  "art_target": "10x bolder expression is a perceptual target, not a numeric scale multiplier; human approval pending.",
+  "canonical_regions_unchanged": true,
+  "items": [
+    {
+      "id": "root-garden",
+      "name_ko": "뿌리 수염 정원섬",
+      "category": "islands",
+      "role": "넓은 잔디 선반과 큰 나무 뿌리로 생활 항로의 높이와 깊이를 만든다.",
+      "motion_ko": "정적 형태 원형 · 바람과 부유 물리는 포함하지 않음",
+      "order": 1,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/root-garden.glb",
+      "preview": "previews/root-garden.png",
+      "triangles": 18752,
+      "mesh_count": 531,
+      "vertices": 56256,
+      "material_count": 1,
+      "animation_count": 0,
+      "animation_duration": 0,
+      "encoded_color_components": 0,
+      "bytes": 2594580,
+      "sha256": "2707dc2522cdb489ee3d0ebe5a499461161311e37c6547e434d80524862e5dff",
+      "bounds": {
+        "min": [
+          -5.484231114387512,
+          -3.3881005573272707,
+          -2.9157882499694825
+        ],
+        "max": [
+          5.279950189590454,
+          3.725414752960205,
+          2.8073836728745194
+        ]
+      }
+    },
+    {
+      "id": "crescent-pass",
+      "name_ko": "초승달 바람 통로섬",
+      "category": "islands",
+      "role": "한쪽이 크게 열린 초승달 암반과 서로 다른 높이의 초지로 우회 공간을 읽힌다.",
+      "motion_ko": "정적 형태 원형 · 통과 판정과 충돌은 별도",
+      "order": 2,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/crescent-pass.glb",
+      "preview": "previews/crescent-pass.png",
+      "triangles": 14468,
+      "mesh_count": 417,
+      "vertices": 43404,
+      "material_count": 1,
+      "animation_count": 0,
+      "animation_duration": 0,
+      "encoded_color_components": 0,
+      "bytes": 2016296,
+      "sha256": "84897b7ff6b57b4ff4678743ae3eb0de38e64794ec9894426a82422e92f93b27",
+      "bounds": {
+        "min": [
+          -5.637774991989136,
+          -2.955113229751587,
+          -3.284362796614127
+        ],
+        "max": [
+          5.076240420341492,
+          3.141898822784424,
+          3.423964262008667
+        ]
+      }
+    },
+    {
+      "id": "double-arch",
+      "name_ko": "두 겹 아치 절벽섬",
+      "category": "islands",
+      "role": "실제로 빈 두 아치와 겹친 암반 선반으로 협곡의 큰 실루엣을 만든다.",
+      "motion_ko": "정적 형태 원형 · 실제 항로 폭과 고도는 미확정",
+      "order": 3,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/double-arch.glb",
+      "preview": "previews/double-arch.png",
+      "triangles": 15724,
+      "mesh_count": 397,
+      "vertices": 47172,
+      "material_count": 1,
+      "animation_count": 0,
+      "animation_duration": 0,
+      "encoded_color_components": 0,
+      "bytes": 2128376,
+      "sha256": "50cb39c05c29cfc377e31d38baeaa2fd24a2c2fa63bc8212eed6c8ceee05172c",
+      "bounds": {
+        "min": [
+          -5.098774158954621,
+          -3.6722799491882325,
+          -1.9981689691543578
+        ],
+        "max": [
+          6.458076977729798,
+          3.5004312115287783,
+          1.9953862429535167
+        ]
+      }
+    },
+    {
+      "id": "water-terraces",
+      "name_ko": "빗물 계단 정원섬",
+      "category": "islands",
+      "role": "높이가 다른 물그릇 암반과 가는 낙수로 구름 사이의 풍성한 정원을 제안한다.",
+      "motion_ko": "정적 물줄기 형태 · 유체·물 자원·피해 없음",
+      "order": 4,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/water-terraces.glb",
+      "preview": "previews/water-terraces.png",
+      "triangles": 16388,
+      "mesh_count": 415,
+      "vertices": 49164,
+      "material_count": 1,
+      "animation_count": 0,
+      "animation_duration": 0,
+      "encoded_color_components": 0,
+      "bytes": 2223432,
+      "sha256": "500734eddcc72add4a4a38b8a42e8a03235a688d1103d6de9239a531e806521e",
+      "bounds": {
+        "min": [
+          -5.7321291208267215,
+          -4.3280348777771,
+          -2.9697377681732178
+        ],
+        "max": [
+          3.8267209053039553,
+          3.7530996826839442,
+          2.9123926162719727
+        ]
+      }
+    },
+    {
+      "id": "wreck-garden",
+      "name_ko": "난파 목재 정원섬",
+      "category": "islands",
+      "role": "부서진 선체 리브와 되살아난 식생을 겹쳐 잔해해역의 생활 흔적을 만든다.",
+      "motion_ko": "정적 형태 원형 · 회수 가능 부품으로 등록하지 않음",
+      "order": 5,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/wreck-garden.glb",
+      "preview": "previews/wreck-garden.png",
+      "triangles": 22416,
+      "mesh_count": 579,
+      "vertices": 67248,
+      "material_count": 1,
+      "animation_count": 0,
+      "animation_duration": 0,
+      "encoded_color_components": 0,
+      "bytes": 3040148,
+      "sha256": "11bed91c112182fb20e26180fd00fd4527407564b343f28da4967cfe7db91670",
+      "bounds": {
+        "min": [
+          -4.702810978889465,
+          -3.803272247314453,
+          -2.6791088723684133
+        ],
+        "max": [
+          3.572688102722168,
+          4.871974539703616,
+          2.6771878450968223
+        ]
+      }
+    },
+    {
+      "id": "quiet-terrace",
+      "name_ko": "고요한 크림 석재섬",
+      "category": "islands",
+      "role": "크림 석재와 황동·검은 천 덧댐으로 조용한 외곽 서비스 정박 풍경을 제안한다.",
+      "motion_ko": "정적 형태 원형 · 새 도시나 이야기 해금 없음",
+      "order": 6,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/quiet-terrace.glb",
+      "preview": "previews/quiet-terrace.png",
+      "triangles": 13168,
+      "mesh_count": 368,
+      "vertices": 39504,
+      "material_count": 1,
+      "animation_count": 0,
+      "animation_duration": 0,
+      "encoded_color_components": 0,
+      "bytes": 1810256,
+      "sha256": "74225c4871fd4e0f5221b70f9bbf7dcc67f5ebb8833c10553d67d347779c4302",
+      "bounds": {
+        "min": [
+          -4.604987144470215,
+          -2.942707967758179,
+          -2.947558784484863
+        ],
+        "max": [
+          5.284344911097905,
+          4.230187341509543,
+          2.8489042282104493
+        ]
+      }
+    },
+    {
+      "id": "wind-tree",
+      "name_ko": "바람에 누운 수관나무",
+      "category": "nature",
+      "role": "휘어진 줄기·비대칭 수관·독립 잎과 작은 리본으로 바람의 인상을 만든다.",
+      "motion_ko": "8초 반복 수관 흔들림 · 실제 풍압과 무관",
+      "order": 7,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/wind-tree.glb",
+      "preview": "previews/wind-tree.png",
+      "triangles": 15308,
+      "mesh_count": 421,
+      "vertices": 45924,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 8,
+      "encoded_color_components": 0,
+      "bytes": 2106728,
+      "sha256": "a62c8c7baaf1a72bd04ad28eedccb9b37a7abfcd7aa92320e685886813306eb1",
+      "bounds": {
+        "min": [
+          -3.1295400000000004,
+          -3.2390010356903076,
+          -2.5061076051246522
+        ],
+        "max": [
+          6.156168807861578,
+          5.83561183443886,
+          2.2885131333602162
+        ]
+      }
+    },
+    {
+      "id": "hanging-garden",
+      "name_ko": "매달린 꽃과 덩굴 정원",
+      "category": "nature",
+      "role": "세 높이의 목재 바구니·꽃·긴 덩굴을 항로의 생활 디테일로 쓴다.",
+      "motion_ko": "8초 반복 바구니·덩굴 흔들림 · 물리와 무관",
+      "order": 8,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/hanging-garden.glb",
+      "preview": "previews/hanging-garden.png",
+      "triangles": 21436,
+      "mesh_count": 662,
+      "vertices": 64308,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 8,
+      "encoded_color_components": 0,
+      "bytes": 3050436,
+      "sha256": "5dc2a3bcdc08048f8a6fc32ed82439feaaa4c57526fb2234e0a0ee890e8c3732",
+      "bounds": {
+        "min": [
+          -3.332171110499587,
+          -0.5680386543273928,
+          -1.232623188495636
+        ],
+        "max": [
+          2.7444841838836673,
+          5.241028308868408,
+          1.0694074540602596
+        ]
+      }
+    },
+    {
+      "id": "sunlit-cloud",
+      "name_ko": "햇살 이불구름",
+      "category": "clouds",
+      "role": "항로 양옆을 풍성하게 감싸는 넓고 낮은 구름 둑",
+      "motion_ko": "서로 다른 속도로 솟고 가라앉는 세 겹의 구름 숨결",
+      "order": 9,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/sunlit-cloud.glb",
+      "preview": "previews/sunlit-cloud.png",
+      "triangles": 9696,
+      "mesh_count": 50,
+      "vertices": 29088,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 15,
+      "encoded_color_components": 1167,
+      "bytes": 1106516,
+      "sha256": "b74a176a011a0b6924bbc7de1ca04d5175174c889c46f7df00bc4ce6f88dfa90",
+      "bounds": {
+        "min": [
+          -5.408645926713944,
+          -0.9410192584991455,
+          -2.28193062543869
+        ],
+        "max": [
+          5.3810861611366265,
+          4.16943131685257,
+          2.601460301876068
+        ]
+      }
+    },
+    {
+      "id": "mist-ribbons",
+      "name_ko": "골짜기 안개리본",
+      "category": "clouds",
+      "role": "공중섬 사이에 가늘고 길게 흐르는 층층의 안개 길",
+      "motion_ko": "다섯 줄의 안개가 시차를 두고 옆으로 흐르고 늘어남",
+      "order": 10,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/mist-ribbons.glb",
+      "preview": "previews/mist-ribbons.png",
+      "triangles": 9600,
+      "mesh_count": 50,
+      "vertices": 28800,
+      "material_count": 2,
+      "animation_count": 1,
+      "animation_duration": 16,
+      "encoded_color_components": 0,
+      "bytes": 1101772,
+      "sha256": "ae477c6d4c8ddd1ea8e7f646485fce43fc9d6b17004d8e4095198ab329f755fb",
+      "bounds": {
+        "min": [
+          -6.062164528732902,
+          -0.9514681666226575,
+          -2.504902777626474
+        ],
+        "max": [
+          6.850377547740936,
+          0.9598035225008847,
+          2.403870611240729
+        ]
+      }
+    },
+    {
+      "id": "rising-cloud",
+      "name_ko": "소용돌이 상승구름",
+      "category": "clouds",
+      "role": "빈 중심 통로를 감싸며 솟는 나선형 수직 지형 표식",
+      "motion_ko": "나선의 층이 서로 다르게 부풀고 떠오르는 완만한 흐름",
+      "order": 11,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/rising-cloud.glb",
+      "preview": "previews/rising-cloud.png",
+      "triangles": 10368,
+      "mesh_count": 54,
+      "vertices": 31104,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 14,
+      "encoded_color_components": 836,
+      "bytes": 1188596,
+      "sha256": "3202c6c800c6f52f46a431f23f1c6721dcfcffa2cf7477673ab02077d36fc4ee",
+      "bounds": {
+        "min": [
+          -2.883682644676188,
+          -4.01048850518465,
+          -2.7921897052755664
+        ],
+        "max": [
+          2.8614064239172636,
+          4.406233291625977,
+          2.9395638990676543
+        ]
+      }
+    },
+    {
+      "id": "storm-front",
+      "name_ko": "먹구름 모루전선",
+      "category": "clouds",
+      "role": "항로 멀리 보이는 수평 모루와 비의 장막",
+      "motion_ko": "상층과 아랫층의 느린 대류, 여러 비 장막의 엇갈린 낙하",
+      "order": 12,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/storm-front.glb",
+      "preview": "previews/storm-front.png",
+      "triangles": 11808,
+      "mesh_count": 75,
+      "vertices": 35424,
+      "material_count": 1,
+      "animation_count": 2,
+      "animation_duration": 16,
+      "encoded_color_components": 0,
+      "bytes": 1360904,
+      "sha256": "723a8e17ea6e3c2a516ec520d757a3286d12b8265786f9cc63b33b8331cfb0a5",
+      "bounds": {
+        "min": [
+          -6.860564512014389,
+          -4.6481099128723145,
+          -1.5202380782529632
+        ],
+        "max": [
+          6.8009464085102085,
+          2.625168346944532,
+          1.4566697389139032
+        ]
+      }
+    },
+    {
+      "id": "harbor-gull",
+      "name_ko": "항구 흰깃갈매기",
+      "category": "birds",
+      "role": "계류기둥·밧줄과 함께 항구의 생활감을 채우는 큰 새",
+      "motion_ko": "두 날개를 크게 펼쳤다 접는 갈매기 날갯짓과 몸의 들썩임",
+      "order": 13,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/harbor-gull.glb",
+      "preview": "previews/harbor-gull.png",
+      "triangles": 6504,
+      "mesh_count": 117,
+      "vertices": 19512,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 4.6,
+      "encoded_color_components": 188,
+      "bytes": 834748,
+      "sha256": "6961ff1fc2140134b6b466a61a7e7870eeedda97d47e2d6c1f681fb684e61ffd",
+      "bounds": {
+        "min": [
+          -2.3944442869725906,
+          -1.524999988079071,
+          -0.27289932847023013
+        ],
+        "max": [
+          2.3841416621239295,
+          1.2248159331575779,
+          0.4700000035762787
+        ]
+      }
+    },
+    {
+      "id": "wind-swallows",
+      "name_ko": "바람꼬리제비 떼",
+      "category": "birds",
+      "role": "긴 제비꼬리와 낫 모양 날개로 항로의 흐름을 드러내는 세 마리",
+      "motion_ko": "세 마리의 날개가 위상을 달리해 빠르게 퍼덕이고 몸이 기울어짐",
+      "order": 14,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/wind-swallows.glb",
+      "preview": "previews/wind-swallows.png",
+      "triangles": 12748,
+      "mesh_count": 293,
+      "vertices": 38244,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 1.45,
+      "encoded_color_components": 378,
+      "bytes": 1715068,
+      "sha256": "f84f563f28e0f22e3d3b354638bcd108202313c2c6296e68a944cd527e283e0a",
+      "bounds": {
+        "min": [
+          -2.9653165445316754,
+          -1.085126082382886,
+          -1.0373570265761962
+        ],
+        "max": [
+          2.592253005027679,
+          0.8896996178627015,
+          0.8568021135688435
+        ]
+      }
+    },
+    {
+      "id": "ridge-raptor",
+      "name_ko": "능선 황금수리",
+      "category": "birds",
+      "role": "절벽 보초바위와 둥지 위에서 넓은 날개를 펴는 큰 맹금",
+      "motion_ko": "깊고 느린 날갯짓, 날개 끝과 꼬리의 뒤따르는 움직임",
+      "order": 15,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/ridge-raptor.glb",
+      "preview": "previews/ridge-raptor.png",
+      "triangles": 8916,
+      "mesh_count": 140,
+      "vertices": 26748,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 5.5,
+      "encoded_color_components": 86,
+      "bytes": 1119436,
+      "sha256": "8ca6531f2714937e32c3e1598dba47e21585a816f6f1c92a935dded5ef0e9c48",
+      "bounds": {
+        "min": [
+          -3.008551656182178,
+          -1.725,
+          -0.7865649461746216
+        ],
+        "max": [
+          3.032639176832664,
+          1.6588047584882524,
+          0.7532198429107666
+        ]
+      }
+    },
+    {
+      "id": "cliff-songbirds",
+      "name_ko": "벼랑 꽃가지새",
+      "category": "birds",
+      "role": "꽃 핀 가지·둥지·이끼와 함께 근경을 채우는 둥근 두 마리",
+      "motion_ko": "두 마리의 짧은 날개가 번갈아 펼쳐지고 고개와 몸이 작게 움직임",
+      "order": 16,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/cliff-songbirds.glb",
+      "preview": "previews/cliff-songbirds.png",
+      "triangles": 17506,
+      "mesh_count": 245,
+      "vertices": 52518,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 2.9,
+      "encoded_color_components": 138,
+      "bytes": 2167568,
+      "sha256": "07a3b1d73bb4abc6524506dacee158b698eb8b036e8d132b9bdc337fbd72d9d8",
+      "bounds": {
+        "min": [
+          -1.804804411908576,
+          -0.7283065915107727,
+          -0.2843654280900956
+        ],
+        "max": [
+          1.6791241560259742,
+          0.744370905225139,
+          0.40982564162696344
+        ]
+      }
+    },
+    {
+      "id": "mail-balloon",
+      "name_ko": "바람우편 부양낭",
+      "category": "props",
+      "role": "크림 기낭과 수선 천 아래 가죽 우편 가방이 매달린 항로의 작은 생활 장면.",
+      "motion_ko": "우편 가방이 줄 아래에서 천천히 흔들립니다.",
+      "order": 17,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/mail-balloon.glb",
+      "preview": "previews/mail-balloon.png",
+      "triangles": 17744,
+      "mesh_count": 108,
+      "vertices": 53232,
+      "material_count": 1,
+      "animation_count": 5,
+      "animation_duration": 7,
+      "encoded_color_components": 0,
+      "bytes": 2028828,
+      "sha256": "a10e92660f7f890b5e4a73794d19df17901bd6035686a33934336e4e261b028a",
+      "bounds": {
+        "min": [
+          -2.825727381520888,
+          -2.064521130251772,
+          -1.5095869945658662
+        ],
+        "max": [
+          2.327414455467646,
+          2.9805608773956074,
+          0.9816370201110841
+        ]
+      }
+    },
+    {
+      "id": "patch-envelope",
+      "name_ko": "항로 기낭 수선대",
+      "category": "props",
+      "role": "찢어진 소형 부양낭과 수선 천·실패·고정끈을 보여 주는 정비 소품.",
+      "motion_ko": "정적 수선대. 완성 함선이나 실제 수리 기능은 아닙니다.",
+      "order": 18,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/patch-envelope.glb",
+      "preview": "previews/patch-envelope.png",
+      "triangles": 14396,
+      "mesh_count": 157,
+      "vertices": 43188,
+      "material_count": 1,
+      "animation_count": 0,
+      "animation_duration": 0,
+      "encoded_color_components": 0,
+      "bytes": 1711788,
+      "sha256": "9cfc983d147dd09f879b69e0b90883e37d3c59bd434abd2f8ee65bf2859022e8",
+      "bounds": {
+        "min": [
+          -1.9099999964237213,
+          -0.8819442042240961,
+          -1.1119468516736422
+        ],
+        "max": [
+          1.9099999964237213,
+          2.506774536159405,
+          1.7021815939147806
+        ]
+      }
+    },
+    {
+      "id": "lightning-mast",
+      "name_ko": "나선 피뢰 관측주",
+      "category": "props",
+      "role": "겹절연체와 구리봉, 보호망, 케이블을 갖춘 폭풍 항로의 시각 표지.",
+      "motion_ko": "정적 관측주. 번개 포집·피해·전력 기능은 구현하지 않습니다.",
+      "order": 19,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/lightning-mast.glb",
+      "preview": "previews/lightning-mast.png",
+      "triangles": 19696,
+      "mesh_count": 165,
+      "vertices": 59088,
+      "material_count": 1,
+      "animation_count": 0,
+      "animation_duration": 0,
+      "encoded_color_components": 0,
+      "bytes": 2294648,
+      "sha256": "156ae7418e75fb7ad4c973c815361f4e16b711bbc2c14f4e8a4d90c37a29e1bd",
+      "bounds": {
+        "min": [
+          -1.5714871883392334,
+          -1.9099999986588956,
+          -1.1774999988079071
+        ],
+        "max": [
+          1.6416773796081543,
+          3.2399999916553495,
+          1.1774999988079071
+        ]
+      }
+    },
+    {
+      "id": "cargo-crane",
+      "name_ko": "목재 항로 하역기",
+      "category": "props",
+      "role": "겹목재 받침과 황동 윈치·도르래·그물 상자가 읽히는 작은 크레인.",
+      "motion_ko": "매달린 화물과 아래 고리가 관성으로 조금씩 흔들립니다.",
+      "order": 20,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/cargo-crane.glb",
+      "preview": "previews/cargo-crane.png",
+      "triangles": 15908,
+      "mesh_count": 216,
+      "vertices": 47724,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 6.4,
+      "encoded_color_components": 0,
+      "bytes": 1931456,
+      "sha256": "0466435da3540390391c36ed26fa0a0bd5d44df509ca22fd4d3f2a6cdb151b11",
+      "bounds": {
+        "min": [
+          -2.0318186742067335,
+          -1.5099999986588954,
+          -1.0524999988079071
+        ],
+        "max": [
+          2.2674999988079074,
+          2.664577293395996,
+          1.5600000059604644
+        ]
+      }
+    },
+    {
+      "id": "lantern-buoy",
+      "name_ko": "왕관등 항로 부표",
+      "category": "props",
+      "role": "작은 부력낭과 왕관형 황동등·리본·균형추가 층을 이루는 항로 등.",
+      "motion_ko": "전체 부표가 떠오르고 내려오며 긴 리본이 늦게 따라 흔들립니다.",
+      "order": 21,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/lantern-buoy.glb",
+      "preview": "previews/lantern-buoy.png",
+      "triangles": 29848,
+      "mesh_count": 152,
+      "vertices": 89544,
+      "material_count": 1,
+      "animation_count": 6,
+      "animation_duration": 7,
+      "encoded_color_components": 0,
+      "bytes": 3381012,
+      "sha256": "23dc4a9b16ce4dc94de0b49bf4cf1af602f65e20a15254432e53290ad7b840e4",
+      "bounds": {
+        "min": [
+          -1.095015121839692,
+          -2.103999997973442,
+          -1.2798944579208644
+        ],
+        "max": [
+          1.3123205553368988,
+          2.432589018344879,
+          1.0890000343322754
+        ]
+      }
+    },
+    {
+      "id": "wind-ribbon-mast",
+      "name_ko": "겹리본 풍향 표주",
+      "category": "props",
+      "role": "여러 높이의 천 리본, 깃털 풍향계와 황동 종을 가진 바람 표지.",
+      "motion_ko": "리본과 작은 종이 엇갈린 주기로 흔들립니다.",
+      "order": 22,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/wind-ribbon-mast.glb",
+      "preview": "previews/wind-ribbon-mast.png",
+      "triangles": 14096,
+      "mesh_count": 99,
+      "vertices": 42288,
+      "material_count": 1,
+      "animation_count": 15,
+      "animation_duration": 4.6,
+      "encoded_color_components": 0,
+      "bytes": 1634116,
+      "sha256": "0368d5f2a27586b9b7a68dda1ebe82937f3918e935374b6b7a861aa64e277135",
+      "bounds": {
+        "min": [
+          -1.8494739100200182,
+          -1.8599999986588955,
+          -1.2155034343821103
+        ],
+        "max": [
+          2.2367632607611756,
+          3.2453024236140253,
+          0.9092584036553756
+        ]
+      }
+    },
+    {
+      "id": "supper-deck",
+      "name_ko": "한 잔 쉬어가는 갑판",
+      "category": "props",
+      "role": "접이 탁자·주전자·잔·빈 의자·수선 차양·등을 겹친 작은 생활 갑판.",
+      "motion_ko": "차양 아래 황동등이 작게 흔들립니다. 인물은 포함하지 않습니다.",
+      "order": 23,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/supper-deck.glb",
+      "preview": "previews/supper-deck.png",
+      "triangles": 23484,
+      "mesh_count": 373,
+      "vertices": 70452,
+      "material_count": 1,
+      "animation_count": 1,
+      "animation_duration": 5.8,
+      "encoded_color_components": 0,
+      "bytes": 2900812,
+      "sha256": "43bb8cb826bb2c24286ae3f8b070c175499f3803cf580b006a2033c82a459538",
+      "bounds": {
+        "min": [
+          -1.877499998807907,
+          -1.2099999986588956,
+          -1.4274999988079071
+        ],
+        "max": [
+          2.6724999988079072,
+          2.442650340131331,
+          1.4274999988079071
+        ]
+      }
+    },
+    {
+      "id": "star-lanterns",
+      "name_ko": "별길 종이풍등",
+      "category": "props",
+      "role": "크기가 다른 종이풍등 세 개와 대나무 갈비·별지도 기구를 묶은 야간 소품.",
+      "motion_ko": "세 풍등이 서로 다른 높이와 리듬으로 천천히 떠 있습니다.",
+      "order": 24,
+      "build_method": "local_vertex_painted_multipart",
+      "status": "visual_asset_prototype",
+      "model": "assets/star-lanterns.glb",
+      "preview": "previews/star-lanterns.png",
+      "triangles": 18428,
+      "mesh_count": 145,
+      "vertices": 55284,
+      "material_count": 1,
+      "animation_count": 7,
+      "animation_duration": 12.6,
+      "encoded_color_components": 0,
+      "bytes": 2142268,
+      "sha256": "23346bf27f95c33bf4e805652c7c4e340ce21c13b3cc76095b6c7652136fcc55",
+      "bounds": {
+        "min": [
+          -1.8538436325866043,
+          -1.2599999986588954,
+          -0.9934598535299302
+        ],
+        "max": [
+          1.6879862010478974,
+          2.684060333967209,
+          0.9024999988079071
+        ]
+      }
+    }
+  ],
+  "baselines": [
+    {
+      "id": "baseline-root-garden",
+      "name_ko": "이전안 · 뿌리 수염 정원섬",
+      "category": "islands",
+      "role": "넓은 잔디 선반과 큰 나무 뿌리로 생활 항로의 높이와 깊이를 만든다.",
+      "motion_ko": "정적 형태 원형 · 바람과 부유 물리는 포함하지 않음",
+      "source_asset_id": "root-garden",
+      "isBaseline": true,
+      "model": "baseline/assets/root-garden.glb",
+      "mesh_count": 288,
+      "triangles": 11916,
+      "animation_count": 0,
+      "bytes": 1598120,
+      "sha256": "cc032611fdcad5ca308423cecc7f7a102aab13629098401a61ee4f272df7731d",
+      "available": true
+    },
+    {
+      "id": "baseline-wind-tree",
+      "name_ko": "이전안 · 바람에 누운 수관나무",
+      "category": "nature",
+      "role": "휘어진 줄기·비대칭 수관·독립 잎과 작은 리본으로 바람의 인상을 만든다.",
+      "motion_ko": "8초 반복 수관 흔들림 · 실제 풍압과 무관",
+      "source_asset_id": "wind-tree",
+      "isBaseline": true,
+      "model": "baseline/assets/wind-tree.glb",
+      "mesh_count": 199,
+      "triangles": 8032,
+      "animation_count": 1,
+      "bytes": 1084620,
+      "sha256": "51c5ad4a4ffac9142f7321e13193c890a6c82b54629a073fdc4814aed2983a4e",
+      "available": true
+    },
+    {
+      "id": "baseline-sunlit-cloud",
+      "name_ko": "이전안 · 햇살 이불구름",
+      "category": "clouds",
+      "role": "항로 양옆을 풍성하게 감싸는 넓고 낮은 구름 둑",
+      "motion_ko": "서로 다른 속도로 솟고 가라앉는 세 겹의 구름 숨결",
+      "source_asset_id": "sunlit-cloud",
+      "isBaseline": true,
+      "model": "baseline/assets/sunlit-cloud.glb",
+      "mesh_count": 37,
+      "triangles": 7104,
+      "animation_count": 1,
+      "bytes": 813196,
+      "sha256": "a91bd7332387d586c8b0b7295257ef9f02924d6fd993afed33a2e0347b753b0d",
+      "available": true
+    },
+    {
+      "id": "baseline-harbor-gull",
+      "name_ko": "이전안 · 항구 흰깃갈매기",
+      "category": "birds",
+      "role": "계류기둥·밧줄과 함께 항구의 생활감을 채우는 큰 새",
+      "motion_ko": "두 날개를 크게 펼쳤다 접는 갈매기 날갯짓과 몸의 들썩임",
+      "source_asset_id": "harbor-gull",
+      "isBaseline": true,
+      "model": "baseline/assets/harbor-gull.glb",
+      "mesh_count": 100,
+      "triangles": 5700,
+      "animation_count": 1,
+      "bytes": 727136,
+      "sha256": "4b034413d4d52a861c2079cfcc85220cfdc47c59be66f7d9e9e7df94154b8f22",
+      "available": true
+    },
+    {
+      "id": "baseline-mail-balloon",
+      "name_ko": "이전안 · 바람우편 부양낭",
+      "category": "props",
+      "role": "크림 기낭과 수선 천 아래 가죽 우편 가방이 매달린 항로의 작은 생활 장면.",
+      "motion_ko": "우편 가방이 줄 아래에서 천천히 흔들립니다.",
+      "source_asset_id": "mail-balloon",
+      "isBaseline": true,
+      "model": "baseline/assets/mail-balloon.glb",
+      "mesh_count": 76,
+      "triangles": 9432,
+      "animation_count": 2,
+      "bytes": 1095840,
+      "sha256": "3a7e68ba0ccc2e49d89e5cc9a185d96ded3692190f8f461164f170be840a0d3a",
+      "available": true
+    },
+    {
+      "id": "baseline-lightning-mast",
+      "name_ko": "이전안 · 나선 피뢰 관측주",
+      "category": "props",
+      "role": "겹절연체와 구리봉, 보호망, 케이블을 갖춘 폭풍 항로의 시각 표지.",
+      "motion_ko": "정적 관측주. 번개 포집·피해·전력 기능은 구현하지 않습니다.",
+      "source_asset_id": "lightning-mast",
+      "isBaseline": true,
+      "model": "baseline/assets/lightning-mast.glb",
+      "mesh_count": 147,
+      "triangles": 15300,
+      "animation_count": 0,
+      "bytes": 1801040,
+      "sha256": "ea0243e670757203944402abc845fcc128cf663f6aa9647a1b91773419781bca",
+      "available": true
+    }
+  ]
+}

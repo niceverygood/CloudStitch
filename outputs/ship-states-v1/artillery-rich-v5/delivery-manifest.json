@@ -1,0 +1,436 @@
+{
+  "title": "Cloudstitch",
+  "revision": "artillery-rich-v5",
+  "newModels": 4,
+  "unchangedModels": 9,
+  "technicalQA": true,
+  "humanArtApproved": false,
+  "gameplayChanges": false,
+  "files": [
+    {
+      "path": "tools/ship-states/artillery-rich-v5/build.cjs",
+      "bytes": 3236,
+      "sha256": "eaf6fd179a9fcf57369a62b0d1989a34fb54e5dd95fbed6c507bd52d28f18cf3"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/catalog.js",
+      "bytes": 1326,
+      "sha256": "b58839c6fdc0ec3e8d71657cb953b732911c7ab02cd36247499539d05cce62e6"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/check-growth.cjs",
+      "bytes": 2414,
+      "sha256": "a853d08d4af415cbca5a3204004d7897bfcb7a29595f0d81aa3a1cc63b600496"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/check-source.cjs",
+      "bytes": 2022,
+      "sha256": "a2955e7985b7e327c98fa011a064eafbf0b0d90047539ebd17e7e15c253d653f"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/finalize.cjs",
+      "bytes": 2025,
+      "sha256": "fbe57f5b743bd5dd14fdc6f43838bc4504b5e861021d165fb8eaa5ad83715c64"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/models.js",
+      "bytes": 10186,
+      "sha256": "b31630cff488ffef6aeeb0164c68d6fafd8865d89de137bf7e3d87cc3d0ed6fb"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/parse-glb.cjs",
+      "bytes": 3680,
+      "sha256": "3eb2047440d104751209c2b0279faa1bd82a21156864bc7fba00f07811c02c36"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/template.html",
+      "bytes": 6169,
+      "sha256": "e50d9d0b20030968a1523b45801f9d394e63cd16f4351817fb1f10740346540b"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/verify-structure.cjs",
+      "bytes": 6027,
+      "sha256": "5c8cae08d393955a2dc96a597d2868521c1d0384389da31c14441a4a776e4665"
+    },
+    {
+      "path": "tools/ship-states/artillery-rich-v5/viewer.js",
+      "bytes": 11138,
+      "sha256": "b0cdaa61c6e9bfc3837210f867c04cd416463ba8420886fb0921b496e8c37aca"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/all-ranks.png",
+      "bytes": 1106723,
+      "sha256": "5ccd1dcb11d8c14de45aab422d92fa620647ded6ddcba475539331f7260f35fe"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/art-review.json",
+      "bytes": 956,
+      "sha256": "bc0418eea3aed432747887ae2d45d8d9f41ee9e6143431bdff24028dfb699a8a"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r2-comparison.png",
+      "bytes": 282944,
+      "sha256": "6c019a2ef03267f2624043bd1b75eb01aebd69662be24a56317e79646f33663f"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r2.glb",
+      "bytes": 3219952,
+      "sha256": "6ed4ea5c47a508f433b5ce40b35eb43bab0d4584abfa16cb78abd955bbc29b07"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r3-comparison.png",
+      "bytes": 295399,
+      "sha256": "0a485a4b304b3ff66710f63f527650e20addf7f35cc3a436ed96dedb7ebaa5ae"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r3.glb",
+      "bytes": 4270560,
+      "sha256": "166c9aa83f4ef7275bccfabc3d23bf5d25650a9541a6e0b25cdfc3c8a4540448"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r4-comparison.png",
+      "bytes": 297569,
+      "sha256": "a1231b53d25f0e72740c75baa387a5aadfb30575f51b98a7f9aac73d1cd0ea93"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r4.glb",
+      "bytes": 5035732,
+      "sha256": "c78dfce885afe345f3c96cbd2083877509816bafb6194e9bfb52c517eae54c39"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r5-comparison.png",
+      "bytes": 330129,
+      "sha256": "659a5783a7dd87ad93fc4a5144cc543b428f788128ead05516c5271e5a8cbdf5"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r5-mobile390.png",
+      "bytes": 52066,
+      "sha256": "754602964d962ec1decac2a179f7a7fc7b3c1d4b86038a545b6babe36a5af58f"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/artillery-r5.glb",
+      "bytes": 7648416,
+      "sha256": "8ebfe2a70dc6e6b7c8073f630e615774102afbef958f731d123c7bd9a037e319"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/build-manifest.json",
+      "bytes": 6496,
+      "sha256": "60b33dfb264668dd549f1675ecd179509ba19022ca9bfbfd297693dc0eb076ed"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/catalog.json",
+      "bytes": 2676,
+      "sha256": "7e72e780c880ccd11179221e0eb3869f670ddedefdbd933a15725b6d5d724be5"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/growth-verification.json",
+      "bytes": 5422,
+      "sha256": "ddc1c52afe39dcc8336f3c67f6fe35e6edef0abb497d25d98cf479ba3b0898f3"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/HANDOFF.txt",
+      "bytes": 1837,
+      "sha256": "4c1ba4d3034cbb26ab14f59bf8548e05032aa5d792d95e88f3048746f03e881c"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/index.html",
+      "bytes": 90543395,
+      "sha256": "2c3b134e9c0e75e3962bbdf9a0d266985cb6f3bca2fb8248f0bbcb04ad1070aa"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/mobility-r2.glb",
+      "bytes": 2888900,
+      "sha256": "0a130575afffe8455a89c5b3bf7921b9e035804b109a7f4811417c39c91ec9cc"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/mobility-r3.glb",
+      "bytes": 3569284,
+      "sha256": "065416d43d9ac069932db63a53c5b4fe03cd4c1f6e708eee7c544c6b5268610a"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/mobility-r4.glb",
+      "bytes": 4888744,
+      "sha256": "a263a755fbd101773336feb76b75e88b29772252f9e7729e9c2e3e80d22b366a"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/mobility-r5.glb",
+      "bytes": 6144372,
+      "sha256": "b2c7c12a0e4c9bac60cb50a93bf162d8c47b15c6ee088e65584205e73510eb5b"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/overview.png",
+      "bytes": 1488890,
+      "sha256": "7959a69402962c78b7a446797136a553c058b80b264dafdbe6c8c3c462eff008"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/post-preservation.json",
+      "bytes": 80,
+      "sha256": "5afda89b19ef03cb6c44bc1c2706af90dfc151caa906faccdcb1fe7ab1ac223b"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/post-verification.json",
+      "bytes": 129,
+      "sha256": "bc8a4df0d76da6a502ee92b68b3ab5cfa65b7ebb7d5086bbe2f565d1d744ceca"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/README.txt",
+      "bytes": 930,
+      "sha256": "71801c10d00e4036e9485546c92d3cc435a5c8e658fd516320f5a481a4320178"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/returnship-r1.glb",
+      "bytes": 2628036,
+      "sha256": "74f47e231e1acaca9888ae6d1ed61a02117c30f0c91eb23b1c310a3448087055"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/salvage-r2.glb",
+      "bytes": 4177324,
+      "sha256": "a84005b0ed0d71f838ebc2d5a104dc19421460e3a48ea0f66b2a3c30e0d5c76c"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/salvage-r3.glb",
+      "bytes": 5199832,
+      "sha256": "4227690be4cdc05f154749d96ce3f78967c0c70429b0111ba2d9894c5b9042fb"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/salvage-r4.glb",
+      "bytes": 6315188,
+      "sha256": "b50bc47f23ce02ecc8e9f5ed1ecd80790d7ef2ccc74a1bf5161c71a23027fe7a"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/salvage-r5.glb",
+      "bytes": 7617232,
+      "sha256": "9384272ea44e796df30517d86347713e120782e422217bc6f1bb9187fba7eb81"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/source-ready.json",
+      "bytes": 9830,
+      "sha256": "15061af48d62fcd3414629e4a3ad69b9168beabae60610710fbaa8e1d8a32b3a"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/source-verification.json",
+      "bytes": 3283,
+      "sha256": "e781ac813529e232d4bb7e394817247c9f5fff492af8838e31e4811f75d0b756"
+    },
+    {
+      "path": "outputs/ship-states-v1/artillery-rich-v5/verification-structure.json",
+      "bytes": 12136,
+      "sha256": "111ad055ab0c912d33ab259b4104e034da526d60f88b83294a344ea2b233d75a"
+    }
+  ],
+  "readOnly": [
+    {
+      "path": "tools/ship-states/salvage-rich-v4/models.js",
+      "bytes": 7542,
+      "sha256": "493ba62c06192f1335b101e7804fea2fd070f5343966f94a3321bae7f56b2684"
+    },
+    {
+      "path": "tools/ship-states/salvage-rich-v4/catalog.js",
+      "bytes": 1248,
+      "sha256": "0042c339a322faca34cc40a9be89f60902578debe9c0c71219c2b9ed7265aa6e"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/delivery-manifest.json",
+      "bytes": 15566,
+      "sha256": "412532b1f15a3b7b6454f409a953f8f7129a67079c7b9147b1e78723d0f04f9b"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/models.js",
+      "bytes": 14369,
+      "sha256": "fd367b974dc71fda15f93a64000d77a7f0bc96554feda904d69ab63992bcc4e5"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/catalog.js",
+      "bytes": 1225,
+      "sha256": "2fd764e92c39a5753f1768a4cb61b1844ef3588b2b3e977bd403f7a88d93a02a"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/delivery-manifest.json",
+      "bytes": 23899,
+      "sha256": "9dbea8b4ab2f57add69ea9175f83c996e168f3b7e15e8147d6c3603688d4a4b0"
+    },
+    {
+      "path": "tools/ship-states/ranks-1to5-v2/models.js",
+      "bytes": 16974,
+      "sha256": "a47ff2ac208b367a17c9c46405a6bef3a21a5a20f6a50f4cc8710b476982d252"
+    },
+    {
+      "path": "tools/ship-states/ranks-1to5-v2/catalog.js",
+      "bytes": 1223,
+      "sha256": "b7bae6b8664ee8e494c74daf446bb1fa094e2b825f7b6ab8f1875662d696ea65"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-1to5-v2/delivery-manifest.json",
+      "bytes": 27399,
+      "sha256": "c4f628a41a74839173710547e0885d68af3b51a1d0b50662a1747a789980801b"
+    },
+    {
+      "path": "tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "path": "tools/airship-rig/part-map.json",
+      "bytes": 98796,
+      "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+    },
+    {
+      "path": "outputs/selected-airship-toon3d/airship.glb",
+      "bytes": 3645884,
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74"
+    },
+    {
+      "path": "outputs/ship-states-v1/star-rank-refits-moodboard-v1/star-rank-refits.png",
+      "bytes": 2734905,
+      "sha256": "a4779b8cea7cde1ba502fdf779b9d2b301f5c43b8954bbfca4c68c40b23b3c96"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/models.js",
+      "bytes": 11475,
+      "sha256": "6ccfa6387b16a34c541c113a2c80c5567509ddcda2f9f49c40317650f9797a94"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/delivery-manifest.json",
+      "bytes": 12660,
+      "sha256": "cd8e0cbad9ff9a1639a2e35122751918f2627b1f9b2e391abb46385dd9282839"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-mobility.glb",
+      "bytes": 2419328,
+      "sha256": "4f65fa51524e941e611b55d0f46e460e45cecc1bc32091df1749f91b38ea0132"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-artillery.glb",
+      "bytes": 2084092,
+      "sha256": "3f39b816b1dbb9aa58ca3b3c850b8466a8e846e144f97d52e93173fd12476946"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-salvage.glb",
+      "bytes": 2240688,
+      "sha256": "b4e5e940106d9d23daf1ecc5e58b47ce88335cdfb13e67e3a71f309c67167fea"
+    },
+    {
+      "path": "tools/ship-states/star3-assets-v1/models.js",
+      "bytes": 14637,
+      "sha256": "73d850fa6153094827287f3acc7861ecc7a785c3883994f8f23cbc47083e6c9f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/delivery-manifest.json",
+      "bytes": 8497,
+      "sha256": "684db8fb00cf3173f4de77f4f79f036f3c2e1dfafdcdeba506d24ff3006fbbc9"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-mobility.glb",
+      "bytes": 2788424,
+      "sha256": "af7e13de349ba7701c31dbe02fc91806fcec2a2b58de4a3163caad36eb6f6e7f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-artillery.glb",
+      "bytes": 2508648,
+      "sha256": "31baac29f2a4af37fabfa9f62aad7161d479eb1a60a65fb0d9edd125eb407018"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-salvage.glb",
+      "bytes": 2448220,
+      "sha256": "65ca689f5b41204d897ffd55e1a6c3da1f17fb54a81f3dfa14f051fe330422e3"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/models.js",
+      "bytes": 14169,
+      "sha256": "38a8700f92c99ef065d172050c28ac91440872b24da791211c38d70cefc0d142"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/delivery-manifest.json",
+      "bytes": 12785,
+      "sha256": "7c2a0be6c1819e10d7e1bce9b7c9967362b8725bd6e84f9776ad383163f6829f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-mobility.glb",
+      "bytes": 2805956,
+      "sha256": "dc1cb4475ac54fa7f6d51dc53267e9d65c69450578c526600dba1cc830b86824"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-artillery.glb",
+      "bytes": 2119084,
+      "sha256": "619cc056ad7eca05faf9d6f90070fa6b8d493f8d925c76cf3ba2e602cc732e16"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-salvage.glb",
+      "bytes": 2431336,
+      "sha256": "2e9418afe34a1860cc3387acfc409319ac2aadbe0830278000db8185b24f01c6"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/returnship-r1.glb",
+      "bytes": 2628036,
+      "sha256": "74f47e231e1acaca9888ae6d1ed61a02117c30f0c91eb23b1c310a3448087055"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/mobility-r2.glb",
+      "bytes": 2888900,
+      "sha256": "0a130575afffe8455a89c5b3bf7921b9e035804b109a7f4811417c39c91ec9cc"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/artillery-r2.glb",
+      "bytes": 2671808,
+      "sha256": "ba01e1fa42d7a65ad120375dc595b9f691da5cddfa503b8d3736e0dab91aa5f8"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/salvage-r2.glb",
+      "bytes": 4177324,
+      "sha256": "a84005b0ed0d71f838ebc2d5a104dc19421460e3a48ea0f66b2a3c30e0d5c76c"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/mobility-r3.glb",
+      "bytes": 3569284,
+      "sha256": "065416d43d9ac069932db63a53c5b4fe03cd4c1f6e708eee7c544c6b5268610a"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/artillery-r3.glb",
+      "bytes": 3491492,
+      "sha256": "d356e49bd48d237257b2fa7559994c0770aef8aa73455b62231e52cdcc8411cb"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/salvage-r3.glb",
+      "bytes": 5199832,
+      "sha256": "4227690be4cdc05f154749d96ce3f78967c0c70429b0111ba2d9894c5b9042fb"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/mobility-r4.glb",
+      "bytes": 4888744,
+      "sha256": "a263a755fbd101773336feb76b75e88b29772252f9e7729e9c2e3e80d22b366a"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/artillery-r4.glb",
+      "bytes": 4317028,
+      "sha256": "8fc8df5675d1b9df36f0154a2ec09913dd5fd5461dfc1f4fabb7175b59a1b55f"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/salvage-r4.glb",
+      "bytes": 6315188,
+      "sha256": "b50bc47f23ce02ecc8e9f5ed1ecd80790d7ef2ccc74a1bf5161c71a23027fe7a"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/mobility-r5.glb",
+      "bytes": 6144372,
+      "sha256": "b2c7c12a0e4c9bac60cb50a93bf162d8c47b15c6ee088e65584205e73510eb5b"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/artillery-r5.glb",
+      "bytes": 5326856,
+      "sha256": "089dc068111bae8b384ff3500819ef444c8efe61d1b2d3a796e3b9d83a46121d"
+    },
+    {
+      "path": "outputs/ship-states-v1/salvage-rich-v4/salvage-r5.glb",
+      "bytes": 7617232,
+      "sha256": "9384272ea44e796df30517d86347713e120782e422217bc6f1bb9187fba7eb81"
+    }
+  ],
+  "post": {
+    "passed": true,
+    "sourcePins": 8,
+    "readOnlyPins": 41,
+    "newModels": 4,
+    "unchangedModels": 9,
+    "browserClosed": true
+  }
+}

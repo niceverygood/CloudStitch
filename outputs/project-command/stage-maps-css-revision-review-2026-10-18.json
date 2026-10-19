@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:28:19.6261227Z",
+  "sourceManifestSha256": "68d21152291888c91912d9dc9ff519e1007b10e374c282046e017749040cc292",
+  "sourceMatchesOwner": true,
+  "deliveryManifestSha256": "c7dac569a5d2e3ae3f7f38039a41602d8f6d3729344d83b39117466e6727f646",
+  "sourceFiles": 19,
+  "outputFiles": 7,
+  "files": 26,
+  "matched": 26,
+  "failures": [],
+  "bundleSha256": "2b5e564c9a532ed7396cda3ef1654f84b1d440ae68b0efb9e6df165f974f8cf6",
+  "bundleMatchesPrior": true,
+  "runtimePassed": true,
+  "runtimeSourceMatches": true,
+  "runtimeBrowser": false,
+  "departureRestarts": 6,
+  "sorties": 2,
+  "unit": {
+    "version": "stage-maps-v1",
+    "passed": true,
+    "tests": 25,
+    "pass": 25,
+    "fail": 0,
+    "scope": "authored spatial clearance, selection whitelist, strict route-bound journal and failure preservation"
+  },
+  "status": "CSS-only revision handoff check; browser hit-test regression pending",
+  "previousNormalReport": "133 PASS on source5ff5b367 revision; retained as previous provenance",
+  "previousFaultAudit": {
+    "passed": 4,
+    "total": 6,
+    "scope": "previous source5ff5/delivery4c62 only",
+    "confirmedIssue": "reload button hit-test blocked by pause overlay",
+    "unconfirmedConnector": "before rings/labels both0; fixture precondition invalid",
+    "readBy": "delegated /root/stage_ready_review",
+    "newCssBrowserRegression": "pending"
+  }
+}

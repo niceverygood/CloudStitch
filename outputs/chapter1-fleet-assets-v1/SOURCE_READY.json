@@ -1,0 +1,43 @@
+{
+  "revision": "source-r2",
+  "files": [
+    {
+      "path": "tools/chapter1-fleet-assets/build.cjs",
+      "bytes": 3445,
+      "sha256": "8479001848170a18a65b673aad8a9f9ac2dbcb34e4e0c427fab31b91aed97039"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/generate.mjs",
+      "bytes": 2546,
+      "sha256": "19436492b42d9a2702e8302e5e4590dca0d5bece10939831135e7c539c8f750d"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/models.mjs",
+      "bytes": 15255,
+      "sha256": "0fc6ccdf933794b504cd9beb0469dee2bac4278339d8149637a09e8f1cdfa54e"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/qa.cjs",
+      "bytes": 6913,
+      "sha256": "6d8a331a7f7ec203fa57bc2f855b519986d0b565342aa08e3322948786630b9e"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/review.js",
+      "bytes": 23763,
+      "sha256": "73b39889e0dab0037af68aa27b5674702d4cdfb577061fd447606c7c28a4e7cb"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/template.html",
+      "bytes": 25533,
+      "sha256": "5aaf959e0b7180d911a978ea2bc9938915d56d77f2b671ce93f882faac0fdb8f"
+    }
+  ],
+  "models": 11,
+  "scope": "regular10+midboss1 visual assets; finalboss preserved",
+  "commands": [
+    "node tools/chapter1-fleet-assets/build.cjs --execute",
+    "node tools/chapter1-fleet-assets/qa.cjs"
+  ],
+  "preflight": "11 finite/positive bounds PASS; export/browser not started",
+  "budget": "11 sequential GLB export, one browser context all11 loading/3modes/clips/PNG; two representative120frame3modes/390/control/download; no unrelated asset test"
+}

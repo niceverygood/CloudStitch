@@ -1,0 +1,2189 @@
+{
+  "title": "Cloudstitch · 장례 함대 무장 시험",
+  "gameplayImplemented": false,
+  "items": [
+    {
+      "id": "chapter1-scout",
+      "kind": "scout",
+      "name": "가시까마귀",
+      "role": "정찰정",
+      "assetPath": "ships/scout.glb",
+      "viewerPath": "ships/scout.html",
+      "previewPath": "previews/scout.png",
+      "bytes": 15272928,
+      "sha256": "d002108c0966dea0631a6be44b7f0eff71f6b65905066f6c42258a323d73539d",
+      "triangles": 95890,
+      "meshes": 22,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        18,
+        10.650000214576721,
+        6
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "9f7de20425f2bd0916dc6f39d4054e3fae68853e008d100a4fc93fe1b35be7ef",
+      "previewSha256": "a6dfa901dbfb21674e0dc5305fb644b6bc246b728af062be6b09f152a1f75b0f",
+      "embeddedPaintMaps": 5,
+      "cannon": "경량 선회포",
+      "arrow": "까마귀 5연시",
+      "special": "까마귀 폭우",
+      "effect": "rain",
+      "ports": [
+        [
+          -5,
+          1.9,
+          -2.3
+        ],
+        [
+          -5,
+          1.9,
+          2.3
+        ]
+      ],
+      "bows": [
+        [
+          -2,
+          3,
+          -2.4
+        ],
+        [
+          -2,
+          3,
+          2.4
+        ]
+      ],
+      "device": [
+        0,
+        5,
+        0
+      ],
+      "scale": 0.65,
+      "description": "낮은 외측 포대와 쌍쇠뇌 · 상공에서 펼쳐지는 검은 화살비",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/scout.glb",
+        "sha256": "9f7de20425f2bd0916dc6f39d4054e3fae68853e008d100a4fc93fe1b35be7ef"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -5,
+            1.9,
+            -2.3
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.65,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -5,
+            1.9,
+            2.3
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.65,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -2,
+            3,
+            -2.4
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.5525,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -2,
+            3,
+            2.4
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.5525,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            0,
+            5,
+            0
+          ],
+          "scale": 0.65,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/scout.glb",
+      "page": "ships/scout.html"
+    },
+    {
+      "id": "chapter1-command",
+      "kind": "command",
+      "name": "검은 종 지휘정",
+      "role": "지휘정",
+      "assetPath": "ships/command.glb",
+      "viewerPath": "ships/command.html",
+      "previewPath": "previews/command.png",
+      "bytes": 17933444,
+      "sha256": "1c15eeb3ba0435cdf1e04707176fefd2bb015c0792730d133edaa1e5cf589e15",
+      "triangles": 116180,
+      "meshes": 26,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        15.329999831318855,
+        13.40499997138977,
+        5.963533639907837
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "7f21359648650537998d27400fe4d6bf6905f97782a96d7ce3d548c8ee984c88",
+      "previewSha256": "52613020a78e64bfc7a3510523869e5e6027786d5ff67b1805fb99e3f0c0205a",
+      "embeddedPaintMaps": 5,
+      "cannon": "의장 쌍포",
+      "arrow": "신호 화살",
+      "special": "검은 종의 칙령",
+      "effect": "bell",
+      "ports": [
+        [
+          -3,
+          3,
+          -2.8
+        ],
+        [
+          -3,
+          3,
+          2.8
+        ]
+      ],
+      "bows": [
+        [
+          2,
+          4,
+          -2.6
+        ],
+        [
+          2,
+          4,
+          2.6
+        ]
+      ],
+      "device": [
+        -1,
+        7.8,
+        0
+      ],
+      "scale": 0.8,
+      "description": "길고 낮은 의장포 · 종 타격 뒤 연속으로 전파되는 공명 고리",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/command.glb",
+        "sha256": "7f21359648650537998d27400fe4d6bf6905f97782a96d7ce3d548c8ee984c88"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            3,
+            -2.8
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.8,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            3,
+            2.8
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.8,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            4,
+            -2.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.68,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            4,
+            2.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.68,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            7.8,
+            0
+          ],
+          "scale": 0.8,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/command.glb",
+      "page": "ships/command.html"
+    },
+    {
+      "id": "chapter1-executor",
+      "kind": "executor",
+      "name": "장례 집행관",
+      "role": "중간보스 · 장례 호위함",
+      "assetPath": "ships/executor.glb",
+      "viewerPath": "ships/executor.html",
+      "previewPath": "previews/executor.png",
+      "bytes": 35336444,
+      "sha256": "96329c6e0decac0a363941e9afa700a2b26ec75e37bf4e4a602a9862fcdc8066",
+      "triangles": 246628,
+      "meshes": 34,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 2
+      },
+      "bounds": [
+        25.06381416618824,
+        15.051567554473877,
+        13.889999961853027
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/miniboss-executor.png",
+      "previewSourceSha256": "8d55e6f12084e1ff7c5b55f10acbe22591b267163a98938bdbd74af70b47b68d",
+      "previewSha256": "5c802dbf9f22ea779bd27f8df024599f14656cb06a27708c3ef441a842b794ca",
+      "embeddedPaintMaps": 5,
+      "cannon": "집행 중포",
+      "arrow": "처형 대쇠뇌",
+      "special": "장례 집행",
+      "effect": "execution",
+      "ports": [
+        [
+          -5,
+          3,
+          -5.6
+        ],
+        [
+          -5,
+          3,
+          5.6
+        ],
+        [
+          -1,
+          3,
+          -5.6
+        ],
+        [
+          -1,
+          3,
+          5.6
+        ]
+      ],
+      "bows": [
+        [
+          3,
+          4,
+          -5
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "device": [
+        -5,
+        7,
+        0
+      ],
+      "scale": 1.25,
+      "description": "4문 중포와 대쇠뇌 · 붉은 예고선 뒤 사슬·낙하탄 동시 집행",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/executor.glb",
+        "sha256": "8d55e6f12084e1ff7c5b55f10acbe22591b267163a98938bdbd74af70b47b68d"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -5,
+            3,
+            -5.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 1.25,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -5,
+            3,
+            5.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 1.25,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "cannon_2",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            3,
+            -5.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 1.25,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_2",
+          "recoil": "Recoil_cannon_2",
+          "aim": "Aim_cannon_2"
+        },
+        {
+          "id": "cannon_3",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            3,
+            5.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 1.25,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_3",
+          "recoil": "Recoil_cannon_3",
+          "aim": "Aim_cannon_3"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            3,
+            4,
+            -5
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 1.0625,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            3,
+            4,
+            5
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 1.0625,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -5,
+            7,
+            0
+          ],
+          "scale": 1.25,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/executor.glb",
+      "page": "ships/executor.html"
+    },
+    {
+      "id": "chapter1-ram",
+      "kind": "ram",
+      "name": "철턱 들이받이",
+      "role": "돌격정",
+      "assetPath": "ships/ram.glb",
+      "viewerPath": "ships/ram.html",
+      "previewPath": "previews/ram.png",
+      "bytes": 16921116,
+      "sha256": "597b56ecd6405273ab6843a17c020d8040ee48cd48f863272e6bc8ee778b4837",
+      "triangles": 108868,
+      "meshes": 25,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 2
+      },
+      "bounds": [
+        13.766667655110359,
+        8.890000104904175,
+        10.179999828338623
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "42f62695d494c8ddc9bda1c4e56ea68fe3eb49c88c0194ac8b1815606547e2a9",
+      "previewSha256": "17bec3403925b922749bb1b2087b0e33ac1694a281744c9ff963454980dad494",
+      "embeddedPaintMaps": 5,
+      "cannon": "산탄 단포",
+      "arrow": "철턱 대못",
+      "special": "철턱 충격파",
+      "effect": "ram",
+      "ports": [
+        [
+          -2,
+          2,
+          -3
+        ],
+        [
+          -2,
+          2,
+          3
+        ]
+      ],
+      "bows": [
+        [
+          1,
+          3,
+          -2.8
+        ],
+        [
+          1,
+          3,
+          2.8
+        ]
+      ],
+      "device": [
+        -4,
+        3.8,
+        0
+      ],
+      "scale": 0.85,
+      "description": "측면 단포와 대못 발사기 · 턱을 충전한 뒤 전방 충격파",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/ram.glb",
+        "sha256": "42f62695d494c8ddc9bda1c4e56ea68fe3eb49c88c0194ac8b1815606547e2a9"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -2,
+            2,
+            -3
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.85,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -2,
+            2,
+            3
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.85,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            1,
+            3,
+            -2.8
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.7224999999999999,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            1,
+            3,
+            2.8
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.7224999999999999,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -4,
+            3.8,
+            0
+          ],
+          "scale": 0.85,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/ram.glb",
+      "page": "ships/ram.html"
+    },
+    {
+      "id": "chapter1-cannon",
+      "kind": "cannon",
+      "name": "검은 관 포격함",
+      "role": "함포정",
+      "assetPath": "ships/cannon.glb",
+      "viewerPath": "ships/cannon.html",
+      "previewPath": "previews/cannon.png",
+      "bytes": 15862384,
+      "sha256": "81f2ad487ac7dbb3f85335bd4f55a38a16245fcba98d05ed0b1f633d252f92f4",
+      "triangles": 100644,
+      "meshes": 30,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        14.22399998009205,
+        8.344933271408081,
+        7.764664649963379
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "be438975f513de613687b3c35fed21c795b99e32f15776aa800dbb6e593c0a52",
+      "previewSha256": "449bce8057e5119789ecb08833d9b2738b06a23dc6083fb3192d26b90e68369d",
+      "embeddedPaintMaps": 5,
+      "cannon": "장송 중포",
+      "arrow": "갑판 방어 쇠뇌",
+      "special": "관짝 파열탄",
+      "effect": "cluster",
+      "ports": [
+        [
+          -3,
+          3,
+          -2.7
+        ],
+        [
+          -3,
+          3,
+          2.7
+        ]
+      ],
+      "bows": [
+        [
+          2,
+          3,
+          -2.6
+        ],
+        [
+          2,
+          3,
+          2.6
+        ]
+      ],
+      "device": [
+        -1,
+        5.7,
+        0
+      ],
+      "scale": 1,
+      "description": "황동 보강 중포 2문 · 공중에서 갈라지는 장례 파열탄",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/cannon.glb",
+        "sha256": "be438975f513de613687b3c35fed21c795b99e32f15776aa800dbb6e593c0a52"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            3,
+            -2.7
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            3,
+            2.7
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3,
+            -2.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.85,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3,
+            2.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.85,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            5.7,
+            0
+          ],
+          "scale": 1,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/cannon.glb",
+      "page": "ships/cannon.html"
+    },
+    {
+      "id": "chapter1-tow",
+      "kind": "tow",
+      "name": "갈고리 사냥꾼",
+      "role": "견인정",
+      "assetPath": "ships/tow.glb",
+      "viewerPath": "ships/tow.html",
+      "previewPath": "previews/tow.png",
+      "bytes": 21419092,
+      "sha256": "397555a12249649a8389722bd84f210ac61c70963fff7592c479a0ada4103379",
+      "triangles": 142728,
+      "meshes": 26,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        16.46999969780445,
+        10.086663961410522,
+        7.107428312301636
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "7e41c8fb1a2b0ef6f7de0eda79b60f97eedc79698014901e50543419d87b7b8f",
+      "previewSha256": "63b04d0a86cdb161cc6e287d7765762ff75d342c24c2248ef50f6fa28b4a4f2d",
+      "embeddedPaintMaps": 5,
+      "cannon": "견인 작살포",
+      "arrow": "갈고리 볼트",
+      "special": "삼중 포획 사슬",
+      "effect": "harpoon",
+      "ports": [
+        [
+          -3,
+          2,
+          -2.8
+        ],
+        [
+          -3,
+          2,
+          2.8
+        ]
+      ],
+      "bows": [
+        [
+          1,
+          3.3,
+          -2.7
+        ],
+        [
+          1,
+          3.3,
+          2.7
+        ]
+      ],
+      "device": [
+        -3,
+        5,
+        0
+      ],
+      "scale": 0.8,
+      "description": "견인 작업로 옆 포대 · 세 갈래 작살과 팽팽한 사슬 회수",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/tow.glb",
+        "sha256": "7e41c8fb1a2b0ef6f7de0eda79b60f97eedc79698014901e50543419d87b7b8f"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            2,
+            -2.8
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.8,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            2,
+            2.8
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.8,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            1,
+            3.3,
+            -2.7
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.68,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            1,
+            3.3,
+            2.7
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.68,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            5,
+            0
+          ],
+          "scale": 0.8,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/tow.glb",
+      "page": "ships/tow.html"
+    },
+    {
+      "id": "chapter1-shield",
+      "kind": "shield",
+      "name": "장송 방패함",
+      "role": "방어정",
+      "assetPath": "ships/shield.glb",
+      "viewerPath": "ships/shield.html",
+      "previewPath": "previews/shield.png",
+      "bytes": 14808312,
+      "sha256": "e6692f3edcf9a17b7bf9d79408c045f699b6dc8aa3b15c51b1adeba75b58f9a0",
+      "triangles": 92712,
+      "meshes": 20,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        11.61500006020069,
+        9.707924604415894,
+        8.567572593688965
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-front-5.png",
+      "previewSourceSha256": "4f063323aa3952ce15bace1c854c9c54a5943ccf518b1981aaa8da87e9342cca",
+      "previewSha256": "1eb9207c68f0217587e84f92092306122507b5fc62c44035d2d61a86ace4872c",
+      "embeddedPaintMaps": 5,
+      "cannon": "호위 단포",
+      "arrow": "방패 틈새 쇠뇌",
+      "special": "장송 방벽",
+      "effect": "shield",
+      "ports": [
+        [
+          -1,
+          2.6,
+          -3.4
+        ],
+        [
+          -1,
+          2.6,
+          3.4
+        ]
+      ],
+      "bows": [
+        [
+          2,
+          3.3,
+          -3
+        ],
+        [
+          2,
+          3.3,
+          3
+        ]
+      ],
+      "device": [
+        0,
+        5.3,
+        0
+      ],
+      "scale": 0.7,
+      "description": "방패 양옆 사격대 · 겹겹이 펼쳐지는 청록 방벽과 황동 고리",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/shield.glb",
+        "sha256": "4f063323aa3952ce15bace1c854c9c54a5943ccf518b1981aaa8da87e9342cca"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            2.6,
+            -3.4
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.7,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            2.6,
+            3.4
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.7,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3.3,
+            -3
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.595,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3.3,
+            3
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.595,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            0,
+            5.3,
+            0
+          ],
+          "scale": 0.7,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/shield.glb",
+      "page": "ships/shield.html"
+    },
+    {
+      "id": "chapter1-fire",
+      "kind": "fire",
+      "name": "향로 불씨함",
+      "role": "화염정",
+      "assetPath": "ships/fire.glb",
+      "viewerPath": "ships/fire.html",
+      "previewPath": "previews/fire.png",
+      "bytes": 21345320,
+      "sha256": "bbc284ba139398865752a0990107ceea7a26f6fd4ab32c9c0131a91052f61ffb",
+      "triangles": 141564,
+      "meshes": 27,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        14.837999966740608,
+        9.125000238418579,
+        7.507445335388184
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "62aa5d096112e1bba0acff3fcd7a8017b07465018fa369599624397d9e792b0e",
+      "previewSha256": "f0c0ad862e1da2cfb7a494e531187cb8ca493ddb9572b05585734f5015edddcc",
+      "embeddedPaintMaps": 5,
+      "cannon": "불씨 유탄포",
+      "arrow": "점화 화살",
+      "special": "향로 화염 분사",
+      "effect": "flame",
+      "ports": [
+        [
+          -3,
+          2.5,
+          -2.7
+        ],
+        [
+          -3,
+          2.5,
+          2.7
+        ]
+      ],
+      "bows": [
+        [
+          2,
+          3,
+          -2.8
+        ],
+        [
+          2,
+          3,
+          2.8
+        ]
+      ],
+      "device": [
+        -4,
+        5,
+        0
+      ],
+      "scale": 0.85,
+      "description": "측면 유탄포와 점화 쇠뇌 · 향로 예열 뒤 넓은 화염 부채",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/fire.glb",
+        "sha256": "62aa5d096112e1bba0acff3fcd7a8017b07465018fa369599624397d9e792b0e"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            2.5,
+            -2.7
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.85,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            2.5,
+            2.7
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.85,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3,
+            -2.8
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.7224999999999999,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3,
+            2.8
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.7224999999999999,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -4,
+            5,
+            0
+          ],
+          "scale": 0.85,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/fire.glb",
+      "page": "ships/fire.html"
+    },
+    {
+      "id": "chapter1-mortar",
+      "kind": "mortar",
+      "name": "묘지기 박격함",
+      "role": "박격포정",
+      "assetPath": "ships/mortar.glb",
+      "viewerPath": "ships/mortar.html",
+      "previewPath": "previews/mortar.png",
+      "bytes": 13830452,
+      "sha256": "80ca52c9bb335d44b2ccda26a3ab849f85a533bba9ea72b68f8105e98fa17a4e",
+      "triangles": 85048,
+      "meshes": 29,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        11.269999888539314,
+        9.781706602409097,
+        8.97641658782959
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "9add55a7930a4f0021f1f399f2d4a2aad065a4ff87b55e2b1436e0609c8b077d",
+      "previewSha256": "ee7f0f478d22c2a5b5ed5fde87364ccf3e7748828150a563d8e3d8e9f3f785c9",
+      "embeddedPaintMaps": 5,
+      "cannon": "곡사 박격포",
+      "arrow": "상공 방어 쇠뇌",
+      "special": "묘지기 낙하탄",
+      "effect": "mortar",
+      "ports": [
+        [
+          -1,
+          3,
+          -3.5
+        ],
+        [
+          -1,
+          3,
+          3.5
+        ]
+      ],
+      "bows": [
+        [
+          2,
+          3.8,
+          -3
+        ],
+        [
+          2,
+          3.8,
+          3
+        ]
+      ],
+      "device": [
+        0,
+        6,
+        0
+      ],
+      "scale": 0.85,
+      "description": "높은 곡사 탄도 · 예고 고리 위로 떨어지는 묘비형 포탄",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/mortar.glb",
+        "sha256": "9add55a7930a4f0021f1f399f2d4a2aad065a4ff87b55e2b1436e0609c8b077d"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            3,
+            -3.5
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.85,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            3,
+            3.5
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.85,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3.8,
+            -3
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.7224999999999999,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3.8,
+            3
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.7224999999999999,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            0,
+            6,
+            0
+          ],
+          "scale": 0.85,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/mortar.glb",
+      "page": "ships/mortar.html"
+    },
+    {
+      "id": "chapter1-chain",
+      "kind": "chain",
+      "name": "사슬 거미함",
+      "role": "사슬탄정",
+      "assetPath": "ships/chain.glb",
+      "viewerPath": "ships/chain.html",
+      "previewPath": "previews/chain.png",
+      "bytes": 24394912,
+      "sha256": "9614ff171e6aadcd2e87c359a428e876c013964af54ac7bd8a7e74b70cc243a3",
+      "triangles": 164904,
+      "meshes": 32,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        14.679999831318856,
+        6.637002229690552,
+        11.899999618530273
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "72bb626564e7031eed76cb70938694206461fe348e82b856eadeb8654bc989f8",
+      "previewSha256": "33ea1433ef136ff495fd7b72502837120b1342eb06886c01a69ae79397cc3776",
+      "embeddedPaintMaps": 5,
+      "cannon": "쌍구 사슬포",
+      "arrow": "갈고리 연시",
+      "special": "거미줄 속박탄",
+      "effect": "chain",
+      "ports": [
+        [
+          -3,
+          2.8,
+          -3.6
+        ],
+        [
+          -3,
+          2.8,
+          3.6
+        ]
+      ],
+      "bows": [
+        [
+          2,
+          3.6,
+          -3.2
+        ],
+        [
+          2,
+          3.6,
+          3.2
+        ]
+      ],
+      "device": [
+        -1,
+        5.6,
+        0
+      ],
+      "scale": 0.9,
+      "description": "쌍구 포신과 사슬 권양기 · 회전 연결탄이 펼치는 포획 그물",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/chain.glb",
+        "sha256": "72bb626564e7031eed76cb70938694206461fe348e82b856eadeb8654bc989f8"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            2.8,
+            -3.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.9,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -3,
+            2.8,
+            3.6
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.9,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3.6,
+            -3.2
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.765,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3.6,
+            3.2
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.765,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            5.6,
+            0
+          ],
+          "scale": 0.9,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/chain.glb",
+      "page": "ships/chain.html"
+    },
+    {
+      "id": "chapter1-repair",
+      "kind": "repair",
+      "name": "봉인 수복선",
+      "role": "수리 지원정",
+      "assetPath": "ships/repair.glb",
+      "viewerPath": "ships/repair.html",
+      "previewPath": "previews/repair.png",
+      "bytes": 17914924,
+      "sha256": "ccb217a6960d5ce40dcd5ba4ec62bf2438e745d4748b1a748db75d4fb8c6d36c",
+      "triangles": 116128,
+      "meshes": 28,
+      "clip": {
+        "name": "Exhibition_propellers",
+        "duration": 6,
+        "tracks": 1
+      },
+      "bounds": [
+        14.33999996483326,
+        12.519999742507935,
+        8.10077428817749
+      ],
+      "reference": "../chapter1-enemy-moodboards-v1/fleet-support-5.png",
+      "previewSourceSha256": "b46422ea988113343b35445e99d4482ef4e67038e168b9d0e4421e7842fe7433",
+      "previewSha256": "4101957535d51407db961bc1cbca44470f20586e730f536ca6d0f5ee490c5727",
+      "embeddedPaintMaps": 5,
+      "cannon": "수호 경포",
+      "arrow": "봉합 바늘 볼트",
+      "special": "봉인 수복 실",
+      "effect": "repair",
+      "ports": [
+        [
+          -1,
+          2.6,
+          -2.9
+        ],
+        [
+          -1,
+          2.6,
+          2.9
+        ]
+      ],
+      "bows": [
+        [
+          2,
+          3.5,
+          -2.7
+        ],
+        [
+          2,
+          3.5,
+          2.7
+        ]
+      ],
+      "device": [
+        0,
+        5.8,
+        0
+      ],
+      "scale": 0.65,
+      "description": "외측 자위 화기 · 푸른 봉합 실과 황동 수복 고리",
+      "source": {
+        "path": "outputs/chapter1-fleet-detail-v2/ships/repair.glb",
+        "sha256": "b46422ea988113343b35445e99d4482ef4e67038e168b9d0e4421e7842fe7433"
+      },
+      "mounts": [
+        {
+          "id": "cannon_0",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            2.6,
+            -2.9
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.65,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_0",
+          "recoil": "Recoil_cannon_0",
+          "aim": "Aim_cannon_0"
+        },
+        {
+          "id": "cannon_1",
+          "type": "cannon",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            -1,
+            2.6,
+            2.9
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.65,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_cannon_1",
+          "recoil": "Recoil_cannon_1",
+          "aim": "Aim_cannon_1"
+        },
+        {
+          "id": "arrow_0",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3.5,
+            -2.7
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.5525,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_0",
+          "recoil": "Recoil_arrow_0",
+          "aim": "Aim_arrow_0"
+        },
+        {
+          "id": "arrow_1",
+          "type": "arrow",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            2,
+            3.5,
+            2.7
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": 0.5525,
+          "localForward": [
+            -1,
+            0,
+            0
+          ],
+          "muzzle": "Muzzle_arrow_1",
+          "recoil": "Recoil_arrow_1",
+          "aim": "Aim_arrow_1"
+        },
+        {
+          "id": "special",
+          "type": "special",
+          "parent": "Enemy_fitted_weapon_systems",
+          "position": [
+            0,
+            5.8,
+            0
+          ],
+          "scale": 0.65,
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "muzzle": "Muzzle_special",
+          "localForward": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "ships/repair.glb",
+      "page": "ships/repair.html"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import{fileURLToPath}from'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..'),checks=[];
+const check=(name,passed,detail)=>checks.push({name,passed:!!passed,detail});
+const html=fs.readFileSync(path.join(root,'tools/flight3d/template.html'),'utf8'),app=fs.readFileSync(path.join(root,'tools/flight3d/app.js'),'utf8');
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]),refs=[...app.matchAll(/\$\('([^']+)'\)/g)].map(m=>m[1]);
+check('unique-controls-and-app-references',new Set(ids).size===ids.length&&refs.every(id=>ids.includes(id)),{ids:ids.length,refs:new Set(refs).size,missing:refs.filter(id=>!ids.includes(id))});
+for(const filename of ['outputs/playable-battlefield-v1/handoff-files.json','outputs/playable-camera-v1/delivery-manifest.json']){
+ const baseline=JSON.parse(fs.readFileSync(path.join(root,filename),'utf8'));
+ const changed=baseline.files.filter(file=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file.path))).digest('hex')!==file.sha256).map(file=>file.path);
+ check(`preserved-${filename}`,changed.length===0,{files:baseline.files.length,changed});
+}
+check('single-xyz-state-owner',!app.includes('playable-session')&&!app.includes('battlefield/sim')&&app.includes("from './sim.mjs'"));
+const archive=JSON.parse(fs.readFileSync(path.join(root,'outputs/flight3d-ready2/preservation.json'),'utf8'));
+const archivedChanged=archive.files.filter(file=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file.path))).digest('hex')!==file.sha256).map(file=>file.path);
+check('ready2-playable-and-browser-report-preserved',archivedChanged.length===0,{files:archive.files.length,changed:archivedChanged});
+const ready3=JSON.parse(fs.readFileSync(path.join(root,'outputs/flight3d-ready3/preservation.json'),'utf8').replace(/^\uFEFF/,''));
+const ready3Changed=ready3.files.filter(file=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file.path))).digest('hex')!==file.sha256).map(file=>file.path);
+check('ready3-source-playable-and-manifest-preserved',ready3Changed.length===0,{files:ready3.files.length,changed:ready3Changed});
+const ready4=JSON.parse(fs.readFileSync(path.join(root,'outputs/flight3d-ready4/preservation.json'),'utf8').replace(/^\uFEFF/,''));
+const ready4Changed=ready4.files.filter(file=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file.path))).digest('hex')!==file.sha256).map(file=>file.path);
+check('ready4-source-playable-and-manifest-preserved',ready4Changed.length===0,{files:ready4.files.length,changed:ready4Changed});
+const sourceCopies=JSON.parse(fs.readFileSync(path.join(root,'tools/flight3d/environment-source/provenance.json'),'utf8').replace(/^\uFEFF/,''));
+const copiedChanged=sourceCopies.files.filter(f=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f.snapshot))).digest('hex')!==f.sha256).map(f=>f.snapshot);
+check('approved-map-recipes-preserved-as-readonly-versioned-copies',copiedChanged.length===0,{revision:sourceCopies.revision,files:sourceCopies.files.length,changed:copiedChanged});
+const inputLine=" $('environment-button').addEventListener('click',()=>{const rich=!renderer.environmentRich;renderer.setEnvironmentRich(rich);$('environment-button').setAttribute('aria-pressed',String(rich));$('environment-button').textContent=rich?'풍경 · 풍성하게':'풍경 · 간결하게';if(started)scene.focus({preventScroll:true});});\n";
+const oldInput=fs.readFileSync(path.join(root,'tools/flight3d-history/ready4/app.js'),'utf8');
+check('original-helm-grab-and-fire-code-retained',app.replace(inputLine,'')===oldInput);
+const ready5=JSON.parse(fs.readFileSync(path.join(root,'outputs/flight3d-ready5/preservation.json'),'utf8'));
+const ready5Changed=ready5.files.filter(f=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f.path))).digest('hex')!==f.sha256).map(f=>f.path);
+check('ready5-environment-and-pre-motion-physics-preserved',ready5Changed.length===0,{files:ready5.files.length,changed:ready5Changed});
+const report={version:1,passed:checks.every(c=>c.passed),checks,scope:'Static controls and previous artifacts preservation only; physics and browser checks are separate.'};
+fs.mkdirSync(path.join(root,'outputs/flight3d-v1'),{recursive:true});fs.writeFileSync(path.join(root,'outputs/flight3d-v1/source-verification.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));if(!report.passed)process.exitCode=1;

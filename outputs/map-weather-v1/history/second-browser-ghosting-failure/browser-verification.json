@@ -1,0 +1,6930 @@
+{
+  "schema": 1,
+  "harness": "tools/map-weather-v1/verify-browser.cjs",
+  "harness_sha256": "76791100fd469fa63ebd8caef1e28ada653174884998820109aeff2412fcabad",
+  "url": "http://127.0.0.1:8860/outputs/map-weather-v1/index.html",
+  "started_at": "2026-10-18T12:53:21.356Z",
+  "scope": "One Chromium page: actual embedded selected GLB and six procedural 3D stations; three display modes, 60 rotation renders per mode (180 total) compared pixel-for-pixel to an explicitly cleared render, outlines, same-state/time/camera standard versus dramatic canvas comparison, UI cards and keyboard, deterministic manual ticks for six gameplay rules, pause/reset, camera, mobile and local-only request checks. Local opt-in battlefield weather slice; not campaign, production performance or human art approval.",
+  "budget_seconds": 120,
+  "checks": [
+    {
+      "name": "api-ready",
+      "passed": true
+    },
+    {
+      "name": "actual-selected-glb-loaded",
+      "passed": true
+    },
+    {
+      "name": "selected-glb-11026-triangles",
+      "passed": true,
+      "detail": {
+        "meshes": 1,
+        "triangles": 11026,
+        "finite": true,
+        "textures": [
+          {
+            "width": 2048,
+            "height": 2048
+          }
+        ]
+      }
+    },
+    {
+      "name": "selected-glb-has-mesh",
+      "passed": true
+    },
+    {
+      "name": "selected-glb-finite-vertices",
+      "passed": true
+    },
+    {
+      "name": "selected-glb-texture-decoded",
+      "passed": true,
+      "detail": [
+        {
+          "width": 2048,
+          "height": 2048
+        }
+      ]
+    },
+    {
+      "name": "webgl-canvas-sized",
+      "passed": true,
+      "detail": {
+        "width": 1048,
+        "height": 598
+      }
+    },
+    {
+      "name": "outline-effect-autoclear",
+      "passed": true
+    },
+    {
+      "name": "six-station-assemblies",
+      "passed": true
+    },
+    {
+      "name": "four-original-cloud-recipes-reused",
+      "passed": true
+    },
+    {
+      "name": "five-new-functional-fixtures",
+      "passed": true
+    },
+    {
+      "name": "map-collection-islands-reused",
+      "passed": true
+    },
+    {
+      "name": "map-collection-life-props-reused",
+      "passed": true
+    },
+    {
+      "name": "cloud-station-present",
+      "passed": true
+    },
+    {
+      "name": "cloud-multipart-meshes",
+      "passed": true,
+      "detail": 53
+    },
+    {
+      "name": "cloud-real-triangle-geometry",
+      "passed": true,
+      "detail": 9966
+    },
+    {
+      "name": "cloud-bounds-finite",
+      "passed": true,
+      "detail": {
+        "min": [
+          -69.87977126288415,
+          2.9536171884536744,
+          -40.42990050315857
+        ],
+        "max": [
+          -20.247003658771522,
+          24.92855466246605,
+          -5.269485826492309
+        ]
+      }
+    },
+    {
+      "name": "cloud-volume-x",
+      "passed": true,
+      "detail": 49.63276760411263
+    },
+    {
+      "name": "cloud-volume-y",
+      "passed": true,
+      "detail": 21.974937474012375
+    },
+    {
+      "name": "cloud-volume-z",
+      "passed": true,
+      "detail": 35.160414676666264
+    },
+    {
+      "name": "updraft-station-present",
+      "passed": true
+    },
+    {
+      "name": "updraft-multipart-meshes",
+      "passed": true,
+      "detail": 88
+    },
+    {
+      "name": "updraft-real-triangle-geometry",
+      "passed": true,
+      "detail": 11772
+    },
+    {
+      "name": "updraft-bounds-finite",
+      "passed": true,
+      "detail": {
+        "min": [
+          -15.283518016783795,
+          -6.255589077478646,
+          -38.7986054379605
+        ],
+        "max": [
+          16.243934631347656,
+          38.353036445617676,
+          -8.420311334941431
+        ]
+      }
+    },
+    {
+      "name": "updraft-volume-x",
+      "passed": true,
+      "detail": 31.52745264813145
+    },
+    {
+      "name": "updraft-volume-y",
+      "passed": true,
+      "detail": 44.60862552309632
+    },
+    {
+      "name": "updraft-volume-z",
+      "passed": true,
+      "detail": 30.378294103019066
+    },
+    {
+      "name": "crosswind-station-present",
+      "passed": true
+    },
+    {
+      "name": "crosswind-multipart-meshes",
+      "passed": true,
+      "detail": 102
+    },
+    {
+      "name": "crosswind-real-triangle-geometry",
+      "passed": true,
+      "detail": 11704
+    },
+    {
+      "name": "crosswind-bounds-finite",
+      "passed": true,
+      "detail": {
+        "min": [
+          31.974505432364676,
+          -2.3999999046325686,
+          -54.51907730102539
+        ],
+        "max": [
+          60.95820736885071,
+          12.55,
+          -0.3575583379416809
+        ]
+      }
+    },
+    {
+      "name": "crosswind-volume-x",
+      "passed": true,
+      "detail": 28.98370193648603
+    },
+    {
+      "name": "crosswind-volume-y",
+      "passed": true,
+      "detail": 14.94999990463257
+    },
+    {
+      "name": "crosswind-volume-z",
+      "passed": true,
+      "detail": 54.16151896308371
+    },
+    {
+      "name": "lightning-station-present",
+      "passed": true
+    },
+    {
+      "name": "lightning-multipart-meshes",
+      "passed": true,
+      "detail": 128
+    },
+    {
+      "name": "lightning-real-triangle-geometry",
+      "passed": true,
+      "detail": 15018
+    },
+    {
+      "name": "lightning-bounds-finite",
+      "passed": true,
+      "detail": {
+        "min": [
+          -77.24465320646763,
+          -2.3999999046325686,
+          9.535531997680664
+        ],
+        "max": [
+          -13.03555188000202,
+          35.60080806533376,
+          38.50133991241455
+        ]
+      }
+    },
+    {
+      "name": "lightning-volume-x",
+      "passed": true,
+      "detail": 64.20910132646561
+    },
+    {
+      "name": "lightning-volume-y",
+      "passed": true,
+      "detail": 38.000807969966324
+    },
+    {
+      "name": "lightning-volume-z",
+      "passed": true,
+      "detail": 28.965807914733887
+    },
+    {
+      "name": "icing-station-present",
+      "passed": true
+    },
+    {
+      "name": "icing-multipart-meshes",
+      "passed": true,
+      "detail": 99
+    },
+    {
+      "name": "icing-real-triangle-geometry",
+      "passed": true,
+      "detail": 5056
+    },
+    {
+      "name": "icing-bounds-finite",
+      "passed": true,
+      "detail": {
+        "min": [
+          -14.198373618729395,
+          -2.3999999046325686,
+          19.546393647350985
+        ],
+        "max": [
+          13.5255839648305,
+          20.725,
+          29.313905002681906
+        ]
+      }
+    },
+    {
+      "name": "icing-volume-x",
+      "passed": true,
+      "detail": 27.723957583559894
+    },
+    {
+      "name": "icing-volume-y",
+      "passed": true,
+      "detail": 23.12499990463257
+    },
+    {
+      "name": "icing-volume-z",
+      "passed": true,
+      "detail": 9.767511355330921
+    },
+    {
+      "name": "thermal-station-present",
+      "passed": true
+    },
+    {
+      "name": "thermal-multipart-meshes",
+      "passed": true,
+      "detail": 106
+    },
+    {
+      "name": "thermal-real-triangle-geometry",
+      "passed": true,
+      "detail": 9924
+    },
+    {
+      "name": "thermal-bounds-finite",
+      "passed": true,
+      "detail": {
+        "min": [
+          31.0280818939209,
+          0.5,
+          15.200000047683716
+        ],
+        "max": [
+          66.74999997615814,
+          11.549090385437012,
+          32.799999952316284
+        ]
+      }
+    },
+    {
+      "name": "thermal-volume-x",
+      "passed": true,
+      "detail": 35.72191808223724
+    },
+    {
+      "name": "thermal-volume-y",
+      "passed": true,
+      "detail": 11.049090385437012
+    },
+    {
+      "name": "thermal-volume-z",
+      "passed": true,
+      "detail": 17.59999990463257
+    },
+    {
+      "name": "card-count-six",
+      "passed": true
+    },
+    {
+      "name": "handdrawn-button-selected",
+      "passed": true
+    },
+    {
+      "name": "handdrawn-station-material-mode",
+      "passed": true,
+      "detail": "painted"
+    },
+    {
+      "name": "handdrawn-outline-clear-preserved",
+      "passed": true
+    },
+    {
+      "name": "handdrawn-scene-rendered",
+      "passed": true,
+      "detail": 196382
+    },
+    {
+      "name": "cel-button-selected",
+      "passed": true
+    },
+    {
+      "name": "cel-station-material-mode",
+      "passed": true,
+      "detail": "cel"
+    },
+    {
+      "name": "cel-outline-clear-preserved",
+      "passed": true
+    },
+    {
+      "name": "cel-scene-rendered",
+      "passed": true,
+      "detail": 196382
+    },
+    {
+      "name": "original-button-selected",
+      "passed": true
+    },
+    {
+      "name": "original-station-material-mode",
+      "passed": true,
+      "detail": "original"
+    },
+    {
+      "name": "original-outline-clear-preserved",
+      "passed": true
+    },
+    {
+      "name": "original-scene-rendered",
+      "passed": true,
+      "detail": 196382
+    },
+    {
+      "name": "ghosting-handdrawn-same-scene-pixel-equality",
+      "passed": false,
+      "detail": {
+        "mode": "handdrawn",
+        "frames": 60,
+        "width": 1048,
+        "height": 598,
+        "different_pixels": 75,
+        "painted_pixels": 78089,
+        "outline_autoclear": true,
+        "state_unchanged": true,
+        "webgl_error": 0
+      }
+    },
+    {
+      "name": "ghosting-handdrawn-actual-painted-frame",
+      "passed": true,
+      "detail": 78089
+    },
+    {
+      "name": "ghosting-handdrawn-authority-state-frozen",
+      "passed": true
+    },
+    {
+      "name": "ghosting-handdrawn-outline-autoclear",
+      "passed": true
+    },
+    {
+      "name": "ghosting-handdrawn-webgl-no-error",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "ghosting-cel-same-scene-pixel-equality",
+      "passed": false,
+      "detail": {
+        "mode": "cel",
+        "frames": 60,
+        "width": 1048,
+        "height": 598,
+        "different_pixels": 69,
+        "painted_pixels": 78089,
+        "outline_autoclear": true,
+        "state_unchanged": true,
+        "webgl_error": 0
+      }
+    },
+    {
+      "name": "ghosting-cel-actual-painted-frame",
+      "passed": true,
+      "detail": 78089
+    },
+    {
+      "name": "ghosting-cel-authority-state-frozen",
+      "passed": true
+    },
+    {
+      "name": "ghosting-cel-outline-autoclear",
+      "passed": true
+    },
+    {
+      "name": "ghosting-cel-webgl-no-error",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "ghosting-original-same-scene-pixel-equality",
+      "passed": false,
+      "detail": {
+        "mode": "original",
+        "frames": 60,
+        "width": 1048,
+        "height": 598,
+        "different_pixels": 49,
+        "painted_pixels": 78089,
+        "outline_autoclear": true,
+        "state_unchanged": true,
+        "webgl_error": 0
+      }
+    },
+    {
+      "name": "ghosting-original-actual-painted-frame",
+      "passed": true,
+      "detail": 78089
+    },
+    {
+      "name": "ghosting-original-authority-state-frozen",
+      "passed": true
+    },
+    {
+      "name": "ghosting-original-outline-autoclear",
+      "passed": true
+    },
+    {
+      "name": "ghosting-original-webgl-no-error",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "outline-checkbox-off",
+      "passed": true
+    },
+    {
+      "name": "outline-checkbox-on",
+      "passed": true
+    },
+    {
+      "name": "outline-autoclear-after-toggle",
+      "passed": true
+    },
+    {
+      "name": "expression-standard-selected",
+      "passed": true
+    },
+    {
+      "name": "expression-dramatic-selected",
+      "passed": true
+    },
+    {
+      "name": "card-cloud-finite-position",
+      "passed": true,
+      "detail": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": -45,
+        "z": -9,
+        "vx": 0,
+        "vz": 0,
+        "angle": 3.141592653589793,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      }
+    },
+    {
+      "name": "card-cloud-weather-record",
+      "passed": true
+    },
+    {
+      "name": "card-cloud-description-visible",
+      "passed": true
+    },
+    {
+      "name": "card-updraft-finite-position",
+      "passed": true,
+      "detail": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": 0,
+        "z": -11,
+        "vx": 0,
+        "vz": 0,
+        "angle": 3.141592653589793,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      }
+    },
+    {
+      "name": "card-updraft-weather-record",
+      "passed": true
+    },
+    {
+      "name": "card-updraft-description-visible",
+      "passed": true
+    },
+    {
+      "name": "card-crosswind-finite-position",
+      "passed": true,
+      "detail": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": 45,
+        "z": -8,
+        "vx": 0,
+        "vz": 0,
+        "angle": 3.141592653589793,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      }
+    },
+    {
+      "name": "card-crosswind-weather-record",
+      "passed": true
+    },
+    {
+      "name": "card-crosswind-description-visible",
+      "passed": true
+    },
+    {
+      "name": "card-lightning-finite-position",
+      "passed": true,
+      "detail": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": -45,
+        "z": 42,
+        "vx": 0,
+        "vz": 0,
+        "angle": 3.141592653589793,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      }
+    },
+    {
+      "name": "card-lightning-weather-record",
+      "passed": true
+    },
+    {
+      "name": "card-lightning-description-visible",
+      "passed": true
+    },
+    {
+      "name": "card-icing-finite-position",
+      "passed": true,
+      "detail": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": 0,
+        "z": 39,
+        "vx": 0,
+        "vz": 0,
+        "angle": 3.141592653589793,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      }
+    },
+    {
+      "name": "card-icing-weather-record",
+      "passed": true
+    },
+    {
+      "name": "card-icing-description-visible",
+      "passed": true
+    },
+    {
+      "name": "card-thermal-finite-position",
+      "passed": true,
+      "detail": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": 45,
+        "z": 14,
+        "vx": 0,
+        "vz": 0,
+        "angle": 3.141592653589793,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      }
+    },
+    {
+      "name": "card-thermal-weather-record",
+      "passed": true
+    },
+    {
+      "name": "card-thermal-description-visible",
+      "passed": true
+    },
+    {
+      "name": "keyboard-KeyA-moves-x",
+      "passed": true,
+      "detail": {
+        "before": -45,
+        "after": -48.467384712285025
+      }
+    },
+    {
+      "name": "keyboard-KeyA-advances-authority-time",
+      "passed": true,
+      "detail": {
+        "before": 0.03370000000000073,
+        "after": 0.46689999999999776
+      }
+    },
+    {
+      "name": "keyboard-KeyD-moves-x",
+      "passed": true,
+      "detail": {
+        "before": -45,
+        "after": -41.09190961329366
+      }
+    },
+    {
+      "name": "keyboard-KeyD-advances-authority-time",
+      "passed": true,
+      "detail": {
+        "before": 0.016700000000000728,
+        "after": 0.48350000000000354
+      }
+    },
+    {
+      "name": "keyboard-KeyW-moves-z",
+      "passed": true,
+      "detail": {
+        "before": -5,
+        "after": -8.254166166891213
+      }
+    },
+    {
+      "name": "keyboard-KeyW-advances-authority-time",
+      "passed": true,
+      "detail": {
+        "before": 0.016700000000004364,
+        "after": 0.4171000000000058
+      }
+    },
+    {
+      "name": "keyboard-KeyS-moves-z",
+      "passed": true,
+      "detail": {
+        "before": -5,
+        "after": -1.630604617554862
+      }
+    },
+    {
+      "name": "keyboard-KeyS-advances-authority-time",
+      "passed": true,
+      "detail": {
+        "before": 0.016599999999998546,
+        "after": 0.4168999999999942
+      }
+    },
+    {
+      "name": "keyboard-KeyQ-moves-y",
+      "passed": true,
+      "detail": {
+        "before": 8,
+        "after": 7.5923494237766445
+      }
+    },
+    {
+      "name": "keyboard-KeyQ-advances-authority-time",
+      "passed": true,
+      "detail": {
+        "before": 0.016900000000001456,
+        "after": 0.38369999999999704
+      }
+    },
+    {
+      "name": "keyboard-KeyE-moves-y",
+      "passed": true,
+      "detail": {
+        "before": 8,
+        "after": 8.474379811929698
+      }
+    },
+    {
+      "name": "keyboard-KeyE-advances-authority-time",
+      "passed": true,
+      "detail": {
+        "before": 0.0165,
+        "after": 0.4169000000000014
+      }
+    },
+    {
+      "name": "pause-freezes-entire-authority-state",
+      "passed": true
+    },
+    {
+      "name": "pause-freezes-weather-clock",
+      "passed": true
+    },
+    {
+      "name": "resume-advances-clock",
+      "passed": true
+    },
+    {
+      "name": "cloud-sets-hidden",
+      "passed": true
+    },
+    {
+      "name": "cloud-breaks-target-lock",
+      "passed": true
+    },
+    {
+      "name": "cloud-volume-record-active",
+      "passed": true
+    },
+    {
+      "name": "cloud-exit-restores-visible",
+      "passed": true
+    },
+    {
+      "name": "cloud-exit-reacquires-lock",
+      "passed": true
+    },
+    {
+      "name": "updraft-increases-real-altitude",
+      "passed": true,
+      "detail": {
+        "before": 8,
+        "after": 11.435866716956074
+      }
+    },
+    {
+      "name": "updraft-positive-vertical-velocity",
+      "passed": true,
+      "detail": 3.7649636372169524
+    },
+    {
+      "name": "updraft-does-not-damage-hull",
+      "passed": true
+    },
+    {
+      "name": "updraft-has-active-volume",
+      "passed": true
+    },
+    {
+      "name": "crosswind-causes-positive-z-drift",
+      "passed": true,
+      "detail": {
+        "before": -24,
+        "after": -16.408070047624665
+      }
+    },
+    {
+      "name": "crosswind-real-velocity",
+      "passed": true,
+      "detail": 5.999667290403408
+    },
+    {
+      "name": "crosswind-no-unrequested-x-displacement",
+      "passed": true
+    },
+    {
+      "name": "crosswind-no-hull-damage",
+      "passed": true
+    },
+    {
+      "name": "icing-accumulates",
+      "passed": true,
+      "detail": 0.3000000000000002
+    },
+    {
+      "name": "icing-reduces-speed-multiplier",
+      "passed": true,
+      "detail": 0.8139999999999998
+    },
+    {
+      "name": "preheat-reduces-ice",
+      "passed": true,
+      "detail": {
+        "before": 0.3000000000000002,
+        "after": 0.06000000000000002
+      }
+    },
+    {
+      "name": "preheat-consumes-heat",
+      "passed": true,
+      "detail": {
+        "before": 100,
+        "after": 79.99999999999977
+      }
+    },
+    {
+      "name": "preheat-improves-speed",
+      "passed": true
+    },
+    {
+      "name": "heat-regenerates-after-release",
+      "passed": true
+    },
+    {
+      "name": "icing-preheat-no-hull-damage",
+      "passed": true
+    },
+    {
+      "name": "lightning-warning-phase",
+      "passed": true
+    },
+    {
+      "name": "lightning-warning-at-least-two-seconds",
+      "passed": true,
+      "detail": 2.6
+    },
+    {
+      "name": "lightning-warning-target-at-player",
+      "passed": true
+    },
+    {
+      "name": "lightning-warning-no-early-damage",
+      "passed": true
+    },
+    {
+      "name": "lightning-strike-follows-warning",
+      "passed": true
+    },
+    {
+      "name": "lightning-hit-applies-authority-damage",
+      "passed": true,
+      "detail": {
+        "before": 100,
+        "after": 76
+      }
+    },
+    {
+      "name": "lightning-pulse-damage-once",
+      "passed": true
+    },
+    {
+      "name": "lightning-dodge-keeps-target-fixed",
+      "passed": true
+    },
+    {
+      "name": "lightning-dodge-outside-strike-radius",
+      "passed": true
+    },
+    {
+      "name": "lightning-dodge-avoids-damage",
+      "passed": true
+    },
+    {
+      "name": "thermal-pressure-warning",
+      "passed": true
+    },
+    {
+      "name": "thermal-warning-no-early-damage",
+      "passed": true
+    },
+    {
+      "name": "thermal-first-lane-is-18",
+      "passed": true
+    },
+    {
+      "name": "thermal-warning-then-burst",
+      "passed": true
+    },
+    {
+      "name": "thermal-burst-authority-hp-damage",
+      "passed": true,
+      "detail": {
+        "before": 100,
+        "after": 85
+      }
+    },
+    {
+      "name": "thermal-burst-damage-once",
+      "passed": true
+    },
+    {
+      "name": "expression-comparison-standard-profile",
+      "passed": true
+    },
+    {
+      "name": "expression-comparison-dramatic-profile",
+      "passed": true
+    },
+    {
+      "name": "expression-comparison-identical-authority-state",
+      "passed": true
+    },
+    {
+      "name": "expression-comparison-identical-camera",
+      "passed": true
+    },
+    {
+      "name": "expression-comparison-identical-canvas-size",
+      "passed": true
+    },
+    {
+      "name": "expression-comparison-actual-canvas-pixels-differ",
+      "passed": true,
+      "detail": {
+        "standard": "72ce8060f880764d0707d22d7eeac7c34c236b44a9c7452e76d8e6b1691a5e22",
+        "dramatic": "67d072cbfc491ca5a6bb372b9c307d00fdb8568ffbabfbf192b3ee97d45ae448"
+      }
+    },
+    {
+      "name": "expression-comparison-both-canvases-painted",
+      "passed": true
+    },
+    {
+      "name": "thermal-altitude-bypass-above-volume",
+      "passed": true
+    },
+    {
+      "name": "thermal-altitude-bypass-no-damage",
+      "passed": true
+    },
+    {
+      "name": "reset-restores-full-hp",
+      "passed": true
+    },
+    {
+      "name": "reset-clears-icing",
+      "passed": true
+    },
+    {
+      "name": "reset-restores-preheat-budget",
+      "passed": true
+    },
+    {
+      "name": "reset-clears-weather-events",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "reset-clock-zero",
+      "passed": true
+    },
+    {
+      "name": "reset-not-paused",
+      "passed": true
+    },
+    {
+      "name": "reset-generation-changes",
+      "passed": true,
+      "detail": {
+        "before": 17,
+        "after": 18
+      }
+    },
+    {
+      "name": "reset-no-old-effects",
+      "passed": true,
+      "detail": {
+        "effects": 0,
+        "bolt": false,
+        "jets": [
+          false,
+          false,
+          false
+        ],
+        "clear": true
+      }
+    },
+    {
+      "name": "reset-keeps-autoclear",
+      "passed": true
+    },
+    {
+      "name": "drag-orbits-camera",
+      "passed": true
+    },
+    {
+      "name": "wheel-zooms-camera",
+      "passed": true
+    },
+    {
+      "name": "fit-restores-valid-camera",
+      "passed": true
+    },
+    {
+      "name": "follow-button-selected",
+      "passed": true
+    },
+    {
+      "name": "auto-rotation-enabled",
+      "passed": true
+    },
+    {
+      "name": "auto-rotation-moves-actual-camera",
+      "passed": true,
+      "detail": {
+        "before": [
+          81.84041835947087,
+          110.9111296416682,
+          120.3535564109866
+        ],
+        "after": [
+          67.47993629902902,
+          110.9111296416682,
+          128.95460757609536
+        ],
+        "enabled": true,
+        "disabled": true,
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "auto-rotation-disabled",
+      "passed": true
+    },
+    {
+      "name": "auto-rotation-does-not-advance-authority",
+      "passed": true
+    },
+    {
+      "name": "mobile-no-horizontal-overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile-canvas-positive-size",
+      "passed": true
+    },
+    {
+      "name": "mobile-touch-controls-visible",
+      "passed": true
+    },
+    {
+      "name": "mobile-six-cards-retained",
+      "passed": true
+    },
+    {
+      "name": "mobile-title-readable",
+      "passed": true
+    },
+    {
+      "name": "no-unhandled-console-or-page-errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-external-requests",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-failed-http-requests",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "exactly-seven-screenshots",
+      "passed": true
+    }
+  ],
+  "samples": {
+    "initial": {
+      "inspection": {
+        "shipLoaded": true,
+        "shipTriangles": 11026,
+        "reusedMapIds": [
+          "root-garden",
+          "crescent-pass",
+          "quiet-terrace",
+          "wreck-garden",
+          "wind-swallows",
+          "lantern-buoy",
+          "mail-balloon"
+        ],
+        "assets": {
+          "mode": "painted",
+          "expression": "dramatic",
+          "expressionProfile": {
+            "id": "dramatic",
+            "revision": "weather-art-source2-dramatic",
+            "default": true,
+            "direction": "Latest 2026-10-18 user instruction: 10x bolder, more dramatic and abundant expression; no gameplay multiplier.",
+            "layers": {
+              "cloud": "Sweeping entry veils around the reused cloud bank; the flight corridor remains readable.",
+              "updraft": "Three distinct stages: broad low inlet curls, rising helical body, petal-shaped top outflow and dispersing seeds.",
+              "crosswind": "The sock first bends against the coming gust; long tapered cloth flows race through, then the sock rebounds and settles.",
+              "lightning": "Separated charge strands converge toward the fixed warning target, split into striking forks, and leave pale rising afterglow.",
+              "icing": "Large jagged crystal fans plus fine sugar frost on an engine housing; preheating releases separate steam curls and ballistic sparks.",
+              "thermal": "Pressure pulses and nozzle breaths precede a thick tapered brush stream; side scrolls curl upward and grey residual vapor outlives the burst."
+            }
+          },
+          "meshes": 576,
+          "visibleMeshes": 505,
+          "triangles": 63440,
+          "vertices": 190320,
+          "byStation": {
+            "cloud": {
+              "meshes": 53,
+              "visibleMeshes": 53,
+              "triangles": 9966,
+              "bounds": {
+                "min": [
+                  -69.87977126288415,
+                  2.9536171884536744,
+                  -40.42990050315857
+                ],
+                "max": [
+                  -20.247003658771522,
+                  24.92855466246605,
+                  -5.269485826492309
+                ]
+              }
+            },
+            "updraft": {
+              "meshes": 88,
+              "visibleMeshes": 88,
+              "triangles": 11772,
+              "bounds": {
+                "min": [
+                  -15.283518016783795,
+                  -6.255589077478646,
+                  -38.7986054379605
+                ],
+                "max": [
+                  16.243934631347656,
+                  38.353036445617676,
+                  -8.420311334941431
+                ]
+              }
+            },
+            "crosswind": {
+              "meshes": 102,
+              "visibleMeshes": 102,
+              "triangles": 11704,
+              "bounds": {
+                "min": [
+                  31.974505432364676,
+                  -2.3999999046325686,
+                  -54.51907730102539
+                ],
+                "max": [
+                  60.95820736885071,
+                  12.55,
+                  -0.3575583379416809
+                ]
+              }
+            },
+            "lightning": {
+              "meshes": 128,
+              "visibleMeshes": 111,
+              "triangles": 15018,
+              "bounds": {
+                "min": [
+                  -77.24465320646763,
+                  -2.3999999046325686,
+                  9.535531997680664
+                ],
+                "max": [
+                  -13.03555188000202,
+                  35.60080806533376,
+                  38.50133991241455
+                ]
+              }
+            },
+            "icing": {
+              "meshes": 99,
+              "visibleMeshes": 99,
+              "triangles": 5056,
+              "bounds": {
+                "min": [
+                  -14.198373618729395,
+                  -2.3999999046325686,
+                  19.546393647350985
+                ],
+                "max": [
+                  13.5255839648305,
+                  20.725,
+                  29.313905002681906
+                ]
+              }
+            },
+            "thermal": {
+              "meshes": 106,
+              "visibleMeshes": 52,
+              "triangles": 9924,
+              "bounds": {
+                "min": [
+                  31.0280818939209,
+                  0.5,
+                  15.200000047683716
+                ],
+                "max": [
+                  66.74999997615814,
+                  11.549090385437012,
+                  32.799999952316284
+                ]
+              }
+            }
+          },
+          "reusedColorComponentsClamped": 2003,
+          "reusedCloudAssets": 4,
+          "newCloudAssetCount": 0,
+          "originalFixtureAssemblies": 5,
+          "limits": {
+            "format": "Runtime THREE.Group assets with real geometry; static snapshots can be exported centrally.",
+            "reusedCloudAssets": 4,
+            "newCloudAssetCount": 0,
+            "originalFixtureAssemblies": 5,
+            "art": "Original Cloudstitch warm handmade fantasy; cream cloth, honey wood, teal enamel, brass and coral patches. Latest direction: 10x bolder dramatic presence through distinct large forms, material layers and anticipation/release/afterglow rhythm, not a numeric scale or damage multiplier.",
+            "motion": "Procedural mesh/group deformation and timed layers; no fluid, skeletal cloth or particle-engine simulation.",
+            "gameplay": "The separate simulation owns collision, drift, damage, icing and heat. Visual mesh count never changes gameplay rules.",
+            "scope": "Local weather test course; no campaign, save migration, production colliders, LODs or approved performance budget."
+          }
+        },
+        "render": {
+          "frame": 6,
+          "calls": 3017,
+          "triangles": 196382,
+          "points": 0,
+          "lines": 1
+        },
+        "outlineAutoClear": true
+      },
+      "model": {
+        "meshes": 1,
+        "triangles": 11026,
+        "finite": true,
+        "textures": [
+          {
+            "width": 2048,
+            "height": 2048
+          }
+        ]
+      },
+      "canvas": {
+        "width": 1048,
+        "height": 598
+      },
+      "ready": true,
+      "paused": false,
+      "state": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 2,
+        "seq": 0,
+        "frame": -1,
+        "time": 0,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "calm",
+            "phase": "calm",
+            "progress": 0,
+            "remaining": 0.4,
+            "phaseTime": 0,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": false,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "calm",
+            "phase": "calm",
+            "progress": 0,
+            "remaining": 0.8,
+            "phaseTime": 0,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": false
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": -45,
+          "z": -5,
+          "vx": 0,
+          "vz": 0,
+          "angle": 3.141592653589793,
+          "radius": 3,
+          "hp": 100,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "events": [],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": false,
+            "icing": false,
+            "thermal": false
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": -0.025,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [],
+          "thermal": {
+            "phase": "calm",
+            "jetIndex": 0,
+            "remaining": 0.8,
+            "inside": false,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [],
+          "generation": 2,
+          "seq": 0,
+          "time": 0,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "calm",
+              "phase": "calm",
+              "progress": 0,
+              "remaining": 0.4,
+              "phaseTime": 0,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 0,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": false,
+              "striking": false
+            },
+            "icing": {
+              "id": "icing",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "calm",
+              "phase": "calm",
+              "progress": 0,
+              "remaining": 0.8,
+              "phaseTime": 0,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 0,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": false,
+              "burst": false
+            }
+          },
+          "player": {
+            "x": -45,
+            "y": 8,
+            "z": -5,
+            "icing": 0,
+            "heat": 100,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 0,
+          "cargoDropped": 0
+        }
+      }
+    },
+    "cloud": {
+      "version": "map-weather-prototype-1-authority",
+      "generation": 10,
+      "seq": 0,
+      "frame": 6,
+      "time": 0.09999999999999999,
+      "paused": false,
+      "weather": {
+        "cloud": {
+          "id": "cloud",
+          "active": true,
+          "inside": true,
+          "strength": 1,
+          "status": "inside"
+        },
+        "updraft": {
+          "id": "updraft",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "crosswind": {
+          "id": "crosswind",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "lightning": {
+          "id": "lightning",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "calm",
+          "phase": "calm",
+          "progress": 0.24999999999999997,
+          "remaining": 0.30000000000000004,
+          "phaseTime": 0.09999999999999999,
+          "cycle": 8,
+          "cycleIndex": 0,
+          "warningDuration": 2.6,
+          "strikeRadius": 5.4,
+          "strikeSerial": 0,
+          "target": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          },
+          "warning": false,
+          "striking": false
+        },
+        "icing": {
+          "id": "icing",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "thermal": {
+          "id": "thermal",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "calm",
+          "phase": "calm",
+          "progress": 0.12499999999999999,
+          "remaining": 0.7000000000000001,
+          "phaseTime": 0.09999999999999999,
+          "cycle": 6.2,
+          "cycleIndex": 0,
+          "warningDuration": 2.4,
+          "jetIndex": 0,
+          "burstSerial": 0,
+          "lanes": [
+            {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 24,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 30,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          ],
+          "warning": false,
+          "burst": false
+        }
+      },
+      "player": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": -45,
+        "z": -24,
+        "vx": 0,
+        "vz": 0,
+        "angle": 2.8315926535897926,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": true,
+        "lock": 0,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      },
+      "events": [
+        {
+          "id": 1,
+          "seq": 1,
+          "time": 0.016666666666666666,
+          "type": "conceal-enter",
+          "x": -45,
+          "y": 8,
+          "z": -24
+        }
+      ],
+      "sample": {
+        "inside": {
+          "cloud": true,
+          "updraft": false,
+          "crosswind": false,
+          "lightning": false,
+          "icing": false,
+          "thermal": false
+        },
+        "visibility": 0,
+        "hidden": true,
+        "aimLockAllowed": false,
+        "wind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "updraft": 0,
+        "icing": {
+          "rate": -0.025,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "heat": {
+          "regeneration": 12,
+          "preheatConsumption": 25,
+          "thaw": 0.42,
+          "regen": 12,
+          "consumption": 25
+        },
+        "lightningWarnings": [],
+        "thermal": {
+          "phase": "calm",
+          "jetIndex": 0,
+          "remaining": 0.7000000000000001,
+          "inside": false,
+          "footprint": {
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "halfLength": 14,
+            "halfWidth": 1.7,
+            "minY": 4,
+            "maxY": 13
+          }
+        },
+        "hazards": [],
+        "generation": 10,
+        "seq": 0,
+        "time": 0.09999999999999999,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "inside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "calm",
+            "phase": "calm",
+            "progress": 0.24999999999999997,
+            "remaining": 0.30000000000000004,
+            "phaseTime": 0.09999999999999999,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "_phaseKey": "",
+            "warning": false,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "calm",
+            "phase": "calm",
+            "progress": 0.12499999999999999,
+            "remaining": 0.7000000000000001,
+            "phaseTime": 0.09999999999999999,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "_phaseKey": "",
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": false
+          }
+        },
+        "player": {
+          "x": -45,
+          "y": 8,
+          "z": -24,
+          "icing": 0,
+          "heat": 100,
+          "hidden": true,
+          "lock": 0,
+          "preheating": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        }
+      },
+      "outcome": "sailing",
+      "stats": {
+        "shots": 0,
+        "hits": 0,
+        "kills": 0,
+        "recovered": 0,
+        "damageTaken": 0,
+        "cargoDropped": 0
+      }
+    },
+    "updraft": {
+      "version": "map-weather-prototype-1-authority",
+      "generation": 11,
+      "seq": 2,
+      "frame": 78,
+      "time": 1.2999999999999998,
+      "paused": false,
+      "weather": {
+        "cloud": {
+          "id": "cloud",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "updraft": {
+          "id": "updraft",
+          "active": true,
+          "inside": true,
+          "strength": 1,
+          "status": "inside"
+        },
+        "crosswind": {
+          "id": "crosswind",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "lightning": {
+          "id": "lightning",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "warning",
+          "phase": "warning",
+          "progress": 0.3461538461538461,
+          "remaining": 1.7000000000000002,
+          "phaseTime": 0.8999999999999998,
+          "cycle": 8,
+          "cycleIndex": 0,
+          "warningDuration": 2.6,
+          "strikeRadius": 5.4,
+          "strikeSerial": 0,
+          "target": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          },
+          "warning": true,
+          "striking": false
+        },
+        "icing": {
+          "id": "icing",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "thermal": {
+          "id": "thermal",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "warning",
+          "phase": "warning",
+          "progress": 0.20833333333333326,
+          "remaining": 1.9000000000000001,
+          "phaseTime": 0.4999999999999998,
+          "cycle": 6.2,
+          "cycleIndex": 0,
+          "warningDuration": 2.4,
+          "jetIndex": 0,
+          "burstSerial": 0,
+          "lanes": [
+            {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 24,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 30,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          ],
+          "warning": true,
+          "burst": false
+        }
+      },
+      "player": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": 0,
+        "z": -24,
+        "vx": 0,
+        "vz": 0,
+        "angle": 1.942890293094024e-16,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 11.435866716956074,
+        "vy": 3.7649636372169524,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      },
+      "events": [
+        {
+          "id": 1,
+          "seq": 1,
+          "time": 0.39999999999999997,
+          "type": "lightning-warning",
+          "zone": "lightning",
+          "weatherSeq": 1,
+          "position": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          }
+        },
+        {
+          "id": 2,
+          "seq": 2,
+          "time": 0.8000000000000008,
+          "type": "thermal-warning",
+          "zone": "thermal",
+          "weatherSeq": 2
+        }
+      ],
+      "sample": {
+        "inside": {
+          "cloud": false,
+          "updraft": true,
+          "crosswind": false,
+          "lightning": false,
+          "icing": false,
+          "thermal": false
+        },
+        "visibility": 1,
+        "hidden": false,
+        "aimLockAllowed": true,
+        "wind": {
+          "x": 0,
+          "y": 8,
+          "z": 0
+        },
+        "updraft": 8,
+        "icing": {
+          "rate": -0.025,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "heat": {
+          "regeneration": 12,
+          "preheatConsumption": 25,
+          "thaw": 0.42,
+          "regen": 12,
+          "consumption": 25
+        },
+        "lightningWarnings": [
+          {
+            "id": "11:lightning:0",
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "radius": 5.4,
+            "eta": 1.7000000000000002
+          }
+        ],
+        "thermal": {
+          "phase": "warning",
+          "jetIndex": 0,
+          "remaining": 1.9000000000000001,
+          "inside": false,
+          "footprint": {
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "halfLength": 14,
+            "halfWidth": 1.7,
+            "minY": 4,
+            "maxY": 13
+          }
+        },
+        "hazards": [],
+        "generation": 11,
+        "seq": 2,
+        "time": 1.2999999999999998,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "inside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.3461538461538461,
+            "remaining": 1.7000000000000002,
+            "phaseTime": 0.8999999999999998,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "_phaseKey": "",
+            "warning": true,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.20833333333333326,
+            "remaining": 1.9000000000000001,
+            "phaseTime": 0.4999999999999998,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "_phaseKey": "",
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": true,
+            "burst": false
+          }
+        },
+        "player": {
+          "x": 0,
+          "y": 11.435866716956074,
+          "z": -24,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        }
+      },
+      "outcome": "sailing",
+      "stats": {
+        "shots": 0,
+        "hits": 0,
+        "kills": 0,
+        "recovered": 0,
+        "damageTaken": 0,
+        "cargoDropped": 0
+      }
+    },
+    "crosswind": {
+      "version": "map-weather-prototype-1-authority",
+      "generation": 12,
+      "seq": 2,
+      "frame": 84,
+      "time": 1.3999999999999992,
+      "paused": false,
+      "weather": {
+        "cloud": {
+          "id": "cloud",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "updraft": {
+          "id": "updraft",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "crosswind": {
+          "id": "crosswind",
+          "active": true,
+          "inside": true,
+          "strength": 1,
+          "status": "inside"
+        },
+        "lightning": {
+          "id": "lightning",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "warning",
+          "phase": "warning",
+          "progress": 0.3846153846153843,
+          "remaining": 1.600000000000001,
+          "phaseTime": 0.9999999999999992,
+          "cycle": 8,
+          "cycleIndex": 0,
+          "warningDuration": 2.6,
+          "strikeRadius": 5.4,
+          "strikeSerial": 0,
+          "target": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          },
+          "warning": true,
+          "striking": false
+        },
+        "icing": {
+          "id": "icing",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "thermal": {
+          "id": "thermal",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "warning",
+          "phase": "warning",
+          "progress": 0.24999999999999967,
+          "remaining": 1.8000000000000007,
+          "phaseTime": 0.5999999999999992,
+          "cycle": 6.2,
+          "cycleIndex": 0,
+          "warningDuration": 2.4,
+          "jetIndex": 0,
+          "burstSerial": 0,
+          "lanes": [
+            {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 24,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 30,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          ],
+          "warning": true,
+          "burst": false
+        }
+      },
+      "player": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": 45,
+        "z": -16.408070047624665,
+        "vx": 0,
+        "vz": 5.999667290403408,
+        "angle": 4.632737191161226,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      },
+      "events": [
+        {
+          "id": 1,
+          "seq": 1,
+          "time": 0.39999999999999997,
+          "type": "lightning-warning",
+          "zone": "lightning",
+          "weatherSeq": 1,
+          "position": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          }
+        },
+        {
+          "id": 2,
+          "seq": 2,
+          "time": 0.8000000000000008,
+          "type": "thermal-warning",
+          "zone": "thermal",
+          "weatherSeq": 2
+        }
+      ],
+      "sample": {
+        "inside": {
+          "cloud": false,
+          "updraft": false,
+          "crosswind": true,
+          "lightning": false,
+          "icing": false,
+          "thermal": false
+        },
+        "visibility": 1,
+        "hidden": false,
+        "aimLockAllowed": true,
+        "wind": {
+          "x": 0,
+          "y": 0,
+          "z": 6
+        },
+        "updraft": 0,
+        "icing": {
+          "rate": -0.025,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "heat": {
+          "regeneration": 12,
+          "preheatConsumption": 25,
+          "thaw": 0.42,
+          "regen": 12,
+          "consumption": 25
+        },
+        "lightningWarnings": [
+          {
+            "id": "12:lightning:0",
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "radius": 5.4,
+            "eta": 1.600000000000001
+          }
+        ],
+        "thermal": {
+          "phase": "warning",
+          "jetIndex": 0,
+          "remaining": 1.8000000000000007,
+          "inside": false,
+          "footprint": {
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "halfLength": 14,
+            "halfWidth": 1.7,
+            "minY": 4,
+            "maxY": 13
+          }
+        },
+        "hazards": [],
+        "generation": 12,
+        "seq": 2,
+        "time": 1.3999999999999992,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "inside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.3846153846153843,
+            "remaining": 1.600000000000001,
+            "phaseTime": 0.9999999999999992,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "_phaseKey": "",
+            "warning": true,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.24999999999999967,
+            "remaining": 1.8000000000000007,
+            "phaseTime": 0.5999999999999992,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "_phaseKey": "",
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": true,
+            "burst": false
+          }
+        },
+        "player": {
+          "x": 45,
+          "y": 8,
+          "z": -16.408070047624665,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        }
+      },
+      "outcome": "sailing",
+      "stats": {
+        "shots": 0,
+        "hits": 0,
+        "kills": 0,
+        "recovered": 0,
+        "damageTaken": 0,
+        "cargoDropped": 0
+      }
+    },
+    "icing": {
+      "icy": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 13,
+        "seq": 2,
+        "frame": 150,
+        "time": 2.499999999999996,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.8076923076923062,
+            "remaining": 0.500000000000004,
+            "phaseTime": 2.099999999999996,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": true,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "inside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.7083333333333317,
+            "remaining": 0.700000000000004,
+            "phaseTime": 1.699999999999996,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": true,
+            "burst": false
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": 0,
+          "z": 24,
+          "vx": 0,
+          "vz": 0,
+          "angle": 3.141592653589793,
+          "radius": 3,
+          "hp": 100,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0.3000000000000002,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 0.8139999999999998,
+          "accelerationMultiplier": 0.7959999999999998
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 2,
+            "seq": 2,
+            "time": 0.8000000000000008,
+            "type": "thermal-warning",
+            "zone": "thermal",
+            "weatherSeq": 2
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": false,
+            "icing": true,
+            "thermal": false
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": 0.12,
+            "speedMultiplier": 0.8139999999999998,
+            "accelerationMultiplier": 0.7959999999999998
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [
+            {
+              "id": "13:lightning:0",
+              "position": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "radius": 5.4,
+              "eta": 0.500000000000004
+            }
+          ],
+          "thermal": {
+            "phase": "warning",
+            "jetIndex": 0,
+            "remaining": 0.700000000000004,
+            "inside": false,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [],
+          "generation": 13,
+          "seq": 2,
+          "time": 2.499999999999996,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "warning",
+              "phase": "warning",
+              "progress": 0.8076923076923062,
+              "remaining": 0.500000000000004,
+              "phaseTime": 2.099999999999996,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 0,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": true,
+              "striking": false
+            },
+            "icing": {
+              "id": "icing",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "inside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "warning",
+              "phase": "warning",
+              "progress": 0.7083333333333317,
+              "remaining": 0.700000000000004,
+              "phaseTime": 1.699999999999996,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 0,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": true,
+              "burst": false
+            }
+          },
+          "player": {
+            "x": 0,
+            "y": 8,
+            "z": 24,
+            "icing": 0.3000000000000002,
+            "heat": 100,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 0.8139999999999998,
+            "accelerationMultiplier": 0.7959999999999998
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 0,
+          "cargoDropped": 0
+        }
+      },
+      "heated": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 13,
+        "seq": 4,
+        "frame": 198,
+        "time": 3.299999999999993,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "recovery",
+            "phase": "recovery",
+            "progress": 0.02758620689655031,
+            "remaining": 4.700000000000006,
+            "phaseTime": 0.1333333333333265,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 1,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": false,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "inside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "burst",
+            "phase": "burst",
+            "progress": 0.1111111111111033,
+            "remaining": 0.800000000000007,
+            "phaseTime": 0.09999999999999298,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 1,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": true
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": 0,
+          "z": 24,
+          "vx": 0,
+          "vz": 0,
+          "angle": 3.141592653589793,
+          "radius": 3,
+          "hp": 100,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0.06000000000000002,
+          "heat": 79.99999999999977,
+          "hidden": false,
+          "lock": 1,
+          "preheating": true,
+          "preheatExhausted": false,
+          "speedMultiplier": 0.9628,
+          "accelerationMultiplier": 0.9591999999999999
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 2,
+            "seq": 2,
+            "time": 0.8000000000000008,
+            "type": "thermal-warning",
+            "zone": "thermal",
+            "weatherSeq": 2
+          },
+          {
+            "id": 3,
+            "seq": 3,
+            "time": 2.9999999999999942,
+            "type": "lightning-strike",
+            "zone": "lightning",
+            "weatherSeq": 3,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 4,
+            "seq": 4,
+            "time": 3.1999999999999935,
+            "type": "thermal-burst",
+            "zone": "thermal",
+            "weatherSeq": 4
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": false,
+            "icing": true,
+            "thermal": false
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": 0.12,
+            "speedMultiplier": 0.9628,
+            "accelerationMultiplier": 0.9591999999999999
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [],
+          "thermal": {
+            "phase": "burst",
+            "jetIndex": 0,
+            "remaining": 0.800000000000007,
+            "inside": false,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [
+            {
+              "type": "thermal",
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          ],
+          "generation": 13,
+          "seq": 4,
+          "time": 3.299999999999993,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "recovery",
+              "phase": "recovery",
+              "progress": 0.02758620689655031,
+              "remaining": 4.700000000000006,
+              "phaseTime": 0.1333333333333265,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 1,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": false,
+              "striking": false
+            },
+            "icing": {
+              "id": "icing",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "inside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "burst",
+              "phase": "burst",
+              "progress": 0.1111111111111033,
+              "remaining": 0.800000000000007,
+              "phaseTime": 0.09999999999999298,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 1,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": false,
+              "burst": true
+            }
+          },
+          "player": {
+            "x": 0,
+            "y": 8,
+            "z": 24,
+            "icing": 0.06000000000000002,
+            "heat": 79.99999999999977,
+            "hidden": false,
+            "lock": 1,
+            "preheating": true,
+            "speedMultiplier": 0.9628,
+            "accelerationMultiplier": 0.9591999999999999
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 0,
+          "cargoDropped": 0
+        }
+      },
+      "regen": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 13,
+        "seq": 4,
+        "frame": 222,
+        "time": 3.6999999999999917,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "recovery",
+            "phase": "recovery",
+            "progress": 0.1103448275862052,
+            "remaining": 4.300000000000008,
+            "phaseTime": 0.5333333333333251,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 1,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": false,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "inside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "burst",
+            "phase": "burst",
+            "progress": 0.5555555555555461,
+            "remaining": 0.40000000000000846,
+            "phaseTime": 0.49999999999999156,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 1,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": true
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": 0,
+          "z": 24,
+          "vx": 0,
+          "vz": 0,
+          "angle": 3.141592653589793,
+          "radius": 3,
+          "hp": 100,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0.10800000000000005,
+          "heat": 84.79999999999984,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 0.93304,
+          "accelerationMultiplier": 0.9265599999999999
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 2,
+            "seq": 2,
+            "time": 0.8000000000000008,
+            "type": "thermal-warning",
+            "zone": "thermal",
+            "weatherSeq": 2
+          },
+          {
+            "id": 3,
+            "seq": 3,
+            "time": 2.9999999999999942,
+            "type": "lightning-strike",
+            "zone": "lightning",
+            "weatherSeq": 3,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 4,
+            "seq": 4,
+            "time": 3.1999999999999935,
+            "type": "thermal-burst",
+            "zone": "thermal",
+            "weatherSeq": 4
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": false,
+            "icing": true,
+            "thermal": false
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": 0.12,
+            "speedMultiplier": 0.93304,
+            "accelerationMultiplier": 0.9265599999999999
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [],
+          "thermal": {
+            "phase": "burst",
+            "jetIndex": 0,
+            "remaining": 0.40000000000000846,
+            "inside": false,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [
+            {
+              "type": "thermal",
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          ],
+          "generation": 13,
+          "seq": 4,
+          "time": 3.6999999999999917,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "recovery",
+              "phase": "recovery",
+              "progress": 0.1103448275862052,
+              "remaining": 4.300000000000008,
+              "phaseTime": 0.5333333333333251,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 1,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": false,
+              "striking": false
+            },
+            "icing": {
+              "id": "icing",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "inside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "burst",
+              "phase": "burst",
+              "progress": 0.5555555555555461,
+              "remaining": 0.40000000000000846,
+              "phaseTime": 0.49999999999999156,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 1,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": false,
+              "burst": true
+            }
+          },
+          "player": {
+            "x": 0,
+            "y": 8,
+            "z": 24,
+            "icing": 0.10800000000000005,
+            "heat": 84.79999999999984,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 0.93304,
+            "accelerationMultiplier": 0.9265599999999999
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 0,
+          "cargoDropped": 0
+        }
+      }
+    },
+    "lightningHit": {
+      "warning": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 14,
+        "seq": 1,
+        "frame": 24,
+        "time": 0.39999999999999997,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0,
+            "remaining": 2.6,
+            "phaseTime": -5.551115123125783e-17,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": true,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "calm",
+            "phase": "calm",
+            "progress": 0.49999999999999994,
+            "remaining": 0.4000000000000001,
+            "phaseTime": 0.39999999999999997,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": false
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": -45,
+          "z": 24,
+          "vx": 0,
+          "vz": 0,
+          "angle": 2.3449590079343823,
+          "radius": 3,
+          "hp": 100,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": true,
+            "icing": false,
+            "thermal": false
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": -0.025,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [
+            {
+              "id": "14:lightning:0",
+              "position": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "radius": 5.4,
+              "eta": 2.6
+            }
+          ],
+          "thermal": {
+            "phase": "calm",
+            "jetIndex": 0,
+            "remaining": 0.4000000000000001,
+            "inside": false,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [],
+          "generation": 14,
+          "seq": 1,
+          "time": 0.39999999999999997,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "warning",
+              "phase": "warning",
+              "progress": 0,
+              "remaining": 2.6,
+              "phaseTime": -5.551115123125783e-17,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 0,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": true,
+              "striking": false
+            },
+            "icing": {
+              "id": "icing",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "calm",
+              "phase": "calm",
+              "progress": 0.49999999999999994,
+              "remaining": 0.4000000000000001,
+              "phaseTime": 0.39999999999999997,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 0,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": false,
+              "burst": false
+            }
+          },
+          "player": {
+            "x": -45,
+            "y": 8,
+            "z": 24,
+            "icing": 0,
+            "heat": 100,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 0,
+          "cargoDropped": 0
+        }
+      },
+      "strike": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 14,
+        "seq": 3,
+        "frame": 180,
+        "time": 2.9999999999999942,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "strike",
+            "phase": "strike",
+            "progress": 0,
+            "remaining": 0.16666666666667243,
+            "phaseTime": -5.773159728050814e-15,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 1,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": false,
+            "striking": true
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.9166666666666642,
+            "remaining": 0.20000000000000595,
+            "phaseTime": 2.199999999999994,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": true,
+            "burst": false
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": -45,
+          "z": 24,
+          "vx": 0,
+          "vz": 0,
+          "angle": 2.3449590079343823,
+          "radius": 3,
+          "hp": 76,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 2,
+            "seq": 2,
+            "time": 0.8000000000000008,
+            "type": "thermal-warning",
+            "zone": "thermal",
+            "weatherSeq": 2
+          },
+          {
+            "id": 3,
+            "seq": 3,
+            "time": 2.9999999999999942,
+            "type": "lightning-strike",
+            "zone": "lightning",
+            "weatherSeq": 3,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 4,
+            "seq": 4,
+            "time": 2.9999999999999942,
+            "type": "environment-hit",
+            "x": -45,
+            "y": 8,
+            "z": 24,
+            "damage": 24,
+            "hp": 76,
+            "source": "lightning-strike",
+            "pulseId": "14:lightning:0",
+            "generation": 14
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": true,
+            "icing": false,
+            "thermal": false
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": -0.025,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [],
+          "thermal": {
+            "phase": "warning",
+            "jetIndex": 0,
+            "remaining": 0.20000000000000595,
+            "inside": false,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [
+            {
+              "type": "lightning",
+              "position": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "radius": 5.4
+            }
+          ],
+          "generation": 14,
+          "seq": 3,
+          "time": 2.9999999999999942,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "strike",
+              "phase": "strike",
+              "progress": 0,
+              "remaining": 0.16666666666667243,
+              "phaseTime": -5.773159728050814e-15,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 1,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": false,
+              "striking": true
+            },
+            "icing": {
+              "id": "icing",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "warning",
+              "phase": "warning",
+              "progress": 0.9166666666666642,
+              "remaining": 0.20000000000000595,
+              "phaseTime": 2.199999999999994,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 0,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": true,
+              "burst": false
+            }
+          },
+          "player": {
+            "x": -45,
+            "y": 8,
+            "z": 24,
+            "icing": 0,
+            "heat": 100,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 24,
+          "cargoDropped": 0
+        }
+      }
+    },
+    "lightningDodge": {
+      "warning": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 15,
+        "seq": 1,
+        "frame": 24,
+        "time": 0.39999999999999997,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0,
+            "remaining": 2.6,
+            "phaseTime": -5.551115123125783e-17,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": true,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "calm",
+            "phase": "calm",
+            "progress": 0.49999999999999994,
+            "remaining": 0.4000000000000001,
+            "phaseTime": 0.39999999999999997,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": false
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": -45,
+          "z": 24,
+          "vx": 0,
+          "vz": 0,
+          "angle": 2.3449590079343823,
+          "radius": 3,
+          "hp": 100,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": true,
+            "icing": false,
+            "thermal": false
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": -0.025,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [
+            {
+              "id": "15:lightning:0",
+              "position": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "radius": 5.4,
+              "eta": 2.6
+            }
+          ],
+          "thermal": {
+            "phase": "calm",
+            "jetIndex": 0,
+            "remaining": 0.4000000000000001,
+            "inside": false,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [],
+          "generation": 15,
+          "seq": 1,
+          "time": 0.39999999999999997,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "warning",
+              "phase": "warning",
+              "progress": 0,
+              "remaining": 2.6,
+              "phaseTime": -5.551115123125783e-17,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 0,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": true,
+              "striking": false
+            },
+            "icing": {
+              "id": "icing",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "calm",
+              "phase": "calm",
+              "progress": 0.49999999999999994,
+              "remaining": 0.4000000000000001,
+              "phaseTime": 0.39999999999999997,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 0,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": false,
+              "burst": false
+            }
+          },
+          "player": {
+            "x": -45,
+            "y": 8,
+            "z": 24,
+            "icing": 0,
+            "heat": 100,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 0,
+          "cargoDropped": 0
+        }
+      },
+      "strike": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 15,
+        "seq": 3,
+        "frame": 180,
+        "time": 2.9999999999999942,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "strike",
+            "phase": "strike",
+            "progress": 0,
+            "remaining": 0.16666666666667243,
+            "phaseTime": -5.773159728050814e-15,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 1,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": false,
+            "striking": true
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.9166666666666642,
+            "remaining": 0.20000000000000595,
+            "phaseTime": 2.199999999999994,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": true,
+            "burst": false
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": -32,
+          "z": 24,
+          "vx": 0,
+          "vz": 0,
+          "angle": 2.51279636717436,
+          "radius": 3,
+          "hp": 100,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 2,
+            "seq": 2,
+            "time": 0.8000000000000008,
+            "type": "thermal-warning",
+            "zone": "thermal",
+            "weatherSeq": 2
+          },
+          {
+            "id": 3,
+            "seq": 3,
+            "time": 2.9999999999999942,
+            "type": "lightning-strike",
+            "zone": "lightning",
+            "weatherSeq": 3,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": true,
+            "icing": false,
+            "thermal": false
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": -0.025,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [],
+          "thermal": {
+            "phase": "warning",
+            "jetIndex": 0,
+            "remaining": 0.20000000000000595,
+            "inside": false,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [
+            {
+              "type": "lightning",
+              "position": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "radius": 5.4
+            }
+          ],
+          "generation": 15,
+          "seq": 3,
+          "time": 2.9999999999999942,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "strike",
+              "phase": "strike",
+              "progress": 0,
+              "remaining": 0.16666666666667243,
+              "phaseTime": -5.773159728050814e-15,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 1,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": false,
+              "striking": true
+            },
+            "icing": {
+              "id": "icing",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "warning",
+              "phase": "warning",
+              "progress": 0.9166666666666642,
+              "remaining": 0.20000000000000595,
+              "phaseTime": 2.199999999999994,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 0,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": true,
+              "burst": false
+            }
+          },
+          "player": {
+            "x": -32,
+            "y": 8,
+            "z": 24,
+            "icing": 0,
+            "heat": 100,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 0,
+          "cargoDropped": 0
+        }
+      }
+    },
+    "thermalHit": {
+      "warning": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 16,
+        "seq": 2,
+        "frame": 48,
+        "time": 0.8000000000000008,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 0.15384615384615416,
+            "remaining": 2.1999999999999993,
+            "phaseTime": 0.4000000000000008,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": true,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "warning",
+            "phase": "warning",
+            "progress": 3.23815048849004e-16,
+            "remaining": 2.399999999999999,
+            "phaseTime": 7.771561172376096e-16,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": true,
+            "burst": false
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": 45,
+          "z": 18,
+          "vx": 0,
+          "vz": 0,
+          "angle": 4.011129057518412,
+          "radius": 3,
+          "hp": 100,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 2,
+            "seq": 2,
+            "time": 0.8000000000000008,
+            "type": "thermal-warning",
+            "zone": "thermal",
+            "weatherSeq": 2
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": false,
+            "icing": false,
+            "thermal": true
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": -0.025,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [
+            {
+              "id": "16:lightning:0",
+              "position": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "radius": 5.4,
+              "eta": 2.1999999999999993
+            }
+          ],
+          "thermal": {
+            "phase": "warning",
+            "jetIndex": 0,
+            "remaining": 2.399999999999999,
+            "inside": true,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [],
+          "generation": 16,
+          "seq": 2,
+          "time": 0.8000000000000008,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "warning",
+              "phase": "warning",
+              "progress": 0.15384615384615416,
+              "remaining": 2.1999999999999993,
+              "phaseTime": 0.4000000000000008,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 0,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": true,
+              "striking": false
+            },
+            "icing": {
+              "id": "icing",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "warning",
+              "phase": "warning",
+              "progress": 3.23815048849004e-16,
+              "remaining": 2.399999999999999,
+              "phaseTime": 7.771561172376096e-16,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 0,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": true,
+              "burst": false
+            }
+          },
+          "player": {
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "icing": 0,
+            "heat": 100,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 0,
+          "cargoDropped": 0
+        }
+      },
+      "burst": {
+        "version": "map-weather-prototype-1-authority",
+        "generation": 16,
+        "seq": 4,
+        "frame": 192,
+        "time": 3.1999999999999935,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "recovery",
+            "phase": "recovery",
+            "progress": 0.006896551724136592,
+            "remaining": 4.800000000000006,
+            "phaseTime": 0.03333333333332686,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 1,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "warning": false,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": true,
+            "inside": true,
+            "strength": 1,
+            "status": "burst",
+            "phase": "burst",
+            "progress": 0,
+            "remaining": 0.9000000000000067,
+            "phaseTime": -6.661338147750939e-15,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 1,
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": true
+          }
+        },
+        "player": {
+          "id": "player",
+          "assetId": "player-homeward",
+          "name": "귀환호",
+          "x": 45,
+          "z": 18,
+          "vx": 0,
+          "vz": 0,
+          "angle": 4.011129057518412,
+          "radius": 3,
+          "hp": 85,
+          "maxHp": 100,
+          "cooldown": 0,
+          "aimX": 0,
+          "aimZ": -20,
+          "baseWeight": 50,
+          "cargoWeight": 0,
+          "weight": 50,
+          "lift": 65,
+          "boostCharge": 100,
+          "maxBoostCharge": 100,
+          "sinkingTime": 0,
+          "boosting": false,
+          "weapon": "machinegun",
+          "y": 8,
+          "vy": 0,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "preheatExhausted": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "events": [
+          {
+            "id": 1,
+            "seq": 1,
+            "time": 0.39999999999999997,
+            "type": "lightning-warning",
+            "zone": "lightning",
+            "weatherSeq": 1,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 2,
+            "seq": 2,
+            "time": 0.8000000000000008,
+            "type": "thermal-warning",
+            "zone": "thermal",
+            "weatherSeq": 2
+          },
+          {
+            "id": 3,
+            "seq": 3,
+            "time": 2.9999999999999942,
+            "type": "lightning-strike",
+            "zone": "lightning",
+            "weatherSeq": 3,
+            "position": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            }
+          },
+          {
+            "id": 4,
+            "seq": 4,
+            "time": 3.1999999999999935,
+            "type": "thermal-burst",
+            "zone": "thermal",
+            "weatherSeq": 4
+          },
+          {
+            "id": 5,
+            "seq": 5,
+            "time": 3.1999999999999935,
+            "type": "environment-hit",
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "damage": 15,
+            "hp": 85,
+            "source": "thermal-burst",
+            "pulseId": "16:thermal:0",
+            "generation": 16
+          }
+        ],
+        "sample": {
+          "inside": {
+            "cloud": false,
+            "updraft": false,
+            "crosswind": false,
+            "lightning": false,
+            "icing": false,
+            "thermal": true
+          },
+          "visibility": 1,
+          "hidden": false,
+          "aimLockAllowed": true,
+          "wind": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updraft": 0,
+          "icing": {
+            "rate": -0.025,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          },
+          "heat": {
+            "regeneration": 12,
+            "preheatConsumption": 25,
+            "thaw": 0.42,
+            "regen": 12,
+            "consumption": 25
+          },
+          "lightningWarnings": [],
+          "thermal": {
+            "phase": "burst",
+            "jetIndex": 0,
+            "remaining": 0.9000000000000067,
+            "inside": true,
+            "footprint": {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          },
+          "hazards": [
+            {
+              "type": "thermal",
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          ],
+          "generation": 16,
+          "seq": 4,
+          "time": 3.1999999999999935,
+          "paused": false,
+          "weather": {
+            "cloud": {
+              "id": "cloud",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "updraft": {
+              "id": "updraft",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "crosswind": {
+              "id": "crosswind",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "lightning": {
+              "id": "lightning",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "recovery",
+              "phase": "recovery",
+              "progress": 0.006896551724136592,
+              "remaining": 4.800000000000006,
+              "phaseTime": 0.03333333333332686,
+              "cycle": 8,
+              "cycleIndex": 0,
+              "warningDuration": 2.6,
+              "strikeRadius": 5.4,
+              "strikeSerial": 1,
+              "target": {
+                "x": -45,
+                "y": 8,
+                "z": 24
+              },
+              "_phaseKey": "",
+              "warning": false,
+              "striking": false
+            },
+            "icing": {
+              "id": "icing",
+              "active": false,
+              "inside": false,
+              "strength": 0,
+              "status": "outside"
+            },
+            "thermal": {
+              "id": "thermal",
+              "active": true,
+              "inside": true,
+              "strength": 1,
+              "status": "burst",
+              "phase": "burst",
+              "progress": 0,
+              "remaining": 0.9000000000000067,
+              "phaseTime": -6.661338147750939e-15,
+              "cycle": 6.2,
+              "cycleIndex": 0,
+              "warningDuration": 2.4,
+              "jetIndex": 0,
+              "burstSerial": 1,
+              "_phaseKey": "",
+              "lanes": [
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 18,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 24,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                },
+                {
+                  "x": 45,
+                  "y": 8,
+                  "z": 30,
+                  "halfLength": 14,
+                  "halfWidth": 1.7,
+                  "minY": 4,
+                  "maxY": 13
+                }
+              ],
+              "warning": false,
+              "burst": true
+            }
+          },
+          "player": {
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "icing": 0,
+            "heat": 100,
+            "hidden": false,
+            "lock": 1,
+            "preheating": false,
+            "speedMultiplier": 1,
+            "accelerationMultiplier": 1
+          }
+        },
+        "outcome": "sailing",
+        "stats": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "recovered": 0,
+          "damageTaken": 15,
+          "cargoDropped": 0
+        }
+      }
+    },
+    "expressionComparison": {
+      "standard": {
+        "width": 1048,
+        "height": 598,
+        "sha256": "72ce8060f880764d0707d22d7eeac7c34c236b44a9c7452e76d8e6b1691a5e22",
+        "painted_pixels": 94083,
+        "expression": "standard",
+        "state": "{\"version\":\"map-weather-prototype-1-authority\",\"generation\":16,\"seq\":4,\"frame\":201,\"time\":3.349999999999993,\"paused\":false,\"weather\":{\"cloud\":{\"id\":\"cloud\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"updraft\":{\"id\":\"updraft\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"crosswind\":{\"id\":\"crosswind\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"lightning\":{\"id\":\"lightning\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"recovery\",\"phase\":\"recovery\",\"progress\":0.03793103448275717,\"remaining\":4.650000000000007,\"phaseTime\":0.18333333333332633,\"cycle\":8,\"cycleIndex\":0,\"warningDuration\":2.6,\"strikeRadius\":5.4,\"strikeSerial\":1,\"target\":{\"x\":-45,\"y\":8,\"z\":24},\"warning\":false,\"striking\":false},\"icing\":{\"id\":\"icing\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"thermal\":{\"id\":\"thermal\",\"active\":true,\"inside\":true,\"strength\":1,\"status\":\"burst\",\"phase\":\"burst\",\"progress\":0.16666666666665866,\"remaining\":0.7500000000000072,\"phaseTime\":0.1499999999999928,\"cycle\":6.2,\"cycleIndex\":0,\"warningDuration\":2.4,\"jetIndex\":0,\"burstSerial\":1,\"lanes\":[{\"x\":45,\"y\":8,\"z\":18,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13},{\"x\":45,\"y\":8,\"z\":24,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13},{\"x\":45,\"y\":8,\"z\":30,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13}],\"warning\":false,\"burst\":true}},\"player\":{\"id\":\"player\",\"assetId\":\"player-homeward\",\"name\":\"귀환호\",\"x\":45,\"z\":18,\"vx\":0,\"vz\":0,\"angle\":4.011129057518412,\"radius\":3,\"hp\":85,\"maxHp\":100,\"cooldown\":0,\"aimX\":0,\"aimZ\":-20,\"baseWeight\":50,\"cargoWeight\":0,\"weight\":50,\"lift\":65,\"boostCharge\":100,\"maxBoostCharge\":100,\"sinkingTime\":0,\"boosting\":false,\"weapon\":\"machinegun\",\"y\":8,\"vy\":0,\"icing\":0,\"heat\":100,\"hidden\":false,\"lock\":1,\"preheating\":false,\"preheatExhausted\":false,\"speedMultiplier\":1,\"accelerationMultiplier\":1},\"events\":[{\"id\":1,\"seq\":1,\"time\":0.39999999999999997,\"type\":\"lightning-warning\",\"zone\":\"lightning\",\"weatherSeq\":1,\"position\":{\"x\":-45,\"y\":8,\"z\":24}},{\"id\":2,\"seq\":2,\"time\":0.8000000000000008,\"type\":\"thermal-warning\",\"zone\":\"thermal\",\"weatherSeq\":2},{\"id\":3,\"seq\":3,\"time\":2.9999999999999942,\"type\":\"lightning-strike\",\"zone\":\"lightning\",\"weatherSeq\":3,\"position\":{\"x\":-45,\"y\":8,\"z\":24}},{\"id\":4,\"seq\":4,\"time\":3.1999999999999935,\"type\":\"thermal-burst\",\"zone\":\"thermal\",\"weatherSeq\":4},{\"id\":5,\"seq\":5,\"time\":3.1999999999999935,\"type\":\"environment-hit\",\"x\":45,\"y\":8,\"z\":18,\"damage\":15,\"hp\":85,\"source\":\"thermal-burst\",\"pulseId\":\"16:thermal:0\",\"generation\":16}],\"sample\":{\"inside\":{\"cloud\":false,\"updraft\":false,\"crosswind\":false,\"lightning\":false,\"icing\":false,\"thermal\":true},\"visibility\":1,\"hidden\":false,\"aimLockAllowed\":true,\"wind\":{\"x\":0,\"y\":0,\"z\":0},\"updraft\":0,\"icing\":{\"rate\":-0.025,\"speedMultiplier\":1,\"accelerationMultiplier\":1},\"heat\":{\"regeneration\":12,\"preheatConsumption\":25,\"thaw\":0.42,\"regen\":12,\"consumption\":25},\"lightningWarnings\":[],\"thermal\":{\"phase\":\"burst\",\"jetIndex\":0,\"remaining\":0.7500000000000072,\"inside\":true,\"footprint\":{\"x\":45,\"y\":8,\"z\":18,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13}},\"hazards\":[{\"type\":\"thermal\",\"x\":45,\"y\":8,\"z\":18,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13}],\"generation\":16,\"seq\":4,\"time\":3.349999999999993,\"paused\":false,\"weather\":{\"cloud\":{\"id\":\"cloud\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"updraft\":{\"id\":\"updraft\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"crosswind\":{\"id\":\"crosswind\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"lightning\":{\"id\":\"lightning\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"recovery\",\"phase\":\"recovery\",\"progress\":0.03793103448275717,\"remaining\":4.650000000000007,\"phaseTime\":0.18333333333332633,\"cycle\":8,\"cycleIndex\":0,\"warningDuration\":2.6,\"strikeRadius\":5.4,\"strikeSerial\":1,\"target\":{\"x\":-45,\"y\":8,\"z\":24},\"_phaseKey\":\"\",\"warning\":false,\"striking\":false},\"icing\":{\"id\":\"icing\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"thermal\":{\"id\":\"thermal\",\"active\":true,\"inside\":true,\"strength\":1,\"status\":\"burst\",\"phase\":\"burst\",\"progress\":0.16666666666665866,\"remaining\":0.7500000000000072,\"phaseTime\":0.1499999999999928,\"cycle\":6.2,\"cycleIndex\":0,\"warningDuration\":2.4,\"jetIndex\":0,\"burstSerial\":1,\"_phaseKey\":\"\",\"lanes\":[{\"x\":45,\"y\":8,\"z\":18,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13},{\"x\":45,\"y\":8,\"z\":24,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13},{\"x\":45,\"y\":8,\"z\":30,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13}],\"warning\":false,\"burst\":true}},\"player\":{\"x\":45,\"y\":8,\"z\":18,\"icing\":0,\"heat\":100,\"hidden\":false,\"lock\":1,\"preheating\":false,\"speedMultiplier\":1,\"accelerationMultiplier\":1}},\"outcome\":\"sailing\",\"stats\":{\"shots\":0,\"hits\":0,\"kills\":0,\"recovered\":0,\"damageTaken\":15,\"cargoDropped\":0}}",
+        "camera": {
+          "position": [
+            126.84041835947089,
+            113.9111296416682,
+            144.35355641098664
+          ],
+          "quaternion": [
+            -0.2956865390429649,
+            0.27973922884327523,
+            0.0910094105650924,
+            0.9088634229979538
+          ],
+          "zoom": 1,
+          "target": [
+            45,
+            8,
+            24.000000000000004
+          ]
+        }
+      },
+      "dramatic": {
+        "width": 1048,
+        "height": 598,
+        "sha256": "67d072cbfc491ca5a6bb372b9c307d00fdb8568ffbabfbf192b3ee97d45ae448",
+        "painted_pixels": 102911,
+        "expression": "dramatic",
+        "state": "{\"version\":\"map-weather-prototype-1-authority\",\"generation\":16,\"seq\":4,\"frame\":201,\"time\":3.349999999999993,\"paused\":false,\"weather\":{\"cloud\":{\"id\":\"cloud\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"updraft\":{\"id\":\"updraft\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"crosswind\":{\"id\":\"crosswind\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"lightning\":{\"id\":\"lightning\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"recovery\",\"phase\":\"recovery\",\"progress\":0.03793103448275717,\"remaining\":4.650000000000007,\"phaseTime\":0.18333333333332633,\"cycle\":8,\"cycleIndex\":0,\"warningDuration\":2.6,\"strikeRadius\":5.4,\"strikeSerial\":1,\"target\":{\"x\":-45,\"y\":8,\"z\":24},\"warning\":false,\"striking\":false},\"icing\":{\"id\":\"icing\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"thermal\":{\"id\":\"thermal\",\"active\":true,\"inside\":true,\"strength\":1,\"status\":\"burst\",\"phase\":\"burst\",\"progress\":0.16666666666665866,\"remaining\":0.7500000000000072,\"phaseTime\":0.1499999999999928,\"cycle\":6.2,\"cycleIndex\":0,\"warningDuration\":2.4,\"jetIndex\":0,\"burstSerial\":1,\"lanes\":[{\"x\":45,\"y\":8,\"z\":18,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13},{\"x\":45,\"y\":8,\"z\":24,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13},{\"x\":45,\"y\":8,\"z\":30,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13}],\"warning\":false,\"burst\":true}},\"player\":{\"id\":\"player\",\"assetId\":\"player-homeward\",\"name\":\"귀환호\",\"x\":45,\"z\":18,\"vx\":0,\"vz\":0,\"angle\":4.011129057518412,\"radius\":3,\"hp\":85,\"maxHp\":100,\"cooldown\":0,\"aimX\":0,\"aimZ\":-20,\"baseWeight\":50,\"cargoWeight\":0,\"weight\":50,\"lift\":65,\"boostCharge\":100,\"maxBoostCharge\":100,\"sinkingTime\":0,\"boosting\":false,\"weapon\":\"machinegun\",\"y\":8,\"vy\":0,\"icing\":0,\"heat\":100,\"hidden\":false,\"lock\":1,\"preheating\":false,\"preheatExhausted\":false,\"speedMultiplier\":1,\"accelerationMultiplier\":1},\"events\":[{\"id\":1,\"seq\":1,\"time\":0.39999999999999997,\"type\":\"lightning-warning\",\"zone\":\"lightning\",\"weatherSeq\":1,\"position\":{\"x\":-45,\"y\":8,\"z\":24}},{\"id\":2,\"seq\":2,\"time\":0.8000000000000008,\"type\":\"thermal-warning\",\"zone\":\"thermal\",\"weatherSeq\":2},{\"id\":3,\"seq\":3,\"time\":2.9999999999999942,\"type\":\"lightning-strike\",\"zone\":\"lightning\",\"weatherSeq\":3,\"position\":{\"x\":-45,\"y\":8,\"z\":24}},{\"id\":4,\"seq\":4,\"time\":3.1999999999999935,\"type\":\"thermal-burst\",\"zone\":\"thermal\",\"weatherSeq\":4},{\"id\":5,\"seq\":5,\"time\":3.1999999999999935,\"type\":\"environment-hit\",\"x\":45,\"y\":8,\"z\":18,\"damage\":15,\"hp\":85,\"source\":\"thermal-burst\",\"pulseId\":\"16:thermal:0\",\"generation\":16}],\"sample\":{\"inside\":{\"cloud\":false,\"updraft\":false,\"crosswind\":false,\"lightning\":false,\"icing\":false,\"thermal\":true},\"visibility\":1,\"hidden\":false,\"aimLockAllowed\":true,\"wind\":{\"x\":0,\"y\":0,\"z\":0},\"updraft\":0,\"icing\":{\"rate\":-0.025,\"speedMultiplier\":1,\"accelerationMultiplier\":1},\"heat\":{\"regeneration\":12,\"preheatConsumption\":25,\"thaw\":0.42,\"regen\":12,\"consumption\":25},\"lightningWarnings\":[],\"thermal\":{\"phase\":\"burst\",\"jetIndex\":0,\"remaining\":0.7500000000000072,\"inside\":true,\"footprint\":{\"x\":45,\"y\":8,\"z\":18,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13}},\"hazards\":[{\"type\":\"thermal\",\"x\":45,\"y\":8,\"z\":18,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13}],\"generation\":16,\"seq\":4,\"time\":3.349999999999993,\"paused\":false,\"weather\":{\"cloud\":{\"id\":\"cloud\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"updraft\":{\"id\":\"updraft\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"crosswind\":{\"id\":\"crosswind\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"lightning\":{\"id\":\"lightning\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"recovery\",\"phase\":\"recovery\",\"progress\":0.03793103448275717,\"remaining\":4.650000000000007,\"phaseTime\":0.18333333333332633,\"cycle\":8,\"cycleIndex\":0,\"warningDuration\":2.6,\"strikeRadius\":5.4,\"strikeSerial\":1,\"target\":{\"x\":-45,\"y\":8,\"z\":24},\"_phaseKey\":\"\",\"warning\":false,\"striking\":false},\"icing\":{\"id\":\"icing\",\"active\":false,\"inside\":false,\"strength\":0,\"status\":\"outside\"},\"thermal\":{\"id\":\"thermal\",\"active\":true,\"inside\":true,\"strength\":1,\"status\":\"burst\",\"phase\":\"burst\",\"progress\":0.16666666666665866,\"remaining\":0.7500000000000072,\"phaseTime\":0.1499999999999928,\"cycle\":6.2,\"cycleIndex\":0,\"warningDuration\":2.4,\"jetIndex\":0,\"burstSerial\":1,\"_phaseKey\":\"\",\"lanes\":[{\"x\":45,\"y\":8,\"z\":18,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13},{\"x\":45,\"y\":8,\"z\":24,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13},{\"x\":45,\"y\":8,\"z\":30,\"halfLength\":14,\"halfWidth\":1.7,\"minY\":4,\"maxY\":13}],\"warning\":false,\"burst\":true}},\"player\":{\"x\":45,\"y\":8,\"z\":18,\"icing\":0,\"heat\":100,\"hidden\":false,\"lock\":1,\"preheating\":false,\"speedMultiplier\":1,\"accelerationMultiplier\":1}},\"outcome\":\"sailing\",\"stats\":{\"shots\":0,\"hits\":0,\"kills\":0,\"recovered\":0,\"damageTaken\":15,\"cargoDropped\":0}}",
+        "camera": {
+          "position": [
+            126.84041835947089,
+            113.9111296416682,
+            144.35355641098664
+          ],
+          "quaternion": [
+            -0.2956865390429649,
+            0.27973922884327523,
+            0.0910094105650924,
+            0.9088634229979538
+          ],
+          "zoom": 1,
+          "target": [
+            45,
+            8,
+            24.000000000000004
+          ]
+        }
+      }
+    },
+    "thermalHigh": {
+      "version": "map-weather-prototype-1-authority",
+      "generation": 17,
+      "seq": 4,
+      "frame": 192,
+      "time": 3.1999999999999935,
+      "paused": false,
+      "weather": {
+        "cloud": {
+          "id": "cloud",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "updraft": {
+          "id": "updraft",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "crosswind": {
+          "id": "crosswind",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "lightning": {
+          "id": "lightning",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "recovery",
+          "phase": "recovery",
+          "progress": 0.006896551724136592,
+          "remaining": 4.800000000000006,
+          "phaseTime": 0.03333333333332686,
+          "cycle": 8,
+          "cycleIndex": 0,
+          "warningDuration": 2.6,
+          "strikeRadius": 5.4,
+          "strikeSerial": 1,
+          "target": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          },
+          "warning": false,
+          "striking": false
+        },
+        "icing": {
+          "id": "icing",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "thermal": {
+          "id": "thermal",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "burst",
+          "phase": "burst",
+          "progress": 0,
+          "remaining": 0.9000000000000067,
+          "phaseTime": -6.661338147750939e-15,
+          "cycle": 6.2,
+          "cycleIndex": 0,
+          "warningDuration": 2.4,
+          "jetIndex": 0,
+          "burstSerial": 1,
+          "lanes": [
+            {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 24,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 30,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          ],
+          "warning": false,
+          "burst": true
+        }
+      },
+      "player": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": 45,
+        "z": 18,
+        "vx": 0,
+        "vz": 0,
+        "angle": 4.011129057518412,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 18,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      },
+      "events": [
+        {
+          "id": 1,
+          "seq": 1,
+          "time": 0.39999999999999997,
+          "type": "lightning-warning",
+          "zone": "lightning",
+          "weatherSeq": 1,
+          "position": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          }
+        },
+        {
+          "id": 2,
+          "seq": 2,
+          "time": 0.8000000000000008,
+          "type": "thermal-warning",
+          "zone": "thermal",
+          "weatherSeq": 2
+        },
+        {
+          "id": 3,
+          "seq": 3,
+          "time": 2.9999999999999942,
+          "type": "lightning-strike",
+          "zone": "lightning",
+          "weatherSeq": 3,
+          "position": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          }
+        },
+        {
+          "id": 4,
+          "seq": 4,
+          "time": 3.1999999999999935,
+          "type": "thermal-burst",
+          "zone": "thermal",
+          "weatherSeq": 4
+        }
+      ],
+      "sample": {
+        "inside": {
+          "cloud": false,
+          "updraft": false,
+          "crosswind": false,
+          "lightning": false,
+          "icing": false,
+          "thermal": false
+        },
+        "visibility": 1,
+        "hidden": false,
+        "aimLockAllowed": true,
+        "wind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "updraft": 0,
+        "icing": {
+          "rate": -0.025,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "heat": {
+          "regeneration": 12,
+          "preheatConsumption": 25,
+          "thaw": 0.42,
+          "regen": 12,
+          "consumption": 25
+        },
+        "lightningWarnings": [],
+        "thermal": {
+          "phase": "burst",
+          "jetIndex": 0,
+          "remaining": 0.9000000000000067,
+          "inside": false,
+          "footprint": {
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "halfLength": 14,
+            "halfWidth": 1.7,
+            "minY": 4,
+            "maxY": 13
+          }
+        },
+        "hazards": [
+          {
+            "type": "thermal",
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "halfLength": 14,
+            "halfWidth": 1.7,
+            "minY": 4,
+            "maxY": 13
+          }
+        ],
+        "generation": 17,
+        "seq": 4,
+        "time": 3.1999999999999935,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "recovery",
+            "phase": "recovery",
+            "progress": 0.006896551724136592,
+            "remaining": 4.800000000000006,
+            "phaseTime": 0.03333333333332686,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 1,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "_phaseKey": "",
+            "warning": false,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "burst",
+            "phase": "burst",
+            "progress": 0,
+            "remaining": 0.9000000000000067,
+            "phaseTime": -6.661338147750939e-15,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 1,
+            "_phaseKey": "",
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": true
+          }
+        },
+        "player": {
+          "x": 45,
+          "y": 18,
+          "z": 18,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        }
+      },
+      "outcome": "sailing",
+      "stats": {
+        "shots": 0,
+        "hits": 0,
+        "kills": 0,
+        "recovered": 0,
+        "damageTaken": 0,
+        "cargoDropped": 0
+      }
+    },
+    "final": {
+      "version": "map-weather-prototype-1-authority",
+      "generation": 18,
+      "seq": 0,
+      "frame": -1,
+      "time": 0,
+      "paused": false,
+      "weather": {
+        "cloud": {
+          "id": "cloud",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "updraft": {
+          "id": "updraft",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "crosswind": {
+          "id": "crosswind",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "lightning": {
+          "id": "lightning",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "calm",
+          "phase": "calm",
+          "progress": 0,
+          "remaining": 0.4,
+          "phaseTime": 0,
+          "cycle": 8,
+          "cycleIndex": 0,
+          "warningDuration": 2.6,
+          "strikeRadius": 5.4,
+          "strikeSerial": 0,
+          "target": {
+            "x": -45,
+            "y": 8,
+            "z": 24
+          },
+          "warning": false,
+          "striking": false
+        },
+        "icing": {
+          "id": "icing",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "outside"
+        },
+        "thermal": {
+          "id": "thermal",
+          "active": false,
+          "inside": false,
+          "strength": 0,
+          "status": "calm",
+          "phase": "calm",
+          "progress": 0,
+          "remaining": 0.8,
+          "phaseTime": 0,
+          "cycle": 6.2,
+          "cycleIndex": 0,
+          "warningDuration": 2.4,
+          "jetIndex": 0,
+          "burstSerial": 0,
+          "lanes": [
+            {
+              "x": 45,
+              "y": 8,
+              "z": 18,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 24,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            },
+            {
+              "x": 45,
+              "y": 8,
+              "z": 30,
+              "halfLength": 14,
+              "halfWidth": 1.7,
+              "minY": 4,
+              "maxY": 13
+            }
+          ],
+          "warning": false,
+          "burst": false
+        }
+      },
+      "player": {
+        "id": "player",
+        "assetId": "player-homeward",
+        "name": "귀환호",
+        "x": -45,
+        "z": -5,
+        "vx": 0,
+        "vz": 0,
+        "angle": 3.141592653589793,
+        "radius": 3,
+        "hp": 100,
+        "maxHp": 100,
+        "cooldown": 0,
+        "aimX": 0,
+        "aimZ": -20,
+        "baseWeight": 50,
+        "cargoWeight": 0,
+        "weight": 50,
+        "lift": 65,
+        "boostCharge": 100,
+        "maxBoostCharge": 100,
+        "sinkingTime": 0,
+        "boosting": false,
+        "weapon": "machinegun",
+        "y": 8,
+        "vy": 0,
+        "icing": 0,
+        "heat": 100,
+        "hidden": false,
+        "lock": 1,
+        "preheating": false,
+        "preheatExhausted": false,
+        "speedMultiplier": 1,
+        "accelerationMultiplier": 1
+      },
+      "events": [],
+      "sample": {
+        "inside": {
+          "cloud": false,
+          "updraft": false,
+          "crosswind": false,
+          "lightning": false,
+          "icing": false,
+          "thermal": false
+        },
+        "visibility": 1,
+        "hidden": false,
+        "aimLockAllowed": true,
+        "wind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "updraft": 0,
+        "icing": {
+          "rate": -0.025,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        },
+        "heat": {
+          "regeneration": 12,
+          "preheatConsumption": 25,
+          "thaw": 0.42,
+          "regen": 12,
+          "consumption": 25
+        },
+        "lightningWarnings": [],
+        "thermal": {
+          "phase": "calm",
+          "jetIndex": 0,
+          "remaining": 0.8,
+          "inside": false,
+          "footprint": {
+            "x": 45,
+            "y": 8,
+            "z": 18,
+            "halfLength": 14,
+            "halfWidth": 1.7,
+            "minY": 4,
+            "maxY": 13
+          }
+        },
+        "hazards": [],
+        "generation": 18,
+        "seq": 0,
+        "time": 0,
+        "paused": false,
+        "weather": {
+          "cloud": {
+            "id": "cloud",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "updraft": {
+            "id": "updraft",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "crosswind": {
+            "id": "crosswind",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "lightning": {
+            "id": "lightning",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "calm",
+            "phase": "calm",
+            "progress": 0,
+            "remaining": 0.4,
+            "phaseTime": 0,
+            "cycle": 8,
+            "cycleIndex": 0,
+            "warningDuration": 2.6,
+            "strikeRadius": 5.4,
+            "strikeSerial": 0,
+            "target": {
+              "x": -45,
+              "y": 8,
+              "z": 24
+            },
+            "_phaseKey": "",
+            "warning": false,
+            "striking": false
+          },
+          "icing": {
+            "id": "icing",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "outside"
+          },
+          "thermal": {
+            "id": "thermal",
+            "active": false,
+            "inside": false,
+            "strength": 0,
+            "status": "calm",
+            "phase": "calm",
+            "progress": 0,
+            "remaining": 0.8,
+            "phaseTime": 0,
+            "cycle": 6.2,
+            "cycleIndex": 0,
+            "warningDuration": 2.4,
+            "jetIndex": 0,
+            "burstSerial": 0,
+            "_phaseKey": "",
+            "lanes": [
+              {
+                "x": 45,
+                "y": 8,
+                "z": 18,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 24,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              },
+              {
+                "x": 45,
+                "y": 8,
+                "z": 30,
+                "halfLength": 14,
+                "halfWidth": 1.7,
+                "minY": 4,
+                "maxY": 13
+              }
+            ],
+            "warning": false,
+            "burst": false
+          }
+        },
+        "player": {
+          "x": -45,
+          "y": 8,
+          "z": -5,
+          "icing": 0,
+          "heat": 100,
+          "hidden": false,
+          "lock": 1,
+          "preheating": false,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1
+        }
+      },
+      "outcome": "sailing",
+      "stats": {
+        "shots": 0,
+        "hits": 0,
+        "kills": 0,
+        "recovered": 0,
+        "damageTaken": 0,
+        "cargoDropped": 0
+      }
+    }
+  },
+  "ghosting": [
+    {
+      "mode": "handdrawn",
+      "frames": 60,
+      "width": 1048,
+      "height": 598,
+      "different_pixels": 75,
+      "painted_pixels": 78089,
+      "outline_autoclear": true,
+      "state_unchanged": true,
+      "webgl_error": 0
+    },
+    {
+      "mode": "cel",
+      "frames": 60,
+      "width": 1048,
+      "height": 598,
+      "different_pixels": 69,
+      "painted_pixels": 78089,
+      "outline_autoclear": true,
+      "state_unchanged": true,
+      "webgl_error": 0
+    },
+    {
+      "mode": "original",
+      "frames": 60,
+      "width": 1048,
+      "height": 598,
+      "different_pixels": 49,
+      "painted_pixels": 78089,
+      "outline_autoclear": true,
+      "state_unchanged": true,
+      "webgl_error": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "outputs/map-weather-v1/qa/desktop-overview.png",
+      "bytes": 453077,
+      "sha256": "636553d478af6939900f98640503a72ae2e15d53c8e4529c353de213a90eb2ae"
+    },
+    {
+      "path": "outputs/map-weather-v1/qa/desktop-cloud.png",
+      "bytes": 442773,
+      "sha256": "c8ac782b0db4ea53aba5cd842ef6f74da014509e9cc926217cd101f5bcf4240f"
+    },
+    {
+      "path": "outputs/map-weather-v1/qa/desktop-storm-warning.png",
+      "bytes": 456612,
+      "sha256": "1b6b4b62c0a7a5f992641bb1968060a931847d9a5ea4f7f4f1a7173416c4351c"
+    },
+    {
+      "path": "outputs/map-weather-v1/qa/desktop-thermal-burst.png",
+      "bytes": 452145,
+      "sha256": "cba9905ec594196653df3239e2f64a0697a50bcc88710685b601d2ef47ab6d04"
+    },
+    {
+      "path": "outputs/map-weather-v1/qa/desktop-expression-standard.png",
+      "bytes": 444901,
+      "sha256": "68528d3a29b55ece65471c90cae1fa0610e4d64e3f25dc4ec60dbd2e9db4d790"
+    },
+    {
+      "path": "outputs/map-weather-v1/qa/desktop-expression-dramatic.png",
+      "bytes": 458888,
+      "sha256": "080286ad58128aad8fe5172a9677a2ad2f524ad68a44cc56ca8c6da511b25bf0"
+    },
+    {
+      "path": "outputs/map-weather-v1/qa/mobile.png",
+      "bytes": 155857,
+      "sha256": "7d972c18584a9b5261505ebc8ba509df874de73865dbdedf8eab084afc3c4f70"
+    }
+  ],
+  "errors": [
+    "ghosting-handdrawn-same-scene-pixel-equality",
+    "ghosting-cel-same-scene-pixel-equality",
+    "ghosting-original-same-scene-pixel-equality"
+  ],
+  "console_errors": [],
+  "external_requests": [],
+  "failed_requests": [],
+  "inputs": [
+    {
+      "path": "outputs/map-weather-v1/index.html",
+      "bytes": 5457714,
+      "sha256": "058113946bc2984fdbb3fd27fc52b4c4fd2ac48b1eee25c78b58f4b6dd095ddd"
+    },
+    {
+      "path": "outputs/map-weather-v1/build-manifest.json",
+      "bytes": 4154,
+      "sha256": "621baca9ccd17cd23aba2a8b61cbca8ab42e314d6031d3066c05fb7166f3c53a"
+    }
+  ],
+  "browser_version": "155.0.8059.40",
+  "browser_closed": true,
+  "finished_at": "2026-10-18T12:54:07.728Z",
+  "elapsed_seconds": 46.366,
+  "passed": false,
+  "output": {
+    "path": "outputs/map-weather-v1/index.html",
+    "bytes": 5457714,
+    "sha256": "058113946bc2984fdbb3fd27fc52b4c4fd2ac48b1eee25c78b58f4b6dd095ddd"
+  }
+}

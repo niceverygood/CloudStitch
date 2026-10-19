@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "passed": true,
+  "checks": [
+    {
+      "name": "two-input-voyages-and-persistent-restore",
+      "passed": true,
+      "detail": {
+        "sorties": [
+          {
+            "done": true,
+            "returned": true,
+            "steps": 185,
+            "observed": {
+              "hits": 17,
+              "detached": 1,
+              "recovered": 1,
+              "shots": 17,
+              "damage": 0
+            }
+          },
+          {
+            "done": true,
+            "returned": true,
+            "steps": 185,
+            "observed": {
+              "hits": 17,
+              "detached": 1,
+              "recovered": 1,
+              "shots": 17,
+              "damage": 0
+            }
+          }
+        ],
+        "resources": {
+          "S": 120,
+          "F": 40,
+          "C": 2
+        },
+        "parts": 9,
+        "settlements": 2,
+        "installed": 6,
+        "warehouse": 3,
+        "evidence": "Real controller movement/fire/salvage/return inputs. Simulated time accelerated. No teleport, direct damage or forced victory."
+      }
+    },
+    {
+      "name": "return-and-settlement-replay-no-duplication",
+      "passed": true,
+      "detail": {
+        "partCount": 7
+      }
+    },
+    {
+      "name": "pause-freezes-authoritative-state",
+      "passed": true,
+      "detail": {
+        "time": 0.09999999999999999
+      }
+    },
+    {
+      "name": "write-failure-does-not-depart-or-consume-id",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "corrupt-save-preserved",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "revision-conflict-preserves-unsaved-before-reload",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "actual-defeat-clear-and-same-voyage-retry",
+      "passed": true,
+      "detail": {
+        "enemyShots": 12,
+        "maxWarnings": 1
+      }
+    }
+  ],
+  "scope": "Headless integration over actual simulation inputs, not browser performance or human playtesting."
+}

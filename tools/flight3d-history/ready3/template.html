@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#e8eddf">
+  <title>Cloudstitch · 3D 비행 테스트</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="flight-space" aria-label="Cloudstitch 3D 비행 공간">
+    <div id="scene" aria-label="비행 공간"></div>
+    <div id="labels" aria-hidden="true"></div>
+    <div class="edge-shade" aria-hidden="true"></div>
+
+    <header class="top-bar">
+      <div class="brand"><span class="brand-star" aria-hidden="true">✦</span><div><strong>Cloudstitch</strong><span>3D 비행 테스트</span></div></div>
+      <div class="header-actions">
+        <button id="test-mode-button" class="mode-button" type="button" aria-pressed="false" title="적의 공격 켜기 또는 끄기">적 공격 <span class="button-state">끔</span></button>
+        <button id="camera-button" class="icon-button camera-button" type="button" title="뒤에서 보기" aria-label="뒤에서 보기">⌖</button>
+        <button id="help-button" class="icon-button" type="button" aria-label="조작 안내" aria-expanded="false" aria-controls="help-panel">?</button>
+        <button id="reset-button" class="icon-button" type="button" aria-label="처음부터 다시 시작" title="처음부터 다시 시작">↻</button>
+        <button id="pause-button" class="icon-button" type="button" aria-label="일시정지" title="일시정지 · Esc">Ⅱ</button>
+      </div>
+    </header>
+
+    <section class="objective-card paper" aria-label="비행 목표">
+      <span class="objective-mark" aria-hidden="true">◇</span>
+      <div><p class="eyebrow">이번 비행</p><h1 id="objective-text">구름 사이로, 위아래 자유롭게</h1><p id="objective-detail">고도를 바꾸며 부유 고리와 표적을 찾아보세요.</p></div>
+    </section>
+
+    <section class="ship-card paper" aria-label="비행선 상태">
+      <div class="ship-heading"><span>✦ 귀환호</span><span class="small-caps">자유 비행</span></div>
+      <div class="flight-readings">
+        <div class="altitude-reading"><span>고도</span><strong id="altitude-text">0</strong><span class="reading-unit">높이</span></div>
+        <div class="speed-reading"><span>속도</span><strong id="speed-text">0</strong></div>
+      </div>
+      <div class="hull-line"><span>선체</span><strong id="hull-text">100 / 100</strong></div>
+      <div class="hull-track" aria-hidden="true"><div id="hull-fill"></div></div>
+      <div class="boost-label"><span>가속 여유</span><span>Shift</span></div>
+      <div class="boost-track" aria-label="가속 여유"><div id="boost-fill"></div></div>
+    </section>
+
+    <section class="route-card paper" aria-label="주변 항로">
+      <div class="map-heading"><span>항로 수첩</span><span class="small-caps">위에서 본 항로</span></div>
+      <canvas id="map" width="188" height="156" aria-label="비행선, 고리, 표적의 위치"></canvas>
+      <div class="route-stats"><span>고리 <strong id="progress-text">0 / 6</strong></span><span>표적 <strong id="target-count">0 / 3</strong></span></div>
+      <div class="score-line"><span>획득 점수</span><strong id="score-text">0</strong></div>
+    </section>
+
+    <div id="crosshair" aria-hidden="true"><span></span><i></i><b></b></div>
+    <div id="target-hint" role="status"></div>
+
+    <aside id="help-panel" class="help-panel paper" aria-label="조작 안내" hidden>
+      <p class="eyebrow">비행 수첩 · 조작</p>
+      <dl class="controls-list">
+        <div><dt><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></dt><dd>W/S 전후진 · A/D 선회</dd></div>
+        <div><dt><kbd>Q</kbd> / <kbd>E</kbd></dt><dd>상승 / 하강</dd></div>
+        <div><dt><kbd>Shift</kbd> / <kbd>Space</kbd></dt><dd>가속 / 제동</dd></div>
+        <div><dt>마우스 왼쪽 클릭</dt><dd>사격</dd></div>
+        <div><dt>오른쪽 드래그 / 휠</dt><dd>시점 회전 / 거리</dd></div>
+        <div><dt><kbd>Esc</kbd></dt><dd>일시정지</dd></div>
+      </dl>
+      <p class="help-note">고리의 가운데 높이를 맞춰 통과하세요. 적 공격을 켜면 비행하며 교전을 시험할 수 있습니다.</p>
+    </aside>
+
+    <div class="bottom-strip">
+      <p id="status-text" role="status" aria-live="polite">바람을 따라 새로운 높이로.</p>
+      <p class="desktop-hints"><span>W/S 전후진 · A/D 선회</span><span>Q 상승 · E 하강</span><span>Shift 가속 · Space 제동</span><span>클릭 사격</span><span>우클릭 드래그 시점</span></p>
+    </div>
+
+    <div class="touch-controls" aria-label="터치 조작">
+      <div class="move-pad" aria-label="수평 이동">
+        <button type="button" data-move="forward" class="move-forward" aria-label="전진">▲</button>
+        <button type="button" data-move="left" class="move-left" aria-label="왼쪽 선회">↶</button>
+        <span class="pad-center" aria-hidden="true">✦</span>
+        <button type="button" data-move="right" class="move-right" aria-label="오른쪽 선회">↷</button>
+        <button type="button" data-move="back" class="move-back" aria-label="후진">▼</button>
+      </div>
+      <div class="touch-actions">
+        <div class="vertical-actions"><button id="up-button" type="button" aria-label="상승">↑ <span>상승</span></button><button id="down-button" type="button" aria-label="하강">↓ <span>하강</span></button></div>
+        <div class="combat-actions"><button id="fire-button" type="button" class="fire-button">✧ <span>사격</span></button><button id="boost-button" type="button">» <span>가속</span></button></div>
+      </div>
+    </div>
+
+    <section id="start-screen" class="screen-overlay" aria-label="3D 자유 비행 시작" hidden>
+      <div class="welcome-card paper">
+        <span class="welcome-emblem" aria-hidden="true">✦</span>
+        <p class="eyebrow">Cloudstitch · 3D 자유 비행</p>
+        <h2>같은 하늘, 다른 높이.</h2>
+        <p class="welcome-copy">비행선을 직접 움직여 구름 사이를 가로질러 보세요.<br class="desktop-break"> W로 전진하고 A/D로 천천히 돌아보세요. Q/E로 높이를 바꿉니다.</p>
+        <div class="flight-goals"><div><span>01</span><p>부유 고리의<br><strong>높이를 맞춰 통과</strong></p></div><div><span>02</span><p>서로 다른 높이의<br><strong>표적을 찾아 사격</strong></p></div><div><span>03</span><p>적 공격을 켜고<br><strong>입체 기동으로 교전</strong></p></div></div>
+        <div class="start-controls"><p><kbd>W/S</kbd> 전후진 <span>·</span> <kbd>A/D</kbd> 선회 <span>·</span> <kbd>Q</kbd> 상승 <span>·</span> <kbd>E</kbd> 하강</p><p>클릭 사격 <span>·</span> 우클릭 드래그 시점 <span>·</span> 휠 거리</p></div>
+        <p class="touch-intro">왼쪽 ▲▼로 전후진, ↶↷로 선회합니다. 오른쪽 버튼으로 상승·하강·사격하세요.</p>
+        <button id="start-button" type="button" class="primary-button">자유 비행 시작 <span aria-hidden="true">↗</span></button>
+        <p class="welcome-footnote">적 공격은 상단에서 언제든 켜거나 끌 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section id="pause-screen" class="screen-overlay" aria-label="일시정지" hidden>
+      <div class="pause-card paper"><span class="pause-emblem" aria-hidden="true">Ⅱ</span><p class="eyebrow">잠시, 숨을 고르는 중</p><h2>바람이 기다리고 있어요.</h2><p>시점과 항로를 살펴본 뒤 다시 날아보세요.</p><button id="resume-button" type="button" class="primary-button">비행 계속하기 <span aria-hidden="true">→</span></button><p class="welcome-footnote">Esc 키로도 계속할 수 있습니다.</p></div>
+    </section>
+
+    <section id="loading" class="screen-overlay loading-screen" aria-label="비행 준비">
+      <div class="loading-card paper"><span class="loading-emblem" aria-hidden="true">✦</span><p class="eyebrow">Cloudstitch</p><h2>하늘을 준비하고 있어요.</h2><p id="load-message" role="status">비행선과 항로를 불러오는 중입니다.</p><button id="retry-load" type="button" class="secondary-button" hidden>다시 불러오기</button></div>
+    </section>
+  </main>
+  <script type="module" src="./flight.js"></script>
+</body>
+</html>

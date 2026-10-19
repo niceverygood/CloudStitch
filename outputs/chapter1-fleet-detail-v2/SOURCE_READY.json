@@ -1,0 +1,52 @@
+{
+  "revision": "detail-source-r1",
+  "files": [
+    {
+      "path": "tools/chapter1-fleet-detail-v2/build.cjs",
+      "bytes": 3467,
+      "sha256": "a7b87e66872bcd76ea27179c2f4660b8af5bf72087ae90df2f4625e26d02c036"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/generate.mjs",
+      "bytes": 2962,
+      "sha256": "6d64268ec719eaf19261e5a269889b24a323ae13aae3c1097cc733b52e153de7"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/models.mjs",
+      "bytes": 23554,
+      "sha256": "c904284f0871124bef2eb6b7c80170a87382e3340ed5f6b17c8b9285794c752f"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/paint.cjs",
+      "bytes": 2838,
+      "sha256": "56e0a9ff555312ddbd847e74921bf152453d64040032380a1418c15c957ec0b1"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/qa.cjs",
+      "bytes": 8422,
+      "sha256": "8bc3fd2d2fc05d49f7d5d414cd49abb6a6fb7284c07b90d1ebbe9956e2bc4de8"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/review.js",
+      "bytes": 23763,
+      "sha256": "c4306dd90a633dc7414c33d187e69c1fefadfb277f5d653696827d516b9aa68d"
+    },
+    {
+      "path": "tools/chapter1-fleet-detail-v2/template.html",
+      "bytes": 25533,
+      "sha256": "5aaf959e0b7180d911a978ea2bc9938915d56d77f2b671ce93f882faac0fdb8f"
+    }
+  ],
+  "representatives": [
+    "scout",
+    "command",
+    "executor"
+  ],
+  "allModels": 11,
+  "commands": [
+    "node tools/chapter1-fleet-detail-v2/build.cjs --execute",
+    "node tools/chapter1-fleet-detail-v2/qa.cjs"
+  ],
+  "budget": "3 sequential exports; one context3models+samecamera before pages; no v1 re-export; no all11 before visual check",
+  "status": "source-ready-finite-pass-not-visual-approval"
+}

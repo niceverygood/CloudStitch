@@ -1,0 +1,89 @@
+{
+  "id": "shrapnel-burst",
+  "original_id": "shrapnel-burst",
+  "order": 30,
+  "name_ko": "파편 분산",
+  "name_en": "Shrapnel Burst",
+  "category": "explosion-environment",
+  "weapon_id": null,
+  "model": "assets/shrapnel-burst.glb",
+  "duration": 1.1,
+  "loop": false,
+  "purpose": "큰 덩이보다 튀는 작은 단단한 조각을 강조한다.",
+  "status": "residual_source_reviewed_render_pending",
+  "representative": false,
+  "placement_scale": 0.32,
+  "triangles": 1072,
+  "mesh_count": 8,
+  "animation_count": 1,
+  "bytes": 133576,
+  "sha256": "097a4dca6e22dabd183a19a3349d86c34965ce78caeae7b2afe75f72d27c5816",
+  "meshy_bases": [],
+  "runtime_features": [
+    "node extras.runtime_fade drives viewer opacity; standard GLB uses TRS alone"
+  ],
+  "source_type": "Local authored swept brush/fabric volumes and TRS",
+  "task_ids": [],
+  "new_paid_task_for_this_effect": false,
+  "axes": "+Y up, +Z forward, +Y impact surface normal",
+  "limits": [
+    "Art choreography prototype; runtime combat integration pending.",
+    "GLB embeds standardTRS only. Runtime opacity/outline/cel are separate browser features.",
+    "Fixed projectile movement belongs to preview clip; disable root translation when gameplay projectile owns motion.",
+    "Only representative6 initially receives direct visual review; catalog status records later checks."
+  ],
+  "visual_reviewed": false,
+  "review_scope": "File/TRS checks only; visual review pending.",
+  "verification": {
+    "structure": "verification/structure.json",
+    "browser": null
+  },
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/core.cjs",
+      "bytes": 9366,
+      "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+    },
+    {
+      "path": "tools/combat-vfx-v2/generate.cjs",
+      "bytes": 4019,
+      "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/secondary.cjs",
+      "bytes": 15360,
+      "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+    }
+  ],
+  "output_file": {
+    "path": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb",
+    "bytes": 133576,
+    "sha256": "097a4dca6e22dabd183a19a3349d86c34965ce78caeae7b2afe75f72d27c5816"
+  },
+  "art_preflight_review": {
+    "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+    "status": "source_binary_reviewed_new_render_required",
+    "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+    "concerns": [
+      "실제 GLB 칩 최대폭0.055/높이0.095는 게임 크기에서 점으로 묻힐 위험이 높다.",
+      "칩의 디테일보다 4방향 분산 동작이 역할을 읽혀야 하므로 증거 없이 개수를 늘리거나 전체를 확대하지 않았다."
+    ],
+    "expected_observations": [
+      "0.05~0.42cycle에 4개의 굵기가 실제 화면 픽셀로 식별되는지 확인한다.",
+      "희소한 파편이 선체 윤곽과 재질피격을 과하게 중복하지 않는지 확인한다."
+    ],
+    "loop_boundary_sample_seconds": [],
+    "sample_times_seconds": [
+      0.055,
+      0.198,
+      0.462,
+      0.825
+    ],
+    "current_output": {
+      "path": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb",
+      "bytes": 133576,
+      "sha256": "097a4dca6e22dabd183a19a3349d86c34965ce78caeae7b2afe75f72d27c5816"
+    },
+    "scope": "Source/binary review only; queued fresh renders are not completed art approval."
+  }
+}

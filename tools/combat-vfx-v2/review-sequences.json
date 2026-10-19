@@ -1,0 +1,781 @@
+{
+  "game_title": "Cloudstitch",
+  "date": "2026-10-18",
+  "review_scope": "Read-only binary/source audit of six v2 choreography GLBs plus one narrow source correction. No browser, fresh render, paid call, dependency install or output regeneration performed.",
+  "status": "source_audit_complete_requires_regeneration_and_new_render",
+  "source": {
+    "path": "tools/combat-vfx-v2/sequences.mjs",
+    "bytes": 24847,
+    "sha256": "677347ee413c827c71f9d9de9ff08a910f2f44971c64c976286b5a246647d83f"
+  },
+  "changed_sequence_ids": [
+    "03-mortar"
+  ],
+  "metadata_changed_sequence_ids": [
+    "01-machine-gun",
+    "02-deck-cannon",
+    "03-mortar",
+    "04-harpoon",
+    "05-chain-shot",
+    "06-flamethrower"
+  ],
+  "root_regenerate_all_six": true,
+  "shared_contract": {
+    "axes": {
+      "up": "+Y",
+      "muzzle": "+Z",
+      "impact_source_normal": "+Y",
+      "preview_impact_normal_after_wrapper": "-Z"
+    },
+    "preview_motion_owner": "choreography_clip_preview_only",
+    "runtime_motion_owner": "battlefield projectile",
+    "standard_gltf": "One standard translation/rotation/scale animation clip. Parent gate uses scale .001, not literal invisibility.",
+    "runtime_fade": "extras.runtime_fade is retimed into sequence seconds and requires separate per-instance opacity code; it is not a standard material animation.",
+    "outline": "Separate runtime feature; OutlineEffect.autoClear=true must remain. Faded mesh outline policy is integration-owned.",
+    "runtime_selection": "Per-effect v2 opt-in after binding/material/lifecycle validation; missing or unverified v2 uses v1 fallback. Sequence GLBs are previews and never hit/damage authorities.",
+    "muzzle_authority": "Sequence approximate_muzzle is geometry-derived, not current rig muzzleFrame authority.",
+    "pool_reset": [
+      "action/mixer stop + time0",
+      "restore root and child TRS",
+      "restore per-instance opacity/outline",
+      "detach parent/host",
+      "clear projectile/target/rope endpoints",
+      "restore loop and preview motion state"
+    ],
+    "paid_credits_for_review": 0
+  },
+  "items": [
+    {
+      "id": "01-machine-gun",
+      "status": "requires_new_render",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.06,
+        0.4,
+        0.85,
+        1.25,
+        1.8,
+        2
+      ],
+      "expected_observations": [
+        "0.06s: a compact directional muzzle flick leaves barrel details readable.",
+        "0.4s: one payload travels along local +Z; moving_payload geometry remains separate from the velocity tail.",
+        "0.85s: payload arrives at local Z4 and impact begins; hit choreography is preview timing only.",
+        "1.8s→2s: impact ends, then effect wrappers reduce to scale .001; optional repeat restarts without old opacity or parent state."
+      ],
+      "output_snapshot": {
+        "path": "outputs/combat-vfx-v2/sequences/01-machine-gun.glb",
+        "bytes": 7226932,
+        "sha256": "8bd38da5c67ddca26017770cae09e87d16c73875eeb7c00c7becda8553cdbd34",
+        "clip_names": [
+          "01-machine-gun_attack_sequence_v2"
+        ],
+        "loop": true,
+        "loop_policy": "Optional comparison repeat; gameplay one-shots must use LoopOnce and real state lifetime.",
+        "target_distance": 4,
+        "final_hold_seconds": 0.2
+      },
+      "original_weapon": {
+        "path": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+        "bytes": 3299860,
+        "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6",
+        "recorded_sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6",
+        "unchanged": true
+      },
+      "weapon_copy_evidence": {
+        "attributes": {
+          "POSITION": {
+            "source_sha256": "8c7ffb6ce3911e2bab19a0f7aa9aa84c726376548e35aeb47160c7f1107ad491",
+            "composed_sha256": "8c7ffb6ce3911e2bab19a0f7aa9aa84c726376548e35aeb47160c7f1107ad491",
+            "identical": true
+          },
+          "NORMAL": {
+            "source_sha256": "05a9c49ba6cbf5098ca364365205fbe51ad16ecf26e8392ff9338fa596db8df4",
+            "composed_sha256": "05a9c49ba6cbf5098ca364365205fbe51ad16ecf26e8392ff9338fa596db8df4",
+            "identical": true
+          },
+          "TEXCOORD_0": {
+            "source_sha256": "b96a41d45ebba83667f0b88296506ce7eecdc83225275febfc2b6add23a3fe2b",
+            "composed_sha256": "b96a41d45ebba83667f0b88296506ce7eecdc83225275febfc2b6add23a3fe2b",
+            "identical": true
+          }
+        },
+        "indices_identical": true,
+        "embedded_images": [
+          {
+            "index": 0,
+            "source_sha256": "7dd2de14726b5dc0533222893c919e9faaabff8c6849b6ca94cce8912639c6eb",
+            "composed_sha256": "7dd2de14726b5dc0533222893c919e9faaabff8c6849b6ca94cce8912639c6eb",
+            "identical": true
+          }
+        ],
+        "source_zero_normals": 0,
+        "composed_zero_normals": 0,
+        "normal_vectors_modified_in_copy": 0,
+        "source_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "composed_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "texture_mapping_preserved": true
+      },
+      "components": [
+        {
+          "id": "machine-gun-muzzle",
+          "path": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+          "bytes": 3733736,
+          "sha256": "b77da528fb42f4befdfbbefc162fbaa22e367903911300b53db912f650c4a7a8",
+          "source_duration": 0.20000000298023224,
+          "start": 0,
+          "end": 0.2,
+          "visible_until": 0.2,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "machine-gun-projectile",
+          "path": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb",
+          "bytes": 59028,
+          "sha256": "9fede02363cd212d3ac628ecc51c7114c47f5646aa91944ee2c00f815138dbac",
+          "source_duration": 0.44999998807907104,
+          "start": 0.12,
+          "end": 0.85,
+          "visible_until": 0.85,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "machine-gun-hit",
+          "path": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb",
+          "bytes": 117336,
+          "sha256": "10561ff655c101b7efef1805e774d3aec6ebef2dcf0e5c7886da4f0dcc87e4b0",
+          "source_duration": 0.3499999940395355,
+          "start": 0.84,
+          "end": 1.8,
+          "visible_until": 1.8,
+          "source_hash_matches_embedded_record": true
+        }
+      ]
+    },
+    {
+      "id": "02-deck-cannon",
+      "status": "requires_new_render",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.4,
+        0.85,
+        1.25,
+        1.55,
+        2.2,
+        2.7,
+        2.8
+      ],
+      "expected_observations": [
+        "0.12s→0.4s: pressure/fire/smoke are distinct beats with room around barrel.",
+        "0.85s: a single cannon payload moves along +Z; the abstract target is four local units from the spawn.",
+        "1.25s→2.2s: impact flame then smoke follows the source timeline; source authored cannon-hit root scale is preserved.",
+        "2.7s→2.8s: effect wrappers finish then remain tiny for a clean hold before optional comparison repeat."
+      ],
+      "output_snapshot": {
+        "path": "outputs/combat-vfx-v2/sequences/02-deck-cannon.glb",
+        "bytes": 18979276,
+        "sha256": "dd2c47d51bc065efc959087c16b7215901b7a1d7c5b9156504f1b652b5b77fde",
+        "clip_names": [
+          "02-deck-cannon_attack_sequence_v2"
+        ],
+        "loop": true,
+        "loop_policy": "Optional comparison repeat; gameplay one-shots must use LoopOnce and real state lifetime.",
+        "target_distance": 4,
+        "final_hold_seconds": 0.1
+      },
+      "original_weapon": {
+        "path": "outputs/weapon-modules/02-deck-cannon/weapon.glb",
+        "bytes": 3961552,
+        "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+        "recorded_sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+        "unchanged": true
+      },
+      "weapon_copy_evidence": {
+        "attributes": {
+          "POSITION": {
+            "source_sha256": "834656406d9bf70ae00359781f369f87322ccf8be9899e35d1c76f14bc1c70d0",
+            "composed_sha256": "834656406d9bf70ae00359781f369f87322ccf8be9899e35d1c76f14bc1c70d0",
+            "identical": true
+          },
+          "NORMAL": {
+            "source_sha256": "79993ccf6856dd673640b9d1bdc951ca164f6c3272e09363e037566cf09d2d5a",
+            "composed_sha256": "79993ccf6856dd673640b9d1bdc951ca164f6c3272e09363e037566cf09d2d5a",
+            "identical": true
+          },
+          "TEXCOORD_0": {
+            "source_sha256": "ff1970430d26b80a8128813708c79eab1479234c1e346e89e73316370b239e60",
+            "composed_sha256": "ff1970430d26b80a8128813708c79eab1479234c1e346e89e73316370b239e60",
+            "identical": true
+          }
+        },
+        "indices_identical": true,
+        "embedded_images": [
+          {
+            "index": 0,
+            "source_sha256": "18660ff6468352f8efcb781ee4a6adb1b5e0ed98ecc4525382e41a99d2d239db",
+            "composed_sha256": "18660ff6468352f8efcb781ee4a6adb1b5e0ed98ecc4525382e41a99d2d239db",
+            "identical": true
+          }
+        ],
+        "source_zero_normals": 0,
+        "composed_zero_normals": 0,
+        "normal_vectors_modified_in_copy": 0,
+        "source_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "composed_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "texture_mapping_preserved": true
+      },
+      "components": [
+        {
+          "id": "cannon-muzzle",
+          "path": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb",
+          "bytes": 7464616,
+          "sha256": "845495596e9d801f0f19ebcfb9aa55efc3d59bd6f1cb44e9a1fbeffd09c0a42b",
+          "source_duration": 0.44999998807907104,
+          "start": 0,
+          "end": 0.55,
+          "visible_until": 0.55,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "cannon-projectile",
+          "path": "outputs/combat-vfx-v2/assets/cannon-projectile.glb",
+          "bytes": 59000,
+          "sha256": "e7b20e7b91ba723cea791c8a521615ef640f0dcd7f4c0dffbb39a3e4625d3b1b",
+          "source_duration": 0.800000011920929,
+          "start": 0.3,
+          "end": 1.25,
+          "visible_until": 1.25,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "cannon-hit",
+          "path": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+          "bytes": 7474808,
+          "sha256": "f6429ec4bbeb84524c09738822851a062d11efb2f94fcdb964cb1d66fede22ac",
+          "source_duration": 0.75,
+          "start": 1.24,
+          "end": 2.7,
+          "visible_until": 2.7,
+          "source_hash_matches_embedded_record": true
+        }
+      ]
+    },
+    {
+      "id": "03-mortar",
+      "status": "requires_new_render",
+      "changes": [
+        "Rotate only mortar-launch wrapper Rx(-PI/2) so source +Z emerges upward. Projectile arc and target Z4 are unchanged.",
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.3,
+        0.65,
+        1.24,
+        1.75,
+        2.4,
+        3.4,
+        3.5
+      ],
+      "expected_observations": [
+        "0.12s: launch volume emerges upward from the estimated top opening; wrapper Rx(-PI/2) maps source +Z to world +Y.",
+        "0.65s→1.24s: projectile preserves its own +Y arc and +Z progress; whole projectile wrapper is not rotated.",
+        "1.75s: payload returns to local Y0 at local Z4, aligned with the target and impact.",
+        "3.4s→3.5s: impact finishes and the final hold clears effects before optional repeat."
+      ],
+      "output_snapshot": {
+        "path": "outputs/combat-vfx-v2/sequences/03-mortar.glb",
+        "bytes": 18692364,
+        "sha256": "609630a9e8625494fa0249326e17865f78188b39855d99a320559f7fa0830a5f",
+        "clip_names": [
+          "03-mortar_attack_sequence_v2"
+        ],
+        "loop": true,
+        "loop_policy": "Optional comparison repeat; gameplay one-shots must use LoopOnce and real state lifetime.",
+        "target_distance": 4,
+        "final_hold_seconds": 0.1
+      },
+      "original_weapon": {
+        "path": "outputs/weapon-modules/03-mortar/weapon.glb",
+        "bytes": 3674748,
+        "sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f",
+        "recorded_sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f",
+        "unchanged": true
+      },
+      "weapon_copy_evidence": {
+        "attributes": {
+          "POSITION": {
+            "source_sha256": "3bc51740910c57cb6904fbad84400f54fef75cfacf3849d5927fb07d98bf9965",
+            "composed_sha256": "3bc51740910c57cb6904fbad84400f54fef75cfacf3849d5927fb07d98bf9965",
+            "identical": true
+          },
+          "NORMAL": {
+            "source_sha256": "c4cbd809ea61878efa37f5e6ae2a928932ca1dab61229ac04659af598659fcca",
+            "composed_sha256": "c4cbd809ea61878efa37f5e6ae2a928932ca1dab61229ac04659af598659fcca",
+            "identical": true
+          },
+          "TEXCOORD_0": {
+            "source_sha256": "2ade0b6f822c568bb849ee2ff8d5b524cfcb45e249cc26b45d6a8e2bb0a80d4d",
+            "composed_sha256": "2ade0b6f822c568bb849ee2ff8d5b524cfcb45e249cc26b45d6a8e2bb0a80d4d",
+            "identical": true
+          }
+        },
+        "indices_identical": true,
+        "embedded_images": [
+          {
+            "index": 0,
+            "source_sha256": "1d2a990f3eebfd436e8a532e174e7747cc36f5c2b4b4737fad8fcd4b2b3d31c6",
+            "composed_sha256": "1d2a990f3eebfd436e8a532e174e7747cc36f5c2b4b4737fad8fcd4b2b3d31c6",
+            "identical": true
+          }
+        ],
+        "source_zero_normals": 0,
+        "composed_zero_normals": 0,
+        "normal_vectors_modified_in_copy": 0,
+        "source_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "composed_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "texture_mapping_preserved": true
+      },
+      "components": [
+        {
+          "id": "mortar-launch",
+          "path": "outputs/combat-vfx-v2/assets/mortar-launch.glb",
+          "bytes": 7405632,
+          "sha256": "97aa1c00f318f563e8b8846a727b66a93fd145d1f7358c4fbbc8e67bc28b0e5c",
+          "source_duration": 0.6000000238418579,
+          "start": 0,
+          "end": 0.55,
+          "visible_until": 0.55,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "mortar-projectile",
+          "path": "outputs/combat-vfx-v2/assets/mortar-projectile.glb",
+          "bytes": 59004,
+          "sha256": "9cbc4998b92a89e02833af94e670f1a941445faf332dc50af3eb685ff5befb1f",
+          "source_duration": 1.600000023841858,
+          "start": 0.3,
+          "end": 1.75,
+          "visible_until": 1.75,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "mortar-hit",
+          "path": "outputs/combat-vfx-v2/assets/mortar-hit.glb",
+          "bytes": 7533452,
+          "sha256": "dec91a6aa76c1c7799184da23e02cb128f8a636fe981876614bb5c66e8bf40cd",
+          "source_duration": 1.2000000476837158,
+          "start": 1.74,
+          "end": 3.4,
+          "visible_until": 3.4,
+          "source_hash_matches_embedded_record": true
+        }
+      ]
+    },
+    {
+      "id": "04-harpoon",
+      "status": "requires_new_render",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.5,
+        1.3,
+        1.8,
+        2.68,
+        2.7,
+        2.704,
+        2.8
+      ],
+      "expected_observations": [
+        "0.5s: rope grows from local Z0 toward the moving head without moving its muzzle endpoint.",
+        "1.3s: head reaches local Z4; source head scale remains [1,1,1] and source rope scale holds Z4.",
+        "1.8s and 2.68s: cable and head are still visible after arrival; this is preview cable geometry, not runtime rope physics.",
+        "2.7s: cable/head wrapper still holds its final pose; 2.704s and 2.8s: wrapper is tiny after the 2ms removal gate.",
+        "Optional repeat resets animation and endpoints; no previous cable remains."
+      ],
+      "output_snapshot": {
+        "path": "outputs/combat-vfx-v2/sequences/04-harpoon.glb",
+        "bytes": 11455920,
+        "sha256": "d47bf29ea0e38ee53e451d3d1efed6cb5c2d9123e2b05041d5240bdc912a3016",
+        "clip_names": [
+          "04-harpoon_attack_sequence_v2"
+        ],
+        "loop": true,
+        "loop_policy": "Optional comparison repeat; gameplay one-shots must use LoopOnce and real state lifetime.",
+        "target_distance": 4,
+        "final_hold_seconds": 0.1
+      },
+      "original_weapon": {
+        "path": "outputs/weapon-modules/04-harpoon/weapon.glb",
+        "bytes": 3777952,
+        "sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64",
+        "recorded_sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64",
+        "unchanged": true
+      },
+      "weapon_copy_evidence": {
+        "attributes": {
+          "POSITION": {
+            "source_sha256": "96b3cb898a36d78cd2f448a0538a0026f364e319e2d02f087b32b2acb3c85453",
+            "composed_sha256": "96b3cb898a36d78cd2f448a0538a0026f364e319e2d02f087b32b2acb3c85453",
+            "identical": true
+          },
+          "NORMAL": {
+            "source_sha256": "a2e1613f7ee88dbd7fdfee6c59a48308a021eb4a81342128b556d011b864be4c",
+            "composed_sha256": "a2e1613f7ee88dbd7fdfee6c59a48308a021eb4a81342128b556d011b864be4c",
+            "identical": true
+          },
+          "TEXCOORD_0": {
+            "source_sha256": "6fdf6a5a2926332316760c0933cb05d33f840266b198fa75e71e9d41a1b2bfd8",
+            "composed_sha256": "6fdf6a5a2926332316760c0933cb05d33f840266b198fa75e71e9d41a1b2bfd8",
+            "identical": true
+          }
+        },
+        "indices_identical": true,
+        "embedded_images": [
+          {
+            "index": 0,
+            "source_sha256": "dd316bf1779230f017127423ee994142ceb019a4f381a691ad1f6ff41d665ab8",
+            "composed_sha256": "dd316bf1779230f017127423ee994142ceb019a4f381a691ad1f6ff41d665ab8",
+            "identical": true
+          }
+        ],
+        "source_zero_normals": 0,
+        "composed_zero_normals": 0,
+        "normal_vectors_modified_in_copy": 0,
+        "source_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "composed_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "texture_mapping_preserved": true
+      },
+      "components": [
+        {
+          "id": "harpoon-launch",
+          "path": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+          "bytes": 7434552,
+          "sha256": "af618b09841ca46c89dd40bbc1f5257d7459ae7a66efcf8aa4d9fc26e64b3f35",
+          "source_duration": 0.3499999940395355,
+          "start": 0,
+          "end": 0.4,
+          "visible_until": 0.4,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "harpoon-projectile",
+          "path": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb",
+          "bytes": 77784,
+          "sha256": "467da74e607d66f8ff28997d88a981bb6ce4f2a0495f4e7468f0ba45c637dd59",
+          "source_duration": 1,
+          "start": 0.2,
+          "end": 1.3,
+          "visible_until": 2.7,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "harpoon-hit",
+          "path": "outputs/combat-vfx-v2/assets/harpoon-hit.glb",
+          "bytes": 147540,
+          "sha256": "25fa2edced6e2c3bb53dc62bb7274827237bc9f4c3a6a58ab5b6e4f5336775ba",
+          "source_duration": 0.6499999761581421,
+          "start": 1.29,
+          "end": 2.7,
+          "visible_until": 2.7,
+          "source_hash_matches_embedded_record": true
+        }
+      ]
+    },
+    {
+      "id": "05-chain-shot",
+      "status": "requires_new_render",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.1,
+        0.4,
+        0.8,
+        1.25,
+        1.55,
+        2.7,
+        2.8
+      ],
+      "expected_observations": [
+        "0.4s→0.8s: two small linked weights travel as a single moving_payload subtree and rotate locally.",
+        "1.25s: geometry reaches local Z4 before impact; runtime must not also apply baked clip travel.",
+        "1.55s: material shavings remain subordinate to the weapon and target.",
+        "2.7s→2.8s: wrapper clears for the final hold; source texture stays unchanged and only copied zero normals may differ."
+      ],
+      "output_snapshot": {
+        "path": "outputs/combat-vfx-v2/sequences/05-chain-shot.glb",
+        "bytes": 11353676,
+        "sha256": "b040db4ae1445bb1cd3c5630b56061d12c1e290095bb2a4e4c345b4d1c529116",
+        "clip_names": [
+          "05-chain-shot_attack_sequence_v2"
+        ],
+        "loop": true,
+        "loop_policy": "Optional comparison repeat; gameplay one-shots must use LoopOnce and real state lifetime.",
+        "target_distance": 4,
+        "final_hold_seconds": 0.1
+      },
+      "original_weapon": {
+        "path": "outputs/weapon-modules/05-chain-shot/weapon.glb",
+        "bytes": 3654140,
+        "sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219",
+        "recorded_sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219",
+        "unchanged": true
+      },
+      "weapon_copy_evidence": {
+        "attributes": {
+          "POSITION": {
+            "source_sha256": "4fb13af2adb443dc44aaebc6039b7a3f7c05add343898903e573fad76aebb4fa",
+            "composed_sha256": "4fb13af2adb443dc44aaebc6039b7a3f7c05add343898903e573fad76aebb4fa",
+            "identical": true
+          },
+          "NORMAL": {
+            "source_sha256": "3ae87578c49aeb832d96f1852140ff09f840ee0f425938f2e909e25ab29e1e2f",
+            "composed_sha256": "505169bb6eb1d989ab0b77db6b961f1711af3cea2327c45dc7090a98046f38b1",
+            "identical": false
+          },
+          "TEXCOORD_0": {
+            "source_sha256": "4a3c910173c772326aaffcde515754398bd8dfd2ed76c9e2ac6b94d535789f6c",
+            "composed_sha256": "4a3c910173c772326aaffcde515754398bd8dfd2ed76c9e2ac6b94d535789f6c",
+            "identical": true
+          }
+        },
+        "indices_identical": true,
+        "embedded_images": [
+          {
+            "index": 0,
+            "source_sha256": "fe29f4c6e89da9e515ea7a0ac2c051de8f671b9ed666003dddeebd50178b0d69",
+            "composed_sha256": "fe29f4c6e89da9e515ea7a0ac2c051de8f671b9ed666003dddeebd50178b0d69",
+            "identical": true
+          }
+        ],
+        "source_zero_normals": 4,
+        "composed_zero_normals": 0,
+        "normal_vectors_modified_in_copy": 4,
+        "source_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "composed_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "texture_mapping_preserved": true
+      },
+      "components": [
+        {
+          "id": "chain-shot-launch",
+          "path": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb",
+          "bytes": 7434532,
+          "sha256": "d9745c73a7c1839700a00bb44536145f8d7e463754d9d8bc104bac59895d68cf",
+          "source_duration": 0.5,
+          "start": 0,
+          "end": 0.4,
+          "visible_until": 0.4,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "chain-shot-projectile",
+          "path": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb",
+          "bytes": 68460,
+          "sha256": "0e95f9735bd403a096c94c92d287ee6cd8ef5726a728be4c82271e226184c08a",
+          "source_duration": 1.100000023841858,
+          "start": 0.2,
+          "end": 1.25,
+          "visible_until": 1.25,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "chain-shot-hit",
+          "path": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb",
+          "bytes": 177432,
+          "sha256": "faad618e27747240aa92e9cf2fa619a82c8d1888b0de137c1e2def4f4ae64ff5",
+          "source_duration": 1,
+          "start": 1.24,
+          "end": 2.7,
+          "visible_until": 2.7,
+          "source_hash_matches_embedded_record": true
+        }
+      ]
+    },
+    {
+      "id": "06-flamethrower",
+      "status": "requires_new_render",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render must check authored stream scale1.8 against local target distance1.85. Source reach and temporal overlap do not prove visual contact.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.3,
+        0.6,
+        1.1,
+        1.7,
+        2.55,
+        2.6,
+        2.9,
+        3
+      ],
+      "expected_observations": [
+        "0.12s: ignition is small; 0.3s: ignition overlaps the beginning of the stream.",
+        "0.6s→1.7s: ignition 0–0.4s, stream 0.15–2.6s and contact 0.5–2.9s form one overlapping flow, not three ballistic shots.",
+        "Stream authored root scale1.8 is retained. Verify stream visually reaches the target at local Z1.85 without hiding the entire target; geometry reach alone is not art approval.",
+        "2.6s→2.9s: stream ends before contact/after-smoke; 3s final hold is clean before optional repeat."
+      ],
+      "output_snapshot": {
+        "path": "outputs/combat-vfx-v2/sequences/06-flamethrower.glb",
+        "bytes": 22240256,
+        "sha256": "df7a9416f54534796fa717238b52808c67e8b7fb26d3ba647cb51db885d21d35",
+        "clip_names": [
+          "06-flamethrower_attack_sequence_v2"
+        ],
+        "loop": true,
+        "loop_policy": "Optional comparison repeat; gameplay one-shots must use LoopOnce and real state lifetime.",
+        "target_distance": 1.85,
+        "final_hold_seconds": 0.1
+      },
+      "original_weapon": {
+        "path": "outputs/weapon-modules/06-flamethrower/weapon.glb",
+        "bytes": 3776868,
+        "sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd",
+        "recorded_sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd",
+        "unchanged": true
+      },
+      "weapon_copy_evidence": {
+        "attributes": {
+          "POSITION": {
+            "source_sha256": "3121922b264ccbcbdfcec7671a8406b783b9af9e9595a6d5273db683706bfed3",
+            "composed_sha256": "3121922b264ccbcbdfcec7671a8406b783b9af9e9595a6d5273db683706bfed3",
+            "identical": true
+          },
+          "NORMAL": {
+            "source_sha256": "bf12555c2cf8b8565b95b2542b2ab691347918bfefb836970102fcf7198f6849",
+            "composed_sha256": "bf12555c2cf8b8565b95b2542b2ab691347918bfefb836970102fcf7198f6849",
+            "identical": true
+          },
+          "TEXCOORD_0": {
+            "source_sha256": "315ddaf57fc882b9290d39d916908d479c73fcbeffdebd68217ec8047a3584a2",
+            "composed_sha256": "315ddaf57fc882b9290d39d916908d479c73fcbeffdebd68217ec8047a3584a2",
+            "identical": true
+          }
+        },
+        "indices_identical": true,
+        "embedded_images": [
+          {
+            "index": 0,
+            "source_sha256": "7799aa39d5522557e42a27f220de01d1250d9712326acb8a0bf11b98384b85ac",
+            "composed_sha256": "7799aa39d5522557e42a27f220de01d1250d9712326acb8a0bf11b98384b85ac",
+            "identical": true
+          }
+        ],
+        "source_zero_normals": 0,
+        "composed_zero_normals": 0,
+        "normal_vectors_modified_in_copy": 0,
+        "source_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "composed_material_baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "texture_mapping_preserved": true
+      },
+      "components": [
+        {
+          "id": "flamethrower-ignite",
+          "path": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+          "bytes": 7405756,
+          "sha256": "10d4755b6e527493f55b93f3733b72e6b489ada9c76fe60e64af990f7682270a",
+          "source_duration": 0.4000000059604645,
+          "start": 0,
+          "end": 0.4,
+          "visible_until": 0.4,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "flamethrower-stream",
+          "path": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+          "bytes": 3690504,
+          "sha256": "160308a30de3080c7307766c52f67e47c0305d7f6ebba56aca3d89729ec9c077",
+          "source_duration": 1.2000000476837158,
+          "start": 0.15,
+          "end": 2.6,
+          "visible_until": 2.6,
+          "source_hash_matches_embedded_record": true
+        },
+        {
+          "id": "flamethrower-hit",
+          "path": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+          "bytes": 7348288,
+          "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97",
+          "source_duration": 0.8999999761581421,
+          "start": 0.5,
+          "end": 2.9,
+          "visible_until": 2.9,
+          "source_hash_matches_embedded_record": true
+        }
+      ]
+    }
+  ]
+}

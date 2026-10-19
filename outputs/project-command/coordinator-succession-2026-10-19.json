@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-19T03:22:11Z",
+  "localDate": "2026-10-19",
+  "currentCoordinatorThreadId": "01a1522b-4473-78d1-9840-e140b88e9c35",
+  "currentCoordinatorTitle": "Cloudstitch 총괄 이어가기",
+  "previousCoordinatorThreadId": "01a14dc7-786a-72d1-a413-d016665d2cfe",
+  "authorization": {
+    "source": "direct human messages in current chat",
+    "successionRequest": "총괄세션이 더이상 채팅이 안되 이세션에서 이어가자",
+    "implementationRequest": "지금까지 만든 주인공함선과 적군함선들 활용해서 1탄 맵 만들기 세션에 1탄 구현하게 만들어줘",
+    "referenceUrl": "http://127.0.0.1:8840/outputs/ship-weapon-attack-v1/index.html"
+  },
+  "preservation": {
+    "existingWorkingTreeChangesPreserved": true,
+    "previousCoordinationAuthorizationAndQaEvidencePreserved": true,
+    "oldChatsNotRecreatedOrUnarchived": true,
+    "newUserChatAutomationPaidGenerationDeployOrPush": false
+  },
+  "chapter1": {
+    "ownerThreadId": "01a1522a-83b6-7e41-8c72-cdb52ee34e60",
+    "ownerTitle": "1탄 맵 만들어줘",
+    "source": "tools/chapter1-map-v1/",
+    "output": "outputs/chapter1-map-v1/",
+    "implementationRequestToolAccepted": true,
+    "ownerReportedReceiptAndImplementationInProgress": true,
+    "currentScope": "Existing hero and chapter1 enemy models in Jonghang departure, wreck crossroads and outer-sea blockade/rescue, with real combat, salvage and return",
+    "singleAuthority": "tools/battlefield/integration.mjs and sim.mjs; existing harbor/save modules through owned adapters",
+    "noNewSharedOrOtherOwnerSourceWrites": true,
+    "readonlyInputs": [
+      "outputs/ship-weapon-harmony-v1/READY-r2.json",
+      "outputs/ship-weapon-harmony-v1/placement.json",
+      "outputs/ship-weapon-harmony-v1/mobility-assembled.glb",
+      "outputs/ship-weapon-harmony-v1/artillery-assembled.glb",
+      "outputs/ship-weapon-harmony-v1/salvage-assembled.glb",
+      "outputs/ship-weapon-attack-v1/READY-final-r1.json",
+      "outputs/chapter1-fleet-detail-v2/READY.json",
+      "outputs/chapter1-fleet-detail-v2/catalog.json",
+      "outputs/chapter1-boss-grand-v2/boss.glb",
+      "outputs/stage-maps-v1/README.md",
+      "outputs/stage-maps-v1/runtime-verification.json",
+      "outputs/project-command/local-locations.json"
+    ],
+    "assetLimits": "Detailed art GLBs are not collider, AI, stat or full weapon implementations. Attack comparison is a fixed-target visual/audio demonstration. Do not infer simulation modules from decorative mesh count.",
+    "displayPolicy": "Preserve source GLBs and textures; load active encounters only and block simulation while required models load. Keep chapter2 assets out of chapter1.",
+    "technicalAndHumanArtApprovalSeparate": true,
+    "sourceReadyReceived": false,
+    "newExecutableVerified": false,
+    "newBrowserQaPassed": false,
+    "latestCpuProgress": {
+      "sourceFilesOwnerReported": 24,
+      "readonlyGlbsOwnerReported": 5,
+      "outputFilesOwnerReported": 3,
+      "cpuTestsPassedOwnerReported": 7,
+      "fourWaveFixtureIsSeparateFromBrowserPlay": true,
+      "draftSourceReadyExistsButQaHarnessAndFinalPinsPending": true,
+      "actualBrowserRunsOwnerReported": 0,
+      "newSaveOrAutoSaveImplemented": false,
+      "recommendedReviewPort": 8851,
+      "existing8840MustRemainUnchanged": true,
+      "port8851NotListeningAtOneObservation": true,
+      "mandatoryRecheckBeforeServerStart": true
+    },
+    "heavySlot": {
+      "state": "PENDING_EXACT_SOURCE_READY",
+      "requestedSeconds": "120-180, owner estimate; exact scope and budget at READY",
+      "startGranted": false,
+      "coordinatorThreadId": "01a1522b-4473-78d1-9840-e140b88e9c35",
+      "policy": "One browser, sequential checks, preserve failure reports and post-input pins, finally close before returning slot; no repeat of existing full asset suites"
+    },
+    "additionalAssetDetailMessage": "Supplementary asset and reservation messages hit an active-turn steering boundary; primary implementation and succession message was accepted, and owner independently reported the exact same hero, chapter1 enemy and boss paths. Existing requirement to await READY and START remains in primary message and COORDINATION files."
+  },
+  "chapter2": {
+    "ownerThreadId": "01a151d7-7dc3-7191-a7d8-9a299ad2f534",
+    "successionNoticeToolAccepted": true,
+    "currentOwnerScope": "Direct user requested enemy weapon placement and special-attack review",
+    "existingFleetFinalQaPreservedNoRerun": true,
+    "newHeavyStartGrantedByThisHandoff": false,
+    "existingRunOwnerReportedAtSuccession": true,
+    "existingRunSc

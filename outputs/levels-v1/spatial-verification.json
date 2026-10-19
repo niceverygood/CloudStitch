@@ -1,0 +1,2153 @@
+{
+  "schemaVersion": 1,
+  "gameTitle": "Cloudstitch",
+  "package": "outputs/levels-v1/level-package.json",
+  "status": "passed-spatial-data-invariants",
+  "passed": true,
+  "assertions": 336,
+  "failures": [],
+  "advisories": [
+    {
+      "code": "expected-legacy-host-anchor-overlap",
+      "levelId": "first-voyage",
+      "anchorId": "tax-1",
+      "position": [
+        -28,
+        0,
+        -12
+      ],
+      "insideBounds": true,
+      "solidIds": [
+        "terrain-solid-0"
+      ],
+      "expected": true,
+      "note": "The (-28,-12) original host anchor overlaps the new conservative full-ship AABB. This advisory does not modify host radius, original physics or spawn order; encounters owns adoption of the alternative anchor."
+    }
+  ],
+  "scope": "Selected GLB header/JSON/size and catalog hash records; generated spatial data invariants. No source mutation, whole-asset hash scan, browser or gameplay validation.",
+  "counts": {
+    "independentWorldAssets": 96,
+    "preservedScenes": 7,
+    "selectedReferences": 19,
+    "levels": 2,
+    "corridors": 5,
+    "spawnAnchors": 6
+  },
+  "selectedAssets": [
+    {
+      "id": "repair-workshop",
+      "path": "outputs/world-assets/hero/repair-workshop/model-closed-roof.glb",
+      "actualBytes": 3838916,
+      "declaredBytes": 3838916,
+      "jsonBytes": 5236,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "canvas-market",
+      "path": "outputs/world-assets/hero/canvas-market/model-repaired.glb",
+      "actualBytes": 3838872,
+      "declaredBytes": 3838872,
+      "jsonBytes": 1660,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "1b69ca4f8658ade79ae04d3e3c1014f52059e4c99fa99ec29a6c463f2bc7161a",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "beacon-lighthouse",
+      "path": "outputs/world-assets/hero/beacon-lighthouse/model-repaired.glb",
+      "actualBytes": 4043752,
+      "declaredBytes": 4043752,
+      "jsonBytes": 1736,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "dock-straight",
+      "path": "outputs/world-assets/assets/dock-straight.glb",
+      "actualBytes": 275952,
+      "declaredBytes": 275952,
+      "jsonBytes": 47828,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "625888f3c74f0931367a3df9a35e3727f97f75ec2c072995db6f7ad4a45094fb",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "dock-endcap",
+      "path": "outputs/world-assets/assets/dock-endcap.glb",
+      "actualBytes": 346040,
+      "declaredBytes": 346040,
+      "jsonBytes": 55708,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "a6c870e5187b6185372e5a004f31a91bed0ce4d79a96305bd341576c8295facb",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "platform-square",
+      "path": "outputs/world-assets/assets/platform-square.glb",
+      "actualBytes": 279864,
+      "declaredBytes": 279864,
+      "jsonBytes": 59516,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "65f1778dfc241c22eea6c39e1ed7d09dc41cf77d42d0fcc1ada0bb56b78d59d6",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "island-grass-small",
+      "path": "outputs/world-assets/assets/island-grass-small.glb",
+      "actualBytes": 52968,
+      "declaredBytes": 52968,
+      "jsonBytes": 11468,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "3753c90d7d02495811fce6b455ebe52dd141b221751d533fc9d7e96f2aabb805",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "island-grass-medium",
+      "path": "outputs/world-assets/assets/island-grass-medium.glb",
+      "actualBytes": 82044,
+      "declaredBytes": 82044,
+      "jsonBytes": 14624,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "3cfef1ee6a6144646e292a418032e47d751ae95f2a06bab0474f774c406ce8c6",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "island-rock-small",
+      "path": "outputs/world-assets/assets/island-rock-small.glb",
+      "actualBytes": 52960,
+      "declaredBytes": 52960,
+      "jsonBytes": 11460,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "be0e5762c96cb875da3ab7c790c63525c9d72a7606a3a2cdefefeee05d28dc17",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "island-rock-tall",
+      "path": "outputs/world-assets/assets/island-rock-tall.glb",
+      "actualBytes": 94812,
+      "declaredBytes": 94812,
+      "jsonBytes": 14432,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "185e754e8ebdb5586ce52b115fc4e9276747c0c657a575849c76a3e6aeaedd4b",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "cloud-bank",
+      "path": "outputs/world-assets/assets/cloud-bank.glb",
+      "actualBytes": 185512,
+      "declaredBytes": 185512,
+      "jsonBytes": 10524,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "d4b4b4123a2a1af623c951e99464f2d154ed2570b60a96988083360cc9d48b15",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "wreckage-shoal",
+      "path": "outputs/world-assets/assets/wreckage-shoal.glb",
+      "actualBytes": 164712,
+      "declaredBytes": 164712,
+      "jsonBytes": 19532,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "2049c0d6eb1efac43abae2e5fe36a2a1ec58d574f8a740be0ce93fc84c5168e7",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "mooring-ring",
+      "path": "outputs/world-assets/assets/mooring-ring.glb",
+      "actualBytes": 63288,
+      "declaredBytes": 63288,
+      "jsonBytes": 11852,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "0650e80f253da2b2ef3f7e51dc71af34691254e22e1cb5b55a627f0882bfc5be",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "beacon-buoy",
+      "path": "outputs/world-assets/assets/beacon-buoy.glb",
+      "actualBytes": 155444,
+      "declaredBytes": 155444,
+      "jsonBytes": 16312,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "7aa9d19e756a1f3c555d92ed855fca4d5eeb5dde793b58560b8f4846c7b131a3",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "boundary-marker",
+      "path": "outputs/world-assets/assets/boundary-marker.glb",
+      "actualBytes": 49180,
+      "declaredBytes": 49180,
+      "jsonBytes": 5952,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "2ea4dfc3c41eafc3b5749f3e7dab78430c15fa2c6678705d20a5b49482357788",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "repair-station",
+      "path": "outputs/world-assets/assets/repair-station.glb",
+      "actualBytes": 374948,
+      "declaredBytes": 374948,
+      "jsonBytes": 80296,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "edaf1e202015ab6618d91fabf866242abb494df7991a10ea495077fa28653c64",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "storage-chest",
+      "path": "outputs/world-assets/assets/storage-chest.glb",
+      "actualBytes": 177944,
+      "declaredBytes": 177944,
+      "jsonBytes": 15916,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "19a61567d003c6ca147bd3ddd546954b8f5a2a86b3e34d42e5454aad2ed3af27",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "departure-console",
+      "path": "outputs/world-assets/assets/departure-console.glb",
+      "actualBytes": 314484,
+      "declaredBytes": 314484,
+      "jsonBytes": 41000,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "4955dfbd2a85e8779aa181d597db6a60920b216ecde72b2738a18559efa67b45",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    },
+    {
+      "id": "scene:jonghang-harbor",
+      "path": "outputs/world-assets/scenes/jonghang-harbor.glb",
+      "actualBytes": 28270444,
+      "declaredBytes": 28270444,
+      "jsonBytes": 1107976,
+      "headerValid": true,
+      "binaryHashComputed": false,
+      "catalogSHA256": "86c7d5aad58d70704a0d1e241d80c42c3151dbc09b7cad55f6f60f9221666c12",
+      "hashRecordMatches": true,
+      "hashValidation": "not-recomputed"
+    }
+  ],
+  "preservedHeroVariants": [
+    {
+      "assetId": "harbor-inn",
+      "variant": "original",
+      "path": "outputs/world-assets/hero/harbor-inn/model.glb",
+      "catalogSHA256": "1a038ddf794335b19ec5c31658781d01c3ba4dc564ba308f3c3fd60197f397bb",
+      "bytes": 3409600,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "harbor-inn",
+      "variant": "normal-repaired",
+      "path": "outputs/world-assets/hero/harbor-inn/model-repaired.glb",
+      "catalogSHA256": "6552f60b59a1b847285c4b042098acbdd5f7a16cdff88deffb845ffca7ef7aef",
+      "bytes": 3409544,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "harbor-inn",
+      "variant": "roof-reinforced",
+      "path": "outputs/world-assets/hero/harbor-inn/model-closed-roof.glb",
+      "catalogSHA256": "8a37e533639a8da79e31e806d33887b3422af2d94f09f780fdc333f6b3a8f407",
+      "bytes": 3472740,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "repair-workshop",
+      "variant": "original",
+      "path": "outputs/world-assets/hero/repair-workshop/model.glb",
+      "catalogSHA256": "d1a9324d7f976dca68032c7b08fb34f0c747690e5621bebc82976db695a97c68",
+      "bytes": 3788284,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "repair-workshop",
+      "variant": "normal-repaired",
+      "path": "outputs/world-assets/hero/repair-workshop/model-repaired.glb",
+      "catalogSHA256": "46246b50518dde393b08506a965e68de14abd521408fd71d0ea97d33a4acb6d2",
+      "bytes": 3788224,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "repair-workshop",
+      "variant": "roof-reinforced",
+      "path": "outputs/world-assets/hero/repair-workshop/model-closed-roof.glb",
+      "catalogSHA256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+      "bytes": 3838916,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "canvas-market",
+      "variant": "original",
+      "path": "outputs/world-assets/hero/canvas-market/model.glb",
+      "catalogSHA256": "83bc1fa94e56f8d136f38ba5aa530d87d14f1ca01c717d63075b8993b2e2d3dd",
+      "bytes": 3838928,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "canvas-market",
+      "variant": "normal-repaired",
+      "path": "outputs/world-assets/hero/canvas-market/model-repaired.glb",
+      "catalogSHA256": "1b69ca4f8658ade79ae04d3e3c1014f52059e4c99fa99ec29a6c463f2bc7161a",
+      "bytes": 3838872,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "harbor-office",
+      "variant": "original",
+      "path": "outputs/world-assets/hero/harbor-office/model.glb",
+      "catalogSHA256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+      "bytes": 4007236,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "harbor-office",
+      "variant": "normal-repaired",
+      "path": "outputs/world-assets/hero/harbor-office/model-repaired.glb",
+      "catalogSHA256": "518b72b3ed0d3c3901eff3554678d0abf4b2cc5283f13fb34c7f0c2c9820ea4a",
+      "bytes": 4007236,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "beacon-lighthouse",
+      "variant": "original",
+      "path": "outputs/world-assets/hero/beacon-lighthouse/model.glb",
+      "catalogSHA256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+      "bytes": 4043752,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "beacon-lighthouse",
+      "variant": "normal-repaired",
+      "path": "outputs/world-assets/hero/beacon-lighthouse/model-repaired.glb",
+      "catalogSHA256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+      "bytes": 4043752,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "memory-observatory",
+      "variant": "original",
+      "path": "outputs/world-assets/hero/memory-observatory/model.glb",
+      "catalogSHA256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+      "bytes": 4198500,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    },
+    {
+      "assetId": "memory-observatory",
+      "variant": "normal-repaired",
+      "path": "outputs/world-assets/hero/memory-observatory/model-repaired.glb",
+      "catalogSHA256": "1d972500f2ef11175308c91f9943bcc088772a28819151c38b92c9f3c8b7a198",
+      "bytes": 4198500,
+      "checked": "path-and-size-only",
+      "binaryHashComputed": false
+    }
+  ],
+  "player": {
+    "path": "outputs/selected-airship-toon3d/airship.glb",
+    "actualBytes": 3645884,
+    "declaredBytes": 3645884,
+    "jsonBytes": 1692,
+    "headerValid": true,
+    "binaryHashComputed": false,
+    "catalogSHA256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+    "hashValidation": "manifest-record-not-recomputed",
+    "measuredBounds": {
+      "min": [
+        -0.4748539924621582,
+        -0.2595210075378418,
+        -0.1496579945087433
+      ],
+      "max": [
+        0.47338899970054626,
+        0.2600100040435791,
+        0.13598600029945374
+      ]
+    },
+    "measurement": "actual GLB POSITION accessor bounds under identity root; no binary geometry rescan",
+    "lengthLU": 10,
+    "widthLU": 3.0123501799545567,
+    "heightLU": 5.478880580983793,
+    "turnRadiusLU": 5.221931003150852,
+    "rotatingDiameterLU": 10.443862006301703,
+    "conservativeHalfExtents": [
+      5.221931003150852,
+      2.7394402904918964,
+      5.221931003150852
+    ],
+    "metersApproved": false
+  },
+  "levels": [
+    {
+      "id": "first-voyage",
+      "corridors": [
+        {
+          "id": "main-flight",
+          "insideBounds": true,
+          "segments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            },
+            {
+              "index": 2,
+              "hits": []
+            }
+          ],
+          "bodyClear": true,
+          "envelopeClear": true,
+          "envelopeSegments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            },
+            {
+              "index": 2,
+              "hits": []
+            }
+          ],
+          "clear": true,
+          "minimumWidthLU": 18,
+          "bodyWidthLU": 10.443862006301703,
+          "widthMarginLU": 7.556137993698297,
+          "turningWidthRatio": 1.7235003669273887,
+          "minimumRequiredWidthLU": 15.665793009452555,
+          "measurement": "continuous expanded-AABB slab casts for body and full 18 LU corridor envelope"
+        },
+        {
+          "id": "east-bypass",
+          "insideBounds": true,
+          "segments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            },
+            {
+              "index": 2,
+              "hits": []
+            },
+            {
+              "index": 3,
+              "hits": []
+            },
+            {
+              "index": 4,
+              "hits": []
+            },
+            {
+              "index": 5,
+              "hits": []
+            }
+          ],
+          "bodyClear": true,
+          "envelopeClear": true,
+          "envelopeSegments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            },
+            {
+              "index": 2,
+              "hits": []
+            },
+            {
+              "index": 3,
+              "hits": []
+            },
+            {
+              "index": 4,
+              "hits": []
+            },
+            {
+              "index": 5,
+              "hits": []
+            }
+          ],
+          "clear": true,
+          "minimumWidthLU": 18,
+          "bodyWidthLU": 10.443862006301703,
+          "widthMarginLU": 7.556137993698297,
+          "turningWidthRatio": 1.7235003669273887,
+          "minimumRequiredWidthLU": 15.665793009452555,
+          "measurement": "continuous expanded-AABB slab casts for body and full 18 LU corridor envelope"
+        },
+        {
+          "id": "return-approach",
+          "insideBounds": true,
+          "segments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            }
+          ],
+          "bodyClear": true,
+          "envelopeClear": true,
+          "envelopeSegments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            }
+          ],
+          "clear": true,
+          "minimumWidthLU": 18,
+          "bodyWidthLU": 10.443862006301703,
+          "widthMarginLU": 7.556137993698297,
+          "turningWidthRatio": 1.7235003669273887,
+          "minimumRequiredWidthLU": 15.665793009452555,
+          "measurement": "continuous expanded-AABB slab casts for body and full 18 LU corridor envelope"
+        }
+      ],
+      "turningPockets": [
+        {
+          "id": "return-turn",
+          "radiusLU": 9,
+          "rotatingRadiusRatio": 1.7235003669273887,
+          "insideBounds": true,
+          "solidIds": []
+        },
+        {
+          "id": "north-turn",
+          "radiusLU": 9,
+          "rotatingRadiusRatio": 1.7235003669273887,
+          "insideBounds": true,
+          "solidIds": []
+        }
+      ],
+      "spawns": [
+        {
+          "id": "player-entry",
+          "position": [
+            0,
+            0,
+            35
+          ],
+          "availableWhenEmpty": true,
+          "blockedByReservation": true,
+          "insideBounds": true,
+          "solidIds": [],
+          "pairwiseOverlaps": [],
+          "nearestSolidGapLU": 26.41404168548636
+        },
+        {
+          "id": "west-patrol",
+          "position": [
+            -32,
+            0,
+            -16
+          ],
+          "availableWhenEmpty": true,
+          "blockedByReservation": true,
+          "insideBounds": true,
+          "solidIds": [],
+          "pairwiseOverlaps": [],
+          "nearestSolidGapLU": 3.3780689968491515
+        },
+        {
+          "id": "east-patrol",
+          "position": [
+            28,
+            0,
+            -27
+          ],
+          "availableWhenEmpty": true,
+          "blockedByReservation": true,
+          "insideBounds": true,
+          "solidIds": [],
+          "pairwiseOverlaps": [],
+          "nearestSolidGapLU": 18.77806899684915
+        },
+        {
+          "id": "north-target",
+          "position": [
+            5,
+            0,
+            -52
+          ],
+          "availableWhenEmpty": true,
+          "blockedByReservation": true,
+          "insideBounds": true,
+          "solidIds": [],
+          "pairwiseOverlaps": [],
+          "nearestSolidGapLU": 13.44885884543864
+        }
+      ],
+      "triggers": [
+        {
+          "id": "return-to-jonghang",
+          "type": "return-request",
+          "owner": "harbor",
+          "target": "jonghang-harbor",
+          "requiresConfirmation": true,
+          "effectsExecuted": false
+        }
+      ],
+      "camera": {
+        "status": "proxy-policy-validated-rendered-occlusion-pending"
+      },
+      "actualVisualEnvelopeChecks": {
+        "method": "Measured asset bounds transformed by center/ground anchor, longestLU and absolute yaw rotation; continuous expanded-AABB segment tests. Separate from simple colliders; conservative visual-envelope inspection, not precise mesh physics.",
+        "excludedDecorations": [
+          "cloud-west",
+          "cloud-east"
+        ],
+        "excludedStaticDiagnostics": [
+          "referenceTargets",
+          "fleet readability targets",
+          "selected reference ship as a world obstacle"
+        ],
+        "envelopes": [
+          {
+            "visualId": "terrain-0",
+            "assetId": "island-rock-tall",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.3857500553131104,
+                -5.740353107452393,
+                -1.3205469846725464
+              ],
+              "max": [
+                1.4532195329666138,
+                -1.7881393449270533e-9,
+                1.2772947549819946
+              ]
+            },
+            "sourceScale": 4.355132783614204,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -15,
+              -6,
+              -5
+            ],
+            "halfExtents": [
+              6.1820447628003725,
+              12.5,
+              5.656972863505423
+            ],
+            "bounds": {
+              "min": [
+                -21.182044762800373,
+                -18.5,
+                -10.656972863505423
+              ],
+              "max": [
+                -8.817955237199627,
+                6.5,
+                0.6569728635054233
+              ]
+            }
+          },
+          {
+            "visualId": "terrain-1",
+            "assetId": "island-grass-medium",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -2.9560561180114746,
+                -2.3753185272216797,
+                -2.261873245239258
+              ],
+              "max": [
+                2.828798770904541,
+                0.18000000149011613,
+                2.4133200645446777
+              ]
+            },
+            "sourceScale": 4.148764396144982,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              40,
+              -6,
+              5
+            ],
+            "halfExtents": [
+              11.999999999999998,
+              5.3007072663645385,
+              9.698137774363405
+            ],
+            "bounds": {
+              "min": [
+                28,
+                -11.300707266364538,
+                -4.6981377743634045
+              ],
+              "max": [
+                52,
+                -0.6992927336354615,
+                14.698137774363405
+              ]
+            }
+          },
+          {
+            "visualId": "terrain-2",
+            "assetId": "island-grass-medium",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -2.9560561180114746,
+                -2.3753185272216797,
+                -2.261873245239258
+              ],
+              "max": [
+                2.828798770904541,
+                0.18000000149011613,
+                2.4133200645446777
+              ]
+            },
+            "sourceScale": 4.8402251288358125,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -49,
+              -6,
+              26
+            ],
+            "halfExtents": [
+              14,
+              6.184158477425296,
+              11.314494070090639
+            ],
+            "bounds": {
+              "min": [
+                -63,
+                -12.184158477425296,
+                14.685505929909361
+              ],
+              "max": [
+                -35,
+                0.18415847742529579,
+                37.31449407009064
+              ]
+            }
+          },
+          {
+            "visualId": "terrain-3",
+            "assetId": "island-rock-small",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.4317033290863037,
+                -2.177375316619873,
+                -1.260116696357727
+              ],
+              "max": [
+                1.4807108640670776,
+                -1.7881393449270533e-9,
+                1.199142575263977
+              ]
+            },
+            "sourceScale": 7.897228372966081,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -51,
+              -6,
+              -48
+            ],
+            "halfExtents": [
+              11.5,
+              8.59761505744256,
+              9.710666048165411
+            ],
+            "bounds": {
+              "min": [
+                -62.5,
+                -14.59761505744256,
+                -57.71066604816541
+              ],
+              "max": [
+                -39.5,
+                2.5976150574425603,
+                -38.28933395183459
+              ]
+            }
+          },
+          {
+            "visualId": "terrain-4",
+            "assetId": "island-grass-medium",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -2.9560561180114746,
+                -2.3753185272216797,
+                -2.261873245239258
+              ],
+              "max": [
+                2.828798770904541,
+                0.18000000149011613,
+                2.4133200645446777
+              ]
+            },
+            "sourceScale": 4.8402251288358125,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              44,
+              -6,
+              -64
+            ],
+            "halfExtents": [
+              14,
+              6.184158477425296,
+              11.314494070090639
+            ],
+            "bounds": {
+              "min": [
+                30,
+                -12.184158477425296,
+                -75.31449407009063
+              ],
+              "max": [
+                58,
+                0.18415847742529579,
+                -52.68550592990936
+              ]
+            }
+          },
+          {
+            "visualId": "terrain-5",
+            "assetId": "island-rock-small",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.4317033290863037,
+                -2.177375316619873,
+                -1.260116696357727
+              ],
+              "max": [
+                1.4807108640670776,
+                -1.7881393449270533e-9,
+                1.199142575263977
+              ]
+            },
+            "sourceScale": 6.180439596234325,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -8,
+              -6,
+              -77
+            ],
+            "halfExtents": [
+              9,
+              6.728568305824613,
+              7.599651689868582
+            ],
+            "bounds": {
+              "min": [
+                -17,
+                -12.728568305824613,
+                -84.59965168986858
+              ],
+              "max": [
+                1,
+                0.7285683058246128,
+                -69.40034831013142
+              ]
+            }
+          },
+          {
+            "visualId": "terrain-6",
+            "assetId": "island-grass-small",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.5345731973648071,
+                -1.7814888954162598,
+                -1.3400639295578003
+              ],
+              "max": [
+                1.4847321510314941,
+                -1.7881393449270533e-9,
+                1.356077790260315
+              ]
+            },
+            "sourceScale": 7.286444218596593,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              73,
+              -6,
+              43
+            ],
+            "halfExtents": [
+              11,
+              6.490359724735329,
+              9.82264312344289
+            ],
+            "bounds": {
+              "min": [
+                62,
+                -12.49035972473533,
+                33.17735687655711
+              ],
+              "max": [
+                84,
+                0.4903597247353293,
+                52.82264312344289
+              ]
+            }
+          },
+          {
+            "visualId": "terrain-7",
+            "assetId": "island-grass-small",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.5345731973648071,
+                -1.7814888954162598,
+                -1.3400639295578003
+              ],
+              "max": [
+                1.4847321510314941,
+                -1.7881393449270533e-9,
+                1.356077790260315
+              ]
+            },
+            "sourceScale": 6.292838188787966,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -78,
+              -6,
+              -8
+            ],
+            "halfExtents": [
+              9.5,
+              5.6053106713623295,
+              8.48319178842795
+            ],
+            "bounds": {
+              "min": [
+                -87.5,
+                -11.605310671362329,
+                -16.483191788427952
+              ],
+              "max": [
+                -68.5,
+                -0.3946893286376705,
+                0.4831917884279502
+              ]
+            }
+          },
+          {
+            "visualId": "wreck-marker",
+            "assetId": "wreckage-shoal",
+            "priority": "landmark",
+            "sourceBounds": {
+              "min": [
+                -1.8414877653121948,
+                -0.6928012371063232,
+                -1.3916049003601074
+              ],
+              "max": [
+                1.781678557395935,
+                0.8986128807177145,
+                1.5000000238418578
+              ]
+            },
+            "sourceScale": 3.3120201865396615,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -15,
+              -1,
+              -5
+            ],
+            "halfExtents": [
+              6,
+              2.63539784168871,
+              4.788526940227198
+            ],
+            "bounds": {
+              "min": [
+                -21,
+                -3.63539784168871,
+                -9.788526940227198
+              ],
+              "max": [
+                -9,
+                1.63539784168871,
+                -0.21147305977280162
+              ]
+            }
+          },
+          {
+            "visualId": "return-buoy-west",
+            "assetId": "beacon-buoy",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -0.524999998807907,
+                0.004000004827976217,
+                -0.47999998927116394
+              ],
+              "max": [
+                0.524999998807907,
+                1.779258508682251,
+                0.47999998927116394
+              ]
+            },
+            "sourceScale": 2.2531929808056548,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -12,
+              -1,
+              48
+            ],
+            "halfExtents": [
+              1.1829263122369533,
+              2,
+              1.081532606612576
+            ],
+            "bounds": {
+              "min": [
+                -13.182926312236953,
+                -3,
+                46.918467393387424
+              ],
+              "max": [
+                -10.817073687763047,
+                1,
+                49.081532606612576
+              ]
+            }
+          },
+          {
+            "visualId": "return-buoy-east",
+            "assetId": "beacon-buoy",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -0.524999998807907,
+                0.004000004827976217,
+                -0.47999998927116394
+              ],
+              "max": [
+                0.524999998807907,
+                1.779258508682251,
+                0.47999998927116394
+              ]
+            },
+            "sourceScale": 2.2531929808056548,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              12,
+              -1,
+              48
+            ],
+            "halfExtents": [
+              1.1829263122369533,
+              2,
+              1.081532606612576
+            ],
+            "bounds": {
+              "min": [
+                10.817073687763047,
+                -3,
+                46.918467393387424
+              ],
+              "max": [
+                13.182926312236953,
+                1,
+                49.081532606612576
+              ]
+            }
+          },
+          {
+            "visualId": "north-beacon",
+            "assetId": "boundary-marker",
+            "priority": "landmark",
+            "sourceBounds": {
+              "min": [
+                -0.26629582047462463,
+                -1.490116086078075e-10,
+                -0.2800000011920929
+              ],
+              "max": [
+                0.26629582047462463,
+                1.034999998807907,
+                0.2800000011920929
+              ]
+            },
+            "sourceScale": 4.8309178792647725,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -8,
+              5,
+              -77
+            ],
+            "halfExtents": [
+              1.2864532403043463,
+              2.5,
+              1.3526570119530392
+            ],
+            "bounds": {
+              "min": [
+                -9.286453240304347,
+                2.5,
+                -78.35265701195304
+              ],
+              "max": [
+                -6.713546759695654,
+                7.5,
+                -75.64734298804696
+              ]
+            }
+          }
+        ],
+        "corridors": [
+          {
+            "id": "main-flight",
+            "widthLU": 18,
+            "bodyHalfExtents": [
+              5.221931003150852,
+              2.7394402904918964,
+              5.221931003150852
+            ],
+            "envelopeHalfExtents": [
+              9,
+              2.7394402904918964,
+              9
+            ],
+            "bodyClear": true,
+            "envelopeClear": true,
+            "segments": [
+              {
+                "index": 0,
+                "start": [
+                  0,
+                  0,
+                  35
+                ],
+                "end": [
+                  14,
+                  0,
+                  22
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 1,
+                "start": [
+                  14,
+                  0,
+                  22
+                ],
+                "end": [
+                  14,
+                  0,
+                  -36
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 2,
+                "start": [
+                  14,
+                  0,
+                  -36
+                ],
+                "end": [
+                  5,
+                  0,
+                  -52
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              }
+            ]
+          },
+          {
+            "id": "east-bypass",
+            "widthLU": 18,
+            "bodyHalfExtents": [
+              5.221931003150852,
+              2.7394402904918964,
+              5.221931003150852
+            ],
+            "envelopeHalfExtents": [
+              9,
+              2.7394402904918964,
+              9
+            ],
+            "bodyClear": true,
+            "envelopeClear": true,
+            "segments": [
+              {
+                "index": 0,
+                "start": [
+                  0,
+                  0,
+                  35
+                ],
+                "end": [
+                  27,
+                  0,
+                  30
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 1,
+                "start": [
+                  27,
+                  0,
+                  30
+                ],
+                "end": [
+                  51,
+                  0,
+                  23.9
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 2,
+                "start": [
+                  51,
+                  0,
+                  23.9
+                ],
+                "end": [
+                  62,
+                  0,
+                  23.9
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 3,
+                "start": [
+                  62,
+                  0,
+                  23.9
+                ],
+                "end": [
+                  62,
+                  0,
+                  -28
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 4,
+                "start": [
+                  62,
+                  0,
+                  -28
+                ],
+                "end": [
+                  20,
+                  0,
+                  -39
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 5,
+                "start": [
+                  20,
+                  0,
+                  -39
+                ],
+                "end": [
+                  5,
+                  0,
+                  -52
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              }
+            ]
+          },
+          {
+            "id": "return-approach",
+            "widthLU": 18,
+            "bodyHalfExtents": [
+              5.221931003150852,
+              2.7394402904918964,
+              5.221931003150852
+            ],
+            "envelopeHalfExtents": [
+              9,
+              2.7394402904918964,
+              9
+            ],
+            "bodyClear": true,
+            "envelopeClear": true,
+            "segments": [
+              {
+                "index": 0,
+                "start": [
+                  14,
+                  0,
+                  22
+                ],
+                "end": [
+                  0,
+                  0,
+                  35
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 1,
+                "start": [
+                  0,
+                  0,
+                  35
+                ],
+                "end": [
+                  0,
+                  0,
+                  48
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "jonghang-harbor",
+      "corridors": [
+        {
+          "id": "harbor-approach",
+          "insideBounds": true,
+          "segments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            }
+          ],
+          "bodyClear": true,
+          "envelopeClear": true,
+          "envelopeSegments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            }
+          ],
+          "clear": true,
+          "minimumWidthLU": 18,
+          "bodyWidthLU": 10.443862006301703,
+          "widthMarginLU": 7.556137993698297,
+          "turningWidthRatio": 1.7235003669273887,
+          "minimumRequiredWidthLU": 15.665793009452555,
+          "measurement": "continuous expanded-AABB slab casts for body and full 18 LU corridor envelope"
+        },
+        {
+          "id": "harbor-departure",
+          "insideBounds": true,
+          "segments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            }
+          ],
+          "bodyClear": true,
+          "envelopeClear": true,
+          "envelopeSegments": [
+            {
+              "index": 0,
+              "hits": []
+            },
+            {
+              "index": 1,
+              "hits": []
+            }
+          ],
+          "clear": true,
+          "minimumWidthLU": 18,
+          "bodyWidthLU": 10.443862006301703,
+          "widthMarginLU": 7.556137993698297,
+          "turningWidthRatio": 1.7235003669273887,
+          "minimumRequiredWidthLU": 15.665793009452555,
+          "measurement": "continuous expanded-AABB slab casts for body and full 18 LU corridor envelope"
+        }
+      ],
+      "turningPockets": [
+        {
+          "id": "harbor-turn",
+          "radiusLU": 9,
+          "rotatingRadiusRatio": 1.7235003669273887,
+          "insideBounds": true,
+          "solidIds": []
+        }
+      ],
+      "spawns": [
+        {
+          "id": "harbor-arrival",
+          "position": [
+            0,
+            0,
+            40
+          ],
+          "availableWhenEmpty": true,
+          "blockedByReservation": true,
+          "insideBounds": true,
+          "solidIds": [],
+          "pairwiseOverlaps": [],
+          "nearestSolidGapLU": 10.035973470839483
+        },
+        {
+          "id": "harbor-berth",
+          "position": [
+            0,
+            0,
+            52
+          ],
+          "availableWhenEmpty": true,
+          "blockedByReservation": true,
+          "insideBounds": true,
+          "solidIds": [],
+          "pairwiseOverlaps": [],
+          "nearestSolidGapLU": 2.2605597095081036
+        }
+      ],
+      "triggers": [
+        {
+          "id": "harbor-repair",
+          "type": "harbor-interaction",
+          "owner": "harbor",
+          "target": "harbor:repair",
+          "requiresConfirmation": true,
+          "effectsExecuted": false
+        },
+        {
+          "id": "harbor-storage",
+          "type": "harbor-interaction",
+          "owner": "harbor",
+          "target": "harbor:storage",
+          "requiresConfirmation": true,
+          "effectsExecuted": false
+        },
+        {
+          "id": "harbor-settlement",
+          "type": "harbor-interaction",
+          "owner": "harbor",
+          "target": "harbor:settlement",
+          "requiresConfirmation": true,
+          "effectsExecuted": false
+        },
+        {
+          "id": "harbor-departure",
+          "type": "departure-request",
+          "owner": "encounters",
+          "target": "encounters:departure",
+          "requiresConfirmation": true,
+          "effectsExecuted": false
+        }
+      ],
+      "camera": {
+        "status": "proxy-policy-validated-rendered-occlusion-pending"
+      },
+      "actualVisualEnvelopeChecks": {
+        "method": "Measured asset bounds transformed by center/ground anchor, longestLU and absolute yaw rotation; continuous expanded-AABB segment tests. Separate from simple colliders; conservative visual-envelope inspection, not precise mesh physics.",
+        "excludedDecorations": [
+          "harbor-cloud"
+        ],
+        "excludedStaticDiagnostics": [
+          "referenceTargets",
+          "fleet readability targets",
+          "selected reference ship as a world obstacle"
+        ],
+        "envelopes": [
+          {
+            "visualId": "dock-main",
+            "assetId": "dock-straight",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.252499998807907,
+                -0.11000000357627869,
+                -1.5524999988079071
+              ],
+              "max": [
+                1.252499998807907,
+                1.3350000001490117,
+                1.5524999988079071
+              ]
+            },
+            "sourceScale": 6.441223837474098,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              0,
+              -9,
+              64
+            ],
+            "halfExtents": [
+              8.06763284875777,
+              4.6537842345727505,
+              10
+            ],
+            "bounds": {
+              "min": [
+                -8.06763284875777,
+                -13.65378423457275,
+                54
+              ],
+              "max": [
+                8.06763284875777,
+                -4.3462157654272495,
+                74
+              ]
+            }
+          },
+          {
+            "visualId": "dock-end",
+            "assetId": "dock-endcap",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.252499998807907,
+                -0.11000000357627869,
+                -1.1524999988079072
+              ],
+              "max": [
+                1.252499998807907,
+                1.3350000001490117,
+                1.1524999988079072
+              ]
+            },
+            "sourceScale": 3.5928143746770207,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              0,
+              -7,
+              56
+            ],
+            "halfExtents": [
+              4.5,
+              2.595808392396286,
+              4.140718562532299
+            ],
+            "bounds": {
+              "min": [
+                -4.5,
+                -9.595808392396286,
+                51.8592814374677
+              ],
+              "max": [
+                4.5,
+                -4.404191607603714,
+                60.1407185625323
+              ]
+            }
+          },
+          {
+            "visualId": "platform-west",
+            "assetId": "platform-square",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.952499998807907,
+                -0.11000000357627869,
+                -1.952499998807907
+              ],
+              "max": [
+                1.952499998807907,
+                0.8350000001490117,
+                1.952499998807907
+              ]
+            },
+            "sourceScale": 4.865556981203686,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -17,
+              -7,
+              66
+            ],
+            "halfExtents": [
+              9.5,
+              2.2989756826815477,
+              9.5
+            ],
+            "bounds": {
+              "min": [
+                -26.5,
+                -9.298975682681547,
+                56.5
+              ],
+              "max": [
+                -7.5,
+                -4.701024317318453,
+                75.5
+              ]
+            }
+          },
+          {
+            "visualId": "platform-east",
+            "assetId": "platform-square",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.952499998807907,
+                -0.11000000357627869,
+                -1.952499998807907
+              ],
+              "max": [
+                1.952499998807907,
+                0.8350000001490117,
+                1.952499998807907
+              ]
+            },
+            "sourceScale": 4.865556981203686,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              17,
+              -7,
+              66
+            ],
+            "halfExtents": [
+              9.5,
+              2.2989756826815477,
+              9.5
+            ],
+            "bounds": {
+              "min": [
+                7.5,
+                -9.298975682681547,
+                56.5
+              ],
+              "max": [
+                26.5,
+                -4.701024317318453,
+                75.5
+              ]
+            }
+          },
+          {
+            "visualId": "service-console",
+            "assetId": "departure-console",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -0.9911274313926697,
+                5.960464455334602e-9,
+                -0.6442820098860937
+              ],
+              "max": [
+                0.9911274313926697,
+                1.4662529473525219,
+                0.6442820098860937
+              ]
+            },
+            "sourceScale": 1.5134279937064143,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -11,
+              -3.3,
+              56
+            ],
+            "halfExtents": [
+              1.5,
+              1.1095341236785552,
+              0.975074429603047
+            ],
+            "bounds": {
+              "min": [
+                -12.5,
+                -4.409534123678555,
+                55.02492557039695
+              ],
+              "max": [
+                -9.5,
+                -2.1904658763214444,
+                56.97507442960305
+              ]
+            }
+          },
+          {
+            "visualId": "repair-point",
+            "assetId": "repair-station",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -1.0499999523162842,
+                2.384185793236071e-8,
+                -0.6000000238418579
+              ],
+              "max": [
+                1.0499999523162842,
+                1.4600000001490117,
+                0.6000000238418579
+              ]
+            },
+            "sourceScale": 1.9047619912629805,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -13,
+              -3,
+              59
+            ],
+            "halfExtents": [
+              2,
+              1.390476231057359,
+              1.142857240170853
+            ],
+            "bounds": {
+              "min": [
+                -15,
+                -4.3904762310573595,
+                57.857142759829145
+              ],
+              "max": [
+                -11,
+                -1.609523768942641,
+                60.142857240170855
+              ]
+            }
+          },
+          {
+            "visualId": "storage-point",
+            "assetId": "storage-chest",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -0.7819999998807907,
+                0.02999998807907106,
+                -0.5199999993294477
+              ],
+              "max": [
+                0.7819999998807907,
+                1.1449999856948851,
+                0.5679999992251397
+              ]
+            },
+            "sourceScale": 2.5575447574231243,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              13,
+              -3,
+              59
+            ],
+            "halfExtents": [
+              2,
+              1.4258311992145607,
+              1.3913043461898258
+            ],
+            "bounds": {
+              "min": [
+                11,
+                -4.425831199214561,
+                57.60869565381017
+              ],
+              "max": [
+                15,
+                -1.5741688007854393,
+                60.39130434618983
+              ]
+            }
+          },
+          {
+            "visualId": "mooring-point",
+            "assetId": "mooring-ring",
+            "priority": "required",
+            "sourceBounds": {
+              "min": [
+                -0.2750000059604645,
+                6.705522526129215e-10,
+                -0.1899999976158142
+              ],
+              "max": [
+                0.2750000059604645,
+                0.5350000047683716,
+                0.1899999976158142
+              ]
+            },
+            "sourceScale": 5.4545453363213685,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              11,
+              -3,
+              56
+            ],
+            "halfExtents": [
+              1.5,
+              1.4590908886418368,
+              1.0363636008964106
+            ],
+            "bounds": {
+              "min": [
+                9.5,
+                -4.459090888641837,
+                54.96363639910359
+              ],
+              "max": [
+                12.5,
+                -1.5409091113581632,
+                57.03636360089641
+              ]
+            }
+          },
+          {
+            "visualId": "workshop",
+            "assetId": "repair-workshop",
+            "priority": "landmark",
+            "sourceBounds": {
+              "min": [
+                -0.4748539924621582,
+                -0.32348600029945374,
+                -0.3527829945087433
+              ],
+              "max": [
+                0.47290000319480896,
+                0.32348600029945374,
+                0.35082998871803284
+              ]
+            },
+            "sourceScale": 14.771765736841273,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              -17,
+              0,
+              67
+            ],
+            "halfExtents": [
+              7,
+              4.778459415571296,
+              5.196803078812982
+            ],
+            "bounds": {
+              "min": [
+                -24,
+                -4.778459415571296,
+                61.803196921187016
+              ],
+              "max": [
+                -10,
+                4.778459415571296,
+                72.19680307881298
+              ]
+            }
+          },
+          {
+            "visualId": "market",
+            "assetId": "canvas-market",
+            "priority": "landmark",
+            "sourceBounds": {
+              "min": [
+                -0.4748539924621582,
+                -0.2282709926366806,
+                -0.35522499680519104
+              ],
+              "max": [
+                0.4748539924621582,
+                0.22729499638080597,
+                0.35522499680519104
+              ]
+            },
+            "sourceScale": 14.74137337185354,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              17,
+              0,
+              67
+            ],
+            "halfExtents": [
+              7,
+              3.357834169812249,
+              5.236504308920802
+            ],
+            "bounds": {
+              "min": [
+                10,
+                -3.357834169812249,
+                61.7634956910792
+              ],
+              "max": [
+                24,
+                3.357834169812249,
+                72.2365043089208
+              ]
+            }
+          },
+          {
+            "visualId": "lighthouse",
+            "assetId": "beacon-lighthouse",
+            "priority": "landmark",
+            "sourceBounds": {
+              "min": [
+                -0.2761229872703552,
+                -0.47582998871803284,
+                -0.2785640060901642
+              ],
+              "max": [
+                0.2780759930610657,
+                0.4753420054912567,
+                0.2761229872703552
+              ]
+            },
+            "sourceScale": 21.026691409923213,
+            "anchor": "center",
+            "yawRadians": 0,
+            "center": [
+              28,
+              6,
+              72
+            ],
+            "halfExtents": [
+              5.826485469561446,
+              10,
+              5.831616119244884
+            ],
+            "bounds": {
+              "min": [
+                22.173514530438553,
+                -4,
+                66.16838388075512
+              ],
+              "max": [
+                33.82648546956145,
+                16,
+                77.83161611924488
+              ]
+            }
+          }
+        ],
+        "corridors": [
+          {
+            "id": "harbor-approach",
+            "widthLU": 18,
+            "bodyHalfExtents": [
+              5.221931003150852,
+              2.7394402904918964,
+              5.221931003150852
+            ],
+            "envelopeHalfExtents": [
+              9,
+              2.7394402904918964,
+              9
+            ],
+            "bodyClear": true,
+            "envelopeClear": true,
+            "segments": [
+              {
+                "index": 0,
+                "start": [
+                  0,
+                  0,
+                  32
+                ],
+                "end": [
+                  0,
+                  0,
+                  40
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 1,
+                "start": [
+                  0,
+                  0,
+                  40
+                ],
+                "end": [
+                  0,
+                  0,
+                  52
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              }
+            ]
+          },
+          {
+            "id": "harbor-departure",
+            "widthLU": 18,
+            "bodyHalfExtents": [
+              5.221931003150852,
+              2.7394402904918964,
+              5.221931003150852
+            ],
+            "envelopeHalfExtents": [
+              9,
+              2.7394402904918964,
+              9
+            ],
+            "bodyClear": true,
+            "envelopeClear": true,
+            "segments": [
+              {
+                "index": 0,
+                "start": [
+                  0,
+                  0,
+                  52
+                ],
+                "end": [
+                  0,
+                  0,
+                  40
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              },
+              {
+                "index": 1,
+                "start": [
+                  0,
+                  0,
+                  40
+                ],
+                "end": [
+                  0,
+                  0,
+                  32
+                ],
+                "bodyHits": [],
+                "envelopeHits": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "structuralEstimates": [
+    {
+      "levelId": "first-voyage",
+      "status": "catalog-estimate-not-runtime-measurement",
+      "visualInstances": 14,
+      "uniqueAssetSources": 8,
+      "sourceBytesWithPlayer": 4483516,
+      "meshInstancesWithPlayer": 164,
+      "trianglesWithPlayer": 22738,
+      "textureSourceCountWithPlayer": 1,
+      "exclusions": "No helpers, outline pass, attachments, decoder overhead or GPU allocations included. Hidden visual roots do not reduce full-scene transfer size."
+    },
+    {
+      "levelId": "jonghang-harbor",
+      "status": "catalog-estimate-not-runtime-measurement",
+      "visualInstances": 12,
+      "uniqueAssetSources": 11,
+      "sourceBytesWithPlayer": 17385456,
+      "meshInstancesWithPlayer": 396,
+      "trianglesWithPlayer": 52012,
+      "textureSourceCountWithPlayer": 4,
+      "exclusions": "No helpers, outline pass, attachments, decoder overhead or GPU allocations included. Hidden visual roots do not reduce full-scene transfer size."
+    }
+  ],
+  "runtimeMeasurements": {
+    "status": "pending-integrated-browser-QA",
+    "loadTimesMs": null,
+    "simultaneousMeshCount": null,
+    "textureMemoryBytes": null,
+    "targetPixels": null,
+    "pixelOcclusion": null,
+    "note": "Catalog structure estimates below are not runtime measurements."
+  }
+}

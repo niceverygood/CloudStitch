@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "project_title": "Cloudstitch",
+  "date": "2026-10-18",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "generate using a local style reference",
+  "use_case": "stylized-concept",
+  "status": "generated_and_saved_alpha_preserved",
+  "prompt": "Use case: stylized-concept.\nAsset type: one production game VFX texture atlas, square PNG with genuine transparent alpha, 2 by 2 equal square cells.\nInput image 1 is STYLE REFERENCE ONLY: the Cloudstitch painted machine-gun reference. Do not draw or alter the gun. Match its warm brass, cream highlights, sage-teal shadows, confident dark ochre edges, layered hand-painted material texture and dimensional 2D illustration.\nPrimary request: create FOUR SEPARATE original Cloudstitch combat effect sprites in one exact 2x2 atlas. Each sprite must be centered in its own equal square quadrant. Reserve generous fully transparent padding on ALL FOUR SIDES inside EACH cell (at least 12% of cell size), including empty transparent separation along the horizontal and vertical midlines. No part or detached particle may cross into a neighboring quadrant or touch the atlas outer edge.\nTOP LEFT cell: a compact directional muzzle flash shooting HORIZONTALLY TO THE RIGHT. Warm brass-gold paint, a bright opaque cream core, angular but organic flame-brush lobes with short leftward trailing flicks. Bold readable silhouette; layered amber and dark ochre edge strokes. No weapon or cartridge.\nTOP RIGHT cell: an expressive asymmetric impact burst, the most spectacular sprite of the four: luminous painted CREAM CORE surrounded by curving amber/coral-orange flame PETALS, a few small honey-brown WOOD SPLINTERS and sparse short golden brush sparks. Strong irregular rhythm and directional arcs, painterly volume, enough open negative gaps to remain readable. Neither a circular ring nor a geometric star.\nBOTTOM LEFT cell: a soft PAINTED GOUACHE SMOKE PUFF, scalloped irregular cloud lobes with sweeping cream brush highlights and muted sage-gray shadows, dimensional 2D painted edges, broad readable brush planes. Centered compact sprite, a few transparent inner notches; no opaque square or background.\nBOTTOM RIGHT cell: a broad warm-gold directional BRUSH STREAK moving horizontally TO THE RIGHT, with a cream spear-shaped front and layered ochre/gold brush ribbons TRAILING LEFT. Rich tactile dry-brush tips, lively width and hand-painted color layers. The entire effect fits comfortably within its own cell.\nStyle/medium: original hand-painted watercolor-and-gouache fantasy game art with tactile brush marks, warm 2-3 value shading, clear contours and expressive spectacle. Match the reference's carefully painted brass and cream texture; these should be polished illustrated effects rather than abstract 3D primitives.\nComposition: a square 2048x2048-style atlas with exact equal quadrants, isolated effect sprites, no overlap. Real transparent background everywhere outside painted sprites. Colors are painted pigment, not neon glow; keep the major cream cores opaque and alpha-soften only fringe brushwork.\nText: NONE.\nAvoid: any text, labels, numbers, grid, dividing lines, borders, checkerboard pattern, colored backdrop, cast shadow underneath, gun, characters, UI, logos, watermarks, flat vector gradients, low-poly/faceted geometry, smooth plastic, photorealistic PBR, neon bloom, radial symmetry, repeated rings, overabundant tiny particles.",
+  "reference_images": [
+    {
+      "path": "outputs/weapon-modules/01-machine-gun/reference.png",
+      "role": "style reference only; inspected with view_image before generation"
+    }
+  ],
+  "transparent_background_requested": true,
+  "generation": {
+    "call_count": 1,
+    "returned_file_basename": "exec-164c42ed-05da-41ef-aeea-ef044b951146.png",
+    "reported_cost": null,
+    "cost_note": "Built-in tool did not report a monetary or credit cost; no Meshy calls."
+  },
+  "output": {
+    "path": "outputs/combat-vfx-v2/machine-gun-painted-v1/textures/painted-vfx-atlas.png",
+    "bytes": 1411461,
+    "sha256": "bd7773dfb5af91f026acdee110dd705f94e7124fd478a9661a9333895d31c3c3",
+    "width": 1254,
+    "height": 1254,
+    "color_type": "RGBA",
+    "bit_depth": 8,
+    "byte_identical_copy": true,
+    "image_edits_applied": false
+  },
+  "atlas": {
+    "columns": 2,
+    "rows": 2,
+    "cell_width": 627,
+    "cell_height": 627,
+    "cells": [
+      {
+        "cell": "TL",
+        "name": "muzzle-flash",
+        "direction": "right",
+        "pixel_rect": [
+          0,
+          0,
+          627,
+          627
+        ]
+      },
+      {
+        "cell": "TR",
+        "name": "impact-burst",
+        "direction": "asymmetric outward",
+        "pixel_rect": [
+          627,
+          0,
+          627,
+          627
+        ]
+      },
+      {
+        "cell": "BL",
+        "name": "smoke-puff",
+        "direction": "rising",
+        "pixel_rect": [
+          0,
+          627,
+          627,
+          627
+        ]
+      },
+      {
+        "cell": "BR",
+        "name": "projectile-streak",
+        "direction": "right with leftward tail",
+        "pixel_rect": [
+          627,
+          627,
+          627,
+          627
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "method": "Read-only PNG inflate/filter decode in Node built-ins; byte-identical copy with exclusive destination. No crop/repaint/alpha rewrite.",
+    "visible_output_inspected": true,
+    "alpha_counts": {
+      "transparent": 955421,
+      "partial": 616672,
+      "opaque": 423
+    },
+    "cell_alpha_bounds": [
+      {
+        "cell": "TL",
+        "origin": [
+          0,
+          0
+        ],
+        "size": [
+          627,
+          627
+        ],
+        "boxes": [
+          {
+            "alpha_above": 0,
+            "count": 102491,
+            "bbox_cell": [
+              0,
+              19,
+              626,
+              626
+            ],
+            "padding_px": {
+              "left": 0,
+              "top": 19,
+              "right": 0,
+              "bottom": 0
+            }
+          },
+          {
+            "alpha_above": 8,
+            "count": 78986,
+            "bbox_cell": [
+              52,
+              181,
+              609,
+              494
+            ],
+            "padding_px": {
+              "left": 52,
+              "top": 181,
+              "right": 17,
+              "bottom": 132
+            }
+          },
+          {
+            "alpha_above": 127,
+            "count": 74599,
+            "bbox_cell": [
+              56,
+              183,
+              608,
+              493
+            ],
+            "padding_px": {
+              "left": 56,
+              "top": 183,
+              "right": 18,
+              "bottom": 133
+            }
+          }
+        ]
+      },
+      {
+        "cell": "TR",
+        "origin": [
+          627,
+          0
+        ],
+        "size": [
+          627,
+          627
+        ],
+        "boxes": [
+          {
+            "alpha_above": 0,
+            "count": 223646,
+            "bbox_cell": [
+              1,
+              55,
+              595,
+              610
+            ],
+            "padding_px": {
+              "left": 1,
+              "top": 55,
+              "right": 31,
+              "bottom": 16
+            }
+          },
+          {
+            "alpha_above": 8,
+            "count": 153249,
+            "bbox_cell": [
+              41,
+              60,
+              585,
+              603
+            ],
+            "padding_px": {
+              "left": 41,
+              "top": 60,
+              "right": 41,
+              "bottom": 23
+            }
+          },
+          {
+            "alpha_above": 127,
+            "count": 141603,
+            "bbox_cell": [
+              43,
+              62,
+              584,
+              602
+            ],
+            "padding_px": {
+              "left": 43,
+              "top": 62,
+              "right": 42,
+              "bottom": 24
+            }
+          }
+        ]
+      },
+      {
+        "cell": "BL",
+        "origin": [
+          0,
+          627
+        ],
+        "size": [
+          627,
+          627
+        ],
+        "boxes": [
+          {
+            "alpha_above": 0,
+            "count": 190763,
+            "bbox_cell": [
+              0,
+              0,
+              626,
+              626
+            ],
+            "padding_px": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          },
+          {
+            "alpha_above": 8,
+            "count": 164995,
+            "bbox_cell": [
+              59,
+              63,
+              583,
+              556
+            ],
+            "padding_px": {
+              "left": 59,
+              "top": 63,
+              "right": 43,
+              "bottom": 70
+            }
+          },
+          {
+            "alpha_above": 127,
+            "count": 161198,
+            "bbox_cell": [
+              59,
+              64,
+              583,
+              553
+            ],
+            "padding_px": {
+              "left": 59,
+              "top": 64,
+              "right": 43,
+              "bottom": 73
+            }
+          }
+        ]
+      },
+      {
+        "cell": "BR",
+        "origin": [
+          627,
+          627
+        ],
+        "size": [
+          627,
+          627
+        ],
+        "boxes": [
+          {
+            "alpha_above": 0,
+            "count": 100195,
+            "bbox_cell": [
+              1,
+              7,
+              616,
+              626
+            ],
+            "padding_px": {
+              "left": 1,
+              "top": 7,
+              "right": 10,
+              "bottom": 0
+            }
+          },
+          {
+            "alpha_above": 8,
+            "count": 75573,
+            "bbox_cell": [
+              34,
+              195,
+              588,
+              460
+            ],
+            "padding_px": {
+              "left": 34,
+              "top": 195,
+              "right": 38,
+              "bottom": 166
+            }
+          },
+          {
+            "alpha_above": 127,
+            "count": 69202,
+            "bbox_cell": [
+              36,
+              196,
+              587,
+              459
+            ],
+            "padding_px": {
+              "left": 36,
+              "top": 196,
+              "right": 39,
+              "bottom": 167
+            }
+          }
+        ]
+      }
+    ],
+    "observations_ko": [
+      "네 개의 동일 크기 셀에 포구 섬광·비대칭 타격·구아슈 연기·방향성 궤적이 배치되어 있다.",
+      "글자·격자·테두리·체커보드·무기는 그려져 있지 않다. 황동/크림/산호/세이지 색층과 붓결이 보인다.",
+      "생성 PNG의 알파를 편집하지 않고 그대로 복사했다."
+    ],
+    "limitations_ko": [
+      "생성 결과는 1254×1254이며 셀은 627×627이다. 요청의 2048-style 해상도가 강제된 결과는 아니다.",
+      "극히 낮은 알파(1~8/255)의 흔적이 일부 셀 경계에 있다. 알파>8의 가시 형상은 모두 셀 안에 있고 최소 여백은 17px이다.",
+      "엄격한 완전투명 12% padding은 생성 결과가 충족하지 않는다. 소비 런타임에서 alphaTest 약0.04로 희미한 외곽 흔적을 버리는 방법을 권한다. 원본 alpha는 보존한다.",
+      "실제 선체·무기 위의 크기/합성/깊이/가림/시간연출은 후속 runtime 검수 대상이다. 이 PNG는 3D 모델이나 GLB 내장 애니메이션이 아니다."
+    ]
+  },
+  "runtime_handoff": {
+    "recommended_alpha_test": 0.04,
+    "recommended_depth_write": false,
+    "notes": [
+      "Use the four equal quadrant UV rectangles; no image crop is needed.",
+      "Preserve source alpha and use runtime alpha test for faint alpha residue.",
+      "Do not report the sprite atlas as Meshy-generated geometry. Root task owns the 3D body, runtime animation and final scene QA."
+    ]
+  },
+  "boundaries": {
+    "meshy_calls": 0,
+    "browser_started": false,
+    "source_assets_overwritten": false,
+    "shared_files_modified": false
+  }
+}

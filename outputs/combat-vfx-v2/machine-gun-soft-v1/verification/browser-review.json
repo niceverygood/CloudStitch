@@ -1,0 +1,36 @@
+{
+  "game_title": "Cloudstitch",
+  "date_seoul": "2026-10-18",
+  "status": "targeted_native_IAB_review",
+  "output": {
+    "path": "outputs/combat-vfx-v2/machine-gun-soft-v1/index.html",
+    "bytes": 9001829,
+    "sha256": "ab2ec3a5a8508bb22d2b57545642fd48910b62bd10d0a988b75d5c3cba177503"
+  },
+  "observed": [
+    "Soft texture image decode/render",
+    "Cream/apricot impact and light smoke at1.04s",
+    "Soft brass projectile at0.485s",
+    "Play advanced paused1.04s to1.77s, pause/phase returned1.04s",
+    "Impact attached parallel to target front face"
+  ],
+  "screenshots": [
+    {
+      "path": "verification/soft-impact.jpg",
+      "bytes": 66802,
+      "sha256": "57f317a34cf8ca545fdfb5274a87a76f00e7a79cac8752115629dacb9b82b984"
+    },
+    {
+      "path": "verification/soft-projectile.jpg",
+      "bytes": 62406,
+      "sha256": "97fab9ac0e7e3fbbc5796dffcea636ed2a1c36c6211cbe8614c7c98aad5e597f"
+    }
+  ],
+  "console_warn_error_sample_count": 0,
+  "console_sample_limit": 20,
+  "geometry": "verification/geometry.json",
+  "original_preservation": "verification/preservation.json",
+  "user_art_approved": false,
+  "gameplay_integrated": false,
+  "full_mobile_ghosting_performance_qa": false
+}

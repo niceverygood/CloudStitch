@@ -1,0 +1,274 @@
+{
+  "revision": "HERO-WEAPON-REVIEW-READY1",
+  "title": "Cloudstitch",
+  "files": [
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v1/viewer.js",
+      "bytes": 16935,
+      "sha256": "4fdb611ef43bc4af17066d4b103a3f78ee44974c0b0845ed382da697b2656ac5"
+    },
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v1/rig.js",
+      "bytes": 4031,
+      "sha256": "1a13db3c930d7e744d47931e6214494e67d7601b1af19c65e39d2a19f100d96c"
+    },
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v1/template.html",
+      "bytes": 5593,
+      "sha256": "16530a2c13e3e9c0ccada6fc5d00dc90ba9e6fd8e9b4d472c4937961d8a55421"
+    },
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v1/build.cjs",
+      "bytes": 4354,
+      "sha256": "b13193ed1a89a3245672cf492ff9078f79a53202e19263c47c1fbcda93e68c0d"
+    },
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v1/rig.test.cjs",
+      "bytes": 5511,
+      "sha256": "23e08ee5eb13df397a65c54c6c73cb477122b7929c6720396afa7954db05e118"
+    },
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v1/verify-browser.cjs",
+      "bytes": 7702,
+      "sha256": "c02b15905ccc01f7363e3e5e35b58b75b3569feab9aafcf1b24457c7a957a541"
+    },
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v1/HANDOFF.txt",
+      "bytes": 4971,
+      "sha256": "976eb8aeabcabb3353d4354926f4c4ffbb485d3314a4570c7e09037ee34ef42c"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/index.html",
+      "bytes": 13652950,
+      "sha256": "d9c08bceedb8f4c5d4b6bf5afaef23363a49d4719fe8e68c7f198387bb806063"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-verification.json",
+      "bytes": 1281,
+      "sha256": "97b453f820de59a372fc17cccc9a5959138ea7274e38fd524d91a830872efddc"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/ship-states/evolution30/variants.js",
+      "bytes": 16060,
+      "sha256": "e84ad705179b555a10db141a4e9532a88f49c493187efe73c84e9f134756a58e"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/ship-states/evolution30/catalog.js",
+      "bytes": 3277,
+      "sha256": "777c71fb7476ee2e3b02edc6789afac3d3ef6f8275025b8ad7da9211c9fc21da"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/airship-rig/part-map.json",
+      "bytes": 98796,
+      "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.js",
+      "bytes": 12956,
+      "sha256": "1bfe6f5f7678946ee142f6886b392b027df7747f84c9a43607a983b5737a78c7"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/combat-vfx-v2/machine-gun-soft-runtime-v1/painted-effects.js",
+      "bytes": 19321,
+      "sha256": "210e4a2a69ee3932bd66a3cda8540e687fc1bb78b373e85835732a323d519d6a"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/outputs/ship-states-v1/delivery-manifest.json",
+      "bytes": 7932,
+      "sha256": "6a8e3871a25474091767fd45f90ea440d3d5bb50710395d5ac4ad0d0b29a6063"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "path": "tools/ship-states/evolution30/variants.js",
+      "bytes": 16060,
+      "sha256": "e84ad705179b555a10db141a4e9532a88f49c493187efe73c84e9f134756a58e"
+    },
+    {
+      "path": "tools/ship-states/evolution30/catalog.js",
+      "bytes": 3277,
+      "sha256": "777c71fb7476ee2e3b02edc6789afac3d3ef6f8275025b8ad7da9211c9fc21da"
+    },
+    {
+      "path": "tools/airship-rig/part-map.json",
+      "bytes": 98796,
+      "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.js",
+      "bytes": 12956,
+      "sha256": "1bfe6f5f7678946ee142f6886b392b027df7747f84c9a43607a983b5737a78c7"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/painted-effects.js",
+      "bytes": 19321,
+      "sha256": "210e4a2a69ee3932bd66a3cda8540e687fc1bb78b373e85835732a323d519d6a"
+    },
+    {
+      "path": "outputs/ship-states-v1/delivery-manifest.json",
+      "bytes": 7932,
+      "sha256": "6a8e3871a25474091767fd45f90ea440d3d5bb50710395d5ac4ad0d0b29a6063"
+    },
+    {
+      "path": "outputs/selected-airship-toon3d/airship.glb",
+      "bytes": 3645884,
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74"
+    },
+    {
+      "path": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+      "bytes": 3299860,
+      "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/textures/soft-vfx-atlas.png",
+      "bytes": 432876,
+      "sha256": "c4ce60208e6dc66f3d5d8bec6a04399786e1ffb29b9cec55f8ab77d3ae4202ee"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/textures/soft-material-atlas.png",
+      "bytes": 2132005,
+      "sha256": "20deb2347094dcc8ba0ca8d6b6c7fcc66a7a770f582aa356e251bcee9b2911fb"
+    }
+  ],
+  "readDependencyPins": [
+    {
+      "original": {
+        "path": "tools/ship-states/variants.js",
+        "bytes": 40141,
+        "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "original": {
+        "path": "tools/ship-states/evolution30/variants.js",
+        "bytes": 16060,
+        "sha256": "e84ad705179b555a10db141a4e9532a88f49c493187efe73c84e9f134756a58e"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/ship-states/evolution30/variants.js",
+      "bytes": 16060,
+      "sha256": "e84ad705179b555a10db141a4e9532a88f49c493187efe73c84e9f134756a58e"
+    },
+    {
+      "original": {
+        "path": "tools/ship-states/evolution30/catalog.js",
+        "bytes": 3277,
+        "sha256": "777c71fb7476ee2e3b02edc6789afac3d3ef6f8275025b8ad7da9211c9fc21da"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/ship-states/evolution30/catalog.js",
+      "bytes": 3277,
+      "sha256": "777c71fb7476ee2e3b02edc6789afac3d3ef6f8275025b8ad7da9211c9fc21da"
+    },
+    {
+      "original": {
+        "path": "tools/airship-rig/part-map.json",
+        "bytes": 98796,
+        "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/airship-rig/part-map.json",
+      "bytes": 98796,
+      "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+    },
+    {
+      "original": {
+        "path": "tools/battlefield/sim.mjs",
+        "bytes": 31917,
+        "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "original": {
+        "path": "tools/battlefield/integration.mjs",
+        "bytes": 5525,
+        "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "original": {
+        "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.js",
+        "bytes": 12956,
+        "sha256": "1bfe6f5f7678946ee142f6886b392b027df7747f84c9a43607a983b5737a78c7"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.js",
+      "bytes": 12956,
+      "sha256": "1bfe6f5f7678946ee142f6886b392b027df7747f84c9a43607a983b5737a78c7"
+    },
+    {
+      "original": {
+        "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/painted-effects.js",
+        "bytes": 19321,
+        "sha256": "210e4a2a69ee3932bd66a3cda8540e687fc1bb78b373e85835732a323d519d6a"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/tools/combat-vfx-v2/machine-gun-soft-runtime-v1/painted-effects.js",
+      "bytes": 19321,
+      "sha256": "210e4a2a69ee3932bd66a3cda8540e687fc1bb78b373e85835732a323d519d6a"
+    },
+    {
+      "original": {
+        "path": "outputs/ship-states-v1/delivery-manifest.json",
+        "bytes": 7932,
+        "sha256": "6a8e3871a25474091767fd45f90ea440d3d5bb50710395d5ac4ad0d0b29a6063"
+      },
+      "path": "outputs/combat-vfx-v2/hero-weapon-review-v1/source-pins/outputs/ship-states-v1/delivery-manifest.json",
+      "bytes": 7932,
+      "sha256": "6a8e3871a25474091767fd45f90ea440d3d5bb50710395d5ac4ad0d0b29a6063"
+    }
+  ],
+  "heroOwnerThread": "01a14ec2-d205-74b1-9054-ce509b544b01",
+  "factoryContract": {
+    "up": "+Y",
+    "forward": "-X",
+    "originalUnits": "non-metre source units",
+    "displayScale": 12,
+    "originalTurretHidden": true,
+    "mount": "review-only external foredeck, geometric muzzle from original MG tip vertices"
+  },
+  "simulation": "Read-only consumer of existing battlefield adapter: no second collision/damage engine",
+  "review": {
+    "softEffectRevision": "machine-gun-soft-runtime-v1",
+    "latestDramaticExpressionImplemented": false,
+    "evolution30Frozen": false,
+    "sourceHeroAndWeaponPreserved": true
+  },
+  "browserVerified": false,
+  "newPaidCalls": 0,
+  "scope": "Hero model forms + mounted original MG + actual firing/projectile/contact/HP and soft surface-aligned effects"
+}

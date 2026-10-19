@@ -1,0 +1,1400 @@
+{
+  "checks": [
+    {
+      "name": "audio/events/rig/template unchanged",
+      "pass": true
+    },
+    {
+      "name": "actual final3 models ready AA true",
+      "pass": true
+    },
+    {
+      "name": "mobility launch shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "mobility",
+        "time": 0.9,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "mobility",
+          "rich": false,
+          "time": 0.9,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.0019427325398154727,
+          "hullRecoil": 0.0019013000556456394,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "mobility",
+          "rich": true,
+          "time": 0.9,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.005550664399472716,
+          "hullRecoil": 0.005432285873273256,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 2,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 741,
+          "textures": 8,
+          "programs": 8
+        }
+      }
+    },
+    {
+      "name": "mobility impact shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "mobility",
+        "time": 1.3,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "mobility",
+          "rich": false,
+          "time": 1.3,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 2,
+          "mechanismRecoil": 0.003250521980967813,
+          "hullRecoil": -0.00039807328101451855,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "mobility",
+          "rich": true,
+          "time": 1.3,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 2,
+          "mechanismRecoil": 0.009287205659908093,
+          "hullRecoil": -0.001137352231470053,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 3,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 798,
+          "textures": 8,
+          "programs": 8
+        }
+      }
+    },
+    {
+      "name": "mobility aftermath shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "mobility",
+        "time": 2.21,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "mobility",
+          "rich": false,
+          "time": 2.21,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [
+            0,
+            1,
+            2
+          ],
+          "projectileVisible": 0,
+          "mechanismRecoil": 0.000016587246416233103,
+          "hullRecoil": -0.0000040617087449057035,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "mobility",
+          "rich": true,
+          "time": 2.21,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [
+            0,
+            1,
+            2
+          ],
+          "projectileVisible": 0,
+          "mechanismRecoil": 0.00004739213261784059,
+          "hullRecoil": -0.00001160488212830201,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 4,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 892,
+          "textures": 8,
+          "programs": 8
+        }
+      }
+    },
+    {
+      "name": "mobility all shots hit",
+      "pass": true
+    },
+    {
+      "name": "mobility rich effects no cumulative transforms/opacity",
+      "pass": true
+    },
+    {
+      "name": "mobility painted mode",
+      "pass": true
+    },
+    {
+      "name": "mobility cel mode",
+      "pass": true
+    },
+    {
+      "name": "mobility original mode",
+      "pass": true
+    },
+    {
+      "name": "artillery launch shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "artillery",
+        "time": 1,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "artillery",
+          "rich": false,
+          "time": 1,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.004209253836266802,
+          "hullRecoil": 0.0019013000556456394,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "artillery",
+          "rich": true,
+          "time": 1,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.012026439532190847,
+          "hullRecoil": 0.005432285873273256,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 6,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 1466,
+          "textures": 17,
+          "programs": 11
+        }
+      }
+    },
+    {
+      "name": "artillery impact shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "artillery",
+        "time": 1.6,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "artillery",
+          "rich": false,
+          "time": 1.6,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 2,
+          "mechanismRecoil": 0.004087438174400937,
+          "hullRecoil": 0.001244808070050883,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "artillery",
+          "rich": true,
+          "time": 1.6,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 2,
+          "mechanismRecoil": 0.011678394784002677,
+          "hullRecoil": 0.0035565944858596665,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 7,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 7
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 1543,
+          "textures": 17,
+          "programs": 11
+        }
+      }
+    },
+    {
+      "name": "artillery aftermath shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "artillery",
+        "time": 2.65,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "artillery",
+          "rich": false,
+          "time": 2.65,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [
+            0,
+            1,
+            2
+          ],
+          "projectileVisible": 0,
+          "mechanismRecoil": -0.000003985064000344707,
+          "hullRecoil": 0.00006182976418303313,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "artillery",
+          "rich": true,
+          "time": 2.65,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [
+            0,
+            1,
+            2
+          ],
+          "projectileVisible": 0,
+          "mechanismRecoil": -0.000011385897144000623,
+          "hullRecoil": 0.0001766564690943804,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 8,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 7
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 8
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 1639,
+          "textures": 17,
+          "programs": 11
+        }
+      }
+    },
+    {
+      "name": "artillery all shots hit",
+      "pass": true
+    },
+    {
+      "name": "artillery rich effects no cumulative transforms/opacity",
+      "pass": true
+    },
+    {
+      "name": "artillery painted mode",
+      "pass": true
+    },
+    {
+      "name": "artillery cel mode",
+      "pass": true
+    },
+    {
+      "name": "artillery original mode",
+      "pass": true
+    },
+    {
+      "name": "salvage launch shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "salvage",
+        "time": 1.05,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "salvage",
+          "rich": false,
+          "time": 1.05,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.001942732539815445,
+          "hullRecoil": 0.0019013000556456407,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "right": {
+          "branch": "salvage",
+          "rich": true,
+          "time": 1.05,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.005550664399472688,
+          "hullRecoil": 0.0054322858732732595,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 10,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 7
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 8
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 9
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 10
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 2288,
+          "textures": 25,
+          "programs": 12
+        }
+      }
+    },
+    {
+      "name": "salvage impact shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "salvage",
+        "time": 1.7,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "salvage",
+          "rich": false,
+          "time": 1.7,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 1,
+          "mechanismRecoil": -0.00007842734675150842,
+          "hullRecoil": -0.00019437241939033824,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "right": {
+          "branch": "salvage",
+          "rich": true,
+          "time": 1.7,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 1,
+          "mechanismRecoil": -0.00022407813357575024,
+          "hullRecoil": -0.0005553497696866807,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 11,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 7
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 8
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 9
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 10
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 11
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 2340,
+          "textures": 25,
+          "programs": 12
+        }
+      }
+    },
+    {
+      "name": "salvage aftermath shared time/finite",
+      "pass": true,
+      "detail": {
+        "branch": "salvage",
+        "time": 2.15,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "salvage",
+          "rich": false,
+          "time": 2.15,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 1,
+          "mechanismRecoil": -0.000005490395004373316,
+          "hullRecoil": -0.00001217144683757281,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "right": {
+          "branch": "salvage",
+          "rich": true,
+          "time": 2.15,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 1,
+          "mechanismRecoil": -0.000015686842869622186,
+          "hullRecoil": -0.000034775562393065174,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 12,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 7
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 8
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 9
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 10
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 11
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 12
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 2340,
+          "textures": 25,
+          "programs": 12
+        }
+      }
+    },
+    {
+      "name": "salvage all shots hit",
+      "pass": true
+    },
+    {
+      "name": "salvage rich effects no cumulative transforms/opacity",
+      "pass": true
+    },
+    {
+      "name": "salvage painted mode",
+      "pass": true
+    },
+    {
+      "name": "salvage cel mode",
+      "pass": true
+    },
+    {
+      "name": "salvage original mode",
+      "pass": true
+    },
+    {
+      "name": "mobile final no overflow",
+      "pass": true
+    },
+    {
+      "name": "no JS errors",
+      "pass": true
+    }
+  ],
+  "browserClosed": true,
+  "errors": [],
+  "screenshots": [
+    "mobility-launch.png",
+    "mobility-impact.png",
+    "mobility-aftermath.png",
+    "artillery-launch.png",
+    "artillery-impact.png",
+    "artillery-aftermath.png",
+    "salvage-launch.png",
+    "salvage-impact.png",
+    "salvage-aftermath.png"
+  ],
+  "audioReuse": "qa-r4 exact audio.js/events.js/rig.js/template.html; final AA true audio unlock/schedule/cancel additionally checked in qa-final",
+  "ghostReuse": "qa-final: 0/240/480 no state drift or growing traces; strict pixel equality false on transparent MSAA boundaries",
+  "viewerSha256": "40a9c016d5d50062c31b12f2437c34be604c0561c20bba8f786622085f4ed39d",
+  "originals": [
+    {
+      "path": "outputs/ship-weapon-harmony-v1/mobility-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/artillery-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/salvage-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-recovery.wav",
+      "preserved": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,547 @@
+{
+  "version": "encounters-integration-v1",
+  "note": "Artificial positions and forced defeat notifications. Ordering example only; no second combat simulation.",
+  "commands": [
+    {
+      "commandId": "encounter-1-1",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "briefing",
+      "type": "clear-combat",
+      "reason": "start",
+      "targetPhase": "opening",
+      "restoreCheckpoint": false,
+      "clear": [
+        "enemy-actors",
+        "projectiles",
+        "telegraphs",
+        "charges",
+        "tethers",
+        "effects",
+        "repair-pickups",
+        "held-input"
+      ],
+      "authority": "battlefield",
+      "preserve": [
+        "confirmed-cargo-and-rewards-unless-host-checkpoint-restores-them"
+      ]
+    },
+    {
+      "commandId": "encounter-1-2",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "opening",
+      "type": "phase-changed",
+      "from": "briefing",
+      "to": "opening",
+      "majorAttackTokens": 1
+    },
+    {
+      "commandId": "encounter-1-3",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "opening",
+      "type": "spawn-enemy",
+      "enemyId": "encounter-1-stage-01-harbor-opening-0",
+      "assetId": "enemy-pirate-scout",
+      "name": "해적 정찰선",
+      "role": "scout",
+      "tier": "normal",
+      "x": -28,
+      "y": 0,
+      "z": -12,
+      "candidateId": "example-west",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/17-prologue-mission-script.txt",
+        "outputs/23-act1-main-quests.txt",
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/10-first-boss.txt",
+        "outputs/68-bell-boss-arena.txt"
+      ],
+      "sourceKind": "prototypeUnit",
+      "canonEncounterCompleted": false,
+      "tuning": {
+        "hp": 30,
+        "speed": 2.7,
+        "range": 9,
+        "attack": "shot",
+        "recovery": 2.4,
+        "movement": "flank-and-orbit",
+        "radiusHint": 0.8,
+        "healBudget": 0,
+        "units": "encounter prototype LU; battlefield chooses scale conversion"
+      },
+      "difficultyTuning": {
+        "enemyHealth": 1,
+        "enemyDamage": 1,
+        "telegraphTime": 1
+      }
+    },
+    {
+      "commandId": "encounter-1-4",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "opening",
+      "type": "spawn-enemy",
+      "enemyId": "encounter-1-stage-01-harbor-opening-1",
+      "assetId": "enemy-pirate-scout",
+      "name": "해적 정찰선",
+      "role": "scout",
+      "tier": "normal",
+      "x": 28,
+      "y": 0,
+      "z": -27,
+      "candidateId": "example-east",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/17-prologue-mission-script.txt",
+        "outputs/23-act1-main-quests.txt",
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/10-first-boss.txt",
+        "outputs/68-bell-boss-arena.txt"
+      ],
+      "sourceKind": "prototypeUnit",
+      "canonEncounterCompleted": false,
+      "tuning": {
+        "hp": 30,
+        "speed": 2.7,
+        "range": 9,
+        "attack": "shot",
+        "recovery": 2.4,
+        "movement": "flank-and-orbit",
+        "radiusHint": 0.8,
+        "healBudget": 0,
+        "units": "encounter prototype LU; battlefield chooses scale conversion"
+      },
+      "difficultyTuning": {
+        "enemyHealth": 1,
+        "enemyDamage": 1,
+        "telegraphTime": 1
+      }
+    },
+    {
+      "commandId": "encounter-1-5",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "opening",
+      "type": "enemy-defeated",
+      "enemyId": "encounter-1-stage-01-harbor-opening-0",
+      "role": "scout",
+      "tier": "normal",
+      "assetId": "enemy-pirate-scout"
+    },
+    {
+      "commandId": "encounter-1-6",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "opening",
+      "type": "enemy-defeated",
+      "enemyId": "encounter-1-stage-01-harbor-opening-1",
+      "role": "scout",
+      "tier": "normal",
+      "assetId": "enemy-pirate-scout"
+    },
+    {
+      "commandId": "encounter-1-7",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "midboss",
+      "type": "phase-changed",
+      "from": "opening",
+      "to": "midboss",
+      "majorAttackTokens": 1
+    },
+    {
+      "commandId": "encounter-1-8",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "midboss",
+      "type": "spawn-enemy",
+      "enemyId": "encounter-1-stage-01-harbor-midboss-0",
+      "assetId": "mini-funeral-guard",
+      "name": "소형 장례 경비선",
+      "role": "blockade",
+      "tier": "midboss",
+      "x": -28,
+      "y": 0,
+      "z": -12,
+      "candidateId": "example-west",
+      "sourceRefs": [
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/25-enemy-ai-encounters.txt"
+      ],
+      "sourceKind": "prototypeCommander",
+      "canonEncounterCompleted": false,
+      "tuning": {
+        "hp": 155,
+        "speed": 0.935,
+        "range": 11,
+        "attack": "fan",
+        "recovery": 3.5,
+        "movement": "block-route-broadside",
+        "radiusHint": 1.6,
+        "healBudget": 0,
+        "units": "encounter prototype LU; battlefield chooses scale conversion"
+      },
+      "difficultyTuning": {
+        "enemyHealth": 1,
+        "enemyDamage": 1,
+        "telegraphTime": 1
+      }
+    },
+    {
+      "commandId": "encounter-1-9",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "midboss",
+      "type": "boss-spawned",
+      "enemyId": "encounter-1-stage-01-harbor-midboss-0",
+      "tier": "midboss",
+      "assetId": "mini-funeral-guard"
+    },
+    {
+      "commandId": "encounter-1-10",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "midboss",
+      "type": "enemy-defeated",
+      "enemyId": "encounter-1-stage-01-harbor-midboss-0",
+      "role": "blockade",
+      "tier": "midboss",
+      "assetId": "mini-funeral-guard"
+    },
+    {
+      "commandId": "encounter-1-11",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "midboss",
+      "type": "boss-defeated",
+      "enemyId": "encounter-1-stage-01-harbor-midboss-0",
+      "role": "blockade",
+      "tier": "midboss",
+      "assetId": "mini-funeral-guard"
+    },
+    {
+      "commandId": "encounter-1-12",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "midboss",
+      "type": "clear-combat",
+      "reason": "maintenance",
+      "targetPhase": "maintenance",
+      "restoreCheckpoint": false,
+      "clear": [
+        "enemy-actors",
+        "projectiles",
+        "telegraphs",
+        "charges",
+        "tethers",
+        "effects",
+        "repair-pickups",
+        "held-input"
+      ],
+      "authority": "battlefield",
+      "preserve": [
+        "confirmed-cargo-and-rewards-unless-host-checkpoint-restores-them"
+      ]
+    },
+    {
+      "commandId": "encounter-1-13",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "maintenance",
+      "type": "phase-changed",
+      "from": "midboss",
+      "to": "maintenance",
+      "majorAttackTokens": 0
+    },
+    {
+      "commandId": "encounter-1-14",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "maintenance",
+      "type": "maintenance-ready",
+      "repairPolicy": "host-explicit-prototype-support; no implicit economy or save"
+    },
+    {
+      "commandId": "encounter-1-15",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "late",
+      "type": "phase-changed",
+      "from": "maintenance",
+      "to": "late",
+      "majorAttackTokens": 2
+    },
+    {
+      "commandId": "encounter-1-16",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "late",
+      "type": "spawn-enemy",
+      "enemyId": "encounter-1-stage-01-harbor-late-0",
+      "assetId": "enemy-pirate-scout",
+      "name": "해적 정찰선",
+      "role": "scout",
+      "tier": "normal",
+      "x": -28,
+      "y": 0,
+      "z": -12,
+      "candidateId": "example-west",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/17-prologue-mission-script.txt",
+        "outputs/23-act1-main-quests.txt",
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/10-first-boss.txt",
+        "outputs/68-bell-boss-arena.txt"
+      ],
+      "sourceKind": "prototypeUnit",
+      "canonEncounterCompleted": false,
+      "tuning": {
+        "hp": 30,
+        "speed": 2.7,
+        "range": 9,
+        "attack": "shot",
+        "recovery": 2.4,
+        "movement": "flank-and-orbit",
+        "radiusHint": 0.8,
+        "healBudget": 0,
+        "units": "encounter prototype LU; battlefield chooses scale conversion"
+      },
+      "difficultyTuning": {
+        "enemyHealth": 1,
+        "enemyDamage": 1,
+        "telegraphTime": 1
+      }
+    },
+    {
+      "commandId": "encounter-1-17",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "late",
+      "type": "spawn-enemy",
+      "enemyId": "encounter-1-stage-01-harbor-late-1",
+      "assetId": "enemy-cult-blockade",
+      "name": "교단 봉쇄선",
+      "role": "blockade",
+      "tier": "normal",
+      "x": 28,
+      "y": 0,
+      "z": -27,
+      "candidateId": "example-east",
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/17-prologue-mission-script.txt",
+        "outputs/23-act1-main-quests.txt",
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/10-first-boss.txt",
+        "outputs/68-bell-boss-arena.txt"
+      ],
+      "sourceKind": "prototypeUnit",
+      "canonEncounterCompleted": false,
+      "tuning": {
+        "hp": 55,
+        "speed": 1.1,
+        "range": 11,
+        "attack": "fan",
+        "recovery": 3.5,
+        "movement": "block-route-broadside",
+        "radiusHint": 0.8,
+        "healBudget": 0,
+        "units": "encounter prototype LU; battlefield chooses scale conversion"
+      },
+      "difficultyTuning": {
+        "enemyHealth": 1,
+        "enemyDamage": 1,
+        "telegraphTime": 1
+      }
+    },
+    {
+      "commandId": "encounter-1-18",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "late",
+      "type": "enemy-defeated",
+      "enemyId": "encounter-1-stage-01-harbor-late-0",
+      "role": "scout",
+      "tier": "normal",
+      "assetId": "enemy-pirate-scout"
+    },
+    {
+      "commandId": "encounter-1-19",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "late",
+      "type": "enemy-defeated",
+      "enemyId": "encounter-1-stage-01-harbor-late-1",
+      "role": "blockade",
+      "tier": "normal",
+      "assetId": "enemy-cult-blockade"
+    },
+    {
+      "commandId": "encounter-1-20",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "finalboss",
+      "type": "phase-changed",
+      "from": "late",
+      "to": "finalboss",
+      "majorAttackTokens": 2
+    },
+    {
+      "commandId": "encounter-1-21",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "finalboss",
+      "type": "spawn-enemy",
+      "enemyId": "encounter-1-stage-01-harbor-finalboss-0",
+      "assetId": "boss-bell-devourer",
+      "name": "종을 삼킨 자",
+      "role": "bell",
+      "tier": "finalboss",
+      "x": -28,
+      "y": 0,
+      "z": -12,
+      "candidateId": "example-west",
+      "sourceRefs": [
+        "outputs/10-first-boss.txt",
+        "outputs/68-bell-boss-arena.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ],
+      "sourceKind": "prototypeCommander",
+      "canonEncounterCompleted": false,
+      "tuning": {
+        "hp": 250,
+        "speed": 0.68,
+        "range": 12,
+        "attack": "ring",
+        "recovery": 3.6,
+        "movement": "slow-broadside",
+        "radiusHint": 1.6,
+        "healBudget": 0,
+        "units": "encounter prototype LU; battlefield chooses scale conversion"
+      },
+      "difficultyTuning": {
+        "enemyHealth": 1,
+        "enemyDamage": 1,
+        "telegraphTime": 1
+      }
+    },
+    {
+      "commandId": "encounter-1-22",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "finalboss",
+      "type": "boss-spawned",
+      "enemyId": "encounter-1-stage-01-harbor-finalboss-0",
+      "tier": "finalboss",
+      "assetId": "boss-bell-devourer"
+    },
+    {
+      "commandId": "encounter-1-23",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "finalboss",
+      "type": "enemy-defeated",
+      "enemyId": "encounter-1-stage-01-harbor-finalboss-0",
+      "role": "bell",
+      "tier": "finalboss",
+      "assetId": "boss-bell-devourer"
+    },
+    {
+      "commandId": "encounter-1-24",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "finalboss",
+      "type": "boss-defeated",
+      "enemyId": "encounter-1-stage-01-harbor-finalboss-0",
+      "role": "bell",
+      "tier": "finalboss",
+      "assetId": "boss-bell-devourer"
+    },
+    {
+      "commandId": "encounter-1-25",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "finalboss",
+      "type": "clear-combat",
+      "reason": "victory",
+      "targetPhase": "victory",
+      "restoreCheckpoint": false,
+      "clear": [
+        "enemy-actors",
+        "projectiles",
+        "telegraphs",
+        "charges",
+        "tethers",
+        "effects",
+        "repair-pickups",
+        "held-input"
+      ],
+      "authority": "battlefield",
+      "preserve": [
+        "confirmed-cargo-and-rewards-unless-host-checkpoint-restores-them"
+      ]
+    },
+    {
+      "commandId": "encounter-1-26",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "victory",
+      "type": "phase-changed",
+      "from": "finalboss",
+      "to": "victory",
+      "majorAttackTokens": 0
+    },
+    {
+      "commandId": "encounter-1-27",
+      "runId": 1,
+      "stageId": "stage-01-harbor",
+      "phase": "victory",
+      "type": "region-completed",
+      "canonEncounterCompleted": false
+    }
+  ],
+  "final": {
+    "version": "encounters-integration-v1",
+    "runId": 1,
+    "stageId": "stage-01-harbor",
+    "phase": "victory",
+    "paused": false,
+    "active": [],
+    "bossSpawnCounts": {
+      "midboss": 1,
+      "finalboss": 1
+    },
+    "bossDefeatCounts": {
+      "midboss": 1,
+      "finalboss": 1
+    },
+    "clearance": null,
+    "majorAttackTokens": 0,
+    "difficulty": "normal",
+    "activeEnemyIds": []
+  }
+}

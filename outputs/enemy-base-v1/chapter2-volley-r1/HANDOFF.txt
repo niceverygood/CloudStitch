@@ -1,0 +1,10 @@
+Cloudstitch · 2탄 기지 화살 폭우
+index.html: 실제 GLB 연출 검수 / enemy-base.glb: 8초 animation1 포함
+48개24연장 포대를 3층으로 분산, 4파 sector 연사, 시연1순환4608발.
+실제 화살mesh/이동·확장·회전·사라짐과 포대긴장/반동/재장전을 GLB에 담았다.
+기지 원본BIN/mesh/material/image/accessor는 그대로이며 별도 파일에만 추가했다.
+재생/일시정지/시간탐색/반복/처음/전체포화범위 버튼 제공. 줄인동작설정은 자동재생 안함.
+Browser 63/63 PASS, 피크화살 3744발, 48방향 확인.
+단일 sim/피해/충돌/무기/VFX 공통소스 변경 없음. 장비슬롯수·공격성능 확정 아님.
+실제 미술 렌더 읽기와 사용자승인은 기술검사와 별개. ART_REVIEW.txt 참조.
+재현/범위/중앙접속불가 기록: tools/enemy-base/chapter2-volley-r1/README.txt 및 COORDINATION_NOTE.txt.

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:16:49.4190105Z",
+  "status": "reissued frozen READY after three follow-up fixes",
+  "manifest": {
+    "path": "outputs/stage-maps-v1/delivery-manifest.json",
+    "status": "READY",
+    "sha256": "4c624e86d31a19267d3539fe453956fd78abf32840bba74fa800a041691dbec0",
+    "sourceFiles": 19,
+    "outputFiles": 7,
+    "totalFiles": 26,
+    "passed": true,
+    "failures": []
+  },
+  "sourceManifest": {
+    "path": "outputs/stage-maps-v1/source-manifest.json",
+    "sha256": "5ff5b3673c2cd4427fcef42658dd17e02327f8ddfe392342efdc4c91b4b1095c",
+    "matchesOwnerReport": true,
+    "matchesRuntimeReport": true
+  },
+  "unitReport": {
+    "version": "stage-maps-v1",
+    "passed": true,
+    "tests": 25,
+    "pass": 25,
+    "fail": 0,
+    "scope": "authored spatial clearance, selection whitelist, strict route-bound journal and failure preservation"
+  },
+  "runtime": {
+    "passed": true,
+    "browser": false,
+    "departRestartChecks": 6,
+    "sorties": 2,
+    "restart": {
+      "newProcessRestored": true,
+      "settlements": 2,
+      "resources": {
+        "S": 114,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 9,
+      "route": {
+        "routeId": "map-01-harbor",
+        "routeVersion": 1,
+        "stageId": "stage-01-harbor",
+        "levelId": "map-01-harbor-sea",
+        "layoutHash": "fnv1a32:74e72073"
+      }
+    },
+    "duplicateReturnUnchanged": true,
+    "cargoDepartureGate": true
+  },
+  "fixes": [
+    "pauseRequested while busy/blur",
+    "modelErrors pause plus blocking reload",
+    "public renderer-reset bridge for removed enemy connectors/labels"
+  ],
+  "supersedes": "stage-maps-ready-review-2026-10-18.json",
+  "scope": "command read-only size/SHA/report verification; no test or browser execution",
+  "next": "sequential browser QA after playable READY-2; no six-map full-boss claim"
+}

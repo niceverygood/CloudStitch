@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "harness": "tools/map-weather-v1/verify-browser.cjs",
+  "harness_sha256": "76791100fd469fa63ebd8caef1e28ada653174884998820109aeff2412fcabad",
+  "url": "http://127.0.0.1:8860/outputs/map-weather-v1/index.html",
+  "started_at": "2026-10-18T12:50:57.464Z",
+  "scope": "One Chromium page: actual embedded selected GLB and six procedural 3D stations; three display modes, 60 rotation renders per mode (180 total) compared pixel-for-pixel to an explicitly cleared render, outlines, same-state/time/camera standard versus dramatic canvas comparison, UI cards and keyboard, deterministic manual ticks for six gameplay rules, pause/reset, camera, mobile and local-only request checks. Local opt-in battlefield weather slice; not campaign, production performance or human art approval.",
+  "budget_seconds": 120,
+  "checks": [],
+  "samples": {},
+  "ghosting": [],
+  "screenshots": [],
+  "errors": [
+    "page.waitForFunction: Timeout 40000ms exceeded.\n    at main (C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\map-weather-v1\\verify-browser.cjs:31:14)"
+  ],
+  "console_errors": [
+    {
+      "kind": "pageerror",
+      "message": "Unexpected token '&'"
+    }
+  ],
+  "external_requests": [],
+  "failed_requests": [],
+  "inputs": [
+    {
+      "path": "outputs/map-weather-v1/index.html",
+      "bytes": 5457759,
+      "sha256": "7be1955890967c67f13f7c84a999a7dbee7e9029796bc572cf11b1d667895f22"
+    },
+    {
+      "path": "outputs/map-weather-v1/build-manifest.json",
+      "bytes": 4154,
+      "sha256": "a80253bcab8bfb268c11a4d1024292d3b54a75e8a275e4360bb382de0ea9f271"
+    }
+  ],
+  "browser_closed": true,
+  "finished_at": "2026-10-18T12:52:10.470Z",
+  "elapsed_seconds": 73.003,
+  "passed": false,
+  "output": {
+    "path": "outputs/map-weather-v1/index.html",
+    "bytes": 5457759,
+    "sha256": "7be1955890967c67f13f7c84a999a7dbee7e9029796bc572cf11b1d667895f22"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "revision": "source-r1",
+  "files": [
+    {
+      "path": "tools/chapter1-boss-grand-v2/build.cjs",
+      "bytes": 1863,
+      "sha256": "43ed471dc864f06e7d6045baa714c1736b05f38b0a9ae3c22d3fdd085c10ebd9"
+    },
+    {
+      "path": "tools/chapter1-boss-grand-v2/generate.mjs",
+      "bytes": 2793,
+      "sha256": "43816eaf5b0a3d67606d743db2dde3883caca3fc449683d7315191f26b99a484"
+    },
+    {
+      "path": "tools/chapter1-boss-grand-v2/model.mjs",
+      "bytes": 16484,
+      "sha256": "5690fedfe5560e887752d075cd2f4efdc720ed3c84bd937aac2dd2fb0b035c7d"
+    },
+    {
+      "path": "tools/chapter1-boss-grand-v2/qa.cjs",
+      "bytes": 28925,
+      "sha256": "cd28577c286159a9729be321e7007fc0a3b010fb26995fb1f5bfcf98fb0b2891"
+    },
+    {
+      "path": "tools/chapter1-boss-grand-v2/review.js",
+      "bytes": 24527,
+      "sha256": "39a209c2e62072bb32f4ecf9bb6109f3377a96d58ec5442da04b4c0cc1ea8a34"
+    },
+    {
+      "path": "tools/chapter1-boss-grand-v2/template.html",
+      "bytes": 25737,
+      "sha256": "efc79a11017c1a4142773e84e7dd41a1a33cc011428bc158ea89163cf00f6921"
+    }
+  ],
+  "sourceId": "boss-bell-devourer",
+  "artVariant": "chapter1-boss-grand-v2",
+  "status": "SOURCE_READY",
+  "scope": "new boss1, old v1 preserved",
+  "commands": [
+    "node tools/chapter1-boss-grand-v2/build.cjs --execute",
+    "node tools/chapter1-boss-grand-v2/qa.cjs"
+  ],
+  "budget": "one export + one narrow browser run, 3x120RAF,390px; no other model export"
+}

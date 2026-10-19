@@ -1,0 +1,101 @@
+{
+  "revision": "source-ready-2",
+  "date": "2026-10-18",
+  "logical_assets": 24,
+  "breakdown": {
+    "islands": 6,
+    "nature": 2,
+    "clouds": 4,
+    "birds": 4,
+    "props": 8
+  },
+  "memory_only_triangles": 269618,
+  "memory_only_clips": 37,
+  "animated_assets": 16,
+  "exported": false,
+  "browser_checked": false,
+  "files": [
+    {
+      "path": "tools/map-atmosphere-v1/README.txt",
+      "bytes": 2802,
+      "sha256": "14f58ca8f8f4f6900f0a93111357bbfea53574eb5df11b3236661d7f3ff8beb9"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/build.cjs",
+      "bytes": 7465,
+      "sha256": "092ddbb03a24710f579f6191efa03b530d44c173260f9976d2d3e5847fc61bdf"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/deps-loader.mjs",
+      "bytes": 730,
+      "sha256": "580ae566f2686851d0c1ee18206579080fc14f266c3fdfa1a67464603bf9c172"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/generate.mjs",
+      "bytes": 4671,
+      "sha256": "eaf35965eeb6282b4f447a4ce7d0d8f280479b23381717943aa1ed97bf5f7b25"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/props.mjs",
+      "bytes": 31125,
+      "sha256": "20bc7ef6fbc266d6adaaab8ddc63f463be6030efc48c47a9d7cd2abc7789c7fd"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/sky.mjs",
+      "bytes": 22100,
+      "sha256": "53843f5e1fbc35daccb93e564712058831168d976ed52b55d05083ddd6237c97"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/template.html",
+      "bytes": 9861,
+      "sha256": "7e9f58c14cce81218b798791c55536c0a6fa4302d512a012ae6b1547783431e3"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/terrain.mjs",
+      "bytes": 24743,
+      "sha256": "2f0a6aa9eb1b7c811ecae58e56428d7a58e18e776398879d813e8389254c4f73"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/verify-browser.cjs",
+      "bytes": 9718,
+      "sha256": "43131b283aa65fd67e6d6057ada6df03542960379e729964a3634026f4b8acc2"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/verify.mjs",
+      "bytes": 12303,
+      "sha256": "eb652ee64faab8037cd221afac794d6fc01956d43dd2ad1279cdd74a17efa1b4"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/viewer.js",
+      "bytes": 22336,
+      "sha256": "1fa9d6e4d4a33e9bec3b15338a4272fe9414a7cd03259307e70f196b27354abb"
+    }
+  ],
+  "readonly_inputs": [
+    {
+      "path": "tools/world-assets/core.mjs",
+      "bytes": 7840,
+      "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c"
+    }
+  ],
+  "runtime": {
+    "node": "v24.19.0",
+    "versions": {
+      "three": "0.180.0",
+      "esbuild": "0.25.10",
+      "playwright": "1.62.1",
+      "gltf-validator": "2.0.0-dev.3.10"
+    }
+  },
+  "slot_budget": {
+    "export_seconds": 30,
+    "browser_seconds": 120
+  },
+  "commands": [
+    "node --no-warnings --experimental-loader ./tools/map-atmosphere-v1/deps-loader.mjs tools/map-atmosphere-v1/generate.mjs",
+    "node --no-warnings --experimental-loader ./tools/map-atmosphere-v1/deps-loader.mjs tools/map-atmosphere-v1/verify.mjs",
+    "node tools/map-atmosphere-v1/build.cjs",
+    "node tools/map-atmosphere-v1/verify-browser.cjs"
+  ],
+  "changes": "UI drag/wheel/outline input checks added before any export/browser run"
+}

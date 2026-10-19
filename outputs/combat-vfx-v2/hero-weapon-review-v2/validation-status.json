@@ -1,0 +1,30 @@
+{
+  "revision": "HERO-WEAPON-REVIEW-READY2",
+  "review_url": "http://127.0.0.1:8842/outputs/combat-vfx-v2/hero-weapon-review-v2/index.html",
+  "source_manifest_sha256": "b56846a9b7b302583a13b6be629115f85dcdf80b72eba5319e84616ee6959004",
+  "html_sha256": "d0b90d1fab182ed49c7857a7e7216e9b82a52a4cdcc5c67e75f4c48aeffb9593",
+  "cpu_geometry_and_authority_cases": { "passed": 3, "total": 3, "forms": ["weapons-1", "Lv.15", "Lv.30"] },
+  "http_availability": { "status": 200, "html_bytes": 13653048, "scope": "HTTP only, not a browser rendering check" },
+  "browser_validation": {
+    "status": "blocked_before_execution",
+    "actual_runs": 0,
+    "browser_processes_started": 0,
+    "native_alternative_attempted": false,
+    "completed": false,
+    "tool": "exec_command",
+    "returned_reason": "blocked by policy",
+    "detailed_reason_provided": false,
+    "original_raw_file_available": false,
+    "note": "This is an authored status summary, not an original raw tool response. The tool returned a CreateProcess rejection before preparation or browser execution."
+  },
+  "safety_response": "No same-command retry, alternate runner, permission escalation, installation or server launch. The central owner acknowledged the blocked pre-execution return and paused native alternatives pending cause review.",
+  "product_payload_modified_after_freeze": false,
+  "existing_actual_26_and_soft_13_repeated": false,
+  "latest_dramatic_art_complete": false,
+  "human_art_approval": false,
+  "limitations": [
+    "Weapon platform and geometric muzzle are review assumptions, not production engine sockets.",
+    "Lv.1–30 forms are a pinned in-progress source snapshot from the hero owner.",
+    "Rendering, visible impact screenshots, browser controls and mobile GPU checks remain unverified."
+  ]
+}

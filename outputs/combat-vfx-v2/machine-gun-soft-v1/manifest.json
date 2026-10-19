@@ -1,0 +1,101 @@
+{
+  "game_title": "Cloudstitch",
+  "date_seoul": "2026-10-18",
+  "status": "soft_watercolor_machine_gun_art_prototype",
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-v1/build.cjs",
+      "bytes": 3464,
+      "sha256": "afb723d307b73e8da0bdf653515dd45ff30e6c99d5879e1137c3083b2f9a5149"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-v1/viewer.js",
+      "bytes": 20742,
+      "sha256": "0efce81ddcdbe1bda52b531a32b0df3c27a38045506725f20fc58ac62836bc6c"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-v1/template.html",
+      "bytes": 19568,
+      "sha256": "0a18f0fe7d0f171b1fd45e13f6777256892f3ba4651353f2f7eb50ecd0e629f6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-v1/painted-effects.js",
+      "bytes": 20058,
+      "sha256": "062c2ed8c6b7ab8f02075f89512aadf059cfdc6d8b74a3a101030d41fee839c5"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-v1/verify.cjs",
+      "bytes": 5607,
+      "sha256": "ee1839e311b0733ba0a13393e63d425dc77382be7010d0ac3413772a7752231e"
+    }
+  ],
+  "original_assets": [
+    {
+      "id": "machine-gun-muzzle",
+      "path": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+      "bytes": 43532,
+      "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9",
+      "mime": "model/gltf-binary"
+    },
+    {
+      "id": "machine-gun-projectile",
+      "path": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+      "bytes": 8856,
+      "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b",
+      "mime": "model/gltf-binary"
+    },
+    {
+      "id": "machine-gun-hit",
+      "path": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+      "bytes": 71820,
+      "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d",
+      "mime": "model/gltf-binary"
+    },
+    {
+      "id": "01-machine-gun",
+      "path": "outputs/combat-vfx/sequences/01-machine-gun.glb",
+      "bytes": 3444188,
+      "sha256": "ab8307c1ab29c94f9d4aba9c30a4b75b6fd67e98725ad6114f429175905bbc65",
+      "mime": "model/gltf-binary"
+    }
+  ],
+  "textures": {
+    "atlas": {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-v1/textures/soft-vfx-atlas.png",
+      "bytes": 432876,
+      "sha256": "c4ce60208e6dc66f3d5d8bec6a04399786e1ffb29b9cec55f8ab77d3ae4202ee",
+      "mime": "image/png"
+    },
+    "metal": {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-v1/textures/soft-material-atlas.png",
+      "bytes": 2132005,
+      "sha256": "20deb2347094dcc8ba0ca8d6b6c7fcc66a7a770f582aa356e251bcee9b2911fb",
+      "mime": "image/png"
+    }
+  },
+  "output": {
+    "path": "outputs/combat-vfx-v2/machine-gun-soft-v1/index.html",
+    "bytes": 9001829,
+    "sha256": "ab2ec3a5a8508bb22d2b57545642fd48910b62bd10d0a988b75d5c3cba177503"
+  },
+  "image_generation": {
+    "method": "built-in image_gen",
+    "selected_images": 2,
+    "prompts": "textures/*prompt.json",
+    "total_tool_calls": 3,
+    "effect_atlas_calls": 2,
+    "material_atlas_calls": 1
+  },
+  "meshy_calls": 0,
+  "gameplay_integrated": false,
+  "render_qa": "targeted_native_IAB_review",
+  "style_direction": "Gentle traditional hand-painted fantasy animation; warm watercolor, soft cel paint, cream/apricot/sage; no copied characters or scene",
+  "preserved_previous_version": "outputs/combat-vfx-v2/machine-gun-painted-v1/inventory.json",
+  "references": [
+    {
+      "purpose": "Weapon style source",
+      "path": "outputs/weapon-modules/01-machine-gun/reference.png"
+    }
+  ],
+  "render_evidence": "verification/browser-review.json"
+}

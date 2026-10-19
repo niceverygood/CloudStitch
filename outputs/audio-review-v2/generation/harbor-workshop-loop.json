@@ -1,0 +1,25 @@
+{
+  "id": "harbor-workshop-loop",
+  "startedAt": "2026-10-18T08:53:43.891Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A quiet handmade airship repair dock ambience: sparse distant small wooden tool knocks, gentle light brass work and faint canvas movement in soft air. A restrained ambient texture, no voices, no sea waves, no bell melody. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 6,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:47.197Z",
+  "output": {
+    "file": "audio/harbor-workshop-loop.mp3",
+    "bytes": 97009,
+    "sha256": "fd5e9461f681e23a8cabc2a00783f187514d0ea802e374bc4435fb990c36059b",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "60"
+}

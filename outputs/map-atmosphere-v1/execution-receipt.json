@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-18",
+  "source_ready_sha256": "da5b487ea6d388e55b20052be26585f67ac47a2177f055af7251becae023687a",
+  "source_ready4_sha256": "73fa36979c4af02dccfc6e96ed626af6a4e8e36d849b66784118bd0a40b5c289",
+  "narrow_source_repair": "build.cjs replacement callback; history/build-r4.cjs preserved",
+  "commands": [
+    {
+      "name": "generate",
+      "exit_code": 0
+    },
+    {
+      "name": "verify-format",
+      "exit_code": 0
+    },
+    {
+      "name": "build",
+      "exit_code": 0
+    },
+    {
+      "name": "browser-first",
+      "exit_code": 1,
+      "raw": "failures/browser-r4.json"
+    },
+    {
+      "name": "browser-repair",
+      "exit_code": 0,
+      "raw": "browser-verification.json",
+      "finally_closed": true
+    }
+  ],
+  "new_logical_assets": 24,
+  "comparison_revision_files": 6,
+  "glb_count": 30,
+  "glb_bytes": 54709740,
+  "new_triangles": 378406,
+  "animation_assets": 16,
+  "clips": 46,
+  "format_sha256": "5d119badc38af2a08d267f0699aa95353c60ecf548a285cb629e7da86f19c67b",
+  "browser_sha256": "2d245108868864b39952d9f76985ad56762157d301a295018ef9e51eafe1f1c2",
+  "html_sha256": "d0cdb19c4ebf78db06a2e23870b50e28dc83e6984c0e7e41e5eb570e1667a79f",
+  "glb_hashes_preserved": true,
+  "passed": true
+}

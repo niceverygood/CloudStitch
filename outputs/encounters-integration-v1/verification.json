@@ -1,0 +1,39 @@
+{
+  "version": "encounters-integration-v1",
+  "checkedAt": "2026-10-18T06:27:04.778Z",
+  "passed": true,
+  "command": "node --test tools/encounters/director.test.mjs",
+  "tests": 16,
+  "failures": 0,
+  "preservedSources": [
+    {
+      "path": "tools/encounters/core.js",
+      "sha256": "16ad0e70334fd5b7fb4c1cb52206f6f45ee9b64b33ccd61c9e48a289a805a2bf",
+      "preserved": true
+    },
+    {
+      "path": "tools/encounters/catalog.json",
+      "sha256": "d20a707fba219927519e409756eec3662e3fe8ea85cb5540c321b05800c95b37",
+      "preserved": true
+    },
+    {
+      "path": "tools/fleet/catalog.json",
+      "sha256": "eba0f3f4d838a7acc2d2d5f2144cf5b42f8784802b8776e5167d0e683e7248ba",
+      "preserved": true
+    }
+  ],
+  "assetSubset": {
+    "count": 19,
+    "checks": [
+      "catalog ID",
+      "local byte size",
+      "12-byte GLB header/version/declared length"
+    ],
+    "wholeFileHashRecomputed": false,
+    "actualBrowserLoading": false
+  },
+  "standaloneCoreRegression": "Forced defeat hooks for six stages; not real-weapon playthrough or fun/balance verification",
+  "presentation": "Banner/charge pure policies tested and wired in app.js/scene.js; actual browser QA delegated to integration owner",
+  "completeIntegrationBrowserVerifiedHere": false,
+  "testOutput": "TAP version 13\n# Subtest: existing six-region catalog has 48 spawns and only known fleet IDs/roles\nok 1 - existing six-region catalog has 48 spawns and only known fleet IDs/roles\n  ---\n  duration_ms: 1.7567\n  type: 'test'\n  ...\n# Subtest: all six regions preserve phase order; each boss spawns and defeats exactly once\nok 2 - all six regions preserve phase order; each boss spawns and defeats exactly once\n  ---\n  duration_ms: 154.5552\n  type: 'test'\n  ...\n# Subtest: uncleared actors/hazards and absent acknowledgement block start and maintenance\nok 3 - uncleared actors/hazards and absent acknowledgement block start and maintenance\n  ---\n  duration_ms: 0.8044\n  type: 'test'\n  ...\n# Subtest: duplicate deaths, out-of-order advancement and stale run events cannot progress\nok 4 - duplicate deaths, out-of-order advancement and stale run events cannot progress\n  ---\n  duration_ms: 0.726\n  type: 'test'\n  ...\n# Subtest: same-frame player defeat overrides the last kill before host advances\nok 5 - same-frame player defeat overrides the last kill before host advances\n  ---\n  duration_ms: 2.6946\n  type: 'test'\n  ...\n# Subtest: retry/reset reject old clear acknowledgements and create fresh IDs without leftover spawns\nok 6 - retry/reset reject old clear acknowledgements and create fresh IDs without leftover spawns\n  ---\n  duration_ms: 1.3373\n  type: 'test'\n  ...\n# Subtest: spawn preflight is atomic and backtracks when world candidates restrict roles\nok 7 - spawn preflight is atomic and backtracks when world candidates restrict roles\n  ---\n  duration_ms: 1.6199\n  type: 'test'\n  ...\n# Subtest: pause blocks progression; nextStage moves only to the adjacent region after victory\nok 8 - pause blocks progression; nextStage moves only to the adjacent region after victory\n  ---\n  duration_ms: 1.7551\n  type: 'test'\n  ...\n# Subtest: host bridge waits for real clearance and never ticks, moves or damages entities\nok 9 - host bridge waits for real clearance and never ticks, moves or damages entities\n  ---\n  duration_ms: 1.1212\n  type: 'test'\n  ...\n# Subtest: intent descriptions preserve distinct shapes, floors, finite support and boss pattern transitions\nok 10 - intent descriptions preserve distinct shapes, floors, finite support and boss pattern transitions\n  ---\n  duration_ms: 1.0121\n  type: 'test'\n  ...\n# Subtest: weapon and VFX IDs in intent/support descriptors exist in their actual catalogs\nok 11 - weapon and VFX IDs in intent/support descriptors exist in their actual catalogs\n  ---\n  duration_ms: 3.8527\n  type: 'test'\n  ...\n# Subtest: presentation fixes hide a banner during a warning and freeze charge heading only while charging\nok 12 - presentation fixes hide a banner during a warning and freeze charge heading only while charging\n  ---\n  duration_ms: 0.2559\n  type: 'test'\n  ...\n# Subtest: training conversion explicitly downgrades mechanics and cannot target an unseen player\nok 13 - training conversion explicitly downgrades mechanics and cannot target an unseen player\n  ---\n  duration_ms: 0.7104\n  type: 'test'\n  ...\n# Subtest: fleet binding requires generated output paths and rejects path traversal\nok 14 - fleet binding requires generated output paths and rejects path traversal\n  ---\n  duration_ms: 0.9333\n  type: 'test'\n  ...\n# Subtest: restored generated fleet catalog supplies all 19 actual local GLB headers and byte sizes\nok 15 - restored generated fleet catalog supplies all 19 actual local GLB headers and byte sizes\n  ---\n  duration_ms: 50.2392\n  type: 'test'\n  ...\n# Subtest: preserved standalone core still progresses six regions with explicit forced-defeat regression hooks\nok 16 - preserved standalone core still progresses six regions with explicit forced-defeat regression hooks\n  ---\n  duration_ms: 22.5826\n  type: 'test'\n  ...\n1..16\n# tests 16\n# suites 0\n# pass 16\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1866.4753\n"
+}

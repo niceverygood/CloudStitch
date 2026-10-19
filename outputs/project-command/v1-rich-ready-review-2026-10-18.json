@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T08:56:28Z",
+  "version": "battlefield-v1-rich-0.1.0",
+  "manifest": {
+    "path": "tools/battlefield/rich-vfx-handoff.json",
+    "sha256": "43a3ca2d3ca630a474f36d4a453008b8a93a29189191229e7c6017b6413d80b7",
+    "rootHashMatched": true,
+    "status": "READY_SOURCE_BROWSER_PENDING",
+    "checkedAt": "2026-10-18T08:54:11.386Z"
+  },
+  "rootFileChecks": {
+    "declaredSourceFiles": 12,
+    "baselineFiles": 3,
+    "sizeShaCompared": 15,
+    "mismatches": [],
+    "originalGlbSizeChecks": 9,
+    "originalGlbAllSizesMatch": true,
+    "originalGlbHashes": "owner verified9; root did not duplicate these hashes",
+    "priorReceiptSha256": "005485d3f43ec354e906f47a8d4bbf2bd4df8fa63750ae9d9a147557d9425cc7"
+  },
+  "runtime": {
+    "factory": "createCombatVfx(THREE, scene, {presentation:'rich'})",
+    "defaultPresentation": "original",
+    "effectScale": 1,
+    "muzzleScale": 1.4,
+    "projectileScale": 1.35,
+    "impactScale": 1.5,
+    "actualWeapons": [
+      "01-machine-gun",
+      "02-deck-cannon"
+    ],
+    "actualEffectCount": 6,
+    "previewProfiles": 48,
+    "previewOutputPlanned": "outputs/battlefield-rich-vfx-v1/preview.html",
+    "previewIsCombatSimulation": false,
+    "assetBase": "../combat-vfx/",
+    "caps": {
+      "activeOneShotsPerEffect": 32,
+      "activeProjectilesPerEffect": 64,
+      "idlePoolPerEffect": 24,
+      "appliesToOriginalToo": true,
+      "overload": "visuals dropped; original overload display not bit-for-bit identical; sim unchanged"
+    }
+  },
+  "ownerNodeReport": {
+    "total": 72,
+    "fail": 0,
+    "composition": {
+      "baseline": 48,
+      "richProfiles": 10,
+      "realThreeRuntime": 14
+    },
+    "runtimeHierarchy": {
+      "parent": 1,
+      "children": 13
+    },
+    "usesRealThree": true,
+    "usesSyntheticGltfFixture": true,
+    "browserOrActualGlbRendering": false,
+    "stress": {
+      "submittedShots": 100,
+      "activeMuzzles": 32,
+      "activeProjectiles": 64,
+      "droppedVisuals": 104,
+      "idlePoolMax": 24,
+      "culledAfterReturn": 48,
+      "activeAfterDrain": 0,
+      "combatDataMutated": false
+    }
+  },
+  "staticReview": {
+    "reviewer": "integration_audit",
+    "snapshotKst": "17:52:42",
+    "newBlockerFound": false,
+    "notes": [
+      "sim/integration/contract unchanged in snapshot and final baseline/source hashes matched",
+      "actual hit alone makes impact; sim position only on carrier geometry",
+      "no projectile preview clip movement played",
+      "MG2/cannon3 one-shot layers; projectile1; echoes returned at original clip end",
+      "dt0 pause and pool TRS/reference cleanup",
+      "no new material mutation path; shared resources released by source dispose",
+      "role-specific no-echo for state/defense/repair/harpoon/salvage/equip"
+    ],
+    "limits": "pre-READY static snapshot, not execution or full final-source independent behavior proof"
+  },
+  "sourceOnlyAcceptance": true,
+  "browserAcceptance": false,
+  "remaining": [
+    "fleet browser0/slot return",
+    "new isolated build/output import",
+    "actual9 GLB render/input-shot-physics-hit-end flow",
+    "pause/retry/clear/generation and repeated burst pool cleanup",
+    "camera occlusion/aim/muzzle/telegraph readability",
+    "mobile overflow/network/ghosting affected checks"
+  ],
+  "notifiedOwners": {
+    "integration": true,
+    "battlefield": true
+  },
+  "preserved": [
+    "original v1/v2 art",
+    "sim/damage/collider and runtimeContract0.2.1",
+    "previous39/339/12 sealed reports and saves"
+  ],
+  "excludedDraft": "tools/battlefield/vfx-painted-contract.mjs unused superseded v2 draft not imported/shipped"
+}

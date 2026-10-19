@@ -1,0 +1,25 @@
+{
+  "id": "harbor-equip",
+  "startedAt": "2026-10-18T08:53:52.434Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "One small airship module being installed: a short metal guide-rail slide, firm padded wooden base contact and a brass locking pin clicks fully into place. Precise satisfying mechanical fit, no music. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:53.955Z",
+  "output": {
+    "file": "audio/harbor-equip.mp3",
+    "bytes": 18433,
+    "sha256": "66cc33bd2a0cb9fa0d26c1d8dee61ebf46f5d76813e374c6ac60b2128f5304bf",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "11"
+}

@@ -1,0 +1,255 @@
+{
+  "checks": [
+    {
+      "name": "scout glTF errors0",
+      "ok": true
+    },
+    {
+      "name": "scout loaded mounts",
+      "ok": true
+    },
+    {
+      "name": "scout cannon launched/finite",
+      "ok": true
+    },
+    {
+      "name": "scout cannon contact/support",
+      "ok": true
+    },
+    {
+      "name": "scout arrow launched/finite",
+      "ok": true
+    },
+    {
+      "name": "scout arrow contact/support",
+      "ok": true
+    },
+    {
+      "name": "scout special launched/finite",
+      "ok": true
+    },
+    {
+      "name": "scout special contact/support",
+      "ok": true
+    },
+    {
+      "name": "scout volley finite",
+      "ok": true
+    },
+    {
+      "name": "scout mode toon",
+      "ok": true
+    },
+    {
+      "name": "scout mode material",
+      "ok": true
+    },
+    {
+      "name": "scout mode paint",
+      "ok": true
+    },
+    {
+      "name": "scout outline/onecanvas/errors0",
+      "ok": true
+    },
+    {
+      "name": "scout mobile overflow0",
+      "ok": true
+    },
+    {
+      "name": "command glTF errors0",
+      "ok": true
+    },
+    {
+      "name": "command loaded mounts",
+      "ok": true
+    },
+    {
+      "name": "command cannon launched/finite",
+      "ok": true
+    },
+    {
+      "name": "command cannon contact/support",
+      "ok": true
+    },
+    {
+      "name": "command arrow launched/finite",
+      "ok": true
+    },
+    {
+      "name": "command arrow contact/support",
+      "ok": true
+    },
+    {
+      "name": "command special launched/finite",
+      "ok": true
+    },
+    {
+      "name": "command special contact/support",
+      "ok": true
+    },
+    {
+      "name": "command volley finite",
+      "ok": true
+    },
+    {
+      "name": "command mode toon",
+      "ok": true
+    },
+    {
+      "name": "command mode material",
+      "ok": true
+    },
+    {
+      "name": "command mode paint",
+      "ok": true
+    },
+    {
+      "name": "command outline/onecanvas/errors0",
+      "ok": true
+    },
+    {
+      "name": "command mobile overflow0",
+      "ok": false
+    }
+  ],
+  "models": [
+    {
+      "kind": "scout",
+      "mounts": 5,
+      "validator": {
+        "numErrors": 0,
+        "numWarnings": 0,
+        "numInfos": 10,
+        "numHints": 0,
+        "messages": [
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/11/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/19/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/17"
+          },
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/18"
+          },
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/19"
+          },
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/68"
+          },
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/102"
+          },
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/136"
+          },
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/170"
+          },
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/181"
+          }
+        ],
+        "truncated": false
+      },
+      "debug": {
+        "ready": true,
+        "kind": "scout",
+        "time": 0,
+        "playing": false,
+        "mounts": 5,
+        "muzzles": [
+          {
+            "id": "cannon_0",
+            "position": [
+              -6.488713041580967,
+              2.5825,
+              -2.163038400174551
+            ]
+          },
+          {
+            "id": "cannon_1",
+            "position": [
+              -6.488713041580967,
+              2.5825,
+              2.163038400174551
+            ]
+          },
+          {
+            "id": "arrow_0",
+            "position": [
+              -3.266107504269805,
+              3.580125,
+              -2.2914764996340167
+            ]
+          },
+          {
+            "id": "arrow_1",
+            "position": [
+              -3.266107504269805,
+              3.580125,
+              2.2914764996340167
+            ]
+          },
+          {
+            "id": "special",
+            "position": [
+              -1.1700000000000002,
+              5.65,
+              0
+            ]
+          }
+        ],
+        "stats": {
+          "launched": 0,
+          "impacts": 0
+        },
+        "objects": 0,
+        "errors": [],
+        "outlineAutoClear": true,
+        "mode": "paint",
+        "canvases": 1,
+        "finite": true,
+        "clips": 1
+      }
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "browserClosed": true,
+  "pass": false
+}

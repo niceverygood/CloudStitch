@@ -1,0 +1,3745 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "date": "2026-10-18",
+  "scope": "Secondary 19 residual effect source/binary art review only",
+  "status": "source_binary_review_complete_new_render_required",
+  "visual_render_count_for_these_19": 0,
+  "art_approved_count": 0,
+  "runtime_integrated_count": 0,
+  "paid_calls": 0,
+  "dependencies_changed": false,
+  "browser_started": false,
+  "source_snapshot": {
+    "path": "tools/combat-vfx-v2/secondary.cjs",
+    "bytes": 15360,
+    "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+  },
+  "changed_effect_ids": [
+    "small-explosion",
+    "large-explosion",
+    "airburst",
+    "smoldering-fire",
+    "burning-state"
+  ],
+  "regeneration_owner": "parent task only; regenerate five affected IDs, preserve 14 remaining binaries and all original assets",
+  "method": [
+    "Read secondary.cjs and actual 19 GLB JSON/BIN chunks; inspected float accessors for finiteness.",
+    "Opened preserved user airship/observatory references, actual Meshy flame/smoke previews and six latest game-size representative PNGs.",
+    "Only added a proven shape-axis correction to secondary Meshy flame instances; no global scale/color changes.",
+    "Local primitive AABBs and dimensions below are source/binary evidence, not rendered screen bounds or gameplay meters."
+  ],
+  "base_evidence": [
+    {
+      "path": "outputs/combat-vfx-v2/bases/flame.glb",
+      "bytes": 3644180,
+      "sha256": "038b926cd0a3804c06795416de1debad5511ee07b6e44a3fb8eae99798fb64ea",
+      "long_axis": "X",
+      "actual_local_size": [
+        0.954102,
+        0.527832,
+        0.186035
+      ],
+      "intent": "All secondary uses are upward lobes; inner +Z pi/2 maps +X to +Y."
+    },
+    {
+      "path": "outputs/combat-vfx-v2/bases/smoke.glb",
+      "bytes": 3699420,
+      "sha256": "401c66342f88b15e6a346bfa803923f36abc8fa2bda6892f72867b2627b33fff",
+      "long_axis": "Y",
+      "actual_local_size": [
+        0.520019,
+        0.95166,
+        0.209961
+      ],
+      "intent": "Already upright; no orientation change."
+    }
+  ],
+  "reference_evidence": [
+    {
+      "path": "outputs/combat-vfx-v2/brief/references/user-airship.png",
+      "bytes": 1394097,
+      "sha256": "c1a971973d3e68b4a17bd5c88e4e0af263cc388319486596dc8c19b1e9f0daa7",
+      "directly_opened": true
+    },
+    {
+      "path": "outputs/combat-vfx-v2/brief/references/user-observatory.png",
+      "bytes": 1811904,
+      "sha256": "d4232df3d3ad150807d0a9b240e660f8c613f5e80292cc525fa008891e3e54ed",
+      "directly_opened": true
+    }
+  ],
+  "representative_game_capture_evidence": [
+    {
+      "id": "machine-gun-muzzle",
+      "path": "outputs/combat-vfx-v2/verification/smoke-captures/machine-gun-muzzle-game.png",
+      "bytes": 322380,
+      "sha256": "d2149109705ba3b7773776e54390635b5805c557977051c9f09e8e97b602ed40",
+      "width": 1542,
+      "height": 561,
+      "directly_opened": true,
+      "observed_ko": "게임 시점에서 작은 따뜻한 섬광으로 읽히지만 세밀한 붓결은 가까이 보기에서 확인해야 한다."
+    },
+    {
+      "id": "smoke-puff",
+      "path": "outputs/combat-vfx-v2/verification/smoke-captures/smoke-puff-game.png",
+      "bytes": 332516,
+      "sha256": "4cec4f32e86a93b1956e5e95c0999ab2b7fd46434637b3d43925be06b1f20163",
+      "width": 1542,
+      "height": 561,
+      "directly_opened": true,
+      "observed_ko": "게임 시점의 연기는 가늘고 작다. 큰 불투명 v1 덩어리보다 가림이 줄지만 밝은 배경 대비가 약하다."
+    },
+    {
+      "id": "cannon-hit",
+      "path": "outputs/combat-vfx-v2/verification/smoke-captures/cannon-hit-game.png",
+      "bytes": 339144,
+      "sha256": "ace0a21e3f4b0ab154c3769e7e57fb983b18a5c2fa7cffebb400152b027da3ae",
+      "width": 1542,
+      "height": 561,
+      "directly_opened": true,
+      "observed_ko": "게임 시점에서 표적판 옆 작은 산호/크림 흔적이다. 대표6의 품질검토 기록만으로 잔여 폭발들의 상대크기가 통과한 것은 아니다."
+    },
+    {
+      "id": "flamethrower-stream",
+      "path": "outputs/combat-vfx-v2/verification/smoke-captures/flamethrower-stream-game.png",
+      "bytes": 336853,
+      "sha256": "955f8475e394990dc87f99a5462b8d28c3ad3d8238ccd7c46600b617ca3aae61",
+      "width": 1542,
+      "height": 561,
+      "directly_opened": true,
+      "observed_ko": "v2는 겹친 다면체 대신 가는 불꽃흐름으로 보이고 세부형태는 가까이보기에서 필요하다."
+    },
+    {
+      "id": "shield-pulse",
+      "path": "outputs/combat-vfx-v2/verification/smoke-captures/shield-pulse-game.png",
+      "bytes": 334750,
+      "sha256": "48e36696526ec556785205634d011e37adf3a8ec888540eb5918d17ac39b562c",
+      "width": 1542,
+      "height": 561,
+      "directly_opened": true,
+      "observed_ko": "열린 보호막은 선체 표면가림이 매우 작다. game PNG에서는 밝은선이 약해 식별성 재검토 필요."
+    },
+    {
+      "id": "repair-stitch",
+      "path": "outputs/combat-vfx-v2/verification/smoke-captures/repair-stitch-game.png",
+      "bytes": 332797,
+      "sha256": "f5d9735ff0da2207ee468dc966be1ff7d1d82e0715cb6804e440a7f4601b0832",
+      "width": 1542,
+      "height": 561,
+      "directly_opened": true,
+      "observed_ko": "산호패치와 세로크림 봉합선이 선체에 보인다. 가는선의 최소가독성을 다른지원효과에 자동적용할 수 없다."
+    }
+  ],
+  "additional_directly_opened_pngs": [
+    {
+      "path": "outputs/combat-vfx-v2/verification/smoke-captures/cannon-hit.png",
+      "bytes": 356272,
+      "sha256": "edb747c94f5e867e96b6b253458839b20824e67c3ea1fb397c7107bcb8ae3812"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/verification/smoke-captures/repair-stitch.png",
+      "bytes": 517575,
+      "sha256": "3be18c42a81fcdf09326e71ea77715a7cf40cded8b865a2cd0874b69ada3ecc8"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/bases/flame-preview.png",
+      "bytes": 81474,
+      "sha256": "91d7069d32dc5ef510e64795d12cba463662cda852822ea0bfd18381804ef5e5"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/bases/smoke-preview.png",
+      "bytes": 68814,
+      "sha256": "d8c913474183297e7180e92675ea38306c358bb1811ef38ad3e035634b92c582"
+    }
+  ],
+  "shared_render_handoff": {
+    "same_camera_scale_time": "v1/v2 same camera and common placement_scale 0.32; show both game and effect-close views; use actual airship+weapon GLBs.",
+    "backgrounds": [
+      "cream sky",
+      "dark teal"
+    ],
+    "source_hash_to_pin": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc",
+    "expected_outcomes": [
+      "Upward +Y flame lobes on five corrected effects; parent flutter must not overwrite inner axis correction.",
+      "Distinct small/large/airburst/shrapnel silhouettes and attack/support hierarchy at game size.",
+      "No unacceptable opaque hull/connection occlusion; thin accents remain legible.",
+      "Animated TRS-only and runtime fade versions are inspected separately.",
+      "Two loop cycles and explicit state/link stop/reset are checked."
+    ],
+    "loop_boundary_contract": "All secondary roots shrink to 0.001 at 0 and duration, ramping over first/last 2.5% of cycle. Intentional disappearance is a prototype contract, not evidence of a seamless continuous state. Runtime must retain state ownership until explicit end. For salvage use endpoint binder + geometry extraction; disable preview rope scale and boundary fade for held connection.",
+    "runtime_features_separate": [
+      "node extras.runtime_fade requires material/opacity adapter and is not standard GLB material animation",
+      "OutlineEffect/cel shading are viewer runtime; maintain OutlineEffect.autoClear=true",
+      "Actual collision events alone produce hit effects; no secondary GLB creates impacts or damage",
+      "Projectile motion and geometry extraction contract remains unchanged; no secondary projectile replacement here",
+      "No independent battle loop or engine integration implemented in this review"
+    ]
+  },
+  "items": [
+    {
+      "effect_id": "small-explosion",
+      "original_id": "small-explosion",
+      "order": 27,
+      "name_ko": "소형 폭발",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "regenerate_required": true,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/small-explosion.glb",
+        "bytes": 7433956,
+        "sha256": "da6ed99853be1aa49ca3de61fe307da1077acebe4d80e240c5d3e51fd7610d4e",
+        "header_glb2": true,
+        "mesh_count": 5,
+        "clip_count": 1,
+        "channel_count": 8,
+        "float_numeric_values": 47920,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.02,
+            0.78,
+            0.8
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.47876,
+              -0.263916,
+              -0.094971
+            ],
+            "local_max": [
+              0.475342,
+              0.263916,
+              0.091064
+            ],
+            "local_size": [
+              0.954102,
+              0.527832,
+              0.186035
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              0.019474,
+              -0.003436,
+              0.029871
+            ],
+            "local_max": [
+              0.103157,
+              0.069011,
+              0.360098
+            ],
+            "local_size": [
+              0.083682,
+              0.072447,
+              0.330227
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              0.019474,
+              -0.003436,
+              0.029871
+            ],
+            "local_max": [
+              0.103157,
+              0.069011,
+              0.360098
+            ],
+            "local_size": [
+              0.083682,
+              0.072447,
+              0.330227
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              0.019474,
+              -0.003436,
+              0.029871
+            ],
+            "local_max": [
+              0.103157,
+              0.069011,
+              0.360098
+            ],
+            "local_size": [
+              0.083682,
+              0.072447,
+              0.330227
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              -0.259521,
+              -0.47583,
+              -0.106201
+            ],
+            "local_max": [
+              0.260498,
+              0.47583,
+              0.10376
+            ],
+            "local_size": [
+              0.520019,
+              0.95166,
+              0.209961
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "불꽃1개 + 열린 압력 붓3개 + 늦은 연기1개. 불꽃 authored W/H/D 0.34/0.43/0.31; 원본 X-long 형상 때문에 수정 전 Y 높이는 약0.238이다.",
+      "concerns_ko": [
+        "세워진 불꽃의 하단이 접촉 기준점 안으로 잠기는지 확인 필요. 중심 위치와 총크기는 이번에 바꾸지 않았다.",
+        "압력 붓 길이0.36, 반폭0.027은 게임 크기에서 작은 표현이다. 함포/소형/대형의 상대 위계 확인 전 확대 보류."
+      ],
+      "expected_visual_checks_ko": [
+        "초기 압력→세운 불꽃→늦은 잔연기 순서를 같은 배율에서 구별한다.",
+        "표적/연결부를 가리지 않고 small이 large보다 작게 읽히는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.044,
+        0.144,
+        0.384,
+        0.704
+      ],
+      "suggested_sample_normalized": [
+        0.055,
+        0.18,
+        0.48,
+        0.88
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "anchor": "world",
+        "clip": "small-explosion",
+        "duration_seconds": 0.8,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "소형 폭발 표시 이벤트",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/small-explosion.glb"
+    },
+    {
+      "effect_id": "large-explosion",
+      "original_id": "large-explosion",
+      "order": 28,
+      "name_ko": "대형 폭발",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "regenerate_required": true,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/large-explosion.glb",
+        "bytes": 7467844,
+        "sha256": "7e2d29f960fb9b2eec0832b6c2b402da01e1c3df1b4de60c31bec4527350e3cd",
+        "header_glb2": true,
+        "mesh_count": 6,
+        "clip_count": 1,
+        "channel_count": 15,
+        "float_numeric_values": 54864,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.045,
+            1.755,
+            1.8
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.47876,
+              -0.263916,
+              -0.094971
+            ],
+            "local_max": [
+              0.475342,
+              0.263916,
+              0.091064
+            ],
+            "local_size": [
+              0.954102,
+              0.527832,
+              0.186035
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              0.019467,
+              -0.003437,
+              0.029916
+            ],
+            "local_max": [
+              0.103535,
+              0.068827,
+              0.540067
+            ],
+            "local_size": [
+              0.084069,
+              0.072264,
+              0.510151
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              0.019467,
+              -0.003437,
+              0.029916
+            ],
+            "local_max": [
+              0.103535,
+              0.068827,
+              0.540067
+            ],
+            "local_size": [
+              0.084069,
+              0.072264,
+              0.510151
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              0.019467,
+              -0.003437,
+              0.029916
+            ],
+            "local_max": [
+              0.103535,
+              0.068827,
+              0.540067
+            ],
+            "local_size": [
+              0.084069,
+              0.072264,
+              0.510151
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              0.019467,
+              -0.003437,
+              0.029916
+            ],
+            "local_max": [
+              0.103535,
+              0.068827,
+              0.540067
+            ],
+            "local_size": [
+              0.084069,
+              0.072264,
+              0.510151
+            ]
+          },
+          {
+            "mesh": 5,
+            "primitive": 0,
+            "local_min": [
+              -0.259521,
+              -0.47583,
+              -0.106201
+            ],
+            "local_max": [
+              0.260498,
+              0.47583,
+              0.10376
+            ],
+            "local_size": [
+              0.520019,
+              0.95166,
+              0.209961
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "크기0.64/0.46/0.38의 불꽃3개를 0/0.08/0.17 cycle 지연하고 연기2개를 0.29/0.41 cycle 뒤에 올린다. 닫힌 고리 대신 열린 압력 붓4개.",
+      "concerns_ko": [
+        "flame은 parent yaw만 있고 X→Y 보정이 없어 수정 전 수평으로 퍼진다. 새 inner rotation으로 보정했다.",
+        "가장 큰 불꽃 높이0.64는 대표 cannon-hit의 authored_scale1.9가 적용된 높이와 비교하면 작을 수 있다. 출력 렌더 없이 이름만 보고 확대하지 않았다."
+      ],
+      "expected_visual_checks_ko": [
+        "3개 불꽃이 +Y로 솟고 개별 면 사이에 여백이 남는지 확인한다.",
+        "small/cannon-hit보다 큰 폭발로 읽히되 기낭 면을 불투명하게 덮지 않는지 확인한다.",
+        "불꽃 다음에 두 잔연기가 지연되어 남는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.216,
+        0.36,
+        0.522,
+        1.062,
+        1.53
+      ],
+      "suggested_sample_normalized": [
+        0.12,
+        0.2,
+        0.29,
+        0.59,
+        0.85
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "anchor": "world",
+        "clip": "large-explosion",
+        "duration_seconds": 1.8,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "대형 폭발 표시 이벤트",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/large-explosion.glb"
+    },
+    {
+      "effect_id": "airburst",
+      "original_id": "airburst",
+      "order": 29,
+      "name_ko": "공중 폭발",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "regenerate_required": true,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/airburst.glb",
+        "bytes": 7462264,
+        "sha256": "ce8e4cc703fbfcf48424762dc5e1dca605949441d82aec6d095453cf819b2501",
+        "header_glb2": true,
+        "mesh_count": 6,
+        "clip_count": 1,
+        "channel_count": 8,
+        "float_numeric_values": 54716,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.0325,
+            1.2675,
+            1.3
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.015047,
+              -0.000498,
+              0.019818
+            ],
+            "local_max": [
+              0.060805,
+              0.154999,
+              0.470071
+            ],
+            "local_size": [
+              0.075852,
+              0.155498,
+              0.450254
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.015047,
+              -0.000498,
+              0.019818
+            ],
+            "local_max": [
+              0.060805,
+              0.154999,
+              0.470071
+            ],
+            "local_size": [
+              0.075852,
+              0.155498,
+              0.450254
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.015047,
+              -0.000498,
+              0.019818
+            ],
+            "local_max": [
+              0.060805,
+              0.154999,
+              0.470071
+            ],
+            "local_size": [
+              0.075852,
+              0.155498,
+              0.450254
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.015047,
+              -0.000498,
+              0.019818
+            ],
+            "local_max": [
+              0.060805,
+              0.154999,
+              0.470071
+            ],
+            "local_size": [
+              0.075852,
+              0.155498,
+              0.450254
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              -0.47876,
+              -0.263916,
+              -0.094971
+            ],
+            "local_max": [
+              0.475342,
+              0.263916,
+              0.091064
+            ],
+            "local_size": [
+              0.954102,
+              0.527832,
+              0.186035
+            ]
+          },
+          {
+            "mesh": 5,
+            "primitive": 0,
+            "local_min": [
+              -0.259521,
+              -0.47583,
+              -0.106201
+            ],
+            "local_max": [
+              0.260498,
+              0.47583,
+              0.10376
+            ],
+            "local_size": [
+              0.520019,
+              0.95166,
+              0.209961
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "전방 fan_ray4개, 불꽃1개와 연기1개. ray 최대길이 약0.47, 반폭0.032. 팬은 XZ면의 열린 부채이고 불꽃 높이 의도0.31.",
+      "concerns_ko": [
+        "소스 ray yaw 범위 -1.0~1.1rad가 전방부채이므로 기존 설명의 전방위 폭발과 다르다. 현재 방향성 아트 의도를 유지하고 전방위 완료로 주장하지 않는다.",
+        "작은 fan-ray가 게임 크기에서 소형폭발/파편과 구별되는지 새 렌더 필요."
+      ],
+      "expected_visual_checks_ko": [
+        "공중 위치에서 지면/표면에 붙은 decal처럼 보이지 않는지 확인한다.",
+        "+Y 불꽃과 열린 XZ fan이 서로 지워지지 않는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.156,
+        0.2925,
+        0.624,
+        1.066
+      ],
+      "suggested_sample_normalized": [
+        0.12,
+        0.225,
+        0.48,
+        0.82
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "anchor": "world",
+        "clip": "airburst",
+        "duration_seconds": 1.3,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "공중 폭발 위치가 결정된 이벤트",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/airburst.glb"
+    },
+    {
+      "effect_id": "shrapnel-burst",
+      "original_id": "shrapnel-burst",
+      "order": 30,
+      "name_ko": "파편 분산",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb",
+        "bytes": 133576,
+        "sha256": "097a4dca6e22dabd183a19a3349d86c34965ce78caeae7b2afe75f72d27c5816",
+        "header_glb2": true,
+        "mesh_count": 8,
+        "clip_count": 1,
+        "channel_count": 17,
+        "float_numeric_values": 29300,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.0275,
+            1.0725,
+            1.1
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.0275,
+              -0.0475,
+              0
+            ],
+            "local_max": [
+              0.0275,
+              0.0475,
+              0.018
+            ],
+            "local_size": [
+              0.055,
+              0.095,
+              0.018
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.223582,
+              0.029295,
+              -0.000179
+            ],
+            "local_max": [
+              0.000378,
+              0.154667,
+              0.105573
+            ],
+            "local_size": [
+              0.223961,
+              0.125372,
+              0.105752
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.0275,
+              -0.0475,
+              0
+            ],
+            "local_max": [
+              0.0275,
+              0.0475,
+              0.018
+            ],
+            "local_size": [
+              0.055,
+              0.095,
+              0.018
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.000621,
+              0.029495,
+              -0.000193
+            ],
+            "local_max": [
+              0.198965,
+              0.259522,
+              0.031185
+            ],
+            "local_size": [
+              0.199586,
+              0.230026,
+              0.031379
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              -0.0275,
+              -0.0475,
+              0
+            ],
+            "local_max": [
+              0.0275,
+              0.0475,
+              0.018
+            ],
+            "local_size": [
+              0.055,
+              0.095,
+              0.018
+            ]
+          },
+          {
+            "mesh": 5,
+            "primitive": 0,
+            "local_min": [
+              -0.082388,
+              0.029776,
+              -0.167555
+            ],
+            "local_max": [
+              0.002181,
+              0.287246,
+              0.000168
+            ],
+            "local_size": [
+              0.084569,
+              0.25747,
+              0.167723
+            ]
+          },
+          {
+            "mesh": 6,
+            "primitive": 0,
+            "local_min": [
+              -0.0275,
+              -0.0475,
+              0
+            ],
+            "local_max": [
+              0.0275,
+              0.0475,
+              0.018
+            ],
+            "local_size": [
+              0.055,
+              0.095,
+              0.018
+            ]
+          },
+          {
+            "mesh": 7,
+            "primitive": 0,
+            "local_min": [
+              -0.000519,
+              0.029391,
+              -0.204714
+            ],
+            "local_max": [
+              0.112141,
+              0.133547,
+              0.000113
+            ],
+            "local_size": [
+              0.11266,
+              0.104156,
+              0.204827
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "불규칙 압출 금속칩4개(0.055x0.095x0.018)와 압력 붓4개(반폭0.016). 파편거리 약0.2~0.65의 비대칭 방향.",
+      "concerns_ko": [
+        "실제 GLB 칩 최대폭0.055/높이0.095는 게임 크기에서 점으로 묻힐 위험이 높다.",
+        "칩의 디테일보다 4방향 분산 동작이 역할을 읽혀야 하므로 증거 없이 개수를 늘리거나 전체를 확대하지 않았다."
+      ],
+      "expected_visual_checks_ko": [
+        "0.05~0.42cycle에 4개의 굵기가 실제 화면 픽셀로 식별되는지 확인한다.",
+        "희소한 파편이 선체 윤곽과 재질피격을 과하게 중복하지 않는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.055,
+        0.198,
+        0.462,
+        0.825
+      ],
+      "suggested_sample_normalized": [
+        0.05,
+        0.18,
+        0.42,
+        0.75
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "anchor": "world",
+        "clip": "shrapnel-burst",
+        "duration_seconds": 1.1,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "파편 표시 요청 이벤트",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/shrapnel-burst.glb"
+    },
+    {
+      "effect_id": "steam-vent",
+      "original_id": "steam-vent",
+      "order": 32,
+      "name_ko": "증기 배출",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/steam-vent.glb",
+        "bytes": 3805964,
+        "sha256": "36209b19d6ee6f366eb8f452b309b2abcb80c2ab1bf11769be0f7c1511dd7a58",
+        "header_glb2": true,
+        "mesh_count": 4,
+        "clip_count": 1,
+        "channel_count": 5,
+        "float_numeric_values": 38836,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.0375,
+            1.4625,
+            1.5
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.259521,
+              -0.47583,
+              -0.106201
+            ],
+            "local_max": [
+              0.260498,
+              0.47583,
+              0.10376
+            ],
+            "local_size": [
+              0.520019,
+              0.95166,
+              0.209961
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.189347,
+              -0.001193,
+              -0.050282
+            ],
+            "local_max": [
+              0.100804,
+              0.499707,
+              0.029948
+            ],
+            "local_size": [
+              0.290151,
+              0.5009,
+              0.08023
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.050806,
+              0.109251,
+              -0.010252
+            ],
+            "local_max": [
+              0.106853,
+              0.360096,
+              0.030265
+            ],
+            "local_size": [
+              0.157659,
+              0.250844,
+              0.040518
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.035962,
+              -0.000284,
+              -0.003831
+            ],
+            "local_max": [
+              0.028249,
+              0.180139,
+              0.005794
+            ],
+            "local_size": [
+              0.06421,
+              0.180423,
+              0.009625
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "Y-long Meshy 연기1개, authored 0.23/0.63/0.17; 실제 중심선 Y높이0.63, X폭약0.126. 열린 curl0.7과 nozzle gust길이0.18.",
+      "concerns_ko": [
+        "가는 크림 연기가 크림 하늘에서 사라질 수 있다. smoke-puff 게임 캡처도 작은 연기이므로 대상 배기구에서 실루엣 확인이 필요하다.",
+        "nozzle gust는 root 아래 고정메시이며 root 경계 스케일만 따른다. 별도 파티클로 주장하지 않는다."
+      ],
+      "expected_visual_checks_ko": [
+        "배기구 원점에서 위로 올라가며 0.47cycle의 S형을 읽는지 확인한다.",
+        "cream/teal 두 배경에서 손그림 명암과 선체 표면 가림을 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.15,
+        0.705,
+        1.05,
+        1.41
+      ],
+      "suggested_sample_normalized": [
+        0.1,
+        0.47,
+        0.7,
+        0.94
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "anchor": "world",
+        "clip": "steam-vent",
+        "duration_seconds": 1.5,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "배기구의 증기 배출 표시 요청",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/steam-vent.glb"
+    },
+    {
+      "effect_id": "smoldering-fire",
+      "original_id": "smoldering-fire",
+      "order": 33,
+      "name_ko": "잔불",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "regenerate_required": true,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/smoldering-fire.glb",
+        "bytes": 7423456,
+        "sha256": "24ae5e12160e3bfd934d278e126cc323d9b4791e75f5f5ae237ec9fc73c611c3",
+        "header_glb2": true,
+        "mesh_count": 4,
+        "clip_count": 1,
+        "channel_count": 8,
+        "float_numeric_values": 45675,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.06,
+            2.34,
+            2.4
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.47876,
+              -0.263916,
+              -0.094971
+            ],
+            "local_max": [
+              0.475342,
+              0.263916,
+              0.091064
+            ],
+            "local_size": [
+              0.954102,
+              0.527832,
+              0.186035
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.259521,
+              -0.47583,
+              -0.106201
+            ],
+            "local_max": [
+              0.260498,
+              0.47583,
+              0.10376
+            ],
+            "local_size": [
+              0.520019,
+              0.95166,
+              0.209961
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.100804,
+              -0.001193,
+              -0.050282
+            ],
+            "local_max": [
+              0.189347,
+              0.499707,
+              0.029948
+            ],
+            "local_size": [
+              0.290151,
+              0.5009,
+              0.08023
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.106853,
+              0.109251,
+              -0.010252
+            ],
+            "local_max": [
+              0.050806,
+              0.360096,
+              0.030265
+            ],
+            "local_size": [
+              0.157659,
+              0.250844,
+              0.040518
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "low_ember_tongue1개 의도높이0.23 + thin_smolder 연기0.56 + curl0.68. scale7키의 낮은 불규칙 맥동.",
+      "concerns_ko": [
+        "flame parent에 rotation 트랙이 있어 parent에만 +Z90도를 넣으면 애니메이션에 덮인다. import instance 안에 보정했다.",
+        "잔불의 하단 위치0.08에 높이0.23이 들어가므로 표면 잠김 확인 필요.",
+        "root가 주기 첫/마지막2.5%에서 축소되어 loop 경계 소실은 의도된 시제품이며 seamless 지속불로 통과한 것은 아니다."
+      ],
+      "expected_visual_checks_ko": [
+        "동일표면에서 burning-state보다 낮고 약하게 읽히는지 확인한다.",
+        "상태가 끝나면 clip loop와 fade adapter 모두 중지하고, 풀반환 뒤 다시 켤 때 잔재가 없는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.24,
+        1.008,
+        1.416,
+        1.92,
+        2.376
+      ],
+      "suggested_sample_normalized": [
+        0.1,
+        0.42,
+        0.59,
+        0.8,
+        0.99
+      ],
+      "loop_boundary_sample_seconds": [
+        2.376,
+        2.4,
+        2.424
+      ],
+      "contract": {
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "anchor": "world",
+        "clip": "smoldering-fire",
+        "duration_seconds": 2.4,
+        "loop": true,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "잔불 표시가 필요한 동안 요청",
+        "stop": "Explicit state/link end or host invalidation stops the instance; clip boundary is not the state lifetime.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/smoldering-fire.glb"
+    },
+    {
+      "effect_id": "ember-drift",
+      "original_id": "ember-drift",
+      "order": 34,
+      "name_ko": "불씨 흩날림",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/ember-drift.glb",
+        "bytes": 17884,
+        "sha256": "dde95e7313f3b4b959c82431b0e68adcb81e9d5a3a9bae0e1fde183e9522814b",
+        "header_glb2": true,
+        "mesh_count": 4,
+        "clip_count": 1,
+        "channel_count": 13,
+        "float_numeric_values": 2004,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.05,
+            1.95,
+            2
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.012,
+              -0.025,
+              0
+            ],
+            "local_max": [
+              0.012,
+              0.025,
+              0.018
+            ],
+            "local_size": [
+              0.024,
+              0.05,
+              0.018
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.012,
+              -0.025,
+              0
+            ],
+            "local_max": [
+              0.012,
+              0.025,
+              0.018
+            ],
+            "local_size": [
+              0.024,
+              0.05,
+              0.018
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.012,
+              -0.025,
+              0
+            ],
+            "local_max": [
+              0.012,
+              0.025,
+              0.018
+            ],
+            "local_size": [
+              0.024,
+              0.05,
+              0.018
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.012,
+              -0.025,
+              0
+            ],
+            "local_max": [
+              0.012,
+              0.025,
+              0.018
+            ],
+            "local_size": [
+              0.024,
+              0.05,
+              0.018
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "0.024x0.05x0.018의 작은 압출 paper_ember4개가 Y0.48~0.83까지 부유한다.",
+      "concerns_ko": [
+        "19종 중 가장 작은 면적의 칩으로, 대표6 game PNG의 가는 선보다 더 작아 실제 화면에서 거의 보이지 않을 가능성이 있다. 크기 결함은 새 렌더 전 확정하지 않는다.",
+        "모든 불씨를 구/발광점으로 대체하지 않고 종이 형태와 산호/황동 온도를 유지한다."
+      ],
+      "expected_visual_checks_ko": [
+        "0.42cycle에 네 불씨 중 최소2개 이상이 확인되고 선체 디테일과 구별되는지 확인한다.",
+        "0.88cycle의 축소가 반짝임인지 렌더 alias인지 영상으로 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.3,
+        0.84,
+        1.36,
+        1.76
+      ],
+      "suggested_sample_normalized": [
+        0.15,
+        0.42,
+        0.68,
+        0.88
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "anchor": "world",
+        "clip": "ember-drift",
+        "duration_seconds": 2,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "일회성 불씨 표시 요청",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/ember-drift.glb"
+    },
+    {
+      "effect_id": "burning-state",
+      "original_id": "burning-state",
+      "order": 35,
+      "name_ko": "불붙음 상태",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "regenerate_required": true,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/burning-state.glb",
+        "bytes": 3724952,
+        "sha256": "732c413c99f85ac207d5418920888aed235d800526282260684fe938f26059f9",
+        "header_glb2": true,
+        "mesh_count": 3,
+        "clip_count": 1,
+        "channel_count": 9,
+        "float_numeric_values": 31942,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.0375,
+            1.4625,
+            1.5
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.47876,
+              -0.263916,
+              -0.094971
+            ],
+            "local_max": [
+              0.475342,
+              0.263916,
+              0.091064
+            ],
+            "local_size": [
+              0.954102,
+              0.527832,
+              0.186035
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.100804,
+              -0.001193,
+              -0.050282
+            ],
+            "local_max": [
+              0.189347,
+              0.499707,
+              0.029948
+            ],
+            "local_size": [
+              0.290151,
+              0.5009,
+              0.08023
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.106853,
+              0.109251,
+              -0.010252
+            ],
+            "local_max": [
+              0.050806,
+              0.360096,
+              0.030265
+            ],
+            "local_size": [
+              0.157659,
+              0.250844,
+              0.040518
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "불꽃2개 높이0.35/0.27 + curl0.78. authored scale7키 맥동; 각 불꽃 parent에 quaternion 회전 트랙.",
+      "concerns_ko": [
+        "X-long flame 누운 방향을 instance의 X→Y 회전으로 수정했다.",
+        "소스 delay0.05/0.17은 선언되어 있지만 현재 burning-state motion시간에는 쓰이지 않는다. 두 불꽃 scale은 동기화되어 있다; 새 렌더 뒤 필요하면 위상 조정할 후보로 남긴다.",
+        "불꽃 중심Y0.12/0.15는 수정 후 하단 일부가 손상표면 아래로 들어갈 수 있다."
+      ],
+      "expected_visual_checks_ko": [
+        "+Y 바깥 법선으로 솟는 비대칭 두 불꽃이 잔불과 구별되는지 확인한다.",
+        "상태종료/호스트삭제/수리완료 시 곧바로 해제되고 풀재생에 전 호스트 참조가 남지 않는지 확인한다.",
+        "연속2주기를 보고 동기 맥동과 경계 축소가 과하게 끊기지 않는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.075,
+        0.33,
+        0.6,
+        0.93,
+        1.23,
+        1.485
+      ],
+      "suggested_sample_normalized": [
+        0.05,
+        0.22,
+        0.4,
+        0.62,
+        0.82,
+        0.99
+      ],
+      "loop_boundary_sample_seconds": [
+        1.485,
+        1.5,
+        1.515
+      ],
+      "contract": {
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "anchor": "host-surface",
+        "clip": "burning-state",
+        "duration_seconds": 1.5,
+        "loop": true,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 점화 상태가 유효한 동안 표시",
+        "stop": "Explicit state/link end or host invalidation stops the instance; clip boundary is not the state lifetime.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/burning-state.glb"
+    },
+    {
+      "effect_id": "heavy-smoke-state",
+      "original_id": "heavy-smoke-state",
+      "order": 36,
+      "name_ko": "짙은 연기 상태",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/heavy-smoke-state.glb",
+        "bytes": 3779356,
+        "sha256": "e5407f69f039fbe276b96f960abe1b254c44f57bf5331357ca6e50f20e96f487",
+        "header_glb2": true,
+        "mesh_count": 3,
+        "clip_count": 1,
+        "channel_count": 7,
+        "float_numeric_values": 32072,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.075,
+            2.925,
+            3
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.259521,
+              -0.47583,
+              -0.106201
+            ],
+            "local_max": [
+              0.260498,
+              0.47583,
+              0.10376
+            ],
+            "local_size": [
+              0.520019,
+              0.95166,
+              0.209961
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.189347,
+              -0.001193,
+              -0.050282
+            ],
+            "local_max": [
+              0.100804,
+              0.499707,
+              0.029948
+            ],
+            "local_size": [
+              0.290151,
+              0.5009,
+              0.08023
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.050806,
+              0.109251,
+              -0.010252
+            ],
+            "local_max": [
+              0.106853,
+              0.360096,
+              0.030265
+            ],
+            "local_size": [
+              0.157659,
+              0.250844,
+              0.040518
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "Meshy 연기2개(크기0.47/0.46)를 0/0.26cycle 지연, X폭각각 약0.20/0.20, Y높이0.54/0.53 + curl1.08.",
+      "concerns_ko": [
+        "두 연기 중심이 Y0.25/0.52이며 올라갈수록 면이 겹칠 수 있다. 대표 smoke-puff와 실제게임크기/배경에서 비교 필요.",
+        "loop 경계 root0.001과 개별 연기의 축소가 있어서 연속 짙은 연기 유지가 구현되었다고 주장하지 않는다."
+      ],
+      "expected_visual_checks_ko": [
+        "연기2개가 S형과 여백을 유지하며 부착 모듈/연결부 가림이 허용범위인지 확인한다.",
+        "호스트 추종 중 중복시스템이 위치/상승을 두번 적용하지 않는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.75,
+        1.53,
+        2.25,
+        2.82,
+        2.97
+      ],
+      "suggested_sample_normalized": [
+        0.25,
+        0.51,
+        0.75,
+        0.94,
+        0.99
+      ],
+      "loop_boundary_sample_seconds": [
+        2.97,
+        3,
+        3.03
+      ],
+      "contract": {
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "anchor": "host",
+        "clip": "heavy-smoke-state",
+        "duration_seconds": 3,
+        "loop": true,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "지속 연기 표시가 필요한 손상 이벤트",
+        "stop": "Explicit state/link end or host invalidation stops the instance; clip boundary is not the state lifetime.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/heavy-smoke-state.glb"
+    },
+    {
+      "effect_id": "gas-leak-state",
+      "original_id": "gas-leak-state",
+      "order": 37,
+      "name_ko": "가스 누출 상태",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/gas-leak-state.glb",
+        "bytes": 191336,
+        "sha256": "5bab4cd843f18e6baa0c60537d4a914f718dd4a6ef0bd014d8a7ec63276c929c",
+        "header_glb2": true,
+        "mesh_count": 5,
+        "clip_count": 1,
+        "channel_count": 7,
+        "float_numeric_values": 45488,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.05,
+            1.95,
+            2
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.100804,
+              -0.001193,
+              -0.050282
+            ],
+            "local_max": [
+              0.189347,
+              0.499707,
+              0.029948
+            ],
+            "local_size": [
+              0.290151,
+              0.5009,
+              0.08023
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.106853,
+              0.109251,
+              -0.010252
+            ],
+            "local_max": [
+              0.050806,
+              0.360096,
+              0.030265
+            ],
+            "local_size": [
+              0.157659,
+              0.250844,
+              0.040518
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.189347,
+              -0.001193,
+              -0.050282
+            ],
+            "local_max": [
+              0.100804,
+              0.499707,
+              0.029948
+            ],
+            "local_size": [
+              0.290151,
+              0.5009,
+              0.08023
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.050806,
+              0.109251,
+              -0.010252
+            ],
+            "local_max": [
+              0.106853,
+              0.360096,
+              0.030265
+            ],
+            "local_size": [
+              0.157659,
+              0.250844,
+              0.040518
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              -0.00089,
+              -0.000647,
+              -0.010634
+            ],
+            "local_max": [
+              0.160777,
+              0.390717,
+              0.015087
+            ],
+            "local_size": [
+              0.161667,
+              0.391365,
+              0.025721
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "Meshy를 쓰지 않은 열린 curl2개(0.95/0.78) + 가스 실선1개(길이0.39/반폭0.022). 크림과 옅은 청록.",
+      "concerns_ko": [
+        "색이 옅어서 크림배경에서 역할을 잃을 수 있다. opacity fade는 별도 runtime이므로 TRS-only 모습도 확인해야 한다.",
+        "host-surface +Y 법선에 붙이는 연출과 호스트 world-up을 혼동하지 않는다."
+      ],
+      "expected_visual_checks_ko": [
+        "폭발/증기와 다른 가느다란 새는 곡선으로 읽히는지 확인한다.",
+        "누출종료 때 loop와 부착참조를 모두 끊고 재생시간0으로 리셋한다."
+      ],
+      "suggested_sample_seconds": [
+        0.36,
+        0.8,
+        1.26,
+        1.8,
+        1.98
+      ],
+      "suggested_sample_normalized": [
+        0.18,
+        0.4,
+        0.63,
+        0.9,
+        0.99
+      ],
+      "loop_boundary_sample_seconds": [
+        1.98,
+        2,
+        2.02
+      ],
+      "contract": {
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "anchor": "host-surface",
+        "clip": "gas-leak-state",
+        "duration_seconds": 2,
+        "loop": true,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 기낭 누출 표시가 요청된 동안",
+        "stop": "Explicit state/link end or host invalidation stops the instance; clip boundary is not the state lifetime.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/gas-leak-state.glb"
+    },
+    {
+      "effect_id": "overheat-state",
+      "original_id": "overheat-state",
+      "order": 38,
+      "name_ko": "과열 상태",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/overheat-state.glb",
+        "bytes": 79080,
+        "sha256": "36780e44690785a4d41728892b7fa24f7bd04e43975b422b8765707d502fe43a",
+        "header_glb2": true,
+        "mesh_count": 2,
+        "clip_count": 1,
+        "channel_count": 7,
+        "float_numeric_values": 18316,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.03,
+            1.17,
+            1.2
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.044421,
+              -0.000244,
+              -0.00441
+            ],
+            "local_max": [
+              0.049112,
+              0.350343,
+              0.013834
+            ],
+            "local_size": [
+              0.093534,
+              0.350587,
+              0.018244
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.044421,
+              -0.000244,
+              -0.00441
+            ],
+            "local_max": [
+              0.049112,
+              0.350343,
+              0.013834
+            ],
+            "local_size": [
+              0.093534,
+              0.350587,
+              0.018244
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "열기 붓선2개, 각 높이0.35/반폭0.017, X간격0.175. 산호/황동색, 매 cycle 위로0.17 이동.",
+      "concerns_ko": [
+        "정점색/선형상만으로 heat shimmer 셰이더가 구현된 것은 아니다.",
+        "가는선 두개가 대표 repair의 봉합선보다 작으므로 게임 크기에서 과열 의미를 알아볼 수 있는지 확인 필요."
+      ],
+      "expected_visual_checks_ko": [
+        "불붙음/가스누출과 다른 두 개의 흔들리는 열기선으로 읽히는지 확인한다.",
+        "과열종료 시 즉시 정지하고 clip_duration1.2를 과열상태 지속시간으로 쓰지 않는다."
+      ],
+      "suggested_sample_seconds": [
+        0.144,
+        0.396,
+        0.66,
+        0.936,
+        1.188
+      ],
+      "suggested_sample_normalized": [
+        0.12,
+        0.33,
+        0.55,
+        0.78,
+        0.99
+      ],
+      "loop_boundary_sample_seconds": [
+        1.188,
+        1.2,
+        1.212
+      ],
+      "contract": {
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "anchor": "host",
+        "clip": "overheat-state",
+        "duration_seconds": 1.2,
+        "loop": true,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 과열 상태/표시가 유효한 동안",
+        "stop": "Explicit state/link end or host invalidation stops the instance; clip boundary is not the state lifetime.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/overheat-state.glb"
+    },
+    {
+      "effect_id": "short-circuit-state",
+      "original_id": "short-circuit-state",
+      "order": 39,
+      "name_ko": "단락 상태",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/short-circuit-state.glb",
+        "bytes": 116340,
+        "sha256": "b7c56e88d0dedd3507e96074e3eb3a71911e91cb0854e776e601aff0ef5a8eb4",
+        "header_glb2": true,
+        "mesh_count": 3,
+        "clip_count": 1,
+        "channel_count": 7,
+        "float_numeric_values": 27352,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.02,
+            0.78,
+            0.8
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.160274,
+              0.019257,
+              -0.000133
+            ],
+            "local_max": [
+              0.000251,
+              0.150508,
+              0.03451
+            ],
+            "local_size": [
+              0.160525,
+              0.131251,
+              0.034643
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.000426,
+              0.019577,
+              -0.024177
+            ],
+            "local_max": [
+              0.140396,
+              0.230419,
+              0.000141
+            ],
+            "local_size": [
+              0.140822,
+              0.210842,
+              0.024318
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.030994,
+              0.019863,
+              -0.000113
+            ],
+            "local_max": [
+              0.006249,
+              0.290102,
+              0.066272
+            ],
+            "local_size": [
+              0.037243,
+              0.270239,
+              0.066385
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "순차 점멸 circuit3개. 최대길이0.29/반폭0.012, 피크시간cycle0.105/0.325/0.545. 각 피크뒤0.085cycle 동안 축소.",
+      "concerns_ko": [
+        "가장 가는 반폭0.012와 짧은 점멸은 60fps 게임크기에서 놓치기 쉽다. 렌더/재생검토 없이 두께나 점멸횟수 변경하지 않았다.",
+        "폐고리/네온방전으로 바꾸지 않고 밝은 크림과 옅은청록의 꺾인 붓결을 유지한다."
+      ],
+      "expected_visual_checks_ko": [
+        "sample .084/.260/.436초의 서로 다른 전기선3개를 각각 확인한다.",
+        "모바일게임크기 및 TRS-only에서 점멸이 알아볼 수 있고 광과민성을 유발하는 과도한 전면점멸은 없는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.084,
+        0.26,
+        0.436,
+        0.6,
+        0.792
+      ],
+      "suggested_sample_normalized": [
+        0.105,
+        0.325,
+        0.545,
+        0.75,
+        0.99
+      ],
+      "loop_boundary_sample_seconds": [
+        0.792,
+        0.8,
+        0.808
+      ],
+      "contract": {
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "anchor": "host",
+        "clip": "short-circuit-state",
+        "duration_seconds": 0.8,
+        "loop": true,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 단락 또는 손상 전기 표시 요청",
+        "stop": "Explicit state/link end or host invalidation stops the instance; clip boundary is not the state lifetime.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/short-circuit-state.glb"
+    },
+    {
+      "effect_id": "engine-stall-state",
+      "original_id": "engine-stall-state",
+      "order": 40,
+      "name_ko": "엔진 정지 상태",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/engine-stall-state.glb",
+        "bytes": 3760560,
+        "sha256": "b8aea700a4994f51b8df91f90d952f1edcc82b25f1b5cffa53a3413b148dca8a",
+        "header_glb2": true,
+        "mesh_count": 3,
+        "clip_count": 1,
+        "channel_count": 7,
+        "float_numeric_values": 27552,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.055,
+            2.145,
+            2.2
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.259521,
+              -0.47583,
+              -0.106201
+            ],
+            "local_max": [
+              0.260498,
+              0.47583,
+              0.10376
+            ],
+            "local_size": [
+              0.520019,
+              0.95166,
+              0.209961
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.003057,
+              -0.200044,
+              -0.000248
+            ],
+            "local_max": [
+              0.032174,
+              0.000115,
+              0.020242
+            ],
+            "local_size": [
+              0.035231,
+              0.200159,
+              0.020489
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.003057,
+              -0.200044,
+              -0.000248
+            ],
+            "local_max": [
+              0.032174,
+              0.000115,
+              0.020242
+            ],
+            "local_size": [
+              0.035231,
+              0.200159,
+              0.020489
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "작은 faltering_exhaust 연기0.28/0.28/0.20, 주기내 scale0.9→0.61→0.85→0.47→0.22. 얇은 soot2개가 -Y로 떨어짐.",
+      "concerns_ko": [
+        "기존 엔진 연기가 작은 편이므로 더큰고장/폭발과 구별하는 방향은 합리적이나 실제화면에서 정지상태로 읽히는지는 미검수.",
+        "표준TRS 연기와 soot이고 엔진 회전/추력/실속을 실제 제어하지 않는다."
+      ],
+      "expected_visual_checks_ko": [
+        "불규칙 배기가 상승후 뒤(-Z)/아래로 떨어지는 끊김을 읽는다.",
+        "정상화 이벤트에서 loop중지, 배기 parent/scale/time을 리셋한다."
+      ],
+      "suggested_sample_seconds": [
+        0.176,
+        0.418,
+        0.792,
+        1.32,
+        1.87,
+        2.178
+      ],
+      "suggested_sample_normalized": [
+        0.08,
+        0.19,
+        0.36,
+        0.6,
+        0.85,
+        0.99
+      ],
+      "loop_boundary_sample_seconds": [
+        2.178,
+        2.2,
+        2.222
+      ],
+      "contract": {
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "anchor": "host",
+        "clip": "engine-stall-state",
+        "duration_seconds": 2.2,
+        "loop": true,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 엔진 정지 상태가 유효한 동안",
+        "stop": "Explicit state/link end or host invalidation stops the instance; clip boundary is not the state lifetime.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/engine-stall-state.glb"
+    },
+    {
+      "effect_id": "envelope-rupture-state",
+      "original_id": "envelope-rupture-state",
+      "order": 41,
+      "name_ko": "기낭 파열 상태",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/envelope-rupture-state.glb",
+        "bytes": 180160,
+        "sha256": "c2f60de2b0fa997dd48a8f86cdc9bf37452f1c1c68544e5d3763e2f0865d65e7",
+        "header_glb2": true,
+        "mesh_count": 7,
+        "clip_count": 1,
+        "channel_count": 10,
+        "float_numeric_values": 41894,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.035,
+            1.365,
+            1.4
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.075,
+              -0.12,
+              0
+            ],
+            "local_max": [
+              0.075,
+              0.12,
+              0.018
+            ],
+            "local_size": [
+              0.15,
+              0.24,
+              0.018
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.033709,
+              -0.070151,
+              0.024271
+            ],
+            "local_max": [
+              0.000621,
+              0.080129,
+              0.029266
+            ],
+            "local_size": [
+              0.03433,
+              0.15028,
+              0.004995
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.075,
+              -0.12,
+              0
+            ],
+            "local_max": [
+              0.075,
+              0.12,
+              0.018
+            ],
+            "local_size": [
+              0.15,
+              0.24,
+              0.018
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.000621,
+              -0.070151,
+              0.024271
+            ],
+            "local_max": [
+              0.033709,
+              0.080129,
+              0.029266
+            ],
+            "local_size": [
+              0.03433,
+              0.15028,
+              0.004995
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              -0.064465,
+              0.009832,
+              -0.005781
+            ],
+            "local_max": [
+              0.061161,
+              0.560581,
+              0.016171
+            ],
+            "local_size": [
+              0.125626,
+              0.550748,
+              0.021952
+            ]
+          },
+          {
+            "mesh": 5,
+            "primitive": 0,
+            "local_min": [
+              -0.189347,
+              -0.001193,
+              -0.050282
+            ],
+            "local_max": [
+              0.100804,
+              0.499707,
+              0.029948
+            ],
+            "local_size": [
+              0.290151,
+              0.5009,
+              0.08023
+            ]
+          },
+          {
+            "mesh": 6,
+            "primitive": 0,
+            "local_min": [
+              -0.050806,
+              0.109251,
+              -0.010252
+            ],
+            "local_max": [
+              0.106853,
+              0.360096,
+              0.030265
+            ],
+            "local_size": [
+              0.157659,
+              0.250844,
+              0.040518
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "크림압출천2개(0.15x0.24), seam2개(반폭0.009), 길이0.56의 gust와 curl0.75. 천이 X양쪽으로 벌어지고 회전한다.",
+      "concerns_ko": [
+        "실제천 메시의 찢어짐/양력손실이 아니라 파열확정 이벤트 후 일회성 표시다.",
+        "cream_canvas와 fine seam은 크림기낭/밝은배경에서 묻힐 수 있다."
+      ],
+      "expected_visual_checks_ko": [
+        "+Y 바깥법선으로 천 조각이 읽히고 실제기낭을 덮는 고정하얀판처럼 보이지 않는지 확인한다.",
+        "one-shot종료와 host삭제 후 풀에 천/선이 남지 않는다."
+      ],
+      "suggested_sample_seconds": [
+        0.056,
+        0.364,
+        0.7,
+        0.882,
+        1.26
+      ],
+      "suggested_sample_normalized": [
+        0.04,
+        0.26,
+        0.5,
+        0.63,
+        0.9
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "anchor": "host-surface",
+        "clip": "envelope-rupture-state",
+        "duration_seconds": 1.4,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 기낭 파열/파괴 이벤트",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/envelope-rupture-state.glb"
+    },
+    {
+      "effect_id": "module-detach-state",
+      "original_id": "module-detach-state",
+      "order": 42,
+      "name_ko": "부품 분리 순간",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/module-detach-state.glb",
+        "bytes": 3769348,
+        "sha256": "a220c36206c0c83f3625da1a9258e8878bd31c743ca06a228942abe27ccd32e0",
+        "header_glb2": true,
+        "mesh_count": 5,
+        "clip_count": 1,
+        "channel_count": 14,
+        "float_numeric_values": 28560,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.025,
+            0.975,
+            1
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.23017,
+              -0.002628,
+              -0.000168
+            ],
+            "local_max": [
+              -0.03493,
+              0.040257,
+              0.018446
+            ],
+            "local_size": [
+              0.19524,
+              0.042885,
+              0.018613
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.019,
+              -0.026,
+              0
+            ],
+            "local_max": [
+              0.019,
+              0.026,
+              0.018
+            ],
+            "local_size": [
+              0.038,
+              0.052,
+              0.018
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              0.03493,
+              -0.002628,
+              -0.000168
+            ],
+            "local_max": [
+              0.23017,
+              0.040257,
+              0.018446
+            ],
+            "local_size": [
+              0.19524,
+              0.042885,
+              0.018613
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.019,
+              -0.026,
+              0
+            ],
+            "local_max": [
+              0.019,
+              0.026,
+              0.018
+            ],
+            "local_size": [
+              0.038,
+              0.052,
+              0.018
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              -0.259521,
+              -0.47583,
+              -0.106201
+            ],
+            "local_max": [
+              0.260498,
+              0.47583,
+              0.10376
+            ],
+            "local_size": [
+              0.520019,
+              0.95166,
+              0.209961
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "황동 connector_filament2개(길이약0.20/반폭0.014), bolt2개(0.038x0.052), Meshy connector_dust0.25/0.18/0.15.",
+      "concerns_ko": [
+        "볼트가 게임크기에서 매우 작다. 중심절단 동작이 역할을 읽혀야 하므로 볼트 확대만으로 해결했다고 주장하지 않는다.",
+        "연결부 절단/하위묶음 분리/회수/화물화를 표시클립이 직접 실행하지 않는다."
+      ],
+      "expected_visual_checks_ko": [
+        "실제 연결절단 확정위치에서 두필라멘트가 벌어지는 방향을 읽는다.",
+        "기존 분리선체/회수표시와 동시에 큰 폭발을 더하지 않는지 통합담당이 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.06,
+        0.19,
+        0.25,
+        0.49,
+        0.86
+      ],
+      "suggested_sample_normalized": [
+        0.06,
+        0.19,
+        0.25,
+        0.49,
+        0.86
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "anchor": "host-surface",
+        "clip": "module-detach-state",
+        "duration_seconds": 1,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 부모 연결 절단과 하위 묶음 분리가 확정된 이벤트",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/module-detach-state.glb"
+    },
+    {
+      "effect_id": "armor-block",
+      "original_id": "armor-block",
+      "order": 44,
+      "name_ko": "장갑 막음",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/armor-block.glb",
+        "bytes": 116360,
+        "sha256": "e82779236fe594050f6394a102ece92fe205a56fd0d206928544a248d56775e7",
+        "header_glb2": true,
+        "mesh_count": 4,
+        "clip_count": 1,
+        "channel_count": 5,
+        "float_numeric_values": 27312,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.01375,
+            0.53625,
+            0.55
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.17084,
+              -0.000992,
+              -0.080285
+            ],
+            "local_max": [
+              -0.024552,
+              0.12845,
+              0.080274
+            ],
+            "local_size": [
+              0.146288,
+              0.129443,
+              0.16056
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.170293,
+              0.006595,
+              -0.070109
+            ],
+            "local_max": [
+              -0.049925,
+              0.097369,
+              0.070105
+            ],
+            "local_size": [
+              0.120367,
+              0.090774,
+              0.140213
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              0.024552,
+              -0.000992,
+              -0.080285
+            ],
+            "local_max": [
+              0.17084,
+              0.12845,
+              0.080274
+            ],
+            "local_size": [
+              0.146288,
+              0.129443,
+              0.16056
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              0.049925,
+              0.006595,
+              -0.070109
+            ],
+            "local_max": [
+              0.170293,
+              0.097369,
+              0.070105
+            ],
+            "local_size": [
+              0.120367,
+              0.090774,
+              0.140213
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "서로마주보는 황동 chevron2개(각 폭약0.15/높이0.13/반폭0.026) + 크림 light_edge2개. 표면XZ접선으로 양쪽 짧게 벌어짐.",
+      "concerns_ko": [
+        "한 chevron은 매우 낮은높이0.13이라 게임크기에서 작은 더블화살표로 보일 수 있다.",
+        "막음 판정이 없는 일반 armor-hit를 이효과로 대체하지 않는다."
+      ],
+      "expected_visual_checks_ko": [
+        "실제block이벤트에서 공격폭발/보호막과 다른 짧은맞섬이 읽힌다.",
+        "원점의 +Y법선을 맞춰 선체안으로 눕지 않고 과도한차폐면이 없는지 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.02475,
+        0.1265,
+        0.264,
+        0.3575
+      ],
+      "suggested_sample_normalized": [
+        0.045,
+        0.23,
+        0.48,
+        0.65
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "anchor": "impact-surface",
+        "clip": "armor-block",
+        "duration_seconds": 0.55,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 장갑 막음/방어 결과가 계산된 이벤트",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/armor-block.glb"
+    },
+    {
+      "effect_id": "healing-pulse",
+      "original_id": "healing-pulse",
+      "order": 46,
+      "name_ko": "회복 펄스",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/healing-pulse.glb",
+        "bytes": 228876,
+        "sha256": "21e146879e89f2e7825b53d7d6200536d8b1175eccbd741e448f9ade20d5d6d5",
+        "header_glb2": true,
+        "mesh_count": 6,
+        "clip_count": 1,
+        "channel_count": 7,
+        "float_numeric_values": 54568,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.045,
+            1.755,
+            1.8
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.057198,
+              -0.00042,
+              -0.018009
+            ],
+            "local_max": [
+              0.057412,
+              0.152155,
+              0.017963
+            ],
+            "local_size": [
+              0.114609,
+              0.152575,
+              0.035972
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.00747,
+              0.015,
+              -0.001811
+            ],
+            "local_max": [
+              0.00747,
+              0.135,
+              0.001811
+            ],
+            "local_size": [
+              0.01494,
+              0.12,
+              0.003623
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.057198,
+              -0.00042,
+              -0.018009
+            ],
+            "local_max": [
+              0.057412,
+              0.152155,
+              0.017963
+            ],
+            "local_size": [
+              0.114609,
+              0.152575,
+              0.035972
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              -0.00747,
+              0.015,
+              -0.001811
+            ],
+            "local_max": [
+              0.00747,
+              0.135,
+              0.001811
+            ],
+            "local_size": [
+              0.01494,
+              0.12,
+              0.003623
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              -0.057198,
+              -0.00042,
+              -0.018009
+            ],
+            "local_max": [
+              0.057412,
+              0.152155,
+              0.017963
+            ],
+            "local_size": [
+              0.114609,
+              0.152575,
+              0.035972
+            ]
+          },
+          {
+            "mesh": 5,
+            "primitive": 0,
+            "local_min": [
+              -0.00747,
+              0.015,
+              -0.001811
+            ],
+            "local_max": [
+              0.00747,
+              0.135,
+              0.001811
+            ],
+            "local_size": [
+              0.01494,
+              0.12,
+              0.003623
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "작은 leaf형 붓3개(각0.115x0.153/반폭0.014)와 중심실선3개(반폭0.007)를 0.04/0.17/0.30cycle 지연하며 Y로 올린다.",
+      "concerns_ko": [
+        "leaf의 화면면적과 가운데 실선은 게임크기에서 알아보기 작을수 있다. 대표repair와 다른 지원역할인지 새렌더필요.",
+        "스프라이트/치유판정/실제회복량은 포함하지 않는다."
+      ],
+      "expected_visual_checks_ko": [
+        "3개의 작은잎이 위로번갈아 올라오며 수리봉합과 다른형태로 읽힌다.",
+        "target지원위치와 사용기간을 런타임이 결정하고 one-shot종료후 풀을정리한다."
+      ],
+      "suggested_sample_seconds": [
+        0.324,
+        0.558,
+        0.792,
+        1.26,
+        1.584
+      ],
+      "suggested_sample_normalized": [
+        0.18,
+        0.31,
+        0.44,
+        0.7,
+        0.88
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 위, +Z 대상 전방",
+        "anchor": "target",
+        "clip": "healing-pulse",
+        "duration_seconds": 1.8,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "실제 회복/복구 표시 요청",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/healing-pulse.glb"
+    },
+    {
+      "effect_id": "salvage-tether",
+      "original_id": "salvage-tether",
+      "order": 47,
+      "name_ko": "회수 견인 흐름",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/salvage-tether.glb",
+        "bytes": 161104,
+        "sha256": "28a2959fbc285dee5fc5fa3d30480df6e87e7dd03401aea5f267d850f56bf66b",
+        "header_glb2": true,
+        "mesh_count": 3,
+        "clip_count": 1,
+        "channel_count": 6,
+        "float_numeric_values": 38685,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.05,
+            1.95,
+            2
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.039154,
+              -0.135312,
+              -0.00007
+            ],
+            "local_max": [
+              0.05384,
+              0.000358,
+              1.020041
+            ],
+            "local_size": [
+              0.092994,
+              0.13567,
+              1.020111
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.026364,
+              -0.109988,
+              0.049977
+            ],
+            "local_max": [
+              0.034343,
+              0.012097,
+              0.980013
+            ],
+            "local_size": [
+              0.060707,
+              0.122085,
+              0.930037
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              -0.07896,
+              -0.053264,
+              -0.007873
+            ],
+            "local_max": [
+              0.075708,
+              0.086187,
+              0.015155
+            ],
+            "local_size": [
+              0.154668,
+              0.139451,
+              0.023028
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "물리로프 시안3메시. +Z rope endpoint1.02, 두께반폭0.016/밝은가닥0.005, slack깊이 -Y0.135. open_reel은 원점 주변폭0.155.",
+      "concerns_ko": [
+        "로컬시연 rope Z스케일0.56→1, Y스케일1→0.7→0.82와 root경계축소는 실제끝점 거리/장력 계산이 아니다.",
+        "실제런타임의 distance/orientation과 내장rope scale을 중복적용하면 끝점이 어긋난다. 후속 binder는 rope preview scale트랙을 끄고 endpoints를 단독소유해야 한다.",
+        "끝점연결 유지가 필요한 상태에 clip끝 shrink를 쓰지 않는다. 짧은자체시안loop는 hold-after-arrival 완료가 아니다."
+      ],
+      "expected_visual_checks_ko": [
+        "실제두끝점사이에 Z축을맞추고 길이distance/1.02를 적용할 때 오차가 없는지 확인한다.",
+        "상태종료/호스트삭제/projectile-ended에 두끝점참조와 parent를 해제한다.",
+        "rope 유지와 reel 제스처만 반복하는 정책을 분리해 연속2주기 확인한다."
+      ],
+      "suggested_sample_seconds": [
+        0.18,
+        0.6,
+        1.46,
+        1.88,
+        1.98
+      ],
+      "suggested_sample_normalized": [
+        0.09,
+        0.3,
+        0.73,
+        0.94,
+        0.99
+      ],
+      "loop_boundary_sample_seconds": [
+        1.98,
+        2,
+        2.02
+      ],
+      "contract": {
+        "axes": "+Z 시작점에서 끝점으로, +Y는 그 축에 수직인 안정화 방향",
+        "anchor": "link",
+        "clip": "salvage-tether",
+        "duration_seconds": 2,
+        "loop": true,
+        "motion_owner": "runtime-endpoints for real use; embedded rope scale/shape is preview-only",
+        "trigger": "실제 견인/회수 중인 두 끝점 연결 이벤트",
+        "stop": "Explicit state/link end or host invalidation stops the instance; clip boundary is not the state lifetime.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/salvage-tether.glb"
+    },
+    {
+      "effect_id": "mount-lock",
+      "original_id": "mount-lock",
+      "order": 48,
+      "name_ko": "장착 잠금",
+      "status": "new_render_required",
+      "source_binary_review_complete": true,
+      "art_approved": false,
+      "runtime_integrated": false,
+      "source_change": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "regenerate_required": false,
+      "binary_evidence_before_regeneration": {
+        "path": "outputs/combat-vfx-v2/assets/mount-lock.glb",
+        "bytes": 145316,
+        "sha256": "5890a8b06f4b18d5c89cf4fcabcd4b7b9dbecf03a740667f8bc2d3679be9ed83",
+        "header_glb2": true,
+        "mesh_count": 5,
+        "clip_count": 1,
+        "channel_count": 6,
+        "float_numeric_values": 34152,
+        "nonfinite_values": 0,
+        "root_scale_keys": {
+          "seconds": [
+            0,
+            0.025,
+            0.975,
+            1
+          ],
+          "scales": [
+            [
+              0.001,
+              0.001,
+              0.001
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0.001,
+              0.001,
+              0.001
+            ]
+          ]
+        },
+        "geometry_bounds": [
+          {
+            "mesh": 0,
+            "primitive": 0,
+            "local_min": [
+              -0.204041,
+              -0.005612,
+              -0.123681
+            ],
+            "local_max": [
+              -0.06,
+              0.045612,
+              0.123585
+            ],
+            "local_size": [
+              0.144041,
+              0.051224,
+              0.247266
+            ]
+          },
+          {
+            "mesh": 1,
+            "primitive": 0,
+            "local_min": [
+              -0.168537,
+              0.03793,
+              -0.08
+            ],
+            "local_max": [
+              -0.151463,
+              0.04207,
+              0.08
+            ],
+            "local_size": [
+              0.017075,
+              0.00414,
+              0.16
+            ]
+          },
+          {
+            "mesh": 2,
+            "primitive": 0,
+            "local_min": [
+              0.06,
+              -0.005612,
+              -0.123681
+            ],
+            "local_max": [
+              0.204041,
+              0.045612,
+              0.123585
+            ],
+            "local_size": [
+              0.144041,
+              0.051224,
+              0.247266
+            ]
+          },
+          {
+            "mesh": 3,
+            "primitive": 0,
+            "local_min": [
+              0.151463,
+              0.03793,
+              -0.08
+            ],
+            "local_max": [
+              0.168537,
+              0.04207,
+              0.08
+            ],
+            "local_size": [
+              0.017075,
+              0.00414,
+              0.16
+            ]
+          },
+          {
+            "mesh": 4,
+            "primitive": 0,
+            "local_min": [
+              -0.060446,
+              0.049599,
+              0.016895
+            ],
+            "local_max": [
+              0.07532,
+              0.16048,
+              0.023105
+            ],
+            "local_size": [
+              0.135766,
+              0.110881,
+              0.006211
+            ]
+          }
+        ]
+      },
+      "shape_evidence_ko": "청록 bracket2개, 각 폭약0.144/깊이0.247/반폭0.024. 양쪽X0.19에서 수렴후 클릭표시(길이0.14/반폭0.012).",
+      "concerns_ko": [
+        "장착클릭은 얇아서 실제작은화면에서 확인필요. source에는 실제socket검증/장착결과 생성이 없다.",
+        "host자산 위에표시하는TRS이며 실제부품이 이bracket과같은위치로 움직인다는 뜻이 아니다."
+      ],
+      "expected_visual_checks_ko": [
+        "양쪽bracket→중앙걸림→짧은check표시 순서가 수리/막음과 구별된다.",
+        "실제장착확정event에서만 발생하고 clip끝후 time/transform/parent를 초기화한다."
+      ],
+      "suggested_sample_seconds": [
+        0.08,
+        0.32,
+        0.45,
+        0.48,
+        0.82
+      ],
+      "suggested_sample_normalized": [
+        0.08,
+        0.32,
+        0.45,
+        0.48,
+        0.82
+      ],
+      "loop_boundary_sample_seconds": [],
+      "contract": {
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "anchor": "host",
+        "clip": "mount-lock",
+        "duration_seconds": 1,
+        "loop": false,
+        "motion_owner": "embedded local art TRS under runtime anchor; no autonomous world movement or collision",
+        "trigger": "소켓 장착이 실제 검증·확정된 이벤트",
+        "stop": "Clip completion or host invalidation releases the one-shot; no implicit hit/gameplay event.",
+        "reset": [
+          "mixer/action time to 0 and stop old action",
+          "restore baseline TRS including 0.001 boundary scales",
+          "detach old parent/host references",
+          "clear endpoint references and old link length/orientation",
+          "restore fade material opacity before reuse"
+        ],
+        "projectile_geometry_subtree": null,
+        "muzzle_frame_change": false
+      },
+      "v2_selection": "Per effect opt-in after new render and consuming-runtime checks; keep v1 fallback for other IDs.",
+      "v1_fallback": "outputs/combat-vfx/assets/mount-lock.glb"
+    }
+  ]
+}

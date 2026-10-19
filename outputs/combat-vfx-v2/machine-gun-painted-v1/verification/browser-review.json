@@ -1,0 +1,37 @@
+{
+  "game_title": "Cloudstitch",
+  "date_seoul": "2026-10-18",
+  "html": {
+    "path": "outputs/combat-vfx-v2/machine-gun-painted-v1/index.html",
+    "bytes": 11625472,
+    "sha256": "983d5e3a37552db54e0f19f399b2474277ca989e3f047d9187d674a453916fe7"
+  },
+  "status": "targeted_native_IAB_visual_review",
+  "browser": "Existing Codex IAB, one temporary deliverable tab; no extra browser process",
+  "observed": [
+    "Actual weapon texture decoded",
+    "New material/transparent atlas rendered",
+    "Projectile close-up at0.485s",
+    "Impact close-up at1.04s",
+    "Surface-aligned impact core and gold flicks",
+    "Frame/phase/camera controls selected through UI"
+  ],
+  "screenshots": [
+    {
+      "path": "verification/impact-surface-fixed.jpg",
+      "bytes": 75863,
+      "sha256": "dfa9c8f50214a4e202e7110364ce1dc0bb4724439b25400b63b39f3bc9bfcbb5"
+    },
+    {
+      "path": "verification/projectile-texture.jpg",
+      "bytes": 66184,
+      "sha256": "1b21412c32a7414962453629582e4f3a7c422805fec7631aecf99094521a4415"
+    }
+  ],
+  "console_log": "verification/browser-console.json",
+  "console_errors_warnings_observed": 0,
+  "geometry": "verification/geometry.json",
+  "user_art_approved": false,
+  "gameplay_integrated": false,
+  "full_mobile_ghosting_performance_qa": false
+}

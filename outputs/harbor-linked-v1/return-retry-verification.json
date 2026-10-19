@@ -1,0 +1,145 @@
+{
+  "version": "harbor-return-retry-v1",
+  "passed": true,
+  "generatedAt": "2026-10-18T06:41:16.068Z",
+  "scope": "Actual integrated controller and sim using runSortie movement/fire/salvage/return inputs, with injected storage write failure after actual cargo recovery.",
+  "directHpEdits": false,
+  "teleports": false,
+  "directCargoEdits": false,
+  "fixtureReturns": false,
+  "browser": false,
+  "filesystemFaultExperiment": false,
+  "checks": [
+    {
+      "name": "actual-return-auto-save-failure-preserves-session-and-departure",
+      "passed": true,
+      "detail": {
+        "outcome": "safe-retreat-with-cargo",
+        "departureRevision": 1,
+        "ledgerCount": 1,
+        "cargoBundles": 1,
+        "cargoParts": 2,
+        "partIds": [
+          "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-1:balloon",
+          "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-1:main-engine"
+        ],
+        "resources": {
+          "S": 120,
+          "F": 40,
+          "C": 2
+        },
+        "failedWrites": 1,
+        "pilot": {
+          "done": true,
+          "returned": false,
+          "reason": "저장하지 못했습니다. 현재 세션을 유지하며 마지막 정상 저장을 보존했습니다."
+        },
+        "simulatedSeconds": 9.250000000000039
+      }
+    },
+    {
+      "name": "repeated-return-with-write-failure-remains-unsaved-without-duplicate-ledger",
+      "passed": true,
+      "detail": {
+        "reason": "저장하지 못했습니다. 현재 세션을 유지하며 마지막 정상 저장을 보존했습니다.",
+        "failedWrites": 2,
+        "ledgerCount": 1,
+        "rawDepartureUnchanged": true
+      }
+    },
+    {
+      "name": "dirty-restore-is-blocked-and-cannot-discard-settled-recovery",
+      "passed": true,
+      "detail": {
+        "reason": "현재 항구 변경을 먼저 저장하세요."
+      }
+    },
+    {
+      "name": "retry-after-storage-recovery-commits-existing-session-exactly-once",
+      "passed": true,
+      "detail": {
+        "returnRevision": 2,
+        "successfulWrites": 2,
+        "failedWrites": 2,
+        "ledgerCount": 1,
+        "preservedDepartureBackup": true
+      }
+    },
+    {
+      "name": "fresh-controller-restores-exact-state-ledger-ownership-and-parts",
+      "passed": true,
+      "detail": {
+        "ledgerCount": 1,
+        "partCount": 7,
+        "cargoCount": 2,
+        "resources": {
+          "S": 120,
+          "F": 40,
+          "C": 2
+        },
+        "fullStateExact": true,
+        "postSuccessReturnWrites": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Synchronous in-memory localStorage-style adapter; this does not verify browser quota behavior or OS filesystem durability.",
+    "Automated safe retreat in the authored first region, not a complete boss route or human playtest.",
+    "A fresh controller is recreated in the same Node process; this check does not terminate the application process."
+  ],
+  "sourceHashes": [
+    {
+      "path": "tools/integration/session.mjs",
+      "sha256": "cc0b99831a49091fefb4027b9a6f342e519d4fcd3e5cc05adef9e404542aa6f2"
+    },
+    {
+      "path": "tools/integration/pilot.mjs",
+      "sha256": "9ab1a8a5b0962eff4326f9c777539ceed3431375259c37005f52de35129b3fe0"
+    },
+    {
+      "path": "tools/integration/contract.mjs",
+      "sha256": "4cc138ee25d478aa3623072243d0e1565bab7664b029c59b1b00f0c9193dcb26"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "path": "tools/harbor/core.mjs",
+      "sha256": "9cae5e9bcb1c6fe453795a8fe4eb8eedcff9bb1e5c06958344125be8c5429a7c"
+    },
+    {
+      "path": "tools/harbor/adapters.mjs",
+      "sha256": "aac641234a776f0089eb3ac17d5746861789f2f9159ce05490d7eb2cc5197ab7"
+    },
+    {
+      "path": "tools/shipyard/shipyard.mjs",
+      "sha256": "413839ac4b7a6208036562b9bf50ea364384a7fcdff7af84b5faa19b6ab788d9"
+    },
+    {
+      "path": "tools/save/save.mjs",
+      "sha256": "8d975cd44dcc88590e96a8fd2ba6772051a9f3051cff669688c0ba3be3073414"
+    },
+    {
+      "path": "tools/encounters/director.mjs",
+      "sha256": "e8a0cdb2c951994896cc06d35e6a5120fc372d26747e647ca4ee5f6a5f389e4f"
+    },
+    {
+      "path": "tools/encounters/attack-budget.mjs",
+      "sha256": "4d98568fc15a4316a20c310dc5f8ce1db625a2410f9b8acbea91b1e72e1cb5c4"
+    },
+    {
+      "path": "tools/levels/levels.mjs",
+      "sha256": "bd628ba20f5ae4ac745f962cf463265471791ebc208c6f059e2711f021a9a1fd"
+    }
+  ],
+  "verifier": {
+    "path": "tools/harbor/verify-return-retry.mjs",
+    "sha256": "10bb31c2394f732e5f4bc1b13e38dfd95ffecbae3d0678c09ebf7cb24867fa92"
+  },
+  "sourceSnapshotStable": true
+}

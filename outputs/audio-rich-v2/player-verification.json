@@ -1,0 +1,183 @@
+{
+  "schema": "cloudstitch-audio-rich-player-verification/v2",
+  "generatedAt": "2026-10-18T11:35:23.767Z",
+  "method": "Node fake AudioContext with advancing time, scheduled stop/onended and release watchdog; lifecycle and static template tests. No native browser, decode, playback, mobile measurement or human listening.",
+  "releasePolicy": "5 ms gain release, 1 ms stop margin, disconnect after onended; silent/interrupted context watchdog cleanup at 80 ms. whenIdle waits pending, active and releasing voices.",
+  "passed": true,
+  "checks": 43,
+  "passCount": 43,
+  "results": [
+    {
+      "name": "locked playback creates no source or queued voice",
+      "passed": true
+    },
+    {
+      "name": "first activation has no delayed old playback",
+      "passed": true
+    },
+    {
+      "name": "default volume is 0.4 with equal RMS enabled",
+      "passed": true
+    },
+    {
+      "name": "idle volume is applied immediately",
+      "passed": true
+    },
+    {
+      "name": "original playback uses the actual original mode",
+      "passed": true
+    },
+    {
+      "name": "same loop request does not create a second source",
+      "passed": true
+    },
+    {
+      "name": "active volume update uses short smoothing",
+      "passed": true
+    },
+    {
+      "name": "mono change stops the old channel graph",
+      "passed": true
+    },
+    {
+      "name": "mono reuses downmixed one-channel PCM",
+      "passed": true
+    },
+    {
+      "name": "three-cue preview starts exactly three concurrent sources",
+      "passed": true
+    },
+    {
+      "name": "three voices reserve headroom at full master volume",
+      "passed": true
+    },
+    {
+      "name": "a fourth voice respects the three-voice cap",
+      "passed": true
+    },
+    {
+      "name": "lower-priority ambience cannot steal warning voices",
+      "passed": true
+    },
+    {
+      "name": "hidden state cleans active and looping sources",
+      "passed": true
+    },
+    {
+      "name": "hidden state refuses playback",
+      "passed": true
+    },
+    {
+      "name": "hidden release finishes before context suspension",
+      "passed": true
+    },
+    {
+      "name": "visible state does not automatically resume playback",
+      "passed": true
+    },
+    {
+      "name": "stopAll keeps a five-millisecond fade connected until source ended",
+      "passed": true
+    },
+    {
+      "name": "release tails retain mix headroom until cleanup",
+      "passed": true
+    },
+    {
+      "name": "exclusive replacement is scheduled after the old release stop",
+      "passed": true
+    },
+    {
+      "name": "rapid repeated replacements keep physical source count bounded",
+      "passed": true
+    },
+    {
+      "name": "hidden suspension is cancelled when visibility changes during release",
+      "passed": true
+    },
+    {
+      "name": "suspended release watchdog completes without native onended",
+      "passed": true
+    },
+    {
+      "name": "new activation waits for an already pending hidden suspend",
+      "passed": true
+    },
+    {
+      "name": "native-inspection interface decodes both modes without playing",
+      "passed": true
+    },
+    {
+      "name": "release inspection leaves no cached PCM",
+      "passed": true
+    },
+    {
+      "name": "cache limit remains bounded across many different cues",
+      "passed": true
+    },
+    {
+      "name": "pair gains produce exactly equal RMS",
+      "passed": true
+    },
+    {
+      "name": "pair gains keep both peaks at or below 0.8",
+      "passed": true
+    },
+    {
+      "name": "disabled RMS comparison preserves file level below peak cap",
+      "passed": true
+    },
+    {
+      "name": "silent or corrupt comparison metrics are rejected",
+      "passed": true
+    },
+    {
+      "name": "review JSON preserves decision, note and separate play counts",
+      "passed": true
+    },
+    {
+      "name": "old review schema and other versions are rejected",
+      "passed": true
+    },
+    {
+      "name": "catalog original or enhanced SHA mismatch is rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate or unknown review IDs are rejected",
+      "passed": true
+    },
+    {
+      "name": "invalid decisions or oversized notes are rejected",
+      "passed": true
+    },
+    {
+      "name": "corrupt settings recover to defaults and clamp numeric volume",
+      "passed": true
+    },
+    {
+      "name": "audio paths reject traversal or remote files",
+      "passed": true
+    },
+    {
+      "name": "dispose awaits release cleanup and closes context, voices and PCM cache",
+      "passed": true
+    },
+    {
+      "name": "disposed context cannot restart",
+      "passed": true
+    },
+    {
+      "name": "stop during two asynchronous decodes creates no stale source",
+      "passed": true
+    },
+    {
+      "name": "rapid switch after aborted fetch can create a fresh voice",
+      "passed": true
+    },
+    {
+      "name": "static template includes every direct DOM target exactly once",
+      "passed": true
+    }
+  ]
+}

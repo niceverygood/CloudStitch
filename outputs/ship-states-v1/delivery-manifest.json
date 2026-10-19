@@ -1,0 +1,223 @@
+{
+  "title": "Cloudstitch",
+  "revision": "ship-states-v1-ART-REVIEW",
+  "date": "2026-10-18",
+  "readyForArtReview": true,
+  "ownedPaths": [
+    "tools/ship-states/",
+    "outputs/ship-states-v1/"
+  ],
+  "files": [
+    {
+      "path": "tools/ship-states/build.cjs",
+      "bytes": 3280,
+      "sha256": "b63a3e7f1c432b72f9b0cbe5b14fcce5556d226717e280cbe2468d898129dc5f"
+    },
+    {
+      "path": "tools/ship-states/capture.cjs",
+      "bytes": 2280,
+      "sha256": "a4d3b5f65073c46eb70828f7db9f719fd119ab8f39c3b994c14abdcce8c7a492"
+    },
+    {
+      "path": "tools/ship-states/catalog.js",
+      "bytes": 3559,
+      "sha256": "a6e915387de60f6363373b55c8d8a04b36e1587dfaa6e1b6439446066408e87f"
+    },
+    {
+      "path": "tools/ship-states/finalize.cjs",
+      "bytes": 4586,
+      "sha256": "aa4e808093dd75919265cf17a6eb0aa7bdcc2e9d1ed37b1a962c03e94b76b66d"
+    },
+    {
+      "path": "tools/ship-states/HANDOFF.md",
+      "bytes": 6140,
+      "sha256": "c9bcecbde84742b1be0d0703d8accc287cbee94298e70fefcb620f17a0fe90ff"
+    },
+    {
+      "path": "tools/ship-states/README.md",
+      "bytes": 1889,
+      "sha256": "3e60c6997a7686ac299c5d60f8512b1931c80347b12469b65735f8f564dbad63"
+    },
+    {
+      "path": "tools/ship-states/template.html",
+      "bytes": 12457,
+      "sha256": "365bbcb8e35aff9ad05224e3ea7ecf52ded47540160d7f01485446b08c86cfb3"
+    },
+    {
+      "path": "tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "path": "tools/ship-states/verify-source.cjs",
+      "bytes": 9957,
+      "sha256": "51626dfe9c6bcc6c2113bf3213c116dce631a1f6922826412ba59203eab3006d"
+    },
+    {
+      "path": "tools/ship-states/verify.cjs",
+      "bytes": 45462,
+      "sha256": "b1feecbb4fb870ad2670d74a978798e974a6433a9ae2075b4cc03c1fd9bad29c"
+    },
+    {
+      "path": "tools/ship-states/viewer.js",
+      "bytes": 18646,
+      "sha256": "5ea41210b4eca3973f9d87b4be02719fc35179ff76e5471362f533dc405318e8"
+    },
+    {
+      "path": "outputs/ship-states-v1/capture-run.json",
+      "bytes": 878,
+      "sha256": "ba3cc4327d58f95e0bbb5a3ccd58a64644a1f48a32756b911dc033540950c7e8"
+    },
+    {
+      "path": "outputs/ship-states-v1/capture-verification.json",
+      "bytes": 529,
+      "sha256": "dec69029414ad7c90903de9f0dc2fb22c2f0739c112a0459ac60932f225d523c"
+    },
+    {
+      "path": "outputs/ship-states-v1/catalog.json",
+      "bytes": 9993,
+      "sha256": "7a1a3f0c8e4a830d2a59d8edec9ca094cc02b21ab1acc9b3f3ffc415b8cfd6e3"
+    },
+    {
+      "path": "outputs/ship-states-v1/finish-overview.png",
+      "bytes": 608262,
+      "sha256": "2f5c42d783bf385f336ee0a3398f09b05edd0da3c836251c8cc7cfbfb6c87eef"
+    },
+    {
+      "path": "outputs/ship-states-v1/finish-run.json",
+      "bytes": 876,
+      "sha256": "3e522bdfd03245e864fee72e778784364ef822b85161a56f380591c3dcb6342f"
+    },
+    {
+      "path": "outputs/ship-states-v1/finish-verification.json",
+      "bytes": 95663,
+      "sha256": "09d9cd3f1ccfd1baa88e7867fa66dab84b45ec646f1329aea0aa1a0bc856e9c0"
+    },
+    {
+      "path": "outputs/ship-states-v1/followup-run.json",
+      "bytes": 620,
+      "sha256": "6b895bcf4dc1f5d1f0541e8f1a7ff7db6a5624fec8a0e6711fdab3041deda1ad"
+    },
+    {
+      "path": "outputs/ship-states-v1/followup-verification.json",
+      "bytes": 26199,
+      "sha256": "a7636035f5ab82922bc3aa4f9304f772a9be8431f35a775ad2a10508668fb922"
+    },
+    {
+      "path": "outputs/ship-states-v1/index.html",
+      "bytes": 5676372,
+      "sha256": "fb93ad57951dd1e7099e0b0d2c10328a5a6307e333576ccc4b4edea9b427ab9d"
+    },
+    {
+      "path": "outputs/ship-states-v1/initial-failure.png",
+      "bytes": 1566746,
+      "sha256": "d31ae80c7a7600f1b1d9a2431dc0867e36fe3e986d15c43b1ac30a9b083a4879"
+    },
+    {
+      "path": "outputs/ship-states-v1/initial-hashes.json",
+      "bytes": 1318,
+      "sha256": "7b2eae9edc96f3ffb30ee284c9dca6502aebabf054d5e473874f0965274bcd1f"
+    },
+    {
+      "path": "outputs/ship-states-v1/initial-verification.json",
+      "bytes": 50984,
+      "sha256": "60539642a8611b76f595a83a362362538f60e929c6e80149010b1f1972661361"
+    },
+    {
+      "path": "outputs/ship-states-v1/manifest.json",
+      "bytes": 2492,
+      "sha256": "064c0466b01ba75cbf5b14fa3b0bad66eafe7f79edb0573fe678d43938294b53"
+    },
+    {
+      "path": "outputs/ship-states-v1/overview.png",
+      "bytes": 590491,
+      "sha256": "69ed98c0efe2532a8a6531eade31b73e4afba08f8220c1ce8d586f812496022d"
+    },
+    {
+      "path": "outputs/ship-states-v1/README.txt",
+      "bytes": 4387,
+      "sha256": "9e3d3a6e732c476349f8bba583051ff2d4eb0b830f3b9e0d392da056e85f7ec9"
+    },
+    {
+      "path": "outputs/ship-states-v1/source-verification.json",
+      "bytes": 8191,
+      "sha256": "69e6deb63ef36e02ce2c11a5e0d52867cacfc0993b8728576a9ed1f65b932a4e"
+    },
+    {
+      "path": "outputs/ship-states-v1/verification.json",
+      "bytes": 95663,
+      "sha256": "09d9cd3f1ccfd1baa88e7867fa66dab84b45ec646f1329aea0aa1a0bc856e9c0"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "outputs/selected-airship-toon3d/airship.glb",
+      "bytes": 3645884,
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74"
+    },
+    {
+      "path": "tools/airship-rig/part-map.json",
+      "bytes": 98796,
+      "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+    },
+    {
+      "path": "tools/lib/runtime.cjs",
+      "bytes": 1969,
+      "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+    },
+    {
+      "path": "tools/lib/paths.cjs",
+      "bytes": 187,
+      "sha256": "950b9b717d2b00b8d5c126a0c6334861395fa36aa53810d810dc9a8dca4ad54a"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1972,
+      "sha256": "6746bcbdf966355a25c86eece4014a18a895d260454ea1a2c0125526b9e9ba47"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 15971,
+      "sha256": "ebad727fc8e6e89b8e943d8055c58d1e9ee9dfbc0fb04e70b55a40694fb0091b"
+    }
+  ],
+  "entryPoint": "outputs/ship-states-v1/index.html",
+  "totalVisualStages": 31,
+  "counts": {
+    "normal": 3,
+    "damage": 4,
+    "weapons": 5,
+    "armor": 5,
+    "growth": 9,
+    "explosion": 5
+  },
+  "browserScope": "finish",
+  "browserPassed": false,
+  "animationStatePassed": true,
+  "cropGuardsPassed": true,
+  "exactRasterPassed": false,
+  "sourcePassed": true,
+  "finalCapturePassed": true,
+  "postQAChange": "One line disables outlines on transparent thumbnail materials from creation; the main workbench already applies the same condition during resize. Final capture is separate from the preserved animation checks.",
+  "harness": {
+    "path": "tools/ship-states/verify.cjs",
+    "bytes": 45462,
+    "sha256": "b1feecbb4fb870ad2670d74a978798e974a6433a9ae2075b4cc03c1fd9bad29c"
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "threeRevision": "180",
+    "esbuild": "0.25.10",
+    "playwright": "1.62.1"
+  },
+  "sharedFilesChanged": false,
+  "sourcePreserved": true,
+  "artDirection": "Warm handcrafted fantasy; painted dimensional 3D; layered decks, auxiliary envelopes and machinery; cream/teal/honeywood/brass/coral. Frozen before the later tenfold-expression directive; not claimed to fulfill that new art target.",
+  "limits": [
+    "Some explosion frames differ at pixel level when rendering an unchanged scene; matrices/materials/camera and consecutive reads without rendering agree. Cause remains unconfirmed. Exact raster failure is preserved, not tolerance-passed.",
+    "Appearance and authored animation study; no gameplay HP/energy/progression/loadout/save integration.",
+    "Exported GLB stores the selected static pose; runtime animation and outline/cel shaders are not exported.",
+    "Initial failed browser evidence is preserved; first-run harness SHA was not recorded.",
+    "Technical rendering/source QA is separate from human art approval and engine performance validation."
+  ]
+}

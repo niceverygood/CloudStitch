@@ -1,0 +1,42 @@
+{
+  "id": "rising-cloud",
+  "name_ko": "소용돌이 상승구름",
+  "category": "clouds",
+  "role": "빈 중심 통로를 감싸며 솟는 나선형 수직 지형 표식",
+  "motion_ko": "나선의 층이 서로 다르게 부풀고 떠오르는 완만한 흐름",
+  "order": 11,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/rising-cloud.glb",
+  "preview": "previews/rising-cloud.png",
+  "triangles": 10368,
+  "mesh_count": 54,
+  "vertices": 31104,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_duration": 14,
+  "encoded_color_components": 836,
+  "bytes": 1188596,
+  "sha256": "3202c6c800c6f52f46a431f23f1c6721dcfcffa2cf7477673ab02077d36fc4ee",
+  "bounds": {
+    "min": [
+      -2.883682644676188,
+      -4.01048850518465,
+      -2.7921897052755664
+    ],
+    "max": [
+      2.8614064239172636,
+      4.406233291625977,
+      2.9395638990676543
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

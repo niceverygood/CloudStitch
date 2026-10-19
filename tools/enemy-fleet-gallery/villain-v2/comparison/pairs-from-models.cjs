@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'../../../..'),out=path.join(root,'outputs/enemy-fleet-villain-v2'),old=path.join(root,'outputs/enemy-fleet-gallery-v1');
+const args=process.argv.slice(2),target=args.find(a=>a.startsWith('--out='))?.slice(6),only=args.find(a=>a.startsWith('--ids='))?.slice(6).split(',');
+if(!target)throw Error('--out=repository-relative-new-pairs.json is required');
+const dest=path.resolve(root,target),delta=path.relative(out,dest);if(delta.startsWith('..')||path.isAbsolute(delta)||!dest.endsWith('.json'))throw Error('Output must be a new JSON under owned output folder');
+const bytes=fs.readFileSync(path.join(out,'models.json')),catalog=JSON.parse(bytes),ships=catalog.ships.filter(s=>s.status==='asset-built'&&s.id!=='boss-bell-devourer'&&(!only||only.includes(s.id)));
+if(!ships.length||only?.some(id=>!ships.some(s=>s.id===id)))throw Error('Requested actual owned12 model is not built');
+const relative=p=>path.relative(root,p).split(path.sep).join('/');
+const pairs=ships.map(s=>({id:s.id,beforeAssetPath:relative(path.resolve(old,s.sourceAssetPath)),afterAssetPath:relative(path.resolve(out,s.assetPath)),beforeSha256:s.sourceModelSha256,afterSha256:s.sha256}));
+fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,JSON.stringify({pairs,sourceCatalogSha256:crypto.createHash('sha256').update(bytes).digest('hex')},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({pairs:pairs.length,path:relative(dest),originalModelBytesRead:0,browser:false}));

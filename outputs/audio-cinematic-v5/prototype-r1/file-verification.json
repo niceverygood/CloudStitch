@@ -1,0 +1,396 @@
+{
+  "schema": "cinematic-v5-file-qa/v1",
+  "scope": "prototype3",
+  "catalogSha256": "08a03a2f2f0c3339cd369fe977eb5de6a7eefe4e46c5e95c202099b0cd8d4fd0",
+  "dspSha256": "8065fc4b6226cd654785f1319cacb216cd696773177ef80f2c02eec954deb292",
+  "passed": true,
+  "total": 62,
+  "passCount": 62,
+  "checks": [
+    {
+      "id": "expected_unique_candidate_count",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.698577880859375,
+      "rms": 0.17061789622428766,
+      "dc": -0.0013750542716829742
+    },
+    {
+      "id": "fire-machinegun:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:timing",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 257.93628678284585
+    },
+    {
+      "id": "fire-machinegun:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:donor:fire-machinegun",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:donor:machinegun-feed",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9973814388216191,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "fire-machinegun:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.71728515625,
+      "rms": 0.17679078481947064,
+      "dc": -0.0004507931146374424
+    },
+    {
+      "id": "fire-cannon:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:timing",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 288.8954682685435
+    },
+    {
+      "id": "fire-cannon:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:fire-cannon",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:mortar-impact",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:chain-spin",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999998748459357,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "fire-cannon:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.707489013671875,
+      "rms": 0.1756868837224345,
+      "dc": -0.0007482237672203367
+    },
+    {
+      "id": "mortar-launch-a:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:timing",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 247.20836032181978
+    },
+    {
+      "id": "mortar-launch-a:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:donor:mortar-launch-a",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9998992004030904,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "mortar-launch-a:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:pair_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:pair_order_gap",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:v4:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.07337161504290862,
+      "peak": 0.719970703125,
+      "error": 0.00003647800939921009
+    },
+    {
+      "id": "fire-machinegun:v5:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.07337164120661832,
+      "peak": 0.3004150390625,
+      "error": 0.000024064070834162177
+    },
+    {
+      "id": "fire-machinegun:digital_silence",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:pair_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:pair_order_gap",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:v4:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.06910886584651098,
+      "peak": 0.719970703125,
+      "error": 0.00003586269946798115
+    },
+    {
+      "id": "fire-cannon:v5:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.06910891679704827,
+      "peak": 0.2803955078125,
+      "error": 0.000023665950486695397
+    },
+    {
+      "id": "fire-cannon:digital_silence",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:pair_sha",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:pair_order_gap",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:v4:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.04590984518950153,
+      "peak": 0.719970703125,
+      "error": 0.00003177417039401664
+    },
+    {
+      "id": "mortar-launch-a:v5:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.04590986422936664,
+      "peak": 0.18487548828125,
+      "error": 0.00002067393198074141
+    },
+    {
+      "id": "mortar-launch-a:digital_silence",
+      "passed": true
+    },
+    {
+      "id": "actual_primary_unchanged",
+      "passed": true
+    },
+    {
+      "id": "deterministic_output",
+      "passed": true
+    },
+    {
+      "id": "silent_input_does_not_trigger_blast",
+      "passed": true
+    },
+    {
+      "id": "six_actual_shots_fixed_headroom",
+      "passed": true,
+      "rawPeak": 0.86334228515625,
+      "headroom": 0.16666666666666666,
+      "headroomPeak": 0.143890380859375,
+      "starts": 6,
+      "evicted": 0,
+      "intervalSeconds": 0.22,
+      "notActualGameMixer": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "fire-machinegun",
+      "peak": 0.698577880859375,
+      "rms": 0.17061789622428766,
+      "dc": -0.0013750542716829742,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 33516,
+      "duration": 0.76,
+      "layers": 9,
+      "residual": 0.9973814388216191
+    },
+    {
+      "id": "fire-cannon",
+      "peak": 0.71728515625,
+      "rms": 0.17679078481947064,
+      "dc": -0.0004507931146374424,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 202860,
+      "duration": 4.6,
+      "layers": 12,
+      "residual": 0.9999998748459357
+    },
+    {
+      "id": "mortar-launch-a",
+      "peak": 0.707489013671875,
+      "rms": 0.1756868837224345,
+      "dc": -0.0007482237672203367,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9998992004030904
+    }
+  ],
+  "pairedAuditions": [
+    {
+      "id": "fire-machinegun",
+      "segments": [
+        {
+          "version": "v4",
+          "rms": 0.07337161504290862,
+          "peak": 0.719970703125
+        },
+        {
+          "version": "v5",
+          "rms": 0.07337164120661832,
+          "peak": 0.3004150390625
+        }
+      ]
+    },
+    {
+      "id": "fire-cannon",
+      "segments": [
+        {
+          "version": "v4",
+          "rms": 0.06910886584651098,
+          "peak": 0.719970703125
+        },
+        {
+          "version": "v5",
+          "rms": 0.06910891679704827,
+          "peak": 0.2803955078125
+        }
+      ]
+    },
+    {
+      "id": "mortar-launch-a",
+      "segments": [
+        {
+          "version": "v4",
+          "rms": 0.04590984518950153,
+          "peak": 0.719970703125
+        },
+        {
+          "version": "v5",
+          "rms": 0.04590986422936664,
+          "peak": 0.18487548828125
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Numerical checks do not establish dramatic quality, tenfold improvement, subjective loudness or human approval.",
+    "No Native/browser or actual game test here. Synthesis and recorded material layers are both declared."
+  ],
+  "humanApproval": false,
+  "gameplayInstalled": false
+}

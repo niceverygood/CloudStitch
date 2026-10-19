@@ -1,0 +1,1265 @@
+{
+  "game_title": "Cloudstitch",
+  "purpose": "Six v1/v2 comparable weapon choreography studies. Original source weapons preserved.",
+  "scope_count": 6,
+  "complete_files": 6,
+  "items": [
+    {
+      "id": "01-machine-gun",
+      "order": 1,
+      "name_ko": "기관총 공격",
+      "name_en": "Machine Gun Attack Sequence v2",
+      "category": "weapon-sequence",
+      "weapon_id": "01-machine-gun",
+      "model": "sequences/01-machine-gun.glb",
+      "preview": "sequence-previews/01-machine-gun.png",
+      "duration": 2,
+      "loop": true,
+      "purpose": "원본 무기와 v2 효과를 연결한 연출 시제품. 실제 전투 판정은 별도 구현.",
+      "status": "residual_source_reviewed_render_pending",
+      "triangles": 7727,
+      "mesh_count": 16,
+      "node_count": 35,
+      "material_count": 12,
+      "texture_count": 2,
+      "animation_count": 1,
+      "animation_channels": 21,
+      "channel_paths": [
+        "scale",
+        "translation"
+      ],
+      "actual_clip_duration": 2,
+      "bytes": 7226956,
+      "sha256": "d3946392df4a6e7d973c1735c7e346b9a2f1c06885b6bd85f06d60755068db37",
+      "component_effects": [
+        {
+          "id": "machine-gun-muzzle",
+          "original_id": "machine-gun-muzzle",
+          "model": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+          "bytes": 3733736,
+          "sha256": "b77da528fb42f4befdfbbefc162fbaa22e367903911300b53db912f650c4a7a8",
+          "source_duration": 0.20000000298023224,
+          "start": 0,
+          "end": 0.2,
+          "visible_until": 0.2,
+          "wrapper": {
+            "name": "machine-gun-muzzle_sequence_wrapper",
+            "translation": [
+              0.0007595372312182436,
+              0.6299396781481901,
+              -0.008382503840366984
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "machine-gun-muzzle_authored_silhouette_scale",
+              "scale": [
+                1.25,
+                1.25,
+                1.25
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        },
+        {
+          "id": "machine-gun-projectile",
+          "original_id": "machine-gun-projectile",
+          "model": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb",
+          "bytes": 59028,
+          "sha256": "9fede02363cd212d3ac628ecc51c7114c47f5646aa91944ee2c00f815138dbac",
+          "source_duration": 0.44999998807907104,
+          "start": 0.12,
+          "end": 0.85,
+          "visible_until": 0.85,
+          "wrapper": {
+            "name": "machine-gun-projectile_sequence_wrapper",
+            "translation": [
+              0.0007595372312182436,
+              0.6299396781481901,
+              -0.008382503840366984
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "machine-gun-projectile_moving_payload_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "machine-gun-projectile_painted_velocity_tail_2",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": "machine-gun-projectile_moving_payload_0",
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        },
+        {
+          "id": "machine-gun-hit",
+          "original_id": "machine-gun-hit",
+          "model": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb",
+          "bytes": 117336,
+          "sha256": "10561ff655c101b7efef1805e774d3aec6ebef2dcf0e5c7886da4f0dcc87e4b0",
+          "source_duration": 0.3499999940395355,
+          "start": 0.84,
+          "end": 1.8,
+          "visible_until": 1.8,
+          "wrapper": {
+            "name": "machine-gun-hit_sequence_wrapper",
+            "translation": [
+              0.0007595372312182436,
+              0.6299396781481901,
+              3.991617496159633
+            ],
+            "rotation": [
+              -0.7071067811865475,
+              0,
+              0,
+              0.7071067811865476
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "machine-gun-hit_flicked_pigment_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "machine-gun-hit_flicked_pigment_2",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "machine-gun-hit_flicked_pigment_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "machine-gun-hit_impact_comma_6",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        }
+      ],
+      "approximate_muzzle": [
+        0.0007595372312182436,
+        0.6299396781481901,
+        -0.008382503840366984
+      ],
+      "source_weapon_model": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+      "source_weapon_sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6",
+      "copied_weapon_zero_normals_repaired": 0,
+      "runtime_fade_recipes": 7,
+      "visual_reviewed": false
+    },
+    {
+      "id": "02-deck-cannon",
+      "order": 2,
+      "name_ko": "함포 공격",
+      "name_en": "Deck Cannon Attack Sequence v2",
+      "category": "weapon-sequence",
+      "weapon_id": "02-deck-cannon",
+      "model": "sequences/02-deck-cannon.glb",
+      "preview": "sequence-previews/02-deck-cannon.png",
+      "duration": 2.8,
+      "loop": true,
+      "purpose": "원본 무기와 v2 효과를 연결한 연출 시제품. 실제 전투 판정은 별도 구현.",
+      "status": "residual_source_reviewed_render_pending",
+      "triangles": 12770,
+      "mesh_count": 21,
+      "node_count": 54,
+      "material_count": 17,
+      "texture_count": 5,
+      "animation_count": 1,
+      "animation_channels": 35,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "actual_clip_duration": 2.799999952316284,
+      "bytes": 18976932,
+      "sha256": "e021f143d7db755ffc21ac2744d70853408f08f2d5729439d0c947f03faa8624",
+      "component_effects": [
+        {
+          "id": "cannon-muzzle",
+          "original_id": "cannon-muzzle",
+          "model": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb",
+          "bytes": 7464616,
+          "sha256": "845495596e9d801f0f19ebcfb9aa55efc3d59bd6f1cb44e9a1fbeffd09c0a42b",
+          "source_duration": 0.44999998807907104,
+          "start": 0,
+          "end": 0.55,
+          "visible_until": 0.55,
+          "wrapper": {
+            "name": "cannon-muzzle_sequence_wrapper",
+            "translation": [
+              0.0037513940745979024,
+              0.5826191776634596,
+              -0.008071764725575914
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "cannon-muzzle_flame_flow_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "cannon-muzzle_curled_smoke_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "cannon-muzzle_flicked_pigment_8",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "cannon-muzzle_flicked_pigment_10",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "cannon-muzzle_flicked_pigment_12",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "cannon-muzzle_flicked_pigment_14",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        },
+        {
+          "id": "cannon-projectile",
+          "original_id": "cannon-projectile",
+          "model": "outputs/combat-vfx-v2/assets/cannon-projectile.glb",
+          "bytes": 56460,
+          "sha256": "1f449737c11086ef72f598808075a28280757e8480d17bd923b9ee60e2c0a2a9",
+          "source_duration": 0.800000011920929,
+          "start": 0.3,
+          "end": 1.25,
+          "visible_until": 1.25,
+          "wrapper": {
+            "name": "cannon-projectile_sequence_wrapper",
+            "translation": [
+              0.0037513940745979024,
+              0.5826191776634596,
+              -0.008071764725575914
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "cannon-projectile_moving_payload_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "cannon-projectile_painted_velocity_tail_3",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": "cannon-projectile_moving_payload_0",
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        },
+        {
+          "id": "cannon-hit",
+          "original_id": "cannon-hit",
+          "model": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+          "bytes": 7474808,
+          "sha256": "f6429ec4bbeb84524c09738822851a062d11efb2f94fcdb964cb1d66fede22ac",
+          "source_duration": 0.75,
+          "start": 1.24,
+          "end": 2.7,
+          "visible_until": 2.7,
+          "wrapper": {
+            "name": "cannon-hit_sequence_wrapper",
+            "translation": [
+              0.0037513940745979024,
+              0.5826191776634596,
+              3.991928235274424
+            ],
+            "rotation": [
+              -0.7071067811865475,
+              0,
+              0,
+              0.7071067811865476
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "cannon-hit_authored_silhouette_scale",
+              "scale": [
+                1.9,
+                1.9,
+                1.9
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        }
+      ],
+      "approximate_muzzle": [
+        0.0037513940745979024,
+        0.5826191776634596,
+        -0.008071764725575914
+      ],
+      "source_weapon_model": "outputs/weapon-modules/02-deck-cannon/weapon.glb",
+      "source_weapon_sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd",
+      "copied_weapon_zero_normals_repaired": 0,
+      "runtime_fade_recipes": 13,
+      "visual_reviewed": false
+    },
+    {
+      "id": "03-mortar",
+      "order": 3,
+      "name_ko": "박격포 공격",
+      "name_en": "Mortar Attack Sequence v2",
+      "category": "weapon-sequence",
+      "weapon_id": "03-mortar",
+      "model": "sequences/03-mortar.glb",
+      "preview": "sequence-previews/03-mortar.png",
+      "duration": 3.5,
+      "loop": true,
+      "purpose": "원본 무기와 v2 효과를 연결한 연출 시제품. 실제 전투 판정은 별도 구현.",
+      "status": "residual_source_reviewed_render_pending",
+      "triangles": 12735,
+      "mesh_count": 20,
+      "node_count": 51,
+      "material_count": 16,
+      "texture_count": 5,
+      "animation_count": 1,
+      "animation_channels": 31,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "actual_clip_duration": 3.5,
+      "bytes": 18668044,
+      "sha256": "cd8fa19eb187ab27abb1d465070f89a83fdc6f35b22fc208d7961d1b39ddbd97",
+      "component_effects": [
+        {
+          "id": "mortar-launch",
+          "original_id": "mortar-launch",
+          "model": "outputs/combat-vfx-v2/assets/mortar-launch.glb",
+          "bytes": 7384308,
+          "sha256": "f173a10601cae51241647778a1f2557a709d226e9c9212532f52ef64d80cce2e",
+          "source_duration": 0.6000000238418579,
+          "start": 0,
+          "end": 0.55,
+          "visible_until": 0.55,
+          "wrapper": {
+            "name": "mortar-launch_sequence_wrapper",
+            "translation": [
+              0.05058962163923053,
+              1.2502621778112957,
+              -0.3191355178333415
+            ],
+            "rotation": [
+              -0.7071067811865475,
+              0,
+              0,
+              0.7071067811865476
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "mortar-launch_flame_flow_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-launch_mortar_axial_pressure_plume_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-launch_mortar_open_pressure_comma_8",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        },
+        {
+          "id": "mortar-projectile",
+          "original_id": "mortar-projectile",
+          "model": "outputs/combat-vfx-v2/assets/mortar-projectile.glb",
+          "bytes": 56468,
+          "sha256": "f307ff488a9886da937a1ce927fff16b463bf4214aab687d53ec717ebcb1cece",
+          "source_duration": 1.600000023841858,
+          "start": 0.3,
+          "end": 1.75,
+          "visible_until": 1.75,
+          "wrapper": {
+            "name": "mortar-projectile_sequence_wrapper",
+            "translation": [
+              0.05058962163923053,
+              1.2502621778112957,
+              -0.3191355178333415
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "mortar-projectile_moving_payload_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-projectile_painted_velocity_tail_3",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": "mortar-projectile_moving_payload_0",
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        },
+        {
+          "id": "mortar-hit",
+          "original_id": "mortar-hit",
+          "model": "outputs/combat-vfx-v2/assets/mortar-hit.glb",
+          "bytes": 7533452,
+          "sha256": "dec91a6aa76c1c7799184da23e02cb128f8a636fe981876614bb5c66e8bf40cd",
+          "source_duration": 1.2000000476837158,
+          "start": 1.74,
+          "end": 3.4,
+          "visible_until": 3.4,
+          "wrapper": {
+            "name": "mortar-hit_sequence_wrapper",
+            "translation": [
+              0.05058962163923053,
+              1.2502621778112957,
+              3.6808644821666583
+            ],
+            "rotation": [
+              -0.7071067811865475,
+              0,
+              0,
+              0.7071067811865476
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "mortar-hit_open_pressure_sweep_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-hit_flame_flow_2",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-hit_flame_flow_6",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-hit_curled_smoke_10",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-hit_flicked_pigment_14",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-hit_flicked_pigment_16",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-hit_flicked_pigment_18",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-hit_flicked_pigment_20",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "mortar-hit_flicked_pigment_22",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        }
+      ],
+      "approximate_muzzle": [
+        0.05058962163923053,
+        1.2502621778112957,
+        -0.3191355178333415
+      ],
+      "source_weapon_model": "outputs/weapon-modules/03-mortar/weapon.glb",
+      "source_weapon_sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f",
+      "copied_weapon_zero_normals_repaired": 0,
+      "runtime_fade_recipes": 12,
+      "visual_reviewed": false
+    },
+    {
+      "id": "04-harpoon",
+      "order": 4,
+      "name_ko": "작살 견인",
+      "name_en": "Harpoon Launcher Attack Sequence v2",
+      "category": "weapon-sequence",
+      "weapon_id": "04-harpoon",
+      "model": "sequences/04-harpoon.glb",
+      "preview": "sequence-previews/04-harpoon.png",
+      "duration": 2.8,
+      "loop": true,
+      "purpose": "원본 무기와 v2 효과를 연결한 연출 시제품. 실제 전투 판정은 별도 구현.",
+      "status": "residual_source_reviewed_render_pending",
+      "triangles": 6691,
+      "mesh_count": 16,
+      "node_count": 31,
+      "material_count": 12,
+      "texture_count": 1,
+      "animation_count": 1,
+      "animation_channels": 20,
+      "channel_paths": [
+        "translation",
+        "scale",
+        "rotation"
+      ],
+      "actual_clip_duration": 2.799999952316284,
+      "bytes": 4106052,
+      "sha256": "d01221a85927780a799748c383050f0ccadbe373d07f85d906f342b0b86a304f",
+      "component_effects": [
+        {
+          "id": "harpoon-launch",
+          "original_id": "harpoon-launch",
+          "model": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+          "bytes": 98004,
+          "sha256": "a78f2da80c6992880763342e248082374891d6943e754d373834dd8caca4fdfd",
+          "source_duration": 0.3499999940395355,
+          "start": 0,
+          "end": 0.4,
+          "visible_until": 0.4,
+          "wrapper": {
+            "name": "harpoon-launch_sequence_wrapper",
+            "translation": [
+              0.08148356695017034,
+              0.7218403923108203,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "harpoon-launch_harpoon_tension_flick_-1_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "harpoon-launch_harpoon_tension_flick_1_2",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "harpoon-launch_harpoon_released_rope_curl_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        },
+        {
+          "id": "harpoon-projectile",
+          "original_id": "harpoon-projectile",
+          "model": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb",
+          "bytes": 77784,
+          "sha256": "467da74e607d66f8ff28997d88a981bb6ce4f2a0495f4e7468f0ba45c637dd59",
+          "source_duration": 1,
+          "start": 0.2,
+          "end": 1.3,
+          "visible_until": 2.7,
+          "wrapper": {
+            "name": "harpoon-projectile_sequence_wrapper",
+            "translation": [
+              0.08148356695017034,
+              0.7218403923108203,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "harpoon-projectile_moving_payload_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "harpoon-projectile_rope_hold_3",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": "harpoon-projectile_moving_payload_0",
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        },
+        {
+          "id": "harpoon-hit",
+          "original_id": "harpoon-hit",
+          "model": "outputs/combat-vfx-v2/assets/harpoon-hit.glb",
+          "bytes": 135556,
+          "sha256": "cc0066892b398e4fa5a56c40b9f0a3098c4c75eea13d58bd53033c1b5b220dd0",
+          "source_duration": 0.6499999761581421,
+          "start": 1.29,
+          "end": 2.7,
+          "visible_until": 2.7,
+          "wrapper": {
+            "name": "harpoon-hit_sequence_wrapper",
+            "translation": [
+              0.08148356695017034,
+              0.7218403923108203,
+              4
+            ],
+            "rotation": [
+              -0.7071067811865475,
+              0,
+              0,
+              0.7071067811865476
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "harpoon-hit_harpoon_closing_latch_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "harpoon-hit_anchored_barb_2",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "harpoon-hit_flicked_pigment_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "harpoon-hit_flicked_pigment_6",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        }
+      ],
+      "approximate_muzzle": [
+        0.08148356695017034,
+        0.7218403923108203,
+        0
+      ],
+      "source_weapon_model": "outputs/weapon-modules/04-harpoon/weapon.glb",
+      "source_weapon_sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64",
+      "copied_weapon_zero_normals_repaired": 0,
+      "runtime_fade_recipes": 6,
+      "visual_reviewed": false
+    },
+    {
+      "id": "05-chain-shot",
+      "order": 5,
+      "name_ko": "사슬탄 공격",
+      "name_en": "Chain-Shot Launcher Attack Sequence v2",
+      "category": "weapon-sequence",
+      "weapon_id": "05-chain-shot",
+      "model": "sequences/05-chain-shot.glb",
+      "preview": "sequence-previews/05-chain-shot.png",
+      "duration": 2.8,
+      "loop": true,
+      "purpose": "원본 무기와 v2 효과를 연결한 연출 시제품. 실제 전투 판정은 별도 구현.",
+      "status": "residual_source_reviewed_render_pending",
+      "triangles": 8799,
+      "mesh_count": 20,
+      "node_count": 44,
+      "material_count": 16,
+      "texture_count": 2,
+      "animation_count": 1,
+      "animation_channels": 29,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "actual_clip_duration": 2.799999952316284,
+      "bytes": 7697952,
+      "sha256": "8bb31b9555f6bef35918a33a1fbdbfab66f5536bd68eb7511b69b0fdd155e7dc",
+      "component_effects": [
+        {
+          "id": "chain-shot-launch",
+          "original_id": "chain-shot-launch",
+          "model": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb",
+          "bytes": 3782916,
+          "sha256": "7206afd2353256e2e2584557016288a931bb95e2333b273d9e87cd3c7424a39f",
+          "source_duration": 0.5,
+          "start": 0,
+          "end": 0.4,
+          "visible_until": 0.4,
+          "wrapper": {
+            "name": "chain-shot-launch_sequence_wrapper",
+            "translation": [
+              -0.016747484945607294,
+              0.9123164319584125,
+              -0.020826190379907406
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "chain-shot-launch_flame_flow_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-launch_chain_paired_launch_needle_-1_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-launch_flame_flow_6",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-launch_chain_paired_launch_needle_1_10",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-launch_chain_release_link_0_12",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-launch_chain_release_link_1_14",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        },
+        {
+          "id": "chain-shot-projectile",
+          "original_id": "chain-shot-projectile",
+          "model": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb",
+          "bytes": 68460,
+          "sha256": "0e95f9735bd403a096c94c92d287ee6cd8ef5726a728be4c82271e226184c08a",
+          "source_duration": 1.100000023841858,
+          "start": 0.2,
+          "end": 1.25,
+          "visible_until": 1.25,
+          "wrapper": {
+            "name": "chain-shot-projectile_sequence_wrapper",
+            "translation": [
+              -0.016747484945607294,
+              0.9123164319584125,
+              -0.020826190379907406
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "chain-shot-projectile_moving_payload_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-projectile_painted_velocity_tail_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": "chain-shot-projectile_moving_payload_0",
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        },
+        {
+          "id": "chain-shot-hit",
+          "original_id": "chain-shot-hit",
+          "model": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb",
+          "bytes": 174012,
+          "sha256": "ba2c4afb7cc93880eaf94f7262f7b6dde4f6ab1746b3eac1b6e7826eccd02c27",
+          "source_duration": 1,
+          "start": 1.24,
+          "end": 2.7,
+          "visible_until": 2.7,
+          "wrapper": {
+            "name": "chain-shot-hit_sequence_wrapper",
+            "translation": [
+              -0.016747484945607294,
+              0.9123164319584125,
+              3.9791738096200926
+            ],
+            "rotation": [
+              -0.7071067811865475,
+              0,
+              0,
+              0.7071067811865476
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "chain-shot-hit_chain_wrapping_crescent_-1_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-hit_chain_wrapping_crescent_1_2",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-hit_chain_tangent_snag_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-hit_flicked_pigment_6",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "chain-shot-hit_flicked_pigment_8",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Local authored swept brush/fabric volumes and TRS"
+        }
+      ],
+      "approximate_muzzle": [
+        -0.016747484945607294,
+        0.9123164319584125,
+        -0.020826190379907406
+      ],
+      "source_weapon_model": "outputs/weapon-modules/05-chain-shot/weapon.glb",
+      "source_weapon_sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219",
+      "copied_weapon_zero_normals_repaired": 4,
+      "runtime_fade_recipes": 10,
+      "visual_reviewed": false
+    },
+    {
+      "id": "06-flamethrower",
+      "order": 6,
+      "name_ko": "화염 분사",
+      "name_en": "Flamethrower Attack Sequence v2",
+      "category": "weapon-sequence",
+      "weapon_id": "06-flamethrower",
+      "model": "sequences/06-flamethrower.glb",
+      "preview": "sequence-previews/06-flamethrower.png",
+      "duration": 3,
+      "loop": true,
+      "purpose": "원본 무기와 v2 효과를 연결한 연출 시제품. 실제 전투 판정은 별도 구현.",
+      "status": "residual_source_reviewed_render_pending",
+      "triangles": 10646,
+      "mesh_count": 12,
+      "node_count": 57,
+      "material_count": 8,
+      "texture_count": 5,
+      "animation_count": 1,
+      "animation_channels": 26,
+      "channel_paths": [
+        "scale",
+        "translation",
+        "rotation"
+      ],
+      "actual_clip_duration": 3,
+      "bytes": 18510076,
+      "sha256": "f3de4241a4b14922a79b8edf0fffb30baa30ca65601f7fbc90057c13c46a2273",
+      "component_effects": [
+        {
+          "id": "flamethrower-ignite",
+          "original_id": "flamethrower-ignite",
+          "model": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+          "bytes": 3676304,
+          "sha256": "b3a36205afe2b98fe756a8d219880a26911888c3df5b16e5accc83399a4ddf50",
+          "source_duration": 0.4000000059604645,
+          "start": 0,
+          "end": 0.4,
+          "visible_until": 0.4,
+          "wrapper": {
+            "name": "flamethrower-ignite_sequence_wrapper",
+            "translation": [
+              0.11841320381106613,
+              0.6469771102689745,
+              -0.02150336848870915
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "flamethrower-ignite_flame_flow_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "flamethrower-ignite_flame_flow_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "flamethrower-ignite_flame_pilot_wick_8",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        },
+        {
+          "id": "flamethrower-stream",
+          "original_id": "flamethrower-stream",
+          "model": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+          "bytes": 3690504,
+          "sha256": "160308a30de3080c7307766c52f67e47c0305d7f6ebba56aca3d89729ec9c077",
+          "source_duration": 1.2000000476837158,
+          "start": 0.15,
+          "end": 2.6,
+          "visible_until": 2.6,
+          "wrapper": {
+            "name": "flamethrower-stream_sequence_wrapper",
+            "translation": [
+              0.11841320381106613,
+              0.6469771102689745,
+              -0.02150336848870915
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "flamethrower-stream_authored_silhouette_scale",
+              "scale": [
+                1.8,
+                1.8,
+                1.8
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        },
+        {
+          "id": "flamethrower-hit",
+          "original_id": "flamethrower-hit",
+          "model": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+          "bytes": 7348288,
+          "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97",
+          "source_duration": 0.8999999761581421,
+          "start": 0.5,
+          "end": 2.9,
+          "visible_until": 2.9,
+          "wrapper": {
+            "name": "flamethrower-hit_sequence_wrapper",
+            "translation": [
+              0.11841320381106613,
+              0.6469771102689745,
+              1.828496631511291
+            ],
+            "rotation": [
+              -0.7071067811865475,
+              0,
+              0,
+              0.7071067811865476
+            ]
+          },
+          "source_root_nodes": [
+            {
+              "name": "flamethrower-hit_flame_flow_0",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "flamethrower-hit_flame_flow_4",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "name": "flamethrower-hit_curled_smoke_8",
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "projectile_geometry_subtree": null,
+          "motion_owner": "choreography_clip_preview_only",
+          "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+        }
+      ],
+      "approximate_muzzle": [
+        0.11841320381106613,
+        0.6469771102689745,
+        -0.02150336848870915
+      ],
+      "source_weapon_model": "outputs/weapon-modules/06-flamethrower/weapon.glb",
+      "source_weapon_sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd",
+      "copied_weapon_zero_normals_repaired": 0,
+      "runtime_fade_recipes": 12,
+      "visual_reviewed": false
+    }
+  ]
+}

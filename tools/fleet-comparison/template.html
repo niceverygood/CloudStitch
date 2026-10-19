@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+  <title>Cloudstitch · 우리 배와 저 배</title>
+  <style>
+    :root{--paper:#f3eddf;--panel:#fffcf3;--teal:#376f69;--ink:#284c49;--muted:#748178;--line:#d4cfb8;--gold:#a9874d;--coral:#b96f59;--pale:#e5ebdc;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;font-synthesis:none}
+    *{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0}button,input,select{font:inherit}button{cursor:pointer;color:inherit}button,a,input,select{touch-action:manipulation;-webkit-tap-highlight-color:transparent}button:disabled{opacity:.45;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--coral);outline-offset:4px}a{color:var(--teal);text-underline-offset:4px}h1,h2,h3,p{margin:0}button{background:var(--panel)}.shell{max-width:1540px;padding:35px 34px 25px;margin:auto}.eyebrow{font-size:10px;letter-spacing:2.8px;font-weight:700;color:var(--gold)}.masthead{display:flex;justify-content:space-between;align-items:flex-end;gap:25px;padding-bottom:24px;border-bottom:1px solid var(--line)}h1{font-size:clamp(35px,4.2vw,59px);font-family:Georgia,"Malgun Gothic",serif;letter-spacing:-2.6px;font-weight:500;line-height:1.2;margin:10px 0}h1 em{font-style:normal;color:var(--teal)}.subtitle{font-size:13px;color:var(--muted)}.jump-links{display:flex;flex-direction:column;gap:5px;text-align:right;font-size:11px;flex-shrink:0}.intro{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:21px 0}.intro p{font-size:12px;color:var(--muted);max-width:900px}.intro strong{color:var(--ink);font-weight:650}.stamp{padding:6px 12px;border:1px dashed #bca977;color:var(--gold);border-radius:8px;font-size:10px;white-space:nowrap}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:17px}.section-heading h2{font-size:25px;letter-spacing:-1px}.section-heading p{font-size:11px;color:var(--muted);margin-top:3px}.preset-bar{display:flex;flex-wrap:wrap;gap:7px;padding:12px 0 16px}.preset{border:1px solid var(--line);border-radius:20px;padding:7px 13px;font-size:11px;background:#f9f6e9}.preset:hover{border-color:#8fa78e}.preset[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:white}.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:21px}.compare-pane{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:17px 12px 18px 13px;overflow:hidden;box-shadow:0 13px 36px #344e3c08}.pane-bar{display:flex;justify-content:space-between;gap:12px;padding:14px 20px;border-bottom:1px dashed var(--line);align-items:center}.pane-index{font-family:Georgia,serif;font-size:22px;color:var(--gold);line-height:1}.pane-kicker{font-size:11px;font-weight:650;letter-spacing:.4px}.pane-side{font-size:10px;color:var(--muted)}.pane-selects{display:grid;grid-template-columns:.7fr 1.6fr;gap:9px;padding:13px 17px 0}.field{display:flex;flex-direction:column;gap:5px;font-size:10px;color:var(--muted);min-width:0}.field input,.field select{width:100%;min-width:0;border:1px solid var(--line);background:#fffdf6;border-radius:7px;padding:10px;color:var(--ink);font-size:12px}.ship-picture{position:relative;aspect-ratio:1.5;background:radial-gradient(ellipse at 63% 30%,#fffef4,#e9eedf);display:flex;align-items:center;justify-content:center;margin-top:12px;overflow:hidden}.ship-picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.image-fallback{font-size:12px;color:var(--muted);padding:25px;text-align:center}.source-tag{position:absolute;top:12px;right:14px;z-index:1;padding:3px 9px;background:#fffbeece;border:1px solid #d6d5bf;border-radius:20px;font-size:9px;color:#7e897a}.pane-copy{padding:18px 21px 21px}.pane-title-row{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}.pane-copy h3{font-size:25px;letter-spacing:-1px;line-height:1.35}.side-tag{font-size:10px;padding:4px 10px;background:#e6ecdd;border-radius:20px;color:var(--teal);white-space:nowrap}.side-tag.enemy{background:#f0e4d7;color:#a46550}.side-tag.reference{background:#eee9df;color:#8c795e}.ship-role{font-size:11px;color:var(--gold);margin-top:7px}.tagline{font-size:13px;color:var(--teal);margin-top:11px;line-height:1.7}.context-note{font-size:10px;color:var(--muted);margin-top:10px}.landmarks{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}.landmark{font-size:10px;padding:3px 8px;border:1px solid #dedac4;border-radius:5px;color:#7b8a7b}.size-note{font-size:10px;color:var(--muted);margin-top:14px;border-top:1px dashed var(--line);padding-top:12px}.pane-actions{display:flex;align-items:center;gap:14px;margin-top:15px}.primary{border:1px solid var(--teal);color:white;background:var(--teal);border-radius:7px;padding:10px 16px;font-size:11px}.secondary-link{font-size:10px}.comparison-note{margin-top:13px;font-size:10px;color:var(--muted);text-align:center}.section{margin-top:39px}.board-intro{border-left:3px solid #bda56e;padding:5px 0 5px 13px;font-size:12px;color:var(--muted);margin-bottom:18px}.stages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.stage{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}.stage-header{padding:13px 15px;border-bottom:1px dashed var(--line);display:flex;align-items:center;justify-content:space-between;gap:9px}.stage-header h3{font-size:15px;letter-spacing:-.5px}.stage-number{font-family:Georgia,serif;font-size:16px;color:var(--gold);flex-shrink:0}.stage-slots{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#dcd9c6}.boss-slot{background:#faf7ea;min-width:0;padding:11px}.slot-label{font-size:9px;color:var(--gold);font-weight:650;letter-spacing:.5px}.slot-image{position:relative;aspect-ratio:1.4;display:flex;align-items:center;justify-content:center;margin:5px -7px;background:radial-gradient(ellipse,#fffdf4,#edf0e0);overflow:hidden}.slot-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.slot-image span{font-size:11px;color:#99a28b}.slot-name{font-size:12px;line-height:1.5;margin-top:7px;overflow-wrap:anywhere;font-weight:600}.slot-status{display:inline-block;padding:2px 6px;border-radius:4px;font-size:8px;color:#8b7d5f;background:#eee8d5;margin-top:6px}.slot-note{font-size:9px;color:var(--muted);margin-top:7px;line-height:1.7}.slot-select{font-size:9px;border:1px solid #b8c9b6;border-radius:5px;padding:5px 8px;margin-top:9px;background:#f0f3e7;color:#517c6a}.stage-note{padding:11px 13px;font-size:9px;color:var(--muted);border-top:1px dashed var(--line)}.canon-section{margin-top:19px;padding:17px 19px;background:#e9eddf;border:1px solid #cdd4bb;border-radius:10px}.canon-section h3{font-size:13px}.canon-section>p{font-size:10px;color:var(--muted);margin-top:5px}.canon-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.canon-item{display:flex;flex-direction:column;align-items:flex-start;gap:3px;text-align:left;border:1px solid #c3ccb5;border-radius:7px;background:#f8faef;padding:8px 11px;max-width:260px}.canon-item strong{font-size:11px;font-weight:600}.canon-item span{font-size:9px;color:var(--muted)}.filter-bar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:15px}.filter-chip{padding:7px 13px;border:1px solid var(--line);border-radius:20px;background:#faf7eb;font-size:11px}.filter-chip[aria-pressed=true]{color:white;background:var(--teal);border-color:var(--teal)}.filters{display:grid;grid-template-columns:2fr 1fr;gap:11px}.result-line{font-size:10px;color:var(--muted);margin:12px 0 16px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.ship-card{background:var(--panel);border:1px solid var(--line);border-radius:13px 9px 12px 10px;overflow:hidden;min-width:0}.ship-card.chosen{border-color:#739981;box-shadow:0 0 0 1px #73998140}.card-image{position:relative;aspect-ratio:1.4;background:radial-gradient(ellipse,#fffdf3,#e9eedf);display:flex;align-items:center;justify-content:center;overflow:hidden}.card-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.card-image .image-fallback{font-size:10px}.card-version{position:absolute;top:9px;left:10px;z-index:1;font-size:8px;color:#879178;background:#fffdf1cb;border-radius:20px;padding:2px 7px}.card-copy{padding:13px 14px 14px;border-top:1px dashed var(--line)}.card-kind{font-size:9px;color:var(--gold)}.card-copy h3{font-size:15px;letter-spacing:-.4px;margin-top:4px;line-height:1.4;overflow-wrap:anywhere}.card-role{font-size:10px;color:var(--muted);margin-top:6px;line-height:1.7;min-height:34px}.card-actions{display:flex;gap:6px;margin-top:12px}.card-actions button{flex:1;border:1px solid #bbcbb7;border-radius:5px;padding:7px 3px;font-size:10px;color:#537a68;background:#f1f3e6}.card-actions button[aria-pressed=true]{background:#dce8d5;color:#37634d;border-color:#8aaa8b}.empty{font-size:12px;color:var(--muted);padding:25px 0;grid-column:1/-1}.footer{border-top:1px solid var(--line);margin-top:30px;padding-top:17px;display:flex;gap:25px;justify-content:space-between;font-size:10px;color:var(--muted)}.footer p:first-child{max-width:860px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}dialog{border:1px solid #b7c6b3;padding:0;border-radius:13px;background:var(--panel);color:var(--ink);width:min(1320px,96vw);height:min(1020px,94vh);max-width:none;max-height:none;box-shadow:0 15px 70px #132b2555;overflow:hidden}dialog::backdrop{background:#173d36a8}.dialog-shell{display:flex;flex-direction:column;height:100%}.dialog-header{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 17px;border-bottom:1px solid var(--line)}.dialog-header h2{font-size:14px}.dialog-header p{font-size:9px;color:var(--muted);margin-top:2px}.dialog-close{font-size:11px;border:1px solid var(--line);border-radius:6px;padding:7px 12px;flex-shrink:0}.dialog-viewer{flex:1;min-height:0;position:relative}.dialog-viewer iframe{display:block;width:100%;height:100%;border:0;background:var(--paper)}.dialog-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:var(--paper);font-size:12px;color:var(--muted);pointer-events:none}.dialog-loading[hidden]{display:none}
+    @media(max-width:1100px){.shell{padding:28px 23px}.stages{grid-template-columns:repeat(2,minmax(0,1fr))}.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.comparison-grid{gap:15px}.pane-copy{padding:16px}.pane-copy h3{font-size:23px}.pane-selects{grid-template-columns:.7fr 1.3fr;padding:12px 13px 0}.pane-bar{padding:12px 15px}.ship-picture{aspect-ratio:1.25}}
+    @media(max-width:720px){.shell{padding:21px 13px}.masthead{align-items:flex-start;gap:10px}h1{font-size:36px;letter-spacing:-1.8px}.eyebrow{font-size:8px;letter-spacing:2px}.subtitle{font-size:11px}.jump-links{font-size:9px;gap:5px;margin-top:5px}.intro{flex-direction:column;align-items:flex-start;gap:10px;padding:17px 0}.intro p{font-size:11px}.stamp{font-size:9px}.section-heading{align-items:flex-start;flex-direction:column;gap:4px}.section-heading h2{font-size:22px}.section-heading p{font-size:10px}.preset-bar{gap:6px}.preset{font-size:10px;padding:6px 10px}.comparison-grid{gap:9px}.pane-bar{padding:10px;align-items:flex-start}.pane-index{font-size:18px}.pane-kicker{font-size:10px}.pane-side{font-size:8px}.pane-selects{grid-template-columns:1fr;padding:10px 9px 0;gap:6px}.field{font-size:9px}.field input,.field select{font-size:11px;padding:8px}.ship-picture{aspect-ratio:1;margin-top:9px}.pane-copy{padding:12px 10px}.pane-title-row{display:block}.pane-copy h3{font-size:19px;letter-spacing:-.7px}.side-tag{display:inline-block;font-size:8px;margin-top:6px;padding:3px 7px}.ship-role{font-size:9px;line-height:1.6}.tagline{font-size:10px;margin-top:9px}.context-note{font-size:9px}.landmark{font-size:8px;padding:2px 5px}.landmarks{gap:4px}.size-note{font-size:8px;margin-top:10px;padding-top:9px}.pane-actions{gap:8px;flex-wrap:wrap;margin-top:11px}.primary{font-size:10px;padding:8px 10px;width:100%}.secondary-link{font-size:9px}.source-tag{font-size:8px;top:8px;right:8px;padding:2px 7px}.comparison-note{font-size:9px}.section{margin-top:30px}.board-intro{font-size:10px}.stage-header{padding:11px}.stage-header h3{font-size:13px}.boss-slot{padding:8px}.slot-name{font-size:11px}.slot-note{font-size:8px}.slot-select{font-size:8px;padding:4px 5px}.stage-note{font-size:8px;padding:9px}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.card-copy{padding:10px}.card-copy h3{font-size:13px}.card-kind,.card-role{font-size:9px}.card-role{min-height:31px}.card-actions{gap:5px}.card-actions button{font-size:9px;padding:6px 2px}.filters{grid-template-columns:1.6fr 1fr;gap:8px}.filter-chip{font-size:10px;padding:6px 10px}.footer{flex-direction:column;gap:10px;font-size:9px}.canon-section{padding:13px}.canon-item{max-width:100%;padding:7px 9px}.canon-item strong{font-size:10px}.canon-item span{font-size:8px}.dialog-header{padding:10px 12px}.dialog-header h2{font-size:12px}.dialog-header p{font-size:8px}.dialog-close{font-size:10px}dialog{width:97vw;height:94vh}}
+    @media(max-width:430px){.stages{grid-template-columns:1fr}.stage-slots{grid-template-columns:1fr 1fr}.slot-image{aspect-ratio:1.6}.jump-links{display:none}.ship-picture{aspect-ratio:.9}.pane-copy h3{font-size:17px}.pane-kicker{font-size:9px}.pane-index{font-size:16px}.pane-bar{gap:7px}.source-tag{right:5px}.comparison-grid{gap:7px}.landmarks{display:none}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    .pane-actions{flex-wrap:wrap;gap:10px}.previous-view{font-size:10px;border:1px solid #c3cbb5;padding:9px 11px;border-radius:7px;background:#f1f2e3;color:#66806a}@media(max-width:720px){.previous-view{font-size:9px;width:100%;padding:7px}}
+    .archive-copy{font-size:10px;color:var(--muted);line-height:1.7;margin-top:8px}.archive-download{display:inline-block;font-size:10px;margin-top:12px}.archive-link{font-size:11px;white-space:nowrap}@media(max-width:720px){.archive-copy{font-size:9px}.archive-link{font-size:10px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead"><div><div class="eyebrow">CLOUDSTITCH · FLEET COMPARISON</div><h1>우리 배와 <em>저 배</em></h1><p class="subtitle">나란히 놓으면, 서로 다른 배의 성격이 보입니다.</p></div><nav class="jump-links" aria-label="페이지 안에서 이동"><a href="#compare">나란히 비교</a><a href="#bosses">여섯 항로의 보스</a><a href="#all-ships">만든 배 전체</a></nav></header>
+    <div class="intro"><p><strong>주인공, 동료, 적군, 보스를 두 척씩 골라 보세요.</strong> 큰 윤곽과 장비, 재료의 차이를 함께 볼 수 있습니다. 아래 전체 목록에는 같은 배의 장비·상태 변형과 초기 디자인 대안도 포함됩니다.</p><span class="stamp" id="total-stamp">만든 에셋 전체 보기</span></div>
+    <main>
+      <section id="compare" aria-labelledby="compare-title"><div class="section-heading"><div><div class="eyebrow">SIDE BY SIDE</div><h2 id="compare-title">두 배의 얼굴을 나란히</h2><p>각 칸의 목록에서 고르거나, 아래 카드의 ‘왼쪽에’·‘오른쪽에’를 누르세요.</p></div></div>
+        <nav class="preset-bar" aria-label="비교 조합"><button class="preset" data-preset="ally-enemy" aria-pressed="true">우리편 ↔ 적군</button><button class="preset" data-preset="ally-boss" aria-pressed="false">귀환호 ↔ 보스</button><button class="preset" data-preset="ally-ally" aria-pressed="false">우리편끼리</button><button class="preset" data-preset="enemy-enemy" aria-pressed="false">적군끼리</button></nav>
+        <div class="comparison-grid">
+          <article class="compare-pane" id="pane-left" aria-labelledby="name-left"><div class="pane-bar"><div><div class="pane-kicker">왼쪽 비교</div><div class="pane-side">처음에는 우리편을 보여드려요</div></div><span class="pane-index">01</span></div><div class="pane-selects"><label class="field">목록 범위<select id="side-left"><option value="all">모든 배</option><option value="ally">우리편</option><option value="enemy">적군</option><option value="neutral">중립·관계 확인</option><option value="reference">참고·초기 대안</option><option value="boss">보스</option></select></label><label class="field">배 선택<select id="select-left" aria-label="왼쪽에서 비교할 배"></select></label></div><div class="ship-picture" id="picture-left"></div><div class="pane-copy"><div class="pane-title-row"><h3 id="name-left"></h3><span id="tag-left" class="side-tag"></span></div><p class="ship-role" id="role-left"></p><p class="tagline" id="tagline-left"></p><p class="context-note" id="context-left"></p><div class="landmarks" id="landmarks-left"></div><p class="size-note" id="size-left"></p><div class="pane-actions"><button class="primary" data-open-side="left">이 배를 3D로 보기</button><button class="previous-view" data-previous-side="left" hidden>이전 외형 v1</button><a class="secondary-link" id="asset-left" hidden>GLB 내려받기 ↓</a></div></div></article>
+          <article class="compare-pane" id="pane-right" aria-labelledby="name-right"><div class="pane-bar"><div><div class="pane-kicker">오른쪽 비교</div><div class="pane-side">처음에는 적군을 보여드려요</div></div><span class="pane-index">02</span></div><div class="pane-selects"><label class="field">목록 범위<select id="side-right"><option value="all">모든 배</option><option value="ally">우리편</option><option value="enemy">적군</option><option value="neutral">중립·관계 확인</option><option value="reference">참고·초기 대안</option><option value="boss">보스</option></select></label><label class="field">배 선택<select id="select-right" aria-label="오른쪽에서 비교할 배"></select></label></div><div class="ship-picture" id="picture-right"></div><div class="pane-copy"><div class="pane-title-row"><h3 id="name-right"></h3><span id="tag-right" class="side-tag"></span></div><p class="ship-role" id="role-right"></p><p class="tagline" id="tagline-right"></p><p class="context-note" id="context-right"></p><div class="landmarks" id="landmarks-right"></div><p class="size-note" id="size-right"></p><div class="pane-actions"><button class="primary" data-open-side="right">이 배를 3D로 보기</button><button class="previous-view" data-previous-side="right" hidden>이전 외형 v1</button><a class="secondary-link" id="asset-right" hidden>GLB 내려받기 ↓</a></div></div></article>
+        </div><p class="comparison-note">두 이미지는 각각 화면에 맞춘 모습입니다. 실제 크기 비율이 아닙니다. 개별 3D 뷰어에서 귀환호와 제작용 상대 크기를 비교할 수 있습니다.</p>
+      </section>
+      <section class="section" id="bosses" aria-labelledby="boss-title"><div class="section-heading"><div><div class="eyebrow">SIX ROUTES</div><h2 id="boss-title">각 판의 중간보스와 최종보스</h2><p>시제품에서 만나는 편성과 이야기 속 지역 보스를 구분해 보여드립니다.</p></div></div><p class="board-intro" id="stage-scope-note">중간보스·최종보스가 아직 정해지지 않은 칸은 ‘미확정’으로 표시합니다. 빈자리에 임의의 적을 배정하지 않습니다.</p><div class="stages" id="stage-board"></div><section class="canon-section" aria-labelledby="canon-title"><h3 id="canon-title">이야기 속 지역 보스</h3><p id="canon-note">각 지역의 기획상 보스입니다. 위 시제품의 출현 편성과 같다는 뜻은 아닙니다.</p><div class="canon-list" id="canon-list"></div></section></section>
+      <section class="section" id="all-ships" aria-labelledby="fleet-title"><div class="section-heading"><div><div class="eyebrow">THE COMPLETE FLEET</div><h2 id="fleet-title">만든 배, 모두 펼쳐 보기</h2><p id="fleet-scope-note">새 제작판과 보존한 초기 대안을 함께 봅니다. 항목 수와 고유 정사 함선 수는 다릅니다.</p></div></div><nav class="filter-bar" aria-label="함대 목록 구분"><button class="filter-chip" data-filter="all" aria-pressed="true">모두 보기</button><button class="filter-chip" data-filter="ally" aria-pressed="false">우리편</button><button class="filter-chip" data-filter="enemy" aria-pressed="false">적군</button><button class="filter-chip" data-filter="boss" aria-pressed="false">보스</button><button class="filter-chip" data-filter="neutral" aria-pressed="false">중립·관계 확인</button><button class="filter-chip" data-filter="reference" aria-pressed="false">참고·초기 대안</button></nav><div class="filters"><label class="field">이름·역할·특징으로 찾기<input type="search" id="ship-search" placeholder="예: 귀환호, 수리, 교단, 보스" autocomplete="off"></label><label class="field">세력<select id="faction-filter"><option value="">모든 세력</option></select></label></div><p id="result-line" class="result-line" aria-live="polite"></p><div id="ship-cards" class="cards"></div></section>
+      <section class="section" id="original-archive" aria-labelledby="archive-title"><div class="section-heading"><div><div class="eyebrow">ORIGINAL ARCHIVE</div><h2 id="archive-title">초기 고밀도 원본 9</h2><p>위 초기 대안의 생성 원본입니다. 리그 해석과 다른 출력이며, 새로운 함선 9종이 추가된 것은 아닙니다.</p></div><a id="original-gallery-link" class="archive-link" target="_blank" rel="noopener" hidden>원본 갤러리 열기 ↗</a></div><div class="cards" id="archive-cards"></div></section>
+    </main>
+    <footer class="footer"><p id="footer-note">이 페이지의 에셋은 외형·리깅 검토용입니다. 변형·역할·시설·기록·디자인 대안을 포함하므로 목록의 항목 수를 고유 정사 함선 종류 수로 세지 않습니다.</p><p>원본과 기존 제작판 보존<br>외부 연결 없이 로컬 파일로 열람</p></footer><p class="sr-only" id="announcement" aria-live="polite"></p>
+  </div>
+  <dialog id="viewer-dialog" aria-labelledby="viewer-title"><div class="dialog-shell"><header class="dialog-header"><div><h2 id="viewer-title">비행선 3D 보기</h2><p>선택한 한 척만 불러옵니다. 닫으면 3D 보기가 종료됩니다.</p></div><button class="dialog-close" id="viewer-close" autofocus>비교로 돌아가기 ×</button></header><div class="dialog-viewer" id="viewer-host"></div></div></dialog>
+  <script>
+    const embeddedData = [/* FLEET_DATA */][0];
+    const data = window.FLEET_DATA || embeddedData || { ships: [], stages: [] };
+    const ships = Array.isArray(data.ships) ? data.ships : [];
+    const byId = new Map(ships.map(ship => [ship.id, ship]));
+    const stages = Array.isArray(data.stages) ? data.stages : [];
+    const stageRoles = new Map();
+    for (const stage of stages) for (const [key, label] of [['midBoss', '시제품 중간보스 역할'], ['finalBoss', '시제품 최종보스 역할']]) {
+      const id = stage[key]?.assetId; if (!id) continue;
+      if (!stageRoles.has(id)) stageRoles.set(id, new Set()); stageRoles.get(id).add(label);
+    }
+    const $ = id => document.getElementById(id);
+    const element = (tag, text, className) => { const node = document.createElement(tag); if (text !== undefined) node.textContent = String(text); if (className) node.className = className; return node; };
+    const display = value => typeof value === 'string' ? value : Array.isArray(value) ? value.map(display).filter(Boolean).join(' · ') : value == null ? '' : typeof value === 'object' ? display(value.label || value.name || value.note || value.text) : String(value);
+    const sideLabels = { ally: '우리편', enemy: '적군', neutral: '중립·관계 확인', reference: '참고·초기 대안' };
+    const categoryLabels = { 'player-base': '주인공 기본선', 'player-build': '귀환호 장비 구성', 'ending-variant': '귀환호 결말 상태', 'enemy-archetype': '일반 적 역할', 'enemy-standard': '표준 적 함선', 'faction-style-variant': '세력 외형 변형', 'rival': '라이벌', 'mini-boss': '중간보스', 'boss-vessel': '보스 함선', 'boss-facility': '보스 시설', 'mission-enemy-role': '임무 적 역할', 'mission-vessel': '서사·임무 함선', 'civilian-role': '민간 역할', 'support-craft': '지원정', 'unfinished-vessel': '미완성 골격', 'historical-record': '기록 속 함선', 'preexisting-variant': '보존한 초기 디자인 대안' };
+    const landmarkLabels = { 'coral-triangle':'산호색 삼각 패치','round-window':'둥근 창','home-lantern':'귀환의 등불','needle-bow':'바늘 같은 선수','swept-tail':'뒤로 젖힌 꼬리','pirate-pennant':'공적 깃발','oversized-tail-engine':'큰 꼬리 추진기','cliff-bow-armor':'절벽 같은 앞 장갑','hanging-bell':'매달린 종','seal-drapes':'봉인 장막','exposed-rear-engine':'드러난 후방 엔진','diagonal-crane':'비스듬한 크레인','exposed-winch-drum':'드러난 인양 드럼','hook-claw':'집게 갈고리','square-stern':'각진 선미','open-work-bay':'열린 작업칸','paired-repair-arms':'양쪽 수리팔','welding-lantern':'용접등','bridge-gantry':'가로 작업대','spear-bow':'창 같은 선수','torn-sails':'찢어진 천','trailing-ribs':'흘러가는 갈비뼈','cold-lanterns':'차가운 잔광','radial-wreck-ribs':'방사형 잔해 골조','folded-claw-decks':'접힌 집게 갑판','broken-canvas':'부서진 천막','hidden-engine':'감춘 추진기','starboard-subtree':'우현 장착 묶음','connector-frame':'연결 골조','external-gun-deck':'외부 포대 갑판','auxiliary-envelope':'보조 기낭','central-bell-hall':'열린 중앙 종실','cathedral-buttresses':'성당 지지대','seal-tower-row':'봉인탑 열','funeral-drapes':'장례 장막','broadside-batteries':'측면 포대','three-open-docks':'열린 세 도크','rib-arches':'갈비뼈 아치','paired-claw-cranes':'양쪽 집게 크레인','three-vents':'세 배출구','two-cooling-pumps':'두 냉각 펌프','launch-gate':'진수문','crane-coupling':'크레인 연결부','twin-industrial-arms':'양쪽 작업팔','ram-bow':'돌진 선수','exposed-switchboard':'드러난 배전판','crown-of-broken-masts':'부러진 돛대 왕관','crescent-keel':'초승달 선체','three-memory-cradles':'세 기억 받침','long-name-banners':'긴 이름 휘장','sealed-mechanical-heart':'봉인된 기계 심장','three-seal-towers':'세 봉인탑','three-heart-connectors':'세 심장 연결부','pressure-rings':'압력 고리','rescue-canopy':'구조 천막','wide-broadside':'넓은 측면 포대','signal-fan':'부채꼴 신호 마스트','shielded-bow':'장갑 선수','paired-heat-pipes':'양쪽 열 배관' };
+    const selection = { left: null, right: null };
+    let currentFilter = 'all', lastViewerTrigger = null;
+    const sideOf = ship => ['ally', 'enemy', 'neutral', 'reference'].includes(ship.side) ? ship.side : 'neutral';
+    const isBoss = ship => stageRoles.has(ship.id) || ship.isBoss === true || ship.boss === true || /^(?:mini-boss|boss-vessel|boss-facility)$/.test(ship.category || '');
+    const roleOf = ship => [ship.role || ship.label || categoryLabels[ship.category] || '기획 에셋', stageRoles.has(ship.id) ? [...stageRoles.get(ship.id)].join('·') : ''].filter(Boolean).join(' / ');
+    const matchesSide = (ship, value) => value === 'all' ? true : value === 'boss' ? isBoss(ship) : sideOf(ship) === value;
+    const versionOf = ship => ship.sourceVersion === 'v1' || ship.category === 'preexisting-variant' ? 'v1 · 초기 대안 리그 해석' : 'v2 · 새 제작판';
+    function localPath(value) {
+      if (typeof value !== 'string' || !value || /^(?:[a-z]+:|[\\/])/i.test(value) || value.includes('\\')) return null;
+      if (value.startsWith('../airship-models-9/')) return /^\.\.\/airship-models-9\/(?:[A-C][1-3]-airship\.glb|index\.html)$/i.test(value) ? value : null;
+      if (value.startsWith('../')) return /^\.\.\/fleet-v[12]\/(?:ships|previews)\/[a-z0-9_-]+\.(?:html|png|glb)$/i.test(value) ? value : null;
+      return !value.split('/').some(part => part === '..' || part === '.') && /^[a-z0-9_\-/]+\.(?:html|png|glb)$/i.test(value) ? value : null;
+    }
+    function image(container, ship, extraLabel) {
+      container.replaceChildren();
+      const preview = localPath(ship?.previewPath);
+      if (!ship || !preview || ship.previewAvailable === false || ship.previewStale === true) container.append(element('span', ship?.previewStale ? '모델 변경 · 미리보기 준비 중' : '미리보기 준비 중', 'image-fallback'));
+      else {
+        const picture = element('img'); picture.alt = ship.name + ' 실제 3D 에셋 미리보기'; picture.src = preview; picture.decoding = 'async'; picture.loading = 'lazy';
+        picture.addEventListener('error', () => { picture.remove(); container.append(element('span', '미리보기를 불러오지 못했습니다', 'image-fallback')); }, { once: true });
+        container.append(picture);
+      }
+      if (extraLabel) container.append(element('span', extraLabel, 'source-tag'));
+    }
+    function selectOptions(pane, preferred) {
+      const select = $('select-' + pane), filter = $('side-' + pane).value;
+      const available = ships.filter(ship => matchesSide(ship, filter));
+      select.replaceChildren(...available.map(ship => { const option = element('option', ship.name + ' · ' + roleOf(ship)); option.value = ship.id; return option; }));
+      if (!available.length) { const option = element('option', '해당하는 배가 없습니다'); option.value = ''; select.append(option); select.disabled = true; return false; }
+      select.disabled = false;
+      const chosen = available.some(ship => ship.id === preferred) ? preferred : available[0].id;
+      select.value = chosen;
+      return choose(pane, chosen, false);
+    }
+    function choose(pane, id, resetFilter = true) {
+      if (!['left', 'right'].includes(pane) || !byId.has(id)) return false;
+      const ship = byId.get(id); selection[pane] = id;
+      if (resetFilter && !matchesSide(ship, $('side-' + pane).value)) { $('side-' + pane).value = 'all'; selectOptions(pane, id); }
+      $('select-' + pane).value = id;
+      image($('picture-' + pane), ship, versionOf(ship));
+      $('name-' + pane).textContent = ship.name;
+      const tag = $('tag-' + pane); tag.textContent = sideLabels[sideOf(ship)]; tag.className = 'side-tag ' + sideOf(ship);
+      $('role-' + pane).textContent = [ship.faction || '소속 미정', roleOf(ship)].join(' · ');
+      $('tagline-' + pane).textContent = display(ship.identity?.tagline || ship.identity?.silhouette || ship.description || ship.tagline);
+      $('context-' + pane).textContent = display(ship.context || ship.scopeNote);
+      const landmarks = Array.isArray(ship.identity?.landmarkLabels) ? ship.identity.landmarkLabels : Array.isArray(ship.identity?.landmarks) ? ship.identity.landmarks : Array.isArray(ship.landmarks) ? ship.landmarks : [];
+      const readableLandmarks = landmarks.map(item => landmarkLabels[item] || (/[가-힣]/.test(display(item)) ? display(item) : '')).filter(Boolean);
+      $('landmarks-' + pane).replaceChildren(...readableLandmarks.slice(0, 5).map(item => element('span', item, 'landmark')));
+      $('size-' + pane).textContent = display(ship.scaleNote || ship.identity?.scaleNote) || '이미지는 각자 화면에 맞춘 크기입니다. 실제 미터·충돌 규격·게임 크기는 확정하지 않았습니다.';
+      const asset = $('asset-' + pane), assetPath = localPath(ship.assetPath); asset.hidden = !assetPath || ship.assetAvailable === false;
+      if (!asset.hidden) { asset.href = assetPath; asset.download = ship.id + '.glb'; }
+      document.querySelector('[data-open-side="' + pane + '"]').disabled = !localPath(ship.viewerPath) || ship.viewerAvailable === false;
+      document.querySelector('[data-previous-side="' + pane + '"]').hidden = !localPath(ship.previousViewerPath);
+      updateSelectionIndicators();
+      $('announcement').textContent = ship.name + '을 ' + (pane === 'left' ? '왼쪽' : '오른쪽') + ' 비교 칸에 놓았습니다.';
+      return true;
+    }
+    function updateSelectionIndicators() {
+      for (const card of document.querySelectorAll('[data-card-id]')) {
+        const id = card.dataset.cardId; card.classList.toggle('chosen', id === selection.left || id === selection.right);
+        for (const button of card.querySelectorAll('[data-place-side]')) button.setAttribute('aria-pressed', String(selection[button.dataset.placeSide] === id));
+      }
+    }
+    function filteredShips() {
+      const query = $('ship-search').value.trim().toLocaleLowerCase('ko'), faction = $('faction-filter').value;
+      return ships.filter(ship => matchesSide(ship, currentFilter) && (!faction || ship.faction === faction) && (!query || [ship.id, ship.name, roleOf(ship), ship.label, ship.description, ship.faction, sideLabels[sideOf(ship)], categoryLabels[ship.category], display(ship.context), display(ship.identity?.tagline), display(ship.identity?.silhouette), display(ship.identity?.landmarks)].join(' ').toLocaleLowerCase('ko').includes(query)));
+    }
+    function renderCards() {
+      const visible = filteredShips(), fragment = document.createDocumentFragment();
+      for (const ship of visible) {
+        const card = element('article', undefined, 'ship-card'); card.dataset.cardId = ship.id;
+        const picture = element('div', undefined, 'card-image'); image(picture, ship); picture.append(element('span', versionOf(ship), 'card-version'));
+        const copy = element('div', undefined, 'card-copy'); copy.append(element('p', [sideLabels[sideOf(ship)], ship.faction || '소속 미정'].join(' · '), 'card-kind'), element('h3', ship.name), element('p', roleOf(ship), 'card-role'));
+        const actions = element('div', undefined, 'card-actions');
+        for (const pane of ['left', 'right']) { const button = element('button', pane === 'left' ? '왼쪽에 놓기' : '오른쪽에 놓기'); button.type = 'button'; button.dataset.placeSide = pane; button.setAttribute('aria-label', ship.name + '을 ' + (pane === 'left' ? '왼쪽' : '오른쪽') + '에서 비교'); button.addEventListener('click', () => choose(pane, ship.id)); actions.append(button); }
+        copy.append(actions); card.append(picture, copy); fragment.append(card);
+      }
+      if (!visible.length) fragment.append(element('p', '조건에 맞는 배가 없습니다. 모두 보기나 다른 검색 조건을 선택해 주세요.', 'empty'));
+      $('ship-cards').replaceChildren(fragment);
+      $('result-line').textContent = visible.length + '개 표시 / 전체 ' + ships.length + '개 제작 항목 · 항목 수는 고유 정사 함선 수와 다릅니다.';
+      for (const button of document.querySelectorAll('[data-filter]')) button.setAttribute('aria-pressed', String(button.dataset.filter === currentFilter));
+      updateSelectionIndicators();
+    }
+    function applyPreset(name) {
+      const allies = ships.filter(ship => sideOf(ship) === 'ally'), enemies = ships.filter(ship => sideOf(ship) === 'enemy'), bosses = ships.filter(isBoss);
+      const home = byId.get('player-homeward') || allies[0] || ships[0];
+      const scout = byId.get('enemy-pirate-scout') || enemies[0];
+      const boss = byId.get('boss-bell-devourer') || bosses[0];
+      const pairs = { 'ally-enemy': [home, scout], 'ally-boss': [home, boss], 'ally-ally': [home, allies.find(ship => ship.id !== home?.id) || home], 'enemy-enemy': [scout, enemies.find(ship => ship.id !== scout?.id) || scout] };
+      const pair = pairs[name]; if (!pair?.[0] || !pair?.[1]) return false;
+      for (const pane of ['left', 'right']) $('side-' + pane).value = 'all';
+      selectOptions('left', pair[0].id); selectOptions('right', pair[1].id);
+      for (const button of document.querySelectorAll('[data-preset]')) button.setAttribute('aria-pressed', String(button.dataset.preset === name));
+      return true;
+    }
+    function close3D() { const dialog = $('viewer-dialog'); $('viewer-host').replaceChildren(); if (dialog.open) dialog.close(); lastViewerTrigger?.focus(); }
+    function open3D(id, trigger, previous = false) {
+      const ship = byId.get(id), viewerPath = localPath(previous ? ship?.previousViewerPath : ship?.viewerPath); if (!ship || !viewerPath || !previous && ship.viewerAvailable === false) return false;
+      const host = $('viewer-host'); host.replaceChildren(); // Tear down the previous WebGL context before creating another iframe.
+      lastViewerTrigger = trigger || document.activeElement;
+      $('viewer-title').textContent = ship.name + ' · ' + (previous ? '이전 외형 v1' : versionOf(ship));
+      const loading = element('p', ship.name + '의 3D 파일을 불러오고 있습니다', 'dialog-loading'); loading.setAttribute('role', 'status');
+      const frame = element('iframe'); frame.dataset.comparisonViewer = 'true'; frame.title = ship.name + ' 3D 에셋 뷰어'; frame.src = viewerPath; frame.setAttribute('allow', 'fullscreen'); frame.setAttribute('allowfullscreen', '');
+      frame.addEventListener('load', () => { loading.hidden = true; }, { once: true }); host.append(frame, loading);
+      const dialog = $('viewer-dialog'); if (!dialog.open) dialog.showModal(); $('viewer-close').focus();
+      return true;
+    }
+    const slotAssetId = slot => slot?.assetId || slot?.shipId || slot?.id;
+    function slotCard(slot, label) {
+      const card = element('div', undefined, 'boss-slot'); card.append(element('p', label, 'slot-label'));
+      const ship = byId.get(slotAssetId(slot)), known = Boolean(ship), picture = element('div', undefined, 'slot-image');
+      if (known) image(picture, ship); else picture.append(element('span', '미확정'));
+      card.append(picture, element('p', display(slot?.name || ship?.name) || '아직 정해지지 않았습니다', 'slot-name'));
+      const status = display(slot?.status || slot?.label);
+      const confirmed = slot?.confirmed === true || status === 'confirmed';
+      const statusText = !known ? '미확정' : confirmed ? '기획 확정' : /현행|6판/.test(status) ? '현행 6판 편성' : /prototype|implemented|fixture|시제품|구현|편성/.test(status) ? '시제품 편성' : /proposal|proposed|제안/.test(status) ? '배정 제안 · 미확정' : '배정 근거 확인';
+      card.append(element('span', statusText, 'slot-status'));
+      const note = display(slot?.note || slot?.scopeNote || slot?.sourceNote);
+      if (note) card.append(element('p', note, 'slot-note'));
+      if (known) { const button = element('button', '오른쪽에서 비교', 'slot-select'); button.type = 'button'; button.addEventListener('click', () => choose('right', ship.id)); card.append(button); }
+      return card;
+    }
+    function renderStages() {
+      const fragment = document.createDocumentFragment();
+      for (const [index, stage] of stages.entries()) {
+        const card = element('article', undefined, 'stage'); card.dataset.stageId = stage.id || String(index + 1);
+        const heading = element('header', undefined, 'stage-header'); heading.append(element('h3', stage.name || stage.label || '항로 ' + (index + 1)), element('span', String(index + 1).padStart(2, '0'), 'stage-number'));
+        const slots = element('div', undefined, 'stage-slots'); slots.append(slotCard(stage.midBoss || stage.midboss, '중간보스'), slotCard(stage.finalBoss || stage.finalboss, '최종보스'));
+        card.append(heading, slots);
+        const note = display(stage.note || stage.scopeNote || stage.context || stage.designNote); if (note) card.append(element('p', note, 'stage-note'));
+        fragment.append(card);
+      }
+      if (!stages.length) fragment.append(element('p', '판별 보스 배정을 아직 받지 않았습니다. 확인된 편성이 들어오면 이곳에 표시합니다.', 'empty'));
+      $('stage-board').replaceChildren(fragment);
+      const canonicalStages = Array.isArray(data.canonStages) ? data.canonStages : stages;
+      const canonical = canonicalStages.flatMap(stage => {
+        const primary = [['midBoss', '중간보스'], ['finalBoss', '최종보스']].map(([slot, slotLabel]) => ({ ...(stage[slot] || { assetId: null, name: '미확정', status: 'unspecified', note: '정사 고정 보스 배정을 확인 중입니다.' }), stageId: stage.id, regionName: stage.name, slot, slotLabel }));
+        const used = new Set(primary.map(slotAssetId).filter(Boolean));
+        const components = [];
+        for (const boss of stage.canonBosses || []) {
+          const id = slotAssetId(boss); if (!id || used.has(id)) continue;
+          used.add(id); components.push({ ...boss, stageId: stage.id, regionName: boss.regionName || stage.name, slot: 'component', slotLabel: '보스 구성 요소' });
+        }
+        return [...primary, ...components];
+      });
+      const list = document.createDocumentFragment();
+      for (const boss of canonical) {
+        const ship = byId.get(slotAssetId(boss)); const button = element(ship ? 'button' : 'div', undefined, 'canon-item');
+        const status = !slotAssetId(boss) || boss.status === 'unspecified' ? 'unspecified' : 'assigned';
+        button.dataset.canonStageId = boss.stageId; button.dataset.canonSlot = boss.slot; button.dataset.canonStatus = status;
+        if (ship) { button.type = 'button'; button.addEventListener('click', () => choose('right', ship.id)); }
+        button.append(element('strong', [boss.regionName || boss.region || boss.stageName, boss.slotLabel, boss.name || ship?.name || '미확정', status === 'unspecified' ? '미확정' : ''].filter(Boolean).join(' · ')));
+        const note = display(boss.note || boss.scopeNote || boss.status); if (note) button.append(element('span', note));
+        list.append(button);
+      }
+      if (!canonical.length) list.append(element('p', '지역별 정사 보스의 대응을 확인 중입니다.', 'slot-note'));
+      $('canon-list').replaceChildren(list);
+      if (data.stageScopeNote || data.stageNote) $('stage-scope-note').textContent = display(data.stageScopeNote || data.stageNote);
+      if (data.canonScopeNote) $('canon-note').textContent = display(data.canonScopeNote);
+    }
+    function renderArchive() {
+      const archive = Array.isArray(data.archiveOriginals) ? data.archiveOriginals : [];
+      const fragment = document.createDocumentFragment();
+      for (const original of archive) {
+        const card = element('article', undefined, 'ship-card'); card.dataset.archiveId = original.id;
+        const picture = element('div', undefined, 'card-image'); image(picture, original);
+        const copy = element('div', undefined, 'card-copy'); copy.append(element('p', '초기 고밀도 생성 원본', 'card-kind'), element('h3', original.name || original.id), element('p', original.note || '위 초기 대안 리그 해석의 원본입니다. 별도 신규 정사 함선으로 세지 않습니다.', 'archive-copy'));
+        const assetPath = localPath(original.assetPath);
+        if (assetPath) { const download = element('a', '원본 GLB 내려받기 ↓', 'archive-download'); download.href = assetPath; download.download = original.id + '-airship.glb'; copy.append(download); }
+        card.append(picture, copy); fragment.append(card);
+      }
+      if (!archive.length) fragment.append(element('p', '초기 고밀도 원본 목록을 준비 중입니다.', 'empty'));
+      $('archive-cards').replaceChildren(fragment);
+      const gallery = localPath(data.originalGalleryPath);
+      if (gallery) { $('original-gallery-link').href = gallery; $('original-gallery-link').hidden = false; }
+    }
+    for (const pane of ['left', 'right']) { $('side-' + pane).addEventListener('change', () => selectOptions(pane, selection[pane])); $('select-' + pane).addEventListener('change', event => choose(pane, event.target.value, false)); document.querySelector('[data-open-side="' + pane + '"]').addEventListener('click', event => open3D(selection[pane], event.currentTarget)); document.querySelector('[data-previous-side="' + pane + '"]').addEventListener('click', event => open3D(selection[pane], event.currentTarget, true)); }
+    for (const button of document.querySelectorAll('[data-preset]')) button.addEventListener('click', () => applyPreset(button.dataset.preset));
+    for (const button of document.querySelectorAll('[data-filter]')) button.addEventListener('click', () => { currentFilter = button.dataset.filter; renderCards(); });
+    $('ship-search').addEventListener('input', renderCards); $('faction-filter').addEventListener('change', renderCards);
+    for (const faction of [...new Set(ships.map(ship => ship.faction).filter(Boolean))]) { const option = element('option', faction); option.value = faction; $('faction-filter').append(option); }
+    $('viewer-close').addEventListener('click', close3D);
+    $('viewer-dialog').addEventListener('cancel', event => { event.preventDefault(); close3D(); });
+    $('viewer-dialog').addEventListener('click', event => { if (event.target === $('viewer-dialog')) close3D(); });
+    $('viewer-dialog').addEventListener('close', () => $('viewer-host').replaceChildren());
+    $('total-stamp').textContent = ships.length + '개 제작 항목 · 전체 보기';
+    if (data.scopeNote) $('footer-note').textContent = display(data.scopeNote);
+    if (data.fleetScopeNote) $('fleet-scope-note').textContent = display(data.fleetScopeNote);
+    renderCards(); renderStages(); renderArchive();
+    if (!applyPreset('ally-enemy') && ships.length) { selectOptions('left', ships[0].id); selectOptions('right', ships[1]?.id || ships[0].id); }
+    Object.defineProperty(window, '__fleetComparison', { value: { data, choose, open3D, close3D, applyPreset, setFilter(value) { if (!['all', 'ally', 'enemy', 'neutral', 'reference', 'boss'].includes(value)) return false; currentFilter = value; renderCards(); return true; }, get selection() { return { ...selection }; }, get visibleCount() { return filteredShips().length; }, get loadedViewers() { return document.querySelectorAll('iframe[data-comparison-viewer]').length; } }, configurable: false, writable: false });
+  </script>
+</body>
+</html>

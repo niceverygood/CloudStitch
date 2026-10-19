@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:34:54Z",
+  "status": "READY-2 targeted23/24; READY-3 warning bounds fix pending",
+  "report": {
+    "path": "outputs/playable-battlefield-browser-qa-v1/ready-2-targeted-verification.json",
+    "sha256": "1ff6629c803ff85dd6ebf22f9541dc89391bf4635614d7e3d8683a20e5704977",
+    "passed": false,
+    "total": 24,
+    "pass": 23,
+    "fail": 1,
+    "failed": [
+      {
+        "name": "narrow-warning-remains-visible-or-pinned",
+        "passed": false,
+        "detail": {
+          "warnings": [
+            {
+              "id": "encounter-1-stage-01-harbor-opening-0",
+              "projected": {
+                "x": -17.917739832115437,
+                "y": 149.1288346695912,
+                "depth": -0.686051970857112
+              },
+              "labelPresent": true,
+              "labelHidden": false,
+              "offscreen": "true",
+              "box": {
+                "x": -10.2109375,
+                "y": 195.375,
+                "right": 103.8046875,
+                "bottom": 227.875
+              }
+            }
+          ],
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "dpr": 1
+          }
+        }
+      }
+    ]
+  },
+  "screenshot": {
+    "path": "outputs/playable-battlefield-browser-qa-v1/ready-2-narrow-warning.png",
+    "viewedByCommand": true,
+    "observation": "left portion of warning label is visibly clipped in390x844 capture"
+  },
+  "delegatedRead": {
+    "authoritativeDefeat": "enemy warning/fire12, damage100, actual defeat and enemy/projectile cleanup",
+    "retry": "same voyage/resources/parts; generation/runId1to2,HP100/time0/cargo0",
+    "sameRendererReturns": 4,
+    "warmPlateau": {
+      "geometry": 500,
+      "textures": 21,
+      "programs": 12,
+      "meshes": 418,
+      "spread": 0
+    },
+    "fixtures": "pure guidance cases and explicit clear/display fixture distinct from input-driven sorties"
+  },
+  "next": "audio native/Offline while READY-3 bounds clamp is prepared; then narrow warning/camera targeted regression",
+  "ioPolicy": "fleet1.58GB full hash/import deferred until browser slot is released; do not overlap heavy assetIO with audio/browser QA",
+  "limitations": "one private Chromium context, accelerated controller inputs and explicit fixtures; plateau is short-run evidence, not long-run/mobile-device certification",
+  "commandReview": "report/SHA read and local screenshot viewed; no duplicate browser test"
+}

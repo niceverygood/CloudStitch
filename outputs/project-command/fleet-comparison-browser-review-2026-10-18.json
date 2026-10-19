@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:25:05Z",
+  "locationRef": "local-locations.json",
+  "independentReviewer": "stage_ready_review",
+  "report": {
+    "path": "outputs/fleet-comparison-browser-qa-v1/verification.json",
+    "sha256": "bcda943be22dbda0c6ef771ad899b007091f95275067f3b46da9496425e6b93d",
+    "passed": true,
+    "checks": 88,
+    "completedAt": "2026-10-18T09:18:56.384Z"
+  },
+  "observationDataSha256": "757d4abad4791425b12281e0d2412f967d20da27be498867ee78173b2e66acfd",
+  "readyManifestSha256": "78ef52ad845b97c563fabdc1426006296f8ed122e860bf33e34cc6ef9a125af3",
+  "scope": {
+    "mainImagesDecoded": 71,
+    "separateHighDensityReferenceImagesDecoded": 9,
+    "encounterRegions": 6,
+    "encounterSlots": 12,
+    "canonSlots": 12,
+    "canonUnknown": 8,
+    "canonKnown": 4,
+    "shipwrightComponentRows": 1,
+    "presets": 4,
+    "filters": [
+      "faction",
+      "power",
+      "search"
+    ],
+    "comparison": "left/right selectors/cards",
+    "actual3d": "oneiframe: representativev2homeward,v1alternative,previousv1ofsameboat; created/removed",
+    "desktopWidth": 1440,
+    "mobileWidth": 390,
+    "mobileHeight": 844,
+    "highDensityGlb9": "HEAD200/size only; no bodydownload/render",
+    "errors": {
+      "external": 0,
+      "page": 0,
+      "console": 0,
+      "http": 0,
+      "failedRequests": 0,
+      "localAborts": 0
+    }
+  },
+  "limits": [
+    "not all71 GLB render",
+    "no repeated3mode7clip/animation/rotatingghosting/performance/combat/collider/socket/artapproval",
+    "singleChrome; nootherbrowser/device"
+  ],
+  "provenance": {
+    "import95ManifestWithBody96PassReported": true,
+    "reportItselfDoesNotBindManifestHarnessSha": true,
+    "post95UnchangedNotIn88Report": true,
+    "finalAdditionalQaIndexRequested": true
+  },
+  "url": "http://127.0.0.1:8840/outputs/fleet-comparison-v1/index.html",
+  "scopedUiAcceptance": true
+}

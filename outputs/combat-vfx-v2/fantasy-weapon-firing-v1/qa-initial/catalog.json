@@ -1,0 +1,1033 @@
+{
+  "title": "Cloudstitch · 무기 발사·작동 애니메이션 GLB 24종",
+  "count": 24,
+  "atlas": {
+    "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/textures/soft-vfx-atlas.png",
+    "sha256": "c4ce60208e6dc66f3d5d8bec6a04399786e1ffb29b9cec55f8ab77d3ae4202ee"
+  },
+  "items": [
+    {
+      "id": "classic-01-machine-gun",
+      "name": "기관총",
+      "group": "classic",
+      "source": {
+        "path": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+        "bytes": 3299860,
+        "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6"
+      },
+      "model": "assets/classic-01-machine-gun.glb",
+      "bytes": 3911896,
+      "sha256": "421ae9e679cb8ed3dfedfbe34369993705d2762d581f3e8c37a528a61b833679",
+      "tracks": 212,
+      "title": "Cloudstitch",
+      "weapon": "classic-01-machine-gun",
+      "action": "projectile",
+      "mode": "mg",
+      "description": "급탄 준비 → 리듬 있는 다섯 발 → 연속 명중",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "classic-02-deck-cannon",
+      "name": "함포",
+      "group": "classic",
+      "source": {
+        "path": "outputs/weapon-modules/02-deck-cannon/weapon.glb",
+        "bytes": 3961552,
+        "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd"
+      },
+      "model": "assets/classic-02-deck-cannon.glb",
+      "bytes": 4461532,
+      "sha256": "2a35ae6da2386af3f37ad0ae5e8eb36440db2b8fc896add917f0f5cb4881e606",
+      "tracks": 44,
+      "title": "Cloudstitch",
+      "weapon": "classic-02-deck-cannon",
+      "action": "projectile",
+      "mode": "cannon",
+      "description": "묵직한 반동 → 포탄 비행 → 목재 분출",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "classic-03-mortar",
+      "name": "박격포",
+      "group": "classic",
+      "source": {
+        "path": "outputs/weapon-modules/03-mortar/weapon.glb",
+        "bytes": 3674748,
+        "sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f"
+      },
+      "model": "assets/classic-03-mortar.glb",
+      "bytes": 4174704,
+      "sha256": "7876046c896af3bb7da926e61add1a87d8a4c319722dc45c739fbd85f8e2dcbb",
+      "tracks": 44,
+      "title": "Cloudstitch",
+      "weapon": "classic-03-mortar",
+      "action": "projectile",
+      "mode": "lob",
+      "description": "예비 장전 → 포물선 투척 → 상부 명중",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "classic-04-harpoon",
+      "name": "작살포",
+      "group": "classic",
+      "source": {
+        "path": "outputs/weapon-modules/04-harpoon/weapon.glb",
+        "bytes": 3777952,
+        "sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64"
+      },
+      "model": "assets/classic-04-harpoon.glb",
+      "bytes": 4279696,
+      "sha256": "015a158530fcfec182bee5197a09e4c86957f7e2af6084ba2eaa008f5bf49fa6",
+      "tracks": 39,
+      "title": "Cloudstitch",
+      "weapon": "classic-04-harpoon",
+      "action": "utility",
+      "mode": "harpoon",
+      "description": "작살 사출 → 줄 펼침 → 걸림·권양 회수",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "classic-05-chain-shot",
+      "name": "사슬탄 발사기",
+      "group": "classic",
+      "source": {
+        "path": "outputs/weapon-modules/05-chain-shot/weapon.glb",
+        "bytes": 3654140,
+        "sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219"
+      },
+      "model": "assets/classic-05-chain-shot.glb",
+      "bytes": 4160756,
+      "sha256": "6248abf32dc2bc8345ae5a892967401b110705aef2d6adb3838bac7ef7c0bf5a",
+      "tracks": 45,
+      "title": "Cloudstitch",
+      "weapon": "classic-05-chain-shot",
+      "action": "projectile",
+      "mode": "chain",
+      "description": "쌍구 탄환과 사슬 회전 → 연결 타격",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "classic-06-flamethrower",
+      "name": "화염방사기",
+      "group": "classic",
+      "source": {
+        "path": "outputs/weapon-modules/06-flamethrower/weapon.glb",
+        "bytes": 3776868,
+        "sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd"
+      },
+      "model": "assets/classic-06-flamethrower.glb",
+      "bytes": 4276428,
+      "sha256": "5574e2e74b0047264e85100100c6f63196d19688c33969a35638348175256b27",
+      "tracks": 64,
+      "title": "Cloudstitch",
+      "weapon": "classic-06-flamethrower",
+      "action": "projectile",
+      "mode": "flame",
+      "description": "압력 준비 → 겹겹의 화염 분사 → 연기 여운",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "new-01-capacitor-tower",
+      "name": "축전 전기탑",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/01-capacitor-tower.glb",
+        "bytes": 2737936,
+        "sha256": "6b2eda90abdaffa4b9790dec9ab5148b82f5b184ce44cf39b5be22ed782019be"
+      },
+      "model": "assets/new-01-capacitor-tower.glb",
+      "bytes": 3264700,
+      "sha256": "dd2d889a020e0d15845f46da0acb75f7f14e3eb4d7061a76b36e83af6b673115",
+      "tracks": 74,
+      "title": "Cloudstitch",
+      "weapon": "new-01-capacitor-tower",
+      "action": "projectile",
+      "mode": "electric",
+      "description": "코일 충전 → 가지 방전 → 전기 스파크",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 0.75,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "new-02-deck-greatbow",
+      "name": "갑판 대궁",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/02-deck-greatbow.glb",
+        "bytes": 2155488,
+        "sha256": "4cfa4cf87f53ca1b98e00b8ebe605b21d72f0aff17365b4c4fd979f0c65a4180"
+      },
+      "model": "assets/new-02-deck-greatbow.glb",
+      "bytes": 2650876,
+      "sha256": "d41a167de58092be20d33801854de74aa85c5301e8ed7db94d32b7ae57d90f8f",
+      "tracks": 37,
+      "title": "Cloudstitch",
+      "weapon": "new-02-deck-greatbow",
+      "action": "projectile",
+      "mode": "arrow",
+      "description": "활대 당김 → 대형 화살 → 목재 명중",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "draw_greatbow_assembly",
+          "node": "02-deck-greatbow_draw_greatbow_assembly_104"
+        },
+        {
+          "semantic": "loaded_great_arrow",
+          "node": "02-deck-greatbow_loaded_great_arrow_128"
+        }
+      ]
+    },
+    {
+      "id": "new-03-repeating-crossbow",
+      "name": "연발 쇠뇌",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/03-repeating-crossbow.glb",
+        "bytes": 2745896,
+        "sha256": "c757745a51cebbf053e40d9e3956be4639f848c79b6589891d55b73eefd4b277"
+      },
+      "model": "assets/new-03-repeating-crossbow.glb",
+      "bytes": 3284420,
+      "sha256": "feeeca98d939a67d16e4f31360d5730737af5a73edd21f0e0dab0593a762ea12",
+      "tracks": 104,
+      "title": "Cloudstitch",
+      "weapon": "new-03-repeating-crossbow",
+      "action": "projectile",
+      "mode": "bolts",
+      "description": "급탄과 활대 반동 → 세 발 연사 → 연속 명중",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "draw_horizontal_limb",
+          "node": "03-repeating-crossbow_draw_horizontal_limb_193"
+        }
+      ]
+    },
+    {
+      "id": "new-04-harpoon-winch",
+      "name": "작살 윈치",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/04-harpoon-winch.glb",
+        "bytes": 3095440,
+        "sha256": "b90101534883fa6ae24864dc5599abe69ad9050a726254237814f6678bfe092a"
+      },
+      "model": "assets/new-04-harpoon-winch.glb",
+      "bytes": 3599248,
+      "sha256": "08f66f6092b3d26711f4cc5641053d382081a470e5406665d1cea25827a9da5f",
+      "tracks": 40,
+      "title": "Cloudstitch",
+      "weapon": "new-04-harpoon-winch",
+      "action": "utility",
+      "mode": "harpoon",
+      "description": "작살 사출 → 줄 펼침 → 걸림·권양 회수",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "drum_rope_spool",
+          "node": "04-harpoon-winch_drum_rope_spool_100"
+        },
+        {
+          "semantic": "loaded_forged_harpoon",
+          "node": "04-harpoon-winch_loaded_forged_harpoon_156"
+        }
+      ]
+    },
+    {
+      "id": "new-05-small-catapult",
+      "name": "소형 투석기",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/05-small-catapult.glb",
+        "bytes": 2627148,
+        "sha256": "c15bdf89326f16cd29ad082f879524fd7ef8063a303e821dc786f83aa1758817"
+      },
+      "model": "assets/new-05-small-catapult.glb",
+      "bytes": 3128108,
+      "sha256": "2b9543d54f41a5e1a7d60094330dc5f233db596b4defea81525de52fe49fcc1e",
+      "tracks": 44,
+      "title": "Cloudstitch",
+      "weapon": "new-05-small-catapult",
+      "action": "projectile",
+      "mode": "lob",
+      "description": "예비 장전 → 포물선 투척 → 상부 명중",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "throwing_arm_pivot",
+          "node": "05-small-catapult_throwing_arm_pivot_146"
+        }
+      ]
+    },
+    {
+      "id": "new-06-net-launcher",
+      "name": "투망 발사대",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/06-net-launcher.glb",
+        "bytes": 3620072,
+        "sha256": "65abc8d27d6c3aaf92625ddae78444327d83e88557016617821119d288c542a0"
+      },
+      "model": "assets/new-06-net-launcher.glb",
+      "bytes": 4094760,
+      "sha256": "c03f06c05b0a53ef2bf4c0b146fde41420e9269df672f64f1ba5209c38d7b138",
+      "tracks": 3,
+      "title": "Cloudstitch",
+      "weapon": "new-06-net-launcher",
+      "action": "utility",
+      "mode": "net",
+      "description": "투망 사출 → 로프망 펼침 → 표적 감싸기",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "new-07-folding-shield",
+      "name": "접이식 방패",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/07-folding-shield.glb",
+        "bytes": 3585380,
+        "sha256": "3982375a7e27a57b2c0df775cad63f43a810421d4657ee9dfaa89c571ce3353c"
+      },
+      "model": "assets/new-07-folding-shield.glb",
+      "bytes": 4040344,
+      "sha256": "9d336791d93a5ecf7f37f22a3a066d20af5cdb4031fc582a1e91febe5bb0647c",
+      "tracks": 8,
+      "title": "Cloudstitch",
+      "weapon": "new-07-folding-shield",
+      "action": "defense",
+      "mode": "shield",
+      "description": "패널 전개 → 날아오는 탄환 방어 → 접기",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.2,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "shield_leaf_1_hinge",
+          "node": "07-folding-shield_shield_leaf_1_hinge_119"
+        },
+        {
+          "semantic": "shield_leaf_2_hinge",
+          "node": "07-folding-shield_shield_leaf_2_hinge_154"
+        },
+        {
+          "semantic": "shield_leaf_3_hinge",
+          "node": "07-folding-shield_shield_leaf_3_hinge_189"
+        },
+        {
+          "semantic": "shield_leaf_4_hinge",
+          "node": "07-folding-shield_shield_leaf_4_hinge_224"
+        },
+        {
+          "semantic": "shield_leaf_5_hinge",
+          "node": "07-folding-shield_shield_leaf_5_hinge_259"
+        }
+      ]
+    },
+    {
+      "id": "new-08-steam-projector",
+      "name": "증기 분사기",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/08-steam-projector.glb",
+        "bytes": 3505960,
+        "sha256": "5aecc63185acfbaae1304b14aa1ebf467ca98a89589bd390a1cf991b6a21df96"
+      },
+      "model": "assets/new-08-steam-projector.glb",
+      "bytes": 4004940,
+      "sha256": "259e52b6c32cd13905f76cd4b07f97f047268647948b4d16c3dca38b23eead39",
+      "tracks": 63,
+      "title": "Cloudstitch",
+      "weapon": "new-08-steam-projector",
+      "action": "pressure",
+      "mode": "steam",
+      "description": "밸브 개방 → 부드러운 증기 분출 → 확산",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": []
+    },
+    {
+      "id": "new-09-side-circular-saw",
+      "name": "측면 회전톱",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/09-side-circular-saw.glb",
+        "bytes": 1880008,
+        "sha256": "4df32e0f96b900bfdf97ff8730d91c90bc52b137b13e68692c25d0d213ec2887"
+      },
+      "model": "assets/new-09-side-circular-saw.glb",
+      "bytes": 2361700,
+      "sha256": "ae2c94d9f32c337b77029815654f29ce2bfb4716668ea6bba0e86ef94a0b936f",
+      "tracks": 35,
+      "title": "Cloudstitch",
+      "weapon": "new-09-side-circular-saw",
+      "action": "melee",
+      "mode": "saw",
+      "description": "톱 회전 → 측면 접근 → 목재 절삭",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "rotating_toothed_disc",
+          "node": "09-side-circular-saw_rotating_toothed_disc_STATIC_114"
+        },
+        {
+          "semantic": "articulated_saw_boom",
+          "node": "09-side-circular-saw_articulated_saw_boom_STATIC_89"
+        }
+      ]
+    },
+    {
+      "id": "new-10-chain-flail",
+      "name": "사슬추 타격기",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/10-chain-flail.glb",
+        "bytes": 3919708,
+        "sha256": "ea849f88adb57f5ca615ff9fb38841282fd72d2fc13bad6cfcbd9a5f3454bd2d"
+      },
+      "model": "assets/new-10-chain-flail.glb",
+      "bytes": 4399928,
+      "sha256": "b184de7368d7eac7841cf03aaafcc6a97a83727d9d756153ef9388a7eb039e81",
+      "tracks": 34,
+      "title": "Cloudstitch",
+      "weapon": "new-10-chain-flail",
+      "action": "melee",
+      "mode": "flail",
+      "description": "사슬추 예비 흔들기 → 내려찍기 → 반동",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "chain_and_forged_weight",
+          "node": "10-chain-flail_chain_and_forged_weight_STATIC_123"
+        }
+      ]
+    },
+    {
+      "id": "new-11-pneumatic-fan",
+      "name": "공압 바람개비",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/11-pneumatic-fan.glb",
+        "bytes": 3200236,
+        "sha256": "502f45e93b9b5c88e599a3932cd3465368b345c3227afd2db7c04ba935b77547"
+      },
+      "model": "assets/new-11-pneumatic-fan.glb",
+      "bytes": 3713712,
+      "sha256": "f9909eb43f0cee5ebcd0b348517d76cf91b38241e5cbae9e1e999ceee137d61a",
+      "tracks": 51,
+      "title": "Cloudstitch",
+      "weapon": "new-11-pneumatic-fan",
+      "action": "pressure",
+      "mode": "wind",
+      "description": "풀무 압축 → 날개 회전 → 돌풍과 잎사귀",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "six_teal_fan_blades",
+          "node": "11-pneumatic-fan_six_teal_fan_blades_STATIC_113"
+        },
+        {
+          "semantic": "pleated_canvas_pressure_bellows",
+          "node": "11-pneumatic-fan_pleated_canvas_pressure_bellows_STATIC_148"
+        }
+      ]
+    },
+    {
+      "id": "new-12-folding-ram",
+      "name": "접이식 충각",
+      "group": "new",
+      "source": {
+        "path": "outputs/grounded-weapons-v1/assets/12-folding-ram.glb",
+        "bytes": 1813252,
+        "sha256": "4cdb4f136dfd412d9b95d9805f2be887f6dec33cb5cf497270560c31b6d843d2"
+      },
+      "model": "assets/new-12-folding-ram.glb",
+      "bytes": 2293472,
+      "sha256": "964a81d0f6922370fead95af67472c1e380ff8063421f0210ab736c94c8e5604",
+      "tracks": 34,
+      "title": "Cloudstitch",
+      "weapon": "new-12-folding-ram",
+      "action": "melee",
+      "mode": "ram",
+      "description": "지지대 전개 → 충각 전진 → 충격 후 복귀",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "long_folding_ram_body",
+          "node": "12-folding-ram_long_folding_ram_body_STATIC_102"
+        }
+      ]
+    },
+    {
+      "id": "extra-13-comet-rocket-rack",
+      "name": "혜성 로켓 선반",
+      "group": "extra",
+      "source": {
+        "path": "outputs/grounded-weapons-v2/assets/13-comet-rocket-rack.glb",
+        "bytes": 4174696,
+        "sha256": "8f09f6693ba1bd5f4b5f5dc175c03a57f79852933e574bee7ea7485ed4f0f059"
+      },
+      "model": "assets/extra-13-comet-rocket-rack.glb",
+      "bytes": 4736532,
+      "sha256": "0e09c041360121409c00865023a274292effc28012e98afa1d32aba4f58ab1e3",
+      "tracks": 134,
+      "title": "Cloudstitch",
+      "weapon": "extra-13-comet-rocket-rack",
+      "action": "projectile",
+      "mode": "rocket",
+      "description": "레일 점화 → 삼발 로켓 순차 가속 → 세 차례 충격",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "inclined_triple_rail_carriage",
+          "node": "13-comet-rocket-rack_inclined_triple_rail_carriage_STATIC_142"
+        },
+        {
+          "semantic": "individual_comet_prop_0",
+          "node": "13-comet-rocket-rack_individual_comet_prop_0_147"
+        },
+        {
+          "semantic": "individual_comet_prop_1",
+          "node": "13-comet-rocket-rack_individual_comet_prop_1_176"
+        },
+        {
+          "semantic": "individual_comet_prop_2",
+          "node": "13-comet-rocket-rack_individual_comet_prop_2_205"
+        }
+      ]
+    },
+    {
+      "id": "extra-14-disc-slinger",
+      "name": "황동 원반 발사기",
+      "group": "extra",
+      "source": {
+        "path": "outputs/grounded-weapons-v2/assets/14-disc-slinger.glb",
+        "bytes": 2841564,
+        "sha256": "db7bc04d8389e58f1e4d0a1dd47ce2fe1b51f6a70dcb5dd2b338ccd007384a2b"
+      },
+      "model": "assets/extra-14-disc-slinger.glb",
+      "bytes": 3341800,
+      "sha256": "c6f0fd537ce755f370c54b7f4a1a42dea0897932063fdfdeea320b8fbaf969a0",
+      "tracks": 45,
+      "title": "Cloudstitch",
+      "weapon": "extra-14-disc-slinger",
+      "action": "projectile",
+      "mode": "disc",
+      "description": "탄창 급탄 → 회전 원반 사출 → 튕기는 불꽃",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "tall_open_disc_carousel",
+          "node": "14-disc-slinger_tall_open_disc_carousel_STATIC_153"
+        }
+      ]
+    },
+    {
+      "id": "extra-15-piston-hammer",
+      "name": "증기 피스톤 망치",
+      "group": "extra",
+      "source": {
+        "path": "outputs/grounded-weapons-v2/assets/15-piston-hammer.glb",
+        "bytes": 2424236,
+        "sha256": "6fb848251e0e940d19ce92769335accfadf79ebdda9461a7dd49184d3d96e0eb"
+      },
+      "model": "assets/extra-15-piston-hammer.glb",
+      "bytes": 2904532,
+      "sha256": "7641b382bf0be522f34d0d4911e7922704c6bbba8548e8ea81a8470e28a904da",
+      "tracks": 34,
+      "title": "Cloudstitch",
+      "weapon": "extra-15-piston-hammer",
+      "action": "melee",
+      "mode": "hammer",
+      "description": "망치 들어올리기 → 피스톤 타격 → 튀어오름",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.1,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "curved_hammer_boom",
+          "node": "15-piston-hammer_curved_hammer_boom_STATIC_126"
+        }
+      ]
+    },
+    {
+      "id": "extra-16-drill-lance",
+      "name": "나선 드릴창",
+      "group": "extra",
+      "source": {
+        "path": "outputs/grounded-weapons-v2/assets/16-drill-lance.glb",
+        "bytes": 2263016,
+        "sha256": "7c2990a851401fe563f35f879462f540081f771712ed6f00eda768274a7c1c94"
+      },
+      "model": "assets/extra-16-drill-lance.glb",
+      "bytes": 2744668,
+      "sha256": "793f39fb88a9dbd4c97f1f0cdd5f2889fb10c050eb29919878aadffe90008722",
+      "tracks": 35,
+      "title": "Cloudstitch",
+      "weapon": "extra-16-drill-lance",
+      "action": "melee",
+      "mode": "drill",
+      "description": "척 회전 → 드릴창 전진 → 나선 절삭",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "rotating_spiral_lance",
+          "node": "16-drill-lance_rotating_spiral_lance_STATIC_125"
+        },
+        {
+          "semantic": "rotating_spiral_lance",
+          "node": "16-drill-lance_rotating_spiral_lance_STATIC_125"
+        }
+      ]
+    },
+    {
+      "id": "extra-17-bomb-dropper",
+      "name": "구름방울 투하대",
+      "group": "extra",
+      "source": {
+        "path": "outputs/grounded-weapons-v2/assets/17-bomb-dropper.glb",
+        "bytes": 3180492,
+        "sha256": "6cc94e9e298f18adba66a7ea10fb85648c78c678f3881b00900702007653b906"
+      },
+      "model": "assets/extra-17-bomb-dropper.glb",
+      "bytes": 3646528,
+      "sha256": "99695ea5db34d804f0dbde21d05ffd2c3044a1efd3b47c94e3153495309033c9",
+      "tracks": 34,
+      "title": "Cloudstitch",
+      "weapon": "extra-17-bomb-dropper",
+      "action": "drop",
+      "mode": "drop",
+      "description": "걸쇠 해제 → 실제 수직 투하 → 지면 충격",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "individual_cloud_drop_prop_1",
+          "node": "17-bomb-dropper_individual_cloud_drop_prop_1_166"
+        }
+      ]
+    },
+    {
+      "id": "extra-18-salvage-claw",
+      "name": "황동 인양 집게",
+      "group": "extra",
+      "source": {
+        "path": "outputs/grounded-weapons-v2/assets/18-salvage-claw.glb",
+        "bytes": 2515016,
+        "sha256": "8c30e7859070188feff9db5c72a13131752a7cf05d89af592898c1c5a3895451"
+      },
+      "model": "assets/extra-18-salvage-claw.glb",
+      "bytes": 2959236,
+      "sha256": "3ab7e551d27efdbeded857c89f5f9156e0cd2c1e953fdcb7dd6ae81374c1e3ca",
+      "tracks": 5,
+      "title": "Cloudstitch",
+      "weapon": "extra-18-salvage-claw",
+      "action": "utility",
+      "mode": "claw",
+      "description": "집게 내리기 → 세 손가락 닫기 → 화물 인양",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "three_finger_claw",
+          "node": "18-salvage-claw_three_finger_claw_STATIC_111"
+        },
+        {
+          "semantic": "curved_gripping_finger_0",
+          "node": "18-salvage-claw_curved_gripping_finger_0_114"
+        },
+        {
+          "semantic": "curved_gripping_finger_1",
+          "node": "18-salvage-claw_curved_gripping_finger_1_120"
+        },
+        {
+          "semantic": "curved_gripping_finger_2",
+          "node": "18-salvage-claw_curved_gripping_finger_2_126"
+        }
+      ]
+    }
+  ]
+}

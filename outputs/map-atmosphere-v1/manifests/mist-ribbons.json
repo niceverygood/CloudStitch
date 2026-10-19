@@ -1,0 +1,42 @@
+{
+  "id": "mist-ribbons",
+  "name_ko": "골짜기 안개리본",
+  "category": "clouds",
+  "role": "공중섬 사이에 가늘고 길게 흐르는 층층의 안개 길",
+  "motion_ko": "다섯 줄의 안개가 시차를 두고 옆으로 흐르고 늘어남",
+  "order": 10,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/mist-ribbons.glb",
+  "preview": "previews/mist-ribbons.png",
+  "triangles": 9600,
+  "mesh_count": 50,
+  "vertices": 28800,
+  "material_count": 2,
+  "animation_count": 1,
+  "animation_duration": 16,
+  "encoded_color_components": 0,
+  "bytes": 1101772,
+  "sha256": "ae477c6d4c8ddd1ea8e7f646485fce43fc9d6b17004d8e4095198ab329f755fb",
+  "bounds": {
+    "min": [
+      -6.062164528732902,
+      -0.9514681666226575,
+      -2.504902777626474
+    ],
+    "max": [
+      6.850377547740936,
+      0.9598035225008847,
+      2.403870611240729
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "wind-fast-loop",
+  "startedAt": "2026-10-18T08:53:40.760Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "Air moving faster along an airship canvas balloon: fine brighter rushing wind, quick soft cloth flutter and gentle rope vibration. Stable open-air flow, not a violent storm, no dramatic gust peak. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 6,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:43.879Z",
+  "output": {
+    "file": "audio/wind-fast-loop.mp3",
+    "bytes": 97009,
+    "sha256": "5574718554af153e6a4df9ec958459bdf6bccdca44c35dfdfd5f3e76ea138fea",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "60"
+}

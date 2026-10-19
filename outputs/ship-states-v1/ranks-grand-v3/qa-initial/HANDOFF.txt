@@ -1,0 +1,12 @@
+Cloudstitch / grand-v3 / SOURCE_READY
+목적: 이전 성급보다 최소1.5배 풍성한 진화. 기존v2는 보존, 새13형상.
+범위: tools/ship-states/ranks-grand-v3/ → outputs/ship-states-v1/ranks-grand-v3/.
+기하: root1, 원본 객실을 유지하며 신규 대형선체·실물 갑판·지지골조·기낭·계열장치 제작. 모든계열 직전대비 길이최소1.587배.
+풍성함은 미술목표. 경계상자 부피/길이/정점수로 미술승인 대신하지않음. 도감은 개별fit, 비교창은 같은카메라 축척.
+CPU PASS13+growth12비교/COLOR_0 범위0..1/정점총465817. max74986tri365mesh.
+실제 browser/export/PNG 검수는 중앙 순서 후 진행. 기술PASS와 사람의미술승인은별도.
+원본단위, 실제미터·충돌·LOD·장착socket·물리·게임수치·성장규칙·승급/저장없음.
+원본·기존v2·다른담당파일수정0. 신규artboard/유료Meshy/이미지API/설치/새에이전트/commit/push없음.
+최신 생성기는 inherited COLOR_0 복제후 clamp. 이전동결GLB의범위초과는보존하며새버전에혼합하지않음.
+실행: NODE_PATH=work/combat-vfx-v2/deps/node_modules; node tools/ship-states/ranks-grand-v3/check-source.cjs; check-growth.cjs; build.cjs --authoring; 명시heavySTART후 export-verify.cjs.
+예산: 단일browser3~5분예상/브라우저finallyclose후post보존대조하고슬롯반환.

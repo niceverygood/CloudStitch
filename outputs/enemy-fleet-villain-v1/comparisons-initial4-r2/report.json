@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "status": "TECHNICAL_CAPTURE_PASS",
+  "width": 900,
+  "height": 700,
+  "dpr": 1,
+  "sampleTimeSeconds": 2,
+  "pairs": [
+    {
+      "id": "enemy-tax-cutter",
+      "bounds": {
+        "before": {
+          "min": [
+            -5.247094305510124,
+            -1.7748445522407934,
+            -2.351555909760039
+          ],
+          "max": [
+            5.66288374480891,
+            4.360389200382166,
+            5.601209056183416
+          ]
+        },
+        "after": {
+          "min": [
+            -7.672525082278139,
+            -1.7748445522407934,
+            -2.351555909760039
+          ],
+          "max": [
+            5.66288374480891,
+            5.291497216804728,
+            5.601209056183416
+          ]
+        },
+        "union": {
+          "min": [
+            -7.672525082278139,
+            -1.7748445522407934,
+            -2.351555909760039
+          ],
+          "max": [
+            5.66288374480891,
+            5.291497216804728,
+            5.601209056183416
+          ]
+        }
+      },
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          -20.207529483672154,
+          15.584276679037,
+          -22.954640709908368
+        ],
+        "target": [
+          -1.0048206687346144,
+          1.758326332281967,
+          1.6248265732116884
+        ],
+        "left": -8.875210302994025,
+        "right": 8.875210302994025,
+        "top": 6.902941346773131,
+        "bottom": -6.902941346773131,
+        "near": 0.08529548422777819,
+        "far": 68.23638738222255,
+        "matrixWorld": [
+          -0.7880243737245636,
+          5.551115123125783e-17,
+          0.615644041972315,
+          0,
+          0.24948167047314623,
+          0.9142117213560403,
+          0.31933653820562724,
+          0,
+          -0.5628289993541005,
+          0.40523687953495247,
+          -0.720421119173249,
+          0,
+          -20.207529483672154,
+          15.584276679037,
+          -22.954640709908368,
+          1
+        ],
+        "projectionMatrix": [
+          0.1126733864168439,
+          0,
+          0,
+          0,
+          0,
+          0.14486578253594215,
+          0,
+          0,
+          0,
+          0,
+          -0.02934655842335589,
+          0,
+          0,
+          0,
+          -1.0025031289111388,
+          1
+        ]
+      },
+      "animation": {
+        "before": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        },
+        "after": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        }
+      },
+      "render": {
+        "width": 900,
+        "height": 700,
+        "dpr": 1,
+        "background": "#f1e6cf",
+        "material": "MeshBasicMaterial preserving source maps/colors/vertexColors/alpha",
+        "outlineAutoClear": true,
+        "nativeCoordinates": true,
+        "toneMapping": "NoToneMapping",
+        "outputColorSpace": "SRGBColorSpace",
+        "lights": {
+          "ambient": {
+            "color": 16777215,
+            "intensity": 1.5
+          },
+          "directional": {
+            "color": 16773077,
+            "intensity": 2,
+            "position": [
+              6,
+              10,
+              8
+            ]
+          }
+        },
+        "content": {
+          "before": {
+            "nonBackgroundPixels": 130548,
+            "fraction": 0.2072190476190476
+          },
+          "after": {
+            "nonBackgroundPixels": 169427,
+            "fraction": 0.268931746031746
+          }
+        },
+        "changedPixels": 83887,
+        "changedFraction": 0.13315396825396825
+      },
+      "artApproval": "PENDING_HUMAN_REVIEW",
+      "sources": {
+        "before": {
+          "assetPath": "outputs/fleet-v2/ships/enemy-tax-cutter.glb",
+          "sha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+          "bytes": 7850040
+        },
+        "after": {
+          "assetPath": "outputs/enemy-fleet-villain-v1/ships/enemy-tax-cutter.glb",
+          "sha256": "9f61d09782217cb9ab60303f567ed861808682cb821a912a97193689e5ed8a67",
+          "bytes": 12956664
+        }
+      },
+      "beforePngSha256": "0c7b9cc7dc3aa9751f0f8c092099e5f2e29841ac1194403f98cdad182c592d9e",
+      "afterPngSha256": "1ee35b643d5c5838a50d4cf23ac71bfd82b7e965992e711fba7c452d3ef931ba",
+      "pairPngSha256": "3c1a834ff457a2bb8b04ee2e46c73c0c760b87ad687b665970c788b89a5d5d93",
+      "beforeSha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+      "afterSha256": "9f61d09782217cb9ab60303f567ed861808682cb821a912a97193689e5ed8a67",
+      "sameCamera": true,
+      "passed": true
+    },
+    {
+      "id": "mission-cult-purifier",
+      "bounds": {
+        "before": {
+          "min": [
+            -6.1531129392424555,
+            -4.277699779592476,
+            -2.5466743347174345
+          ],
+          "max": [
+            6.633044674609489,
+            5.094455048111809,
+            2.6770972678369893
+          ]
+        },
+        "after": {
+          "min": [
+            -7.654746349693433,
+            -4.825096257973169,
+            -3.71323631785409
+          ],
+          "max": [
+            6.633044674609489,
+            5.094455048111809,
+            3.661582927135809
+          ]
+        },
+        "union": {
+          "min": [
+            -7.654746349693433,
+            -4.825096257973169,
+            -3.71323631785409
+          ],
+          "max": [
+            6.633044674609489,
+            5.094455048111809,
+            3.661582927135809
+          ]
+        }
+      },
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          -21.777340798072697,
+          15.446552166651442,
+          -27.246933844838466
+        ],
+        "target": [
+          -0.5108508375419718,
+          0.1346793950693197,
+          -0.025826695359140395
+        ],
+        "left": -10.791476131908341,
+        "right": 10.791476131908341,
+        "top": 8.3933703248176,
+        "bottom": -8.3933703248176,
+        "near": 0.09446248320953625,
+        "far": 75.569986567629,
+        "matrixWorld": [
+          -0.7880243737245636,
+          5.551115123125783e-17,
+          0.615644041972315,
+          0,
+          0.24948167047314623,
+          0.9142117213560403,
+          0.31933653820562724,
+          0,
+          -0.5628289993541005,
+          0.40523687953495247,
+          -0.720421119173249,
+          0,
+          -21.777340798072697,
+          15.446552166651442,
+          -27.246933844838466,
+          1
+        ],
+        "projectionMatrix": [
+          0.09266572874522609,
+          0,
+          0,
+          0,
+          0,
+          0.1191416512438621,
+          0,
+          0,
+          0,
+          0,
+          -0.026498656673956945,
+          0,
+          0,
+          0,
+          -1.002503128911139,
+          1
+        ]
+      },
+      "animation": {
+        "before": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        },
+        "after": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        }
+      },
+      "render": {
+        "width": 900,
+        "height": 700,
+        "dpr": 1,
+        "background": "#f1e6cf",
+        "material": "MeshBasicMaterial preserving source maps/colors/vertexColors/alpha",
+        "outlineAutoClear": true,
+        "nativeCoordinates": true,
+        "toneMapping": "NoToneMapping",
+        "outputColorSpace": "SRGBColorSpace",
+        "lights": {
+          "ambient": {
+            "color": 16777215,
+            "intensity": 1.5
+          },
+          "directional": {
+            "color": 16773077,
+            "intensity": 2,
+            "position": [
+              6,
+              10,
+              8
+            ]
+          }
+        },
+        "content": {
+          "before": {
+            "nonBackgroundPixels": 152366,
+            "fraction": 0.24185079365079365
+          },
+          "after": {
+            "nonBackgroundPixels": 181285,
+            "fraction": 0.28775396825396826
+          }
+        },
+        "changedPixels": 127330,
+        "changedFraction": 0.2021111111111111
+      },
+      "artApproval": "PENDING_HUMAN_REVIEW",
+      "sources": {
+        "before": {
+          "assetPath": "outputs/fleet-v2/ships/mission-cult-purifier.glb",
+          "sha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+          "bytes": 7387588
+        },
+        "after": {
+          "assetPath": "outputs/enemy-fleet-villain-v1/ships/mission-cult-purifier.glb",
+          "sha256": "392a5be5de17ff99a9f23dfd67dbc281c25d1ed0a361f3e081b18fab94d4ba3d",
+          "bytes": 13161980
+        }
+      },
+      "beforePngSha256": "f523bd627478cc5e737b7e1951fd705c13a761ddf6f2975d34449613ca897ebd",
+      "afterPngSha256": "fbd0c56720a9db21ce03a2258c4d353a258965d2877dcc4bc80eaf9d08534c1f",
+      "pairPngSha256": "34c3c9994308fd6c18bf84ae7efa54fc38f732b27b12b8b10da2b17b1bb00ecd",
+      "beforeSha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+      "afterSha256": "392a5be5de17ff99a9f23dfd67dbc281c25d1ed0a361f3e081b18fab94d4ba3d",
+      "sameCamera": true,
+      "passed": true
+    },
+    {
+      "id": "mission-ghost-artillery",
+      "bounds": {
+        "before": {
+          "min": [
+            -6.7870942160218,
+            -1.3120014184825128,
+            -2.24000311497361
+          ],
+          "max": [
+            7.03376149266633,
+            4.351614381195513,
+            2.3779681243354465
+          ]
+        },
+        "after": {
+          "min": [
+            -10.651186769105028,
+            -2.4703288156793817,
+            -6.037000462218391
+          ],
+          "max": [
+            7.89956862696247,
+            4.6784982114409495,
+            6.007625788240555
+          ]
+        },
+        "union": {
+          "min": [
+            -10.651186769105028,
+            -2.4703288156793817,
+            -6.037000462218391
+          ],
+          "max": [
+            7.89956862696247,
+            4.6784982114409495,
+            6.007625788240555
+          ]
+        }
+      },
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          -27.54122683185087,
+          19.943185485642093,
+          -33.506422070786805
+        ],
+        "target": [
+          -1.375809071071279,
+          1.104084697880784,
+          -0.014687336988917998
+        ],
+        "left": -12.338843883509954,
+        "right": 12.338843883509954,
+        "top": 9.596878576063299,
+        "bottom": -9.596878576063299,
+        "near": 0.11622276833108673,
+        "far": 92.97821466486938,
+        "matrixWorld": [
+          -0.7880243737245634,
+          -1.3877787807814457e-17,
+          0.615644041972315,
+          0,
+          0.24948167047314623,
+          0.9142117213560403,
+          0.3193365382056272,
+          0,
+          -0.5628289993541005,
+          0.4052368795349524,
+          -0.7204211191732488,
+          0,
+          -27.54122683185087,
+          19.943185485642093,
+          -33.506422070786805,
+          1
+        ],
+        "projectionMatrix": [
+          0.08104487012242967,
+          0,
+          0,
+          0,
+          0,
+          0.10420054730026672,
+          0,
+          0,
+          0,
+          0,
+          -0.02153733684959385,
+          0,
+          0,
+          0,
+          -1.0025031289111388,
+          1
+        ]
+      },
+      "animation": {
+        "before": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        },
+        "after": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        }
+      },
+      "render": {
+        "width": 900,
+        "height": 700,
+        "dpr": 1,
+        "background": "#f1e6cf",
+        "material": "MeshBasicMaterial preserving source maps/colors/vertexColors/alpha",
+        "outlineAutoClear": true,
+        "nativeCoordinates": true,
+        "toneMapping": "NoToneMapping",
+        "outputColorSpace": "SRGBColorSpace",
+        "lights": {
+          "ambient": {
+            "color": 16777215,
+            "intensity": 1.5
+          },
+          "directional": {
+            "color": 16773077,
+            "intensity": 2,
+            "position": [
+              6,
+              10,
+              8
+            ]
+          }
+        },
+        "content": {
+          "before": {
+            "nonBackgroundPixels": 64743,
+            "fraction": 0.10276666666666667
+          },
+          "after": {
+            "nonBackgroundPixels": 82562,
+            "fraction": 0.13105079365079364
+          }
+        },
+        "changedPixels": 43447,
+        "changedFraction": 0.06896349206349206
+      },
+      "artApproval": "PENDING_HUMAN_REVIEW",
+      "sources": {
+        "before": {
+          "assetPath": "outputs/fleet-v2/ships/mission-ghost-artillery.glb",
+          "sha256": "9904a65b67e7e2d4ac2da36825f4d68cf65a1bb2321edbe4e761b964866a8037",
+          "bytes": 7505328
+        },
+        "after": {
+          "assetPath": "outputs/enemy-fleet-villain-v1/ships/mission-ghost-artillery.glb",
+          "sha256": "ea383b305351a2fb0672107d3883bec90418054fa3759d8c117991ee59c3f243",
+          "bytes": 12503444
+        }
+      },
+      "beforePngSha256": "300f777caaaacd12e9982f31b57ae68cad88292ad442abfc2d900e6dd4897ccc",
+      "afterPngSha256": "00b2e29f4262cb8872379b9cca40c5aeb0caf4f05627129bd9b0ec8db8254dea",
+      "pairPngSha256": "b430c077c3af03c348fb9c48f3f0a17f022845c0b9f1e785b6020cf6fa1f499e",
+      "beforeSha256": "9904a65b67e7e2d4ac2da36825f4d68cf65a1bb2321edbe4e761b964866a8037",
+      "afterSha256": "ea383b305351a2fb0672107d3883bec90418054fa3759d8c117991ee59c3f243",
+      "sameCamera": true,
+      "passed": true
+    },
+    {
+      "id": "boss-last-inhale",
+      "bounds": {
+        "before": {
+          "min": [
+            -17.047968621528376,
+            -3.126385122419485,
+            -13.302627448259708
+          ],
+          "max": [
+            17.094623628148394,
+            7.642523337159064,
+            13.43841395210319
+          ]
+        },
+        "after": {
+          "min": [
+            -17.047968621528376,
+            -7.013435464373803,
+            -15.399143243017464
+          ],
+          "max": [
+            17.094623628148394,
+            21.40339643561417,
+            16.626107400380963
+          ]
+        },
+        "union": {
+          "min": [
+            -17.047968621528376,
+            -7.013435464373803,
+            -15.399143243017464
+          ],
+          "max": [
+            17.094623628148394,
+            21.40339643561417,
+            16.626107400380963
+          ]
+        }
+      },
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          -61.61967807116601,
+          51.57794449924292,
+          -78.28956505664755
+        ],
+        "target": [
+          0.02332750331000888,
+          7.194980485620183,
+          0.6134820786817494
+        ],
+        "left": -32.20112479041828,
+        "right": 32.20112479041828,
+        "top": 25.045319281436438,
+        "bottom": -25.045319281436438,
+        "near": 0.27380876627366924,
+        "far": 219.0470130189354,
+        "matrixWorld": [
+          -0.7880243737245636,
+          5.551115123125783e-17,
+          0.615644041972315,
+          0,
+          0.24948167047314623,
+          0.9142117213560403,
+          0.31933653820562724,
+          0,
+          -0.5628289993541005,
+          0.40523687953495247,
+          -0.720421119173249,
+          0,
+          -61.61967807116601,
+          51.57794449924292,
+          -78.28956505664755,
+          1
+        ],
+        "projectionMatrix": [
+          0.031054815833562392,
+          0,
+          0,
+          0,
+          0,
+          0.03992762035743736,
+          0,
+          0,
+          0,
+          0,
+          -0.009141887402673844,
+          0,
+          0,
+          0,
+          -1.002503128911139,
+          1
+        ]
+      },
+      "animation": {
+        "before": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        },
+        "after": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        }
+      },
+      "render": {
+        "width": 900,
+        "height": 700,
+        "dpr": 1,
+        "background": "#f1e6cf",
+        "material": "MeshBasicMaterial preserving source maps/colors/vertexColors/alpha",
+        "outlineAutoClear": true,
+        "nativeCoordinates": true,
+        "toneMapping": "NoToneMapping",
+        "outputColorSpace": "SRGBColorSpace",
+        "lights": {
+          "ambient": {
+            "color": 16777215,
+            "intensity": 1.5
+          },
+          "directional": {
+            "color": 16773077,
+            "intensity": 2,
+            "position": [
+              6,
+              10,
+              8
+            ]
+          }
+        },
+        "content": {
+          "before": {
+            "nonBackgroundPixels": 36178,
+            "fraction": 0.057425396825396824
+          },
+          "after": {
+            "nonBackgroundPixels": 105888,
+            "fraction": 0.16807619047619046
+          }
+        },
+        "changedPixels": 102869,
+        "changedFraction": 0.16328412698412698
+      },
+      "artApproval": "PENDING_HUMAN_REVIEW",
+      "sources": {
+        "before": {
+          "assetPath": "outputs/fleet-v2/ships/boss-last-inhale.glb",
+          "sha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+          "bytes": 6658952
+        },
+        "after": {
+          "assetPath": "outputs/enemy-fleet-villain-v1/ships/boss-last-inhale.glb",
+          "sha256": "b29eb4d5455fe27bd91d8989a89f9666f55c0c6e20a46e3b8da3b81621585719",
+          "bytes": 11678176
+        }
+      },
+      "beforePngSha256": "67b4cd813008b9da9e9d5a256035f7975531ecae77320fd2ee609c1ff6fec53d",
+      "afterPngSha256": "432416df9c4ba90891e1a17d1c5530523c0ebb5809348ebebe9734c63286b0e6",
+      "pairPngSha256": "d3def097eb7bec55f288cea433b4d241469eb1c77ea0d4360af970aeca1976e6",
+      "beforeSha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+      "afterSha256": "b29eb4d5455fe27bd91d8989a89f9666f55c0c6e20a46e3b8da3b81621585719",
+      "sameCamera": true,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "artApproval": "PENDING_HUMAN_REVIEW",
+  "note": "Pixel differences are technical evidence, not automatic approval of the 10x artistic direction."
+}

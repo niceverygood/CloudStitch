@@ -1,0 +1,47 @@
+{
+  "version": "harbor-v1.0.2-ready",
+  "scope": "source patch; actual integrated run is separately recorded in verification.json",
+  "ruleTests": {
+    "passed": 48,
+    "harbor": 12,
+    "shipyard": 11,
+    "save": 25
+  },
+  "files": [
+    {
+      "path": "tools/harbor/core.mjs",
+      "bytes": 10270,
+      "sha256": "9cae5e9bcb1c6fe453795a8fe4eb8eedcff9bb1e5c06958344125be8c5429a7c"
+    },
+    {
+      "path": "tools/harbor/adapters.mjs",
+      "bytes": 6118,
+      "sha256": "aac641234a776f0089eb3ac17d5746861789f2f9159ce05490d7eb2cc5197ab7"
+    },
+    {
+      "path": "tools/harbor/core.test.mjs",
+      "bytes": 10925,
+      "sha256": "af9f6ad78f5f79341278d0ddd471dda091c8bc50b36a039ecabf23fccf7bf787"
+    },
+    {
+      "path": "tools/shipyard/shipyard.mjs",
+      "bytes": 21081,
+      "sha256": "413839ac4b7a6208036562b9bf50ea364384a7fcdff7af84b5faa19b6ab788d9"
+    },
+    {
+      "path": "tools/harbor/verify-linked.mjs",
+      "bytes": 8522,
+      "sha256": "4d4b3bff10d2131679b3a80d31bc93a1cf9b4847f5cd8282af05ca3e4aa872c6"
+    },
+    {
+      "path": "tools/harbor/finalize-linked.mjs",
+      "bytes": 1495,
+      "sha256": "63bb388da07f26d57c417068282c63d6d16cb0fe0d65b0b6414869669f78c32b"
+    },
+    {
+      "path": "tools/harbor/LINKED_HANDOFF.md",
+      "bytes": 4028,
+      "sha256": "97c40bd7c210c34a63510fbecb9828a636b1c49d97c84785847d7ea36b260553"
+    }
+  ]
+}

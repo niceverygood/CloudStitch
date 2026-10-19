@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-19",
+  "owner": "boards_09_12",
+  "mode": "built-in image_gen",
+  "use_case": "stylized-concept",
+  "purpose": "12스테이지 제안 중 09~12 환경 무드보드",
+  "originals": "참조3장 및 기존 자산 보존. 생성 PNG를 재인코딩/후처리 없이 복사.",
+  "references": [
+    "outputs/ship-states-v1/three-lineages-selected-v1/three-lineages.png",
+    "outputs/enemy-base-moodboard-v2/moodboard.png",
+    "outputs/chapter1-final-boss-moodboard-v2/moodboard.png"
+  ],
+  "verification": "생성 결과를 직접 육안 확인. 09 여백을 타깃 수정1회. 네 파일 크기/SHA256/LFS 적용 확인. 게임 맵/플레이/실시간 효과 구현 아님.",
+  "tenfold_expression": "09 작은 호박빛과 거대한 안개 여백의 대담한 대비, 10 시대별 거대 함대의 층과 빈 항로, 11 크림석재/검은 봉인천의 의례적 거대 아치, 12 먼 황궁과 작은 생활 갑판의 감정 회수. 큰 주형태→중간 기능→생활 재료의 계층을 활용.",
+  "entries": [
+    {
+      "id": "09",
+      "image": "outputs/world-moodboards-v1/images/09-lantern-below-clouds.png",
+      "prompt": "outputs/world-moodboards-v1/prompts/09-lantern-below-clouds.txt",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2392873,
+      "sha256": "4E5CB1BC756CC2D388459CC5999807CDB2F70079A2C86614321C1E94B77F0140",
+      "lfs": "filter=lfs",
+      "visual_review": "넓은 안개 여백·단일 낮은 등대의 호박빛·거대 부러진 계류 고리·작은 배를 확인. 첫 생성의 과도한 도시를 타깃 수정1회로 제거.",
+      "limitation": "수정본의 아주 먼 작은 실루엣은 세부 식별에 한계가 있음. 초기본은 프로젝트 미채택.",
+      "technical_status": "file_present_png_lfs_recorded",
+      "art_status": "assistant_visual_review_complete_user_approval_pending",
+      "iterations": 2
+    },
+    {
+      "id": "10",
+      "image": "outputs/world-moodboards-v1/images/10-fleet-of-forgotten-names.png",
+      "prompt": "outputs/world-moodboards-v1/prompts/10-fleet-of-forgotten-names.txt",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3300008,
+      "sha256": "AEDAA50FEED94CDE9CDEFD972E10752547702B41FF2A088BD2280384F67EF886",
+      "lfs": "filter=lfs",
+      "visual_review": "거대 빈 기낭틀·접힌 돛·서로 다른 높이의 낡은 선체 층과 넓은 곡선 항로, 극소형 귀환호·작업대 확인.",
+      "limitation": "청록 기억 잔광은 계류 고리의 절제된 색으로 제안되며 실제 효과/기믹이 아님.",
+      "technical_status": "file_present_png_lfs_recorded",
+      "art_status": "assistant_visual_review_complete_user_approval_pending",
+      "iterations": 1
+    },
+    {
+      "id": "11",
+      "image": "outputs/world-moodboards-v1/images/11-palace-beneath-black-canopy.png",
+      "prompt": "outputs/world-moodboards-v1/prompts/11-palace-beneath-black-canopy.txt",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3089156,
+      "sha256": "80DBE1412188A5755FDB706882E4EEEB5BDE77F2D730DA30865DA634C14A8288",
+      "lfs": "filter=lfs",
+      "visual_review": "크림 석재·황동·큰 의례적 아치·비대칭 궁전 층·검은 봉인천/봉합·소수 온기 창·작은 배 확인.",
+      "limitation": "정지 이미지에서 빗줄기의 상승 방향은 확정적으로 검증할 수 없음. 애니메이션이 아님.",
+      "technical_status": "file_present_png_lfs_recorded",
+      "art_status": "assistant_visual_review_complete_user_approval_pending",
+      "iterations": 1
+    },
+    {
+      "id": "12",
+      "image": "outputs/world-moodboards-v1/images/12-last-service-deck.png",
+      "prompt": "outputs/world-moodboards-v1/prompts/12-last-service-deck.txt",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3069874,
+      "sha256": "B29B72A510DF5C785B0487136112A9F3A4B55AF34E8A54A36B37653B16F40EA4",
+      "lfs": "filter=lfs",
+      "visual_review": "조용한 목재 서비스 갑판·크림 돌 아치·산호 수선 천·찻잔과 도구·크림/목재/청록/황동 성장선·멀리 열린 접근로 확인. 시장·지상 엔딩·새 보스 없음.",
+      "limitation": "익명 작은 인물은 3명으로 생성됨(프롬프트2명). 성장선은 재료/형태 시안이며 특정 계열 확정이나 최종 엔딩이 아님.",
+      "technical_status": "file_present_png_lfs_recorded",
+      "art_status": "assistant_visual_review_complete_user_approval_pending",
+      "iterations": 1
+    }
+  ]
+}

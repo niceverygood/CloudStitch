@@ -1,0 +1,406 @@
+{
+  "revision": "chapter2-fleet-assets-v1-source-r1",
+  "status": "CPU_SOURCE_READY_NO_EXPORT_OR_BROWSER",
+  "date": "2026-10-19",
+  "scope": "8 independent ships plus 1 miniboss, curved layered shell/coral/cloth/rope geometry and embedded handpainted atlas",
+  "ownedSource": "tools/chapter2-fleet-assets/",
+  "ownedOutput": "outputs/chapter2-fleet-assets-v1/",
+  "source": [
+    {
+      "path": "tools/chapter2-fleet-assets/build.cjs",
+      "bytes": 5130,
+      "sha256": "41085385f05f24f5d1c6a0062cd703ce3fb11dc5503c3e0796f13a091c974c1e"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/generate.mjs",
+      "bytes": 7132,
+      "sha256": "ae45a4184794d29003813a46d8e310019e9106ba2ffb5890dc6f7cae16f83794"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/kit.mjs",
+      "bytes": 20288,
+      "sha256": "9db86654f0489f515c94db951e3569abfeef14ba5237127aac234507072f63de"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/models.mjs",
+      "bytes": 15904,
+      "sha256": "1fa81e838a08b2b9378eb3df51bbd08faa3cda6b1119aa59df3ee314f1ca8616"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/qa.cjs",
+      "bytes": 8605,
+      "sha256": "24f2c4e2801abbe07637cfc56c4477163d844427024f75b8e3887d501564ccd9"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/review.js",
+      "bytes": 23876,
+      "sha256": "8b1b5a8cb4090112b052516cac024fc97ab27620edf61c8c28a4f6bd36cf962d"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/template.html",
+      "bytes": 25544,
+      "sha256": "8f438953b6a17e71303e709258c3246498542123c05885bc126ef80ca6e10051"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/verify.cjs",
+      "bytes": 2879,
+      "sha256": "c60fa0e145ef08554320c030946600cfab3cf3ebc8d375f5b20684b653d38e5d"
+    }
+  ],
+  "readOnlyInputs": [
+    {
+      "path": "outputs/chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "bytes": 3624446,
+      "sha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf"
+    },
+    {
+      "path": "outputs/chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "bytes": 3575518,
+      "sha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71"
+    },
+    {
+      "path": "outputs/chapter2-enemy-moodboards-v1/miniboss-gatekeeper.png",
+      "bytes": 3666183,
+      "sha256": "bfaa907653e5d015d03972c587e89f7d03c01cfc45f84e5d44ad34947f2eb003"
+    },
+    {
+      "path": "outputs/chapter2-enemy-moodboards-v1/catalog.json",
+      "bytes": 1961,
+      "sha256": "9424a81e16a4fa0848926c26828e4a778c877b5c0d8822d536d2a59fe6a1c18b"
+    },
+    {
+      "path": "outputs/chapter2-enemy-fleet-plan-v1/PLAN.txt",
+      "bytes": 19206,
+      "sha256": "aad196c0a5f327c4abdb887ecc155bdd9287fe1ce8b148d19a26da43a2acd4ee"
+    },
+    {
+      "path": "docs/ART_DIRECTION.txt",
+      "bytes": 9045,
+      "sha256": "37d051ea071979c618918393f7e38a0a6053d77df312949ae07bbe4acf540ad8"
+    },
+    {
+      "path": "docs/SHIP_WEAPON_MOUNTING.json",
+      "bytes": 2831,
+      "sha256": "cad9db05b14e956c31af02fdbb6d380d12bbc62f5071c02cad4eba888e2d418c"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/review.js",
+      "bytes": 23763,
+      "sha256": "73b39889e0dab0037af68aa27b5674702d4cdfb577061fd447606c7c28a4e7cb"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/template.html",
+      "bytes": 25533,
+      "sha256": "5aaf959e0b7180d911a978ea2bc9938915d56d77f2b671ce93f882faac0fdb8f"
+    },
+    {
+      "path": "tools/lib/runtime.cjs",
+      "bytes": 1969,
+      "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+    },
+    {
+      "path": "tools/lib/paths.cjs",
+      "bytes": 187,
+      "sha256": "950b9b717d2b00b8d5c126a0c6334861395fa36aa53810d810dc9a8dca4ad54a"
+    }
+  ],
+  "sourceCensusPath": "outputs/chapter2-fleet-assets-v1/source-census.json",
+  "models": [
+    {
+      "id": "C2-01",
+      "kind": "needle",
+      "name": "붉은바늘 정찰정",
+      "role": "정찰 · 기관총",
+      "board": "fleet-hunters-4.png",
+      "panel": "top-left",
+      "shape": "long needle hull, swept stitched fins",
+      "triangles": 125420,
+      "vertices": 136031,
+      "meshes": 137,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        23.74052413225174,
+        8.314171314446158,
+        5.343520879745483
+      ],
+      "authoredComponents": 1404,
+      "featureCounts": {
+        "shellPlates": 14,
+        "clothPanels": 4,
+        "coralHorns": 0,
+        "ropePaths": 64,
+        "windows": 6,
+        "lanterns": 4,
+        "winches": 0
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "referenceSha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf"
+    },
+    {
+      "id": "C2-02",
+      "kind": "capture",
+      "name": "집게갈고리 포획선",
+      "role": "포획 · 작살과 윈치",
+      "board": "fleet-hunters-4.png",
+      "panel": "top-right",
+      "shape": "open C-shaped fossil crane and capture cradle",
+      "triangles": 136092,
+      "vertices": 146804,
+      "meshes": 155,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        17.04108920097351,
+        12.236259460449219,
+        7.3067500143051145
+      ],
+      "authoredComponents": 1203,
+      "featureCounts": {
+        "shellPlates": 18,
+        "clothPanels": 1,
+        "coralHorns": 0,
+        "ropePaths": 66,
+        "windows": 6,
+        "lanterns": 4,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "referenceSha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf"
+    },
+    {
+      "id": "C2-03",
+      "kind": "shield",
+      "name": "거울패각 방패함",
+      "role": "전면 장갑 · 기관총",
+      "board": "fleet-hunters-4.png",
+      "panel": "bottom-left",
+      "shape": "upright overlapping perforated scallop fan",
+      "triangles": 123348,
+      "vertices": 160672,
+      "meshes": 160,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        12.595000162124634,
+        10.210822486877442,
+        7.487785948562294
+      ],
+      "authoredComponents": 1001,
+      "featureCounts": {
+        "shellPlates": 21,
+        "clothPanels": 1,
+        "coralHorns": 0,
+        "ropePaths": 38,
+        "windows": 6,
+        "lanterns": 4,
+        "winches": 0
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "referenceSha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf"
+    },
+    {
+      "id": "C2-04",
+      "kind": "trumpet",
+      "name": "적산호 나팔함",
+      "role": "측면 중포격",
+      "board": "fleet-hunters-4.png",
+      "panel": "bottom-right",
+      "shape": "low broadside deck and dominant hollow coral trumpet",
+      "triangles": 135196,
+      "vertices": 157036,
+      "meshes": 156,
+      "materials": 16,
+      "invalid": 0,
+      "bounds": [
+        15.675217250879399,
+        9.678452730178833,
+        13.608607579124163
+      ],
+      "authoredComponents": 1106,
+      "featureCounts": {
+        "shellPlates": 20,
+        "clothPanels": 1,
+        "coralHorns": 1,
+        "ropePaths": 38,
+        "windows": 6,
+        "lanterns": 4,
+        "winches": 0
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "referenceSha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf"
+    },
+    {
+      "id": "C2-05",
+      "kind": "conch",
+      "name": "소라 곡사함",
+      "role": "곡사 · 박격포",
+      "board": "fleet-specialists-4.png",
+      "panel": "top-left",
+      "shape": "tilted volumetric conch mortar and suspended shell basket",
+      "triangles": 118088,
+      "vertices": 117521,
+      "meshes": 125,
+      "materials": 16,
+      "invalid": 0,
+      "bounds": [
+        12.903062970321297,
+        10.86607261986434,
+        8.013000085830688
+      ],
+      "authoredComponents": 1071,
+      "featureCounts": {
+        "shellPlates": 12,
+        "clothPanels": 1,
+        "coralHorns": 0,
+        "ropePaths": 41,
+        "windows": 6,
+        "lanterns": 4,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "referenceSha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71"
+    },
+    {
+      "id": "C2-06",
+      "kind": "lantern",
+      "name": "해파리 등불함",
+      "role": "근접 화염",
+      "board": "fleet-specialists-4.png",
+      "panel": "top-right",
+      "shape": "wide stitched bell canopy and hanging furnace gondola",
+      "triangles": 144676,
+      "vertices": 159184,
+      "meshes": 181,
+      "materials": 16,
+      "invalid": 0,
+      "bounds": [
+        13.824148178100586,
+        12.190991562604903,
+        9.198994636535645
+      ],
+      "authoredComponents": 1067,
+      "featureCounts": {
+        "shellPlates": 22,
+        "clothPanels": 0,
+        "coralHorns": 1,
+        "ropePaths": 17,
+        "windows": 6,
+        "lanterns": 12,
+        "winches": 0
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "referenceSha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71"
+    },
+    {
+      "id": "C2-07",
+      "kind": "chain",
+      "name": "톱지느러미 사슬정",
+      "role": "추진 방해 · 사슬탄",
+      "board": "fleet-specialists-4.png",
+      "panel": "bottom-left",
+      "shape": "broad low wedge, fixed rib fins, linked shot and chain reel",
+      "triangles": 132832,
+      "vertices": 148987,
+      "meshes": 162,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        15.675217250879399,
+        7.968452453613281,
+        11.9085111618042
+      ],
+      "authoredComponents": 1096,
+      "featureCounts": {
+        "shellPlates": 20,
+        "clothPanels": 1,
+        "coralHorns": 0,
+        "ropePaths": 55,
+        "windows": 6,
+        "lanterns": 4,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "referenceSha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71"
+    },
+    {
+      "id": "C2-08",
+      "kind": "weaver",
+      "name": "진주 실잣기 수복선",
+      "role": "기계식 제한 수복",
+      "board": "fleet-specialists-4.png",
+      "panel": "bottom-right",
+      "shape": "asymmetric sewn pearl buoyancy cluster and repair arm/spool",
+      "triangles": 118944,
+      "vertices": 120348,
+      "meshes": 130,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        14.751238081422034,
+        12.001816034317017,
+        8.128615379333496
+      ],
+      "authoredComponents": 1186,
+      "featureCounts": {
+        "shellPlates": 12,
+        "clothPanels": 1,
+        "coralHorns": 0,
+        "ropePaths": 66,
+        "windows": 6,
+        "lanterns": 4,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "referenceSha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71"
+    },
+    {
+      "id": "C2-MINI-01",
+      "kind": "gatekeeper",
+      "name": "적조의 문지기",
+      "role": "중간보스 · 관문 호위함",
+      "board": "miniboss-gatekeeper.png",
+      "panel": "hero-left",
+      "shape": "open inverted-U fossil arch, asymmetric capture and cannon decks",
+      "triangles": 249732,
+      "vertices": 281351,
+      "meshes": 241,
+      "materials": 17,
+      "invalid": 0,
+      "bounds": [
+        25.137498269081117,
+        21.211597105200457,
+        16.581151977137964
+      ],
+      "authoredComponents": 2088,
+      "featureCounts": {
+        "shellPlates": 32,
+        "clothPanels": 2,
+        "coralHorns": 2,
+        "ropePaths": 88,
+        "windows": 12,
+        "lanterns": 8,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/miniboss-gatekeeper.png",
+      "referenceSha256": "bfaa907653e5d015d03972c587e89f7d03c01cfc45f84e5d44ad34947f2eb003"
+    }
+  ],
+  "requestedResource": "One coordinated slot: CPU9GLB export then official validator then one sequential browser for 9reloads/27modes/downloads/9mobile/representative2x3mode120frameghost/captures",
+  "estimatedSeconds": 540,
+  "commands": [
+    "node tools/chapter2-fleet-assets/build.cjs --execute",
+    "node tools/chapter2-fleet-assets/verify.cjs",
+    "node tools/chapter2-fleet-assets/qa.cjs"
+  ],
+  "exporterStarted": false,
+  "browserStarted": false,
+  "paidGeneration": false,
+  "subagentsStarted": 0,
+  "artApproval": "pending actual render and human review",
+  "limitations": [
+    "Relative design units, no gameplay/collision/sockets/AI/LOD",
+    "Hidden sides interpreted from reference",
+    "High-detail art version, final performance budget not decided"
+  ]
+}

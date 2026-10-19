@@ -1,0 +1,1516 @@
+{
+  "version": "cloudstitch-cinematic-v5.0.0",
+  "title": "Cloudstitch · 시네마틱 사운드 v5",
+  "assets": [
+    {
+      "id": "fire-machinegun",
+      "label": "기관총 · 단발",
+      "category": "weapon",
+      "loop": false,
+      "description": "기존 ElevenLabs 기관총 시안 재사용. 한 발의 압력 충격·황동 급탄·목재 총좌 반동이며 연사본은 검수용 배치다.",
+      "source": {
+        "file": "original/fire-machinegun.wav",
+        "originalRelative": "outputs/audio-grand-v4/enhanced/fire-machinegun.wav",
+        "sha256": "2c946f2b4365d4bf488febd1ac5af1b3fa549c98f72d2a34263be5336978e6e2",
+        "bytes": 201564,
+        "provider": "Cloudstitch · v4 (사용자 표현 반려)",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "processingSource": {
+        "path": "work/audio/rich-v1/decoded/fire-machinegun.wav",
+        "sha256": "9e51d788b78ac4338045830d5411cfd5c3262a870d93268bfa29a76cd9a17c8a",
+        "format": "IEEE_FLOAT32",
+        "frames": 35280,
+        "sampleRate": 44100,
+        "channels": 2,
+        "originalMp3Relative": "outputs/audio-review-v2/audio/fire-machinegun.mp3",
+        "originalMp3Sha256": "bd3a66b2b94b175b1e45ba17bfd93a8654d2efd0d33d287d14407a548c224d22",
+        "decodingReceipt": "work/audio/rich-v1/decoding.json"
+      },
+      "provenance": {
+        "originalMp3": {
+          "file": "original/fire-machinegun.mp3",
+          "originalRelative": "outputs/audio-review-v2/audio/fire-machinegun.mp3",
+          "sha256": "bd3a66b2b94b175b1e45ba17bfd93a8654d2efd0d33d287d14407a548c224d22",
+          "bytes": 13835,
+          "provider": "ElevenLabs",
+          "model": "eleven_text_to_sound_v2",
+          "generationStatus": "existing_reused",
+          "prompt": "Exactly one isolated shot from a small handcrafted airship machine gun. Immediate dry punchy tak, rounded low-mid pressure crack, short warm wooden mount knock, crisp brass bolt snap and tiny shell tick, fast natural decay. Tactile, sturdy, slightly stylized game SFX with smooth treble. No burst, repeated shots, voices, music, wind, background, long reverb or explosion.",
+          "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+        },
+        "previousRecipe": {
+          "version": "cloudstitch-low-mid-dsp-v2.0.0",
+          "id": "fire-machinegun",
+          "material": "pressure",
+          "loop": false,
+          "description": "포신·압력의 중저음 몸통",
+          "input": "preserved rich-v1 enhanced PCM; no replacement or regeneration",
+          "highpass": {
+            "type": "highpass",
+            "hz": 35,
+            "q": 0.7071067811865476
+          },
+          "lowShelf": {
+            "type": "lowshelf",
+            "hz": 100,
+            "gainDb": 2.1,
+            "slope": 1
+          },
+          "lowMidBody": {
+            "type": "peaking",
+            "hz": 218,
+            "gainDb": 4.6,
+            "q": 0.76
+          },
+          "targetPeak": 0.74,
+          "upwardNormalization": false,
+          "rmsNormalization": false,
+          "tailSeconds": 0,
+          "frameCountPolicy": "exact input frames and channels",
+          "loopWarmSeconds": 0.6,
+          "seamSeconds": 0.005,
+          "edgeFadeSeconds": {
+            "in": 0.001,
+            "out": 0.006
+          },
+          "claims": "EQ candidate; human listening approval and game installation pending"
+        }
+      },
+      "file": "enhanced/fire-machinegun.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "player-fire",
+          "enemy-fire"
+        ],
+        "note": "기존 기관총 MP3/WAV 재사용. weaponId === 01-machine-gun일 때만. 실제 현재 player-fire에 존재하며 새 자산 설치는 별도."
+      },
+      "priority": 2,
+      "sourceHumanReview": "unreviewed",
+      "status": "cinematic_redesign_unreviewed",
+      "humanApproved": false,
+      "gameplayInstalled": false,
+      "sha256": "815bcb0cad8c0ae0408a621e89bf0b5cc6ec1b565376ee21fc0e137741acce4b",
+      "bytes": 134108,
+      "duration": 0.76,
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "metrics": {
+        "source": {
+          "peak": 0.709991455078125,
+          "rms": 0.0723539169582655,
+          "duration": 1.1424036281179137,
+          "frames": 50380
+        },
+        "processing": {
+          "frames": 35280,
+          "duration": 0.8,
+          "peak": 1,
+          "rms": 0.1312150163242413,
+          "dc": 0.003132672559509175,
+          "finite": true,
+          "sampleRate": 44100,
+          "channels": 2
+        },
+        "output": {
+          "frames": 33516,
+          "duration": 0.76,
+          "peak": 0.6986068487167358,
+          "rms": 0.17062305473989745,
+          "dc": -0.0013750633982286562,
+          "finite": true,
+          "sampleRate": 44100,
+          "channels": 2
+        }
+      },
+      "recipe": {
+        "version": "cloudstitch-cinematic-v5.0.0",
+        "profile": {
+          "name": "heavy autocannon single round",
+          "length": 0.76,
+          "contact": 0,
+          "rate": 0.88,
+          "main": 0.75,
+          "sub": 0.92,
+          "subHz": 75,
+          "body": 0.9,
+          "crack": 1.18,
+          "air": 0.42,
+          "room": 0.21,
+          "rt": 0.46,
+          "pre": 0.005,
+          "material": [
+            {
+              "id": "hit-engine",
+              "rate": 0.72,
+              "length": 0.1,
+              "amount": 0.62,
+              "delay": 0.002,
+              "lo": 75,
+              "hi": 2400,
+              "pan": 0
+            },
+            {
+              "id": "hit-armor",
+              "rate": 0.82,
+              "length": 0.055,
+              "amount": 0.45,
+              "delay": 0.055,
+              "lo": 500,
+              "hi": 7000,
+              "pan": 0.3
+            },
+            {
+              "id": "machinegun-feed",
+              "rate": 0.95,
+              "length": 0.09,
+              "amount": 0.24,
+              "delay": 0.14,
+              "lo": 600,
+              "hi": 6000,
+              "pan": -0.3
+            }
+          ]
+        },
+        "layers": [
+          {
+            "kind": "original contact",
+            "id": "fire-machinegun",
+            "sha256": "9e51d788b78ac4338045830d5411cfd5c3262a870d93268bfa29a76cd9a17c8a",
+            "offset": 0,
+            "rate": 0.88
+          },
+          {
+            "kind": "synthesized accelerating pressure crest, concurrent with immediate attack",
+            "start": 0,
+            "duration": 0.005
+          },
+          {
+            "kind": "synthesized falling pressure",
+            "start": 0,
+            "hz": 75,
+            "duration": 0.23
+          },
+          {
+            "kind": "synthesized broadband rupture",
+            "start": 0,
+            "duration": 0.1
+          },
+          {
+            "kind": "recorded material",
+            "id": "hit-engine",
+            "sha256": "02d0cb4d0d9fe86532a56f25ccb0d8e85dfcb7dce701b87bae082ea6537e6db3",
+            "start": 0.002,
+            "duration": 0.1,
+            "rate": 0.72
+          },
+          {
+            "kind": "recorded material",
+            "id": "hit-armor",
+            "sha256": "7d641697345615de258e6c36dda7e8a5f403fb146eb2d68be1a7ec0a7d6883da",
+            "start": 0.055,
+            "duration": 0.055,
+            "rate": 0.82
+          },
+          {
+            "kind": "recorded material",
+            "id": "machinegun-feed",
+            "sha256": "390f1f9eb3bd60a683b5b2ec9cce470a7c24730b62c3c1e5cb0abbd68b13c95a",
+            "start": 0.14,
+            "duration": 0.09,
+            "rate": 0.95
+          },
+          {
+            "kind": "synthesized turbulent stereo discharge",
+            "start": 0.025,
+            "duration": 0.19
+          },
+          {
+            "kind": "dense diffuse aftermath",
+            "rt60": 0.46,
+            "start": 0.041,
+            "stereo": true
+          }
+        ],
+        "contactSeconds": 0,
+        "loop": false,
+        "description": "heavy autocannon single round",
+        "syntheticLayers": true,
+        "sourceInput": "first decoded Float32",
+        "humanApproval": false,
+        "gameInstalled": false,
+        "expressionGoal": "Radically redesigned cinematic scale; tenfold is a listening goal, not gain or a measured approval."
+      },
+      "richDescription": "heavy autocannon single round",
+      "derivation": {
+        "processing": "Original Float32 material + deterministic original synthesis; not enhanced v4 input",
+        "paidGenerationRequests": 0,
+        "dspSha256": "8065fc4b6226cd654785f1319cacb216cd696773177ef80f2c02eec954deb292"
+      },
+      "previousV4Recipe": {
+        "version": "cloudstitch-grand-composition-v4.0.0",
+        "id": "fire-machinegun",
+        "loop": false,
+        "baseRecipe": {
+          "version": "cloudstitch-grand-material-v3.0.0",
+          "id": "fire-machinegun",
+          "material": "pressure",
+          "loop": false,
+          "seed": 2546185825,
+          "description": "낮은 포신 압력·단단한 몸통·짙은 짧은 공간",
+          "processingInput": "original preserved native-decoded MP3 Float32 PCM, not cumulative EQ outputs",
+          "pitchRatio": 0.84,
+          "pitchMethod": "source resampling at a lower rate; full source preserved",
+          "lowpassHz": 5300,
+          "highpassHz": 35,
+          "highShelfHz": 2600,
+          "highShelfDb": -4.5,
+          "body": {
+            "sourceDerived": true,
+            "monoCore": true,
+            "hz": 175,
+            "q": 0.83,
+            "peakingGainDb": 5.5,
+            "mix": 0.77,
+            "lowpassHz": 680,
+            "highpassHz": 42,
+            "saturationDrive": 2.25,
+            "envelopeAttackSeconds": 0.008,
+            "envelopeReleaseSeconds": 0.085
+          },
+          "attack": {
+            "sourceOnly": true,
+            "detailMix": 0.075,
+            "lookbackSeconds": 0.009
+          },
+          "dynamics": {
+            "thresholdTimesSourceRms": 1.65,
+            "ratio": 2.8,
+            "attackSeconds": 0.006,
+            "releaseSeconds": 0.075,
+            "parallelWarmDrive": 1.8
+          },
+          "space": {
+            "mix": 0.16,
+            "earlyReflections": [
+              {
+                "seconds": 0.0077,
+                "gain": 0.19
+              },
+              {
+                "seconds": 0.013,
+                "gain": 0.15
+              },
+              {
+                "seconds": 0.0197,
+                "gain": 0.12
+              },
+              {
+                "seconds": 0.026,
+                "gain": 0.09
+              },
+              {
+                "seconds": 0.034,
+                "gain": 0.065
+              },
+              {
+                "seconds": 0.043,
+                "gain": 0.04
+              }
+            ],
+            "diffusion": {
+              "method": "four dark damped parallel feedback delays followed by two allpass diffusers",
+              "delaysSeconds": [
+                0.03131,
+                0.043,
+                0.060239999999999995,
+                0.07393
+              ],
+              "allpassSeconds": [
+                0.0117,
+                0.0179
+              ],
+              "allpassFeedback": 0.47,
+              "dampingHz": 1900,
+              "rt60Seconds": 0.1,
+              "sourceDerived": true
+            }
+          },
+          "tailSeconds": 0.115,
+          "peak": 0.72,
+          "peakLimit": 0.72,
+          "edgeFadeSeconds": {
+            "in": 0.0015,
+            "out": 0.009
+          },
+          "seamSeconds": 0.006,
+          "dialogue": 0,
+          "music": 0,
+          "addedOscillators": 0,
+          "newGunshots": 0,
+          "approval": false,
+          "limits": "Candidate material redesign. Numerical safety does not approve grandeur, cue identity or human listening."
+        },
+        "description": "single contact: pressure / timber mount / brass action",
+        "pitchRatio": 0.84,
+        "extraTailSeconds": 0.075,
+        "mainMix": 1,
+        "stems": [
+          {
+            "id": "mortar-impact",
+            "role": "short pressure core only",
+            "fragmentSeconds": 0.08,
+            "rate": 0.63,
+            "mix": 0.68,
+            "lowpassHz": 440,
+            "highpassHz": 42,
+            "relativeContactOffsetSeconds": 0,
+            "offsetSeconds": 0.015681351905841703,
+            "sourceStartSeconds": 0.04573469387755102,
+            "donorOnsetSeconds": 0.04573469387755102,
+            "renderedFrames": 5600,
+            "sourceSha256": "3e41a0b2be34691dce0bdb73cea49cc2a3eb12f91466d973de9f03b556ec370e",
+            "sourcePath": "work/audio/rich-v1/decoded/mortar-impact.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 65268,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "3e41a0b2be34691dce0bdb73cea49cc2a3eb12f91466d973de9f03b556ec370e",
+            "processingPath": "work/audio/rich-v1/decoded/mortar-impact.wav"
+          },
+          {
+            "id": "hit-wood",
+            "role": "timber mount recoil",
+            "fragmentSeconds": 0.065,
+            "rate": 0.72,
+            "mix": 0.58,
+            "lowpassHz": 1200,
+            "highpassHz": 85,
+            "relativeContactOffsetSeconds": 0.002,
+            "offsetSeconds": 0.017681351905841705,
+            "sourceStartSeconds": 0.00006575963718820853,
+            "donorOnsetSeconds": 0.00006575963718820853,
+            "renderedFrames": 3982,
+            "sourceSha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "sourcePath": "work/audio/rich-v1/decoded/hit-wood.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 29999,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "processingPath": "work/audio/rich-v1/decoded/hit-wood.wav"
+          },
+          {
+            "id": "hit-armor",
+            "role": "brass action contact",
+            "fragmentSeconds": 0.036,
+            "rate": 0.82,
+            "mix": 0.43,
+            "lowpassHz": 2200,
+            "highpassHz": 280,
+            "relativeContactOffsetSeconds": 0.004,
+            "offsetSeconds": 0.019681351905841703,
+            "sourceStartSeconds": 0.034238095238095234,
+            "donorOnsetSeconds": 0.034238095238095234,
+            "renderedFrames": 1937,
+            "sourceSha256": "7d641697345615de258e6c36dda7e8a5f403fb146eb2d68be1a7ec0a7d6883da",
+            "sourcePath": "work/audio/rich-v1/decoded/hit-armor.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 38808,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "7d641697345615de258e6c36dda7e8a5f403fb146eb2d68be1a7ec0a7d6883da",
+            "processingPath": "work/audio/rich-v1/decoded/hit-armor.wav"
+          },
+          {
+            "id": "hit-engine",
+            "role": "compressed mechanism body",
+            "fragmentSeconds": 0.052,
+            "rate": 0.67,
+            "mix": 0.34,
+            "lowpassHz": 720,
+            "highpassHz": 65,
+            "relativeContactOffsetSeconds": 0.001,
+            "offsetSeconds": 0.016681351905841704,
+            "sourceStartSeconds": 0,
+            "donorOnsetSeconds": 0,
+            "renderedFrames": 3423,
+            "sourceSha256": "02d0cb4d0d9fe86532a56f25ccb0d8e85dfcb7dce701b87bae082ea6537e6db3",
+            "sourcePath": "work/audio/rich-v1/decoded/hit-engine.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 47628,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "02d0cb4d0d9fe86532a56f25ccb0d8e85dfcb7dce701b87bae082ea6537e6db3",
+            "processingPath": "work/audio/rich-v1/decoded/hit-engine.wav"
+          }
+        ],
+        "stages": [
+          "original source contact and lowered physical material",
+          "aligned pressure / timber / brass or machine fragment composition",
+          "source-derived recoil / residue",
+          "dense dark diffusion space"
+        ],
+        "space": {
+          "mix": 0.27,
+          "large": false,
+          "rt60Seconds": 0.44,
+          "sourceDerived": true,
+          "independentBeats": 0
+        },
+        "peak": 0.71,
+        "midLowMono": true,
+        "addedGunshots": 0,
+        "addedOscillators": 0,
+        "dialogue": 0,
+        "music": 0,
+        "qualityPending": true,
+        "approval": false,
+        "claim": "A bolder material composition candidate. No numerical claim of 10x grandeur or human approval."
+      }
+    },
+    {
+      "id": "fire-cannon",
+      "label": "함포 · 발사·목재 반동",
+      "category": "weapon",
+      "loop": false,
+      "description": "낮고 짧은 공기압 발사와 뒤따르는 목재 갑판·반동 레일의 충격. 잔향은 짧게.",
+      "source": {
+        "file": "original/fire-cannon.wav",
+        "originalRelative": "outputs/audio-grand-v4/enhanced/fire-cannon.wav",
+        "sha256": "cae72cedd5c8d020996aeb9c866fd278db7bd575433220f628efb689a8f12bad",
+        "bytes": 512284,
+        "provider": "Cloudstitch · v4 (사용자 표현 반려)",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "processingSource": {
+        "path": "work/audio/rich-v1/decoded/fire-cannon.wav",
+        "sha256": "6b7606e4b759ffe4f8ee7843a2c24a84ebb9a1ded158c25c5b33f6b1f987b894",
+        "format": "IEEE_FLOAT32",
+        "frames": 52920,
+        "sampleRate": 44100,
+        "channels": 2,
+        "originalMp3Relative": "outputs/audio-review-v2/audio/fire-cannon.mp3",
+        "originalMp3Sha256": "63751d20bcfb5264fe6fcc6a28e3b5628a426fcb13d943c65ac5cfa82d75a4e3",
+        "decodingReceipt": "work/audio/rich-v1/decoding.json"
+      },
+      "provenance": {
+        "originalMp3": {
+          "file": "original/fire-cannon.mp3",
+          "originalRelative": "outputs/audio-review-v2/audio/fire-cannon.mp3",
+          "sha256": "63751d20bcfb5264fe6fcc6a28e3b5628a426fcb13d943c65ac5cfa82d75a4e3",
+          "bytes": 20105,
+          "provider": "ElevenLabs",
+          "model": "eleven_text_to_sound_v2",
+          "generationStatus": "generated_unreviewed",
+          "prompt": "One deck cannon firing from a small wooden airship: a compact low pressure report, immediate heavy wooden carriage recoil and brief brass rail rattle. Firm and readable, short decay, no huge explosion tail. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+          "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+        },
+        "previousRecipe": {
+          "version": "cloudstitch-low-mid-dsp-v2.0.0",
+          "id": "fire-cannon",
+          "material": "pressure",
+          "loop": false,
+          "description": "포신·압력의 중저음 몸통",
+          "input": "preserved rich-v1 enhanced PCM; no replacement or regeneration",
+          "highpass": {
+            "type": "highpass",
+            "hz": 35,
+            "q": 0.7071067811865476
+          },
+          "lowShelf": {
+            "type": "lowshelf",
+            "hz": 90,
+            "gainDb": 2.5,
+            "slope": 1
+          },
+          "lowMidBody": {
+            "type": "peaking",
+            "hz": 156,
+            "gainDb": 5,
+            "q": 0.76
+          },
+          "targetPeak": 0.74,
+          "upwardNormalization": false,
+          "rmsNormalization": false,
+          "tailSeconds": 0,
+          "frameCountPolicy": "exact input frames and channels",
+          "loopWarmSeconds": 0.6,
+          "seamSeconds": 0.005,
+          "edgeFadeSeconds": {
+            "in": 0.001,
+            "out": 0.006
+          },
+          "claims": "EQ candidate; human listening approval and game installation pending"
+        }
+      },
+      "file": "enhanced/fire-cannon.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "player-fire",
+          "enemy-fire"
+        ],
+        "note": "weaponId === 02-deck-cannon. 현재 enemy-fire의 trainingPattern 간이 탄은 실제 이벤트지만 완전한 함포 역학 구현과 구분."
+      },
+      "priority": 2,
+      "sourceHumanReview": "unreviewed",
+      "status": "cinematic_redesign_unreviewed",
+      "humanApproved": false,
+      "gameplayInstalled": false,
+      "sha256": "62433953837f62d3d1b95d92b0a3e158ba765eb6d3dd9cf1cd8138721f0345de",
+      "bytes": 811484,
+      "duration": 4.6,
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "metrics": {
+        "source": {
+          "peak": 0.709991455078125,
+          "rms": 0.06815030379235289,
+          "duration": 2.9038548752834465,
+          "frames": 128060
+        },
+        "processing": {
+          "frames": 52920,
+          "duration": 1.2,
+          "peak": 0.9788833260536194,
+          "rms": 0.09808968479983719,
+          "dc": -0.00017835462031668526,
+          "finite": true,
+          "sampleRate": 44100,
+          "channels": 2
+        },
+        "output": {
+          "frames": 202860,
+          "duration": 4.6,
+          "peak": 0.7173075079917908,
+          "rms": 0.17679619175827146,
+          "dc": -0.0004508164760365719,
+          "finite": true,
+          "sampleRate": 44100,
+          "channels": 2
+        }
+      },
+      "recipe": {
+        "version": "cloudstitch-cinematic-v5.0.0",
+        "profile": {
+          "name": "siege-scale pressure blast and collapsing debris",
+          "length": 4.6,
+          "contact": 0,
+          "rate": 0.57,
+          "main": 0.92,
+          "sub": 1.6,
+          "subHz": 48,
+          "body": 1.4,
+          "crack": 1.3,
+          "air": 1.12,
+          "room": 0.76,
+          "rt": 2.75,
+          "pre": 0.07,
+          "material": [
+            {
+              "id": "mortar-impact",
+              "rate": 0.52,
+              "length": 0.65,
+              "amount": 1.2,
+              "delay": 0,
+              "lo": 30,
+              "hi": 5200,
+              "pan": 0
+            },
+            {
+              "id": "hit-wood",
+              "rate": 0.48,
+              "length": 0.45,
+              "amount": 0.95,
+              "delay": 0.025,
+              "lo": 70,
+              "hi": 6300,
+              "pan": -0.3
+            },
+            {
+              "id": "hit-engine",
+              "rate": 0.56,
+              "length": 0.35,
+              "amount": 0.75,
+              "delay": 0.08,
+              "lo": 65,
+              "hi": 4300,
+              "pan": 0.2
+            },
+            {
+              "id": "hit-armor",
+              "rate": 0.65,
+              "length": 0.14,
+              "amount": 0.5,
+              "delay": 0.24,
+              "lo": 350,
+              "hi": 7600,
+              "pan": -0.55
+            },
+            {
+              "id": "hit-wood",
+              "rate": 0.84,
+              "length": 0.19,
+              "amount": 0.4,
+              "delay": 0.48,
+              "lo": 300,
+              "hi": 7200,
+              "pan": 0.55
+            },
+            {
+              "id": "chain-spin",
+              "rate": 0.7,
+              "length": 0.26,
+              "amount": 0.22,
+              "delay": 0.72,
+              "lo": 650,
+              "hi": 8000,
+              "pan": -0.2
+            }
+          ]
+        },
+        "layers": [
+          {
+            "kind": "original contact",
+            "id": "fire-cannon",
+            "sha256": "6b7606e4b759ffe4f8ee7843a2c24a84ebb9a1ded158c25c5b33f6b1f987b894",
+            "offset": 0,
+            "rate": 0.57
+          },
+          {
+            "kind": "synthesized accelerating pressure crest, concurrent with immediate attack",
+            "start": 0,
+            "duration": 0.07
+          },
+          {
+            "kind": "synthesized falling pressure",
+            "start": 0,
+            "hz": 48,
+            "duration": 1.35
+          },
+          {
+            "kind": "synthesized broadband rupture",
+            "start": 0,
+            "duration": 0.1
+          },
+          {
+            "kind": "recorded material",
+            "id": "mortar-impact",
+            "sha256": "3e41a0b2be34691dce0bdb73cea49cc2a3eb12f91466d973de9f03b556ec370e",
+            "start": 0,
+            "duration": 0.65,
+            "rate": 0.52
+          },
+          {
+            "kind": "recorded material",
+            "id": "hit-wood",
+            "sha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "start": 0.025,
+            "duration": 0.45,
+            "rate": 0.48
+          },
+          {
+            "kind": "recorded material",
+            "id": "hit-engine",
+            "sha256": "02d0cb4d0d9fe86532a56f25ccb0d8e85dfcb7dce701b87bae082ea6537e6db3",
+            "start": 0.08,
+            "duration": 0.35,
+            "rate": 0.56
+          },
+          {
+            "kind": "recorded material",
+            "id": "hit-armor",
+            "sha256": "7d641697345615de258e6c36dda7e8a5f403fb146eb2d68be1a7ec0a7d6883da",
+            "start": 0.24,
+            "duration": 0.14,
+            "rate": 0.65
+          },
+          {
+            "kind": "recorded material",
+            "id": "hit-wood",
+            "sha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "start": 0.48,
+            "duration": 0.19,
+            "rate": 0.84
+          },
+          {
+            "kind": "recorded material",
+            "id": "chain-spin",
+            "sha256": "4e69500790d7fc7a8b2f0ac282490103a4f1a5afeb3ff3963e64699516091896",
+            "start": 0.72,
+            "duration": 0.26,
+            "rate": 0.7
+          },
+          {
+            "kind": "synthesized turbulent stereo discharge",
+            "start": 0.025,
+            "duration": 1.75
+          },
+          {
+            "kind": "dense diffuse aftermath",
+            "rt60": 2.75,
+            "start": 0.041,
+            "stereo": true
+          }
+        ],
+        "contactSeconds": 0,
+        "loop": false,
+        "description": "siege-scale pressure blast and collapsing debris",
+        "syntheticLayers": true,
+        "sourceInput": "first decoded Float32",
+        "humanApproval": false,
+        "gameInstalled": false,
+        "expressionGoal": "Radically redesigned cinematic scale; tenfold is a listening goal, not gain or a measured approval."
+      },
+      "richDescription": "siege-scale pressure blast and collapsing debris",
+      "derivation": {
+        "processing": "Original Float32 material + deterministic original synthesis; not enhanced v4 input",
+        "paidGenerationRequests": 0,
+        "dspSha256": "8065fc4b6226cd654785f1319cacb216cd696773177ef80f2c02eec954deb292"
+      },
+      "previousV4Recipe": {
+        "version": "cloudstitch-grand-composition-v4.0.0",
+        "id": "fire-cannon",
+        "loop": false,
+        "baseRecipe": {
+          "version": "cloudstitch-grand-material-v3.0.0",
+          "id": "fire-cannon",
+          "material": "pressure",
+          "loop": false,
+          "seed": 1757501337,
+          "description": "낮은 포신 압력·단단한 몸통·짙은 짧은 공간",
+          "processingInput": "original preserved native-decoded MP3 Float32 PCM, not cumulative EQ outputs",
+          "pitchRatio": 0.73,
+          "pitchMethod": "source resampling at a lower rate; full source preserved",
+          "lowpassHz": 4300,
+          "highpassHz": 35,
+          "highShelfHz": 2600,
+          "highShelfDb": -4.5,
+          "body": {
+            "sourceDerived": true,
+            "monoCore": true,
+            "hz": 128,
+            "q": 0.83,
+            "peakingGainDb": 5.5,
+            "mix": 0.94,
+            "lowpassHz": 680,
+            "highpassHz": 42,
+            "saturationDrive": 2.25,
+            "envelopeAttackSeconds": 0.008,
+            "envelopeReleaseSeconds": 0.085
+          },
+          "attack": {
+            "sourceOnly": true,
+            "detailMix": 0.075,
+            "lookbackSeconds": 0.009
+          },
+          "dynamics": {
+            "thresholdTimesSourceRms": 1.65,
+            "ratio": 2.8,
+            "attackSeconds": 0.006,
+            "releaseSeconds": 0.075,
+            "parallelWarmDrive": 1.8
+          },
+          "space": {
+            "mix": 0.33,
+            "earlyReflections": [
+              {
+                "seconds": 0.007,
+                "gain": 0.19
+              },
+              {
+                "seconds": 0.013699999999999999,
+                "gain": 0.15
+              },
+              {
+                "seconds": 0.020399999999999998,
+                "gain": 0.12
+              },
+              {
+                "seconds": 0.026699999999999998,
+                "gain": 0.09
+              },
+              {
+                "seconds": 0.0354,
+                "gain": 0.065
+              },
+              {
+                "seconds": 0.043,
+                "gain": 0.04
+              }
+            ],
+            "diffusion": {
+              "method": "four dark damped parallel feedback delays followed by two allpass diffusers",
+              "delaysSeconds": [
+                0.03224,
+                0.043,
+                0.059,
+                0.073
+              ],
+              "allpassSeconds": [
+                0.0117,
+                0.0179
+              ],
+              "allpassFeedback": 0.47,
+              "dampingHz": 1900,
+              "rt60Seconds": 0.544,
+              "sourceDerived": true
+            }
+          },
+          "tailSeconds": 0.64,
+          "peak": 0.72,
+          "peakLimit": 0.72,
+          "edgeFadeSeconds": {
+            "in": 0.0015,
+            "out": 0.009
+          },
+          "seamSeconds": 0.006,
+          "dialogue": 0,
+          "music": 0,
+          "addedOscillators": 0,
+          "newGunshots": 0,
+          "approval": false,
+          "limits": "Candidate material redesign. Numerical safety does not approve grandeur, cue identity or human listening."
+        },
+        "description": "large pressure / material rupture / sustained recoil",
+        "pitchRatio": 0.73,
+        "extraTailSeconds": 0.62,
+        "mainMix": 0.98,
+        "stems": [
+          {
+            "id": "mortar-impact",
+            "role": "large low pressure mass",
+            "fragmentSeconds": 0.25,
+            "rate": 0.47,
+            "mix": 1.2,
+            "lowpassHz": 620,
+            "highpassHz": 36,
+            "relativeContactOffsetSeconds": 0,
+            "offsetSeconds": 0,
+            "sourceStartSeconds": 0.04573469387755102,
+            "donorOnsetSeconds": 0.04573469387755102,
+            "renderedFrames": 23458,
+            "sourceSha256": "3e41a0b2be34691dce0bdb73cea49cc2a3eb12f91466d973de9f03b556ec370e",
+            "sourcePath": "work/audio/rich-v1/decoded/mortar-impact.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 65268,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "3e41a0b2be34691dce0bdb73cea49cc2a3eb12f91466d973de9f03b556ec370e",
+            "processingPath": "work/audio/rich-v1/decoded/mortar-impact.wav"
+          },
+          {
+            "id": "hit-wood",
+            "role": "timber carriage rupture",
+            "fragmentSeconds": 0.17,
+            "rate": 0.55,
+            "mix": 0.83,
+            "lowpassHz": 1650,
+            "highpassHz": 75,
+            "relativeContactOffsetSeconds": 0.004,
+            "offsetSeconds": 0.004,
+            "sourceStartSeconds": 0.00006575963718820853,
+            "donorOnsetSeconds": 0.00006575963718820853,
+            "renderedFrames": 13631,
+            "sourceSha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "sourcePath": "work/audio/rich-v1/decoded/hit-wood.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 29999,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "processingPath": "work/audio/rich-v1/decoded/hit-wood.wav"
+          },
+          {
+            "id": "hit-armor",
+            "role": "brass restraint strain",
+            "fragmentSeconds": 0.115,
+            "rate": 0.61,
+            "mix": 0.58,
+            "lowpassHz": 2200,
+            "highpassHz": 160,
+            "relativeContactOffsetSeconds": 0.008,
+            "offsetSeconds": 0.008,
+            "sourceStartSeconds": 0.034238095238095234,
+            "donorOnsetSeconds": 0.034238095238095234,
+            "renderedFrames": 8315,
+            "sourceSha256": "7d641697345615de258e6c36dda7e8a5f403fb146eb2d68be1a7ec0a7d6883da",
+            "sourcePath": "work/audio/rich-v1/decoded/hit-armor.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 38808,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "7d641697345615de258e6c36dda7e8a5f403fb146eb2d68be1a7ec0a7d6883da",
+            "processingPath": "work/audio/rich-v1/decoded/hit-armor.wav"
+          },
+          {
+            "id": "hit-engine",
+            "role": "dense recoil machinery",
+            "fragmentSeconds": 0.22,
+            "rate": 0.5,
+            "mix": 0.67,
+            "lowpassHz": 1000,
+            "highpassHz": 45,
+            "relativeContactOffsetSeconds": 0.003,
+            "offsetSeconds": 0.003,
+            "sourceStartSeconds": 0,
+            "donorOnsetSeconds": 0,
+            "renderedFrames": 19404,
+            "sourceSha256": "02d0cb4d0d9fe86532a56f25ccb0d8e85dfcb7dce701b87bae082ea6537e6db3",
+            "sourcePath": "work/audio/rich-v1/decoded/hit-engine.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 47628,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "02d0cb4d0d9fe86532a56f25ccb0d8e85dfcb7dce701b87bae082ea6537e6db3",
+            "processingPath": "work/audio/rich-v1/decoded/hit-engine.wav"
+          },
+          {
+            "id": "wind-fast-loop",
+            "role": "pressure exhaust and dispersed residue",
+            "fragmentSeconds": 0.38,
+            "rate": 0.66,
+            "mix": 0.43,
+            "lowpassHz": 1900,
+            "highpassHz": 110,
+            "relativeContactOffsetSeconds": 0.06,
+            "offsetSeconds": 0.06,
+            "sourceStartSeconds": 0.055,
+            "donorOnsetSeconds": 0,
+            "renderedFrames": 25391,
+            "sourceSha256": "8b165e7aeb4fe872ed665ebfce9f7cb428ee8dab0ad9035280797ab223fc8b9e",
+            "sourcePath": "work/audio/rich-v1/decoded/wind-fast-loop.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 264600,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "8b165e7aeb4fe872ed665ebfce9f7cb428ee8dab0ad9035280797ab223fc8b9e",
+            "processingPath": "work/audio/rich-v1/decoded/wind-fast-loop.wav"
+          }
+        ],
+        "stages": [
+          "original source contact and lowered physical material",
+          "aligned pressure / timber / brass or machine fragment composition",
+          "source-derived recoil / residue",
+          "dense dark diffusion space"
+        ],
+        "space": {
+          "mix": 0.68,
+          "large": true,
+          "rt60Seconds": 1.05,
+          "sourceDerived": true,
+          "independentBeats": 0
+        },
+        "peak": 0.71,
+        "midLowMono": true,
+        "addedGunshots": 0,
+        "addedOscillators": 0,
+        "dialogue": 0,
+        "music": 0,
+        "qualityPending": true,
+        "approval": false,
+        "claim": "A bolder material composition candidate. No numerical claim of 10x grandeur or human approval."
+      }
+    },
+    {
+      "id": "mortar-launch-a",
+      "label": "새 발사 A · 실물 관형 발사음",
+      "category": "weapon",
+      "loop": false,
+      "description": "단발 압력 충격과 짧은 포신 공명. 장식과 낙하음 없이 발사만 비교합니다.",
+      "source": {
+        "file": "original/mortar-launch-a.wav",
+        "originalRelative": "outputs/audio-grand-v4/enhanced/mortar-launch-a.wav",
+        "sha256": "abe4cc2d04b295e198bb7e440e470f2f10e81f5208cdcafd80acfdbf31546be6",
+        "bytes": 289340,
+        "provider": "Cloudstitch · v4 (사용자 표현 반려)",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "processingSource": {
+        "path": "work/audio/rich-v1/decoded/mortar-launch-a.wav",
+        "sha256": "b3ac9206bd734aa38014a3ccbbb9b12f9aa3674f0b5ddf7b1a7d8dbdb2cefb21",
+        "format": "IEEE_FLOAT32",
+        "frames": 28224,
+        "sampleRate": 44100,
+        "channels": 2,
+        "originalMp3Relative": "outputs/audio-mortar-r1/audio/mortar-launch-a.mp3",
+        "originalMp3Sha256": "2f434daa0e135c22cb76e986a2d8d078fd2283fe2524ea1880a5e246ae162cc6",
+        "decodingReceipt": "work/audio/rich-v1/decoding.json"
+      },
+      "provenance": {
+        "originalMp3": {
+          "file": "original/mortar-launch-a.mp3",
+          "originalRelative": "outputs/audio-mortar-r1/audio/mortar-launch-a.mp3",
+          "sha256": "2f434daa0e135c22cb76e986a2d8d078fd2283fe2524ea1880a5e246ae162cc6",
+          "bytes": 11327,
+          "provider": "ElevenLabs",
+          "model": "eleven_text_to_sound_v2",
+          "generationStatus": "generated_unreviewed",
+          "prompt": "One live round fired from a compact mortar tube, close outdoor recording. A sharp propellant ignition crack, a dense low air-pressure report from the short steel tube, then a brief gritty exhaust decay. One discharge only. Natural unpitched weapon sound, dry open air. No shell flight or impact, no voice, music, cartoon sound, tonal sweep, or cinematic sub-bass.",
+          "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+        },
+        "previousRecipe": {
+          "version": "cloudstitch-low-mid-dsp-v2.0.0",
+          "id": "mortar-launch-a",
+          "material": "pressure",
+          "loop": false,
+          "description": "포신·압력의 중저음 몸통",
+          "input": "preserved rich-v1 enhanced PCM; no replacement or regeneration",
+          "highpass": {
+            "type": "highpass",
+            "hz": 35,
+            "q": 0.7071067811865476
+          },
+          "lowShelf": {
+            "type": "lowshelf",
+            "hz": 96,
+            "gainDb": 2.3,
+            "slope": 1
+          },
+          "lowMidBody": {
+            "type": "peaking",
+            "hz": 198,
+            "gainDb": 4.8,
+            "q": 0.76
+          },
+          "targetPeak": 0.74,
+          "upwardNormalization": false,
+          "rmsNormalization": false,
+          "tailSeconds": 0,
+          "frameCountPolicy": "exact input frames and channels",
+          "loopWarmSeconds": 0.6,
+          "seamSeconds": 0.005,
+          "edgeFadeSeconds": {
+            "in": 0.001,
+            "out": 0.006
+          },
+          "claims": "EQ candidate; human listening approval and game installation pending"
+        }
+      },
+      "file": "enhanced/mortar-launch-a.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "박격포 새 발사 후보 A/B. 현재 실제 박격포 고유탄도/발사 hook 연결 대기. 사용자 음색 승인 전."
+      },
+      "priority": 2,
+      "sourceHumanReview": "candidate_unapproved",
+      "status": "cinematic_redesign_unreviewed",
+      "humanApproved": false,
+      "gameplayInstalled": false,
+      "sha256": "2aa610ef0bfced1f3a80677383816aef3e8fee2adba4ebf776341de9ba020bcf",
+      "bytes": 493964,
+      "duration": 2.8,
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "metrics": {
+        "source": {
+          "peak": 0.709991455078125,
+          "rms": 0.04527306971536075,
+          "duration": 1.64,
+          "frames": 72324
+        },
+        "processing": {
+          "frames": 28224,
+          "duration": 0.64,
+          "peak": 0.1704873889684677,
+          "rms": 0.009884135703294382,
+          "dc": 0.00013767570457025834,
+          "finite": true,
+          "sampleRate": 44100,
+          "channels": 2
+        },
+        "output": {
+          "frames": 123480,
+          "duration": 2.8,
+          "peak": 0.707503080368042,
+          "rms": 0.17569225699658522,
+          "dc": -0.0007482311213125899,
+          "finite": true,
+          "sampleRate": 44100,
+          "channels": 2
+        }
+      },
+      "recipe": {
+        "version": "cloudstitch-cinematic-v5.0.0",
+        "profile": {
+          "name": "enormous tube-thump and pressurized exhaust",
+          "length": 2.8,
+          "contact": 0,
+          "rate": 0.65,
+          "main": 1,
+          "sub": 1.45,
+          "subHz": 64,
+          "body": 1.15,
+          "crack": 0.6,
+          "air": 0.88,
+          "room": 0.49,
+          "rt": 1.65,
+          "pre": 0.05,
+          "material": [
+            {
+              "id": "hit-engine",
+              "rate": 0.53,
+              "length": 0.23,
+              "amount": 0.64,
+              "delay": 0.004,
+              "lo": 50,
+              "hi": 2500,
+              "pan": 0
+            },
+            {
+              "id": "hit-wood",
+              "rate": 0.57,
+              "length": 0.19,
+              "amount": 0.58,
+              "delay": 0.016,
+              "lo": 65,
+              "hi": 2800,
+              "pan": 0
+            },
+            {
+              "id": "wind-fast-loop",
+              "rate": 0.75,
+              "length": 0.5,
+              "amount": 0.85,
+              "delay": 0.048,
+              "lo": 110,
+              "hi": 3900,
+              "pan": 0
+            }
+          ]
+        },
+        "layers": [
+          {
+            "kind": "original contact",
+            "id": "mortar-launch-a",
+            "sha256": "b3ac9206bd734aa38014a3ccbbb9b12f9aa3674f0b5ddf7b1a7d8dbdb2cefb21",
+            "offset": 0,
+            "rate": 0.65
+          },
+          {
+            "kind": "synthesized accelerating pressure crest, concurrent with immediate attack",
+            "start": 0,
+            "duration": 0.05
+          },
+          {
+            "kind": "synthesized falling pressure",
+            "start": 0,
+            "hz": 64,
+            "duration": 1.12
+          },
+          {
+            "kind": "synthesized broadband rupture",
+            "start": 0,
+            "duration": 0.1
+          },
+          {
+            "kind": "recorded material",
+            "id": "hit-engine",
+            "sha256": "02d0cb4d0d9fe86532a56f25ccb0d8e85dfcb7dce701b87bae082ea6537e6db3",
+            "start": 0.004,
+            "duration": 0.23,
+            "rate": 0.53
+          },
+          {
+            "kind": "recorded material",
+            "id": "hit-wood",
+            "sha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "start": 0.016,
+            "duration": 0.19,
+            "rate": 0.57
+          },
+          {
+            "kind": "recorded material",
+            "id": "wind-fast-loop",
+            "sha256": "8b165e7aeb4fe872ed665ebfce9f7cb428ee8dab0ad9035280797ab223fc8b9e",
+            "start": 0.048,
+            "duration": 0.5,
+            "rate": 0.75
+          },
+          {
+            "kind": "synthesized turbulent stereo discharge",
+            "start": 0.025,
+            "duration": 1.3439999999999999
+          },
+          {
+            "kind": "dense diffuse aftermath",
+            "rt60": 1.65,
+            "start": 0.041,
+            "stereo": true
+          }
+        ],
+        "contactSeconds": 0,
+        "loop": false,
+        "description": "enormous tube-thump and pressurized exhaust",
+        "syntheticLayers": true,
+        "sourceInput": "first decoded Float32",
+        "humanApproval": false,
+        "gameInstalled": false,
+        "expressionGoal": "Radically redesigned cinematic scale; tenfold is a listening goal, not gain or a measured approval."
+      },
+      "richDescription": "enormous tube-thump and pressurized exhaust",
+      "derivation": {
+        "processing": "Original Float32 material + deterministic original synthesis; not enhanced v4 input",
+        "paidGenerationRequests": 0,
+        "dspSha256": "8065fc4b6226cd654785f1319cacb216cd696773177ef80f2c02eec954deb292"
+      },
+      "previousV4Recipe": {
+        "version": "cloudstitch-grand-composition-v4.0.0",
+        "id": "mortar-launch-a",
+        "loop": false,
+        "baseRecipe": {
+          "version": "cloudstitch-grand-material-v3.0.0",
+          "id": "mortar-launch-a",
+          "material": "pressure",
+          "loop": false,
+          "seed": 4060220470,
+          "description": "낮은 포신 압력·단단한 몸통·짙은 짧은 공간",
+          "processingInput": "original preserved native-decoded MP3 Float32 PCM, not cumulative EQ outputs",
+          "pitchRatio": 0.8,
+          "pitchMethod": "source resampling at a lower rate; full source preserved",
+          "lowpassHz": 4700,
+          "highpassHz": 35,
+          "highShelfHz": 2600,
+          "highShelfDb": -4.5,
+          "body": {
+            "sourceDerived": true,
+            "monoCore": true,
+            "hz": 153,
+            "q": 0.83,
+            "peakingGainDb": 5.5,
+            "mix": 0.88,
+            "lowpassHz": 680,
+            "highpassHz": 42,
+            "saturationDrive": 2.25,
+            "envelopeAttackSeconds": 0.008,
+            "envelopeReleaseSeconds": 0.085
+          },
+          "attack": {
+            "sourceOnly": true,
+            "detailMix": 0.075,
+            "lookbackSeconds": 0.009
+          },
+          "dynamics": {
+            "thresholdTimesSourceRms": 1.65,
+            "ratio": 2.8,
+            "attackSeconds": 0.006,
+            "releaseSeconds": 0.075,
+            "parallelWarmDrive": 1.8
+          },
+          "space": {
+            "mix": 0.24,
+            "earlyReflections": [
+              {
+                "seconds": 0.0077,
+                "gain": 0.19
+              },
+              {
+                "seconds": 0.0144,
+                "gain": 0.15
+              },
+              {
+                "seconds": 0.0197,
+                "gain": 0.12
+              },
+              {
+                "seconds": 0.027399999999999997,
+                "gain": 0.09
+              },
+              {
+                "seconds": 0.0347,
+                "gain": 0.065
+              },
+              {
+                "seconds": 0.044399999999999995,
+                "gain": 0.04
+              }
+            ],
+            "diffusion": {
+              "method": "four dark damped parallel feedback delays followed by two allpass diffusers",
+              "delaysSeconds": [
+                0.03255,
+                0.043309999999999994,
+                0.059,
+                0.07331
+              ],
+              "allpassSeconds": [
+                0.0117,
+                0.0179
+              ],
+              "allpassFeedback": 0.47,
+              "dampingHz": 1900,
+              "rt60Seconds": 0.3145,
+              "sourceDerived": true
+            }
+          },
+          "tailSeconds": 0.37,
+          "peak": 0.72,
+          "peakLimit": 0.72,
+          "edgeFadeSeconds": {
+            "in": 0.0015,
+            "out": 0.009
+          },
+          "seamSeconds": 0.006,
+          "dialogue": 0,
+          "music": 0,
+          "addedOscillators": 0,
+          "newGunshots": 0,
+          "approval": false,
+          "limits": "Candidate material redesign. Numerical safety does not approve grandeur, cue identity or human listening."
+        },
+        "description": "one mortar launch: pressure / mount / dense exhaust",
+        "pitchRatio": 0.8,
+        "extraTailSeconds": 0.47,
+        "mainMix": 1,
+        "stems": [
+          {
+            "id": "mortar-impact",
+            "role": "short tube pressure mass",
+            "fragmentSeconds": 0.19,
+            "rate": 0.53,
+            "mix": 1.02,
+            "lowpassHz": 620,
+            "highpassHz": 40,
+            "relativeContactOffsetSeconds": 0,
+            "offsetSeconds": 0,
+            "sourceStartSeconds": 0.04573469387755102,
+            "donorOnsetSeconds": 0.04573469387755102,
+            "renderedFrames": 15810,
+            "sourceSha256": "3e41a0b2be34691dce0bdb73cea49cc2a3eb12f91466d973de9f03b556ec370e",
+            "sourcePath": "work/audio/rich-v1/decoded/mortar-impact.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 65268,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "3e41a0b2be34691dce0bdb73cea49cc2a3eb12f91466d973de9f03b556ec370e",
+            "processingPath": "work/audio/rich-v1/decoded/mortar-impact.wav"
+          },
+          {
+            "id": "hit-wood",
+            "role": "mount recoil body",
+            "fragmentSeconds": 0.12,
+            "rate": 0.61,
+            "mix": 0.73,
+            "lowpassHz": 1400,
+            "highpassHz": 80,
+            "relativeContactOffsetSeconds": 0.003,
+            "offsetSeconds": 0.003,
+            "sourceStartSeconds": 0.00006575963718820853,
+            "donorOnsetSeconds": 0.00006575963718820853,
+            "renderedFrames": 8676,
+            "sourceSha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "sourcePath": "work/audio/rich-v1/decoded/hit-wood.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 29999,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "48983be70515b9eb14f39b260aa7c5dfedb63101e94436eb5652b37127f9392e",
+            "processingPath": "work/audio/rich-v1/decoded/hit-wood.wav"
+          },
+          {
+            "id": "hit-armor",
+            "role": "tube restraint material",
+            "fragmentSeconds": 0.075,
+            "rate": 0.66,
+            "mix": 0.45,
+            "lowpassHz": 1900,
+            "highpassHz": 180,
+            "relativeContactOffsetSeconds": 0.006,
+            "offsetSeconds": 0.006,
+            "sourceStartSeconds": 0.034238095238095234,
+            "donorOnsetSeconds": 0.034238095238095234,
+            "renderedFrames": 5013,
+            "sourceSha256": "7d641697345615de258e6c36dda7e8a5f403fb146eb2d68be1a7ec0a7d6883da",
+            "sourcePath": "work/audio/rich-v1/decoded/hit-armor.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 38808,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "7d641697345615de258e6c36dda7e8a5f403fb146eb2d68be1a7ec0a7d6883da",
+            "processingPath": "work/audio/rich-v1/decoded/hit-armor.wav"
+          },
+          {
+            "id": "wind-fast-loop",
+            "role": "low exhaust texture",
+            "fragmentSeconds": 0.23,
+            "rate": 0.66,
+            "mix": 0.36,
+            "lowpassHz": 1550,
+            "highpassHz": 130,
+            "relativeContactOffsetSeconds": 0.034,
+            "offsetSeconds": 0.034,
+            "sourceStartSeconds": 0.055,
+            "donorOnsetSeconds": 0,
+            "renderedFrames": 15369,
+            "sourceSha256": "8b165e7aeb4fe872ed665ebfce9f7cb428ee8dab0ad9035280797ab223fc8b9e",
+            "sourcePath": "work/audio/rich-v1/decoded/wind-fast-loop.wav",
+            "sourceSampleRate": 44100,
+            "sourceFrames": 264600,
+            "status": "composed source-material fragment",
+            "monoCore": true,
+            "sha256": "8b165e7aeb4fe872ed665ebfce9f7cb428ee8dab0ad9035280797ab223fc8b9e",
+            "processingPath": "work/audio/rich-v1/decoded/wind-fast-loop.wav"
+          }
+        ],
+        "stages": [
+          "original source contact and lowered physical material",
+          "aligned pressure / timber / brass or machine fragment composition",
+          "source-derived recoil / residue",
+          "dense dark diffusion space"
+        ],
+        "space": {
+          "mix": 0.55,
+          "large": true,
+          "rt60Seconds": 1.05,
+          "sourceDerived": true,
+          "independentBeats": 0
+        },
+        "peak": 0.71,
+        "midLowMono": true,
+        "addedGunshots": 0,
+        "addedOscillators": 0,
+        "dialogue": 0,
+        "music": 0,
+        "qualityPending": true,
+        "approval": false,
+        "claim": "A bolder material composition candidate. No numerical claim of 10x grandeur or human approval."
+      }
+    }
+  ],
+  "previousManifest": {
+    "file": "outputs/audio-grand-v4/delivery-manifest.json",
+    "sha256": "c7bec6defed1cd135de57330ced6b0f3fb1685093dc2ec28a5100eeac832ab71"
+  },
+  "purpose": "v4 rejected as still insufficiently dramatic. Radically recompose contact, pressure, discharge, fracture, debris and long aftermath. Tenfold is a listening target, not a numeric pass.",
+  "counts": {
+    "rendered": 3,
+    "logicalOriginalCues": 47,
+    "mortarAlternatives": 2
+  },
+  "summary": {
+    "rendered": 3,
+    "renderedBytes": 1439556,
+    "sourceBytes": 1003188,
+    "paidGenerationRequests": 0,
+    "humanApproval": false,
+    "gameplayInstalled": false
+  },
+  "humanApproved": false,
+  "gameplayInstalled": false,
+  "paidGenerationRequests": 0
+}

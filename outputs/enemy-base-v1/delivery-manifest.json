@@ -1,0 +1,169 @@
+{
+  "revision": "enemy-base-v1",
+  "status": "READY_art_review",
+  "ownership": [
+    "tools/enemy-base/",
+    "outputs/enemy-base-v1/"
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "outputs/enemy-base-moodboard-v2/moodboard.png",
+      "sha256": "49ea92ea7a8dc01b1ee79679d550e22f1a417a4f922243ba21306c521f6327f3",
+      "preserved": true
+    }
+  ],
+  "modelSha256": "518e6208cbdef18c7a29bacaaa800d83004d71f1a17c4e20ae6ceb6304f19fcc",
+  "verification": {
+    "path": "outputs/enemy-base-v1/verification.json",
+    "bytes": 3753,
+    "sha256": "a8a8077e5bd55fdaeacd30a8060bae713d667b5537c603841227eea3e9d0bd40"
+  },
+  "files": [
+    {
+      "path": "tools/enemy-base/build.cjs",
+      "bytes": 1835,
+      "sha256": "e180748c279faada27af17d2615402d1df724cf560ad6d346a6dcfc1b33cc29c"
+    },
+    {
+      "path": "tools/enemy-base/finalize.cjs",
+      "bytes": 7997,
+      "sha256": "669db7f9cfa3337d9f1051fd14000b6459ae0df79f2b47cac44a07ac65e8dd55"
+    },
+    {
+      "path": "tools/enemy-base/fortress.mjs",
+      "bytes": 42870,
+      "sha256": "fbd079c4945b147e5d3332c95c94422be4d21da7161b7c947a36ee29546bbfe0"
+    },
+    {
+      "path": "tools/enemy-base/generate.cjs",
+      "bytes": 1194,
+      "sha256": "dddbd053e67d575bea0f8bcc9fc17de62ceda470bc4844468f9f6850e71c3bf3"
+    },
+    {
+      "path": "tools/enemy-base/generate.mjs",
+      "bytes": 4757,
+      "sha256": "70f2846664e5e0b92358a21e819a49a778ac53002795da7eeb42a52b23d08ad3"
+    },
+    {
+      "path": "tools/enemy-base/inspect.cjs",
+      "bytes": 4780,
+      "sha256": "c609ff29adc888d6b2c31baa7e569b81c446271ed50114a375dde47d29269873"
+    },
+    {
+      "path": "tools/enemy-base/qa.cjs",
+      "bytes": 27286,
+      "sha256": "745004b103304bf4695b3c7f3b2e45e38c3ac2e832354962c2fd20921e28ce05"
+    },
+    {
+      "path": "tools/enemy-base/README.txt",
+      "bytes": 2768,
+      "sha256": "9e594ae03e87d11d71d170920cab96cbbd27b39b0886b1a35100d58d0f9d1944"
+    },
+    {
+      "path": "tools/enemy-base/review.js",
+      "bytes": 22029,
+      "sha256": "a31c4e94340d6e5d0c1701e86941aaa7f860208bcc7447636278bffded38e71b"
+    },
+    {
+      "path": "tools/enemy-base/source-ready.cjs",
+      "bytes": 3774,
+      "sha256": "d4d60955d08ded28f4e8dcbd819892f32b6f7235650efa810f912c15eb13ad3f"
+    },
+    {
+      "path": "tools/enemy-base/SOURCE_HANDOFF.txt",
+      "bytes": 2725,
+      "sha256": "ff04cefd5b4b3be56806338ada5a42aaa42bd18dbfb51fa0501d6053896ee00f"
+    },
+    {
+      "path": "tools/enemy-base/template.html",
+      "bytes": 24699,
+      "sha256": "e215ed6b9e80d0b53616d0b8ad93dbbe19ece8cd6e906c0c3ffaa78ef8765eef"
+    },
+    {
+      "path": "outputs/enemy-base-v1/browser-verification.json",
+      "bytes": 28590,
+      "sha256": "f5281a313301e307cdd2f6c8c4d16a64760371439db1535a399996531a2524de"
+    },
+    {
+      "path": "outputs/enemy-base-v1/detail-bell.png",
+      "bytes": 177460,
+      "sha256": "dd80ea1198728da3908ee26595b5a460fc74e6bb1b1e21fe5c42ba47bc2ddc72"
+    },
+    {
+      "path": "outputs/enemy-base-v1/detail-dock.png",
+      "bytes": 354943,
+      "sha256": "c8e8b6828866d0f9d9a61a77e366bf220d233dd6d73b1c2fa242535fd9d84a06"
+    },
+    {
+      "path": "outputs/enemy-base-v1/enemy-base.glb",
+      "bytes": 16284852,
+      "sha256": "518e6208cbdef18c7a29bacaaa800d83004d71f1a17c4e20ae6ceb6304f19fcc"
+    },
+    {
+      "path": "outputs/enemy-base-v1/HANDOFF.txt",
+      "bytes": 2882,
+      "sha256": "9294591e2c2909f50a7c66766eafb59f17f5ff491b7c5a3a35fedfb7cc5ed78a"
+    },
+    {
+      "path": "outputs/enemy-base-v1/index.html",
+      "bytes": 26483321,
+      "sha256": "a57e7d81362eea4cec04ccf4172b18e0b913359a4e99b4a880364d7e4dda88f8"
+    },
+    {
+      "path": "outputs/enemy-base-v1/model-back.png",
+      "bytes": 140592,
+      "sha256": "3ee14eda3fff6d8e0f62c8626b9a249fc23e9e6ff678361f5ce9cf9899021caf"
+    },
+    {
+      "path": "outputs/enemy-base-v1/model-front.png",
+      "bytes": 154014,
+      "sha256": "263e0923da8d9f18ee93a92ba55da942065b9f87186803ef0e99cdbd66a3971e"
+    },
+    {
+      "path": "outputs/enemy-base-v1/model-iso.png",
+      "bytes": 142671,
+      "sha256": "bbda91136d0b7c592d5380e95ad35c75a57699ad2dbcfc48a89d37a18f34bc78"
+    },
+    {
+      "path": "outputs/enemy-base-v1/model-manifest.json",
+      "bytes": 4162,
+      "sha256": "ef633f5e987b90e05318a24f0c9521fe8f1aea78285141c915af10eee23a800b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/production-spec.json",
+      "bytes": 2593,
+      "sha256": "e272fb0dcd59175491b6bfce00ed5a3781654c56f03955864e1d37a9b8856861"
+    },
+    {
+      "path": "outputs/enemy-base-v1/README.txt",
+      "bytes": 339,
+      "sha256": "625f33009b43fcba88b1f21b131983d2854a2a8501ab306f1bac8355ef8638f8"
+    },
+    {
+      "path": "outputs/enemy-base-v1/review-desktop.png",
+      "bytes": 679437,
+      "sha256": "e01dba2f373adfa908e7e41f69605983886bd58a9a6542d632c014cfcbd59f1d"
+    },
+    {
+      "path": "outputs/enemy-base-v1/review-mobile-390.png",
+      "bytes": 247872,
+      "sha256": "aba498e13c32d36784354cffc437b92ec1d6f0eea08325e6631cd9589fb1eec6"
+    },
+    {
+      "path": "outputs/enemy-base-v1/SOURCE_READY.json",
+      "bytes": 5322,
+      "sha256": "9a29456da11444ad1417810d1cf446f836debd58d0678a686e0291203dc9dee3"
+    },
+    {
+      "path": "outputs/enemy-base-v1/structure-verification.json",
+      "bytes": 1761,
+      "sha256": "f98f77d7095204ab816ebaa1021ceaf0969c752327a4cbe9bce5c99dbdc8b823"
+    },
+    {
+      "path": "outputs/enemy-base-v1/verification.json",
+      "bytes": 3753,
+      "sha256": "a8a8077e5bd55fdaeacd30a8060bae713d667b5537c603841227eea3e9d0bd40"
+    }
+  ],
+  "sha256Scope": "All owned source/output files, excluding this manifest itself."
+}

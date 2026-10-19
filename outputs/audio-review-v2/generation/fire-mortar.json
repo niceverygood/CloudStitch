@@ -1,0 +1,25 @@
+{
+  "id": "fire-mortar",
+  "startedAt": "2026-10-18T08:51:34.561Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "One mortar shell leaving a short upward-facing tube: a hollow low poomp of pressure, soft air puff and a little wooden base vibration. Rounded attack, no large detonation. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 0.8,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:51:36.214Z",
+  "output": {
+    "file": "audio/fire-mortar.mp3",
+    "bytes": 13835,
+    "sha256": "8ebc96fe85251128e7eaeb8b78e807aa0031ab48a8e43b31a3033b830fb01e32",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "8"
+}

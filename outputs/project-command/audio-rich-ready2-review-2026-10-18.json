@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "version": "audio-rich-v1.0.1-ready",
+  "revision": 2,
+  "supersedesReady": "READY1 held before Native/import; original snapshot in audio-rich-ready-review-2026-10-18.json",
+  "manifest": {
+    "path": "outputs/audio-rich-v1/delivery-manifest.json",
+    "sha256": "9a50e6f105ff5497795fb33095cbc0dc71f2df88ac062372e6c6028e85709523",
+    "files": 126,
+    "bytes": 19192410,
+    "selfExcluded": true
+  },
+  "rootReview": {
+    "manifestShaMatched": true,
+    "large98MediaHashesRepeated": false
+  },
+  "delegatedStaticReview": {
+    "smallSourceReceiptShaChecks": 24,
+    "mismatches": 0,
+    "blockingIssue": false,
+    "release": "5ms gain release -> stop1ms later -> onended disconnect;80ms watchdog for suspended device",
+    "replacementWaitsForRelease": true,
+    "releasingVoicesRemainInHeadroom": true,
+    "fakePlayer43Passed": true,
+    "offlineMix31Passed": true,
+    "http107Passed": true
+  },
+  "burst": {
+    "uncappedFullPcmFixture": {
+      "shotsStarted": 6,
+      "truncated": 0,
+      "maxOverlap": 4,
+      "stereoAndMono": true,
+      "reportedMaxRawPeakApprox": 0.78998
+    },
+    "previewVoiceCap": 3,
+    "fixtureDoesNotProvePlayer4OverlapTailPreservation": true
+  },
+  "ownerReportedUnchanged": {
+    "wav49": true,
+    "mp349": true,
+    "catalog": true,
+    "old11318And46": true
+  },
+  "integrationImport": {
+    "ownerReportedSource126AndManifestImported": true,
+    "sourceBytes": 19192410,
+    "allShaMatched": true,
+    "ready1Imported": false
+  },
+  "native": {
+    "status": "running once by integration owner; result pending",
+    "harness": "tools/audio/rich-v1/verify-browser.cjs",
+    "sha256": "f8538bb5f7f2095d34dea65262db17fed9ae7b0cddfc40035c64fc8bc31bc585",
+    "entry": "http://127.0.0.1:8840/outputs/audio-rich-v1/",
+    "output": "outputs/audio-rich-browser-qa-v1/",
+    "notProductionDecode": true
+  },
+  "candidates": {
+    "logicalCues": 47,
+    "mortarAB": 2,
+    "sourceAndEnrichedEach49": true,
+    "oldMortarLaunchRejected": true,
+    "mortarABUnselected": true,
+    "humanQualityApproved": false,
+    "gameInstalled": false,
+    "paidRegeneration": 0
+  },
+  "limits": [
+    "pair PCM RMS matching is not LUFS/perceived loudness matching",
+    "static release scheduling is not measured absence of audible clicks",
+    "sample peaks are not inter-sample true peaks",
+    "new enriched49 final Native not covered by sealed QA hub36"
+  ],
+  "aggregateQaPass": null
+}

@@ -1,0 +1,92 @@
+{
+  "game_title": "Cloudstitch",
+  "date_seoul": "2026-10-18",
+  "authorization": "User explicitly requested Meshy VFX v2 production; initial two reusable bases only.",
+  "pricing_source": "https://docs.meshy.ai/en/api/pricing",
+  "pricing_checked": "2026-10-18",
+  "cli_version": "0.4.0",
+  "dry_run": {
+    "route": "text",
+    "geometry_estimate": 20,
+    "texture_estimate": 10,
+    "total": 30,
+    "requests_made": 0,
+    "note": "Alternative text path, not charged. Selected smart-topology image path uses published15perbase."
+  },
+  "initial_balance": 4599,
+  "balance_after_smoke": 4584,
+  "expected_balance_after_both": 4569,
+  "final_balance_verified": 4569,
+  "estimated_total": 30,
+  "reported_consumed_total": 30,
+  "paid_tasks": [
+    {
+      "id": "smoke",
+      "task_id": "01a14dca-e074-7440-aba5-de317145911e",
+      "operation_id": "cloudstitch-vfx2-smoke-20261018-b",
+      "project": "work/combat-vfx-v2/meshy_output/20261018_155509_smoke-wisp_01a14dca",
+      "reference": "outputs/combat-vfx-v2/references/smoke-wisp.png",
+      "target_triangles": 1600,
+      "resource": "image-to-3d",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "estimated_credits": 15,
+      "model_type": "smart-topology",
+      "texture_resolution": "2k",
+      "pbr": false,
+      "model": "outputs/combat-vfx-v2/bases/smoke.glb",
+      "model_sha256": "401c66342f88b15e6a346bfa803923f36abc8fa2bda6892f72867b2627b33fff",
+      "reference_sha256": "532a75d65493ac1641561830d261849c1fd0123ee6a1f340060571fa6ae4f093",
+      "bytes": 3699420,
+      "triangles": 1679,
+      "mesh_count": 1,
+      "textures": 1,
+      "preview": "outputs/combat-vfx-v2/bases/smoke-preview.png"
+    },
+    {
+      "id": "flame",
+      "task_id": "01a14dcc-674d-7248-8d4b-fc604c7d5e06",
+      "operation_id": "cloudstitch-vfx2-flame-20261018-a",
+      "project": "work/combat-vfx-v2/meshy_output/20261018_155648_flame-tongue_01a14dcc",
+      "reference": "outputs/combat-vfx-v2/references/flame-tongue.png",
+      "target_triangles": 1400,
+      "resource": "image-to-3d",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "estimated_credits": 15,
+      "model_type": "smart-topology",
+      "texture_resolution": "2k",
+      "pbr": false,
+      "model": "outputs/combat-vfx-v2/bases/flame.glb",
+      "model_sha256": "038b926cd0a3804c06795416de1debad5511ee07b6e44a3fb8eae99798fb64ea",
+      "reference_sha256": "d5863af839d15039852b81c2805cd7386e8eca992d65aa9254a7f774f5448537",
+      "bytes": 3644180,
+      "triangles": 1454,
+      "mesh_count": 1,
+      "textures": 1,
+      "preview": "outputs/combat-vfx-v2/bases/flame-preview.png"
+    }
+  ],
+  "rejected_requests": [
+    {
+      "operation_id": "cloudstitch-vfx2-smoke-20261018-a",
+      "status": "rejected_before_task",
+      "task_id": null,
+      "reason": "HTTP400: image_enhancement unsupported for smart-topology; removed image_enhancement and remove_lighting.",
+      "correction_operation_id": "cloudstitch-vfx2-smoke-20261018-b",
+      "additional_paid_stage": false
+    }
+  ],
+  "unsubmitted_stages": [
+    "remesh",
+    "retexture",
+    "rigging",
+    "animate",
+    "convert"
+  ],
+  "notes": [
+    "Raw API snapshots and account cache stay in ignored work or CLI profile, never committed.",
+    "Smoke download CLI emitted a libuv close assertion after a file landed; actual GLB and thumbnail were verified locally, no paid create was repeated.",
+    "No per-effect paid tasks; all effects reuse only these2 bases where applicable."
+  ]
+}

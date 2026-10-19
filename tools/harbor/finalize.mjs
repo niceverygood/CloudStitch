@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { spawnSync } from 'node:child_process';
+const run=spawnSync(process.execPath,['--test','tools/harbor/core.test.mjs','tools/shipyard/shipyard.test.mjs','tools/save/save.test.mjs'],{encoding:'utf8'});
+if(run.status!==0) { console.error(run.stdout,run.stderr); process.exit(1); }
+const tests=Number(run.stdout.match(/(?:tests|# tests) (\d+)/)?.[1]);
+if(tests!==45) throw new Error(`Unexpected test count: ${tests}`);
+const summary={version:'harbor-v1.0.0-ready',scope:'new independent harbor/shipyard/save only',clientDate:'2026-10-18',tests:{passed:tests,failed:0,harbor:9,shipyard:11,save:25},twoExampleVoyages:{resources:{S:284,F:34,C:3},settlements:2,parts:9,installed:6,warehouse:3,recreatedRepository:true},browserQA:false,actualVoyageQA:false,dependencies:[],externalRequestPolicy:'No remote URLs in built HTML; browser network unverified',remoteOriginalSnapshot:'e65ab87',replacedMacBookOriginals:false};
+fs.writeFileSync('outputs/harbor-v1/delivery-summary.json',JSON.stringify(summary,null,2)+'\n');
+const folders=['tools/harbor','tools/shipyard','tools/save','outputs/harbor-v1'];
+const files=folders.flatMap(dir=>fs.readdirSync(dir).map(file=>`${dir}/${file}`)).filter(file=>fs.statSync(file).isFile()&&!file.endsWith('file-manifest.json')).sort();
+const digest=file=>({path:file,bytes:fs.statSync(file).size,sha256:crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')});
+const rows=files.filter(file=>!file.endsWith('HANDOFF.md')).map(digest);
+const table='| 경로 | bytes | SHA-256 |\n|---|---:|---|\n'+rows.map(item=>`| \`${item.path}\` | ${item.bytes} | \`${item.sha256}\` |`).join('\n');
+const handoff='tools/harbor/HANDOFF.md';
+fs.writeFileSync(handoff,fs.readFileSync(handoff,'utf8').replace(/<!-- HARBOR-HASHES START -->[\s\S]*?<!-- HARBOR-HASHES END -->/,'<!-- HARBOR-HASHES START -->\n'+table+'\n<!-- HARBOR-HASHES END -->'));
+fs.writeFileSync('outputs/harbor-v1/file-manifest.json',JSON.stringify({version:summary.version,hashAlgorithm:'SHA-256',selfExcluded:true,files:files.map(digest)},null,2)+'\n');
+const reportDir='work/verification/harbor';fs.mkdirSync(reportDir,{recursive:true});fs.writeFileSync(path.join(reportDir,'node-tests.txt'),run.stdout);
+console.log(`Ready ${summary.version}: ${tests}/${tests} tests; ${files.length} hashed files.`);

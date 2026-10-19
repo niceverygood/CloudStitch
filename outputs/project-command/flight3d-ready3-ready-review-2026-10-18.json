@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "request": "flight3d-ready3-request-2026-10-18.json",
+  "manifest": {
+    "path": "outputs/flight3d-v1/delivery-manifest.json",
+    "sha256": "a47437d6d8832b8bccef03881273ff524782854f564a281e84c6c5e57acc4921",
+    "files": 29,
+    "bytes": 1539023,
+    "sourceFiles": 15,
+    "outputFiles": 14,
+    "readonlyDependencies": 4
+  },
+  "rootMetadata": {
+    "pathsSizes": 29,
+    "mismatches": 0,
+    "manifestShaMatched": true,
+    "notWholeLargeDependencyRehash": true
+  },
+  "delegatedStaticReview": {
+    "simRendererHarnessShaMatched": true,
+    "singleXyzSimAuthority": true,
+    "helm": "W/S relative thrust,A/D yaw,Q/E altitude,Space brake",
+    "attitude": "bounded damped heave/pitch/bank visual springs; physical XYZ/collision/projectile origin/camera focus independent",
+    "step": "app1/60,sim<=1/120",
+    "pauseClearsInputAndAccumulator": true,
+    "resetCreatesFreshStateAndCamera": true
+  },
+  "ownerChecks": {
+    "node37": "sim31+camera5+helmroute1",
+    "source5": true,
+    "helmRoute": "5rings34.03s/collision0/HP100 without teleport or oldworldinput",
+    "isHumanFunValidation": false
+  },
+  "iabObservation": "actual6GLB/idleattitude/console0; single d/w press is not heldhelm evidence",
+  "preservation": {
+    "sharedReady2Archive": "compiled3+oldmanifest+QA17=5 files, not entireoldsource",
+    "archiveNotOwnedByNewManifest29": true,
+    "rootNewTarget": "tools/flight3d-ready3/ and outputs/flight3d-ready3/",
+    "rootOldReady2CanonicalSource20Preserved": true,
+    "extraOld20CopyNotRequired": true,
+    "previousPlayableMetadataPointsToSharedArchiveNotImportedRootArchive": true,
+    "rootPreviousPlayable": "http://127.0.0.1:8840/outputs/flight3d-v1/"
+  },
+  "browser20": {
+    "status": "integration sole slot pending finalreceipt",
+    "oldQa17In29HistoricalNotCurrentReady3Proof": true,
+    "plannedUrl": "http://127.0.0.1:8840/outputs/flight3d-ready3/"
+  },
+  "limits": [
+    "not full aerodynamic/buoyancy physics engine",
+    "proxy colliders and projectileorigin, not precise 3D socket",
+    "harbor/cargo/save/campaign not integrated",
+    "new20 browser and source-target mapping receipt pending"
+  ],
+  "aggregateQaPass": null
+}

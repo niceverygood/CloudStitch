@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "passed": true,
+  "checks": [
+    {
+      "name": "pointer-ray-round-trip-oblique",
+      "passed": true,
+      "detail": {
+        "maxWorldError": 1.5888218580782548e-14
+      }
+    },
+    {
+      "name": "pointer-ray-round-trip-side",
+      "passed": true,
+      "detail": {
+        "maxWorldError": 1.507288760336424e-14
+      }
+    },
+    {
+      "name": "pointer-ray-round-trip-high",
+      "passed": true,
+      "detail": {
+        "maxWorldError": 7.160723346098895e-15
+      }
+    },
+    {
+      "name": "all-ui-controls-exist",
+      "passed": true,
+      "detail": {
+        "ids": 69,
+        "references": 64
+      }
+    },
+    {
+      "name": "original-ready3-files-preserved",
+      "passed": true,
+      "detail": {
+        "files": 25,
+        "changed": []
+      }
+    }
+  ],
+  "scope": "Node camera ray/projection and source/preservation checks. Browser visual comparison is separate."
+}

@@ -1,0 +1,458 @@
+{
+  "version": 3,
+  "passed": true,
+  "scope": "READY3 actual helm, Q/E, buoyancy, spring bank, brake and body-follow camera. Short browser validation; human feel and long-session performance remain separate.",
+  "checks": [
+    {
+      "name": "real-models-and-perspective-camera",
+      "passed": true
+    },
+    {
+      "name": "idle-buoyancy-moves-the-visible-ship-only",
+      "passed": true,
+      "detail": {
+        "heaves": [
+          0.05075973685788653,
+          0.14941550470725498,
+          0.1760350585906753,
+          0.10329251747177631
+        ],
+        "range": 0.12527532173278877,
+        "centers": [
+          [
+            0,
+            8,
+            40
+          ],
+          [
+            0,
+            8,
+            40
+          ],
+          [
+            0,
+            8,
+            40
+          ],
+          [
+            0,
+            8,
+            40
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Q-rises-with-inertia",
+      "passed": true,
+      "detail": {
+        "y0": 8,
+        "y1": 14.197734249680858
+      }
+    },
+    {
+      "name": "E-descends-with-inertia",
+      "passed": true,
+      "detail": {
+        "y1": 14.197734249680858,
+        "y2": 8.654647657986686
+      }
+    },
+    {
+      "name": "W-and-Q-move-forward-and-up-together",
+      "passed": true,
+      "detail": {
+        "id": "player",
+        "x": 5.424215447289943e-16,
+        "y": 14.429270146624072,
+        "z": 35.57079196135043,
+        "vx": 9.048352168166914e-16,
+        "vy": 9.455713580177497,
+        "vz": -7.388540250516908,
+        "radius": 1.8,
+        "hp": 100,
+        "maxHp": 100,
+        "heading": 3.141592653589793,
+        "pitch": -0.05696702944544908,
+        "boost": 100,
+        "maxBoost": 100,
+        "boostActive": false,
+        "collisionCooldown": 0,
+        "yawRate": 0,
+        "ax": -5.897386578719517e-16,
+        "ay": 2.9574959216509455,
+        "az": 4.81558158876954,
+        "attitude": {
+          "roll": 0.007231195770923771,
+          "pitch": -0.05696702944544908,
+          "rollVelocity": 0.007797829768998029,
+          "pitchVelocity": 0.026548778536773805,
+          "heave": 0.16832707326209903,
+          "heaveVelocity": 0.10766512757233487
+        }
+      }
+    },
+    {
+      "name": "pause-freezes-physics-and-all-springs",
+      "passed": true
+    },
+    {
+      "name": "header-reset-restores-flight-focus",
+      "passed": true
+    },
+    {
+      "name": "D-steers-right-instead-of-sudden-sideways-motion",
+      "passed": true,
+      "detail": {
+        "turn": {
+          "id": "player",
+          "x": 0,
+          "y": 8,
+          "z": 40,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0,
+          "radius": 1.8,
+          "hp": 100,
+          "maxHp": 100,
+          "heading": 2.8597635133758073,
+          "pitch": 0.006375919550426223,
+          "boost": 100,
+          "maxBoost": 100,
+          "boostActive": false,
+          "collisionCooldown": 0,
+          "yawRate": -0.5330734116851693,
+          "ax": 0,
+          "ay": 0,
+          "az": 0,
+          "attitude": {
+            "roll": 0.004795890984129647,
+            "pitch": 0.006375919550426223,
+            "rollVelocity": 0.010094819535455145,
+            "pitchVelocity": 0.004162731126987964,
+            "heave": 0.12239069843745441,
+            "heaveVelocity": 0.2265657270007275
+          }
+        },
+        "change": -0.28182914021398586
+      }
+    },
+    {
+      "name": "accelerating-turn-banks-and-pitches-the-actual-model",
+      "passed": true,
+      "detail": {
+        "p": {
+          "id": "player",
+          "x": 1.8245422149682147,
+          "y": 8,
+          "z": 31.61840691375356,
+          "vx": 3.708113776385028,
+          "vy": 0,
+          "vz": -8.337172092848778,
+          "radius": 1.8,
+          "hp": 100,
+          "maxHp": 100,
+          "heading": 2.4403569032288575,
+          "pitch": -0.03036548004039811,
+          "boost": 100,
+          "maxBoost": 100,
+          "boostActive": false,
+          "collisionCooldown": 0,
+          "yawRate": -0.5914128835864613,
+          "ax": -1.240536028914665,
+          "ay": 0,
+          "az": 6.427117629814134,
+          "attitude": {
+            "roll": 0.07733382168619787,
+            "pitch": -0.03036548004039811,
+            "rollVelocity": 0.04660314713522428,
+            "pitchVelocity": 0.03166661849215875,
+            "heave": 0.14312799504277707,
+            "heaveVelocity": -0.1976000817395671
+          }
+        },
+        "stats": {
+          "projection": "perspective",
+          "fov": 57,
+          "position": [
+            -7.756711076403818,
+            17.655673539959768,
+            51.77284106967859
+          ],
+          "target": [
+            3.9930221303202984,
+            11,
+            27.325356940360944
+          ],
+          "yaw": -0.520090688480225,
+          "followYaw": -0.520090688480225,
+          "freeYaw": 0,
+          "looking": false,
+          "elevation": 0.24,
+          "distance": 28,
+          "visualPose": {
+            "position": [
+              1.8245422149682147,
+              8.143127995042777,
+              31.61840691375356
+            ],
+            "rotation": [
+              -0.03036548004039811,
+              2.4403569032288575,
+              0.07733382168619787,
+              "YXZ"
+            ]
+          },
+          "ships": 6,
+          "shots": 0,
+          "memory": {
+            "geometries": 108,
+            "textures": 265
+          },
+          "drawCalls": 269,
+          "triangles": 199226,
+          "outlineAutoClear": true,
+          "altitude": 8
+        }
+      }
+    },
+    {
+      "name": "camera-follows-the-bow-without-following-buoyancy",
+      "passed": true,
+      "detail": {
+        "followError": 0.18114506188071067,
+        "stats": {
+          "projection": "perspective",
+          "fov": 57,
+          "position": [
+            -7.756711076403818,
+            17.655673539959768,
+            51.77284106967859
+          ],
+          "target": [
+            3.9930221303202984,
+            11,
+            27.325356940360944
+          ],
+          "yaw": -0.520090688480225,
+          "followYaw": -0.520090688480225,
+          "freeYaw": 0,
+          "looking": false,
+          "elevation": 0.24,
+          "distance": 28,
+          "visualPose": {
+            "position": [
+              1.8245422149682147,
+              8.143127995042777,
+              31.61840691375356
+            ],
+            "rotation": [
+              -0.03036548004039811,
+              2.4403569032288575,
+              0.07733382168619787,
+              "YXZ"
+            ]
+          },
+          "ships": 6,
+          "shots": 0,
+          "memory": {
+            "geometries": 108,
+            "textures": 265
+          },
+          "drawCalls": 269,
+          "triangles": 199226,
+          "outlineAutoClear": true,
+          "altitude": 8
+        }
+      }
+    },
+    {
+      "name": "Space-brakes-momentum-without-teleporting",
+      "passed": true,
+      "detail": {
+        "id": "player",
+        "x": 2.3961978132477424,
+        "y": 8,
+        "z": 30.342252134108758,
+        "vx": 0.012077879198254905,
+        "vy": 0,
+        "vz": -0.026718313786693412,
+        "radius": 1.8,
+        "hp": 100,
+        "maxHp": 100,
+        "heading": 2.354168390739304,
+        "pitch": 0.029474151482064205,
+        "boost": 100,
+        "maxBoost": 100,
+        "boostActive": false,
+        "collisionCooldown": 0,
+        "yawRate": -0.0017146021286420577,
+        "ax": -0.0034301450686373414,
+        "ay": 0,
+        "az": 0.02187383684851288,
+        "attitude": {
+          "roll": 0.013584393918169539,
+          "pitch": 0.029474151482064205,
+          "rollVelocity": -0.09374293246125696,
+          "pitchVelocity": -0.08787605720213074,
+          "heave": -0.11096191960611847,
+          "heaveVelocity": -0.2669220757234973
+        }
+      }
+    },
+    {
+      "name": "right-drag-inspects-the-ship-without-turning-it",
+      "passed": true,
+      "detail": {
+        "projection": "perspective",
+        "fov": 57,
+        "position": [
+          -8.254637166852746,
+          19.863116300383982,
+          57.55403269265074
+        ],
+        "target": [
+          2.4610224140891193,
+          11,
+          34.883118465070666
+        ],
+        "yaw": -0.8099999999999999,
+        "followYaw": 0,
+        "freeYaw": -0.8099999999999999,
+        "looking": false,
+        "elevation": 0.39000000000000007,
+        "distance": 28,
+        "visualPose": {
+          "position": [
+            0,
+            8.006091686200126,
+            40
+          ],
+          "rotation": [
+            0.0011398042254201167,
+            3.141592653589793,
+            0.00021860378809044603,
+            "YXZ"
+          ]
+        },
+        "ships": 6,
+        "shots": 0,
+        "memory": {
+          "geometries": 110,
+          "textures": 265
+        },
+        "drawCalls": 272,
+        "triangles": 199518,
+        "outlineAutoClear": true,
+        "altitude": 8
+      }
+    },
+    {
+      "name": "3d-aim-still-hits-an-elevated-target",
+      "passed": true,
+      "detail": {
+        "stats": {
+          "shots": 7,
+          "hits": 3,
+          "kills": 1,
+          "checkpoints": 0,
+          "collisions": 0,
+          "enemyShots": 0,
+          "damageTaken": 0
+        },
+        "target": {
+          "id": "target-mid",
+          "label": "중층 표적",
+          "x": 18,
+          "y": 25,
+          "z": -42,
+          "radius": 3,
+          "hp": 0,
+          "maxHp": 60,
+          "defeated": true,
+          "telegraph": null,
+          "shotCooldown": 4.1
+        }
+      }
+    },
+    {
+      "name": "enemy-warning-and-3d-fire-still-work",
+      "passed": true
+    },
+    {
+      "name": "safe-mode-removes-enemy-hazards",
+      "passed": true
+    },
+    {
+      "name": "mobile-layout-no-overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile-up-button-still-rises",
+      "passed": true
+    },
+    {
+      "name": "page-errors-zero",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "external-requests-zero",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "failed-requests-zero",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "samples": [
+    {
+      "projection": "perspective",
+      "fov": 57,
+      "position": [
+        0,
+        22.25824004698684,
+        61.197463295856835
+      ],
+      "target": [
+        0,
+        15.602566507027076,
+        34
+      ],
+      "yaw": 0,
+      "followYaw": 0,
+      "freeYaw": 0,
+      "looking": false,
+      "elevation": 0.24,
+      "distance": 28,
+      "visualPose": {
+        "position": [
+          0,
+          13.75203387143573,
+          40
+        ],
+        "rotation": [
+          -0.008452973686953183,
+          3.141592653589793,
+          0.00882858034332142,
+          "YXZ"
+        ]
+      },
+      "ships": 6,
+      "shots": 0,
+      "memory": {
+        "geometries": 112,
+        "textures": 265
+      },
+      "drawCalls": 262,
+      "triangles": 198166,
+      "outlineAutoClear": true,
+      "altitude": 13.578869059336563
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "failedRequests": []
+}

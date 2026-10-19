@@ -1,0 +1,121 @@
+{
+  "title": "Cloudstitch · 적군 공중요새",
+  "revision": "dense-r4",
+  "status": "READY_art_review",
+  "scope": "Actual static 3D art asset and offline review page; not combat or game integration.",
+  "model": {
+    "path": "outputs/enemy-base-v1/dense-r4/enemy-base.glb",
+    "bytes": 91014180,
+    "sha256": "c3b0d375c198306b011741f103df2931a078706d36564e58a0421af8df37f49b"
+  },
+  "structural": {
+    "path": "outputs/enemy-base-v1/dense-r4/structure-verification.json",
+    "bytes": 1961,
+    "sha256": "e3bb74967aa667c3011c4fcdff1fd8c9dff2b044f87ac01215b2c70ad9fdee1f"
+  },
+  "browser": {
+    "path": "outputs/enemy-base-v1/dense-r4/browser-verification.json",
+    "bytes": 29602,
+    "sha256": "c008430085594a17a0b5a3d43a706dc6766c14e48db03ae7248be4a59807337c",
+    "checks": {
+      "total": 49,
+      "passed": 49,
+      "failed": 0
+    },
+    "passed": true,
+    "externalRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "ghosting": [
+      {
+        "mode": "handdrawn",
+        "frames": 120,
+        "changedPixels": 0
+      },
+      {
+        "mode": "cel",
+        "frames": 120,
+        "changedPixels": 0
+      },
+      {
+        "mode": "original",
+        "frames": 120,
+        "changedPixels": 0
+      }
+    ]
+  },
+  "previews": [
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/review-desktop.png",
+      "bytes": 918377,
+      "sha256": "42549142434391f4e05a0f2a86c73dbdebfede62f6ea3fc77ab2a1292e3004a9",
+      "generated_from": "work/verification/enemy-base-v1/dense-r4/review-desktop.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/model-iso.png",
+      "bytes": 497827,
+      "sha256": "1a8d0b857ab9be23428ceb4987957a5ed489f3c13a921a911e93082cf8c1d9d8",
+      "generated_from": "work/verification/enemy-base-v1/dense-r4/model-iso.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/model-back.png",
+      "bytes": 722444,
+      "sha256": "c89f262ef32a120a23d69e95d970c92ed9ea454a5cbac88f9be48d242d0e93c3",
+      "generated_from": "work/verification/enemy-base-v1/dense-r4/model-back.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/model-front.png",
+      "bytes": 754679,
+      "sha256": "0264e4450bbc2a06910d0ff9070766f75d02056208f8b88b9334c7352ce86ed9",
+      "generated_from": "work/verification/enemy-base-v1/dense-r4/model-front.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/detail-bell.png",
+      "bytes": 852239,
+      "sha256": "5a53cd4d3538f2382a214b44c29308e935c3905ae9186f65c174fdc3f86ef599",
+      "generated_from": "work/verification/enemy-base-v1/dense-r4/detail-bell.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/detail-dock.png",
+      "bytes": 1074180,
+      "sha256": "90b238702856706d92510eaaffb81f88444dfaacbe147892229be12c5b2462f3",
+      "generated_from": "work/verification/enemy-base-v1/dense-r4/detail-dock.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/review-mobile-390.png",
+      "bytes": 289515,
+      "sha256": "9d137687f68c49011bdb5febbf1b5cf6e8c43f6e2f840103a1b9ece4cfe062f4",
+      "generated_from": "work/verification/enemy-base-v1/dense-r4/review-mobile-390.png"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/dense-r4/reference.png",
+    "sha256": "6b7ef9aae13dec2fb73373a517063340a0cf75978c42ff986e594c7cfea6b7cb",
+    "preserved": true
+  },
+  "visual_review": {
+    "status": "actual_renders_compared_with_r3_and_reference",
+    "user_art_approval": false,
+    "previous_revision_user_feedback": "Rejected as too simple/toy-like; preserved unchanged",
+    "notes": "outputs/enemy-base-v1/dense-r4/ART_REVIEW.txt",
+    "comparison": "outputs/enemy-base-v1/dense-r4/comparison.html"
+  },
+  "limitations": [
+    "No combat, enemy AI, damage, module cutting or campaign integration.",
+    "No collision, navmesh, interiors, LOD or approved engine sockets.",
+    "Static mesh; camera rotation is not GLB animation.",
+    "Toon shading and outline are review runtime effects, separate from GLB materials.",
+    "Browser checks are not target-device performance or gameplay approval."
+  ],
+  "git_commit_or_push": false,
+  "deployment": false,
+  "surface_preservation": {
+    "positionNormalTransformPreserved": true,
+    "meshCount": 111,
+    "beforeSha256": "242a3d8fd9733880bf1015f13547a5b09d76aa5132c94fa59f357a05896c6279",
+    "afterSha256": "c3b0d375c198306b011741f103df2931a078706d36564e58a0421af8df37f49b",
+    "textures": 1,
+    "images": 1,
+    "scope": "Exact per-mesh POSITION/NORMAL bytes and node transform comparison. UV, colors and materials intentionally changed."
+  }
+}

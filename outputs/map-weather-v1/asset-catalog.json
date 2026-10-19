@@ -1,0 +1,165 @@
+{
+  "revision": "map-weather-v1",
+  "date": "2026-10-18",
+  "assemblyGLBs": 6,
+  "newFixtureAssemblies": 5,
+  "reusedCloudAssets": 4,
+  "newCloudAssets": 0,
+  "staticSnapshots": true,
+  "runtimeMotionFile": "tools/map-weather-v1/assets.mjs",
+  "limits": [
+    "GLB snapshots contain geometry/materials; runtime procedural movement, transparency changes, hazard timing and damage are implemented by the separate controller/authority.",
+    "Six assembly snapshots are not six newly generated cloud assets. Existing cloud shapes are reused.",
+    "No engine production colliders, LOD, fluid simulation or approved performance budget."
+  ],
+  "items": [
+    {
+      "id": "cloud",
+      "name_ko": "구름 은폐 · 햇살 이불구름",
+      "center": [
+        -45,
+        8,
+        -24
+      ],
+      "role": "겹겹의 구름 속에서 시야와 표적 노출을 확인",
+      "reused": [
+        "sunlit-cloud"
+      ],
+      "original_fixture": false,
+      "model": "assets/cloud.glb",
+      "bytes": 1135324,
+      "sha256": "2680aaea36b223e150467698a01ba23a44670afc4a3db914af3a18f4b67e6f3b",
+      "meshes": 53,
+      "triangles": 9966,
+      "animations": 0,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 0
+      }
+    },
+    {
+      "id": "updraft",
+      "name_ko": "상승기류 · 나선 바람기둥",
+      "center": [
+        0,
+        8,
+        -24
+      ],
+      "role": "빈 중심을 남긴 민트빛 상승 흐름과 떠오르는 씨앗",
+      "reused": [
+        "rising-cloud"
+      ],
+      "original_fixture": true,
+      "model": "assets/updraft.glb",
+      "bytes": 1335148,
+      "sha256": "a993579f2a9de3ae9fc084abbc49a84ca1ad51e2dc9b7912c12ff07483462e0d",
+      "meshes": 88,
+      "triangles": 11772,
+      "animations": 0,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 2
+      }
+    },
+    {
+      "id": "crosswind",
+      "name_ko": "횡풍 · 봉제 바람자루 관측대",
+      "center": [
+        45,
+        8,
+        -24
+      ],
+      "role": "나무 관측대의 산호색 바람자루와 +Z 방향 흐름",
+      "reused": [
+        "mist-ribbons"
+      ],
+      "original_fixture": true,
+      "model": "assets/crosswind.glb",
+      "bytes": 1421680,
+      "sha256": "1e1798e9ed86ae11a84951abae29e535c81c9dee6fe9b4652cfa47085eb1f594",
+      "meshes": 102,
+      "triangles": 11704,
+      "animations": 0,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 44
+      }
+    },
+    {
+      "id": "lightning",
+      "name_ko": "낙뢰 예고 · 먹구름 관측소",
+      "center": [
+        -45,
+        8,
+        24
+      ],
+      "role": "경고에 모이는 먹구름과 고정된 예상 낙뢰 위치로 내려오는 번개",
+      "reused": [
+        "storm-front"
+      ],
+      "original_fixture": true,
+      "model": "assets/lightning.glb",
+      "bytes": 1829064,
+      "sha256": "6b0c54c9c49b89b59ccf8e5f51340c1d87309ef70ac44b9dea3900f8de45dfac",
+      "meshes": 128,
+      "triangles": 15018,
+      "animations": 0,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 45
+      }
+    },
+    {
+      "id": "icing",
+      "name_ko": "착빙과 예열 · 서리 풍차와 온기 화로",
+      "center": [
+        0,
+        8,
+        24
+      ],
+      "role": "늘어진 고드름·서리 배관·느려지는 풍차와 예열용 화로",
+      "reused": [],
+      "original_fixture": true,
+      "model": "assets/icing.glb",
+      "bytes": 659044,
+      "sha256": "387b91385192384b471dd67b3a6e27084d0a114f71c860b6215d0b6d169d3d77",
+      "meshes": 178,
+      "triangles": 5056,
+      "animations": 0,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 95
+      }
+    },
+    {
+      "id": "thermal",
+      "name_ko": "열풍 통로 · 삼연식 증기 성벽",
+      "center": [
+        45,
+        8,
+        24
+      ],
+      "role": "세 통로 중 한 곳의 압력 예고와 가로지르는 주황 열풍",
+      "reused": [],
+      "original_fixture": true,
+      "model": "assets/thermal.glb",
+      "bytes": 1325268,
+      "sha256": "888e784a1a0d53b177385f2f3668ab0390d6197fdfbf751f5c7f7a0acc588f04",
+      "meshes": 106,
+      "triangles": 9924,
+      "animations": 0,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 76
+      }
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

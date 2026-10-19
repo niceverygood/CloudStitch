@@ -1,0 +1,156 @@
+{
+  "revision": "chapter2-r1",
+  "status": "SOURCE_READY",
+  "date": "2026-10-19",
+  "ownership": [
+    "tools/enemy-base/chapter2-r1/",
+    "outputs/enemy-base-v1/chapter2-r1/"
+  ],
+  "files": [
+    {
+      "path": "tools/enemy-base/chapter2-r1/build.cjs",
+      "bytes": 1864,
+      "sha256": "ae6b61c256de781e2a8a41a0ca3a2d94f3fcd14d6dd08d3f74b702f07d36c3da"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/finalize.cjs",
+      "bytes": 5479,
+      "sha256": "aaf3e78ae971a08f5c5423c8f7a794692b4fcb1618e0e49e9444e32419aca21d"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/generate.cjs",
+      "bytes": 1209,
+      "sha256": "40448322fceef0474998d7f1d6549a88e1bdd3d962aca15ea5145f17b3f2b57a"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/generate.mjs",
+      "bytes": 4817,
+      "sha256": "cba6dfeb8db0a5339780122cf49e8b4d0c85f7f0c51da26da9ac491bd93744fd"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/index-exact.cjs",
+      "bytes": 5094,
+      "sha256": "c6b9db650d5e8820b1d6448ff107526b9d4d0c9e7055c468127ec77ea2ed72c1"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/inspect.cjs",
+      "bytes": 5079,
+      "sha256": "edcf4618f01d9e02c7d0a7cb269a9d4809cd6492fa62d2ddc0896091dbeee05d"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/model.mjs",
+      "bytes": 20493,
+      "sha256": "49bb0a312e48d96eda4d27393f340dfa1b43043849cec23e5160c7d448c4dbda"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/paint-export.js",
+      "bytes": 3214,
+      "sha256": "bac6c9f4d2fb234e59c1830b326b315b862d5c3bc364d26f0494dd2ca39916c3"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/paint.cjs",
+      "bytes": 2481,
+      "sha256": "fb043a86cc76df4090c6519dfdd6d6d2c5adbda5a3aeb0c492b31cd4c5b86595"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/qa.cjs",
+      "bytes": 28078,
+      "sha256": "64d2452d70f4840b1966fe46716f75cf2dcfa63603f7efe08f0ee56a4e9051c5"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/README.txt",
+      "bytes": 2456,
+      "sha256": "6982c2a95d40341ae2dc450a96ee8971581e8964b20994413e4f5648c6b1631d"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/review.js",
+      "bytes": 22069,
+      "sha256": "168cd18684cc6e26cd81104dd8b967e7846555fe5104694bf518f3086dcb9948"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/source-ready.cjs",
+      "bytes": 2709,
+      "sha256": "144fe73b8cd0d19e794caea85a73cd7b1c9050f8d50a02ac7d9a5fe1d4850a57"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/template.html",
+      "bytes": 24824,
+      "sha256": "ce01378c637243950cad3abc4cd2fd08932e62322bf5cec29bc787dbd6b532d2"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r1/verify-surface.cjs",
+      "bytes": 1976,
+      "sha256": "fb4acdab08677aa7a4998774c1146550ee7f97ab47a6bcc9cf9c77b9f6cb9480"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "tools/lib/runtime.cjs",
+      "bytes": 1969,
+      "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+    },
+    {
+      "path": "tools/qa/world-gltf.cjs",
+      "bytes": 10543,
+      "sha256": "72e8832121aac1e845aac79b8a244716f571337ccd06607891b22abba93eb6f4"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-moodboard-v1/moodboard.png",
+      "bytes": 3613828,
+      "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/model-iso.png",
+      "bytes": 497827,
+      "sha256": "1a8d0b857ab9be23428ceb4987957a5ed489f3c13a921a911e93082cf8c1d9d8"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/chapter2-r1/reference.png",
+    "bytes": 3613828,
+    "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+  },
+  "commands": [
+    "node tools/enemy-base/chapter2-r1/generate.cjs",
+    "node tools/enemy-base/chapter2-r1/index-exact.cjs",
+    "node tools/enemy-base/chapter2-r1/paint.cjs",
+    "node tools/enemy-base/chapter2-r1/inspect.cjs",
+    "node tools/enemy-base/chapter2-r1/verify-surface.cjs",
+    "node tools/enemy-base/chapter2-r1/build.cjs",
+    "node tools/enemy-base/chapter2-r1/qa.cjs",
+    "node tools/enemy-base/chapter2-r1/finalize.cjs"
+  ],
+  "scope": "New actual chapter-two fortress geometry, original painted atlas, offline reviewer, reference and chapter-one PNG comparison; static art only.",
+  "changes": [
+    "Real volumetric nautilus crown and growth ribs",
+    "Asymmetric multilevel nacre city and bone-supported balconies",
+    "Giant fanged harbour with actual empty cavity and bioluminescent basin",
+    "Hollow branching coral siege trumpets and reef trees",
+    "Swept rib cage, bone cranes, netted captured miniature craft",
+    "Jellyfish veils, seaweed roots, rope railings and pearl ornaments"
+  ],
+  "checks": "Official full glTF validator, exact surface geometry preservation, 49 browser checks/three modes/ghosting120frames/texture decode/UV/controls/mobile/download; actual PNG art read separate.",
+  "limitations": [
+    "Hidden/rear architecture interpreted from one image",
+    "No chapter-one model geometry reused",
+    "Relative design scale; engine/performance budget undecided",
+    "No gameplay/AI/collision/LOD/rig/animation/interior/sockets"
+  ],
+  "priorAttempt": {
+    "failure": "paint-attempt-1-failure.json",
+    "sourceReady": "SOURCE_READY-attempt-1.json",
+    "initialGeometry": "geometry-baseline/enemy-base.glb",
+    "cause": "Browser target closed; memory pressure from 79MB nonindexed serialization is a hypothesis, not proven"
+  },
+  "recoveryCommands": [
+    "node tools/enemy-base/chapter2-r1/index-exact.cjs",
+    "node tools/enemy-base/chapter2-r1/paint.cjs",
+    "node tools/enemy-base/chapter2-r1/inspect.cjs",
+    "node tools/enemy-base/chapter2-r1/verify-surface.cjs",
+    "node tools/enemy-base/chapter2-r1/build.cjs",
+    "node tools/enemy-base/chapter2-r1/qa.cjs"
+  ],
+  "recovery": "Bitwise exact indexing on original nonindexed geometry; source material primitive boundaries remain separate. First frozen triangle UV formula reproduced before welding, UV participates in the key. No geometric simplification or UV reinterpretation. Paint only binds original procedural atlas.",
+  "exporterStarted": false,
+  "browserStarted": false
+}

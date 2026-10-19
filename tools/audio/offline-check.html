@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'self' data:; media-src 'none'; object-src 'none'; base-uri 'none'">
+<title>Cloudstitch · 오디오 오프라인 수치 검사</title>
+<style>
+  :root{color-scheme:light;background:#f6eedb;color:#193f42;font:16px/1.6 system-ui,sans-serif}*{box-sizing:border-box}body{max-width:1140px;margin:0 auto;padding:30px 20px 80px}h1{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.25}a{color:#17656a}button,.download{font:inherit;border:1px solid #2f7375;border-radius:8px;padding:9px 16px;background:#1b6267;color:#fff;cursor:pointer;text-decoration:none;display:inline-block}button:disabled{opacity:.55;cursor:wait}button:focus-visible,a:focus-visible{outline:3px solid #d57655;outline-offset:3px}.note{border-left:4px solid #c9804d;background:#fff9eb;padding:12px 18px}#status{font-weight:650;min-height:2em}.table-wrap{overflow:auto;max-width:100%;border:1px solid #cabd9f;border-radius:8px}table{border-collapse:collapse;width:100%;min-width:780px;font-size:.86rem;font-variant-numeric:tabular-nums}th,td{padding:9px;text-align:left;border-bottom:1px solid #d8ccb2;vertical-align:top}th{background:#e7dcc2}tbody tr:nth-child(even){background:#fff8e8}.bad{color:#9b362d;font-weight:700}.good{color:#296349}code{font-size:.9em}details{margin:20px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.8rem}footer{font-size:.9rem;margin-top:28px}#download[hidden]{display:none}
+</style>
+<header>
+  <a href="../../outputs/audio-v1/">← 오디오 시청 화면</a>
+  <h1>Cloudstitch 오디오 오프라인 수치 검사</h1>
+  <p>로컬 브라우저의 <code>OfflineAudioContext</code>로 합성 SFX를 한 종류씩 렌더합니다. 이 화면은 소리를 출력하지 않습니다.</p>
+</header>
+<p class="note">아직 측정하지 않았습니다. 아래 실행 뒤 생성되는 JSON만 실제 브라우저 수치 결과입니다. 수치 통과는 사람의 청취, 세 가지 중요한 cue 식별, 스피커·헤드폰·모노 검수를 대신하지 않습니다.</p>
+<p>원본 합성은 결정적 seed를 사용합니다. 믹스 측정은 기본 전체/SFX/환경 볼륨, 낮은 동적 범위 compressor, 출력 soft limiter를 사용한 단일 cue입니다. 이 측정은 재생률 1과 고정 gain을 사용하며 런타임의 시작 ramp·거리·pan·위험 ducking을 적용하지 않습니다. 여러 cue 동시 혼합·실제 게임 이벤트·하드웨어 지연은 별도 통합 검사입니다.</p>
+<button id="run" type="button">로컬 수치 검사 실행</button>
+<a id="download" class="download" hidden download="cloudstitch-audio-offline-check.json">결과 JSON 저장</a>
+<p id="status" role="status" aria-live="polite">미실행 · 브라우저 측정/청취 결과 없음</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>소리 ID</th><th>길이(s)</th><th>원본 peak / RMS</th><th>믹스 peak / RMS</th><th>원본 끝점 / 루프 seam</th><th>수치 관찰</th></tr></thead>
+  <tbody id="results"></tbody>
+</table></div>
+<details><summary>판정 범위와 임계값</summary>
+  <p>원본 peak ≤ 1, 믹스 peak ≤ 0.86, RMS &gt; 0.0001, 모든 샘플 유한 수, 예고 길이와 실제 버퍼 길이 차이 ≤ 1 샘플을 확인합니다. 원본 마지막 샘플 절댓값과 처음/끝 seam 차이 &gt; 0.005는 청취 검토 대상으로 표시합니다. 끝점 수치 하나만으로 클릭 여부를 확정하지 않습니다.</p>
+  <p>3개 변주(seed + 0/7919/15838)를 각각 렌더합니다. 루프는 한 주기만 측정하며 seamless 청취나 장시간 반복 검사가 아닙니다. WAV 컨테이너의 bytes/SHA는 빌드 catalog에 있습니다.</p>
+</details>
+<details><summary>실행 결과 원문</summary><pre id="json">실행 전</pre></details>
+<footer>절차적 합성 임시 SFX · 최종 녹음/상용 사운드가 아닙니다. 음악·음성은 이번 범위에 포함하지 않습니다. 외부 음원 및 외부 네트워크 요청 없음.</footer>
+<script type="module" src="./offline-check.mjs"></script>
+</html>

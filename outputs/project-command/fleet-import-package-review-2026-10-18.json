@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:43:15Z",
+  "status": "two common-package inputs may be narrowly preserved by frozen integration SHA; original asset inputs remain strict",
+  "initialImport": {
+    "declared174FileShaPassReported": true,
+    "writtenFilesBeforeGuardStop": 0,
+    "cause": "shared worker package.json and lock differ from frozen integration package"
+  },
+  "commonInputs": [
+    {
+      "path": "package.json",
+      "workerSharedSha256": "6746bcbdf966355a25c86eece4014a18a895d260454ea1a2c0125526b9e9ba47",
+      "integrationFrozenSha256": "109d230a39a10d90dbb6650da24e298496b058de100a3ed8b2583794acb28755"
+    },
+    {
+      "path": "package-lock.json",
+      "workerSharedSha256": "ebad727fc8e6e89b8e943d8055c58d1e9ee9dfbc0fb04e70b55a40694fb0091b",
+      "integrationFrozenSha256": "d0ea5f3362dc4daacba2eeafa6acbdd060a856ce9a6d925184c782fe9504d4ea"
+    }
+  ],
+  "delegatedAudit": {
+    "integrationTwoMatchFrozenDelivery": true,
+    "addedScripts": 28,
+    "engineChange": ">=20 to >=22",
+    "sameExistingDependencies": [
+      "esbuild0.25.10",
+      "three0.180.0",
+      "playwright1.62.1"
+    ],
+    "addedEstablishedQaDevDependency": "gltf-validator2.0.0-dev.3.10",
+    "lockVersion": 3,
+    "lockEntries": "32 to33, root engines/devDependencies plus validator entry only",
+    "otherSmallOriginalInputsVerified": 7,
+    "atlasOriginalInput": "metadata only in command audit; importer must still verify worker SHA"
+  },
+  "policy": [
+    "only these two common inputs checked against explicit frozen integration SHA and preserved",
+    "remaining8 original dependencies must match worker SHA in shared/root",
+    "no package overwrite or install",
+    "record exception in import report; no general skip-original-inputs option"
+  ],
+  "streamingImportOutcome": "not yet independently reviewed after policy adjustment"
+}

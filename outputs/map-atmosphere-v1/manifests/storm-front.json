@@ -1,0 +1,42 @@
+{
+  "id": "storm-front",
+  "name_ko": "먹구름 모루전선",
+  "category": "clouds",
+  "role": "항로 멀리 보이는 수평 모루와 비의 장막",
+  "motion_ko": "상층과 아랫층의 느린 대류, 여러 비 장막의 엇갈린 낙하",
+  "order": 12,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/storm-front.glb",
+  "preview": "previews/storm-front.png",
+  "triangles": 11808,
+  "mesh_count": 75,
+  "vertices": 35424,
+  "material_count": 1,
+  "animation_count": 2,
+  "animation_duration": 16,
+  "encoded_color_components": 0,
+  "bytes": 1360904,
+  "sha256": "723a8e17ea6e3c2a516ec520d757a3286d12b8265786f9cc63b33b8331cfb0a5",
+  "bounds": {
+    "min": [
+      -6.860564512014389,
+      -4.6481099128723145,
+      -1.5202380782529632
+    ],
+    "max": [
+      6.8009464085102085,
+      2.625168346944532,
+      1.4566697389139032
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

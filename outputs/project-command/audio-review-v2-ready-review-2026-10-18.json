@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:06:06Z",
+  "version": "audio-review-v2.0.0-ready",
+  "sourceOwner": "01a14dd0-fc09-7c51-8f63-cdfff1bc8e6f",
+  "manifest": {
+    "path": "outputs/audio-review-v2/delivery-manifest.json",
+    "sha256": "7b28cb10dee8b8654517be78a9f5529f9a3da165e61effa6624920cf01ebbfd9",
+    "selfExcluded": true,
+    "declaredFiles": 113,
+    "totalBytes": 2025742,
+    "rootDelegatedHashMatched": true
+  },
+  "independentStaticAudit": {
+    "reviewer": "audio_contract_review",
+    "uniquePathsAndSizesMatched": 113,
+    "sourceShaMatched": 13,
+    "mp3FullHashRepeated": false,
+    "files": {
+      "mp3": 47,
+      "wav": 0,
+      "mp3Bytes": 1479066
+    }
+  },
+  "generationRecords": {
+    "newSuccess": 46,
+    "failed": 0,
+    "pending": 0,
+    "reusedMachinegun": 1,
+    "total": 47,
+    "responseCharacterCost": 890,
+    "characterCostIsCurrency": false,
+    "requestedSecondsIncludingReuse": 89.8,
+    "indexRecoveryFromReceipts": 2,
+    "extraPaidRequestForRecovery": 0,
+    "providerRequestId": "successful response header absent per owner report; do not invent IDs",
+    "providerAccountOrLogsIndependentlyQueried": false
+  },
+  "reviewUi": {
+    "implementationSource": "tools/audio/review-v2/",
+    "output": "outputs/audio-review-v2/",
+    "serverOwnerReported": "http://127.0.0.1:8864/outputs/audio-review-v2/",
+    "features": [
+      "individual/sequential/loop",
+      "search/7categories",
+      "MG6shots at.22s",
+      "3cue/ambience comparison",
+      "volume/mono/lowdynamic",
+      "approve/revise/hold/notes",
+      "JSON import/export",
+      "waveform/prompt/mapping/readonlyMP3download"
+    ],
+    "storageNamespace": "separate from game saves",
+    "playbackFixtures": "mono/peak normalization/burst use separate in-memory browser buffers; no fixed monoWAV generated"
+  },
+  "ownerTests": {
+    "fileVerification": 1193,
+    "parserFixtures": 13,
+    "localHttpChecks": 55,
+    "fakeAudioContextChecks": 32,
+    "nativeResultsPresent": false,
+    "countsNotSummedIntoAggregate": true
+  },
+  "preservationReported": {
+    "oldAudioFiles": 46,
+    "frozenIntegrationFiles": 39,
+    "originalMachinegunCandidateFiles": 7,
+    "sourceBoundaryFiles": 7,
+    "commonPackageLockLfsChanged": false,
+    "independentWholeProtectionRehash": false
+  },
+  "acceptance": {
+    "staticReady": true,
+    "nativeBrowser": false,
+    "humanListening": false,
+    "gameInstalled": false,
+    "allGameAdaptersReady": false
+  },
+  "nativeQaRequested": [
+    "47 actual MP3 decode/PCM finite/peak/rms",
+    "first gesture/play/stop and voice/loop lifecycle",
+    "mono/lowdynamic/burst/3cue UI behavior",
+    "notesJSON/localStorage/filter state",
+    "390px overflow and error/request/path checks",
+    "preserved113 and old source/outputs in separate QA paths"
+  ],
+  "humanRemaining": [
+    "one-shot/burst intelligibility",
+    "mono/headphones/3cue identification",
+    "loop seam/comfort"
+  ],
+  "gameRemaining": [
+    "actual game sound adapters and unimplemented weapon/loading/salvage/UI hooks",
+    "actual autosave success hook"
+  ],
+  "noCredentialsReadCopiedOrNewProviderCallsByCommand": true
+}

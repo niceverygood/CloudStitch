@@ -1,0 +1,3327 @@
+{
+  "version": 1,
+  "passed": true,
+  "checks": [
+    {
+      "name": "harbor-real-GLBs",
+      "passed": true
+    },
+    {
+      "name": "keyboard-moves-real-state",
+      "passed": true
+    },
+    {
+      "name": "pause-freezes-time",
+      "passed": true
+    },
+    {
+      "name": "chrome-input-sortie-1",
+      "passed": true,
+      "detail": {
+        "done": true,
+        "returned": true,
+        "steps": 161,
+        "observed": {
+          "hits": 13,
+          "detached": 1,
+          "recovered": 1,
+          "shots": 13,
+          "damage": 9
+        },
+        "peak": {
+          "hitEffects": 14,
+          "activeProjectiles": 8,
+          "reused": 25
+        },
+        "muzzleSources": [
+          "player-homeward:Muzzle"
+        ],
+        "maxWarnings": 1,
+        "resources": {
+          "S": 120,
+          "F": 40,
+          "C": 2
+        },
+        "parts": 8,
+        "settlements": 1
+      }
+    },
+    {
+      "name": "actual-muzzle-and-hit-vfx-1",
+      "passed": true,
+      "detail": {
+        "done": true,
+        "returned": true,
+        "steps": 161,
+        "observed": {
+          "hits": 13,
+          "detached": 1,
+          "recovered": 1,
+          "shots": 13,
+          "damage": 9
+        },
+        "peak": {
+          "hitEffects": 14,
+          "activeProjectiles": 8,
+          "reused": 25
+        },
+        "muzzleSources": [
+          "player-homeward:Muzzle"
+        ],
+        "maxWarnings": 1,
+        "resources": {
+          "S": 120,
+          "F": 40,
+          "C": 2
+        },
+        "parts": 8,
+        "settlements": 1
+      }
+    },
+    {
+      "name": "warning-budget-1",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "repair-actual-cost-1",
+      "passed": true,
+      "detail": "스크랩 3 · 내구도 9 회복"
+    },
+    {
+      "name": "recovered-part-fitted",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "before": {
+          "installedWeight": 50,
+          "cargoWeight": 0,
+          "passengerWeight": 0,
+          "weight": 50,
+          "totalWeight": 50,
+          "lift": 65,
+          "powerSupply": 14,
+          "powerDemand": 10,
+          "liftMargin": 15,
+          "powerMargin": 4,
+          "canLift": true,
+          "hasPower": true
+        },
+        "after": {
+          "installedWeight": 53,
+          "cargoWeight": 0,
+          "passengerWeight": 0,
+          "weight": 53,
+          "totalWeight": 53,
+          "lift": 65,
+          "powerSupply": 14,
+          "powerDemand": 10,
+          "liftMargin": 12,
+          "powerMargin": 4,
+          "canLift": true,
+          "hasPower": true
+        }
+      }
+    },
+    {
+      "name": "chrome-input-sortie-2",
+      "passed": true,
+      "detail": {
+        "done": true,
+        "returned": true,
+        "steps": 166,
+        "observed": {
+          "hits": 14,
+          "detached": 1,
+          "recovered": 1,
+          "shots": 14,
+          "damage": 0
+        },
+        "peak": {
+          "hitEffects": 14,
+          "activeProjectiles": 6,
+          "reused": 44
+        },
+        "muzzleSources": [
+          "player-homeward:Muzzle"
+        ],
+        "maxWarnings": 1,
+        "resources": {
+          "S": 117,
+          "F": 40,
+          "C": 2
+        },
+        "parts": 10,
+        "settlements": 2
+      }
+    },
+    {
+      "name": "actual-muzzle-and-hit-vfx-2",
+      "passed": true,
+      "detail": {
+        "done": true,
+        "returned": true,
+        "steps": 166,
+        "observed": {
+          "hits": 14,
+          "detached": 1,
+          "recovered": 1,
+          "shots": 14,
+          "damage": 0
+        },
+        "peak": {
+          "hitEffects": 14,
+          "activeProjectiles": 6,
+          "reused": 44
+        },
+        "muzzleSources": [
+          "player-homeward:Muzzle"
+        ],
+        "maxWarnings": 1,
+        "resources": {
+          "S": 117,
+          "F": 40,
+          "C": 2
+        },
+        "parts": 10,
+        "settlements": 2
+      }
+    },
+    {
+      "name": "warning-budget-2",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "no-unnecessary-repair-2",
+      "passed": true
+    },
+    {
+      "name": "browser-reload-after-two-voyages",
+      "passed": true
+    },
+    {
+      "name": "outline-no-ghosting",
+      "passed": true,
+      "detail": {
+        "differentPixels": 0,
+        "width": 864,
+        "height": 748,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "name": "mobile-no-horizontal-overflow",
+      "passed": true
+    },
+    {
+      "name": "sustained-browser-resource-stability",
+      "passed": true,
+      "detail": {
+        "durationSeconds": 300,
+        "first": {
+          "elapsedSeconds": 20,
+          "frameCount": 1265,
+          "firstReadyMs": 137,
+          "worldReadyMs": 361,
+          "meshes": 350,
+          "visibleMeshes": 348,
+          "textures": 6,
+          "estimatedTextureBytes": 67133464,
+          "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+          "drawCalls": 696,
+          "triangles": 82196,
+          "gpuMemory": {
+            "geometries": 286,
+            "textures": 17
+          },
+          "pendingLoads": 0,
+          "loadedWorldVisuals": 8,
+          "worldVisualIds": [
+            "workshop",
+            "market",
+            "dock-main",
+            "dock-end",
+            "platform-west",
+            "platform-east",
+            "repair-point",
+            "storage-point"
+          ],
+          "worldVisualLimit": 8,
+          "enemyViews": 0,
+          "debrisViews": 0,
+          "projectileViews": 0,
+          "modelErrors": {},
+          "loads": [
+            {
+              "kind": "fleet",
+              "assetId": "player-homeward",
+              "durationMs": 110,
+              "fallback": false
+            },
+            {
+              "kind": "world",
+              "assetId": "repair-workshop",
+              "path": "hero/repair-workshop/model-closed-roof.glb",
+              "bytes": 3838916,
+              "durationMs": 106
+            },
+            {
+              "kind": "world",
+              "assetId": "canvas-market",
+              "path": "hero/canvas-market/model-repaired.glb",
+              "bytes": 3838872,
+              "durationMs": 136
+            },
+            {
+              "kind": "world",
+              "assetId": "dock-straight",
+              "path": "assets/dock-straight.glb",
+              "bytes": 275952,
+              "durationMs": 32
+            },
+            {
+              "kind": "world",
+              "assetId": "dock-endcap",
+              "path": "assets/dock-endcap.glb",
+              "bytes": 346040,
+              "durationMs": 17
+            },
+            {
+              "kind": "world",
+              "assetId": "platform-square",
+              "path": "assets/platform-square.glb",
+              "bytes": 279864,
+              "durationMs": 16
+            },
+            {
+              "kind": "world",
+              "assetId": "repair-station",
+              "path": "assets/repair-station.glb",
+              "bytes": 374948,
+              "durationMs": 14
+            },
+            {
+              "kind": "world",
+              "assetId": "storage-chest",
+              "path": "assets/storage-chest.glb",
+              "bytes": 177944,
+              "durationMs": 12
+            }
+          ],
+          "effects": {
+            "state": "ready",
+            "loaded": true,
+            "lastError": null,
+            "eventCursor": 0,
+            "supportedWeapons": [
+              "01-machine-gun",
+              "02-deck-cannon"
+            ],
+            "mappedWeaponCount": 6,
+            "loadedEffects": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "cannon-muzzle",
+              "machine-gun-hit",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "activeOneShots": 0,
+            "activeProjectiles": 0,
+            "projectileIds": [],
+            "terminalProjectileCount": 0,
+            "firedProjectileCount": 0,
+            "fireEventCount": 0,
+            "terminalReceiptCapacity": 2048,
+            "pooled": {},
+            "created": 0,
+            "reused": 0,
+            "returned": 0,
+            "hitEffects": 0,
+            "unsupportedEvents": 0,
+            "movementAuthority": "battlefield-projectile-state",
+            "projectileAnimationApplied": false,
+            "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+          },
+          "frameCpuMs": {
+            "average": 3.5700000021855036,
+            "p95": 4.300000011920929
+          },
+          "camera": {
+            "projection": "orthographic",
+            "position": [
+              0,
+              55,
+              95.50999999999999
+            ],
+            "target": [
+              0,
+              0,
+              57
+            ],
+            "halfHeight": 28,
+            "occluderIds": []
+          },
+          "clearing": {
+            "rendererAutoClear": true,
+            "outlineAutoClear": true
+          },
+          "level": "jonghang-harbor"
+        },
+        "last": {
+          "elapsedSeconds": 300,
+          "frameCount": 18050,
+          "firstReadyMs": 137,
+          "worldReadyMs": 361,
+          "meshes": 350,
+          "visibleMeshes": 348,
+          "textures": 6,
+          "estimatedTextureBytes": 67133464,
+          "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+          "drawCalls": 696,
+          "triangles": 82196,
+          "gpuMemory": {
+            "geometries": 286,
+            "textures": 17
+          },
+          "pendingLoads": 0,
+          "loadedWorldVisuals": 8,
+          "worldVisualIds": [
+            "workshop",
+            "market",
+            "dock-main",
+            "dock-end",
+            "platform-west",
+            "platform-east",
+            "repair-point",
+            "storage-point"
+          ],
+          "worldVisualLimit": 8,
+          "enemyViews": 0,
+          "debrisViews": 0,
+          "projectileViews": 0,
+          "modelErrors": {},
+          "loads": [
+            {
+              "kind": "fleet",
+              "assetId": "player-homeward",
+              "durationMs": 110,
+              "fallback": false
+            },
+            {
+              "kind": "world",
+              "assetId": "repair-workshop",
+              "path": "hero/repair-workshop/model-closed-roof.glb",
+              "bytes": 3838916,
+              "durationMs": 106
+            },
+            {
+              "kind": "world",
+              "assetId": "canvas-market",
+              "path": "hero/canvas-market/model-repaired.glb",
+              "bytes": 3838872,
+              "durationMs": 136
+            },
+            {
+              "kind": "world",
+              "assetId": "dock-straight",
+              "path": "assets/dock-straight.glb",
+              "bytes": 275952,
+              "durationMs": 32
+            },
+            {
+              "kind": "world",
+              "assetId": "dock-endcap",
+              "path": "assets/dock-endcap.glb",
+              "bytes": 346040,
+              "durationMs": 17
+            },
+            {
+              "kind": "world",
+              "assetId": "platform-square",
+              "path": "assets/platform-square.glb",
+              "bytes": 279864,
+              "durationMs": 16
+            },
+            {
+              "kind": "world",
+              "assetId": "repair-station",
+              "path": "assets/repair-station.glb",
+              "bytes": 374948,
+              "durationMs": 14
+            },
+            {
+              "kind": "world",
+              "assetId": "storage-chest",
+              "path": "assets/storage-chest.glb",
+              "bytes": 177944,
+              "durationMs": 12
+            }
+          ],
+          "effects": {
+            "state": "ready",
+            "loaded": true,
+            "lastError": null,
+            "eventCursor": 0,
+            "supportedWeapons": [
+              "01-machine-gun",
+              "02-deck-cannon"
+            ],
+            "mappedWeaponCount": 6,
+            "loadedEffects": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "cannon-muzzle",
+              "machine-gun-hit",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "activeOneShots": 0,
+            "activeProjectiles": 0,
+            "projectileIds": [],
+            "terminalProjectileCount": 0,
+            "firedProjectileCount": 0,
+            "fireEventCount": 0,
+            "terminalReceiptCapacity": 2048,
+            "pooled": {},
+            "created": 0,
+            "reused": 0,
+            "returned": 0,
+            "hitEffects": 0,
+            "unsupportedEvents": 0,
+            "movementAuthority": "battlefield-projectile-state",
+            "projectileAnimationApplied": false,
+            "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+          },
+          "frameCpuMs": {
+            "average": 3.878333331545194,
+            "p95": 4.5
+          },
+          "camera": {
+            "projection": "orthographic",
+            "position": [
+              0,
+              55,
+              95.50999999999999
+            ],
+            "target": [
+              0,
+              0,
+              57
+            ],
+            "halfHeight": 28,
+            "occluderIds": []
+          },
+          "clearing": {
+            "rendererAutoClear": true,
+            "outlineAutoClear": true
+          },
+          "level": "jonghang-harbor"
+        }
+      }
+    },
+    {
+      "name": "edge-real-assets-and-effects",
+      "passed": true
+    },
+    {
+      "name": "edge-pause",
+      "passed": true
+    },
+    {
+      "name": "no-page-errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-external-requests",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-failed-requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "samples": [
+    {
+      "browser": "chrome",
+      "phase": "harbor",
+      "frameCount": 28,
+      "firstReadyMs": 609,
+      "worldReadyMs": 468,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 190,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 144
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 195
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 10
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 41
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 12
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 13
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-projectile",
+          "machine-gun-muzzle",
+          "machine-gun-hit",
+          "cannon-muzzle",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 6.717857143708637,
+        "p95": 25.80000001192093
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "after-two-sorties-and-reload",
+      "frameCount": 69,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 4.0173913007197175,
+        "p95": 6.799999952316284
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 32.70967741935484,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 20,
+      "frameCount": 1265,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.5700000021855036,
+        "p95": 4.300000011920929
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 40,
+      "frameCount": 2462,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.6186666677395505,
+        "p95": 4.599999964237213
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 60,
+      "frameCount": 3662,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.311000002026558,
+        "p95": 4
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 80,
+      "frameCount": 4860,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.9966666664679846,
+        "p95": 4.800000011920929
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 100,
+      "frameCount": 6058,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.7726666663090387,
+        "p95": 4.400000035762787
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 120,
+      "frameCount": 7254,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.9169999998807907,
+        "p95": 4.900000035762787
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 140,
+      "frameCount": 8454,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.86700000166893,
+        "p95": 4.899999976158142
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 160,
+      "frameCount": 9654,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.901666664679845,
+        "p95": 4.699999988079071
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 180,
+      "frameCount": 10854,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.6066666662693025,
+        "p95": 4.199999988079071
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 200,
+      "frameCount": 12054,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.7859999998410543,
+        "p95": 4.5
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 220,
+      "frameCount": 13254,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.7216666648785273,
+        "p95": 4.399999976158142
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 240,
+      "frameCount": 14454,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.6083333335320154,
+        "p95": 4.600000023841858
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 260,
+      "frameCount": 15654,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.8913333318630854,
+        "p95": 4.800000011920929
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 280,
+      "frameCount": 16850,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.6809999996423723,
+        "p95": 4.400000035762787
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "chrome",
+      "phase": "sustained-harbor-render",
+      "elapsedSeconds": 300,
+      "frameCount": 18050,
+      "firstReadyMs": 137,
+      "worldReadyMs": 361,
+      "meshes": 350,
+      "visibleMeshes": 348,
+      "textures": 6,
+      "estimatedTextureBytes": 67133464,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 696,
+      "triangles": 82196,
+      "gpuMemory": {
+        "geometries": 286,
+        "textures": 17
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "workshop",
+        "market",
+        "dock-main",
+        "dock-end",
+        "platform-west",
+        "platform-east",
+        "repair-point",
+        "storage-point"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 0,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 110,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 106
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 136
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 32
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 16
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 12
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 0,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-muzzle",
+          "machine-gun-projectile",
+          "cannon-muzzle",
+          "machine-gun-hit",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 3.878333331545194,
+        "p95": 4.5
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          95.50999999999999
+        ],
+        "target": [
+          0,
+          0,
+          57
+        ],
+        "halfHeight": 28,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "jonghang-harbor"
+    },
+    {
+      "browser": "edge",
+      "phase": "paused-battlefield",
+      "frameCount": 57,
+      "firstReadyMs": 651,
+      "worldReadyMs": 123,
+      "meshes": 207,
+      "visibleMeshes": 207,
+      "textures": 18,
+      "estimatedTextureBytes": 123057541,
+      "textureEstimate": "RGBA estimate; excludes driver/compression allocation",
+      "drawCalls": 282,
+      "triangles": 175004,
+      "gpuMemory": {
+        "geometries": 360,
+        "textures": 118
+      },
+      "pendingLoads": 0,
+      "loadedWorldVisuals": 8,
+      "worldVisualIds": [
+        "terrain-0",
+        "terrain-1",
+        "terrain-2",
+        "terrain-3",
+        "terrain-4",
+        "terrain-5",
+        "terrain-6",
+        "terrain-7"
+      ],
+      "worldVisualLimit": 8,
+      "enemyViews": 2,
+      "debrisViews": 0,
+      "projectileViews": 0,
+      "modelErrors": {},
+      "loads": [
+        {
+          "kind": "fleet",
+          "assetId": "player-homeward",
+          "durationMs": 307,
+          "fallback": false
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-workshop",
+          "path": "hero/repair-workshop/model-closed-roof.glb",
+          "bytes": 3838916,
+          "durationMs": 111
+        },
+        {
+          "kind": "world",
+          "assetId": "canvas-market",
+          "path": "hero/canvas-market/model-repaired.glb",
+          "bytes": 3838872,
+          "durationMs": 194
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-straight",
+          "path": "assets/dock-straight.glb",
+          "bytes": 275952,
+          "durationMs": 36
+        },
+        {
+          "kind": "world",
+          "assetId": "dock-endcap",
+          "path": "assets/dock-endcap.glb",
+          "bytes": 346040,
+          "durationMs": 14
+        },
+        {
+          "kind": "world",
+          "assetId": "platform-square",
+          "path": "assets/platform-square.glb",
+          "bytes": 279864,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "repair-station",
+          "path": "assets/repair-station.glb",
+          "bytes": 374948,
+          "durationMs": 17
+        },
+        {
+          "kind": "world",
+          "assetId": "storage-chest",
+          "path": "assets/storage-chest.glb",
+          "bytes": 177944,
+          "durationMs": 10
+        },
+        {
+          "kind": "world",
+          "assetId": "island-rock-tall",
+          "path": "assets/island-rock-tall.glb",
+          "bytes": 94812,
+          "durationMs": 19
+        },
+        {
+          "kind": "world",
+          "assetId": "island-grass-medium",
+          "path": "assets/island-grass-medium.glb",
+          "bytes": 82044,
+          "durationMs": 40
+        },
+        {
+          "kind": "world",
+          "assetId": "island-rock-small",
+          "path": "assets/island-rock-small.glb",
+          "bytes": 52960,
+          "durationMs": 7
+        },
+        {
+          "kind": "world",
+          "assetId": "island-grass-small",
+          "path": "assets/island-grass-small.glb",
+          "bytes": 52968,
+          "durationMs": 5
+        },
+        {
+          "kind": "fleet",
+          "assetId": "enemy-pirate-scout",
+          "durationMs": 173,
+          "fallback": false
+        },
+        {
+          "kind": "fleet",
+          "assetId": "enemy-pirate-scout",
+          "durationMs": 13,
+          "fallback": false
+        }
+      ],
+      "effects": {
+        "state": "ready",
+        "loaded": true,
+        "lastError": null,
+        "eventCursor": 3,
+        "supportedWeapons": [
+          "01-machine-gun",
+          "02-deck-cannon"
+        ],
+        "mappedWeaponCount": 6,
+        "loadedEffects": [
+          "machine-gun-projectile",
+          "machine-gun-muzzle",
+          "machine-gun-hit",
+          "cannon-muzzle",
+          "cannon-projectile",
+          "cannon-hit"
+        ],
+        "activeOneShots": 0,
+        "activeProjectiles": 0,
+        "projectileIds": [],
+        "terminalProjectileCount": 0,
+        "firedProjectileCount": 0,
+        "fireEventCount": 0,
+        "terminalReceiptCapacity": 2048,
+        "pooled": {},
+        "created": 0,
+        "reused": 0,
+        "returned": 0,
+        "hitEffects": 0,
+        "unsupportedEvents": 0,
+        "movementAuthority": "battlefield-projectile-state",
+        "projectileAnimationApplied": false,
+        "limitation": "기관총/함포 표시 연결. 다른 네 무기의 실제 판정·상태·견인·범위 공격은 미구현."
+      },
+      "frameCpuMs": {
+        "average": 7.043859644940025,
+        "p95": 33
+      },
+      "camera": {
+        "projection": "orthographic",
+        "position": [
+          0,
+          55,
+          68.4681599708441
+        ],
+        "target": [
+          0,
+          0,
+          29.958159970844104
+        ],
+        "halfHeight": 35,
+        "occluderIds": []
+      },
+      "clearing": {
+        "rendererAutoClear": true,
+        "outlineAutoClear": true
+      },
+      "level": "first-voyage"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "scope": "Chrome two input-driven recovery/retreat sorties with real GLB muzzle and VFX; five-minute warm harbor rendering; Edge sequential smoke. Accelerated simulation inputs; not a full six-region campaign or real mobile device certification."
+}

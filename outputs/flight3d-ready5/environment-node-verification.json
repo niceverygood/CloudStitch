@@ -1,0 +1,36 @@
+{
+  "version": 5,
+  "passed": true,
+  "total": 12,
+  "groups": [
+    {
+      "command": "node --test tools/flight3d/environment-layout.test.mjs tools/flight3d/environment-models.test.mjs",
+      "passed": 11,
+      "total": 11,
+      "exitCode": 0,
+      "note": "Used approved existing dependency directory through map-atmosphere deps-loader; no browser/GPU/export."
+    },
+    {
+      "command": "node --test tools/flight3d/environment.test.mjs",
+      "passed": 1,
+      "total": 1,
+      "exitCode": 0,
+      "note": "Actual selected17 recipes only. No browser/GPU/export; full24 was not regenerated."
+    }
+  ],
+  "tests": [
+    {
+      "path": "tools/flight3d/environment-layout.test.mjs",
+      "sha256": "78e66f29deb735187d37fcc3e46cc8665ef832615b6e6ac360833839b7b49e8c"
+    },
+    {
+      "path": "tools/flight3d/environment-models.test.mjs",
+      "sha256": "244b49d56a0e24f171fa9775414f7d0ad709887781f17a03310448e5bbac79a8"
+    },
+    {
+      "path": "tools/flight3d/environment.test.mjs",
+      "sha256": "73dfa3fa45cfa9ef58625b36725d5231f91fb0742669aa5ae91eb7c68a6cd185"
+    }
+  ],
+  "previousPhysics": "Unchanged prior37; not rerun or added to READY5 count."
+}

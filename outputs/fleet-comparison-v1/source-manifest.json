@@ -1,0 +1,504 @@
+{
+  "version": "fleet-comparison-ready-2",
+  "capturedAt": "2026-10-18T09:07:50.822Z",
+  "scope": "Comparison gallery and preview images only; no model, viewer, encounter, combat or save changes.",
+  "counts": {
+    "total": 71,
+    "current": 62,
+    "alternatives": 9,
+    "previews": 71,
+    "originalHighDensity": 9,
+    "bySide": {
+      "ally": 12,
+      "enemy": 19,
+      "neutral": 29,
+      "reference": 11
+    }
+  },
+  "stageCount": 6,
+  "stageBossSlotCount": 12,
+  "stageAssignments": "Current prototype encounter roles. Canon campaign boss decisions are separate and may be unspecified.",
+  "preservedFleetV2ManifestSha256": "916c3e9790818490ee6d4457b7e41d8fe23cc49130996f64512a3c2a2657f68e",
+  "externalReadOnlyDependencies": [
+    "outputs/fleet-v1/",
+    "outputs/fleet-v2/"
+  ],
+  "browserVerification": "Not run by asset author; reserved sequential integration QA.",
+  "files": [
+    {
+      "path": "outputs/fleet-comparison-v1/README.txt",
+      "bytes": 2497,
+      "sha256": "feaf7215935c6203a9e12c2fbbaf080595d4d78b0e240180b77148858998f644"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/build-report.json",
+      "bytes": 495,
+      "sha256": "97385b7fa22d9a86e6ba6d2dee9a714ffc6d5cea72c2a648ac317f00b1bac5f6"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/index.html",
+      "bytes": 314522,
+      "sha256": "b094332d27e845794e46217ac9d11a94fd113c46d91cb72044410821883affbc"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/inventory.json",
+      "bytes": 389455,
+      "sha256": "0ce854a63192b2c75584b61f2211a680839603d808b3bec7b1a68d7bcf02d7bc"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/A1.png",
+      "bytes": 84064,
+      "sha256": "ef45b554004db3b9b023ac4aad0bf5aeb138675e67b3b4d4a78b7cd81a11dac2"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/A2.png",
+      "bytes": 111712,
+      "sha256": "5573957543e8d37876bd612611432509ff55f066b023686e797d28c5c2c716d1"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/A3.png",
+      "bytes": 113185,
+      "sha256": "ddaaaf360591ac88372f6d0dcdf06a9d7c27b6e70c343d769ef8d1ed44cc2332"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/B1.png",
+      "bytes": 85241,
+      "sha256": "a7ddc3fc67c73d88a0e6a930fac1b609a5ab7dbc030d4e8bc92191bbeb05a7fd"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/B2.png",
+      "bytes": 106146,
+      "sha256": "b1a758a98d90cc5e8b20295b2c2af096162529a6ff4654f250b8dfb8a7c71bfe"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/B3.png",
+      "bytes": 92866,
+      "sha256": "9f1a6efb472d84974c321298edb96b4e14a31e8671de3fc83e82dcb423a6231e"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/C1.png",
+      "bytes": 91906,
+      "sha256": "bc848da3f9fa21014009cd0637f7ec27e2feea15d2011c60efed9cc0082ffb79"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/C2.png",
+      "bytes": 109688,
+      "sha256": "aca1487b5224303b522bbdf42fa4787553db494bd3bfbdd82fce7edeadf9d9e5"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/originals/C3.png",
+      "bytes": 102900,
+      "sha256": "7648dcb57f2009ba56ecb5b806e6416fb8f8763c5932052c044ea2978f0ff9a0"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews.json",
+      "bytes": 35633,
+      "sha256": "9875327418997ecdd9337fb4e69f23c874e637d081edf5d77e974d780dd5e9cb"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-bell-devourer.png",
+      "bytes": 473178,
+      "sha256": "a87a2a8ed22cfc06dc7ede976aae483ec545e0eac6556a767d0665f8bc439ea9"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-fleet-king.png",
+      "bytes": 458507,
+      "sha256": "80ef7cb62a306e6c37c5a4f7bbce925656bda2f77d0bae339ed400892057a2ff"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-last-inhale.png",
+      "bytes": 446410,
+      "sha256": "0db5c4bb40c9dbda6a1b461bb6fad9c0f7677bbab287b696cc26623662cd9c9f"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-shipwright-command.png",
+      "bytes": 462570,
+      "sha256": "7140758052c159dd1673ad8585aaad59abd1de659d065e595ae26b45ac6a5536"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-shipyard-ribs.png",
+      "bytes": 486167,
+      "sha256": "d18677c4bf99625aa0c83f0826d5142fcb1266b5aa201304bbbb6b4184bb5efa"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-evacuation.png",
+      "bytes": 534078,
+      "sha256": "e3c83c0406495b5f9c638d83a28576fff247d25d171c72fe6b1fbdd483d123a2"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-ghost-signal.png",
+      "bytes": 427939,
+      "sha256": "35537e9cbac0d24479a17fad6258a5ae561a23774ef8acfd824b927fa227a2d5"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-mail.png",
+      "bytes": 559211,
+      "sha256": "94349421f40ebc2f2bfded925e4d82fa287ad2def81d1356b20385ffffb554e0"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-maintenance.png",
+      "bytes": 546183,
+      "sha256": "b9a2f20553c9f78c2e6aab5965b9e663ac847d3cc623bc55124cc8ee6c8ae7ed"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-merchant.png",
+      "bytes": 530998,
+      "sha256": "5d344d5f4c02f41aff30b93df8a7d79c9b05f272dec10c84c847a8aa933014be"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-relief.png",
+      "bytes": 522521,
+      "sha256": "e68d69c2e642fb23d8915bac454eca340fc8083ee29a6b14a0832650158aa48e"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-research.png",
+      "bytes": 513303,
+      "sha256": "48850f60134009e1283fb7ac6654f5292de5b42bd943c629269287009966ab4c"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-salvager.png",
+      "bytes": 552933,
+      "sha256": "48d94d395951b27a830d803e72f1c1458ba3dec92a25cd74e2f9707918c037a4"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/civil-transport.png",
+      "bytes": 517930,
+      "sha256": "83782d6a53ace569cbf70174de7f68d579eee120dccfa8605594c76eb67e1632"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-a1.png",
+      "bytes": 501291,
+      "sha256": "129fefec535eaf0f0f91d49f90dcaca734c1823de96da86159403a037c3d7f6d"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-a2.png",
+      "bytes": 510503,
+      "sha256": "6beb533e84ea40502d5309007cdd7d6dd35cf6ecfa3641cd0ee04277bd70c3ec"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-a3.png",
+      "bytes": 489485,
+      "sha256": "4242983de9d63fcb2fb04b2826d1374a2fdd683c4b2743df535e05d2c3cf2264"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-b1.png",
+      "bytes": 499896,
+      "sha256": "8a693ea15a375d270b8c556922f0cbaf818bcaaf501b3f7b7420913c9b2f7b4b"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-b2.png",
+      "bytes": 481247,
+      "sha256": "f0fb2262ef3cb5a7be9f90b79a2b04a23ea16f93c3b400e58e928be8dde18c91"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-b3.png",
+      "bytes": 497548,
+      "sha256": "f22f00a0f62f35a6c5207a235ec6ed553850ecf8a6f24af1ba8bf15bc8607330"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-c1.png",
+      "bytes": 507683,
+      "sha256": "eb9a78be951d3bba0b37b358a51316362245f91171601b33b5d11ae586861e52"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-c2.png",
+      "bytes": 524099,
+      "sha256": "9696609d20aca66e8dac0e7d0428f3debf33e1ccfd0fa33b5582e055f6015a69"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/design-c3.png",
+      "bytes": 508766,
+      "sha256": "3aa52957a7dd7862f5d4d934db4f177d480ab4314c6703a5df40547427869c2b"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/ending-light-descent.png",
+      "bytes": 529195,
+      "sha256": "7244d6f7d750c26958c3c639d7581c50341d525721ee7bf370454192ceb1847b"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/ending-mobile-harbor.png",
+      "bytes": 511362,
+      "sha256": "7b854c26726540eb115c41c7a5648473f714720c35c8d11cece7bfdc0312cc2b"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/enemy-cult-blockade.png",
+      "bytes": 470355,
+      "sha256": "b00d99b593bb7de23326f87a5b8ad3999fbfdab5208ed0c3e57ccd4ad2af85aa"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/enemy-disguised-wreck.png",
+      "bytes": 406135,
+      "sha256": "230ecfd1f7f8ac6e57a475a35f92e4a0135e55bcd4e7b8a1a1ab60f66407d156"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/enemy-ghost-chaser.png",
+      "bytes": 440626,
+      "sha256": "2618bdeff1bf6cdd64864c3c232ae002260cd90db6a03be30d31f374cb69f836"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/enemy-pirate-scout.png",
+      "bytes": 521408,
+      "sha256": "3bcd327d6dfafbb99395f88fae3109f4e71e0e196c0d0c6df66018a196a68598"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/enemy-tax-cutter.png",
+      "bytes": 464352,
+      "sha256": "bf9302c8309a636663ad3e41544013175c3f7025ec208ef66c5eb05f235aeeb3"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/enemy-union-repair.png",
+      "bytes": 553114,
+      "sha256": "e9a28cb36a6829ce79bab4a68d346112efde8169bc4ae2eaf099c545d6e831a7"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/enemy-union-salvage.png",
+      "bytes": 400282,
+      "sha256": "c046803702b7984b696299d1d87716aa9293c4b9585ba9e35b7203467c63e99d"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/faction-cult-modular.png",
+      "bytes": 456403,
+      "sha256": "95038e458d97a380909b86d7ba20299bfe15a4f3e76b9fec23c84d463f4c8943"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/faction-ghost-modular.png",
+      "bytes": 431270,
+      "sha256": "551af3a503fe50319bb447b55c230ec9c11304870636f8bd868b0e12c25c2c64"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/faction-salvager-modular.png",
+      "bytes": 565452,
+      "sha256": "01b68647af941234d1a1af4cd1e2b4288678ba9ef291ee30a8cf094d1dafcd13"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mini-funeral-guard.png",
+      "bytes": 454873,
+      "sha256": "b10a629af2cc4670b37a1228702003a705725f7f9339af2ce110dd03f62f29e3"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-bridge-tug.png",
+      "bytes": 404224,
+      "sha256": "c8c9fde0ad34a4ca387880a5e662414954e96539cc7923da0b824aaeebbf93e9"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-cult-purifier.png",
+      "bytes": 456472,
+      "sha256": "da4075ddd3c7cc0c4b70eb540c234b41f9d0482f3b64e1e12e8b97cfbccff244"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-ghost-artillery.png",
+      "bytes": 468686,
+      "sha256": "f6e76ca9c8df61e227d80e7501c2badf39f751f3f23863bc5571b040313476b4"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-guard-scout.png",
+      "bytes": 517433,
+      "sha256": "f50dbcd38e4ab14c181dba8a9330722f162592fa60b8f421a2ca470da913a352"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-union-guard.png",
+      "bytes": 433328,
+      "sha256": "4f76f48e04e553bb37d63ab38676049f3e173614daed5bc62458bd4172614c50"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/player-broadside.png",
+      "bytes": 577658,
+      "sha256": "2dd4c1b096643cdd453a10c50f9d86e4651cbca2b71fd86988d7131011c0dd48"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/player-close-flame.png",
+      "bytes": 550510,
+      "sha256": "312fb5b7a1873051e70690d4d8f4718824e1b52d0ece4664fec6ff19ae8434ac"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/player-cloud-scout.png",
+      "bytes": 518210,
+      "sha256": "e8b988227cd9f76f2873b2e7fcef51fc725a13896d452e0e6beb637254a64450"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/player-control.png",
+      "bytes": 558686,
+      "sha256": "6e4033a95ff9dd5aa89ee2d0ca98bc3e1f6eb5663a221186a71618416a545c53"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/player-homeward.png",
+      "bytes": 556270,
+      "sha256": "2147d608f594ad68be68c3560a1971c67b2f4a592b2fbf3cb1b49d9c1c4f48c1"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/player-mixed-raider.png",
+      "bytes": 559594,
+      "sha256": "d21eb216299b4e2427e288857d5a0d2ce234f6e335b66cd446aac7f0cb9c6a4b"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/player-rescue-workshop.png",
+      "bytes": 559608,
+      "sha256": "3e67ee41a30b2c17c5427f26eb78e79662b81255c48573a6dea6f97449e753ed"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/record-descent-ship.png",
+      "bytes": 452704,
+      "sha256": "6b51053a5947be1bdb4f4069c7755062a80bc0a328308e841706db166936174e"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-change.png",
+      "bytes": 529544,
+      "sha256": "1bb6c9d428497496090331d0f0666634792b808302a6b9ce86072666d0e1dbca"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-debts-end.png",
+      "bytes": 426407,
+      "sha256": "f8dc9b80a8430f7b24e5ef777414fc83cbe2946724277c70a7912402b9c5eefc"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-go-first.png",
+      "bytes": 423907,
+      "sha256": "a3fc9a03f18e39eefb8d2c54c35348c80cdcdd2830524bc8dbf0c31405c7ebf1"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-night-shift.png",
+      "bytes": 531276,
+      "sha256": "6d16eca718ba94518ded28042f459cf986ea4986e39464a080c8d600029e92cb"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-quiet-answer.png",
+      "bytes": 453273,
+      "sha256": "846b6cca6a41b7a50f4e8ada7115434cf54220fb1297aa90f2caad194dba5b18"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-unfinished.png",
+      "bytes": 578742,
+      "sha256": "03269e062adcf115e5ead46b4062ef9c8ffa994e9c8cf430dd05d73cac36b2d8"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/role-enemy-artillery.png",
+      "bytes": 523780,
+      "sha256": "60d0aa9409c7f746839ae189cbb7247ea0f105bc18ea73129b2314772cff87a7"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/role-enemy-defense.png",
+      "bytes": 487223,
+      "sha256": "d1ba8bd7d879535209150b9b2777909b58c1aa17983df3845a437ce66bae0c48"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-compressor-wreck.png",
+      "bytes": 510445,
+      "sha256": "17933b71f48f000c4a61d0e5c78ca61d1bb6cde1db3b2de8dace8d7e1fc2f121"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-cult-storage.png",
+      "bytes": 472837,
+      "sha256": "475f5ee05c2943e5fdc18d968b3b963c0658f94b028eae3fe716f778f12a3ce7"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-cult-transport.png",
+      "bytes": 510920,
+      "sha256": "82b260d2e1a060171058916f0550f27e4687dc6930c176e11bbed1561593298d"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-mara-repair.png",
+      "bytes": 539344,
+      "sha256": "a39ce01ca149e0b5adb271691b443dfc18907c717bda703f612e22719168b150"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-morning.png",
+      "bytes": 532816,
+      "sha256": "27dcbde1d660a5e7cdad6465f5612614cb221071f7478c1534531447c7d796e0"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-mothers-escort.png",
+      "bytes": 490628,
+      "sha256": "efba23c5be74d99e21dbf4a200b5e71509c17ca7105cc382b2dd1d555899337d"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-or-ship.png",
+      "bytes": 521624,
+      "sha256": "a0704542b79210dea0b6db177d9f5d98f997f34427798fd57c5605f94591cb63"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-royal-funeral.png",
+      "bytes": 523062,
+      "sha256": "90783b1eebe474e9fb411960925bfd41a559179fbbd7a42fccd0ec8f013e4820"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-turret-owner.png",
+      "bytes": 462824,
+      "sha256": "52a2cb250f0579aa57fb9e2a61c1924b5ca1131c341ea3328517130cf5b125c9"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-union-carrier.png",
+      "bytes": 530088,
+      "sha256": "b3e61d2a7e11312f40c47c6885e5869aa00fc3f5056ffafdb2b766e81667ae6d"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-union-contact.png",
+      "bytes": 509573,
+      "sha256": "59c7f063569003b167ae6dfec4f6f872cd223bfaa0b781847996b055c4a92fe9"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/story-union-cooling.png",
+      "bytes": 501615,
+      "sha256": "37905c7ec3fc7582dd9ccd5d03fd1c2af90a32ecbc4b58383105bcaca8cc014e"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/support-independent-rescue.png",
+      "bytes": 459497,
+      "sha256": "d1e87da029cac2c30fb77497642f06008b54cc248361a80530debd78d19eaff8"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/unfinished-stitch-hull.png",
+      "bytes": 435685,
+      "sha256": "44e1d1438afa28fbf9347dcbce6b2d310c5f14b4fa736ae4dd901f2963efad9a"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/verification-structure.json",
+      "bytes": 57803,
+      "sha256": "72d309b12807d11b12546453ad94d0bee84176e75b517dddd060295430a8dd48"
+    },
+    {
+      "path": "tools/fleet-comparison/HANDOFF.md",
+      "bytes": 5698,
+      "sha256": "a4294464b2c86bda524e1040e59c714cd961edae913b43db6bc1706519f60103"
+    },
+    {
+      "path": "tools/fleet-comparison/README.md",
+      "bytes": 3942,
+      "sha256": "9182f4e46e4b725c16c425c1be2821d300a099a6719f1456663430dbd19dfcfe"
+    },
+    {
+      "path": "tools/fleet-comparison/browser-qa.cjs",
+      "bytes": 25284,
+      "sha256": "89982a2c81026e8c21cb6265b42a4d8f17e2a30e884533986d5563c5f98b0e2d"
+    },
+    {
+      "path": "tools/fleet-comparison/build.cjs",
+      "bytes": 7881,
+      "sha256": "0f8eb944b7eb2bcada12461daadb704eb0d290defec2c7de6388c6ba06ecc63a"
+    },
+    {
+      "path": "tools/fleet-comparison/capture.cjs",
+      "bytes": 4996,
+      "sha256": "b1877970ddb75e81154fa4012691573d9d051eabee39e43033bdbd53d040aa38"
+    },
+    {
+      "path": "tools/fleet-comparison/roster.mjs",
+      "bytes": 42359,
+      "sha256": "91f77913331954300a3d4d09da036622c00a0a94ffdbf31ebe7b0be140563253"
+    },
+    {
+      "path": "tools/fleet-comparison/snapshot.cjs",
+      "bytes": 2216,
+      "sha256": "1ef0609343662468ed46eb17eb3fa6fed4d931425282f832667d7a6a1f0bf57e"
+    },
+    {
+      "path": "tools/fleet-comparison/template.html",
+      "bytes": 46617,
+      "sha256": "ae56144be7f51c1a3d658585ebdd16a76c51932d00b645d0b509daf0cc1acd5d"
+    },
+    {
+      "path": "tools/fleet-comparison/verify.mjs",
+      "bytes": 33014,
+      "sha256": "458327853320ada7cd06d6531a1f24964b4b3b35413d485dec02d898a255818c"
+    }
+  ]
+}

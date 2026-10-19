@@ -1,0 +1,124 @@
+{
+  "title": "Cloudstitch · 적군 공중요새",
+  "revision": "reference-r3",
+  "status": "READY_art_review",
+  "scope": "Actual static 3D art asset and offline review page; not combat or game integration.",
+  "model": {
+    "path": "outputs/enemy-base-v1/reference-r3/enemy-base.glb",
+    "bytes": 57483904,
+    "sha256": "58a231c5334c31ff4de6224b8de70d9538da3d728d7c9c8a6570271106d82c14"
+  },
+  "structural": {
+    "path": "outputs/enemy-base-v1/reference-r3/structure-verification.json",
+    "bytes": 1969,
+    "sha256": "ad65bde4099fac3641237eb44158a1625c684662a7b3ecfe158a51d8c020c0d7"
+  },
+  "browser": {
+    "path": "outputs/enemy-base-v1/reference-r3/browser-verification.json",
+    "bytes": 29598,
+    "sha256": "e930c27bcc5e283c39fcec38432b249c6f32ba8fc2820e45a83a493ffefc4bb8",
+    "checks": {
+      "total": 47,
+      "passed": 47,
+      "failed": 0
+    },
+    "passed": true,
+    "externalRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "ghosting": [
+      {
+        "mode": "handdrawn",
+        "frames": 120,
+        "changedPixels": 0
+      },
+      {
+        "mode": "cel",
+        "frames": 120,
+        "changedPixels": 0
+      },
+      {
+        "mode": "original",
+        "frames": 120,
+        "changedPixels": 0
+      }
+    ]
+  },
+  "previews": [
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/review-desktop.png",
+      "bytes": 911303,
+      "sha256": "66c122c1c058ab8d34712c770aabc8ec61bab0c2f3b11e90d44d22a31555171a",
+      "generated_from": "work/verification/enemy-base-v1/reference-r3/review-desktop.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/model-iso.png",
+      "bytes": 519645,
+      "sha256": "5ca5a1537cd70003e31c9cc3d1a2382a43a88621cacd9b23fc0a9d575e0d0312",
+      "generated_from": "work/verification/enemy-base-v1/reference-r3/model-iso.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/model-back.png",
+      "bytes": 806501,
+      "sha256": "4330d45ec3fc6105375704d1b698e7a2d069fadc3013943a9233b285a6a3f217",
+      "generated_from": "work/verification/enemy-base-v1/reference-r3/model-back.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/model-front.png",
+      "bytes": 845857,
+      "sha256": "c549d7f170761b6d891daa3f5bff71e959cb4b4ad724cdb85a6de30bbfa79163",
+      "generated_from": "work/verification/enemy-base-v1/reference-r3/model-front.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/detail-bell.png",
+      "bytes": 972959,
+      "sha256": "bc5fb14ed4d0f7cb7a43c5478039ab0519fafd0a36b7d1b4e7a01f74772d770c",
+      "generated_from": "work/verification/enemy-base-v1/reference-r3/detail-bell.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/detail-dock.png",
+      "bytes": 1055230,
+      "sha256": "675ac597035181a8fb8c8eba3b86bcf29ec0c2a7d547974bfda170145360f6a3",
+      "generated_from": "work/verification/enemy-base-v1/reference-r3/detail-dock.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/review-mobile-390.png",
+      "bytes": 272903,
+      "sha256": "94ba09757627b287e766ea5136691e7aaff12a6c72ace34ea511baa9c0c4858e",
+      "generated_from": "work/verification/enemy-base-v1/reference-r3/review-mobile-390.png"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/reference-r3/reference.png",
+    "sha256": "6b7ef9aae13dec2fb73373a517063340a0cf75978c42ff986e594c7cfea6b7cb",
+    "preserved": true
+  },
+  "visual_review": {
+    "status": "actual_desktop_dock_back_renders_inspected",
+    "user_art_approval": false,
+    "notes": "outputs/enemy-base-v1/reference-r3/ART_REVIEW.txt"
+  },
+  "limitations": [
+    "No combat, enemy AI, damage, module cutting or campaign integration.",
+    "No collision, navmesh, interiors, LOD or approved engine sockets.",
+    "Static mesh; camera rotation is not GLB animation.",
+    "Toon shading and outline are review runtime effects, separate from GLB materials.",
+    "Browser checks are not target-device performance or gameplay approval."
+  ],
+  "git_commit_or_push": false,
+  "deployment": false,
+  "surface": {
+    "atlas": "outputs/enemy-base-v1/reference-r3/painted-atlas.png",
+    "textures": 1,
+    "images": 1,
+    "geometryPreservation": {
+      "positionNormalTransformPreserved": true,
+      "meshCount": 104,
+      "beforeSha256": "a2fa0e53ef350cf59d217bc112b4f31c1d3122181eb269555f4d18af4c20fc41",
+      "afterSha256": "58a231c5334c31ff4de6224b8de70d9538da3d728d7c9c8a6570271106d82c14",
+      "textures": 1,
+      "images": 1,
+      "scope": "Exact per-mesh POSITION/NORMAL bytes and node transform comparison. UV, colors and materials intentionally changed."
+    }
+  }
+}

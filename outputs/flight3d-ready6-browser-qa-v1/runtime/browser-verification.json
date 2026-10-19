@@ -1,0 +1,1532 @@
+{
+  "version": 6,
+  "url": "http://127.0.0.1:8860/outputs/flight3d-v1/index.html",
+  "expectedChecks": 18,
+  "passed": false,
+  "scope": "READY6 motion and previously pending environment QA. Actual keyboard/mouse; no sim/camera injection. Same-time scenery comparison hides pause overlay visibility only, then restores it. Mobile uses mouse at 390px, not touch certification.",
+  "limits": [
+    "Human art/10x expressiveness approval remains separate.",
+    "No FPS guarantee, long-session resource soak, touch-device or full READY3/READY4 regression claim."
+  ],
+  "checks": [
+    {
+      "name": "six-real-ships-perspective-and-outline-autoclear",
+      "passed": true,
+      "detail": {
+        "ships": 6,
+        "projection": "perspective",
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "name": "rich-environment-exact-instance-counts",
+      "passed": true,
+      "detail": {
+        "clouds": 40,
+        "landmarks": 16,
+        "islands": 8,
+        "motes": 80,
+        "drafts": 12,
+        "dressing": 6
+      }
+    },
+    {
+      "name": "four-cloud-four-prop-six-island-kinds-and-altitude-layers",
+      "passed": true,
+      "detail": {
+        "clouds": [
+          "sunlit-cloud",
+          "mist-ribbons",
+          "rising-cloud",
+          "storm-front"
+        ],
+        "props": [
+          "mail-balloon",
+          "lantern-buoy",
+          "wind-ribbon-mast",
+          "star-lanterns"
+        ],
+        "islands": [
+          "root-garden",
+          "crescent-pass",
+          "double-arch",
+          "water-terraces",
+          "wreck-garden",
+          "quiet-terrace"
+        ],
+        "minY": -14.506,
+        "maxY": 64.475
+      }
+    },
+    {
+      "name": "source-models-merged-into-bounded-render-meshes",
+      "passed": true,
+      "detail": {
+        "prototypeCount": 17,
+        "sourceMeshes": 4450,
+        "sourceTriangles": 277204,
+        "instanceCount": 82,
+        "renderMeshes": 216,
+        "triangles": 1069976,
+        "mergedGeometries": 84,
+        "disposed": false
+      }
+    },
+    {
+      "name": "short-frame-drawcall-and-triangle-budget",
+      "passed": true,
+      "detail": {
+        "drawCalls": 394,
+        "triangles": 592490,
+        "caveat": "Frame counters only; not an FPS or long-session guarantee."
+      }
+    },
+    {
+      "name": "idle-cloud-prop-seed-motion-preserves-physical-center",
+      "passed": true,
+      "detail": {
+        "timeBefore": 0.13333333333333333,
+        "timeAfter": 0.8333333333333328,
+        "motionBefore": [
+          {
+            "id": "landmark-1",
+            "signature": 6086.672471402488
+          },
+          {
+            "id": "landmark-2",
+            "signature": -361.74402784494316
+          }
+        ],
+        "motionAfter": [
+          {
+            "id": "landmark-1",
+            "signature": 6100.25842205742
+          },
+          {
+            "id": "landmark-2",
+            "signature": -379.97015523867947
+          }
+        ],
+        "seedsBefore": [
+          [
+            9.28492271008802,
+            3.110001778521852,
+            30.522873552418943
+          ],
+          [
+            12.630239758803345,
+            9.129565133533363,
+            8.041209882595158
+          ],
+          [
+            -8.702101485488438,
+            -3.0035205101142886,
+            -45.83057080552416
+          ],
+          [
+            -36.085416576068916,
+            8.140747162761876,
+            -29.69895678337333
+          ],
+          [
+            -28.72729501151777,
+            22.2849483722376,
+            30.585753738155184
+          ],
+          [
+            -4.151699563666595,
+            4.613857092637639,
+            23.649528404864576
+          ],
+          [
+            2.365496034135871,
+            19.569193107598682,
+            -21.223910116288927
+          ],
+          [
+            -1.202589544463794,
+            16.932207307090174,
+            -23.353085347354366
+          ]
+        ],
+        "seedsAfter": [
+          [
+            9.398104023149202,
+            3.219230411022151,
+            30.50768171608362
+          ],
+          [
+            12.643810781019361,
+            9.121767867638937,
+            7.982066304329835
+          ],
+          [
+            -8.781748385256762,
+            -3.1008709766108153,
+            -45.876079453195466
+          ],
+          [
+            -36.06008202919434,
+            8.145314225949154,
+            -29.75690400816901
+          ],
+          [
+            -28.73448159843814,
+            22.25586937640994,
+            30.525969698062063
+          ],
+          [
+            -4.263947447588469,
+            4.506129755443939,
+            23.66624227927606
+          ],
+          [
+            2.4632301704877255,
+            19.68114521089216,
+            -21.18865877821418
+          ],
+          [
+            -1.0941342482369332,
+            17.034220318407574,
+            -23.374925665088384
+          ]
+        ]
+      }
+    },
+    {
+      "name": "actual-Escape-freezes-environment-time-motion-and-seeds",
+      "passed": true,
+      "detail": {
+        "time": 0.8499999999999994,
+        "laterTime": 0.8499999999999994
+      }
+    },
+    {
+      "name": "actual-UI-basic-rich-same-camera-same-time-comparison",
+      "passed": true,
+      "detail": {
+        "basic": {
+          "rich": false,
+          "time": 0.8499999999999994,
+          "position": [
+            0,
+            17.655673539959768,
+            61.197463295856835
+          ],
+          "target": [
+            0,
+            11,
+            34
+          ]
+        },
+        "rich": {
+          "rich": true,
+          "time": 0.8499999999999994,
+          "position": [
+            0,
+            17.655673539959768,
+            61.197463295856835
+          ],
+          "target": [
+            0,
+            11,
+            34
+          ]
+        },
+        "screenshotsDiffer": true,
+        "ariaPressed": "true",
+        "helpClosed": true
+      }
+    },
+    {
+      "name": "actual-W-Q-translates-and-climbs-with-world-fixed-anchors",
+      "passed": true,
+      "detail": {
+        "before": {
+          "id": "player",
+          "x": 0,
+          "y": 8,
+          "z": 40,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0,
+          "radius": 1.8,
+          "hp": 100,
+          "maxHp": 100,
+          "heading": 3.141592653589793,
+          "pitch": 0.0018923465790796129,
+          "boost": 100,
+          "maxBoost": 100,
+          "boostActive": false,
+          "collisionCooldown": 0,
+          "yawRate": 0,
+          "ax": 0,
+          "ay": 0,
+          "az": 0,
+          "attitude": {
+            "roll": 0.0004926330369509158,
+            "pitch": 0.0018923465790796129,
+            "rollVelocity": 0.004217668708091729,
+            "pitchVelocity": 0.010580156890029812,
+            "heave": 0.014771252746568406,
+            "heaveVelocity": 0.12474788230058549,
+            "previousYawRate": 0
+          }
+        },
+        "after": {
+          "id": "player",
+          "x": 7.393297418502866e-16,
+          "y": 13.991050990281028,
+          "z": 33.96291451245343,
+          "vx": 1.0346502124221315e-15,
+          "vy": 7.82232910588468,
+          "vz": -8.448560132950131,
+          "radius": 1.8,
+          "hp": 100,
+          "maxHp": 100,
+          "heading": 3.141592653589793,
+          "pitch": -0.2783433886548143,
+          "boost": 100,
+          "maxBoost": 100,
+          "boostActive": false,
+          "collisionCooldown": 0,
+          "yawRate": 0,
+          "ax": 5.114882154618263e-16,
+          "ay": -6.6725839090674555,
+          "az": -4.176618236522955,
+          "attitude": {
+            "roll": 0.010095063677033549,
+            "pitch": -0.2783433886548143,
+            "rollVelocity": -0.0006512545225533799,
+            "pitchVelocity": 0.12283570929613159,
+            "heave": -0.14781148114061354,
+            "heaveVelocity": 0.434591617217279,
+            "previousYawRate": 0
+          }
+        },
+        "horizontal": 6.03708548754657,
+        "anchors": [
+          {
+            "id": "cloud-near-1",
+            "rest": [
+              96.002,
+              -10.396,
+              66.768
+            ]
+          },
+          {
+            "id": "cloud-near-2",
+            "rest": [
+              75.655,
+              8.484,
+              -94.194
+            ]
+          },
+          {
+            "id": "cloud-near-3",
+            "rest": [
+              -16.466,
+              27.841,
+              55.404
+            ]
+          },
+          {
+            "id": "cloud-near-4",
+            "rest": [
+              73.631,
+              45.592,
+              -7.014
+            ]
+          },
+          {
+            "id": "cloud-near-5",
+            "rest": [
+              -43.192,
+              62.709,
+              22.944
+            ]
+          },
+          {
+            "id": "cloud-near-6",
+            "rest": [
+              69.768,
+              -10.69,
+              -98.19
+            ]
+          },
+          {
+            "id": "cloud-near-7",
+            "rest": [
+              -97.081,
+              6.879,
+              30.556
+            ]
+          },
+          {
+            "id": "cloud-near-8",
+            "rest": [
+              31.024,
+              26.834,
+              55.809
+            ]
+          },
+          {
+            "id": "cloud-near-9",
+            "rest": [
+              90.606,
+              42.569,
+              74.219
+            ]
+          },
+          {
+            "id": "cloud-near-10",
+            "rest": [
+              -11.447,
+              63.218,
+              43.777
+            ]
+          },
+          {
+            "id": "cloud-near-11",
+            "rest": [
+              -69.275,
+              -10.915,
+              -17.507
+            ]
+          },
+          {
+            "id": "cloud-near-12",
+            "rest": [
+              93.772,
+              9.689,
+              81.171
+            ]
+          },
+          {
+            "id": "cloud-near-13",
+            "rest": [
+              -41.321,
+              27.32,
+              68.907
+            ]
+          },
+          {
+            "id": "cloud-near-14",
+            "rest": [
+              48.342,
+              43.571,
+              84.747
+            ]
+          },
+          {
+            "id": "cloud-near-15",
+            "rest": [
+              75.263,
+              60.485,
+              -39.246
+            ]
+          },
+          {
+            "id": "cloud-near-16",
+            "rest": [
+              32.777,
+              -12.484,
+              9.329
+            ]
+          },
+          {
+            "id": "cloud-near-17",
+            "rest": [
+              49.12,
+              8.511,
+              48.27
+            ]
+          },
+          {
+            "id": "cloud-near-18",
+            "rest": [
+              87.077,
+              25.855,
+              -83.093
+            ]
+          },
+          {
+            "id": "cloud-near-19",
+            "rest": [
+              92.271,
+              42.355,
+              -12.326
+            ]
+          },
+          {
+            "id": "cloud-near-20",
+            "rest": [
+              -91.965,
+              60.822,
+              -40.091
+            ]
+          },
+          {
+            "id": "cloud-near-21",
+            "rest": [
+              49.186,
+              -10.724,
+              -68.497
+            ]
+          },
+          {
+            "id": "cloud-near-22",
+            "rest": [
+              -77.444,
+              8.94,
+              4.118
+            ]
+          },
+          {
+            "id": "cloud-near-23",
+            "rest": [
+              -20.014,
+              26.826,
+              92.716
+            ]
+          },
+          {
+            "id": "cloud-near-24",
+            "rest": [
+              92.857,
+              43.202,
+              42.861
+            ]
+          },
+          {
+            "id": "cloud-distance-1",
+            "rest": [
+              244.513,
+              28.268,
+              15.919
+            ]
+          },
+          {
+            "id": "cloud-distance-2",
+            "rest": [
+              229.626,
+              45.672,
+              101.27
+            ]
+          },
+          {
+            "id": "cloud-distance-3",
+            "rest": [
+              178.082,
+              60.254,
+              155.734
+            ]
+          },
+          {
+            "id": "cloud-distance-4",
+            "rest": [
+              101.261,
+              -14.506,
+              240.145
+            ]
+          },
+          {
+            "id": "cloud-distance-5",
+            "rest": [
+              14.19,
+              11.627,
+              247.946
+            ]
+          },
+          {
+            "id": "cloud-distance-6",
+            "rest": [
+              -118.241,
+              23.951,
+              222.62
+            ]
+          },
+          {
+            "id": "cloud-distance-7",
+            "rest": [
+              -193.625,
+              42.335,
+              167.623
+            ]
+          },
+          {
+            "id": "cloud-distance-8",
+            "rest": [
+              -227.111,
+              64.475,
+              102.953
+            ]
+          },
+          {
+            "id": "cloud-distance-9",
+            "rest": [
+              -236.737,
+              -13.265,
+              -8.854
+            ]
+          },
+          {
+            "id": "cloud-distance-10",
+            "rest": [
+              -243.325,
+              9.926,
+              -112.714
+            ]
+          },
+          {
+            "id": "cloud-distance-11",
+            "rest": [
+              -181.072,
+              25.548,
+              -171.59
+            ]
+          },
+          {
+            "id": "cloud-distance-12",
+            "rest": [
+              -103.557,
+              45.256,
+              -227.622
+            ]
+          },
+          {
+            "id": "cloud-distance-13",
+            "rest": [
+              15.404,
+              58.731,
+              -254.39
+            ]
+          },
+          {
+            "id": "cloud-distance-14",
+            "rest": [
+              81.302,
+              -12.222,
+              -234.513
+            ]
+          },
+          {
+            "id": "cloud-distance-15",
+            "rest": [
+              155.768,
+              4.443,
+              -182.451
+            ]
+          },
+          {
+            "id": "cloud-distance-16",
+            "rest": [
+              236.302,
+              29.415,
+              -124.516
+            ]
+          },
+          {
+            "id": "landmark-1",
+            "rest": [
+              19.565,
+              5.052,
+              33.985
+            ]
+          },
+          {
+            "id": "landmark-2",
+            "rest": [
+              -10.746,
+              13.173,
+              -8.998
+            ]
+          },
+          {
+            "id": "landmark-3",
+            "rest": [
+              11.153,
+              10.418,
+              -44.069
+            ]
+          },
+          {
+            "id": "landmark-4",
+            "rest": [
+              -8.731,
+              5.497,
+              -19.698
+            ]
+          },
+          {
+            "id": "landmark-5",
+            "rest": [
+              -28.016,
+              15.723,
+              41.295
+            ]
+          },
+          {
+            "id": "landmark-6",
+            "rest": [
+              -28.731,
+              11.912,
+              29.921
+            ]
+          },
+          {
+            "id": "landmark-7",
+            "rest": [
+              26.825,
+              22.242,
+              1.311
+            ]
+          },
+          {
+            "id": "landmark-8",
+            "rest": [
+              -0.583,
+              5.163,
+              -49.419
+            ]
+          },
+          {
+            "id": "landmark-9",
+            "rest": [
+              -41.954,
+              4.361,
+              -38.095
+            ]
+          },
+          {
+            "id": "landmark-10",
+            "rest": [
+              -16.217,
+              27.247,
+              0.299
+            ]
+          },
+          {
+            "id": "landmark-11",
+            "rest": [
+              27.276,
+              6.493,
+              23.112
+            ]
+          },
+          {
+            "id": "landmark-12",
+            "rest": [
+              -10.902,
+              20.328,
+              -19.243
+            ]
+          },
+          {
+            "id": "landmark-13",
+            "rest": [
+              -0.882,
+              -0.778,
+              -60.506
+            ]
+          },
+          {
+            "id": "landmark-14",
+            "rest": [
+              -10.082,
+              31.032,
+              10.711
+            ]
+          },
+          {
+            "id": "landmark-15",
+            "rest": [
+              -47.411,
+              30.367,
+              27.628
+            ]
+          },
+          {
+            "id": "landmark-16",
+            "rest": [
+              -36.836,
+              8.335,
+              19.332
+            ]
+          },
+          {
+            "id": "island-horizon-1",
+            "rest": [
+              -210.718,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "island-horizon-2",
+            "rest": [
+              -213.2,
+              18,
+              -213.2
+            ]
+          },
+          {
+            "id": "island-horizon-3",
+            "rest": [
+              0,
+              36,
+              -198.986
+            ]
+          },
+          {
+            "id": "island-horizon-4",
+            "rest": [
+              204.78,
+              54,
+              -204.78
+            ]
+          },
+          {
+            "id": "island-horizon-5",
+            "rest": [
+              196.641,
+              -20,
+              0
+            ]
+          },
+          {
+            "id": "island-horizon-6",
+            "rest": [
+              201.641,
+              0,
+              201.641
+            ]
+          },
+          {
+            "id": "island-horizon-7",
+            "rest": [
+              0,
+              18,
+              210.356
+            ]
+          },
+          {
+            "id": "island-horizon-8",
+            "rest": [
+              -208.078,
+              36,
+              208.078
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "visible-near-landmarks-parallax-exceeds-far-islands",
+      "passed": true,
+      "detail": {
+        "near": [
+          {
+            "id": "landmark-1",
+            "type": "landmark",
+            "rest": [
+              19.565,
+              5.052,
+              33.985
+            ],
+            "before": {
+              "x": 1271.011858863624,
+              "y": 612.6126465380007,
+              "depth": 0.9904028954886865
+            },
+            "after": {
+              "x": 1354.0554300903066,
+              "y": 842.408876742739,
+              "depth": 0.9888660521095511
+            },
+            "pixels": 244.3410365419411
+          },
+          {
+            "id": "landmark-2",
+            "type": "landmark",
+            "rest": [
+              -10.746,
+              13.173,
+              -8.998
+            ],
+            "before": {
+              "x": 591.3881291621468,
+              "y": 302.4128521001008,
+              "depth": 0.996266691390718
+            },
+            "after": {
+              "x": 583.8078723067566,
+              "y": 373.9970752707782,
+              "depth": 0.9960112798417393
+            },
+            "pixels": 71.98445179997583
+          },
+          {
+            "id": "landmark-3",
+            "type": "landmark",
+            "rest": [
+              11.153,
+              10.418,
+              -44.069
+            ],
+            "before": {
+              "x": 808.9063773902752,
+              "y": 306.57728390658747,
+              "depth": 0.9977138588638215
+            },
+            "after": {
+              "x": 812.3291475407173,
+              "y": 353.4959687746027,
+              "depth": 0.9976027395683966
+            },
+            "pixels": 47.043366644479
+          },
+          {
+            "id": "landmark-4",
+            "type": "landmark",
+            "rest": [
+              -8.731,
+              5.497,
+              -19.698
+            ],
+            "before": {
+              "x": 631.1759714657492,
+              "y": 374.5246760035333,
+              "depth": 0.9969166016053417
+            },
+            "after": {
+              "x": 626.7649050893597,
+              "y": 438.42111378953683,
+              "depth": 0.9967336723990462
+            },
+            "pixels": 64.04851495794057
+          },
+          {
+            "id": "landmark-7",
+            "type": "landmark",
+            "rest": [
+              26.825,
+              22.242,
+              1.311
+            ],
+            "before": {
+              "x": 1109.498058910585,
+              "y": 178.62123614682767,
+              "depth": 0.9953428043676571
+            },
+            "after": {
+              "x": 1137.7033943526255,
+              "y": 257.60784626520484,
+              "depth": 0.9949620937546356
+            },
+            "pixels": 83.8714821938336
+          },
+          {
+            "id": "landmark-8",
+            "type": "landmark",
+            "rest": [
+              -0.583,
+              5.163,
+              -49.419
+            ],
+            "before": {
+              "x": 715.6239066423157,
+              "y": 343.71861151099193,
+              "depth": 0.9978823551803051
+            },
+            "after": {
+              "x": 715.4656240152586,
+              "y": 389.1426262350693,
+              "depth": 0.9977840518705424
+            },
+            "pixels": 45.42429049576038
+          },
+          {
+            "id": "landmark-9",
+            "type": "landmark",
+            "rest": [
+              -41.954,
+              4.361,
+              -38.095
+            ],
+            "before": {
+              "x": 370.91365897826677,
+              "y": 361.0646253664004,
+              "depth": 0.9975874312161968
+            },
+            "after": {
+              "x": 356.8619570546859,
+              "y": 412.3144522592998,
+              "depth": 0.9974661596462012
+            },
+            "pixels": 53.1412747636084
+          },
+          {
+            "id": "landmark-10",
+            "type": "landmark",
+            "rest": [
+              -16.217,
+              27.247,
+              0.299
+            ],
+            "before": {
+              "x": 483.6739026733275,
+              "y": 103.28330719365793,
+              "depth": 0.9953236962222735
+            },
+            "after": {
+              "x": 466.49372810016087,
+              "y": 177.10103332423068,
+              "depth": 0.9949401122068501
+            },
+            "pixels": 75.79060027109381
+          },
+          {
+            "id": "landmark-11",
+            "type": "landmark",
+            "rest": [
+              27.276,
+              6.493,
+              23.112
+            ],
+            "before": {
+              "x": 1290.1848716471436,
+              "y": 487.41266605710376,
+              "depth": 0.9930311809505985
+            },
+            "after": {
+              "x": 1351.5842536570165,
+              "y": 638.1205068642596,
+              "depth": 0.9922161262367816
+            },
+            "pixels": 162.73517564420214
+          },
+          {
+            "id": "landmark-12",
+            "type": "landmark",
+            "rest": [
+              -10.902,
+              20.328,
+              -19.243
+            ],
+            "before": {
+              "x": 603.4118232461708,
+              "y": 217.75787509978485,
+              "depth": 0.9967280335706566
+            },
+            "after": {
+              "x": 597.3100654399391,
+              "y": 276.8919124420903,
+              "depth": 0.996525380945926
+            },
+            "pixels": 59.44800939246902
+          },
+          {
+            "id": "landmark-13",
+            "type": "landmark",
+            "rest": [
+              -0.882,
+              -0.778,
+              -60.506
+            ],
+            "before": {
+              "x": 714.037380255066,
+              "y": 375.4746507218697,
+              "depth": 0.9981524023531408
+            },
+            "after": {
+              "x": 713.8438377840993,
+              "y": 417.26954401179404,
+              "depth": 0.9980729491991799
+            },
+            "pixels": 41.79534141270091
+          }
+        ],
+        "far": [
+          {
+            "id": "island-horizon-2",
+            "type": "island",
+            "rest": [
+              -213.2,
+              18,
+              -213.2
+            ],
+            "before": {
+              "x": 56.84012367216206,
+              "y": 246.0769225102288,
+              "depth": 0.9994739308764995
+            },
+            "after": {
+              "x": 47.10648815136386,
+              "y": 263.0767565017796,
+              "depth": 0.9994574001734357
+            },
+            "pixels": 19.589232149117787
+          },
+          {
+            "id": "island-horizon-3",
+            "type": "island",
+            "rest": [
+              0,
+              36,
+              -198.986
+            ],
+            "before": {
+              "x": 720,
+              "y": 184.15814728257666,
+              "depth": 0.9993919207514215
+            },
+            "after": {
+              "x": 720,
+              "y": 201.43932807531553,
+              "depth": 0.9993728746075169
+            },
+            "pixels": 17.281180792738866
+          },
+          {
+            "id": "island-horizon-4",
+            "type": "island",
+            "rest": [
+              204.78,
+              54,
+              -204.78
+            ],
+            "before": {
+              "x": 1399.6592842198033,
+              "y": 122.99431829690454,
+              "depth": 0.999398449341817
+            },
+            "after": {
+              "x": 1410.3141551101057,
+              "y": 139.22180776288678,
+              "depth": 0.9993796100706106
+            },
+            "pixels": 19.412822774073277
+          }
+        ],
+        "nearMean": 86.32941310163679,
+        "farMean": 18.761078571976643,
+        "ratio": 4.601516526378538,
+        "method": "Fixed world rest points projected before/after actual W+Q; only centers visible in both frames. No camera/state mutation."
+      }
+    },
+    {
+      "name": "actual-W-D-strong-bounded-bank",
+      "passed": false,
+      "detail": {
+        "attitude": {
+          "roll": 0.39899318366088254,
+          "pitch": -0.03719552404682096,
+          "rollVelocity": -0.024731702876811465,
+          "pitchVelocity": 0.004488662878651683,
+          "heave": -0.30213978234526717,
+          "heaveVelocity": 0.4025167383980938,
+          "previousYawRate": -0.5918044090398079
+        },
+        "yawRate": -0.5918044090398079
+      }
+    },
+    {
+      "name": "actual-KeyQ-load-rebound-and-vertical-inertia",
+      "passed": true,
+      "detail": {
+        "loaded": {
+          "id": "player",
+          "x": 0,
+          "y": 8.760507493330774,
+          "z": 40,
+          "vx": 0,
+          "vy": 3.6448902718122307,
+          "vz": 0,
+          "radius": 1.8,
+          "hp": 100,
+          "maxHp": 100,
+          "heading": 3.141592653589793,
+          "pitch": -0.06015589356779759,
+          "boost": 100,
+          "maxBoost": 100,
+          "boostActive": false,
+          "collisionCooldown": 0,
+          "yawRate": 0,
+          "ax": 0,
+          "ay": 7.756751512838278,
+          "az": 0,
+          "attitude": {
+            "roll": 0.0015102490742609203,
+            "pitch": -0.06015589356779759,
+            "rollVelocity": 0.007756613325949578,
+            "pitchVelocity": -0.22310276117098196,
+            "heave": -0.25881107179533996,
+            "heaveVelocity": -0.7491373122777388,
+            "previousYawRate": 0
+          }
+        },
+        "released": {
+          "id": "player",
+          "x": 0,
+          "y": 10.735973542293955,
+          "z": 40,
+          "vx": 0,
+          "vy": 2.1405595441377123,
+          "vz": 0,
+          "radius": 1.8,
+          "hp": 100,
+          "maxHp": 100,
+          "heading": 3.141592653589793,
+          "pitch": -0.026055608710368442,
+          "boost": 100,
+          "maxBoost": 100,
+          "boostActive": false,
+          "collisionCooldown": 0,
+          "yawRate": 0,
+          "ax": 0,
+          "ay": -1.8259348305696932,
+          "az": 0,
+          "attitude": {
+            "roll": 0.008498667555528373,
+            "pitch": -0.026055608710368442,
+            "rollVelocity": 0.008179777133243289,
+            "pitchVelocity": 0.149699505547269,
+            "heave": 0.256698690882465,
+            "heaveVelocity": 0.869767663466742,
+            "previousYawRate": 0
+          }
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "basic": {
+      "rich": false,
+      "time": 0.8499999999999994,
+      "position": [
+        0,
+        17.655673539959768,
+        61.197463295856835
+      ],
+      "target": [
+        0,
+        11,
+        34
+      ]
+    },
+    "rich": {
+      "rich": true,
+      "time": 0.8499999999999994,
+      "position": [
+        0,
+        17.655673539959768,
+        61.197463295856835
+      ],
+      "target": [
+        0,
+        11,
+        34
+      ]
+    },
+    "screenshotsDiffer": true,
+    "ariaPressed": "true",
+    "helpClosed": true
+  },
+  "parallax": {
+    "near": [
+      {
+        "id": "landmark-1",
+        "type": "landmark",
+        "rest": [
+          19.565,
+          5.052,
+          33.985
+        ],
+        "before": {
+          "x": 1271.011858863624,
+          "y": 612.6126465380007,
+          "depth": 0.9904028954886865
+        },
+        "after": {
+          "x": 1354.0554300903066,
+          "y": 842.408876742739,
+          "depth": 0.9888660521095511
+        },
+        "pixels": 244.3410365419411
+      },
+      {
+        "id": "landmark-2",
+        "type": "landmark",
+        "rest": [
+          -10.746,
+          13.173,
+          -8.998
+        ],
+        "before": {
+          "x": 591.3881291621468,
+          "y": 302.4128521001008,
+          "depth": 0.996266691390718
+        },
+        "after": {
+          "x": 583.8078723067566,
+          "y": 373.9970752707782,
+          "depth": 0.9960112798417393
+        },
+        "pixels": 71.98445179997583
+      },
+      {
+        "id": "landmark-3",
+        "type": "landmark",
+        "rest": [
+          11.153,
+          10.418,
+          -44.069
+        ],
+        "before": {
+          "x": 808.9063773902752,
+          "y": 306.57728390658747,
+          "depth": 0.9977138588638215
+        },
+        "after": {
+          "x": 812.3291475407173,
+          "y": 353.4959687746027,
+          "depth": 0.9976027395683966
+        },
+        "pixels": 47.043366644479
+      },
+      {
+        "id": "landmark-4",
+        "type": "landmark",
+        "rest": [
+          -8.731,
+          5.497,
+          -19.698
+        ],
+        "before": {
+          "x": 631.1759714657492,
+          "y": 374.5246760035333,
+          "depth": 0.9969166016053417
+        },
+        "after": {
+          "x": 626.7649050893597,
+          "y": 438.42111378953683,
+          "depth": 0.9967336723990462
+        },
+        "pixels": 64.04851495794057
+      },
+      {
+        "id": "landmark-7",
+        "type": "landmark",
+        "rest": [
+          26.825,
+          22.242,
+          1.311
+        ],
+        "before": {
+          "x": 1109.498058910585,
+          "y": 178.62123614682767,
+          "depth": 0.9953428043676571
+        },
+        "after": {
+          "x": 1137.7033943526255,
+          "y": 257.60784626520484,
+          "depth": 0.9949620937546356
+        },
+        "pixels": 83.8714821938336
+      },
+      {
+        "id": "landmark-8",
+        "type": "landmark",
+        "rest": [
+          -0.583,
+          5.163,
+          -49.419
+        ],
+        "before": {
+          "x": 715.6239066423157,
+          "y": 343.71861151099193,
+          "depth": 0.9978823551803051
+        },
+        "after": {
+          "x": 715.4656240152586,
+          "y": 389.1426262350693,
+          "depth": 0.9977840518705424
+        },
+        "pixels": 45.42429049576038
+      },
+      {
+        "id": "landmark-9",
+        "type": "landmark",
+        "rest": [
+          -41.954,
+          4.361,
+          -38.095
+        ],
+        "before": {
+          "x": 370.91365897826677,
+          "y": 361.0646253664004,
+          "depth": 0.9975874312161968
+        },
+        "after": {
+          "x": 356.8619570546859,
+          "y": 412.3144522592998,
+          "depth": 0.9974661596462012
+        },
+        "pixels": 53.1412747636084
+      },
+      {
+        "id": "landmark-10",
+        "type": "landmark",
+        "rest": [
+          -16.217,
+          27.247,
+          0.299
+        ],
+        "before": {
+          "x": 483.6739026733275,
+          "y": 103.28330719365793,
+          "depth": 0.9953236962222735
+        },
+        "after": {
+          "x": 466.49372810016087,
+          "y": 177.10103332423068,
+          "depth": 0.9949401122068501
+        },
+        "pixels": 75.79060027109381
+      },
+      {
+        "id": "landmark-11",
+        "type": "landmark",
+        "rest": [
+          27.276,
+          6.493,
+          23.112
+        ],
+        "before": {
+          "x": 1290.1848716471436,
+          "y": 487.41266605710376,
+          "depth": 0.9930311809505985
+        },
+        "after": {
+          "x": 1351.5842536570165,
+          "y": 638.1205068642596,
+          "depth": 0.9922161262367816
+        },
+        "pixels": 162.73517564420214
+      },
+      {
+        "id": "landmark-12",
+        "type": "landmark",
+        "rest": [
+          -10.902,
+          20.328,
+          -19.243
+        ],
+        "before": {
+          "x": 603.4118232461708,
+          "y": 217.75787509978485,
+          "depth": 0.9967280335706566
+        },
+        "after": {
+          "x": 597.3100654399391,
+          "y": 276.8919124420903,
+          "depth": 0.996525380945926
+        },
+        "pixels": 59.44800939246902
+      },
+      {
+        "id": "landmark-13",
+        "type": "landmark",
+        "rest": [
+          -0.882,
+          -0.778,
+          -60.506
+        ],
+        "before": {
+          "x": 714.037380255066,
+          "y": 375.4746507218697,
+          "depth": 0.9981524023531408
+        },
+        "after": {
+          "x": 713.8438377840993,
+          "y": 417.26954401179404,
+          "depth": 0.9980729491991799
+        },
+        "pixels": 41.79534141270091
+      }
+    ],
+    "far": [
+      {
+        "id": "island-horizon-2",
+        "type": "island",
+        "rest": [
+          -213.2,
+          18,
+          -213.2
+        ],
+        "before": {
+          "x": 56.84012367216206,
+          "y": 246.0769225102288,
+          "depth": 0.9994739308764995
+        },
+        "after": {
+          "x": 47.10648815136386,
+          "y": 263.0767565017796,
+          "depth": 0.9994574001734357
+        },
+        "pixels": 19.589232149117787
+      },
+      {
+        "id": "island-horizon-3",
+        "type": "island",
+        "rest": [
+          0,
+          36,
+          -198.986
+        ],
+        "before": {
+          "x": 720,
+          "y": 184.15814728257666,
+          "depth": 0.9993919207514215
+        },
+        "after": {
+          "x": 720,
+          "y": 201.43932807531553,
+          "depth": 0.9993728746075169
+        },
+        "pixels": 17.281180792738866
+      },
+      {
+        "id": "island-horizon-4",
+        "type": "island",
+        "rest": [
+          204.78,
+          54,
+          -204.78
+        ],
+        "before": {
+          "x": 1399.6592842198033,
+          "y": 122.99431829690454,
+          "depth": 0.999398449341817
+        },
+        "after": {
+          "x": 1410.3141551101057,
+          "y": 139.22180776288678,
+          "depth": 0.9993796100706106
+        },
+        "pixels": 19.412822774073277
+      }
+    ],
+    "nearMean": 86.32941310163679,
+    "farMean": 18.761078571976643,
+    "ratio": 4.601516526378538,
+    "method": "Fixed world rest points projected before/after actual W+Q; only centers visible in both frames. No camera/state mutation."
+  },
+  "errors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "harnessErrors": [
+    "page.waitForFunction: Timeout 10000ms exceeded.\n    at main (C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\flight3d\\verify-environment-browser.cjs:115:18)"
+  ]
+}

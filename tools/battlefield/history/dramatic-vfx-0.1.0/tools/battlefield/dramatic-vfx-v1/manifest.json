@@ -1,0 +1,267 @@
+{
+  "version": "battlefield-dramatic-display-0.1.0",
+  "status": "READY_SOURCE_BROWSER_PENDING",
+  "checkedAt": "2026-10-18T12:29:51.165Z",
+  "request": "Richer, exaggerated hand-painted combat feedback and readable harpoon launch, using the latest bold dramatic art direction",
+  "artDirection": {
+    "path": "docs/ART_DIRECTION.txt",
+    "bytes": 9045,
+    "sha256": "37d051ea071979c618918393f7e38a0a6053d77df312949ae07bbe4acf540ad8"
+  },
+  "files": [
+    {
+      "path": "tools/battlefield/dramatic-vfx-v1/cannon-stage.mjs",
+      "bytes": 10676,
+      "sha256": "7bbf0cadc78f6b0081e755aa7e0d2f78ab0cafd0047779b8096f73eb65124805"
+    },
+    {
+      "path": "tools/battlefield/dramatic-vfx-v1/cannon-stage.test.mjs",
+      "bytes": 6588,
+      "sha256": "c59944669a59d4564a9766843aabef73f6063bb785836e34025f269bcfeaca0a"
+    },
+    {
+      "path": "tools/battlefield/dramatic-vfx-v1/cannon-runtime.mjs",
+      "bytes": 8524,
+      "sha256": "ae477dcceead7ec0e639270a13378a260eaf3553487d9c9fa5b0952adc568937"
+    },
+    {
+      "path": "tools/battlefield/dramatic-vfx-v1/cannon-runtime.test.mjs",
+      "bytes": 7565,
+      "sha256": "7df39d0cb58a21be2bea2ef9ec4dcc1d226b48d9359aebdc1adfb4b7655cf23c"
+    },
+    {
+      "path": "tools/battlefield/dramatic-vfx-v1/feedback.mjs",
+      "bytes": 9449,
+      "sha256": "f64ffb984ee17ffc7b99678e5123cfef471d59b5d3ce5f9583939fedefce9533"
+    },
+    {
+      "path": "tools/battlefield/dramatic-vfx-v1/feedback.test.mjs",
+      "bytes": 14393,
+      "sha256": "8340ec3e5326b9b967dfb3baba18a9e6fb606ba38c37405295d75e319803fb42"
+    },
+    {
+      "path": "tools/battlefield/dramatic-vfx-v1/HANDOFF.md",
+      "bytes": 7001,
+      "sha256": "e7e494e53b37e3df588c07b42b50e54bab7e7d976b3d7e8627c60b0353bc23b3"
+    },
+    {
+      "path": "tools/battlefield/dramatic-preview-v1/preview.js",
+      "bytes": 39848,
+      "sha256": "597d844a441f0372f4d253d736ae12e2bf3be556c6b97d5c57a44b3d043bc102"
+    },
+    {
+      "path": "tools/battlefield/dramatic-preview-v1/preview.html",
+      "bytes": 7214,
+      "sha256": "9b696fa7ac28b12009cc94481526742a562426dca528ebe18b424b30d0ce475e"
+    },
+    {
+      "path": "tools/battlefield/dramatic-preview-v1/build.cjs",
+      "bytes": 1320,
+      "sha256": "6c73f9c92d837440498afce068b3f74e7472f5ef80c481ba41b7fc49f23e4b62"
+    },
+    {
+      "path": "tools/battlefield/dramatic-preview-v1/README.md",
+      "bytes": 4599,
+      "sha256": "ef9625aba344a55f17cdc584041550e9fd0e8932e8bd89e833ad9f2b6f307aa2"
+    },
+    {
+      "path": "tools/battlefield/dramatic-preview-v1/harpoon-motion.mjs",
+      "bytes": 2258,
+      "sha256": "b79a9315704a91b05e7781355c167d0f0654cdc16dc20f900709ec141f3f950d"
+    },
+    {
+      "path": "tools/battlefield/dramatic-preview-v1/harpoon-motion.test.mjs",
+      "bytes": 5718,
+      "sha256": "745f7adc91439df177518ad38de570cc7b9b17bdad6d1d3dc382ef04291aaaba"
+    }
+  ],
+  "readDependencies": [
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/profiles.mjs",
+      "bytes": 4490,
+      "sha256": "eaedf9b65194fd85dabdb148bcb4ee6d1b5453815355c105e60cc14f9c0f4d12"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/profiles.test.mjs",
+      "bytes": 5869,
+      "sha256": "fc9cd3bf17ed8cb259627171fe206ea1b794f398229d00ecf1697f82b0c42a43"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/vfx.js",
+      "bytes": 17859,
+      "sha256": "388006bff66eb713e3c2888b815d027a147ff89f27e88db631b898d272a3d607"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/vfx-runtime.test.mjs",
+      "bytes": 24814,
+      "sha256": "678c4aeaa712140cc5168e6abd65e197d232dc137b0e65b127d155b9db92646a"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/feedback.mjs",
+      "bytes": 8799,
+      "sha256": "4f2df2e520f82ba1a6feef2307aae176fc3b5649c27979969da26be4d6d33f50"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/feedback.test.mjs",
+      "bytes": 9937,
+      "sha256": "6a4ed3804215f70e9d1a76eadb0c3c4676f06c6bddb46d655eb97c120f8ffd2c"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/presentation.mjs",
+      "bytes": 10844,
+      "sha256": "4688893278aa00b2a9262a40c0a1ef5ad9dbd2ea9060296104d77bd26bc6be3e"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/presentation.test.mjs",
+      "bytes": 12826,
+      "sha256": "7544ce6985ac5db0d7637a9f7e35371093886fa6bc3e02c8e3d9e3f8f6be3c4c"
+    },
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/HANDOFF.md",
+      "bytes": 7914,
+      "sha256": "48990022ac97d171cf5cbeae79776caf9b7ddf9e492836ae1fdca44edc4f4464"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/preview.js",
+      "bytes": 35693,
+      "sha256": "de3d46ccd76d83b60fea22b0dd12bac21300452497969dc067b759d9f2815de2"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/preview.html",
+      "bytes": 7157,
+      "sha256": "cfd6d02d799c029afef12c42d97dc99fd2d48ab15d1e0e71a88ccfd9aae0b275"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/build.cjs",
+      "bytes": 1321,
+      "sha256": "3c40a9e4a0fb06c531f40a6bbd64e76a55430d683c2e127c33467b4e096af5e6"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/README.md",
+      "bytes": 2464,
+      "sha256": "b0690fbce732d32663b45084735fa8e3c11b03c2903ba0f276fe4a288e1a8e88"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/harpoon-motion.mjs",
+      "bytes": 2953,
+      "sha256": "222d7129c4fd7cf09c9c0061d3a93be1069f3ec6caab174361a1e3e2296c8f01"
+    },
+    {
+      "path": "tools/battlefield/harpoon-launch-readable-v1/harpoon-motion.test.mjs",
+      "bytes": 5033,
+      "sha256": "0ed43923ea937d2142a55dfd6b81cedf0dcdbc4bfc5fbc850bbe474e07f136aa"
+    },
+    {
+      "path": "tools/battlefield/vfx-contract.mjs",
+      "bytes": 7041,
+      "sha256": "d8d173bd83830cdbb37802523a959e0cef2c41d57e55b0918055ccc8372f23c4"
+    },
+    {
+      "path": "tools/battlefield/vfx-rich-profiles.mjs",
+      "bytes": 4397,
+      "sha256": "33afe74e8918a76c26f5b4a48b14110c490345428760fd50b4ab01d08883a2b1"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    }
+  ],
+  "prerequisiteReceipts": [
+    {
+      "path": "tools/battlefield/impactful-vfx-v1/manifest.json",
+      "bytes": 9812,
+      "sha256": "ddd22995f63fa5aa06b4c71708657f26405ab7b26fe181191faaabf7e4635515"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/manifest.json",
+      "bytes": 6949,
+      "sha256": "97c285c820a6053ee2ea67d6393a481005a284f217726e5706e5bdc4b1badcaf"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/delivery-manifest.json",
+      "bytes": 5744,
+      "sha256": "9cd9f0cc302f6e042fd730ee97cabaadbaaf42c64eb19da7bd59b5d27ba42fd1"
+    }
+  ],
+  "sharedAtlas": {
+    "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/textures/soft-vfx-atlas.png",
+    "bytes": 432876,
+    "sha256": "c4ce60208e6dc66f3d5d8bec6a04399786e1ffb29b9cec55f8ab77d3ae4202ee"
+  },
+  "implementation": {
+    "cannonFactory": "createDramaticCannonVfx(THREE,scene,{projectileVfx,camera,reducedMotion,atlas?})",
+    "stageFactory": "createDramaticCannonStage(THREE,{atlas,camera,reducedMotion})",
+    "feedbackFactory": "createCombatFeedback({reducedMotion})",
+    "cannon": {
+      "durations": {
+        "muzzle": 0.78,
+        "hit": 1.1
+      },
+      "meshesPerStage": 37,
+      "active": 12,
+      "pooled": 12,
+      "receipts": 2048,
+      "design": "Ink contact, cream star, seven curved asymmetrical brush petals, ten wood/coral splinters, seven curling smoke masses and nine glints",
+      "actualProjectileOwner": "Injected frozen impactful VFX follows actual sim projectiles; no authored flight path in combat"
+    },
+    "feedback": {
+      "maxLifetime": 0.44,
+      "pulses": 32,
+      "receipts": 2048,
+      "cues": 64,
+      "audioPlayback": false,
+      "limits": {
+        "cameraXZ": 0.65,
+        "cameraY": 0.3,
+        "roll": 0.04,
+        "zoom": 0.035,
+        "recoil": 0.6
+      }
+    },
+    "simClock": "One actual sim delta; stable base camera aim and final draw-only camera response",
+    "damageCollisionRangeHpOrActualProjectileCoordinatesChanged": false
+  },
+  "preview": {
+    "build": "node tools/battlefield/dramatic-preview-v1/build.cjs",
+    "output": "outputs/combat-dramatic-v1/preview.html",
+    "dramaticEffects": [
+      "cannon-muzzle",
+      "cannon-hit",
+      "harpoon-launch"
+    ],
+    "previousImpactfulEffects": 45,
+    "sameCameraPlacementAndEventTime": true,
+    "harpoon": {
+      "release": 0.28,
+      "duration": 1.7,
+      "carriers": 1,
+      "ropes": 1,
+      "combatGameplay": false
+    },
+    "pausedOrbitRefresh": true,
+    "stageStatsSerializable": true
+  },
+  "validation": {
+    "nodeChecks": 42,
+    "cannonStage": 5,
+    "cannonRuntime": 8,
+    "feedback": 20,
+    "harpoon": 9,
+    "passed": 42,
+    "failed": 0,
+    "previewSyntax": "PASS after READY2 pause-orbit/rope-anchor/statistics/heading fixes",
+    "frozenPriorSourceAndReadDependencyRecords": 18,
+    "browserRender": "Pending central integration single slot",
+    "audioListening": "Not performed; no new playback installed",
+    "buildExportDependencyInstall": "Not run by battlefield source owner"
+  },
+  "remaining": [
+    "Central exact import, separate preview/actual build and narrow same-camera/time render QA",
+    "Human art/control-feel approval is separate from technical tests; 10x is design boldness, not a numeric multiplier",
+    "Three representative effects are redesigned; other 45 preserve the previous impactful profiles",
+    "Harpoon is a presentation demonstration, with no actual latch/tow weapon gameplay",
+    "Soft MG and existing audio remain separately owned frozen revisions; drainCues does not play audio",
+    "No paid generation, original asset overwrite, force push, deployment or common renderer edits by this package"
+  ]
+}

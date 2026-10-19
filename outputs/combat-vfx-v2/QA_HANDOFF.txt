@@ -1,0 +1,62 @@
+Cloudstitch 전투 효과 v2 · 잔여 검수 인계 · 2026-10-18
+
+진입점: review/index.html (자체 포함 비교10페이지, 전체54개 ID)
+큐: review-render-queue.json (잔여42효과·6시연 + 기존대표6 대조)
+전체 소스/산출물 크기·SHA256: handoff-inventory.json (자기 자신 제외)
+GLB 파일: assets/48개, sequences/6개
+
+완료한 범위
+- 실제 Meshy 기본형2개를 재사용. 후속 유료호출0, 누적30크레딧.
+- 잔여48 소스·실제GLB 검토. 효과19개 수정, 시연6개 재합성.
+- 최신54개 구조·TRS·유한값 검사 통과. Khronos 공식 검사는 미실행.
+- 원본63파일, 대표6 GLB, 기존 comparison.html 보존.
+- 비교10페이지 빌드, ID별 v1/v2 SHA/크기·생성소스 해시·기대 관측·샘플 시간 준비.
+- 새 브라우저/새 렌더/잔여 아트 승인/실제전투 연결은 이 후속 작업에서 미실행.
+
+수정 효과19개
+cannon-projectile, mortar-launch, mortar-projectile, harpoon-launch, harpoon-hit,
+chain-shot-launch, chain-shot-hit, flamethrower-ignite,
+wood-hit, metal-hit, fabric-hit, armor-hit, ricochet-hit, penetration-exit,
+small-explosion, large-explosion, airburst, smoldering-fire, burning-state.
+시연: 01-machine-gun, 02-deck-cannon, 03-mortar, 04-harpoon, 05-chain-shot, 06-flamethrower.
+
+통합 담당 실행 절차 (저장소 루트)
+1. 단일 브라우저 슬롯을 확보한다. 이 채팅에서는 브라우저를 시작하지 않았다.
+2. 큐의 v1/v2와 page_sha256을 현재 파일과 맞춘다. 하네스도 실행 전에 검사한다.
+3. node tools/combat-vfx-v2/qa-review.cjs
+   기본 실행은 큐 요약만 하며 브라우저/파일쓰기가 없다.
+4. node tools/combat-vfx-v2/qa-review.cjs --run --batch=mortar-harpoon --write
+   한 브라우저·한 페이지에서 순차 캡처. 다른 batch_id도 같은 방법으로 실행한다.
+   대표 대조 포함: --include-controls. 단일 ID: --id=03-mortar.
+5. 실제 캡처를 기대 관측과 대조해 ID별 아트 검토 결과와 검토한 GLB SHA를 기록한다.
+   하네스의 기술 통과는 art_approved를 true로 바꾸지 않는다.
+6. 모바일 넘침·세모드 잔상회귀·54다운로드·실제게임 이벤트/수명/풀 초기화는 별도 검사한다.
+
+중점 관측
+- 박격포 발사는 위로, 포탄은 원래 Z4 이동/Y호를 유지하는지.
+- 작살의 머리·줄이 도착 후2.7초까지 유지되고, 사슬탄의 쌍탄/연결과 구별되는지.
+- 화염 점화0~0.4, 분사0.15~2.6, 접촉0.5~2.9가 끊김 없이 겹치는지.
+- 금속 튕김/장갑 눌림, 목재 조각/천 올풀림, 도탄+Z/관통+Y가 구별되는지.
+- 세 폭발과 잔불/연소의 Meshy 불꽃이 의도한 세로 방향인지.
+- 작은 게임시점 파편·실, 루프 경계, 인양 endpoints가 읽히고 끝/풀반환이 깨끗한지.
+정확한 ID별 샘플 시간·루프 경계·형상 우려는 큐와 각 review 보고서를 따른다.
+
+소비 계약 — 전장 어댑터는 통합 담당 소유
+- 전체 base URL 교체 대신 effect별 opt-in + v1 fallback.
+- recipes.integration_contract → v2 recipes.lifecycle_contract.
+- <id>_projectile_carrier_0 → v2 <id>_moving_payload_0.
+  manifest.projectile_geometry_subtree 참조. 기존 팩토리 자동 호환은 미완료.
+- muzzleFrame 월드 position/direction에 VFX +Z 정렬.
+  원본 리그 Y=-π/2와 비교 표시용0.24를 정규화된 전장 위치에 중복 적용하지 않는다.
+- 내장 projectile Z4는 비교/시연용. 게임 이동과 두 번 적용하지 않는다.
+- 실제 hit만 명중을 선택. 상태종료/projectile-ended에서 정리.
+  풀반환 시 time/transform/parent/target/endpoints/opacity/loop 초기화.
+- opacity fade/cel/outline은 GLB 표준TRS와 별도 런타임 기능.
+  OutlineEffect.autoClear=true 유지, fade 메시의 윤곽선 뒷면 덮임 회귀 확인.
+
+원본 보존: source-inventory.json / verification/source-preservation.json
+이진 검사: verification/structure.json
+후속 소스/해시/링크/보존 검사: verification/followup-preflight.json
+소스 검토: ../../tools/combat-vfx-v2/review-primary.json,
+../../tools/combat-vfx-v2/review-secondary.json, ../../tools/combat-vfx-v2/review-sequences.json
+공용 패키지/잠금 파일·타 세션 폴더·전장 소비 코드는 수정하지 않았다.

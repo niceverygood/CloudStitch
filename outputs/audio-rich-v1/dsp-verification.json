@@ -1,0 +1,1079 @@
+{
+  "version": "audio-rich-v1-dsp-fixtures",
+  "createdAt": "2026-10-18T09:26:45.020Z",
+  "passed": true,
+  "total": 26,
+  "passedCount": 26,
+  "dspSha256": "b0600f8076cbf8b53b691b694c7e1ad09b4debd789253f39ec26ced0101d7574",
+  "scope": "Deterministic local DSP fixtures only. No provider requests, browser playback, human listening, or game installation.",
+  "checks": [
+    {
+      "id": "zero_oneshot_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0,
+      "rms": 0,
+      "seam": 0,
+      "frames": 20286,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "73ef5938a67a40420f586c8859d44aeba2431be21fa7f956a29706ae89d4b1ce"
+    },
+    {
+      "id": "zero_loop_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0,
+      "rms": 0,
+      "seam": 0,
+      "frames": 13230,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "a2264f855badabb52630c760cce49686f1a02ea52254aa998f160cf9e9343950"
+    },
+    {
+      "id": "sine_oneshot_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0.7900000214576721,
+      "rms": 0.37179428359523553,
+      "seam": 0,
+      "frames": 20286,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "7d6aeccf8420bebced822100b1fcd29e9a561ee9712a748bffc5eca47ee6180e"
+    },
+    {
+      "id": "sine_loop_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0.7900000214576721,
+      "rms": 0.4813229778319752,
+      "seam": 0,
+      "frames": 13230,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "3e19caf6a8fd22e8a1f573a2eb8e06cc6511e9d2467c50423308c562e377130c"
+    },
+    {
+      "id": "noise_oneshot_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0.7900000214576721,
+      "rms": 0.2679823140000978,
+      "seam": 0,
+      "frames": 20286,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "b726a5d6877f32c13ecebcefb59761b4368f979d6f9a0453f7006f5b5b66fc8e"
+    },
+    {
+      "id": "noise_loop_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0.7900000214576721,
+      "rms": 0.3439765996659322,
+      "seam": 0,
+      "frames": 13230,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "1ce21ecf6682819d7d32edef22ea107977ac112d84cd20bd08308575e72f007f"
+    },
+    {
+      "id": "onset_oneshot_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0.7900000214576721,
+      "rms": 0.0860294168015032,
+      "seam": 0,
+      "frames": 20286,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "737bba26edde7d689dc59ea61c04aad9f23e616bc0ef28ef6f2c5a7cf598a93d"
+    },
+    {
+      "id": "onset_loop_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0.7900000214576721,
+      "rms": 0.10909324126019364,
+      "seam": 0,
+      "frames": 13230,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "ec2b2e22e710f6bbe73d4afc680d59e39af4046ff8eb23271779138349bbe13e"
+    },
+    {
+      "id": "dc_oneshot_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0.7900000214576721,
+      "rms": 0.049031584706791545,
+      "seam": 0,
+      "frames": 20286,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "24f2f5fa6b792d82429d4949277e733b234c52b5a417fc3fe3d315cd708693a3"
+    },
+    {
+      "id": "dc_loop_finite_shape_determinism",
+      "passed": true,
+      "finite": true,
+      "peak": 0.043082840740680695,
+      "rms": 0.018751408281241673,
+      "seam": 0,
+      "frames": 13230,
+      "channels": 2,
+      "sourceFrames": 13230,
+      "sha256": "498d50d38a663b56d6c638551408dc61f7baa64047f66e7f627cc3191c9dca6a"
+    },
+    {
+      "id": "fire-machinegun_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 1.385178787129306,
+        "rms": 0.009541506218730391,
+        "relativeEnergy": 0.009931087006111481,
+        "limit": 0.024,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "fire-machinegun",
+        "category": "weapon",
+        "material": "pressure",
+        "loop": false,
+        "seed": 2546185825,
+        "description": "포신의 압력과 짧은 몸체",
+        "body": [
+          {
+            "hz": 280,
+            "q": 1.2,
+            "mix": 0.17
+          },
+          {
+            "hz": 1750,
+            "q": 1.7,
+            "mix": 0.0816
+          }
+        ],
+        "saturation": {
+          "drive": 1.65,
+          "cutoffHz": 1450,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 1950,
+          "mix": 0.055
+        },
+        "reflections": [
+          {
+            "seconds": 0.008,
+            "gain": 0.055799999999999995
+          },
+          {
+            "seconds": 0.017,
+            "gain": 0.0324
+          },
+          {
+            "seconds": 0.035,
+            "gain": 0.0162
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 94,
+          "decaySeconds": 0.052,
+          "mix": 0.075,
+          "maxEnergyRatio": 0.024,
+          "onsetMinIntervalSeconds": 0.15,
+          "maxPulseSeconds": 0.13
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.105,
+        "tailSeconds": 0.045,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "fire-cannon_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 3.347497697472123,
+        "rms": 0.01284582297759128,
+        "relativeEnergy": 0.02399999999657068,
+        "limit": 0.024,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "fire-cannon",
+        "category": "weapon",
+        "material": "pressure",
+        "loop": false,
+        "seed": 1757501337,
+        "description": "포신의 압력과 짧은 몸체",
+        "body": [
+          {
+            "hz": 154,
+            "q": 1.2,
+            "mix": 0.25
+          },
+          {
+            "hz": 710,
+            "q": 1.7,
+            "mix": 0.12
+          }
+        ],
+        "saturation": {
+          "drive": 1.65,
+          "cutoffHz": 1450,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 1950,
+          "mix": 0.055
+        },
+        "reflections": [
+          {
+            "seconds": 0.01,
+            "gain": 0.10540000000000001
+          },
+          {
+            "seconds": 0.02,
+            "gain": 0.061200000000000004
+          },
+          {
+            "seconds": 0.035,
+            "gain": 0.030600000000000002
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 68,
+          "decaySeconds": 0.132,
+          "mix": 0.145,
+          "maxEnergyRatio": 0.024,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.23
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.105,
+        "tailSeconds": 0.16,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "mortar-launch-a_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 3.1935542305088935,
+        "rms": 0.013714535201535313,
+        "relativeEnergy": 0.02289629700989511,
+        "limit": 0.024,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "mortar-launch-a",
+        "category": "weapon",
+        "material": "pressure",
+        "loop": false,
+        "seed": 4060220470,
+        "description": "포신의 압력과 짧은 몸체",
+        "body": [
+          {
+            "hz": 214,
+            "q": 1.2,
+            "mix": 0.21
+          },
+          {
+            "hz": 1090,
+            "q": 1.7,
+            "mix": 0.10079999999999999
+          }
+        ],
+        "saturation": {
+          "drive": 1.65,
+          "cutoffHz": 1450,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 1950,
+          "mix": 0.055
+        },
+        "reflections": [
+          {
+            "seconds": 0.011,
+            "gain": 0.06509999999999999
+          },
+          {
+            "seconds": 0.021,
+            "gain": 0.0378
+          },
+          {
+            "seconds": 0.036000000000000004,
+            "gain": 0.0189
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 82,
+          "decaySeconds": 0.074,
+          "mix": 0.095,
+          "maxEnergyRatio": 0.024,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.185
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.105,
+        "tailSeconds": 0.085,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "hit-cloth_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 0.11420328699917012,
+        "rms": 0.0027008402404707075,
+        "relativeEnergy": 0.000818784398166496,
+        "limit": 0.024,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "hit-cloth",
+        "category": "impact",
+        "material": "cloth",
+        "loop": false,
+        "seed": 2813859787,
+        "description": "천·바람의 부드러운 마찰층",
+        "body": [
+          {
+            "hz": 480,
+            "q": 1.2,
+            "mix": 0.12
+          },
+          {
+            "hz": 1810,
+            "q": 1.7,
+            "mix": 0.0576
+          }
+        ],
+        "saturation": {
+          "drive": 1.35,
+          "cutoffHz": 2000,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 3300,
+          "mix": 0.05
+        },
+        "reflections": [
+          {
+            "seconds": 0.008,
+            "gain": 0.0465
+          },
+          {
+            "seconds": 0.025,
+            "gain": 0.027
+          },
+          {
+            "seconds": 0.034,
+            "gain": 0.0135
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 100,
+          "decaySeconds": 0.04,
+          "mix": 0.025,
+          "maxEnergyRatio": 0.024,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.1
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.105,
+        "tailSeconds": 0.055,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "hit-armor_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 2.219785653600071,
+        "rms": 0.011080115742091428,
+        "relativeEnergy": 0.015914829670837436,
+        "limit": 0.024,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "hit-armor",
+        "category": "impact",
+        "material": "brass",
+        "loop": false,
+        "seed": 1303081364,
+        "description": "황동·금속의 짧은 배음",
+        "body": [
+          {
+            "hz": 390,
+            "q": 1.2,
+            "mix": 0.23
+          },
+          {
+            "hz": 2140,
+            "q": 1.7,
+            "mix": 0.1104
+          }
+        ],
+        "saturation": {
+          "drive": 1.35,
+          "cutoffHz": 1450,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 2900,
+          "mix": 0.065
+        },
+        "reflections": [
+          {
+            "seconds": 0.009000000000000001,
+            "gain": 0.0744
+          },
+          {
+            "seconds": 0.018000000000000002,
+            "gain": 0.043199999999999995
+          },
+          {
+            "seconds": 0.036000000000000004,
+            "gain": 0.021599999999999998
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 92,
+          "decaySeconds": 0.073,
+          "mix": 0.08,
+          "maxEnergyRatio": 0.024,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.1825
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.105,
+        "tailSeconds": 0.11,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "salvage-complete_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 1.0506544644006406,
+        "rms": 0.007717571553300198,
+        "relativeEnergy": 0.007532703356615926,
+        "limit": 0.024,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "salvage-complete",
+        "category": "salvage",
+        "material": "brass",
+        "loop": false,
+        "seed": 2440769858,
+        "description": "황동·금속의 짧은 배음",
+        "body": [
+          {
+            "hz": 310,
+            "q": 1.2,
+            "mix": 0.19
+          },
+          {
+            "hz": 1740,
+            "q": 1.7,
+            "mix": 0.0912
+          }
+        ],
+        "saturation": {
+          "drive": 1.35,
+          "cutoffHz": 1450,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 2900,
+          "mix": 0.065
+        },
+        "reflections": [
+          {
+            "seconds": 0.009000000000000001,
+            "gain": 0.0806
+          },
+          {
+            "seconds": 0.023,
+            "gain": 0.0468
+          },
+          {
+            "seconds": 0.04,
+            "gain": 0.0234
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 94,
+          "decaySeconds": 0.07,
+          "mix": 0.058,
+          "maxEnergyRatio": 0.024,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.17500000000000002
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.105,
+        "tailSeconds": 0.1,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "engine-cruise-loop_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 0.2730537826709197,
+        "rms": 0.004543015060571943,
+        "relativeEnergy": 0.0019576811482576633,
+        "limit": 0.004,
+        "attacks": [],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "engine-cruise-loop",
+        "category": "ambience",
+        "material": "engine",
+        "loop": true,
+        "seed": 4282350002,
+        "description": "부드러운 기계 몸체와 압력",
+        "body": [
+          {
+            "hz": 217,
+            "q": 1.2,
+            "mix": 0.22
+          },
+          {
+            "hz": 985,
+            "q": 1.7,
+            "mix": 0.1056
+          }
+        ],
+        "saturation": {
+          "drive": 1.65,
+          "cutoffHz": 1450,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 2100,
+          "mix": 0.06
+        },
+        "reflections": [
+          {
+            "seconds": 0.009000000000000001,
+            "gain": 0.0589
+          },
+          {
+            "seconds": 0.023,
+            "gain": 0.0342
+          },
+          {
+            "seconds": 0.039,
+            "gain": 0.0171
+          }
+        ],
+        "bass": {
+          "mode": "source-following-resonance",
+          "hz": 87,
+          "decaySeconds": 0.088,
+          "mix": 0.039,
+          "maxEnergyRatio": 0.004,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.21999999999999997
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.065,
+        "tailSeconds": 0,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "wind-calm-loop_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 0.026381708131526165,
+        "rms": 0.0014121197708696276,
+        "relativeEnergy": 0.0001891457871878993,
+        "limit": 0.004,
+        "attacks": [],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "wind-calm-loop",
+        "category": "ambience",
+        "material": "cloth",
+        "loop": true,
+        "seed": 3487840566,
+        "description": "천·바람의 부드러운 마찰층",
+        "body": [
+          {
+            "hz": 510,
+            "q": 1.2,
+            "mix": 0.08
+          },
+          {
+            "hz": 1820,
+            "q": 1.7,
+            "mix": 0.0384
+          }
+        ],
+        "saturation": {
+          "drive": 1.35,
+          "cutoffHz": 2000,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 3300,
+          "mix": 0.05
+        },
+        "reflections": [
+          {
+            "seconds": 0.007,
+            "gain": 0.0806
+          },
+          {
+            "seconds": 0.017,
+            "gain": 0.0468
+          },
+          {
+            "seconds": 0.038,
+            "gain": 0.0234
+          }
+        ],
+        "bass": {
+          "mode": "source-following-resonance",
+          "hz": 97,
+          "decaySeconds": 0.075,
+          "mix": 0.012,
+          "maxEnergyRatio": 0.004,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.1875
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.065,
+        "tailSeconds": 0,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "lift-warning_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 0.12440584771687235,
+        "rms": 0.0028189020868545417,
+        "relativeEnergy": 0.0008919320085068328,
+        "limit": 0.004,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "lift-warning",
+        "category": "warning",
+        "material": "warning",
+        "loop": false,
+        "seed": 1577067717,
+        "description": "원래 경고의 중고역 가독성",
+        "body": [
+          {
+            "hz": 640,
+            "q": 1.2,
+            "mix": 0.12
+          },
+          {
+            "hz": 2490,
+            "q": 1.7,
+            "mix": 0.0576
+          }
+        ],
+        "saturation": {
+          "drive": 1.35,
+          "cutoffHz": 1450,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 3100,
+          "mix": 0.035
+        },
+        "reflections": [
+          {
+            "seconds": 0.01,
+            "gain": 0.0403
+          },
+          {
+            "seconds": 0.018000000000000002,
+            "gain": 0.0234
+          },
+          {
+            "seconds": 0.033,
+            "gain": 0.0117
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 100,
+          "decaySeconds": 0.045,
+          "mix": 0.025,
+          "maxEnergyRatio": 0.004,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.11249999999999999
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.035,
+        "tailSeconds": 0.055,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "harbor-repair_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 1.2033631814980075,
+        "rms": 0.008530153885202592,
+        "relativeEnergy": 0.008627553761615687,
+        "limit": 0.024,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "harbor-repair",
+        "category": "harbor",
+        "material": "brass",
+        "loop": false,
+        "seed": 2024662703,
+        "description": "황동·금속의 짧은 배음",
+        "body": [
+          {
+            "hz": 295,
+            "q": 1.2,
+            "mix": 0.21
+          },
+          {
+            "hz": 1840,
+            "q": 1.7,
+            "mix": 0.10079999999999999
+          }
+        ],
+        "saturation": {
+          "drive": 1.35,
+          "cutoffHz": 1450,
+          "mix": 0.12
+        },
+        "air": {
+          "cutoffHz": 2900,
+          "mix": 0.065
+        },
+        "reflections": [
+          {
+            "seconds": 0.012,
+            "gain": 0.062
+          },
+          {
+            "seconds": 0.022000000000000002,
+            "gain": 0.036
+          },
+          {
+            "seconds": 0.039,
+            "gain": 0.018
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 93,
+          "decaySeconds": 0.065,
+          "mix": 0.063,
+          "maxEnergyRatio": 0.024,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.1625
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.105,
+        "tailSeconds": 0.075,
+        "edgeFadeSeconds": {
+          "in": 0.002,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "ui-hover_bass_off_and_budget",
+      "passed": true,
+      "addedBass": {
+        "energy": 0.01430773789213159,
+        "rms": 0.0010100654970535143,
+        "relativeEnergy": 0.0001025798194391075,
+        "limit": 0.003,
+        "attacks": [
+          0.005419501133786848
+        ],
+        "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+      },
+      "noBassEnergy": 0,
+      "recipe": {
+        "version": "cloudstitch-rich-dsp-v1.0.0",
+        "id": "ui-hover",
+        "category": "ui",
+        "material": "ui",
+        "loop": false,
+        "seed": 776011748,
+        "description": "작은 조작감과 짧은 공간",
+        "body": [
+          {
+            "hz": 940,
+            "q": 1.2,
+            "mix": 0.065
+          },
+          {
+            "hz": 2670,
+            "q": 1.7,
+            "mix": 0.0312
+          }
+        ],
+        "saturation": {
+          "drive": 1.35,
+          "cutoffHz": 1450,
+          "mix": 0.06
+        },
+        "air": {
+          "cutoffHz": 2700,
+          "mix": 0.03
+        },
+        "reflections": [
+          {
+            "seconds": 0.009000000000000001,
+            "gain": 0.0217
+          },
+          {
+            "seconds": 0.021,
+            "gain": 0.0126
+          },
+          {
+            "seconds": 0.037,
+            "gain": 0.0063
+          }
+        ],
+        "bass": {
+          "mode": "measured-attack-pulses",
+          "hz": 100,
+          "decaySeconds": 0.028,
+          "mix": 0.01,
+          "maxEnergyRatio": 0.003,
+          "onsetMinIntervalSeconds": 0.11,
+          "maxPulseSeconds": 0.06
+        },
+        "highpassHz": 35,
+        "targetPeak": 0.79,
+        "absolutePeakLimit": 0.85,
+        "loudnessEnergyRatio": 1.105,
+        "tailSeconds": 0.018,
+        "edgeFadeSeconds": {
+          "in": 0.0015,
+          "out": 0.006
+        },
+        "seamSeconds": 0.005,
+        "loopSeamMethod": "symmetric-boundary-crossblend; fixed length; no silent edge taper",
+        "limits": [
+          "원음과 공격 횟수 보존",
+          "배경에 새 박자·음악 없음",
+          "사람 청취 승인 전 후보"
+        ]
+      }
+    },
+    {
+      "id": "strength_zero_no_added_tail_or_bass",
+      "passed": true,
+      "note": "Strength zero still allows the documented cleanup/high-pass and peak treatment; it is not a byte identity mode."
+    },
+    {
+      "id": "different_material_recipes_and_pcm",
+      "passed": true,
+      "note": "Numerical difference only, not human material recognition."
+    },
+    {
+      "id": "mono_and_48k_shape_preserved",
+      "passed": true
+    },
+    {
+      "id": "invalid_settings_recover_to_finite",
+      "passed": true
+    },
+    {
+      "id": "short_and_empty_input_boundary",
+      "passed": true
+    }
+  ],
+  "humanListening": "not_performed",
+  "limits": [
+    "Numeric fixtures check processing boundaries and bass-layer budget, not dramatic quality or source suitability.",
+    "Sample peak is not inter-sample true peak or LUFS.",
+    "Loop sample seam tests do not certify a perceptually seamless loop."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "revision": "BOLD-V2-SOURCE-READY-1",
+  "state": "Source only, full empty-scene body replacement. No actual export or art approval yet.",
+  "entry": "tools/enemy-fleet-gallery/villain-v2/build.cjs",
+  "ownedModelCount": 12,
+  "requestedFirstIds": [
+    "enemy-tax-cutter",
+    "boss-last-inhale"
+  ],
+  "referenceSixReadOnly": true,
+  "bellBossReadOnly": "boss-bell-devourer",
+  "browserStarted": false,
+  "glbExported": 0,
+  "artApproval": "PENDING_HUMAN_REVIEW",
+  "files": [
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/core.js",
+      "bytes": 6489,
+      "sha256": "d1b1e15f7ba9e6c919a3afa3df74486f694ef0d3d944c952dcf39601d8541521"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/industrial.js",
+      "bytes": 13558,
+      "sha256": "4d1401101bf3fd68b5a423a5b59c795e10e74bb05db6bf3eed393f32e375ac20"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/cult.js",
+      "bytes": 14371,
+      "sha256": "847bdfef10c6cdb719c6159004bf52d8e1b18efa1e03188517deb03944ec961f"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/spectral-works.js",
+      "bytes": 14221,
+      "sha256": "16431f9d3e5f6a84a58c4d77c41d3743f1548ad7f504a95cbcce74f6579bd45a"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/export.js",
+      "bytes": 3037,
+      "sha256": "2054345ccbdbc2cad22ecc648b9e5eb191d97295d02a7f78a3ff12a261088801"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/build.cjs",
+      "bytes": 5416,
+      "sha256": "3766927208466c3ef565dad331f296b676554c803ba55dcf1d3ba1476ebf5803"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/viewers.cjs",
+      "bytes": 2425,
+      "sha256": "f2446d9afac43a2178d9d119d18b4d83b51e9e451f2a1434b5f41e9bc82be7d8"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/capture.cjs",
+      "bytes": 2748,
+      "sha256": "9adef3672860745fc59f462a06586b4232686be77a99d5c09b8c63a32bb1b9d1"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/preflight.cjs",
+      "bytes": 3973,
+      "sha256": "f422103c2c9d5a5979630e829bec975ddfd71e9ae063bbcaaf2398c6d7c3a584"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/comparison/capture.cjs",
+      "bytes": 7210,
+      "sha256": "fd29fc31297e2daf74946ce5ff9cda59823ebfed0e957de4e7e24d9b8c64e928"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/comparison/render.js",
+      "bytes": 7523,
+      "sha256": "32922a04ace84cb494ae723c40692fcb3f103297729d54f7010305bf9434b81f"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/comparison/pairs-from-models.cjs",
+      "bytes": 1601,
+      "sha256": "c75572d95f13bf9f669646292ab564042d1624e9414ad33b586fd8602e45f331"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v2/source-preflight.json",
+      "bytes": 8870,
+      "sha256": "95c1c89c66fb4f747881762755952bb540a864d02ae1c54978336547490c1a4a"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v2/PRODUCTION_HANDOFF.md",
+      "bytes": 4030,
+      "sha256": "33139209eda176c8cb4facf31d648537824cc41368466a67114794ec6ed7499b"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v2/.gitattributes",
+      "bytes": 49,
+      "sha256": "34eaad94def2feaed730d46c311c34b633590a48408d677ff8e069aa4aa4f1fa"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "tools/enemy-fleet-reference/kit.js",
+      "bytes": 10518,
+      "sha256": "da74e6c5cd95a0a2bff31372c53414c6eda3909123547b425181cf0509803090"
+    },
+    {
+      "path": "tools/fleet/body.js",
+      "bytes": 13735,
+      "sha256": "d218e9ba6e2000b3dcad2e930e06eb9a89ca7e27faff8f9a41174d194d5404c8"
+    },
+    {
+      "path": "tools/fleet/rigging.js",
+      "bytes": 17867,
+      "sha256": "3fe23b9acbbcbfdb0d0f7ed8b63fdc8d69cc908a5f008a0f009f21a23a2139db"
+    },
+    {
+      "path": "tools/airship-rig/motion.js",
+      "bytes": 13689,
+      "sha256": "f96a5f67a698e4c97c8eef8feedda5a8737f58d5a9bb2a967939a533ca6df594"
+    },
+    {
+      "path": "tools/fleet-v2/verify.mjs",
+      "bytes": 24536,
+      "sha256": "dbfaa86d22de026b8ac928ba9ab0386e72b7d1b2f67500b580b0500d91d6a54d"
+    },
+    {
+      "path": "tools/fleet-v2/viewer.js",
+      "bytes": 30166,
+      "sha256": "7b527e8eef43485d34309f6d96b694dd91df8fb8232eddb0a4f52bb4b5ffd7dc"
+    },
+    {
+      "path": "tools/fleet-v2/viewer-template.html",
+      "bytes": 14122,
+      "sha256": "96ed71c4b7ce8f1429e54b8f3ca252a492d3dbf6c9709c9a524cfffcb171f0b3"
+    },
+    {
+      "path": "tools/lib/runtime.cjs",
+      "bytes": 1969,
+      "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/catalog.json",
+      "bytes": 32098,
+      "sha256": "ea48a624bf473e5eac4824634990fcbab3282c92d79e4928029ff588054ed885"
+    },
+    {
+      "path": "outputs/fleet-v2/catalog.json",
+      "bytes": 603626,
+      "sha256": "dde775a84f116c2d415a6a9f30b10d0681283d7ad88b69d5494ba83d981a717c"
+    }
+  ]
+}

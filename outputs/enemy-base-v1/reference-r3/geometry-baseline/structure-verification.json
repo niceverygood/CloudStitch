@@ -1,0 +1,70 @@
+{
+  "asset": "outputs/enemy-base-v1/reference-r3/enemy-base.glb",
+  "bytes": 43550976,
+  "sha256": "a2fa0e53ef350cf59d217bc112b4f31c1d3122181eb269555f4d18af4c20fc41",
+  "meshes": 104,
+  "triangles": 402202,
+  "vertices": 1206606,
+  "vertexColorMeshes": 104,
+  "animations": 0,
+  "bounds": {
+    "min": [
+      -26.84618377685547,
+      -14.090999603271484,
+      -20.474000930786133
+    ],
+    "max": [
+      26.563491821289062,
+      40.263999938964844,
+      28.62099838256836
+    ],
+    "size": [
+      53.40967559814453,
+      54.35499954223633,
+      49.09499931335449
+    ]
+  },
+  "groups": [
+    "hull",
+    "buoyancy",
+    "keep",
+    "bell_tower",
+    "bastions",
+    "dock",
+    "machinery",
+    "banners"
+  ],
+  "embedded": true,
+  "finite": true,
+  "validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "reference": {
+    "path": "outputs/enemy-base-v1/reference-r3/reference.png",
+    "sha256": "6b7ef9aae13dec2fb73373a517063340a0cf75978c42ff986e594c7cfea6b7cb",
+    "preserved": true
+  },
+  "dependencies": {
+    "three": {
+      "version": "0.180.0",
+      "source": "existing read-only Node dependency resolved through NODE_PATH or node_modules"
+    },
+    "esbuild": {
+      "version": "0.25.10",
+      "source": "existing read-only Node dependency resolved through NODE_PATH or node_modules"
+    },
+    "playwright": {
+      "version": "1.62.1",
+      "source": "existing read-only Node dependency resolved through NODE_PATH or node_modules"
+    },
+    "gltf-validator": {
+      "version": "2.0.0-dev.3.10",
+      "source": "existing read-only Node dependency resolved through NODE_PATH or node_modules"
+    }
+  },
+  "scope": "GLB format and geometry check only; no gameplay or engine performance test.",
+  "passed": true
+}

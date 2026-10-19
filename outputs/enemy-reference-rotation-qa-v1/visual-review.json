@@ -1,0 +1,100 @@
+{
+  "scope": "Brief direct visual inspection of the three post-rotation PNGs only; no strict PNG equality or decoded comparison.",
+  "reviewedAt": "2026-10-18T09:58:17.156Z",
+  "numericalChecks": {
+    "passed": true,
+    "count": 5
+  },
+  "runtime": [
+    {
+      "mode": "handdrawn",
+      "outlineAutoClear": true,
+      "cameraBefore": [
+        -7.417381199564246,
+        5.827942371086193,
+        -7.417381199564245
+      ],
+      "cameraAfter": [
+        -5.597498076150558,
+        5.827942371086191,
+        -8.871476934918396
+      ],
+      "samples": 3
+    },
+    {
+      "mode": "cel",
+      "outlineAutoClear": true,
+      "cameraBefore": [
+        -7.417381199564246,
+        5.827942371086193,
+        -7.417381199564245
+      ],
+      "cameraAfter": [
+        -5.597498076150569,
+        5.827942371086191,
+        -8.87147693491839
+      ],
+      "samples": 3
+    },
+    {
+      "mode": "original",
+      "outlineAutoClear": true,
+      "cameraBefore": [
+        -7.417381199564246,
+        5.827942371086193,
+        -7.417381199564245
+      ],
+      "cameraAfter": [
+        -5.575891121894364,
+        5.827942371086191,
+        -8.885073208256525
+      ],
+      "samples": 3
+    }
+  ],
+  "images": [
+    {
+      "mode": "handdrawn",
+      "path": "outputs/enemy-reference-rotation-qa-v1/handdrawn-after-rotation.png",
+      "bytes": 663405,
+      "sha256": "165d4c1c95897abad084c55a7c9af785a020d0724e69fc737f81177a50ca71b1",
+      "observation": "Displayed and inspected directly after180actualRAF rotationframes. No obvious repeated ship silhouettes or accumulated background trails visible in this captured frame."
+    },
+    {
+      "mode": "cel",
+      "path": "outputs/enemy-reference-rotation-qa-v1/cel-after-rotation.png",
+      "bytes": 625059,
+      "sha256": "8a220b22eb92fafe4dc7e96af7553eeb4ed3c0092c40b656fd2eebf87931fa31",
+      "observation": "Displayed and inspected directly after180actualRAF rotationframes. No obvious repeated ship silhouettes or accumulated background trails visible in this captured frame."
+    },
+    {
+      "mode": "original",
+      "path": "outputs/enemy-reference-rotation-qa-v1/original-after-rotation.png",
+      "bytes": 646649,
+      "sha256": "b2ab8b7072d389890fdcf6b91d31ef9d5af750a9668916a1cd1aa2bcf01f53cb",
+      "observation": "Displayed and inspected directly after180actualRAF rotationframes. No obvious repeated ship silhouettes or accumulated background trails visible in this captured frame."
+    }
+  ],
+  "narrowPostRotationFiles": [
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-ghost-chaser.glb",
+      "bytes": 8407156,
+      "sha256": "c05629e92252812fa8e1abb8d6b1f20163f2cbcee6167f9c5ee4295eded72edd",
+      "passed": true
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-ghost-chaser.html",
+      "bytes": 18090105,
+      "sha256": "7d5c526c6bba3ce0f2b9314225f752a61b59846ad7963f873f0733d3716e16d7",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "preciseGhosting": "not-run",
+  "longPerformance": "not-run",
+  "previous53FullFreeze": "outputs/enemy-fleet-reference-source-finalization-v1/verification.json",
+  "limits": [
+    "Single representative translucent ship and short540 totalRAF frames. No guarantee for allsix ships, long sessions, GPU/driver combinations or exact pixels.",
+    "Direct visual observations are not source-model art approval or final game validation."
+  ]
+}

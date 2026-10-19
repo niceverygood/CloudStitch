@@ -1,0 +1,25 @@
+{
+  "id": "hull-creak-loop",
+  "startedAt": "2026-10-18T08:53:43.661Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A gently flexing wooden airship hull in flight: sparse soft timber joint creaks, subtle rope rub and a little padded wood resonance. Comfortable old craft, no structural snapping, no footsteps. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 6,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:46.834Z",
+  "output": {
+    "file": "audio/hull-creak-loop.mp3",
+    "bytes": 97009,
+    "sha256": "fd742c41d58dca06528161b71981afb7bcd86fbfa9936f31701cff3d6bce79f7",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "60"
+}

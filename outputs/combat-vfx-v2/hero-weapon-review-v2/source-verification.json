@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "scope": "CPU real GLB geometry and hero factories; browser texture decode and rendering excluded",
+  "cases": [
+    {
+      "category": "weapons",
+      "stage": 1,
+      "muzzle": [
+        -1.104923960998701,
+        5.4138753348395925,
+        2.7135244693437315
+      ],
+      "actualHit": true,
+      "hp": 99992,
+      "recoilAuthorityInvariant": true
+    },
+    {
+      "category": "e3",
+      "stage": 4,
+      "muzzle": [
+        -3.6953799699098338,
+        5.4138753348395925,
+        9.464877564398357
+      ],
+      "actualHit": true,
+      "hp": 99992,
+      "recoilAuthorityInvariant": true
+    },
+    {
+      "category": "e6",
+      "stage": 4,
+      "muzzle": [
+        -10.646675822570964,
+        5.4138753348395925,
+        16.334409499613354
+      ],
+      "actualHit": true,
+      "hp": 99992,
+      "recoilAuthorityInvariant": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v2/rig.js",
+      "bytes": 4031,
+      "sha256": "1a13db3c930d7e744d47931e6214494e67d7601b1af19c65e39d2a19f100d96c"
+    },
+    {
+      "path": "tools/combat-vfx-v2/hero-weapon-review-v2/rig.test.cjs",
+      "bytes": 5511,
+      "sha256": "7db69e7f891bbf9ca40682369aa70cfe40109ed4ccd7f4258db6551d954105e0"
+    }
+  ]
+}

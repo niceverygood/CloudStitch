@@ -1,0 +1,25 @@
+{
+  "id": "hit-armor",
+  "startedAt": "2026-10-18T08:53:27.130Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "One bullet strikes a small thick brass armor plate: hard compact metallic tick-clang, short irregular bright resonance and a tiny scrape. Damp quickly, not a bell, no huge ricochet tail. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 0.9,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:28.577Z",
+  "output": {
+    "file": "audio/hit-armor.mp3",
+    "bytes": 15089,
+    "sha256": "b2eb18f3e53fc89022758d8bfecfa5ba5623d4e0b858d9802e118818bcd89206",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "9"
+}

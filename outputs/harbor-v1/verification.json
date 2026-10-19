@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "scope": "Node DOM shim; independent-example callbacks, not browser or actual voyage",
+  "checks": [
+    "bundle JavaScript syntax",
+    "no external script/remote asset URLs",
+    "initial state",
+    "two example departure-return-store-repair callbacks",
+    "load retains 2 settlements/9 parts/S284 F34 C3",
+    "write failure preserves last journal"
+  ],
+  "passed": true,
+  "actualBrowser": false,
+  "actualVoyage": false
+}

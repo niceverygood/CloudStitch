@@ -1,0 +1,155 @@
+{
+  "revision": "enemy-base-grand-r2-source",
+  "status": "SOURCE_READY_NOT_EXPORTED",
+  "ownership": [
+    "tools/enemy-base/grand-r2/",
+    "outputs/enemy-base-v1/grand-r2/"
+  ],
+  "files": [
+    {
+      "path": "tools/enemy-base/grand-r2/build.cjs",
+      "bytes": 1856,
+      "sha256": "2594b807fb673c1bee2f1d8e5d1b093fc33638ffcea7ed077fab143220ecf8c3"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/compare-page.cjs",
+      "bytes": 2328,
+      "sha256": "ff50962cd65c3c516fcde24f9acb81d2e3d0e80a7e988d23d00c72319b060b4d"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/compare.cjs",
+      "bytes": 2781,
+      "sha256": "fb29b4ad8c1dc33981654c5b5407984be871eec7f49d7d3ce42cdd786a40ae6f"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/finalize.cjs",
+      "bytes": 8124,
+      "sha256": "f59639d3aa61a1785f741af818c5adf37033c4aeb776d46f57fef5cedd58aad8"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/generate.cjs",
+      "bytes": 1206,
+      "sha256": "705edb223384dc0bdf7d42441fb93ca7c27c976d606d8a15d263974dbcdbedfe"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/generate.mjs",
+      "bytes": 4769,
+      "sha256": "0c5d7828b2458978ed5d79d3714812f0948a85b9e866356975b6240859ea7d3f"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/inspect.cjs",
+      "bytes": 4801,
+      "sha256": "3e50d81e536fdc952ee77f52436674a5ccc19446157319d9c1277ad5e45c47f8"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/model.mjs",
+      "bytes": 12413,
+      "sha256": "e15da88f0167046a830bb140ed71bf14d02839231386f4193f74e948902b1de9"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/prepare.cjs",
+      "bytes": 3432,
+      "sha256": "a952e1d48deeed2cff8ef02d8391e49ba90cde8424064d2401f34c7dc3992479"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/qa.cjs",
+      "bytes": 27454,
+      "sha256": "a6261ecbc8ad69dbd776e8b78890df47d8bca0541bbe8f6cb5dc199073314c38"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/README.txt",
+      "bytes": 1738,
+      "sha256": "db2583a83b9b09f07faba615d749d3554b8dce8fcb8129a0bfc4647f76eb5da6"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/review.js",
+      "bytes": 22042,
+      "sha256": "483fea3246fcf4d73c3cdedbfadb004709c78402695dedd03494772a6044b8d2"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/source-ready.cjs",
+      "bytes": 2213,
+      "sha256": "858a1a9216c274f43e374fb6833b468aa8118c6073252ee1aa495372417daf32"
+    },
+    {
+      "path": "tools/enemy-base/grand-r2/template.html",
+      "bytes": 24796,
+      "sha256": "db78a390b39ba8b49ea34dacaddf19a9f247b0d27987b04bb294dc092012f9fc"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "tools/enemy-base/fortress.mjs",
+      "bytes": 42870,
+      "sha256": "fbd079c4945b147e5d3332c95c94422be4d21da7161b7c947a36ee29546bbfe0"
+    },
+    {
+      "path": "outputs/enemy-base-moodboard-v2/moodboard.png",
+      "bytes": 3102262,
+      "sha256": "49ea92ea7a8dc01b1ee79679d550e22f1a417a4f922243ba21306c521f6327f3"
+    }
+  ],
+  "baselinePreservation": [
+    {
+      "path": "outputs/enemy-base-v1/browser-verification.json",
+      "bytes": 28590,
+      "sha256": "f5281a313301e307cdd2f6c8c4d16a64760371439db1535a399996531a2524de"
+    },
+    {
+      "path": "outputs/enemy-base-v1/enemy-base.glb",
+      "bytes": 16284852,
+      "sha256": "518e6208cbdef18c7a29bacaaa800d83004d71f1a17c4e20ae6ceb6304f19fcc"
+    },
+    {
+      "path": "outputs/enemy-base-v1/index.html",
+      "bytes": 26483321,
+      "sha256": "a57e7d81362eea4cec04ccf4172b18e0b913359a4e99b4a880364d7e4dda88f8"
+    },
+    {
+      "path": "outputs/enemy-base-v1/model-iso.png",
+      "bytes": 142671,
+      "sha256": "bbda91136d0b7c592d5380e95ad35c75a57699ad2dbcfc48a89d37a18f34bc78"
+    }
+  ],
+  "sourceCensus": {
+    "triangles": 207914,
+    "meshes": 101,
+    "groups": 8,
+    "finiteCoordinates": true,
+    "scope": "Before export; actual GLB/render separately measured"
+  },
+  "artChanges": [
+    "Large iron shoulder citadels",
+    "Load-bearing flying buttresses and broad keep armor",
+    "Monumental gate collar",
+    "Deep rear furnace and chimney housing",
+    "Large torn stitched solid standards",
+    "Tighter presentation and taller desktop stage"
+  ],
+  "stages": [
+    {
+      "command": "node tools/enemy-base/grand-r2/generate.cjs"
+    },
+    {
+      "command": "node tools/enemy-base/grand-r2/inspect.cjs"
+    },
+    {
+      "command": "node tools/enemy-base/grand-r2/build.cjs"
+    },
+    {
+      "command": "node tools/enemy-base/grand-r2/qa.cjs"
+    },
+    {
+      "command": "node tools/enemy-base/grand-r2/finalize.cjs"
+    }
+  ],
+  "work": "work/verification/enemy-base-v1/grand-r2/",
+  "latestArtGate": "Bolder monumental silhouette and functional layers; numeric multiplication is not art approval. Same-angle r1/r2 renders and user art approval remain to be evaluated.",
+  "state": {
+    "exporter": 0,
+    "browser": 0,
+    "originalV1": "frozen",
+    "gameplay": false,
+    "paidGeneration": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:43:15Z",
+  "status": "READY-3 affected warning/camera acceptance11/11 PASS",
+  "report": {
+    "path": "outputs/playable-battlefield-browser-qa-v1/camera-verification.json",
+    "sha256": "6a52fb2f5ca5bb9b77cfde40b26026f746b87bd765dfb826e88aec3fda8cc83a",
+    "passed": true,
+    "checks": 11,
+    "testedArtifacts": {
+      "outputs/playable-battlefield-v1/handoff-files.json": {
+        "bytes": 4755,
+        "sha256": "619c06c01c3715146f51748a5b1946b8b75e15d0faa918d9159a519978836d27"
+      },
+      "outputs/playable-battlefield-v1/playable.js": {
+        "bytes": 968713,
+        "sha256": "68b166a268b6904f4b3c4e8a2799f084b94efc2a8a6177e549ca05903308d0fc"
+      },
+      "tools/levels/playable-presentation.mjs": {
+        "bytes": 3748,
+        "sha256": "36a399b0c2cc8cc5f718fdee7f2150845955a24d901bff240f75f0e87347c758"
+      }
+    },
+    "scope": "READY-3 camera/warning/target guidance regression only. Prior normal18 and targeted23/24 evidence remains separate."
+  },
+  "observed": {
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "dpr": 1
+    },
+    "warningBox": {
+      "x": 7.9921875,
+      "y": 195.375,
+      "right": 122.0078125,
+      "bottom": 227.875
+    },
+    "leftPreviously": -10.2109375,
+    "leftNow": 7.9921875,
+    "rightNow": 122.0078125,
+    "actualEnemyFire": true,
+    "paused": false
+  },
+  "image": {
+    "path": "outputs/project-command/camera-ready3-warning.png",
+    "bytes": 287785,
+    "sha256": "00c8f7d881d95e30a57bde3e50f2dcaa21a0b585e0e7b79ce509f1184904eabd",
+    "sameAsSource": true,
+    "viewedByCommand": true
+  },
+  "delegatedHandoffAudit": {
+    "files": 25,
+    "bothSharedAndIntegrationMatched": true,
+    "changedManifestEntries": 5,
+    "changedEntries": [
+      "HANDOFF",
+      "renderer",
+      "snapshot tool",
+      "build manifest",
+      "bundle"
+    ],
+    "unchanged": "session/contract/UI/pilot/presentation/CSS/tests/prior check outputs",
+    "rendererObservation": "actual label width/height and8px margins used by clamp",
+    "fullHistoricalRendererDiffAvailable": false
+  },
+  "provenancePolicy": "retain READY-2 normal18 and targeted23/24, append READY-3 affected11; not a full suite rerun",
+  "commandReview": "read report/SHA, inspect image, small manifest audit; no duplicate browser execution"
+}

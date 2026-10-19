@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "owner": "boards_05_08",
+  "date": "2026-10-19",
+  "mode": "built_in_imagegen",
+  "status": "READY_visual_proposal",
+  "post_processing": "none; generated PNG copied byte-for-byte",
+  "references": [
+    "outputs/ship-states-v1/three-lineages-selected-v1/three-lineages.png",
+    "outputs/enemy-base-moodboard-v2/moodboard.png",
+    "outputs/chapter1-final-boss-moodboard-v2/moodboard.png"
+  ],
+  "entries": [
+    {
+      "id": "05",
+      "path": "outputs/world-moodboards-v1/images/05-stormbreak-mooring.png",
+      "bytes": 2954824,
+      "sha256": "328b66c54e6c86b9b03de03d32a43f928583d42d8afad5c148a560cde8b619d1",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "outputs/world-moodboards-v1/prompts/05-stormbreak-mooring.txt",
+      "targeted_revision_prompt": "outputs/world-moodboards-v1/prompts/05-stormbreak-mooring-targeted-revision.txt",
+      "generation_count": 2,
+      "generated_source_filename": "exec-f2b1b1bd-fef4-4fac-9069-44b71d7d18dd.png"
+    },
+    {
+      "id": "06",
+      "path": "outputs/world-moodboards-v1/images/06-thunderwall-passage.png",
+      "bytes": 2982787,
+      "sha256": "8fe894753768a4457eeb6e987b450bb9c374a5ae3768e9e18946c5c5e2762a69",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "outputs/world-moodboards-v1/prompts/06-thunderwall-passage.txt",
+      "targeted_revision_prompt": "outputs/world-moodboards-v1/prompts/06-thunderwall-passage-targeted-revision.txt",
+      "generation_count": 2,
+      "generated_source_filename": "exec-c2551943-724c-4d83-b956-aa5286208639.png"
+    },
+    {
+      "id": "07",
+      "path": "outputs/world-moodboards-v1/images/07-iron-rib-commons.png",
+      "bytes": 3069107,
+      "sha256": "5e7148b64a9faf75fbaa2291ab932870751716835451c650fc11ad1d64f4faf1",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "outputs/world-moodboards-v1/prompts/07-iron-rib-commons.txt",
+      "targeted_revision_prompt": "outputs/world-moodboards-v1/prompts/07-iron-rib-commons-targeted-revision.txt",
+      "generation_count": 2,
+      "generated_source_filename": "exec-0e9f6888-5768-4a1b-be78-afbd7fe716e2.png"
+    },
+    {
+      "id": "08",
+      "path": "outputs/world-moodboards-v1/images/08-colossal-keel-yard.png",
+      "bytes": 3371664,
+      "sha256": "57951213ef2032c131635a7b419d43fd18f381a04452f88b400160cb599b333d",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "outputs/world-moodboards-v1/prompts/08-colossal-keel-yard.txt",
+      "targeted_revision_prompt": null,
+      "generation_count": 1,
+      "generated_source_filename": "exec-f2c94ad3-e2a0-4426-9279-e20a3589339e.png"
+    }
+  ],
+  "visual_review": {
+    "05": "Warm small civilian mooring under immense vapor eave; copper grounding rod, ceramic rings, rain, tiny window light, kettle/mending details. Targeted revision removed remote fortress/spire leakage and military cloth emblems.",
+    "06": "Storm walls now read as rounded vapor, broad turquoise flight gap, distant red ribs, separate research mooring and enemy outpost. Four-beat lightning vignette present. Targeted revision corrected solid platform/rock leakage.",
+    "07": "Curved red skeletal ribs, brass cranes, timber work decks, lunch/tea/laundry/tool vignette. Targeted revision made near cloth plain teal/coral and kept enemy banner only on distant separate fortress.",
+    "08": "Long low unfinished keel/rib skeleton, deep open flight space, suspended cranes, one-sided dark navy/crimson occupation, civilian work decks distinguished."
+  },
+  "shared_checks": [
+    "All four PNGs directly opened and visually inspected",
+    "All stage numbers and English titles visibly correct; Cloudstitch title case varies decoratively",
+    "Two right panels and five unlabeled palette swatches visible on each board",
+    "Environment dominates and cream/teal heroic airship gives scale",
+    "No original references overwritten; no browser, exporter, API fallback, Meshy, commit or push"
+  ],
+  "limitations": [
+    "Image proposals, not playable maps or engine scenes; no physics, sockets, stats or travel rules established",
+    "Palette hex equivalence and generated tiny geometry are approximate",
+    "Human art approval is separate from agent visual review; wet timber and brass have stronger painted highlights than matte surfaces",
+    "07 workshop spans large structural skeleton but remains a workshop rather than a settlement; exact expedition footprint is not measured"
+  ]
+}

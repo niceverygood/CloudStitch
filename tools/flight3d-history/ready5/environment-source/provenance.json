@@ -1,0 +1,32 @@
+{
+  "revision": "source-ready-3-bold-r2",
+  "purpose": "Approved read-only map24 recipe snapshots bundled for flight READY5. Exact source copies; no GLB export or original edits. Later map revisions do not change this frozen bundle.",
+  "sourceReady": "outputs/map-atmosphere-v1/SOURCE_READY.json",
+  "sourceReadySha256": "9112d0bc9e68c585f9141f3dc6f934dd2ac00c5932d931d5004c314e0736478b",
+  "files": [
+    {
+      "source": "tools/map-atmosphere-v1/sky.mjs",
+      "snapshot": "tools/flight3d/environment-source/sky.mjs",
+      "bytes": 26359,
+      "sha256": "6fdb50cdff504c6e8da2917917de0aa4cb8eef2449dde27697d9a25e4ddd6f5e"
+    },
+    {
+      "source": "tools/map-atmosphere-v1/props.mjs",
+      "snapshot": "tools/flight3d/environment-source/props.mjs",
+      "bytes": 40911,
+      "sha256": "83b91fedef9e2613bd283e1e5cedc8abeaeffceb67d6aed1122704b137cea326"
+    },
+    {
+      "source": "tools/map-atmosphere-v1/terrain.mjs",
+      "snapshot": "tools/flight3d/environment-source/terrain.mjs",
+      "bytes": 34613,
+      "sha256": "de025448731fc8185248e958312f8aae73575e816342b8f9165fb49d07d8ae6c"
+    },
+    {
+      "source": "tools/world-assets/core.mjs",
+      "snapshot": "tools/flight3d/environment-source/core.mjs",
+      "bytes": 7840,
+      "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c"
+    }
+  ]
+}

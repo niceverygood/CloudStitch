@@ -1,0 +1,1876 @@
+{
+  "version": "enemy-reference-villain-3",
+  "title": "Cloudstitch · 악당의 얼굴을 가진 여섯 함선",
+  "referencePath": "../enemy-fleet-reference-v1/reference.png",
+  "referenceSha256": "7f703c7c576d96f3f82876976b424a23a7ed0aeff2d7130a354c1cd76be5963c",
+  "atlasPath": "../enemy-fleet-reference-v1/painted-atlas.png",
+  "atlasSha256": "13984610dd7647659d97beb02a4b29e0092fe787e06adacf9c7e0bfc32920c0a",
+  "scope": "Six independent reference-derived villain art variants of the same source IDs; original modules and previous versions preserved. Art only; no automatic combat replacement.",
+  "newGeneration": {
+    "imagegen": 0,
+    "meshy": 0,
+    "reusedAtlas": true
+  },
+  "ships": [
+    {
+      "id": "enemy-pirate-scout",
+      "name": "해적 정찰선",
+      "category": "enemy-archetype",
+      "faction": "해적(세부 소속 미정)",
+      "sourceFiles": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "description": "가벼운 정찰·측후방 접근·짧은 연사·후퇴",
+      "shape": {
+        "hull": "작고 날렵한 선체",
+        "balloon": null,
+        "scaleClass": "small",
+        "palette": [
+          "교체 흔적 목재",
+          "밧줄",
+          "혼합 포대",
+          "청록 기계"
+        ],
+        "paletteAuthority": "해당 함선 또는 세력의 문서상 재료·색 참고; 실제 제작 색표와 수치는 미정",
+        "deckLayout": "노출 후방 엔진과 연사 무장",
+        "dimensions": null,
+        "unitConversion": null,
+        "status": "정성적 기준; 치수/소켓/배치 규격 미정"
+      },
+      "modules": {
+        "balloons": null,
+        "engines": null,
+        "machineGuns": null,
+        "cannons": null,
+        "mortars": null,
+        "harpoons": null,
+        "chainCannons": null,
+        "flamethrowers": null,
+        "winches": null,
+        "armor": null,
+        "repairArms": null,
+        "rescueCapsules": null,
+        "smokeEmitters": null
+      },
+      "special": [
+        "짧은 연사",
+        "전방보다 측후방 기동이 전술 표식"
+      ],
+      "status": "asset-built",
+      "moduleCountAuthority": "무장/부양/추진 종류만 명시; 개수 미정",
+      "requiredFeatures": [
+        "engine",
+        "machinegun"
+      ],
+      "requiredFeatureAuthority": "명시된 기능·외형의 존재 조건. 수는 modules의 int만 확정. role-only의 구체 형태는 제작 해석이며 고유 정사 외형 확정 아님.",
+      "artModules": {
+        "balloons": 1,
+        "engines": 1,
+        "machineGuns": 1
+      },
+      "definitionLevel": "partial",
+      "scopeKind": "vessel",
+      "structuralFeatures": {},
+      "variantId": "enemy-pirate-scout--villain-v3",
+      "baseVariantId": "enemy-pirate-scout--villain-v2",
+      "baseModelSha256": "38193872b27cca3a9fa6dc19ab4417e77e109bbd2e332ea5f94d51c38290da14",
+      "originalReferenceV1": "../enemy-fleet-reference-v1/index.html",
+      "beforePreviewPath": "previews/enemy-pirate-scout-matched-before.png",
+      "assetPath": "ships/enemy-pirate-scout.glb",
+      "viewerPath": "ships/enemy-pirate-scout.html",
+      "previewPath": "previews/enemy-pirate-scout.png",
+      "sha256": "8125a0e3f05c2a53a2d6b12c58c41fadcb22cf05c68baae67fefc7fc8296cf9d",
+      "bytes": 7961236,
+      "pipelineSha256": "f114b5eccfb9ac396b2e62cf186995f0e5d953483cde8a90881b5c5698d99016",
+      "metrics": {
+        "triangles": 41128,
+        "sourceTriangles": 41128,
+        "bones": 30,
+        "boneCount": 30,
+        "sourceMeshCount": 339,
+        "meshCount": 78,
+        "skinnedMeshCount": 78,
+        "materialCount": 16,
+        "controls": 5,
+        "controlRoles": [
+          "envelope",
+          "vibration",
+          "rotor",
+          "yaw",
+          "recoil"
+        ],
+        "phasedControls": [
+          {
+            "bone": "enemy-pirate-scout-exposed-brass-stern-engine_Vibration",
+            "role": "vibration",
+            "phase": 5.190559959336725
+          },
+          {
+            "bone": "enemy-pirate-scout-exposed-brass-stern-engine_Rotor",
+            "role": "rotor",
+            "phase": 1.6949804859864475
+          }
+        ],
+        "availableActions": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "FireBurst"
+        ],
+        "unavailableActions": [
+          "WinchCycle"
+        ],
+        "hasWeapons": true,
+        "clips": [
+          {
+            "name": "FloatIdle",
+            "duration": 10,
+            "tracks": 11,
+            "ambientOnly": false
+          },
+          {
+            "name": "Cruise",
+            "duration": 8,
+            "tracks": 11,
+            "ambientOnly": false
+          },
+          {
+            "name": "BankTurn",
+            "duration": 12,
+            "tracks": 11,
+            "ambientOnly": false
+          },
+          {
+            "name": "GustRecovery",
+            "duration": 12,
+            "tracks": 11,
+            "ambientOnly": false
+          },
+          {
+            "name": "TurretScan",
+            "duration": 12,
+            "tracks": 11,
+            "ambientOnly": false
+          },
+          {
+            "name": "WinchCycle",
+            "duration": 16,
+            "tracks": 11,
+            "ambientOnly": true
+          },
+          {
+            "name": "FireBurst",
+            "duration": 8,
+            "tracks": 11,
+            "ambientOnly": false
+          }
+        ],
+        "motionScale": 10,
+        "style": "warm",
+        "sceneRootSkins": true,
+        "singleWeightRigidSkinning": true
+      },
+      "metricsScope": "Seven base motion statistics; observedClips includes the extra wreck deployment clip.",
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "triangles": 41128,
+      "geometrySignature": "dd0be7c185fd908c94b27999284fb4570d333dec5349502096a7ae56b5d1b35c",
+      "observedBounds": {
+        "min": [
+          -10.285350799560547,
+          -3.1738414764404297,
+          -2.8553972244262695
+        ],
+        "max": [
+          6.1190185546875,
+          11.679985046386719,
+          2.5350000858306885
+        ],
+        "size": [
+          16.404369354248047,
+          14.853826522827148,
+          5.390397310256958
+        ],
+        "axisRatios": [
+          1,
+          0.9054798878312641,
+          0.32859521715542633
+        ]
+      },
+      "weakpoints": [
+        {
+          "id": "rear-engine",
+          "nodeName": "enemy-pirate-scout-exposed-brass-stern-engine",
+          "label": "노출 후방 엔진",
+          "kind": "engine"
+        }
+      ],
+      "features": [
+        "검붉은 타원 기낭과 거친 봉제 흉터",
+        "상어 턱 장갑과 맹금 부리 충각을 두른 목재 스키프",
+        "아래로 뻗은 붉은/황동 지느러미",
+        "큰 황동 후방 엔진",
+        "붉은 해골 깃발",
+        "지붕 없는 낮은 개방 조타대",
+        "전방 경량 기관총",
+        "황동 테두리의 크게 굽은 맹금 부리 충각과 불길한 눈매",
+        "양옆 긴 턱 장갑과 크기 다른 아이보리 이빨",
+        "높이와 곡선이 다른 검붉은 뿔돛 두 장",
+        "한쪽에만 늘어진 전리품 방패·봉인 파편·사슬",
+        "검붉은 기낭 위 큰 봉제 흉터와 밝은 황동/아이보리 대비",
+        "선체 앞을 둘러싸는 거대한 빈 포식자 턱: 위아래의 벌어진 프레임·6쌍 큰 송곳니·드러난 목재와 기관총",
+        "기낭을 넘어서는 단측 찢긴 사냥돛과 높이가 다른 상어 등갑, 원 기낭 flex에 결속한 후속 움직임",
+        "양옆으로 벌어진 전리품 작업갑판·묵직한 방패 사슬·앞으로 꺾여 나온 맹금 충각"
+      ],
+      "referenceNotes": "첨부 시트1의 실루엣과 재료를 새3D로 해석. 선수 -X·위 +Y·임시LU. 원문09/25/65의 기관총·엔진 역할만 확정이며 개수는 전부 미정이므로 표시 수는 artModules 제안이다. 악당 외형v2: 거친 전리품을 매단 맹금·상어 해적 사냥꾼. 장식·색·과장된 구조의 아트 제안이며 실제 무장/피해/충돌/AI 수치 변경 없음. 악당 외형v3 / 최신 10배 이상 대담함의 표현 목표: 선체 앞을 둘러싸는 거대한 빈 포식자 턱: 위아래의 벌어진 프레임·6쌍 큰 송곳니·드러난 목재와 기관총; 기낭을 넘어서는 단측 찢긴 사냥돛과 높이가 다른 상어 등갑, 원 기낭 flex에 결속한 후속 움직임; 양옆으로 벌어진 전리품 작업갑판·묵직한 방패 사슬·앞으로 꺾여 나온 맹금 충각. 단일 배율 확대가 아닌 큰 빈 공간·비대칭 주형태·중간 기능 구조·작은 재료층의 재설계. 기존 약점/controls/수량/전투 규칙 보존. 실제 렌더 비교 및 사람 미술 승인은 통합 QA에서 별도 확인.",
+      "deployRig": null,
+      "villainTheme": "빈 거대 포식자 턱과 편측 사냥돛의 약탈 맹금선",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "silhouettePath": "previews/enemy-pirate-scout-silhouette.png",
+      "comparisonPreviewPath": "previews/enemy-pirate-scout-matched-after.png",
+      "comparisonCapture": {
+        "sourceSha256": "8125a0e3f05c2a53a2d6b12c58c41fadcb22cf05c68baae67fefc7fc8296cf9d",
+        "baseSourceSha256": "38193872b27cca3a9fa6dc19ab4417e77e109bbd2e332ea5f94d51c38290da14",
+        "frame": {
+          "position": [
+            -72.08316612243654,
+            59.253071784973145,
+            -70.16019856929779
+          ],
+          "quaternion": [
+            0.09599682455801843,
+            0.8943389512129172,
+            0.23175683579271864,
+            -0.37044732295092014
+          ],
+          "target": [
+            -2.0831661224365234,
+            4.2530717849731445,
+            -0.16019856929779053
+          ],
+          "frustum": [
+            -19.16649251240045,
+            19.16649251240045,
+            11.667369713859303,
+            -11.667369713859303
+          ],
+          "modelScale": 1,
+          "modelOrigin": [
+            0,
+            0,
+            0
+          ],
+          "profile": "FloatIdle",
+          "time": 2,
+          "stage": [
+            1030,
+            627
+          ]
+        },
+        "bounds": {
+          "min": [
+            -10.285350799560547,
+            -3.1738414764404297,
+            -2.8553972244262695
+          ],
+          "max": [
+            6.1190185546875,
+            11.679985046386719,
+            2.5350000858306885
+          ]
+        },
+        "authoredUnits": "Art LU, not metres; both models use scale1 and origin0.",
+        "sameCameraAndPose": true
+      },
+      "previewSourceSha256": "8125a0e3f05c2a53a2d6b12c58c41fadcb22cf05c68baae67fefc7fc8296cf9d",
+      "previewCapturedAt": "2026-10-18T13:12:55.417Z",
+      "previewSha256": "b1f13113e61d7c32d4ac4efe73b90e892137d434fa16331a230ea3ed444fc52a"
+    },
+    {
+      "id": "enemy-cult-blockade",
+      "name": "교단 봉쇄선",
+      "category": "enemy-archetype",
+      "faction": "마지막 숨 교단",
+      "sourceFiles": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "description": "전면을 보호하고 측면 일제 포격으로 항로를 막는 중장갑선",
+      "shape": {
+        "hull": "넓은 중장갑 선체",
+        "balloon": "천 가리개 아래 기낭; 개수 미정",
+        "scaleClass": null,
+        "palette": [
+          "크림 봉인천",
+          "검은 봉인 통",
+          "황동 종"
+        ],
+        "paletteAuthority": "해당 함선 또는 세력의 문서상 재료·색 참고; 실제 제작 색표와 수치는 미정",
+        "deckLayout": "전면 장갑·측면 포대·후방 추진부",
+        "dimensions": null,
+        "unitConversion": null,
+        "status": "정성적 기준; 치수/소켓/배치 규격 미정"
+      },
+      "modules": {
+        "balloons": null,
+        "engines": null,
+        "machineGuns": null,
+        "cannons": null,
+        "mortars": null,
+        "harpoons": null,
+        "chainCannons": null,
+        "flamethrowers": null,
+        "winches": null,
+        "armor": null,
+        "repairArms": null,
+        "rescueCapsules": null,
+        "smokeEmitters": null
+      },
+      "special": [
+        "천 가리개 아래 연결 골조가 읽혀야 함",
+        "종소리·포신·HUD 대체 예고",
+        "연막 재배치"
+      ],
+      "status": "asset-built",
+      "moduleCountAuthority": "무장/부양/추진 종류만 명시; 개수 미정",
+      "requiredFeatures": [
+        "cannon",
+        "armor",
+        "engine",
+        "bell",
+        "smoke"
+      ],
+      "requiredFeatureAuthority": "명시된 기능·외형의 존재 조건. 수는 modules의 int만 확정. role-only의 구체 형태는 제작 해석이며 고유 정사 외형 확정 아님.",
+      "artModules": {
+        "balloons": 1,
+        "engines": 1,
+        "cannons": 3,
+        "armor": 12,
+        "smokeEmitters": 1,
+        "bell": 1,
+        "tank": 4
+      },
+      "definitionLevel": "partial",
+      "scopeKind": "vessel",
+      "structuralFeatures": {},
+      "variantId": "enemy-cult-blockade--villain-v3",
+      "baseVariantId": "enemy-cult-blockade--villain-v2",
+      "baseModelSha256": "78fffc1c9f32dbbcef82be3d5f9b89cf1e4aa43253f2f823ac9602e840b78e82",
+      "originalReferenceV1": "../enemy-fleet-reference-v1/index.html",
+      "beforePreviewPath": "previews/enemy-cult-blockade-matched-before.png",
+      "assetPath": "ships/enemy-cult-blockade.glb",
+      "viewerPath": "ships/enemy-cult-blockade.html",
+      "previewPath": "previews/enemy-cult-blockade.png",
+      "sha256": "ebd68ae9308be57cc50bc36afaf3948ce3fc3e46defd72d7c7d30291b604d77b",
+      "bytes": 12613876,
+      "pipelineSha256": "f114b5eccfb9ac396b2e62cf186995f0e5d953483cde8a90881b5c5698d99016",
+      "metrics": {
+        "triangles": 90056,
+        "sourceTriangles": 90056,
+        "bones": 116,
+        "boneCount": 116,
+        "sourceMeshCount": 773,
+        "meshCount": 193,
+        "skinnedMeshCount": 193,
+        "materialCount": 14,
+        "controls": 10,
+        "controlRoles": [
+          "bell",
+          "envelope",
+          "vibration",
+          "rotor",
+          "yaw",
+          "recoil"
+        ],
+        "phasedControls": [
+          {
+            "bone": "enemy-cult-blockade-small-exposed-rear-engine_Vibration",
+            "role": "vibration",
+            "phase": 4.337217393759346
+          },
+          {
+            "bone": "enemy-cult-blockade-small-exposed-rear-engine_Rotor",
+            "role": "rotor",
+            "phase": 1.7448513340503033
+          }
+        ],
+        "availableActions": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "FireBurst"
+        ],
+        "unavailableActions": [
+          "WinchCycle"
+        ],
+        "hasWeapons": true,
+        "clips": [
+          {
+            "name": "FloatIdle",
+            "duration": 10,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "Cruise",
+            "duration": 8,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "BankTurn",
+            "duration": 12,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "GustRecovery",
+            "duration": 12,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "TurretScan",
+            "duration": 12,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "WinchCycle",
+            "duration": 16,
+            "tracks": 16,
+            "ambientOnly": true
+          },
+          {
+            "name": "FireBurst",
+            "duration": 8,
+            "tracks": 16,
+            "ambientOnly": false
+          }
+        ],
+        "motionScale": 10,
+        "style": "warm",
+        "sceneRootSkins": true,
+        "singleWeightRigidSkinning": true
+      },
+      "metricsScope": "Seven base motion statistics; observedClips includes the extra wreck deployment clip.",
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "triangles": 90056,
+      "geometrySignature": "6e06309e584e58480224f69ce8a9e1974dc4d87ea4a5294e7075b47818fe86cc",
+      "observedBounds": {
+        "min": [
+          -6.949999809265137,
+          -3.040396213531494,
+          -4.195283889770508
+        ],
+        "max": [
+          5.638999938964844,
+          13.22441577911377,
+          4.195283889770508
+        ],
+        "size": [
+          12.58899974822998,
+          16.264811992645264,
+          8.390567779541016
+        ],
+        "axisRatios": [
+          0.774002168234257,
+          1,
+          0.5158724111496107
+        ]
+      },
+      "weakpoints": [
+        {
+          "id": "rear-engine",
+          "nodeName": "enemy-cult-blockade-small-exposed-rear-engine",
+          "label": "후방 추진부",
+          "kind": "engine"
+        },
+        {
+          "id": "bell-support",
+          "nodeName": "enemy-cult-blockade-open-central-bell-support",
+          "label": "노출 종 지지대",
+          "kind": "structure"
+        }
+      ],
+      "features": [
+        "검은 격자 판금의 넓은 절벽 선수",
+        "서로 높이가 다른 수직 봉인통4개",
+        "두 장의 흰 봉인 장막",
+        "넓은 종틀 사이로 돌출한 거대한 불길한 황동 종",
+        "후방에 낮게 숨은 작은 기낭",
+        "작은 노출 후방 엔진",
+        "한쪽 측면 함포3문",
+        "천 아래에도 노출된 연결 골조",
+        "금테가 두꺼운 겹장갑과 큰 붉은 봉인 문양의 전면 방패",
+        "넓힌 종틀과 앞으로 돌출한 거대 황동 종",
+        "수직 봉인통4개 위의 왕관형 침탑과 높은 중앙 핀",
+        "종실 양쪽의 크게 굽은 아이보리 의례 뿔",
+        "길게 늘어진 붉은 의례 깃발과 사슬·기하학 봉인",
+        "검은 판금의 부피를 읽게 하는 밝은 황동·아이보리 윤곽",
+        "평평한 상자 후미를 세 높이의 장례 테라스·벌어진 버팀골조·따뜻한 목재 바닥으로 재구성",
+        "선체보다 높은 빈 첨두 종아치와 원 animated bell에 연결된 대형 열린 종, 노출된 약점 지지대",
+        "휘어진 판금 뿔·뒤로 펼친 대형 붉은 의례 장막·먹색 보강층과 황동 윤곽; bell 진폭 .08→.15로 무거운 후속 움직임"
+      ],
+      "referenceNotes": "첨부 시트2의 검은 수직 통·중장갑·봉인천·중앙 종을 실제3D로 해석. 큰 기낭/코티지를 제거하고 통이 실루엣을 지배한다. 원문09/25/65의 봉쇄·함포·장갑·종·연막 역할만 확정이며 수량은 전부 미정이다. 탱크4/포3/기낭1 등은 reference artModules 제안이며 전투·정사 보스 편성과 무관하다. 악당 외형v2: 왕관 봉인탑과 굽은 종뿔을 두른 압제의 장례 성벽. 장식·색·과장된 구조의 아트 제안이며 실제 무장/피해/충돌/AI 수치 변경 없음. 악당 외형v3 / 최신 10배 이상 대담함의 표현 목표: 평평한 상자 후미를 세 높이의 장례 테라스·벌어진 버팀골조·따뜻한 목재 바닥으로 재구성; 선체보다 높은 빈 첨두 종아치와 원 animated bell에 연결된 대형 열린 종, 노출된 약점 지지대; 휘어진 판금 뿔·뒤로 펼친 대형 붉은 의례 장막·먹색 보강층과 황동 윤곽; bell 진폭 .08→.15로 무거운 후속 움직임. 단일 배율 확대가 아닌 큰 빈 공간·비대칭 주형태·중간 기능 구조·작은 재료층의 재설계. 기존 약점/controls/수량/전투 규칙 보존. 실제 렌더 비교 및 사람 미술 승인은 통합 QA에서 별도 확인.",
+      "deployRig": null,
+      "villainTheme": "열린 거대 종아치와 계단식 장례 테라스의 봉쇄 성당",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "silhouettePath": "previews/enemy-cult-blockade-silhouette.png",
+      "comparisonPreviewPath": "previews/enemy-cult-blockade-matched-after.png",
+      "comparisonCapture": {
+        "sourceSha256": "ebd68ae9308be57cc50bc36afaf3948ce3fc3e46defd72d7c7d30291b604d77b",
+        "baseSourceSha256": "78fffc1c9f32dbbcef82be3d5f9b89cf1e4aa43253f2f823ac9602e840b78e82",
+        "frame": {
+          "position": [
+            -70.65549993515016,
+            60.09200978279114,
+            -70
+          ],
+          "quaternion": [
+            0.09599682455801843,
+            0.8943389512129172,
+            0.23175683579271864,
+            -0.37044732295092014
+          ],
+          "target": [
+            -0.6554999351501465,
+            5.092009782791138,
+            0
+          ],
+          "frustum": [
+            -20.059274907456363,
+            20.059274907456363,
+            12.210840162111785,
+            -12.210840162111785
+          ],
+          "modelScale": 1,
+          "modelOrigin": [
+            0,
+            0,
+            0
+          ],
+          "profile": "FloatIdle",
+          "time": 2,
+          "stage": [
+            1030,
+            627
+          ]
+        },
+        "bounds": {
+          "min": [
+            -6.949999809265137,
+            -3.040396213531494,
+            -4.195283889770508
+          ],
+          "max": [
+            5.638999938964844,
+            13.22441577911377,
+            4.195283889770508
+          ]
+        },
+        "authoredUnits": "Art LU, not metres; both models use scale1 and origin0.",
+        "sameCameraAndPose": true
+      },
+      "previewSourceSha256": "ebd68ae9308be57cc50bc36afaf3948ce3fc3e46defd72d7c7d30291b604d77b",
+      "previewCapturedAt": "2026-10-18T13:12:59.350Z",
+      "previewSha256": "9abc8dcb7bd5bfc2e34ee9389e63a04297c290913f556055427b3f7188fd9e40"
+    },
+    {
+      "id": "enemy-union-salvage",
+      "name": "연합 인양선",
+      "category": "enemy-archetype",
+      "faction": "쇠갈비 연합",
+      "sourceFiles": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "description": "작살과 견인 케이블로 이동을 제한하는 산업선",
+      "shape": {
+        "hull": "비대칭 작업형 선체",
+        "balloon": null,
+        "scaleClass": null,
+        "palette": [
+          "적갈색 방청 판금",
+          "직선 철골",
+          "청록 작업등"
+        ],
+        "paletteAuthority": "해당 함선 또는 세력의 문서상 재료·색 참고; 실제 제작 색표와 수치는 미정",
+        "deckLayout": "크레인·윈치·작살·노출 케이블",
+        "dimensions": null,
+        "unitConversion": null,
+        "status": "정성적 기준; 치수/소켓/배치 규격 미정"
+      },
+      "modules": {
+        "balloons": null,
+        "engines": null,
+        "machineGuns": null,
+        "cannons": null,
+        "mortars": null,
+        "harpoons": null,
+        "chainCannons": null,
+        "flamethrowers": null,
+        "winches": null,
+        "armor": null,
+        "repairArms": null,
+        "rescueCapsules": null,
+        "smokeEmitters": null
+      },
+      "special": [
+        "견인 중 노출 윈치와 케이블",
+        "무장과 인양장치의 정확한 수는 미정"
+      ],
+      "status": "asset-built",
+      "moduleCountAuthority": "무장/부양/추진 종류만 명시; 개수 미정",
+      "requiredFeatures": [
+        "harpoon",
+        "hook",
+        "crane"
+      ],
+      "requiredFeatureAuthority": "명시된 기능·외형의 존재 조건. 수는 modules의 int만 확정. role-only의 구체 형태는 제작 해석이며 고유 정사 외형 확정 아님.",
+      "artModules": {
+        "balloons": 1,
+        "engines": 2,
+        "harpoons": 1,
+        "winches": 1,
+        "crane": 1,
+        "repairArms": 0
+      },
+      "definitionLevel": "partial",
+      "scopeKind": "vessel",
+      "structuralFeatures": {},
+      "variantId": "enemy-union-salvage--villain-v3",
+      "baseVariantId": "enemy-union-salvage--villain-v2",
+      "baseModelSha256": "eb4f2ae662203adb8e0acac2d43f43e7b5b9fddd436d6452034c14f1016d1535",
+      "originalReferenceV1": "../enemy-fleet-reference-v1/index.html",
+      "beforePreviewPath": "previews/enemy-union-salvage-matched-before.png",
+      "assetPath": "ships/enemy-union-salvage.glb",
+      "viewerPath": "ships/enemy-union-salvage.html",
+      "previewPath": "previews/enemy-union-salvage.png",
+      "sha256": "dc494e67b55757d51a33fddeacae69cb6183bebc9e4ea8c914a2f3ba76dffe5c",
+      "bytes": 11618716,
+      "pipelineSha256": "f114b5eccfb9ac396b2e62cf186995f0e5d953483cde8a90881b5c5698d99016",
+      "metrics": {
+        "triangles": 73940,
+        "sourceTriangles": 73940,
+        "bones": 70,
+        "boneCount": 70,
+        "sourceMeshCount": 955,
+        "meshCount": 141,
+        "skinnedMeshCount": 141,
+        "materialCount": 14,
+        "controls": 10,
+        "controlRoles": [
+          "envelope",
+          "drum",
+          "crane",
+          "hook",
+          "yaw",
+          "recoil",
+          "vibration",
+          "rotor"
+        ],
+        "phasedControls": [
+          {
+            "bone": "enemy-union-salvage-aft-work-engine--1_Vibration",
+            "role": "vibration",
+            "phase": 4.970240960726093
+          },
+          {
+            "bone": "enemy-union-salvage-aft-work-engine--1_Rotor",
+            "role": "rotor",
+            "phase": 5.402186123170182
+          },
+          {
+            "bone": "enemy-union-salvage-aft-work-engine-1_Vibration",
+            "role": "vibration",
+            "phase": 2.9895868178451686
+          },
+          {
+            "bone": "enemy-union-salvage-aft-work-engine-1_Rotor",
+            "role": "rotor",
+            "phase": 4.069900896668545
+          }
+        ],
+        "availableActions": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "unavailableActions": [],
+        "hasWeapons": true,
+        "clips": [
+          {
+            "name": "FloatIdle",
+            "duration": 10,
+            "tracks": 18,
+            "ambientOnly": false
+          },
+          {
+            "name": "Cruise",
+            "duration": 8,
+            "tracks": 18,
+            "ambientOnly": false
+          },
+          {
+            "name": "BankTurn",
+            "duration": 12,
+            "tracks": 18,
+            "ambientOnly": false
+          },
+          {
+            "name": "GustRecovery",
+            "duration": 12,
+            "tracks": 18,
+            "ambientOnly": false
+          },
+          {
+            "name": "TurretScan",
+            "duration": 12,
+            "tracks": 18,
+            "ambientOnly": false
+          },
+          {
+            "name": "WinchCycle",
+            "duration": 16,
+            "tracks": 18,
+            "ambientOnly": false
+          },
+          {
+            "name": "FireBurst",
+            "duration": 8,
+            "tracks": 18,
+            "ambientOnly": false
+          }
+        ],
+        "motionScale": 10,
+        "style": "warm",
+        "sceneRootSkins": true,
+        "singleWeightRigidSkinning": true
+      },
+      "metricsScope": "Seven base motion statistics; observedClips includes the extra wreck deployment clip.",
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "triangles": 73940,
+      "geometrySignature": "2d066e8bf80b18e5292903f0ceb5b56c9cdb20e9f0a8666d7f7cc26837c3f191",
+      "observedBounds": {
+        "min": [
+          -9.48279857635498,
+          -2.865334987640381,
+          -3.2111406326293945
+        ],
+        "max": [
+          5.94950008392334,
+          8.038000106811523,
+          4.791275978088379
+        ],
+        "size": [
+          15.43229866027832,
+          10.903335094451904,
+          8.002416610717773
+        ],
+        "axisRatios": [
+          1,
+          0.7065269623453013,
+          0.518549879501454
+        ]
+      },
+      "weakpoints": [
+        {
+          "id": "enemy-union-salvage-weak-cable-drum",
+          "nodeName": "enemy-union-salvage-weakpoint-exposed-cable-drum",
+          "label": "노출 케이블 드럼",
+          "kind": "winch"
+        },
+        {
+          "id": "enemy-union-salvage-weak-hoist-chain",
+          "nodeName": "enemy-union-salvage-two-section-truss-crane",
+          "label": "크레인·견인 케이블",
+          "kind": "crane"
+        }
+      ],
+      "features": [
+        "single-teal-netted-envelope",
+        "deep-riveted-redbrown-work-barge",
+        "open-iron-working-gantry",
+        "oversized-exposed-cable-drum",
+        "two-section-diagonal-truss-crane",
+        "long-hanging-chain",
+        "three-forged-jaw-claw",
+        "low-visible-harpoon",
+        "three-massive-serrated-capture-jaws",
+        "reinforced-open-truss-with-armoured-elbow",
+        "exposed-toothed-winch-reduction-gear",
+        "paired-forged-mandible-bumpers",
+        "large-segmented-iron-and-crimson-flanks",
+        "black-and-ochre-load-warning-panels",
+        "sagging-restraint-chains",
+        "narrow-angled-industrial-watch-slits",
+        "hull-sized-open-three-scythe-capture-jaws",
+        "ivory-inner-cutting-edges-and-three-lock-teeth",
+        "paired-great-forged-predator-cheeks",
+        "two-storey-open-scrap-prison-cradles",
+        "offset-two-stage-drum-reduction-drive"
+      ],
+      "referenceNotes": "사용자 6종 그림의 3번 인양선. 단일 청록 기낭·적갈색 작업 선체·선수 밖으로 솟은 철골 크레인·거대 드럼·매달린 3발 집게를 우선했다. 집형 선장실과 쌍동선은 사용하지 않았다. 부품 수·상대 치수는 제작 제안이며 원문 modules=null을 변경하지 않는다. 악당 외형v2: 포획하는 산업 괴물 — 톱니 집게와 구속 윈치를 가진 인양선. 장식·색·과장된 구조의 아트 제안이며 실제 무장/피해/충돌/AI 수치 변경 없음. 악당 외형v3 / 최신 10배 이상 과감한 표현 목표: 인양선은 청록 기낭과 거대 드럼의 정체성을 남기고 열린 포획턱·쌍장갑 뺨·적재실의 주형태로 재설계. 거대 낫과 유압 버팀은 원래 세 jaw pivot과 hook의 자식이어서 크레인/집게 움직임을 그대로 따른다. 큰 주형태→중간 기계층→작은 체결부 순서이며 원본 장치/약점/controls/모듈 수와 실제 규칙은 보존한다. 실제 렌더와 사람의 미술 승인은 통합 QA에서 별도 확인한다.",
+      "deployRig": null,
+      "villainTheme": "공중 고철 포식자 — 선체 크기의 열린 낫 집게와 다층 포획 적재실",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "silhouettePath": "previews/enemy-union-salvage-silhouette.png",
+      "comparisonPreviewPath": "previews/enemy-union-salvage-matched-after.png",
+      "comparisonCapture": {
+        "sourceSha256": "dc494e67b55757d51a33fddeacae69cb6183bebc9e4ea8c914a2f3ba76dffe5c",
+        "baseSourceSha256": "eb4f2ae662203adb8e0acac2d43f43e7b5b9fddd436d6452034c14f1016d1535",
+        "frame": {
+          "position": [
+            -71.76664924621583,
+            57.58633255958557,
+            -69.20993232727051
+          ],
+          "quaternion": [
+            0.09599682455801843,
+            0.8943389512129172,
+            0.23175683579271864,
+            -0.37044732295092014
+          ],
+          "target": [
+            -1.7666492462158203,
+            2.5863325595855713,
+            0.7900676727294922
+          ],
+          "frustum": [
+            -16.460283009285327,
+            16.460283009285327,
+            10.01999752118631,
+            -10.01999752118631
+          ],
+          "modelScale": 1,
+          "modelOrigin": [
+            0,
+            0,
+            0
+          ],
+          "profile": "FloatIdle",
+          "time": 2,
+          "stage": [
+            1030,
+            627
+          ]
+        },
+        "bounds": {
+          "min": [
+            -9.48279857635498,
+            -2.865334987640381,
+            -3.2111406326293945
+          ],
+          "max": [
+            5.94950008392334,
+            8.038000106811523,
+            4.791275978088379
+          ]
+        },
+        "authoredUnits": "Art LU, not metres; both models use scale1 and origin0.",
+        "sameCameraAndPose": true
+      },
+      "previewSourceSha256": "dc494e67b55757d51a33fddeacae69cb6183bebc9e4ea8c914a2f3ba76dffe5c",
+      "previewCapturedAt": "2026-10-18T13:13:03.230Z",
+      "previewSha256": "a030771254eb749491b262b7d7a45f05a3a82541f212fdc228b91952ffba3e8a"
+    },
+    {
+      "id": "enemy-union-repair",
+      "name": "연합 수리선",
+      "category": "enemy-archetype",
+      "faction": "쇠갈비 연합",
+      "sourceFiles": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "description": "손상 동료를 제한된 수리량으로 지원하는 작업선",
+      "shape": {
+        "hull": "공방형 선체",
+        "balloon": null,
+        "scaleClass": null,
+        "palette": [
+          "적갈색 방청 판금",
+          "직선 철골",
+          "청록 작업등"
+        ],
+        "paletteAuthority": "해당 함선 또는 세력의 문서상 재료·색 참고; 실제 제작 색표와 수치는 미정",
+        "deckLayout": "수리팔과 용접·수리 연결선",
+        "dimensions": null,
+        "unitConversion": null,
+        "status": "정성적 기준; 치수/소켓/배치 규격 미정"
+      },
+      "modules": {
+        "balloons": null,
+        "engines": null,
+        "machineGuns": null,
+        "cannons": null,
+        "mortars": null,
+        "harpoons": null,
+        "chainCannons": null,
+        "flamethrowers": null,
+        "winches": null,
+        "armor": null,
+        "repairArms": null,
+        "rescueCapsules": null,
+        "smokeEmitters": null
+      },
+      "special": [
+        "수리 연결선이 대상과 방향을 보여야 함",
+        "14의 조선소 수리선은 동일 역할의 재사용 후보"
+      ],
+      "status": "asset-built",
+      "moduleCountAuthority": "무장/부양/추진 종류만 명시; 개수 미정",
+      "requiredFeatures": [
+        "repair"
+      ],
+      "requiredFeatureAuthority": "명시된 기능·외형의 존재 조건. 수는 modules의 int만 확정. role-only의 구체 형태는 제작 해석이며 고유 정사 외형 확정 아님.",
+      "artModules": {
+        "balloons": 1,
+        "engines": 2,
+        "repairArms": 2,
+        "rescueCapsules": 0,
+        "cannons": 0,
+        "harpoons": 0
+      },
+      "definitionLevel": "partial",
+      "scopeKind": "vessel",
+      "structuralFeatures": {},
+      "variantId": "enemy-union-repair--villain-v3",
+      "baseVariantId": "enemy-union-repair--villain-v2",
+      "baseModelSha256": "d92579da5aabd05e3af955235dffb48355a1a95a99d4ea4c02c1f6281c0cde4b",
+      "originalReferenceV1": "../enemy-fleet-reference-v1/index.html",
+      "beforePreviewPath": "previews/enemy-union-repair-matched-before.png",
+      "assetPath": "ships/enemy-union-repair.glb",
+      "viewerPath": "ships/enemy-union-repair.html",
+      "previewPath": "previews/enemy-union-repair.png",
+      "sha256": "cf1230f06b3a795ef8432b5edc49e74b7fdc0b672d087b8b3c5d61700b4a0dfc",
+      "bytes": 14311264,
+      "pipelineSha256": "f114b5eccfb9ac396b2e62cf186995f0e5d953483cde8a90881b5c5698d99016",
+      "metrics": {
+        "triangles": 83668,
+        "sourceTriangles": 83668,
+        "bones": 148,
+        "boneCount": 148,
+        "sourceMeshCount": 1107,
+        "meshCount": 256,
+        "skinnedMeshCount": 256,
+        "materialCount": 17,
+        "controls": 9,
+        "controlRoles": [
+          "envelope",
+          "shoulder",
+          "elbow",
+          "vibration",
+          "rotor"
+        ],
+        "phasedControls": [
+          {
+            "bone": "enemy-union-repair-rear-service-engine--1_Vibration",
+            "role": "vibration",
+            "phase": 3.386096581702672
+          },
+          {
+            "bone": "enemy-union-repair-rear-service-engine--1_Rotor",
+            "role": "rotor",
+            "phase": 1.1296502771426384
+          },
+          {
+            "bone": "enemy-union-repair-rear-service-engine-1_Vibration",
+            "role": "vibration",
+            "phase": 2.406689672193644
+          },
+          {
+            "bone": "enemy-union-repair-rear-service-engine-1_Rotor",
+            "role": "rotor",
+            "phase": 4.658580935543641
+          }
+        ],
+        "availableActions": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "WinchCycle"
+        ],
+        "unavailableActions": [
+          "TurretScan",
+          "FireBurst"
+        ],
+        "hasWeapons": false,
+        "clips": [
+          {
+            "name": "FloatIdle",
+            "duration": 10,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "Cruise",
+            "duration": 8,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "BankTurn",
+            "duration": 12,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "GustRecovery",
+            "duration": 12,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "TurretScan",
+            "duration": 12,
+            "tracks": 16,
+            "ambientOnly": true
+          },
+          {
+            "name": "WinchCycle",
+            "duration": 16,
+            "tracks": 16,
+            "ambientOnly": false
+          },
+          {
+            "name": "FireBurst",
+            "duration": 8,
+            "tracks": 16,
+            "ambientOnly": true
+          }
+        ],
+        "motionScale": 10,
+        "style": "warm",
+        "sceneRootSkins": true,
+        "singleWeightRigidSkinning": true
+      },
+      "metricsScope": "Seven base motion statistics; observedClips includes the extra wreck deployment clip.",
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "triangles": 83668,
+      "geometrySignature": "0b80f180e2c73d4703b7c3ecda6e6ea1233e5f15347a00bf04a8c9d8be02c4b4",
+      "observedBounds": {
+        "min": [
+          -7.30819845199585,
+          -5.433600425720215,
+          -3.4749999046325684
+        ],
+        "max": [
+          6.141000270843506,
+          7.575010776519775,
+          3.559999942779541
+        ],
+        "size": [
+          13.449198722839355,
+          13.00861120223999,
+          7.034999847412109
+        ],
+        "axisRatios": [
+          1,
+          0.967240611899714,
+          0.5230794779963591
+        ]
+      },
+      "weakpoints": [
+        {
+          "id": "enemy-union-repair-weak-repair-apparatus",
+          "nodeName": "enemy-union-repair-high-side-hydraulic-repair-boom",
+          "label": "측면 수리 장치",
+          "kind": "repair"
+        },
+        {
+          "id": "enemy-union-repair-weak-lower-repair-joint",
+          "nodeName": "enemy-union-repair-lower-side-hydraulic-repair-boom",
+          "label": "하부 수리팔 관절",
+          "kind": "repair"
+        }
+      ],
+      "features": [
+        "single-cream-netted-envelope",
+        "single-deep-wood-and-redbrown-hull",
+        "long-warm-multiwindow-workshop-bridge",
+        "low-flat-workshop-roof",
+        "large-blue-engineers-flag",
+        "two-articulated-hydraulic-repair-booms",
+        "hanging-lantern-tool-baskets",
+        "deep-u-shaped-supply-cables",
+        "warm-working-lights",
+        "shuttered-orange-forge-windows",
+        "canted-heavy-workshop-brows",
+        "crimson-and-iron-workshop-armour",
+        "asymmetric-outboard-bent-furnace-stacks",
+        "oversized-high-arm-demolition-vice",
+        "guarded-low-arm-tooth-saw",
+        "armoured-existing-hydraulic-joints",
+        "suspended-crossed-tools-workshop-mark",
+        "foredeck-warning-banded-heat-treatment-drum",
+        "entire-bow-open-arched-furnace-mouth",
+        "parted-crimson-forge-doors-and-recessed-hot-grate",
+        "four-mismatched-outboard-layered-chimneys",
+        "great-open-high-arm-disassembly-shears",
+        "three-metre-low-arm-cutting-annulus",
+        "layered-iron-workshop-cladding-and-heavy-return-pipes"
+      ],
+      "referenceNotes": "사용자 6종 그림의 4번 수리선. 크림색 단일 기낭·가로로 긴 다중창 공방·큰 청색 깃발·양측 유압 수리팔·따뜻한 작업등 바스켓·늘어진 연결선을 우선했다. 기존 v2 쌍동선이나 주거용 코티지 형태를 복사하지 않았다. 장치 수와 치수는 현재 그림을 해석한 제작 제안이며 실제 수리 AI·연결선 물리·충돌 규격이 아니다. 악당 외형v2: 불길한 해체 공방 — 집게와 톱 수리팔을 가진 이동식 산업 해체선. 장식·색·과장된 구조의 아트 제안이며 실제 무장/피해/충돌/AI 수치 변경 없음. 악당 외형v3 / 최신 10배 이상 과감한 표현 목표: 수리선의 목재 창공방 인상을 큰 아치형 선수 화로·반열린 붉은 철문·좁은 뜨거운 창·비대칭 연통으로 해체 용광로로 바꾼다. 고가위와 하부 절단원판은 기존 양팔 끝 바스켓 bone의 자식이므로 기존 수리팔 움직임을 유지한다. 큰 주형태→중간 기계층→작은 체결부 순서이며 원본 장치/약점/controls/모듈 수와 실제 규칙은 보존한다. 실제 렌더와 사람의 미술 승인은 통합 QA에서 별도 확인한다.",
+      "deployRig": null,
+      "villainTheme": "해체 용광로선 — 붉은 철문을 벌린 거대 아치 화로와 고가위·절단원판",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "WinchCycle"
+      ],
+      "silhouettePath": "previews/enemy-union-repair-silhouette.png",
+      "comparisonPreviewPath": "previews/enemy-union-repair-matched-after.png",
+      "comparisonCapture": {
+        "sourceSha256": "cf1230f06b3a795ef8432b5edc49e74b7fdc0b672d087b8b3c5d61700b4a0dfc",
+        "baseSourceSha256": "d92579da5aabd05e3af955235dffb48355a1a95a99d4ea4c02c1f6281c0cde4b",
+        "frame": {
+          "position": [
+            -70.58359909057619,
+            56.07070517539978,
+            -69.95749998092651
+          ],
+          "quaternion": [
+            0.09599682455801843,
+            0.8943389512129172,
+            0.23175683579271864,
+            -0.37044732295092014
+          ],
+          "target": [
+            -0.5835990905761719,
+            1.0707051753997803,
+            0.04250001907348633
+          ],
+          "frustum": [
+            -17.23472052137884,
+            17.23472052137884,
+            10.49142695815974,
+            -10.49142695815974
+          ],
+          "modelScale": 1,
+          "modelOrigin": [
+            0,
+            0,
+            0
+          ],
+          "profile": "FloatIdle",
+          "time": 2,
+          "stage": [
+            1030,
+            627
+          ]
+        },
+        "bounds": {
+          "min": [
+            -7.30819845199585,
+            -5.433600425720215,
+            -3.4749999046325684
+          ],
+          "max": [
+            6.141000270843506,
+            7.575010776519775,
+            3.559999942779541
+          ]
+        },
+        "authoredUnits": "Art LU, not metres; both models use scale1 and origin0.",
+        "sameCameraAndPose": true
+      },
+      "previewSourceSha256": "cf1230f06b3a795ef8432b5edc49e74b7fdc0b672d087b8b3c5d61700b4a0dfc",
+      "previewCapturedAt": "2026-10-18T13:13:08.445Z",
+      "previewSha256": "309103717e5c58a7fbc852c098347330bbb567b56490e74a309d8ac95de7d1aa"
+    },
+    {
+      "id": "enemy-ghost-chaser",
+      "name": "망령 추격선",
+      "category": "enemy-archetype",
+      "faction": "이름 없는 함대",
+      "sourceFiles": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "description": "잔광·돛의 부풀음 후 직선 돌진하는 함선",
+      "shape": {
+        "hull": "낡고 얇은 선체",
+        "balloon": "찢어진 기낭·돛",
+        "scaleClass": null,
+        "palette": [
+          "찢어진 남색 천",
+          "낡은 금속",
+          "차가운 잔류 청색광"
+        ],
+        "paletteAuthority": "해당 함선 또는 세력의 문서상 재료·색 참고; 실제 제작 색표와 수치는 미정",
+        "deckLayout": "노출 측면 연결부와 돌진 방향",
+        "dimensions": null,
+        "unitConversion": null,
+        "status": "정성적 기준; 치수/소켓/배치 규격 미정"
+      },
+      "modules": {
+        "balloons": null,
+        "engines": null,
+        "machineGuns": null,
+        "cannons": null,
+        "mortars": null,
+        "harpoons": null,
+        "chainCannons": null,
+        "flamethrowers": null,
+        "winches": null,
+        "armor": null,
+        "repairArms": null,
+        "rescueCapsules": null,
+        "smokeEmitters": null
+      },
+      "special": [
+        "불투명 실루엣과 물리 부품 유지",
+        "순간이동으로 표현하지 않음"
+      ],
+      "status": "asset-built",
+      "moduleCountAuthority": "무장/부양/추진 종류만 명시; 개수 미정",
+      "requiredFeatures": [
+        "engine",
+        "sail"
+      ],
+      "requiredFeatureAuthority": "명시된 기능·외형의 존재 조건. 수는 modules의 int만 확정. role-only의 구체 형태는 제작 해석이며 고유 정사 외형 확정 아님.",
+      "artModules": {
+        "balloons": 1,
+        "engines": 1,
+        "cannons": 0,
+        "machineGuns": 0,
+        "harpoons": 0,
+        "winches": 0,
+        "sail": 18
+      },
+      "definitionLevel": "partial",
+      "scopeKind": "vessel",
+      "structuralFeatures": {},
+      "variantId": "enemy-ghost-chaser--villain-v3",
+      "baseVariantId": "enemy-ghost-chaser--villain-v2",
+      "baseModelSha256": "5353c23bb82f3b3e0a7afcf15e271424166c8e5f3f18af66626ab984d2794be2",
+      "originalReferenceV1": "../enemy-fleet-reference-v1/index.html",
+      "beforePreviewPath": "previews/enemy-ghost-chaser-matched-before.png",
+      "assetPath": "ships/enemy-ghost-chaser.glb",
+      "viewerPath": "ships/enemy-ghost-chaser.html",
+      "previewPath": "previews/enemy-ghost-chaser.png",
+      "sha256": "144bc9b1038c54adf7aec7b018d8aa3ea61a97e81edf8c778954db7d86fa1a44",
+      "bytes": 11085212,
+      "pipelineSha256": "f114b5eccfb9ac396b2e62cf186995f0e5d953483cde8a90881b5c5698d99016",
+      "metrics": {
+        "triangles": 52776,
+        "sourceTriangles": 52776,
+        "bones": 54,
+        "boneCount": 54,
+        "sourceMeshCount": 428,
+        "meshCount": 110,
+        "skinnedMeshCount": 110,
+        "materialCount": 14,
+        "controls": 27,
+        "controlRoles": [
+          "sail",
+          "envelope",
+          "vibration",
+          "rotor"
+        ],
+        "phasedControls": [
+          {
+            "bone": "enemy-ghost-chaser-exposed-aft-propulsion_Vibration",
+            "role": "vibration",
+            "phase": 4.896257168969917
+          },
+          {
+            "bone": "enemy-ghost-chaser-exposed-aft-propulsion_Rotor",
+            "role": "rotor",
+            "phase": 3.9457962529262742
+          }
+        ],
+        "availableActions": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery"
+        ],
+        "unavailableActions": [
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "hasWeapons": false,
+        "clips": [
+          {
+            "name": "FloatIdle",
+            "duration": 10,
+            "tracks": 33,
+            "ambientOnly": false
+          },
+          {
+            "name": "Cruise",
+            "duration": 8,
+            "tracks": 33,
+            "ambientOnly": false
+          },
+          {
+            "name": "BankTurn",
+            "duration": 12,
+            "tracks": 33,
+            "ambientOnly": false
+          },
+          {
+            "name": "GustRecovery",
+            "duration": 12,
+            "tracks": 33,
+            "ambientOnly": false
+          },
+          {
+            "name": "TurretScan",
+            "duration": 12,
+            "tracks": 33,
+            "ambientOnly": true
+          },
+          {
+            "name": "WinchCycle",
+            "duration": 16,
+            "tracks": 33,
+            "ambientOnly": true
+          },
+          {
+            "name": "FireBurst",
+            "duration": 8,
+            "tracks": 33,
+            "ambientOnly": true
+          }
+        ],
+        "motionScale": 10,
+        "style": "ghost",
+        "sceneRootSkins": true,
+        "singleWeightRigidSkinning": true
+      },
+      "metricsScope": "Seven base motion statistics; observedClips includes the extra wreck deployment clip.",
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "triangles": 52776,
+      "geometrySignature": "5e1917929f742b4079adb5de688eb8d64758b8ce19b692383c29d6cf7dcecc0b",
+      "observedBounds": {
+        "min": [
+          -11.931365013122559,
+          -4.019999980926514,
+          -10.232622146606445
+        ],
+        "max": [
+          15.237049102783203,
+          13.125811576843262,
+          10.232622146606445
+        ],
+        "size": [
+          27.16841411590576,
+          17.145811557769775,
+          20.46524429321289
+        ],
+        "axisRatios": [
+          1,
+          0.6310935737589392,
+          0.7532734228028239
+        ]
+      },
+      "weakpoints": [
+        {
+          "id": "enemy-ghost-chaser:side-connector",
+          "nodeName": "enemy-ghost-chaser-exposed-midship-connector",
+          "label": "노출 측면 연결 골조",
+          "kind": "connector"
+        },
+        {
+          "id": "enemy-ghost-chaser:engine",
+          "nodeName": "enemy-ghost-chaser-exposed-aft-propulsion",
+          "label": "후방 노출 추진부",
+          "kind": "engine"
+        }
+      ],
+      "features": [
+        "very-long-sharp-wooden-spear",
+        "broad-torn-grey-linen-envelope",
+        "actual-gaps-between-fabric-gores",
+        "three-missing-upper-gore-sections",
+        "irregular-separated-linen-strips-with-deep-tears",
+        "exposed-midship-connector",
+        "six-outer-pale-cyan-wood-fissures-and-lanterns",
+        "large-hooked-bone-spine-and-ribs",
+        "broad-swept-ragged-grey-manta-wings",
+        "long-cyan-toothed-executioner-prow",
+        "four-suspended-cold-curse-lanterns",
+        "grey-linen-envelope-remains-visible-between-ribs",
+        "v3-sculpted-crescent-scythe-spine",
+        "v3-two-layer-wide-flowing-grey-tail-shrouds",
+        "v3-large-caged-cyan-soul-organs",
+        "v3-open-air-separated-funeral-veils",
+        "v3-long-wood-spear-with-double-fang-maw",
+        "v3-existing-wing-sway-amplitude-048"
+      ],
+      "referenceNotes": "첨부5번의 긴 창끝 선체·회색 누더기 기낭과 하부천을 참고한 독립 외형. 남색 로켓 실린더 대신 목재 골조와 넓은 린넨 면을 사용한다. source modules는 미정이며 기낭1/엔진1/천 조각 수는 제작 배치다. 실제 돌진 예고·이동·연결부 피해는 미구현. 악당 외형v2: 뼈회색 처형자 창과 유령 가오리 날개, 냉청록 저주등. 장식·색·과장된 구조의 아트 제안이며 실제 무장/피해/충돌/AI 수치 변경 없음. 악당 외형v3 / 최신 10배 이상 대담한 표현 목표: 상부 뼈척추를 거대한 곡선 낫의 넓은 주형태로 재설계하고 넓게 벌어진 회색 천·장막 후미와 큰 청록 영혼 기관·철제 우리·봉합 척추·겹이빨을 계층화했다. 긴 목재 창과 회색 린넨의 정체성을 유지하며 기존 날개 sail control의 amplitude만 .048로 조정해 무거운 후속 흔들림을 준다. 실제 무장·피해·충돌·AI 및 원본 modules=null은 변경하지 않는다. 실제 렌더 비교와 사람의 미술 승인은 별도 검수한다.",
+      "deployRig": null,
+      "villainTheme": "거대한 뼈 초승낫과 장막 꼬리, 청록 영혼 기관을 품은 망령 포식자",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery"
+      ],
+      "silhouettePath": "previews/enemy-ghost-chaser-silhouette.png",
+      "comparisonPreviewPath": "previews/enemy-ghost-chaser-matched-after.png",
+      "comparisonCapture": {
+        "sourceSha256": "144bc9b1038c54adf7aec7b018d8aa3ea61a97e81edf8c778954db7d86fa1a44",
+        "baseSourceSha256": "5353c23bb82f3b3e0a7afcf15e271424166c8e5f3f18af66626ab984d2794be2",
+        "frame": {
+          "position": [
+            -68.34715795516969,
+            59.552905797958374,
+            -70
+          ],
+          "quaternion": [
+            0.09599682455801843,
+            0.8943389512129172,
+            0.23175683579271864,
+            -0.37044732295092014
+          ],
+          "target": [
+            1.6528420448303223,
+            4.552905797958374,
+            0
+          ],
+          "frustum": [
+            -29.35130954565991,
+            29.35130954565991,
+            17.867253480707536,
+            -17.867253480707536
+          ],
+          "modelScale": 1,
+          "modelOrigin": [
+            0,
+            0,
+            0
+          ],
+          "profile": "FloatIdle",
+          "time": 2,
+          "stage": [
+            1030,
+            627
+          ]
+        },
+        "bounds": {
+          "min": [
+            -11.931365013122559,
+            -4.019999980926514,
+            -10.232622146606445
+          ],
+          "max": [
+            15.237049102783203,
+            13.125811576843262,
+            10.232622146606445
+          ]
+        },
+        "authoredUnits": "Art LU, not metres; both models use scale1 and origin0.",
+        "sameCameraAndPose": true
+      },
+      "previewSourceSha256": "144bc9b1038c54adf7aec7b018d8aa3ea61a97e81edf8c778954db7d86fa1a44",
+      "previewCapturedAt": "2026-10-18T13:13:12.261Z",
+      "previewSha256": "d84d5cc057bd45364af3311058d0b20402b9b287ff82ec9818cf73cd8d113ef7"
+    },
+    {
+      "id": "enemy-disguised-wreck",
+      "name": "위장 잔해선",
+      "category": "enemy-archetype",
+      "faction": "이름 없는 함대",
+      "sourceFiles": [
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/65-enemy-modular-anatomy.txt"
+      ],
+      "description": "잔해처럼 대기하다 무장을 전개하는 적",
+      "shape": {
+        "hull": "정지 잔해 묶음과 전개 후 함선의 두 실루엣",
+        "balloon": null,
+        "scaleClass": null,
+        "palette": [
+          "찢어진 남색 천",
+          "낡은 금속",
+          "차가운 잔류 청색광"
+        ],
+        "paletteAuthority": "해당 함선 또는 세력의 문서상 재료·색 참고; 실제 제작 색표와 수치는 미정",
+        "deckLayout": "숨은 포대와 활성화 후 드러나는 추진부",
+        "dimensions": null,
+        "unitConversion": null,
+        "status": "정성적 기준; 치수/소켓/배치 규격 미정"
+      },
+      "modules": {
+        "balloons": null,
+        "engines": null,
+        "machineGuns": null,
+        "cannons": null,
+        "mortars": null,
+        "harpoons": null,
+        "chainCannons": null,
+        "flamethrowers": null,
+        "winches": null,
+        "armor": null,
+        "repairArms": null,
+        "rescueCapsules": null,
+        "smokeEmitters": null
+      },
+      "special": [
+        "접근 전 경계 징후",
+        "무징후 즉사 함정 금지"
+      ],
+      "status": "asset-built",
+      "moduleCountAuthority": "무장/부양/추진 종류만 명시; 개수 미정",
+      "requiredFeatures": [
+        "cannon",
+        "engine"
+      ],
+      "requiredFeatureAuthority": "명시된 기능·외형의 존재 조건. 수는 modules의 int만 확정. role-only의 구체 형태는 제작 해석이며 고유 정사 외형 확정 아님.",
+      "artModules": {
+        "balloons": 1,
+        "engines": 1,
+        "cannons": 2,
+        "machineGuns": 0,
+        "winches": 0,
+        "sail": 13
+      },
+      "definitionLevel": "partial",
+      "scopeKind": "vessel",
+      "structuralFeatures": {},
+      "variantId": "enemy-disguised-wreck--villain-v3",
+      "baseVariantId": "enemy-disguised-wreck--villain-v2",
+      "baseModelSha256": "b2e4674a848ce437d7d79089c8f883cfe6ad022f85e9500e242775662528332e",
+      "originalReferenceV1": "../enemy-fleet-reference-v1/index.html",
+      "beforePreviewPath": "previews/enemy-disguised-wreck-matched-before.png",
+      "assetPath": "ships/enemy-disguised-wreck.glb",
+      "viewerPath": "ships/enemy-disguised-wreck.html",
+      "previewPath": "previews/enemy-disguised-wreck.png",
+      "sha256": "576870af4d21b1af6e6bf0b526b8cd3c45fe59b1681e02a850fa5ad90b59eeca",
+      "bytes": 9402752,
+      "pipelineSha256": "f114b5eccfb9ac396b2e62cf186995f0e5d953483cde8a90881b5c5698d99016",
+      "metrics": {
+        "triangles": 59256,
+        "sourceTriangles": 59256,
+        "bones": 50,
+        "boneCount": 50,
+        "sourceMeshCount": 737,
+        "meshCount": 106,
+        "skinnedMeshCount": 106,
+        "materialCount": 15,
+        "controls": 7,
+        "controlRoles": [
+          "envelope",
+          "vibration",
+          "rotor",
+          "yaw",
+          "recoil"
+        ],
+        "phasedControls": [
+          {
+            "bone": "enemy-disguised-wreck-concealed-rear-engine_Vibration",
+            "role": "vibration",
+            "phase": 5.699829899513895
+          },
+          {
+            "bone": "enemy-disguised-wreck-concealed-rear-engine_Rotor",
+            "role": "rotor",
+            "phase": 5.5034136335080195
+          }
+        ],
+        "availableActions": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "FireBurst"
+        ],
+        "unavailableActions": [
+          "WinchCycle"
+        ],
+        "hasWeapons": true,
+        "clips": [
+          {
+            "name": "FloatIdle",
+            "duration": 10,
+            "tracks": 13,
+            "ambientOnly": false
+          },
+          {
+            "name": "Cruise",
+            "duration": 8,
+            "tracks": 13,
+            "ambientOnly": false
+          },
+          {
+            "name": "BankTurn",
+            "duration": 12,
+            "tracks": 13,
+            "ambientOnly": false
+          },
+          {
+            "name": "GustRecovery",
+            "duration": 12,
+            "tracks": 13,
+            "ambientOnly": false
+          },
+          {
+            "name": "TurretScan",
+            "duration": 12,
+            "tracks": 13,
+            "ambientOnly": false
+          },
+          {
+            "name": "WinchCycle",
+            "duration": 16,
+            "tracks": 13,
+            "ambientOnly": true
+          },
+          {
+            "name": "FireBurst",
+            "duration": 8,
+            "tracks": 13,
+            "ambientOnly": false
+          }
+        ],
+        "motionScale": 10,
+        "style": "warm",
+        "sceneRootSkins": true,
+        "singleWeightRigidSkinning": true
+      },
+      "metricsScope": "Seven base motion statistics; observedClips includes the extra wreck deployment clip.",
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst",
+        "AmbushReveal"
+      ],
+      "triangles": 59256,
+      "geometrySignature": "068fff9206206f002527740702e82679387ea6c44233400bf23c3a5fe2b754ec",
+      "observedBounds": {
+        "min": [
+          -9.126543998718262,
+          -2.9597885608673096,
+          -6.451686382293701
+        ],
+        "max": [
+          7.449999809265137,
+          7.201376438140869,
+          6.765313625335693
+        ],
+        "size": [
+          16.5765438079834,
+          10.161164999008179,
+          13.217000007629395
+        ],
+        "axisRatios": [
+          1,
+          0.6129845350581753,
+          0.7973314679302437
+        ]
+      },
+      "weakpoints": [
+        {
+          "id": "enemy-disguised-wreck:engine",
+          "nodeName": "enemy-disguised-wreck-concealed-rear-engine",
+          "label": "전개 후 드러나는 후방 추진부",
+          "kind": "engine"
+        },
+        {
+          "id": "enemy-disguised-wreck:cannon-0",
+          "nodeName": "enemy-disguised-wreck-hidden-broadside-cannon--1",
+          "label": "위장 외피 안의 함포",
+          "kind": "cannon"
+        },
+        {
+          "id": "enemy-disguised-wreck:cannon-1",
+          "nodeName": "enemy-disguised-wreck-hidden-broadside-cannon-1",
+          "label": "위장 외피 안의 함포",
+          "kind": "cannon"
+        }
+      ],
+      "features": [
+        "rounded-collapsed-wooden-rib-hulk",
+        "dirty-rag-and-rope-net-shell",
+        "low-cream-envelope-inside",
+        "folding-side-camouflage-bones",
+        "hidden-broadside-cannons",
+        "exposed-engine-after-deployment",
+        "folding-hooked-trap-mandibles",
+        "crooked-harpoon-mouth-and-bone-teeth",
+        "asymmetric-stapled-scrap-shell",
+        "dead-lamps-on-the-folding-shell",
+        "concealed-rust-red-threat-eyes",
+        "two-hidden-three-finger-iron-claws",
+        "original-three-deployment-bones-and-weakpoints-preserved",
+        "v3-massive-curved-clenched-trap-shell",
+        "v3-broad-sewn-weighted-canvas-under-scrap-crown",
+        "v3-layered-deep-iron-inner-teeth",
+        "v3-heavy-ballast-chains-on-original-three-folds",
+        "v3-bright-inner-core-and-large-red-eyes",
+        "v3-sculpted-hooked-iron-pincers"
+      ],
+      "referenceNotes": "첨부6번의 둥근 폐목재 갈빗대·처진 로프망·더러운 천 위장 아래 작은 크림 기낭과 목재 함선이 숨어 있는 독립 해석. 리그 전개는 시각 시범용이며 실제 잔해 잠복·기습 조건/공격 예고·피해는 미구현. 원본 modules=null을 기낭1/함포2의 정사 확정으로 변경하지 않는다. 악당 외형v2: 둥근 폐선으로 위장한 봉합 덫의 아가리와 안쪽 붉은 눈·쇠집게. 장식·색·과장된 구조의 아트 제안이며 실제 무장/피해/충돌/AI 수치 변경 없음. 악당 외형v3 / 최신 10배 이상 대담한 표현 목표: 작은 갈비 폐선을 큰 곡면 봉합 몸통·접힌 턱·폐철갑 왕관으로 재구성하고 넓은 천의 면적과 무거운 사슬을 주형태로 삼았다. 열린 안쪽은 큰 철제 이빨층·황금색 밝은 핵·붉은 눈·쇠집게가 대비한다. 추가 외피는 모두 기존 외피3본에 종속되며 control 이름·수·전개각·약점을 유지한다. 실제 무장·피해·충돌·AI 및 원본 modules=null은 변경하지 않는다. 실제 렌더 비교와 사람의 미술 승인은 별도 검수한다.",
+      "deployRig": {
+        "nodeNames": [
+          "enemy-disguised-wreck-camouflage-fold-port",
+          "enemy-disguised-wreck-camouflage-fold-starboard",
+          "enemy-disguised-wreck-camouflage-fold-bow-curtain"
+        ],
+        "description": "좌우 외피는 각 local X축 ±1.35rad, 선수 천은 local Z축 -1.2rad로 펼치는 표시용 뼈대다. 위장/기동의 실제 AI·충돌·피해 전환은 연결하지 않는다. 악당 외형의 아가리·봉합 폐철판·죽은 등도 기존 외피3본의 자식으로 전개하며, 내부 눈·이빨·집게는 표시용 장식이다. v3 곡면 폐철갑·큰 봉합천·사슬·턱외피는 전부 기존 fold3의 자식이며 같은 AmbushReveal을 상속한다. 내부 밝은 핵·큰 붉은 눈·집게는 표시용이다."
+      },
+      "villainTheme": "둥근 폐선 외피 전체가 접힌 거대 봉합 덫, 전개 후 뜨거운 핵과 철제 집게",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst",
+        "AmbushReveal"
+      ],
+      "silhouettePath": "previews/enemy-disguised-wreck-silhouette.png",
+      "deployedPreviewPath": "previews/enemy-disguised-wreck-deployed.png",
+      "comparisonPreviewPath": "previews/enemy-disguised-wreck-matched-after.png",
+      "comparisonCapture": {
+        "sourceSha256": "576870af4d21b1af6e6bf0b526b8cd3c45fe59b1681e02a850fa5ad90b59eeca",
+        "baseSourceSha256": "b2e4674a848ce437d7d79089c8f883cfe6ad022f85e9500e242775662528332e",
+        "frame": {
+          "position": [
+            -70.83827209472658,
+            57.12079393863678,
+            -69.843186378479
+          ],
+          "quaternion": [
+            0.09599682455801843,
+            0.8943389512129172,
+            0.23175683579271864,
+            -0.37044732295092014
+          ],
+          "target": [
+            -0.8382720947265625,
+            2.12079393863678,
+            0.1568136215209961
+          ],
+          "frustum": [
+            -17.897554593030087,
+            17.897554593030087,
+            10.894919155174625,
+            -10.894919155174625
+          ],
+          "modelScale": 1,
+          "modelOrigin": [
+            0,
+            0,
+            0
+          ],
+          "profile": "FloatIdle",
+          "time": 2,
+          "stage": [
+            1030,
+            627
+          ]
+        },
+        "bounds": {
+          "min": [
+            -9.126543998718262,
+            -2.9597885608673096,
+            -6.451686382293701
+          ],
+          "max": [
+            7.449999809265137,
+            7.201376438140869,
+            6.765313625335693
+          ]
+        },
+        "authoredUnits": "Art LU, not metres; both models use scale1 and origin0.",
+        "sameCameraAndPose": true
+      },
+      "previewSourceSha256": "576870af4d21b1af6e6bf0b526b8cd3c45fe59b1681e02a850fa5ad90b59eeca",
+      "previewCapturedAt": "2026-10-18T13:13:17.271Z",
+      "previewSha256": "0694e853219ea33ac997828d4203a4a00556fb6b37f012dfc9f34382ae9e4a44"
+    }
+  ],
+  "updatedAt": "2026-10-18T12:45:12.584Z",
+  "assetCount": 6
+}

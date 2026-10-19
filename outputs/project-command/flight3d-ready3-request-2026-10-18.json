@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "authorization": {
+    "directHumanRead": true,
+    "threadId": "01a14da1-2962-70f0-8405-eae46ad90ba5",
+    "turnId": "01a14e59-149d-7300-8cc4-0c2690412288",
+    "messageId": "01a14e59-18fa-7f00-8cf8-6e339fec0166",
+    "request": "좀 더 직관적으로 움직이게 할수 없을까 그리고 좀 더 자연스럽게 움직였으면 해 가만히 있는동안에도 둥둥떠있는 느낌이 나고 이동할때도 물리법칙에 따라 휘청일수 있게",
+    "continuingTurn": "01a14e6c-9ef3-73a1-87f0-1e5787787ff6"
+  },
+  "scope": "new READY3 independentflight helm/presentation revision, not integrated voyage",
+  "ownerReportedFeatures": [
+    "W/Sforwardback",
+    "A/Dheading",
+    "Q/Ealtitude",
+    "Spacebrake",
+    "followcamera with freeoffset",
+    "idleheave/accelerationpitch/turnbank with damping"
+  ],
+  "ownerReportedNode36": "final37 = sim31+camera5+helmroute1; source5 separate",
+  "candidateReady": true,
+  "sourceOutput": "tools/flight3d/ and outputs/flight3d-v1/",
+  "ready2Archive": "outputs/flight3d-ready2/ compiled3+manifest+QA17 copied and independent runnable ownerreport",
+  "qaPlan": "integration single20checks after worldIAB30s slot returned; exactmanifest freeze required",
+  "rootWork": "small static audit delegated; no newphysics/browser duplicate",
+  "limits": [
+    "visual damping/bob not general physicsengine adoption",
+    "READY2 scoped17 is historical evidence, not newREADY3 validation",
+    "harbor/salvage/save/campaign not integrated"
+  ],
+  "aggregateQaPass": null,
+  "staticReview": {
+    "singleXyzAuthority": true,
+    "heavePitchBank": "bounded visual springs, not collider/projectileorigin offsets",
+    "appFixedInputStep": "1/60",
+    "simMaxSubstep": "1/120",
+    "pauseClearsInputAndAccumulator": true,
+    "resetRebuildsStateAndCamera": true,
+    "ready2Archive": "compiled3+manifest+QA17+preservation, not full oldsource",
+    "requestedBeforeImport": "resolved by newnamespace29 target: keep root oldREADY2 source20 in original place; no extraold20copy required",
+    "exactReady3Frozen": true,
+    "browser20Run": true
+  },
+  "ready3ManifestSha256": "a47437d6d8832b8bccef03881273ff524782854f564a281e84c6c5e57acc4921",
+  "ready3OwnedFiles": 29,
+  "ready3OwnedBytes": 1539023,
+  "integrationNamespace": {
+    "source": "tools/flight3d/ and outputs/flight3d-v1/",
+    "target": "tools/flight3d-ready3/ and outputs/flight3d-ready3/",
+    "mappingReceiptPending": false,
+    "productTextChanges": false,
+    "oldRootReady2Owned20AndCanonicalLinksPreserved": true,
+    "extraOld20ArchiveCopyNotNeeded": true,
+    "dependencies4Copy0": true
+  },
+  "status": "scoped technical review complete: new20/20 and final63 evidence; humanfeel/game linkage pending",
+  "latestReview": "flight3d-ready3-browser-review-2026-10-18.json"
+}

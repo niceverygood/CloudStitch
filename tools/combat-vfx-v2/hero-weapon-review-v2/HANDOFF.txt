@@ -1,0 +1,63 @@
+READY2 변경: READY1의 포탑 yaw/표시 반동 초기화 누락을 보완했습니다. 표적 변경/처음부터에서 canonical muzzle이 재현되며, 긴 외부 버팀대 대신 실제 기관총 모델만 포구 카메라 프레이밍에 사용합니다. READY1의 source18·HTML은 원바이트로 보존합니다. 기존 26/13 검사는 반복하지 않습니다.
+
+Cloudstitch · 주인공 함선 무기 장착·실제 사격 리뷰
+
+최신 직접 요청: ‘주인공 함선 형태 단계별 구현’ 제작 함선에 기존 부드러운 기관총을
+무기 탑재 형태로 연결해 발사 시뮬레이션을 리뷰한다.
+소유: tools/combat-vfx-v2/hero-weapon-review-v2/ → outputs/combat-vfx-v2/hero-weapon-review-v2/.
+다른 담당의 hero/sim/soft runtime/원 GLB·PNG와 기존 PASS/FAIL은 수정하지 않는다.
+
+함선 담당 계약
+stable ship-states-v1 ART-REVIEW delivery SHA:
+6a8e3871a25474091767fd45f90ea440d3d5bb50710395d5ac4ad0d0b29a6063.
+createVariantLibrary(gltf).create(category,stage) → root/parts/counts/update/dispose.
++Y 위, -X 전방. 원형 길이 약 .95인 비미터 원본 단위, 리뷰 world scale 12.
+현재 normal0, weapons0..4, armor0..4와 제작 중 evolution30의 30형상을 선택한다.
+후자는 빌드 전후 SHA를 대조해 HTML에 고정한 소스 스냅샷이다. 미동결/후속 dramatic 미완을
+UI와 manifest에 표시하며, 함선 담당의 최종 READY로 승격하지 않는다.
+
+실제 기관총 GLB를 복제해 선측 전방 외부 작업갑판에 장착한다. 원형의 TurretAssembly와
+GunBarrel은 숨긴다. 받침대·황동 버팀대·포구 marker는 이 리뷰의 가정이며 엔진 socket이 아니다.
+기관총 원 GLB의 최전방 -X 정점 2.5%의 중심을 포구로 읽는다. geometry/world matrix로
+실제 포구 좌표와 -X 축을 계산한다. 시각 반동은 별도 자식에만 적용해 실제 포구 권위를 바꾸지 않는다.
+원형/무기 GLB의 SHA·규모·공유 geometry는 보존한다.
+
+기존 createBattlefieldAdapter 하나가 발사·cooldown·속도·탄환·swept 충돌·HP 피해·종료를 결정한다.
+정지한 목재 드럼 target의 XZ 반경2 + 실제 탄환반경 .1을 시각 반경2.1로 맞춘 검수 fixture다.
+내구도100000은 반복 관찰용 시험장 설정이며 게임 밸런스·성장/장착 수치가 아니다.
+적 intent는 정지/공격없음으로 설정한다. 새 충돌/피해 엔진이나 캠페인/세이브는 만들지 않는다.
+포구는 원래 함선 중심 core 밖에 두며, 발사할 때 실제 marker와 native -X로부터 event가 나온다.
+soft runtime은 실제 ID/XYZ/velocity와 hit normal만 읽고 preview의 3발/비행 보간을 쓰지 않는다.
+sim.time 차이만 효과 시간으로 전달한다. UI의0.1/0.25/0.5/1배는 실제 sim 진행 속도를 함께 바꾼다.
+일시정지와 명중 뒤 .075초 자동정지, 단일 tick 진행·초기화도 실제 sim을 사용한다.
+
+리뷰 조작
+함선 선택 / 한 발 발사 / 연사 / 재생·일시정지 / 1프레임 / 처음부터.
+전체 함선·포구·실제 탄환 추적·명중면 카메라, 드래그 회전·휠 확대·우드래그 이동.
+정면 명중/옆면 명중/빗나감. 기본0.25배와 단발 명중 뒤 자동정지로 효과가 실제 퍼진 시점을 본다.
+손그림/셀 명암/원본 재질, 윤곽선. OutlineEffect.autoClear=true를 명시적으로 유지한다.
+GLB2·atlas2와 번들은 HTML에 포함되어 외부 네트워크/이미지 생성·유료 호출을 요구하지 않는다.
+
+표현 범위
+현재 선택된 부드러운 크림·살구 붓결/황동 탄환/세이지 연기를 실제 함선 장착으로 검수한다.
+이는 최신 ‘10배 이상 극적 표현’의 새 완성판이 아니다. 그 목표는 dramatic 별도 revision이다.
+장착 형태·발사/탄/명중의 실제 제시와 사람의 미술·타격감 승인을 구분한다.
+
+실행 (기존 dependencies만 사용, npm install 없음)
+$env:NODE_PATH=(Resolve-Path work/combat-vfx-v2/deps/node_modules).Path
+node tools/combat-vfx-v2/hero-weapon-review-v2/rig.test.cjs --write
+node tools/combat-vfx-v2/hero-weapon-review-v2/build.cjs
+
+CPU: 실제 GLB geometry + stable W1 / Lv15 / Lv30 factory의 장착 포구→실제 fire→swept hit→HP8·
+접촉 normal, 반동이 포구를 움직이지 않음과 정리를 확인. 텍스처·GPU·화면 검수는 제외한다.
+manifest는 빌드 전후 read dependencies SHA를 확인하고 source snapshot과 HTML을 결속한다.
+
+브라우저는 중앙 단일 슬롯에서만 새 verify-browser.cjs를 실행한다.
+기본 HERO_REVIEW_URL=http://127.0.0.1:8842/outputs/combat-vfx-v2/hero-weapon-review-v2/index.html
+다른 중앙 import URL/결과폴더는 HERO_REVIEW_URL / HERO_REVIEW_QA_OUT로 지정한다.
+W1 실물 GLB/한 포구→실제단발·동일ID/좌표→HP/법선·양의opacity 명중, 단발 pause/1tick/reset,
+실제연사·miss, 제작중Lv30 장착과명중, 세표시모드/390/오류·외부0/정리를 확인한다.
+기존13 soft CPU, 기존26 actual/fixture1, 기존hero31/30 전체검사는 반복하지 않는다.
+새 캡처는 포구·비행·명중+.075초·전체장착·Lv30·모바일을 원본으로 남긴다.
+
+현재 브라우저 결과는 미검증이며 정확 READY/source 전달 뒤 중앙 슬롯으로 진행한다.

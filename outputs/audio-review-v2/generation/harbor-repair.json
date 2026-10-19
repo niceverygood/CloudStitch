@@ -1,0 +1,25 @@
+{
+  "id": "harbor-repair",
+  "startedAt": "2026-10-18T08:53:51.299Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A brief airship repair completion: two small wooden mallet taps, a brush smoothing thick canvas, one brass tool clasp closes. Handmade careful workmanship, no power tools, no musical success chime. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 1.4,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:52.753Z",
+  "output": {
+    "file": "audio/harbor-repair.mp3",
+    "bytes": 23030,
+    "sha256": "03bcd5ee9fb8770005798061b95658e7186130a46ab625a5b66fbf0604e386ec",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "14"
+}

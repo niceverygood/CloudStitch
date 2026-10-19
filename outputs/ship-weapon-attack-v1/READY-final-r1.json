@@ -1,0 +1,358 @@
+{
+  "revision": "final-r1",
+  "date": "2026-10-19",
+  "scope": "independent art attack comparison; not gameplay integration",
+  "viewer": "outputs/ship-weapon-attack-v1/index.html",
+  "models": 3,
+  "variants": 2,
+  "perEventCues": 24,
+  "offlineRenderedMixes": 6,
+  "sourcePreservation": [
+    {
+      "path": "outputs/ship-weapon-harmony-v1/mobility-assembled.glb",
+      "bytes": 6928508,
+      "sha256": "d488cb7c29849cf3857e876cb1e8ce46e88995ab67755ce0a20187eb4ce34b04"
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/artillery-assembled.glb",
+      "bytes": 5833076,
+      "sha256": "0b8768d2ce660ef237b933b8be30b3b9247ef3e24171c334a0c821408c13cb14"
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/salvage-assembled.glb",
+      "bytes": 5687900,
+      "sha256": "2b11cd365f8f063262dc13c186bfb9b49780bc042b672dd234de8b53623850aa"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-launch.wav",
+      "bytes": 60020,
+      "sha256": "bc4fe85bb19491136bbd51f6bff010db368ebb784c2575bd5e957a9769751eac"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-launch.wav",
+      "bytes": 60020,
+      "sha256": "ecd3df13ba2168fb05c25de34250acae441750a5d6e36c54df8c91218f789548"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-flight.wav",
+      "bytes": 52964,
+      "sha256": "3795a0fc36b4758c8a92d777ee62ad9292a09a02ec6b990247a7ac9fe81951b4"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-flight.wav",
+      "bytes": 52964,
+      "sha256": "76dcc29f328363080b8420d42654013e6e4c73d44ce254e0e48835c857fcb75f"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-hit.wav",
+      "bytes": 112940,
+      "sha256": "5c248a547429d4de113a911f98cb98069623f6e61cf6e9f008478aaa9029f7e8"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-hit.wav",
+      "bytes": 112940,
+      "sha256": "8b6ae7c4d98c4519e245269ec20d0cc3daed20e493cadfefc972b8c7784ddabf"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-recovery.wav",
+      "bytes": 70604,
+      "sha256": "264c1784fc54e21eb32e496582d9ce231746328460b9da6f954e3a869e340ff4"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-recovery.wav",
+      "bytes": 70604,
+      "sha256": "cf244a829cdeb758deb7e6a3683c523df6893eb97c91a10ebfa46635d26ac7ac"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-launch.wav",
+      "bytes": 81188,
+      "sha256": "dfabe6c8576097462f314242dfd03eab4bbc68f7aab355b853fc1db02e0a9652"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-launch.wav",
+      "bytes": 81188,
+      "sha256": "5c34099740f4da3631f01b76599d183bd45d95a5ef87c13cb9aa71185f330021"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-flight.wav",
+      "bytes": 114704,
+      "sha256": "238a29d22951b25289c7ed8c321261031c72ba46fd66e77f6107a98e52099586"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-flight.wav",
+      "bytes": 114704,
+      "sha256": "f29eda46cce778d195be3b65b77227ec82404c9ed8dd62f5cdf9bbd372f3fea0"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-hit.wav",
+      "bytes": 220544,
+      "sha256": "b0e7482ad1cc9b7e9f65731810755f45c2280e57a36bb2d58d4fc2ddfbcd801d"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-hit.wav",
+      "bytes": 220544,
+      "sha256": "12875629719c11f1b09f525b99bbb066e972df5c8443bbc4e749f0b69ed55cd0"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-recovery.wav",
+      "bytes": 84716,
+      "sha256": "c15ae32128dc69e91eeef5de600ed30c95eff0927cd8e3e5c1abb7193ddb8ce7"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-recovery.wav",
+      "bytes": 84716,
+      "sha256": "2b939b68e3eed423099e2395b933e35f2c5cee46745f5bd191b84744d3221f8d"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-launch.wav",
+      "bytes": 95300,
+      "sha256": "8a68e55338b6fde73dce7e83a32153dca6e8e5721ce6d7da49019a76df264ac8"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-launch.wav",
+      "bytes": 95300,
+      "sha256": "55caa6e6312ba574da1222410da637c2d444b2188c409f0f84547d4eabfe1a1c"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-flight.wav",
+      "bytes": 114704,
+      "sha256": "381647ced305872138b0367cc77ed6c06c7f9c7c5cc0f8c573ed97868540cc90"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-flight.wav",
+      "bytes": 114704,
+      "sha256": "971b1d32022d489d570f6ca076d4e2b5b3f75ae7e007a05fe7280873233a8f38"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-hit.wav",
+      "bytes": 167624,
+      "sha256": "4affe7499b62ae427e2f83d0d120a39d70ef7abd783ca009acc1f6e1edffa3a9"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-hit.wav",
+      "bytes": 167624,
+      "sha256": "e7982137b4fa4252c65b85e29a5b2b14a705cba341c46bb68bc5547a1a245316"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-recovery.wav",
+      "bytes": 158804,
+      "sha256": "5bbe8d45c912dacda9c3944161c22c1dcdb5c429cb4a550414eab003332a8487"
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-recovery.wav",
+      "bytes": 158804,
+      "sha256": "5bce3fa8bb1eb3a7179b90074754301916861350fc15cdb0265f00f742d4433d"
+    }
+  ],
+  "sourcePreservationPassed": true,
+  "evidence": {
+    "audioAndControls": {
+      "report": "outputs/ship-weapon-attack-v1/qa-r4/verification.json",
+      "passed": 45,
+      "configuration": "AA=false isolation; audio/events/rig/template unchanged in final"
+    },
+    "AArestored": {
+      "report": "outputs/ship-weapon-attack-v1/qa-final/verification.json",
+      "passed": 10,
+      "strictPixelEquality": false,
+      "stateDrift": false,
+      "nonGrowingBoundaryPixels": [
+        214,
+        172
+      ]
+    },
+    "finalEffects": {
+      "report": "outputs/ship-weapon-attack-v1/qa-art-final/verification.json",
+      "passed": 28,
+      "configuration": "final AA=true"
+    }
+  },
+  "artReview": "Author read final3 impact PNG. Human art/listening approval pending.",
+  "limitations": [
+    "runtime animation only; no animation clip exported into GLB",
+    "fixed test target; no damage/AI/gameplay changes",
+    "MSAA transparent-edge pixel readback differs; strict equality remains false, no cumulative state or trace growth observed",
+    "selected impact visuals offset -.12X and use comic overlay for readability",
+    "40ms localized contact response, not global simulation hitstop",
+    "sample-exact audiovisual device sync and subjective listening approval not verified"
+  ],
+  "browserClosed": true,
+  "serverCreated": false,
+  "files": [
+    {
+      "path": "tools/ship-weapon-attack-v1/audio.js",
+      "bytes": 4434,
+      "sha256": "e539adedd1cce2cc29abf8c2e4612f28a7a7bba5ce980c631b4ce2ad353590b8"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/build.cjs",
+      "bytes": 2560,
+      "sha256": "4eed01ce5f9e6df12ca45ccb7d66e004c0750f87eac63dd48364c3c1e17373a9"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/diagnose.cjs",
+      "bytes": 2058,
+      "sha256": "5fb3c250c5331e22c34491852107d5632c69e98c320d8e7126da5e333d9995a3"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/effects.js",
+      "bytes": 6691,
+      "sha256": "5636ceec92aec277ac356c1240ce0377b528f42919912d55c9c25636e4669149"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/events.js",
+      "bytes": 1290,
+      "sha256": "625c4f05467ab6fcbbab440016b2fa7418ba540b25a9ea2b0e4eac29ee67c8eb"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/rig.js",
+      "bytes": 6432,
+      "sha256": "295d4d8a0e83900dfe73d337dc211f94ed58197755532d54d70d2bcd231612ba"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/template.html",
+      "bytes": 5708,
+      "sha256": "16728970abcc7e72971cf358d08579632428ce8d40c22fa5a6e63c628bf565c4"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/verify-art.cjs",
+      "bytes": 3988,
+      "sha256": "063fe8fec95d5a03876b16ed6ae5895ade0a7f35a740288637779a21301f99e2"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/verify-final.cjs",
+      "bytes": 5824,
+      "sha256": "4f6197cd5a25814ca4463b5bc07fc9c73496eb1f4eaeeebf72751b950314234b"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/verify.cjs",
+      "bytes": 7791,
+      "sha256": "d794c63f28b3578360cd311bd4a3635e8f9928bc16a0c8110ebb7183028e1858"
+    },
+    {
+      "path": "tools/ship-weapon-attack-v1/viewer.js",
+      "bytes": 8442,
+      "sha256": "434ddc7b32cc28c44e789e81eb0fb4923bd5afe1b83f75660e77a2cc386a9037"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/index.html",
+      "bytes": 28816277,
+      "sha256": "40a9c016d5d50062c31b12f2437c34be604c0561c20bba8f786622085f4ed39d"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/build-manifest.json",
+      "bytes": 5766,
+      "sha256": "df4b63d94721e15aa64f968bfaa25dd2379dbe7211645a8167e1215091a7af35"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/sound-contract.json",
+      "bytes": 2260,
+      "sha256": "db3bc403014e689926a481c750bc646d4342cd4db835221c73f3ba676869d635"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/HANDOFF.txt",
+      "bytes": 5110,
+      "sha256": "ef78daabbd3c58a00a5ede87dcdc90362af565bbf79d1a48b028e39ebbd2a143"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-r4/verification.json",
+      "bytes": 59703,
+      "sha256": "d248abbd56125406ea3bedcae6b5f2f2f6d50c75433932fa7455e48ab84c4179"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-r4/source-pins.json",
+      "bytes": 861,
+      "sha256": "5618ec9639bfeddbc62cb86b6ab8869f48cb33df0fe062a35b16f28f588b7e85"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-final/verification.json",
+      "bytes": 5553,
+      "sha256": "7370a05046a914fcd8545996793aa5eb4d45debc9b09253bbb128d722a875946"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/verification.json",
+      "bytes": 37178,
+      "sha256": "11ee7ba63b06f5a138729d4ba441f3a9ddc0ddd8b336b6a3b84707d0d6b8b111"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/artillery-aftermath.png",
+      "bytes": 436098,
+      "sha256": "6ea15cf74eca6d1edc45a8ff5c73da174b798be653f7e4e2bb4512f6c70452df"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/artillery-impact.png",
+      "bytes": 446716,
+      "sha256": "01ead0874641363d41032f93b357ef117b7e55dbfef3543074610b4affd2c651"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/artillery-launch.png",
+      "bytes": 438316,
+      "sha256": "aba6f3c69ddae637e2059abf1fb31863bd31bc7b3007dda29fb3760d28216bcb"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/mobile390.png",
+      "bytes": 223949,
+      "sha256": "4ac7d06c76cd9f9721c904b70628444fd7917a8d9d0108eaabb358769d5eba89"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/mobility-aftermath.png",
+      "bytes": 424057,
+      "sha256": "ee585faf4e022a64852de9897337929d84d58ceac10a61b8512273fbdd8073c1"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/mobility-impact.png",
+      "bytes": 502156,
+      "sha256": "e3f75db4e23acbf939c00ffc8604b9ee849b431a9b91460b5725243e1f8f87fc"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/mobility-launch.png",
+      "bytes": 494361,
+      "sha256": "4f3a63cd601b1a1eea6364c0b2501cdc1de5f094c5a745d90bd814c15a08b120"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/salvage-aftermath.png",
+      "bytes": 426633,
+      "sha256": "057b3d5e714b5142d28b95feb9cf09000a3ef8d5c96d7aa69bf8355cf665fa72"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/salvage-impact.png",
+      "bytes": 476141,
+      "sha256": "4fb07cca4fca3acbf8dd2b82110319869d3d6c9428d6d7a85dff8b65ce596413"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-art-final/salvage-launch.png",
+      "bytes": 470934,
+      "sha256": "696a68f19783262313d8a7912beffce98a3fdabbd1a0daf0fc463c6047d4fcf5"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-r4/artillery-basic-6s.wav",
+      "bytes": 1058444,
+      "sha256": "73dbb5cb8a8167f3bfb3e3f405484b45cef698dfc89def79c1db6ae72bc0c29f"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-r4/artillery-enhanced-6s.wav",
+      "bytes": 1058444,
+      "sha256": "f1e46e3488400592847003372b2b611cb71b38b832690257b840336e09e74181"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-r4/mobility-basic-6s.wav",
+      "bytes": 1058444,
+      "sha256": "cc270ab8e0135db39b7ae6e413baf54d09f11e9b1feb15a12c8a86f3fc39265e"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-r4/mobility-enhanced-6s.wav",
+      "bytes": 1058444,
+      "sha256": "a3dc82a31ecd555ccb55f4bf3ee7bfdb04408223604a229fc561c9aa0fc09ca1"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-r4/salvage-basic-6s.wav",
+      "bytes": 1058444,
+      "sha256": "9b57230b16d3beccf7cac4ec357735f8b171b14a974cb46b5569dc799f8b1639"
+    },
+    {
+      "path": "outputs/ship-weapon-attack-v1/qa-r4/salvage-enhanced-6s.wav",
+      "bytes": 1058444,
+      "sha256": "32954ef9caa2598ef9f8395e00d05709f13060e1ecd52adaa64bab5687cd6336"
+    }
+  ]
+}

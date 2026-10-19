@@ -1,0 +1,217 @@
+{
+  "schema": "cloudstitch-grand-v4-paired-auditions/v1",
+  "purpose": "Same-event previous v2 then new v4, separated by 350 ms silence. Full-clip stereo RMS matched; not LUFS or human quality approval.",
+  "pairs": [
+    {
+      "id": "fire-machinegun",
+      "label": "기관총 · 단발",
+      "file": "auditions/fire-machinegun-ab.wav",
+      "sha256": "7348624941b45fd9ecf5852ac6c260b868990b4b5abddf8be5610ec28aefaa29",
+      "bytes": 412364,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 103080,
+      "gapFrames": 15435,
+      "targetRms": 0.056834241892556585,
+      "peakLimit": 0.65,
+      "segments": [
+        {
+          "version": "v2",
+          "file": "original/fire-machinegun.wav",
+          "sha256": "c92bec5175ca2a76c1306c070abf23a81f575ace83fdbea0e6097583162a65e4",
+          "startFrame": 0,
+          "frames": 37265,
+          "gain": 0.8783899703068294,
+          "sourceRms": 0.06470274458245906,
+          "sourcePeak": 0.739990234375,
+          "expectedRms": 0.056834241892556585
+        },
+        {
+          "version": "v4",
+          "file": "enhanced/fire-machinegun.wav",
+          "sha256": "2c946f2b4365d4bf488febd1ac5af1b3fa549c98f72d2a34263be5336978e6e2",
+          "startFrame": 52700,
+          "frames": 50380,
+          "gain": 0.7855033187123673,
+          "sourceRms": 0.0723539169582655,
+          "sourcePeak": 0.709991455078125,
+          "expectedRms": 0.056834241892556585
+        }
+      ],
+      "order": [
+        "v2",
+        "v4"
+      ],
+      "humanApproval": false
+    },
+    {
+      "id": "fire-cannon",
+      "label": "함포 · 발사·목재 반동",
+      "file": "auditions/fire-cannon-ab.wav",
+      "sha256": "29291df6a3161f3057bfedaf96383e0c55ad110d060b124995b7fd16c5016a3f",
+      "bytes": 813928,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 203471,
+      "gapFrames": 15435,
+      "targetRms": 0.05911784179429504,
+      "peakLimit": 0.65,
+      "segments": [
+        {
+          "version": "v2",
+          "file": "original/fire-cannon.wav",
+          "sha256": "5ceea651312e9b8c6c8f901e13a7ff4a5078d17ff746f433e5f942bc5b8eca70",
+          "startFrame": 0,
+          "frames": 59976,
+          "gain": 0.8783899703068294,
+          "sourceRms": 0.06730250093093008,
+          "sourcePeak": 0.739990234375,
+          "expectedRms": 0.05911784179429504
+        },
+        {
+          "version": "v4",
+          "file": "enhanced/fire-cannon.wav",
+          "sha256": "cae72cedd5c8d020996aeb9c866fd278db7bd575433220f628efb689a8f12bad",
+          "startFrame": 75411,
+          "frames": 128060,
+          "gain": 0.8674626304590094,
+          "sourceRms": 0.06815030379235289,
+          "sourcePeak": 0.709991455078125,
+          "expectedRms": 0.05911784179429504
+        }
+      ],
+      "order": [
+        "v2",
+        "v4"
+      ],
+      "humanApproval": false
+    },
+    {
+      "id": "mortar-launch-a",
+      "label": "새 발사 A · 실물 관형 발사음",
+      "file": "auditions/mortar-launch-a-ab.wav",
+      "sha256": "0a5f9bbbb40b13565513405ef1e55b89f96b8a7d5fe4de510b9422ab634d2424",
+      "bytes": 478972,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 119732,
+      "gapFrames": 15435,
+      "targetRms": 0.03904228995698711,
+      "peakLimit": 0.65,
+      "segments": [
+        {
+          "version": "v2",
+          "file": "original/mortar-launch-a.wav",
+          "sha256": "02bb6eef03e78f6c904cf4fc475d09f27acb8fdeedcbcae0e1039107082af228",
+          "startFrame": 0,
+          "frames": 31973,
+          "gain": 0.8783899703068295,
+          "sourceRms": 0.04444755891662707,
+          "sourcePeak": 0.739990234375,
+          "expectedRms": 0.03904228995698711
+        },
+        {
+          "version": "v4",
+          "file": "enhanced/mortar-launch-a.wav",
+          "sha256": "abe4cc2d04b295e198bb7e440e470f2f10e81f5208cdcafd80acfdbf31546be6",
+          "startFrame": 47408,
+          "frames": 72324,
+          "gain": 0.8623733756613462,
+          "sourceRms": 0.04527306971536075,
+          "sourcePeak": 0.709991455078125,
+          "expectedRms": 0.03904228995698711
+        }
+      ],
+      "order": [
+        "v2",
+        "v4"
+      ],
+      "humanApproval": false
+    },
+    {
+      "id": "hit-wood",
+      "label": "목재 · 피격",
+      "file": "auditions/hit-wood-ab.wav",
+      "sha256": "5a9ccb8cecdf3c4007eda34b6e8d2e8003376935823590417de290485fc12a67",
+      "bytes": 474796,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 118688,
+      "gapFrames": 15435,
+      "targetRms": 0.045401390692892576,
+      "peakLimit": 0.65,
+      "segments": [
+        {
+          "version": "v2",
+          "file": "original/hit-wood.wav",
+          "sha256": "f79a020371f8eb06757aa33aaac464fbed4176307e812dcf50aa167b66fbd7d9",
+          "startFrame": 0,
+          "frames": 34409,
+          "gain": 0.8783899703068294,
+          "sourceRms": 0.05168705498428388,
+          "sourcePeak": 0.739990234375,
+          "expectedRms": 0.045401390692892576
+        },
+        {
+          "version": "v4",
+          "file": "enhanced/hit-wood.wav",
+          "sha256": "2435f8e1d04cf490dd8ec315cb5dc5c74c9ed57ba685d1e3594640eb6e1a5848",
+          "startFrame": 49844,
+          "frames": 68844,
+          "gain": 0.7805725964597002,
+          "sourceRms": 0.058164212910895574,
+          "sourcePeak": 0.709991455078125,
+          "expectedRms": 0.045401390692892576
+        }
+      ],
+      "order": [
+        "v2",
+        "v4"
+      ],
+      "humanApproval": false
+    },
+    {
+      "id": "engine-idle-loop",
+      "label": "엔진 · 낮은 회전",
+      "file": "auditions/engine-idle-loop-ab.wav",
+      "sha256": "85802d2144ac2483bdf1a64ed2c57558b627ff2e968b9eeb4001050a9d4f9aac",
+      "bytes": 2178584,
+      "sampleRate": 44100,
+      "channels": 2,
+      "frames": 544635,
+      "gapFrames": 15435,
+      "targetRms": 0.12,
+      "peakLimit": 0.65,
+      "segments": [
+        {
+          "version": "v2",
+          "file": "original/engine-idle-loop.wav",
+          "sha256": "be85bddb226d3cc4a6cff7fd4c647e47ddfaee1d7d357a370d6ed407678ad3f7",
+          "startFrame": 0,
+          "frames": 264600,
+          "gain": 0.5635793746524421,
+          "sourceRms": 0.21292475451927897,
+          "sourcePeak": 0.739990234375,
+          "expectedRms": 0.12
+        },
+        {
+          "version": "v4",
+          "file": "enhanced/engine-idle-loop.wav",
+          "sha256": "01201fee1dd540c107910ff6db5d843aeda4b5e3db02c8147576c672bc3aeeed",
+          "startFrame": 280035,
+          "frames": 264600,
+          "gain": 0.6393003726614772,
+          "sourceRms": 0.18770519325747756,
+          "sourcePeak": 0.709991455078125,
+          "expectedRms": 0.12
+        }
+      ],
+      "order": [
+        "v2",
+        "v4"
+      ],
+      "humanApproval": false
+    }
+  ],
+  "humanApproval": false
+}

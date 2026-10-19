@@ -1,0 +1,756 @@
+{
+  "version": "cinematic-v5-full49",
+  "status": "EXPRESSION_REDESIGNED_LISTENING_CANDIDATE",
+  "files": [
+    {
+      "path": "outputs/audio-cinematic-v5/audition-catalog.json",
+      "bytes": 6237,
+      "sha256": "4d490ea45229ce1064e2dec11b3e4859a8f4821237d660b2fcca9dddde744609"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/auditions/engine-idle-loop-v4-v5.wav",
+      "bytes": 2187404,
+      "sha256": "fbac3a51ecba45625fef98770cf6d4292c14e9c4cc045c5e1cc71e465e2ef166"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/auditions/fire-cannon-v4-v5.wav",
+      "bytes": 1394284,
+      "sha256": "80f624301f0a0df9542220fce178aa9ac1afde656e5e42cc9ada8ee45c3a0f70"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/auditions/fire-machinegun-v4-v5.wav",
+      "bytes": 406188,
+      "sha256": "0d3631cc48557ae332aaad65c5ec077898371d54212fba440ea9eb30ed2793e5"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/auditions/hit-wood-v4-v5.wav",
+      "bytes": 760520,
+      "sha256": "605c066fe8726b227a27e789e141eca28d303c1fb9a64aecfa655701a0998ac4"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/auditions/mortar-launch-a-v4-v5.wav",
+      "bytes": 853820,
+      "sha256": "2669c3105048a066d0ca9933dc7acbad170562889782d3064b866ddac495f9c8"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/catalog.json",
+      "bytes": 785632,
+      "sha256": "6e173fa261368d86079832f24aea7026f6d51b0a1405eb851c25402f2a8fa6e0"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/bundle-detach.wav",
+      "bytes": 688004,
+      "sha256": "ddb86a162546f1b408bcb11377079f6f1a47f3b1d6109a6b4c24834e5c105dd1"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/bundle-lost.wav",
+      "bytes": 688004,
+      "sha256": "36120793bab4bbe1cf80f9682815ec9beaf66aff0936708763dbdf673afc2956"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/cannon-breech.wav",
+      "bytes": 308744,
+      "sha256": "338b85c69cdc01b4c9d207807b92bf3925183b1a653c493cee6269b6594cf741"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/cargo-drop.wav",
+      "bytes": 493964,
+      "sha256": "196d37e66ad0fefa757ec7ecb22118ab249d836073d6f53aafe0c7c844799447"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/chain-spin.wav",
+      "bytes": 441044,
+      "sha256": "697c79df9a8b8a63b391fa014526cde531bf4e5fcd03a1e25642c4b8b2599c4f"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/connector-cut.wav",
+      "bytes": 688004,
+      "sha256": "8ebc50f50050a3578c0912a5a925a562c7ea30311fd51d8f8c4ed521dbcb20e7"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/defeat.wav",
+      "bytes": 705644,
+      "sha256": "aec16420b784f094f7b2d4a1dc710dad845f8afdd72e21113b98f603cab87d57"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/engine-cruise-loop.wav",
+      "bytes": 1058444,
+      "sha256": "a4f8640bbc880339456d8b29fd2784e1d4b2c41f53974e860f0a17556fc4ce10"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/engine-idle-loop.wav",
+      "bytes": 1058444,
+      "sha256": "4fefcf9dc27732b8008a61dcd5dcf9665faee44dccadf5a5bd384e9e1d3ae32d"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/fire-cannon.wav",
+      "bytes": 811484,
+      "sha256": "62433953837f62d3d1b95d92b0a3e158ba765eb6d3dd9cf1cd8138721f0345de"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/fire-chain.wav",
+      "bytes": 441044,
+      "sha256": "ebda64addb7d3482649764e55fc2eac1f6589fd83839b1160928e6c8aef9c475"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/fire-harpoon.wav",
+      "bytes": 441044,
+      "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/fire-machinegun.wav",
+      "bytes": 134108,
+      "sha256": "815bcb0cad8c0ae0408a621e89bf0b5cc6ec1b565376ee21fc0e137741acce4b"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/fire-mortar.wav",
+      "bytes": 493964,
+      "sha256": "0e1f1b3445676da73d6f9fcc1edf2cfd0f39c2b105905161cdec091ee0eeb3d5"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/flame-ignite.wav",
+      "bytes": 449864,
+      "sha256": "fdadd8d601e6f07b31d3c130cf393516ffa960dd4820aa15e470974158e5179a"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/flame-spray-loop.wav",
+      "bytes": 705644,
+      "sha256": "25f58b215370c6538d353918bd4da423162b9be8f398815e3829c6c5a68a2ebe"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/flame-stop.wav",
+      "bytes": 449864,
+      "sha256": "d2544f4345f84ee7bfd74bc0709f0af2bc50920fa7134468be572b0ec3e096b6"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/harbor-depart.wav",
+      "bytes": 493964,
+      "sha256": "1ce540c684ce9ceea5800338d711aa4fdb2ee248b4a6a083d95799e04905d3da"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/harbor-equip.wav",
+      "bytes": 493964,
+      "sha256": "c4710402cc14aa28ef865fec10f6eb3354c71833fac61f4ec80c38e2fbd7c7a0"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/harbor-repair.wav",
+      "bytes": 493964,
+      "sha256": "dbb11ad50c6e35e1d1f5b7d6524c574bd209045e88c6060abbf1c3653656c382"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/harbor-store.wav",
+      "bytes": 493964,
+      "sha256": "51cb16d2d4dc871b83ed0e85e378ac2c615a356b0fd62171814d53c306afb5ab"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/harbor-workshop-loop.wav",
+      "bytes": 1058444,
+      "sha256": "ab215c1e802a7baba69c89f7899f48f39327c9348c45b2aad4fdfecc68824e69"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/harpoon-embed.wav",
+      "bytes": 441044,
+      "sha256": "e4fed49399d1ac7f870ce1f2e2c31b16a1ccb9547eafc985a9bef36b8e187297"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/harpoon-tension-loop.wav",
+      "bytes": 705644,
+      "sha256": "c6067f744b5528b1bff774fe31de8180e6dc8c101fc4c764bbe39254f6b2d892"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/hit-armor.wav",
+      "bytes": 414584,
+      "sha256": "ad629729f513348c6580f243f69bd7ffddfa6708c304d9b07278bc300ee4655d"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/hit-cloth.wav",
+      "bytes": 299924,
+      "sha256": "81ea6d6f1e62e5eb059788c885e0d7642410f2d182025f2b3e7f32d6da609d54"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/hit-engine.wav",
+      "bytes": 414584,
+      "sha256": "8b4a23e83c5287bf5bbf68877525cb7c01cac424bba0d00faea27e4fe55e4ab5"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/hit-wood.wav",
+      "bytes": 414584,
+      "sha256": "f943fb4ef19ac1328fec23bd0bacb09bb96a97439409b683a853b6b4f9c4b1cb"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/hull-creak-loop.wav",
+      "bytes": 1058444,
+      "sha256": "dff7fc7818f28ee85e639dde1a6c606b6c661b619928f3f4c555fd459af6128c"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/incoming-warning.wav",
+      "bytes": 282284,
+      "sha256": "9b5403e6f7a87d0d2b1e1f2bb36fcca4ecdd67a25615104fbdb6a3723883ca93"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/lift-danger-loop.wav",
+      "bytes": 705644,
+      "sha256": "6b2ddfc4259e926740bc0e24f5f7de26f7386b5e527d6d58f327fff8c6e0d113"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/lift-warning.wav",
+      "bytes": 282284,
+      "sha256": "90ddd85070df4c275a2cef42b4441ae16e94181ab06946008f911680776ad800"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/machinegun-feed.wav",
+      "bytes": 308744,
+      "sha256": "7b2c07d5838156bfbf1afad9eb5a22f9f4df8ccb2345b8ca79ff9d4e4ea1fd43"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/module-break.wav",
+      "bytes": 688004,
+      "sha256": "67662b27e669004dfb6d6f96e97a2d24ab47f35d200f21d24f22985e93a7591a"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/mortar-fall.wav",
+      "bytes": 308744,
+      "sha256": "c5a2c4bf1ca2bab620455d6c9de6863e626550230c9879ae3c19ef17c873e14c"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/mortar-impact.wav",
+      "bytes": 811484,
+      "sha256": "b648258c82551e588dbbef03a201442b5d666864fcd06bbbebaf801415594c93"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/mortar-launch-a.wav",
+      "bytes": 493964,
+      "sha256": "2aa610ef0bfced1f3a80677383816aef3e8fee2adba4ebf776341de9ba020bcf"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/mortar-launch-b.wav",
+      "bytes": 493964,
+      "sha256": "868967987d0b09d1764bd86c9b0a49e5869d5333f7d6f2c5f2f6655ba6a06321"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/restore-ok.wav",
+      "bytes": 220544,
+      "sha256": "5b3e85aed256be16140d39d18797a6bb585826b9aa4c07abb5d3038154127d1e"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/return.wav",
+      "bytes": 493964,
+      "sha256": "c119815b1ccb06548965f7591cc8b139e2f67ae8de2f2830d8d32fdd7ca30e99"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/salvage-complete.wav",
+      "bytes": 493964,
+      "sha256": "24db9f9282df3c6bac0286c0916f7955b0871a7f765df2da8fea74601a790701"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/save-ok.wav",
+      "bytes": 220544,
+      "sha256": "8b758ddde64877b8846364675ff512bd894c94229bc164f3c6d390771b1c1af4"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/ui-back.wav",
+      "bytes": 220544,
+      "sha256": "d5a5619cca01623ee32d61a35b9bbb3f87263a61aa088d7d6a326a6469455e15"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/ui-confirm.wav",
+      "bytes": 220544,
+      "sha256": "99bd8f0d51abab10d47ebbccb2eae1f70a515856639095e1e338d97e79dadec4"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/ui-fail.wav",
+      "bytes": 167624,
+      "sha256": "db9a151f1f7896bcfa8068b2f191bd631175163e63f1eb45a1ef0ac5e87387d6"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/ui-hover.wav",
+      "bytes": 88244,
+      "sha256": "03028d7336f8ca6d5981ff1b5ca3e15a89a48fb8158d20f2a822e079b701c8dd"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/winch-loop.wav",
+      "bytes": 705644,
+      "sha256": "cdd46be18a09569ca6d700fd48c9742b21cba07f411d0c0c45616a2ece2a9339"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/wind-calm-loop.wav",
+      "bytes": 1058444,
+      "sha256": "6e970a2766e77049a78e3f6843441237b0c167a00c83ea421f463596e2461a17"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/enhanced/wind-fast-loop.wav",
+      "bytes": 1058444,
+      "sha256": "6d36327a2746b4d870f4f4ae6c6cfadb504fff4e25aa52222b06135e1324c629"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/file-verification.json",
+      "bytes": 82744,
+      "sha256": "eee29b4eabea895e9d25b59c6dea144d898de54d6f7d11e37a8a0aeb4625f032"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/index.html",
+      "bytes": 9391,
+      "sha256": "1483d7106d4c2aaa66c57f63b09ef0f8426c85f5edf7d23db3527de202f56a73"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/bundle-detach.wav",
+      "bytes": 428696,
+      "sha256": "35f37b2670392f64a69fb590c26f2f153217dca0127069f4e4aab106c7a7cdc0"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/bundle-lost.wav",
+      "bytes": 374188,
+      "sha256": "441f906ea3a5d17e5d11fa773d373019574e90903f0f4f64753f962322059260"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/cannon-breech.wav",
+      "bytes": 361664,
+      "sha256": "bc576f463500b5f739766288501c88e3d9ad32a0656f802ad5cecca967b8af64"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/cargo-drop.wav",
+      "bytes": 346152,
+      "sha256": "f598ba5b698d2984c52e731deb8f0f4d7f33af68ea9ea3b57ef056e31b9091b4"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/chain-spin.wav",
+      "bytes": 354440,
+      "sha256": "dc9fe4e0fa57619e0436c0341661d6c1fc7504c56dd1fb0cac09e8b7c43c3ceb"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/connector-cut.wav",
+      "bytes": 300140,
+      "sha256": "607bb4583571d4af3fd8ce9b52a7d8b665cf5b8dd2b872e9513de774df6752ee"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/defeat.wav",
+      "bytes": 550128,
+      "sha256": "d893e57376b52ca56934687f85c99fa65b4c29a1b4b9bfbebbcaf5545971d969"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/engine-cruise-loop.wav",
+      "bytes": 1058444,
+      "sha256": "8b5b889ef686953c25b49c9d66343203f2ca6763f6a6fde1f6cf77d0f9dc657e"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/engine-idle-loop.wav",
+      "bytes": 1058444,
+      "sha256": "01201fee1dd540c107910ff6db5d843aeda4b5e3db02c8147576c672bc3aeeed"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/fire-cannon.wav",
+      "bytes": 512284,
+      "sha256": "cae72cedd5c8d020996aeb9c866fd278db7bd575433220f628efb689a8f12bad"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/fire-chain.wav",
+      "bytes": 311652,
+      "sha256": "c6f918b08b12ef3fe987f320c71aaf7dbbaa656e83b84b7f90c63ea0eed08bb1"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/fire-harpoon.wav",
+      "bytes": 333440,
+      "sha256": "457b3ce091a2a8db32e6323b6ede5fafe03c1958d5de2cb97c5e64cccd885785"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/fire-machinegun.wav",
+      "bytes": 201564,
+      "sha256": "2c946f2b4365d4bf488febd1ac5af1b3fa549c98f72d2a34263be5336978e6e2"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/fire-mortar.wav",
+      "bytes": 337440,
+      "sha256": "97f2ac3c679ff5f1b9934624a48c32864733eec29ac7f39a75808f995a4130ae"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/flame-ignite.wav",
+      "bytes": 269936,
+      "sha256": "f64feabb503acf698be7b3785edc53c7b1d005ddab5de5a68818c5af0bbb2ea3"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/flame-spray-loop.wav",
+      "bytes": 705644,
+      "sha256": "c7c1578d03784cddf27a4c0596447000564e6953b34156470e8d6b0e5286de81"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/flame-stop.wav",
+      "bytes": 206484,
+      "sha256": "84bbd954957c14d957bacd20d4a781661f90ea7946b82c3fc5d8994da5534d79"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/harbor-depart.wav",
+      "bytes": 382876,
+      "sha256": "faa6962af7ed7a7c2889875cb77485dda9cd9029b98d12399b453704b3d62c6d"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/harbor-equip.wav",
+      "bytes": 321196,
+      "sha256": "be33b9b8ed00a6f2d176fa81d2df0aec7eb174606427b32937cc24d180d61661"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/harbor-repair.wav",
+      "bytes": 379304,
+      "sha256": "4fda339584e64d12f27a7a9d373fe49bbb8479391d47f760b56e179578dbe76c"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/harbor-store.wav",
+      "bytes": 346100,
+      "sha256": "2669145fffc92aa5425588dddb1a30885b37fae526c0e1ee2ef8de7f2fa8c9f9"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/harbor-workshop-loop.wav",
+      "bytes": 1058444,
+      "sha256": "6a55b033516e877e2646bb91709a0e0f2511cfdc7e8ba7ce5d3f7f5d78cb9f5b"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/harpoon-embed.wav",
+      "bytes": 262936,
+      "sha256": "f99ce06d0699473750600145632050a4dca272b0259d12883d92b4bc055cf5ec"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/harpoon-tension-loop.wav",
+      "bytes": 705644,
+      "sha256": "bf7fc41ac6c82c9d2204ed6d792c39899da3f7fbb5910d16d3f56ef249ff5c2a"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/hit-armor.wav",
+      "bytes": 321788,
+      "sha256": "fd8740e9c44222dff62f93794f684988495b5fb7fc1189aaed105105b17d7913"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/hit-cloth.wav",
+      "bytes": 245240,
+      "sha256": "7b043d431cb45c6207734fad116f4c2e340c1e16ac4c60395487b1a2d8a16423"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/hit-engine.wav",
+      "bytes": 383292,
+      "sha256": "d5f05910ad18f535b20961cdf2cb6df9e187b6928b632d58a9e19e3c7d85e511"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/hit-wood.wav",
+      "bytes": 275420,
+      "sha256": "2435f8e1d04cf490dd8ec315cb5dc5c74c9ed57ba685d1e3594640eb6e1a5848"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/hull-creak-loop.wav",
+      "bytes": 1058444,
+      "sha256": "97efd2c199cd6fff187d3473b3029b6a21d9cd4ea78ce894656ee14b150f184c"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/incoming-warning.wav",
+      "bytes": 216936,
+      "sha256": "afb68441619953bfdd3498ff69582e96845ce0e972b315da46bfbad05a47c753"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/lift-danger-loop.wav",
+      "bytes": 705644,
+      "sha256": "01f64a9d6b93c48d8ae620b985ef00da1deeec950cd804189a210dc7b2e5a010"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/lift-warning.wav",
+      "bytes": 233156,
+      "sha256": "a40edd1718f21aff41610bf3e9bcbe03f82a4bcf0eec6d30eaa9351bb48363f1"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/machinegun-feed.wav",
+      "bytes": 216856,
+      "sha256": "98613b93a1b5b59086d0d70def3ea1d5709c09bf3aa9c133db183e3ae990136f"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/module-break.wav",
+      "bytes": 385056,
+      "sha256": "9d10d93d41f5fa6742b5a8c15ee407d6909f29d29b9421d7b7a70b12da7621e5"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/mortar-fall.wav",
+      "bytes": 328028,
+      "sha256": "903aad6eecc2ec1e05a1acb73052a521c410ac972d79c140b2607f0889f94659"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/mortar-impact.wav",
+      "bytes": 590200,
+      "sha256": "75b707d0210910a53985afd31e29d5a69cf42793e8ff8ac7a82ee1e5518bab44"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/mortar-launch-a.wav",
+      "bytes": 289340,
+      "sha256": "abe4cc2d04b295e198bb7e440e470f2f10e81f5208cdcafd80acfdbf31546be6"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/mortar-launch-b.wav",
+      "bytes": 323752,
+      "sha256": "b60a1007d704f275989da9f10085397bbc09d6799cd691d4e64f137d69153520"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/restore-ok.wav",
+      "bytes": 191712,
+      "sha256": "874a5967d9be34458d5588753eedcf21ba9610013b047e48d6fa047b17110bf1"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/return.wav",
+      "bytes": 450232,
+      "sha256": "f9cdd6d5dd76a968fb3483c5c2d6bdba5635d1c4f51d2c0886fdeffe4e814c8b"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/salvage-complete.wav",
+      "bytes": 326696,
+      "sha256": "b1c6cf4e2937b9a4900f9ba2412662d257495029c003e07ace45270486d4379e"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/save-ok.wav",
+      "bytes": 153412,
+      "sha256": "b05677d5329cb00da6da13d6e529377f42843a5c9c75311313763712bdba4817"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/ui-back.wav",
+      "bytes": 137932,
+      "sha256": "9927e8c5fb8c54ed46680782628d59df4f4d85a306a9183d9b9c23eb876f1aad"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/ui-confirm.wav",
+      "bytes": 138024,
+      "sha256": "6ad2280661d6e44dd04ab9965c317a32ea577c5f52a1758c65c1f73c37046dc0"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/ui-fail.wav",
+      "bytes": 141020,
+      "sha256": "e0ea8e5296b6500c649772fd989e81d8002b0f4a0b4a22d1a9f5346367143396"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/ui-hover.wav",
+      "bytes": 100712,
+      "sha256": "ac547e91ddbfdbca5526a1569639d22423344f5c3ff8f3b6c7e6abd353aeff7a"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/winch-loop.wav",
+      "bytes": 705644,
+      "sha256": "dedbb24dc9475bfa16d25a27f62b312976db89f9d6a38d66af0f887b0273b2bc"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/wind-calm-loop.wav",
+      "bytes": 1058444,
+      "sha256": "7b68c032f5422765130e202d3a2da8350e74e524c906d069a423b111fbdc1e24"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/original/wind-fast-loop.wav",
+      "bytes": 1058444,
+      "sha256": "dbf79c5517d54adbe0867d5912ed28862047a6dab3dc85d089937ba9ec018edd"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/OWNER_RESULT.json",
+      "bytes": 634,
+      "sha256": "9a2189ea709928840db3266f21b5f1329ddc50fa5cc897f3298336fea8872b7d"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/player-verification.json",
+      "bytes": 4997,
+      "sha256": "e3b96523f4e85c914c3b467ae98c82f3c6af64dd9f0d915cf2d2a9537d565654"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/preservation.json",
+      "bytes": 675,
+      "sha256": "7b3dcd402c63e40978bc452aa3ecae54d5652ac970571cd5da2f5a512e9fc222"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/audition-catalog.json",
+      "bytes": 3868,
+      "sha256": "ae8d4c73d2dae9ab4e4271e3edcac04a5604af4e2b78b847f63dd712399d4723"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/auditions/fire-cannon-v4-v5.wav",
+      "bytes": 1394284,
+      "sha256": "80f624301f0a0df9542220fce178aa9ac1afde656e5e42cc9ada8ee45c3a0f70"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/auditions/fire-machinegun-v4-v5.wav",
+      "bytes": 406188,
+      "sha256": "0d3631cc48557ae332aaad65c5ec077898371d54212fba440ea9eb30ed2793e5"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/auditions/mortar-launch-a-v4-v5.wav",
+      "bytes": 853820,
+      "sha256": "2669c3105048a066d0ca9933dc7acbad170562889782d3064b866ddac495f9c8"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/catalog.json",
+      "bytes": 54653,
+      "sha256": "08a03a2f2f0c3339cd369fe977eb5de6a7eefe4e46c5e95c202099b0cd8d4fd0"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/delivery-manifest.json",
+      "bytes": 4547,
+      "sha256": "859bce80802a5b612af5a18ddb7e4b46b827b28e8ef13d7fba6c6594763b48d9"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/enhanced/fire-cannon.wav",
+      "bytes": 811484,
+      "sha256": "62433953837f62d3d1b95d92b0a3e158ba765eb6d3dd9cf1cd8138721f0345de"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/enhanced/fire-machinegun.wav",
+      "bytes": 134108,
+      "sha256": "815bcb0cad8c0ae0408a621e89bf0b5cc6ec1b565376ee21fc0e137741acce4b"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/enhanced/mortar-launch-a.wav",
+      "bytes": 493964,
+      "sha256": "2aa610ef0bfced1f3a80677383816aef3e8fee2adba4ebf776341de9ba020bcf"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/file-verification.json",
+      "bytes": 9152,
+      "sha256": "ca22f8fa73416ad7dc07c99f28562895918eb5befa3e9fd1c136a38eab75b92f"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/index.html",
+      "bytes": 9364,
+      "sha256": "b285b8e33f822d2653d7ed7e67619b22c0eda1eba89c85e3c6650de81af45d34"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/original/fire-cannon.wav",
+      "bytes": 512284,
+      "sha256": "cae72cedd5c8d020996aeb9c866fd278db7bd575433220f628efb689a8f12bad"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/original/fire-machinegun.wav",
+      "bytes": 201564,
+      "sha256": "2c946f2b4365d4bf488febd1ac5af1b3fa549c98f72d2a34263be5336978e6e2"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/original/mortar-launch-a.wav",
+      "bytes": 289340,
+      "sha256": "abe4cc2d04b295e198bb7e440e470f2f10e81f5208cdcafd80acfdbf31546be6"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/player-verification.json",
+      "bytes": 4997,
+      "sha256": "e3b96523f4e85c914c3b467ae98c82f3c6af64dd9f0d915cf2d2a9537d565654"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/player/review.css",
+      "bytes": 14558,
+      "sha256": "6206474de04544b8a966cf95964a4b2e3ca856e674096df6d33aee23f77f00b0"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/player/review.mjs",
+      "bytes": 38298,
+      "sha256": "a98b799fed6b9ca70ddeb7cc82fedfe327b808989927ccd0920989e23c9485b7"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/source/auditions.mjs",
+      "bytes": 2344,
+      "sha256": "55ee8e771a6945defebce8bd6656d053a20de5463ae6c0b24867c7dec426d9de"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/source/dsp.mjs",
+      "bytes": 14114,
+      "sha256": "8065fc4b6226cd654785f1319cacb216cd696773177ef80f2c02eec954deb292"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/source/render.mjs",
+      "bytes": 3972,
+      "sha256": "bab1e0c84301c417b44ac29393be728eba05c0bd711eeeae9472a411b4e5a0fc"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/source/verify.mjs",
+      "bytes": 6786,
+      "sha256": "f05243dfaad9ab1e8960f7f43df7809527277ae46a52d805d87874c163c2233b"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/prototype-r1/source/wav.mjs",
+      "bytes": 2540,
+      "sha256": "198b15dbf522083ffe12daea347e6b361e84b2641aa4a04831be02806924dae5"
+    },
+    {
+      "path": "outputs/audio-cinematic-v5/README.txt",
+      "bytes": 890,
+      "sha256": "feac23577d5fd9cb579a94d6a62a8535ca2f47b73c6d4fabeb4eec15928ffcc0"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/auditions.mjs",
+      "bytes": 2344,
+      "sha256": "55ee8e771a6945defebce8bd6656d053a20de5463ae6c0b24867c7dec426d9de"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/build.mjs",
+      "bytes": 1951,
+      "sha256": "b8c1e3fae227d668fa926a8dd1d0fb7abb7fd4cf50499612549637b0fec545e2"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/bulk.mjs",
+      "bytes": 3013,
+      "sha256": "d9e3debd7e9bedff6844ab08a18b0f5c814d89d39779a3e4e439108488edeb91"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/dsp.mjs",
+      "bytes": 14114,
+      "sha256": "8065fc4b6226cd654785f1319cacb216cd696773177ef80f2c02eec954deb292"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/HANDOFF.md",
+      "bytes": 4742,
+      "sha256": "f6ff9e09e5b78a4641466ebad3d52be11159b11b6037a8026e658734c745a65f"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/index-template.html",
+      "bytes": 9391,
+      "sha256": "1483d7106d4c2aaa66c57f63b09ef0f8426c85f5edf7d23db3527de202f56a73"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/preserve.mjs",
+      "bytes": 1635,
+      "sha256": "2a56753a1ae9f47e0b7d5dfc648d53bae925e9f912deaf50c8d2bf3f819f43eb"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/render.mjs",
+      "bytes": 3972,
+      "sha256": "bab1e0c84301c417b44ac29393be728eba05c0bd711eeeae9472a411b4e5a0fc"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/review.css",
+      "bytes": 14558,
+      "sha256": "6206474de04544b8a966cf95964a4b2e3ca856e674096df6d33aee23f77f00b0"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/review.mjs",
+      "bytes": 38298,
+      "sha256": "a98b799fed6b9ca70ddeb7cc82fedfe327b808989927ccd0920989e23c9485b7"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/snapshot-prototype.mjs",
+      "bytes": 3005,
+      "sha256": "34f19fe688a20c1598dda8e261e73c8f9cb9cb7f15bd53d2f30bdc9d543e3c4a"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/verify-browser.cjs",
+      "bytes": 16306,
+      "sha256": "fc36dab0fee3a261bd233e5cbdedd71fe5b4b1e9e11ce5c36a3411fe781bd46a"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/verify-player.mjs",
+      "bytes": 18675,
+      "sha256": "c85558d005fc4b64e8c6ffbe4717e37aa0b7113eff5e9ddbd531ee038c55d1f0"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/verify.mjs",
+      "bytes": 6786,
+      "sha256": "f05243dfaad9ab1e8960f7f43df7809527277ae46a52d805d87874c163c2233b"
+    },
+    {
+      "path": "tools/audio/cinematic-v5/wav.mjs",
+      "bytes": 2540,
+      "sha256": "198b15dbf522083ffe12daea347e6b361e84b2641aa4a04831be02806924dae5"
+    }
+  ],
+  "totalBytes": 59267679,
+  "entry": "outputs/audio-cinematic-v5/index.html",
+  "previousV4Rejected": true,
+  "previousManifest": {
+    "file": "outputs/audio-grand-v4/delivery-manifest.json",
+    "sha256": "c7bec6defed1cd135de57330ced6b0f3fb1685093dc2ec28a5100eeac832ab71"
+  },
+  "humanApproval": false,
+  "gameplayInstalled": false,
+  "paidGenerationRequests": 0
+}

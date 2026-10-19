@@ -1,0 +1,677 @@
+{
+  "revision": "ready-1-bold-r2-browser53",
+  "status": "technical_pass_for_art_review",
+  "human_art_approval": "pending",
+  "gameplay_integration": false,
+  "date": "2026-10-18",
+  "new_logical_assets": 24,
+  "comparison_revision_glbs": 6,
+  "glb_files": 30,
+  "new_animated_assets": 16,
+  "new_clips": 46,
+  "browser_checks": 53,
+  "representative_ghosting_checks": 9,
+  "source_count": 15,
+  "output_count": 114,
+  "bytes": 86663610,
+  "readonly_inputs": [
+    {
+      "path": "tools/world-assets/core.mjs",
+      "bytes": 7840,
+      "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c"
+    }
+  ],
+  "central_metadata_excluded": [
+    "outputs/map-atmosphere-v1/.gitattributes"
+  ],
+  "actual_receipt": "outputs/map-atmosphere-v1/execution-receipt.json",
+  "receipt_sha256": "a9d20ad00e1f0603ddd467c8d22e4735c9051af0dc123dce493559f9958c37f1",
+  "html_sha256": "d0cdb19c4ebf78db06a2e23870b50e28dc83e6984c0e7e41e5eb570e1667a79f",
+  "payload": [
+    {
+      "path": "outputs/map-atmosphere-v1/HANDOFF.txt",
+      "bytes": 5712,
+      "sha256": "8fe7e6c7d885bdb8d3b9df4e865ba5bbeeadd0d1c703e4102c1c5d5d1f017905"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/PLAN.txt",
+      "bytes": 3622,
+      "sha256": "2500a3946ab4fcf16efbeebdaba5635504e20c747f3cadce588246c052ee34ed"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/SOURCE_READY-2-preserved.json",
+      "bytes": 3136,
+      "sha256": "00fe266c6701df91467d55d87be8c748719f394022acc091895c73b8471044fe"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/SOURCE_READY-3-preserved.json",
+      "bytes": 5849,
+      "sha256": "9112d0bc9e68c585f9141f3dc6f934dd2ac00c5932d931d5004c314e0736478b"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/SOURCE_READY-4-executed.json",
+      "bytes": 5997,
+      "sha256": "73fa36979c4af02dccfc6e96ed626af6a4e8e36d849b66784118bd0a40b5c289"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/SOURCE_READY-4-preserved.json",
+      "bytes": 5997,
+      "sha256": "73fa36979c4af02dccfc6e96ed626af6a4e8e36d849b66784118bd0a40b5c289"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/SOURCE_READY.json",
+      "bytes": 6435,
+      "sha256": "da5b487ea6d388e55b20052be26585f67ac47a2177f055af7251becae023687a"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/cargo-crane.glb",
+      "bytes": 1931456,
+      "sha256": "0466435da3540390391c36ed26fa0a0bd5d44df509ca22fd4d3f2a6cdb151b11"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/cliff-songbirds.glb",
+      "bytes": 2167568,
+      "sha256": "07a3b1d73bb4abc6524506dacee158b698eb8b036e8d132b9bdc337fbd72d9d8"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/crescent-pass.glb",
+      "bytes": 2016296,
+      "sha256": "84897b7ff6b57b4ff4678743ae3eb0de38e64794ec9894426a82422e92f93b27"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/double-arch.glb",
+      "bytes": 2128376,
+      "sha256": "50cb39c05c29cfc377e31d38baeaa2fd24a2c2fa63bc8212eed6c8ceee05172c"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/hanging-garden.glb",
+      "bytes": 3050436,
+      "sha256": "5dc2a3bcdc08048f8a6fc32ed82439feaaa4c57526fb2234e0a0ee890e8c3732"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/harbor-gull.glb",
+      "bytes": 834748,
+      "sha256": "6961ff1fc2140134b6b466a61a7e7870eeedda97d47e2d6c1f681fb684e61ffd"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/lantern-buoy.glb",
+      "bytes": 3381012,
+      "sha256": "23dc4a9b16ce4dc94de0b49bf4cf1af602f65e20a15254432e53290ad7b840e4"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/lightning-mast.glb",
+      "bytes": 2294648,
+      "sha256": "156ae7418e75fb7ad4c973c815361f4e16b711bbc2c14f4e8a4d90c37a29e1bd"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/mail-balloon.glb",
+      "bytes": 2028828,
+      "sha256": "a10e92660f7f890b5e4a73794d19df17901bd6035686a33934336e4e261b028a"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/mist-ribbons.glb",
+      "bytes": 1101772,
+      "sha256": "ae477c6d4c8ddd1ea8e7f646485fce43fc9d6b17004d8e4095198ab329f755fb"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/patch-envelope.glb",
+      "bytes": 1711788,
+      "sha256": "9cfc983d147dd09f879b69e0b90883e37d3c59bd434abd2f8ee65bf2859022e8"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/quiet-terrace.glb",
+      "bytes": 1810256,
+      "sha256": "74225c4871fd4e0f5221b70f9bbf7dcc67f5ebb8833c10553d67d347779c4302"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/ridge-raptor.glb",
+      "bytes": 1119436,
+      "sha256": "8ca6531f2714937e32c3e1598dba47e21585a816f6f1c92a935dded5ef0e9c48"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/rising-cloud.glb",
+      "bytes": 1188596,
+      "sha256": "3202c6c800c6f52f46a431f23f1c6721dcfcffa2cf7477673ab02077d36fc4ee"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/root-garden.glb",
+      "bytes": 2594580,
+      "sha256": "2707dc2522cdb489ee3d0ebe5a499461161311e37c6547e434d80524862e5dff"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/star-lanterns.glb",
+      "bytes": 2142268,
+      "sha256": "23346bf27f95c33bf4e805652c7c4e340ce21c13b3cc76095b6c7652136fcc55"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/storm-front.glb",
+      "bytes": 1360904,
+      "sha256": "723a8e17ea6e3c2a516ec520d757a3286d12b8265786f9cc63b33b8331cfb0a5"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/sunlit-cloud.glb",
+      "bytes": 1106516,
+      "sha256": "b74a176a011a0b6924bbc7de1ca04d5175174c889c46f7df00bc4ce6f88dfa90"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/supper-deck.glb",
+      "bytes": 2900812,
+      "sha256": "43bb8cb826bb2c24286ae3f8b070c175499f3803cf580b006a2033c82a459538"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/water-terraces.glb",
+      "bytes": 2223432,
+      "sha256": "500734eddcc72add4a4a38b8a42e8a03235a688d1103d6de9239a531e806521e"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/wind-ribbon-mast.glb",
+      "bytes": 1634116,
+      "sha256": "0368d5f2a27586b9b7a68dda1ebe82937f3918e935374b6b7a861aa64e277135"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/wind-swallows.glb",
+      "bytes": 1715068,
+      "sha256": "f84f563f28e0f22e3d3b354638bcd108202313c2c6296e68a944cd527e283e0a"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/wind-tree.glb",
+      "bytes": 2106728,
+      "sha256": "a62c8c7baaf1a72bd04ad28eedccb9b37a7abfcd7aa92320e685886813306eb1"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/assets/wreck-garden.glb",
+      "bytes": 3040148,
+      "sha256": "11bed91c112182fb20e26180fd00fd4527407564b343f28da4967cfe7db91670"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/baseline/assets/harbor-gull.glb",
+      "bytes": 727136,
+      "sha256": "4b034413d4d52a861c2079cfcc85220cfdc47c59be66f7d9e9e7df94154b8f22"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/baseline/assets/lightning-mast.glb",
+      "bytes": 1801040,
+      "sha256": "ea0243e670757203944402abc845fcc128cf663f6aa9647a1b91773419781bca"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/baseline/assets/mail-balloon.glb",
+      "bytes": 1095840,
+      "sha256": "3a7e68ba0ccc2e49d89e5cc9a185d96ded3692190f8f461164f170be840a0d3a"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/baseline/assets/root-garden.glb",
+      "bytes": 1598120,
+      "sha256": "cc032611fdcad5ca308423cecc7f7a102aab13629098401a61ee4f272df7731d"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/baseline/assets/sunlit-cloud.glb",
+      "bytes": 813196,
+      "sha256": "a91bd7332387d586c8b0b7295257ef9f02924d6fd993afed33a2e0347b753b0d"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/baseline/assets/wind-tree.glb",
+      "bytes": 1084620,
+      "sha256": "51c5ad4a4ffac9142f7321e13193c890a6c82b54629a073fdc4814aed2983a4e"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/browser-verification.json",
+      "bytes": 16924,
+      "sha256": "2d245108868864b39952d9f76985ad56762157d301a295018ef9e51eafe1f1c2"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/catalog.json",
+      "bytes": 30320,
+      "sha256": "63b9e1e3aa3cf9dd98b3f82e3ea0187e55874d9b96ddc8b2a57b639e86a6aff6"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/harbor-gull-after.png",
+      "bytes": 43983,
+      "sha256": "45284e0d54c9beacf1b7663769ae0bbd8a7208f5630695bfe1f87bcba2c1b076"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/harbor-gull-before.png",
+      "bytes": 34863,
+      "sha256": "0796550d5a208c9303125f8bf4b393c7dc5150024e4dc207a0931f8bef05ba83"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/lightning-mast-after.png",
+      "bytes": 75064,
+      "sha256": "da61f179d02977e7d36099afc525c0dbece8201dc2ea50db07eaa0d15d4b8720"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/lightning-mast-before.png",
+      "bytes": 61196,
+      "sha256": "28a4151fce0e88c6b824ee1068149ef3f4f7ec9e483bc21ce9dace26e3ddb3dd"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/mail-balloon-after.png",
+      "bytes": 55102,
+      "sha256": "59e9f19d27f375c3664da2f91189fd6138d6807666e8011b75e0ea117e55a239"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/mail-balloon-before.png",
+      "bytes": 39848,
+      "sha256": "37e62699b1641c5fc77ff85b8c23dec7cd88a5beeb8003dbea9fa4fd5427e4a6"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/root-garden-after.png",
+      "bytes": 76152,
+      "sha256": "80f7037096344850e28f1c62730126d0a08946c4e9f67b83670e81195588db80"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/root-garden-before.png",
+      "bytes": 50966,
+      "sha256": "a9ad739ea8e9de78069e7ee5851f5e5e955d59a9f8cc7e9f07d7b8b46eab776c"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/sunlit-cloud-after.png",
+      "bytes": 81319,
+      "sha256": "6340b80b12e9402e00dd6abe049eb7afc69c11eb24988ef32c6a77f62868cd12"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/sunlit-cloud-before.png",
+      "bytes": 44975,
+      "sha256": "858dd6fc5341aeee971d9f7315ed22121eefafd8abc5551311e9630616ee5259"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/wind-tree-after.png",
+      "bytes": 60505,
+      "sha256": "23c1e45822d089c7b9300b0d422645f0aa8e018fbe309963f989c92b344665b0"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/comparisons/wind-tree-before.png",
+      "bytes": 37655,
+      "sha256": "5ba3564c4b9d86784ef7914db39038be72806e1ed12f3296ac128854ae2aceaa"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/execution-receipt.json",
+      "bytes": 1236,
+      "sha256": "a9d20ad00e1f0603ddd467c8d22e4735c9051af0dc123dce493559f9958c37f1"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/failures/browser-r4.json",
+      "bytes": 841,
+      "sha256": "33fcada403117fd1638808d9eff0b37c207a77bf59036262bebc7928cbc3b632"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/format-verification.json",
+      "bytes": 177822,
+      "sha256": "5d119badc38af2a08d267f0699aa95353c60ecf548a285cb629e7da86f19c67b"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/generation-report.json",
+      "bytes": 164,
+      "sha256": "4b376b6f4876f53661da38bc4004005fe072eba785f46d3f4ea5460acbf3a187"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/index.html",
+      "bytes": 16260172,
+      "sha256": "d0cdb19c4ebf78db06a2e23870b50e28dc83e6984c0e7e41e5eb570e1667a79f"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/cargo-crane.json",
+      "bytes": 1482,
+      "sha256": "5cf56a06c462a63160f06f163f4ddb3518a9581d6289644ec89264fd896b7a3c"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/cliff-songbirds.json",
+      "bytes": 1491,
+      "sha256": "b3feda6cc8bf5150d46e394d7a15b9ffa4630549958a449ee4bebbd4f6944013"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/crescent-pass.json",
+      "bytes": 1481,
+      "sha256": "50b32dc28c19ad00f78763d6e679c54b6f24bbbaa0116db3328872c355541636"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/double-arch.json",
+      "bytes": 1471,
+      "sha256": "3e4ed500fc01f66ce31b56174c4a05a3fe579271af06ccd84e0b3b2558c3cb8b"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/hanging-garden.json",
+      "bytes": 1475,
+      "sha256": "0532d3e9033405217dbeb73a97808547f15c807b6ec5f74b8c183e539e71089e"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/harbor-gull.json",
+      "bytes": 1464,
+      "sha256": "30bb8089db44599248acf431497946e2e8d81dc76072b5651aebd411ec454b0a"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/lantern-buoy.json",
+      "bytes": 1492,
+      "sha256": "1b191afdedc36b45d898540044c55277d63e032b843c9fe1172630e7bc319478"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/lightning-mast.json",
+      "bytes": 1497,
+      "sha256": "52e8baec9fd015b5c69d56e90b7dcf5ec38ecf02289e989a6fd780e801734a7b"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/mail-balloon.json",
+      "bytes": 1474,
+      "sha256": "6220e6e136975e38ec1ce1a8cdb21726016dcf627e2c44ae0e735ee326f0792c"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/mist-ribbons.json",
+      "bytes": 1450,
+      "sha256": "21a59a97c8b7538964488e582a85741f31f1da10fa9a6df3d272802e29af9e66"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/patch-envelope.json",
+      "bytes": 1489,
+      "sha256": "544906f8ea0339548629b8fffa9abac5751d4e7a2422d55fa4a835b882b5c016"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/quiet-terrace.json",
+      "bytes": 1487,
+      "sha256": "3965d51021a149df3d25c42744fdf9fdd04f4e2298e5399138ce09a3ae87bf3d"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/ridge-raptor.json",
+      "bytes": 1446,
+      "sha256": "056ae9a286afbe7b963e277290b9f6e40093c5ad91a1e50ef1daac1a2c9be960"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/rising-cloud.json",
+      "bytes": 1460,
+      "sha256": "f6847a1a64a70399ab8e98156393dc54bcb4b406c4078b95a261a3112a83716a"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/root-garden.json",
+      "bytes": 1475,
+      "sha256": "34488aeb1b1d372c6eac1606c8f89d3e20a26e2041aa22f1e321667d4d49f065"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/star-lanterns.json",
+      "bytes": 1497,
+      "sha256": "b8c286bc1d8523c48ca524459a4f8471359e19578d099a1211dfa9b378716fcc"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/storm-front.json",
+      "bytes": 1442,
+      "sha256": "92ba37b32b4ad4cccd9262fce14bada196a753fbdc83330238e67753130167f3"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/sunlit-cloud.json",
+      "bytes": 1442,
+      "sha256": "7291564a2a5682f5d9de6f7a503aea272157ac007b3acb335d1a6b3e04a05423"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/supper-deck.json",
+      "bytes": 1499,
+      "sha256": "bb8cabc789c15b2a52c5d55cd1cd22ab2af4b768a9f6b7dc4726961946d1a50e"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/water-terraces.json",
+      "bytes": 1486,
+      "sha256": "6d68bc72154e6d916f7055f52147f1b9462180628be053e7830f0dbb14c3a3b6"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/wind-ribbon-mast.json",
+      "bytes": 1476,
+      "sha256": "efcdcd79d9bee1b650eca932c70473942b0d4c8ebe0031631792dc75518a624d"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/wind-swallows.json",
+      "bytes": 1493,
+      "sha256": "92f454f62318f9bbdfa144a496fa70ad2bc0ad064d7a253227f987378067c33e"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/wind-tree.json",
+      "bytes": 1467,
+      "sha256": "2d2e0f8c5d551f0b8468d0d790581f137758361abd418df330485b962be42a5b"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/manifests/wreck-garden.json",
+      "bytes": 1485,
+      "sha256": "08220525b774ae062cc43e6a4d3acc5d8dc3d85cb005dd52e31b4b6a48cdded0"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/moodboards/01-voyage-atmosphere.png",
+      "bytes": 3344834,
+      "sha256": "736de0f79f088271d0616e9026c4831de7beacc19f3670e1a77dc840842f019b"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/moodboards/02-floating-islands.png",
+      "bytes": 3065182,
+      "sha256": "807aaea91cf03f0a1bf09960b8e34716fbc689f54ea2a56ff9d60f0ac0dc4e67"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/moodboards/03-clouds-and-birds.png",
+      "bytes": 2810923,
+      "sha256": "69e1a2ec29cddbe51b541d97ef262e7264b0eed9e1b25cfeb487e2a7240a9552"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/moodboards/prompts.json",
+      "bytes": 9881,
+      "sha256": "35de3ef984040b3086212b45402a4b42b62a6788696970e7216b85862502b447"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/cargo-crane.png",
+      "bytes": 38458,
+      "sha256": "252ed6f3dd4238583b577abaf49fe38277f988dbb2a6fd0296f557af28cbc47f"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/cliff-songbirds.png",
+      "bytes": 26107,
+      "sha256": "2af5cf1c06198efe5684bc2d93822833f97fe9a82d0a5b545725150cb0935561"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/crescent-pass.png",
+      "bytes": 31999,
+      "sha256": "6297e1d884f1ba44872abed8ab65111f7b9ddb8cf5d037dbf4679733fdf2f325"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/double-arch.png",
+      "bytes": 36359,
+      "sha256": "87c3c01d8e7293964c13efd30ac6103e402407aa949c4ab0da17807e1ad014f1"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/hanging-garden.png",
+      "bytes": 38914,
+      "sha256": "1b1008dbd2b2315c9ccabaf01b2dacf1e45d1b53dc15c9b8c90e793fabe066be"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/harbor-gull.png",
+      "bytes": 20497,
+      "sha256": "0b75766bfbdb8e1a27b2c56e212b94a555a1b7426599380b1dafcf589df20e9f"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/lantern-buoy.png",
+      "bytes": 24123,
+      "sha256": "1f2a05cd1bc694af1673734c15453ca40233a666070c43c8058d001456fb99d7"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/lightning-mast.png",
+      "bytes": 32059,
+      "sha256": "8413c3d95786ebe60ffa07513162ca7faf430273fe8a5cec2e9a1daa3c30a130"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/mail-balloon.png",
+      "bytes": 23101,
+      "sha256": "6a4d78ce0221ef0bb8d4b455182a33ab20bbe9ded579741411f770bd3148f6d4"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/mist-ribbons.png",
+      "bytes": 21180,
+      "sha256": "9a8cea7fa30aec5f6d4d460ca351dfcbd57e7ec68d847e4dc6b3959d3a28d8ba"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/patch-envelope.png",
+      "bytes": 37111,
+      "sha256": "8315076506b2eea6d5f0bcac694addd187c9835de6788a64ebb79b2c6a7edbf3"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/quiet-terrace.png",
+      "bytes": 31563,
+      "sha256": "56e24b6af58761238a56bb7df2e0662a20c81745fb408edc33e71e6cb0c6f647"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/ridge-raptor.png",
+      "bytes": 20324,
+      "sha256": "0ba4a416aa65f2b5c41e9b513ad84f3282328c3e2098065468a927f900fa4c13"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/rising-cloud.png",
+      "bytes": 26156,
+      "sha256": "908c827d12c962c45359235b71a18b58a4e8570e840d4b0e8a2fa9846a2a6472"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/root-garden.png",
+      "bytes": 33098,
+      "sha256": "6d12b8a26da8578501a1af4321d709c096537cd21f3238ad645874276392a228"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/star-lanterns.png",
+      "bytes": 32725,
+      "sha256": "387fb63513918facae2d8edef35c1c0d3ea5804fc42ec6378ed8ecf670ab1a61"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/storm-front.png",
+      "bytes": 29500,
+      "sha256": "168ace6596ea6614c962ebdc6e10d12554a4f0176979c3f082f337863ee6b3d2"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/sunlit-cloud.png",
+      "bytes": 31522,
+      "sha256": "e15ccc6a6df8dede020244c8e43a209218d5049c175df431df56970ec77b7e09"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/supper-deck.png",
+      "bytes": 41423,
+      "sha256": "8567b4de7abd5158fb46490d0b948f3d0d5880c0401dd80498cb0cb170dd33a7"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/water-terraces.png",
+      "bytes": 29635,
+      "sha256": "cf17191cf73d8a55b1fd3fa70b3f4a0d27ae59e56dc6ec628dbc4d8874bb3f8b"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/wind-ribbon-mast.png",
+      "bytes": 22883,
+      "sha256": "c66ba4b5fd74610e49e422df81d79e1c248ee7447fa3e253ec664961b6daf742"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/wind-swallows.png",
+      "bytes": 18386,
+      "sha256": "74fa3efaeb474cea4c2bacb0a3bfc3289091cf3fd5f15ec6fdb770f057b0cfb6"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/wind-tree.png",
+      "bytes": 25607,
+      "sha256": "8562e9bc7655ab111719e66365ca7403b935fac64b10e35aafebeb80c5551235"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/previews/wreck-garden.png",
+      "bytes": 30889,
+      "sha256": "af747e4f25e541450d49cfe9f458e227041a994eb8c3e20d8aa8f1d553faeab0"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/references/user-rich-route.png",
+      "bytes": 3466785,
+      "sha256": "ba10fe174a2565318163380e876e77ea78d43b964f2810c64443d93451a7953a"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/review-captures/collection.png",
+      "bytes": 361362,
+      "sha256": "c2504c9c09fa6eec42b8e8f77a09bdc79f252cbf50db34738b9d13c4b333ae82"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/review-captures/comparisons.png",
+      "bytes": 167135,
+      "sha256": "0ea4722b6493f1618603ad42c168ac80f106f2e65721aec626d026ab30491cd3"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/review-captures/desktop.png",
+      "bytes": 288420,
+      "sha256": "cda1576d86e28b016ad5110ad1cfbdcc26ba70263bfc7feeff1476a0b8acaed2"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/review-captures/mail-balloon.png",
+      "bytes": 185031,
+      "sha256": "37ee778c401afde025130f547a5ccedab8b050c9862607a92a7d20d50582df0d"
+    },
+    {
+      "path": "outputs/map-atmosphere-v1/review-captures/mobile.png",
+      "bytes": 61676,
+      "sha256": "dd7cb02c72222d68a229e68c3c088b930e8bb6fac8b885b06f3976ad327ebb3d"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/README.txt",
+      "bytes": 3368,
+      "sha256": "cab1232a0bc7877db85a8b4569898d4a4057e1e3fd7856761ddba06e95e387c3"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/baseline-r1/props.mjs",
+      "bytes": 31125,
+      "sha256": "20bc7ef6fbc266d6adaaab8ddc63f463be6030efc48c47a9d7cd2abc7789c7fd"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/baseline-r1/sky.mjs",
+      "bytes": 22100,
+      "sha256": "53843f5e1fbc35daccb93e564712058831168d976ed52b55d05083ddd6237c97"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/baseline-r1/terrain.mjs",
+      "bytes": 24743,
+      "sha256": "2f0a6aa9eb1b7c811ecae58e56428d7a58e18e776398879d813e8389254c4f73"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/build.cjs",
+      "bytes": 9641,
+      "sha256": "81109ab8eb373bd26c34b84e627d597ec9cd84f106738b5394dc0b2038e20c34"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/deps-loader.mjs",
+      "bytes": 730,
+      "sha256": "580ae566f2686851d0c1ee18206579080fc14f266c3fdfa1a67464603bf9c172"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/generate.mjs",
+      "bytes": 6631,
+      "sha256": "ef9f6e28ce4aadbfe83853646ad5b0ecf11184240d8036132c3cb8b9f0680c13"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/history/build-r4.cjs",
+      "bytes": 9637,
+      "sha256": "36f5a846fc4498f1adeb9a200428ba6f21eebb81e5325634978c2d54d868ac26"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/props.mjs",
+      "bytes": 40911,
+      "sha256": "83b91fedef9e2613bd283e1e5cedc8abeaeffceb67d6aed1122704b137cea326"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/sky.mjs",
+      "bytes": 26359,
+      "sha256": "6fdb50cdff504c6e8da2917917de0aa4cb8eef2449dde27697d9a25e4ddd6f5e"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/template.html",
+      "bytes": 9861,
+      "sha256": "7e9f58c14cce81218b798791c55536c0a6fa4302d512a012ae6b1547783431e3"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/terrain.mjs",
+      "bytes": 34613,
+      "sha256": "de025448731fc8185248e958312f8aae73575e816342b8f9165fb49d07d8ae6c"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/verify-browser.cjs",
+      "bytes": 10642,
+      "sha256": "23e1d0f916e8e16981c40f5d193e3c60cee2e34507b83051442d88bcb783cc38"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/verify.mjs",
+      "bytes": 12303,
+      "sha256": "eb652ee64faab8037cd221afac794d6fc01956d43dd2ad1279cdd74a17efa1b4"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/viewer.js",
+      "bytes": 25082,
+      "sha256": "1d828a33ddc6febf8419c9007e04adcc73e4537be6590880ac592d60f23b61c5"
+    }
+  ]
+}

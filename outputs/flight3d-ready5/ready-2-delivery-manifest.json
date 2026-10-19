@@ -1,0 +1,133 @@
+{
+  "version": "flight3d-ready-2",
+  "scope": "Independent XYZ free-flight gameplay sandbox; Q/E and gentle strafe; earlier planar/camera artifacts preserved",
+  "browserQA": "pending-integration-owner",
+  "files": [
+    {
+      "path": "tools/flight3d/HANDOFF.md",
+      "bytes": 6391,
+      "sha256": "82c70d9644e8344a729c21faf4616cd5181f73c94d6b398ed2a17551316c48fc"
+    },
+    {
+      "path": "tools/flight3d/app.js",
+      "bytes": 11404,
+      "sha256": "9ad92367a3cd6dd9a675372dec2c1ff8bdeb3e75d8840fb99c2b3c1ce54157c1"
+    },
+    {
+      "path": "tools/flight3d/build.cjs",
+      "bytes": 1523,
+      "sha256": "47f4af7a93f1472bbb180aa90887a1320de27b8ad74ac11c7013586d0329f210"
+    },
+    {
+      "path": "tools/flight3d/camera-geometry.mjs",
+      "bytes": 3523,
+      "sha256": "a2c4d670c27595bbea56e3b830a9cf04b2459c32d399e035c3e70e110d01c21f"
+    },
+    {
+      "path": "tools/flight3d/camera-geometry.test.mjs",
+      "bytes": 3850,
+      "sha256": "e1d3fe15228f840a3db9058480726213edf0a686d5b08b15627dbee8014751f8"
+    },
+    {
+      "path": "tools/flight3d/renderer.js",
+      "bytes": 13422,
+      "sha256": "aed492625c3be39695fe2cd3fd9e6261ba639d62cf8c5e5041fc8d2c819f38b6"
+    },
+    {
+      "path": "tools/flight3d/sim.mjs",
+      "bytes": 22234,
+      "sha256": "96c92d7b6209a0edc8bee520ff833c116c12839b05af44404e43eb790451be5a"
+    },
+    {
+      "path": "tools/flight3d/sim.test.mjs",
+      "bytes": 15086,
+      "sha256": "2a1af797a64974ae14849eecf0bbaa1dbc84b8aa319757c452622c4f07c5ea02"
+    },
+    {
+      "path": "tools/flight3d/snapshot.mjs",
+      "bytes": 1629,
+      "sha256": "762f8b97027d651fe690463a69fd640bba57489c4ba205b11abc70d1d6563243"
+    },
+    {
+      "path": "tools/flight3d/style.css",
+      "bytes": 18842,
+      "sha256": "6f55f73aac51cf18af484480c49bca085933e0bd18b245255b2045d94ee15d36"
+    },
+    {
+      "path": "tools/flight3d/template.html",
+      "bytes": 8333,
+      "sha256": "4fa722b4cec5bd95d34d68be554d610e872643f51979134db074ad596a42b81e"
+    },
+    {
+      "path": "tools/flight3d/verify-browser.cjs",
+      "bytes": 6897,
+      "sha256": "9cdce4a15363c97da00c9dcdedc1ddaae797fa900dc5222ba10089818582b5c8"
+    },
+    {
+      "path": "tools/flight3d/verify-source.mjs",
+      "bytes": 1795,
+      "sha256": "cf7d8147905db51c12c855b2e9b3cfd042d611b95f11bebe665758893beacf94"
+    },
+    {
+      "path": "outputs/flight3d-v1/build-manifest.json",
+      "bytes": 2848,
+      "sha256": "652c3fa3f9f8f9008d35a9bd42627c9bb911477bf798946ce05d65371d5e0296"
+    },
+    {
+      "path": "outputs/flight3d-v1/flight.js",
+      "bytes": 789610,
+      "sha256": "a6a401b3a71197a4b633190b9dca3ab630300a2752730c6c0feaaf7fe589a788"
+    },
+    {
+      "path": "outputs/flight3d-v1/index.html",
+      "bytes": 8333,
+      "sha256": "4fa722b4cec5bd95d34d68be554d610e872643f51979134db074ad596a42b81e"
+    },
+    {
+      "path": "outputs/flight3d-v1/preview-iab.jpg",
+      "bytes": 73327,
+      "sha256": "0e938896b5d49b47a1b609010509cc8292df0d045d9fec03aba30cfa4a233162"
+    },
+    {
+      "path": "outputs/flight3d-v1/ready-1-delivery-manifest.json",
+      "bytes": 4032,
+      "sha256": "23e2ff04f42764e37b5a810420da611d45cd0474e3e24e4f2c255babf9327874"
+    },
+    {
+      "path": "outputs/flight3d-v1/source-verification.json",
+      "bytes": 779,
+      "sha256": "f782aad2f4e1364c473a6197b02f4a34ea7988686b6daecea95333d329e4bb3a"
+    },
+    {
+      "path": "outputs/flight3d-v1/style.css",
+      "bytes": 18842,
+      "sha256": "6f55f73aac51cf18af484480c49bca085933e0bd18b245255b2045d94ee15d36"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "tools/battlefield/assets.js",
+      "role": "read-only shared GLB loader bundled into flight.js",
+      "bytes": 15505,
+      "sha256": "624532b463d498c5b0ad3ccc1c2ade75ea903af819b6871b6c0fb6aff0f3834b"
+    },
+    {
+      "path": "outputs/fleet-v1/catalog.json",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 469686,
+      "sha256": "d73ea3d133167ce78d468c8df25ecae6dffb058457050993349fd2a138e1fda9"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/player-homeward.glb",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+      "role": "read-only original fleet asset; compare SHA, never copy over shared files",
+      "bytes": 6699020,
+      "sha256": "bce2d9891de2225d6823cb1c347a4b8d6b7e3dd2f59e056db78530661d131923"
+    }
+  ]
+}

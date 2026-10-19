@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:01:08.9096341Z",
+  "status": "finalized first integration cycle",
+  "manifestVerification": {
+    "path": "outputs/integration-v1/delivery-manifest.json",
+    "sha256": "00818f84eeceaa8bc3be5d00b905f01f8bd1499ce67a0ae0fd24f88c56291210",
+    "files": 39,
+    "passed": true,
+    "failures": []
+  },
+  "integrationReports": [
+    {
+      "path": "outputs/integration-v1/verification.json",
+      "bytes": 2729,
+      "sha256": "6177b505c54814bb16b5964848d54ac010141e280c47c631ca3e16f081727c94",
+      "passed": true,
+      "checkCount": 11,
+      "summary": {
+        "restoredMedia": 841,
+        "old686Preserved": true,
+        "sourceTests": 134,
+        "sourceFailures": 0,
+        "browserChecks": 21,
+        "levelChecks": 22,
+        "presentationChecks": 6,
+        "lifecycleChecks": 7,
+        "inputVoyages": 2,
+        "sameRendererLifecycleVoyages": 4,
+        "simulatedReceiptStressSeconds": 1199.9999999992374,
+        "browserRenderStressSeconds": 300
+      },
+      "tests": null,
+      "completedAt": "2026-10-18T06:59:58.761Z"
+    },
+    {
+      "path": "outputs/integration-v1/source-verification.json",
+      "bytes": 735,
+      "sha256": "9e0432e525e95073f550a858f9315df9c54fd4f80b3f98b4db42656f44456358",
+      "passed": true,
+      "checkCount": null,
+      "summary": null,
+      "tests": 134,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/rules-verification.json",
+      "bytes": 2014,
+      "sha256": "d0add2366e6ec67126f240aa39f21081415ce464effee1e6985f9415a11c0132",
+      "passed": true,
+      "checkCount": 7,
+      "summary": null,
+      "tests": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/browser-verification.json",
+      "bytes": 87927,
+      "sha256": "526428d9f8ca6a46796fec738ece8212cf1d3e6d50e09a5aea8cc602b60c571d",
+      "passed": true,
+      "checkCount": 21,
+      "summary": null,
+      "tests": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/level-browser-verification.json",
+      "bytes": 95393,
+      "sha256": "108328fe8d7864c7196284b10b432648a60608d3bee7db8641f631cc2d0318da",
+      "passed": true,
+      "checkCount": 22,
+      "summary": null,
+      "tests": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/presentation-verification.json",
+      "bytes": 7136,
+      "sha256": "1c6722563166298b6b993c5424faace2257fb5ee34cb5bfab4d0688ae485a1a8",
+      "passed": true,
+      "checkCount": 6,
+      "summary": null,
+      "tests": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/lifecycle-verification.json",
+      "bytes": 72961,
+      "sha256": "dee8d09887d972049d5a23cef80dcee02e2e5e56aa8f27279bed8dfab2f61d05",
+      "passed": true,
+      "checkCount": 7,
+      "summary": null,
+      "tests": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/handoffs.json",
+      "bytes": 22439,
+      "sha256": "2aa2ab2bfeb331e2715aff53ed814f67bfb132ca8f328cedd4fc554df151c6da",
+      "passed": true,
+      "checkCount": null,
+      "summary": null,
+      "tests": null,
+      "completedAt": null
+    }
+  ],
+  "sharedContractRecords": [
+    {
+      "path": "tools/battlefield/VFX-V2-INTERFACE.md",
+      "bytes": 11327,
+      "sha256": "49ac3a8eab0bf3c3bce5adc3739d190af25bbceba6fb2083be21f49735a75519"
+    },
+    {
+      "path": "tools/harbor/PLAYABLE-HANDOFF.md",
+      "bytes": 12063,
+      "sha256": "9541f61e2b29996473219520a90a296bd2e2166c0c469c427e323471d98683cd"
+    },
+    {
+      "path": "outputs/handoff/DESKTOP_INTEGRATION_LOCAL-2026-10-18.md",
+      "bytes": 2704,
+      "sha256": "b976fe09b77a5463a62fd5d21bb9d33d8527013ecddc5ed9ace4dcb2e86afd98"
+    }
+  ]
+}

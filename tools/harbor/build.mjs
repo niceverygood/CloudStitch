@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { createWorldContacts } from './adapters.mjs';
+const dir = path.dirname(fileURLToPath(import.meta.url));
+const root = path.resolve(dir, '../..');
+const modules = new Map(), chunks = [];
+function bundle(file) {
+  file = path.resolve(file);
+  if (modules.has(file)) return modules.get(file);
+  const key = `module${modules.size}`; modules.set(file, key);
+  let code = fs.readFileSync(file, 'utf8');
+  code = code.replace(/^import\s*\{([^}]+)\}\s*from\s*['"]([^'"]+)['"];?\s*$/gm, (_, names, spec) => `const {${names}} = ${bundle(path.resolve(path.dirname(file), spec))};`);
+  const exports = [];
+  code = code.replace(/\bexport\s+(?:async\s+)?(function|class|const|let)\s+(\w+)/g, (_, kind, name) => { exports.push(name); return `${kind} ${name}`; });
+  code = code.replace(/^export\s*\{([^}]+)\};?\s*$/gm, (_, names) => { exports.push(...names.split(',').map(n => n.trim())); return ''; });
+  if (/^\s*(import|export)\s/m.test(code)) throw new Error(`Unsupported module syntax: ${path.relative(root,file)}`);
+  chunks.push(`const ${key} = (() => {\n${code}\nreturn {${exports.join(',')}};\n})();`);
+  return key;
+}
+bundle(path.join(dir, 'app.mjs'));
+const contacts = createWorldContacts(JSON.parse(fs.readFileSync(path.join(root, 'outputs/world-assets/catalog.json'), 'utf8')), JSON.parse(fs.readFileSync(path.join(root, 'outputs/world-assets/scene-catalog.json'), 'utf8')));
+if (!contacts.ok) throw new Error(contacts.errors.join('\n'));
+const code = `const WORLD_CONTACTS = ${JSON.stringify(contacts)};\n${chunks.join('\n')}`;
+if (/<\/script/i.test(code)) throw new Error('Unsafe inline script token');
+const html = fs.readFileSync(path.join(dir,'template.html'),'utf8').replace('/* HARBOR_BUNDLE */', code);
+const out = path.join(root, 'outputs/harbor-v1'); fs.mkdirSync(out,{recursive:true});
+fs.writeFileSync(path.join(out,'index.html'),html);
+fs.writeFileSync(path.join(out,'world-contacts.json'),JSON.stringify(contacts,null,2)+'\n');
+console.log(`Built outputs/harbor-v1/index.html (${Buffer.byteLength(html)} bytes); no npm dependencies.`);

@@ -1,0 +1,1218 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "date_seoul": "2026-10-18",
+  "scope": "23 residual primary effects: source, actual existing GLB and existing capture review; no browser/new render/output generation/paid operation/dependency change",
+  "status": "source_review_and_scoped_fixes_ready_requires_new_render",
+  "source": "tools/combat-vfx-v2/primary.cjs",
+  "source_sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9",
+  "changed_effect_ids": [
+    "cannon-projectile",
+    "mortar-launch",
+    "mortar-projectile",
+    "harpoon-launch",
+    "harpoon-hit",
+    "chain-shot-launch",
+    "chain-shot-hit",
+    "flamethrower-ignite",
+    "wood-hit",
+    "metal-hit",
+    "fabric-hit",
+    "armor-hit",
+    "ricochet-hit",
+    "penetration-exit"
+  ],
+  "visual_approval": false,
+  "source_only": true,
+  "reviewed_reference_images": [
+    "outputs/combat-vfx-v2/brief/references/user-airship.png",
+    "outputs/combat-vfx-v2/brief/references/user-observatory.png"
+  ],
+  "representative_captures_inspected": [
+    "outputs/combat-vfx-v2/verification/smoke-captures/machine-gun-muzzle.png",
+    "outputs/combat-vfx-v2/verification/smoke-captures/smoke-puff.png",
+    "outputs/combat-vfx-v2/verification/smoke-captures/cannon-hit.png",
+    "outputs/combat-vfx-v2/verification/smoke-captures/flamethrower-stream.png",
+    "outputs/combat-vfx-v2/verification/smoke-captures/shield-pulse.png",
+    "outputs/combat-vfx-v2/verification/smoke-captures/repair-stitch.png"
+  ],
+  "representative_binaries_rewritten": false,
+  "contract": {
+    "up": "+Y",
+    "muzzle_forward": "+Z; aim via muzzleFrame",
+    "impact_surface_normal": "+Y",
+    "impact_tangent": "+Z",
+    "projectile_motion_owner": "gameplay; clone/reset moving_payload geometry subtree, do not play baked preview travel",
+    "hit_authority": "Only actual contact selects a hit. Art clips are not event producers.",
+    "lifecycle": "Host/state/projectile-ended owns stop; pool reset time/TRS/parent/target/endpoints/opacity/outline/loop.",
+    "runtime_features": "runtime_fade, cel and outline remain separate runtime features; GLB animation is standard TRS only"
+  },
+  "items": [
+    {
+      "id": "machine-gun-projectile",
+      "order": 2,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb",
+          "bytes": 59028,
+          "sha256": "9fede02363cd212d3ac628ecc51c7114c47f5646aa91944ee2c00f815138dbac",
+          "meshes": 2,
+          "channels": 4,
+          "moving_payload_subtree": "machine-gun-projectile_moving_payload_0"
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Tiny projectile and its separate tail need small game-camera readability confirmation. The scene has baked +Z0→4 translation; gameplay must clone moving_payload geometry and own motion."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "Thin ivory shot and a restrained short tail remain readable without resembling a cannon shell.",
+        "The runtime geometry extraction contains the bullet only; no preview world translation is copied."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.054,
+        0.2025,
+        0.3375,
+        0.45
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 59028,
+        "sha256": "9fede02363cd212d3ac628ecc51c7114c47f5646aa91944ee2c00f815138dbac",
+        "meshes": 2,
+        "channels": 4,
+        "clip_max_seconds": 0.45,
+        "moving_payload_subtree": "machine-gun-projectile_moving_payload_0"
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "machine-gun-hit",
+      "order": 3,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb",
+          "bytes": 117336,
+          "sha256": "10561ff655c101b7efef1805e774d3aec6ebef2dcf0e5c7886da4f0dcc87e4b0",
+          "meshes": 4,
+          "channels": 7,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Three fine pigment flicks and one impact comma are source-distinct from explosion; no fresh v2 render exists. Fine streaks may become too small at game scale."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "A fast tiny comma and three warm flicks read as bullet contact; target surface stays visible.",
+        "Effect has contracted at0.35s and only actual contact should trigger it."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.042,
+        0.1575,
+        0.2625,
+        0.35
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 117336,
+        "sha256": "10561ff655c101b7efef1805e774d3aec6ebef2dcf0e5c7886da4f0dcc87e4b0",
+        "meshes": 4,
+        "channels": 7,
+        "clip_max_seconds": 0.35,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "cannon-muzzle",
+      "order": 4,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb",
+          "bytes": 7464616,
+          "sha256": "845495596e9d801f0f19ebcfb9aa55efc3d59bd6f1cb44e9a1fbeffd09c0a42b",
+          "meshes": 6,
+          "channels": 13,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "A1.05 flame and0.7 smoke are larger than machine-gun muzzle but may still hide the actual bore. Needs peak and late-phase render in the same muzzleFrame."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "Broader, short axial flash is followed by modest smoke; the weapon and target remain recognizable.",
+        "No closed ring dominates the silhouette."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.054,
+        0.2025,
+        0.3375,
+        0.45
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 7464616,
+        "sha256": "845495596e9d801f0f19ebcfb9aa55efc3d59bd6f1cb44e9a1fbeffd09c0a42b",
+        "meshes": 6,
+        "channels": 13,
+        "clip_max_seconds": 0.45,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "cannon-projectile",
+      "order": 5,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/cannon-projectile.glb",
+          "bytes": 59000,
+          "sha256": "e7b20e7b91ba723cea791c8a521615ef640f0dcd7f4c0dffbb39a3e4625d3b1b",
+          "meshes": 2,
+          "channels": 4,
+          "moving_payload_subtree": "cannon-projectile_moving_payload_0"
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary used the same brass swept capsule as mortar; size alone did not give a readable cannon-shell silhouette. Preview translation must never be doubled by physics."
+      ],
+      "changes": [
+        "Replace generic brass stroke by a dark, elongated matte shell body with a narrow brass waist band.",
+        "Add restrained axial rotation while preserving moving_payload_0 geometry root and the original +Z travel keys."
+      ],
+      "expected_observations": [
+        "A compact dark cannon shell with a warm waist band is distinct from the fine machine-gun streak and the squat mortar shell.",
+        "Gameplay geometry subtree stays centered after reset and does not play baked travel."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.096,
+        0.36,
+        0.6,
+        0.8
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 56460,
+        "sha256": "1f449737c11086ef72f598808075a28280757e8480d17bd923b9ee60e2c0a2a9",
+        "meshes": 3,
+        "channels": 5,
+        "clip_max_seconds": 0.8,
+        "moving_payload_subtree": "cannon-projectile_moving_payload_0"
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "mortar-launch",
+      "order": 7,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/mortar-launch.glb",
+          "bytes": 7405632,
+          "sha256": "97aa1c00f318f563e8b8846a727b66a93fd145d1f7358c4fbbc8e67bc28b0e5c",
+          "meshes": 4,
+          "channels": 9,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [
+          "outputs/combat-vfx/previews/mortar-launch.png"
+        ],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary shared generic flame/smoke/sparks with other launch effects.",
+        "Local +Z is correct per muzzle contract; upward bore alignment belongs to the placement muzzleFrame, not an internal +Y axis substitution."
+      ],
+      "changes": [
+        "Replace generic launch burst by one modest axial flash, a Meshy smoke plume moving along local +Z, and a short open cream pressure comma.",
+        "Reduce flame footprint and remove the generic radial spark burst."
+      ],
+      "expected_observations": [
+        "With muzzleFrame +Z aimed through the upward tube, the plume exits the bore upward instead of firing horizontally from its tip.",
+        "A pressure puff dominates the brief event, with a small flash and an open silhouette that exposes the tube."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.072,
+        0.27,
+        0.45,
+        0.6
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 7384308,
+        "sha256": "f173a10601cae51241647778a1f2557a709d226e9c9212532f52ef64d80cce2e",
+        "meshes": 3,
+        "channels": 5,
+        "clip_max_seconds": 0.6,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "mortar-projectile",
+      "order": 8,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/mortar-projectile.glb",
+          "bytes": 59004,
+          "sha256": "9cbc4998b92a89e02833af94e670f1a941445faf332dc50af3eb685ff5befb1f",
+          "meshes": 2,
+          "channels": 4,
+          "moving_payload_subtree": "mortar-projectile_moving_payload_0"
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary used the same generic capsule as cannon and had no changing nose orientation on its rising/falling arc.",
+        "Baked Y-arc/Z-forward movement is a choreography preview; it is not trajectory physics."
+      ],
+      "changes": [
+        "Use a squat dark shell body and a narrow brass waist band, shorter and wider than cannon.",
+        "Add nose pitch keys from rising toward falling without changing +Y arc/+Z forward positions or moving_payload_0 root."
+      ],
+      "expected_observations": [
+        "Shell visibly tilts from ascent toward descent and remains squat.",
+        "The arc rises in +Y and advances +Z; launch-frame rotation is not applied again to this preview trajectory."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.192,
+        0.72,
+        1.2,
+        1.6
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 56468,
+        "sha256": "f307ff488a9886da937a1ce927fff16b463bf4214aab687d53ec717ebcb1cece",
+        "meshes": 3,
+        "channels": 5,
+        "clip_max_seconds": 1.6,
+        "moving_payload_subtree": "mortar-projectile_moving_payload_0"
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "mortar-hit",
+      "order": 9,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/mortar-hit.glb",
+          "bytes": 7533452,
+          "sha256": "dec91a6aa76c1c7799184da23e02cb128f8a636fe981876614bb5c66e8bf40cd",
+          "meshes": 8,
+          "channels": 18,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "impact(true) reuses the cannon family with larger pressure sweep and flame/smoke. Its1.2s timing should read heavier and wider without covering the target."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "Open low pressure sweep, two asymmetric flames, restrained shavings and late smoke read as a wider mortar impact.",
+        "Pressure arrives first, flame peaks second, smoke is last; target is not replaced by a solid sphere."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.144,
+        0.54,
+        0.9,
+        1.2
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 7533452,
+        "sha256": "dec91a6aa76c1c7799184da23e02cb128f8a636fe981876614bb5c66e8bf40cd",
+        "meshes": 8,
+        "channels": 18,
+        "clip_max_seconds": 1.2,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "harpoon-launch",
+      "order": 10,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+          "bytes": 7434552,
+          "sha256": "af618b09841ca46c89dd40bbc1f5257d7459ae7a66efcf8aa4d9fc26e64b3f35",
+          "meshes": 5,
+          "channels": 10,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [
+          "outputs/combat-vfx/previews/harpoon-launch.png"
+        ],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary had the same one-flame/one-smoke/spark recipe as chain launch, with only one additional tension stroke. It read as a gun blast instead of released tension."
+      ],
+      "changes": [
+        "Replace the fire/smoke burst by two tapered teal/cream tension flicks and a loose rope curl.",
+        "Move and relax the curl/flicks along +Z with a short staged release."
+      ],
+      "expected_observations": [
+        "A dry taut release and small cream curl are distinct from cannon/flamethrower fire.",
+        "The bore stays visible and the rope hint travels forward rather than forming a large solid halo."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.042,
+        0.1575,
+        0.2625,
+        0.35
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 98004,
+        "sha256": "a78f2da80c6992880763342e248082374891d6943e754d373834dd8caca4fdfd",
+        "meshes": 3,
+        "channels": 7,
+        "clip_max_seconds": 0.35,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "harpoon-projectile",
+      "order": 11,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb",
+          "bytes": 77784,
+          "sha256": "467da74e607d66f8ff28997d88a981bb6ce4f2a0495f4e7468f0ba45c637dd59",
+          "meshes": 3,
+          "channels": 3,
+          "moving_payload_subtree": "harpoon-projectile_moving_payload_0"
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Harpoon head and rope intentionally remain visible at final key, unlike other projectiles. Keep hold_after_arrival extras and do not treat clip completion as an actual latch.",
+        "The rope is a preview origin-to-Z4 strip, not a runtime endpoint solver; geometry-only subtree excludes rope_hold."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "Single barb advances +Z and the slim cable extends from origin to the head.",
+        "At1s the head and cable persist; a later host/projectile-ended event must remove them and clear endpoints."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.45,
+        0.75,
+        1
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 77784,
+        "sha256": "467da74e607d66f8ff28997d88a981bb6ce4f2a0495f4e7468f0ba45c637dd59",
+        "meshes": 3,
+        "channels": 3,
+        "clip_max_seconds": 1,
+        "moving_payload_subtree": "harpoon-projectile_moving_payload_0"
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "harpoon-hit",
+      "order": 12,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/harpoon-hit.glb",
+          "bytes": 147540,
+          "sha256": "25fa2edced6e2c3bb53dc62bb7274827237bc9f4c3a6a58ab5b6e4f5336775ba",
+          "meshes": 5,
+          "channels": 11,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary mostly used generic brass/ink material shavings plus a barb. It lacked a readable closing latch gesture."
+      ],
+      "changes": [
+        "Replace generic shavings by a small open teal C latch that contracts and turns around the +Y normal.",
+        "Keep a compact anchored barb and two restrained brass contact flicks."
+      ],
+      "expected_observations": [
+        "A small C-shaped latch closes around the contact, with a single dark barb rather than a generic explosion.",
+        "The normal remains +Y and the target surface stays legible."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.078,
+        0.2925,
+        0.4875,
+        0.65
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 135556,
+        "sha256": "cc0066892b398e4fa5a56c40b9f0a3098c4c75eea13d58bd53033c1b5b220dd0",
+        "meshes": 4,
+        "channels": 7,
+        "clip_max_seconds": 0.65,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "chain-shot-launch",
+      "order": 13,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb",
+          "bytes": 7434532,
+          "sha256": "d9745c73a7c1839700a00bb44536145f8d7e463754d9d8bc104bac59895d68cf",
+          "meshes": 5,
+          "channels": 10,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [
+          "outputs/combat-vfx/previews/chain-shot-launch.png"
+        ],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary was nearly identical to harpoon launch and contained one central flame, despite the paired-shot purpose."
+      ],
+      "changes": [
+        "Author two small, staggered lateral flame/cream needles instead of one central generic burst.",
+        "Add two tiny open brass release links that advance along +Z, without a thick ring or smoke curtain."
+      ],
+      "expected_observations": [
+        "Two flashes separated across local X plus a short warm link wake read as a connected pair.",
+        "Paired flashes are smaller than the cannon burst and do not cover the weapon."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.06,
+        0.225,
+        0.375,
+        0.5
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 3782916,
+        "sha256": "7206afd2353256e2e2584557016288a931bb95e2333b273d9e87cd3c7424a39f",
+        "meshes": 5,
+        "channels": 12,
+        "clip_max_seconds": 0.5,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "chain-shot-projectile",
+      "order": 14,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb",
+          "bytes": 68460,
+          "sha256": "0e95f9735bd403a096c94c92d287ee6cd8ef5726a728be4c82271e226184c08a",
+          "meshes": 4,
+          "channels": 5,
+          "moving_payload_subtree": "chain-shot-projectile_moving_payload_0"
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Two forged weights and a short central chain are distinct in binary, but the thin connecting link needs game-camera readability confirmation.",
+        "Continuous spin is visual clip motion around +Z; gameplay position remains independent."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "The two dark weights stay visibly connected as the assembly rotates around the forward axis.",
+        "No detached third projectile appears and the line does not become a thick ring."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.132,
+        0.495,
+        0.825,
+        1.1
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 68460,
+        "sha256": "0e95f9735bd403a096c94c92d287ee6cd8ef5726a728be4c82271e226184c08a",
+        "meshes": 4,
+        "channels": 5,
+        "clip_max_seconds": 1.1,
+        "moving_payload_subtree": "chain-shot-projectile_moving_payload_0"
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "chain-shot-hit",
+      "order": 15,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb",
+          "bytes": 177432,
+          "sha256": "faad618e27747240aa92e9cf2fa619a82c8d1888b0de137c1e2def4f4ae64ff5",
+          "meshes": 6,
+          "channels": 14,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary was the same generic spark/shaving family as metal/armor hit, without an entangling gesture."
+      ],
+      "changes": [
+        "Replace generic shavings with two counter-turning open teal crescents and a short brass tangent snag.",
+        "Use only two compact contact sparks and contraction to end."
+      ],
+      "expected_observations": [
+        "Two open strokes turn around the +Y contact normal and suggest a snag, distinct from both metal deflection and armor dent.",
+        "The effect is decorative contact evidence and does not itself claim an engine stall or severing."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.45,
+        0.75,
+        1
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 174012,
+        "sha256": "ba2c4afb7cc93880eaf94f7262f7b6dde4f6ab1746b3eac1b6e7826eccd02c27",
+        "meshes": 5,
+        "channels": 9,
+        "clip_max_seconds": 1,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "flamethrower-ignite",
+      "order": 16,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+          "bytes": 7405756,
+          "sha256": "10d4755b6e527493f55b93f3733b72e6b489ada9c76fe60e64af990f7682270a",
+          "meshes": 4,
+          "channels": 9,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing generic launch had a0.42 smoke plume and two radial sparks as large as the ignition flame, risking a smoky gun-blast reading."
+      ],
+      "changes": [
+        "Replace generic launch branch with two small overlapping flame tongues and a narrow ivory pilot wick.",
+        "Remove ignition smoke curtain and radial sparks; keep +Z nozzle flow."
+      ],
+      "expected_observations": [
+        "A tiny wick flares into two short forward tongues and hands off visually to the continuous stream.",
+        "The nozzle silhouette remains readable during ignition."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.048,
+        0.18,
+        0.3,
+        0.4
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 3676304,
+        "sha256": "b3a36205afe2b98fe756a8d219880a26911888c3df5b16e5accc83399a4ddf50",
+        "meshes": 2,
+        "channels": 5,
+        "clip_max_seconds": 0.4,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "flamethrower-hit",
+      "order": 18,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+          "bytes": 7348288,
+          "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97",
+          "meshes": 2,
+          "channels": 7,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Two normal-oriented flame tongues and late smoke are source-distinct from the stream; contact size and peak/late visibility still need a fresh scene render.",
+        "Separate runtime fade needs per-instance materials; standard GLB only contracts transforms."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "Short +Y contact flames sit close to the actual surface; they do not imply a second outward cone.",
+        "Late smoke stays small and thin while stream/contact overlap can remain legible."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.108,
+        0.405,
+        0.675,
+        0.9
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 7348288,
+        "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97",
+        "meshes": 2,
+        "channels": 7,
+        "clip_max_seconds": 0.9,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "wood-hit",
+      "order": 19,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/wood-hit.glb",
+          "bytes": 237128,
+          "sha256": "884ef7a66077bef48c830f0f49a3747e8a6325acc5e3e9699d87114ce7dd9e8b",
+          "meshes": 8,
+          "channels": 20,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing material shavings ended at local Y=-0.1, crossing behind the impact surface before shrinking.",
+        "Four tall wood brush splinters plus pigment flicks need density/legibility check."
+      ],
+      "changes": [
+        "Keep terminal wood-shaving centers outside the surface at Y0.04 instead of Y-0.1; retain all other splinter timing/shape."
+      ],
+      "expected_observations": [
+        "Warm long splinters scatter outward and remain in front of the hit surface as they contract.",
+        "Wood response is denser/coarser than fine metal sparks but does not hide a module joint."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.084,
+        0.315,
+        0.525,
+        0.7
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 237116,
+        "sha256": "39914f632fdf50a39fae3c4b1c810111dead56a2739249ca0fe44077cd07e4d9",
+        "meshes": 8,
+        "channels": 20,
+        "clip_max_seconds": 0.7,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "metal-hit",
+      "order": 20,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/metal-hit.glb",
+          "bytes": 177496,
+          "sha256": "1a1142fc3ed75305af16a3858f793042844c4dd10457ba1006e317f4540dd527",
+          "meshes": 6,
+          "channels": 14,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [
+          "outputs/combat-vfx/previews/metal-hit.png"
+        ],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary and branch matched armor-hit and chain-shot-hit generic four-spark/two-shaving structure, obscuring material identity."
+      ],
+      "changes": [
+        "Replace generic radial shavings by three fine, tapered cream/brass deflection streaks flowing along +Z tangent with a small +Y lift."
+      ],
+      "expected_observations": [
+        "Fine fast warm streaks read as ordinary metal contact, distinct from the low teal pressed armor rim.",
+        "The target edge is always exposed and there are no large metal chunks."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.054,
+        0.2025,
+        0.3375,
+        0.45
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 88432,
+        "sha256": "75368afde95659266e7441cc1bab3a54ce2f3faeb463db6b1f37195a99dc195d",
+        "meshes": 3,
+        "channels": 6,
+        "clip_max_seconds": 0.45,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "fabric-hit",
+      "order": 21,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/fabric-hit.glb",
+          "bytes": 134572,
+          "sha256": "8da1008e5ca0616cc8a6c9ec182279e9feea31264bbb7c69cf2314a96703277e",
+          "meshes": 7,
+          "channels": 17,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [
+          "outputs/combat-vfx/previews/fabric-hit.png"
+        ],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing branch emitted flat cloth patches with the same generic radial/shaving motion as wood/metal, and no directed seam/thread cue. Patch centers ended behind the surface."
+      ],
+      "changes": [
+        "Use three unequal cream/coral frays with restrained flutter and +Y-positive drift biased along +Z.",
+        "Add two slim separating seam threads; remove generic radial spark fan and below-surface tail."
+      ],
+      "expected_observations": [
+        "Small soft cloth frays and two splitting threads read as fabric, distinct from splinters or metal sparks.",
+        "Frays lift outside the +Y surface, never sink through the balloon canvas, and leave its seam visible."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.102,
+        0.3825,
+        0.6375,
+        0.85
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 76644,
+        "sha256": "f61b2aa03e9a68e3e1f8e64296a3ff554c315590f2ae008fadb65f40ac14d2a0",
+        "meshes": 5,
+        "channels": 15,
+        "clip_max_seconds": 0.85,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "armor-hit",
+      "order": 22,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/armor-hit.glb",
+          "bytes": 177408,
+          "sha256": "773f45d7bae4c93d6af7d88dd89b3475bbab9439b1f931a801a283d6a959f984",
+          "meshes": 6,
+          "channels": 14,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [
+          "outputs/combat-vfx/previews/armor-hit.png"
+        ],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary exactly shared generic metal/chain shavings geometry structure; armor identity depended on name/duration."
+      ],
+      "changes": [
+        "Author a shallow open teal pressed rim that compresses in Y and contracts in the tangent plane.",
+        "Add three dense but short brass brush sparks; remove tall generic shavings."
+      ],
+      "expected_observations": [
+        "A brief low dent/rim and compact sparks read as compressed armor contact.",
+        "It is visibly different from the fine metal streaks and the support armor-block chevrons; no full ring or shield bubble."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.072,
+        0.27,
+        0.45,
+        0.6
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 134208,
+        "sha256": "5621205cb7f0846fd9e8614ce56bc80b0ef6f06a9ef6362affb431b9bc438317",
+        "meshes": 4,
+        "channels": 4,
+        "clip_max_seconds": 0.6,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "ricochet-hit",
+      "order": 23,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/ricochet-hit.glb",
+          "bytes": 97052,
+          "sha256": "bbdd13a0ee91886c6cb1af1f0c05825e95c2513e243b772fd8e560a51d701428",
+          "meshes": 3,
+          "channels": 5,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [
+          "outputs/combat-vfx/previews/ricochet-hit.png"
+        ],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing source/binary bent streak extended mostly +X, contradicting the recipe +Z tangent direction. It had generic radial sparks instead of a departing chip."
+      ],
+      "changes": [
+        "Rotate authored bend coordinates into the +Z tangent direction while retaining +Y lift.",
+        "Replace two generic sparks by one small brass chip moving along the bend."
+      ],
+      "expected_observations": [
+        "A broken cream streak and one brass chip deflect forward along +Z tangent with a slight outward lift.",
+        "The effect reads as one glancing departure instead of a radial impact; it never emits a new gameplay projectile."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.06,
+        0.225,
+        0.375,
+        0.5
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 68120,
+        "sha256": "274d91bc0cd8fa90281b7db50fc2c04b0a9f20a08836091d951d75f94996677a",
+        "meshes": 2,
+        "channels": 4,
+        "clip_max_seconds": 0.5,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "weakpoint-hit",
+      "order": 24,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/weakpoint-hit.glb",
+          "bytes": 147244,
+          "sha256": "bd4647202806e7752600064ef7cdf3deb76519fd9ee01b76d956966762c6f45a",
+          "meshes": 5,
+          "channels": 10,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Two coral inward brackets and three ivory flicks are distinguishable by motion/shape in source; need confirm contraction at small game scale."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "Mirrored brackets converge on the contact center before shrinking; no large radial ring.",
+        "The contraction cue remains visible in cream and dark teal backgrounds without relying only on color."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.096,
+        0.36,
+        0.6,
+        0.8
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 147244,
+        "sha256": "bd4647202806e7752600064ef7cdf3deb76519fd9ee01b76d956966762c6f45a",
+        "meshes": 5,
+        "channels": 10,
+        "clip_max_seconds": 0.8,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "cloud-miss",
+      "order": 25,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/cloud-miss.glb",
+          "bytes": 3701360,
+          "sha256": "bff21b1716ae2be7a3527962e3e98704d027d920edad91c2128d7a92d7bb453e",
+          "meshes": 1,
+          "channels": 3,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Single curled-smoke base at low opacity may look like soot rather than a soft cloud at some angles. This is an unresolved art observation, not grounds for unverified recoloring."
+      ],
+      "changes": [],
+      "expected_observations": [
+        "A low-opacity soft curl drifts/rises without sparks, impact fragments or flame.",
+        "A miss remains visually quieter than contact; the contour reads as cloud haze rather than a damaging explosion."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.132,
+        0.495,
+        0.825,
+        1.1
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 3701360,
+        "sha256": "bff21b1716ae2be7a3527962e3e98704d027d920edad91c2128d7a92d7bb453e",
+        "meshes": 1,
+        "channels": 3,
+        "clip_max_seconds": 1.1,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    },
+    {
+      "id": "penetration-exit",
+      "order": 26,
+      "evidence": {
+        "source": "tools/combat-vfx-v2/primary.cjs",
+        "binary": {
+          "path": "outputs/combat-vfx-v2/assets/penetration-exit.glb",
+          "bytes": 3818884,
+          "sha256": "9dae39f5a2fbd65ad78ccbc1afdb0ee8efcd51a073341d7cb7fb6b5fc328e7fd",
+          "meshes": 5,
+          "channels": 11,
+          "moving_payload_subtree": null
+        },
+        "existing_render": [
+          "outputs/combat-vfx/previews/penetration-exit.png"
+        ],
+        "existing_render_scope": "v1 image only where listed; representative6 v2 scenes inform art baseline, not approval of this residual effect"
+      },
+      "concerns": [
+        "Existing binary had generic tangential radial sparks and smoke drift X0.4, losing the deliberate narrow +Y exit direction."
+      ],
+      "changes": [
+        "Replace radial fan with three narrow normal-aligned ivory/brass jets and short outward +Y motion.",
+        "Keep a much smaller late smoke curl with dominant +Y rise and only0.06 lateral drift."
+      ],
+      "expected_observations": [
+        "Three restrained jets emerge in a narrow +Y-normal bundle from the confirmed exit surface.",
+        "A clear exit direction is visible without a broad impact halo or a second explosion."
+      ],
+      "sample_times_seconds": [
+        0,
+        0.078,
+        0.2925,
+        0.4875,
+        0.65
+      ],
+      "status": "requires_new_render",
+      "visual_reviewed": false,
+      "in_memory_candidate": {
+        "generated_on_disk": false,
+        "bytes": 3789612,
+        "sha256": "c734ec24519c87a3a36a2420e92014025c34029e0e770567c89535b52a0add4b",
+        "meshes": 4,
+        "channels": 9,
+        "clip_max_seconds": 0.65,
+        "moving_payload_subtree": null
+      },
+      "qa_required": [
+        "Regenerate this ID only if changes are nonempty, then refresh sequence/manifest/hash references that consume it.",
+        "Use same actual ship/weapon, camera, scale and seconds for v1/v2; test game/detail views and cream/dark teal.",
+        "Observe peak, late fade and stop/reset; no approval before direct fresh v2 render inspection."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "slot": "representative4 initial-r2",
+  "allowedIds": [
+    "enemy-tax-cutter",
+    "mission-cult-purifier",
+    "mission-ghost-artillery",
+    "boss-last-inhale"
+  ],
+  "sourceManifests": [
+    {
+      "path": "outputs/enemy-fleet-villain-v1/SOURCE_READY_3.json",
+      "manifestSha256": "d7a0aa7ca6e08a8628091b76127ebef6f08c45ed1d1a1fd4a895a69e7c9b6e4f",
+      "matchesBefore": true,
+      "files": 17,
+      "changed": []
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v1/COMPARISON_READY_2.json",
+      "manifestSha256": "1dd579d646ca302abf453fb16c7c1954467f70dea53d1c54d1a657404ba6d96e",
+      "matchesBefore": true,
+      "files": 5,
+      "changed": []
+    }
+  ],
+  "stageExits": {
+    "buildNext": 0,
+    "pairsFromModels": 0,
+    "comparisonCapture": 0
+  },
+  "buildSession": 22204,
+  "modelCount": 4,
+  "referenceSixExported": 0,
+  "standaloneBossExported": 0,
+  "comparisonReport": {
+    "path": "outputs/enemy-fleet-villain-v1/comparisons-initial4-r2/report.json",
+    "sha256": "d758184038a091093e6ab5dc770364395bf01b5bfbe625879b413ae739808386",
+    "technicalPass": true,
+    "errors": [],
+    "externalRequests": []
+  },
+  "pairs": [
+    {
+      "id": "enemy-tax-cutter",
+      "beforeSha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+      "afterSha256": "9f61d09782217cb9ab60303f567ed861808682cb821a912a97193689e5ed8a67",
+      "beforePngSha256": "0c7b9cc7dc3aa9751f0f8c092099e5f2e29841ac1194403f98cdad182c592d9e",
+      "afterPngSha256": "1ee35b643d5c5838a50d4cf23ac71bfd82b7e965992e711fba7c452d3ef931ba",
+      "pairPngSha256": "3c1a834ff457a2bb8b04ee2e46c73c0c760b87ad687b665970c788b89a5d5d93",
+      "sameCamera": true,
+      "animation": {
+        "before": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        },
+        "after": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        }
+      }
+    },
+    {
+      "id": "mission-cult-purifier",
+      "beforeSha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+      "afterSha256": "392a5be5de17ff99a9f23dfd67dbc281c25d1ed0a361f3e081b18fab94d4ba3d",
+      "beforePngSha256": "f523bd627478cc5e737b7e1951fd705c13a761ddf6f2975d34449613ca897ebd",
+      "afterPngSha256": "fbd0c56720a9db21ce03a2258c4d353a258965d2877dcc4bc80eaf9d08534c1f",
+      "pairPngSha256": "34c3c9994308fd6c18bf84ae7efa54fc38f732b27b12b8b10da2b17b1bb00ecd",
+      "sameCamera": true,
+      "animation": {
+        "before": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        },
+        "after": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        }
+      }
+    },
+    {
+      "id": "mission-ghost-artillery",
+      "beforeSha256": "9904a65b67e7e2d4ac2da36825f4d68cf65a1bb2321edbe4e761b964866a8037",
+      "afterSha256": "ea383b305351a2fb0672107d3883bec90418054fa3759d8c117991ee59c3f243",
+      "beforePngSha256": "300f777caaaacd12e9982f31b57ae68cad88292ad442abfc2d900e6dd4897ccc",
+      "afterPngSha256": "00b2e29f4262cb8872379b9cca40c5aeb0caf4f05627129bd9b0ec8db8254dea",
+      "pairPngSha256": "b430c077c3af03c348fb9c48f3f0a17f022845c0b9f1e785b6020cf6fa1f499e",
+      "sameCamera": true,
+      "animation": {
+        "before": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        },
+        "after": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        }
+      }
+    },
+    {
+      "id": "boss-last-inhale",
+      "beforeSha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+      "afterSha256": "b29eb4d5455fe27bd91d8989a89f9666f55c0c6e20a46e3b8da3b81621585719",
+      "beforePngSha256": "67b4cd813008b9da9e9d5a256035f7975531ecae77320fd2ee609c1ff6fec53d",
+      "afterPngSha256": "432416df9c4ba90891e1a17d1c5530523c0ebb5809348ebebe9734c63286b0e6",
+      "pairPngSha256": "d3def097eb7bec55f288cea433b4d241469eb1c77ea0d4360af970aeca1976e6",
+      "sameCamera": true,
+      "animation": {
+        "before": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        },
+        "after": {
+          "clip": "FloatIdle",
+          "duration": 10,
+          "sampleTimeSeconds": 2,
+          "stopped": true,
+          "missingFloatIdle": false
+        }
+      }
+    }
+  ],
+  "lifecycle": {
+    "buildReportedBrowserClosed": true,
+    "comparisonFinallyAwaitedBrowserClose": true,
+    "commandsCompleted": true,
+    "launchPidsRecorded": false
+  },
+  "visualReview": {
+    "actualFourPairsSeen": true,
+    "technicalOnly": true,
+    "artTargetNotApproved": true,
+    "decision": "Hold remaining8. Tax cutter and purifier retain too much of the ordinary base silhouette; rebuild dominant forms rather than append ornaments. Ghost wing concept distinct but needs stronger body hierarchy. Last inhale mass/3tower identity changed, but plain towers need richer nonuniform forms."
+  },
+  "newCaptureNextRun": false,
+  "remainingEightStarted": false
+}

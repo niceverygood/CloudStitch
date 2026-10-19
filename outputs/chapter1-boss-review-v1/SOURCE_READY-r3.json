@@ -1,0 +1,53 @@
+{
+  "revision": "source-r3",
+  "sourceId": "boss-bell-devourer",
+  "artVariant": "chapter1-boss-review-v1",
+  "status": "SOURCE_READY-awaiting-central-export-browser-slot",
+  "files": [
+    {
+      "path": "tools/chapter1-boss-review/build.cjs",
+      "bytes": 1868,
+      "sha256": "1cbc99bdbb3249abca7eebfd1ef9cdf7d441b214fec80127a9a94c1887c423b1"
+    },
+    {
+      "path": "tools/chapter1-boss-review/generate.mjs",
+      "bytes": 2795,
+      "sha256": "e365f8df69d6c1fb70250f1255c89f38f569964ad114a5020fc127899d466d99"
+    },
+    {
+      "path": "tools/chapter1-boss-review/model.mjs",
+      "bytes": 12193,
+      "sha256": "75310efc49e3a3b33077f6044a7bc370e03ceb51186bf59c9b246be085293067"
+    },
+    {
+      "path": "tools/chapter1-boss-review/preflight.mjs",
+      "bytes": 940,
+      "sha256": "6b0a2917673a1616939c88fbfadca8b16987ef7774c8830a5214c39629c5a007"
+    },
+    {
+      "path": "tools/chapter1-boss-review/prepare.cjs",
+      "bytes": 7581,
+      "sha256": "6dd3854523dc960a049ca4858036e787577ed25b2cf09fafb1c5507e0edf8681"
+    },
+    {
+      "path": "tools/chapter1-boss-review/qa.cjs",
+      "bytes": 28173,
+      "sha256": "528d34f6e6d33f9091f9ba45f6441fc473f7fac1783bcaa480f753c526ee4b89"
+    },
+    {
+      "path": "tools/chapter1-boss-review/review.js",
+      "bytes": 24008,
+      "sha256": "2ab9e067a58d62599e4282f2e114a5aa66429fb1c60203ddf4a7caf253a7aeae"
+    },
+    {
+      "path": "tools/chapter1-boss-review/template.html",
+      "bytes": 25401,
+      "sha256": "8c51d8cb660591ecaacd1dba6b41da07a0c5704ea395782350977151caee90f3"
+    }
+  ],
+  "handoff": "outputs/chapter1-boss-review-v1/HANDOFF.md",
+  "expected_model": "outputs/chapter1-boss-review-v1/boss.glb",
+  "expected_viewer": "outputs/chapter1-boss-review-v1/index.html",
+  "expected_manifest": "outputs/chapter1-boss-review-v1/model-manifest.json",
+  "budget": "one GLB, one browser context, narrow QA; no global scans"
+}

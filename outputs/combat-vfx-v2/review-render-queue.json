@@ -1,0 +1,3930 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "date_seoul": "2026-10-18",
+  "status": "residual48_ready_for_integration_render_slot",
+  "browser_run_in_this_followup": false,
+  "paid_calls_in_this_followup": 0,
+  "cumulative_meshy_credits": 30,
+  "representative_controls": [
+    "machine-gun-muzzle",
+    "smoke-puff",
+    "cannon-hit",
+    "flamethrower-stream",
+    "shield-pulse",
+    "repair-stitch"
+  ],
+  "residual_count": 48,
+  "source_review_reports": [
+    {
+      "path": "tools/combat-vfx-v2/review-primary.json",
+      "bytes": 51231,
+      "sha256": "ed0a347d785628eb335e021530850a9a48ee5f71d8f5ccc5569ada2fb5df1734"
+    },
+    {
+      "path": "tools/combat-vfx-v2/review-secondary.json",
+      "bytes": 112083,
+      "sha256": "2a09d4f292c949528f9ed0fbefbe00aa1779b2c16ea9fd75bd730ad5b0d597d2"
+    },
+    {
+      "path": "tools/combat-vfx-v2/review-sequences.json",
+      "bytes": 31878,
+      "sha256": "95514feba19fb54d728fc6b12461a73e46230e91c386a79250e806c9b005127e"
+    }
+  ],
+  "batches": [
+    {
+      "id": "runtime-gun-cannon",
+      "title": "기관총·함포 필수6",
+      "effect_ids": [
+        "machine-gun-muzzle",
+        "machine-gun-projectile",
+        "machine-gun-hit",
+        "cannon-muzzle",
+        "cannon-projectile",
+        "cannon-hit"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/runtime-gun-cannon.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "aee28e67673a25d349876338474e43f46f00252950fcb187ee5facd1299f1e74",
+      "page_bytes": 47358154
+    },
+    {
+      "id": "mortar-harpoon",
+      "title": "박격포·작살포",
+      "effect_ids": [
+        "mortar-launch",
+        "mortar-projectile",
+        "mortar-hit",
+        "harpoon-launch",
+        "harpoon-projectile",
+        "harpoon-hit"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/mortar-harpoon.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "f2eec2b2aa02f7e1248e5bdc7b42c5581b12fc796dab22f4e8c84a2c2bc4c569",
+      "page_bytes": 47370638
+    },
+    {
+      "id": "chain-flame",
+      "title": "사슬탄·화염방사기",
+      "effect_ids": [
+        "chain-shot-launch",
+        "chain-shot-projectile",
+        "chain-shot-hit",
+        "flamethrower-ignite",
+        "flamethrower-stream",
+        "flamethrower-hit"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/chain-flame.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "a6ee04567844a8b09b86dc036e3628be78076b52ce6400d3abef849f72fcf3e9",
+      "page_bytes": 52177022
+    },
+    {
+      "id": "material-impacts",
+      "title": "재질·결과별 피격",
+      "effect_ids": [
+        "wood-hit",
+        "metal-hit",
+        "fabric-hit",
+        "armor-hit",
+        "ricochet-hit",
+        "weakpoint-hit",
+        "cloud-miss",
+        "penetration-exit"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "explosions-air",
+      "title": "폭발·공중·배기",
+      "effect_ids": [
+        "small-explosion",
+        "large-explosion",
+        "airburst",
+        "shrapnel-burst",
+        "smoke-puff",
+        "steam-vent"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/explosions-air.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "d2e5b62d9c90f1a2da61e6ab3a0e190a192abdc15cab4c8c1fe88b4cd391d786",
+      "page_bytes": 58246518
+    },
+    {
+      "id": "fire-damage",
+      "title": "지속 손상·잔불",
+      "effect_ids": [
+        "smoldering-fire",
+        "ember-drift",
+        "burning-state",
+        "heavy-smoke-state",
+        "gas-leak-state",
+        "overheat-state",
+        "short-circuit-state",
+        "engine-stall-state"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "break-support",
+      "title": "분리·방어·복구·인양",
+      "effect_ids": [
+        "envelope-rupture-state",
+        "module-detach-state",
+        "shield-pulse",
+        "armor-block",
+        "repair-stitch",
+        "healing-pulse",
+        "salvage-tether",
+        "mount-lock"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "sequence-gun-cannon",
+      "title": "공격 시연 · 기관총·함포",
+      "effect_ids": [],
+      "sequence_ids": [
+        "01-machine-gun",
+        "02-deck-cannon"
+      ],
+      "page": "outputs/combat-vfx-v2/review/sequence-gun-cannon.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "76a43b91c2cb53647c453a41f06893cb2bc7087c14e8e55e6a6de81bb2f50875",
+      "page_bytes": 66839177
+    },
+    {
+      "id": "sequence-mortar-harpoon",
+      "title": "공격 시연 · 박격포·작살포",
+      "effect_ids": [],
+      "sequence_ids": [
+        "03-mortar",
+        "04-harpoon"
+      ],
+      "page": "outputs/combat-vfx-v2/review/sequence-mortar-harpoon.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "d95cd5d56a486843c8271fc51f51c53dabdc362b29f19e5b43a103c640a180f1",
+      "page_bytes": 67369021
+    },
+    {
+      "id": "sequence-chain-flame",
+      "title": "공격 시연 · 사슬탄·화염",
+      "effect_ids": [],
+      "sequence_ids": [
+        "05-chain-shot",
+        "06-flamethrower"
+      ],
+      "page": "outputs/combat-vfx-v2/review/sequence-chain-flame.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "f5714c292a1e9799db1f8bb7447db832f9941c39371506407911e1d835968fa3",
+      "page_bytes": 72101964
+    }
+  ],
+  "items": [
+    {
+      "id": "machine-gun-muzzle",
+      "kind": "effect",
+      "name_ko": "기관총 포구 섬광",
+      "batch_id": "runtime-gun-cannon",
+      "page": "outputs/combat-vfx-v2/review/runtime-gun-cannon.html",
+      "is_representative_control": true,
+      "duration_seconds": 0.2,
+      "loop": false,
+      "status": "previous_representative_render_verified",
+      "sample_times_seconds": [
+        0,
+        0.03,
+        0.07600000000000001,
+        0.144,
+        0.2
+      ],
+      "expected_observations": [
+        "Previously inspected representative control; confirm the existing silhouette, timing and colored fill remain unchanged."
+      ],
+      "changes": [],
+      "concerns": [],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+        "bytes": 43532,
+        "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+        "bytes": 3733736,
+        "sha256": "b77da528fb42f4befdfbbefc162fbaa22e367903911300b53db912f650c4a7a8"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "aee28e67673a25d349876338474e43f46f00252950fcb187ee5facd1299f1e74",
+      "page_bytes": 47358154
+    },
+    {
+      "id": "machine-gun-projectile",
+      "kind": "effect",
+      "name_ko": "기관총 탄환 궤적",
+      "batch_id": "runtime-gun-cannon",
+      "page": "outputs/combat-vfx-v2/review/runtime-gun-cannon.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.45,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "Tiny projectile and its separate tail need small game-camera readability confirmation. The scene has baked +Z0→4 translation; gameplay must clone moving_payload geometry and own motion."
+      ],
+      "expected_observations": [
+        "Thin ivory shot and a restrained short tail remain readable without resembling a cannon shell.",
+        "The runtime geometry extraction contains the bullet only; no preview world translation is copied."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.054,
+        0.2025,
+        0.3375,
+        0.45
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+        "bytes": 8856,
+        "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb",
+        "bytes": 59028,
+        "sha256": "9fede02363cd212d3ac628ecc51c7114c47f5646aa91944ee2c00f815138dbac"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "battlefield (preview TRS must not also move)",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "aee28e67673a25d349876338474e43f46f00252950fcb187ee5facd1299f1e74",
+      "page_bytes": 47358154
+    },
+    {
+      "id": "machine-gun-hit",
+      "kind": "effect",
+      "name_ko": "기관총 집중 타격",
+      "batch_id": "runtime-gun-cannon",
+      "page": "outputs/combat-vfx-v2/review/runtime-gun-cannon.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.35,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "Three fine pigment flicks and one impact comma are source-distinct from explosion; no fresh v2 render exists. Fine streaks may become too small at game scale."
+      ],
+      "expected_observations": [
+        "A fast tiny comma and three warm flicks read as bullet contact; target surface stays visible.",
+        "Effect has contracted at0.35s and only actual contact should trigger it."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.042,
+        0.1575,
+        0.2625,
+        0.35
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+        "bytes": 71820,
+        "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb",
+        "bytes": 117336,
+        "sha256": "10561ff655c101b7efef1805e774d3aec6ebef2dcf0e5c7886da4f0dcc87e4b0"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "aee28e67673a25d349876338474e43f46f00252950fcb187ee5facd1299f1e74",
+      "page_bytes": 47358154
+    },
+    {
+      "id": "cannon-muzzle",
+      "kind": "effect",
+      "name_ko": "함포 포구 충격",
+      "batch_id": "runtime-gun-cannon",
+      "page": "outputs/combat-vfx-v2/review/runtime-gun-cannon.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.45,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "A1.05 flame and0.7 smoke are larger than machine-gun muzzle but may still hide the actual bore. Needs peak and late-phase render in the same muzzleFrame."
+      ],
+      "expected_observations": [
+        "Broader, short axial flash is followed by modest smoke; the weapon and target remain recognizable.",
+        "No closed ring dominates the silhouette."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.054,
+        0.2025,
+        0.3375,
+        0.45
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/cannon-muzzle.glb",
+        "bytes": 115812,
+        "sha256": "2e4c5d1b6a78251f970207b1fc35c66ce0d37e92aeb2ab3497387f85ac61d479"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb",
+        "bytes": 7464616,
+        "sha256": "845495596e9d801f0f19ebcfb9aa55efc3d59bd6f1cb44e9a1fbeffd09c0a42b"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "aee28e67673a25d349876338474e43f46f00252950fcb187ee5facd1299f1e74",
+      "page_bytes": 47358154
+    },
+    {
+      "id": "cannon-projectile",
+      "kind": "effect",
+      "name_ko": "함포 포탄 비행",
+      "batch_id": "runtime-gun-cannon",
+      "page": "outputs/combat-vfx-v2/review/runtime-gun-cannon.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.8,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Replace generic brass stroke by a dark, elongated matte shell body with a narrow brass waist band.",
+        "Add restrained axial rotation while preserving moving_payload_0 geometry root and the original +Z travel keys."
+      ],
+      "concerns": [
+        "Existing binary used the same brass swept capsule as mortar; size alone did not give a readable cannon-shell silhouette. Preview translation must never be doubled by physics."
+      ],
+      "expected_observations": [
+        "A compact dark cannon shell with a warm waist band is distinct from the fine machine-gun streak and the squat mortar shell.",
+        "Gameplay geometry subtree stays centered after reset and does not play baked travel."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.096,
+        0.36,
+        0.6,
+        0.8
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/cannon-projectile.glb",
+        "bytes": 120868,
+        "sha256": "cf543abd2fcca020693ad3c46eec6473d39afba172f998dee18fcf73600bf5b4"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/cannon-projectile.glb",
+        "bytes": 56460,
+        "sha256": "1f449737c11086ef72f598808075a28280757e8480d17bd923b9ee60e2c0a2a9"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "battlefield (preview TRS must not also move)",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "aee28e67673a25d349876338474e43f46f00252950fcb187ee5facd1299f1e74",
+      "page_bytes": 47358154
+    },
+    {
+      "id": "cannon-hit",
+      "kind": "effect",
+      "name_ko": "함포 약점 파쇄",
+      "batch_id": "runtime-gun-cannon",
+      "page": "outputs/combat-vfx-v2/review/runtime-gun-cannon.html",
+      "is_representative_control": true,
+      "duration_seconds": 0.75,
+      "loop": false,
+      "status": "previous_representative_render_verified",
+      "sample_times_seconds": [
+        0,
+        0.11249999999999999,
+        0.28500000000000003,
+        0.54,
+        0.75
+      ],
+      "expected_observations": [
+        "Previously inspected representative control; confirm the existing silhouette, timing and colored fill remain unchanged."
+      ],
+      "changes": [],
+      "concerns": [],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/cannon-hit.glb",
+        "bytes": 185004,
+        "sha256": "89f0bff8c05aed3c73fd09b80a984695d72ceb597ef349f188613e438d36369a"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+        "bytes": 7474808,
+        "sha256": "f6429ec4bbeb84524c09738822851a062d11efb2f94fcdb964cb1d66fede22ac"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "aee28e67673a25d349876338474e43f46f00252950fcb187ee5facd1299f1e74",
+      "page_bytes": 47358154
+    },
+    {
+      "id": "mortar-launch",
+      "kind": "effect",
+      "name_ko": "박격포 발사 퍼프",
+      "batch_id": "mortar-harpoon",
+      "page": "outputs/combat-vfx-v2/review/mortar-harpoon.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.6,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Replace generic launch burst by one modest axial flash, a Meshy smoke plume moving along local +Z, and a short open cream pressure comma.",
+        "Reduce flame footprint and remove the generic radial spark burst."
+      ],
+      "concerns": [
+        "Existing binary shared generic flame/smoke/sparks with other launch effects.",
+        "Local +Z is correct per muzzle contract; upward bore alignment belongs to the placement muzzleFrame, not an internal +Y axis substitution."
+      ],
+      "expected_observations": [
+        "With muzzleFrame +Z aimed through the upward tube, the plume exits the bore upward instead of firing horizontally from its tip.",
+        "A pressure puff dominates the brief event, with a small flash and an open silhouette that exposes the tube."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.072,
+        0.27,
+        0.45,
+        0.6
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/mortar-launch.glb",
+        "bytes": 115688,
+        "sha256": "40f966857dac52b207511c89845864706eea004a67dea3f540daefcaa6205fc0"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/mortar-launch.glb",
+        "bytes": 7384308,
+        "sha256": "f173a10601cae51241647778a1f2557a709d226e9c9212532f52ef64d80cce2e"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "f2eec2b2aa02f7e1248e5bdc7b42c5581b12fc796dab22f4e8c84a2c2bc4c569",
+      "page_bytes": 47370638
+    },
+    {
+      "id": "mortar-projectile",
+      "kind": "effect",
+      "name_ko": "박격포 곡사탄",
+      "batch_id": "mortar-harpoon",
+      "page": "outputs/combat-vfx-v2/review/mortar-harpoon.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.6,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Use a squat dark shell body and a narrow brass waist band, shorter and wider than cannon.",
+        "Add nose pitch keys from rising toward falling without changing +Y arc/+Z forward positions or moving_payload_0 root."
+      ],
+      "concerns": [
+        "Existing binary used the same generic capsule as cannon and had no changing nose orientation on its rising/falling arc.",
+        "Baked Y-arc/Z-forward movement is a choreography preview; it is not trajectory physics."
+      ],
+      "expected_observations": [
+        "Shell visibly tilts from ascent toward descent and remains squat.",
+        "The arc rises in +Y and advances +Z; launch-frame rotation is not applied again to this preview trajectory."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.192,
+        0.72,
+        1.2,
+        1.6
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/mortar-projectile.glb",
+        "bytes": 120504,
+        "sha256": "d49772da574e4cec3f42a2812c58151f1ffcac28e2fa4f0b913809747492602d"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/mortar-projectile.glb",
+        "bytes": 56468,
+        "sha256": "f307ff488a9886da937a1ce927fff16b463bf4214aab687d53ec717ebcb1cece"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "battlefield (preview TRS must not also move)",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "f2eec2b2aa02f7e1248e5bdc7b42c5581b12fc796dab22f4e8c84a2c2bc4c569",
+      "page_bytes": 47370638
+    },
+    {
+      "id": "mortar-hit",
+      "kind": "effect",
+      "name_ko": "박격포 착탄 폭발",
+      "batch_id": "mortar-harpoon",
+      "page": "outputs/combat-vfx-v2/review/mortar-harpoon.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.2,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "impact(true) reuses the cannon family with larger pressure sweep and flame/smoke. Its1.2s timing should read heavier and wider without covering the target."
+      ],
+      "expected_observations": [
+        "Open low pressure sweep, two asymmetric flames, restrained shavings and late smoke read as a wider mortar impact.",
+        "Pressure arrives first, flame peaks second, smoke is last; target is not replaced by a solid sphere."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.144,
+        0.54,
+        0.9,
+        1.2
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/mortar-hit.glb",
+        "bytes": 223176,
+        "sha256": "3b7f007e2cdd93e1c1ec3944b910f418d40216d25a63262c830f72d2a2a182e8"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/mortar-hit.glb",
+        "bytes": 7533452,
+        "sha256": "dec91a6aa76c1c7799184da23e02cb128f8a636fe981876614bb5c66e8bf40cd"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "f2eec2b2aa02f7e1248e5bdc7b42c5581b12fc796dab22f4e8c84a2c2bc4c569",
+      "page_bytes": 47370638
+    },
+    {
+      "id": "harpoon-launch",
+      "kind": "effect",
+      "name_ko": "작살 발사 튕김",
+      "batch_id": "mortar-harpoon",
+      "page": "outputs/combat-vfx-v2/review/mortar-harpoon.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.35,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Replace the fire/smoke burst by two tapered teal/cream tension flicks and a loose rope curl.",
+        "Move and relax the curl/flicks along +Z with a short staged release."
+      ],
+      "concerns": [
+        "Existing binary had the same one-flame/one-smoke/spark recipe as chain launch, with only one additional tension stroke. It read as a gun blast instead of released tension."
+      ],
+      "expected_observations": [
+        "A dry taut release and small cream curl are distinct from cannon/flamethrower fire.",
+        "The bore stays visible and the rope hint travels forward rather than forming a large solid halo."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.042,
+        0.1575,
+        0.2625,
+        0.35
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/harpoon-launch.glb",
+        "bytes": 69840,
+        "sha256": "df3f3c26cf5b1a0288f3346d1fb5ed5c834ce3888de833e426800dd838f18582"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+        "bytes": 98004,
+        "sha256": "a78f2da80c6992880763342e248082374891d6943e754d373834dd8caca4fdfd"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "f2eec2b2aa02f7e1248e5bdc7b42c5581b12fc796dab22f4e8c84a2c2bc4c569",
+      "page_bytes": 47370638
+    },
+    {
+      "id": "harpoon-projectile",
+      "kind": "effect",
+      "name_ko": "작살 비행과 줄",
+      "batch_id": "mortar-harpoon",
+      "page": "outputs/combat-vfx-v2/review/mortar-harpoon.html",
+      "is_representative_control": false,
+      "duration_seconds": 1,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "Harpoon head and rope intentionally remain visible at final key, unlike other projectiles. Keep hold_after_arrival extras and do not treat clip completion as an actual latch.",
+        "The rope is a preview origin-to-Z4 strip, not a runtime endpoint solver; geometry-only subtree excludes rope_hold."
+      ],
+      "expected_observations": [
+        "Single barb advances +Z and the slim cable extends from origin to the head.",
+        "At1s the head and cable persist; a later host/projectile-ended event must remove them and clear endpoints."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.45,
+        0.75,
+        1
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/harpoon-projectile.glb",
+        "bytes": 44064,
+        "sha256": "415412f33532d6cb2698f8e136c57513b243b3e0b69257ca38f87bf67a310702"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb",
+        "bytes": 77784,
+        "sha256": "467da74e607d66f8ff28997d88a981bb6ce4f2a0495f4e7468f0ba45c637dd59"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "battlefield (preview TRS must not also move)",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "f2eec2b2aa02f7e1248e5bdc7b42c5581b12fc796dab22f4e8c84a2c2bc4c569",
+      "page_bytes": 47370638
+    },
+    {
+      "id": "harpoon-hit",
+      "kind": "effect",
+      "name_ko": "작살 걸림 고리",
+      "batch_id": "mortar-harpoon",
+      "page": "outputs/combat-vfx-v2/review/mortar-harpoon.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.65,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Replace generic shavings by a small open teal C latch that contracts and turns around the +Y normal.",
+        "Keep a compact anchored barb and two restrained brass contact flicks."
+      ],
+      "concerns": [
+        "Existing binary mostly used generic brass/ink material shavings plus a barb. It lacked a readable closing latch gesture."
+      ],
+      "expected_observations": [
+        "A small C-shaped latch closes around the contact, with a single dark barb rather than a generic explosion.",
+        "The normal remains +Y and the target surface stays legible."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.078,
+        0.2925,
+        0.4875,
+        0.65
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/harpoon-hit.glb",
+        "bytes": 110768,
+        "sha256": "04c7ae0d0a5bd73fd57e5ecdff6a1488bc64ef5e42316674d67282c26fde4096"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/harpoon-hit.glb",
+        "bytes": 135556,
+        "sha256": "cc0066892b398e4fa5a56c40b9f0a3098c4c75eea13d58bd53033c1b5b220dd0"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "f2eec2b2aa02f7e1248e5bdc7b42c5581b12fc796dab22f4e8c84a2c2bc4c569",
+      "page_bytes": 47370638
+    },
+    {
+      "id": "chain-shot-launch",
+      "kind": "effect",
+      "name_ko": "사슬탄 발사 쌍섬광",
+      "batch_id": "chain-flame",
+      "page": "outputs/combat-vfx-v2/review/chain-flame.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.5,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Author two small, staggered lateral flame/cream needles instead of one central generic burst.",
+        "Add two tiny open brass release links that advance along +Z, without a thick ring or smoke curtain."
+      ],
+      "concerns": [
+        "Existing binary was nearly identical to harpoon launch and contained one central flame, despite the paired-shot purpose."
+      ],
+      "expected_observations": [
+        "Two flashes separated across local X plus a short warm link wake read as a connected pair.",
+        "Paired flashes are smaller than the cannon burst and do not cover the weapon."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.06,
+        0.225,
+        0.375,
+        0.5
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/chain-shot-launch.glb",
+        "bytes": 61900,
+        "sha256": "892b0434490dd105440ff2833ce1a21bda13b5587ef42bb80f1aa8c66b3c8db0"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb",
+        "bytes": 3782916,
+        "sha256": "7206afd2353256e2e2584557016288a931bb95e2333b273d9e87cd3c7424a39f"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "a6ee04567844a8b09b86dc036e3628be78076b52ce6400d3abef849f72fcf3e9",
+      "page_bytes": 52177022
+    },
+    {
+      "id": "chain-shot-projectile",
+      "kind": "effect",
+      "name_ko": "사슬탄 회전 비행",
+      "batch_id": "chain-flame",
+      "page": "outputs/combat-vfx-v2/review/chain-flame.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.1,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "Two forged weights and a short central chain are distinct in binary, but the thin connecting link needs game-camera readability confirmation.",
+        "Continuous spin is visual clip motion around +Z; gameplay position remains independent."
+      ],
+      "expected_observations": [
+        "The two dark weights stay visibly connected as the assembly rotates around the forward axis.",
+        "No detached third projectile appears and the line does not become a thick ring."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.132,
+        0.495,
+        0.825,
+        1.1
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/chain-shot-projectile.glb",
+        "bytes": 197460,
+        "sha256": "f03e5354f4c1437afb108412c0d0f0cd8100b9ff76ab3c7f8f70520fe48965e5"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb",
+        "bytes": 68460,
+        "sha256": "0e95f9735bd403a096c94c92d287ee6cd8ef5726a728be4c82271e226184c08a"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "battlefield (preview TRS must not also move)",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "a6ee04567844a8b09b86dc036e3628be78076b52ce6400d3abef849f72fcf3e9",
+      "page_bytes": 52177022
+    },
+    {
+      "id": "chain-shot-hit",
+      "kind": "effect",
+      "name_ko": "사슬탄 엔진 타격",
+      "batch_id": "chain-flame",
+      "page": "outputs/combat-vfx-v2/review/chain-flame.html",
+      "is_representative_control": false,
+      "duration_seconds": 1,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Replace generic shavings with two counter-turning open teal crescents and a short brass tangent snag.",
+        "Use only two compact contact sparks and contraction to end."
+      ],
+      "concerns": [
+        "Existing binary was the same generic spark/shaving family as metal/armor hit, without an entangling gesture."
+      ],
+      "expected_observations": [
+        "Two open strokes turn around the +Y contact normal and suggest a snag, distinct from both metal deflection and armor dent.",
+        "The effect is decorative contact evidence and does not itself claim an engine stall or severing."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.45,
+        0.75,
+        1
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/chain-shot-hit.glb",
+        "bytes": 306208,
+        "sha256": "3a081a0265a901b0fbc47e943b6a9ad5f0d224a6195d052ff95967193f38001c"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb",
+        "bytes": 174012,
+        "sha256": "ba2c4afb7cc93880eaf94f7262f7b6dde4f6ab1746b3eac1b6e7826eccd02c27"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "a6ee04567844a8b09b86dc036e3628be78076b52ce6400d3abef849f72fcf3e9",
+      "page_bytes": 52177022
+    },
+    {
+      "id": "flamethrower-ignite",
+      "kind": "effect",
+      "name_ko": "화염방사 점화",
+      "batch_id": "chain-flame",
+      "page": "outputs/combat-vfx-v2/review/chain-flame.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.4,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Replace generic launch branch with two small overlapping flame tongues and a narrow ivory pilot wick.",
+        "Remove ignition smoke curtain and radial sparks; keep +Z nozzle flow."
+      ],
+      "concerns": [
+        "Existing generic launch had a0.42 smoke plume and two radial sparks as large as the ignition flame, risking a smoky gun-blast reading."
+      ],
+      "expected_observations": [
+        "A tiny wick flares into two short forward tongues and hands off visually to the continuous stream.",
+        "The nozzle silhouette remains readable during ignition."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.048,
+        0.18,
+        0.3,
+        0.4
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/flamethrower-ignite.glb",
+        "bytes": 38948,
+        "sha256": "4f555ba6865758cab0f551bf4a8a174446b293571e98b471273a287174da9333"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+        "bytes": 3676304,
+        "sha256": "b3a36205afe2b98fe756a8d219880a26911888c3df5b16e5accc83399a4ddf50"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "a6ee04567844a8b09b86dc036e3628be78076b52ce6400d3abef849f72fcf3e9",
+      "page_bytes": 52177022
+    },
+    {
+      "id": "flamethrower-stream",
+      "kind": "effect",
+      "name_ko": "화염방사 짧은 원뿔",
+      "batch_id": "chain-flame",
+      "page": "outputs/combat-vfx-v2/review/chain-flame.html",
+      "is_representative_control": true,
+      "duration_seconds": 1.2,
+      "loop": true,
+      "status": "previous_representative_render_verified",
+      "sample_times_seconds": [
+        0,
+        0.18,
+        0.45599999999999996,
+        0.864,
+        1.2
+      ],
+      "expected_observations": [
+        "Previously inspected representative control; confirm the existing silhouette, timing and colored fill remain unchanged."
+      ],
+      "changes": [],
+      "concerns": [],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/flamethrower-stream.glb",
+        "bytes": 98396,
+        "sha256": "c5f78003c4fb2edba318217ac142fc267e52d712d9d19be4a02fe0759fdee0ea"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+        "bytes": 3690504,
+        "sha256": "160308a30de3080c7307766c52f67e47c0305d7f6ebba56aca3d89729ec9c077"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "a6ee04567844a8b09b86dc036e3628be78076b52ce6400d3abef849f72fcf3e9",
+      "page_bytes": 52177022
+    },
+    {
+      "id": "flamethrower-hit",
+      "kind": "effect",
+      "name_ko": "화염 접촉 그을림",
+      "batch_id": "chain-flame",
+      "page": "outputs/combat-vfx-v2/review/chain-flame.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.9,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "Two normal-oriented flame tongues and late smoke are source-distinct from the stream; contact size and peak/late visibility still need a fresh scene render.",
+        "Separate runtime fade needs per-instance materials; standard GLB only contracts transforms."
+      ],
+      "expected_observations": [
+        "Short +Y contact flames sit close to the actual surface; they do not imply a second outward cone.",
+        "Late smoke stays small and thin while stream/contact overlap can remain legible."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.108,
+        0.405,
+        0.675,
+        0.9
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/flamethrower-hit.glb",
+        "bytes": 152336,
+        "sha256": "6f4225f2e835caa76dcd894d40bcae856b8dc342ffb5408a61550c3fa7543b33"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+        "bytes": 7348288,
+        "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "a6ee04567844a8b09b86dc036e3628be78076b52ce6400d3abef849f72fcf3e9",
+      "page_bytes": 52177022
+    },
+    {
+      "id": "wood-hit",
+      "kind": "effect",
+      "name_ko": "목재 피격",
+      "batch_id": "material-impacts",
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.7,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Keep terminal wood-shaving centers outside the surface at Y0.04 instead of Y-0.1; retain all other splinter timing/shape."
+      ],
+      "concerns": [
+        "Existing material shavings ended at local Y=-0.1, crossing behind the impact surface before shrinking.",
+        "Four tall wood brush splinters plus pigment flicks need density/legibility check."
+      ],
+      "expected_observations": [
+        "Warm long splinters scatter outward and remain in front of the hit surface as they contract.",
+        "Wood response is denser/coarser than fine metal sparks but does not hide a module joint."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.084,
+        0.315,
+        0.525,
+        0.7
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/wood-hit.glb",
+        "bytes": 125780,
+        "sha256": "3bde0d4ebd511ecb357c27dc9628eab6f0f47b95d5878841e622224037fbb652"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/wood-hit.glb",
+        "bytes": 237116,
+        "sha256": "39914f632fdf50a39fae3c4b1c810111dead56a2739249ca0fe44077cd07e4d9"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "metal-hit",
+      "kind": "effect",
+      "name_ko": "금속 피격",
+      "batch_id": "material-impacts",
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.45,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Replace generic radial shavings by three fine, tapered cream/brass deflection streaks flowing along +Z tangent with a small +Y lift."
+      ],
+      "concerns": [
+        "Existing binary and branch matched armor-hit and chain-shot-hit generic four-spark/two-shaving structure, obscuring material identity."
+      ],
+      "expected_observations": [
+        "Fine fast warm streaks read as ordinary metal contact, distinct from the low teal pressed armor rim.",
+        "The target edge is always exposed and there are no large metal chunks."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.054,
+        0.2025,
+        0.3375,
+        0.45
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/metal-hit.glb",
+        "bytes": 144904,
+        "sha256": "47f624feff5b1709e9fbe9bb709007e34c3559b4811e4d34a741b63fdb6f86da"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/metal-hit.glb",
+        "bytes": 88432,
+        "sha256": "75368afde95659266e7441cc1bab3a54ce2f3faeb463db6b1f37195a99dc195d"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "fabric-hit",
+      "kind": "effect",
+      "name_ko": "천 피격",
+      "batch_id": "material-impacts",
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.85,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Use three unequal cream/coral frays with restrained flutter and +Y-positive drift biased along +Z.",
+        "Add two slim separating seam threads; remove generic radial spark fan and below-surface tail."
+      ],
+      "concerns": [
+        "Existing branch emitted flat cloth patches with the same generic radial/shaving motion as wood/metal, and no directed seam/thread cue. Patch centers ended behind the surface."
+      ],
+      "expected_observations": [
+        "Small soft cloth frays and two splitting threads read as fabric, distinct from splinters or metal sparks.",
+        "Frays lift outside the +Y surface, never sink through the balloon canvas, and leave its seam visible."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.102,
+        0.3825,
+        0.6375,
+        0.85
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/fabric-hit.glb",
+        "bytes": 116964,
+        "sha256": "18d9c13549e5edb18272c884303ec15a6b4b685fa43cf964fc5c4e19a25f1bfc"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/fabric-hit.glb",
+        "bytes": 76644,
+        "sha256": "f61b2aa03e9a68e3e1f8e64296a3ff554c315590f2ae008fadb65f40ac14d2a0"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "armor-hit",
+      "kind": "effect",
+      "name_ko": "장갑 피격",
+      "batch_id": "material-impacts",
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.6,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Author a shallow open teal pressed rim that compresses in Y and contracts in the tangent plane.",
+        "Add three dense but short brass brush sparks; remove tall generic shavings."
+      ],
+      "concerns": [
+        "Existing binary exactly shared generic metal/chain shavings geometry structure; armor identity depended on name/duration."
+      ],
+      "expected_observations": [
+        "A brief low dent/rim and compact sparks read as compressed armor contact.",
+        "It is visibly different from the fine metal streaks and the support armor-block chevrons; no full ring or shield bubble."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.072,
+        0.27,
+        0.45,
+        0.6
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/armor-hit.glb",
+        "bytes": 134764,
+        "sha256": "1aa2b599f8d41625d1f0d73555ac542e2da39d33bbac00e58deb9162fe77a47c"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/armor-hit.glb",
+        "bytes": 134208,
+        "sha256": "5621205cb7f0846fd9e8614ce56bc80b0ef6f06a9ef6362affb431b9bc438317"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "ricochet-hit",
+      "kind": "effect",
+      "name_ko": "도탄 튕김",
+      "batch_id": "material-impacts",
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.5,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Rotate authored bend coordinates into the +Z tangent direction while retaining +Y lift.",
+        "Replace two generic sparks by one small brass chip moving along the bend."
+      ],
+      "concerns": [
+        "Existing source/binary bent streak extended mostly +X, contradicting the recipe +Z tangent direction. It had generic radial sparks instead of a departing chip."
+      ],
+      "expected_observations": [
+        "A broken cream streak and one brass chip deflect forward along +Z tangent with a slight outward lift.",
+        "The effect reads as one glancing departure instead of a radial impact; it never emits a new gameplay projectile."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.06,
+        0.225,
+        0.375,
+        0.5
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/ricochet-hit.glb",
+        "bytes": 19036,
+        "sha256": "8e4c4dd2879cfc55eed368f5e8c79024d8fa17357cae9c6e3a3650334653d8ff"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/ricochet-hit.glb",
+        "bytes": 68120,
+        "sha256": "274d91bc0cd8fa90281b7db50fc2c04b0a9f20a08836091d951d75f94996677a"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "weakpoint-hit",
+      "kind": "effect",
+      "name_ko": "약점 적중",
+      "batch_id": "material-impacts",
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.8,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "Two coral inward brackets and three ivory flicks are distinguishable by motion/shape in source; need confirm contraction at small game scale."
+      ],
+      "expected_observations": [
+        "Mirrored brackets converge on the contact center before shrinking; no large radial ring.",
+        "The contraction cue remains visible in cream and dark teal backgrounds without relying only on color."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.096,
+        0.36,
+        0.6,
+        0.8
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/weakpoint-hit.glb",
+        "bytes": 83828,
+        "sha256": "69c13b41011376ed9e737dc66129f1c4c82cf1880fc44813ee70ab63cb8c25be"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/weakpoint-hit.glb",
+        "bytes": 147244,
+        "sha256": "bd4647202806e7752600064ef7cdf3deb76519fd9ee01b76d956966762c6f45a"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "cloud-miss",
+      "kind": "effect",
+      "name_ko": "구름 빗나감",
+      "batch_id": "material-impacts",
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.1,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [],
+      "concerns": [
+        "Single curled-smoke base at low opacity may look like soot rather than a soft cloud at some angles. This is an unresolved art observation, not grounds for unverified recoloring."
+      ],
+      "expected_observations": [
+        "A low-opacity soft curl drifts/rises without sparks, impact fragments or flame.",
+        "A miss remains visually quieter than contact; the contour reads as cloud haze rather than a damaging explosion."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.132,
+        0.495,
+        0.825,
+        1.1
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/cloud-miss.glb",
+        "bytes": 107972,
+        "sha256": "285a2fc78263489b81e550e986677b61c54f4fc4594703edd3655b4131a9aa38"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/cloud-miss.glb",
+        "bytes": 3701360,
+        "sha256": "bff21b1716ae2be7a3527962e3e98704d027d920edad91c2128d7a92d7bb453e"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "penetration-exit",
+      "kind": "effect",
+      "name_ko": "관통 출구",
+      "batch_id": "material-impacts",
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.65,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-primary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Replace radial fan with three narrow normal-aligned ivory/brass jets and short outward +Y motion.",
+        "Keep a much smaller late smoke curl with dominant +Y rise and only0.06 lateral drift."
+      ],
+      "concerns": [
+        "Existing binary had generic tangential radial sparks and smoke drift X0.4, losing the deliberate narrow +Y exit direction."
+      ],
+      "expected_observations": [
+        "Three restrained jets emerge in a narrow +Y-normal bundle from the confirmed exit surface.",
+        "A clear exit direction is visible without a broad impact halo or a second explosion."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.078,
+        0.2925,
+        0.4875,
+        0.65
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/penetration-exit.glb",
+        "bytes": 97976,
+        "sha256": "7bbf5af2d3b02ca6590160d54215f5e08c613601e5c276be9aa5d1dbb747092f"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/penetration-exit.glb",
+        "bytes": 3789612,
+        "sha256": "c734ec24519c87a3a36a2420e92014025c34029e0e770567c89535b52a0add4b"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "small-explosion",
+      "kind": "effect",
+      "name_ko": "소형 폭발",
+      "batch_id": "explosions-air",
+      "page": "outputs/combat-vfx-v2/review/explosions-air.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.8,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "concerns": [
+        "세워진 불꽃의 하단이 접촉 기준점 안으로 잠기는지 확인 필요. 중심 위치와 총크기는 이번에 바꾸지 않았다.",
+        "압력 붓 길이0.36, 반폭0.027은 게임 크기에서 작은 표현이다. 함포/소형/대형의 상대 위계 확인 전 확대 보류."
+      ],
+      "expected_observations": [
+        "초기 압력→세운 불꽃→늦은 잔연기 순서를 같은 배율에서 구별한다.",
+        "표적/연결부를 가리지 않고 small이 large보다 작게 읽히는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.044,
+        0.144,
+        0.384,
+        0.704
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/small-explosion.glb",
+        "bytes": 224208,
+        "sha256": "0d29ece131d7ebc128cd5dc04e3cf027bb99b75870ed33a3b528a0a84c03a74a"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/small-explosion.glb",
+        "bytes": 7434008,
+        "sha256": "70c3fd2eef32965198db376913461c1d8359a33731c6453dc9d8067d2a9fdd32"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2e5b62d9c90f1a2da61e6ab3a0e190a192abdc15cab4c8c1fe88b4cd391d786",
+      "page_bytes": 58246518
+    },
+    {
+      "id": "large-explosion",
+      "kind": "effect",
+      "name_ko": "대형 폭발",
+      "batch_id": "explosions-air",
+      "page": "outputs/combat-vfx-v2/review/explosions-air.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.8,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "concerns": [
+        "flame은 parent yaw만 있고 X→Y 보정이 없어 수정 전 수평으로 퍼진다. 새 inner rotation으로 보정했다.",
+        "가장 큰 불꽃 높이0.64는 대표 cannon-hit의 authored_scale1.9가 적용된 높이와 비교하면 작을 수 있다. 출력 렌더 없이 이름만 보고 확대하지 않았다."
+      ],
+      "expected_observations": [
+        "3개 불꽃이 +Y로 솟고 개별 면 사이에 여백이 남는지 확인한다.",
+        "small/cannon-hit보다 큰 폭발로 읽히되 기낭 면을 불투명하게 덮지 않는지 확인한다.",
+        "불꽃 다음에 두 잔연기가 지연되어 남는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.216,
+        0.36,
+        0.522,
+        1.062,
+        1.53
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/large-explosion.glb",
+        "bytes": 338232,
+        "sha256": "c52d07092b84c67ecdfb17a8c3999dd03f7cfcb4e3ab3c08d51787abe858d6a3"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/large-explosion.glb",
+        "bytes": 7468008,
+        "sha256": "f5659a1ea44bd023d953ca5afdac4548d10d806a1cc23047fc639ebf8a21ffbb"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2e5b62d9c90f1a2da61e6ab3a0e190a192abdc15cab4c8c1fe88b4cd391d786",
+      "page_bytes": 58246518
+    },
+    {
+      "id": "airburst",
+      "kind": "effect",
+      "name_ko": "공중 폭발",
+      "batch_id": "explosions-air",
+      "page": "outputs/combat-vfx-v2/review/explosions-air.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.3,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "concerns": [
+        "소스 ray yaw 범위 -1.0~1.1rad가 전방부채이므로 기존 설명의 전방위 폭발과 다르다. 현재 방향성 아트 의도를 유지하고 전방위 완료로 주장하지 않는다.",
+        "작은 fan-ray가 게임 크기에서 소형폭발/파편과 구별되는지 새 렌더 필요."
+      ],
+      "expected_observations": [
+        "공중 위치에서 지면/표면에 붙은 decal처럼 보이지 않는지 확인한다.",
+        "+Y 불꽃과 열린 XZ fan이 서로 지워지지 않는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.156,
+        0.2925,
+        0.624,
+        1.066
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/airburst.glb",
+        "bytes": 363300,
+        "sha256": "8f58822cf7624741127e7bea2e40afaa8c4d9d6c3c3fa18b665023caa637afb2"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/airburst.glb",
+        "bytes": 7462320,
+        "sha256": "9c8b39f7284cf8176438aa35264e118031819c3957c84b291925ecac8c78faf5"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2e5b62d9c90f1a2da61e6ab3a0e190a192abdc15cab4c8c1fe88b4cd391d786",
+      "page_bytes": 58246518
+    },
+    {
+      "id": "shrapnel-burst",
+      "kind": "effect",
+      "name_ko": "파편 분산",
+      "batch_id": "explosions-air",
+      "page": "outputs/combat-vfx-v2/review/explosions-air.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.1,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "실제 GLB 칩 최대폭0.055/높이0.095는 게임 크기에서 점으로 묻힐 위험이 높다.",
+        "칩의 디테일보다 4방향 분산 동작이 역할을 읽혀야 하므로 증거 없이 개수를 늘리거나 전체를 확대하지 않았다."
+      ],
+      "expected_observations": [
+        "0.05~0.42cycle에 4개의 굵기가 실제 화면 픽셀로 식별되는지 확인한다.",
+        "희소한 파편이 선체 윤곽과 재질피격을 과하게 중복하지 않는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.055,
+        0.198,
+        0.462,
+        0.825
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/shrapnel-burst.glb",
+        "bytes": 304264,
+        "sha256": "b0e04ac28bc04ed5812247fface388e5175760c299330f9f3f56e085c5e529a0"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb",
+        "bytes": 133576,
+        "sha256": "097a4dca6e22dabd183a19a3349d86c34965ce78caeae7b2afe75f72d27c5816"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2e5b62d9c90f1a2da61e6ab3a0e190a192abdc15cab4c8c1fe88b4cd391d786",
+      "page_bytes": 58246518
+    },
+    {
+      "id": "smoke-puff",
+      "kind": "effect",
+      "name_ko": "짧은 연기",
+      "batch_id": "explosions-air",
+      "page": "outputs/combat-vfx-v2/review/explosions-air.html",
+      "is_representative_control": true,
+      "duration_seconds": 1.8,
+      "loop": false,
+      "status": "previous_representative_render_verified",
+      "sample_times_seconds": [
+        0,
+        0.27,
+        0.684,
+        1.296,
+        1.8
+      ],
+      "expected_observations": [
+        "Previously inspected representative control; confirm the existing silhouette, timing and colored fill remain unchanged."
+      ],
+      "changes": [],
+      "concerns": [],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/smoke-puff.glb",
+        "bytes": 113964,
+        "sha256": "e9eac110ce92f95715d8c7dcf288db5424f0a62d6da0a57e94eda66aabb02829"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/smoke-puff.glb",
+        "bytes": 3703500,
+        "sha256": "c57c974af690a604784d1f81ad1e83fa65177a63082b85820ab120e94fec6647"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2e5b62d9c90f1a2da61e6ab3a0e190a192abdc15cab4c8c1fe88b4cd391d786",
+      "page_bytes": 58246518
+    },
+    {
+      "id": "steam-vent",
+      "kind": "effect",
+      "name_ko": "증기 배출",
+      "batch_id": "explosions-air",
+      "page": "outputs/combat-vfx-v2/review/explosions-air.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.5,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "가는 크림 연기가 크림 하늘에서 사라질 수 있다. smoke-puff 게임 캡처도 작은 연기이므로 대상 배기구에서 실루엣 확인이 필요하다.",
+        "nozzle gust는 root 아래 고정메시이며 root 경계 스케일만 따른다. 별도 파티클로 주장하지 않는다."
+      ],
+      "expected_observations": [
+        "배기구 원점에서 위로 올라가며 0.47cycle의 S형을 읽는지 확인한다.",
+        "cream/teal 두 배경에서 손그림 명암과 선체 표면 가림을 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.15,
+        0.705,
+        1.05,
+        1.41
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/steam-vent.glb",
+        "bytes": 229388,
+        "sha256": "628243b610f3240fec8ce945ef1fb97f3d50d443195d1f44717dba7301abfaca"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/steam-vent.glb",
+        "bytes": 3805964,
+        "sha256": "36209b19d6ee6f366eb8f452b309b2abcb80c2ab1bf11769be0f7c1511dd7a58"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2e5b62d9c90f1a2da61e6ab3a0e190a192abdc15cab4c8c1fe88b4cd391d786",
+      "page_bytes": 58246518
+    },
+    {
+      "id": "smoldering-fire",
+      "kind": "effect",
+      "name_ko": "잔불",
+      "batch_id": "fire-damage",
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "is_representative_control": false,
+      "duration_seconds": 2.4,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "concerns": [
+        "flame parent에 rotation 트랙이 있어 parent에만 +Z90도를 넣으면 애니메이션에 덮인다. import instance 안에 보정했다.",
+        "잔불의 하단 위치0.08에 높이0.23이 들어가므로 표면 잠김 확인 필요.",
+        "root가 주기 첫/마지막2.5%에서 축소되어 loop 경계 소실은 의도된 시제품이며 seamless 지속불로 통과한 것은 아니다."
+      ],
+      "expected_observations": [
+        "동일표면에서 burning-state보다 낮고 약하게 읽히는지 확인한다.",
+        "상태가 끝나면 clip loop와 fade adapter 모두 중지하고, 풀반환 뒤 다시 켤 때 잔재가 없는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [
+        2.376,
+        2.4,
+        2.424
+      ],
+      "sample_times_seconds": [
+        0.24,
+        1.008,
+        1.416,
+        1.92,
+        2.376
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/smoldering-fire.glb",
+        "bytes": 123912,
+        "sha256": "600b131806e3a02f562b1ce709ebeedffc62ff1426a2a843884180f1b4794e3d"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/smoldering-fire.glb",
+        "bytes": 7423508,
+        "sha256": "b0ab9a6cfb7d07e024fbc2f4d6c3c4372780ee3d721b402f0c9e85aa4c3ccb09"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "ember-drift",
+      "kind": "effect",
+      "name_ko": "불씨 흩날림",
+      "batch_id": "fire-damage",
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "is_representative_control": false,
+      "duration_seconds": 2,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "19종 중 가장 작은 면적의 칩으로, 대표6 game PNG의 가는 선보다 더 작아 실제 화면에서 거의 보이지 않을 가능성이 있다. 크기 결함은 새 렌더 전 확정하지 않는다.",
+        "모든 불씨를 구/발광점으로 대체하지 않고 종이 형태와 산호/황동 온도를 유지한다."
+      ],
+      "expected_observations": [
+        "0.42cycle에 네 불씨 중 최소2개 이상이 확인되고 선체 디테일과 구별되는지 확인한다.",
+        "0.88cycle의 축소가 반짝임인지 렌더 alias인지 영상으로 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.3,
+        0.84,
+        1.36,
+        1.76
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/ember-drift.glb",
+        "bytes": 106756,
+        "sha256": "e5e1cdb7e46953faa0c9ea13a8d950c5e0ef570e6ed5ff50f4ea4e271a21817a"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/ember-drift.glb",
+        "bytes": 17884,
+        "sha256": "dde95e7313f3b4b959c82431b0e68adcb81e9d5a3a9bae0e1fde183e9522814b"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "burning-state",
+      "kind": "effect",
+      "name_ko": "불붙음 상태",
+      "batch_id": "fire-damage",
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.5,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+      "concerns": [
+        "X-long flame 누운 방향을 instance의 X→Y 회전으로 수정했다.",
+        "소스 delay0.05/0.17은 선언되어 있지만 현재 burning-state motion시간에는 쓰이지 않는다. 두 불꽃 scale은 동기화되어 있다; 새 렌더 뒤 필요하면 위상 조정할 후보로 남긴다.",
+        "불꽃 중심Y0.12/0.15는 수정 후 하단 일부가 손상표면 아래로 들어갈 수 있다."
+      ],
+      "expected_observations": [
+        "+Y 바깥 법선으로 솟는 비대칭 두 불꽃이 잔불과 구별되는지 확인한다.",
+        "상태종료/호스트삭제/수리완료 시 곧바로 해제되고 풀재생에 전 호스트 참조가 남지 않는지 확인한다.",
+        "연속2주기를 보고 동기 맥동과 경계 축소가 과하게 끊기지 않는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [
+        1.485,
+        1.5,
+        1.515
+      ],
+      "sample_times_seconds": [
+        0.075,
+        0.33,
+        0.6,
+        0.93,
+        1.23,
+        1.485
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/burning-state.glb",
+        "bytes": 167904,
+        "sha256": "63ef5ff24cca143094c3d5048c32b9ddd637941d0ab668da4075770dd80ab044"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/burning-state.glb",
+        "bytes": 3725064,
+        "sha256": "f94fdc6ab253aa6832b2feb55e30c87e50ccdbe0fe4204f99e9833509293c09f"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "heavy-smoke-state",
+      "kind": "effect",
+      "name_ko": "짙은 연기 상태",
+      "batch_id": "fire-damage",
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "is_representative_control": false,
+      "duration_seconds": 3,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "두 연기 중심이 Y0.25/0.52이며 올라갈수록 면이 겹칠 수 있다. 대표 smoke-puff와 실제게임크기/배경에서 비교 필요.",
+        "loop 경계 root0.001과 개별 연기의 축소가 있어서 연속 짙은 연기 유지가 구현되었다고 주장하지 않는다."
+      ],
+      "expected_observations": [
+        "연기2개가 S형과 여백을 유지하며 부착 모듈/연결부 가림이 허용범위인지 확인한다.",
+        "호스트 추종 중 중복시스템이 위치/상승을 두번 적용하지 않는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [
+        2.97,
+        3,
+        3.03
+      ],
+      "sample_times_seconds": [
+        0.75,
+        1.53,
+        2.25,
+        2.82,
+        2.97
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/heavy-smoke-state.glb",
+        "bytes": 234864,
+        "sha256": "95e79fefd88daa6357f0e6e7bc70985ca60f73778799d4c2e6bf9de7a6fe89b5"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/heavy-smoke-state.glb",
+        "bytes": 3779356,
+        "sha256": "e5407f69f039fbe276b96f960abe1b254c44f57bf5331357ca6e50f20e96f487"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "gas-leak-state",
+      "kind": "effect",
+      "name_ko": "가스 누출 상태",
+      "batch_id": "fire-damage",
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "is_representative_control": false,
+      "duration_seconds": 2,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "색이 옅어서 크림배경에서 역할을 잃을 수 있다. opacity fade는 별도 runtime이므로 TRS-only 모습도 확인해야 한다.",
+        "host-surface +Y 법선에 붙이는 연출과 호스트 world-up을 혼동하지 않는다."
+      ],
+      "expected_observations": [
+        "폭발/증기와 다른 가느다란 새는 곡선으로 읽히는지 확인한다.",
+        "누출종료 때 loop와 부착참조를 모두 끊고 재생시간0으로 리셋한다."
+      ],
+      "loop_boundary_sample_seconds": [
+        1.98,
+        2,
+        2.02
+      ],
+      "sample_times_seconds": [
+        0.36,
+        0.8,
+        1.26,
+        1.8,
+        1.98
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/gas-leak-state.glb",
+        "bytes": 268136,
+        "sha256": "b9f0e0258fdb2cc6131ae6318b9adce6ba1b5c73cffab6895f851f2cc9d7a290"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/gas-leak-state.glb",
+        "bytes": 191336,
+        "sha256": "5bab4cd843f18e6baa0c60537d4a914f718dd4a6ef0bd014d8a7ec63276c929c"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "overheat-state",
+      "kind": "effect",
+      "name_ko": "과열 상태",
+      "batch_id": "fire-damage",
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.2,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "정점색/선형상만으로 heat shimmer 셰이더가 구현된 것은 아니다.",
+        "가는선 두개가 대표 repair의 봉합선보다 작으므로 게임 크기에서 과열 의미를 알아볼 수 있는지 확인 필요."
+      ],
+      "expected_observations": [
+        "불붙음/가스누출과 다른 두 개의 흔들리는 열기선으로 읽히는지 확인한다.",
+        "과열종료 시 즉시 정지하고 clip_duration1.2를 과열상태 지속시간으로 쓰지 않는다."
+      ],
+      "loop_boundary_sample_seconds": [
+        1.188,
+        1.2,
+        1.212
+      ],
+      "sample_times_seconds": [
+        0.144,
+        0.396,
+        0.66,
+        0.936,
+        1.188
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/overheat-state.glb",
+        "bytes": 239536,
+        "sha256": "ff778659a98705b0a061fa8e4022facd92d768226f6decbede6ed66c74befadc"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/overheat-state.glb",
+        "bytes": 79080,
+        "sha256": "36780e44690785a4d41728892b7fa24f7bd04e43975b422b8765707d502fe43a"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "short-circuit-state",
+      "kind": "effect",
+      "name_ko": "단락 상태",
+      "batch_id": "fire-damage",
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.8,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "가장 가는 반폭0.012와 짧은 점멸은 60fps 게임크기에서 놓치기 쉽다. 렌더/재생검토 없이 두께나 점멸횟수 변경하지 않았다.",
+        "폐고리/네온방전으로 바꾸지 않고 밝은 크림과 옅은청록의 꺾인 붓결을 유지한다."
+      ],
+      "expected_observations": [
+        "sample .084/.260/.436초의 서로 다른 전기선3개를 각각 확인한다.",
+        "모바일게임크기 및 TRS-only에서 점멸이 알아볼 수 있고 광과민성을 유발하는 과도한 전면점멸은 없는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [
+        0.792,
+        0.8,
+        0.808
+      ],
+      "sample_times_seconds": [
+        0.084,
+        0.26,
+        0.436,
+        0.6,
+        0.792
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/short-circuit-state.glb",
+        "bytes": 276940,
+        "sha256": "6bac2599d74024cbb044bd1910fd9ef36e6cf707944d4c0f5847e6d3f4beb710"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/short-circuit-state.glb",
+        "bytes": 116340,
+        "sha256": "b7c56e88d0dedd3507e96074e3eb3a71911e91cb0854e776e601aff0ef5a8eb4"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "engine-stall-state",
+      "kind": "effect",
+      "name_ko": "엔진 정지 상태",
+      "batch_id": "fire-damage",
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "is_representative_control": false,
+      "duration_seconds": 2.2,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "기존 엔진 연기가 작은 편이므로 더큰고장/폭발과 구별하는 방향은 합리적이나 실제화면에서 정지상태로 읽히는지는 미검수.",
+        "표준TRS 연기와 soot이고 엔진 회전/추력/실속을 실제 제어하지 않는다."
+      ],
+      "expected_observations": [
+        "불규칙 배기가 상승후 뒤(-Z)/아래로 떨어지는 끊김을 읽는다.",
+        "정상화 이벤트에서 loop중지, 배기 parent/scale/time을 리셋한다."
+      ],
+      "loop_boundary_sample_seconds": [
+        2.178,
+        2.2,
+        2.222
+      ],
+      "sample_times_seconds": [
+        0.176,
+        0.418,
+        0.792,
+        1.32,
+        1.87,
+        2.178
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/engine-stall-state.glb",
+        "bytes": 136368,
+        "sha256": "8631484f882ed6971fe0b00ebb0717970783ba9cbd60ea6fdab6b1e22b154484"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/engine-stall-state.glb",
+        "bytes": 3760560,
+        "sha256": "b8aea700a4994f51b8df91f90d952f1edcc82b25f1b5cffa53a3413b148dca8a"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "envelope-rupture-state",
+      "kind": "effect",
+      "name_ko": "기낭 파열 상태",
+      "batch_id": "break-support",
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.4,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "실제천 메시의 찢어짐/양력손실이 아니라 파열확정 이벤트 후 일회성 표시다.",
+        "cream_canvas와 fine seam은 크림기낭/밝은배경에서 묻힐 수 있다."
+      ],
+      "expected_observations": [
+        "+Y 바깥법선으로 천 조각이 읽히고 실제기낭을 덮는 고정하얀판처럼 보이지 않는지 확인한다.",
+        "one-shot종료와 host삭제 후 풀에 천/선이 남지 않는다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.056,
+        0.364,
+        0.7,
+        0.882,
+        1.26
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/envelope-rupture-state.glb",
+        "bytes": 128884,
+        "sha256": "50e5c1ddf4c227c7b49e70fa5e6afc17c90d9b2731b823dd48018325da92b642"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/envelope-rupture-state.glb",
+        "bytes": 180160,
+        "sha256": "c2f60de2b0fa997dd48a8f86cdc9bf37452f1c1c68544e5d3763e2f0865d65e7"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "module-detach-state",
+      "kind": "effect",
+      "name_ko": "부품 분리 순간",
+      "batch_id": "break-support",
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "is_representative_control": false,
+      "duration_seconds": 1,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "볼트가 게임크기에서 매우 작다. 중심절단 동작이 역할을 읽혀야 하므로 볼트 확대만으로 해결했다고 주장하지 않는다.",
+        "연결부 절단/하위묶음 분리/회수/화물화를 표시클립이 직접 실행하지 않는다."
+      ],
+      "expected_observations": [
+        "실제 연결절단 확정위치에서 두필라멘트가 벌어지는 방향을 읽는다.",
+        "기존 분리선체/회수표시와 동시에 큰 폭발을 더하지 않는지 통합담당이 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.06,
+        0.19,
+        0.25,
+        0.49,
+        0.86
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/module-detach-state.glb",
+        "bytes": 133624,
+        "sha256": "5ab66177070d315574612622b757517ab1c919a491300f722482d5d813cf8a21"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/module-detach-state.glb",
+        "bytes": 3769348,
+        "sha256": "a220c36206c0c83f3625da1a9258e8878bd31c743ca06a228942abe27ccd32e0"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "shield-pulse",
+      "kind": "effect",
+      "name_ko": "방패 펄스",
+      "batch_id": "break-support",
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "is_representative_control": true,
+      "duration_seconds": 1.1,
+      "loop": false,
+      "status": "previous_representative_render_verified",
+      "sample_times_seconds": [
+        0,
+        0.165,
+        0.41800000000000004,
+        0.792,
+        1.1
+      ],
+      "expected_observations": [
+        "Previously inspected representative control; confirm the existing silhouette, timing and colored fill remain unchanged."
+      ],
+      "changes": [],
+      "concerns": [],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/shield-pulse.glb",
+        "bytes": 659600,
+        "sha256": "3b04e24ba9dd5d8fc50a94b18fb9b6de06f65ac24de374bbf191578fe9bbebe0"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/shield-pulse.glb",
+        "bytes": 338628,
+        "sha256": "85960acbf58e9192d78d9673a315028657103081ce62fb59f1a32b1751d5af81"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "armor-block",
+      "kind": "effect",
+      "name_ko": "장갑 막음",
+      "batch_id": "break-support",
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "is_representative_control": false,
+      "duration_seconds": 0.55,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "한 chevron은 매우 낮은높이0.13이라 게임크기에서 작은 더블화살표로 보일 수 있다.",
+        "막음 판정이 없는 일반 armor-hit를 이효과로 대체하지 않는다."
+      ],
+      "expected_observations": [
+        "실제block이벤트에서 공격폭발/보호막과 다른 짧은맞섬이 읽힌다.",
+        "원점의 +Y법선을 맞춰 선체안으로 눕지 않고 과도한차폐면이 없는지 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.02475,
+        0.1265,
+        0.264,
+        0.3575
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/armor-block.glb",
+        "bytes": 98556,
+        "sha256": "6ae0a31316887237d1a69004ec3bdefd49d9ac1e6b130568663757c2759ce19b"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/armor-block.glb",
+        "bytes": 116360,
+        "sha256": "e82779236fe594050f6394a102ece92fe205a56fd0d206928544a248d56775e7"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "repair-stitch",
+      "kind": "effect",
+      "name_ko": "수리 봉합",
+      "batch_id": "break-support",
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "is_representative_control": true,
+      "duration_seconds": 2,
+      "loop": false,
+      "status": "previous_representative_render_verified",
+      "sample_times_seconds": [
+        0,
+        0.3,
+        0.76,
+        1.44,
+        2
+      ],
+      "expected_observations": [
+        "Previously inspected representative control; confirm the existing silhouette, timing and colored fill remain unchanged."
+      ],
+      "changes": [],
+      "concerns": [],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/repair-stitch.glb",
+        "bytes": 213672,
+        "sha256": "508616e3772786ed036f6c6047b2dfa36d46463ce89ac6c07c70031a56d458dd"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/repair-stitch.glb",
+        "bytes": 188308,
+        "sha256": "4f306bc541434dbf953a2d28e3acb5bc7d6e11c3018565778002e414f7e08418"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/primary.cjs",
+          "bytes": 13239,
+          "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "healing-pulse",
+      "kind": "effect",
+      "name_ko": "회복 펄스",
+      "batch_id": "break-support",
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "is_representative_control": false,
+      "duration_seconds": 1.8,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "leaf의 화면면적과 가운데 실선은 게임크기에서 알아보기 작을수 있다. 대표repair와 다른 지원역할인지 새렌더필요.",
+        "스프라이트/치유판정/실제회복량은 포함하지 않는다."
+      ],
+      "expected_observations": [
+        "3개의 작은잎이 위로번갈아 올라오며 수리봉합과 다른형태로 읽힌다.",
+        "target지원위치와 사용기간을 런타임이 결정하고 one-shot종료후 풀을정리한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.324,
+        0.558,
+        0.792,
+        1.26,
+        1.584
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/healing-pulse.glb",
+        "bytes": 110112,
+        "sha256": "e914ff7233861ca80d82631c0a545a9c270eaa29cdabadf4aaecf814cbaef46d"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/healing-pulse.glb",
+        "bytes": 228876,
+        "sha256": "21e146879e89f2e7825b53d7d6200536d8b1175eccbd741e448f9ade20d5d6d5"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "salvage-tether",
+      "kind": "effect",
+      "name_ko": "회수 견인 흐름",
+      "batch_id": "break-support",
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "is_representative_control": false,
+      "duration_seconds": 2,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "로컬시연 rope Z스케일0.56→1, Y스케일1→0.7→0.82와 root경계축소는 실제끝점 거리/장력 계산이 아니다.",
+        "실제런타임의 distance/orientation과 내장rope scale을 중복적용하면 끝점이 어긋난다. 후속 binder는 rope preview scale트랙을 끄고 endpoints를 단독소유해야 한다.",
+        "끝점연결 유지가 필요한 상태에 clip끝 shrink를 쓰지 않는다. 짧은자체시안loop는 hold-after-arrival 완료가 아니다."
+      ],
+      "expected_observations": [
+        "실제두끝점사이에 Z축을맞추고 길이distance/1.02를 적용할 때 오차가 없는지 확인한다.",
+        "상태종료/호스트삭제/projectile-ended에 두끝점참조와 parent를 해제한다.",
+        "rope 유지와 reel 제스처만 반복하는 정책을 분리해 연속2주기 확인한다."
+      ],
+      "loop_boundary_sample_seconds": [
+        1.98,
+        2,
+        2.02
+      ],
+      "sample_times_seconds": [
+        0.18,
+        0.6,
+        1.46,
+        1.88,
+        1.98
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/salvage-tether.glb",
+        "bytes": 403264,
+        "sha256": "a09824bb95b1ffb69331c860e8337439185256d33bbb3b760e6942962fca717c"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/salvage-tether.glb",
+        "bytes": 161104,
+        "sha256": "28a2959fbc285dee5fc5fa3d30480df6e87e7dd03401aea5f267d850f56bf66b"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "mount-lock",
+      "kind": "effect",
+      "name_ko": "장착 잠금",
+      "batch_id": "break-support",
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "is_representative_control": false,
+      "duration_seconds": 1,
+      "loop": false,
+      "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+      "concerns": [
+        "장착클릭은 얇아서 실제작은화면에서 확인필요. source에는 실제socket검증/장착결과 생성이 없다.",
+        "host자산 위에표시하는TRS이며 실제부품이 이bracket과같은위치로 움직인다는 뜻이 아니다."
+      ],
+      "expected_observations": [
+        "양쪽bracket→중앙걸림→짧은check표시 순서가 수리/막음과 구별된다.",
+        "실제장착확정event에서만 발생하고 clip끝후 time/transform/parent를 초기화한다."
+      ],
+      "loop_boundary_sample_seconds": [],
+      "sample_times_seconds": [
+        0.08,
+        0.32,
+        0.45,
+        0.48,
+        0.82
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/assets/mount-lock.glb",
+        "bytes": 106712,
+        "sha256": "47e29dab2cf93f0fdbef76fc8e67474db41c007e4d1d23a6fde62ededdeada9a"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/assets/mount-lock.glb",
+        "bytes": 145316,
+        "sha256": "5890a8b06f4b18d5c89cf4fcabcd4b7b9dbecf03a740667f8bc2d3679be9ed83"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/core.cjs",
+          "bytes": 9366,
+          "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+        },
+        {
+          "path": "tools/combat-vfx-v2/generate.cjs",
+          "bytes": 4019,
+          "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+        },
+        {
+          "path": "tools/combat-vfx-v2/secondary.cjs",
+          "bytes": 15360,
+          "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "01-machine-gun",
+      "kind": "sequence",
+      "name_ko": "기관총 공격",
+      "batch_id": "sequence-gun-cannon",
+      "page": "outputs/combat-vfx-v2/review/sequence-gun-cannon.html",
+      "is_representative_control": false,
+      "duration_seconds": 2,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-sequences.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "expected_observations": [
+        "0.06s: a compact directional muzzle flick leaves barrel details readable.",
+        "0.4s: one payload travels along local +Z; moving_payload geometry remains separate from the velocity tail.",
+        "0.85s: payload arrives at local Z4 and impact begins; hit choreography is preview timing only.",
+        "1.8s→2s: impact ends, then effect wrappers reduce to scale .001; optional repeat restarts without old opacity or parent state."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.06,
+        0.4,
+        0.85,
+        1.25,
+        1.8,
+        2
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/sequences/01-machine-gun.glb",
+        "bytes": 3444188,
+        "sha256": "ab8307c1ab29c94f9d4aba9c30a4b75b6fd67e98725ad6114f429175905bbc65"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/sequences/01-machine-gun.glb",
+        "bytes": 7226956,
+        "sha256": "d3946392df4a6e7d973c1735c7e346b9a2f1c06885b6bd85f06d60755068db37"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/sequences.mjs",
+          "bytes": 24847,
+          "sha256": "677347ee413c827c71f9d9de9ff08a910f2f44971c64c976286b5a246647d83f"
+        },
+        {
+          "path": "tools/combat-vfx/core.mjs",
+          "bytes": 6059,
+          "sha256": "c0ad34671b9a4dd86c6a8928a0c471dcb0b4714a5840e0f8421c00feef322dd9",
+          "read_only": true
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "76a43b91c2cb53647c453a41f06893cb2bc7087c14e8e55e6a6de81bb2f50875",
+      "page_bytes": 66839177
+    },
+    {
+      "id": "02-deck-cannon",
+      "kind": "sequence",
+      "name_ko": "함포 공격",
+      "batch_id": "sequence-gun-cannon",
+      "page": "outputs/combat-vfx-v2/review/sequence-gun-cannon.html",
+      "is_representative_control": false,
+      "duration_seconds": 2.8,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-sequences.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "expected_observations": [
+        "0.12s→0.4s: pressure/fire/smoke are distinct beats with room around barrel.",
+        "0.85s: a single cannon payload moves along +Z; the abstract target is four local units from the spawn.",
+        "1.25s→2.2s: impact flame then smoke follows the source timeline; source authored cannon-hit root scale is preserved.",
+        "2.7s→2.8s: effect wrappers finish then remain tiny for a clean hold before optional comparison repeat."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.4,
+        0.85,
+        1.25,
+        1.55,
+        2.2,
+        2.7,
+        2.8
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/sequences/02-deck-cannon.glb",
+        "bytes": 4414328,
+        "sha256": "ab07861e5fea19d1ac6aadf5722f52cf6849e0f859afc988ae3baa2d0bcc5b7d"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/sequences/02-deck-cannon.glb",
+        "bytes": 18976932,
+        "sha256": "e021f143d7db755ffc21ac2744d70853408f08f2d5729439d0c947f03faa8624"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/sequences.mjs",
+          "bytes": 24847,
+          "sha256": "677347ee413c827c71f9d9de9ff08a910f2f44971c64c976286b5a246647d83f"
+        },
+        {
+          "path": "tools/combat-vfx/core.mjs",
+          "bytes": 6059,
+          "sha256": "c0ad34671b9a4dd86c6a8928a0c471dcb0b4714a5840e0f8421c00feef322dd9",
+          "read_only": true
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "76a43b91c2cb53647c453a41f06893cb2bc7087c14e8e55e6a6de81bb2f50875",
+      "page_bytes": 66839177
+    },
+    {
+      "id": "03-mortar",
+      "kind": "sequence",
+      "name_ko": "박격포 공격",
+      "batch_id": "sequence-mortar-harpoon",
+      "page": "outputs/combat-vfx-v2/review/sequence-mortar-harpoon.html",
+      "is_representative_control": false,
+      "duration_seconds": 3.5,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-sequences.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Rotate only mortar-launch wrapper Rx(-PI/2) so source +Z emerges upward. Projectile arc and target Z4 are unchanged.",
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "expected_observations": [
+        "0.12s: launch volume emerges upward from the estimated top opening; wrapper Rx(-PI/2) maps source +Z to world +Y.",
+        "0.65s→1.24s: projectile preserves its own +Y arc and +Z progress; whole projectile wrapper is not rotated.",
+        "1.75s: payload returns to local Y0 at local Z4, aligned with the target and impact.",
+        "3.4s→3.5s: impact finishes and the final hold clears effects before optional repeat."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.3,
+        0.65,
+        1.24,
+        1.75,
+        2.4,
+        3.4,
+        3.5
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/sequences/03-mortar.glb",
+        "bytes": 4169176,
+        "sha256": "1e5d92c00abfe468ac31675f68126714032244444791fbfdbdbd9060b97a44b3"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/sequences/03-mortar.glb",
+        "bytes": 18668044,
+        "sha256": "cd8fa19eb187ab27abb1d465070f89a83fdc6f35b22fc208d7961d1b39ddbd97"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/sequences.mjs",
+          "bytes": 24847,
+          "sha256": "677347ee413c827c71f9d9de9ff08a910f2f44971c64c976286b5a246647d83f"
+        },
+        {
+          "path": "tools/combat-vfx/core.mjs",
+          "bytes": 6059,
+          "sha256": "c0ad34671b9a4dd86c6a8928a0c471dcb0b4714a5840e0f8421c00feef322dd9",
+          "read_only": true
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d95cd5d56a486843c8271fc51f51c53dabdc362b29f19e5b43a103c640a180f1",
+      "page_bytes": 67369021
+    },
+    {
+      "id": "04-harpoon",
+      "kind": "sequence",
+      "name_ko": "작살 견인",
+      "batch_id": "sequence-mortar-harpoon",
+      "page": "outputs/combat-vfx-v2/review/sequence-mortar-harpoon.html",
+      "is_representative_control": false,
+      "duration_seconds": 2.8,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-sequences.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "expected_observations": [
+        "0.5s: rope grows from local Z0 toward the moving head without moving its muzzle endpoint.",
+        "1.3s: head reaches local Z4; source head scale remains [1,1,1] and source rope scale holds Z4.",
+        "1.8s and 2.68s: cable and head are still visible after arrival; this is preview cable geometry, not runtime rope physics.",
+        "2.7s: cable/head wrapper still holds its final pose; 2.704s and 2.8s: wrapper is tiny after the 2ms removal gate.",
+        "Optional repeat resets animation and endpoints; no previous cable remains."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.5,
+        1.3,
+        1.8,
+        2.68,
+        2.7,
+        2.704,
+        2.8
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/sequences/04-harpoon.glb",
+        "bytes": 4024428,
+        "sha256": "0e62fc452465ea53c1464ff13bc17eb110cb2296b98aa40d1cda552142302c5e"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/sequences/04-harpoon.glb",
+        "bytes": 4106052,
+        "sha256": "d01221a85927780a799748c383050f0ccadbe373d07f85d906f342b0b86a304f"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/sequences.mjs",
+          "bytes": 24847,
+          "sha256": "677347ee413c827c71f9d9de9ff08a910f2f44971c64c976286b5a246647d83f"
+        },
+        {
+          "path": "tools/combat-vfx/core.mjs",
+          "bytes": 6059,
+          "sha256": "c0ad34671b9a4dd86c6a8928a0c471dcb0b4714a5840e0f8421c00feef322dd9",
+          "read_only": true
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "d95cd5d56a486843c8271fc51f51c53dabdc362b29f19e5b43a103c640a180f1",
+      "page_bytes": 67369021
+    },
+    {
+      "id": "05-chain-shot",
+      "kind": "sequence",
+      "name_ko": "사슬탄 공격",
+      "batch_id": "sequence-chain-flame",
+      "page": "outputs/combat-vfx-v2/review/sequence-chain-flame.html",
+      "is_representative_control": false,
+      "duration_seconds": 2.8,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-sequences.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render is required to judge silhouette, small-screen legibility, muzzle/target occlusion and removal gate.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "expected_observations": [
+        "0.4s→0.8s: two small linked weights travel as a single moving_payload subtree and rotate locally.",
+        "1.25s: geometry reaches local Z4 before impact; runtime must not also apply baked clip travel.",
+        "1.55s: material shavings remain subordinate to the weapon and target.",
+        "2.7s→2.8s: wrapper clears for the final hold; source texture stays unchanged and only copied zero normals may differ."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.1,
+        0.4,
+        0.8,
+        1.25,
+        1.55,
+        2.7,
+        2.8
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/sequences/05-chain-shot.glb",
+        "bytes": 4242020,
+        "sha256": "59d6e1ac08997f59ba893119aa38171c3fc35dc6ad94bf8c1de06f51048dbbbf"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/sequences/05-chain-shot.glb",
+        "bytes": 7697952,
+        "sha256": "8bb31b9555f6bef35918a33a1fbdbfab66f5536bd68eb7511b69b0fdd155e7dc"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/sequences.mjs",
+          "bytes": 24847,
+          "sha256": "677347ee413c827c71f9d9de9ff08a910f2f44971c64c976286b5a246647d83f"
+        },
+        {
+          "path": "tools/combat-vfx/core.mjs",
+          "bytes": 6059,
+          "sha256": "c0ad34671b9a4dd86c6a8928a0c471dcb0b4714a5840e0f8421c00feef322dd9",
+          "read_only": true
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "f5714c292a1e9799db1f8bb7447db832f9941c39371506407911e1d835968fa3",
+      "page_bytes": 72101964
+    },
+    {
+      "id": "06-flamethrower",
+      "kind": "sequence",
+      "name_ko": "화염 분사",
+      "batch_id": "sequence-chain-flame",
+      "page": "outputs/combat-vfx-v2/review/sequence-chain-flame.html",
+      "is_representative_control": false,
+      "duration_seconds": 3,
+      "loop": true,
+      "audit_report": "tools/combat-vfx-v2/review-sequences.json",
+      "status": "source_binary_reviewed_new_render_required",
+      "changes": [
+        "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+      ],
+      "concerns": [
+        "Fresh game-camera render must check authored stream scale1.8 against local target distance1.85. Source reach and temporal overlap do not prove visual contact.",
+        "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+      ],
+      "expected_observations": [
+        "0.12s: ignition is small; 0.3s: ignition overlaps the beginning of the stream.",
+        "0.6s→1.7s: ignition 0–0.4s, stream 0.15–2.6s and contact 0.5–2.9s form one overlapping flow, not three ballistic shots.",
+        "Stream authored root scale1.8 is retained. Verify stream visually reaches the target at local Z1.85 without hiding the entire target; geometry reach alone is not art approval.",
+        "2.6s→2.9s: stream ends before contact/after-smoke; 3s final hold is clean before optional repeat."
+      ],
+      "loop_boundary_sample_seconds": null,
+      "sample_times_seconds": [
+        0,
+        0.12,
+        0.3,
+        0.6,
+        1.1,
+        1.7,
+        2.55,
+        2.6,
+        2.9,
+        3
+      ],
+      "v1": {
+        "path": "outputs/combat-vfx/sequences/06-flamethrower.glb",
+        "bytes": 4088896,
+        "sha256": "fb112cfaf9b31b967148f55687942d71a49b1856533cd88d4dd169a4ac5b47c8"
+      },
+      "v2": {
+        "path": "outputs/combat-vfx-v2/sequences/06-flamethrower.glb",
+        "bytes": 18510076,
+        "sha256": "f3de4241a4b14922a79b8edf0fffb30baa30ca65601f7fbc90057c13c46a2273"
+      },
+      "source_files": [
+        {
+          "path": "tools/combat-vfx-v2/sequences.mjs",
+          "bytes": 24847,
+          "sha256": "677347ee413c827c71f9d9de9ff08a910f2f44971c64c976286b5a246647d83f"
+        },
+        {
+          "path": "tools/combat-vfx/core.mjs",
+          "bytes": 6059,
+          "sha256": "c0ad34671b9a4dd86c6a8928a0c471dcb0b4714a5840e0f8421c00feef322dd9",
+          "read_only": true
+        }
+      ],
+      "scene_contract": {
+        "up": "+Y",
+        "forward": "+Z",
+        "impact_normal": "+Y",
+        "same_v1_v2_camera_time_scale": true,
+        "gameplay_muzzle_authority": "muzzleFrame event position/direction; compare-only0.24 clearance excluded",
+        "motion_owner": "GLB clip + host anchor",
+        "separate_runtime": "Opacity/cel/outline; faded meshes excluded from OutlineEffect backface pass"
+      },
+      "runtime_integrated": false,
+      "page_sha256": "f5714c292a1e9799db1f8bb7447db832f9941c39371506407911e1d835968fa3",
+      "page_bytes": 72101964
+    }
+  ],
+  "operator": "Integration owns the single heavy-browser slot. Run qa-review.cjs --run --batch=<id> --write after reserving it; this preparation does not launch a browser.",
+  "approval_policy": "Captured technical evidence is not visual approval. Inspect frames against expected observations and record reviewed output hashes before promoting an effect.",
+  "fullQA_pending": [
+    "mobile",
+    "120frame ghosting3modes",
+    "all54 downloads",
+    "gameplay version adapter",
+    "actual hit/state lifetime/pool reset",
+    "engine performance"
+  ]
+}

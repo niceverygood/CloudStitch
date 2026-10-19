@@ -1,0 +1,42 @@
+{
+  "id": "wind-swallows",
+  "name_ko": "바람꼬리제비 떼",
+  "category": "birds",
+  "role": "긴 제비꼬리와 낫 모양 날개로 항로의 흐름을 드러내는 세 마리",
+  "motion_ko": "세 마리의 날개가 위상을 달리해 빠르게 퍼덕이고 몸이 기울어짐",
+  "order": 14,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/wind-swallows.glb",
+  "preview": "previews/wind-swallows.png",
+  "triangles": 12748,
+  "mesh_count": 293,
+  "vertices": 38244,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_duration": 1.45,
+  "encoded_color_components": 378,
+  "bytes": 1715068,
+  "sha256": "f84f563f28e0f22e3d3b354638bcd108202313c2c6296e68a944cd527e283e0a",
+  "bounds": {
+    "min": [
+      -2.9653165445316754,
+      -1.085126082382886,
+      -1.0373570265761962
+    ],
+    "max": [
+      2.592253005027679,
+      0.8896996178627015,
+      0.8568021135688435
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

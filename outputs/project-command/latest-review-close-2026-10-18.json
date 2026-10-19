@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "status": "current authorized technical review and handoff cycle complete",
+  "notWholeGameComplete": true,
+  "aggregateQaPass": null,
+  "entries": {
+    "latestAudioAndEnemyEvidence": "http://127.0.0.1:8840/outputs/desktop-review-qa-v2/",
+    "audio49PairReview": "http://127.0.0.1:8840/outputs/audio-rich-v1/",
+    "enemy6Viewer": "http://127.0.0.1:8840/outputs/enemy-fleet-reference-v1/",
+    "newFlightReady3": "http://127.0.0.1:8840/outputs/flight3d-ready3/",
+    "oldFlightReady2": "http://127.0.0.1:8840/outputs/flight3d-v1/"
+  },
+  "scopeReports": [
+    "desktop-review-hub-v2-review-2026-10-18.json",
+    "audio-rich-native-review-2026-10-18.json",
+    "audio-rich-native-followup-review-2026-10-18.json",
+    "enemy-reference-browser-review-2026-10-18.json",
+    "enemy-reference-rotation-review-2026-10-18.json",
+    "flight3d-ready3-browser-review-2026-10-18.json"
+  ],
+  "verified": {
+    "audio": "98finite/49pairNorm, original1of2false/21of24false retained with separate8of8",
+    "enemy": "273of273 + representative3mode180RAF numeric5 and rootPNG3 visual observations, no preciseghosting guarantee",
+    "flight": "new20of20,Node37 separate; old20source and17QA retained",
+    "finalMeta": "v2hub36/rotation6/flight63 paths sizes and small digests checked without media/dependency wholehash repeats"
+  },
+  "remainingHumanChoices": [
+    "49soundquality/strength/bass",
+    "mortarABchoice; oldlaunch rejected",
+    "art quality and flightfeel"
+  ],
+  "notImplementedByThisCycle": [
+    "newaudio/newenemyasset game installation",
+    "flight3D harbor/cargo/salvage/save/campaign linkage",
+    "fullflight physics/precise rigged 3Dmuzzle",
+    "longperformance/physicaldevice/allbrowser approval"
+  ],
+  "operational": {
+    "qaBrowsersClosedOwnerReported": true,
+    "local8840Heads200": true,
+    "newAutomationCreated": false,
+    "newUserOwnedChatsCreated": false,
+    "paidGenerationByCommand": false,
+    "commitPushDeployByCommand": false
+  },
+  "rootArtifacts": "outputs/project-command/STATUS.txt and DECISIONS.txt"
+}

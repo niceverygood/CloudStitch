@@ -1,0 +1,25 @@
+{
+  "id": "wind-calm-loop",
+  "startedAt": "2026-10-18T08:53:40.612Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "Gentle open-sky wind across thick woven canvas on a small airship, soft airy movement with a subtle close fabric flutter. Warm calm texture, no birds, no thunder, no whistling melody. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 6,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:43.657Z",
+  "output": {
+    "file": "audio/wind-calm-loop.mp3",
+    "bytes": 97009,
+    "sha256": "7e901d35c778e12273441173a0a9d8bc1c76ab92a5e9df2fcef3ac99a4b16aff",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "60"
+}

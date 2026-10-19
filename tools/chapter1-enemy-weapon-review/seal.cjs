@@ -1,0 +1,9 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
+const root=path.resolve(__dirname,'../..'),out=path.join(root,'outputs/chapter1-enemy-weapon-review-v1'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+function record(file){const b=fs.readFileSync(path.join(root,file));return{path:file,bytes:b.length,sha256:sha(b)};}
+const catalog=JSON.parse(fs.readFileSync(path.join(out,'catalog.json'))),baseline=JSON.parse(fs.readFileSync(path.join(root,'outputs/chapter1-fleet-detail-v2/catalog.json'))),qa=JSON.parse(fs.readFileSync(path.join(out,'verification.json')));assert(qa.pass&&qa.browserClosed&&qa.models.length===11);
+const inputs=catalog.items.map(m=>{const r=record(m.source.path);assert.equal(r.sha256,m.source.sha256);assert.equal(r.sha256,baseline.models.find(b=>b.kind===m.kind).sha256);assert.equal(record('outputs/chapter1-enemy-weapon-review-v1/'+m.model).sha256,m.sha256);return r;});
+function walk(dir){return fs.readdirSync(path.join(root,dir),{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(dir+'/'+e.name):[dir+'/'+e.name]);}
+const files=[...walk('tools/chapter1-enemy-weapon-review'),...walk('outputs/chapter1-enemy-weapon-review-v1')].filter(f=>!f.endsWith('/READY.json')).map(record);
+const ready={revision:'CHAPTER1-ENEMY-WEAPON-REVIEW-V1',recordedAt:new Date().toISOString(),items:11,mounts:catalog.items.reduce((n,m)=>n+m.mounts.length,0),checks:qa.checks.length,errors:qa.errors,external:qa.external,browserClosed:qa.browserClosed,originalsPreserved:true,inputs,files,artApproval:'pending human review',gameplayIntegrated:false,heavySlot:'RETURNED; coordinated with base owner and chapter2 owner; no common server/install changes'};
+fs.writeFileSync(path.join(out,'READY.json'),JSON.stringify(ready,null,2));console.log(JSON.stringify({revision:ready.revision,files:files.length,mounts:ready.mounts,checks:ready.checks,sha256:sha(fs.readFileSync(path.join(out,'READY.json')))}));

@@ -1,0 +1,1169 @@
+{
+  "schema": "cloudstitch-enemy-base-browser-qa-1",
+  "startedAt": "2026-10-19T02:06:56.417Z",
+  "harness": "tools/enemy-base/chapter2-r1/qa.cjs",
+  "harnessSha256": "64d2452d70f4840b1966fe46716f75cf2dcfa63603f7efe08f0ee56a4e9051c5",
+  "entry": "outputs/enemy-base-v1/chapter2-r1/index.html",
+  "checks": [
+    {
+      "name": "glb-v2-nonempty-triangle-geometry",
+      "passed": true,
+      "detail": {
+        "bytes": 44909924,
+        "sha256": "9783b90b64cfadd99fb82128a59fda3ea95907147a59ad94edb7a4903e89fcde",
+        "version": "2.0",
+        "binaryBytes": 44828852,
+        "nodesInScene": 62,
+        "primitiveInstances": 52,
+        "triangleCount": 734296,
+        "vertexInstances": 801839,
+        "meshDefinitions": 52,
+        "materials": 22,
+        "images": 1,
+        "animations": 0,
+        "nonTriangleModes": [],
+        "externalUris": []
+      }
+    },
+    {
+      "name": "glb-self-contained",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "model-manifest-present-and-valid-json",
+      "passed": true
+    },
+    {
+      "name": "actual-glb-loaded-and-rendered",
+      "passed": true,
+      "detail": {
+        "meshes": 52,
+        "vertices": 801839,
+        "triangles": 734296,
+        "badCoordinates": 0,
+        "min": [
+          -41.490203857421875,
+          -22.394376754760742,
+          -24.286903381347656
+        ],
+        "max": [
+          36.590553283691406,
+          56.197349548339844,
+          25.54034996032715
+        ],
+        "size": [
+          78.08075714111328,
+          78.59172630310059,
+          49.827253341674805
+        ],
+        "renderCalls": 52,
+        "rootChildren": 1,
+        "stats": {
+          "triangles": 734296,
+          "meshes": 52,
+          "materials": 22,
+          "vertices": 801839,
+          "geometries": 52,
+          "bytes": 44909924,
+          "animations": 0,
+          "groups": [
+            "hull",
+            "buoyancy",
+            "keep",
+            "bell_tower",
+            "bastions",
+            "dock",
+            "machinery",
+            "banners"
+          ],
+          "bounds": [
+            78.08075714111328,
+            78.59172630310059,
+            49.827253341674805
+          ],
+          "mode": "handdrawn",
+          "view": "iso",
+          "focus": null,
+          "outline": true,
+          "outlineEnabled": true
+        },
+        "effectAutoClear": true
+      }
+    },
+    {
+      "name": "finite-nonempty-world-bounds",
+      "passed": true,
+      "detail": {
+        "min": [
+          -41.490203857421875,
+          -22.394376754760742,
+          -24.286903381347656
+        ],
+        "max": [
+          36.590553283691406,
+          56.197349548339844,
+          25.54034996032715
+        ],
+        "size": [
+          78.08075714111328,
+          78.59172630310059,
+          49.827253341674805
+        ],
+        "badCoordinates": 0
+      }
+    },
+    {
+      "name": "outline-effect-explicit-auto-clear",
+      "passed": true
+    },
+    {
+      "name": "embedded-painted-atlas-decoded-in-browser",
+      "passed": true,
+      "detail": {
+        "images": [
+          {
+            "width": 1024,
+            "height": 1024
+          }
+        ],
+        "uvMeshes": 46,
+        "badUv": 0
+      }
+    },
+    {
+      "name": "painted-mesh-uvs-finite",
+      "passed": true,
+      "detail": {
+        "images": [
+          {
+            "width": 1024,
+            "height": 1024
+          }
+        ],
+        "uvMeshes": 46,
+        "badUv": 0
+      }
+    },
+    {
+      "name": "model-isolation-api",
+      "passed": true
+    },
+    {
+      "name": "display-mode:handdrawn",
+      "passed": true,
+      "detail": {
+        "position": [
+          -129.8742836374189,
+          88.924006334059,
+          194.5335077359844
+        ],
+        "target": [
+          -2.4498252868652344,
+          16.90148639678955,
+          0.6267232894897461
+        ],
+        "zoom": 1,
+        "distance": 242.9487127325965,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 52,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "actual-display-materials:handdrawn",
+      "passed": true,
+      "detail": [
+        "MeshBasicMaterial"
+      ]
+    },
+    {
+      "name": "120-frame-rotation-clean-render:handdrawn",
+      "passed": true,
+      "detail": {
+        "mode": "handdrawn",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 124316,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 441.1260851172698,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "name": "display-mode:cel",
+      "passed": true,
+      "detail": {
+        "position": [
+          214.86052045772277,
+          88.92400633405896,
+          -80.69392152275259
+        ],
+        "target": [
+          -2.4498252868652344,
+          16.90148639678955,
+          0.6267232894897461
+        ],
+        "zoom": 1,
+        "distance": 242.94871273259636,
+        "autoRotate": false,
+        "mode": "cel",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 52,
+        "materialTypes": [
+          "MeshToonMaterial"
+        ]
+      }
+    },
+    {
+      "name": "actual-display-materials:cel",
+      "passed": true,
+      "detail": [
+        "MeshToonMaterial"
+      ]
+    },
+    {
+      "name": "120-frame-rotation-clean-render:cel",
+      "passed": true,
+      "detail": {
+        "mode": "cel",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 124306,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 441.15323314652966,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "name": "display-mode:original",
+      "passed": true,
+      "detail": {
+        "position": [
+          214.82984785528586,
+          88.92400633405882,
+          -80.77583981236256
+        ],
+        "target": [
+          -2.4498252868652344,
+          16.90148639678955,
+          0.6267232894897461
+        ],
+        "zoom": 1,
+        "distance": 242.9487127325959,
+        "autoRotate": false,
+        "mode": "original",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 52,
+        "materialTypes": [
+          "MeshStandardMaterial"
+        ]
+      }
+    },
+    {
+      "name": "120-frame-rotation-clean-render:original",
+      "passed": true,
+      "detail": {
+        "mode": "original",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 124316,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 441.12608511726944,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "name": "pointer-drag-rotates-model-camera",
+      "passed": true,
+      "detail": {
+        "before": [
+          -129.8742836374189,
+          88.924006334059,
+          194.5335077359844
+        ],
+        "after": [
+          -205.49609808331965,
+          140.23561529430899,
+          51.46942946238693
+        ]
+      }
+    },
+    {
+      "name": "wheel-zooms-model",
+      "passed": true,
+      "detail": {
+        "before": {
+          "zoom": 1,
+          "distance": 242.94871273259648
+        },
+        "after": {
+          "zoom": 1.0967244118415387,
+          "distance": 242.9487127325965
+        }
+      }
+    },
+    {
+      "name": "reset-restores-initial-camera-and-stops-rotation",
+      "passed": true,
+      "detail": {
+        "position": [
+          -129.8742836374189,
+          88.924006334059,
+          194.5335077359844
+        ],
+        "target": [
+          -2.4498252868652344,
+          16.90148639678955,
+          0.6267232894897461
+        ],
+        "zoom": 1,
+        "distance": 242.9487127325965,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 52,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "automatic-rotation-toggle-and-movement",
+      "passed": true,
+      "detail": {
+        "start": [
+          -129.8742836374189,
+          88.924006334059,
+          194.5335077359844
+        ],
+        "end": [
+          -192.38333400090804,
+          88.924006334059,
+          133.90123663650579
+        ]
+      }
+    },
+    {
+      "name": "automatic-rotation-can-stop",
+      "passed": true
+    },
+    {
+      "name": "outline-toggle-off",
+      "passed": true
+    },
+    {
+      "name": "outline-toggle-on",
+      "passed": true
+    },
+    {
+      "name": "outline-width-control",
+      "passed": true
+    },
+    {
+      "name": "view-preset:front",
+      "passed": true,
+      "detail": {
+        "position": [
+          -2.4498252868652344,
+          16.901486396789565,
+          243.57543602208628
+        ],
+        "target": [
+          -2.4498252868652344,
+          16.90148639678955,
+          0.6267232894897461
+        ],
+        "zoom": 1,
+        "distance": 242.94871273259653,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "front",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 52,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "view-preset:back",
+      "passed": true,
+      "detail": {
+        "position": [
+          -2.4498252868652046,
+          16.901486396789565,
+          -242.3219894431068
+        ],
+        "target": [
+          -2.4498252868652344,
+          16.90148639678955,
+          0.6267232894897461
+        ],
+        "zoom": 1,
+        "distance": 242.94871273259653,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "back",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 52,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "view-preset:top",
+      "passed": true,
+      "detail": {
+        "position": [
+          -2.4498252868652344,
+          259.7742816108182,
+          6.699808448636175
+        ],
+        "target": [
+          -2.4498252868652344,
+          16.90148639678955,
+          0.6267232894897461
+        ],
+        "zoom": 1,
+        "distance": 242.94871273259662,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "top",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 52,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "view-preset:iso",
+      "passed": true,
+      "detail": {
+        "position": [
+          -129.8742836374189,
+          88.924006334059,
+          194.5335077359844
+        ],
+        "target": [
+          -2.4498252868652344,
+          16.90148639678955,
+          0.6267232894897461
+        ],
+        "zoom": 1,
+        "distance": 242.9487127325965,
+        "autoRotate": false,
+        "mode": "handdrawn",
+        "view": "iso",
+        "outline": true,
+        "effectAutoClear": true,
+        "renderCalls": 52,
+        "materialTypes": [
+          "MeshBasicMaterial"
+        ]
+      }
+    },
+    {
+      "name": "front-and-back-face-opposite-directions",
+      "passed": true,
+      "detail": {
+        "cosine": -1
+      }
+    },
+    {
+      "name": "top-view-looks-down-on-model",
+      "passed": true,
+      "detail": {
+        "direction": [
+          0,
+          242.87279521402866,
+          6.073085159146429
+        ]
+      }
+    },
+    {
+      "name": "fit-keeps-entire-model-bounds-in-viewport",
+      "passed": true,
+      "detail": {
+        "ndcCorners": [
+          [
+            -0.612061629817958,
+            -0.7175181575702518,
+            -0.8606236901670297
+          ],
+          [
+            -0.25038822359959934,
+            -0.9523809523809522,
+            -0.8824497551147931
+          ],
+          [
+            -0.612061629817958,
+            0.7105281721082679,
+            -0.8734104536341836
+          ],
+          [
+            -0.25038822359959934,
+            0.4756653772975673,
+            -0.8952365185819469
+          ],
+          [
+            0.25038822359960033,
+            -0.4756653772975675,
+            -0.8381480379706766
+          ],
+          [
+            0.612061629817959,
+            -0.7105281721082679,
+            -0.85997410291844
+          ],
+          [
+            0.25038822359960033,
+            0.9523809523809522,
+            -0.8509348014378304
+          ],
+          [
+            0.612061629817959,
+            0.7175181575702515,
+            -0.8727608663855938
+          ]
+        ],
+        "maxXY": 0.9523809523809522,
+        "allInDepth": true
+      }
+    },
+    {
+      "name": "detail-focus:keep",
+      "passed": true,
+      "detail": {
+        "before": {
+          "position": [
+            -129.8742836374189,
+            88.924006334059,
+            194.5335077359844
+          ],
+          "target": [
+            -2.4498252868652344,
+            16.90148639678955,
+            0.6267232894897461
+          ],
+          "zoom": 1,
+          "distance": 242.9487127325965,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 52,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        },
+        "after": {
+          "position": [
+            -80.44707968218518,
+            64.7474468872962,
+            121.47173487078395
+          ],
+          "target": [
+            0.0013446807861328125,
+            19.27659833431244,
+            -0.9497804641723633
+          ],
+          "zoom": 1,
+          "distance": 153.38374903333158,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 52,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        }
+      }
+    },
+    {
+      "name": "detail-focus:bell_tower",
+      "passed": true,
+      "detail": {
+        "before": {
+          "position": [
+            -129.8742836374189,
+            88.924006334059,
+            194.5335077359844
+          ],
+          "target": [
+            -2.4498252868652344,
+            16.90148639678955,
+            0.6267232894897461
+          ],
+          "zoom": 1,
+          "distance": 242.9487127325965,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 52,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        },
+        "after": {
+          "position": [
+            -42.78438523549728,
+            68.35622181788979,
+            72.61873212407517
+          ],
+          "target": [
+            10.522210121154785,
+            38.226407051086426,
+            -8.499999940395355
+          ],
+          "zoom": 1,
+          "distance": 101.63487363177602,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 51,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        }
+      }
+    },
+    {
+      "name": "detail-focus:dock",
+      "passed": true,
+      "detail": {
+        "before": {
+          "position": [
+            -129.8742836374189,
+            88.924006334059,
+            194.5335077359844
+          ],
+          "target": [
+            -2.4498252868652344,
+            16.90148639678955,
+            0.6267232894897461
+          ],
+          "zoom": 1,
+          "distance": 242.9487127325965,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 52,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        },
+        "after": {
+          "position": [
+            -70.30905249593346,
+            53.3334761151412,
+            115.08869797454322
+          ],
+          "target": [
+            0,
+            13.59357687830925,
+            8.096661567687988
+          ],
+          "zoom": 1,
+          "distance": 134.0519239276905,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 51,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        }
+      }
+    },
+    {
+      "name": "detail-focus:machinery",
+      "passed": true,
+      "detail": {
+        "before": {
+          "position": [
+            -129.8742836374189,
+            88.924006334059,
+            194.5335077359844
+          ],
+          "target": [
+            -2.4498252868652344,
+            16.90148639678955,
+            0.6267232894897461
+          ],
+          "zoom": 1,
+          "distance": 242.9487127325965,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 52,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        },
+        "after": {
+          "position": [
+            -88.3681461199815,
+            61.595483501756675,
+            130.95366297625247
+          ],
+          "target": [
+            -2.4498252868652344,
+            13.03295433521271,
+            0.20839214324951175
+          ],
+          "zoom": 1,
+          "distance": 163.81270689122084,
+          "autoRotate": false,
+          "mode": "handdrawn",
+          "view": "iso",
+          "outline": true,
+          "effectAutoClear": true,
+          "renderCalls": 52,
+          "materialTypes": [
+            "MeshBasicMaterial"
+          ]
+        }
+      }
+    },
+    {
+      "name": "structure-group-can-hide",
+      "passed": true
+    },
+    {
+      "name": "structure-group-can-show",
+      "passed": true
+    },
+    {
+      "name": "reference-modal-opens-with-decoded-original",
+      "passed": true,
+      "detail": {
+        "width": 1536,
+        "height": 1024,
+        "embedded": true
+      }
+    },
+    {
+      "name": "reference-modal-closes",
+      "passed": true
+    },
+    {
+      "name": "review-note-and-check-persist-after-reload",
+      "passed": true
+    },
+    {
+      "name": "review-json-export-matches-saved-opinion",
+      "passed": true,
+      "detail": {
+        "path": "work/verification/enemy-base-v1/chapter2-r1/qa-review-export.json",
+        "bytes": 1031,
+        "sha256": "720d44b497bc82f733e5ef2b8fd039e5822fb5a0a5e56d24f93b72cd17bbefd0",
+        "suggestedFilename": "cloudstitch-enemy-base-review.json",
+        "exportedKeys": [
+          "schema",
+          "asset",
+          "title",
+          "checks",
+          "comment",
+          "updatedAt",
+          "view",
+          "assetStats",
+          "localOnly"
+        ]
+      }
+    },
+    {
+      "name": "download-is-exact-source-glb",
+      "passed": true,
+      "detail": {
+        "path": "work/verification/enemy-base-v1/chapter2-r1/qa-download.glb",
+        "bytes": 44909924,
+        "sha256": "9783b90b64cfadd99fb82128a59fda3ea95907147a59ad94edb7a4903e89fcde",
+        "suggestedFilename": "enemy-base.glb"
+      }
+    },
+    {
+      "name": "mobile-390-no-horizontal-overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": {
+          "left": 12,
+          "right": 378,
+          "width": 366
+        },
+        "passed": true
+      }
+    },
+    {
+      "name": "mobile-review-dialog-fits-viewport",
+      "passed": true,
+      "detail": {
+        "left": 14,
+        "right": 376,
+        "width": 362,
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "no-external-http-requests",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-page-errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-console-errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no-failed-requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "ghosting": [
+    {
+      "mode": "handdrawn",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 124316,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 441.1260851172698,
+      "outlineAutoClear": true
+    },
+    {
+      "mode": "cel",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 124306,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 441.15323314652966,
+      "outlineAutoClear": true
+    },
+    {
+      "mode": "original",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 124316,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 441.12608511726944,
+      "outlineAutoClear": true
+    }
+  ],
+  "screenshots": [
+    "work/verification/enemy-base-v1/chapter2-r1/review-desktop.png",
+    "work/verification/enemy-base-v1/chapter2-r1/model-iso.png",
+    "work/verification/enemy-base-v1/chapter2-r1/model-back.png",
+    "work/verification/enemy-base-v1/chapter2-r1/model-front.png",
+    "work/verification/enemy-base-v1/chapter2-r1/detail-shell.png",
+    "work/verification/enemy-base-v1/chapter2-r1/detail-harbour.png",
+    "work/verification/enemy-base-v1/chapter2-r1/detail-coral.png",
+    "work/verification/enemy-base-v1/chapter2-r1/review-mobile-390.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "limits": [
+    "Static 3D asset and local review page verification only; no campaign, combat, collision or game balance is tested.",
+    "The 390px viewport is browser emulation, not a physical mobile-device performance test.",
+    "Same-pose canvas pixels before and after a clean render detect accumulated frames; they do not substitute for human art approval."
+  ],
+  "model": {
+    "path": "outputs/enemy-base-v1/chapter2-r1/enemy-base.glb",
+    "bytes": 44909924,
+    "sha256": "9783b90b64cfadd99fb82128a59fda3ea95907147a59ad94edb7a4903e89fcde",
+    "version": "2.0",
+    "binaryBytes": 44828852,
+    "nodesInScene": 62,
+    "primitiveInstances": 52,
+    "triangleCount": 734296,
+    "vertexInstances": 801839,
+    "meshDefinitions": 52,
+    "materials": 22,
+    "images": 1,
+    "animations": 0,
+    "nonTriangleModes": [],
+    "externalUris": []
+  },
+  "modelManifest": {
+    "schema_version": 1,
+    "title": "Cloudstitch · 적조의 왕관",
+    "revision": "chapter2-r1",
+    "asset_status": "static_3d_art_prototype",
+    "source": {
+      "reference": "outputs/enemy-base-v1/chapter2-r1/reference.png",
+      "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192",
+      "preserved": true,
+      "method": "original code-authored volumetric architecture and vertex painting"
+    },
+    "model": {
+      "path": "enemy-base.glb",
+      "bytes": 44909924,
+      "sha256": "9783b90b64cfadd99fb82128a59fda3ea95907147a59ad94edb7a4903e89fcde",
+      "triangles": 734296,
+      "vertices": 801839,
+      "meshes": 52,
+      "materials": 22,
+      "textures": 1,
+      "animations": 0,
+      "bounds": {
+        "min": [
+          -41.490203857421875,
+          -22.394376754760742,
+          -24.286903381347656
+        ],
+        "max": [
+          36.590553283691406,
+          56.197349548339844,
+          25.54034996032715
+        ],
+        "size": [
+          78.08075714111328,
+          78.59172630310059,
+          49.827253341674805
+        ]
+      },
+      "coordinates": "+Y up, +Z front/dock; relative design units",
+      "authored_components": 5383,
+      "semantic_groups": [
+        {
+          "id": "hull",
+          "nodeName": "hull",
+          "name_ko": "포식자의 산호초",
+          "description": "찢긴 암초와 뼈 용골",
+          "triangles": 44800,
+          "meshes": 5
+        },
+        {
+          "id": "buoyancy",
+          "nodeName": "buoyancy",
+          "name_ko": "하늘해파리 부력막",
+          "description": "늘어진 진주빛 막과 해초 뿌리",
+          "triangles": 55848,
+          "meshes": 5
+        },
+        {
+          "id": "keep",
+          "nodeName": "keep",
+          "name_ko": "진주층 거주 테라스",
+          "description": "비대칭 패각 회랑과 거주 구역",
+          "triangles": 428880,
+          "meshes": 9
+        },
+        {
+          "id": "bell_tower",
+          "nodeName": "bell_tower",
+          "name_ko": "나선 패각 왕관",
+          "description": "거대한 입체 앵무조개와 성장선",
+          "triangles": 46936,
+          "meshes": 6
+        },
+        {
+          "id": "bastions",
+          "nodeName": "bastions",
+          "name_ko": "붉은 산호 포대",
+          "description": "속이 빈 산호 나팔 포신과 가지 방벽",
+          "triangles": 55632,
+          "meshes": 3
+        },
+        {
+          "id": "dock",
+          "nodeName": "dock",
+          "name_ko": "생체발광 항구",
+          "description": "포식자의 관문과 잔교·청록 항로",
+          "triangles": 43296,
+          "meshes": 11
+        },
+        {
+          "id": "machinery",
+          "nodeName": "machinery",
+          "name_ko": "뼈 기중기와 인양망",
+          "description": "대형 골격 기중기와 포획선",
+          "triangles": 8800,
+          "meshes": 4
+        },
+        {
+          "id": "banners",
+          "nodeName": "banners",
+          "name_ko": "해초 직물과 장식",
+          "description": "찢긴 천·진주 장신구·봉제 무늬",
+          "triangles": 50104,
+          "meshes": 9
+        }
+      ],
+      "texture_images": 1
+    },
+    "appearance": {
+      "surfaces": "Original coloured vertex painting plus one embedded 1024x1024 procedural hand-painted nacre/bone/coral/fibre atlas.",
+      "palette": "pearl ivory and rose, red coral, indigo reef, cyan bioluminescence, warm amber cave windows",
+      "material": "glTF metallic-roughness, roughness 1, metalness 0; review can replace with hand-painted unlit or toon shading",
+      "runtime": "Outline and cel shading belong to review runtime; they are not automatically reproduced by importing the GLB into an engine.",
+      "atlas": {
+        "path": "painted-atlas.png",
+        "bytes": 1046725,
+        "sha256": "236f041f9f34f73b8fcb0f47d3cf0bbb8aa7417d97674435f494ddb1fd8907b3",
+        "width": 1024,
+        "height": 1024
+      },
+      "textureSource": "Deterministic canvas drawing, seed91843; no API image generation, no chapter-one textures."
+    },
+    "limitations": [
+      "Art review prototype only; no gameplay or enemy AI.",
+      "No authored collision, LOD, navmesh, engine sockets, gameplay statistics or destruction.",
+      "Static geometry; no rig or animation; the bone cranes, shell crown, textiles and coral cannons are modeled in a fixed pose.",
+      "Building interiors are not authored; open harbour is an exterior architectural cavity without playable interior.",
+      "Artist/user approval is still required."
+    ],
+    "storage": {
+      "method": "Exact bitwise duplicate-vertex indexing; no quantization, decimation or shape change. UVs exactly follow the frozen first-paint per-triangle formula; UV is part of each welding key. Material primitives remain separate.",
+      "beforeSha256": "b94db4fd0a5fc318642304c9cc9bff3c7608e833376d0db13b07afef626ee93a",
+      "afterSha256": "8d7afd7e2740b503026a11cf55d163e9a45da0a27aa02f75cde447a271adf80a",
+      "beforeBytes": 79361064,
+      "afterBytes": 43857968,
+      "beforeVertices": 2202888,
+      "afterVertices": 801839,
+      "triangles": 734296,
+      "checkedComponents": 23870568,
+      "expandedPositionNormalColourBytesIdentical": true,
+      "expectedFrozenTriangleUVBytesIdentical": true,
+      "materialBoundariesPreserved": true
+    }
+  },
+  "modelManifestSha256": "3edbe6d6f2c6543b3fc7a375edd3dd675ecd07de7145f9a038c70ac027644177",
+  "browser": {
+    "version": "155.0.8059.40",
+    "desktop": {
+      "width": 1440,
+      "height": 1050
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    },
+    "deviceScaleFactor": 1,
+    "entryProtocol": "file:"
+  },
+  "renderedGeometry": {
+    "meshes": 52,
+    "vertices": 801839,
+    "triangles": 734296,
+    "badCoordinates": 0,
+    "min": [
+      -41.490203857421875,
+      -22.394376754760742,
+      -24.286903381347656
+    ],
+    "max": [
+      36.590553283691406,
+      56.197349548339844,
+      25.54034996032715
+    ],
+    "size": [
+      78.08075714111328,
+      78.59172630310059,
+      49.827253341674805
+    ],
+    "renderCalls": 52,
+    "rootChildren": 1,
+    "stats": {
+      "triangles": 734296,
+      "meshes": 52,
+      "materials": 22,
+      "vertices": 801839,
+      "geometries": 52,
+      "bytes": 44909924,
+      "animations": 0,
+      "groups": [
+        "hull",
+        "buoyancy",
+        "keep",
+        "bell_tower",
+        "bastions",
+        "dock",
+        "machinery",
+        "banners"
+      ],
+      "bounds": [
+        78.08075714111328,
+        78.59172630310059,
+        49.827253341674805
+      ],
+      "mode": "handdrawn",
+      "view": "iso",
+      "focus": null,
+      "outline": true,
+      "outlineEnabled": true
+    },
+    "effectAutoClear": true
+  },
+  "download": {
+    "path": "work/verification/enemy-base-v1/chapter2-r1/qa-download.glb",
+    "bytes": 44909924,
+    "sha256": "9783b90b64cfadd99fb82128a59fda3ea95907147a59ad94edb7a4903e89fcde",
+    "suggestedFilename": "enemy-base.glb"
+  },
+  "completedAt": "2026-10-19T02:07:16.377Z",
+  "summary": {
+    "total": 49,
+    "passed": 49,
+    "failed": 0
+  },
+  "passed": true
+}

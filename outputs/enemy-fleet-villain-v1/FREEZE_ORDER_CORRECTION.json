@@ -1,0 +1,22 @@
+{
+  "reason": "Last lightweight preflight finished after SOURCE_READY1 was created; owner freeze-order race. No model source change.",
+  "originalManifest": {
+    "path": "outputs/enemy-fleet-villain-v1/SOURCE_READY.json",
+    "sha256": "34a88a0595acdcd3b48c1239084427763d35927b685c4379791070d962eb00fd",
+    "retained": true
+  },
+  "oldExpectedReport": {
+    "path": "outputs/enemy-fleet-villain-v1/source-preflight.json",
+    "bytes": 4422,
+    "sha256": "31923fea893a7bc7fe552fc93bde56b296ec64bdebe81b0e8e10e71990e82ef0"
+  },
+  "observedReport": {
+    "path": "outputs/enemy-fleet-villain-v1/source-preflight.json",
+    "bytes": 4421,
+    "sha256": "fba48717dff58139007d97ff4993f794e7e5b7a73072153b2ebc4f5f9bc5bc5e"
+  },
+  "oldReportBytesPreserved": false,
+  "unchangedOtherEntries": true,
+  "correctedReport": "outputs/enemy-fleet-villain-v1/source-preflight-r2.json",
+  "heavyRunByOwner": false
+}

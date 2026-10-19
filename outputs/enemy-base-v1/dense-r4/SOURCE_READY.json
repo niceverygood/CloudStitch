@@ -1,0 +1,145 @@
+{
+  "revision": "dense-r4",
+  "date": "2026-10-19",
+  "status": "SOURCE_READY",
+  "ownership": [
+    "tools/enemy-base/dense-r4/",
+    "outputs/enemy-base-v1/dense-r4/"
+  ],
+  "files": [
+    {
+      "path": "tools/enemy-base/dense-r4/build.cjs",
+      "bytes": 1855,
+      "sha256": "202660aec74dd91f3558628006c270ed6aa02fd87a9408b32e7c4589f7f3a7cb"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/comparison.html",
+      "bytes": 2626,
+      "sha256": "3a52e3f72eb3cb0f73ee596d8792e27b5732730b58e8b4096f6ecdb237bc92db"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/finalize.cjs",
+      "bytes": 9021,
+      "sha256": "cd99dfe9c78a2c458ccbdedf8c388e03ddd707cc233f0fd58ff083e643276df7"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/generate.cjs",
+      "bytes": 1206,
+      "sha256": "ef76c17f797cc513f46a0d11ba324a565d33cd5231115e236d2920b36dc500da"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/generate.mjs",
+      "bytes": 4757,
+      "sha256": "c0bc569fe28b2f8b41212d2cac5fa2895c1a8fceb065a93b8e58b6e287189992"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/inspect.cjs",
+      "bytes": 5070,
+      "sha256": "0ef13f3ed9c1fab2f723c35280b9676e0e0e1fcba1ef251538c053dd957a7461"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/model.mjs",
+      "bytes": 18755,
+      "sha256": "e71048757e89013f32a19e6339439d95c252b92ad25de96a8be9c061a9aec7b1"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/paint-export.js",
+      "bytes": 3532,
+      "sha256": "b7977547de396f9f5ad50c969f99c100e0b6bffba15615f92da93c0046d562dd"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/paint.cjs",
+      "bytes": 3182,
+      "sha256": "0667cd5d8c5e8aa14b0dbb0fcf0a37969063fd921847fa93bd0c7426cf13925e"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/qa.cjs",
+      "bytes": 28034,
+      "sha256": "06fe270ce91e3fc96a636ae3aca82e9395c4575f00fb5e1f316585ee6bdaad4e"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/README.txt",
+      "bytes": 2248,
+      "sha256": "32c84952b122e7acd3381422b3a64b2d1e3ba8a38dbe7b24065df34165ca6ef4"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/review.js",
+      "bytes": 22041,
+      "sha256": "4062ae761807af14b7f3a7927bf42a19933668829fa5ac26d78f3765cbdee1f2"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/source-ready.cjs",
+      "bytes": 2180,
+      "sha256": "cc4cba75d098a5abe36be6970f3ceff722bfd79d86cff9743252d3b701edcc73"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/template.html",
+      "bytes": 24772,
+      "sha256": "5c2f5939ef1e9c3ef338e9e15d01bf0de66ab5d72af045bbdac429710925ffca"
+    },
+    {
+      "path": "tools/enemy-base/dense-r4/verify-surface.cjs",
+      "bytes": 1759,
+      "sha256": "87c65a338ce14cc67da30023e2d43e7a9448ed9cc3482c50c15fb718ec68433d"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "tools/enemy-base/fortress.mjs",
+      "bytes": 42870,
+      "sha256": "fbd079c4945b147e5d3332c95c94422be4d21da7161b7c947a36ee29546bbfe0"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/model.mjs",
+      "bytes": 12841,
+      "sha256": "c78f068972139552749c89999f732d76cd6f4878e3140d40ea45fa75c074080e"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/delivery-manifest.json",
+      "bytes": 8998,
+      "sha256": "49bee3a5c2ce6b5bb897acc02b7ffe181c6c5a31515d960cdbca4e991237cd4a"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/painted-atlas.png",
+      "bytes": 3810987,
+      "sha256": "13984610dd7647659d97beb02a4b29e0092fe787e06adacf9c7e0bfc32920c0a"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/model-iso.png",
+      "bytes": 519645,
+      "sha256": "5ca5a1537cd70003e31c9cc3d1a2382a43a88621cacd9b23fc0a9d575e0d0312"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/dense-r4/reference.png",
+    "bytes": 3267432,
+    "sha256": "6b7ef9aae13dec2fb73373a517063340a0cf75978c42ff986e594c7cfea6b7cb"
+  },
+  "commands": [
+    "node tools/enemy-base/dense-r4/generate.cjs",
+    "node tools/enemy-base/dense-r4/paint.cjs",
+    "node tools/enemy-base/dense-r4/inspect.cjs",
+    "node tools/enemy-base/dense-r4/verify-surface.cjs",
+    "node tools/enemy-base/dense-r4/build.cjs",
+    "node tools/enemy-base/dense-r4/qa.cjs",
+    "node tools/enemy-base/dense-r4/finalize.cjs"
+  ],
+  "scope": "One actual static 3D fortress, embedded offline review, three material modes, controls, notes, download, mobile and ghosting regression; user art approval separate.",
+  "changes": [
+    "Replaces repeated drum keep with unequal stacked multi-storey buildings and roof workshops",
+    "Narrow secondary turrets, taller offset belfry, deep projecting galleries",
+    "Open bridges and monumental flying buttresses",
+    "Irregular armor skirts, overlapping repair panels, weld scars, rust streaks",
+    "Dense windows and hand-sized lanterns as scale cues",
+    "Industrial pipe bundles, clock faces, exterior stairs, frayed flags",
+    "Same-camera r3 versus r4 PNG comparison; human art approval pending"
+  ],
+  "limits": [
+    "Hidden geometry interpreted from a single image",
+    "Relative design scale only",
+    "No gameplay/collision/LOD/AI/interiors",
+    "No exact-pixel reproduction claim"
+  ],
+  "exporterStarted": false,
+  "browserStarted": false
+}

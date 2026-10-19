@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Cloudstitch · 부드러운 기관총 손그림</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f2efe2;
+      --surface: #fffdf3;
+      --ink: #284f50;
+      --muted: #63796f;
+      --teal: #356e68;
+      --teal-soft: #e5eee3;
+      --line: #d2d8c7;
+      --gold: #bf8b43;
+      --error: #9c483d;
+      font-family: system-ui, -apple-system, "Malgun Gothic", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; min-width: 0; color: var(--ink); background: var(--paper); font-size: 14px; line-height: 1.55; }
+    button, input, select, a { font: inherit; }
+    button, select, .download {
+      min-height: 42px;
+      max-width: 100%;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--surface);
+      color: var(--ink);
+    }
+    button { cursor: pointer; }
+    button:hover, select:hover, .download[href]:hover { border-color: #70978a; background: #f1f5e9; }
+    button:active { transform: translateY(1px); }
+    button[aria-pressed="true"], button.primary { color: #fffdf3; background: var(--teal); border-color: var(--teal); }
+    button[aria-pressed="true"]:hover, button.primary:hover { background: #295d58; }
+    button:disabled, select:disabled { opacity: .5; cursor: wait; }
+    :where(button, select, input, a, [tabindex]):focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    input[type="checkbox"] { width: 17px; height: 17px; margin: 0; accent-color: var(--teal); flex: 0 0 auto; }
+    input[type="range"] { min-width: 0; height: 32px; margin: 0; accent-color: var(--teal); cursor: pointer; }
+    select { width: 100%; min-width: 0; text-overflow: ellipsis; }
+    a { color: var(--teal); }
+    p, h1, h2, h3 { margin: 0; }
+    main { width: min(100%, 1680px); margin: 0 auto; padding: 26px 28px 22px; }
+    .page-header { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 20px; }
+    .eyebrow { margin-bottom: 6px; color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: 2.8px; }
+    h1 { font-size: clamp(23px, 2.2vw, 32px); line-height: 1.25; letter-spacing: -.7px; }
+    .intro { margin-top: 8px; color: var(--muted); }
+    .version-note { flex: 0 0 auto; padding: 7px 12px; border: 1px solid var(--line); border-radius: 30px; color: var(--muted); font-size: 12px; }
+    .workbench { overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); box-shadow: 0 10px 30px #294f5008; }
+    .selection { display: grid; grid-template-columns: minmax(140px, .65fr) minmax(180px, 1fr) minmax(240px, 1.65fr) minmax(180px, .9fr); gap: 14px; padding: 17px 20px; border-bottom: 1px solid var(--line); }
+    .field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+    .field > span { color: var(--muted); font-size: 12px; font-weight: 600; }
+    .stage-heading { display: flex; justify-content: space-between; align-items: start; gap: 20px; padding: 15px 20px 12px; }
+    #stage-title { font-size: 17px; letter-spacing: -.3px; }
+    #stage-detail { margin-top: 3px; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+    .compare-note { flex: 0 0 auto; padding-top: 3px; color: var(--muted); font-size: 11px; }
+    #stage {
+      position: relative;
+      isolation: isolate;
+      width: 100%;
+      height: clamp(320px, 54vh, 620px);
+      overflow: hidden;
+      background: radial-gradient(ellipse at 50% 30%, #fffef3 0%, #edf1e0 100%);
+    }
+    #stage canvas { display: block; width: 100%; height: 100%; max-width: 100%; touch-action: none; }
+    #stage.deep, #stage[data-background="dark"] { background: radial-gradient(ellipse at 50% 30%, #365c59, #183c40); }
+    #lane-labels { position: absolute; z-index: 2; inset: 0; display: grid; grid-template-columns: 1fr 1fr; pointer-events: none; }
+    #lane-labels[data-presentation="rich"], #lane-labels[data-presentation="original"] { grid-template-columns: 1fr; }
+    #lane-labels[data-presentation="rich"] .lane-label, #lane-labels[data-presentation="original"] .lane-label { border-left: 0; }
+    .lane-label { min-width: 0; padding: 16px 20px; }
+    .lane-label + .lane-label { border-left: 1px solid #6d8c7c46; }
+    .lane-label strong { display: block; font-size: 13px; }
+    .lane-label span { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+    .deep .lane-label, [data-background="dark"] .lane-label { color: #fff5db; }
+    .deep .lane-label span, [data-background="dark"] .lane-label span { color: #d0dfcf; }
+    .stage-hint { position: absolute; z-index: 2; bottom: 12px; left: 20px; max-width: calc(100% - 40px); padding: 4px 8px; border-radius: 5px; color: #48675b; background: #fbfbedc9; font-size: 11px; pointer-events: none; }
+    #loading { position: absolute; z-index: 5; inset: 0; display: grid; place-content: center; padding: 30px; color: var(--ink); background: #f3f0e3f2; text-align: center; overflow-wrap: anywhere; }
+    #loading[data-state="error"], #loading.error { color: var(--error); }
+    .camera-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 20px; border-top: 1px solid var(--line); }
+    .button-group { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
+    .button-group-label { align-self: center; margin-right: 3px; color: var(--muted); font-size: 12px; }
+    .spacer { flex: 1; }
+    .transport { padding: 16px 20px; border-top: 1px solid var(--line); background: #faf9ef; }
+    .transport-top { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    #play { min-width: 104px; }
+    .check-label { display: inline-flex; align-items: center; gap: 7px; min-height: 42px; cursor: pointer; white-space: nowrap; }
+    .speed-label { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; }
+    #speed { width: 84px; color: var(--ink); font-size: 14px; }
+    .timeline-row { display: flex; align-items: center; gap: 14px; margin-top: 13px; }
+    #timeline { flex: 1; width: 100%; }
+    #time-value { min-width: 115px; color: var(--ink); font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .phase-row { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-top: 8px; }
+    .phase-row button { min-height: 36px; padding: 5px 11px; font-size: 12px; }
+    .phase-label, .frame-note { color: var(--muted); font-size: 11px; }
+    .frame-note { margin-left: auto; }
+    .display-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; padding: 13px 20px; border-top: 1px solid var(--line); }
+    .amount-label { display: flex; align-items: center; gap: 9px; min-width: 0; }
+    .amount-label > span { white-space: nowrap; }
+    #amount { width: clamp(95px, 13vw, 180px); }
+    #amount-value { min-width: 42px; font-variant-numeric: tabular-nums; font-size: 12px; }
+    .amount-note { color: var(--muted); font-size: 11px; }
+    .information { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px; padding: 20px; border-top: 1px solid var(--line); }
+    .information h3 { margin-bottom: 6px; font-size: 15px; }
+    .information p { color: var(--muted); font-size: 12px; }
+    #selected-name, #purpose, #profile-info { overflow-wrap: anywhere; }
+    #profile-info { margin-top: 10px; color: var(--muted); font-size: 11px; white-space: pre-wrap; }
+    .file-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 13px; }
+    .download { display: inline-flex; align-items: center; text-decoration: none; }
+    .download[aria-disabled="true"] { opacity: .5; cursor: default; }
+    .checklist { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 7px; }
+    .checklist li { position: relative; padding-left: 17px; color: var(--muted); font-size: 12px; }
+    .checklist li::before { content: ""; position: absolute; top: 5px; left: 0; width: 8px; height: 8px; border: 1px solid #86a393; border-radius: 2px; }
+    .status-bar { padding: 11px 20px; border-top: 1px solid var(--line); color: var(--muted); background: var(--teal-soft); font-size: 12px; }
+    #status { min-height: 19px; overflow-wrap: anywhere; }
+    #status[data-state="error"], #status.error { color: var(--error); font-weight: 600; }
+    #status[data-state="busy"], #status.busy { color: var(--teal); }
+    .footer { margin-top: 13px; color: var(--muted); font-size: 11px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+    @media (max-width: 1000px) {
+      main { padding: 20px 18px; }
+      .selection { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+      .page-header { align-items: start; }
+      .version-note { margin-top: 5px; }
+      .compare-note { max-width: 180px; text-align: right; }
+      .frame-note { flex-basis: 100%; margin: 1px 0 0; }
+    }
+    @media (max-width: 680px) {
+      main { padding: 17px 10px; }
+      .page-header { display: block; margin-bottom: 15px; }
+      .eyebrow { font-size: 9px; letter-spacing: 2px; }
+      .intro { font-size: 12px; }
+      .version-note { display: inline-block; margin-top: 10px; font-size: 11px; }
+      .workbench { border-radius: 13px; }
+      .selection { gap: 11px 9px; padding: 13px 12px; }
+      .field > span { font-size: 11px; }
+      select { padding-inline: 8px; font-size: 13px; }
+      .stage-heading { gap: 10px; padding: 13px 12px 11px; }
+      #stage-title { font-size: 15px; }
+      #stage-detail { font-size: 11px; }
+      .compare-note { max-width: 104px; font-size: 10px; }
+      #stage { height: clamp(360px, 90vw, 510px); }
+      .lane-label { padding: 12px 10px; }
+      .lane-label strong { font-size: 11px; }
+      .lane-label span { font-size: 10px; }
+      .stage-hint { left: 10px; bottom: 10px; max-width: calc(100% - 20px); font-size: 10px; }
+      .camera-bar, .display-bar { gap: 8px; padding: 11px 12px; }
+      .camera-bar .spacer { display: none; }
+      .camera-bar > .button-group { flex-basis: 100%; }
+      .camera-bar button { flex: 1; padding-inline: 8px; font-size: 12px; }
+      .transport { padding: 13px 12px; }
+      .transport-top { gap: 7px; }
+      .transport-top .spacer { display: none; }
+      #play { min-width: 96px; }
+      #frame-prev, #frame-next { padding-inline: 9px; }
+      .speed-label { margin-left: auto; }
+      .timeline-row { gap: 10px; margin-top: 11px; }
+      #time-value { min-width: 98px; font-size: 11px; }
+      .phase-row { gap: 6px; }
+      .phase-row button { flex: 1; padding-inline: 6px; }
+      .phase-label { flex-basis: 100%; }
+      .amount-label { flex: 1 1 100%; }
+      #amount { flex: 1; width: auto; }
+      .amount-note { flex-basis: 100%; }
+      .information { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 16px 12px; }
+      .status-bar { padding: 10px 12px; }
+      .file-actions > * { flex: 1; justify-content: center; text-align: center; }
+    }
+    @media (max-width: 360px) {
+      .selection { grid-template-columns: minmax(0, 1fr); }
+      #stage { height: 340px; }
+      .compare-note { display: none; }
+      .transport-top > button { flex: 1 1 42%; }
+      .speed-label { margin-left: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      button:active { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">CLOUDSTITCH · COMBAT EFFECT REVIEW</p>
+        <h1>기관총 · 부드러운 손그림</h1>
+        <p class="intro">크림빛 반짝임, 옅은 살구색 타격과 천천히 피어나는 연기.</p>
+      </div>
+      <p class="version-note"><a href="../machine-gun-painted-v1/index.html">이전 강한 효과</a> · <a href="../v1-review/index.html">전체 작업대</a></p>
+    </header>
+
+    <section class="workbench" aria-label="공격 및 피격 효과 작업대">
+      <div class="selection" aria-label="장면 선택">
+        <label class="field" for="mode"><span>검수 범위</span>
+          <select id="mode">
+            <option value="attack">기관총 연속 공격</option>
+            <option value="impact">피격 효과</option>
+            <option value="all">포구·탄환·피격 단독</option>
+          </select>
+        </label>
+        <label class="field" for="weapon"><span>무기</span>
+          <select id="weapon"><option value="" disabled selected>무기 준비 중</option></select>
+        </label>
+        <label class="field" for="effect"><span>확인할 장면</span>
+          <select id="effect"><option value="" disabled selected>장면 준비 중</option></select>
+        </label>
+        <label class="field" for="presentation"><span>표시 방식</span>
+          <select id="presentation">
+            <option value="rich">부드러운 손그림</option>
+            <option value="original">이전 v1</option>
+            <option value="compare">좌우 비교</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="stage-heading">
+        <div>
+          <h2 id="stage-title">장면을 준비하고 있습니다</h2>
+          <p id="stage-detail">기존 무기·효과 GLB를 불러옵니다.</p>
+        </div>
+        <p class="compare-note">좌우 비교는 같은 카메라와 재생 시간</p>
+      </div>
+      <div id="stage" tabindex="0" role="region" aria-label="3D 효과 확인 화면" aria-describedby="stage-detail" aria-busy="true">
+        <div id="lane-labels" aria-hidden="true">
+          <div id="lane-left" class="lane-label"><strong>보강 표시</strong><span>선택한 시각 조정 적용</span></div>
+          <div id="lane-right" class="lane-label"><strong>v1 원본 표시</strong><span>같은 카메라 · 같은 시간</span></div>
+        </div>
+        <p class="stage-hint">드래그 회전 · 휠 확대 · 아래 버튼으로 시점 이동</p>
+        <div id="loading" role="status" aria-live="polite">무기와 효과를 준비하고 있습니다.</div>
+      </div>
+
+      <div class="camera-bar" aria-label="카메라 조작">
+        <div class="button-group" role="group" aria-label="확인할 위치">
+          <span class="button-group-label">시점</span>
+          <button type="button" data-view="all" aria-pressed="true">전체</button>
+          <button type="button" data-view="weapon" aria-pressed="false">무기 가까이</button>
+          <button type="button" data-view="projectile" aria-pressed="false">탄환 가까이</button>
+          <button type="button" data-view="hit" aria-pressed="false">피격 가까이</button>
+        </div>
+        <span class="spacer" aria-hidden="true"></span>
+        <div class="button-group" role="group" aria-label="카메라 설정">
+          <button id="reset" type="button">처음 시점</button>
+          <button id="fit" type="button">화면 맞춤</button>
+          <button id="rotate" type="button" aria-pressed="false">자동 회전</button>
+        </div>
+      </div>
+
+      <div class="transport" aria-label="재생 조작">
+        <div class="transport-top">
+          <button id="play" class="primary" type="button" aria-pressed="true">일시정지</button>
+          <button id="replay" type="button">처음부터</button>
+          <button id="frame-prev" type="button" aria-label="이전 프레임, 60분의 1초 뒤로" title="1/60초 뒤로">이전 프레임</button>
+          <button id="frame-next" type="button" aria-label="다음 프레임, 60분의 1초 앞으로" title="1/60초 앞으로">다음 프레임</button>
+          <span class="spacer" aria-hidden="true"></span>
+          <label class="check-label" for="loop"><input id="loop" type="checkbox" checked> 반복</label>
+          <label class="speed-label" for="speed">재생 속도
+            <select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select>
+          </label>
+        </div>
+        <div class="timeline-row">
+          <label class="sr-only" for="timeline">장면 재생 시간</label>
+          <input id="timeline" type="range" min="0" max="1" step="0.001" value="0" aria-describedby="time-value">
+          <output id="time-value" for="timeline">0.00 / 0.00초</output>
+        </div>
+        <div class="phase-row" role="group" aria-label="주요 순간으로 이동">
+          <span class="phase-label">주요 순간</span>
+          <button type="button" data-phase="fire">발사</button>
+          <button type="button" data-phase="flight">비행</button>
+          <button type="button" data-phase="hit">명중</button>
+          <button type="button" data-phase="end">종료</button>
+          <span class="frame-note">프레임 이동은 한 번에 1/60초</span>
+        </div>
+      </div>
+
+      <div class="display-bar" aria-label="표시 조정">
+        <label class="check-label" for="outline"><input id="outline" type="checkbox" checked> 윤곽선</label>
+        <button id="background" type="button" aria-pressed="false">배경 · 크림</button>
+        <span class="spacer" aria-hidden="true"></span>
+        <label class="amount-label" for="amount"><span>보강 강도</span>
+          <input id="amount" type="range" min="0.75" max="1.5" step="0.05" value="1" aria-describedby="amount-value amount-note">
+          <output id="amount-value" for="amount">1.00×</output>
+        </label>
+        <span id="amount-note" class="amount-note">보강 표시의 시각 조정에 적용</span>
+      </div>
+
+      <div class="information">
+        <div>
+          <h3 id="selected-name">선택한 장면</h3>
+          <p id="purpose">장면을 고르면 효과의 역할과 표시 조건을 확인할 수 있습니다.</p>
+          <div id="profile-info" aria-label="선택 장면의 표시 정보">모델 정보 준비 중</div>
+          <div class="file-actions">
+            <button id="capture" type="button">현재 화면 저장</button>
+            <a id="download" class="download" download aria-disabled="true">원본 GLB 다운로드</a>
+          </div>
+        </div>
+        <div>
+          <h3>확인할 것</h3>
+          <ul class="checklist">
+            <li>차분한 황동과 크림색이 무기와 어울리는가</li>
+            <li>빛 → 작은 붓잎 → 연기가 부드럽게 이어지는가</li>
+            <li>표적의 나무결과 이음새가 계속 읽히는가</li>
+            <li>명중 버튼과 프레임 이동으로 순간을 확인할 수 있는가</li>
+          </ul>
+        </div>
+      </div>
+      <div class="status-bar"><p id="status" role="status" aria-live="polite" aria-atomic="true" data-state="busy">준비 중 · 장면을 불러오고 있습니다.</p></div>
+    </section>
+    <p class="footer">기관총 원본과 v1 효과를 보존한 새 아트 시안입니다. 탄체는 질감 있는 3D, 섬광·연기는 투명 손그림 이미지로 움직입니다. 연사·충돌은 검수용 연출이며 실제 전장 판정 연결은 별도입니다.</p>
+    <noscript><p class="footer">3D 장면을 재생하려면 브라우저에서 JavaScript를 사용할 수 있어야 합니다.</p></noscript>
+  </main>
+  <script>/* REVIEW_DATA */</script>
+  <script>/* REVIEW_BUNDLE */</script>
+</body>
+</html>

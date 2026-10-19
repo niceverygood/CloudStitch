@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:25:05Z",
+  "authorization": {
+    "directHumanRead": true,
+    "threadId": "01a14dd0-fc09-7c51-8f63-cdfff1bc8e6f",
+    "turnId": "01a14e4f-bf37-7dc0-a8b6-37f9e20e926d",
+    "messageId": "01a14e4f-c27b-7711-8c05-29273714d11b",
+    "request": "전체 효과음 모두 좀 더 풍성하게 만들어줘 극적으로 들리게 그리고 베이스음을 살짝살짝 가미해줘"
+  },
+  "scope": {
+    "inputs": 49,
+    "composition": "original47+newmortarAB2; read-only originals",
+    "newSource": "tools/audio/rich-v1/",
+    "newOutput": "outputs/audio-rich-v1/",
+    "processing": "local PCM per-role resonance/shortspace/gentlebass; original/enriched comparison UI",
+    "paidRegeneration": false,
+    "automaticGameInstall": false
+  },
+  "preserved": [
+    "original113 audio47",
+    "mortar18/A-B+oldlaunch",
+    "old35(1FAIL)/followup8 and evidence",
+    "explicitoldmortarlaunch humanRejected; ABnotselected"
+  ],
+  "implementationOwner": "01a14dd0-fc09-7c51-8f63-cdfff1bc8e6f",
+  "qaOwner": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+  "status": "49pair reviewUI scoped technical evidence complete, original21of24false plus separatefollowup8; human quality and game install pending",
+  "futureQaRequested": [
+    "recipe/source/processedPCM digest/duration/finite/peak/RMS",
+    "per-role transient/tail/loop seams",
+    "gentlebass without obscuring signal identity",
+    "level-comparable original/enriched auditions",
+    "mono and.22s machinegun burst overlap",
+    "new sole-slot native/UI/protection QA after exactREADY"
+  ],
+  "priorNative47NotProofOfNewProcessed49": true,
+  "newProcessed49GeneratedOrApprovedCountUnverified": false,
+  "noNewProviderCallsOrCredentialReadsByCommand": true,
+  "updatedAt": "2026-10-18T09:51:22Z",
+  "productionDependency": {
+    "status": "completed by integration owner, independent finalsource/outputREADY pending",
+    "reason": "reuse existingChrome decoder without new dependencies",
+    "helper": "tools/audio/rich-v1/decode-native.cjs",
+    "inputMp3": 49,
+    "ownerReportedInputShaCopied": true,
+    "decodedFiles": 49,
+    "pcmType": "Float32",
+    "sampleRate": 44100,
+    "output": "work/audio/rich-v1/decoded/",
+    "browser": "singleChrome/aboutblank decode only",
+    "sourcePlayback": false,
+    "networkRequests": false,
+    "finallyClosedBrowser": true,
+    "reportedReceiptSha256": "11b95e230fa70317edea1210ae7730862d53544f5f3ac008c804255b5cbc73c2",
+    "receiptPath": "outputs/audio-rich-production-decode-v1/verification.json",
+    "isProductionConversionNotPrior47QaRepeat": true,
+    "isFinalProcessed49ReadyOrQualityApproval": false,
+    "executor": "integration owner"
+  },
+  "processed49RenderedOwnerReported": true,
+  "humanQualityApproved": false,
+  "ready2Review": "audio-rich-ready2-review-2026-10-18.json",
+  "nativeReviews": [
+    "audio-rich-native-review-2026-10-18.json",
+    "audio-rich-native-followup-review-2026-10-18.json"
+  ]
+}

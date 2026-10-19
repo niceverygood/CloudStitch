@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:43:15Z",
+  "status": "additional native defeat/retry composite23/23 PASS",
+  "report": {
+    "path": "outputs/audio-browser-qa-v1/retry-verification.json",
+    "sha256": "d3c778db3f91c9d0278d6d14f5086d76438392651a5f94d1556322b422d41881",
+    "passed": true,
+    "checks": 23,
+    "scope": "Fresh native Chrome private host, natural no-input defeat, authoritative same-voyage retry and old-event rejection.",
+    "limits": [
+      "Accelerated synchronous public inputs; no real-time timing or human listening claim.",
+      "Does not repeat native 33 checks or the 54 Offline renders.",
+      "Only retry-verification.json is written; browser favicon requests receive harness HTTP 204."
+    ]
+  },
+  "observed": {
+    "ticks": 319,
+    "logicalSeconds": 31.900000000000002,
+    "defeatPhase": "defeat",
+    "hp": 0,
+    "eventCounts": {
+      "combat-cleared": 2,
+      "enemy-spawned": 2,
+      "enemy-fire": 12,
+      "hit": 12,
+      "projectile-ended": 12,
+      "defeat": 1
+    },
+    "sameVoyage": true,
+    "generationBefore": 1,
+    "generationAfter": 2,
+    "oldIdentityCueDelta": 0,
+    "oldIdentityNativeStartDelta": 0,
+    "dispose": {
+      "contextState": "closed",
+      "voices": 0,
+      "loops": [],
+      "releaseTails": 0,
+      "bufferCache": 0
+    }
+  },
+  "preservation": "89 unique protected files: original39/audio46/source7 plus manifests with overlap accounted; changed0",
+  "scopePolicy": "separate from existing native composite33 and Offline54; no human listening/final gameUI/auto-save hook claim",
+  "commandReview": "read report/SHA only; no duplicate browser/audio execution"
+}

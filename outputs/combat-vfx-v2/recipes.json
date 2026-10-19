@@ -1,0 +1,4793 @@
+{
+  "game_title": "Cloudstitch",
+  "schema_version": 2,
+  "date": "2026-10-18",
+  "original_contract": "outputs/combat-vfx/recipes.json",
+  "integration_status": "art_ready_selection_contract_only",
+  "current_context": "A separate battlefield runtime is being developed in this repository. This v2 asset session does not modify that runtime or claim these effects are connected to it.",
+  "required_runtime_effect_ids": [
+    "machine-gun-muzzle",
+    "machine-gun-projectile",
+    "machine-gun-hit",
+    "cannon-muzzle",
+    "cannon-projectile",
+    "cannon-hit"
+  ],
+  "partial_catalog_policy": "Per-effect v2 preference with v1 fallback. First representative set differs from runtime required6.",
+  "lifecycle_contract": {
+    "collision_authority": "충돌·접촉 위치·표면 법선·출구·약점·도탄·가림·대상은 실제 엔진 판정이 결정한다. 효과 표시가 판정을 역으로 만들지 않는다.",
+    "movement_authority": "투사체 효과의 내장 위치 키는 진행 시연이다. 실제 엔진 발사체 physics/루트 이동과 중복 이동하지 않도록 통합 시 로컬 이동 채널을 제거·재매핑하거나 시연 클립과 실제 이동형 표시를 분리한다.",
+    "muzzle_axis": "일반 +Y 위, 포구 +Z 발사 방향. 실제 포구 위치와 축은 무기 편집/엔진 소켓에서 제공한다.",
+    "target_normal_axis": "피격/출구 표면의 +Y=바깥 법선, +Z=진행 방향의 접선 투영. 월드 +Y를 모든 피격 법선으로 고정하지 않는다.",
+    "loop_stop": "상태/유효 분사가 끝나면 loop stop 한다. VFX 반복 설정으로 상태시간·효과·연료/탄약 소비를 연장하지 않는다.",
+    "pooling": "풀 반환에서 재생을 중지하고 animation time=0, action/mixer/loop 상태와 표시용 root transform(위치·회전·크기), 부착 부모·끝점 참조·시연용 표적 참조를 기본값으로 리셋한다. 다음 재생 때 실제 원점/축/스케일을 새로 부여한다.",
+    "time_size": "duration_seconds·타임라인·배율·도형 크기는 아트 시제품 가설이다. 사거리·탄속·장전·피해 반경·상태 지속시간·최종 게임 밸런스를 뜻하지 않는다.",
+    "ownership": "부품 절단→하위 묶음 분리→회수→화물→제작/소켓 장착은 서로 다른 실제 상태다. 표시 레시피가 소유권·부모·전리품을 변경하지 않는다.",
+    "material_selection": "무기 고유 명중과 공용 재질 피격은 기본적으로 하나를 주 효과로 선택한다. 추가 강조는 최소로 허용하고 큰 폭발·고리·연기 중복과 연결부 가림을 검사한다."
+  },
+  "effects": [
+    {
+      "effect_id": "machine-gun-muzzle",
+      "original_id": "machine-gun-muzzle",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+        "v2": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "machine-gun-muzzle",
+        "duration": 0.2,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "유효한 기관총 발사 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": true,
+      "id": "machine-gun-muzzle",
+      "weapon_id": "01-machine-gun",
+      "model": "assets/machine-gun-muzzle.glb",
+      "duration_seconds": 0.2,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "representative_visual_reviewed",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "machine-gun-projectile",
+      "original_id": "machine-gun-projectile",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+        "v2": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "battlefield",
+      "clip_motion": "Preview clips contain baked translation to Z4. Strip translation tracks for moving_payload/painted_velocity_tail wrappers when gameplay owns world movement; harpoon rope endpoints must be runtime-driven.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "machine-gun-projectile",
+        "duration": 0.45,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "기관총 탄환 생성 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "machine-gun-projectile",
+      "weapon_id": "01-machine-gun",
+      "model": "assets/machine-gun-projectile.glb",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "projectile_geometry_subtree": "machine-gun-projectile_moving_payload_0",
+      "projectile_adapter": "Clone only this geometry subtree. Reset its translation/rotation/scale, do not play its preview clip. Gameplay owns position and velocity axis. Rope/endpoints require a separate runtime adapter.",
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "machine-gun-hit",
+      "original_id": "machine-gun-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "machine-gun-hit",
+        "duration": 0.35,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "기관총의 유효 접촉 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "machine-gun-hit",
+      "weapon_id": "01-machine-gun",
+      "model": "assets/machine-gun-hit.glb",
+      "duration_seconds": 0.35,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "cannon-muzzle",
+      "original_id": "cannon-muzzle",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/cannon-muzzle.glb",
+        "v2": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "cannon-muzzle",
+        "duration": 0.45,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "유효한 함포 발사 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "cannon-muzzle",
+      "weapon_id": "02-deck-cannon",
+      "model": "assets/cannon-muzzle.glb",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/cannon-muzzle.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "cannon-projectile",
+      "original_id": "cannon-projectile",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/cannon-projectile.glb",
+        "v2": "outputs/combat-vfx-v2/assets/cannon-projectile.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "battlefield",
+      "clip_motion": "Preview clips contain baked translation to Z4. Strip translation tracks for moving_payload/painted_velocity_tail wrappers when gameplay owns world movement; harpoon rope endpoints must be runtime-driven.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "cannon-projectile",
+        "duration": 0.8,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "함포 포탄 생성 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "cannon-projectile",
+      "weapon_id": "02-deck-cannon",
+      "model": "assets/cannon-projectile.glb",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/cannon-projectile.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/cannon-projectile.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "projectile_geometry_subtree": "cannon-projectile_moving_payload_0",
+      "projectile_adapter": "Clone only this geometry subtree. Reset its translation/rotation/scale, do not play its preview clip. Gameplay owns position and velocity axis. Rope/endpoints require a separate runtime adapter.",
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "cannon-hit",
+      "original_id": "cannon-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/cannon-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/cannon-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "cannon-hit",
+        "duration": 0.75,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "함포 명중이 판정된 위치",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": true,
+      "id": "cannon-hit",
+      "weapon_id": "02-deck-cannon",
+      "model": "assets/cannon-hit.glb",
+      "duration_seconds": 0.75,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/cannon-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "representative_visual_reviewed",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "mortar-launch",
+      "original_id": "mortar-launch",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/mortar-launch.glb",
+        "v2": "outputs/combat-vfx-v2/assets/mortar-launch.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "mortar-launch",
+        "duration": 0.6,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "유효한 박격포 발사 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "mortar-launch",
+      "weapon_id": "03-mortar",
+      "model": "assets/mortar-launch.glb",
+      "duration_seconds": 0.6,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/mortar-launch.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/mortar-launch.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "mortar-projectile",
+      "original_id": "mortar-projectile",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/mortar-projectile.glb",
+        "v2": "outputs/combat-vfx-v2/assets/mortar-projectile.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "battlefield",
+      "clip_motion": "Preview clips contain baked translation to Z4. Strip translation tracks for moving_payload/painted_velocity_tail wrappers when gameplay owns world movement; harpoon rope endpoints must be runtime-driven.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "mortar-projectile",
+        "duration": 1.6,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "박격포 곡사탄 생성 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "mortar-projectile",
+      "weapon_id": "03-mortar",
+      "model": "assets/mortar-projectile.glb",
+      "duration_seconds": 1.6,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/mortar-projectile.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/mortar-projectile.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "projectile_geometry_subtree": "mortar-projectile_moving_payload_0",
+      "projectile_adapter": "Clone only this geometry subtree. Reset its translation/rotation/scale, do not play its preview clip. Gameplay owns position and velocity axis. Rope/endpoints require a separate runtime adapter.",
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "mortar-hit",
+      "original_id": "mortar-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/mortar-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/mortar-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "mortar-hit",
+        "duration": 1.2,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "박격포의 실제 착탄 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "mortar-hit",
+      "weapon_id": "03-mortar",
+      "model": "assets/mortar-hit.glb",
+      "duration_seconds": 1.2,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/mortar-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/mortar-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "harpoon-launch",
+      "original_id": "harpoon-launch",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/harpoon-launch.glb",
+        "v2": "outputs/combat-vfx-v2/assets/harpoon-launch.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "harpoon-launch",
+        "duration": 0.35,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "유효한 작살 발사 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "harpoon-launch",
+      "weapon_id": "04-harpoon",
+      "model": "assets/harpoon-launch.glb",
+      "duration_seconds": 0.35,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/harpoon-launch.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "harpoon-projectile",
+      "original_id": "harpoon-projectile",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/harpoon-projectile.glb",
+        "v2": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "battlefield",
+      "clip_motion": "Preview clips contain baked translation to Z4. Strip translation tracks for moving_payload/painted_velocity_tail wrappers when gameplay owns world movement; harpoon rope endpoints must be runtime-driven.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "harpoon-projectile",
+        "duration": 1,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "작살 투사체 생성 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "harpoon-projectile",
+      "weapon_id": "04-harpoon",
+      "model": "assets/harpoon-projectile.glb",
+      "duration_seconds": 1,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/harpoon-projectile.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "projectile_geometry_subtree": "harpoon-projectile_moving_payload_0",
+      "projectile_adapter": "Clone only this geometry subtree. Reset its translation/rotation/scale, do not play its preview clip. Gameplay owns position and velocity axis. Rope/endpoints require a separate runtime adapter.",
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "harpoon-hit",
+      "original_id": "harpoon-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/harpoon-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/harpoon-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "harpoon-hit",
+        "duration": 0.65,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "작살 접촉 또는 걸림이 실제 판정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "harpoon-hit",
+      "weapon_id": "04-harpoon",
+      "model": "assets/harpoon-hit.glb",
+      "duration_seconds": 0.65,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/harpoon-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/harpoon-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "chain-shot-launch",
+      "original_id": "chain-shot-launch",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/chain-shot-launch.glb",
+        "v2": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "chain-shot-launch",
+        "duration": 0.5,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "유효한 사슬탄 발사 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "chain-shot-launch",
+      "weapon_id": "05-chain-shot",
+      "model": "assets/chain-shot-launch.glb",
+      "duration_seconds": 0.5,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/chain-shot-launch.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "chain-shot-projectile",
+      "original_id": "chain-shot-projectile",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/chain-shot-projectile.glb",
+        "v2": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "battlefield",
+      "clip_motion": "Preview clips contain baked translation to Z4. Strip translation tracks for moving_payload/painted_velocity_tail wrappers when gameplay owns world movement; harpoon rope endpoints must be runtime-driven.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "chain-shot-projectile",
+        "duration": 1.1,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "사슬탄 투사체 생성 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "chain-shot-projectile",
+      "weapon_id": "05-chain-shot",
+      "model": "assets/chain-shot-projectile.glb",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "attachment": {
+        "mode": "projectile",
+        "origin": "투사체의 기준점 또는 전시 경로 시작점",
+        "axes": "+Y 위, +Z 진행 방향",
+        "integration": "내장 로컬 전시 이동과 엔진의 실제 발사체 이동을 동시에 중복 적용하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/chain-shot-projectile.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "projectile_geometry_subtree": "chain-shot-projectile_moving_payload_0",
+      "projectile_adapter": "Clone only this geometry subtree. Reset its translation/rotation/scale, do not play its preview clip. Gameplay owns position and velocity axis. Rope/endpoints require a separate runtime adapter.",
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "chain-shot-hit",
+      "original_id": "chain-shot-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/chain-shot-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "chain-shot-hit",
+        "duration": 1,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "사슬탄이 명중한 뒤 엔진 접촉 여부가 판정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "chain-shot-hit",
+      "weapon_id": "05-chain-shot",
+      "model": "assets/chain-shot-hit.glb",
+      "duration_seconds": 1,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/chain-shot-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "flamethrower-ignite",
+      "original_id": "flamethrower-ignite",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/flamethrower-ignite.glb",
+        "v2": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "flamethrower-ignite",
+        "duration": 0.4,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "유효한 화염 분사 시작 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "flamethrower-ignite",
+      "weapon_id": "06-flamethrower",
+      "model": "assets/flamethrower-ignite.glb",
+      "duration_seconds": 0.4,
+      "loop": false,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/flamethrower-ignite.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "flamethrower-stream",
+      "original_id": "flamethrower-stream",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/flamethrower-stream.glb",
+        "v2": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "flamethrower-stream",
+        "duration": 1.2,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "엔진에서 유효 분사 중인 동안 표시",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": true,
+      "id": "flamethrower-stream",
+      "weapon_id": "06-flamethrower",
+      "model": "assets/flamethrower-stream.glb",
+      "duration_seconds": 1.2,
+      "loop": true,
+      "attachment": {
+        "mode": "muzzle",
+        "origin": "실제 무기 포구의 중앙",
+        "axes": "+Y는 무기의 위, +Z는 실제 포구 발사 방향",
+        "integration": "소켓이 없는 단일 메시 무기에는 후속 편집으로 실제 포구 위치를 먼저 정한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/flamethrower-stream.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "representative_visual_reviewed",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "flamethrower-hit",
+      "original_id": "flamethrower-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/flamethrower-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "flamethrower-hit",
+        "duration": 0.9,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "화염 원뿔의 유효 접촉 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "flamethrower-hit",
+      "weapon_id": "06-flamethrower",
+      "model": "assets/flamethrower-hit.glb",
+      "duration_seconds": 0.9,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/flamethrower-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "wood-hit",
+      "original_id": "wood-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/wood-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/wood-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "wood-hit",
+        "duration": 0.7,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "목재 표면 접촉이 판정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "wood-hit",
+      "weapon_id": null,
+      "model": "assets/wood-hit.glb",
+      "duration_seconds": 0.7,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/wood-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/wood-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "metal-hit",
+      "original_id": "metal-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/metal-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/metal-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "metal-hit",
+        "duration": 0.45,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "금속 표면 접촉이 판정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "metal-hit",
+      "weapon_id": null,
+      "model": "assets/metal-hit.glb",
+      "duration_seconds": 0.45,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/metal-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/metal-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "fabric-hit",
+      "original_id": "fabric-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/fabric-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/fabric-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "fabric-hit",
+        "duration": 0.85,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "천 표면 접촉이 판정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "fabric-hit",
+      "weapon_id": null,
+      "model": "assets/fabric-hit.glb",
+      "duration_seconds": 0.85,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/fabric-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/fabric-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "armor-hit",
+      "original_id": "armor-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/armor-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/armor-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "armor-hit",
+        "duration": 0.6,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "장갑 표면 접촉이 판정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "armor-hit",
+      "weapon_id": null,
+      "model": "assets/armor-hit.glb",
+      "duration_seconds": 0.6,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/armor-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/armor-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "ricochet-hit",
+      "original_id": "ricochet-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/ricochet-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/ricochet-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "ricochet-hit",
+        "duration": 0.5,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "엔진에서 도탄이 실제 판정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "ricochet-hit",
+      "weapon_id": null,
+      "model": "assets/ricochet-hit.glb",
+      "duration_seconds": 0.5,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/ricochet-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/ricochet-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "weakpoint-hit",
+      "original_id": "weakpoint-hit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/weakpoint-hit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/weakpoint-hit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "weakpoint-hit",
+        "duration": 0.8,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "약점 유효 적중이 판정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "weakpoint-hit",
+      "weapon_id": null,
+      "model": "assets/weakpoint-hit.glb",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/weakpoint-hit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/weakpoint-hit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "cloud-miss",
+      "original_id": "cloud-miss",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/cloud-miss.glb",
+        "v2": "outputs/combat-vfx-v2/assets/cloud-miss.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "cloud-miss",
+        "duration": 1.1,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 빗나감/구름 접촉 표시 요청",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "cloud-miss",
+      "weapon_id": null,
+      "model": "assets/cloud-miss.glb",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/cloud-miss.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/cloud-miss.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "penetration-exit",
+      "original_id": "penetration-exit",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/penetration-exit.glb",
+        "v2": "outputs/combat-vfx-v2/assets/penetration-exit.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "penetration-exit",
+        "duration": 0.65,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "출구 면과 관통 성공이 계산된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "penetration-exit",
+      "weapon_id": null,
+      "model": "assets/penetration-exit.glb",
+      "duration_seconds": 0.65,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/penetration-exit.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/penetration-exit.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "small-explosion",
+      "original_id": "small-explosion",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/small-explosion.glb",
+        "v2": "outputs/combat-vfx-v2/assets/small-explosion.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "small-explosion",
+        "duration": 0.8,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "소형 폭발 표시 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "small-explosion",
+      "weapon_id": null,
+      "model": "assets/small-explosion.glb",
+      "duration_seconds": 0.8,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/small-explosion.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/small-explosion.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "large-explosion",
+      "original_id": "large-explosion",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/large-explosion.glb",
+        "v2": "outputs/combat-vfx-v2/assets/large-explosion.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "large-explosion",
+        "duration": 1.8,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "대형 폭발 표시 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "large-explosion",
+      "weapon_id": null,
+      "model": "assets/large-explosion.glb",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/large-explosion.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/large-explosion.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "airburst",
+      "original_id": "airburst",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/airburst.glb",
+        "v2": "outputs/combat-vfx-v2/assets/airburst.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "airburst",
+        "duration": 1.3,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "공중 폭발 위치가 결정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "airburst",
+      "weapon_id": null,
+      "model": "assets/airburst.glb",
+      "duration_seconds": 1.3,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/airburst.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/airburst.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "shrapnel-burst",
+      "original_id": "shrapnel-burst",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/shrapnel-burst.glb",
+        "v2": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "shrapnel-burst",
+        "duration": 1.1,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "파편 표시 요청 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "shrapnel-burst",
+      "weapon_id": null,
+      "model": "assets/shrapnel-burst.glb",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/shrapnel-burst.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "smoke-puff",
+      "original_id": "smoke-puff",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/smoke-puff.glb",
+        "v2": "outputs/combat-vfx-v2/assets/smoke-puff.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "smoke-puff",
+        "duration": 1.8,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "일회성 연기 표시 요청",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": true,
+      "id": "smoke-puff",
+      "weapon_id": null,
+      "model": "assets/smoke-puff.glb",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/smoke-puff.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/smoke-puff.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "representative_visual_reviewed",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "steam-vent",
+      "original_id": "steam-vent",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/steam-vent.glb",
+        "v2": "outputs/combat-vfx-v2/assets/steam-vent.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "steam-vent",
+        "duration": 1.5,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "배기구의 증기 배출 표시 요청",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "steam-vent",
+      "weapon_id": null,
+      "model": "assets/steam-vent.glb",
+      "duration_seconds": 1.5,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/steam-vent.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/steam-vent.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "smoldering-fire",
+      "original_id": "smoldering-fire",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/smoldering-fire.glb",
+        "v2": "outputs/combat-vfx-v2/assets/smoldering-fire.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "smoldering-fire",
+        "duration": 2.4,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "잔불 표시가 필요한 동안 요청",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "smoldering-fire",
+      "weapon_id": null,
+      "model": "assets/smoldering-fire.glb",
+      "duration_seconds": 2.4,
+      "loop": true,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/smoldering-fire.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/smoldering-fire.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "ember-drift",
+      "original_id": "ember-drift",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/ember-drift.glb",
+        "v2": "outputs/combat-vfx-v2/assets/ember-drift.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "ember-drift",
+        "duration": 2,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "일회성 불씨 표시 요청",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "ember-drift",
+      "weapon_id": null,
+      "model": "assets/ember-drift.glb",
+      "duration_seconds": 2,
+      "loop": false,
+      "attachment": {
+        "mode": "world",
+        "origin": "판정된 표시 발생 위치",
+        "axes": "+Y 위, +Z 이벤트 전방",
+        "integration": "폭발 반경이나 충돌체가 아니라 표시용 좌표계다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/ember-drift.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/ember-drift.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "burning-state",
+      "original_id": "burning-state",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/burning-state.glb",
+        "v2": "outputs/combat-vfx-v2/assets/burning-state.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "burning-state",
+        "duration": 1.5,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 점화 상태가 유효한 동안 표시",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "burning-state",
+      "weapon_id": null,
+      "model": "assets/burning-state.glb",
+      "duration_seconds": 1.5,
+      "loop": true,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/burning-state.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/burning-state.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "heavy-smoke-state",
+      "original_id": "heavy-smoke-state",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/heavy-smoke-state.glb",
+        "v2": "outputs/combat-vfx-v2/assets/heavy-smoke-state.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "heavy-smoke-state",
+        "duration": 3,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "지속 연기 표시가 필요한 손상 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "heavy-smoke-state",
+      "weapon_id": null,
+      "model": "assets/heavy-smoke-state.glb",
+      "duration_seconds": 3,
+      "loop": true,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/heavy-smoke-state.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/heavy-smoke-state.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "gas-leak-state",
+      "original_id": "gas-leak-state",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/gas-leak-state.glb",
+        "v2": "outputs/combat-vfx-v2/assets/gas-leak-state.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "gas-leak-state",
+        "duration": 2,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 기낭 누출 표시가 요청된 동안",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "gas-leak-state",
+      "weapon_id": null,
+      "model": "assets/gas-leak-state.glb",
+      "duration_seconds": 2,
+      "loop": true,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/gas-leak-state.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/gas-leak-state.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "overheat-state",
+      "original_id": "overheat-state",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/overheat-state.glb",
+        "v2": "outputs/combat-vfx-v2/assets/overheat-state.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "overheat-state",
+        "duration": 1.2,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 과열 상태/표시가 유효한 동안",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "overheat-state",
+      "weapon_id": null,
+      "model": "assets/overheat-state.glb",
+      "duration_seconds": 1.2,
+      "loop": true,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/overheat-state.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/overheat-state.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "short-circuit-state",
+      "original_id": "short-circuit-state",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/short-circuit-state.glb",
+        "v2": "outputs/combat-vfx-v2/assets/short-circuit-state.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "short-circuit-state",
+        "duration": 0.8,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 단락 또는 손상 전기 표시 요청",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "short-circuit-state",
+      "weapon_id": null,
+      "model": "assets/short-circuit-state.glb",
+      "duration_seconds": 0.8,
+      "loop": true,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/short-circuit-state.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/short-circuit-state.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "engine-stall-state",
+      "original_id": "engine-stall-state",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/engine-stall-state.glb",
+        "v2": "outputs/combat-vfx-v2/assets/engine-stall-state.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "engine-stall-state",
+        "duration": 2.2,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 엔진 정지 상태가 유효한 동안",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "engine-stall-state",
+      "weapon_id": null,
+      "model": "assets/engine-stall-state.glb",
+      "duration_seconds": 2.2,
+      "loop": true,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/engine-stall-state.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/engine-stall-state.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "envelope-rupture-state",
+      "original_id": "envelope-rupture-state",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/envelope-rupture-state.glb",
+        "v2": "outputs/combat-vfx-v2/assets/envelope-rupture-state.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "envelope-rupture-state",
+        "duration": 1.4,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 기낭 파열/파괴 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "envelope-rupture-state",
+      "weapon_id": null,
+      "model": "assets/envelope-rupture-state.glb",
+      "duration_seconds": 1.4,
+      "loop": false,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/envelope-rupture-state.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/envelope-rupture-state.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "module-detach-state",
+      "original_id": "module-detach-state",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/module-detach-state.glb",
+        "v2": "outputs/combat-vfx-v2/assets/module-detach-state.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "module-detach-state",
+        "duration": 1,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 부모 연결 절단과 하위 묶음 분리가 확정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "module-detach-state",
+      "weapon_id": null,
+      "model": "assets/module-detach-state.glb",
+      "duration_seconds": 1,
+      "loop": false,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/module-detach-state.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/module-detach-state.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "shield-pulse",
+      "original_id": "shield-pulse",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/shield-pulse.glb",
+        "v2": "outputs/combat-vfx-v2/assets/shield-pulse.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "target",
+        "origin": "표시 대상의 중심 또는 명시한 지원 기준점",
+        "axes": "+Y 위, +Z 대상 전방",
+        "integration": "대상 크기와 가림을 실제 장면에서 확인한다. 효과 중심이 곧 피해/회복 영역은 아니다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "shield-pulse",
+        "duration": 1.1,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "유효한 방패 방어 표시 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": true,
+      "id": "shield-pulse",
+      "weapon_id": null,
+      "model": "assets/shield-pulse.glb",
+      "duration_seconds": 1.1,
+      "loop": false,
+      "attachment": {
+        "mode": "target",
+        "origin": "표시 대상의 중심 또는 명시한 지원 기준점",
+        "axes": "+Y 위, +Z 대상 전방",
+        "integration": "대상 크기와 가림을 실제 장면에서 확인한다. 효과 중심이 곧 피해/회복 영역은 아니다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/shield-pulse.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/shield-pulse.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "representative_visual_reviewed",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "armor-block",
+      "original_id": "armor-block",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/armor-block.glb",
+        "v2": "outputs/combat-vfx-v2/assets/armor-block.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "armor-block",
+        "duration": 0.55,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 장갑 막음/방어 결과가 계산된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "armor-block",
+      "weapon_id": null,
+      "model": "assets/armor-block.glb",
+      "duration_seconds": 0.55,
+      "loop": false,
+      "attachment": {
+        "mode": "impact-surface",
+        "origin": "판정된 접촉 또는 출구 표면 위치",
+        "axes": "+Y는 표면 바깥 법선, +Z는 입사/진행 방향의 접선 투영",
+        "integration": "접선이 정의되지 않으면 호스트 전방을 투영한다. 교차점과 법선은 엔진이 전달한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/armor-block.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/armor-block.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "repair-stitch",
+      "original_id": "repair-stitch",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/repair-stitch.glb",
+        "v2": "outputs/combat-vfx-v2/assets/repair-stitch.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "repair-stitch",
+        "duration": 2,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 수리 진행/완료 표시 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": true,
+      "id": "repair-stitch",
+      "weapon_id": null,
+      "model": "assets/repair-stitch.glb",
+      "duration_seconds": 2,
+      "loop": false,
+      "attachment": {
+        "mode": "host-surface",
+        "origin": "해당 부품의 손상/수리 표면 기준점",
+        "axes": "+Y 표면 바깥 법선, +Z 표면의 호스트 전방 접선",
+        "integration": "가시 자식 효과이며 구조 부모·피격체·수리 대상 판정을 대신하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/repair-stitch.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/repair-stitch.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "representative_visual_reviewed",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "healing-pulse",
+      "original_id": "healing-pulse",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/healing-pulse.glb",
+        "v2": "outputs/combat-vfx-v2/assets/healing-pulse.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "target",
+        "origin": "표시 대상의 중심 또는 명시한 지원 기준점",
+        "axes": "+Y 위, +Z 대상 전방",
+        "integration": "대상 크기와 가림을 실제 장면에서 확인한다. 효과 중심이 곧 피해/회복 영역은 아니다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "healing-pulse",
+        "duration": 1.8,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 회복/복구 표시 요청",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "healing-pulse",
+      "weapon_id": null,
+      "model": "assets/healing-pulse.glb",
+      "duration_seconds": 1.8,
+      "loop": false,
+      "attachment": {
+        "mode": "target",
+        "origin": "표시 대상의 중심 또는 명시한 지원 기준점",
+        "axes": "+Y 위, +Z 대상 전방",
+        "integration": "대상 크기와 가림을 실제 장면에서 확인한다. 효과 중심이 곧 피해/회복 영역은 아니다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/healing-pulse.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/healing-pulse.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "salvage-tether",
+      "original_id": "salvage-tether",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/salvage-tether.glb",
+        "v2": "outputs/combat-vfx-v2/assets/salvage-tether.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "link",
+        "origin": "실제 견인 시작점",
+        "axes": "+Z 시작점에서 끝점으로, +Y는 그 축에 수직인 안정화 방향",
+        "integration": "끝점 사이 거리·방향은 엔진에서 갱신한다. Z축 길이 변환만으로 로프 물리를 구현하지 않는다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "salvage-tether",
+        "duration": 2,
+        "loop": true,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "실제 견인/회수 중인 두 끝점 연결 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "state-ended",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "salvage-tether",
+      "weapon_id": null,
+      "model": "assets/salvage-tether.glb",
+      "duration_seconds": 2,
+      "loop": true,
+      "attachment": {
+        "mode": "link",
+        "origin": "실제 견인 시작점",
+        "axes": "+Z 시작점에서 끝점으로, +Y는 그 축에 수직인 안정화 방향",
+        "integration": "끝점 사이 거리·방향은 엔진에서 갱신한다. Z축 길이 변환만으로 로프 물리를 구현하지 않는다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/salvage-tether.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/salvage-tether.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    },
+    {
+      "effect_id": "mount-lock",
+      "original_id": "mount-lock",
+      "status": "v2_art_prototype_available_runtime_integration_pending",
+      "models": {
+        "v1": "outputs/combat-vfx/assets/mount-lock.glb",
+        "v2": "outputs/combat-vfx-v2/assets/mount-lock.glb"
+      },
+      "selection": "Default v1. An integration-owned per-effect selector may choose v2 only after explicit opt-in and its binding/clip/material/lifecycle checks. Missing or unverified v2 falls back to v1; file existence alone never promotes it.",
+      "anchor": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "axes": {
+        "up": "+Y",
+        "muzzle_forward": "+Z",
+        "impact_normal": "+Y"
+      },
+      "motion_owner": "attachment_transform",
+      "clip_motion": "Internal TRS is visual motion, root wrapper follows selected anchor.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "comparison_scale": 0.32,
+        "meter_scale_confirmed": false
+      },
+      "clip": {
+        "name": "mount-lock",
+        "duration": 1,
+        "loop": false,
+        "loop_policy": "Host owns state lifetime. Metadata does not prolong combat state."
+      },
+      "trigger": "소켓 장착이 실제 검증·확정된 이벤트",
+      "hit_authority": "Only actual runtime hit/contact event selects impact effect. Preview choreography never emits collision or damage.",
+      "stop": [
+        "clip-completed",
+        "projectile-ended-if-owned",
+        "host-destroyed",
+        "cancelled"
+      ],
+      "reset": [
+        "stop action/mixer",
+        "time=0",
+        "restore root translation/rotation/scale",
+        "restore material opacity and outline",
+        "loop policy reset",
+        "detach parent",
+        "clear target and endpoints",
+        "clear preview motion references"
+      ],
+      "runtime_adapter": {
+        "opacity": "node extras.runtime_fade {start,peak,end,opacity}, seconds, separate material feature",
+        "outline": "viewer-only OutlineEffect.autoClear=true",
+        "cel": "viewer-only 3-band shading"
+      },
+      "runtime_integrated": false,
+      "visual_reviewed": false,
+      "id": "mount-lock",
+      "weapon_id": null,
+      "model": "assets/mount-lock.glb",
+      "duration_seconds": 1,
+      "loop": false,
+      "attachment": {
+        "mode": "host",
+        "origin": "해당 부품의 표시 기준점",
+        "axes": "+Y 호스트 위, +Z 호스트 전방",
+        "integration": "엔진이 호스트를 추적하고 손상/지원 상태에 따라 표시 생명주기를 제어한다."
+      },
+      "assetSet": "combat-vfx-v2",
+      "source_model": "outputs/combat-vfx/assets/mount-lock.glb",
+      "actual_model": "outputs/combat-vfx-v2/assets/mount-lock.glb",
+      "scale": {
+        "comparison_only": 0.32,
+        "runtime_scale_unconfirmed": true
+      },
+      "review_status": "art_review_pending",
+      "default_version": "v1",
+      "runtime_validation_passed": false,
+      "comparison_display_offset": {
+        "muzzle_forward_world": 0.24,
+        "only": "Comparison renderer only. Do not copy this provisional clearance into gameplay muzzle authority."
+      }
+    }
+  ],
+  "sequence_note": "Six GLBs are choreography previews, never event producers. Harpoon holds cable to2.7s; flame ignition/stream/contact overlap. See sequence-catalog for timings."
+}

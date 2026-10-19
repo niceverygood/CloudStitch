@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "sourceReview": "flight3d-ready3-ready-review-2026-10-18.json",
+  "actualQaUrl": "http://127.0.0.1:8840/outputs/flight3d-ready3/index.html",
+  "mapping": {
+    "sourceManifestSha256": "a47437d6d8832b8bccef03881273ff524782854f564a281e84c6c5e57acc4921",
+    "receipt": "outputs/flight3d-ready3-browser-qa-v1/mapped-import.json",
+    "sha256": "f56a026327d448f5cd634547f499516d7b3cd677d2fc6663a1e6a05a85b6dc67",
+    "owned29OriginalBytes": true,
+    "productTextEdited": false,
+    "dependencies4MatchedCopied0": true,
+    "oldRoot20Preserved": true,
+    "old20SourceArchiveAlsoProduced": true
+  },
+  "browser": {
+    "path": "outputs/flight3d-ready3-browser-qa-v1/runtime/browser-verification.json",
+    "sha256": "a983072c612a9e15ee8de85446c53ef4cb2dc0ea863ad4c1fd69ecf352f664e2",
+    "passed": true,
+    "checks": 20,
+    "harnessSha256": "1285087af633f353a07e45338051e75710d7bc32f8dcfb202de78b6466b94f57"
+  },
+  "observations": {
+    "visibleBuoyancyRangeApprox": 0.125,
+    "physicalCenterRemains": [
+      0,
+      8,
+      40
+    ],
+    "rightDHeadingDeltaApprox": 0.282,
+    "brakedSpeedApprox": 0.029,
+    "actualBankPitchAndBodyFollow": true,
+    "elevatedTarget": {
+      "altitude": 25,
+      "shots": 7,
+      "hits": 3,
+      "kills": 1
+    },
+    "pausePhysicsAndSpringsFreeze": true,
+    "focusResetQEWPlusQRightDragPassed": true,
+    "enemyFireAndSafeCleanupPassed": true,
+    "mobile390ViewportButtonsMouseOperated": true,
+    "errorsExternalFailedRequests": 0
+  },
+  "directBrowserCoverageLimit": "S reverse and A left turn not directly exercised; Node37 evidence separately covers helm implementation; HANDOFF shorthand A/D should not be read as both keys directly browser tested",
+  "preservation": {
+    "shared29AndReadonly4BeforeAfterPassed": true,
+    "rootPost51Records": "old20+new29+manifest2, not QA count",
+    "new29PostChanged": 0,
+    "oldReady2Qa17Sha256": "bdd6014693bf2f33d45a47671d45e0089eecd556b6385e45923ada462cb9ead9",
+    "ready2RootUrl": "http://127.0.0.1:8840/outputs/flight3d-v1/",
+    "sharedReady2Archive5NotIncludedIn29": true
+  },
+  "finalReceipt": {
+    "path": "outputs/flight3d-ready3-browser-qa-v1/verification.json",
+    "sha256": "5fdcabd7a22efdf7206c971cb48cda656d3e2ba862a19dfc361cdea97c190f83",
+    "passed": true
+  },
+  "delivery": {
+    "path": "outputs/flight3d-ready3-browser-qa-v1/delivery-manifest.json",
+    "sha256": "43554562f85bc1f08f6cf5b55b1abbde03b1961231899791e1f1823bec14b13c",
+    "files": 63,
+    "bytes": 2990205,
+    "notQaChecks": true
+  },
+  "review": {
+    "rootSmallManifestReceiptRawAndMappingShaMatched": true,
+    "delegatedStaticScopeAndBindingsComplete": true,
+    "rootDidNotRerunBrowserOrHashBigDependencies": true
+  },
+  "limits": [
+    "single independent XYZ sim with visual spring, not full flightphysics or precise rigged muzzle",
+    "no harbor/cargo/salvage/save/campaign integration",
+    "not humanfeel/art/game install or longperformance/realdevice approval",
+    "mapped buildtools retain canonicalpaths; do not rebuild in integration namespace"
+  ],
+  "aggregateQaPass": null
+}

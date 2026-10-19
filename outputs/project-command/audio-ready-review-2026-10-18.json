@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:18:09Z",
+  "version": "audio-v1.0.0-ready",
+  "status": "read-only handoff verification PASS; next integration revision only",
+  "verificationBy": "delegated read-only review /root/audio_contract_review",
+  "manifest": {
+    "path": "outputs/audio-v1/handoff-files.json",
+    "sha256": "f13f36398d8a52536b4c5885050d29de634b82391d591ae2a91f4204a84dccd6",
+    "files": 46,
+    "bytes": 822541,
+    "matched": 46,
+    "failures": 0,
+    "sourceBoundaryMatched": 7,
+    "sourceDrift": false
+  },
+  "reportedLightChecks": {
+    "PCM": "18 synthesized cues",
+    "runtime": 17,
+    "adapter": 34,
+    "actualControllerInput": 8,
+    "HTTP": 35,
+    "rerunByCommand": false
+  },
+  "integrationInstalled": false,
+  "nativeWebAudioVerified": false,
+  "offlineAudioContextVerified": false,
+  "humanListeningVerified": false,
+  "pending": [
+    "native/Offline browser output",
+    "human listening/mono/headphones/three-cue identification",
+    "mobile/full UI/map switch/long-run QA",
+    "actual autosave result hook"
+  ],
+  "scope": "temporary seeded procedural SFX; no music/voice/paid generation",
+  "qaOrder": "stage maps when harness ready, playable READY-2 targeted checks, audio"
+}

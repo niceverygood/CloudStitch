@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "title": "Cloudstitch · 봉쇄자의 공중 요새",
+  "revision": "enemy-base-v1",
+  "asset_status": "static_3d_art_prototype",
+  "source": {
+    "reference": "outputs/enemy-base-moodboard-v2/moodboard.png",
+    "sha256": "49ea92ea7a8dc01b1ee79679d550e22f1a417a4f922243ba21306c521f6327f3",
+    "preserved": true,
+    "method": "original code-authored volumetric architecture and vertex painting"
+  },
+  "model": {
+    "path": "enemy-base.glb",
+    "bytes": 16284852,
+    "sha256": "518e6208cbdef18c7a29bacaaa800d83004d71f1a17c4e20ae6ceb6304f19fcc",
+    "triangles": 149998,
+    "vertices": 449994,
+    "meshes": 78,
+    "materials": 25,
+    "textures": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -14.914546012878418,
+        -8.539999961853027,
+        -12.796250343322754
+      ],
+      "max": [
+        14.74850845336914,
+        35.95000076293945,
+        20.459999084472656
+      ],
+      "size": [
+        29.66305446624756,
+        44.49000072479248,
+        33.25624942779541
+      ]
+    },
+    "coordinates": "+Y up, +Z front/dock; relative design units",
+    "authored_components": 5296,
+    "semantic_groups": [
+      {
+        "id": "hull",
+        "name_ko": "철갑 선체",
+        "nodeName": "hull",
+        "description": "겹 판금·황동 리벳·하부 용골을 가진 먹색의 부유 선체",
+        "triangles": 18896,
+        "meshes": 7
+      },
+      {
+        "id": "buoyancy",
+        "name_ko": "봉제 부력낭",
+        "nodeName": "buoyancy",
+        "description": "크림색 수선 천과 조임 띠가 있는 하부 부력낭",
+        "triangles": 16780,
+        "meshes": 5
+      },
+      {
+        "id": "keep",
+        "name_ko": "성채와 겹지붕",
+        "nodeName": "keep",
+        "description": "비대칭 회랑·청록 겹지붕·따뜻한 창·겹겹의 보강대",
+        "triangles": 37794,
+        "meshes": 14
+      },
+      {
+        "id": "bell_tower",
+        "name_ko": "봉쇄의 종탑",
+        "nodeName": "bell_tower",
+        "description": "열린 철제 우리와 커다란 황동 종, 층진 첨탑",
+        "triangles": 15500,
+        "meshes": 11
+      },
+      {
+        "id": "bastions",
+        "name_ko": "외향 포대",
+        "nodeName": "bastions",
+        "description": "가시 난간과 독립 실루엣을 가진 여섯 개의 경계 함포",
+        "triangles": 16380,
+        "meshes": 7
+      },
+      {
+        "id": "dock",
+        "name_ko": "봉쇄 관문과 계류장",
+        "nodeName": "dock",
+        "description": "철창 관문·목재 선창·늘어진 사슬·기중기와 인양물",
+        "triangles": 22100,
+        "meshes": 17
+      },
+      {
+        "id": "machinery",
+        "name_ko": "기관·배관·연통",
+        "nodeName": "machinery",
+        "description": "그을린 공장 굴뚝과 배관, 황동 팬과 압력통",
+        "triangles": 8804,
+        "meshes": 9
+      },
+      {
+        "id": "banners",
+        "name_ko": "검붉은 봉제 깃발",
+        "nodeName": "banners",
+        "description": "독창적인 봉쇄 매듭 문양과 꿰맨 가장자리를 가진 굴곡 천",
+        "triangles": 13744,
+        "meshes": 8
+      }
+    ]
+  },
+  "appearance": {
+    "surfaces": "matte vertex-painted metal, plaster, canvas and timber",
+    "palette": "soot navy armor, weathered teal roofs, brass trim, cream quilted buoyancy, oxblood banners, warm amber windows",
+    "material": "glTF metallic-roughness, roughness 1, metalness 0; review can replace with hand-painted unlit or toon shading",
+    "runtime": "Outline and cel shading belong to review runtime; they are not automatically reproduced by importing the GLB into an engine."
+  },
+  "limitations": [
+    "Art review prototype only; no gameplay or enemy AI.",
+    "No authored collision, LOD, navmesh, engine sockets, gameplay statistics or destruction.",
+    "Static geometry; no rig or animation; the crane, bell, banners and cannons are modeled in a fixed pose.",
+    "Building interiors are not authored; open gate is represented by a closed portcullis.",
+    "Artist/user approval is still required."
+  ]
+}

@@ -1,0 +1,3777 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "scope": {
+    "effects": 48,
+    "sequences": 6
+  },
+  "checked_at_utc": "2026-10-18T07:58:04.830Z",
+  "method": "Binary glTF accessor and hierarchy evaluation; no WebGL/browser, no art approval.",
+  "khronos_validator": "unavailable_optional",
+  "source_preservation": "Run record.cjs verify separately.",
+  "files": [
+    {
+      "id": "machine-gun-muzzle",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/machine-gun-muzzle.glb",
+      "bytes": 3733736,
+      "sha256": "b77da528fb42f4befdfbbefc162fbaa22e367903911300b53db912f650c4a7a8",
+      "triangles": 2210,
+      "mesh_count": 4,
+      "node_count": 11,
+      "material_count": 4,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "machine-gun-muzzle",
+          "duration_seconds": 0.20000000298023224,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.625,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "74db3c439acf964568f7952db3624e733c1430f71622da9c0d18207cfa701d83",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.030000000447034835,
+              "transform_sha256": "32f2711ae3f020c27082b85039f893beaef68c443ab2ff06a7d39d7f84f7d8cb",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.07000000104308128,
+              "transform_sha256": "21889be726d39633ba6e3874c66de73d2a742d7be685ff4227d4d6bf15be1393",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.13000000193715097,
+              "transform_sha256": "5a53bad8041f721eba13d876846f422f0b70d5a9616cc1bf742a50036914deff",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.18000000268220903,
+              "transform_sha256": "d304826e65ab56c8c6a428e6c7b717d43694c8a2a45f79d1dd29566a1fb41d94",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.20000000298023224,
+              "transform_sha256": "d29c4b89429af8732647304b9fde722eb2d135564a2199073e0adaab29acda44",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "machine-gun-projectile",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/machine-gun-projectile.glb",
+      "bytes": 59028,
+      "sha256": "9fede02363cd212d3ac628ecc51c7114c47f5646aa91944ee2c00f815138dbac",
+      "triangles": 504,
+      "mesh_count": 2,
+      "node_count": 4,
+      "material_count": 2,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "machine-gun-projectile",
+          "duration_seconds": 0.44999998807907104,
+          "channel_count": 4,
+          "channel_paths": [
+            "translation",
+            "scale"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 4,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "fbe8288153f03559c1e50c40ce1c0831cc90c79b04f4d4cbb1aaaa4b38cafdb0",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.06749999821186066,
+              "transform_sha256": "cd867e8755970b3010eb39a41e012e191a9b22ae015bc434c48b15b1af114500",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.15749999582767485,
+              "transform_sha256": "a77c20255b21172458e0e656d090a07399372fd5537aa25bf3dfef815f0a1a47",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.29249999225139617,
+              "transform_sha256": "fe18b61cc740bd84c341e8d81ecd02a172b11ba66c2e8ec83c2fe90142f15567",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.40499998927116393,
+              "transform_sha256": "6c43b7d6a01fe990b001ec8d81d9a9d3fefb5959d8d86d5c2f70470a9befa246",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.44999998807907104,
+              "transform_sha256": "bb888b78179a1109da1ef2521c85edc8506f5e3fefd849c0d9ab3573079c2d14",
+              "finite": true,
+              "mesh_world_matrices": 2
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "machine-gun-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/machine-gun-hit.glb",
+      "bytes": 117336,
+      "sha256": "10561ff655c101b7efef1805e774d3aec6ebef2dcf0e5c7886da4f0dcc87e4b0",
+      "triangles": 1008,
+      "mesh_count": 4,
+      "node_count": 8,
+      "material_count": 4,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "machine-gun-hit",
+          "duration_seconds": 0.3499999940395355,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.3912518322467804,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "deb4e0a25468f3a3be713e88dd1db031e1652e9b962262b07235d75ba526868c",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.052499999105930326,
+              "transform_sha256": "dc74a05361442378dc43f5436af3713c873a8d0f7ff7f9ef294bee03ec841c9a",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.12249999791383742,
+              "transform_sha256": "bcf8994f660d0181ee9740dc9c3a161294174738c58fe460a49e6065286766ee",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.2274999961256981,
+              "transform_sha256": "1b545ae6756e6bca6e9badddc72039d47c757535629851e2f10f57f8902ec86c",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.314999994635582,
+              "transform_sha256": "292f54149998f658d398653afdde8caf8efb0f45198b54e2578d97192dae6f3c",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.3499999940395355,
+              "transform_sha256": "6fc01f506b6215f265a35d20ef85ad6335c498c5ef88b9186d043adb7e344cd3",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "cannon-muzzle",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/cannon-muzzle.glb",
+      "bytes": 7464616,
+      "sha256": "845495596e9d801f0f19ebcfb9aa55efc3d59bd6f1cb44e9a1fbeffd09c0a42b",
+      "triangles": 4141,
+      "mesh_count": 6,
+      "node_count": 16,
+      "material_count": 6,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 6,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "cannon-muzzle",
+          "duration_seconds": 0.44999998807907104,
+          "channel_count": 13,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.5,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "2b27c0349dc6a78ae1dc745d9b378ebdbaa29d71f8094956869e355307d80226",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.06749999821186066,
+              "transform_sha256": "3ae8b4434982dce7e14119e4255648e16fab942117e53ed45f61e95424a6af89",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.15749999582767485,
+              "transform_sha256": "094c1c83186f209d57adda348241d1cf7f4fac5fd5ed6db80bca523766f0f8ca",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.29249999225139617,
+              "transform_sha256": "66a7122743a455b7ab90462d1aa7880dae5c3dd73144954ccb51210693e4a427",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.40499998927116393,
+              "transform_sha256": "e7bea11e1540d2256d979b457782333f3c1b8933ab7f4feb8bf9faa3a0692082",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.44999998807907104,
+              "transform_sha256": "7becb1a6989adb05d4b85809019263e2b6179fac1cf65fb4d40025488a39fb1e",
+              "finite": true,
+              "mesh_world_matrices": 6
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "cannon-projectile",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/cannon-projectile.glb",
+      "bytes": 56460,
+      "sha256": "1f449737c11086ef72f598808075a28280757e8480d17bd923b9ee60e2c0a2a9",
+      "triangles": 468,
+      "mesh_count": 3,
+      "node_count": 5,
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "cannon-projectile",
+          "duration_seconds": 0.800000011920929,
+          "channel_count": 5,
+          "channel_paths": [
+            "translation",
+            "scale",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 4,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "064b1ae225e9c1e59b633b3e4a7671e64d2e88766fe2cde06f79cb015e80e15e",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.12000000178813934,
+              "transform_sha256": "6f4f51f5a85440015ffb4b69eeb3e778509d3abcd0e4da512ff7cc7e68aacf33",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.2800000041723251,
+              "transform_sha256": "c2ab1f35f3ea37393dbf8571c5c6bc5223774934e32f16d6641d17dd8e6d8991",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.5200000077486039,
+              "transform_sha256": "b0e9827017a1047498d9091e02befc4819994dd334e5dc6d1e574e81dde2022d",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.7200000107288361,
+              "transform_sha256": "85d8308341907e115895a4096aa46dd760082f51a83763223ef86644a24c8fc9",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.800000011920929,
+              "transform_sha256": "de689b92cf6a05bf9b67d00cf2b5b49cae1a2bb4e1223f1cb833bf9774f66adc",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "cannon-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/cannon-hit.glb",
+      "bytes": 7474808,
+      "sha256": "f6429ec4bbeb84524c09738822851a062d11efb2f94fcdb964cb1d66fede22ac",
+      "triangles": 4225,
+      "mesh_count": 6,
+      "node_count": 21,
+      "material_count": 6,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 6,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "cannon-hit",
+          "duration_seconds": 0.75,
+          "channel_count": 14,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.9499999345287391,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "c4f2ef0cde9becc9dab27e36c36c667fc590180bdda5a86f4438f97c8e6b2f0f",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.11249999999999999,
+              "transform_sha256": "ea3d10f89fa55655ef6e83ab7171bc6c755982d8b55b0e3e687b577d56a67a06",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.26249999999999996,
+              "transform_sha256": "9af3b4baafa1e6637d9a572f0b7654ba4b460d5b64fa9789c274770d705e67c9",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.48750000000000004,
+              "transform_sha256": "db71d79d606161bec63a6f4be644259a4f9fcf14390dd6ab54c0bbfd11a334f2",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.675,
+              "transform_sha256": "7efc02668cddc056d324643d1e9d11f1297fb33bffce45ebd08c5f28ee6f3a03",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.75,
+              "transform_sha256": "d443ea07a04b6edacaae9926a0f7c737ec010c102f6ae5fdda8644668fae0192",
+              "finite": true,
+              "mesh_world_matrices": 7
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "mortar-launch",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/mortar-launch.glb",
+      "bytes": 7384308,
+      "sha256": "f173a10601cae51241647778a1f2557a709d226e9c9212532f52ef64d80cce2e",
+      "triangles": 3469,
+      "mesh_count": 3,
+      "node_count": 10,
+      "material_count": 3,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "mortar-launch",
+          "duration_seconds": 0.6000000238418579,
+          "channel_count": 5,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.5799999907612801,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "5f02dc184428677fe582922097a1b191b8dba0985a97e9ac7ce08164aaf044f0",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.09000000357627869,
+              "transform_sha256": "4292e2e7ac445e37a1b93bd8005f3b52955ec543f2017c75e8cca85832867888",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.21000000834465027,
+              "transform_sha256": "532992f14e3af293622fdbd7dae51088c843c07215fdfdc34f6f6ff0680709c6",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.39000001549720764,
+              "transform_sha256": "38ba9b492ac21204b6515a160cd344be86054743ccbec371f1d3b93d5ef04556",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.5400000214576721,
+              "transform_sha256": "275f351c2e290e1ed1bcfc4c3db5600fdeb7553089f5522a694a7734b43ae678",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.6000000238418579,
+              "transform_sha256": "984bc2dab59b1faeee41111665aa5c326e7d795d5c50ad76b93d5d2f65d6ede1",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "mortar-projectile",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/mortar-projectile.glb",
+      "bytes": 56468,
+      "sha256": "f307ff488a9886da937a1ce927fff16b463bf4214aab687d53ec717ebcb1cece",
+      "triangles": 468,
+      "mesh_count": 3,
+      "node_count": 5,
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "mortar-projectile",
+          "duration_seconds": 1.600000023841858,
+          "channel_count": 5,
+          "channel_paths": [
+            "translation",
+            "scale",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 4,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "c5da689899ba44f19a19a634ce756f33eeff1cb950af89931e991e6d0a7118b9",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.24000000357627868,
+              "transform_sha256": "f4225a0e64af2af7c2540bcd480cb70d6b1e96ddb99a3cb62d51a25ffb192db2",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.5600000083446502,
+              "transform_sha256": "40261a2dcf32eb61ac79c97ff6c6423d375d47cd23eab30b1dbaf9c753c2762d",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 1.0400000154972078,
+              "transform_sha256": "0a1890ff6cc1b821bf993d4296419a7c6e0b53ed422eb0a1907541110be67ea2",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 1.4400000214576723,
+              "transform_sha256": "decb6e2f04421de43d67c62619f86fe7d2c57a5b8345860200dfea6f99e55310",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 1.600000023841858,
+              "transform_sha256": "9780ae961c000b911bbb60120dc9ec31f1aa1471b730b30ba78742f74a735024",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "mortar-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/mortar-hit.glb",
+      "bytes": 7533452,
+      "sha256": "dec91a6aa76c1c7799184da23e02cb128f8a636fe981876614bb5c66e8bf40cd",
+      "triangles": 4729,
+      "mesh_count": 8,
+      "node_count": 24,
+      "material_count": 8,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 8,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "mortar-hit",
+          "duration_seconds": 1.2000000476837158,
+          "channel_count": 18,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.7936828136444092,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "881177b188671e10f8fc605123b40fee872917883a173a1c8ee78bb986358e68",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 0.18000000715255737,
+              "transform_sha256": "ef456732e9613e05f6eab00fcb2047bc5097125167bdda71d0c55c0e8de49205",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 0.42000001668930054,
+              "transform_sha256": "78a8bc09fa36d693d378dfe881366ab1c547d47507296265eedd9e4d8ad11d3c",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 0.7800000309944153,
+              "transform_sha256": "5f9f380c4ef99ec86a545182e4471a229a563d4130a180a37b1d31ac8ade886e",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 1.0800000429153442,
+              "transform_sha256": "3f2225eabcee55012360640b479975806af31ebe61191fd8f1e2e74d43ab5f4b",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 1.2000000476837158,
+              "transform_sha256": "901bba140c08daabf0a38d2de20de49d5dfefd6597040e91322b237fd617b9e4",
+              "finite": true,
+              "mesh_world_matrices": 9
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "harpoon-launch",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/harpoon-launch.glb",
+      "bytes": 98004,
+      "sha256": "a78f2da80c6992880763342e248082374891d6943e754d373834dd8caca4fdfd",
+      "triangles": 840,
+      "mesh_count": 3,
+      "node_count": 6,
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "harpoon-launch",
+          "duration_seconds": 0.3499999940395355,
+          "channel_count": 7,
+          "channel_paths": [
+            "translation",
+            "scale",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.25,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "5f1d50928305125f5c81dbd36c2684ee9222d3cb84ffe9d6f1edbde617c61a36",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.052499999105930326,
+              "transform_sha256": "82c0fd7c475566bfb261afeaadc180f4a0ce1b84530db266ff792688c2b93eb2",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.12249999791383742,
+              "transform_sha256": "0a05f426d0f7704a8ac5a433e25936dcb7d961c3e54339909d32a67e4acd2780",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.2274999961256981,
+              "transform_sha256": "fc81483fa153115a62b4bb39c19cc180b5d2663f0a0e363143806fc6d9e84c56",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.314999994635582,
+              "transform_sha256": "b10e079ac8ff3a619c739584c98e7345cccf07db8bf572992bd36b19ea59dc53",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.3499999940395355,
+              "transform_sha256": "a3a950b9673fcebc7fa2c85386dcac73459a3ded60e1afbfed3a0ae8871155d3",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "harpoon-projectile",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/harpoon-projectile.glb",
+      "bytes": 77784,
+      "sha256": "467da74e607d66f8ff28997d88a981bb6ce4f2a0495f4e7468f0ba45c637dd59",
+      "triangles": 672,
+      "mesh_count": 3,
+      "node_count": 5,
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 0,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "harpoon-projectile",
+          "duration_seconds": 1,
+          "channel_count": 3,
+          "channel_paths": [
+            "translation",
+            "scale"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 4,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "f68ab55601553876d54201ff5889419a81bcef60a54ed2230812bb2750b8f0fa",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.15,
+              "transform_sha256": "0eee893f3484b8d05216e2f9697eac1aed505877e43ccf484448ba4ef229b700",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.35,
+              "transform_sha256": "701fe5cf7cbf81ad917e5155cad1a5935cb41e60fd055fb10d1d6a05f4620219",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.65,
+              "transform_sha256": "2a9a17f53af82efae493b3fa3fb93ec66d1cad1614baa916da51c7cef0c9d40d",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.9,
+              "transform_sha256": "9c264279aa9044152127eb4748c9772a74c5e921cb5e02ec81e6c232ab46e2d3",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 1,
+              "transform_sha256": "5a134f772f762788ecfa81365ff37e9c9cbd21c7c360426cfc387b3aaed1c089",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "harpoon-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/harpoon-hit.glb",
+      "bytes": 135556,
+      "sha256": "cc0066892b398e4fa5a56c40b9f0a3098c4c75eea13d58bd53033c1b5b220dd0",
+      "triangles": 1176,
+      "mesh_count": 4,
+      "node_count": 8,
+      "material_count": 4,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "harpoon-hit",
+          "duration_seconds": 0.6499999761581421,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "rotation",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.1902090162038803,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "192d0d33586a2a33f412ec80d121744fa9352a90aacf9b7a883c660485ad1b01",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.09749999642372131,
+              "transform_sha256": "338b112d0389e17d01455bb4375dd4d8d701de713b3163de8073cef22d999daa",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.2274999916553497,
+              "transform_sha256": "ef4871ee6a9d59ce8de4fa17c07e2dcb75fe6347e7c93f9fc9fc4c14da9ba6c3",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.42249998450279236,
+              "transform_sha256": "12feb1b8454c46c97b6c09fd91e7aaaa61c3e918afe8c84aa2a7886cf17bada9",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.5849999785423279,
+              "transform_sha256": "c7fadc488ed44649157abdc110b112045b54c0721fe3ad3fe304db6f236114f2",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.6499999761581421,
+              "transform_sha256": "1b330cbc6436e3e86bef7c7fd70731c164f5c3620aa8ed30f4788a7364d61e22",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "chain-shot-launch",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/chain-shot-launch.glb",
+      "bytes": 3782916,
+      "sha256": "7206afd2353256e2e2584557016288a931bb95e2333b273d9e87cd3c7424a39f",
+      "triangles": 2630,
+      "mesh_count": 5,
+      "node_count": 16,
+      "material_count": 5,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 4,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "chain-shot-launch",
+          "duration_seconds": 0.5,
+          "channel_count": 12,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.49000000953674316,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "9995b28f17891c0755b52b68383af0e3c7588d1f2f139aa9e2a1da1e77a6b6b7",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.075,
+              "transform_sha256": "66306d80ba8033b22ac70e6eee5ccf3666be6fbcf2fd116c685c908994eb7040",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.175,
+              "transform_sha256": "b283ec39c36c740acf1dd79bb319cfdc534c4d70b793220e7c2c39ab58c3946e",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.325,
+              "transform_sha256": "955ed6665f23a6f25e1840123fb9deb6c8acc9151a30ac9a71bd62908e1e7c67",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.45,
+              "transform_sha256": "4132264c68f5dd6bd78986a3bf95e20779077cab9707cd573165b04b0d9b72f9",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.5,
+              "transform_sha256": "0bdbf0acca7ea0fbdd1608a1a4541d4f9391fff2e56a10359ba6709f9fe0f45b",
+              "finite": true,
+              "mesh_world_matrices": 6
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "chain-shot-projectile",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/chain-shot-projectile.glb",
+      "bytes": 68460,
+      "sha256": "0e95f9735bd403a096c94c92d287ee6cd8ef5726a728be4c82271e226184c08a",
+      "triangles": 568,
+      "mesh_count": 4,
+      "node_count": 6,
+      "material_count": 4,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "chain-shot-projectile",
+          "duration_seconds": 1.100000023841858,
+          "channel_count": 5,
+          "channel_paths": [
+            "translation",
+            "scale",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 4,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "efb31840afb0d2eeaeacd23f93716100245d642a41b9b3a64eab876370f92a8e",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.16500000357627867,
+              "transform_sha256": "0851afcbc50a69f4247c1cdbce0205a8c1ed330dd6b62699377ed1a98f45565f",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.38500000834465026,
+              "transform_sha256": "ac8ba12c965c5b675e641fb2062c8da6b80a6f275b5a99e1bd33247118e2a47f",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.7150000154972077,
+              "transform_sha256": "c0a3f0d8945fc9050abd5cf29acb894cd81bcb74302b3e91f7e8cfced0dbeef6",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.9900000214576722,
+              "transform_sha256": "e100f6cb03e246bb3b85b65fe46e0d504c3fde36f6106cd098265f3554adb645",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.100000023841858,
+              "transform_sha256": "15192b265bc49f865633f4a17e53f4ab89235c190d4c1f4252aed68999afa561",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "chain-shot-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/chain-shot-hit.glb",
+      "bytes": 174012,
+      "sha256": "ba2c4afb7cc93880eaf94f7262f7b6dde4f6ab1746b3eac1b6e7826eccd02c27",
+      "triangles": 1512,
+      "mesh_count": 5,
+      "node_count": 10,
+      "material_count": 5,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 5,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "chain-shot-hit",
+          "duration_seconds": 1,
+          "channel_count": 9,
+          "channel_paths": [
+            "scale",
+            "rotation",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.21874035894870758,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "910e586f540b19d95c696e1bf391443edc74787fc728be83655cddd236b91b16",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.15,
+              "transform_sha256": "9c2b99cf756d9ab10fe21c5ecb1ef6433110bcf4e33fdbb40bfe020b47e4b8ba",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.35,
+              "transform_sha256": "0255e821d8ba950223403ccc05b3c31b4c86c9a34e5d7fd3bc21fd515c2e3b09",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.65,
+              "transform_sha256": "935045888fce5cf6d44d8dd064eb9d4c9f7f6feb684a34e4c89e07d42910e1e7",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.9,
+              "transform_sha256": "2c2f68f1bd0f7f1ac5b0a8cde950c8ff68eea015a54e1ce0605f18692e528137",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 1,
+              "transform_sha256": "15fc0f4f47b3db750de9ea8f97d0fa5d306a0606fe33e163e9c5ec7abe3e8a0d",
+              "finite": true,
+              "mesh_world_matrices": 5
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "flamethrower-ignite",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+      "bytes": 3676304,
+      "sha256": "b3a36205afe2b98fe756a8d219880a26911888c3df5b16e5accc83399a4ddf50",
+      "triangles": 1706,
+      "mesh_count": 2,
+      "node_count": 10,
+      "material_count": 2,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "flamethrower-ignite",
+          "duration_seconds": 0.4000000059604645,
+          "channel_count": 5,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.11999999731779099,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "9775dd34a113d15ae1d7fd5e5713594c481c5061718247b210e690b1e298bf59",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.06000000089406967,
+              "transform_sha256": "64c7fe9cfa48f44194c764bb6809a9858db4f2191262aa15052fd59132bb180d",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.14000000208616256,
+              "transform_sha256": "1d2f42acde13f20690fec7a820561778d3c4ee681db08b62d69550da566c8584",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.26000000387430194,
+              "transform_sha256": "73ffd05a76d0316c5bdd2b418ee237371fee84df5fcf22ae6b364f6e75470c3e",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.36000000536441806,
+              "transform_sha256": "cabd6a7f012c2849fc157f9a84f7ed09e404f017f0b6a5012abb1b025021ed84",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.4000000059604645,
+              "transform_sha256": "6fcbd806cd4740d5d4eb144566273ad27714b6b600c2790cc8e7473f766ad8db",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "flamethrower-stream",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+      "bytes": 3690504,
+      "sha256": "160308a30de3080c7307766c52f67e47c0305d7f6ebba56aca3d89729ec9c077",
+      "triangles": 1790,
+      "mesh_count": 2,
+      "node_count": 23,
+      "material_count": 2,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 6,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "flamethrower-stream",
+          "duration_seconds": 1.2000000476837158,
+          "channel_count": 11,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.37799985408782955,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "63735797fcca147228ac76dc2f631cab502bbf19038206fc8fdd9ec5119f299a",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.18000000715255737,
+              "transform_sha256": "09c8ef82bf4e35e97651ba1d6c0a208474da049a6091052c6b9e4e3fc3b8ad36",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.42000001668930054,
+              "transform_sha256": "c24959648941de787497bbc03be274121013cb5451a1b6265dcf73a1fcf5a6ad",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.7800000309944153,
+              "transform_sha256": "c6be3289a4940101e484f9c04cc5b849a4e2340c87fc2f28d027852e29396ce1",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 1.0800000429153442,
+              "transform_sha256": "13306dd3ceebb65e54ebf3cd28aef96696bddc75cdd98a180f8d80936ac67ca9",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 1.2000000476837158,
+              "transform_sha256": "7d2b8bad6f4f45067a526e483c015409377b3ee549b91ee079698c171b053794",
+              "finite": true,
+              "mesh_world_matrices": 6
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "flamethrower-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+      "bytes": 7348288,
+      "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97",
+      "triangles": 3133,
+      "mesh_count": 2,
+      "node_count": 12,
+      "material_count": 2,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "flamethrower-hit",
+          "duration_seconds": 0.8999999761581421,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.4499999387193515,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "758161f374e6c31280467551002b4083c010f2f91bbeb843a9bcbfef52843ac3",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.13499999642372132,
+              "transform_sha256": "ed6bc6ae6d1cbc59ccb2e59907970d8d61ac4056baabebc775f8c8c8a57f0c6f",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.3149999916553497,
+              "transform_sha256": "cacbb03d6e698e33952d7cb02630ccac9c1d66a69de3b6bff9a5f3a265068658",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.5849999845027923,
+              "transform_sha256": "810ea0226d6fef2d128a59d4c62db839c9b0f2373c76983a823352b6539adbe0",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.8099999785423279,
+              "transform_sha256": "4565ba48d056ef3e77292d8ecb77af0b6f308b8d7033c6bd33d92281602dca92",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.8999999761581421,
+              "transform_sha256": "de6fdac389ca419d70d8125ce314de4f11b39e28381f8c8fa9722e81a1450bb4",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "wood-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/wood-hit.glb",
+      "bytes": 237116,
+      "sha256": "39914f632fdf50a39fae3c4b1c810111dead56a2739249ca0fe44077cd07e4d9",
+      "triangles": 2016,
+      "mesh_count": 8,
+      "node_count": 16,
+      "material_count": 8,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 8,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "wood-hit",
+          "duration_seconds": 0.699999988079071,
+          "channel_count": 20,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.699999988079071,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "0d448467b3294b042a567cb00ec2cca49089cf9beb2bb62da1f3ca7af37814ee",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.10499999821186065,
+              "transform_sha256": "1b6da89a5a708df6b8c83182186f548d6d48cb29e6a0968267794b57478abdc3",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.24499999582767484,
+              "transform_sha256": "43ad8e3577477b0ebed5d1f0d35c40d111458219beafdf603df09e9908ec4f85",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.4549999922513962,
+              "transform_sha256": "a9f005fefb08a3ca6db28b492e2dadf4a072fe0dc42a686eddc5e9243274d30b",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.629999989271164,
+              "transform_sha256": "e9cfae9e9866e7154f8960f55c9eb311270e46f15e8cb2f21bcf540b9224b7b8",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.699999988079071,
+              "transform_sha256": "796e924a8ee1d3467b3950eebe6d3527ed7b2a897a34bcc2bd8f19d308ee75bd",
+              "finite": true,
+              "mesh_world_matrices": 8
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "metal-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/metal-hit.glb",
+      "bytes": 88432,
+      "sha256": "75368afde95659266e7441cc1bab3a54ce2f3faeb463db6b1f37195a99dc195d",
+      "triangles": 756,
+      "mesh_count": 3,
+      "node_count": 6,
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "metal-hit",
+          "duration_seconds": 0.44999998807907104,
+          "channel_count": 6,
+          "channel_paths": [
+            "translation",
+            "scale"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.20000000298023224,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "064b1ae225e9c1e59b633b3e4a7671e64d2e88766fe2cde06f79cb015e80e15e",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.06749999821186066,
+              "transform_sha256": "1d546a77eb1b3dfa3376cfa052123e3cb535c55cd15a937f1d5df4b5f5bffc8a",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.15749999582767485,
+              "transform_sha256": "411262664342418f699ce786d3d91aa5c8d088cfac8abe6f3e1e402b992aad65",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.29249999225139617,
+              "transform_sha256": "241fe04710bd2bb2624970589b6d50360b7e050c00ec38478112cbf083bd50c2",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.40499998927116393,
+              "transform_sha256": "8927afd2bf3d7b1a1e41a151ebbf72732963a1a0c539b8d50a2cac24aa8faec8",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.44999998807907104,
+              "transform_sha256": "f51eb40008163c5c3159050b12d6ffd41797615b38651406c7da7a445ac7633a",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "fabric-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/fabric-hit.glb",
+      "bytes": 76644,
+      "sha256": "f61b2aa03e9a68e3e1f8e64296a3ff554c315590f2ae008fadb65f40ac14d2a0",
+      "triangles": 588,
+      "mesh_count": 5,
+      "node_count": 10,
+      "material_count": 5,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 5,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "fabric-hit",
+          "duration_seconds": 0.8500000238418579,
+          "channel_count": 15,
+          "channel_paths": [
+            "translation",
+            "scale",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.21499999426305294,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "d82e1176e043bbd9361d6812e2c338fe6d951173e94c5aaff319834ce65ae486",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.1275000035762787,
+              "transform_sha256": "4cf215ceb11e0a263fe1ec541c616f05e093c2b409cbd113fb497209c861f5a5",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.29750000834465024,
+              "transform_sha256": "1f07c9c21cb007b112e65ce96d9bbb68083f0952e3101b15770b7276c011455e",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.5525000154972076,
+              "transform_sha256": "381f91ae5bd9c086c3917636c29e65ba9edf38476f9b7316b4ebfeec56f7fcbe",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.7650000214576721,
+              "transform_sha256": "5bedcf7026bb0b581e031279d9b8d419a3aead5f5b5d229a6ddd959f134bb572",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.8500000238418579,
+              "transform_sha256": "bffc8068f328904bab1ece1a25996e8bb04d06fd22aa492eda5473bf972a7ab9",
+              "finite": true,
+              "mesh_world_matrices": 5
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "armor-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/armor-hit.glb",
+      "bytes": 134208,
+      "sha256": "5621205cb7f0846fd9e8614ce56bc80b0ef6f06a9ef6362affb431b9bc438317",
+      "triangles": 1176,
+      "mesh_count": 4,
+      "node_count": 8,
+      "material_count": 4,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 4,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "armor-hit",
+          "duration_seconds": 0.6000000238418579,
+          "channel_count": 4,
+          "channel_paths": [
+            "scale"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 5,
+          "first_last_transform_max_difference": 0,
+          "loop_boundary_equal": true,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "deb4e0a25468f3a3be713e88dd1db031e1652e9b962262b07235d75ba526868c",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.09000000357627869,
+              "transform_sha256": "e92e1414d09598d3cd54be1a77d5598e383f65c3fb60ba3fd88679b0a9d39609",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.21000000834465027,
+              "transform_sha256": "863482e06dd2028b1898082953eb208979fb94d63ded16a0bc457df77277ee4d",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.39000001549720764,
+              "transform_sha256": "4dda13a2fbb32951f757f72a98bd015fcc9c96ba9fe3be73a547490ff8f8a55a",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.5400000214576721,
+              "transform_sha256": "dae9f918fa6d94ed7ff0dfb7629d51c8c8b2a86151f1324970886ee3449b85bf",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.6000000238418579,
+              "transform_sha256": "deb4e0a25468f3a3be713e88dd1db031e1652e9b962262b07235d75ba526868c",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "ricochet-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/ricochet-hit.glb",
+      "bytes": 68120,
+      "sha256": "274d91bc0cd8fa90281b7db50fc2c04b0a9f20a08836091d951d75f94996677a",
+      "triangles": 588,
+      "mesh_count": 2,
+      "node_count": 4,
+      "material_count": 2,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 2,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "ricochet-hit",
+          "duration_seconds": 0.5,
+          "channel_count": 4,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.8999999761581421,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "62ee94e2f7672ba8639b61c59805da1fb9f0a76eab470eb40237b85fbf3fe772",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.075,
+              "transform_sha256": "71a277449fdbc5321bf3208c2ab298a2cfe4c1d8039da2277b91772f1e465f28",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.175,
+              "transform_sha256": "44305c9a7c2175fa9be78072241d8d304a52e9d71632ab05839e68e38905171e",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.325,
+              "transform_sha256": "f0915fab9adaac43ecdd052e17f7583dc630fe9cdbd143b98d9a0eecba1142b9",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.45,
+              "transform_sha256": "32a38852c5c75a809e79418113153c6665cbdb366a6b227ab208338fe0a8200e",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.5,
+              "transform_sha256": "95c74cdf5892f9eaee9d8f92950f92edaf5196b2fbe2e9c6aab6307b28cf12af",
+              "finite": true,
+              "mesh_world_matrices": 2
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "weakpoint-hit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/weakpoint-hit.glb",
+      "bytes": 147244,
+      "sha256": "bd4647202806e7752600064ef7cdf3deb76519fd9ee01b76d956966762c6f45a",
+      "triangles": 1260,
+      "mesh_count": 5,
+      "node_count": 10,
+      "material_count": 5,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 5,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "weakpoint-hit",
+          "duration_seconds": 0.800000011920929,
+          "channel_count": 10,
+          "channel_paths": [
+            "translation",
+            "scale"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.34234535694122314,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "1916a09d188eb516566e7531811b2ff270c4a3f6885a701ad7be45704ac1e728",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.12000000178813934,
+              "transform_sha256": "8841ab6e09edca46f653eed0cbdc81dc070aba647e1b669c06c30c7d0a77452b",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.2800000041723251,
+              "transform_sha256": "668f9e692b423adb7680c9e9a707acd447d19d536c5c66de829c3c2e08a61b16",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.5200000077486039,
+              "transform_sha256": "bb19f2bf3efa17f7179923f06f0509c23db61251256185ba8e1717a110626189",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.7200000107288361,
+              "transform_sha256": "9be4d96f6823e7421836e282edfd631d60288b544b4b4561efba98d92634c5cc",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.800000011920929,
+              "transform_sha256": "a4c18956a2cea15514232884fe725c6cef5319c8a008dea09683cd29e9292f6a",
+              "finite": true,
+              "mesh_world_matrices": 5
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "cloud-miss",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/cloud-miss.glb",
+      "bytes": 3701360,
+      "sha256": "bff21b1716ae2be7a3527962e3e98704d027d920edad91c2128d7a92d7bb453e",
+      "triangles": 1679,
+      "mesh_count": 1,
+      "node_count": 4,
+      "material_count": 1,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "cloud-miss",
+          "duration_seconds": 1.100000023841858,
+          "channel_count": 3,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.6500004048986648,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "170e978c5a9be2dc49f54ee9eeae39b7405b3222ca68fde8686e32a1f7ba0f6a",
+              "finite": true,
+              "mesh_world_matrices": 1
+            },
+            {
+              "time": 0.16500000357627867,
+              "transform_sha256": "fd27ddbc58543d0d0985dd36574b1f458b9d5c676c2fb769514ab87adec6ec75",
+              "finite": true,
+              "mesh_world_matrices": 1
+            },
+            {
+              "time": 0.38500000834465026,
+              "transform_sha256": "c0a44a9bc249e63b0495bf76043304dfa401d0e52aa07cb07325dc704c47b5c4",
+              "finite": true,
+              "mesh_world_matrices": 1
+            },
+            {
+              "time": 0.7150000154972077,
+              "transform_sha256": "8c85d59b36d0fd652c66491422c8c521825f9aab50211318c45967511aa05ac3",
+              "finite": true,
+              "mesh_world_matrices": 1
+            },
+            {
+              "time": 0.9900000214576722,
+              "transform_sha256": "c9b07260c6209400faed18ffa9763dd4e1287cb2296362f067fc216025b96daa",
+              "finite": true,
+              "mesh_world_matrices": 1
+            },
+            {
+              "time": 1.100000023841858,
+              "transform_sha256": "cb384c162aacc7db4bf00f5c279b9f7b9df679f79b4b07ddeb4411b351675514",
+              "finite": true,
+              "mesh_world_matrices": 1
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "penetration-exit",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/penetration-exit.glb",
+      "bytes": 3789612,
+      "sha256": "c734ec24519c87a3a36a2420e92014025c34029e0e770567c89535b52a0add4b",
+      "triangles": 2435,
+      "mesh_count": 4,
+      "node_count": 10,
+      "material_count": 4,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 4,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "penetration-exit",
+          "duration_seconds": 0.6499999761581421,
+          "channel_count": 9,
+          "channel_paths": [
+            "translation",
+            "scale",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.41999995242841986,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "2751a4db312a093db2ae57d9ea696de3c33d79db2e5544118e282e582928fc32",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.09749999642372131,
+              "transform_sha256": "43e441c4a36a9fd9775b66766ebbc2c3003902b14a3b60995d82ebaa19128cc9",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.2274999916553497,
+              "transform_sha256": "08d42130ffa09a886479015dc70df2526a16f8cadda360d27263fd7cd71b176d",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.42249998450279236,
+              "transform_sha256": "677a683c46ada59cd8cf822d42befa2e7b9ed48efc84ea499a13f82d10882da2",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.5849999785423279,
+              "transform_sha256": "90fa657e0cca5f13181e8de5cf5b0639de3794c967e6aa2bf9f8061b4bdffdd5",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.6499999761581421,
+              "transform_sha256": "df0240b24b53056bafa27e23cdd4a923eff2a838e7bc0727f94d035eb51596d8",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "small-explosion",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/small-explosion.glb",
+      "bytes": 7434008,
+      "sha256": "70c3fd2eef32965198db376913461c1d8359a33731c6453dc9d8067d2a9fdd32",
+      "triangles": 3889,
+      "mesh_count": 5,
+      "node_count": 15,
+      "material_count": 5,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 2,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "small-explosion",
+          "duration_seconds": 0.800000011920929,
+          "channel_count": 8,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0003400000197254123,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "4042fd21502bacdbb2c493f8245775bc43308adc5cde9344e0c05e0245047585",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.12000000178813934,
+              "transform_sha256": "227d11dd932f336ab1eef568b8469ecd62b670512809f170d1bd6a018f9f662e",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.2800000041723251,
+              "transform_sha256": "9ccc8c8d40f3d38eec17e9796f4adbdcd1692dc329f531fecc4f1c58352d8164",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.5200000077486039,
+              "transform_sha256": "ff8db7378b0f6d6602469fa1740bbffed4f0086faf6b18b52e8edeee634e1ec4",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.7200000107288361,
+              "transform_sha256": "431652f5e3eef48b52c3931e9e1ee46e28c5b3fac63be685c93216676553ce45",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.800000011920929,
+              "transform_sha256": "e01b2202f88c80f144a56d165be23d8026247965c8e8309460f472539d98f958",
+              "finite": true,
+              "mesh_world_matrices": 5
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "large-explosion",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/large-explosion.glb",
+      "bytes": 7468008,
+      "sha256": "f5659a1ea44bd023d953ca5afdac4548d10d806a1cc23047fc639ebf8a21ffbb",
+      "triangles": 4141,
+      "mesh_count": 6,
+      "node_count": 29,
+      "material_count": 6,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 5,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "large-explosion",
+          "duration_seconds": 1.7999999523162842,
+          "channel_count": 15,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0006400000160932534,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "e715d7bbd026a685d5eacaa352a59e039ddcc04cd06621075980fad94c332fbe",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 0.26999999284744264,
+              "transform_sha256": "1a333df2e75380b777d6c8e3da4f09344451fac0dbc1eb1f6dbb6a073138feda",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 0.6299999833106994,
+              "transform_sha256": "25c96ca187dadf5f5a4b04f7d120893a7527aec34911e981e9c55abaaf8be846",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 1.1699999690055847,
+              "transform_sha256": "818c32b0553d17291d49cf657020ea1a4641ecfa6ebb29d302e8294888255fa5",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 1.6199999570846557,
+              "transform_sha256": "916674cf10190a863e65d9d31c8da6dcf8935d91312f4a0762b4b06cb0a27699",
+              "finite": true,
+              "mesh_world_matrices": 9
+            },
+            {
+              "time": 1.7999999523162842,
+              "transform_sha256": "c396e9d4d9de2d25a182fa5c4bd76f0a01475a8d284ed2fc8d7217c1b0df931a",
+              "finite": true,
+              "mesh_world_matrices": 9
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "airburst",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/airburst.glb",
+      "bytes": 7462320,
+      "sha256": "9c8b39f7284cf8176438aa35264e118031819c3957c84b291925ecac8c78faf5",
+      "triangles": 4141,
+      "mesh_count": 6,
+      "node_count": 18,
+      "material_count": 6,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "airburst",
+          "duration_seconds": 1.2999999523162842,
+          "channel_count": 8,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0002900000054296102,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "814a6a725601eef40e364bbd3a460430569ac7b13575d723546ed4c19577ac83",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.19499999284744263,
+              "transform_sha256": "a07a0e2fe6a874ac2f2a7039ffbf2299922e2ec1085ef8a48be260beaac2f2ec",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.4549999833106994,
+              "transform_sha256": "7b7e84c31b7252881271b2d572cc13cbe40ed23d5c696f7ca45815b79f039708",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.8449999690055847,
+              "transform_sha256": "6f8f6dce23075f440ecc98fd4f311a5d5aef56ae7b6e8b5d83df816218c2eb5b",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 1.1699999570846558,
+              "transform_sha256": "a78ce308c53c1e9e201c7ee8ea6eff5014fdcf2914fdb1e57e18eaf731c89bb3",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 1.2999999523162842,
+              "transform_sha256": "a5b9ee82a5dcce0fe62bfb4143d168ff997f9bd98e9bbda015e7c16d3bf3b378",
+              "finite": true,
+              "mesh_world_matrices": 6
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "shrapnel-burst",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/shrapnel-burst.glb",
+      "bytes": 133576,
+      "sha256": "097a4dca6e22dabd183a19a3349d86c34965ce78caeae7b2afe75f72d27c5816",
+      "triangles": 1072,
+      "mesh_count": 8,
+      "node_count": 17,
+      "material_count": 8,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 0,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "shrapnel-burst",
+          "duration_seconds": 1.100000023841858,
+          "channel_count": 17,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0005760000025629985,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "cef5f44a2e2112ea85d0a3e6a7d953230f8a7609c993565c2c1267974862ae56",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.16500000357627867,
+              "transform_sha256": "5c2e61636e34c0d6f1ab9a1794666b36007c4925529aa502b4e7a1c6975bdf6a",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.38500000834465026,
+              "transform_sha256": "703141fa897f1cce86fa4b928f56eccc957149bd6e7c7449e884d555accd18be",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.7150000154972077,
+              "transform_sha256": "9bc45e5b271947da9a9a92f36c88c99fb20951f49598ec1b70e9733367335520",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 0.9900000214576722,
+              "transform_sha256": "928441d2e9ee19eaf7b6b5335ec93d4fa3a7df9656dd741245d5dd46b97e7a12",
+              "finite": true,
+              "mesh_world_matrices": 8
+            },
+            {
+              "time": 1.100000023841858,
+              "transform_sha256": "44fe41df19bcae5c5be82b71e845e2e608aae81a57425fd2618ab61e422c3308",
+              "finite": true,
+              "mesh_world_matrices": 8
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "smoke-puff",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/smoke-puff.glb",
+      "bytes": 3703500,
+      "sha256": "c57c974af690a604784d1f81ad1e83fa65177a63082b85820ab120e94fec6647",
+      "triangles": 1679,
+      "mesh_count": 1,
+      "node_count": 9,
+      "material_count": 1,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 2,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "smoke-puff",
+          "duration_seconds": 1.7999999523162842,
+          "channel_count": 6,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 1.1049999008892926,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "a67c79afa2e41b92e6e405f9cb4bee1238d0e9ddf46365d962b50762c6c58642",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.26999999284744264,
+              "transform_sha256": "228bd94c2d7ed76453bb79b0917696d51697a4aa578b043723eaf39c6c85b62d",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.6299999833106994,
+              "transform_sha256": "721dacd735766bc9931b702f6c7c89dbffae9f7e3fb343d0c04fe8c201c6f271",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 1.1699999690055847,
+              "transform_sha256": "7b916ec75c1f1db62e9f05e6fc19b1306ed9ca28f078a1b7917374524b5bb17c",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 1.6199999570846557,
+              "transform_sha256": "2acca946cad08d3a9f0c9d28f0d11a4f19fee3bee42a0e61c08b08a2fc762f71",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 1.7999999523162842,
+              "transform_sha256": "fd09cdc33bcbff5222e398f174c53a4ef5cba00c11bf704139c0d4b63861752c",
+              "finite": true,
+              "mesh_world_matrices": 2
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "steam-vent",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/steam-vent.glb",
+      "bytes": 3805964,
+      "sha256": "36209b19d6ee6f366eb8f452b309b2abcb80c2ab1bf11769be0f7c1511dd7a58",
+      "triangles": 2603,
+      "mesh_count": 4,
+      "node_count": 9,
+      "material_count": 4,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 2,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "steam-vent",
+          "duration_seconds": 1.5,
+          "channel_count": 5,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0005700000422727324,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "08c15e2691d1d2238cd532bbb3b366d784809e556e20d86428f84692e3875f7f",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.22499999999999998,
+              "transform_sha256": "6c7e6012d724ca06fb749731fa07f4714f0a694da302b38397be2c5bef6a9b67",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.5249999999999999,
+              "transform_sha256": "cf87b29bb2ff3692049c6c381dac36e9559c23ab46848ba1fff966ac192ef95b",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.9750000000000001,
+              "transform_sha256": "8cd2c904e4139b338d2178347a811d06706a87a66de1db577fc3928d5d52db42",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.35,
+              "transform_sha256": "75036c08c07e806b8c493682bd77c1a0795ad67dba75a223521105da1698f98a",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.5,
+              "transform_sha256": "7850a4efa51e0ea3ac2016d752e14bbd888344787beb5e76852d696a8b26ea76",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "smoldering-fire",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/smoldering-fire.glb",
+      "bytes": 7423508,
+      "sha256": "b0ab9a6cfb7d07e024fbc2f4d6c3c4372780ee3d721b402f0c9e85aa4c3ccb09",
+      "triangles": 3805,
+      "mesh_count": 4,
+      "node_count": 12,
+      "material_count": 4,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 2,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "smoldering-fire",
+          "duration_seconds": 2.4000000953674316,
+          "channel_count": 8,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0004800000493228448,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "e618a1961a4da585d9b5e1792aedd231347107886b9ba865c98061ed95c0db5e",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.36000001430511475,
+              "transform_sha256": "e5ee43f1deb729969b8d45c5e5d4141f96ef9026650860f2739dea4f510bead0",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.8400000333786011,
+              "transform_sha256": "9edda3e40749e834f8c8f8ca18ffa09efd4da9a69cfb6fb5f65c25194a2a8967",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.5600000619888306,
+              "transform_sha256": "70cd6054aa74266f96c1dd6b8cac505cdc1954e05bc8ee6c7d1417a27854f966",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 2.1600000858306885,
+              "transform_sha256": "ac16cf5676cc0cfba5dc4f148e4212110880caba738b818446bd9c6d01b2e661",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 2.4000000953674316,
+              "transform_sha256": "6d3a4d3c6b71ac33b25c5b040bd507a34cc109dc47723f089cd2b23ccac3aa72",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "ember-drift",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/ember-drift.glb",
+      "bytes": 17884,
+      "sha256": "dde95e7313f3b4b959c82431b0e68adcb81e9d5a3a9bae0e1fde183e9522814b",
+      "triangles": 64,
+      "mesh_count": 4,
+      "node_count": 9,
+      "material_count": 4,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 0,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "ember-drift",
+          "duration_seconds": 2,
+          "channel_count": 13,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0008600000365264712,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "f9c09347b1342d8514d510d7b8c7fca8e4b3db7f2d42b2f8430ab76786e65d2e",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.3,
+              "transform_sha256": "2fc450926725478ca59c8cdc767a1ee92137e5468c38ebdc0ab50f8396355651",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.7,
+              "transform_sha256": "f06bf6ffebc04d974a2268fb79e27d4a323ccecc51c3aab8304da7c309aa2f17",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.3,
+              "transform_sha256": "33ba65b8b482bebbf869d0d5520a91f6d7cc5c9c607f451a717a25fb5ed3050e",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.8,
+              "transform_sha256": "59c8816cffc5c5ea1b19fbf446edf48d84a6113e39a2ba497aeed6f74f2a4f31",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 2,
+              "transform_sha256": "3aefb9561bd2b57e4daabf01cce0467c08d66e40c3cc2924676231df902fbc10",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "burning-state",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/burning-state.glb",
+      "bytes": 3725064,
+      "sha256": "f94fdc6ab253aa6832b2feb55e30c87e50ccdbe0fe4204f99e9833509293c09f",
+      "triangles": 2126,
+      "mesh_count": 3,
+      "node_count": 12,
+      "material_count": 3,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "burning-state",
+          "duration_seconds": 1.5,
+          "channel_count": 9,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0005000000237487257,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "ec887af772c4d440f94e0e594b56a2a9835c69370508974b3574b38b84c94fac",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.22499999999999998,
+              "transform_sha256": "e08dfaef54ef3ca3d627568fd41deee52a5a2445d1aaaa7496a082fa4f639034",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.5249999999999999,
+              "transform_sha256": "9a59c42319cfce3674900ed4608fd45757f63c08a97b646d7218227b0349bfe2",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.9750000000000001,
+              "transform_sha256": "082c556d288145592fbe86d63a73adf78c382ebb6da96eac2a1719729c9456a2",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.35,
+              "transform_sha256": "c6aa813870b6a30ff4cbb501bb38a465c082fbec2c0799d0a5c2f3016e6558ba",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.5,
+              "transform_sha256": "63bff429f86b0e16197360794ec9f9779a4392a8246909354e6c8776a4a5aef4",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "heavy-smoke-state",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/heavy-smoke-state.glb",
+      "bytes": 3779356,
+      "sha256": "e5407f69f039fbe276b96f960abe1b254c44f57bf5331357ca6e50f20e96f487",
+      "triangles": 2351,
+      "mesh_count": 3,
+      "node_count": 12,
+      "material_count": 3,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "heavy-smoke-state",
+          "duration_seconds": 3,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0008400000211223951,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "57bef149adfa97ba9d9f0f5c941d586c7ac5ec38b23cc521982dda7394900138",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.44999999999999996,
+              "transform_sha256": "9837c10d88fb909475379ea155e42eea90fea1ffafb372a4ac1c8add81e779de",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.0499999999999998,
+              "transform_sha256": "31063b428afdc1416ac0fea6c0b032f7475ccf64eb6760460935602002834ebf",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 1.9500000000000002,
+              "transform_sha256": "c499334b7e70580048d9b0f5ff29552a2a06ef03a22cd9167f2415602455f0d4",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 2.7,
+              "transform_sha256": "0c2c10cfe00d7bb57f049df9c80ffc423da84d2c758b1be88b58eda71b224b6d",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 3,
+              "transform_sha256": "4d956298b9acfbf62032db754f25f68e7a9884c66270870b409ceb6ca6e2f9bc",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "gas-leak-state",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/gas-leak-state.glb",
+      "bytes": 191336,
+      "sha256": "5bab4cd843f18e6baa0c60537d4a914f718dd4a6ef0bd014d8a7ec63276c929c",
+      "triangles": 1680,
+      "mesh_count": 5,
+      "node_count": 9,
+      "material_count": 5,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "gas-leak-state",
+          "duration_seconds": 2,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0003700000223424288,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "9acc6f17ef12e6756daa3c67f319b0ffd497b5ca9c8d01af04cb87925fb9f374",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.3,
+              "transform_sha256": "2fa86b48cee9ab314ea062fc6f572a0efe1d1753c381e9e070b0b69f84b55377",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.7,
+              "transform_sha256": "8203a55e9eb32fd23a73be6bb42fb0165e3453162cb06ea420476b2912314b7b",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 1.3,
+              "transform_sha256": "afb233a67df804cfb5e410ee6f10a76b31f2e52a7800e99f463a0571d78cad3f",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 1.8,
+              "transform_sha256": "553cea979f25ee880e5d08bd32bac5f7fe048855483fd34197d7b9ac3628412e",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 2,
+              "transform_sha256": "5d34fa6ed2abc6bb04c303b88c87fb76930fd0850d0c4d48fca4eb17767d5a0e",
+              "finite": true,
+              "mesh_world_matrices": 5
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "overheat-state",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/overheat-state.glb",
+      "bytes": 79080,
+      "sha256": "36780e44690785a4d41728892b7fa24f7bd04e43975b422b8765707d502fe43a",
+      "triangles": 672,
+      "mesh_count": 2,
+      "node_count": 5,
+      "material_count": 2,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 2,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "overheat-state",
+          "duration_seconds": 1.2000000476837158,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.00017000000613741567,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "3a323f210b98967358a669a870bd646ff3c386ca44157ab06957ee1969039de4",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.18000000715255737,
+              "transform_sha256": "0f3026f269fa1167579d0b144963842c0f3a235912a1f3df587cb4cfe4af9456",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.42000001668930054,
+              "transform_sha256": "b4a4f060f3614e8cc509550b81284edffa63a01bd5ac0e0c16f935bfe15b4dff",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 0.7800000309944153,
+              "transform_sha256": "b87932bb5f025aeefec3ec8304545b347dd4f74f2a68af95060a03d158d265a6",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 1.0800000429153442,
+              "transform_sha256": "99298dac309419242d65e89ed3b6146442195d0ece3cd974f5443e5a0a14fa7d",
+              "finite": true,
+              "mesh_world_matrices": 2
+            },
+            {
+              "time": 1.2000000476837158,
+              "transform_sha256": "a2016c9380dcf1e5c6a3cfe65f9ec59150ca2074afa9d9bf14c8f7966beeae13",
+              "finite": true,
+              "mesh_world_matrices": 2
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "short-circuit-state",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/short-circuit-state.glb",
+      "bytes": 116340,
+      "sha256": "b7c56e88d0dedd3507e96074e3eb3a71911e91cb0854e776e601aff0ef5a8eb4",
+      "triangles": 1008,
+      "mesh_count": 3,
+      "node_count": 7,
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 0,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "short-circuit-state",
+          "duration_seconds": 0.800000011920929,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 4,
+          "first_last_transform_max_difference": 0,
+          "loop_boundary_equal": true,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "ae484939a0082f13fcab2d378d085cb478a97a502f6affe82789ff152ba6d346",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.12000000178813934,
+              "transform_sha256": "e7ac7f95949b8d60eab64f35421fb8488c890c880b84194c8482a129927164e2",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.2800000041723251,
+              "transform_sha256": "310619da98a3c27e9819b6b11d38ec2f51b7c5fa5391afec0ac869dffc5e008c",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.5200000077486039,
+              "transform_sha256": "064b1ae225e9c1e59b633b3e4a7671e64d2e88766fe2cde06f79cb015e80e15e",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.7200000107288361,
+              "transform_sha256": "064b1ae225e9c1e59b633b3e4a7671e64d2e88766fe2cde06f79cb015e80e15e",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.800000011920929,
+              "transform_sha256": "ae484939a0082f13fcab2d378d085cb478a97a502f6affe82789ff152ba6d346",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "engine-stall-state",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/engine-stall-state.glb",
+      "bytes": 3760560,
+      "sha256": "b8aea700a4994f51b8df91f90d952f1edcc82b25f1b5cffa53a3413b148dca8a",
+      "triangles": 2183,
+      "mesh_count": 3,
+      "node_count": 9,
+      "material_count": 3,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "engine-stall-state",
+          "duration_seconds": 2.200000047683716,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0003000000261701649,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "2a94ba58a8c6429000f57d66a267ee18aa256f71fca58d12e691bb6a6596c8a5",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.33000000715255734,
+              "transform_sha256": "42c3a9efb55f907127799eb583a110ed050f04e70c73ff2da34bc9edd54fd04a",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.7700000166893005,
+              "transform_sha256": "5346c2770f0352b54f2e2601d54e6598b1bf2b4ab000dee36fd69f75fce8c6fa",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 1.4300000309944154,
+              "transform_sha256": "5b60ad60b11c4c15795be09fd05ad084d5085f50bc81c35cc4dce31493c7c1f2",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 1.9800000429153444,
+              "transform_sha256": "156957967c517414bd26cc12bcbbfb9352b14b9e5b721c6ba81ba529daccbeef",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 2.200000047683716,
+              "transform_sha256": "885fe77f2f8e1d5d203a1d2854d12e0698e25dc6b43aa27c5028b82a418965c8",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "envelope-rupture-state",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/envelope-rupture-state.glb",
+      "bytes": 180160,
+      "sha256": "c2f60de2b0fa997dd48a8f86cdc9bf37452f1c1c68544e5d3763e2f0865d65e7",
+      "triangles": 1544,
+      "mesh_count": 7,
+      "node_count": 12,
+      "material_count": 7,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "envelope-rupture-state",
+          "duration_seconds": 1.399999976158142,
+          "channel_count": 10,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0003800000132806597,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "11489bc9a437bebfa603a700fd806e26cb5eced04a31af8c2553d0de1d5b7ae7",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.2099999964237213,
+              "transform_sha256": "cce02c5dbc932105931ca9a6067d9ad4143472ab5cd45c0801d264339e308d1d",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.4899999916553497,
+              "transform_sha256": "02cef19a4ee0e5e7af386460e248967b724df668b65a666691c8d37bf374e67d",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.9099999845027924,
+              "transform_sha256": "b2752ed23425b85303ce9109b60e71014264689baafc0025f8394441af0e0743",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 1.259999978542328,
+              "transform_sha256": "45fb8de9a55beace77f51a2730f7eef06ddbc152eaa06d5bd0f9b46972e06691",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 1.399999976158142,
+              "transform_sha256": "872731c2ffa6da4f2dbe76f36dd13ac5a1af14672b216829a03e66ce728f5dcc",
+              "finite": true,
+              "mesh_world_matrices": 7
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "module-detach-state",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/module-detach-state.glb",
+      "bytes": 3769348,
+      "sha256": "a220c36206c0c83f3625da1a9258e8878bd31c743ca06a228942abe27ccd32e0",
+      "triangles": 2215,
+      "mesh_count": 5,
+      "node_count": 13,
+      "material_count": 5,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 1,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "module-detach-state",
+          "duration_seconds": 1,
+          "channel_count": 14,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.0002800000144913793,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "3650a800e9c1710699ac2f57b520d982c7e3265cdd3aa552840060c48d132c1c",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.15,
+              "transform_sha256": "35d05b6b13ccf450a1d0c644bc19f06664d87dec2309972bbc2b2c2512d186a8",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.35,
+              "transform_sha256": "ce0e17353b2530101ea36b4f315926aa81f42b39ce348da06ca1d77c1717f315",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.65,
+              "transform_sha256": "2ab5557195e001e22c27a85e391a8ce5ec8c2ae24a69a4808a9a33499aa9bdaf",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.9,
+              "transform_sha256": "192941a261793f76d138b0dc7df9d4bbbdc640b5c08bc4df831fae8d448fd8df",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 1,
+              "transform_sha256": "1bc3283d27968df67e551a2e516259db43cf20b5fe32828a945f811750ad3ee4",
+              "finite": true,
+              "mesh_world_matrices": 5
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "shield-pulse",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/shield-pulse.glb",
+      "bytes": 338628,
+      "sha256": "85960acbf58e9192d78d9673a315028657103081ce62fb59f1a32b1751d5af81",
+      "triangles": 3024,
+      "mesh_count": 6,
+      "node_count": 13,
+      "material_count": 6,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "shield-pulse",
+          "duration_seconds": 1.100000023841858,
+          "channel_count": 9,
+          "channel_paths": [
+            "translation",
+            "scale"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.36000000536441806,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "0b1853c62ed1d653901e045704709706894f4a4341521a46c3535eb0ea9d20aa",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.16500000357627867,
+              "transform_sha256": "4d54cb6c8ed4119334149ff5e5e0cccb2444c38f21cadf4381d7eba07c3491c4",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.38500000834465026,
+              "transform_sha256": "4f2bb71dca6bc70dfd380e42c68774c5c49e68e503c4389313cc8ba9679e7bdf",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.7150000154972077,
+              "transform_sha256": "0dc7e815d8f21e2e38a413989b73cce875ba2e51c8d8f6f092408809a0e03bbb",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.9900000214576722,
+              "transform_sha256": "cdd11d81268eee14e9eaef34343c05c5ef55151b06c9a8d873c2a8bb44855d39",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 1.100000023841858,
+              "transform_sha256": "66e24d9380f32653d45a7e3ea14d2fe9ebf874a6451c381f73580c11e7ff2a0f",
+              "finite": true,
+              "mesh_world_matrices": 6
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "armor-block",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/armor-block.glb",
+      "bytes": 116360,
+      "sha256": "e82779236fe594050f6394a102ece92fe205a56fd0d206928544a248d56775e7",
+      "triangles": 1008,
+      "mesh_count": 4,
+      "node_count": 7,
+      "material_count": 4,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 0,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "armor-block",
+          "duration_seconds": 0.550000011920929,
+          "channel_count": 5,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.00016000000402331335,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "1aaf622470a762dd4e80cd17611e7c34786b33e0d0c0f6e4a61e62fbdc515f0a",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.08250000178813933,
+              "transform_sha256": "de5a5f67f8fb636a4be129d801f27fe62955ee56e01d3ce5b5c80b5717990d5c",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.19250000417232513,
+              "transform_sha256": "4b82307df8fd5e61a201350aff481332c718c6471b8807e7de839179aabaa342",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.35750000774860385,
+              "transform_sha256": "db5ceda3bfa1164860f368131cee591b796f164f1a313c7751bd5ffe446221d3",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.4950000107288361,
+              "transform_sha256": "aa7d98b57e0ae0307b5391f1630a2fffe346ba7b9ee8cc3ba08a7630df38cd17",
+              "finite": true,
+              "mesh_world_matrices": 4
+            },
+            {
+              "time": 0.550000011920929,
+              "transform_sha256": "c89a92580e5672074b05e9e644edb9e94684e0e2d902be3c4561be49d9141327",
+              "finite": true,
+              "mesh_world_matrices": 4
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "repair-stitch",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/repair-stitch.glb",
+      "bytes": 188308,
+      "sha256": "4f306bc541434dbf953a2d28e3acb5bc7d6e11c3018565778002e414f7e08418",
+      "triangles": 1624,
+      "mesh_count": 7,
+      "node_count": 15,
+      "material_count": 7,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 7,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "repair-stitch",
+          "duration_seconds": 2,
+          "channel_count": 8,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.9000000268220902,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "b3f270c42646533a9f3a3637d115f50045f875da5634b5dd8d46ee806f06a0ce",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.3,
+              "transform_sha256": "242f8e3922722ca24aa745a64e1edab8fcba0daf88b960b935a968dbaf525579",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 0.7,
+              "transform_sha256": "fd91380e3e896d964a38f112166834f7b8f2206f82dd721fcc4e27ce50d82bd0",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 1.3,
+              "transform_sha256": "00b276929f5107bfb34b992250c8b0fbb37cf96c9f50538b66ca604e33d5d7ad",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 1.8,
+              "transform_sha256": "12d571f0dd92bfc445537e5fb7eb95790af17e5565b4a667050a646fe1228d9d",
+              "finite": true,
+              "mesh_world_matrices": 7
+            },
+            {
+              "time": 2,
+              "transform_sha256": "7fdc4bfc0a71561cbfb185814df0d861daf4a3cb4f6c0bb211b0ae06e16c2a44",
+              "finite": true,
+              "mesh_world_matrices": 7
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "healing-pulse",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/healing-pulse.glb",
+      "bytes": 228876,
+      "sha256": "21e146879e89f2e7825b53d7d6200536d8b1175eccbd741e448f9ade20d5d6d5",
+      "triangles": 2016,
+      "mesh_count": 6,
+      "node_count": 10,
+      "material_count": 6,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 3,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "healing-pulse",
+          "duration_seconds": 1.7999999523162842,
+          "channel_count": 7,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.00037000002420507403,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "79b518be0c99aa406c84b0e8a1c322851bbb0a4596333dd0312e069270c6445d",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.26999999284744264,
+              "transform_sha256": "924e2a073ca05fbe83ae1149bfdd83b1898732207ff8ab4ce8df32e9320b67cd",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 0.6299999833106994,
+              "transform_sha256": "6640a134533902615f9778fc601a0c1be9e912520e6d2ba392787b9332737030",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 1.1699999690055847,
+              "transform_sha256": "8f40a64400e09d26312b380450c83924aa844bebb3ea9f9289e7de4d62d48027",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 1.6199999570846557,
+              "transform_sha256": "6f68b1ad712964de7fe5c7bf17adca6dea8b206b0f73f9f8c819aeb9404f6809",
+              "finite": true,
+              "mesh_world_matrices": 6
+            },
+            {
+              "time": 1.7999999523162842,
+              "transform_sha256": "4ef5cb8772a72aec92341a40d5200b3a152218923403514d670a9b5535b812a3",
+              "finite": true,
+              "mesh_world_matrices": 6
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "salvage-tether",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/salvage-tether.glb",
+      "bytes": 161104,
+      "sha256": "28a2959fbc285dee5fc5fa3d30480df6e87e7dd03401aea5f267d850f56bf66b",
+      "triangles": 1428,
+      "mesh_count": 3,
+      "node_count": 6,
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 0,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "salvage-tether",
+          "duration_seconds": 2,
+          "channel_count": 6,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 8.912074882162432e-7,
+          "loop_boundary_equal": true,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "ae484939a0082f13fcab2d378d085cb478a97a502f6affe82789ff152ba6d346",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.3,
+              "transform_sha256": "68416223017fb2f643521de37a4a9edcd9c5b5088fe858130bd6b73549eb2569",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 0.7,
+              "transform_sha256": "375d5e9b19c8248f46d9bb30e4730025e1013b1683246de3d2960dda6afa0aef",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 1.3,
+              "transform_sha256": "bf69d3e77476a2b5545dfce3806aaddb944be2c40729d5310a5eefa90f46ee3f",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 1.8,
+              "transform_sha256": "4f040de8ad62c590b831009c756dc172914d7c6e096d6f174417da3128927b18",
+              "finite": true,
+              "mesh_world_matrices": 3
+            },
+            {
+              "time": 2,
+              "transform_sha256": "9dfec560f8ac70e669725c5595077ece300e212bb4d2de0c1cdc0b4cdd795e26",
+              "finite": true,
+              "mesh_world_matrices": 3
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "mount-lock",
+      "kind": "effect",
+      "file": "outputs/combat-vfx-v2/assets/mount-lock.glb",
+      "bytes": 145316,
+      "sha256": "5890a8b06f4b18d5c89cf4fcabcd4b7b9dbecf03a740667f8bc2d3679be9ed83",
+      "triangles": 1260,
+      "mesh_count": 5,
+      "node_count": 9,
+      "material_count": 5,
+      "texture_count": 0,
+      "image_count": 0,
+      "runtime_fade_node_count": 0,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "mount-lock",
+          "duration_seconds": 1,
+          "channel_count": 6,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.00019000000664032984,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "0dcfffabb9eee1488d60da4f279770d80c9aba6df8ad485f9be30e753f6c3980",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.15,
+              "transform_sha256": "9649b2948ed9375c0a54441c9ef7d43d99e9dac23bc119c7178a5076fc59e716",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.35,
+              "transform_sha256": "760109596823faaa9853b368b0a5c25f950dfc756f17ada4e1ea7ff45456ac90",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.65,
+              "transform_sha256": "30c607e195792a5dddbb76b0a5282eeb5727dd936bd36ecd8e2e987a80e45876",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 0.9,
+              "transform_sha256": "e514715a5e126afba3dbe5b617d3b89dc28b3605ffd9eb17f339cc3ba107082b",
+              "finite": true,
+              "mesh_world_matrices": 5
+            },
+            {
+              "time": 1,
+              "transform_sha256": "9acc6f17ef12e6756daa3c67f319b0ffd497b5ca9c8d01af04cb87925fb9f374",
+              "finite": true,
+              "mesh_world_matrices": 5
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "01-machine-gun",
+      "kind": "sequence",
+      "file": "outputs/combat-vfx-v2/sequences/01-machine-gun.glb",
+      "bytes": 7226956,
+      "sha256": "d3946392df4a6e7d973c1735c7e346b9a2f1c06885b6bd85f06d60755068db37",
+      "triangles": 7727,
+      "mesh_count": 16,
+      "node_count": 35,
+      "material_count": 12,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 7,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "01-machine-gun_attack_sequence_v2",
+          "duration_seconds": 2,
+          "channel_count": 21,
+          "channel_paths": [
+            "scale",
+            "translation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.3744022516625673,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "e3adb8e859672c2d60f284c2702c2fceae0dc94a6a932658fee43ff0548d4481",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 0.3,
+              "transform_sha256": "6a45bed1e4a25724c1644b1e4c8ba55d7fe1806298e7f55228b13b724bd5ff51",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 0.7,
+              "transform_sha256": "039fd7ffa3d86fc8b0c88066350f7c47b1a5a33009cd23e6a719b81ba658ee3f",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 1.3,
+              "transform_sha256": "1f8c312a8df2a77318d8758aae31661654ffffa5660a1efe3caadbb198922525",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 1.8,
+              "transform_sha256": "8446f3bc869b4f9cd98a1cc04e91cafcb9ba0c5d0b8eae4c0735549fc7cfc70c",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 2,
+              "transform_sha256": "9c5c2ba5b00a090138b3fc2fd0c057ca9aa982213a4a5f6bea7d129bd48c4959",
+              "finite": true,
+              "mesh_world_matrices": 16
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "02-deck-cannon",
+      "kind": "sequence",
+      "file": "outputs/combat-vfx-v2/sequences/02-deck-cannon.glb",
+      "bytes": 18976932,
+      "sha256": "e021f143d7db755ffc21ac2744d70853408f08f2d5729439d0c947f03faa8624",
+      "triangles": 12770,
+      "mesh_count": 21,
+      "node_count": 54,
+      "material_count": 17,
+      "texture_count": 5,
+      "image_count": 5,
+      "runtime_fade_node_count": 13,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "02-deck-cannon_attack_sequence_v2",
+          "duration_seconds": 2.799999952316284,
+          "channel_count": 35,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.34933678340768687,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "91bce2b0dbdffc71f04c236dec33502f7ca04256f5ad61b5fb22f0460e9ea654",
+              "finite": true,
+              "mesh_world_matrices": 22
+            },
+            {
+              "time": 0.4199999928474426,
+              "transform_sha256": "3028f4d4beb838ec066dee2e7eb804987d3aaa93fd277fe2c22aaeaacb6cf4ca",
+              "finite": true,
+              "mesh_world_matrices": 22
+            },
+            {
+              "time": 0.9799999833106994,
+              "transform_sha256": "016a59c8b0e41e643110520a0da726ed113cc7a39c43b1f7b9754f71be0019e5",
+              "finite": true,
+              "mesh_world_matrices": 22
+            },
+            {
+              "time": 1.8199999690055848,
+              "transform_sha256": "3ef7ddd536ba85dff9fb93f81693b3c5586c8f9232d37505d625b4a908cc8d64",
+              "finite": true,
+              "mesh_world_matrices": 22
+            },
+            {
+              "time": 2.519999957084656,
+              "transform_sha256": "0e3ae956ee5770a4c1587a202087069bc7d4b6cc9b1f68d104e0b0cbeaf2c07b",
+              "finite": true,
+              "mesh_world_matrices": 22
+            },
+            {
+              "time": 2.799999952316284,
+              "transform_sha256": "4c545d0b95b8dda505c9bcb56b41ac10a205da6343f6541b267ff5d3dfdd0394",
+              "finite": true,
+              "mesh_world_matrices": 22
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "03-mortar",
+      "kind": "sequence",
+      "file": "outputs/combat-vfx-v2/sequences/03-mortar.glb",
+      "bytes": 18668044,
+      "sha256": "cd8fa19eb187ab27abb1d465070f89a83fdc6f35b22fc208d7961d1b39ddbd97",
+      "triangles": 12735,
+      "mesh_count": 20,
+      "node_count": 51,
+      "material_count": 16,
+      "texture_count": 5,
+      "image_count": 5,
+      "runtime_fade_node_count": 12,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "03-mortar_attack_sequence_v2",
+          "duration_seconds": 3.5,
+          "channel_count": 31,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.15975778583058498,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "c0996566557fda7a5c1372afb8d8ccf549cedb88ad50cfc5b427687617a5a33b",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 0.525,
+              "transform_sha256": "86e2ae686fd6727b974377206691a320df48b0af56f1535e5ca207ba507b8117",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 1.2249999999999999,
+              "transform_sha256": "12b076c256563206c6ee5c686076da54eba20f3ea6696dbeb89cc8da3f529628",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 2.275,
+              "transform_sha256": "064ac87618415042262d74239c416dedad703138c02abca09d495c5b2d58ad81",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 3.15,
+              "transform_sha256": "9f30c1a20bb029447e26d4c065c63b9f67e263d367f0171b2412b503cbef0d8b",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 3.5,
+              "transform_sha256": "6ddee9db5f77ba687fecc277dbaa3a27367839c6ac704b02422d17d241ae0d3b",
+              "finite": true,
+              "mesh_world_matrices": 21
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "04-harpoon",
+      "kind": "sequence",
+      "file": "outputs/combat-vfx-v2/sequences/04-harpoon.glb",
+      "bytes": 4106052,
+      "sha256": "d01221a85927780a799748c383050f0ccadbe373d07f85d906f342b0b86a304f",
+      "triangles": 6691,
+      "mesh_count": 16,
+      "node_count": 31,
+      "material_count": 12,
+      "texture_count": 1,
+      "image_count": 1,
+      "runtime_fade_node_count": 6,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "04-harpoon_attack_sequence_v2",
+          "duration_seconds": 2.799999952316284,
+          "channel_count": 20,
+          "channel_paths": [
+            "translation",
+            "scale",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.004000000189989805,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "3525a89d877f0235547d0f908f6af3cbc3232d3f0daba162bcbb8d589de5a989",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 0.4199999928474426,
+              "transform_sha256": "d022105b31e94c4cc67cc8c9e4f0b4ea90441660826c4ef5caa0fd9228b2f836",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 0.9799999833106994,
+              "transform_sha256": "64d97f961c50671c8efca7871a1eeec29891f0c3a21058c171ff3bd64db3993a",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 1.8199999690055848,
+              "transform_sha256": "258409269b0a6466b133d88d4f55be3a9961cdde52bae3d7253904f930b3d9fc",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 2.519999957084656,
+              "transform_sha256": "9ca8af6d876b3a5c837dcf87dc0b176372949ed4c032ffd6ba701760993ed6b4",
+              "finite": true,
+              "mesh_world_matrices": 16
+            },
+            {
+              "time": 2.799999952316284,
+              "transform_sha256": "c3463489f722785c498ae53d7dfef7221a4ab386fa8bf9f35edda7e13398a142",
+              "finite": true,
+              "mesh_world_matrices": 16
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "05-chain-shot",
+      "kind": "sequence",
+      "file": "outputs/combat-vfx-v2/sequences/05-chain-shot.glb",
+      "bytes": 7697952,
+      "sha256": "8bb31b9555f6bef35918a33a1fbdbfab66f5536bd68eb7511b69b0fdd155e7dc",
+      "triangles": 8799,
+      "mesh_count": 20,
+      "node_count": 44,
+      "material_count": 16,
+      "texture_count": 2,
+      "image_count": 2,
+      "runtime_fade_node_count": 10,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "05-chain-shot_attack_sequence_v2",
+          "duration_seconds": 2.799999952316284,
+          "channel_count": 29,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.1797497965577297,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "7c6c3145e28e497753b050651303817e8d785470f17ab91d00492674d818f0aa",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 0.4199999928474426,
+              "transform_sha256": "f6eb005f399115b8d7ca6b7362d968397df5a8857607ec87722f115fe2057c60",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 0.9799999833106994,
+              "transform_sha256": "03645451e5253242137603a1201f92f1fa54dc85c5fb27090569563eb8158270",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 1.8199999690055848,
+              "transform_sha256": "c9566e740249378bb4700cc274d7c51b72a6db16aa56ef2b3052f1ea3ff0b8c3",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 2.519999957084656,
+              "transform_sha256": "ac0648d7e5a4b9152556c192ff9ec480bddc4fb95be7579ff3f099c779e23652",
+              "finite": true,
+              "mesh_world_matrices": 21
+            },
+            {
+              "time": 2.799999952316284,
+              "transform_sha256": "c18d86371939ff6810faae45d1589db971dcb18bd3404a46bbc0ed1da88f5248",
+              "finite": true,
+              "mesh_world_matrices": 21
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "06-flamethrower",
+      "kind": "sequence",
+      "file": "outputs/combat-vfx-v2/sequences/06-flamethrower.glb",
+      "bytes": 18510076,
+      "sha256": "f3de4241a4b14922a79b8edf0fffb30baa30ca65601f7fbc90057c13c46a2273",
+      "triangles": 10646,
+      "mesh_count": 12,
+      "node_count": 57,
+      "material_count": 8,
+      "texture_count": 5,
+      "image_count": 5,
+      "runtime_fade_node_count": 12,
+      "embedded_resources": true,
+      "animations": [
+        {
+          "name": "06-flamethrower_attack_sequence_v2",
+          "duration_seconds": 3,
+          "channel_count": 26,
+          "channel_paths": [
+            "scale",
+            "translation",
+            "rotation"
+          ],
+          "standard_trs": true,
+          "unique_transform_samples": 6,
+          "first_last_transform_max_difference": 0.3196157822429125,
+          "loop_boundary_equal": false,
+          "samples": [
+            {
+              "time": 0,
+              "transform_sha256": "13341b56fe4b820700d75bbf60108b9d0f5ed5d0ad3d06510921fefd30eb9cc7",
+              "finite": true,
+              "mesh_world_matrices": 18
+            },
+            {
+              "time": 0.44999999999999996,
+              "transform_sha256": "ebacc1c8d76438cce7522cfd644f949080e253b0d6ca068a16990c473ac4cb1c",
+              "finite": true,
+              "mesh_world_matrices": 18
+            },
+            {
+              "time": 1.0499999999999998,
+              "transform_sha256": "027f4456e4c9d437eaf243d3756c7a6138338468fc68ee3306687f6ce6090ecc",
+              "finite": true,
+              "mesh_world_matrices": 18
+            },
+            {
+              "time": 1.9500000000000002,
+              "transform_sha256": "4061b832d4207919c14fd13e17d6970716cb5a1ab8e95346ca7cdaf6e6ca47a0",
+              "finite": true,
+              "mesh_world_matrices": 18
+            },
+            {
+              "time": 2.7,
+              "transform_sha256": "0d5706d7540d8ac43009b1743dd5171011f31186779756adec3b291de0c6192c",
+              "finite": true,
+              "mesh_world_matrices": 18
+            },
+            {
+              "time": 3,
+              "transform_sha256": "f98a161a99f45d517d4b2f0249ee8a67559e9faa98331c368d89b47b898802db",
+              "finite": true,
+              "mesh_world_matrices": 18
+            }
+          ]
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "pending": [],
+  "counts": {
+    "checked": 54,
+    "passed": 54,
+    "failed": 0,
+    "pending": 0
+  },
+  "passed": true
+}

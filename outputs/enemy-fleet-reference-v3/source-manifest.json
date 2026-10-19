@@ -1,0 +1,672 @@
+{
+  "version": "enemy-reference-villain-v3-ready-1",
+  "capturedAt": "2026-10-18T13:14:40.961Z",
+  "scope": "Six new villain art variants of existing IDs. No combat, campaign or balance installation.",
+  "baseFrozenManifests": [
+    {
+      "path": "outputs/fleet-v2/source-manifest.json",
+      "bytes": 34692,
+      "sha256": "916c3e9790818490ee6d4457b7e41d8fe23cc49130996f64512a3c2a2657f68e",
+      "expectedSha256": "916c3e9790818490ee6d4457b7e41d8fe23cc49130996f64512a3c2a2657f68e",
+      "passed": true
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/source-manifest.json",
+      "bytes": 18953,
+      "sha256": "78ef52ad845b97c563fabdc1426006296f8ed122e860bf33e34cc6ef9a125af3",
+      "expectedSha256": "78ef52ad845b97c563fabdc1426006296f8ed122e860bf33e34cc6ef9a125af3",
+      "passed": true
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/source-manifest.json",
+      "bytes": 18165,
+      "sha256": "6c3e509c19ec16368ab92c69f4f0f24d6bc431f7624ca5583476bf43f7466a5f",
+      "expectedSha256": "6c3e509c19ec16368ab92c69f4f0f24d6bc431f7624ca5583476bf43f7466a5f",
+      "passed": true
+    }
+  ],
+  "originalPreservationScope": "The three original manifest bytes and the listed read-only dependencies were rehashed. No full historical174/95 corpus rehash is claimed in this revision.",
+  "readOnlyDependencies": [
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/browser-qa.cjs",
+      "bytes": 31374,
+      "sha256": "57faf249aed42101b97aaaf90b237cf5336cadc35cb8e6e7c5f672b1bf91d291"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/build.cjs",
+      "bytes": 5276,
+      "sha256": "eeb2cd02d24952a678a33638e0ca5a49e5033138a84248891fa02688c9bf86fc"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/capture.cjs",
+      "bytes": 5169,
+      "sha256": "f511aca66d0bf175b1d0ce4e47f93ea754822267f5db596f9eaa85e1e025affd"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/export.js",
+      "bytes": 3340,
+      "sha256": "f0cc7bd45b72c9c7db342714fab31665d9658292f981d87d2ab2ee53cb99ffa7"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/freeze.cjs",
+      "bytes": 3789,
+      "sha256": "4cc917b32d37d575bc80ffaeb0e0c1d76d87c57dd58f1e1fe54e25709630558b"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/gallery.cjs",
+      "bytes": 3922,
+      "sha256": "60ef3691f2db893fd869a34ea75cdca350ce69eb1b8659809d89ed925174d849"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/ghost-wreck.js",
+      "bytes": 9892,
+      "sha256": "59ee643979c555ef2347ba50f2a78bfcdd8a7471b14d106987c39e16a54f4587"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/HANDOFF.md",
+      "bytes": 7786,
+      "sha256": "43ea0de95a18468872eff67be75ef8323ffffb0f643a4ab6761e352d0c0a3b84"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/industrial.js",
+      "bytes": 14595,
+      "sha256": "7ca52e5fa8ec48ac44a5503d09ef33a4cf89b9071c8c437de43fe403cb03dc56"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/README.md",
+      "bytes": 9747,
+      "sha256": "9d3dfd65666fac65406102fe970505a43db1040e9d13fd17c4f1f1fe74037f7c"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/scout-cult.js",
+      "bytes": 11764,
+      "sha256": "1621d58e32b3e0fa94454c73ef573ee69c0f115f988d7e8b64522aedb06eab29"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/style.js",
+      "bytes": 3636,
+      "sha256": "1442e353af97b871f6c8473482a2a888c049bfe979749de4c43f733169ce3543"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/verify.mjs",
+      "bytes": 20976,
+      "sha256": "b64858daf39984d20a2bcf85c87722c1e3b84e053f816637207e308c58d3e127"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v2/viewers.cjs",
+      "bytes": 2680,
+      "sha256": "699c3bb763d4baed52f4a51c8330c931ec21637ac3c8c8c913cab5a5f83e90e5"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/catalog.json",
+      "bytes": 51580,
+      "sha256": "2a534ea00ad64c2ea2d36635577ccc352be3de40dd022b0d0e4319b0bdd2389c"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/previews/enemy-cult-blockade.png",
+      "bytes": 505195,
+      "sha256": "63e91f95c11ec78bdd4dc0d24a5ae105e9cd8c80535081e67b75df8ff9c85446"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/previews/enemy-disguised-wreck.png",
+      "bytes": 557852,
+      "sha256": "bb01087a935452684dbdc3844eb4052e8bd3ae01e8dc47506d478f6007c8a9dd"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/previews/enemy-ghost-chaser.png",
+      "bytes": 498863,
+      "sha256": "ad343c3149be11d8d4c0ecbbad95f640ed85aae0d5094d841e7207a3d4d5d92e"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/previews/enemy-pirate-scout.png",
+      "bytes": 447560,
+      "sha256": "76366a719aaee57db83bafc8417fd9dfa0b04f562aa47e0cb08519ffb18bf0b1"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/previews/enemy-union-repair.png",
+      "bytes": 514441,
+      "sha256": "9c01583a0225f511892c4919b48c8e7fdc118b726f4a4d062de14b49ab4d18a5"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/previews/enemy-union-salvage.png",
+      "bytes": 510279,
+      "sha256": "78ccc727b25526e050c3263de6fba966e9d3d0a34f8b91c3b053738dbb58c0ed"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-cult-blockade.glb",
+      "bytes": 11808792,
+      "sha256": "78fffc1c9f32dbbcef82be3d5f9b89cf1e4aa43253f2f823ac9602e840b78e82"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-cult-blockade.html",
+      "bytes": 22625604,
+      "sha256": "1ee7ad45e6f9c5e2d45231ff61d6bd11ecfb82cb5206f28eb7c05c61647f8336"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-disguised-wreck.glb",
+      "bytes": 8320900,
+      "sha256": "b2e4674a848ce437d7d79089c8f883cfe6ad022f85e9500e242775662528332e"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-disguised-wreck.html",
+      "bytes": 17975083,
+      "sha256": "813befca796d785ac1e920a4262923ad2f9798120859d07ff6e86f203dba12e9"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-ghost-chaser.glb",
+      "bytes": 10207700,
+      "sha256": "5353c23bb82f3b3e0a7afcf15e271424166c8e5f3f18af66626ab984d2794be2"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-ghost-chaser.html",
+      "bytes": 20490816,
+      "sha256": "fcf4c8bde5315513edb688246dac26df530266da5a76c7319a1ed9e8331d5177"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-pirate-scout.glb",
+      "bytes": 7399740,
+      "sha256": "38193872b27cca3a9fa6dc19ab4417e77e109bbd2e332ea5f94d51c38290da14"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-pirate-scout.html",
+      "bytes": 16746867,
+      "sha256": "83f1e3a19665be28a394d1c5273d43bbe84f6258d0d08e59927215d56e70bf6e"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-union-repair.glb",
+      "bytes": 11827648,
+      "sha256": "d92579da5aabd05e3af955235dffb48355a1a95a99d4ea4c02c1f6281c0cde4b"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-union-repair.html",
+      "bytes": 22650748,
+      "sha256": "12d545d079df5c4641fdb800d54e90e55d1c1b98d1e70832873808f773f42881"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-union-salvage.glb",
+      "bytes": 10678756,
+      "sha256": "eb4f2ae662203adb8e0acac2d43f43e7b5b9fddd436d6452034c14f1016d1535"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v2/ships/enemy-union-salvage.html",
+      "bytes": 21118892,
+      "sha256": "00e3e6b6779225afd8538b4dccd2d330d544f603d8d3af7a37d0e4fa20422478"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/browser-qa.cjs",
+      "bytes": 29443,
+      "sha256": "bf8b09948a39b458dd2f5214dcdc2ad24d3ae5ce1b0b995a5d9d135fc9680054"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/build.cjs",
+      "bytes": 4927,
+      "sha256": "d86579621673501b6cbb3203698319be849e6bcec276595775033358ba3bb9a7"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/capture.cjs",
+      "bytes": 5143,
+      "sha256": "26e01e28814c9f2f1fa1890a6d4c2427b47c1835085d8e24897ca106a1e6a1aa"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/enhance.js",
+      "bytes": 3153,
+      "sha256": "8495c4447011ab7177fc409ebbb9e5dc4c4628eaa505546b9f3e4a98db1bb2a5"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/export.js",
+      "bytes": 3234,
+      "sha256": "953bb8cff9f98ba188048be3b92532ca4b9ccbad77090587de72237b663bc6b5"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/gallery-template.html",
+      "bytes": 10188,
+      "sha256": "626b8b9742fa67966d58c77688409ca31caeb026fc174a48d67a45af477ecc5b"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/gallery.cjs",
+      "bytes": 2455,
+      "sha256": "92c22ea44eb9c3f43fe605ec3f06499bb62c811b4f073541cbec7f8ce4598872"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/ghost-wreck.js",
+      "bytes": 19769,
+      "sha256": "59063b3be04488c2dc47ff110d6aaf0e173b7fb9f2002a98b819d2ddb1f8b73c"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/industrial.js",
+      "bytes": 21456,
+      "sha256": "72f5b104f71af37d4fdb755043ce5c63a2cb26bfaebae2adf623da4b561de52e"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/kit.js",
+      "bytes": 10518,
+      "sha256": "da74e6c5cd95a0a2bff31372c53414c6eda3909123547b425181cf0509803090"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/README.md",
+      "bytes": 10546,
+      "sha256": "f4f9f3fc978b74989eef5924c7ede09c957994d07fddc6285a5aecfbb3383d30"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/scout-cult.js",
+      "bytes": 16769,
+      "sha256": "923e95f164a95395c25f5299ea55451ada16d4b289b70b82df9f6ac1f41fb15c"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/seal.cjs",
+      "bytes": 3773,
+      "sha256": "148320b79e1c4ef06c48d24e032014e10315cd291b6a7a8c6482b5cf282f3632"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/verify.mjs",
+      "bytes": 20692,
+      "sha256": "f7ccca8118f9c5415322dcda3714f79f180f10e47f9afaaf6ba73eb8dd8215a4"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/viewer-base.js",
+      "bytes": 30166,
+      "sha256": "7b527e8eef43485d34309f6d96b694dd91df8fb8232eddb0a4f52bb4b5ffd7dc"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/viewer-template.html",
+      "bytes": 14122,
+      "sha256": "96ed71c4b7ce8f1429e54b8f3ca252a492d3dbf6c9709c9a524cfffcb171f0b3"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/viewers.cjs",
+      "bytes": 2686,
+      "sha256": "9e2d1a28c33da404796f2d017f1eae313763dfd58d15e701d3340a00a20a5c96"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/catalog.json",
+      "bytes": 45863,
+      "sha256": "75c0af5918a15ca4f3ff65d4604e338aec5a30c1ab4f4137bbacb744622d74d5"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/painted-atlas.png",
+      "bytes": 3810987,
+      "sha256": "13984610dd7647659d97beb02a4b29e0092fe787e06adacf9c7e0bfc32920c0a"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/reference.png",
+      "bytes": 3507688,
+      "sha256": "7f703c7c576d96f3f82876976b424a23a7ed0aeff2d7130a354c1cd76be5963c"
+    },
+    {
+      "path": "tools/fleet/body.js",
+      "bytes": 13735,
+      "sha256": "d218e9ba6e2000b3dcad2e930e06eb9a89ca7e27faff8f9a41174d194d5404c8"
+    },
+    {
+      "path": "tools/fleet/rigging.js",
+      "bytes": 17867,
+      "sha256": "3fe23b9acbbcbfdb0d0f7ed8b63fdc8d69cc908a5f008a0f009f21a23a2139db"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/player-homeward.glb",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004"
+    },
+    {
+      "path": "tools/fleet/body.js",
+      "bytes": 13735,
+      "sha256": "d218e9ba6e2000b3dcad2e930e06eb9a89ca7e27faff8f9a41174d194d5404c8"
+    },
+    {
+      "path": "tools/fleet/rigging.js",
+      "bytes": 17867,
+      "sha256": "3fe23b9acbbcbfdb0d0f7ed8b63fdc8d69cc908a5f008a0f009f21a23a2139db"
+    },
+    {
+      "path": "outputs/fleet-v1/ships/player-homeward.glb",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004"
+    }
+  ],
+  "counts": {
+    "variants": 6,
+    "newEnemyTypes": 0,
+    "actualClips": 43,
+    "weakpoints": 12,
+    "deploymentBones": 3,
+    "triangles": 400824
+  },
+  "structure": {
+    "passed": true,
+    "report": "outputs/enemy-fleet-reference-v3/structural-verification.json"
+  },
+  "generation": {
+    "imagegen": 0,
+    "meshy": 0,
+    "reusedPaintedAtlas": "outputs/enemy-fleet-reference-v1/painted-atlas.png"
+  },
+  "browser": {
+    "status": "Pending reserved narrow model-revision QA",
+    "harness": "tools/enemy-fleet-reference/villain-v3/browser-qa.cjs",
+    "args": [
+      "--quick"
+    ]
+  },
+  "pending": [
+    "Human art approval",
+    "Actual damage/collision/sockets/detachment/ambush AI and performance budgets",
+    "Precise decoded-pixel/long-run ghosting regression"
+  ],
+  "files": [
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/browser-qa.cjs",
+      "bytes": 31453,
+      "sha256": "1a961d6b8864a5f453b80e1afcb8958b02187e3f197bc032060a6fe40ef78c0a"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/build.cjs",
+      "bytes": 5519,
+      "sha256": "8906084eedf677ae13abadebb6c2d11db4c066c5b68227b9c33bea43a4508ab3"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/capture.cjs",
+      "bytes": 8360,
+      "sha256": "2857aa0c3da1a6ef3ddcd893ff2beb308ceaac59a4a2e1ba538db00738b75734"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/export.js",
+      "bytes": 3352,
+      "sha256": "89d17b099d0a8d7259596b94a9b7dfe0bad7395fbba69e8f93b8e8e2534e69b5"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/freeze.cjs",
+      "bytes": 4134,
+      "sha256": "e89fadeafde28dc824537746366983a71df3f1ab7fe83a4168da4b1cb7a18907"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/gallery.cjs",
+      "bytes": 4134,
+      "sha256": "da646f1dd1fc2dc8e5717d78f4a3293390ec46b1bc10c865a7797c7433f1f08e"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/ghost-wreck.js",
+      "bytes": 10354,
+      "sha256": "674d25194b8b80dc51d3d5a7e817f91793355eca7c0a51408d97f1a4d3d57aad"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/HANDOFF.md",
+      "bytes": 5262,
+      "sha256": "b50091b29142e8c620b966f26016cf121028ae025d618daf79ea2919cf9d7ad2"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/industrial.js",
+      "bytes": 11091,
+      "sha256": "4b7b532d03f319912b9bdcf6c55d85903b02a1e14f82c395ebc3f5b169be148a"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/scout-cult.js",
+      "bytes": 9753,
+      "sha256": "dfad3cb456985b9902d19d71a08b79288d5f3e37b6155e85d3162dd6b28a9cd5"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/verify.mjs",
+      "bytes": 20976,
+      "sha256": "cf3215399258c49dc75646ca16f87cce282accfcb3f75b7cd8ec2a5d0e840174"
+    },
+    {
+      "path": "tools/enemy-fleet-reference/villain-v3/viewers.cjs",
+      "bytes": 2688,
+      "sha256": "ddd7adc4180b3e787c0190e7510a5fa35d2d5afbe1e662da5240cc7996ac3767"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/.gitattributes",
+      "bytes": 49,
+      "sha256": "34eaad94def2feaed730d46c311c34b633590a48408d677ff8e069aa4aa4f1fa"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/capture-receipt.json",
+      "bytes": 10934,
+      "sha256": "8ad1a10c25f87d6f116d77c4d6c532c7e577d82002a085131500b5964c10e4cc"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/catalog.json",
+      "bytes": 67809,
+      "sha256": "ea8059d3e4d1c1207d2220cbed2aa6ffadc9100d84bd5caa7d3aa33d09bc3594"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/export-receipt.json",
+      "bytes": 5610,
+      "sha256": "aa362db6dc5e273672b604d6b84d86b768bc9ad0a0d61c6b8744605a71dde602"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/fleet-overview.png",
+      "bytes": 684788,
+      "sha256": "185db5a161778e29e2a147a331ce7c8f89aa08a94636047405e5c48bb31fc6c5"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/gallery-build.json",
+      "bytes": 134,
+      "sha256": "0bb2094672966294b1786a5694e280de7b35e9702ea7f3057fdeae497cce876c"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/index.html",
+      "bytes": 60128,
+      "sha256": "eaecd58e4703f7ab29e901b273e96ffbadc5966139f5b8ba5e15264c8bd03a57"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/matched-execution-receipt.json",
+      "bytes": 4272,
+      "sha256": "059c3205d1b22b847e8b62286331cd88fe6ce3029d08949d2b97f4707b4bcd3f"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/preview-bindings.json",
+      "bytes": 8366,
+      "sha256": "4c7681babc58b6d23424e4d329a363913fc0fc6a6d99161a3a22834a8b6cab2b"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-cult-blockade-matched-after.png",
+      "bytes": 400972,
+      "sha256": "96c2baf3b3077c410b750bbd4ce6d5b03f9f1ae93ac9e174fc9ebf90fbd989e4"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-cult-blockade-matched-before.png",
+      "bytes": 364978,
+      "sha256": "e9761e7537abf9620273a4211bcf0c87388b744480cfcdfc15e90da1da9b0224"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-cult-blockade-silhouette.png",
+      "bytes": 272403,
+      "sha256": "f112f17158b3720ef26fec1511cfa6ac67146a92f0f440e8722698f633da0ced"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-cult-blockade.png",
+      "bytes": 452938,
+      "sha256": "9abc8dcb7bd5bfc2e34ee9389e63a04297c290913f556055427b3f7188fd9e40"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-disguised-wreck-deployed.png",
+      "bytes": 415049,
+      "sha256": "c85e1e88a77466972026e991bf7ecc71ac9cd2036071365b8f6a77b57d4c4c16"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-disguised-wreck-matched-after.png",
+      "bytes": 415709,
+      "sha256": "4858cf2c53352727a8b9ef05b4ed13d4ecf3845da9a630addc5e8a72dbbfa874"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-disguised-wreck-matched-before.png",
+      "bytes": 364712,
+      "sha256": "4b945722cf8fd506dc56453e65926796a0a5ddc1210039caf68c276a73af3041"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-disguised-wreck-silhouette.png",
+      "bytes": 220655,
+      "sha256": "af6006b986d2dc05c1ddca3acd00011f05b28da447952ccc756142284611a6a1"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-disguised-wreck.png",
+      "bytes": 573577,
+      "sha256": "0694e853219ea33ac997828d4203a4a00556fb6b37f012dfc9f34382ae9e4a44"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-ghost-chaser-matched-after.png",
+      "bytes": 351891,
+      "sha256": "cfc7d9d3c713fc9603ee3782ba8395947fc91c7dcff7e27989274bd028ecfa63"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-ghost-chaser-matched-before.png",
+      "bytes": 303083,
+      "sha256": "ef20bb666570384603aa1db9b9e43d68c8983bfba23ffff8e0ecbe8d4dcdf882"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-ghost-chaser-silhouette.png",
+      "bytes": 266191,
+      "sha256": "1af07122a4a3da8a0a230d0ff9123dbdd669a098c3caf39d60ba03f15d05e038"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-ghost-chaser.png",
+      "bytes": 514084,
+      "sha256": "d84d5cc057bd45364af3311058d0b20402b9b287ff82ec9818cf73cd8d113ef7"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-pirate-scout-matched-after.png",
+      "bytes": 382238,
+      "sha256": "5e76eb7df1f4a54d7ba090b29641d08cafe5c3e9f755a2779b3275198b2cd2f5"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-pirate-scout-matched-before.png",
+      "bytes": 325830,
+      "sha256": "c7574aed1828b7b6e98077ca3b85ea17a7f16481176681eb64951bd7fd0da80c"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-pirate-scout-silhouette.png",
+      "bytes": 282088,
+      "sha256": "15b197cc750fdca179ed1697770ccd9f8931d9d50323f74edc582137c0525c53"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-pirate-scout.png",
+      "bytes": 455329,
+      "sha256": "b1f13113e61d7c32d4ac4efe73b90e892137d434fa16331a230ea3ed444fc52a"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-union-repair-matched-after.png",
+      "bytes": 408296,
+      "sha256": "007acd0b132f3e95c424689a89c5da967b3853af0055c3caeec2e6511ebcb831"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-union-repair-matched-before.png",
+      "bytes": 385674,
+      "sha256": "26da66d2aea65bd5bccd427d4de080861d9e424742acf993a262bcc76ffefa1e"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-union-repair-silhouette.png",
+      "bytes": 284003,
+      "sha256": "2805793d4a5f6c9d3a1d96b9ed4f0e22b6bf7faefdcaefb07dbbdecadca44dcf"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-union-repair.png",
+      "bytes": 473065,
+      "sha256": "309103717e5c58a7fbc852c098347330bbb567b56490e74a309d8ac95de7d1aa"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-union-salvage-matched-after.png",
+      "bytes": 419220,
+      "sha256": "5117bdb90c9289e537d7ae96e4234c81ddb179b2892e07786aa247fbb7135019"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-union-salvage-matched-before.png",
+      "bytes": 392675,
+      "sha256": "584a62a0f4b68f7e288cb9bcd5740be20048dc23dd61d802ff3026684d25f14d"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-union-salvage-silhouette.png",
+      "bytes": 276459,
+      "sha256": "8f2f6c82bd39ae981a9dd7ae3b5a5fb9425c2971d2bdf9cba662fa702eeb9a3b"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/previews/enemy-union-salvage.png",
+      "bytes": 547983,
+      "sha256": "a030771254eb749491b262b7d7a45f05a3a82541f212fdc228b91952ffba3e8a"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/README.txt",
+      "bytes": 3509,
+      "sha256": "e455a9852db696875c9342a48c0dcc85e594b3197964770cad84621c914aa415"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-cult-blockade.glb",
+      "bytes": 12613876,
+      "sha256": "ebd68ae9308be57cc50bc36afaf3948ce3fc3e46defd72d7c7d30291b604d77b"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-cult-blockade.html",
+      "bytes": 23699060,
+      "sha256": "1a174e0940fce6e4ab7e16357b505fec19789f7da8cacc685123d0748a9491d2"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-disguised-wreck.glb",
+      "bytes": 9402752,
+      "sha256": "576870af4d21b1af6e6bf0b526b8cd3c45fe59b1681e02a850fa5ad90b59eeca"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-disguised-wreck.html",
+      "bytes": 19417559,
+      "sha256": "b764edad4f3a8462d2cca79378f2b34e7ff7eeaeb4b1e832dbc670eb2d60c5c2"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-ghost-chaser.glb",
+      "bytes": 11085212,
+      "sha256": "144bc9b1038c54adf7aec7b018d8aa3ea61a97e81edf8c778954db7d86fa1a44"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-ghost-chaser.html",
+      "bytes": 21660840,
+      "sha256": "b1e7ed6d6b623f53b5f44e86d43116c50c2a20a72b21ea9d25b312941ed315ee"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-pirate-scout.glb",
+      "bytes": 7961236,
+      "sha256": "8125a0e3f05c2a53a2d6b12c58c41fadcb22cf05c68baae67fefc7fc8296cf9d"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-pirate-scout.html",
+      "bytes": 17495539,
+      "sha256": "605a6687bf1c829186ca59bddc9f094481814b3cfb97bb461698d81f58a41148"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-union-repair.glb",
+      "bytes": 14311264,
+      "sha256": "cf1230f06b3a795ef8432b5edc49e74b7fdc0b672d087b8b3c5d61700b4a0dfc"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-union-repair.html",
+      "bytes": 25962244,
+      "sha256": "a1829589786452b67f2ea433f8a964c3a7c773f0dc935f004c3cc8b6a39cfe03"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-union-salvage.glb",
+      "bytes": 11618716,
+      "sha256": "dc494e67b55757d51a33fddeacae69cb6183bebc9e4ea8c914a2f3ba76dffe5c"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/ships/enemy-union-salvage.html",
+      "bytes": 22372180,
+      "sha256": "3adb2c0830bb574ca66b05649d578c5257d04679897885b87d557d94e2fe706b"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/silhouette-sheet.png",
+      "bytes": 427853,
+      "sha256": "e9d16e92ad88625b5a7eec937243f78ec1a83a72713dc0fde1c8d10607f97f28"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/source-ready.json",
+      "bytes": 2406,
+      "sha256": "c63bc03a0e641055dc9c5a5bb9e1d2fd61898dedab905b325b9a4a8ca915fa69"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/structural-verification.json",
+      "bytes": 946351,
+      "sha256": "a696c3f6a9917c1bd3450dc586a98f72c86197fb0b9f29ac21283c29cb02ffa3"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/visual-review.txt",
+      "bytes": 1380,
+      "sha256": "80a9485f1462edf8016021469ae7efecde77ab31861fad666deb3b4cd1b774d2"
+    }
+  ]
+}

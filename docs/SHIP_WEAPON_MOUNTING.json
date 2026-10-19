@@ -1,0 +1,48 @@
+{
+  "version": "art-preview-v1",
+  "purpose": "Shared ship and weapon art assembly contract; not gameplay socket or balance specification",
+  "shipBaseline": "outputs/ship-states-v1/ranks-1to5-v2/",
+  "targetRank": 5,
+  "branches": ["mobility", "artillery", "salvage"],
+  "coordinates": {
+    "assemblyUp": "+Y",
+    "shipForward": "-X",
+    "weaponSourceForward": "+Z",
+    "defaultWeaponYawRadians": -1.5707963267948966,
+    "units": "relative design units; no meters implied",
+    "shipRootScale": [1, 1, 1],
+    "weaponScale": "uniform per assembly, recorded explicitly; do not rescale the hull"
+  },
+  "ownership": {
+    "shipDesigner": "ship silhouette, candidate mount space and structural load path",
+    "weaponDesigner": "weapon body, mount datum, facing and moving-part clearance",
+    "assemblyOwner": "tools/ship-weapon-harmony-v1/ and outputs/ship-weapon-harmony-v1/",
+    "sharedContractOwner": "project coordinator"
+  },
+  "assemblyRecordsRequired": [
+    "source GLB paths and SHA256",
+    "mount id and parent",
+    "position, quaternion and uniform scale",
+    "weapon-local mount datum and forward axis",
+    "added adapter/support groups",
+    "static clearance observations and unresolved movement clearance"
+  ],
+  "artRules": [
+    "Retain the selected ship silhouette and cream balloon, honey wood, teal machinery, brass and coral accents",
+    "Create an attached structural path using fitted wood saddles, brass brackets and deliberate pipes or cables",
+    "Avoid standalone showroom plinths visibly resting on the ship; hide or adapt them in the assembly without changing original assets",
+    "Give one primary machine visual emphasis and make added weapons subordinate where the branch already has a primary machine",
+    "Keep cockpit, balloon silhouette, propulsion and branch-defining devices readable",
+    "Mobility: low, close mounting; preserve gliding panels and propulsion clearance",
+    "Artillery: connect added weapon supports to existing gun deck and recoil structure; avoid obscuring the primary gun",
+    "Salvage: keep recovery dock and cargo path visibly open; place auxiliary weapons off that path",
+    "Match material brightness, grain impression and outline treatment in one runtime"
+  ],
+  "review": {
+    "deliverables": "3 actual assembled GLBs, offline before/after comparison viewer, PNGs, placement records",
+    "comparison": "same camera, same ship scale, same lighting; bare latest ship versus assembled ship",
+    "angles": ["three-quarter", "side", "top"],
+    "check": ["actual exported GLB reload", "3 display modes", "connections and static intersections", "mobile", "downloads", "original source integrity"],
+    "limitations": "Art placement prototype. No engine sockets, physics, aiming, firing, damage, save changes or gameplay load validation implied."
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "title": "Cloudstitch",
+  "revision": "star4-assets-v1-ART-REVIEW",
+  "entryPoint": "outputs/ship-states-v1/star4-assets-v1/index.html",
+  "logicalAssets": 3,
+  "comparison": "Same-lineage frozen3starGLBs on left, new4starGLBs on right",
+  "models": [
+    {
+      "id": "mobility",
+      "bytes": 2805956,
+      "sha256": "dc1cb4475ac54fa7f6d51dc53267e9d65c69450578c526600dba1cc830b86824",
+      "triangles": 40339,
+      "meshes": 89,
+      "nodes": 104,
+      "images": 4,
+      "materials": 7,
+      "unlit": 7,
+      "clips": 0,
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-mobility.glb"
+    },
+    {
+      "id": "artillery",
+      "bytes": 2119084,
+      "sha256": "619cc056ad7eca05faf9d6f90070fa6b8d493f8d925c76cf3ba2e602cc732e16",
+      "triangles": 20260,
+      "meshes": 66,
+      "images": 3,
+      "materials": 7,
+      "unlit": 7,
+      "clips": 0,
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-artillery.glb"
+    },
+    {
+      "id": "salvage",
+      "bytes": 2431336,
+      "sha256": "2e9418afe34a1860cc3387acfc409319ac2aadbe0830278000db8185b24f01c6",
+      "triangles": 28560,
+      "meshes": 94,
+      "images": 4,
+      "materials": 7,
+      "unlit": 7,
+      "clips": 0,
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-salvage.glb"
+    }
+  ],
+  "sourcePassed": true,
+  "browserPassed": true,
+  "qaScope": {
+    "initial": {
+      "path": "outputs/ship-states-v1/star4-assets-v1/verification.json",
+      "bytes": 9047,
+      "sha256": "56df7eb2055170dc320f76341e6b5a8c7effbbd75c9f662fdf2f7a00d2089733"
+    },
+    "connectionFollowup": {
+      "path": "outputs/ship-states-v1/star4-assets-v1/verification-connection.json",
+      "bytes": 2878,
+      "sha256": "45e844c54cc4827130f8403f6493ba8f8361f5ed34b1fe44c36f3754565074e2"
+    },
+    "note": "Initial9modes/shared-camera/3x120ghosting/controls/mobile/downloads. Mobility-only3mode reload after stern brace geometry,unchanged viewer checks inherited,other two GLBs unchanged."
+  },
+  "humanArtApproved": false,
+  "previousAssetsPreserved": true,
+  "files": [
+    {
+      "path": "tools/ship-states/star4-assets-v1/build.cjs",
+      "bytes": 2739,
+      "sha256": "6a13105be10196b44c035095e1050d7100fada163e4878dc8301c12966371b05"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/check-source.cjs",
+      "bytes": 2717,
+      "sha256": "f5c464a8e79d76f7ee2ef211825b328feeb068f51c4713f6975a78114570ef06"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/export-verify.cjs",
+      "bytes": 8054,
+      "sha256": "b0e66eb77d9d2fd3e6bcd76e7e5f1fb59f4f56a68a316d51fb18fb4b0eb6247e"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/finalize.cjs",
+      "bytes": 3112,
+      "sha256": "733113bdd25e2c11fdf33725882559cca2098b6dc5e7177c9e7dea126ece0e27"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/HANDOFF.txt",
+      "bytes": 1447,
+      "sha256": "b09a1ca04c15d937a568087982bf26ba3b3d4b1b25048396a60f997448f0a274"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/models.js",
+      "bytes": 14169,
+      "sha256": "38a8700f92c99ef065d172050c28ac91440872b24da791211c38d70cefc0d142"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/parse-glb.cjs",
+      "bytes": 3674,
+      "sha256": "6f9dd7fb4d560b55e258c452230a63e7bea2b009d8dcdde5e0d968de432972b8"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/template.html",
+      "bytes": 5645,
+      "sha256": "9f2007ea403d76b9a920f841ee250c072a6a9c67c99102105953af2a66e0be59"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/verify-connection.cjs",
+      "bytes": 4672,
+      "sha256": "c713caf1390e4681de83493654bf40699178046cf79e89bdaf43a03d6d9d6cb7"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/viewer.js",
+      "bytes": 10163,
+      "sha256": "fa57b2f1d3ad18d8f14253ff5aae000ec73a088f7842a88e058aa5df5020afb4"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/artillery-cel.png",
+      "bytes": 278249,
+      "sha256": "5c9935d7ea86d9103c029d4e076f26392d9f1b95a5d03348ae4574cbd8a77f2e"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/artillery-mobile390.png",
+      "bytes": 38728,
+      "sha256": "cddbbd491ec6590bf0f5b35aa447a724a9cfe2d0208f4bedb591ef120c929351"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/artillery-original.png",
+      "bytes": 279382,
+      "sha256": "b8a714bfbddc2a228dcd3d5578bde75289a5acabcdfacd17acb2344bcc068556"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/artillery-painted.png",
+      "bytes": 279382,
+      "sha256": "b8a714bfbddc2a228dcd3d5578bde75289a5acabcdfacd17acb2344bcc068556"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/build-manifest.json",
+      "bytes": 2720,
+      "sha256": "9029c6e75b7c4c99b401521979e58e54cab24b7c8b2013c30eecb07c0e8d7757"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/index.html",
+      "bytes": 25806158,
+      "sha256": "efdfb5a9ccf2f66e26506f7f4a1132e98451aea01b0daff491f91088108b4ac4"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/mobility-cel.png",
+      "bytes": 336960,
+      "sha256": "a6e21214e929479d56f014888ea82e69b5583ff16c991b42db2ee53fa705343e"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/mobility-mobile390.png",
+      "bytes": 45376,
+      "sha256": "80a0345c247d1e0c50c8f96476363a246a9c9864f82374cce502f390b992de14"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/mobility-original.png",
+      "bytes": 336317,
+      "sha256": "886692fa4cebf608e555fac17173fd473409f8c51d43db6a306f127ad44b1b01"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/mobility-painted.png",
+      "bytes": 336317,
+      "sha256": "886692fa4cebf608e555fac17173fd473409f8c51d43db6a306f127ad44b1b01"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/overview.png",
+      "bytes": 652038,
+      "sha256": "075aa60e8fca5da5873258d2233f1e2ea8d40c829713ecbd20a8639d060f7cab"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/.gitattributes",
+      "bytes": 44,
+      "sha256": "f02781b96a28e940178d14b31964e5f05f3b46406910e0c9c25d620cc22efd1c"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/build-manifest.json",
+      "bytes": 2720,
+      "sha256": "a0805efde9d99b384c71a648e0e5a86e2e30ba23b0fd5df9199a158ab100b8b8"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/index.html",
+      "bytes": 25746790,
+      "sha256": "842574cf46facfec182f637539d29df4d65cdfbf07da4a8e69ec25593a0537f5"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/mobility-cel.png",
+      "bytes": 331400,
+      "sha256": "f6390b287651cb08e12ac973baa160559d54c1615833084da41b4838f71200ed"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/mobility-mobile390.png",
+      "bytes": 43561,
+      "sha256": "da3520ce6ec2192082e901d2d9d162d687edfabda8c15776d26b494e30984536"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/mobility-original.png",
+      "bytes": 330719,
+      "sha256": "de4eeef6af097bb6bcf4674fb26529f5367a5339837a5ac8d7714505d825a999"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/mobility-painted.png",
+      "bytes": 330719,
+      "sha256": "de4eeef6af097bb6bcf4674fb26529f5367a5339837a5ac8d7714505d825a999"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/models.before.js",
+      "bytes": 13965,
+      "sha256": "9f9f533f07a8a9b76b3b0e5eede25361ad80c48483ef7495afb6a64be380ab94"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/overview.png",
+      "bytes": 637937,
+      "sha256": "1a46ce317cf88b7e3abf17702d5e10ea06ab3a3228c24aad1130189cbd32ed99"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/source-verification.json",
+      "bytes": 1255,
+      "sha256": "b4cf00d62d5f63775407c0e5e92b3671acc1aacfabcf8f7378c0bc8738cfacfe"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/star4-mobility.glb",
+      "bytes": 2761576,
+      "sha256": "69c488f5f2da9d1da480cb13c2f9ccaad928edc565c16791d23ed4406c1c7813"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/qa-initial/verification.json",
+      "bytes": 9047,
+      "sha256": "56df7eb2055170dc320f76341e6b5a8c7effbbd75c9f662fdf2f7a00d2089733"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/README.txt",
+      "bytes": 4594,
+      "sha256": "1a6c4b5540d6e63e34d5c32e0cd5d7d500154a685ffbc2cce2ab47d3788439b4"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/salvage-cel.png",
+      "bytes": 209848,
+      "sha256": "f4d7e7443a19f829f09dd6af9f8fdac1ddfae434b04b5dcb9c563dda5695e35a"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/salvage-mobile390.png",
+      "bytes": 29910,
+      "sha256": "c0693460d19c7655d408ecb2469f62d541ab09bf0f27027c090335a703ae10f7"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/salvage-original.png",
+      "bytes": 209077,
+      "sha256": "58f686645a3e52805433e4bd0243ee727a69591276b0566ab4341d52755a7df6"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/salvage-painted.png",
+      "bytes": 209077,
+      "sha256": "58f686645a3e52805433e4bd0243ee727a69591276b0566ab4341d52755a7df6"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/source-verification.json",
+      "bytes": 1255,
+      "sha256": "e1f4e791494f3874cd45c8af216b2ed363ae87bae610c2c2aec0deb059fc3d4c"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-artillery.glb",
+      "bytes": 2119084,
+      "sha256": "619cc056ad7eca05faf9d6f90070fa6b8d493f8d925c76cf3ba2e602cc732e16"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-mobility.glb",
+      "bytes": 2805956,
+      "sha256": "dc1cb4475ac54fa7f6d51dc53267e9d65c69450578c526600dba1cc830b86824"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-salvage.glb",
+      "bytes": 2431336,
+      "sha256": "2e9418afe34a1860cc3387acfc409319ac2aadbe0830278000db8185b24f01c6"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/verification-connection.json",
+      "bytes": 2878,
+      "sha256": "45e844c54cc4827130f8403f6493ba8f8361f5ed34b1fe44c36f3754565074e2"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/verification.json",
+      "bytes": 9047,
+      "sha256": "56df7eb2055170dc320f76341e6b5a8c7effbbd75c9f662fdf2f7a00d2089733"
+    }
+  ],
+  "readOnly": [
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/index.html",
+      "bytes": 24989478,
+      "sha256": "d4d08582aeb00517fae949b2991c5e6a9131a83f313a62b277d379303b5bb4d7"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-mobility.glb",
+      "bytes": 2788424,
+      "sha256": "af7e13de349ba7701c31dbe02fc91806fcec2a2b58de4a3163caad36eb6f6e7f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-artillery.glb",
+      "bytes": 2508648,
+      "sha256": "31baac29f2a4af37fabfa9f62aad7161d479eb1a60a65fb0d9edd125eb407018"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-salvage.glb",
+      "bytes": 2448220,
+      "sha256": "65ca689f5b41204d897ffd55e1a6c3da1f17fb54a81f3dfa14f051fe330422e3"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/delivery-manifest.json",
+      "bytes": 8497,
+      "sha256": "684db8fb00cf3173f4de77f4f79f036f3c2e1dfafdcdeba506d24ff3006fbbc9"
+    },
+    {
+      "path": "tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "path": "tools/airship-rig/part-map.json",
+      "bytes": 98796,
+      "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+    },
+    {
+      "path": "outputs/selected-airship-toon3d/airship.glb",
+      "bytes": 3645884,
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74"
+    },
+    {
+      "path": "outputs/ship-states-v1/star-rank-refits-moodboard-v1/star-rank-refits.png",
+      "bytes": 2734905,
+      "sha256": "a4779b8cea7cde1ba502fdf779b9d2b301f5c43b8954bbfca4c68c40b23b3c96"
+    }
+  ],
+  "limits": [
+    "Static4-star visual assets with authored refits; no actual star level,weapon firing,salvage,save rules implemented.",
+    "GLB includes unlit painted maps and vertex shading; outline/cel/propeller animation is viewer runtime.",
+    "Wind-foil/recoil-cradle/recovery-dock fixed poses are not supplied as animation clips.",
+    "Review part origins/source-unit scale; engine sockets/collision/LOD/production rig not established."
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "version": "audio-review-http-1",
+  "passed": true,
+  "scope": "Node local HTTP responses, MIME, audio SHA and Windows encoded traversal denial; no browser/native decoding or listening.",
+  "checks": [
+    {
+      "route": "/outputs/audio-review-v2/",
+      "status": 200,
+      "bytes": 9926
+    },
+    {
+      "route": "/outputs/audio-review-v2/catalog.json",
+      "status": 200,
+      "bytes": 119182
+    },
+    {
+      "route": "/tools/audio/review-v2/review.mjs",
+      "status": 200,
+      "bytes": 42962
+    },
+    {
+      "route": "/tools/audio/review-v2/review.css",
+      "status": 200,
+      "bytes": 13537
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/fire-machinegun.mp3",
+      "status": 200,
+      "bytes": 13835
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/machinegun-feed.mp3",
+      "status": 200,
+      "bytes": 13835
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/fire-cannon.mp3",
+      "status": 200,
+      "bytes": 20105
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/cannon-breech.mp3",
+      "status": 200,
+      "bytes": 21358
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/fire-mortar.mp3",
+      "status": 200,
+      "bytes": 13835
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/mortar-fall.mp3",
+      "status": 200,
+      "bytes": 20105
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/fire-harpoon.mp3",
+      "status": 200,
+      "bytes": 17179
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/harpoon-embed.mp3",
+      "status": 200,
+      "bytes": 12163
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/harpoon-tension-loop.mp3",
+      "status": 200,
+      "bytes": 65244
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/fire-chain.mp3",
+      "status": 200,
+      "bytes": 17179
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/chain-spin.mp3",
+      "status": 200,
+      "bytes": 23030
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/flame-ignite.mp3",
+      "status": 200,
+      "bytes": 13835
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/flame-spray-loop.mp3",
+      "status": 200,
+      "bytes": 65244
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/flame-stop.mp3",
+      "status": 200,
+      "bytes": 12163
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/hit-wood.mp3",
+      "status": 200,
+      "bytes": 12163
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/hit-cloth.mp3",
+      "status": 200,
+      "bytes": 15089
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/hit-armor.mp3",
+      "status": 200,
+      "bytes": 15089
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/hit-engine.mp3",
+      "status": 200,
+      "bytes": 18433
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/mortar-impact.mp3",
+      "status": 200,
+      "bytes": 24702
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/connector-cut.mp3",
+      "status": 200,
+      "bytes": 18433
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/module-break.mp3",
+      "status": 200,
+      "bytes": 18433
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/bundle-detach.mp3",
+      "status": 200,
+      "bytes": 23030
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/winch-loop.mp3",
+      "status": 200,
+      "bytes": 65244
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/salvage-complete.mp3",
+      "status": 200,
+      "bytes": 20105
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/cargo-drop.mp3",
+      "status": 200,
+      "bytes": 17179
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/bundle-lost.mp3",
+      "status": 200,
+      "bytes": 21358
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/engine-idle-loop.mp3",
+      "status": 200,
+      "bytes": 97009
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/engine-cruise-loop.mp3",
+      "status": 200,
+      "bytes": 97009
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/wind-calm-loop.mp3",
+      "status": 200,
+      "bytes": 97009
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/wind-fast-loop.mp3",
+      "status": 200,
+      "bytes": 97009
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/hull-creak-loop.mp3",
+      "status": 200,
+      "bytes": 97009
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/harbor-workshop-loop.mp3",
+      "status": 200,
+      "bytes": 97009
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/lift-danger-loop.mp3",
+      "status": 200,
+      "bytes": 65244
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/lift-warning.mp3",
+      "status": 200,
+      "bytes": 15089
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/incoming-warning.mp3",
+      "status": 200,
+      "bytes": 13835
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/defeat.mp3",
+      "status": 200,
+      "bytes": 29300
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/return.mp3",
+      "status": 200,
+      "bytes": 24702
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/harbor-repair.mp3",
+      "status": 200,
+      "bytes": 23030
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/harbor-equip.mp3",
+      "status": 200,
+      "bytes": 18433
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/harbor-store.mp3",
+      "status": 200,
+      "bytes": 20105
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/harbor-depart.mp3",
+      "status": 200,
+      "bytes": 21358
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/save-ok.mp3",
+      "status": 200,
+      "bytes": 12163
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/ui-fail.mp3",
+      "status": 200,
+      "bytes": 10492
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/ui-hover.mp3",
+      "status": 200,
+      "bytes": 8820
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/ui-confirm.mp3",
+      "status": 200,
+      "bytes": 10492
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/ui-back.mp3",
+      "status": 200,
+      "bytes": 10492
+    },
+    {
+      "route": "/outputs/audio-review-v2/audio/restore-ok.mp3",
+      "status": 200,
+      "bytes": 15089
+    },
+    {
+      "route": "/AGENTS.md",
+      "status": 403,
+      "expected": "outside owned review paths rejected"
+    },
+    {
+      "route": "/outputs/audio-review-v2/..%5c..%5cAGENTS.md",
+      "status": 403,
+      "expected": "outside owned review paths rejected"
+    },
+    {
+      "route": "/tools/audio/review-v2/..%5c..%5c..%5cAGENTS.md",
+      "status": 403,
+      "expected": "outside owned review paths rejected"
+    },
+    {
+      "route": "/outputs/audio-review-v2/%2e%2e%5c%2e%2e%5c.env",
+      "status": 403,
+      "expected": "outside owned review paths rejected"
+    }
+  ],
+  "externalNetworkRequests": 0,
+  "browserPerformed": false
+}

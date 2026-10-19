@@ -1,0 +1,1975 @@
+{
+  "version": "fleet-comparison-structure-3",
+  "checkedAt": "2026-10-18T09:07:42.448Z",
+  "passed": true,
+  "scope": "New 71-item comparison plus separate nine raw-design references; data/PNG/link/static policy and canonical-slot exposure source verification",
+  "checks": [
+    {
+      "name": "Source catalog defines 71 unique source IDs",
+      "passed": true
+    },
+    {
+      "name": "Comparison contains exactly all 71 source IDs",
+      "passed": true,
+      "detail": {
+        "total": 71
+      }
+    },
+    {
+      "name": "Previews contain exactly those 71 IDs",
+      "passed": true,
+      "detail": {
+        "total": 71
+      }
+    },
+    {
+      "name": "Exactly nine original design alternatives are retained",
+      "passed": true,
+      "detail": [
+        "design-a1",
+        "design-a2",
+        "design-a3",
+        "design-b1",
+        "design-b2",
+        "design-b3",
+        "design-c1",
+        "design-c2",
+        "design-c3"
+      ]
+    },
+    {
+      "name": "V2 source IDs are exactly the other 62 entries",
+      "passed": true
+    },
+    {
+      "name": "Inventory totals explicitly distinguish 62 current + 9 alternatives",
+      "passed": true,
+      "detail": {
+        "total": 71,
+        "current": 62,
+        "alternatives": 9,
+        "previews": 71,
+        "originalHighDensity": 9,
+        "bySide": {
+          "ally": 12,
+          "enemy": 19,
+          "neutral": 29,
+          "reference": 11
+        }
+      }
+    },
+    {
+      "name": "Version/source labels are present",
+      "passed": true
+    },
+    {
+      "name": "Frozen v2 source-manifest retains the agreed exact SHA256",
+      "passed": true,
+      "detail": {
+        "expected": "916c3e9790818490ee6d4457b7e41d8fe23cc49130996f64512a3c2a2657f68e",
+        "observed": "916c3e9790818490ee6d4457b7e41d8fe23cc49130996f64512a3c2a2657f68e"
+      }
+    },
+    {
+      "name": "Inventory records that same frozen manifest SHA256",
+      "passed": true
+    },
+    {
+      "name": "71 entries are explicitly distinguished from unique canonical hulls",
+      "passed": true
+    },
+    {
+      "name": "Main-list design alternatives are labelled v1 rig interpretations",
+      "passed": true
+    },
+    {
+      "name": "Prototype encounter assignments are distinguished from campaign bosses",
+      "passed": true
+    },
+    {
+      "name": "Gallery scope leaves combat/collision/socket implementation pending",
+      "passed": true
+    },
+    {
+      "name": "Raw source manifest defines the same original nine A1-C3 designs",
+      "passed": true
+    },
+    {
+      "name": "Separate raw archive contains exactly those nine originals",
+      "passed": true
+    },
+    {
+      "name": "Raw archive and rig interpretations are explicitly distinguished without inventing new hulls",
+      "passed": true
+    },
+    {
+      "name": "Original gallery link points to the preserved source gallery",
+      "passed": true
+    },
+    {
+      "name": "Original high-density gallery exists",
+      "passed": true
+    },
+    {
+      "name": "Affiliation summary matches every contextual row",
+      "passed": true,
+      "detail": {
+        "ally": 12,
+        "enemy": 19,
+        "neutral": 29,
+        "reference": 11
+      }
+    },
+    {
+      "name": "Exactly the six preserved encounter stages appear in their source order",
+      "passed": true
+    },
+    {
+      "name": "All twelve stage boss slots are explicit prototype references",
+      "passed": true
+    },
+    {
+      "name": "Canonical campaign mapping is represented separately",
+      "passed": true
+    },
+    {
+      "name": "Canonical reference rows contain the same six stage IDs in source order",
+      "passed": true
+    },
+    {
+      "name": "Canonical data retains all six midBoss and six finalBoss reference slots",
+      "passed": true
+    },
+    {
+      "name": "Inventory contains concrete local source reference paths",
+      "passed": true
+    },
+    {
+      "name": "Rendered HTML embeds exactly the checked inventory",
+      "passed": true
+    },
+    {
+      "name": "Comparison uses the two named image panes",
+      "passed": true
+    },
+    {
+      "name": "Image helper creates lazy local img elements",
+      "passed": true
+    },
+    {
+      "name": "No eager iframe or WebGL renderer is embedded in the comparison shell",
+      "passed": true
+    },
+    {
+      "name": "Only one dynamic iframe creation site is present",
+      "passed": true
+    },
+    {
+      "name": "Opening 3D clears the previous host before creating its sole iframe",
+      "passed": true
+    },
+    {
+      "name": "Closing 3D removes its iframe",
+      "passed": true
+    },
+    {
+      "name": "Canonical and prototype sections both consume their separate data",
+      "passed": true
+    },
+    {
+      "name": "Canonical source loops over both primary slots rather than flattening only assigned bosses",
+      "passed": true,
+      "detail": {
+        "everyStage": true,
+        "bothPrimarySlots": true,
+        "mapsSourceSlot": true,
+        "retainsPrimaryAndComponents": true,
+        "stageMarker": true,
+        "slotMarker": true,
+        "statusMarker": true,
+        "nullStatusVisible": true,
+        "primaryLabelsVisible": true,
+        "appendsEveryMappedRow": true
+      }
+    },
+    {
+      "name": "Canonical source exposes stage/slot/status markers for each rendered row",
+      "passed": true
+    },
+    {
+      "name": "Canonical source visibly labels unspecified mid/final slots",
+      "passed": true
+    },
+    {
+      "name": "Raw original references have their own gallery section",
+      "passed": true
+    },
+    {
+      "name": "Preview loading does not eagerly invoke the 3D opener",
+      "passed": true
+    },
+    {
+      "name": "Comparison shell has no external resource script/style URL",
+      "passed": true
+    }
+  ],
+  "previews": [
+    {
+      "id": "player-homeward",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 556270,
+        "width": 1030,
+        "height": 627,
+        "chunks": 139,
+        "sha256": "2147d608f594ad68be68c3560a1971c67b2f4a592b2fbf3cb1b49d9c1c4f48c1",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "player-cloud-scout",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 518210,
+        "width": 1030,
+        "height": 627,
+        "chunks": 130,
+        "sha256": "e8b988227cd9f76f2873b2e7fcef51fc725a13896d452e0e6beb637254a64450",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "player-mixed-raider",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 559594,
+        "width": 1030,
+        "height": 627,
+        "chunks": 140,
+        "sha256": "d21eb216299b4e2427e288857d5a0d2ce234f6e335b66cd446aac7f0cb9c6a4b",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "player-broadside",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 577658,
+        "width": 1030,
+        "height": 627,
+        "chunks": 144,
+        "sha256": "2dd4c1b096643cdd453a10c50f9d86e4651cbca2b71fd86988d7131011c0dd48",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "player-rescue-workshop",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 559608,
+        "width": 1030,
+        "height": 627,
+        "chunks": 140,
+        "sha256": "3e67ee41a30b2c17c5427f26eb78e79662b81255c48573a6dea6f97449e753ed",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "player-control",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 558686,
+        "width": 1030,
+        "height": 627,
+        "chunks": 139,
+        "sha256": "6e4033a95ff9dd5aa89ee2d0ca98bc3e1f6eb5663a221186a71618416a545c53",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "player-close-flame",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 550510,
+        "width": 1030,
+        "height": 627,
+        "chunks": 137,
+        "sha256": "312fb5b7a1873051e70690d4d8f4718824e1b52d0ece4664fec6ff19ae8434ac",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "enemy-pirate-scout",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 521408,
+        "width": 1030,
+        "height": 627,
+        "chunks": 130,
+        "sha256": "3bcd327d6dfafbb99395f88fae3109f4e71e0e196c0d0c6df66018a196a68598",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "enemy-cult-blockade",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 470355,
+        "width": 1030,
+        "height": 627,
+        "chunks": 118,
+        "sha256": "b00d99b593bb7de23326f87a5b8ad3999fbfdab5208ed0c3e57ccd4ad2af85aa",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "enemy-union-salvage",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 400282,
+        "width": 1030,
+        "height": 627,
+        "chunks": 101,
+        "sha256": "c046803702b7984b696299d1d87716aa9293c4b9585ba9e35b7203467c63e99d",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "enemy-union-repair",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 553114,
+        "width": 1030,
+        "height": 627,
+        "chunks": 138,
+        "sha256": "e9a28cb36a6829ce79bab4a68d346112efde8169bc4ae2eaf099c545d6e831a7",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "enemy-ghost-chaser",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 440626,
+        "width": 1030,
+        "height": 627,
+        "chunks": 111,
+        "sha256": "2618bdeff1bf6cdd64864c3c232ae002260cd90db6a03be30d31f374cb69f836",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "enemy-disguised-wreck",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 406135,
+        "width": 1030,
+        "height": 627,
+        "chunks": 102,
+        "sha256": "230ecfd1f7f8ac6e57a475a35f92e4a0135e55bcd4e7b8a1a1ab60f66407d156",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "enemy-tax-cutter",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 464352,
+        "width": 1030,
+        "height": 627,
+        "chunks": 117,
+        "sha256": "bf9302c8309a636663ad3e41544013175c3f7025ec208ef66c5eb05f235aeeb3",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "faction-cult-modular",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 456403,
+        "width": 1030,
+        "height": 627,
+        "chunks": 115,
+        "sha256": "95038e458d97a380909b86d7ba20299bfe15a4f3e76b9fec23c84d463f4c8943",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "faction-ghost-modular",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 431270,
+        "width": 1030,
+        "height": 627,
+        "chunks": 108,
+        "sha256": "551af3a503fe50319bb447b55c230ec9c11304870636f8bd868b0e12c25c2c64",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "faction-salvager-modular",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 565452,
+        "width": 1030,
+        "height": 627,
+        "chunks": 141,
+        "sha256": "01b68647af941234d1a1af4cd1e2b4288678ba9ef291ee30a8cf094d1dafcd13",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "rival-change",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 529544,
+        "width": 1030,
+        "height": 627,
+        "chunks": 132,
+        "sha256": "1bb6c9d428497496090331d0f0666634792b808302a6b9ce86072666d0e1dbca",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "rival-debts-end",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 426407,
+        "width": 1030,
+        "height": 627,
+        "chunks": 107,
+        "sha256": "f8dc9b80a8430f7b24e5ef777414fc83cbe2946724277c70a7912402b9c5eefc",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "rival-quiet-answer",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 453273,
+        "width": 1030,
+        "height": 627,
+        "chunks": 114,
+        "sha256": "846b6cca6a41b7a50f4e8ada7115434cf54220fb1297aa90f2caad194dba5b18",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "rival-night-shift",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 531276,
+        "width": 1030,
+        "height": 627,
+        "chunks": 133,
+        "sha256": "6d16eca718ba94518ded28042f459cf986ea4986e39464a080c8d600029e92cb",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "rival-go-first",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 423907,
+        "width": 1030,
+        "height": 627,
+        "chunks": 107,
+        "sha256": "a3fc9a03f18e39eefb8d2c54c35348c80cdcdd2830524bc8dbf0c31405c7ebf1",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "rival-unfinished",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 578742,
+        "width": 1030,
+        "height": 627,
+        "chunks": 144,
+        "sha256": "03269e062adcf115e5ead46b4062ef9c8ffa994e9c8cf430dd05d73cac36b2d8",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "boss-bell-devourer",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 473178,
+        "width": 1030,
+        "height": 627,
+        "chunks": 119,
+        "sha256": "a87a2a8ed22cfc06dc7ede976aae483ec545e0eac6556a767d0665f8bc439ea9",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "boss-shipyard-ribs",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 486167,
+        "width": 1030,
+        "height": 627,
+        "chunks": 122,
+        "sha256": "d18677c4bf99625aa0c83f0826d5142fcb1266b5aa201304bbbb6b4184bb5efa",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "boss-shipwright-command",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 462570,
+        "width": 1030,
+        "height": 627,
+        "chunks": 116,
+        "sha256": "7140758052c159dd1673ad8585aaad59abd1de659d065e595ae26b45ac6a5536",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "boss-fleet-king",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 458507,
+        "width": 1030,
+        "height": 627,
+        "chunks": 115,
+        "sha256": "80ef7cb62a306e6c37c5a4f7bbce925656bda2f77d0bae339ed400892057a2ff",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "boss-last-inhale",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 446410,
+        "width": 1030,
+        "height": 627,
+        "chunks": 112,
+        "sha256": "0db5c4bb40c9dbda6a1b461bb6fad9c0f7677bbab287b696cc26623662cd9c9f",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "copied-current-model-sha-matched-v2-thumbnail"
+    },
+    {
+      "id": "mini-funeral-guard",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 454873,
+        "width": 1030,
+        "height": 627,
+        "chunks": 114,
+        "sha256": "b10a629af2cc4670b37a1228702003a705725f7f9339af2ce110dd03f62f29e3",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "mission-union-guard",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 433328,
+        "width": 1030,
+        "height": 627,
+        "chunks": 109,
+        "sha256": "4f76f48e04e553bb37d63ab38676049f3e173614daed5bc62458bd4172614c50",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "mission-bridge-tug",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 404224,
+        "width": 1030,
+        "height": 627,
+        "chunks": 102,
+        "sha256": "c8c9fde0ad34a4ca387880a5e662414954e96539cc7923da0b824aaeebbf93e9",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "mission-guard-scout",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 517433,
+        "width": 1030,
+        "height": 627,
+        "chunks": 129,
+        "sha256": "f50dbcd38e4ab14c181dba8a9330722f162592fa60b8f421a2ca470da913a352",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "mission-cult-purifier",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 456472,
+        "width": 1030,
+        "height": 627,
+        "chunks": 115,
+        "sha256": "da4075ddd3c7cc0c4b70eb540c234b41f9d0482f3b64e1e12e8b97cfbccff244",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "mission-ghost-artillery",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 468686,
+        "width": 1030,
+        "height": 627,
+        "chunks": 118,
+        "sha256": "f6e76ca9c8df61e227d80e7501c2badf39f751f3f23863bc5571b040313476b4",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "role-enemy-artillery",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 523780,
+        "width": 1030,
+        "height": 627,
+        "chunks": 131,
+        "sha256": "60d0aa9409c7f746839ae189cbb7247ea0f105bc18ea73129b2314772cff87a7",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "role-enemy-defense",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 487223,
+        "width": 1030,
+        "height": 627,
+        "chunks": 122,
+        "sha256": "d1ba8bd7d879535209150b9b2777909b58c1aa17983df3845a437ce66bae0c48",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-mara-repair",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 539344,
+        "width": 1030,
+        "height": 627,
+        "chunks": 135,
+        "sha256": "a39ce01ca149e0b5adb271691b443dfc18907c717bda703f612e22719168b150",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-or-ship",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 521624,
+        "width": 1030,
+        "height": 627,
+        "chunks": 130,
+        "sha256": "a0704542b79210dea0b6db177d9f5d98f997f34427798fd57c5605f94591cb63",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-compressor-wreck",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 510445,
+        "width": 1030,
+        "height": 627,
+        "chunks": 128,
+        "sha256": "17933b71f48f000c4a61d0e5c78ca61d1bb6cde1db3b2de8dace8d7e1fc2f121",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-cult-storage",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 472837,
+        "width": 1030,
+        "height": 627,
+        "chunks": 119,
+        "sha256": "475f5ee05c2943e5fdc18d968b3b963c0658f94b028eae3fe716f778f12a3ce7",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-union-cooling",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 501615,
+        "width": 1030,
+        "height": 627,
+        "chunks": 126,
+        "sha256": "37905c7ec3fc7582dd9ccd5d03fd1c2af90a32ecbc4b58383105bcaca8cc014e",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-mothers-escort",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 490628,
+        "width": 1030,
+        "height": 627,
+        "chunks": 123,
+        "sha256": "efba23c5be74d99e21dbf4a200b5e71509c17ca7105cc382b2dd1d555899337d",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-turret-owner",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 462824,
+        "width": 1030,
+        "height": 627,
+        "chunks": 116,
+        "sha256": "52a2cb250f0579aa57fb9e2a61c1924b5ca1131c341ea3328517130cf5b125c9",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-cult-transport",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 510920,
+        "width": 1030,
+        "height": 627,
+        "chunks": 128,
+        "sha256": "82b260d2e1a060171058916f0550f27e4687dc6930c176e11bbed1561593298d",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-union-contact",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 509573,
+        "width": 1030,
+        "height": 627,
+        "chunks": 128,
+        "sha256": "59c7f063569003b167ae6dfec4f6f872cd223bfaa0b781847996b055c4a92fe9",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-union-carrier",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 530088,
+        "width": 1030,
+        "height": 627,
+        "chunks": 133,
+        "sha256": "b3e61d2a7e11312f40c47c6885e5869aa00fc3f5056ffafdb2b766e81667ae6d",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-morning",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 532816,
+        "width": 1030,
+        "height": 627,
+        "chunks": 133,
+        "sha256": "27dcbde1d660a5e7cdad6465f5612614cb221071f7478c1534531447c7d796e0",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "story-royal-funeral",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 523062,
+        "width": 1030,
+        "height": 627,
+        "chunks": 131,
+        "sha256": "90783b1eebe474e9fb411960925bfd41a559179fbbd7a42fccd0ec8f013e4820",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-maintenance",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 546183,
+        "width": 1030,
+        "height": 627,
+        "chunks": 136,
+        "sha256": "b9a2f20553c9f78c2e6aab5965b9e663ac847d3cc623bc55124cc8ee6c8ae7ed",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-transport",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 517930,
+        "width": 1030,
+        "height": 627,
+        "chunks": 130,
+        "sha256": "83782d6a53ace569cbf70174de7f68d579eee120dccfa8605594c76eb67e1632",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-merchant",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 530998,
+        "width": 1030,
+        "height": 627,
+        "chunks": 133,
+        "sha256": "5d344d5f4c02f41aff30b93df8a7d79c9b05f272dec10c84c847a8aa933014be",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-relief",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 522521,
+        "width": 1030,
+        "height": 627,
+        "chunks": 131,
+        "sha256": "e68d69c2e642fb23d8915bac454eca340fc8083ee29a6b14a0832650158aa48e",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-research",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 513303,
+        "width": 1030,
+        "height": 627,
+        "chunks": 128,
+        "sha256": "48850f60134009e1283fb7ac6654f5292de5b42bd943c629269287009966ab4c",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-salvager",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 552933,
+        "width": 1030,
+        "height": 627,
+        "chunks": 138,
+        "sha256": "48d94d395951b27a830d803e72f1c1458ba3dec92a25cd74e2f9707918c037a4",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-mail",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 559211,
+        "width": 1030,
+        "height": 627,
+        "chunks": 140,
+        "sha256": "94349421f40ebc2f2bfded925e4d82fa287ad2def81d1356b20385ffffb554e0",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-ghost-signal",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 427939,
+        "width": 1030,
+        "height": 627,
+        "chunks": 108,
+        "sha256": "35537e9cbac0d24479a17fad6258a5ae561a23774ef8acfd824b927fa227a2d5",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "civil-evacuation",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 534078,
+        "width": 1030,
+        "height": 627,
+        "chunks": 133,
+        "sha256": "e3c83c0406495b5f9c638d83a28576fff247d25d171c72fe6b1fbdd483d123a2",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "record-descent-ship",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 452704,
+        "width": 1030,
+        "height": 627,
+        "chunks": 114,
+        "sha256": "6b51053a5947be1bdb4f4069c7755062a80bc0a328308e841706db166936174e",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "unfinished-stitch-hull",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 435685,
+        "width": 1030,
+        "height": 627,
+        "chunks": 110,
+        "sha256": "44e1d1438afa28fbf9347dcbce6b2d310c5f14b4fa736ae4dd901f2963efad9a",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "support-independent-rescue",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 459497,
+        "width": 1030,
+        "height": 627,
+        "chunks": 115,
+        "sha256": "d1e87da029cac2c30fb77497642f06008b54cc248361a80530debd78d19eaff8",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "ending-mobile-harbor",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 511362,
+        "width": 1030,
+        "height": 627,
+        "chunks": 128,
+        "sha256": "7b854c26726540eb115c41c7a5648473f714720c35c8d11cece7bfdc0312cc2b",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "ending-light-descent",
+      "sourceVersion": "v2",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 529195,
+        "width": 1030,
+        "height": 627,
+        "chunks": 132,
+        "sha256": "7244d6f7d750c26958c3c639d7581c50341d525721ee7bf370454192ceb1847b",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "actual-paused-v2-GLB-render"
+    },
+    {
+      "id": "design-a1",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 501291,
+        "width": 1030,
+        "height": 627,
+        "chunks": 126,
+        "sha256": "129fefec535eaf0f0f91d49f90dcaca734c1823de96da86159403a037c3d7f6d",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    },
+    {
+      "id": "design-a2",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 510503,
+        "width": 1030,
+        "height": 627,
+        "chunks": 128,
+        "sha256": "6beb533e84ea40502d5309007cdd7d6dd35cf6ecfa3641cd0ee04277bd70c3ec",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    },
+    {
+      "id": "design-a3",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 489485,
+        "width": 1030,
+        "height": 627,
+        "chunks": 123,
+        "sha256": "4242983de9d63fcb2fb04b2826d1374a2fdd683c4b2743df535e05d2c3cf2264",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    },
+    {
+      "id": "design-b1",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 499896,
+        "width": 1030,
+        "height": 627,
+        "chunks": 125,
+        "sha256": "8a693ea15a375d270b8c556922f0cbaf818bcaaf501b3f7b7420913c9b2f7b4b",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    },
+    {
+      "id": "design-b2",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 481247,
+        "width": 1030,
+        "height": 627,
+        "chunks": 121,
+        "sha256": "f0fb2262ef3cb5a7be9f90b79a2b04a23ea16f93c3b400e58e928be8dde18c91",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    },
+    {
+      "id": "design-b3",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 497548,
+        "width": 1030,
+        "height": 627,
+        "chunks": 125,
+        "sha256": "f22f00a0f62f35a6c5207a235ec6ed553850ecf8a6f24af1ba8bf15bc8607330",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    },
+    {
+      "id": "design-c1",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 507683,
+        "width": 1030,
+        "height": 627,
+        "chunks": 127,
+        "sha256": "eb9a78be951d3bba0b37b358a51316362245f91171601b33b5d11ae586861e52",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    },
+    {
+      "id": "design-c2",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 524099,
+        "width": 1030,
+        "height": 627,
+        "chunks": 131,
+        "sha256": "9696609d20aca66e8dac0e7d0428f3debf33e1ccfd0fa33b5582e055f6015a69",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    },
+    {
+      "id": "design-c3",
+      "sourceVersion": "v1",
+      "passed": true,
+      "errors": [],
+      "png": {
+        "bytes": 508766,
+        "width": 1030,
+        "height": 627,
+        "chunks": 127,
+        "sha256": "3aa52957a7dd7862f5d4d934db4f177d480ab4314c6703a5df40547427869c2b",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      },
+      "method": "preserved-v1-design-alternative-thumbnail",
+      "methodNote": "Preserved fleet-v1 rig interpretation thumbnail; not the original high-density A1-C3 generated-model render"
+    }
+  ],
+  "archiveOriginals": [
+    {
+      "id": "A1",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 84064,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "ef45b554004db3b9b023ac4aad0bf5aeb138675e67b3b4d4a78b7cd81a11dac2",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    },
+    {
+      "id": "A2",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 111712,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "5573957543e8d37876bd612611432509ff55f066b023686e797d28c5c2c716d1",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    },
+    {
+      "id": "A3",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 113185,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "ddaaaf360591ac88372f6d0dcdf06a9d7c27b6e70c343d769ef8d1ed44cc2332",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    },
+    {
+      "id": "B1",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 85241,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "a7ddc3fc67c73d88a0e6a930fac1b609a5ab7dbc030d4e8bc92191bbeb05a7fd",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    },
+    {
+      "id": "B2",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 106146,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "b1a758a98d90cc5e8b20295b2c2af096162529a6ff4654f250b8dfb8a7c71bfe",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    },
+    {
+      "id": "B3",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 92866,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "9f1a6efb472d84974c321298edb96b4e14a31e8671de3fc83e82dcb423a6231e",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    },
+    {
+      "id": "C1",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 91906,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "bc848da3f9fa21014009cd0637f7ec27e2feea15d2011c60efed9cc0082ffb79",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    },
+    {
+      "id": "C2",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 109688,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "aca1487b5224303b522bbdf42fa4787553db494bd3bfbdd82fce7edeadf9d9e5",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    },
+    {
+      "id": "C3",
+      "passed": true,
+      "errors": [],
+      "originalModelRehashed": false,
+      "png": {
+        "bytes": 102900,
+        "width": 512,
+        "height": 512,
+        "chunks": 4,
+        "sha256": "7648dcb57f2009ba56ecb5b806e6416fb8f8763c5932052c044ea2978f0ff9a0",
+        "scope": "Header/chunk extent/hash only; not decoded pixels or visual approval"
+      }
+    }
+  ],
+  "stageBossSlots": [
+    {
+      "stageId": "stage-01-harbor",
+      "slot": "midBoss",
+      "assetId": "mini-funeral-guard",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-01-harbor",
+      "slot": "finalBoss",
+      "assetId": "boss-bell-devourer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-02-canyon",
+      "slot": "midBoss",
+      "assetId": "enemy-tax-cutter",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-02-canyon",
+      "slot": "finalBoss",
+      "assetId": "enemy-union-salvage",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-03-storm",
+      "slot": "midBoss",
+      "assetId": "mission-bridge-tug",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-03-storm",
+      "slot": "finalBoss",
+      "assetId": "enemy-cult-blockade",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-04-industry",
+      "slot": "midBoss",
+      "assetId": "enemy-union-repair",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-04-industry",
+      "slot": "finalBoss",
+      "assetId": "boss-shipwright-command",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-05-fog",
+      "slot": "midBoss",
+      "assetId": "enemy-ghost-chaser",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-05-fog",
+      "slot": "finalBoss",
+      "assetId": "boss-fleet-king",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-06-palace",
+      "slot": "midBoss",
+      "assetId": "mini-funeral-guard",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-06-palace",
+      "slot": "finalBoss",
+      "assetId": "boss-last-inhale",
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "canonicalSlots": [
+    {
+      "stageId": "stage-01-harbor",
+      "slot": "midBoss",
+      "assetId": null,
+      "expectedUiStatus": "unspecified",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-01-harbor",
+      "slot": "finalBoss",
+      "assetId": "boss-bell-devourer",
+      "expectedUiStatus": "assigned",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-02-canyon",
+      "slot": "midBoss",
+      "assetId": null,
+      "expectedUiStatus": "unspecified",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-02-canyon",
+      "slot": "finalBoss",
+      "assetId": null,
+      "expectedUiStatus": "unspecified",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-03-storm",
+      "slot": "midBoss",
+      "assetId": null,
+      "expectedUiStatus": "unspecified",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-03-storm",
+      "slot": "finalBoss",
+      "assetId": null,
+      "expectedUiStatus": "unspecified",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-04-industry",
+      "slot": "midBoss",
+      "assetId": null,
+      "expectedUiStatus": "unspecified",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-04-industry",
+      "slot": "finalBoss",
+      "assetId": "boss-shipyard-ribs",
+      "expectedUiStatus": "assigned",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-05-fog",
+      "slot": "midBoss",
+      "assetId": null,
+      "expectedUiStatus": "unspecified",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-05-fog",
+      "slot": "finalBoss",
+      "assetId": "boss-fleet-king",
+      "expectedUiStatus": "assigned",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-06-palace",
+      "slot": "midBoss",
+      "assetId": null,
+      "expectedUiStatus": "unspecified",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "stageId": "stage-06-palace",
+      "slot": "finalBoss",
+      "assetId": "boss-last-inhale",
+      "expectedUiStatus": "assigned",
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "canonicalPending": [
+    {
+      "location": "canonStages[0].midBoss",
+      "assetId": null,
+      "status": "unspecified",
+      "note": "데모40의 소형 장례 경비선은 데모 미니보스이며 본편 종항의 고정 중간보스로 별도 확정한 것은 아니다."
+    },
+    {
+      "location": "canonStages[1].midBoss",
+      "assetId": null,
+      "status": "unspecified",
+      "note": "L2는 민간선 호위·정찰선·인양선 전장이다. 독립 정사 중간보스 assetId가 배정되지 않았다."
+    },
+    {
+      "location": "canonStages[1].finalBoss",
+      "assetId": null,
+      "status": "unspecified",
+      "note": "협곡의 독립 정사 최종보스는 명시되지 않았다. 현행 두 지휘정은 교전 시제품 편성이다."
+    },
+    {
+      "location": "canonStages[2].midBoss",
+      "assetId": null,
+      "status": "unspecified",
+      "note": "L3는 폭풍 속 인양·욕심·철수 선택 전장이다. 독립 정사 중간보스 assetId가 배정되지 않았다."
+    },
+    {
+      "location": "canonStages[2].finalBoss",
+      "assetId": null,
+      "status": "unspecified",
+      "note": "폭풍 지역의 독립 정사 최종보스는 명시되지 않았다. 견인대장·봉쇄 지휘선은 현행 교전 시험용 역할이다."
+    },
+    {
+      "location": "canonStages[3].midBoss",
+      "assetId": null,
+      "status": "unspecified",
+      "note": "중앙 수리선·해체 크레인·펌프는 장치/지원 역할이다. 도크 수리 지휘정을 독립 정사 중간보스로 확정하지 않았다."
+    },
+    {
+      "location": "canonStages[4].midBoss",
+      "assetId": null,
+      "status": "unspecified",
+      "note": "망령 추격선·포격선 조우는 있지만 안개 돌격대장은 일반 추격선의 시제품 지휘 역할이다."
+    },
+    {
+      "location": "canonStages[5].midBoss",
+      "assetId": null,
+      "status": "unspecified",
+      "note": "교단 잔존선·궁전 자동 포대·장치는 있으나 황궁 외곽 종 관문함을 고정 정사 중간보스로 배정하지 않았다."
+    }
+  ],
+  "references": [
+    {
+      "path": "outputs/07-missions.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/08-world-map.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/09-enemies.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/10-first-boss.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/102-advanced-encounter.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/103-bridge-mission-script.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/107-story-evidence-order-audit.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/108-campaign-first-hour.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/11-loot-memories-curses.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/112-system-rules-reference.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/114-production-decision-register.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/14-living-shipyard-boss.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/15-endings-and-final-mission.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/17-prologue-mission-script.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/20-faction-quest-chains.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/22-regional-side-events.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/23-act1-main-quests.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/24-art-production-guide.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/25-enemy-ai-encounters.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/27-act2-main-quests.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/28-weather-and-hazards.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/29-defense-support-upgrades.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/29-support-upgrades.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/2d-volume-airships/pipeline-guide.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/31-act3-main-quests.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/32-rival-captains.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/33-level-layouts.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/35-act4-palace-truth.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/36-wreck-exploration.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/38-customization-identity.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/39-story-canon-timeline.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/40-demo-flow-playtest.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/43-final-boss-encounter.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/47-build-budget-examples.json",
+      "passed": true
+    },
+    {
+      "path": "outputs/47-example-ship-builds.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/48-mission-composition-rules.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/50-starter-ship-reference.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/56-memory-engine-quest.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/61-or-personal-quest.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/62-eda-personal-quest.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/63-support-drones.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/65-enemy-modular-anatomy.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/67-playable-slice-priorities.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/68-bell-boss-arena.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/76-mission-briefing.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/78-boss-aftermath.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/84-rival-character-silhouettes.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/87-support-field-use.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/88-act1-cinematic-shots.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/89-mission-interaction-props.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/91-boss-attack-readability.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/93-mission-variety.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/96-final-departure-preparation.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/97-visual-production-scope.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/98-ending-aftermath.txt",
+      "passed": true
+    },
+    {
+      "path": "outputs/airship-models-9/designs.json",
+      "passed": true
+    },
+    {
+      "path": "outputs/airship-models-9/model-manifest.json",
+      "passed": true
+    },
+    {
+      "path": "tools/encounters/catalog.json",
+      "passed": true
+    },
+    {
+      "path": "tools/fleet/catalog.json",
+      "passed": true
+    },
+    {
+      "path": "tools/stage-maps/maps.mjs",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "71 counts catalog entries including configurations, variants, roles, facilities, records and nine preserved design alternatives; it does not count unique canonical hulls.",
+    "Model SHAs are source catalog declarations plus file existence/length checks. Original model/PNG corpus files were not rehashed; the frozen manifest alone is rehashed.",
+    "The nine fleet-v1 design-* entries are rigged interpretations. Separate high-density A1-C3 raw originals are references to those same designs, not nine additional canonical hulls. Their GLBs were not read or rehashed.",
+    "Two-image/one-iframe policy is static source evidence. Live rendering, interactions, GLB loading, iframe teardown, mobile layout, decoded pixels and visual preference require separate browser review.",
+    "Canonical stage/slot/status markers and the two-primary-slot render loop are checked in source. Expected slot counts come from data and do not claim the browser actually displayed those rows; DOM assertions remain separate."
+  ],
+  "modelFilesRehashed": 0,
+  "originalPreviewFilesRehashed": 0,
+  "frozenV2FilesHashed": [
+    "outputs/fleet-v2/source-manifest.json"
+  ],
+  "browserVerified": false,
+  "decodedPngPixelsVerified": false,
+  "visualPreferencePassed": null,
+  "canonOrGameplayCompleted": false,
+  "canonicalUiContract": {
+    "evidence": "Static HTML JavaScript source only; no DOM/browser observation",
+    "browserConfirmed": false,
+    "expectedPrimarySlotsFromData": 12,
+    "expectedUnspecifiedPrimarySlotsFromData": 8,
+    "markerNames": [
+      "data-canon-stage-id",
+      "data-canon-slot",
+      "data-canon-status"
+    ],
+    "allowedSlotMarkers": [
+      "midBoss",
+      "finalBoss",
+      "component"
+    ],
+    "allowedStatusMarkers": [
+      "unspecified",
+      "assigned"
+    ],
+    "sourceChecks": {
+      "everyStage": true,
+      "bothPrimarySlots": true,
+      "mapsSourceSlot": true,
+      "retainsPrimaryAndComponents": true,
+      "stageMarker": true,
+      "slotMarker": true,
+      "statusMarker": true,
+      "nullStatusVisible": true,
+      "primaryLabelsVisible": true,
+      "appendsEveryMappedRow": true
+    }
+  },
+  "summary": {
+    "totalEntries": 71,
+    "currentV2": 62,
+    "archivedAlternativesV1": 9,
+    "actualPngsInspected": 71,
+    "pngsPassed": 71,
+    "captureMethods": {
+      "copied-current-model-sha-matched-v2-thumbnail": 13,
+      "actual-paused-v2-GLB-render": 49,
+      "preserved-v1-design-alternative-thumbnail": 9
+    },
+    "separateRawOriginalReferences": 9,
+    "rawOriginalPngsPassed": 9,
+    "totalNewComparisonPngsInspected": 80,
+    "stages": 6,
+    "prototypeBossSlots": 12,
+    "canonicalGroups": 6,
+    "canonicalPrimarySlotsInData": 12,
+    "explicitCanonicalPendingSlots": 8,
+    "canonicalSourceExposureContractPassed": true,
+    "canonicalBrowserExposureVerified": false,
+    "localReferences": 60,
+    "frozenV2ManifestSha256": "916c3e9790818490ee6d4457b7e41d8fe23cc49130996f64512a3c2a2657f68e",
+    "bySide": {
+      "ally": 12,
+      "enemy": 19,
+      "neutral": 29,
+      "reference": 11
+    }
+  }
+}

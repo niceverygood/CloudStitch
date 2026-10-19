@@ -1,0 +1,17 @@
+{
+  "version": "encounters-presentation-qa-v1",
+  "status": "ready",
+  "checkedAt": "2026-10-18T06:40:57.976Z",
+  "passed": true,
+  "syntaxCheck": "node --check tools/encounters/scene.js",
+  "getStatsFixture": {
+    "renderedHeading": -1.7,
+    "chargeAngle": 1.7,
+    "chargeTime": 0.5,
+    "angle": 0.2,
+    "returnedObjectDoesNotMutateRecord": true
+  },
+  "actualBrowserRunHere": false,
+  "actualChargeFixtureRunHere": false,
+  "scope": "Read-only getStats fields from last sync frame; actual DOM and WebGL fixture regression delegated to root encounters-v2"
+}

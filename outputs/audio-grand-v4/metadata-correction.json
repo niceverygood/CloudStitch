@@ -1,0 +1,196 @@
+{
+  "purpose": "Final DSP loop fragment metadata now declares actual continuous source seconds, rather than the nominal plan value. Audio samples unchanged.",
+  "beforeCatalogSha256": "d95fdbd711b4714ba08de871b5014747ecaae69529d9ba969485cff444e535c0",
+  "afterCatalogSha256": "053af0d6493f4ef4a3d7519ceb706341afa7220d0996879cf2d52e4af33d8e30",
+  "changedFields": 30,
+  "unchangedWavFiles": 49,
+  "firstReport": {
+    "passed": 788,
+    "total": 799,
+    "failures": 11,
+    "retained": "outputs/audio-grand-v4/file-verification-before-metadata-fix.json"
+  },
+  "changes": [
+    {
+      "id": "harpoon-tension-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 3.04
+    },
+    {
+      "id": "harpoon-tension-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 2.68
+    },
+    {
+      "id": "harpoon-tension-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 2.76
+    },
+    {
+      "id": "flame-spray-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 3.04
+    },
+    {
+      "id": "flame-spray-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 2.68
+    },
+    {
+      "id": "flame-spray-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 2.76
+    },
+    {
+      "id": "winch-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 3.04
+    },
+    {
+      "id": "winch-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 2.68
+    },
+    {
+      "id": "winch-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 2.76
+    },
+    {
+      "id": "engine-idle-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.5600000000000005
+    },
+    {
+      "id": "engine-idle-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.0200000000000005
+    },
+    {
+      "id": "engine-idle-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.14
+    },
+    {
+      "id": "engine-cruise-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.5600000000000005
+    },
+    {
+      "id": "engine-cruise-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.0200000000000005
+    },
+    {
+      "id": "engine-cruise-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.14
+    },
+    {
+      "id": "wind-calm-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.5600000000000005
+    },
+    {
+      "id": "wind-calm-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.0200000000000005
+    },
+    {
+      "id": "wind-calm-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.14
+    },
+    {
+      "id": "wind-fast-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.5600000000000005
+    },
+    {
+      "id": "wind-fast-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.0200000000000005
+    },
+    {
+      "id": "wind-fast-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.14
+    },
+    {
+      "id": "hull-creak-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.5600000000000005
+    },
+    {
+      "id": "hull-creak-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.0200000000000005
+    },
+    {
+      "id": "hull-creak-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.14
+    },
+    {
+      "id": "harbor-workshop-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.5600000000000005
+    },
+    {
+      "id": "harbor-workshop-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.0200000000000005
+    },
+    {
+      "id": "harbor-workshop-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 4.14
+    },
+    {
+      "id": "lift-danger-loop",
+      "donor": "wind-calm-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 3.04
+    },
+    {
+      "id": "lift-danger-loop",
+      "donor": "hull-creak-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 2.68
+    },
+    {
+      "id": "lift-danger-loop",
+      "donor": "engine-idle-loop",
+      "previousSeconds": 1,
+      "actualConsumedSeconds": 2.76
+    }
+  ],
+  "humanApproval": false
+}

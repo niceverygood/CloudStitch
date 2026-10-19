@@ -1,0 +1,3640 @@
+{
+  "viewer": "outputs/ship-states-v1/index.html",
+  "viewerBytes": 5676356,
+  "viewerSha256": "e0bab6661caccda015181a5b97fee230c003dcfbe64d889871b1af0da3b6e309",
+  "scope": "finish",
+  "expectedCategories": {
+    "normal": 3,
+    "damage": 4,
+    "weapons": 5,
+    "armor": 5,
+    "growth": 9,
+    "explosion": 5
+  },
+  "expectedStages": 31,
+  "variants": [
+    {
+      "category": "normal",
+      "stage": 2,
+      "stats": {
+        "ready": true,
+        "category": "normal",
+        "stage": 2,
+        "mode": "handdrawn",
+        "time": 0.6,
+        "duration": 6,
+        "playing": false,
+        "autoRotate": false,
+        "outlineEnabled": true,
+        "outlineAutoClear": true,
+        "background": "cream",
+        "meshCount": 25,
+        "triangleCount": 11628,
+        "bounds": {
+          "min": [
+            -0.4754194873856816,
+            -0.2590904484051354,
+            -0.14965799434483051
+          ],
+          "max": [
+            0.4929212740173394,
+            0.2671244303170958,
+            0.13598599898815156
+          ]
+        },
+        "finite": true,
+        "sourceBytes": 3645884,
+        "total": 31
+      },
+      "geometry": {
+        "exposed": true,
+        "meshes": 25,
+        "visibleMeshes": 25,
+        "triangles": 11628,
+        "finite": true,
+        "min": [
+          -0.4754194873856816,
+          -0.2590904484051354,
+          -0.14965799434483051
+        ],
+        "max": [
+          0.4929212740173394,
+          0.2671244303170958,
+          0.13598599898815156
+        ],
+        "size": [
+          0.968340761403021,
+          0.5262148787222312,
+          0.28564399333298207
+        ]
+      },
+      "pixels": {
+        "width": 1374,
+        "height": 565,
+        "hash": "e87a25dc",
+        "nonBackgroundPixels": 308255,
+        "opaquePixels": 308255,
+        "camera": {
+          "position": [
+            2.5103998249305017,
+            1.9163354934877928,
+            -2.472137107766369
+          ],
+          "quaternion": [
+            -0.09599682455801845,
+            0.8943389512129172,
+            0.2317568357927187,
+            0.37044732295092014
+          ],
+          "target": [
+            0.037939425075753146,
+            -0.0263119635409381,
+            0.0003232920883790187
+          ],
+          "zoom": 1
+        },
+        "state": {
+          "time": 0.6,
+          "category": "normal",
+          "stage": 2,
+          "mode": "handdrawn"
+        },
+        "actualState": {
+          "nodes": 39,
+          "materialEntries": 25,
+          "matrixHash": "42419234",
+          "materialHash": "138f43da",
+          "renderOrders": [
+            0
+          ],
+          "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+        }
+      },
+      "crop": {
+        "category": "normal",
+        "stage": 2,
+        "time": 0.6,
+        "mode": "handdrawn",
+        "viewport": 1440,
+        "alphaThreshold": 8,
+        "panes": [
+          {
+            "side": "baseline",
+            "width": 687,
+            "height": 565,
+            "pixels": 152218,
+            "bounds": [
+              72,
+              30,
+              621,
+              511
+            ],
+            "margin": 30,
+            "passed": true
+          },
+          {
+            "side": "current",
+            "width": 687,
+            "height": 565,
+            "pixels": 155966,
+            "bounds": [
+              69,
+              30,
+              621,
+              536
+            ],
+            "margin": 28,
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    },
+    {
+      "category": "explosion",
+      "stage": 2,
+      "stats": {
+        "ready": true,
+        "category": "explosion",
+        "stage": 2,
+        "mode": "handdrawn",
+        "time": 1.3,
+        "duration": 4,
+        "playing": false,
+        "autoRotate": false,
+        "outlineEnabled": true,
+        "outlineAutoClear": true,
+        "background": "cream",
+        "meshCount": 225,
+        "triangleCount": 14834,
+        "bounds": {
+          "min": [
+            -0.5305863829901563,
+            -0.3989000034332276,
+            -0.4166933377583823
+          ],
+          "max": [
+            0.7366933377583822,
+            0.3401257348532225,
+            0.36669333775838225
+          ]
+        },
+        "finite": true,
+        "sourceBytes": 3645884,
+        "total": 31
+      },
+      "geometry": {
+        "exposed": true,
+        "meshes": 226,
+        "visibleMeshes": 225,
+        "triangles": 14914,
+        "finite": true,
+        "min": [
+          -0.5305863829901563,
+          -0.3989000034332276,
+          -0.4166933377583823
+        ],
+        "max": [
+          0.7366933377583822,
+          0.3401257348532225,
+          0.36669333775838225
+        ],
+        "size": [
+          1.2672797207485385,
+          0.7390257382864501,
+          0.7833866755167646
+        ]
+      },
+      "pixels": {
+        "width": 1374,
+        "height": 565,
+        "hash": "de6af324",
+        "nonBackgroundPixels": 71039,
+        "opaquePixels": 71039,
+        "camera": {
+          "position": [
+            2.557783456838173,
+            1.726080246210135,
+            -2.457335964813005
+          ],
+          "quaternion": [
+            -0.09599682455801846,
+            0.8943389512129172,
+            0.2317568357927187,
+            0.37044732295092014
+          ],
+          "target": [
+            0.08532305698342472,
+            -0.21656721081859573,
+            0.01512443504174267
+          ],
+          "zoom": 1
+        },
+        "state": {
+          "time": 1.3,
+          "category": "explosion",
+          "stage": 2,
+          "mode": "handdrawn"
+        },
+        "actualState": {
+          "nodes": 368,
+          "materialEntries": 226,
+          "matrixHash": "d9d2e9f3",
+          "materialHash": "1af6892",
+          "renderOrders": [
+            0
+          ],
+          "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+        }
+      },
+      "crop": {
+        "category": "explosion",
+        "stage": 2,
+        "time": 1.3,
+        "mode": "handdrawn",
+        "viewport": 1440,
+        "alphaThreshold": 8,
+        "panes": [
+          {
+            "side": "baseline",
+            "width": 687,
+            "height": 565,
+            "pixels": 32379,
+            "bounds": [
+              229,
+              105,
+              485,
+              327
+            ],
+            "margin": 105,
+            "passed": true
+          },
+          {
+            "side": "current",
+            "width": 687,
+            "height": 565,
+            "pixels": 38660,
+            "bounds": [
+              154,
+              94,
+              485,
+              380
+            ],
+            "margin": 94,
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    }
+  ],
+  "modes": [],
+  "ghosting": [],
+  "responsive": [],
+  "failedChecks": [
+    {
+      "name": "exact-raster",
+      "error": "At least one exact RGBA comparison differs; no tolerance is counted as a pass"
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "passed": false,
+  "initialStats": {
+    "ready": true,
+    "category": "normal",
+    "stage": 0,
+    "mode": "handdrawn",
+    "time": 1.1,
+    "duration": 6,
+    "playing": false,
+    "autoRotate": false,
+    "outlineEnabled": true,
+    "outlineAutoClear": true,
+    "background": "cream",
+    "meshCount": 8,
+    "triangleCount": 11026,
+    "bounds": {
+      "min": [
+        -0.4757271648634646,
+        -0.2588486714959307,
+        -0.14965799434483051
+      ],
+      "max": [
+        0.4754432950359011,
+        0.2710601127179759,
+        0.13598599898815156
+      ]
+    },
+    "finite": true,
+    "sourceBytes": 3645884,
+    "total": 31
+  },
+  "thumbnails": [
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "embedded": true
+    }
+  ],
+  "overviewImages": [
+    {
+      "width": 600,
+      "height": 375,
+      "ready": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "ready": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "ready": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "ready": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "ready": true
+    },
+    {
+      "width": 600,
+      "height": 375,
+      "ready": true
+    }
+  ],
+  "initialEvidence": {
+    "path": "outputs/ship-states-v1/initial-verification.json",
+    "sha256": "60539642a8611b76f595a83a362362538f60e929c6e80149010b1f1972661361",
+    "actualStages": 31,
+    "priorPassed": false,
+    "priorFailure": "Reverse scrubbing is nondeterministic at 4",
+    "reusedScope": "31 geometry/render samples; current followup does not repeat those 31 samples"
+  },
+  "currentActualStages": 2,
+  "importedEvidence": {
+    "path": "outputs/ship-states-v1/followup-verification.json",
+    "sha256": "a7636035f5ab82922bc3aa4f9304f772a9be8431f35a775ad2a10508668fb922",
+    "viewerSha256": "dfac2852a7d9798cd270e1b8c80ff3d70fa6f500a3b2e0d195c41c58b90e9c94",
+    "currentRunDidNotRepeat": [
+      "controls",
+      "normal-timeline",
+      "three-mode 120-frame ghosting",
+      "growth GLB/PNG downloads",
+      "390/768/1440 overflow"
+    ],
+    "preservedDownload": {
+      "glb": {
+        "filename": "Cloudstitch-growth-8-pose.glb",
+        "bytes": 3241048,
+        "sha256": "bbd9755290a4274fa3031789f4a340871d34fcc406fa1ec8ccd7088f6ddea0fb",
+        "meshes": 430,
+        "nodes": 500,
+        "sourceMeshes": 1,
+        "sourceNodes": 1,
+        "containsAdditions": true
+      },
+      "png": {
+        "filename": "Cloudstitch-growth-8-0.60s.png",
+        "bytes": 589838,
+        "width": 1374,
+        "height": 565,
+        "sha256": "e193500c64e35e73582c8964794621f7bc99523e2cd704d8ca56ea2780dd4b1e"
+      }
+    },
+    "priorPassed": false,
+    "priorFailure": "Some browser checks failed: timeline"
+  },
+  "thumbnailCropGuards": [
+    {
+      "category": "normal",
+      "stage": 0,
+      "width": 600,
+      "height": 375,
+      "pixels": 67560,
+      "bounds": [
+        110,
+        19,
+        489,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "normal",
+      "stage": 1,
+      "width": 600,
+      "height": 375,
+      "pixels": 67684,
+      "bounds": [
+        129,
+        19,
+        489,
+        345
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "normal",
+      "stage": 2,
+      "width": 600,
+      "height": 375,
+      "pixels": 69571,
+      "bounds": [
+        126,
+        19,
+        489,
+        342
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "damage",
+      "stage": 0,
+      "width": 600,
+      "height": 375,
+      "pixels": 67948,
+      "bounds": [
+        116,
+        19,
+        486,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "damage",
+      "stage": 1,
+      "width": 600,
+      "height": 375,
+      "pixels": 65934,
+      "bounds": [
+        115,
+        31,
+        486,
+        353
+      ],
+      "margin": 21,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "damage",
+      "stage": 2,
+      "width": 600,
+      "height": 375,
+      "pixels": 67549,
+      "bounds": [
+        114,
+        43,
+        486,
+        350
+      ],
+      "margin": 24,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "damage",
+      "stage": 3,
+      "width": 600,
+      "height": 375,
+      "pixels": 65637,
+      "bounds": [
+        113,
+        56,
+        486,
+        348
+      ],
+      "margin": 26,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "weapons",
+      "stage": 0,
+      "width": 600,
+      "height": 375,
+      "pixels": 67951,
+      "bounds": [
+        93,
+        19,
+        463,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "weapons",
+      "stage": 1,
+      "width": 600,
+      "height": 375,
+      "pixels": 72903,
+      "bounds": [
+        93,
+        19,
+        490,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "weapons",
+      "stage": 2,
+      "width": 600,
+      "height": 375,
+      "pixels": 74592,
+      "bounds": [
+        93,
+        19,
+        490,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "weapons",
+      "stage": 3,
+      "width": 600,
+      "height": 375,
+      "pixels": 75673,
+      "bounds": [
+        93,
+        19,
+        490,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "weapons",
+      "stage": 4,
+      "width": 600,
+      "height": 375,
+      "pixels": 78371,
+      "bounds": [
+        93,
+        19,
+        505,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "armor",
+      "stage": 0,
+      "width": 600,
+      "height": 375,
+      "pixels": 66469,
+      "bounds": [
+        108,
+        23,
+        474,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "armor",
+      "stage": 1,
+      "width": 600,
+      "height": 375,
+      "pixels": 67908,
+      "bounds": [
+        108,
+        23,
+        474,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "armor",
+      "stage": 2,
+      "width": 600,
+      "height": 375,
+      "pixels": 71593,
+      "bounds": [
+        108,
+        23,
+        474,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "armor",
+      "stage": 3,
+      "width": 600,
+      "height": 375,
+      "pixels": 73530,
+      "bounds": [
+        108,
+        23,
+        487,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "armor",
+      "stage": 4,
+      "width": 600,
+      "height": 375,
+      "pixels": 76215,
+      "bounds": [
+        108,
+        19,
+        491,
+        355
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 0,
+      "width": 600,
+      "height": 375,
+      "pixels": 56453,
+      "bounds": [
+        105,
+        46,
+        442,
+        352
+      ],
+      "margin": 22,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 1,
+      "width": 600,
+      "height": 375,
+      "pixels": 61480,
+      "bounds": [
+        105,
+        46,
+        457,
+        352
+      ],
+      "margin": 22,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 2,
+      "width": 600,
+      "height": 375,
+      "pixels": 64554,
+      "bounds": [
+        99,
+        46,
+        457,
+        352
+      ],
+      "margin": 22,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 3,
+      "width": 600,
+      "height": 375,
+      "pixels": 65478,
+      "bounds": [
+        99,
+        46,
+        457,
+        352
+      ],
+      "margin": 22,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 4,
+      "width": 600,
+      "height": 375,
+      "pixels": 70432,
+      "bounds": [
+        99,
+        46,
+        505,
+        352
+      ],
+      "margin": 22,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 5,
+      "width": 600,
+      "height": 375,
+      "pixels": 74323,
+      "bounds": [
+        99,
+        46,
+        505,
+        352
+      ],
+      "margin": 22,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 6,
+      "width": 600,
+      "height": 375,
+      "pixels": 78042,
+      "bounds": [
+        99,
+        19,
+        505,
+        352
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 7,
+      "width": 600,
+      "height": 375,
+      "pixels": 82924,
+      "bounds": [
+        94,
+        19,
+        505,
+        354
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "growth",
+      "stage": 8,
+      "width": 600,
+      "height": 375,
+      "pixels": 85554,
+      "bounds": [
+        94,
+        19,
+        505,
+        354
+      ],
+      "margin": 19,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 0,
+      "width": 600,
+      "height": 375,
+      "pixels": 14798,
+      "bounds": [
+        225,
+        70,
+        394,
+        222
+      ],
+      "margin": 70,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 1,
+      "width": 600,
+      "height": 375,
+      "pixels": 14826,
+      "bounds": [
+        224,
+        70,
+        394,
+        222
+      ],
+      "margin": 70,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 2,
+      "width": 600,
+      "height": 375,
+      "pixels": 17945,
+      "bounds": [
+        174,
+        62,
+        394,
+        252
+      ],
+      "margin": 62,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 3,
+      "width": 600,
+      "height": 375,
+      "pixels": 17941,
+      "bounds": [
+        160,
+        36,
+        411,
+        314
+      ],
+      "margin": 36,
+      "alphaThreshold": 8,
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 4,
+      "width": 600,
+      "height": 375,
+      "pixels": 29160,
+      "bounds": [
+        157,
+        20,
+        442,
+        354
+      ],
+      "margin": 20,
+      "alphaThreshold": 8,
+      "passed": true
+    }
+  ],
+  "transport": {
+    "duration": 4,
+    "nonLoopStopsAtEnd": true,
+    "replayRestarts": true
+  },
+  "focusedModes": [
+    {
+      "mode": "handdrawn",
+      "forwards": [
+        {
+          "time": 0,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "63c08687",
+            "nonBackgroundPixels": 65309,
+            "opaquePixels": 65309,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "14c631f4",
+              "materialHash": "d3711ac1",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 0,
+            "mode": "handdrawn",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32498,
+                "bounds": [
+                  231,
+                  105,
+                  485,
+                  336
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 32781,
+                "bounds": [
+                  230,
+                  106,
+                  485,
+                  335
+                ],
+                "margin": 106,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 0.88,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "9e994912",
+            "nonBackgroundPixels": 65670,
+            "opaquePixels": 65670,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0.88,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "4fe9dc58",
+              "materialHash": "6798d407",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 0.88,
+            "mode": "handdrawn",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32348,
+                "bounds": [
+                  233,
+                  105,
+                  485,
+                  334
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 33302,
+                "bounds": [
+                  230,
+                  106,
+                  485,
+                  335
+                ],
+                "margin": 106,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 2.2,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "168eef65",
+            "nonBackgroundPixels": 69129,
+            "opaquePixels": 69129,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 2.2,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "811b1a13",
+              "materialHash": "6d652154",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 2.2,
+            "mode": "handdrawn",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32333,
+                "bounds": [
+                  229,
+                  105,
+                  485,
+                  327
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 36796,
+                "bounds": [
+                  145,
+                  61,
+                  507,
+                  454
+                ],
+                "margin": 61,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 3.4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "2b49a240",
+            "nonBackgroundPixels": 93087,
+            "opaquePixels": 93087,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 3.4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "91739c66",
+              "materialHash": "3b29b3c0",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 3.4,
+            "mode": "handdrawn",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32558,
+                "bounds": [
+                  228,
+                  105,
+                  485,
+                  340
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 60308,
+                "bounds": [
+                  143,
+                  19,
+                  543,
+                  487
+                ],
+                "margin": 19,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "76cd9166",
+            "nonBackgroundPixels": 32596,
+            "opaquePixels": 32596,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "ed1e2c5c",
+              "materialHash": "e30ee3d5",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 4,
+            "mode": "handdrawn",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32596,
+                "bounds": [
+                  232,
+                  105,
+                  485,
+                  338
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 0,
+                "bounds": null,
+                "margin": null,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        }
+      ],
+      "backwards": [
+        {
+          "time": 4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "76cd9166",
+            "nonBackgroundPixels": 32596,
+            "opaquePixels": 32596,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "ed1e2c5c",
+              "materialHash": "e30ee3d5",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 0,
+              "totalChannelDifference": 0,
+              "maxRGBDifference": 0,
+              "alphaChangedPixels": 0,
+              "opaqueChangedPixels": 0,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 0,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": true,
+          "animationStatePassed": true
+        },
+        {
+          "time": 3.4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "c365f2f",
+            "nonBackgroundPixels": 93087,
+            "opaquePixels": 93087,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 3.4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "91739c66",
+              "materialHash": "3b29b3c0",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 1013,
+              "totalChannelDifference": 2007,
+              "maxRGBDifference": 6,
+              "alphaChangedPixels": 183,
+              "opaqueChangedPixels": 3,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 1013,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 2.2,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "f8376a8d",
+            "nonBackgroundPixels": 69129,
+            "opaquePixels": 69129,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 2.2,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "811b1a13",
+              "materialHash": "6d652154",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 266,
+              "totalChannelDifference": 536,
+              "maxRGBDifference": 25,
+              "alphaChangedPixels": 18,
+              "opaqueChangedPixels": 246,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 266,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 0.88,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "3a7bc7b2",
+            "nonBackgroundPixels": 65670,
+            "opaquePixels": 65670,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0.88,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "4fe9dc58",
+              "materialHash": "6798d407",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 186,
+              "totalChannelDifference": 328,
+              "maxRGBDifference": 13,
+              "alphaChangedPixels": 0,
+              "opaqueChangedPixels": 180,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 186,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 0,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "cb90242c",
+            "nonBackgroundPixels": 65309,
+            "opaquePixels": 65309,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "handdrawn"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "14c631f4",
+              "materialHash": "d3711ac1",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 219,
+              "totalChannelDifference": 425,
+              "maxRGBDifference": 12,
+              "alphaChangedPixels": 1,
+              "opaqueChangedPixels": 215,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 219,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        }
+      ],
+      "exactRasterPassed": false,
+      "animationStatePassed": true,
+      "cropGuardsPassed": true,
+      "pixelTolerancesUsedForPass": false
+    },
+    {
+      "mode": "cel",
+      "forwards": [
+        {
+          "time": 0,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "c7e327b2",
+            "nonBackgroundPixels": 65309,
+            "opaquePixels": 65309,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "14c631f4",
+              "materialHash": "76c2141f",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 0,
+            "mode": "cel",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32498,
+                "bounds": [
+                  231,
+                  105,
+                  485,
+                  336
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 32781,
+                "bounds": [
+                  230,
+                  106,
+                  485,
+                  335
+                ],
+                "margin": 106,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 0.88,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "855c9008",
+            "nonBackgroundPixels": 65670,
+            "opaquePixels": 65670,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0.88,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "4fe9dc58",
+              "materialHash": "49f7b48d",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 0.88,
+            "mode": "cel",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32348,
+                "bounds": [
+                  233,
+                  105,
+                  485,
+                  334
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 33302,
+                "bounds": [
+                  230,
+                  106,
+                  485,
+                  335
+                ],
+                "margin": 106,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 2.2,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "233e3b8b",
+            "nonBackgroundPixels": 69129,
+            "opaquePixels": 69129,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 2.2,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "811b1a13",
+              "materialHash": "6d0d65c",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 2.2,
+            "mode": "cel",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32333,
+                "bounds": [
+                  229,
+                  105,
+                  485,
+                  327
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 36796,
+                "bounds": [
+                  145,
+                  61,
+                  507,
+                  454
+                ],
+                "margin": 61,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 3.4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "9af982de",
+            "nonBackgroundPixels": 93087,
+            "opaquePixels": 93087,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 3.4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "91739c66",
+              "materialHash": "908a0650",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 3.4,
+            "mode": "cel",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32558,
+                "bounds": [
+                  228,
+                  105,
+                  485,
+                  340
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 60308,
+                "bounds": [
+                  143,
+                  19,
+                  543,
+                  487
+                ],
+                "margin": 19,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "739b81bc",
+            "nonBackgroundPixels": 32596,
+            "opaquePixels": 32596,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "ed1e2c5c",
+              "materialHash": "5d9f2e27",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 4,
+            "mode": "cel",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32596,
+                "bounds": [
+                  232,
+                  105,
+                  485,
+                  338
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 0,
+                "bounds": null,
+                "margin": null,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        }
+      ],
+      "backwards": [
+        {
+          "time": 4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "739b81bc",
+            "nonBackgroundPixels": 32596,
+            "opaquePixels": 32596,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "ed1e2c5c",
+              "materialHash": "5d9f2e27",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 0,
+              "totalChannelDifference": 0,
+              "maxRGBDifference": 0,
+              "alphaChangedPixels": 0,
+              "opaqueChangedPixels": 0,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 0,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": true,
+          "animationStatePassed": true
+        },
+        {
+          "time": 3.4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "31aef138",
+            "nonBackgroundPixels": 93087,
+            "opaquePixels": 93087,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 3.4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "91739c66",
+              "materialHash": "908a0650",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 866,
+              "totalChannelDifference": 1660,
+              "maxRGBDifference": 4,
+              "alphaChangedPixels": 155,
+              "opaqueChangedPixels": 8,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 866,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 2.2,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "4b68136b",
+            "nonBackgroundPixels": 69129,
+            "opaquePixels": 69129,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 2.2,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "811b1a13",
+              "materialHash": "6d0d65c",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 231,
+              "totalChannelDifference": 416,
+              "maxRGBDifference": 24,
+              "alphaChangedPixels": 19,
+              "opaqueChangedPixels": 210,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 231,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 0.88,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "5659d17a",
+            "nonBackgroundPixels": 65670,
+            "opaquePixels": 65670,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0.88,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "4fe9dc58",
+              "materialHash": "49f7b48d",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 211,
+              "totalChannelDifference": 360,
+              "maxRGBDifference": 9,
+              "alphaChangedPixels": 0,
+              "opaqueChangedPixels": 205,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 211,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 0,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "b18fc17e",
+            "nonBackgroundPixels": 65309,
+            "opaquePixels": 65309,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "cel"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "14c631f4",
+              "materialHash": "76c2141f",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 189,
+              "totalChannelDifference": 366,
+              "maxRGBDifference": 12,
+              "alphaChangedPixels": 1,
+              "opaqueChangedPixels": 187,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 189,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        }
+      ],
+      "exactRasterPassed": false,
+      "animationStatePassed": true,
+      "cropGuardsPassed": true,
+      "pixelTolerancesUsedForPass": false
+    },
+    {
+      "mode": "original",
+      "forwards": [
+        {
+          "time": 0,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "9d71b747",
+            "nonBackgroundPixels": 65309,
+            "opaquePixels": 65309,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "14c631f4",
+              "materialHash": "af555c3f",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 0,
+            "mode": "original",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32498,
+                "bounds": [
+                  231,
+                  105,
+                  485,
+                  336
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 32781,
+                "bounds": [
+                  230,
+                  106,
+                  485,
+                  335
+                ],
+                "margin": 106,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 0.88,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "18e4dbac",
+            "nonBackgroundPixels": 65670,
+            "opaquePixels": 65670,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0.88,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "4fe9dc58",
+              "materialHash": "28bb78e7",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 0.88,
+            "mode": "original",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32348,
+                "bounds": [
+                  233,
+                  105,
+                  485,
+                  334
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 33302,
+                "bounds": [
+                  230,
+                  106,
+                  485,
+                  335
+                ],
+                "margin": 106,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 2.2,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "4bc0212",
+            "nonBackgroundPixels": 69129,
+            "opaquePixels": 69129,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 2.2,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "811b1a13",
+              "materialHash": "1175d30c",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 2.2,
+            "mode": "original",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32333,
+                "bounds": [
+                  229,
+                  105,
+                  485,
+                  327
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 36796,
+                "bounds": [
+                  145,
+                  61,
+                  507,
+                  454
+                ],
+                "margin": 61,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 3.4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "13b2b2e4",
+            "nonBackgroundPixels": 93087,
+            "opaquePixels": 93087,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 3.4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "91739c66",
+              "materialHash": "f10759a4",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 3.4,
+            "mode": "original",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32558,
+                "bounds": [
+                  228,
+                  105,
+                  485,
+                  340
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 60308,
+                "bounds": [
+                  143,
+                  19,
+                  543,
+                  487
+                ],
+                "margin": 19,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        },
+        {
+          "time": 4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "3728359c",
+            "nonBackgroundPixels": 32596,
+            "opaquePixels": 32596,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "ed1e2c5c",
+              "materialHash": "10b40d0b",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            }
+          },
+          "crop": {
+            "category": "explosion",
+            "stage": 0,
+            "time": 4,
+            "mode": "original",
+            "viewport": 1440,
+            "alphaThreshold": 8,
+            "panes": [
+              {
+                "side": "baseline",
+                "width": 687,
+                "height": 565,
+                "pixels": 32596,
+                "bounds": [
+                  232,
+                  105,
+                  485,
+                  338
+                ],
+                "margin": 105,
+                "passed": true
+              },
+              {
+                "side": "current",
+                "width": 687,
+                "height": 565,
+                "pixels": 0,
+                "bounds": null,
+                "margin": null,
+                "passed": true
+              }
+            ],
+            "passed": true
+          }
+        }
+      ],
+      "backwards": [
+        {
+          "time": 4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "3728359c",
+            "nonBackgroundPixels": 32596,
+            "opaquePixels": 32596,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "ed1e2c5c",
+              "materialHash": "10b40d0b",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 0,
+              "totalChannelDifference": 0,
+              "maxRGBDifference": 0,
+              "alphaChangedPixels": 0,
+              "opaqueChangedPixels": 0,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 0,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": true,
+          "animationStatePassed": true
+        },
+        {
+          "time": 3.4,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "8b618a68",
+            "nonBackgroundPixels": 93087,
+            "opaquePixels": 93087,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 3.4,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "91739c66",
+              "materialHash": "f10759a4",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 1405,
+              "totalChannelDifference": 2576,
+              "maxRGBDifference": 3,
+              "alphaChangedPixels": 232,
+              "opaqueChangedPixels": 53,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 1405,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 2.2,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "20997652",
+            "nonBackgroundPixels": 69129,
+            "opaquePixels": 69129,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 2.2,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "811b1a13",
+              "materialHash": "1175d30c",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 591,
+              "totalChannelDifference": 810,
+              "maxRGBDifference": 2,
+              "alphaChangedPixels": 8,
+              "opaqueChangedPixels": 579,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 591,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 0.88,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "3da30131",
+            "nonBackgroundPixels": 65670,
+            "opaquePixels": 65670,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0.88,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "4fe9dc58",
+              "materialHash": "28bb78e7",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 306,
+              "totalChannelDifference": 585,
+              "maxRGBDifference": 13,
+              "alphaChangedPixels": 0,
+              "opaqueChangedPixels": 301,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 306,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        },
+        {
+          "time": 0,
+          "pixels": {
+            "width": 1374,
+            "height": 565,
+            "hash": "ae71ae3",
+            "nonBackgroundPixels": 65309,
+            "opaquePixels": 65309,
+            "camera": {
+              "position": [
+                2.557783456838173,
+                1.726080246210135,
+                -2.457335964813005
+              ],
+              "quaternion": [
+                -0.09599682455801846,
+                0.8943389512129172,
+                0.2317568357927187,
+                0.37044732295092014
+              ],
+              "target": [
+                0.08532305698342472,
+                -0.21656721081859573,
+                0.01512443504174267
+              ],
+              "zoom": 1
+            },
+            "state": {
+              "time": 0,
+              "category": "explosion",
+              "stage": 0,
+              "mode": "original"
+            },
+            "actualState": {
+              "nodes": 368,
+              "materialEntries": 226,
+              "matrixHash": "14c631f4",
+              "materialHash": "af555c3f",
+              "renderOrders": [
+                0
+              ],
+              "exactReferenceData": "Full matrixWorld/visible/renderOrder and actual material opacity/visible/transparent/depth/color/alpha settings are compared as JSON in the browser."
+            },
+            "comparison": {
+              "valid": true,
+              "changedPixels": 236,
+              "totalChannelDifference": 458,
+              "maxRGBDifference": 12,
+              "alphaChangedPixels": 2,
+              "opaqueChangedPixels": 233,
+              "leftChangedPixels": 0,
+              "rightChangedPixels": 236,
+              "cameraDelta": 0,
+              "matrixStateSame": true,
+              "materialStateSame": true
+            }
+          },
+          "exactRasterPassed": false,
+          "animationStatePassed": true
+        }
+      ],
+      "exactRasterPassed": false,
+      "animationStatePassed": true,
+      "cropGuardsPassed": true,
+      "pixelTolerancesUsedForPass": false
+    }
+  ],
+  "staticRasterDiagnostics": [
+    {
+      "mode": "handdrawn",
+      "time": 3.4,
+      "singleSynchronousEvaluation": true,
+      "poseOrUpdateCalls": 0,
+      "getImageData": {
+        "firstHash": "cff330e6",
+        "secondHash": "cff330e6",
+        "noRenderDifference": {
+          "changedPixels": 0,
+          "totalChannelDifference": 0,
+          "maxRGBDifference": 0,
+          "alphaChangedPixels": 0,
+          "opaqueChangedPixels": 0
+        }
+      },
+      "toDataURL": {
+        "firstHash": "b00e5321",
+        "secondHash": "b00e5321",
+        "bytesAsDataURL": 326082,
+        "sameFrameExact": true,
+        "afterRenderHash": "533e30e5"
+      },
+      "renderOnly": {
+        "onceHash": "c789b270",
+        "twiceHash": "ba0026ee",
+        "onceDifference": {
+          "changedPixels": 622,
+          "totalChannelDifference": 1218,
+          "maxRGBDifference": 7,
+          "alphaChangedPixels": 95,
+          "opaqueChangedPixels": 12
+        },
+        "twiceDifference": {
+          "changedPixels": 578,
+          "totalChannelDifference": 1042,
+          "maxRGBDifference": 4,
+          "alphaChangedPixels": 86,
+          "opaqueChangedPixels": 9
+        },
+        "immediateNoRenderDifference": {
+          "changedPixels": 0,
+          "totalChannelDifference": 0,
+          "maxRGBDifference": 0,
+          "alphaChangedPixels": 0,
+          "opaqueChangedPixels": 0
+        }
+      },
+      "matrixMaterialStateSame": true,
+      "cameraSame": true
+    },
+    {
+      "mode": "cel",
+      "time": 3.4,
+      "singleSynchronousEvaluation": true,
+      "poseOrUpdateCalls": 0,
+      "getImageData": {
+        "firstHash": "62d78b5d",
+        "secondHash": "62d78b5d",
+        "noRenderDifference": {
+          "changedPixels": 0,
+          "totalChannelDifference": 0,
+          "maxRGBDifference": 0,
+          "alphaChangedPixels": 0,
+          "opaqueChangedPixels": 0
+        }
+      },
+      "toDataURL": {
+        "firstHash": "7414f041",
+        "secondHash": "7414f041",
+        "bytesAsDataURL": 330066,
+        "sameFrameExact": true,
+        "afterRenderHash": "45955eda"
+      },
+      "renderOnly": {
+        "onceHash": "d530cf4a",
+        "twiceHash": "68846b2a",
+        "onceDifference": {
+          "changedPixels": 1088,
+          "totalChannelDifference": 2017,
+          "maxRGBDifference": 4,
+          "alphaChangedPixels": 201,
+          "opaqueChangedPixels": 7
+        },
+        "twiceDifference": {
+          "changedPixels": 1026,
+          "totalChannelDifference": 1953,
+          "maxRGBDifference": 4,
+          "alphaChangedPixels": 195,
+          "opaqueChangedPixels": 11
+        },
+        "immediateNoRenderDifference": {
+          "changedPixels": 0,
+          "totalChannelDifference": 0,
+          "maxRGBDifference": 0,
+          "alphaChangedPixels": 0,
+          "opaqueChangedPixels": 0
+        }
+      },
+      "matrixMaterialStateSame": true,
+      "cameraSame": true
+    },
+    {
+      "mode": "original",
+      "time": 3.4,
+      "singleSynchronousEvaluation": true,
+      "poseOrUpdateCalls": 0,
+      "getImageData": {
+        "firstHash": "9b52b03d",
+        "secondHash": "9b52b03d",
+        "noRenderDifference": {
+          "changedPixels": 0,
+          "totalChannelDifference": 0,
+          "maxRGBDifference": 0,
+          "alphaChangedPixels": 0,
+          "opaqueChangedPixels": 0
+        }
+      },
+      "toDataURL": {
+        "firstHash": "7c72b67c",
+        "secondHash": "7c72b67c",
+        "bytesAsDataURL": 343162,
+        "sameFrameExact": true,
+        "afterRenderHash": "6a6f457c"
+      },
+      "renderOnly": {
+        "onceHash": "afcb61d8",
+        "twiceHash": "d2ddaf69",
+        "onceDifference": {
+          "changedPixels": 1346,
+          "totalChannelDifference": 2377,
+          "maxRGBDifference": 3,
+          "alphaChangedPixels": 203,
+          "opaqueChangedPixels": 58
+        },
+        "twiceDifference": {
+          "changedPixels": 1686,
+          "totalChannelDifference": 3000,
+          "maxRGBDifference": 3,
+          "alphaChangedPixels": 261,
+          "opaqueChangedPixels": 58
+        },
+        "immediateNoRenderDifference": {
+          "changedPixels": 0,
+          "totalChannelDifference": 0,
+          "maxRGBDifference": 0,
+          "alphaChangedPixels": 0,
+          "opaqueChangedPixels": 0
+        }
+      },
+      "matrixMaterialStateSame": true,
+      "cameraSame": true
+    }
+  ],
+  "animationStatePassed": true,
+  "exactRasterPassed": false,
+  "cropGuardsPassed": true,
+  "mobileFraming": [
+    {
+      "category": "normal",
+      "stage": 2,
+      "time": 0.6,
+      "mode": "original",
+      "viewport": 390,
+      "alphaThreshold": 8,
+      "panes": [
+        {
+          "side": "baseline",
+          "width": 182,
+          "height": 350,
+          "pixels": 13436,
+          "bounds": [
+            11,
+            100,
+            172,
+            242
+          ],
+          "margin": 9,
+          "passed": true
+        },
+        {
+          "side": "current",
+          "width": 182,
+          "height": 350,
+          "pixels": 13765,
+          "bounds": [
+            10,
+            100,
+            172,
+            249
+          ],
+          "margin": 9,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 0,
+      "time": 0,
+      "mode": "handdrawn",
+      "viewport": 390,
+      "alphaThreshold": 8,
+      "panes": [
+        {
+          "side": "baseline",
+          "width": 182,
+          "height": 350,
+          "pixels": 4845,
+          "bounds": [
+            48,
+            107,
+            144,
+            195
+          ],
+          "margin": 37,
+          "passed": true
+        },
+        {
+          "side": "current",
+          "width": 182,
+          "height": 350,
+          "pixels": 4798,
+          "bounds": [
+            48,
+            108,
+            144,
+            195
+          ],
+          "margin": 37,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 0,
+      "time": 0.88,
+      "mode": "handdrawn",
+      "viewport": 390,
+      "alphaThreshold": 8,
+      "panes": [
+        {
+          "side": "baseline",
+          "width": 182,
+          "height": 350,
+          "pixels": 4829,
+          "bounds": [
+            49,
+            107,
+            144,
+            194
+          ],
+          "margin": 37,
+          "passed": true
+        },
+        {
+          "side": "current",
+          "width": 182,
+          "height": 350,
+          "pixels": 4874,
+          "bounds": [
+            48,
+            108,
+            144,
+            195
+          ],
+          "margin": 37,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 0,
+      "time": 2.2,
+      "mode": "handdrawn",
+      "viewport": 390,
+      "alphaThreshold": 8,
+      "panes": [
+        {
+          "side": "baseline",
+          "width": 182,
+          "height": 350,
+          "pixels": 4826,
+          "bounds": [
+            48,
+            107,
+            144,
+            192
+          ],
+          "margin": 37,
+          "passed": true
+        },
+        {
+          "side": "current",
+          "width": 182,
+          "height": 350,
+          "pixels": 5632,
+          "bounds": [
+            16,
+            91,
+            153,
+            240
+          ],
+          "margin": 16,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 0,
+      "time": 3.4,
+      "mode": "handdrawn",
+      "viewport": 390,
+      "alphaThreshold": 8,
+      "panes": [
+        {
+          "side": "baseline",
+          "width": 182,
+          "height": 350,
+          "pixels": 4845,
+          "bounds": [
+            47,
+            107,
+            144,
+            197
+          ],
+          "margin": 37,
+          "passed": true
+        },
+        {
+          "side": "current",
+          "width": 182,
+          "height": 350,
+          "pixels": 9108,
+          "bounds": [
+            15,
+            75,
+            166,
+            252
+          ],
+          "margin": 15,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "category": "explosion",
+      "stage": 0,
+      "time": 4,
+      "mode": "handdrawn",
+      "viewport": 390,
+      "alphaThreshold": 8,
+      "panes": [
+        {
+          "side": "baseline",
+          "width": 182,
+          "height": 350,
+          "pixels": 4856,
+          "bounds": [
+            48,
+            107,
+            144,
+            196
+          ],
+          "margin": 37,
+          "passed": true
+        },
+        {
+          "side": "current",
+          "width": 182,
+          "height": 350,
+          "pixels": 0,
+          "bounds": null,
+          "margin": null,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "mobileOverflow": false,
+  "externalRequests": [],
+  "failure": "Some focused checks failed: exact-raster"
+}

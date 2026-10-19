@@ -1,0 +1,665 @@
+{
+  "version": "audio-rich-v1.0.1-ready",
+  "revision": 2,
+  "catalogVersion": "audio-rich-v1.0.0",
+  "status": "PCM_ENHANCEMENT_REVIEW_CANDIDATES",
+  "files": [
+    {
+      "path": "outputs/audio-rich-v1/catalog.json",
+      "bytes": 336115,
+      "sha256": "c0667a319be13783705c4e7073f7c8df3112f457090e09ce381c0c8684369d50"
+    },
+    {
+      "path": "outputs/audio-rich-v1/decoding.json",
+      "bytes": 20163,
+      "sha256": "df5f04aed7776c9070a31673822cf2a384dc998b00e7b3a1a0b8c9f17e34b782"
+    },
+    {
+      "path": "outputs/audio-rich-v1/dsp-verification.json",
+      "bytes": 29403,
+      "sha256": "4fe571e1aa7bbb6537bc1b6d699af238f027e764f9f1dc4a9a5915b4a0f7271e"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/bundle-detach.wav",
+      "bytes": 261116,
+      "sha256": "e53b2a069056bc05da4e73b1ff5ac8bf0a667bbe3aef675afb5cfd0679ec3f6e"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/bundle-lost.wav",
+      "bytes": 245240,
+      "sha256": "9eadb0bbe72cca3fc306f1e6b36189522855b2d4bb5ca1da4042535fd1961c0b"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/cannon-breech.wav",
+      "bytes": 239948,
+      "sha256": "0006e41c0e993714178b3a573020648b62d034171f6947800428fa33019b4243"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/cargo-drop.wav",
+      "bytes": 195848,
+      "sha256": "13778f3a718fd6dddea646f2c761101fab6bf9f96a1947877fcf0b6a690ebe32"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/chain-spin.wav",
+      "bytes": 251416,
+      "sha256": "01be5cb40477af841cd01a6358d9604ce3f6c3476fa8b7ebbdf88752c68e52cf"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/connector-cut.wav",
+      "bytes": 202904,
+      "sha256": "3b61460b821e4ba24b00434bdcee5a1663f6fce461394aedb33473e43b44c30d"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/defeat.wav",
+      "bytes": 335204,
+      "sha256": "add62d31d54059940ce1dead142c6d1a0e01d80f99fa3561604a2928102cc909"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/engine-cruise-loop.wav",
+      "bytes": 1058444,
+      "sha256": "be0af082153e6fe43db264f434e43013b58e1a383e6b6b3ef5ecc3255b6c17c4"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/engine-idle-loop.wav",
+      "bytes": 1058444,
+      "sha256": "f335e2f5bb1ee2dbf15f851152c1b1a76ea7bf5aee617f998a1e56124b4221a2"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/fire-cannon.wav",
+      "bytes": 239948,
+      "sha256": "be23687876739af41290b459cf135686ec984b519f45c5d75c7292e28de44f77"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/fire-chain.wav",
+      "bytes": 194084,
+      "sha256": "0664dce52b491fb524280326ebe2cec2118c2f01178108f1a32d459511ad5c5a"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/fire-harpoon.wav",
+      "bytes": 190556,
+      "sha256": "89a09c8f083e57660e78016ac6caa3b358133113315fd04148acf5e4e667b088"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/fire-machinegun.wav",
+      "bytes": 149104,
+      "sha256": "a69cac1346cd6e20f78c07b576dc3acd87fa0814d86559c8e8cdf9fddb146c92"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/fire-mortar.wav",
+      "bytes": 158804,
+      "sha256": "8ca17f7142007efc1473e57b9d41ff266b82aec5f993bdfc3089388cc6f6a995"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/flame-ignite.wav",
+      "bytes": 157040,
+      "sha256": "3428d1af0e791da642951b2ee8dd8b2901bea1ee7ca760267b35390149c471d7"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/flame-spray-loop.wav",
+      "bytes": 705644,
+      "sha256": "afdd57fa12da67b1267f9572c3d7c14fd9c9011a19e9327cd89a62c528a0fb17"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/flame-stop.wav",
+      "bytes": 129744,
+      "sha256": "2078f5e95b0e556a6c2996d5e01d576aa1bf2ec311c1beb81fdbaa3a84df0064"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/harbor-depart.wav",
+      "bytes": 244360,
+      "sha256": "63d07b50734cb3bbe2609507c2d019ce7e8e0a7244093df50396ef905dcfdd55"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/harbor-equip.wav",
+      "bytes": 205552,
+      "sha256": "f8a49cb49fb0cc09a8d92c1046d28d30694dadd27c4d1e7560f4bf2580a71f52"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/harbor-repair.wav",
+      "bytes": 253180,
+      "sha256": "0176ddfa852c5ca29d28d0093ae5554f5a87e68820c19c571885bf57679eb44e"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/harbor-store.wav",
+      "bytes": 227600,
+      "sha256": "169c22ec1d870eb6f1b587c3e18a25c0316233c1a1e7c2e3cebcad6999724c1e"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/harbor-workshop-loop.wav",
+      "bytes": 1058444,
+      "sha256": "53dd6c73e4de47473a90b2b4d9ead8a2e350d6b0b5ab817ce640ecc1a7aa1f3a"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/harpoon-embed.wav",
+      "bytes": 137680,
+      "sha256": "391ada0ff4880ea546b1bdb482d3a2862f998167c8b2d902502c448e37046dd8"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/harpoon-tension-loop.wav",
+      "bytes": 705644,
+      "sha256": "486e60cb3404320cf7729f4156c8bf20ae8753164df5ca64524c1a162f05540d"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/hit-armor.wav",
+      "bytes": 174680,
+      "sha256": "cc969a109d101e74316b8da82ec4d1e54d119bba7735994f80bbd9dda0a4f99c"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/hit-cloth.wav",
+      "bytes": 164980,
+      "sha256": "1372fa0d05a6cc4fa5cebe40b2bd528a5dfb24935f2eef2c017a85ae748a4ccd"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/hit-engine.wav",
+      "bytes": 211724,
+      "sha256": "a2064029b673fbcf89d39970c795fdb4100bbf0e99656e0e7b20fb96938c0945"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/hit-wood.wav",
+      "bytes": 137680,
+      "sha256": "1a4ea6b0bef405ae841bf6a5af4526680d6167e988fdf9e99d177777c44307f0"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/hull-creak-loop.wav",
+      "bytes": 1058444,
+      "sha256": "05e9df7ff31a7edc27a75dab6331f7d3ac86f0c8ffd632e2b540800012b50b7e"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/incoming-warning.wav",
+      "bytes": 149984,
+      "sha256": "b5773b13f0a31bdcc3ccc880a9d75085e8a10fccdd592e18042bc8782dc77ae9"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/lift-danger-loop.wav",
+      "bytes": 705644,
+      "sha256": "b4c1218c21c89af275009f3b4d67619f693a0c69b450e2ca42ad4e623e4f9c52"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/lift-warning.wav",
+      "bytes": 164980,
+      "sha256": "e4ccd4c9d3c21a61f1e227cc80b696088e29015e344c47f5f772140af0d5d833"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/machinegun-feed.wav",
+      "bytes": 147340,
+      "sha256": "6420bbb03d6b282ae4bfa07031932812c2d52c12abb76f0e86131687dfafa5e5"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/module-break.wav",
+      "bytes": 215252,
+      "sha256": "172f75863e2b4c715ef18752beded285473f455760d8dd24bf92a9952a053737"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/mortar-fall.wav",
+      "bytes": 229364,
+      "sha256": "b3e792545fb815fa6da3f7ebe7291551c3eb9b194fa492d7042a6757db089108"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/mortar-impact.wav",
+      "bytes": 292868,
+      "sha256": "27cd81134549b0d5b53a7b06384c3b41f497fcb589116f86c64fff0ca552fcbb"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/mortar-launch-a.wav",
+      "bytes": 127936,
+      "sha256": "8580c574297d1f2d6fce10b33df1cca9a8e45536851dd074a8a48ffcbbe68649"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/mortar-launch-b.wav",
+      "bytes": 145576,
+      "sha256": "4025260c4ee452970f67ad6616796b2ed9b42616dd4b0455b5c8272940691f7f"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/restore-ok.wav",
+      "bytes": 164096,
+      "sha256": "8ca714997f043a74947e29c2dd5eb3bb2a615124aabb7ff4955c24d8e3324b18"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/return.wav",
+      "bytes": 282284,
+      "sha256": "490b2ec9bdc600e197b9d2e4e57996cda930ff65a27cc44d12e43e662fda680c"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/salvage-complete.wav",
+      "bytes": 229364,
+      "sha256": "88aa338fe9fbcbe6a9eb5c1248dad6cb4b8c8aad862a5b3039fd9d0509bed70f"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/save-ok.wav",
+      "bytes": 127980,
+      "sha256": "58fed881fb05278752bd81db11ca0872f1deda315465befbbf628950c500b04b"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/ui-back.wav",
+      "bytes": 111176,
+      "sha256": "e02bf2c2a3e655857760c3cbec4cbddb9bc46c5c5b6688a81024ef76ccf26d2e"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/ui-confirm.wav",
+      "bytes": 112940,
+      "sha256": "3c80ba3a882debd8b0c6e4e684474fddeb8ea12b7efd4dd2dc8237a8d5c36194"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/ui-fail.wav",
+      "bytes": 112060,
+      "sha256": "769234c6ef461659ee99ee26ed5b895d79035d238574c3fa8ec07e946865fa61"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/ui-hover.wav",
+      "bytes": 87892,
+      "sha256": "f9992a0c04159bc174262b8a0437834cf9de4de1a9ce9196d35389ee9d932b20"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/winch-loop.wav",
+      "bytes": 705644,
+      "sha256": "256cd86b0aef43bf7302e6db673a3344904fd154bf574bc943e5586aaf2bda34"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/wind-calm-loop.wav",
+      "bytes": 1058444,
+      "sha256": "8f4ab5ac6b16ce70fdae27cc091c9a1722658c3f7131787afc34a308df4ecdc7"
+    },
+    {
+      "path": "outputs/audio-rich-v1/enhanced/wind-fast-loop.wav",
+      "bytes": 1058444,
+      "sha256": "3fc9a26ff9afc772c5beb4b91aad1ab07c48b811f49808b47fee6153f3f1642f"
+    },
+    {
+      "path": "outputs/audio-rich-v1/file-verification.json",
+      "bytes": 250849,
+      "sha256": "1914612973a89396f42b05b9988b0815a50728dbd012a631996e058fe16c2c6c"
+    },
+    {
+      "path": "outputs/audio-rich-v1/http-verification.json",
+      "bytes": 11585,
+      "sha256": "c0dbad1c6d234c377b2a336e00f41eecc1ad8df02c8e9ceed121a59005e6b126"
+    },
+    {
+      "path": "outputs/audio-rich-v1/index.html",
+      "bytes": 9225,
+      "sha256": "5113b2591cbfb3e749a0674ab20bbf00e744e64013fb821d08856fa40f49995b"
+    },
+    {
+      "path": "outputs/audio-rich-v1/input-catalog.json",
+      "bytes": 82677,
+      "sha256": "a23cfa1b51f25187ce4e86307192de34a0a40e5d1cea4df537d142c57cfb08d1"
+    },
+    {
+      "path": "outputs/audio-rich-v1/mix-verification.json",
+      "bytes": 163785,
+      "sha256": "1479b2acd96c6b92d3de0c0fbcb51f1cc0f331fcdd5261f76d6119290cc84731"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/bundle-detach.mp3",
+      "bytes": 23030,
+      "sha256": "328917cd1a76f9ad0a86f70739e6247367c405dd1bc1ea924360a0d9010cff18"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/bundle-lost.mp3",
+      "bytes": 21358,
+      "sha256": "d70a39bbb96c6add4a08c3715c4894ae40c5c52afc3da0b839817150d77d6021"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/cannon-breech.mp3",
+      "bytes": 21358,
+      "sha256": "caf670455fdb87f9e4d6e0b362454e7015aa72c4b89bbeaa43ba1fe1bcb47d34"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/cargo-drop.mp3",
+      "bytes": 17179,
+      "sha256": "aa6d1facdeb64ed436bcbf941792eebbc926b8bbc83a611d7351564c1bd230b7"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/chain-spin.mp3",
+      "bytes": 23030,
+      "sha256": "d855590f652b3c372ec9b1546a52f75b05170ff896b00cde6450720c803f1ac1"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/connector-cut.mp3",
+      "bytes": 18433,
+      "sha256": "e77be730c82c49245ed78ba08b126c7f5f4497f8abe67489760ab1f73bc4f1c1"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/defeat.mp3",
+      "bytes": 29300,
+      "sha256": "8d25a0733a752ad6664b4b811e97e0ee04da7c2ccd02dcd02e306d9d9c52c775"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/engine-cruise-loop.mp3",
+      "bytes": 97009,
+      "sha256": "263112425f0905519cf5408190fd7174077241139ad9244f3647a4eab588392a"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/engine-idle-loop.mp3",
+      "bytes": 97009,
+      "sha256": "b3f6b2dfb06b32e65ce021058173601f58c55458243e86d437a4348842ca2f96"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/fire-cannon.mp3",
+      "bytes": 20105,
+      "sha256": "63751d20bcfb5264fe6fcc6a28e3b5628a426fcb13d943c65ac5cfa82d75a4e3"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/fire-chain.mp3",
+      "bytes": 17179,
+      "sha256": "056d63c406b0419333a134668cfc2c7be2e941cdd9c437c48c63ea41914f6475"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/fire-harpoon.mp3",
+      "bytes": 17179,
+      "sha256": "108638ecda8fd70ad6f4142c608d8635e57bb9605c16f4bc9dd3df7516b312b8"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/fire-machinegun.mp3",
+      "bytes": 13835,
+      "sha256": "bd3a66b2b94b175b1e45ba17bfd93a8654d2efd0d33d287d14407a548c224d22"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/fire-mortar.mp3",
+      "bytes": 13835,
+      "sha256": "8ebc96fe85251128e7eaeb8b78e807aa0031ab48a8e43b31a3033b830fb01e32"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/flame-ignite.mp3",
+      "bytes": 13835,
+      "sha256": "6bcf3a8f8ea7570b46d40516f4cb623ab0adac62fde60ae02c17ed2657fdf4a8"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/flame-spray-loop.mp3",
+      "bytes": 65244,
+      "sha256": "16f88b3e0460f2a40e30534373bb2c642c919aca101aa03d2d14e36505e1b20d"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/flame-stop.mp3",
+      "bytes": 12163,
+      "sha256": "be69dfec112ba63a1bfc192c5011599fb80e83aa20608f4f5e6c1f276cea116d"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/harbor-depart.mp3",
+      "bytes": 21358,
+      "sha256": "e285331303656c96e06681460552a1bb8d3262ab1e129b173a00ae86696d666f"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/harbor-equip.mp3",
+      "bytes": 18433,
+      "sha256": "66cc33bd2a0cb9fa0d26c1d8dee61ebf46f5d76813e374c6ac60b2128f5304bf"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/harbor-repair.mp3",
+      "bytes": 23030,
+      "sha256": "03bcd5ee9fb8770005798061b95658e7186130a46ab625a5b66fbf0604e386ec"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/harbor-store.mp3",
+      "bytes": 20105,
+      "sha256": "0c7d4cc43d098fd59f8563b2e20478b637def237b10fe5bb18f788b24ca1f7a7"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/harbor-workshop-loop.mp3",
+      "bytes": 97009,
+      "sha256": "fd5e9461f681e23a8cabc2a00783f187514d0ea802e374bc4435fb990c36059b"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/harpoon-embed.mp3",
+      "bytes": 12163,
+      "sha256": "bf82b9ab3ccf56f48cfea66e973946acc079ddd7b3b08c83e6156758e26bb795"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/harpoon-tension-loop.mp3",
+      "bytes": 65244,
+      "sha256": "b3ed5c6551ec30934ad6af6e3ad1e09cdc1be6e45614211ee40dd60f138cea45"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/hit-armor.mp3",
+      "bytes": 15089,
+      "sha256": "b2eb18f3e53fc89022758d8bfecfa5ba5623d4e0b858d9802e118818bcd89206"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/hit-cloth.mp3",
+      "bytes": 15089,
+      "sha256": "a552784a00baecf63d1271115fa7dc83938aaa5b64b431ae6c0367efe21de2e8"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/hit-engine.mp3",
+      "bytes": 18433,
+      "sha256": "0fb9cb175b86c6d5118e21da3f2d24e8f25d8d4c4c06bf744e0cda1daffe4214"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/hit-wood.mp3",
+      "bytes": 12163,
+      "sha256": "5bd0d809b97e19f0a4627ac17cc7c52ca24ed01dfa313cb2142c91a6e450055d"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/hull-creak-loop.mp3",
+      "bytes": 97009,
+      "sha256": "fd742c41d58dca06528161b71981afb7bcd86fbfa9936f31701cff3d6bce79f7"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/incoming-warning.mp3",
+      "bytes": 13835,
+      "sha256": "f13f60ecc90a7bdfdcdee804886f252172b4b25f8457c77d8e93c424b49eb1ba"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/lift-danger-loop.mp3",
+      "bytes": 65244,
+      "sha256": "dd2fde52a8e3600abf6f831336683e42b896a45719343ff55e33e4a7695c4d91"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/lift-warning.mp3",
+      "bytes": 15089,
+      "sha256": "a29c0d96cdf351db4d5230f50200aedb124c9446aba240c3554d51ea2e65c275"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/machinegun-feed.mp3",
+      "bytes": 13835,
+      "sha256": "3c12abb43c780eff189d2dba0916f9b68c2071c9c44647e9aadfad97063aa50e"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/module-break.mp3",
+      "bytes": 18433,
+      "sha256": "67ac2d17028b180d95c246322d48f0e136d508bb772be19683fd5124c9bf3d83"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/mortar-fall.mp3",
+      "bytes": 20105,
+      "sha256": "2854c434a196869bcc6f4c82bf8b2934e1697d188773e2b185ec43a35b7a54f0"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/mortar-impact.mp3",
+      "bytes": 24702,
+      "sha256": "d627442320dfeabb593c0aacb3e844198c3534cd5a0f7f00420e0388e1d81e0a"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/mortar-launch-a.mp3",
+      "bytes": 11327,
+      "sha256": "2f434daa0e135c22cb76e986a2d8d078fd2283fe2524ea1880a5e246ae162cc6"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/mortar-launch-b.mp3",
+      "bytes": 12581,
+      "sha256": "269a76bb91af3023e87b93a3c9675fc74c3ef9d8f713857bb9d7e2fac1af0451"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/restore-ok.mp3",
+      "bytes": 15089,
+      "sha256": "82b5ad95be4c2a8083bce672476b5a46816b26284a112cb011051a16badcb04f"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/return.mp3",
+      "bytes": 24702,
+      "sha256": "dd82fd9fc9c535382ce0bbf84f30ca04ebc249e8610fb9f4931602e829da9f75"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/salvage-complete.mp3",
+      "bytes": 20105,
+      "sha256": "344f2b6adf06bcd10db398bba1724056fc19e7c5b703c0aa50176ecf0c872924"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/save-ok.mp3",
+      "bytes": 12163,
+      "sha256": "0379f5cce23cd96d638c10165de851d11c87a8011896e8526861a7d06bba8a07"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/ui-back.mp3",
+      "bytes": 10492,
+      "sha256": "1af5962de6ca7ceec0d83ac3e55015d6642c3cf51e0c31a78f52632cc8d2556f"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/ui-confirm.mp3",
+      "bytes": 10492,
+      "sha256": "859c278b4a6be0d89689debc2f7152b31aaba56cdf1ba1b743d62e93669bdd5e"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/ui-fail.mp3",
+      "bytes": 10492,
+      "sha256": "9e36e2692ff6d46cf28548292751d9d4e7ad9ede461191761d264ccf4e853e7a"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/ui-hover.mp3",
+      "bytes": 8820,
+      "sha256": "0dd663a824d969036c1388aedd14314fe1d10be5b2047ed984c30901583852df"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/winch-loop.mp3",
+      "bytes": 65244,
+      "sha256": "97be3435109069dc52c466e80dd57a4f8390ef025cba6291a07a50aedced506a"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/wind-calm-loop.mp3",
+      "bytes": 97009,
+      "sha256": "7e901d35c778e12273441173a0a9d8bc1c76ab92a5e9df2fcef3ac99a4b16aff"
+    },
+    {
+      "path": "outputs/audio-rich-v1/original/wind-fast-loop.mp3",
+      "bytes": 97009,
+      "sha256": "5574718554af153e6a4df9ec958459bdf6bccdca44c35dfdfd5f3e76ea138fea"
+    },
+    {
+      "path": "outputs/audio-rich-v1/player-verification.json",
+      "bytes": 4992,
+      "sha256": "fdfd1d971c2284e7abcec63bfa8417e5e537f3319646b4b396d1ec8b45aee1ae"
+    },
+    {
+      "path": "outputs/audio-rich-v1/README.md",
+      "bytes": 2018,
+      "sha256": "63a74d9d99be932397dc71a15e30c3fdc1a5365d628b79f9585305d5d07269c4"
+    },
+    {
+      "path": "outputs/audio-rich-v1/render-summary.json",
+      "bytes": 283,
+      "sha256": "aca5a95bf36315261d3c9ac86a362ad6141713b01e9d716aca3ad8ef6b12e45f"
+    },
+    {
+      "path": "tools/audio/rich-v1/build.mjs",
+      "bytes": 2062,
+      "sha256": "6c5e6c31713da5439b41167308c3714a343eeebb1ebd9dd5d931d328e3fa6e56"
+    },
+    {
+      "path": "tools/audio/rich-v1/decode-native.cjs",
+      "bytes": 3445,
+      "sha256": "adc668845becb08803e9292951db2f0ea0872ebacb9276d3678c98b2fc916dd5"
+    },
+    {
+      "path": "tools/audio/rich-v1/dsp.mjs",
+      "bytes": 21611,
+      "sha256": "b0600f8076cbf8b53b691b694c7e1ad09b4debd789253f39ec26ced0101d7574"
+    },
+    {
+      "path": "tools/audio/rich-v1/HANDOFF.md",
+      "bytes": 8219,
+      "sha256": "a0c15c6ad5139e68c992037c80d83702290cedf02012dba4fcf394e98e87f978"
+    },
+    {
+      "path": "tools/audio/rich-v1/index-template.html",
+      "bytes": 9225,
+      "sha256": "5113b2591cbfb3e749a0674ab20bbf00e744e64013fb821d08856fa40f49995b"
+    },
+    {
+      "path": "tools/audio/rich-v1/prepare.mjs",
+      "bytes": 3740,
+      "sha256": "e2c5f43d04f527c4fdf035a7a9872729663d1b95f88ea0daaa92bd4de3cb9626"
+    },
+    {
+      "path": "tools/audio/rich-v1/render.mjs",
+      "bytes": 2923,
+      "sha256": "4e1161e88213c777ebc258b8e85a107b50525e211cefa7f1edbc58b61573c834"
+    },
+    {
+      "path": "tools/audio/rich-v1/review.css",
+      "bytes": 14558,
+      "sha256": "6206474de04544b8a966cf95964a4b2e3ca856e674096df6d33aee23f77f00b0"
+    },
+    {
+      "path": "tools/audio/rich-v1/review.mjs",
+      "bytes": 37983,
+      "sha256": "4f4bfdadbd0b774a3308ff6c47898454de710ea61157c2d607456e67c2fa1457"
+    },
+    {
+      "path": "tools/audio/rich-v1/serve.mjs",
+      "bytes": 1733,
+      "sha256": "fe8129ca254557347143cf08bb44dd8081a91090efd204769305f1f4d7714dc9"
+    },
+    {
+      "path": "tools/audio/rich-v1/verify-browser.cjs",
+      "bytes": 20583,
+      "sha256": "f8538bb5f7f2095d34dea65262db17fed9ae7b0cddfc40035c64fc8bc31bc585"
+    },
+    {
+      "path": "tools/audio/rich-v1/verify-dsp.mjs",
+      "bytes": 9222,
+      "sha256": "178eb5e9694ee2a225846e956ccb8493fd3f933b829539a1ba91709dd0960711"
+    },
+    {
+      "path": "tools/audio/rich-v1/verify-http.mjs",
+      "bytes": 2858,
+      "sha256": "82ba9cf34c530ff205ab959620f3456f26668e06247d4db334e1d4aa5d771aa0"
+    },
+    {
+      "path": "tools/audio/rich-v1/verify-mix.mjs",
+      "bytes": 19699,
+      "sha256": "4cb0f7c39ad1be0d525d8dd926476de3714247d930f8ef4863b93c9386581832"
+    },
+    {
+      "path": "tools/audio/rich-v1/verify-player.mjs",
+      "bytes": 18665,
+      "sha256": "e2d7e0012cd69275653e1efc00d6c83002c5ca52bfffc43f68e443ab10a21aaa"
+    },
+    {
+      "path": "tools/audio/rich-v1/verify.mjs",
+      "bytes": 16551,
+      "sha256": "ea7553e97571c30577e88f92ec789c9ee51564c679fd9f149b604bc883fbc555"
+    },
+    {
+      "path": "tools/audio/rich-v1/wav.mjs",
+      "bytes": 2540,
+      "sha256": "198b15dbf522083ffe12daea347e6b361e84b2641aa4a04831be02806924dae5"
+    }
+  ],
+  "totalBytes": 19192410,
+  "summary": {
+    "sourceClips": 49,
+    "logicalOriginalCues": 47,
+    "mortarAlternatives": 2,
+    "rendered": 49,
+    "sourceBytes": 1502974,
+    "renderedBytes": 16582724,
+    "paidGenerationRequests": 0,
+    "maximumOutputPeak": 0.7900000214576721,
+    "humanApproval": false,
+    "gameplayInstalled": false
+  },
+  "preserves": [
+    "audio-review-v2 113 frozen files",
+    "audio-mortar-r1 18 frozen files",
+    "audio-v1 46 frozen files"
+  ],
+  "excludes": [
+    "work-only decoded IEEE_FLOAT32 intermediates",
+    "this manifest itself"
+  ],
+  "entry": "outputs/audio-rich-v1/index.html",
+  "handoff": "tools/audio/rich-v1/HANDOFF.md",
+  "sourceHumanApproval": "Original mortar launch rejected; A/B selection and other candidates unapproved. Enhancement does not grant approval.",
+  "gameplayInstalled": false,
+  "paidGenerationRequests": 0
+}

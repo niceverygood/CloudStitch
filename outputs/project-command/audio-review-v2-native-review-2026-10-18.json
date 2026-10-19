@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:25:05Z",
+  "locationRef": "local-locations.json",
+  "independentReviewer": "audio_contract_review",
+  "original": {
+    "path": "outputs/audio-review-browser-qa-v2/verification.json",
+    "sha256": "4b59a1ea1da9f0e9564f17beb09452dc3b259cdd8d4b55b23838cf9075eb33f8",
+    "completedAt": "2026-10-18T09:15:21.732Z",
+    "passed": false,
+    "totalChecks": 35,
+    "passedChecks": 34,
+    "failedChecks": 1,
+    "composition": {
+      "preservation": 2,
+      "lockUnlock": 3,
+      "decode": 2,
+      "singleMixer": 5,
+      "mixStop": 6,
+      "catalogDownload": 4,
+      "reviewJson": 5,
+      "mobileDispose": 2,
+      "endNetwork": 6
+    },
+    "failedObservation": "stoppedSFXbus AudioParam.value remained~0.65 while desired0.54; not confirmed product defect"
+  },
+  "native47": {
+    "decodeAudioDataFiles": 47,
+    "finitePcmFiles": 47,
+    "decodedContextSampleRate": 48000,
+    "channels": 2,
+    "rawPeakMaxApprox": 1.098,
+    "rawNotNormalizedPlaybackPeak": true,
+    "playbackNormalizationTarget": 0.7,
+    "decodeOnlyAll47NotAll47AudiblyPlayed": true
+  },
+  "followup": {
+    "path": "outputs/audio-review-browser-qa-v2/followup-verification.json",
+    "sha256": "7e5d5da9384820793af63b56f10d9a704931204781bfbc1e32d69c646ec7eacc",
+    "completedAt": "2026-10-18T09:17:37.283Z",
+    "passed": true,
+    "totalChecks": 8,
+    "composition": {
+      "nativeMixer": 2,
+      "mortar3Decode": 1,
+      "playStop": 1,
+      "mono": 1,
+      "notesJson": 1,
+      "mobile": 1,
+      "errorRequests": 1
+    },
+    "activeGainApprox": 0.54,
+    "stoppedRequestedGain": 0.27,
+    "restartObservedGainApprox": 0.27,
+    "observesAudioParamNotFinalOutputPcmOrPerceptualLoudness": true,
+    "original35Or47DecodeRepeated": false
+  },
+  "protection211": {
+    "reportedComparedBeforeAfter": true,
+    "changed": 0,
+    "composition": "review113+audio46+integration39+machinegun7+sourceBoundary7+manifest4−duplicate5",
+    "review113Included": true,
+    "mortar18Excluded": true,
+    "rootRepeatedFullHashes": false,
+    "mortar18FollowupOnlyManifestLinked": true,
+    "separateFinalPostMortar18AndFleet95Requested": true
+  },
+  "acceptance": {
+    "technicalFlowsCompleteWithinScope": true,
+    "originalFailedObservationRetained": true,
+    "humanApproval": false,
+    "headphones3cueLoopComfort": false,
+    "gameInstalled": false
+  },
+  "mortar": {
+    "oldLaunchHumanRejected": true,
+    "ABUserChoicePending": true,
+    "fallImpactNotRejectedAsGroup": true,
+    "new3NativeFinitePlayStopMonoNotesMobile": true
+  },
+  "successor": "audio-rich-request-2026-10-18.json",
+  "aggregateQaPass": null
+}

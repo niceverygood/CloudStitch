@@ -1,0 +1,230 @@
+{
+  "revision": "FANTASY-WEAPON-FIRING-SOURCE1",
+  "count": 24,
+  "scope": "24 art items: 18 newer multipart devices and6 original weapons; appropriate firing/melee/capture/defense/pressure animations",
+  "files": [
+    {
+      "path": "tools/combat-vfx-v2/fantasy-weapon-firing-v1/glb.cjs",
+      "bytes": 8000,
+      "sha256": "2f9ed3bf3e5dea8f1ced17b6fa749d0fcb750369f02301958fb42d5befa72ac1"
+    },
+    {
+      "path": "tools/combat-vfx-v2/fantasy-weapon-firing-v1/scenes.cjs",
+      "bytes": 18868,
+      "sha256": "0f91f10338f3819eb76c45333417d1be472716af93fad922e19e8c39fd467534"
+    },
+    {
+      "path": "tools/combat-vfx-v2/fantasy-weapon-firing-v1/build.cjs",
+      "bytes": 4035,
+      "sha256": "f08a3446fd316ab9090b5e4e60e6673932dacf6a2065472aa72caef8f58d63d3"
+    },
+    {
+      "path": "tools/combat-vfx-v2/fantasy-weapon-firing-v1/viewer.js",
+      "bytes": 6897,
+      "sha256": "25bf772777b30f623194c548a461bf3782480eb88fea90c7fa08b08e08da4bda"
+    },
+    {
+      "path": "tools/combat-vfx-v2/fantasy-weapon-firing-v1/template.html",
+      "bytes": 4135,
+      "sha256": "e447d46fd9d3bed622ac5b5b2d6723c404c4bcedf95a3e8cd55f08e5cb8e8d06"
+    },
+    {
+      "path": "tools/combat-vfx-v2/fantasy-weapon-firing-v1/verify.cjs",
+      "bytes": 4263,
+      "sha256": "6e834e8fed359032c3437486ec34e6db7180702407219091a175aeb96c8fdb9b"
+    },
+    {
+      "path": "tools/combat-vfx-v2/fantasy-weapon-firing-v1/qa.cjs",
+      "bytes": 4821,
+      "sha256": "8faa503d4041c7eb8f25e702353dc1edcf8169e358bab404cd1c08f15fb2247d"
+    },
+    {
+      "path": "tools/combat-vfx-v2/fantasy-weapon-firing-v1/HANDOFF.txt",
+      "bytes": 2308,
+      "sha256": "c8ca3345754996c71e2bde34c53f0573e1e01c2f29337f285a13c35a3a85917f"
+    }
+  ],
+  "sources": [
+    {
+      "id": "classic-01-machine-gun",
+      "name": "기관총",
+      "path": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+      "bytes": 3299860,
+      "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6"
+    },
+    {
+      "id": "classic-02-deck-cannon",
+      "name": "함포",
+      "path": "outputs/weapon-modules/02-deck-cannon/weapon.glb",
+      "bytes": 3961552,
+      "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd"
+    },
+    {
+      "id": "classic-03-mortar",
+      "name": "박격포",
+      "path": "outputs/weapon-modules/03-mortar/weapon.glb",
+      "bytes": 3674748,
+      "sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f"
+    },
+    {
+      "id": "classic-04-harpoon",
+      "name": "작살포",
+      "path": "outputs/weapon-modules/04-harpoon/weapon.glb",
+      "bytes": 3777952,
+      "sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64"
+    },
+    {
+      "id": "classic-05-chain-shot",
+      "name": "사슬탄 발사기",
+      "path": "outputs/weapon-modules/05-chain-shot/weapon.glb",
+      "bytes": 3654140,
+      "sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219"
+    },
+    {
+      "id": "classic-06-flamethrower",
+      "name": "화염방사기",
+      "path": "outputs/weapon-modules/06-flamethrower/weapon.glb",
+      "bytes": 3776868,
+      "sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd"
+    },
+    {
+      "id": "new-01-capacitor-tower",
+      "name": "축전 전기탑",
+      "path": "outputs/grounded-weapons-v1/assets/01-capacitor-tower.glb",
+      "bytes": 2737936,
+      "sha256": "6b2eda90abdaffa4b9790dec9ab5148b82f5b184ce44cf39b5be22ed782019be"
+    },
+    {
+      "id": "new-02-deck-greatbow",
+      "name": "갑판 대궁",
+      "path": "outputs/grounded-weapons-v1/assets/02-deck-greatbow.glb",
+      "bytes": 2155488,
+      "sha256": "4cfa4cf87f53ca1b98e00b8ebe605b21d72f0aff17365b4c4fd979f0c65a4180"
+    },
+    {
+      "id": "new-03-repeating-crossbow",
+      "name": "연발 쇠뇌",
+      "path": "outputs/grounded-weapons-v1/assets/03-repeating-crossbow.glb",
+      "bytes": 2745896,
+      "sha256": "c757745a51cebbf053e40d9e3956be4639f848c79b6589891d55b73eefd4b277"
+    },
+    {
+      "id": "new-04-harpoon-winch",
+      "name": "작살 윈치",
+      "path": "outputs/grounded-weapons-v1/assets/04-harpoon-winch.glb",
+      "bytes": 3095440,
+      "sha256": "b90101534883fa6ae24864dc5599abe69ad9050a726254237814f6678bfe092a"
+    },
+    {
+      "id": "new-05-small-catapult",
+      "name": "소형 투석기",
+      "path": "outputs/grounded-weapons-v1/assets/05-small-catapult.glb",
+      "bytes": 2627148,
+      "sha256": "c15bdf89326f16cd29ad082f879524fd7ef8063a303e821dc786f83aa1758817"
+    },
+    {
+      "id": "new-06-net-launcher",
+      "name": "투망 발사대",
+      "path": "outputs/grounded-weapons-v1/assets/06-net-launcher.glb",
+      "bytes": 3620072,
+      "sha256": "65abc8d27d6c3aaf92625ddae78444327d83e88557016617821119d288c542a0"
+    },
+    {
+      "id": "new-07-folding-shield",
+      "name": "접이식 방패",
+      "path": "outputs/grounded-weapons-v1/assets/07-folding-shield.glb",
+      "bytes": 3585380,
+      "sha256": "3982375a7e27a57b2c0df775cad63f43a810421d4657ee9dfaa89c571ce3353c"
+    },
+    {
+      "id": "new-08-steam-projector",
+      "name": "증기 분사기",
+      "path": "outputs/grounded-weapons-v1/assets/08-steam-projector.glb",
+      "bytes": 3505960,
+      "sha256": "5aecc63185acfbaae1304b14aa1ebf467ca98a89589bd390a1cf991b6a21df96"
+    },
+    {
+      "id": "new-09-side-circular-saw",
+      "name": "측면 회전톱",
+      "path": "outputs/grounded-weapons-v1/assets/09-side-circular-saw.glb",
+      "bytes": 1880008,
+      "sha256": "4df32e0f96b900bfdf97ff8730d91c90bc52b137b13e68692c25d0d213ec2887"
+    },
+    {
+      "id": "new-10-chain-flail",
+      "name": "사슬추 타격기",
+      "path": "outputs/grounded-weapons-v1/assets/10-chain-flail.glb",
+      "bytes": 3919708,
+      "sha256": "ea849f88adb57f5ca615ff9fb38841282fd72d2fc13bad6cfcbd9a5f3454bd2d"
+    },
+    {
+      "id": "new-11-pneumatic-fan",
+      "name": "공압 바람개비",
+      "path": "outputs/grounded-weapons-v1/assets/11-pneumatic-fan.glb",
+      "bytes": 3200236,
+      "sha256": "502f45e93b9b5c88e599a3932cd3465368b345c3227afd2db7c04ba935b77547"
+    },
+    {
+      "id": "new-12-folding-ram",
+      "name": "접이식 충각",
+      "path": "outputs/grounded-weapons-v1/assets/12-folding-ram.glb",
+      "bytes": 1813252,
+      "sha256": "4cdb4f136dfd412d9b95d9805f2be887f6dec33cb5cf497270560c31b6d843d2"
+    },
+    {
+      "id": "extra-13-comet-rocket-rack",
+      "name": "혜성 로켓 선반",
+      "path": "outputs/grounded-weapons-v2/assets/13-comet-rocket-rack.glb",
+      "bytes": 4174696,
+      "sha256": "8f09f6693ba1bd5f4b5f5dc175c03a57f79852933e574bee7ea7485ed4f0f059"
+    },
+    {
+      "id": "extra-14-disc-slinger",
+      "name": "황동 원반 발사기",
+      "path": "outputs/grounded-weapons-v2/assets/14-disc-slinger.glb",
+      "bytes": 2841564,
+      "sha256": "db7bc04d8389e58f1e4d0a1dd47ce2fe1b51f6a70dcb5dd2b338ccd007384a2b"
+    },
+    {
+      "id": "extra-15-piston-hammer",
+      "name": "증기 피스톤 망치",
+      "path": "outputs/grounded-weapons-v2/assets/15-piston-hammer.glb",
+      "bytes": 2424236,
+      "sha256": "6fb848251e0e940d19ce92769335accfadf79ebdda9461a7dd49184d3d96e0eb"
+    },
+    {
+      "id": "extra-16-drill-lance",
+      "name": "나선 드릴창",
+      "path": "outputs/grounded-weapons-v2/assets/16-drill-lance.glb",
+      "bytes": 2263016,
+      "sha256": "7c2990a851401fe563f35f879462f540081f771712ed6f00eda768274a7c1c94"
+    },
+    {
+      "id": "extra-17-bomb-dropper",
+      "name": "구름방울 투하대",
+      "path": "outputs/grounded-weapons-v2/assets/17-bomb-dropper.glb",
+      "bytes": 3180492,
+      "sha256": "6cc94e9e298f18adba66a7ea10fb85648c78c678f3881b00900702007653b906"
+    },
+    {
+      "id": "extra-18-salvage-claw",
+      "name": "황동 인양 집게",
+      "path": "outputs/grounded-weapons-v2/assets/18-salvage-claw.glb",
+      "bytes": 2515016,
+      "sha256": "8c30e7859070188feff9db5c72a13131752a7cf05d89af592898c1c5a3895451"
+    }
+  ],
+  "exported": false,
+  "expected": {
+    "glbs": 24,
+    "clipsPerGLB": 1,
+    "duration": 4.2,
+    "standard": "glTF TRS; embedded textures preserved",
+    "budget": "CPU binary assembly/official validator24 + browser sequential actual reload24 and render/contact; about4 minutes"
+  },
+  "checks": {
+    "syntax": "node --check modules",
+    "originalsReadOnly": true,
+    "paidCalls": 0
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:08:22.3791407Z",
+  "kind": "stage-map-heavy-qa-order",
+  "currentOrderSupersededBy": "qa-order-update-2026-10-18.json; stage-specific check plan retained",
+  "owner": {
+    "threadId": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+    "title": "Cloudstitch 데스크톱 통합·QA"
+  },
+  "phase": "preparing independent harness; awaiting final READY; browser run not verified",
+  "sourceDirectory": "tools/integration-followup/",
+  "evidenceDirectory": "outputs/stage-maps-browser-qa-v1/",
+  "importDirectory": "outputs/stage-maps-v1/",
+  "protect": [
+    "frozen integration-v1 delivery manifest 39 files",
+    "existing cloudstitch.integration.v1 save key",
+    "other owner source folders"
+  ],
+  "gate": "verify READY manifest/source and output hashes before importing only new stage-map outputs",
+  "origin": "http://127.0.0.1:8840",
+  "plannedChecks": [
+    "6 map UI selection/departure and actual terrain/enemy GLB loads",
+    "reject selection while sailing or with active departure checkpoint",
+    "map1 real input recovery/return/save followed by map change",
+    "reload and same-route save/activeVoyage restoration",
+    "existing integration save key preserved",
+    "mobile overflow, local404/external requests and errors"
+  ],
+  "otherHeavyQa": "new playable screen/audio/VFX/fleet owners notified to hand off heavy QA for sequential execution; light checks and generation continue",
+  "observations": {
+    "capturedAt": "2026-10-18T07:08:22.3791407Z",
+    "reports": [
+      {
+        "path": "outputs/stage-maps-v1/runtime-verification.json",
+        "exists": true,
+        "sha256": "19f1ac5f30b71911259838579b55e108e4e84768438d07de983814cc41095527",
+        "passed": true,
+        "tests": null,
+        "count": 1,
+        "summary": null,
+        "keys": [
+          "version",
+          "passed",
+          "scope",
+          "browser",
+          "noTeleport",
+          "noHpInjection",
+          "noFixtureReturn",
+          "smoke",
+          "twoSorties"
+        ]
+      },
+      {
+        "path": "outputs/stage-maps-v1/unit-verification.json",
+        "exists": false
+      },
+      {
+        "path": "outputs/stage-maps-v1/delivery-manifest.json",
+        "exists": false
+      },
+      {
+        "path": "outputs/audio-v1/runtime-verification.json",
+        "exists": true,
+        "sha256": "87f109da71f851dcadf4bfc38b89d6fc5ed804917e437be6bf94b2a9f382adbf",
+        "passed": 15,
+        "tests": [
+          {
+            "name": "settings defaults and malformed values",
+            "status": "passed",
+            "evidence": {
+              "master": 1,
+              "sfx": 0,
+              "ambience": 0.35,
+              "muted": false,
+              "mono": false,
+              "lowDynamicRange": true
+            }
+          },
+          {
+            "name": "corrupt and denied storage recover without throwing",
+            "status": "passed",
+            "evidence": "Both invalid JSON and SecurityError-like storage failures preserve usable defaults/settings."
+          },
+          {
+            "name": "user unlock gate drops old one-shots",
+            "status": "passed",
+            "evidence": "No locked cue backlog; first unlocked cue schedules one source."
+          },
+          {
+            "name": "unlock can retry after context creation failure",
+            "status": "passed",
+            "evidence": null
+          },
+          {
+            "name": "dispose wins a pending unlock/resume race",
+            "status": "passed",
+            "evidence": null
+          },
+          {
+            "name": "mute discards cue backlog and restores on next cue",
+            "status": "passed",
+            "evidence": null
+          },
+          {
+            "name": "burst rate limit and total voice cap",
+            "status": "passed",
+            "evidence": {
+              "sameInstantStarts": 1,
+              "activeVoiceHighWater": 3,
+              "withReleaseTailsHighWater": 5,
+              "logicalVoiceCap": 12,
+              "releaseTailCap": 24
+            }
+          },
+          {
+            "name": "three critical cue ceiling and priority admission",
+            "status": "passed",
+            "evidence": {
+              "warningAdmitted": true,
+              "totalActiveHighWater": 3,
+              "criticalHighWater": 3,
+              "debug": {
+                "version": "audio-v1.0.0-ready",
+                "unlocked": true,
+                "locked": false,
+                "contextState": "running",
+                "paused": false,
+                "disposed": false,
+                "muted": false,
+                "activeVoices": 3,
+                "activeImportant": 3,
+                "activeCritical": 3,
+                "activeLoops": [],
+                "releasing": 12,
+                "bufferCache": 18,
+                "throttleKeys": 15,
+                "counts": {
+                  "played": 28,
+                  "droppedLocked": 0,
+                  "droppedMuted": 0,
+                  "droppedRate": 0,
+                  "droppedCap": 2,
+                  "stolen": 13,
+                  "loopStarts": 0,
+                  "clears": 0
+                },
+                "unlockError": null,
+                "storageError": null,
+                "limits": {
+                  "voices": 12,
+                  "important": 3,
+                  "critical": 3,
+                  "buffers": 64,
+                  "releaseTails": 24
+                }
+              }
+            }
+          },
+          {
+            "name": "three important cues ceiling protects critical cues from lower priority replacement",
+            "status": "passed",
+            "evidence": {
+              "importantHighWater": 3,
+              "lowerPriorityRejectedOverThreeCritical": true
+            }
+          },
+          {
+            "name": "loop idempotence, update and explicit stop",
+            "status": "passed",
+            "evidence": "Repeated loop update does not start another source."
+          },
+          {
+            "name": "three ambience loops remain bounded across state updates",
+            "status": "passed",
+            "evidence": {
+              "updates": 1500,
+              "sourceStarts": 3
+            }
+          },
+          {
+            "name": "pause/resume clears sources and drops old hits",
+            "status": "passed",
+            "evidence": null
+          },
+          {
+            "name": "clear and dispose remove all sources and reject future playback",
+            "status": "passed",
+            "evidence": null
+          },
+          {
+            "name": "settings patches retain other valid fields",
+            "status": "passed",
+            "evidence": null
+          },
+          {
+            "name": "mono re-centers existing and future panners; invalid IDs do not allocate",
+            "status": "passed",
+            "evidence": null
+          }
+        ],
+        "count": 1,
+        "summary": null,
+        "keys": [
+          "schema",
+          "checkedAt",
+          "status",
+          "scope",
+          "limitations",
+          "passed",
+          "failed",
+          "tests"
+        ]
+      },
+      {
+        "path": "outputs/audio-v1/signal-verification.json",
+        "exists": true,
+        "sha256": "458b92c322f47fb250b5fb14751f862a7741be1605e1ae15e0c40d68a4325a11",
+        "passed": true,
+        "tests": null,
+        "count": 1,
+        "summary": null,
+        "keys": [
+          "version",
+          "tool",
+          "passed",
+          "representativeIds",
+          "representativeChecks",
+          "checks",
+          "totalWavBytes",
+          "criteria",
+          "humanListening",
+          "offlineAudioContext",
+          "limits"
+        ]
+      }
+    ]
+  }
+}

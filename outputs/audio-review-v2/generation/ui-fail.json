@@ -1,0 +1,25 @@
+{
+  "id": "ui-fail",
+  "startedAt": "2026-10-18T08:53:55.667Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A small brass latch fails to engage: one dull wooden knock and a brief soft mechanical spring slip, ending immediately. Mild readable failure feedback, no buzzer, no alarm, no music. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 0.6,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:57.355Z",
+  "output": {
+    "file": "audio/ui-fail.mp3",
+    "bytes": 10492,
+    "sha256": "9e36e2692ff6d46cf28548292751d9d4e7ad9ede461191761d264ccf4e853e7a",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "6"
+}

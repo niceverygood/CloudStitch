@@ -1,0 +1,429 @@
+{
+  "scope": "independent art demo, not game combat",
+  "branch": "salvage",
+  "time": 1.1,
+  "events": [
+    {
+      "id": "salvage-0-launch",
+      "shot": 0,
+      "phase": "launch",
+      "time": 0.95
+    },
+    {
+      "id": "salvage-0-flight",
+      "shot": 0,
+      "phase": "flight",
+      "time": 1.01
+    },
+    {
+      "id": "salvage-0-hit",
+      "shot": 0,
+      "phase": "hit",
+      "time": 1.65
+    },
+    {
+      "id": "salvage-recovery",
+      "phase": "recovery",
+      "time": 3.6
+    }
+  ],
+  "stats": {
+    "branch": "salvage",
+    "time": 1.1,
+    "playing": false,
+    "effects": true,
+    "reduced": false,
+    "mode": "painted",
+    "oneClock": true,
+    "sourceModel": "ship-weapon-harmony-v1 final r2",
+    "left": {
+      "branch": "salvage",
+      "rich": false,
+      "time": 1.1,
+      "actualProjectileGroups": 1,
+      "sourceGroups": [
+        "04-harpoon-winch_loaded_forged_harpoon_156"
+      ],
+      "launchOrigins": [
+        [
+          0.016602745479345336,
+          -0.010382499962300066,
+          0.29
+        ]
+      ],
+      "hits": [],
+      "projectileVisible": 1,
+      "mechanismRecoil": 0.0001678864354583559,
+      "hullRecoil": 0.0014341305982868526,
+      "hitstop": false,
+      "cableSegmentsVisible": 14,
+      "finite": true
+    },
+    "right": {
+      "branch": "salvage",
+      "rich": true,
+      "time": 1.1,
+      "actualProjectileGroups": 1,
+      "sourceGroups": [
+        "04-harpoon-winch_loaded_forged_harpoon_156"
+      ],
+      "launchOrigins": [
+        [
+          0.016602745479345336,
+          -0.010382499962300066,
+          0.29
+        ]
+      ],
+      "hits": [],
+      "projectileVisible": 1,
+      "mechanismRecoil": 0.00047967552988099904,
+      "hullRecoil": 0.004097515995105294,
+      "hitstop": false,
+      "cableSegmentsVisible": 14,
+      "finite": true
+    },
+    "sharedCamera": true,
+    "outlineAutoClear": true,
+    "audio": {
+      "unlocked": true,
+      "muted": false,
+      "volume": 0.7,
+      "variant": "basic",
+      "generation": 33,
+      "active": 0,
+      "state": "running",
+      "history": [
+        {
+          "type": "cancel",
+          "reason": "branch",
+          "generation": 1
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 2
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 3
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 4
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 5
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 6
+        },
+        {
+          "type": "cancel",
+          "reason": "branch",
+          "generation": 7
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 8
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 9
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 10
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 11
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 12
+        },
+        {
+          "type": "cancel",
+          "reason": "branch",
+          "generation": 13
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 14
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 15
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 16
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 17
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 18
+        },
+        {
+          "type": "cancel",
+          "reason": "restart",
+          "generation": 19
+        },
+        {
+          "type": "cancel",
+          "reason": "reschedule",
+          "generation": 20
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-launch",
+          "phase": "launch",
+          "time": 0.95,
+          "when": 1.3313333333333333,
+          "epoch": 20,
+          "variant": "enhanced",
+          "cue": "salvage-launch-enhanced"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-flight",
+          "phase": "flight",
+          "time": 1.01,
+          "when": 1.3913333333333333,
+          "epoch": 20,
+          "variant": "enhanced",
+          "cue": "salvage-flight-enhanced"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-hit",
+          "phase": "hit",
+          "time": 1.65,
+          "when": 2.0313333333333334,
+          "epoch": 20,
+          "variant": "enhanced",
+          "cue": "salvage-hit-enhanced"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-recovery",
+          "phase": "recovery",
+          "time": 3.6,
+          "when": 3.9813333333333336,
+          "epoch": 20,
+          "variant": "enhanced",
+          "cue": "salvage-recovery-enhanced"
+        },
+        {
+          "type": "cancel",
+          "reason": "pause",
+          "generation": 21
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 22
+        },
+        {
+          "type": "cancel",
+          "reason": "restart",
+          "generation": 23
+        },
+        {
+          "type": "cancel",
+          "reason": "reschedule",
+          "generation": 24
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-launch",
+          "phase": "launch",
+          "time": 0.95,
+          "when": 3.3499999999999996,
+          "epoch": 24,
+          "variant": "enhanced",
+          "cue": "salvage-launch-enhanced"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-flight",
+          "phase": "flight",
+          "time": 1.01,
+          "when": 3.41,
+          "epoch": 24,
+          "variant": "enhanced",
+          "cue": "salvage-flight-enhanced"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-hit",
+          "phase": "hit",
+          "time": 1.65,
+          "when": 4.05,
+          "epoch": 24,
+          "variant": "enhanced",
+          "cue": "salvage-hit-enhanced"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-recovery",
+          "phase": "recovery",
+          "time": 3.6,
+          "when": 6,
+          "epoch": 24,
+          "variant": "enhanced",
+          "cue": "salvage-recovery-enhanced"
+        },
+        {
+          "type": "cancel",
+          "reason": "variant",
+          "generation": 25
+        },
+        {
+          "type": "cancel",
+          "reason": "reschedule",
+          "generation": 26
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-launch",
+          "phase": "launch",
+          "time": 0.95,
+          "when": 3.351233333333333,
+          "epoch": 26,
+          "variant": "basic",
+          "cue": "salvage-launch-basic"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-flight",
+          "phase": "flight",
+          "time": 1.01,
+          "when": 3.4112333333333327,
+          "epoch": 26,
+          "variant": "basic",
+          "cue": "salvage-flight-basic"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-hit",
+          "phase": "hit",
+          "time": 1.65,
+          "when": 4.051233333333333,
+          "epoch": 26,
+          "variant": "basic",
+          "cue": "salvage-hit-basic"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-recovery",
+          "phase": "recovery",
+          "time": 3.6,
+          "when": 6.0012333333333325,
+          "epoch": 26,
+          "variant": "basic",
+          "cue": "salvage-recovery-basic"
+        },
+        {
+          "type": "cancel",
+          "reason": "mute",
+          "generation": 27
+        },
+        {
+          "type": "cancel",
+          "reason": "pause",
+          "generation": 28
+        },
+        {
+          "type": "cancel",
+          "reason": "mute",
+          "generation": 29
+        },
+        {
+          "type": "cancel",
+          "reason": "restart",
+          "generation": 30
+        },
+        {
+          "type": "cancel",
+          "reason": "reschedule",
+          "generation": 31
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-launch",
+          "phase": "launch",
+          "time": 0.95,
+          "when": 3.982,
+          "epoch": 31,
+          "variant": "basic",
+          "cue": "salvage-launch-basic"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-flight",
+          "phase": "flight",
+          "time": 1.01,
+          "when": 4.042,
+          "epoch": 31,
+          "variant": "basic",
+          "cue": "salvage-flight-basic"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-0-hit",
+          "phase": "hit",
+          "time": 1.65,
+          "when": 4.682,
+          "epoch": 31,
+          "variant": "basic",
+          "cue": "salvage-hit-basic"
+        },
+        {
+          "type": "scheduled",
+          "event": "salvage-recovery",
+          "phase": "recovery",
+          "time": 3.6,
+          "when": 6.632,
+          "epoch": 31,
+          "variant": "basic",
+          "cue": "salvage-recovery-basic"
+        },
+        {
+          "type": "cancel",
+          "reason": "hidden",
+          "generation": 32
+        },
+        {
+          "type": "cancel",
+          "reason": "seek",
+          "generation": 33
+        }
+      ]
+    },
+    "resources": {
+      "geometries": 2297,
+      "textures": 25,
+      "programs": 12
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "version": "audio-v1.0.0-ready",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Actual safe departure",
+      "passed": true
+    },
+    {
+      "name": "Actual player projectile fire consumed",
+      "passed": true
+    },
+    {
+      "name": "Actual enemy projectile fire consumed",
+      "passed": true
+    },
+    {
+      "name": "Actual swept-collision hit consumed",
+      "passed": true
+    },
+    {
+      "name": "Repeated real history does not replay cues",
+      "passed": true
+    },
+    {
+      "name": "Actual pause stops loops",
+      "passed": true
+    },
+    {
+      "name": "Actual resume does not replay history",
+      "passed": true
+    },
+    {
+      "name": "Adapter dispose stops loops",
+      "passed": true
+    }
+  ],
+  "ticks": 216,
+  "elapsedSimulationSeconds": 3.6,
+  "sourceBoundary": [
+    {
+      "path": "tools/integration/HANDOFF.md",
+      "bytes": 16920,
+      "sha256": "80b34934557421291b4f28ef2899ecc0176c7f4f8b08c1a97da27f329b010dbd"
+    },
+    {
+      "path": "tools/integration/contract.mjs",
+      "bytes": 2040,
+      "sha256": "4cc138ee25d478aa3623072243d0e1565bab7664b029c59b1b00f0c9193dcb26"
+    },
+    {
+      "path": "tools/integration/session.mjs",
+      "bytes": 16568,
+      "sha256": "04a419d1c7158b65f450ccb23981b2d7ece5137ac35edb1fa1ab250b82f279f8"
+    },
+    {
+      "path": "tools/integration/renderer.js",
+      "bytes": 31052,
+      "sha256": "f1cf7b08799f5624f4f86aa938ae372cdc0cca92693c95d256c1ec292d935cf0"
+    },
+    {
+      "path": "tools/integration/ui.js",
+      "bytes": 25370,
+      "sha256": "6395834470e98709372716451124f12b2b2059cd9dbef53e447b75c07527d0d6"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    }
+  ],
+  "eventCounts": {
+    "combat-cleared": 1,
+    "enemy-spawned": 2,
+    "player-fire": 16,
+    "hit": 13,
+    "projectile-ended": 13,
+    "module-destroyed": 1,
+    "bundle-detached": 1,
+    "enemy-defeated": 1,
+    "enemy-fire": 1
+  },
+  "cueCounts": {
+    "fire-machinegun": 16,
+    "hit-wood": 10,
+    "bundle-detach": 1,
+    "hit-armor": 3,
+    "fire-cannon": 1
+  },
+  "adapter": {
+    "version": "audio-adapter-1.0.0-ready",
+    "disposed": true,
+    "hidden": false,
+    "paused": false,
+    "identity": {
+      "voyageId": "example-captain:voyage-1",
+      "generation": 1
+    },
+    "cursor": 49,
+    "loops": [],
+    "retiredIdentities": 0,
+    "retainedModuleMaps": 0,
+    "lifecycle": null,
+    "accepted": 46,
+    "duplicate": 4782,
+    "stale": 0,
+    "invalid": 0,
+    "suppressed": 0,
+    "unknown": 15,
+    "cues": 31,
+    "errors": 0,
+    "boundaries": 1
+  },
+  "limits": [
+    "Node accelerated actual input/controller/authority path; no browser or native Web Audio.",
+    "Only recorded event types were observed. No whole-campaign, return/repair/equip UI or human listening claim.",
+    "Audio sink is a recording fake; runtime scheduling is verified separately."
+  ],
+  "sourcePreserved": true
+}

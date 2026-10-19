@@ -1,0 +1,119 @@
+{
+  "schema": "cinematic-v5-paired-auditions/v1",
+  "order": [
+    "v4",
+    "v5"
+  ],
+  "pairs": [
+    {
+      "id": "fire-machinegun",
+      "file": "auditions/fire-machinegun-v4-v5.wav",
+      "sha256": "0d3631cc48557ae332aaad65c5ec077898371d54212fba440ea9eb30ed2793e5",
+      "bytes": 406188,
+      "sampleRate": 44100,
+      "frames": 101536,
+      "channels": 2,
+      "gapFrames": 17640,
+      "targetRms": 0.07337386927314334,
+      "segments": [
+        {
+          "version": "v4",
+          "file": "original/fire-machinegun.wav",
+          "sha256": "2c946f2b4365d4bf488febd1ac5af1b3fa549c98f72d2a34263be5336978e6e2",
+          "startFrame": 0,
+          "frames": 50380,
+          "gain": 1.0140967117988395,
+          "targetRms": 0.07337386927314334,
+          "sourceRms": 0.0723539169582655,
+          "sourcePeak": 0.709991455078125
+        },
+        {
+          "version": "v5",
+          "file": "enhanced/fire-machinegun.wav",
+          "sha256": "815bcb0cad8c0ae0408a621e89bf0b5cc6ec1b565376ee21fc0e137741acce4b",
+          "startFrame": 68020,
+          "frames": 33516,
+          "gain": 0.4300479076162614,
+          "targetRms": 0.07337386927314334,
+          "sourceRms": 0.17061789622428766,
+          "sourcePeak": 0.698577880859375
+        }
+      ],
+      "humanApproval": false
+    },
+    {
+      "id": "fire-cannon",
+      "file": "auditions/fire-cannon-v4-v5.wav",
+      "sha256": "80f624301f0a0df9542220fce178aa9ac1afde656e5e42cc9ada8ee45c3a0f70",
+      "bytes": 1394284,
+      "sampleRate": 44100,
+      "frames": 348560,
+      "channels": 2,
+      "gapFrames": 17640,
+      "targetRms": 0.06911099898391704,
+      "segments": [
+        {
+          "version": "v4",
+          "file": "original/fire-cannon.wav",
+          "sha256": "cae72cedd5c8d020996aeb9c866fd278db7bd575433220f628efb689a8f12bad",
+          "startFrame": 0,
+          "frames": 128060,
+          "gain": 1.0140967117988393,
+          "targetRms": 0.06911099898391704,
+          "sourceRms": 0.06815030379235289,
+          "sourcePeak": 0.709991455078125
+        },
+        {
+          "version": "v5",
+          "file": "enhanced/fire-cannon.wav",
+          "sha256": "62433953837f62d3d1b95d92b0a3e158ba765eb6d3dd9cf1cd8138721f0345de",
+          "startFrame": 145700,
+          "frames": 202860,
+          "gain": 0.3909196910601959,
+          "targetRms": 0.06911099898391704,
+          "sourceRms": 0.17679078481947064,
+          "sourcePeak": 0.71728515625
+        }
+      ],
+      "humanApproval": false
+    },
+    {
+      "id": "mortar-launch-a",
+      "file": "auditions/mortar-launch-a-v4-v5.wav",
+      "sha256": "2669c3105048a066d0ca9933dc7acbad170562889782d3064b866ddac495f9c8",
+      "bytes": 853820,
+      "sampleRate": 44100,
+      "frames": 213444,
+      "channels": 2,
+      "gapFrames": 17640,
+      "targetRms": 0.04591127113138695,
+      "segments": [
+        {
+          "version": "v4",
+          "file": "original/mortar-launch-a.wav",
+          "sha256": "abe4cc2d04b295e198bb7e440e470f2f10e81f5208cdcafd80acfdbf31546be6",
+          "startFrame": 0,
+          "frames": 72324,
+          "gain": 1.0140967117988393,
+          "targetRms": 0.04591127113138695,
+          "sourceRms": 0.04527306971536075,
+          "sourcePeak": 0.709991455078125
+        },
+        {
+          "version": "v5",
+          "file": "enhanced/mortar-launch-a.wav",
+          "sha256": "2aa610ef0bfced1f3a80677383816aef3e8fee2adba4ebf776341de9ba020bcf",
+          "startFrame": 89964,
+          "frames": 123480,
+          "gain": 0.26132440941875656,
+          "targetRms": 0.04591127113138695,
+          "sourceRms": 0.1756868837224345,
+          "sourcePeak": 0.707489013671875
+        }
+      ],
+      "humanApproval": false
+    }
+  ],
+  "humanApproval": false,
+  "method": "Full-clip stereo RMS matched; 400ms silence. Not LUFS or human quality approval."
+}

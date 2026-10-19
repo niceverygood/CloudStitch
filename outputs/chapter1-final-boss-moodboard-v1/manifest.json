@@ -1,0 +1,95 @@
+{
+  "title": "Cloudstitch · 종을 삼킨 자 · 1막 최종보스 무드보드 v1",
+  "created_date": "2026-10-18",
+  "timezone": "Asia/Seoul",
+  "type": "static_concept_moodboard",
+  "revision": "v1",
+  "status": "ready_for_human_art_review",
+  "request": "적군 보스 일단 1탄의 최종보스 이미지 무드보드. 진짜 악당, 괴물처럼 보이면서 웅장하게.",
+  "method": {
+    "tool": "built-in image_gen",
+    "intent": "generate",
+    "calls": 1,
+    "image_inputs": [],
+    "postprocessing": false
+  },
+  "boss": {
+    "source_id": "boss-bell-devourer",
+    "name": "종을 삼킨 자",
+    "identity": "마지막 숨 교단의 거대 장례전함",
+    "canon_preserved": [
+      "공중 구름 세계의 전함",
+      "중앙 종실의 거대한 황동 종",
+      "크림 봉인천과 검은 봉인 구조",
+      "측면 함포",
+      "후방 추진부",
+      "보조 인양 윈치와 케이블"
+    ]
+  },
+  "file": {
+    "path": "outputs/chapter1-final-boss-moodboard-v1/moodboard.png",
+    "format": "PNG",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3460638,
+    "sha256": "5c9560e99ba105a9da2aeb8690903686ba2536c1484a1262fffb697b486d08ea"
+  },
+  "prompt": "outputs/chapter1-final-boss-moodboard-v1/prompt.txt",
+  "read_dependencies": [
+    "AGENTS.md",
+    "docs/ART_DIRECTION.txt",
+    "outputs/project-command/COORDINATION.txt",
+    "outputs/10-first-boss.txt",
+    "outputs/23-act1-main-quests.txt",
+    "outputs/65-enemy-modular-anatomy.txt",
+    "outputs/68-bell-boss-arena.txt",
+    "outputs/91-boss-attack-readability.txt",
+    "outputs/39-story-canon-timeline.txt",
+    "outputs/107-story-evidence-order-audit.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt",
+    "outputs/enemy-fleet-gallery-v1/catalog.json",
+    "outputs/enemy-fleet-villain-v1/HANDOFF.md",
+    "outputs/selected-airship-toon3d/reference.png",
+    "outputs/enemy-base-moodboard-v2/moodboard.png",
+    "outputs/emotional-edition/10-first-boss.png"
+  ],
+  "visual_changes": [
+    "엄니와 이빨처럼 겹친 철갑 선수와 화로빛 눈 형태의 개구부",
+    "갈비뼈 같은 중앙 종실과 거대 황동 종",
+    "부풀린 크림 기낭, 검은 철갑, 검붉은 하부와 천",
+    "왕관 같은 다층 연통과 계단형 포대",
+    "주인공 소형 비행선과의 크기 대비",
+    "동일 보스의 종실·철갑·후방 추진/인양 상세 패널 세 개"
+  ],
+  "verification": {
+    "png_signature": "89-50-4E-47-0D-0A-1A-0A",
+    "copy_sha256_matches_generation": true,
+    "visual_review": "실제 생성 이미지를 확인: 완전한 주 실루엣·괴수형 철갑 선수·종·기낭·작은 주인공선·세부 패널·색상 견본·한글 표제 확인",
+    "labels": [
+      "Cloudstitch",
+      "종을 삼킨 자",
+      "1막 최종보스 · 장례전함",
+      "중앙 종실",
+      "괴수형 철갑",
+      "추진기와 인양 장치",
+      "2D 감성 · 입체적 손그림"
+    ],
+    "lfs_filter": "lfs",
+    "human_art_approval": "pending"
+  },
+  "preservation": {
+    "existing_assets": "기존 PNG·GLB·뷰어·공통 소스 수정 없음; 새 출력 폴더에 생성 원본을 복사",
+    "generated_original_retained": true
+  },
+  "limitations": [
+    "입체적으로 보이는 정지 콘셉트이며 실제 3D 모델·GLB·애니메이션이 아니다.",
+    "장비 수·치수·상대 크기·무기 배치·표식은 시각 제안이며 정사 또는 전투 수치 확정이 아니다.",
+    "약점 가독성·충돌·성능·전투·밸런스 검증은 수행하지 않았다.",
+    "사람의 미술 승인은 아직 받지 않았다."
+  ],
+  "git_commit_or_push": false,
+  "deployment": false,
+  "browser_or_model_exporter_used": false
+}
+

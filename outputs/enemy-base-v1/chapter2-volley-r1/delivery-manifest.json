@@ -1,0 +1,296 @@
+{
+  "revision": "chapter2-volley-r1",
+  "status": "READY_art_review",
+  "source": {
+    "revision": "chapter2-volley-r1",
+    "status": "SOURCE_READY",
+    "date": "2026-10-19",
+    "files": [
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/arm.cjs",
+        "bytes": 12143,
+        "sha256": "746432552c78adf7f31ebd86172524705e7fa885bbdc60641a2d14f703399792"
+      },
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/build.cjs",
+        "bytes": 1885,
+        "sha256": "c9dfa8477a00185890ce718dfe132f1260ce7760876e4015570c37bdf03ecc3d"
+      },
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/finalize.cjs",
+        "bytes": 3089,
+        "sha256": "5744377de4b0ca3a39da4c38ef3b3449323928c599e063fa7127ef9521a89821"
+      },
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/inspect.cjs",
+        "bytes": 5100,
+        "sha256": "ed2a90f2a512176a686a13159f08532b7834276c224204d0d8d4b710382afcc6"
+      },
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/qa.cjs",
+        "bytes": 32404,
+        "sha256": "e591684fabe4a8bbe2237b3d853ece22e16a4e23063eb38d4d78a4366f59c563"
+      },
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/README.txt",
+        "bytes": 2014,
+        "sha256": "93be227afbc0e891c3b1e1b5d9f40b7ef88d860aa37235efcea9f68a28d3a762"
+      },
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/review.js",
+        "bytes": 23879,
+        "sha256": "0b1427727cb40426b18bf44daf3355ed602efa5a71f419ac9ab2ee02bb2977be"
+      },
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/source-ready.cjs",
+        "bytes": 1192,
+        "sha256": "af8f56678afd81e298cd182aea4f4eb1cf9cd75eeedf6ee129b43c3356393d71"
+      },
+      {
+        "path": "tools/enemy-base/chapter2-volley-r1/template.html",
+        "bytes": 25761,
+        "sha256": "8a8e9d66c0ae970c12b0f382af63b4ce25b291d83fbf17653fe9ae159356e679"
+      }
+    ],
+    "readOnly": [
+      {
+        "path": "outputs/enemy-base-v1/chapter2-r2/enemy-base.glb",
+        "bytes": 47284180,
+        "sha256": "d478dfa063f9f475f962da048493fb4de898da1dcc38d73c2e40de4df65143de"
+      },
+      {
+        "path": "tools/lib/runtime.cjs",
+        "bytes": 1969,
+        "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+      },
+      {
+        "path": "tools/qa/world-gltf.cjs",
+        "bytes": 10543,
+        "sha256": "72e8832121aac1e845aac79b8a244716f571337ccd06607891b22abba93eb6f4"
+      }
+    ],
+    "reference": {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/reference.png",
+      "bytes": 3613828,
+      "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+    },
+    "scope": "Additive real GLB arrow racks and an 8-second standard transform animation; 48 racks, 24 ports, four bursts, 4608 arrows/cycle. Visual demonstration only.",
+    "coordination": "Central thread unavailable twice; only this thread active, recorded shared slot available. Independent serialized local work, no shared source/servers/deps changes.",
+    "commands": [
+      "node tools/enemy-base/chapter2-volley-r1/arm.cjs",
+      "node tools/enemy-base/chapter2-volley-r1/inspect.cjs",
+      "node tools/enemy-base/chapter2-volley-r1/build.cjs",
+      "node tools/enemy-base/chapter2-volley-r1/qa.cjs",
+      "node tools/enemy-base/chapter2-volley-r1/finalize.cjs"
+    ]
+  },
+  "model": {
+    "path": "outputs/enemy-base-v1/chapter2-volley-r1/enemy-base.glb",
+    "bytes": 48484232,
+    "sha256": "1ad20985307c5d0f4113181fd3dffd172010faed151e418d7316a3c05287101f"
+  },
+  "verification": {
+    "path": "outputs/enemy-base-v1/chapter2-volley-r1/verification.json",
+    "bytes": 3652,
+    "sha256": "cffa9940d6d9c6697d968e99b06a6e884a0dc022e57e06998f2d7de5559e18ea"
+  },
+  "files": [
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/arm.cjs",
+      "bytes": 12143,
+      "sha256": "746432552c78adf7f31ebd86172524705e7fa885bbdc60641a2d14f703399792"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/build.cjs",
+      "bytes": 1885,
+      "sha256": "c9dfa8477a00185890ce718dfe132f1260ce7760876e4015570c37bdf03ecc3d"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/finalize.cjs",
+      "bytes": 3089,
+      "sha256": "5744377de4b0ca3a39da4c38ef3b3449323928c599e063fa7127ef9521a89821"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/inspect.cjs",
+      "bytes": 5100,
+      "sha256": "ed2a90f2a512176a686a13159f08532b7834276c224204d0d8d4b710382afcc6"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/qa.cjs",
+      "bytes": 32404,
+      "sha256": "e591684fabe4a8bbe2237b3d853ece22e16a4e23063eb38d4d78a4366f59c563"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/README.txt",
+      "bytes": 2014,
+      "sha256": "93be227afbc0e891c3b1e1b5d9f40b7ef88d860aa37235efcea9f68a28d3a762"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/review.js",
+      "bytes": 23879,
+      "sha256": "0b1427727cb40426b18bf44daf3355ed602efa5a71f419ac9ab2ee02bb2977be"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/source-ready.cjs",
+      "bytes": 1192,
+      "sha256": "af8f56678afd81e298cd182aea4f4eb1cf9cd75eeedf6ee129b43c3356393d71"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-volley-r1/template.html",
+      "bytes": 25761,
+      "sha256": "8a8e9d66c0ae970c12b0f382af63b4ce25b291d83fbf17653fe9ae159356e679"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/browser-verification.json",
+      "bytes": 54382,
+      "sha256": "21bde41ae078fa77a46be5caa401770e60dd0a6f1d3aad77cfa951081ff1a3e1"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/COORDINATION_NOTE.txt",
+      "bytes": 1094,
+      "sha256": "ec630f105cdc102bbb5d341625328e4de0f133c9858f74824ff1f2d3df84ab47"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/detail-arrow-rack.png",
+      "bytes": 856566,
+      "sha256": "81ef7128055a6c90e6fdb83c91b6bbb00e4cea682ac25cca10f1c8ab573f8811"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/detail-coral.png",
+      "bytes": 532136,
+      "sha256": "494af1676617af8ebbb363fe8d9cd7b681f8690d0f1e2b2cd98538a4c72d2b2f"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/detail-harbour.png",
+      "bytes": 1135843,
+      "sha256": "b23c1bfc0e4987e833e86042a5e0f08c35320129915b242c7e53f0a1f9e9198b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/detail-shell.png",
+      "bytes": 681526,
+      "sha256": "0f081b7a480f1313b2362900498e31a5e164a31cc32593f61e43738c04c462fd"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/enemy-base.glb",
+      "bytes": 48484232,
+      "sha256": "1ad20985307c5d0f4113181fd3dffd172010faed151e418d7316a3c05287101f"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/HANDOFF.txt",
+      "bytes": 913,
+      "sha256": "7d2651e7877ae00345d2c0c53f360be581eed00cc8392c0a85b5347361aa9868"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/index.html",
+      "bytes": 70114049,
+      "sha256": "f74f6e6d73d9a60a5ab13c743327d84b971b368e7976e5cfee8cf55282b09aa1"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/model-back.png",
+      "bytes": 578621,
+      "sha256": "4165152cb68cab524845be2a2b9ff92f756565a73d0ecb46551222c919ed10b4"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/model-front.png",
+      "bytes": 576937,
+      "sha256": "ffe936a26902b6c0fdd6a986f2b897c85c20acbaf75c418ea064d01eef41f817"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/model-iso.png",
+      "bytes": 381982,
+      "sha256": "b48acab71f9ac170e08866017a82e90f1202f84625c4a0d73b3a24591334d988"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/model-manifest.json",
+      "bytes": 17939,
+      "sha256": "658c6cba6a3c6c71b497ae8791c21a2caaebf408a588222e43cebee898b3e893"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/pre-scatter/enemy-base.glb",
+      "bytes": 48333588,
+      "sha256": "487c2cfc38f81d1f27c0134db50857c619be9add00bd3f6a9e850a3c26cd711d"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/pre-scatter/model-manifest.json",
+      "bytes": 17939,
+      "sha256": "b8126c3ab98bebe37be010ca0a65ff712444411c9e76f4dd24cedef29ff91685"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/pre-scatter/qa-result.json",
+      "bytes": 53637,
+      "sha256": "a04fd53d37f375e97c9802a24742d7fe145d2eeb3309609203e8a3018f18ea99"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/pre-scatter/SOURCE_READY.json",
+      "bytes": 3126,
+      "sha256": "e8d30d77241687645535d5701de844c09003719206b339ad3eaa46227096e160"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/pre-scatter/structure-verification.json",
+      "bytes": 1794,
+      "sha256": "b7058c381adb9dea81d33682e88766baaf21201cc402698b38aa97b9409a35d6"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/pre-scatter/volley-peak.png",
+      "bytes": 417088,
+      "sha256": "2206c41dde59327eaa3512a703458c929d99ac8e88345403fa47e55b824e5c23"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/pre-scatter/volley-top.png",
+      "bytes": 372928,
+      "sha256": "c35ef9b4565692a024d6c56e548108283fc0f8d898a96e0adfce643988d5a10e"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/reference.png",
+      "bytes": 3613828,
+      "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/review-desktop.png",
+      "bytes": 1076465,
+      "sha256": "a9e9ff561529325889b99ac7018408f9d9d0cdc72ff9e8bc3fe7a96882beef77"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/review-mobile-390.png",
+      "bytes": 288338,
+      "sha256": "93fd0588c6be8cdea673e1d3f20ef34b56a60fbf9633e96f9494725bdf117896"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/SOURCE_READY.json",
+      "bytes": 3126,
+      "sha256": "dbae977d9d22a544dac20955bd04a2abb00e60303260814ec65164c912d97c95"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/structure-verification.json",
+      "bytes": 1794,
+      "sha256": "0462ca4bb1af649f1c2a9a94e97d644e34832bfa27c6e59a10b87662b891d586"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/verification.json",
+      "bytes": 3652,
+      "sha256": "cffa9940d6d9c6697d968e99b06a6e884a0dc022e57e06998f2d7de5559e18ea"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/volley-peak.png",
+      "bytes": 441612,
+      "sha256": "bfdcac7c0b6d417037a40ffbb90b48d0e44e1950a0a451dc19b1aea66205e488"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/volley-review.png",
+      "bytes": 1140504,
+      "sha256": "9baf2a0ace77f17d727f7c2fcf2f65a67e14f0e487b03d69dbc33392dc899940"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/volley-top.png",
+      "bytes": 558628,
+      "sha256": "e9cc116a92bfe26f78c1a4adfa30955d41b43498d13a8c1d3831235515ac1c20"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-volley-r1/ART_REVIEW.txt",
+      "bytes": 1867,
+      "sha256": "664ed3f77b210527782f09b4838e38d4b155c228bc9d89b8ee056d2f7e945389"
+    }
+  ],
+  "userArtApproved": false,
+  "actualRendersInspected": true
+}

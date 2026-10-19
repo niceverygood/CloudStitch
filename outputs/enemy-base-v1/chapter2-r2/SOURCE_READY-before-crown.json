@@ -1,0 +1,143 @@
+{
+  "revision": "chapter2-r2",
+  "status": "SOURCE_READY",
+  "date": "2026-10-19",
+  "ownership": [
+    "tools/enemy-base/chapter2-r2/",
+    "outputs/enemy-base-v1/chapter2-r2/"
+  ],
+  "files": [
+    {
+      "path": "tools/enemy-base/chapter2-r2/build.cjs",
+      "bytes": 1864,
+      "sha256": "83f5fc9004e54adfe72750c6387e70861401131624a0aa1185b8db4d6b30917e"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/finalize.cjs",
+      "bytes": 5479,
+      "sha256": "b9473f07220d75ca765ef63858f625850d52f38e8b67949dce9c0681c9c051cb"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/generate.cjs",
+      "bytes": 1209,
+      "sha256": "23ba823f04264510412065751e6fac17e236f452f8e10d4462db925e75f86bfe"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/generate.mjs",
+      "bytes": 4817,
+      "sha256": "38ebc2fbd6f1ff2e2d6549b58596bc62ab04febce90fec5636571a107b168a8f"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/index-exact.cjs",
+      "bytes": 5094,
+      "sha256": "17b9c013b1a8087f3289e13194a49be050b6a2122d3d95fba54053faae6ce2f6"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/inspect.cjs",
+      "bytes": 5079,
+      "sha256": "69a89cf114aee74634feb35ac786238a2e60c8e964e7f752cd1c107d1ed5f55e"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/model.mjs",
+      "bytes": 24102,
+      "sha256": "98cac9ad0358af632e68e3187a3c8ba5f50d293a61ed927deb99b28b3d01c53f"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/paint-export.js",
+      "bytes": 3214,
+      "sha256": "bac6c9f4d2fb234e59c1830b326b315b862d5c3bc364d26f0494dd2ca39916c3"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/paint.cjs",
+      "bytes": 2481,
+      "sha256": "54529e29f472cc3fb83c1a304bc1fbc2aad0544cb5d020cab18734ffb42ddab4"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/qa.cjs",
+      "bytes": 28078,
+      "sha256": "cc4a5358967a813d663ce6432f0d571cc43f238d89c118cf2b1d5e7666ac6326"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/README.txt",
+      "bytes": 1538,
+      "sha256": "99decc9d317e2567462f51147d1cd1ef5fe1d52577d83aa2f71a449d0fa9f41c"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/review.js",
+      "bytes": 22069,
+      "sha256": "d22b087b3e7d7282c81f142893c9c09314a5fbc77fc82cbe7882177c482acd71"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/source-ready.cjs",
+      "bytes": 2263,
+      "sha256": "034bb3ece306e80bb8aec66e807fbf1f1bcda00c63b5c6a9dce72765399347b2"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/template.html",
+      "bytes": 24824,
+      "sha256": "ce01378c637243950cad3abc4cd2fd08932e62322bf5cec29bc787dbd6b532d2"
+    },
+    {
+      "path": "tools/enemy-base/chapter2-r2/verify-surface.cjs",
+      "bytes": 1976,
+      "sha256": "3787c9ef95c79fdaecc9072d8c88a9a2ff5a2144f90b55b810bfb8d61b3a595b"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "tools/lib/runtime.cjs",
+      "bytes": 1969,
+      "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+    },
+    {
+      "path": "tools/qa/world-gltf.cjs",
+      "bytes": 10543,
+      "sha256": "72e8832121aac1e845aac79b8a244716f571337ccd06607891b22abba93eb6f4"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-moodboard-v1/moodboard.png",
+      "bytes": 3613828,
+      "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+    },
+    {
+      "path": "outputs/enemy-base-v1/dense-r4/model-iso.png",
+      "bytes": 497827,
+      "sha256": "1a8d0b857ab9be23428ceb4987957a5ed489f3c13a921a911e93082cf8c1d9d8"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/reference.png",
+    "bytes": 3613828,
+    "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+  },
+  "commands": [
+    "node tools/enemy-base/chapter2-r2/generate.cjs",
+    "node tools/enemy-base/chapter2-r2/index-exact.cjs",
+    "node tools/enemy-base/chapter2-r2/paint.cjs",
+    "node tools/enemy-base/chapter2-r2/inspect.cjs",
+    "node tools/enemy-base/chapter2-r2/verify-surface.cjs",
+    "node tools/enemy-base/chapter2-r2/build.cjs",
+    "node tools/enemy-base/chapter2-r2/qa.cjs",
+    "node tools/enemy-base/chapter2-r2/finalize.cjs"
+  ],
+  "scope": "New actual chapter-two fortress geometry, original painted atlas, offline reviewer, reference and chapter-one PNG comparison; static art only.",
+  "changes": [
+    "Real volumetric nautilus crown and growth ribs",
+    "Asymmetric multilevel nacre city and bone-supported balconies",
+    "Giant fanged harbour with actual empty cavity and bioluminescent basin",
+    "Hollow branching coral siege trumpets and reef trees",
+    "Swept rib cage, bone cranes, netted captured miniature craft",
+    "Jellyfish veils, seaweed roots, rope railings and pearl ornaments"
+  ],
+  "checks": "Official full glTF validator, exact surface geometry preservation, 49 browser checks/three modes/ghosting120frames/texture decode/UV/controls/mobile/download; actual PNG art read separate.",
+  "limitations": [
+    "Hidden/rear architecture interpreted from one image",
+    "No chapter-one model geometry reused",
+    "R2: closed ornate nacre endcap, faceted chamber facades, monumental halls/bridges, foreground coral fans and convex fossil armour",
+    "Relative design scale; engine/performance budget undecided",
+    "No gameplay/AI/collision/LOD/rig/animation/interior/sockets"
+  ],
+  "previousArtRevision": "chapter2-r1 technical49PASS; actual art revision required, preserved unchanged",
+  "exporterStarted": false,
+  "browserStarted": false
+}

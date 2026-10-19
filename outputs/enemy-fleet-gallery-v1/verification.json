@@ -1,0 +1,1536 @@
+{
+  "schema": "cloudstitch-enemy-gallery-qa-1",
+  "startedAt": "2026-10-18T11:32:57.986Z",
+  "harness": "tools/enemy-fleet-gallery/qa.cjs",
+  "harnessSha256": "8ec4c4daa0dbb12f4dadd0230d5cb188839626a6638efba438538ec278c0b5f3",
+  "checks": [
+    {
+      "section": "catalog",
+      "name": "catalog-26-unique-ships",
+      "passed": true,
+      "detail": {
+        "enemy": 19,
+        "context": 7,
+        "total": 26,
+        "standard": 7,
+        "mission": 7,
+        "boss": 5
+      }
+    },
+    {
+      "section": "catalog",
+      "name": "catalog-group:standard",
+      "passed": true
+    },
+    {
+      "section": "catalog",
+      "name": "catalog-group:mission",
+      "passed": true
+    },
+    {
+      "section": "catalog",
+      "name": "catalog-group:boss",
+      "passed": true
+    },
+    {
+      "section": "catalog",
+      "name": "catalog-group:context",
+      "passed": true
+    },
+    {
+      "section": "catalog",
+      "name": "26-model-preview-viewer-links-and-source-hashes",
+      "passed": true,
+      "detail": [
+        {
+          "id": "enemy-pirate-scout",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "c2c8e5cd4392cd5715884911c28811e46aecd6affd612add739c9bc45c08983c",
+          "previewSha256": "5d1a7a7471d2b2da6a38e91ead635c7e6b5f896d8fad8f65b41d127c196daf7c",
+          "expectedModelSha256": "c2c8e5cd4392cd5715884911c28811e46aecd6affd612add739c9bc45c08983c",
+          "expectedPreviewSha256": "5d1a7a7471d2b2da6a38e91ead635c7e6b5f896d8fad8f65b41d127c196daf7c"
+        },
+        {
+          "id": "enemy-cult-blockade",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "26d5a1ef979ef51fc6c16b04e66d4d9f1ce909ddbd88f8002eb871a7e4b2c5db",
+          "previewSha256": "8fd65c5677b73398fe9fe7f7ef541aa2c6f1c5c0b16d1d1637f5f1a53c8ed289",
+          "expectedModelSha256": "26d5a1ef979ef51fc6c16b04e66d4d9f1ce909ddbd88f8002eb871a7e4b2c5db",
+          "expectedPreviewSha256": "8fd65c5677b73398fe9fe7f7ef541aa2c6f1c5c0b16d1d1637f5f1a53c8ed289"
+        },
+        {
+          "id": "enemy-union-salvage",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "452d699009053773abd7d5c34cac6ed040bbeee03eb4c2fb7ebc694bea3b1177",
+          "previewSha256": "d47fe9fb6da2b9be5d600b2d00c01b8fa6c1e563303c9f61dca606aa3196ccc3",
+          "expectedModelSha256": "452d699009053773abd7d5c34cac6ed040bbeee03eb4c2fb7ebc694bea3b1177",
+          "expectedPreviewSha256": "d47fe9fb6da2b9be5d600b2d00c01b8fa6c1e563303c9f61dca606aa3196ccc3"
+        },
+        {
+          "id": "enemy-union-repair",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "18ebc6cb6a3ca37aba27ad868fcaf2496b6f69d445e3bdd6211479abe90863f3",
+          "previewSha256": "c5e77d2f4956548fed53fdc4e10590c5932447ab5842962b07b5910426373411",
+          "expectedModelSha256": "18ebc6cb6a3ca37aba27ad868fcaf2496b6f69d445e3bdd6211479abe90863f3",
+          "expectedPreviewSha256": "c5e77d2f4956548fed53fdc4e10590c5932447ab5842962b07b5910426373411"
+        },
+        {
+          "id": "enemy-ghost-chaser",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "c05629e92252812fa8e1abb8d6b1f20163f2cbcee6167f9c5ee4295eded72edd",
+          "previewSha256": "0ad7901a486d663d687eddfda1d0824b12fc793af3d343de4b82bde7a9c178a6",
+          "expectedModelSha256": "c05629e92252812fa8e1abb8d6b1f20163f2cbcee6167f9c5ee4295eded72edd",
+          "expectedPreviewSha256": "0ad7901a486d663d687eddfda1d0824b12fc793af3d343de4b82bde7a9c178a6"
+        },
+        {
+          "id": "enemy-disguised-wreck",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "4bdd357b3a5f3fb1fe7c875db1dfd54755e153b3685c010bb0f408a68a107a8a",
+          "previewSha256": "1718a368a2720b108aabfc79c02501312c67115e95d55751eb5e4737a39aaf61",
+          "expectedModelSha256": "4bdd357b3a5f3fb1fe7c875db1dfd54755e153b3685c010bb0f408a68a107a8a",
+          "expectedPreviewSha256": "1718a368a2720b108aabfc79c02501312c67115e95d55751eb5e4737a39aaf61"
+        },
+        {
+          "id": "enemy-tax-cutter",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+          "previewSha256": "bf9302c8309a636663ad3e41544013175c3f7025ec208ef66c5eb05f235aeeb3",
+          "expectedModelSha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+          "expectedPreviewSha256": "bf9302c8309a636663ad3e41544013175c3f7025ec208ef66c5eb05f235aeeb3"
+        },
+        {
+          "id": "mission-union-guard",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "aeae096526a7bc3414395dacc05aaff69a867aae93387e3c2e69db9aaf976acd",
+          "previewSha256": "4f76f48e04e553bb37d63ab38676049f3e173614daed5bc62458bd4172614c50",
+          "expectedModelSha256": "aeae096526a7bc3414395dacc05aaff69a867aae93387e3c2e69db9aaf976acd",
+          "expectedPreviewSha256": "4f76f48e04e553bb37d63ab38676049f3e173614daed5bc62458bd4172614c50"
+        },
+        {
+          "id": "mission-bridge-tug",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "fb17a797ab6e73a90c5b2d9db41e30977db1c717fefc3a1ad50f9f9608be675e",
+          "previewSha256": "c8c9fde0ad34a4ca387880a5e662414954e96539cc7923da0b824aaeebbf93e9",
+          "expectedModelSha256": "fb17a797ab6e73a90c5b2d9db41e30977db1c717fefc3a1ad50f9f9608be675e",
+          "expectedPreviewSha256": "c8c9fde0ad34a4ca387880a5e662414954e96539cc7923da0b824aaeebbf93e9"
+        },
+        {
+          "id": "mission-guard-scout",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "b2b12705ff4a9a6ac2553ec6e07577fdfaeaea3afa4799be1d458459fc550c34",
+          "previewSha256": "f50dbcd38e4ab14c181dba8a9330722f162592fa60b8f421a2ca470da913a352",
+          "expectedModelSha256": "b2b12705ff4a9a6ac2553ec6e07577fdfaeaea3afa4799be1d458459fc550c34",
+          "expectedPreviewSha256": "f50dbcd38e4ab14c181dba8a9330722f162592fa60b8f421a2ca470da913a352"
+        },
+        {
+          "id": "mission-cult-purifier",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+          "previewSha256": "da4075ddd3c7cc0c4b70eb540c234b41f9d0482f3b64e1e12e8b97cfbccff244",
+          "expectedModelSha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+          "expectedPreviewSha256": "da4075ddd3c7cc0c4b70eb540c234b41f9d0482f3b64e1e12e8b97cfbccff244"
+        },
+        {
+          "id": "mission-ghost-artillery",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "9904a65b67e7e2d4ac2da36825f4d68cf65a1bb2321edbe4e761b964866a8037",
+          "previewSha256": "f6e76ca9c8df61e227d80e7501c2badf39f751f3f23863bc5571b040313476b4",
+          "expectedModelSha256": "9904a65b67e7e2d4ac2da36825f4d68cf65a1bb2321edbe4e761b964866a8037",
+          "expectedPreviewSha256": "f6e76ca9c8df61e227d80e7501c2badf39f751f3f23863bc5571b040313476b4"
+        },
+        {
+          "id": "role-enemy-artillery",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "88690c94770cf0d841fc56043cee1397bdc8140e23ca9f297240664527d2f278",
+          "previewSha256": "60d0aa9409c7f746839ae189cbb7247ea0f105bc18ea73129b2314772cff87a7",
+          "expectedModelSha256": "88690c94770cf0d841fc56043cee1397bdc8140e23ca9f297240664527d2f278",
+          "expectedPreviewSha256": "60d0aa9409c7f746839ae189cbb7247ea0f105bc18ea73129b2314772cff87a7"
+        },
+        {
+          "id": "role-enemy-defense",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "914264be543cd2fdaee0e1a685c39f51e5b33cab396ccb4f12f1fd9b79b3da16",
+          "previewSha256": "d1ba8bd7d879535209150b9b2777909b58c1aa17983df3845a437ce66bae0c48",
+          "expectedModelSha256": "914264be543cd2fdaee0e1a685c39f51e5b33cab396ccb4f12f1fd9b79b3da16",
+          "expectedPreviewSha256": "d1ba8bd7d879535209150b9b2777909b58c1aa17983df3845a437ce66bae0c48"
+        },
+        {
+          "id": "mini-funeral-guard",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "1cbe87cd77948a6b8f1e9638826b1e90e8435125c7ef4255762374895712e42d",
+          "previewSha256": "b10a629af2cc4670b37a1228702003a705725f7f9339af2ce110dd03f62f29e3",
+          "expectedModelSha256": "1cbe87cd77948a6b8f1e9638826b1e90e8435125c7ef4255762374895712e42d",
+          "expectedPreviewSha256": "b10a629af2cc4670b37a1228702003a705725f7f9339af2ce110dd03f62f29e3"
+        },
+        {
+          "id": "boss-bell-devourer",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "e0eeb724714cc5364dc7334c1e5f0d66d3cffc970395dea6210b9873b82ce245",
+          "previewSha256": "a87a2a8ed22cfc06dc7ede976aae483ec545e0eac6556a767d0665f8bc439ea9",
+          "expectedModelSha256": "e0eeb724714cc5364dc7334c1e5f0d66d3cffc970395dea6210b9873b82ce245",
+          "expectedPreviewSha256": "a87a2a8ed22cfc06dc7ede976aae483ec545e0eac6556a767d0665f8bc439ea9"
+        },
+        {
+          "id": "boss-shipyard-ribs",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "e679afa86e3ce0ad2c3699cc239804e6cb6574e22ebef23b27e47587a00cde94",
+          "previewSha256": "d18677c4bf99625aa0c83f0826d5142fcb1266b5aa201304bbbb6b4184bb5efa",
+          "expectedModelSha256": "e679afa86e3ce0ad2c3699cc239804e6cb6574e22ebef23b27e47587a00cde94",
+          "expectedPreviewSha256": "d18677c4bf99625aa0c83f0826d5142fcb1266b5aa201304bbbb6b4184bb5efa"
+        },
+        {
+          "id": "boss-shipwright-command",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "8516d86bbcea0acd155cc8ae50ee46943c8b89f8d81153129f017737688207ae",
+          "previewSha256": "7140758052c159dd1673ad8585aaad59abd1de659d065e595ae26b45ac6a5536",
+          "expectedModelSha256": "8516d86bbcea0acd155cc8ae50ee46943c8b89f8d81153129f017737688207ae",
+          "expectedPreviewSha256": "7140758052c159dd1673ad8585aaad59abd1de659d065e595ae26b45ac6a5536"
+        },
+        {
+          "id": "boss-last-inhale",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+          "previewSha256": "0db5c4bb40c9dbda6a1b461bb6fad9c0f7677bbab287b696cc26623662cd9c9f",
+          "expectedModelSha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+          "expectedPreviewSha256": "0db5c4bb40c9dbda6a1b461bb6fad9c0f7677bbab287b696cc26623662cd9c9f"
+        },
+        {
+          "id": "rival-change",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "08945d2aef9919af8cfb3117580b94c0bbd07a23d80a1196d7d2b6c3865b9756",
+          "previewSha256": "1bb6c9d428497496090331d0f0666634792b808302a6b9ce86072666d0e1dbca",
+          "expectedModelSha256": "08945d2aef9919af8cfb3117580b94c0bbd07a23d80a1196d7d2b6c3865b9756",
+          "expectedPreviewSha256": "1bb6c9d428497496090331d0f0666634792b808302a6b9ce86072666d0e1dbca"
+        },
+        {
+          "id": "rival-debts-end",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "a428a10b62d0a4c991fc3728efc4ab22e1cff307e5d7b442046f44a4a60bfdfb",
+          "previewSha256": "f8dc9b80a8430f7b24e5ef777414fc83cbe2946724277c70a7912402b9c5eefc",
+          "expectedModelSha256": "a428a10b62d0a4c991fc3728efc4ab22e1cff307e5d7b442046f44a4a60bfdfb",
+          "expectedPreviewSha256": "f8dc9b80a8430f7b24e5ef777414fc83cbe2946724277c70a7912402b9c5eefc"
+        },
+        {
+          "id": "rival-quiet-answer",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "83362b371fbd58209292c5a483ff5bee372858bba582a09476c1525200548b47",
+          "previewSha256": "846b6cca6a41b7a50f4e8ada7115434cf54220fb1297aa90f2caad194dba5b18",
+          "expectedModelSha256": "83362b371fbd58209292c5a483ff5bee372858bba582a09476c1525200548b47",
+          "expectedPreviewSha256": "846b6cca6a41b7a50f4e8ada7115434cf54220fb1297aa90f2caad194dba5b18"
+        },
+        {
+          "id": "rival-night-shift",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "4aa59e5b0c3efeea751a61f553896ee10e6bb71ebf0e8666711d73fdb3ceab93",
+          "previewSha256": "6d16eca718ba94518ded28042f459cf986ea4986e39464a080c8d600029e92cb",
+          "expectedModelSha256": "4aa59e5b0c3efeea751a61f553896ee10e6bb71ebf0e8666711d73fdb3ceab93",
+          "expectedPreviewSha256": "6d16eca718ba94518ded28042f459cf986ea4986e39464a080c8d600029e92cb"
+        },
+        {
+          "id": "rival-go-first",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "6525e0cdecbd29fa3e3ae3e2212bdca8d40c332f396005330c926c03af4d3605",
+          "previewSha256": "a3fc9a03f18e39eefb8d2c54c35348c80cdcdd2830524bc8dbf0c31405c7ebf1",
+          "expectedModelSha256": "6525e0cdecbd29fa3e3ae3e2212bdca8d40c332f396005330c926c03af4d3605",
+          "expectedPreviewSha256": "a3fc9a03f18e39eefb8d2c54c35348c80cdcdd2830524bc8dbf0c31405c7ebf1"
+        },
+        {
+          "id": "rival-unfinished",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "9a456b8dfd9de675161081f16bf91f70c4fb44093fc803fe533b34161118861b",
+          "previewSha256": "03269e062adcf115e5ead46b4062ef9c8ffa994e9c8cf430dd05d73cac36b2d8",
+          "expectedModelSha256": "9a456b8dfd9de675161081f16bf91f70c4fb44093fc803fe533b34161118861b",
+          "expectedPreviewSha256": "03269e062adcf115e5ead46b4062ef9c8ffa994e9c8cf430dd05d73cac36b2d8"
+        },
+        {
+          "id": "boss-fleet-king",
+          "modelExists": true,
+          "previewExists": true,
+          "viewerExists": true,
+          "modelSha256": "b0063fd4ee2bf859449b363306d100dcf1adb8327ba4095954a2be31192418a3",
+          "previewSha256": "80ef7cb62a306e6c37c5a4f7bbce925656bda2f77d0bae339ed400892057a2ff",
+          "expectedModelSha256": "b0063fd4ee2bf859449b363306d100dcf1adb8327ba4095954a2be31192418a3",
+          "expectedPreviewSha256": "80ef7cb62a306e6c37c5a4f7bbce925656bda2f77d0bae339ed400892057a2ff"
+        }
+      ]
+    },
+    {
+      "section": "gallery",
+      "name": "default-19-enemy-cards",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "no-initial-live-viewer",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "comparison-initially-hidden",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "26-browser-decoded-preview-images",
+      "passed": true,
+      "detail": [
+        {
+          "id": "enemy-pirate-scout",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "enemy-cult-blockade",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "enemy-union-salvage",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "enemy-union-repair",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "enemy-ghost-chaser",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "enemy-disguised-wreck",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "enemy-tax-cutter",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "mission-union-guard",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "mission-bridge-tug",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "mission-guard-scout",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "mission-cult-purifier",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "mission-ghost-artillery",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "role-enemy-artillery",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "role-enemy-defense",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "mini-funeral-guard",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "boss-bell-devourer",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "boss-shipyard-ribs",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "boss-shipwright-command",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "boss-last-inhale",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "rival-change",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "rival-debts-end",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "rival-quiet-answer",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "rival-night-shift",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "rival-go-first",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "rival-unfinished",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        },
+        {
+          "id": "boss-fleet-king",
+          "width": 1030,
+          "height": 627,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "section": "gallery",
+      "name": "filter:standard",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "enemy-pirate-scout",
+          "enemy-cult-blockade",
+          "enemy-union-salvage",
+          "enemy-union-repair",
+          "enemy-ghost-chaser",
+          "enemy-disguised-wreck",
+          "enemy-tax-cutter"
+        ],
+        "expected": [
+          "enemy-pirate-scout",
+          "enemy-cult-blockade",
+          "enemy-union-salvage",
+          "enemy-union-repair",
+          "enemy-ghost-chaser",
+          "enemy-disguised-wreck",
+          "enemy-tax-cutter"
+        ]
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "result-count:standard",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "filter:mission",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "mission-union-guard",
+          "mission-bridge-tug",
+          "mission-guard-scout",
+          "mission-cult-purifier",
+          "mission-ghost-artillery",
+          "role-enemy-artillery",
+          "role-enemy-defense"
+        ],
+        "expected": [
+          "mission-union-guard",
+          "mission-bridge-tug",
+          "mission-guard-scout",
+          "mission-cult-purifier",
+          "mission-ghost-artillery",
+          "role-enemy-artillery",
+          "role-enemy-defense"
+        ]
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "result-count:mission",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "filter:boss",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "mini-funeral-guard",
+          "boss-bell-devourer",
+          "boss-shipyard-ribs",
+          "boss-shipwright-command",
+          "boss-last-inhale"
+        ],
+        "expected": [
+          "mini-funeral-guard",
+          "boss-bell-devourer",
+          "boss-shipyard-ribs",
+          "boss-shipwright-command",
+          "boss-last-inhale"
+        ]
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "result-count:boss",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "filter:context",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "rival-change",
+          "rival-debts-end",
+          "rival-quiet-answer",
+          "rival-night-shift",
+          "rival-go-first",
+          "rival-unfinished",
+          "boss-fleet-king"
+        ],
+        "expected": [
+          "rival-change",
+          "rival-debts-end",
+          "rival-quiet-answer",
+          "rival-night-shift",
+          "rival-go-first",
+          "rival-unfinished",
+          "boss-fleet-king"
+        ]
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "result-count:context",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "filter:all",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "enemy-pirate-scout",
+          "enemy-cult-blockade",
+          "enemy-union-salvage",
+          "enemy-union-repair",
+          "enemy-ghost-chaser",
+          "enemy-disguised-wreck",
+          "enemy-tax-cutter",
+          "mission-union-guard",
+          "mission-bridge-tug",
+          "mission-guard-scout",
+          "mission-cult-purifier",
+          "mission-ghost-artillery",
+          "role-enemy-artillery",
+          "role-enemy-defense",
+          "mini-funeral-guard",
+          "boss-bell-devourer",
+          "boss-shipyard-ribs",
+          "boss-shipwright-command",
+          "boss-last-inhale"
+        ],
+        "expected": [
+          "enemy-pirate-scout",
+          "enemy-cult-blockade",
+          "enemy-union-salvage",
+          "enemy-union-repair",
+          "enemy-ghost-chaser",
+          "enemy-disguised-wreck",
+          "enemy-tax-cutter",
+          "mission-union-guard",
+          "mission-bridge-tug",
+          "mission-guard-scout",
+          "mission-cult-purifier",
+          "mission-ghost-artillery",
+          "role-enemy-artillery",
+          "role-enemy-defense",
+          "mini-funeral-guard",
+          "boss-bell-devourer",
+          "boss-shipyard-ribs",
+          "boss-shipwright-command",
+          "boss-last-inhale"
+        ]
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "result-count:all",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "search-existing-name",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "search-zero-results",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "clear-filters-restores-19",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "faction-filter",
+      "passed": true,
+      "detail": {
+        "faction": {
+          "value": "마지막 숨 교단",
+          "text": "마지막 숨 교단"
+        },
+        "expected": [
+          "enemy-cult-blockade",
+          "mission-cult-purifier",
+          "mini-funeral-guard",
+          "boss-bell-devourer"
+        ],
+        "observed": [
+          "enemy-cult-blockade",
+          "mission-cult-purifier",
+          "mini-funeral-guard",
+          "boss-bell-devourer"
+        ]
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "comparison-opens",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "two-selected-ships-compare-images",
+      "passed": true,
+      "detail": [
+        {
+          "id": "enemy-pirate-scout",
+          "passed": true,
+          "width": 1030
+        },
+        {
+          "id": "enemy-tax-cutter",
+          "passed": true,
+          "width": 1030
+        }
+      ]
+    },
+    {
+      "section": "gallery",
+      "name": "mobile-gallery-and-comparison-390",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "canvas": null,
+        "passed": true
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "actual-model-load",
+      "passed": true,
+      "detail": {
+        "ready": true,
+        "sourceBytes": 6882024,
+        "offline": true,
+        "mode": "handdrawn",
+        "playing": false,
+        "silhouette": false,
+        "comparisonEnabled": false,
+        "comparisonReferenceReady": true,
+        "meshCount": 42,
+        "triangleCount": 28848,
+        "boneCount": 21,
+        "skinnedMeshCount": 42,
+        "textureCount": 10,
+        "texturesReady": true,
+        "textures": [
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          }
+        ],
+        "materialCount": 11,
+        "animationClipCount": 7,
+        "availableActions": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "FireBurst"
+        ],
+        "profiles": [
+          {
+            "name": "FloatIdle",
+            "duration": 10,
+            "tracks": 11
+          },
+          {
+            "name": "Cruise",
+            "duration": 8,
+            "tracks": 11
+          },
+          {
+            "name": "BankTurn",
+            "duration": 12,
+            "tracks": 11
+          },
+          {
+            "name": "GustRecovery",
+            "duration": 12,
+            "tracks": 11
+          },
+          {
+            "name": "TurretScan",
+            "duration": 12,
+            "tracks": 11
+          },
+          {
+            "name": "WinchCycle",
+            "duration": 16,
+            "tracks": 11
+          },
+          {
+            "name": "FireBurst",
+            "duration": 8,
+            "tracks": 11
+          }
+        ],
+        "originalBounds": {
+          "min": [
+            -7.175,
+            -2.049999952316284,
+            -1.5516506433486938
+          ],
+          "max": [
+            5.147600161479948,
+            7.940000063180923,
+            1.5515763759613037
+          ]
+        },
+        "normalizedBounds": {
+          "min": [
+            -2.0000000000000004,
+            -1.6214110471141678,
+            -0.5036643206213224
+          ],
+          "max": [
+            2.0000000000000004,
+            1.6214110471141678,
+            0.5036643206213224
+          ]
+        },
+        "renderer": "WebGL2",
+        "autoRotate": false,
+        "reducedMotion": true,
+        "rotorPhaseAligned": true,
+        "outlineEnabled": true,
+        "outlinePixels": 1.2,
+        "outlineAutoClear": true,
+        "profile": "FloatIdle",
+        "currentProfile": "FloatIdle",
+        "time": 0,
+        "duration": 10,
+        "speed": 1,
+        "skeletonVisible": false,
+        "view": "perspective",
+        "comparisonBounds": {
+          "min": [
+            -2.0000000000000004,
+            -1.6214110471141678,
+            -0.5036643206213224
+          ],
+          "max": [
+            2.0000000000000004,
+            1.6214110471141678,
+            0.5036643206213224
+          ]
+        },
+        "comparisonUnits": "relative visual fleet units; not metres or collision/gameplay dimensions",
+        "assetId": "enemy-pirate-scout",
+        "renderCalls": 42,
+        "camera": [
+          -7.417381199564246,
+          5.827942371086193,
+          -7.417381199564245
+        ],
+        "zoom": 1,
+        "outlineAutoClearActual": true
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "explicit-outline-auto-clear",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "one-active-viewer",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "mode:handdrawn",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "rotation-ghosting:handdrawn",
+      "passed": true,
+      "detail": {
+        "mode": "handdrawn",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "opaquePixels": 106123,
+        "pixelCount": 776130,
+        "rotationDistance": 20.041781594883528,
+        "cameraDelta": 4.440892098500626e-16,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "mode:cel",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "rotation-ghosting:cel",
+      "passed": true,
+      "detail": {
+        "mode": "cel",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "opaquePixels": 104556,
+        "pixelCount": 776130,
+        "rotationDistance": 19.614665438524344,
+        "cameraDelta": 0,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "mode:original",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "rotation-ghosting:original",
+      "passed": true,
+      "detail": {
+        "mode": "original",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "opaquePixels": 104878,
+        "pixelCount": 776130,
+        "rotationDistance": 20.042950327123688,
+        "cameraDelta": 0,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "outline-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "outline-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "pointer-orbit",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "wheel-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "fit-view",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "auto-rotation",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "reset-view",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "mobile-viewer-390",
+      "passed": true,
+      "detail": {
+        "frame": {
+          "viewport": 350,
+          "documentWidth": 350,
+          "bodyWidth": 350,
+          "canvas": {
+            "left": 13,
+            "right": 337,
+            "width": 324
+          },
+          "passed": true
+        },
+        "gallery": {
+          "viewport": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390,
+          "canvas": null,
+          "passed": true
+        }
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "viewer-closes-and-stops",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "actual-model-load",
+      "passed": true,
+      "detail": {
+        "ready": true,
+        "sourceBytes": 7850040,
+        "offline": true,
+        "mode": "handdrawn",
+        "playing": false,
+        "silhouette": false,
+        "comparisonEnabled": false,
+        "comparisonReferenceReady": true,
+        "meshCount": 54,
+        "triangleCount": 39412,
+        "boneCount": 21,
+        "skinnedMeshCount": 54,
+        "textureCount": 12,
+        "texturesReady": true,
+        "textures": [
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          },
+          {
+            "name": "",
+            "width": 1536,
+            "height": 1024,
+            "ready": true
+          }
+        ],
+        "materialCount": 12,
+        "animationClipCount": 7,
+        "availableActions": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "FireBurst"
+        ],
+        "profiles": [
+          {
+            "name": "FloatIdle",
+            "duration": 10,
+            "tracks": 16
+          },
+          {
+            "name": "Cruise",
+            "duration": 8,
+            "tracks": 16
+          },
+          {
+            "name": "BankTurn",
+            "duration": 12,
+            "tracks": 16
+          },
+          {
+            "name": "GustRecovery",
+            "duration": 12,
+            "tracks": 16
+          },
+          {
+            "name": "TurretScan",
+            "duration": 12,
+            "tracks": 16
+          },
+          {
+            "name": "WinchCycle",
+            "duration": 16,
+            "tracks": 16
+          },
+          {
+            "name": "FireBurst",
+            "duration": 8,
+            "tracks": 16
+          }
+        ],
+        "originalBounds": {
+          "min": [
+            -5.240161418914795,
+            -1.850000023841858,
+            -2.4327125453948977
+          ],
+          "max": [
+            5.6642501081556045,
+            4.300000190734863,
+            5.550000286102295
+          ]
+        },
+        "normalizedBounds": {
+          "min": [
+            -2,
+            -1.1279838805256448,
+            -1.4641253792889168
+          ],
+          "max": [
+            2,
+            1.1279838805256448,
+            1.4641253792889168
+          ]
+        },
+        "renderer": "WebGL2",
+        "autoRotate": false,
+        "reducedMotion": true,
+        "rotorPhaseAligned": true,
+        "outlineEnabled": true,
+        "outlinePixels": 1.2,
+        "outlineAutoClear": true,
+        "profile": "FloatIdle",
+        "currentProfile": "FloatIdle",
+        "time": 0,
+        "duration": 10,
+        "speed": 1,
+        "skeletonVisible": false,
+        "view": "perspective",
+        "comparisonBounds": {
+          "min": [
+            -2,
+            -1.1279838805256448,
+            -1.4641253792889168
+          ],
+          "max": [
+            2,
+            1.1279838805256448,
+            1.4641253792889168
+          ]
+        },
+        "comparisonUnits": "relative visual fleet units; not metres or collision/gameplay dimensions",
+        "assetId": "enemy-tax-cutter",
+        "renderCalls": 54,
+        "camera": [
+          -7.417381199564246,
+          5.827942371086193,
+          -7.417381199564245
+        ],
+        "zoom": 1,
+        "outlineAutoClearActual": true
+      }
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "explicit-outline-auto-clear",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "one-active-viewer",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "mode:handdrawn",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "rotation-ghosting:handdrawn",
+      "passed": true,
+      "detail": {
+        "mode": "handdrawn",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "opaquePixels": 173103,
+        "pixelCount": 776130,
+        "rotationDistance": 20.042950327123684,
+        "cameraDelta": 0,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "mode:cel",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "rotation-ghosting:cel",
+      "passed": true,
+      "detail": {
+        "mode": "cel",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "opaquePixels": 175878,
+        "pixelCount": 776130,
+        "rotationDistance": 19.937380629388137,
+        "cameraDelta": 0,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "mode:original",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "rotation-ghosting:original",
+      "passed": true,
+      "detail": {
+        "mode": "original",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "opaquePixels": 176164,
+        "pixelCount": 776130,
+        "rotationDistance": 19.799016082968087,
+        "cameraDelta": 0,
+        "outlineAutoClear": true
+      }
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "outline-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "outline-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "pointer-orbit",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "wheel-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "fit-view",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "auto-rotation",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "reset-view",
+      "passed": true
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "mobile-viewer-390",
+      "passed": true,
+      "detail": {
+        "frame": {
+          "viewport": 350,
+          "documentWidth": 350,
+          "bodyWidth": 350,
+          "canvas": {
+            "left": 13,
+            "right": 337,
+            "width": 324
+          },
+          "passed": true
+        },
+        "gallery": {
+          "viewport": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390,
+          "canvas": null,
+          "passed": true
+        }
+      }
+    },
+    {
+      "section": "enemy-tax-cutter",
+      "name": "viewer-closes-and-stops",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "zero-external-requests",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "zero-page-errors",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "zero-console-errors",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "zero-http-errors",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "zero-failed-requests",
+      "passed": true,
+      "detail": {
+        "ignoredLocalNavigationAborts": 0
+      }
+    }
+  ],
+  "screenshots": [
+    "work/verification/enemy-fleet-gallery/gallery-desktop.png",
+    "work/verification/enemy-fleet-gallery/gallery-comparison.png",
+    "work/verification/enemy-fleet-gallery/gallery-mobile-390.png",
+    "work/verification/enemy-fleet-gallery/enemy-pirate-scout-viewer.png",
+    "work/verification/enemy-fleet-gallery/enemy-tax-cutter-viewer.png"
+  ],
+  "ghosting": [
+    {
+      "id": "enemy-pirate-scout",
+      "mode": "handdrawn",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "opaquePixels": 106123,
+      "pixelCount": 776130,
+      "rotationDistance": 20.041781594883528,
+      "cameraDelta": 4.440892098500626e-16,
+      "outlineAutoClear": true
+    },
+    {
+      "id": "enemy-pirate-scout",
+      "mode": "cel",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "opaquePixels": 104556,
+      "pixelCount": 776130,
+      "rotationDistance": 19.614665438524344,
+      "cameraDelta": 0,
+      "outlineAutoClear": true
+    },
+    {
+      "id": "enemy-pirate-scout",
+      "mode": "original",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "opaquePixels": 104878,
+      "pixelCount": 776130,
+      "rotationDistance": 20.042950327123688,
+      "cameraDelta": 0,
+      "outlineAutoClear": true
+    },
+    {
+      "id": "enemy-tax-cutter",
+      "mode": "handdrawn",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "opaquePixels": 173103,
+      "pixelCount": 776130,
+      "rotationDistance": 20.042950327123684,
+      "cameraDelta": 0,
+      "outlineAutoClear": true
+    },
+    {
+      "id": "enemy-tax-cutter",
+      "mode": "cel",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "opaquePixels": 175878,
+      "pixelCount": 776130,
+      "rotationDistance": 19.937380629388137,
+      "cameraDelta": 0,
+      "outlineAutoClear": true
+    },
+    {
+      "id": "enemy-tax-cutter",
+      "mode": "original",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "opaquePixels": 176164,
+      "pixelCount": 776130,
+      "rotationDistance": 19.799016082968087,
+      "cameraDelta": 0,
+      "outlineAutoClear": true
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "navigationAborts": [],
+  "httpErrors": [],
+  "limits": [
+    "Gallery and two existing representative model viewers only; no new model generation.",
+    "Same-camera decoded canvas pixels before and after an explicit clean render test accumulation after 120 rotation frames. This is not a gameplay or long-run performance test.",
+    "390px emulation is not physical mobile-device coverage."
+  ],
+  "browser": {
+    "version": "155.0.8059.40",
+    "desktop": {
+      "width": 1440,
+      "height": 1080
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "pages": 1
+  },
+  "completedAt": "2026-10-18T11:34:00.885Z",
+  "summary": {
+    "total": 68,
+    "passed": 68,
+    "failed": 0
+  },
+  "passed": true
+}

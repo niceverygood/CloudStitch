@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "sourceReady": "enemy-reference-ready-review-2026-10-18.json",
+  "sourceManifestSha256": "679421632594a7864b1790aecd85267580ad362bf96ee966879c479d5cf62d8f",
+  "report": {
+    "path": "outputs/enemy-fleet-reference-browser-qa-v1/verification.json",
+    "sha256": "3aa016401bba98dfa3f53fb80ec7d93092a098a818252ae30e82330a2d81bf77",
+    "passed": true,
+    "checks": 273,
+    "composition": "normal5x40+ambush41+gallery26+start1+network5",
+    "harness": {
+      "path": "tools/enemy-fleet-reference/browser-qa.cjs",
+      "sha256": "bf8b09948a39b458dd2f5214dcdc2ad24d3ae5ce1b0b995a5d9d135fc9680054"
+    }
+  },
+  "observed": [
+    "6actual embedded GLB loads and3modes;runtimeOutlineEffectAutoClear true",
+    "7standard clip time/playpause and availabledevicebutton contracts;unavailabledevice buttons disabled valid",
+    "all12 weakpoint targets resolve;projected label on/off",
+    "pointerorbit/wheelzoom/fit/autorotate/reset each6",
+    "ambush3joints1.35/1.35/1.20rad;close returns withposeDelta0",
+    "galleryPNG6+reference decode;6modal loads/closes,maxIframe1",
+    "1280/390 viewport overflow0;page/console/external/HTTP/failedrequests0"
+  ],
+  "sourceFinalization": {
+    "path": "outputs/enemy-fleet-reference-source-finalization-v1/verification.json",
+    "sha256": "8314ef2ca76681217a2c4cbf4d5731e89366da0f745c28fa5b02a56d4092469d",
+    "passed": true,
+    "owned53PlusManifestMatched": true,
+    "bytes": 176610938,
+    "notAdditionalQaCount": true
+  },
+  "review": {
+    "rootSource53PathsSizesMatched": true,
+    "rootSmallReportAndFinalizerShaMatched": true,
+    "delegatedStaticFinalScopeReviewComplete": true,
+    "noLargeSourceHashOrBrowserRepeatedByCommand": true
+  },
+  "ghosting": {
+    "original273Status": "not-run",
+    "requiredFollowup": "representative ghost ship shortrotation3modes PNG/actualAutoClear observations; source53/raw273 unchanged",
+    "status": "requested, pending",
+    "notStrictPngEqualityOrDecodedRegression": true
+  },
+  "limits": [
+    "not combat damage/collision/socket/detachAI/campaign",
+    "no longrun memory/GPU/performance",
+    "not physical mobile or additional browsers",
+    "no independent rotatingpixel/ghosting pass in273",
+    "not proof source unchanged throughout priorrun or independent causal proofharness producedreport",
+    "no art approval/game installation"
+  ],
+  "aggregateQaPass": null
+}

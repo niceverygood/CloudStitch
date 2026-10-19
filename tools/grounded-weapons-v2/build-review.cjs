@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'../..'),out=path.join(root,'outputs/weapon-review-v2');
+const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+const rel=p=>path.relative(out,p).split(path.sep).join('/');
+const prior=read('outputs/weapon-review-v1/catalog.json'),fresh=read('outputs/grounded-weapons-v2/catalog.json');
+const items=prior.items.map(x=>{const v={...x};for(const key of['preview','original_preview','reference','viewer','model','source_catalog']){const [file,query]=x[key].split('?');v[key]=rel(path.resolve(root,'outputs/weapon-review-v1',file))+(query?'?'+query:'');}return v;});
+const cats={projectile:'화살·투척',melee:'근접',utility:'인양·제어'};
+for(const x of fresh.items)items.push({id:'extra-'+x.id,source_id:x.id,order:items.length+1,name:x.name_ko,english:x.name_en,group:'extra',group_label:'추가 6종',category:cats[x.category],role:x.role,triangles:x.triangles,meshes:x.mesh_count,textures:0,animations:0,preview:'../grounded-weapons-v2/'+x.preview,original_preview:'../grounded-weapons-v2/'+x.preview,reference:'../fantasy-weapon-moodboard-v2/moodboard.png',reference_label:'공통 스타일 기준 보드 · 개별 원화 없음',viewer:'../grounded-weapons-v2/index.html?asset='+x.id,model:'../grounded-weapons-v2/'+x.model,source_catalog:'../grounded-weapons-v2/catalog.json',method:'정점 채색·분리 부품 메시'});
+let html=fs.readFileSync(path.join(root,'tools/weapon-review/template.html'),'utf8');
+html=html.replace('전체 18','전체 24').replace('전체 18개','전체 24개').replace('전체 18개','전체 24개').replace('DATA.length', 'DATA.length');
+html=html.replace('<strong>18</strong><span>리뷰 항목</span>','<strong>06</strong><span>추가 제작</span></div><div><strong>24</strong><span>리뷰 항목</span>');
+html=html.replace('<button data-group="new" aria-pressed="false">신규 12</button>','<button data-group="new" aria-pressed="false">신규 12</button><button data-group="extra" aria-pressed="false">추가 6</button>');
+html=html.replace('방패를 포함한 18개 아트 항목','방패를 포함한 24개 아트 항목').replace('기존 6종은 텍스처 기반 단일 메시, 신규 12종은 정점 채색·분리 메시','기존 6종은 텍스처 기반 단일 메시, 신규 12종·추가 6종은 정점 채색·분리 메시');
+html=html.replace('/* REVIEW_DATA */',()=>JSON.stringify(items).replace(/</g,'\\u003c'));
+fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'index.html'),html);
+fs.writeFileSync(path.join(out,'catalog.json'),JSON.stringify({title:'Cloudstitch · 무기·장치 통합24리뷰',count:24,existing:6,previous_additions:12,latest_additions:6,items},null,2)+'\n');
+console.log(JSON.stringify({review_entries:items.length,images_and_models:'read-only relative references; no copied GLBs'}));

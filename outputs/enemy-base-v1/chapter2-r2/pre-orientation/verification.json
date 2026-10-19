@@ -1,0 +1,136 @@
+{
+  "revision": "chapter2-r2",
+  "status": "READY_art_review",
+  "scope": "Actual static 3D art and offline review",
+  "model": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/enemy-base.glb",
+    "bytes": 47284132,
+    "sha256": "c441078575bc15ed6277a4dc04fc043caa118d7399b166163711ab7b1f7b956b"
+  },
+  "structure": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/structure-verification.json",
+    "bytes": 1777,
+    "sha256": "b53fe4622296017c3a634a5ffc3ee7088d23e0a55e1884a2d8c1dd645c00abf3"
+  },
+  "surface": {
+    "positionNormalTransformPreserved": true,
+    "colourUvIndicesPreserved": true,
+    "meshCount": 57,
+    "beforeSha256": "6f40fd171d80293a89bb8dd4acb74426ee943cc83ab4a9aa6ef03674cf2f2a7f",
+    "afterSha256": "c441078575bc15ed6277a4dc04fc043caa118d7399b166163711ab7b1f7b956b",
+    "textures": 1,
+    "images": 1,
+    "scope": "Exact per-mesh POSITION/NORMAL/COLOR_0/UV/indices bytes and node transform comparison; only textures and materials added."
+  },
+  "browser": {
+    "report": {
+      "path": "outputs/enemy-base-v1/chapter2-r2/browser-verification.json",
+      "bytes": 30394,
+      "sha256": "f4de436e0f3d51a772ea130910d1c6eb7d48ebf7f032efb4071891c639c8c930"
+    },
+    "checks": {
+      "total": 49,
+      "passed": 49,
+      "failed": 0
+    },
+    "externalRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "ghosting": [
+      {
+        "mode": "handdrawn",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 125565,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 445.13889892847425,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "cel",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 123213,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 440.37431722117026,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "original",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 124416,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 442.8108003995572,
+        "outlineAutoClear": true
+      }
+    ]
+  },
+  "previews": [
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/review-desktop.png",
+      "bytes": 865989,
+      "sha256": "e5bc5fc6965fd377f8f92088dab7ec7856638137fae31c5e268804e91a543bf9"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-iso.png",
+      "bytes": 387035,
+      "sha256": "e2b17a7cf749dc44b9c8e6fddb6df818ece0cee9ea546d5893ad74fe08f0187b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-back.png",
+      "bytes": 568539,
+      "sha256": "408c420f1d27145b8cc64ebc795c605ae5be519ce7acf20f3d2fb129998261cd"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-front.png",
+      "bytes": 575230,
+      "sha256": "069f396a265c1cc2b4e5571b2e8ecde81d79c9ed990a4f8a0334d5f03c5df66c"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-shell.png",
+      "bytes": 668197,
+      "sha256": "849e25ead4c1d1e630a675a8230ff09bd06f4f3b79d858b5043d2bbdd1bc160a"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-harbour.png",
+      "bytes": 1126567,
+      "sha256": "408ee2bb9c609b71733a523dcf3c0ff98ae934290042f70bdc905e280dafa687"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-coral.png",
+      "bytes": 537593,
+      "sha256": "260d14dba0df66b1f6a2dd705c6c60c53e3910ac9c9eb6dc25017a296aa65ba5"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/review-mobile-390.png",
+      "bytes": 273791,
+      "sha256": "ad88a0a8a38be53e2a5b87a106388a32665a1b68007246b18b31e6a0309a4445"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/reference.png",
+    "bytes": 3613828,
+    "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+  },
+  "visualReview": {
+    "actualRendersInspected": false,
+    "userArtApproval": false
+  },
+  "limitations": [
+    "Hidden/rear architecture interpreted from one image",
+    "No chapter-one model geometry reused",
+    "R2: closed ornate nacre endcap, faceted chamber facades, monumental halls/bridges, foreground coral fans and convex fossil armour",
+    "Relative design scale; engine/performance budget undecided",
+    "No gameplay/AI/collision/LOD/rig/animation/interior/sockets"
+  ]
+}

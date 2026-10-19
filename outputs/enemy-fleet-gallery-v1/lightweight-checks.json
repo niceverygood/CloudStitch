@@ -1,0 +1,83 @@
+{
+  "revision": "READY-r1",
+  "scope": "Owned small source/output inspection. No model bytes, browser, native media or external calls.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "syntax:tools/enemy-fleet-gallery/build.cjs",
+      "passed": true
+    },
+    {
+      "name": "syntax:tools/enemy-fleet-gallery/capture.cjs",
+      "passed": true
+    },
+    {
+      "name": "syntax:tools/enemy-fleet-gallery/qa.cjs",
+      "passed": true
+    },
+    {
+      "name": "syntax:tools/enemy-fleet-gallery/freeze.cjs",
+      "passed": true
+    },
+    {
+      "name": "json:catalog.json",
+      "passed": true
+    },
+    {
+      "name": "json:verification.json",
+      "passed": true
+    },
+    {
+      "name": "json:capture.json",
+      "passed": true
+    },
+    {
+      "name": "json:source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "html-and-catalog-data-agree",
+      "passed": true
+    },
+    {
+      "name": "unique26-enemy19-context7",
+      "passed": true
+    },
+    {
+      "name": "group:standard",
+      "passed": true
+    },
+    {
+      "name": "group:mission",
+      "passed": true
+    },
+    {
+      "name": "group:boss",
+      "passed": true
+    },
+    {
+      "name": "group:context",
+      "passed": true
+    },
+    {
+      "name": "78-link-targets-exist",
+      "passed": true
+    },
+    {
+      "name": "existing-local-report68-pass",
+      "passed": true
+    },
+    {
+      "name": "existing-six-ghosting-results-zero",
+      "passed": true
+    },
+    {
+      "name": "existing-offline-capture-pass",
+      "passed": true
+    },
+    {
+      "name": "qa-harness-unchanged-since-local-run",
+      "passed": true
+    }
+  ]
+}

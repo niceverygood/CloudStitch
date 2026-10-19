@@ -1,0 +1,3502 @@
+{
+  "schema": "cloudstitch-ship-weapon-attack-audio/v1",
+  "version": "1.0.0",
+  "scope": "Local procedural/mixing prototype for independent three-branch mounted-weapon demonstration; no gameplay authority",
+  "sampleRate": 44100,
+  "channels": 2,
+  "cues": [
+    {
+      "id": "mobility-launch-basic",
+      "branch": "mobility",
+      "event": "launch",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "launch",
+      "path": "basic/mobility-launch.wav",
+      "file": "basic/mobility-launch.wav",
+      "sha256": "bc4fe85bb19491136bbd51f6bff010db368ebb784c2575bd5e957a9769751eac",
+      "bytes": 60020,
+      "frames": 14994,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.34,
+      "peak": 0.657379150390625,
+      "peakDbfs": -3.6436814846708883,
+      "rms": 0.1449955735770363,
+      "dc": 0.0004070089135914783,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.8925801457525426,
+        "pre": {
+          "frames": 14994,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.34,
+          "peak": 0.7365084290504456,
+          "peakDbfs": -2.6564455692539295,
+          "rms": 0.16245039808469988,
+          "dc": 0.00045606542046776056,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc",
+        "path": "outputs/audio-cinematic-v5/enhanced/fire-harpoon.wav",
+        "bytes": 441044,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "mobility-launch",
+        "mode": "basic",
+        "kind": "string",
+        "description": "팽팽한 활줄 해방 → 황동 랙 접촉",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "fire-harpoon",
+        "layers": [
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 200,
+            "duration": 0.21,
+            "start": 0,
+            "gain": 0.65,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.035,
+            "start": 0,
+            "lo": 750,
+            "hi": 8500,
+            "gain": 0.3,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "fire-harpoon",
+            "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc",
+            "duration": 0.08,
+            "start": 0.025,
+            "rate": 1.2,
+            "gain": 0.22,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 235,
+            "duration": 0.07,
+            "start": 0.065,
+            "gain": 0.22,
+            "pan": 0.2
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "mobility-launch-enhanced",
+      "branch": "mobility",
+      "event": "launch",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "launch",
+      "path": "enhanced/mobility-launch.wav",
+      "file": "enhanced/mobility-launch.wav",
+      "sha256": "ecd3df13ba2168fb05c25de34250acae441750a5d6e36c54df8c91218f789548",
+      "bytes": 60020,
+      "frames": 14994,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.34,
+      "peak": 0.431243896484375,
+      "peakDbfs": -7.305540771331732,
+      "rms": 0.14499559362001802,
+      "dc": -0.000555265644669326,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.4348584511218975,
+        "pre": {
+          "frames": 14994,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.34,
+          "peak": 0.9917267560958862,
+          "peakDbfs": -0.07215939292886964,
+          "rms": 0.3334418352130732,
+          "dc": -0.0012770308847156273,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc",
+        "path": "outputs/audio-cinematic-v5/enhanced/fire-harpoon.wav",
+        "bytes": 441044,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "mobility-launch",
+        "mode": "enhanced",
+        "kind": "string",
+        "description": "팽팽한 활줄 해방 → 황동 랙 접촉",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "fire-harpoon",
+        "layers": [
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 128,
+            "duration": 0.21,
+            "start": 0,
+            "gain": 0.9,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.035,
+            "start": 0,
+            "lo": 750,
+            "hi": 8500,
+            "gain": 0.3,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "fire-harpoon",
+            "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc",
+            "duration": 0.08,
+            "start": 0.025,
+            "rate": 1.2,
+            "gain": 0.48,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 235,
+            "duration": 0.07,
+            "start": 0.065,
+            "gain": 0.22,
+            "pan": 0.2
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 73,
+            "duration": 0.15,
+            "start": 0,
+            "gain": 0.58,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.1,
+            "start": 0.025,
+            "lo": 260,
+            "hi": 6000,
+            "gain": 0.28,
+            "pan": -0.25
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 490,
+            "duration": 0.05,
+            "start": 0.105,
+            "gain": 0.17,
+            "pan": -0.3
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "mobility-flight-basic",
+      "branch": "mobility",
+      "event": "flight",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "flight",
+      "path": "basic/mobility-flight.wav",
+      "file": "basic/mobility-flight.wav",
+      "sha256": "3795a0fc36b4758c8a92d777ee62ad9292a09a02ec6b990247a7ac9fe81951b4",
+      "bytes": 52964,
+      "frames": 13230,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.3,
+      "peak": 0.52734375,
+      "peakDbfs": -5.558123936336869,
+      "rms": 0.14499558270030308,
+      "dc": 0.000013867851828231293,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.9721785932003683,
+        "pre": {
+          "frames": 13230,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.3,
+          "peak": 0.5424636602401733,
+          "peakDbfs": -5.31258699975565,
+          "rms": 0.14914955031324698,
+          "dc": 0.000014534835880418833,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "6d36327a2746b4d870f4f4ae6c6cfadb504fff4e25aa52222b06135e1324c629",
+        "path": "outputs/audio-cinematic-v5/enhanced/wind-fast-loop.wav",
+        "bytes": 1058444,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "mobility-flight",
+        "mode": "basic",
+        "kind": "air",
+        "description": "짧고 날카로운 볼트 비행",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "wind-fast-loop",
+        "layers": [
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.255,
+            "start": 0,
+            "lo": 250,
+            "hi": 9500,
+            "gain": 0.55,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "wind-fast-loop",
+            "sha256": "6d36327a2746b4d870f4f4ae6c6cfadb504fff4e25aa52222b06135e1324c629",
+            "duration": 0.22499999999999998,
+            "start": 0,
+            "rate": 1.8,
+            "gain": 0.25,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "mobility-flight-enhanced",
+      "branch": "mobility",
+      "event": "flight",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "flight",
+      "path": "enhanced/mobility-flight.wav",
+      "file": "enhanced/mobility-flight.wav",
+      "sha256": "76dcc29f328363080b8420d42654013e6e4c73d44ce254e0e48835c857fcb75f",
+      "bytes": 52964,
+      "frames": 13230,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.3,
+      "peak": 0.4049072265625,
+      "peakDbfs": -7.8528894422454645,
+      "rms": 0.14499565748387847,
+      "dc": 0.00031361597916076153,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.4187940793173187,
+        "pre": {
+          "frames": 13230,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.3,
+          "peak": 0.9668949842453003,
+          "peakDbfs": -0.29241385317862867,
+          "rms": 0.3462322109146487,
+          "dc": 0.0007489710745316322,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "6d36327a2746b4d870f4f4ae6c6cfadb504fff4e25aa52222b06135e1324c629",
+        "path": "outputs/audio-cinematic-v5/enhanced/wind-fast-loop.wav",
+        "bytes": 1058444,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "mobility-flight",
+        "mode": "enhanced",
+        "kind": "air",
+        "description": "짧고 날카로운 볼트 비행",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "wind-fast-loop",
+        "layers": [
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.255,
+            "start": 0,
+            "lo": 250,
+            "hi": 9500,
+            "gain": 0.75,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "wind-fast-loop",
+            "sha256": "6d36327a2746b4d870f4f4ae6c6cfadb504fff4e25aa52222b06135e1324c629",
+            "duration": 0.22499999999999998,
+            "start": 0,
+            "rate": 1.8,
+            "gain": 0.45,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.195,
+            "start": 0.03,
+            "lo": 95,
+            "hi": 3000,
+            "gain": 0.35,
+            "pan": -0.4
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "mobility-hit-basic",
+      "branch": "mobility",
+      "event": "hit",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "hit",
+      "path": "basic/mobility-hit.wav",
+      "file": "basic/mobility-hit.wav",
+      "sha256": "5c248a547429d4de113a911f98cb98069623f6e61cf6e9f008478aaa9029f7e8",
+      "bytes": 112940,
+      "frames": 28224,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.64,
+      "peak": 0.770294189453125,
+      "peakDbfs": -2.2668675626503383,
+      "rms": 0.1449956618982243,
+      "dc": 0.000056436543021342654,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.9147810871934857,
+        "pre": {
+          "frames": 28224,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.64,
+          "peak": 0.8420915007591248,
+          "peakDbfs": -1.492814319276832,
+          "rms": 0.1585078681992154,
+          "dc": 0.00006174876526178213,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "f943fb4ef19ac1328fec23bd0bacb09bb96a97439409b683a853b6b4f9c4b1cb",
+        "path": "outputs/audio-cinematic-v5/enhanced/hit-wood.wav",
+        "bytes": 414584,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "mobility-hit",
+        "mode": "basic",
+        "kind": "wood",
+        "description": "목재 관통 → 섬유 파열·작은 파편",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "hit-wood",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "hit-wood",
+            "sha256": "f943fb4ef19ac1328fec23bd0bacb09bb96a97439409b683a853b6b4f9c4b1cb",
+            "duration": 0.41600000000000004,
+            "start": 0,
+            "rate": 1.15,
+            "gain": 0.65,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 92,
+            "duration": 0.384,
+            "start": 0,
+            "gain": 0.45,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.055,
+            "start": 0,
+            "lo": 300,
+            "hi": 7000,
+            "gain": 0.35,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "mobility-hit-enhanced",
+      "branch": "mobility",
+      "event": "hit",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "hit",
+      "path": "enhanced/mobility-hit.wav",
+      "file": "enhanced/mobility-hit.wav",
+      "sha256": "8b6ae7c4d98c4519e245269ec20d0cc3daed20e493cadfefc972b8c7784ddabf",
+      "bytes": 112940,
+      "frames": 28224,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.64,
+      "peak": 0.38922119140625,
+      "peakDbfs": -8.196070446169633,
+      "rms": 0.14499553634480378,
+      "dc": -0.00009383420014327345,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.3895656769650591,
+        "pre": {
+          "frames": 28224,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.64,
+          "peak": 0.9991227984428406,
+          "peakDbfs": -0.007622619691761097,
+          "rms": 0.37220938232965867,
+          "dc": -0.0002409226898798609,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "f943fb4ef19ac1328fec23bd0bacb09bb96a97439409b683a853b6b4f9c4b1cb",
+        "path": "outputs/audio-cinematic-v5/enhanced/hit-wood.wav",
+        "bytes": 414584,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "mobility-hit",
+        "mode": "enhanced",
+        "kind": "wood",
+        "description": "목재 관통 → 섬유 파열·작은 파편",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "hit-wood",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "hit-wood",
+            "sha256": "f943fb4ef19ac1328fec23bd0bacb09bb96a97439409b683a853b6b4f9c4b1cb",
+            "duration": 0.41600000000000004,
+            "start": 0,
+            "rate": 0.8,
+            "gain": 0.85,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 92,
+            "duration": 0.384,
+            "start": 0,
+            "gain": 1,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.055,
+            "start": 0,
+            "lo": 300,
+            "hi": 7000,
+            "gain": 0.85,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 67.16,
+            "duration": 0.48,
+            "start": 0.008,
+            "gain": 0.7,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.3072,
+            "start": 0.04,
+            "lo": 80,
+            "hi": 4200,
+            "gain": 0.45,
+            "pan": -0.32
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.08,
+            "start": 0.12,
+            "lo": 500,
+            "hi": 8000,
+            "gain": 0.3,
+            "pan": 0.5
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.11,
+            "start": 0.23,
+            "lo": 260,
+            "hi": 6400,
+            "gain": 0.23,
+            "pan": -0.45
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "mobility-recovery-basic",
+      "branch": "mobility",
+      "event": "recovery",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "recovery",
+      "path": "basic/mobility-recovery.wav",
+      "file": "basic/mobility-recovery.wav",
+      "sha256": "264c1784fc54e21eb32e496582d9ce231746328460b9da6f954e3a869e340ff4",
+      "bytes": 70604,
+      "frames": 17640,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.4,
+      "peak": 0.6837158203125,
+      "peakDbfs": -3.3024874192602955,
+      "rms": 0.1449955789733335,
+      "dc": -0.0001645250385310374,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 1.1646873883661089,
+        "pre": {
+          "frames": 17640,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.4,
+          "peak": 0.5870615839958191,
+          "peakDbfs": -4.626326759147389,
+          "rms": 0.12449692634125145,
+          "dc": -0.00014133550013781883,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "7b2c07d5838156bfbf1afad9eb5a22f9f4df8ccb2345b8ca79ff9d4e4ea1fd43",
+        "path": "outputs/audio-cinematic-v5/enhanced/machinegun-feed.wav",
+        "bytes": 308744,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "mobility-recovery",
+        "mode": "basic",
+        "kind": "rack",
+        "description": "장전 랙 복귀·황동 걸쇠",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "machinegun-feed",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "machinegun-feed",
+            "sha256": "7b2c07d5838156bfbf1afad9eb5a22f9f4df8ccb2345b8ca79ff9d4e4ea1fd43",
+            "duration": 0.16,
+            "start": 0,
+            "rate": 1.25,
+            "gain": 0.55,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 185,
+            "duration": 0.12,
+            "start": 0,
+            "gain": 0.3,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.04,
+            "start": 0.045,
+            "lo": 600,
+            "hi": 7500,
+            "gain": 0.25,
+            "pan": 0.2
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "mobility-recovery-enhanced",
+      "branch": "mobility",
+      "event": "recovery",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "recovery",
+      "path": "enhanced/mobility-recovery.wav",
+      "file": "enhanced/mobility-recovery.wav",
+      "sha256": "cf244a829cdeb758deb7e6a3683c523df6893eb97c91a10ebfa46635d26ac7ac",
+      "bytes": 70604,
+      "frames": 17640,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.4,
+      "peak": 0.4788818359375,
+      "peakDbfs": -6.395432710044393,
+      "rms": 0.14499557675328234,
+      "dc": 0.0007867583882511337,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.49328138809384575,
+        "pre": {
+          "frames": 17640,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.4,
+          "peak": 0.9708183407783508,
+          "peakDbfs": -0.2572405507247898,
+          "rms": 0.2939498701954148,
+          "dc": 0.0015948236336447525,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "7b2c07d5838156bfbf1afad9eb5a22f9f4df8ccb2345b8ca79ff9d4e4ea1fd43",
+        "path": "outputs/audio-cinematic-v5/enhanced/machinegun-feed.wav",
+        "bytes": 308744,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "mobility-recovery",
+        "mode": "enhanced",
+        "kind": "rack",
+        "description": "장전 랙 복귀·황동 걸쇠",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "machinegun-feed",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "machinegun-feed",
+            "sha256": "7b2c07d5838156bfbf1afad9eb5a22f9f4df8ccb2345b8ca79ff9d4e4ea1fd43",
+            "duration": 0.16,
+            "start": 0,
+            "rate": 1.25,
+            "gain": 0.8,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 185,
+            "duration": 0.12,
+            "start": 0,
+            "gain": 0.55,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.04,
+            "start": 0.045,
+            "lo": 600,
+            "hi": 7500,
+            "gain": 0.25,
+            "pan": 0.2
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 101.75000000000001,
+            "duration": 0.22,
+            "start": 0.018,
+            "gain": 0.4,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.1,
+            "start": 0.12,
+            "lo": 180,
+            "hi": 4700,
+            "gain": 0.22,
+            "pan": -0.25
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "artillery-launch-basic",
+      "branch": "artillery",
+      "event": "launch",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "launch",
+      "path": "basic/artillery-launch.wav",
+      "file": "basic/artillery-launch.wav",
+      "sha256": "dfabe6c8576097462f314242dfd03eab4bbc68f7aab355b853fc1db02e0a9652",
+      "bytes": 81188,
+      "frames": 20286,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.46,
+      "peak": 0.8499755859375,
+      "peakDbfs": -1.4118709691235078,
+      "rms": 0.12275239295841907,
+      "dc": -0.000069906405298759,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.12275610594726666,
+        "gain": 1.0449706208498428,
+        "pre": {
+          "frames": 20286,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.46,
+          "peak": 0.8134199976921082,
+          "peakDbfs": -1.7937030959540539,
+          "rms": 0.1174732604897857,
+          "dc": -0.00006698555234672143,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "fdadd8d601e6f07b31d3c130cf393516ffa960dd4820aa15e470974158e5179a",
+        "path": "outputs/audio-cinematic-v5/enhanced/flame-ignite.wav",
+        "bytes": 449864,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "artillery-launch",
+        "mode": "basic",
+        "kind": "rocket",
+        "description": "독립 로켓 1발 점화 → 압력 배기",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "flame-ignite",
+        "layers": [
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.08,
+            "start": 0,
+            "lo": 450,
+            "hi": 9500,
+            "gain": 0.7,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 105,
+            "duration": 0.26,
+            "start": 0,
+            "gain": 0.5,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.33,
+            "start": 0.018,
+            "lo": 80,
+            "hi": 4600,
+            "gain": 0.3,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "flame-ignite",
+            "sha256": "fdadd8d601e6f07b31d3c130cf393516ffa960dd4820aa15e470974158e5179a",
+            "duration": 0.22,
+            "start": 0,
+            "rate": 0.9,
+            "gain": 0.35,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "artillery-launch-enhanced",
+      "branch": "artillery",
+      "event": "launch",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "launch",
+      "path": "enhanced/artillery-launch.wav",
+      "file": "enhanced/artillery-launch.wav",
+      "sha256": "5c34099740f4da3631f01b76599d183bd45d95a5ef87c13cb9aa71185f330021",
+      "bytes": 81188,
+      "frames": 20286,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.46,
+      "peak": 0.38128662109375,
+      "peakDbfs": -8.3749686669943,
+      "rms": 0.12275233109363669,
+      "dc": 0.0006523369261937111,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.12275610594726666,
+        "gain": 0.3822640855295926,
+        "pre": {
+          "frames": 20286,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.46,
+          "peak": 0.9975108504295349,
+          "peakDbfs": -0.021647431500087425,
+          "rms": 0.32112905866424535,
+          "dc": 0.0017067086814472037,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "fdadd8d601e6f07b31d3c130cf393516ffa960dd4820aa15e470974158e5179a",
+        "path": "outputs/audio-cinematic-v5/enhanced/flame-ignite.wav",
+        "bytes": 449864,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "artillery-launch",
+        "mode": "enhanced",
+        "kind": "rocket",
+        "description": "독립 로켓 1발 점화 → 압력 배기",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "flame-ignite",
+        "layers": [
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.08,
+            "start": 0,
+            "lo": 450,
+            "hi": 9500,
+            "gain": 0.9,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 66,
+            "duration": 0.26,
+            "start": 0,
+            "gain": 0.95,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.33,
+            "start": 0.018,
+            "lo": 80,
+            "hi": 4600,
+            "gain": 0.7,
+            "pan": -0.2
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "flame-ignite",
+            "sha256": "fdadd8d601e6f07b31d3c130cf393516ffa960dd4820aa15e470974158e5179a",
+            "duration": 0.22,
+            "start": 0,
+            "rate": 0.9,
+            "gain": 0.75,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 132,
+            "duration": 0.14,
+            "start": 0.012,
+            "gain": 0.45,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.19,
+            "start": 0.07,
+            "lo": 220,
+            "hi": 6800,
+            "gain": 0.37,
+            "pan": 0.35
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "artillery-flight-basic",
+      "branch": "artillery",
+      "event": "flight",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "flight",
+      "path": "basic/artillery-flight.wav",
+      "file": "basic/artillery-flight.wav",
+      "sha256": "238a29d22951b25289c7ed8c321261031c72ba46fd66e77f6107a98e52099586",
+      "bytes": 114704,
+      "frames": 28665,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.65,
+      "peak": 0.658111572265625,
+      "peakDbfs": -3.634009449554949,
+      "rms": 0.1449956351984901,
+      "dc": 0.000014162753943724925,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 1.1485358485980934,
+        "pre": {
+          "frames": 28665,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.65,
+          "peak": 0.5730149149894714,
+          "peakDbfs": -4.836681472927137,
+          "rms": 0.12624769194360583,
+          "dc": 0.000012315954537745962,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "25f58b215370c6538d353918bd4da423162b9be8f398815e3829c6c5a68a2ebe",
+        "path": "outputs/audio-cinematic-v5/enhanced/flame-spray-loop.wav",
+        "bytes": 705644,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "artillery-flight",
+        "mode": "basic",
+        "kind": "wash",
+        "description": "로켓 가속·넓은 비행 배기",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "flame-spray-loop",
+        "layers": [
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.5525,
+            "start": 0,
+            "lo": 250,
+            "hi": 5000,
+            "gain": 0.55,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "flame-spray-loop",
+            "sha256": "25f58b215370c6538d353918bd4da423162b9be8f398815e3829c6c5a68a2ebe",
+            "duration": 0.48750000000000004,
+            "start": 0,
+            "rate": 0.9,
+            "gain": 0.25,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "artillery-flight-enhanced",
+      "branch": "artillery",
+      "event": "flight",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "flight",
+      "path": "enhanced/artillery-flight.wav",
+      "file": "enhanced/artillery-flight.wav",
+      "sha256": "f29eda46cce778d195be3b65b77227ec82404c9ed8dd62f5cdf9bbd372f3fea0",
+      "bytes": 114704,
+      "frames": 28665,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.65,
+      "peak": 0.44525146484375,
+      "peakDbfs": -7.027892861325327,
+      "rms": 0.1449955713007109,
+      "dc": -0.00020778568839394733,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.472158904466037,
+        "pre": {
+          "frames": 28665,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.65,
+          "peak": 0.9430239796638489,
+          "peakDbfs": -0.5095452734978172,
+          "rms": 0.30710000092867046,
+          "dc": -0.00044022971412110024,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "25f58b215370c6538d353918bd4da423162b9be8f398815e3829c6c5a68a2ebe",
+        "path": "outputs/audio-cinematic-v5/enhanced/flame-spray-loop.wav",
+        "bytes": 705644,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "artillery-flight",
+        "mode": "enhanced",
+        "kind": "wash",
+        "description": "로켓 가속·넓은 비행 배기",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "flame-spray-loop",
+        "layers": [
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.5525,
+            "start": 0,
+            "lo": 250,
+            "hi": 5000,
+            "gain": 0.75,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "flame-spray-loop",
+            "sha256": "25f58b215370c6538d353918bd4da423162b9be8f398815e3829c6c5a68a2ebe",
+            "duration": 0.48750000000000004,
+            "start": 0,
+            "rate": 0.9,
+            "gain": 0.45,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.42250000000000004,
+            "start": 0.03,
+            "lo": 95,
+            "hi": 3000,
+            "gain": 0.35,
+            "pan": -0.4
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "artillery-hit-basic",
+      "branch": "artillery",
+      "event": "hit",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "hit",
+      "path": "basic/artillery-hit.wav",
+      "file": "basic/artillery-hit.wav",
+      "sha256": "b0e7482ad1cc9b7e9f65731810755f45c2280e57a36bb2d58d4fc2ddfbcd801d",
+      "bytes": 220544,
+      "frames": 55125,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 1.25,
+      "peak": 0.8499755859375,
+      "peakDbfs": -1.4118709691235078,
+      "rms": 0.1274203135169318,
+      "dc": -0.00010025100535005669,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.12742418792689553,
+        "gain": 1.1833590269603014,
+        "pre": {
+          "frames": 55125,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 1.25,
+          "peak": 0.7182942628860474,
+          "peakDbfs": -2.873952046438629,
+          "rms": 0.10768007428329718,
+          "dc": -0.00008468457410593618,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "b648258c82551e588dbbef03a201442b5d666864fcd06bbbebaf801415594c93",
+        "path": "outputs/audio-cinematic-v5/enhanced/mortar-impact.wav",
+        "bytes": 811484,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "artillery-hit",
+        "mode": "basic",
+        "kind": "blast",
+        "description": "큰 폭압 → 재료 파열·잔해·공간",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "mortar-impact",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "mortar-impact",
+            "sha256": "b648258c82551e588dbbef03a201442b5d666864fcd06bbbebaf801415594c93",
+            "duration": 0.52,
+            "start": 0,
+            "rate": 1.15,
+            "gain": 0.65,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 45,
+            "duration": 0.5,
+            "start": 0,
+            "gain": 0.45,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.12,
+            "start": 0,
+            "lo": 300,
+            "hi": 9500,
+            "gain": 0.35,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "artillery-hit-enhanced",
+      "branch": "artillery",
+      "event": "hit",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "hit",
+      "path": "enhanced/artillery-hit.wav",
+      "file": "enhanced/artillery-hit.wav",
+      "sha256": "12875629719c11f1b09f525b99bbb066e972df5c8443bbc4e749f0b69ed55cd0",
+      "bytes": 220544,
+      "frames": 55125,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 1.25,
+      "peak": 0.441436767578125,
+      "peakDbfs": -7.102629939514324,
+      "rms": 0.12742029031983307,
+      "dc": 0.00039037781453727326,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.12742418792689553,
+        "gain": 0.4419326038177579,
+        "pre": {
+          "frames": 55125,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 1.25,
+          "peak": 0.9989157915115356,
+          "peakDbfs": -0.00942242413508128,
+          "rms": 0.28833398311440744,
+          "dc": 0.0008834433267751038,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "b648258c82551e588dbbef03a201442b5d666864fcd06bbbebaf801415594c93",
+        "path": "outputs/audio-cinematic-v5/enhanced/mortar-impact.wav",
+        "bytes": 811484,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "artillery-hit",
+        "mode": "enhanced",
+        "kind": "blast",
+        "description": "큰 폭압 → 재료 파열·잔해·공간",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "mortar-impact",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "mortar-impact",
+            "sha256": "b648258c82551e588dbbef03a201442b5d666864fcd06bbbebaf801415594c93",
+            "duration": 0.52,
+            "start": 0,
+            "rate": 0.8,
+            "gain": 0.85,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 45,
+            "duration": 0.5,
+            "start": 0,
+            "gain": 1,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.12,
+            "start": 0,
+            "lo": 300,
+            "hi": 9500,
+            "gain": 0.85,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 32.85,
+            "duration": 0.75,
+            "start": 0.008,
+            "gain": 0.7,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.6,
+            "start": 0.04,
+            "lo": 80,
+            "hi": 4200,
+            "gain": 0.45,
+            "pan": -0.32
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.08,
+            "start": 0.12,
+            "lo": 500,
+            "hi": 8000,
+            "gain": 0.3,
+            "pan": 0.5
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.11,
+            "start": 0.23,
+            "lo": 260,
+            "hi": 6400,
+            "gain": 0.23,
+            "pan": -0.45
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.22,
+            "start": 0.37,
+            "lo": 170,
+            "hi": 7600,
+            "gain": 0.3,
+            "pan": 0.4
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.16,
+            "start": 0.65,
+            "lo": 600,
+            "hi": 8000,
+            "gain": 0.2,
+            "pan": -0.5
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "artillery-recovery-basic",
+      "branch": "artillery",
+      "event": "recovery",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "recovery",
+      "path": "basic/artillery-recovery.wav",
+      "file": "basic/artillery-recovery.wav",
+      "sha256": "c15ae32128dc69e91eeef5de600ed30c95eff0927cd8e3e5c1abb7193ddb8ce7",
+      "bytes": 84716,
+      "frames": 21168,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.48,
+      "peak": 0.761566162109375,
+      "peakDbfs": -2.3658472151515344,
+      "rms": 0.14499555368012004,
+      "dc": -0.00023387150609484246,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 1.1564669962688543,
+        "pre": {
+          "frames": 21168,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.48,
+          "peak": 0.6585429310798645,
+          "peakDbfs": -3.6283181536539812,
+          "rms": 0.12538187468195636,
+          "dc": -0.00020236827388056986,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "338b85c69cdc01b4c9d207807b92bf3925183b1a653c493cee6269b6594cf741",
+        "path": "outputs/audio-cinematic-v5/enhanced/cannon-breech.wav",
+        "bytes": 308744,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "artillery-recovery",
+        "mode": "basic",
+        "kind": "rack",
+        "description": "발사관·받침 복귀 → 배기 밸브",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "cannon-breech",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "cannon-breech",
+            "sha256": "338b85c69cdc01b4c9d207807b92bf3925183b1a653c493cee6269b6594cf741",
+            "duration": 0.16,
+            "start": 0,
+            "rate": 1.25,
+            "gain": 0.55,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 125,
+            "duration": 0.12,
+            "start": 0,
+            "gain": 0.3,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.04,
+            "start": 0.045,
+            "lo": 600,
+            "hi": 7500,
+            "gain": 0.25,
+            "pan": 0.2
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "artillery-recovery-enhanced",
+      "branch": "artillery",
+      "event": "recovery",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "recovery",
+      "path": "enhanced/artillery-recovery.wav",
+      "file": "enhanced/artillery-recovery.wav",
+      "sha256": "2b939b68e3eed423099e2395b933e35f2c5cee46745f5bd191b84744d3221f8d",
+      "bytes": 84716,
+      "frames": 21168,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.48,
+      "peak": 0.49346923828125,
+      "peakDbfs": -6.134798301066335,
+      "rms": 0.1449955544904431,
+      "dc": -0.000219569995560073,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.4976614906704867,
+        "pre": {
+          "frames": 21168,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.48,
+          "peak": 0.9916284084320068,
+          "peakDbfs": -0.07302079886422203,
+          "rms": 0.2913627088257224,
+          "dc": -0.00044122007196913045,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "338b85c69cdc01b4c9d207807b92bf3925183b1a653c493cee6269b6594cf741",
+        "path": "outputs/audio-cinematic-v5/enhanced/cannon-breech.wav",
+        "bytes": 308744,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "artillery-recovery",
+        "mode": "enhanced",
+        "kind": "rack",
+        "description": "발사관·받침 복귀 → 배기 밸브",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "cannon-breech",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "cannon-breech",
+            "sha256": "338b85c69cdc01b4c9d207807b92bf3925183b1a653c493cee6269b6594cf741",
+            "duration": 0.16,
+            "start": 0,
+            "rate": 1.25,
+            "gain": 0.8,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 125,
+            "duration": 0.12,
+            "start": 0,
+            "gain": 0.55,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.04,
+            "start": 0.045,
+            "lo": 600,
+            "hi": 7500,
+            "gain": 0.25,
+            "pan": 0.2
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 68.75,
+            "duration": 0.22,
+            "start": 0.018,
+            "gain": 0.4,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.1,
+            "start": 0.12,
+            "lo": 180,
+            "hi": 4700,
+            "gain": 0.22,
+            "pan": -0.25
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "salvage-launch-basic",
+      "branch": "salvage",
+      "event": "launch",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "launch",
+      "path": "basic/salvage-launch.wav",
+      "file": "basic/salvage-launch.wav",
+      "sha256": "8a68e55338b6fde73dce7e83a32153dca6e8e5721ce6d7da49019a76df264ac8",
+      "bytes": 95300,
+      "frames": 23814,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.54,
+      "peak": 0.75030517578125,
+      "peakDbfs": -2.4952411534841477,
+      "rms": 0.14499558986832534,
+      "dc": 0.00015906970427059713,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.9789787873069175,
+        "pre": {
+          "frames": 23814,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.54,
+          "peak": 0.766433596611023,
+          "peakDbfs": -2.310509324337136,
+          "rms": 0.14811352593132476,
+          "dc": 0.00016238332864589294,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc",
+        "path": "outputs/audio-cinematic-v5/enhanced/fire-harpoon.wav",
+        "bytes": 441044,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "salvage-launch",
+        "mode": "basic",
+        "kind": "harpoon",
+        "description": "무거운 작살 해방 → 윈치 하우징 진동",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "fire-harpoon",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "fire-harpoon",
+            "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc",
+            "duration": 0.26,
+            "start": 0,
+            "rate": 0.8,
+            "gain": 0.55,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 58,
+            "duration": 0.35,
+            "start": 0,
+            "gain": 0.5,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.065,
+            "start": 0,
+            "lo": 240,
+            "hi": 8000,
+            "gain": 0.32,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 182,
+            "duration": 0.15,
+            "start": 0.06,
+            "gain": 0.2,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "salvage-launch-enhanced",
+      "branch": "salvage",
+      "event": "launch",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "launch",
+      "path": "enhanced/salvage-launch.wav",
+      "file": "enhanced/salvage-launch.wav",
+      "sha256": "55caa6e6312ba574da1222410da637c2d444b2188c409f0f84547d4eabfe1a1c",
+      "bytes": 95300,
+      "frames": 23814,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.54,
+      "peak": 0.4339599609375,
+      "peakDbfs": -7.251006771319409,
+      "rms": 0.14499558473953394,
+      "dc": 0.0015246672504963597,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.4357291586552051,
+        "pre": {
+          "frames": 23814,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.54,
+          "peak": 0.9959925413131714,
+          "peakDbfs": -0.03487827728226682,
+          "rms": 0.33277552608027156,
+          "dc": 0.00349917158397338,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc",
+        "path": "outputs/audio-cinematic-v5/enhanced/fire-harpoon.wav",
+        "bytes": 441044,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "salvage-launch",
+        "mode": "enhanced",
+        "kind": "harpoon",
+        "description": "무거운 작살 해방 → 윈치 하우징 진동",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "fire-harpoon",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "fire-harpoon",
+            "sha256": "88ef12289a1f0d8f3c5413343df16cc0469b77e8e9986e83b21eb3da6aa883cc",
+            "duration": 0.26,
+            "start": 0,
+            "rate": 0.8,
+            "gain": 0.8,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 58,
+            "duration": 0.35,
+            "start": 0,
+            "gain": 1,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.065,
+            "start": 0,
+            "lo": 240,
+            "hi": 8000,
+            "gain": 0.65,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 182,
+            "duration": 0.15,
+            "start": 0.06,
+            "gain": 0.4,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.25,
+            "start": 0.05,
+            "lo": 120,
+            "hi": 4300,
+            "gain": 0.4,
+            "pan": -0.3
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 92,
+            "duration": 0.24,
+            "start": 0.012,
+            "gain": 0.42,
+            "pan": 0
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "salvage-flight-basic",
+      "branch": "salvage",
+      "event": "flight",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "flight",
+      "path": "basic/salvage-flight.wav",
+      "file": "basic/salvage-flight.wav",
+      "sha256": "381647ced305872138b0367cc77ed6c06c7f9c7c5cc0f8c573ed97868540cc90",
+      "bytes": 114704,
+      "frames": 28665,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.65,
+      "peak": 0.637359619140625,
+      "peakDbfs": -3.91230910717156,
+      "rms": 0.14499559823743893,
+      "dc": -0.000017506752300279087,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 1.0792617259274098,
+        "pre": {
+          "frames": 28665,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.65,
+          "peak": 0.5905691981315613,
+          "peakDbfs": -4.574584158943979,
+          "rms": 0.13435109993861913,
+          "dc": -0.000016370938084267656,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "c6067f744b5528b1bff774fe31de8180e6dc8c101fc4c764bbe39254f6b2d892",
+        "path": "outputs/audio-cinematic-v5/enhanced/harpoon-tension-loop.wav",
+        "bytes": 705644,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "salvage-flight",
+        "mode": "basic",
+        "kind": "cable",
+        "description": "케이블 풀림·회전하는 스풀",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "harpoon-tension-loop",
+        "layers": [
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.5525,
+            "start": 0,
+            "lo": 150,
+            "hi": 5000,
+            "gain": 0.55,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "harpoon-tension-loop",
+            "sha256": "c6067f744b5528b1bff774fe31de8180e6dc8c101fc4c764bbe39254f6b2d892",
+            "duration": 0.48750000000000004,
+            "start": 0,
+            "rate": 0.9,
+            "gain": 0.25,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "salvage-flight-enhanced",
+      "branch": "salvage",
+      "event": "flight",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "flight",
+      "path": "enhanced/salvage-flight.wav",
+      "file": "enhanced/salvage-flight.wav",
+      "sha256": "971b1d32022d489d570f6ca076d4e2b5b3f75ae7e007a05fe7280873233a8f38",
+      "bytes": 114704,
+      "frames": 28665,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.65,
+      "peak": 0.400604248046875,
+      "peakDbfs": -7.945688994331883,
+      "rms": 0.14499555588877408,
+      "dc": -0.00003361617959483473,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.4151726861312694,
+        "pre": {
+          "frames": 28665,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.65,
+          "peak": 0.9649075269699097,
+          "peakDbfs": -0.3102861155292662,
+          "rms": 0.34925226259743364,
+          "dc": -0.00008101777645615081,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "c6067f744b5528b1bff774fe31de8180e6dc8c101fc4c764bbe39254f6b2d892",
+        "path": "outputs/audio-cinematic-v5/enhanced/harpoon-tension-loop.wav",
+        "bytes": 705644,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "salvage-flight",
+        "mode": "enhanced",
+        "kind": "cable",
+        "description": "케이블 풀림·회전하는 스풀",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "harpoon-tension-loop",
+        "layers": [
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.5525,
+            "start": 0,
+            "lo": 150,
+            "hi": 5000,
+            "gain": 0.75,
+            "pan": 0
+          },
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "harpoon-tension-loop",
+            "sha256": "c6067f744b5528b1bff774fe31de8180e6dc8c101fc4c764bbe39254f6b2d892",
+            "duration": 0.48750000000000004,
+            "start": 0,
+            "rate": 0.9,
+            "gain": 0.45,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.42250000000000004,
+            "start": 0.03,
+            "lo": 95,
+            "hi": 3000,
+            "gain": 0.35,
+            "pan": -0.4
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 175,
+            "duration": 0.45,
+            "start": 0,
+            "gain": 0.23,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 320,
+            "duration": 0.25,
+            "start": 0.08,
+            "gain": 0.16,
+            "pan": 0.4
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "salvage-hit-basic",
+      "branch": "salvage",
+      "event": "hit",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "hit",
+      "path": "basic/salvage-hit.wav",
+      "file": "basic/salvage-hit.wav",
+      "sha256": "4affe7499b62ae427e2f83d0d120a39d70ef7abd783ca009acc1f6e1edffa3a9",
+      "bytes": 167624,
+      "frames": 41895,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.95,
+      "peak": 0.8499755859375,
+      "peakDbfs": -1.4118709691235078,
+      "rms": 0.14011769845206817,
+      "dc": -0.000341699265369525,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.14012202680855443,
+        "gain": 1.0442558521129939,
+        "pre": {
+          "frames": 41895,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.95,
+          "peak": 0.8139767646789551,
+          "peakDbfs": -1.7877598411776285,
+          "rms": 0.13418361651986463,
+          "dc": -0.000327147643307802,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "e4fed49399d1ac7f870ce1f2e2c31b16a1ccb9547eafc985a9bef36b8e187297",
+        "path": "outputs/audio-cinematic-v5/enhanced/harpoon-embed.wav",
+        "bytes": 441044,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "salvage-hit",
+        "mode": "basic",
+        "kind": "metalwood",
+        "description": "황동·목재 관통 → 고정 장력",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "harpoon-embed",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "harpoon-embed",
+            "sha256": "e4fed49399d1ac7f870ce1f2e2c31b16a1ccb9547eafc985a9bef36b8e187297",
+            "duration": 0.52,
+            "start": 0,
+            "rate": 1.15,
+            "gain": 0.65,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 68,
+            "duration": 0.5,
+            "start": 0,
+            "gain": 0.45,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.055,
+            "start": 0,
+            "lo": 300,
+            "hi": 9500,
+            "gain": 0.35,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "salvage-hit-enhanced",
+      "branch": "salvage",
+      "event": "hit",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "hit",
+      "path": "enhanced/salvage-hit.wav",
+      "file": "enhanced/salvage-hit.wav",
+      "sha256": "e7982137b4fa4252c65b85e29a5b2b14a705cba341c46bb68bc5547a1a245316",
+      "bytes": 167624,
+      "frames": 41895,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.95,
+      "peak": 0.418487548828125,
+      "peakDbfs": -7.566349179014495,
+      "rms": 0.1401177050432561,
+      "dc": 0.0006800856307435255,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.14012202680855443,
+        "gain": 0.419322012757835,
+        "pre": {
+          "frames": 41895,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.95,
+          "peak": 0.99800705909729,
+          "peakDbfs": -0.01732773705502238,
+          "rms": 0.3341632982418147,
+          "dc": 0.0016217696177935445,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "e4fed49399d1ac7f870ce1f2e2c31b16a1ccb9547eafc985a9bef36b8e187297",
+        "path": "outputs/audio-cinematic-v5/enhanced/harpoon-embed.wav",
+        "bytes": 441044,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "salvage-hit",
+        "mode": "enhanced",
+        "kind": "metalwood",
+        "description": "황동·목재 관통 → 고정 장력",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "harpoon-embed",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "harpoon-embed",
+            "sha256": "e4fed49399d1ac7f870ce1f2e2c31b16a1ccb9547eafc985a9bef36b8e187297",
+            "duration": 0.52,
+            "start": 0,
+            "rate": 0.8,
+            "gain": 0.85,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 68,
+            "duration": 0.5,
+            "start": 0,
+            "gain": 1,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.055,
+            "start": 0,
+            "lo": 300,
+            "hi": 9500,
+            "gain": 0.85,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 49.64,
+            "duration": 0.7124999999999999,
+            "start": 0.008,
+            "gain": 0.7,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.45599999999999996,
+            "start": 0.04,
+            "lo": 80,
+            "hi": 4200,
+            "gain": 0.45,
+            "pan": -0.32
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.08,
+            "start": 0.12,
+            "lo": 500,
+            "hi": 8000,
+            "gain": 0.3,
+            "pan": 0.5
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.11,
+            "start": 0.23,
+            "lo": 260,
+            "hi": 6400,
+            "gain": 0.23,
+            "pan": -0.45
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 330,
+            "duration": 0.32,
+            "start": 0.07,
+            "gain": 0.24,
+            "pan": 0
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "salvage-recovery-basic",
+      "branch": "salvage",
+      "event": "recovery",
+      "mode": "basic",
+      "variant": "basic",
+      "phase": "recovery",
+      "path": "basic/salvage-recovery.wav",
+      "file": "basic/salvage-recovery.wav",
+      "sha256": "5bbe8d45c912dacda9c3944161c22c1dcdb5c429cb4a550414eab003332a8487",
+      "bytes": 158804,
+      "frames": 39690,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.9,
+      "peak": 0.73016357421875,
+      "peakDbfs": -2.7315967312148617,
+      "rms": 0.14499559501369083,
+      "dc": 0.00001252766188940854,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 1.3886653294726579,
+        "pre": {
+          "frames": 39690,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.9,
+          "peak": 0.5258251428604126,
+          "peakDbfs": -5.583173030075392,
+          "rms": 0.10441680721953601,
+          "dc": 0.000009038002495343805,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "cdd46be18a09569ca6d700fd48c9742b21cba07f411d0c0c45616a2ece2a9339",
+        "path": "outputs/audio-cinematic-v5/enhanced/winch-loop.wav",
+        "bytes": 705644,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "salvage-recovery",
+        "mode": "basic",
+        "kind": "tension",
+        "description": "장력 걸림 → 윈치 감속·고정",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "winch-loop",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "winch-loop",
+            "sha256": "cdd46be18a09569ca6d700fd48c9742b21cba07f411d0c0c45616a2ece2a9339",
+            "duration": 0.58,
+            "start": 0,
+            "rate": 0.8,
+            "gain": 0.5,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 85,
+            "duration": 0.6,
+            "start": 0,
+            "gain": 0.3,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.45,
+            "start": 0.02,
+            "lo": 250,
+            "hi": 3100,
+            "gain": 0.2,
+            "pan": 0
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    },
+    {
+      "id": "salvage-recovery-enhanced",
+      "branch": "salvage",
+      "event": "recovery",
+      "mode": "enhanced",
+      "variant": "enhanced",
+      "phase": "recovery",
+      "path": "enhanced/salvage-recovery.wav",
+      "file": "enhanced/salvage-recovery.wav",
+      "sha256": "5bce3fa8bb1eb3a7179b90074754301916861350fc15cdb0265f00f742d4433d",
+      "bytes": 158804,
+      "frames": 39690,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.9,
+      "peak": 0.467987060546875,
+      "peakDbfs": -6.595323092824272,
+      "rms": 0.144995518890721,
+      "dc": 0.00004767977521593128,
+      "finite": true,
+      "clipped": 0,
+      "loop": false,
+      "normalization": {
+        "method": "Same-event basic/enhanced full stereo RMS matched with both peak <= .85",
+        "targetRms": 0.145,
+        "gain": 0.4776199993333761,
+        "pre": {
+          "frames": 39690,
+          "sampleRate": 44100,
+          "channels": 2,
+          "duration": 0.9,
+          "peak": 0.9798802733421326,
+          "peakDbfs": -0.17653970662607726,
+          "rms": 0.3035886273656451,
+          "dc": 0.00009981810243098859,
+          "finite": true,
+          "clipped": 0
+        }
+      },
+      "source": {
+        "sha256": "cdd46be18a09569ca6d700fd48c9742b21cba07f411d0c0c45616a2ece2a9339",
+        "path": "outputs/audio-cinematic-v5/enhanced/winch-loop.wav",
+        "bytes": 705644,
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "recipe": {
+        "id": "salvage-recovery",
+        "mode": "enhanced",
+        "kind": "tension",
+        "description": "장력 걸림 → 윈치 감속·고정",
+        "contactSeconds": 0,
+        "loop": false,
+        "proceduralPrototype": true,
+        "source": "winch-loop",
+        "layers": [
+          {
+            "type": "existing project v5 processed fragment",
+            "id": "winch-loop",
+            "sha256": "cdd46be18a09569ca6d700fd48c9742b21cba07f411d0c0c45616a2ece2a9339",
+            "duration": 0.58,
+            "start": 0,
+            "rate": 0.8,
+            "gain": 0.75,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 85,
+            "duration": 0.6,
+            "start": 0,
+            "gain": 0.6,
+            "pan": 0
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.45,
+            "start": 0.02,
+            "lo": 250,
+            "hi": 3100,
+            "gain": 0.2,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "fall",
+            "hz": 54,
+            "duration": 0.55,
+            "start": 0,
+            "gain": 0.45,
+            "pan": 0
+          },
+          {
+            "type": "original procedural oscillator",
+            "shape": "string",
+            "hz": 250,
+            "duration": 0.3,
+            "start": 0.15,
+            "gain": 0.25,
+            "pan": 0.3
+          },
+          {
+            "type": "deterministic band-limited procedural noise",
+            "duration": 0.07,
+            "start": 0.66,
+            "lo": 700,
+            "hi": 5500,
+            "gain": 0.3,
+            "pan": -0.25
+          },
+          {
+            "type": "short source-derived stereo enclosure reflections",
+            "delaySeconds": [
+              0.023,
+              0.041,
+              0.073,
+              0.113
+            ]
+          }
+        ],
+        "subjectiveListeningPerformed": false
+      },
+      "rights": "Local original procedural synthesis plus reused project asset. No external samples, music, voice or paid generation. Existing source account terms still apply.",
+      "humanApproved": false,
+      "subjectiveListeningPerformed": false,
+      "gameplayInstalled": false
+    }
+  ],
+  "pairs": [
+    {
+      "id": "mobility-launch",
+      "file": "paired/mobility-launch-basic-enhanced.wav",
+      "sha256": "ff7741a66e8fd1e5d1cad535bb722d5e294501075a428f16f383ead4d0b1a786",
+      "bytes": 181736,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "mobility-launch-basic",
+          "startFrame": 0,
+          "frames": 14994,
+          "sha256": "bc4fe85bb19491136bbd51f6bff010db368ebb784c2575bd5e957a9769751eac"
+        },
+        {
+          "cueId": "mobility-launch-enhanced",
+          "startFrame": 30429,
+          "frames": 14994,
+          "sha256": "ecd3df13ba2168fb05c25de34250acae441750a5d6e36c54df8c91218f789548"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    },
+    {
+      "id": "mobility-flight",
+      "file": "paired/mobility-flight-basic-enhanced.wav",
+      "sha256": "0dbbd0110ac10f51d2fcb4ebf628a28004d60f0aef5bec862f71b4f21a6b2abe",
+      "bytes": 167624,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "mobility-flight-basic",
+          "startFrame": 0,
+          "frames": 13230,
+          "sha256": "3795a0fc36b4758c8a92d777ee62ad9292a09a02ec6b990247a7ac9fe81951b4"
+        },
+        {
+          "cueId": "mobility-flight-enhanced",
+          "startFrame": 28665,
+          "frames": 13230,
+          "sha256": "76dcc29f328363080b8420d42654013e6e4c73d44ce254e0e48835c857fcb75f"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    },
+    {
+      "id": "mobility-hit",
+      "file": "paired/mobility-hit-basic-enhanced.wav",
+      "sha256": "5399d9ea0d8b05617c32cd86eb7c5a5ba11ad0db805c0c2d73946db845a27b1e",
+      "bytes": 287576,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "mobility-hit-basic",
+          "startFrame": 0,
+          "frames": 28224,
+          "sha256": "5c248a547429d4de113a911f98cb98069623f6e61cf6e9f008478aaa9029f7e8"
+        },
+        {
+          "cueId": "mobility-hit-enhanced",
+          "startFrame": 43659,
+          "frames": 28224,
+          "sha256": "8b6ae7c4d98c4519e245269ec20d0cc3daed20e493cadfefc972b8c7784ddabf"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    },
+    {
+      "id": "mobility-recovery",
+      "file": "paired/mobility-recovery-basic-enhanced.wav",
+      "sha256": "a22ab7ae92e5849f65d87983a80a38b795565368c7ae147dd372fed2976d7d54",
+      "bytes": 202904,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "mobility-recovery-basic",
+          "startFrame": 0,
+          "frames": 17640,
+          "sha256": "264c1784fc54e21eb32e496582d9ce231746328460b9da6f954e3a869e340ff4"
+        },
+        {
+          "cueId": "mobility-recovery-enhanced",
+          "startFrame": 33075,
+          "frames": 17640,
+          "sha256": "cf244a829cdeb758deb7e6a3683c523df6893eb97c91a10ebfa46635d26ac7ac"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    },
+    {
+      "id": "artillery-launch",
+      "file": "paired/artillery-launch-basic-enhanced.wav",
+      "sha256": "9429a42bb1401085f0b7ff34a4b49525dfbc2189475a8e2438488977aafa12a3",
+      "bytes": 224072,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "artillery-launch-basic",
+          "startFrame": 0,
+          "frames": 20286,
+          "sha256": "dfabe6c8576097462f314242dfd03eab4bbc68f7aab355b853fc1db02e0a9652"
+        },
+        {
+          "cueId": "artillery-launch-enhanced",
+          "startFrame": 35721,
+          "frames": 20286,
+          "sha256": "5c34099740f4da3631f01b76599d183bd45d95a5ef87c13cb9aa71185f330021"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.12275610594726666
+    },
+    {
+      "id": "artillery-flight",
+      "file": "paired/artillery-flight-basic-enhanced.wav",
+      "sha256": "a32191b13a628d9f2bb4e6b90aa3d53f039486dca96548c42d4df305762e8ff2",
+      "bytes": 291104,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "artillery-flight-basic",
+          "startFrame": 0,
+          "frames": 28665,
+          "sha256": "238a29d22951b25289c7ed8c321261031c72ba46fd66e77f6107a98e52099586"
+        },
+        {
+          "cueId": "artillery-flight-enhanced",
+          "startFrame": 44100,
+          "frames": 28665,
+          "sha256": "f29eda46cce778d195be3b65b77227ec82404c9ed8dd62f5cdf9bbd372f3fea0"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    },
+    {
+      "id": "artillery-hit",
+      "file": "paired/artillery-hit-basic-enhanced.wav",
+      "sha256": "b76f4749a7e4dc4ba90c9463d4b6d908d385523f10dcd6ad22afc86c0191260d",
+      "bytes": 502784,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "artillery-hit-basic",
+          "startFrame": 0,
+          "frames": 55125,
+          "sha256": "b0e7482ad1cc9b7e9f65731810755f45c2280e57a36bb2d58d4fc2ddfbcd801d"
+        },
+        {
+          "cueId": "artillery-hit-enhanced",
+          "startFrame": 70560,
+          "frames": 55125,
+          "sha256": "12875629719c11f1b09f525b99bbb066e972df5c8443bbc4e749f0b69ed55cd0"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.12742418792689553
+    },
+    {
+      "id": "artillery-recovery",
+      "file": "paired/artillery-recovery-basic-enhanced.wav",
+      "sha256": "6c0877d4ebb99cd562c4bd5400f0a10e96a8b15dbaba4dfc36b25c1e239eafb2",
+      "bytes": 231128,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "artillery-recovery-basic",
+          "startFrame": 0,
+          "frames": 21168,
+          "sha256": "c15ae32128dc69e91eeef5de600ed30c95eff0927cd8e3e5c1abb7193ddb8ce7"
+        },
+        {
+          "cueId": "artillery-recovery-enhanced",
+          "startFrame": 36603,
+          "frames": 21168,
+          "sha256": "2b939b68e3eed423099e2395b933e35f2c5cee46745f5bd191b84744d3221f8d"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    },
+    {
+      "id": "salvage-launch",
+      "file": "paired/salvage-launch-basic-enhanced.wav",
+      "sha256": "09e2d90ac9304844edb31a2c7a2959d5b39d8b0d477dfc5db5b66360d9082693",
+      "bytes": 252296,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "salvage-launch-basic",
+          "startFrame": 0,
+          "frames": 23814,
+          "sha256": "8a68e55338b6fde73dce7e83a32153dca6e8e5721ce6d7da49019a76df264ac8"
+        },
+        {
+          "cueId": "salvage-launch-enhanced",
+          "startFrame": 39249,
+          "frames": 23814,
+          "sha256": "55caa6e6312ba574da1222410da637c2d444b2188c409f0f84547d4eabfe1a1c"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    },
+    {
+      "id": "salvage-flight",
+      "file": "paired/salvage-flight-basic-enhanced.wav",
+      "sha256": "718214d70f556df11252d8dd3f3fbb821ad0005429094fd1484fb78c8a120dec",
+      "bytes": 291104,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "salvage-flight-basic",
+          "startFrame": 0,
+          "frames": 28665,
+          "sha256": "381647ced305872138b0367cc77ed6c06c7f9c7c5cc0f8c573ed97868540cc90"
+        },
+        {
+          "cueId": "salvage-flight-enhanced",
+          "startFrame": 44100,
+          "frames": 28665,
+          "sha256": "971b1d32022d489d570f6ca076d4e2b5b3f75ae7e007a05fe7280873233a8f38"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    },
+    {
+      "id": "salvage-hit",
+      "file": "paired/salvage-hit-basic-enhanced.wav",
+      "sha256": "90647a759fbea6fa53aba01451a49d656f06d47c79dd8c17c0298ceeb9558c47",
+      "bytes": 396944,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "salvage-hit-basic",
+          "startFrame": 0,
+          "frames": 41895,
+          "sha256": "4affe7499b62ae427e2f83d0d120a39d70ef7abd783ca009acc1f6e1edffa3a9"
+        },
+        {
+          "cueId": "salvage-hit-enhanced",
+          "startFrame": 57330,
+          "frames": 41895,
+          "sha256": "e7982137b4fa4252c65b85e29a5b2b14a705cba341c46bb68bc5547a1a245316"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.14012202680855443
+    },
+    {
+      "id": "salvage-recovery",
+      "file": "paired/salvage-recovery-basic-enhanced.wav",
+      "sha256": "40710e1c8a97ba0b9287fb3534f75451e7f9cbc83fb2d1c3111d6ed8d0e47b8d",
+      "bytes": 379304,
+      "gapFrames": 15435,
+      "segments": [
+        {
+          "cueId": "salvage-recovery-basic",
+          "startFrame": 0,
+          "frames": 39690,
+          "sha256": "5bbe8d45c912dacda9c3944161c22c1dcdb5c429cb4a550414eab003332a8487"
+        },
+        {
+          "cueId": "salvage-recovery-enhanced",
+          "startFrame": 55125,
+          "frames": 39690,
+          "sha256": "5bce3fa8bb1eb3a7179b90074754301916861350fc15cdb0265f00f742d4433d"
+        }
+      ],
+      "order": [
+        "basic",
+        "enhanced"
+      ],
+      "targetRms": 0.145
+    }
+  ],
+  "samples": [
+    {
+      "branch": "mobility",
+      "mode": "basic",
+      "file": "samples/mobility-basic-sequence.wav",
+      "sha256": "222eeada43d90548bcb648d554a339f5a942b6e95ff7781f7970eed2a63be2e9",
+      "bytes": 1058444,
+      "frames": 264600,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 6,
+      "peak": 0.392608642578125,
+      "peakDbfs": -8.12080288826705,
+      "rms": 0.03504847319666802,
+      "dc": 0.00002419734848149329,
+      "finite": true,
+      "clipped": 0,
+      "timeline": [
+        {
+          "event": "launch",
+          "time": 0.8,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 0.8600000000000001,
+          "level": 0.16
+        },
+        {
+          "event": "launch",
+          "time": 1.03,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.09,
+          "level": 0.16
+        },
+        {
+          "event": "hit",
+          "time": 1.25,
+          "level": 0.45
+        },
+        {
+          "event": "launch",
+          "time": 1.26,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.32,
+          "level": 0.16
+        },
+        {
+          "event": "hit",
+          "time": 1.48,
+          "level": 0.45
+        },
+        {
+          "event": "hit",
+          "time": 1.71,
+          "level": 0.45
+        },
+        {
+          "event": "recovery",
+          "time": 3.4,
+          "level": 0.45
+        }
+      ],
+      "master": 0.7,
+      "pan": -0.12,
+      "limiter": false,
+      "note": "Actual contract-clock cues summed offline, equal-power pan; native browser may resample. No damage/gameplay simulation."
+    },
+    {
+      "branch": "mobility",
+      "mode": "enhanced",
+      "file": "samples/mobility-enhanced-sequence.wav",
+      "sha256": "62e56db5a9aed1fa040a1e04cb3d0e37be877656a9f592719b91277b54ca40f5",
+      "bytes": 1058444,
+      "frames": 264600,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 6,
+      "peak": 0.287841796875,
+      "peakDbfs": -10.816922857453704,
+      "rms": 0.03424669471155076,
+      "dc": -0.000015382946934199028,
+      "finite": true,
+      "clipped": 0,
+      "timeline": [
+        {
+          "event": "launch",
+          "time": 0.8,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 0.8600000000000001,
+          "level": 0.16
+        },
+        {
+          "event": "launch",
+          "time": 1.03,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.09,
+          "level": 0.16
+        },
+        {
+          "event": "hit",
+          "time": 1.25,
+          "level": 0.45
+        },
+        {
+          "event": "launch",
+          "time": 1.26,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.32,
+          "level": 0.16
+        },
+        {
+          "event": "hit",
+          "time": 1.48,
+          "level": 0.45
+        },
+        {
+          "event": "hit",
+          "time": 1.71,
+          "level": 0.45
+        },
+        {
+          "event": "recovery",
+          "time": 3.4,
+          "level": 0.45
+        }
+      ],
+      "master": 0.7,
+      "pan": -0.12,
+      "limiter": false,
+      "note": "Actual contract-clock cues summed offline, equal-power pan; native browser may resample. No damage/gameplay simulation."
+    },
+    {
+      "branch": "mobility",
+      "mode": "paired",
+      "file": "samples/mobility-contract-basic-enhanced.wav",
+      "sha256": "7dc6f59283d5658b0bc3afbff6b776caa4e06482a5600fd13a7983b1132bbe63",
+      "bytes": 2205044,
+      "gapFrames": 22050,
+      "segments": [
+        {
+          "mode": "basic",
+          "file": "samples/mobility-basic-sequence.wav",
+          "startFrame": 0,
+          "frames": 264600,
+          "gain": 2.1649095294749356,
+          "targetRms": 0.0758792010326841
+        },
+        {
+          "mode": "enhanced",
+          "file": "samples/mobility-enhanced-sequence.wav",
+          "startFrame": 286650,
+          "frames": 264600,
+          "gain": 2.215596524306509,
+          "targetRms": 0.0758792010326841
+        }
+      ],
+      "note": "Basic6s then500ms silence then enhanced6s, full-stereo-RMS matched."
+    },
+    {
+      "branch": "artillery",
+      "mode": "basic",
+      "file": "samples/artillery-basic-sequence.wav",
+      "sha256": "dbb2da3b3bcb7235ef465950aa1b32aeb7b20b8fd9cffb0f9d1a419b91edbd00",
+      "bytes": 1058444,
+      "frames": 264600,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 6,
+      "peak": 0.3677978515625,
+      "peakDbfs": -8.687816239167969,
+      "rms": 0.0381551166546464,
+      "dc": -0.000030148679887536613,
+      "finite": true,
+      "clipped": 0,
+      "timeline": [
+        {
+          "event": "launch",
+          "time": 0.9,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 0.96,
+          "level": 0.16
+        },
+        {
+          "event": "launch",
+          "time": 1.2,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.26,
+          "level": 0.16
+        },
+        {
+          "event": "launch",
+          "time": 1.5,
+          "level": 0.45
+        },
+        {
+          "event": "hit",
+          "time": 1.55,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.56,
+          "level": 0.16
+        },
+        {
+          "event": "hit",
+          "time": 1.85,
+          "level": 0.45
+        },
+        {
+          "event": "hit",
+          "time": 2.15,
+          "level": 0.45
+        },
+        {
+          "event": "recovery",
+          "time": 3.9,
+          "level": 0.45
+        }
+      ],
+      "master": 0.7,
+      "pan": 0.08,
+      "limiter": false,
+      "note": "Actual contract-clock cues summed offline, equal-power pan; native browser may resample. No damage/gameplay simulation."
+    },
+    {
+      "branch": "artillery",
+      "mode": "enhanced",
+      "file": "samples/artillery-enhanced-sequence.wav",
+      "sha256": "c5905b95403c9c3b2a1ad248b5ca823e054a63c4f2748162b2307ef9c8784ae2",
+      "bytes": 1058444,
+      "frames": 264600,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 6,
+      "peak": 0.28485107421875,
+      "peakDbfs": -10.907642768211616,
+      "rms": 0.03949975890683484,
+      "dc": 0.00011042571121873228,
+      "finite": true,
+      "clipped": 0,
+      "timeline": [
+        {
+          "event": "launch",
+          "time": 0.9,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 0.96,
+          "level": 0.16
+        },
+        {
+          "event": "launch",
+          "time": 1.2,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.26,
+          "level": 0.16
+        },
+        {
+          "event": "launch",
+          "time": 1.5,
+          "level": 0.45
+        },
+        {
+          "event": "hit",
+          "time": 1.55,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.56,
+          "level": 0.16
+        },
+        {
+          "event": "hit",
+          "time": 1.85,
+          "level": 0.45
+        },
+        {
+          "event": "hit",
+          "time": 2.15,
+          "level": 0.45
+        },
+        {
+          "event": "recovery",
+          "time": 3.9,
+          "level": 0.45
+        }
+      ],
+      "master": 0.7,
+      "pan": 0.08,
+      "limiter": false,
+      "note": "Actual contract-clock cues summed offline, equal-power pan; native browser may resample. No damage/gameplay simulation."
+    },
+    {
+      "branch": "artillery",
+      "mode": "paired",
+      "file": "samples/artillery-contract-basic-enhanced.wav",
+      "sha256": "742b964eb5a340a6661b01ec587cb12355765311887f4f0e199857e9b625ad73",
+      "bytes": 2205044,
+      "gapFrames": 22050,
+      "segments": [
+        {
+          "mode": "basic",
+          "file": "samples/artillery-basic-sequence.wav",
+          "startFrame": 0,
+          "frames": 264600,
+          "gain": 2.310911669245125,
+          "targetRms": 0.08817577478874465
+        },
+        {
+          "mode": "enhanced",
+          "file": "samples/artillery-enhanced-sequence.wav",
+          "startFrame": 286650,
+          "frames": 264600,
+          "gain": 2.2322428466184143,
+          "targetRms": 0.08817577478874465
+        }
+      ],
+      "note": "Basic6s then500ms silence then enhanced6s, full-stereo-RMS matched."
+    },
+    {
+      "branch": "salvage",
+      "mode": "basic",
+      "file": "samples/salvage-basic-sequence.wav",
+      "sha256": "c63558a80226f4f568d3b7b3f3a96de19a1a12ea0d8c9aabce64a577168e7804",
+      "bytes": 1058444,
+      "frames": 264600,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 6,
+      "peak": 0.288360595703125,
+      "peakDbfs": -10.801281719405011,
+      "rms": 0.028971438568263654,
+      "dc": -0.00001212295220822704,
+      "finite": true,
+      "clipped": 0,
+      "timeline": [
+        {
+          "event": "launch",
+          "time": 0.95,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.01,
+          "level": 0.16
+        },
+        {
+          "event": "hit",
+          "time": 1.65,
+          "level": 0.45
+        },
+        {
+          "event": "recovery",
+          "time": 3.6,
+          "level": 0.45
+        }
+      ],
+      "master": 0.7,
+      "pan": 0.16,
+      "limiter": false,
+      "note": "Actual contract-clock cues summed offline, equal-power pan; native browser may resample. No damage/gameplay simulation."
+    },
+    {
+      "branch": "salvage",
+      "mode": "enhanced",
+      "file": "samples/salvage-enhanced-sequence.wav",
+      "sha256": "f276b220d87f2640400e631d3cefd77e86de796955e807a7d8fa0d0313cb0d82",
+      "bytes": 1058444,
+      "frames": 264600,
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 6,
+      "peak": 0.169342041015625,
+      "peakDbfs": -15.424704202911041,
+      "rms": 0.028978831356199563,
+      "dc": 0.00007915188305682516,
+      "finite": true,
+      "clipped": 0,
+      "timeline": [
+        {
+          "event": "launch",
+          "time": 0.95,
+          "level": 0.45
+        },
+        {
+          "event": "flight",
+          "time": 1.01,
+          "level": 0.16
+        },
+        {
+          "event": "hit",
+          "time": 1.65,
+          "level": 0.45
+        },
+        {
+          "event": "recovery",
+          "time": 3.6,
+          "level": 0.45
+        }
+      ],
+      "master": 0.7,
+      "pan": 0.16,
+      "limiter": false,
+      "note": "Actual contract-clock cues summed offline, equal-power pan; native browser may resample. No damage/gameplay simulation."
+    },
+    {
+      "branch": "salvage",
+      "mode": "paired",
+      "file": "samples/salvage-contract-basic-enhanced.wav",
+      "sha256": "b4756ce400a7c23eeb5a683048efc21b13d6e5bce5456a95ea018fa296eab352",
+      "bytes": 2205044,
+      "gapFrames": 22050,
+      "segments": [
+        {
+          "mode": "basic",
+          "file": "samples/salvage-basic-sequence.wav",
+          "startFrame": 0,
+          "frames": 264600,
+          "gain": 2.947629625089952,
+          "targetRms": 0.08539969420957098
+        },
+        {
+          "mode": "enhanced",
+          "file": "samples/salvage-enhanced-sequence.wav",
+          "startFrame": 286650,
+          "frames": 264600,
+          "gain": 2.946879926691383,
+          "targetRms": 0.08539969420957098
+        }
+      ],
+      "note": "Basic6s then500ms silence then enhanced6s, full-stereo-RMS matched."
+    }
+  ],
+  "contract": {
+    "branches": [
+      "mobility",
+      "artillery",
+      "salvage"
+    ],
+    "events": [
+      "launch",
+      "flight",
+      "hit",
+      "recovery"
+    ],
+    "modes": [
+      "basic",
+      "enhanced"
+    ],
+    "artillery": "One launch WAV per actual rocket shot. Do not play the three-shot offline sample as an event cue.",
+    "start": "Launch/hit contact begins at file start; no pre-roll.",
+    "loops": false,
+    "playback": "Single event id+generation dedup; user gesture unlock; gain budget, cancellation on pause/seek/reset/hidden/dispose owned by viewer.",
+    "peakLimitDbfs": -1,
+    "headroom": "Each cue peak <=.85. Overlaps need additional mixer gain/headroom; sample sequence uses .25 per cue.",
+    "timing": "Bound to copied viewerContract revision/hash. Events are independent short files; offline 6-second sequences demonstrate the exact contract schedule."
+  },
+  "rights": "Procedural originals + source project v5 asset provenance per cue; no external samples/API/music/voice.",
+  "subjectiveListeningPerformed": false,
+  "humanApproved": false,
+  "gameplayInstalled": false,
+  "paidRequests": 0,
+  "viewerContract": {
+    "path": "outputs/ship-weapon-attack-v1/sound-contract.json",
+    "sha256": "db3bc403014e689926a481c750bc646d4342cd4db835221c73f3ba676869d635",
+    "revision": "ship-weapon-attack-clock-r1",
+    "clock": {
+      "unit": "seconds",
+      "duration": 6,
+      "loop": false,
+      "seek_policy": "cancel all audio; resume schedules future events only"
+    },
+    "branches": {
+      "mobility": {
+        "name": "기동 · 연발 쇠뇌",
+        "launch": [
+          0.8,
+          1.03,
+          1.26
+        ],
+        "travel_seconds": 0.45,
+        "hit": [
+          1.25,
+          1.48,
+          1.71
+        ],
+        "recovery": [
+          3.4
+        ],
+        "pan": -0.12,
+        "cue_gain": 0.45
+      },
+      "artillery": {
+        "name": "포격 · 순차 로켓",
+        "launch": [
+          0.9,
+          1.2,
+          1.5
+        ],
+        "travel_seconds": 0.65,
+        "hit": [
+          1.55,
+          1.85,
+          2.15
+        ],
+        "recovery": [
+          3.9
+        ],
+        "pan": 0.08,
+        "cue_gain": 0.45
+      },
+      "salvage": {
+        "name": "인양 · 작살과 장력",
+        "launch": [
+          0.95
+        ],
+        "travel_seconds": 0.7,
+        "hit": [
+          1.65
+        ],
+        "recovery": [
+          3.6
+        ],
+        "pan": 0.16,
+        "cue_gain": 0.45
+      }
+    },
+    "audio_delivery": {
+      "preferred_directory": "outputs/audio-ship-weapon-attack-v1/",
+      "variants": [
+        "basic",
+        "enhanced"
+      ],
+      "phases": [
+        "launch",
+        "flight",
+        "hit",
+        "recovery"
+      ],
+      "desired_max_duration_seconds": {
+        "launch": 0.55,
+        "hit": 1.3,
+        "recovery": 0.9,
+        "flight": 0.65
+      },
+      "map_format": "cue-map.json with cues array entries {branch, variant, phase, path, duration, peak, rms}; path relative to map directory",
+      "normalization": "paired basic/enhanced comparable RMS or loudness, peak below -1dBFS, finite PCM and no clipping; document source and layering",
+      "consumer_master_gain": 0.7,
+      "consumer_behavior": "Only one comparison side audio plays at a time. User gesture unlock, mute/volume, source cancellation on pause/seek/reset/branch change/hidden/end, no infinite loops.",
+      "flight_gain": 0.16,
+      "flight_start_offset_seconds": 0.06
+    }
+  }
+}

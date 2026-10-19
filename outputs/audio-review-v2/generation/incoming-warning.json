@@ -1,0 +1,25 @@
+{
+  "id": "incoming-warning",
+  "startedAt": "2026-10-18T08:53:49.016Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A restrained hostile cannon preparation cue: quick tightening metal spring, short rising pressure hiss and one muted brass latch click. Clear brief mechanical threat signal, no shot, no siren, no musical sting. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 0.8,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:50.638Z",
+  "output": {
+    "file": "audio/incoming-warning.mp3",
+    "bytes": 13835,
+    "sha256": "f13f60ecc90a7bdfdcdee804886f252172b4b25f8457c77d8e93c424b49eb1ba",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "8"
+}

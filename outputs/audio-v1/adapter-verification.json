@@ -1,0 +1,176 @@
+{
+  "version": "audio-adapter-1.0.0-ready",
+  "scope": "Node logic/read-only adapter; no browser/audio listening proof",
+  "passed": 34,
+  "failed": 0,
+  "sourceEvidence": [
+    {
+      "path": "tools/integration/contract.mjs",
+      "bytes": 2040,
+      "sha256": "4cc138ee25d478aa3623072243d0e1565bab7664b029c59b1b00f0c9193dcb26"
+    },
+    {
+      "path": "tools/integration/session.mjs",
+      "bytes": 16568,
+      "sha256": "04a419d1c7158b65f450ccb23981b2d7ece5137ac35edb1fa1ab250b82f279f8"
+    },
+    {
+      "path": "tools/integration/renderer.js",
+      "bytes": 31052,
+      "sha256": "f1cf7b08799f5624f4f86aa938ae372cdc0cca92693c95d256c1ec292d935cf0"
+    },
+    {
+      "path": "tools/integration/ui.js",
+      "bytes": 25370,
+      "sha256": "6395834470e98709372716451124f12b2b2059cd9dbef53e447b75c07527d0d6"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Exact weapon fire mapping, no hit before actual collision event",
+      "passed": true
+    },
+    {
+      "name": "Duplicate and shuffled batch consume once in monotonic sequence",
+      "passed": true
+    },
+    {
+      "name": "Late old event after a later batch is rejected",
+      "passed": true
+    },
+    {
+      "name": "New generation accepts restarted seq and rejects previous generation context",
+      "passed": true
+    },
+    {
+      "name": "Current explicit context rejects prior voyage or generation tagged entries",
+      "passed": true
+    },
+    {
+      "name": "Mismatched current snapshot/context cannot reset current identity",
+      "passed": true
+    },
+    {
+      "name": "Old voyage is retired after a new voyage and cannot replay its history",
+      "passed": true
+    },
+    {
+      "name": "Invalid seq, missing generation, malformed event and unsupported event rejected safely",
+      "passed": true
+    },
+    {
+      "name": "Material lookup reads hull/balloon/armor/engine with destroyed and detached modules",
+      "passed": true
+    },
+    {
+      "name": "Player and untyped obstacle use conservative wood impact fallback",
+      "passed": true
+    },
+    {
+      "name": "Weapon-specific hit gain/rate preserves material distinctions",
+      "passed": true
+    },
+    {
+      "name": "Actual field repair requires restored HP and anchors to the player",
+      "passed": true
+    },
+    {
+      "name": "Cut, detached bundle and actual recovered ownership are distinct source events",
+      "passed": true
+    },
+    {
+      "name": "Clear-combat stops voices and keeps seq cursor within the same generation",
+      "passed": true
+    },
+    {
+      "name": "Pause drains backlog, stops loops and resumes without an old hit burst",
+      "passed": true
+    },
+    {
+      "name": "Hidden tab consumes and clears, then discards accumulated hidden history",
+      "passed": true
+    },
+    {
+      "name": "Maintenance stops loops and drains old events without changing combat authority",
+      "passed": true
+    },
+    {
+      "name": "Defeat clears active one-shots and loops",
+      "passed": true
+    },
+    {
+      "name": "Retry establishes next generation and rejects all old generation events",
+      "passed": true
+    },
+    {
+      "name": "Same-identity reset never lowers cursor; baseline explicitly suppresses retained history",
+      "passed": true
+    },
+    {
+      "name": "Map switch clears voices and replaces ambience without a second simulation",
+      "passed": true
+    },
+    {
+      "name": "Identical frame updates never duplicate loop start commands",
+      "passed": true
+    },
+    {
+      "name": "Locked loop start is retried on unlock; runtime clear/mute can recover on the next state sync",
+      "passed": true
+    },
+    {
+      "name": "Speed updates existing loop parameters only; danger has a separate transition cue",
+      "passed": true
+    },
+    {
+      "name": "Actual harbor transition returns once even when settlement save failed",
+      "passed": true
+    },
+    {
+      "name": "Victory then harbor transition cannot double-play return",
+      "passed": true
+    },
+    {
+      "name": "Repair/equip/save audio follows explicit command success or failure only",
+      "passed": true
+    },
+    {
+      "name": "Initial harbor command confirmation works without a voyage or generation",
+      "passed": true
+    },
+    {
+      "name": "Distance and pan use provisional XZ, camera right and attenuation",
+      "passed": true
+    },
+    {
+      "name": "Inputs remain byte-identical and deeply frozen snapshots are supported",
+      "passed": true
+    },
+    {
+      "name": "Long logical input uses bounded identity/loop storage and no per-shot maps",
+      "passed": true
+    },
+    {
+      "name": "Dispose is idempotent and ignores later reads, commands and hidden changes",
+      "passed": true
+    },
+    {
+      "name": "Audio and UI callback errors are isolated from combat readers",
+      "passed": true
+    },
+    {
+      "name": "Frozen controller source: actual fire/hit, command salvage and return read without audio mutation",
+      "passed": true
+    }
+  ]
+}

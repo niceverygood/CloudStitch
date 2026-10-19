@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "reviewKind": "read-only normal-flow report/provenance verification",
+  "ownerCheckout": "integrationCheckout in local-locations.json",
+  "report": {
+    "path": "outputs/playable-battlefield-browser-qa-v1/ready-1-normal-flow.json",
+    "sha256": "6bc242004b0ea714e807f79d0c954dfd03c55f05be414bc19e310a039e8ae353",
+    "passed": true,
+    "checkCount": 18,
+    "errors": [],
+    "externalRequests": [],
+    "failedRequests": [],
+    "keys": [
+      "schemaVersion",
+      "passed",
+      "checks",
+      "samples",
+      "errors",
+      "externalRequests",
+      "failedRequests",
+      "scope"
+    ]
+  },
+  "provenance": {
+    "snapshot": "2026-10-18-playable-battlefield-v1-ready-1",
+    "manifestSha256": "b87f95c1e68033eb771788872571bd1e7493c70ba8067f5acd32d273f64b017d",
+    "reportSha256": "6bc242004b0ea714e807f79d0c954dfd03c55f05be414bc19e310a039e8ae353",
+    "normalFlowChecks": 18,
+    "passed": true,
+    "scope": "One Chromium-compatible browser, real keyboard movement + accelerated controller input sorties with production advance suspended. No teleport/damage injection. No real mobile hardware/human readability/performance-budget certification.",
+    "followup": "Five independent review findings are being addressed in READY-2; the normal-flow pass does not certify these failure/transition paths."
+  },
+  "provenanceReportHashMatches": true,
+  "fullRevisionAccepted": false,
+  "pending": "5 conditional findings and READY-2 targeted failure/transition regressions"
+}

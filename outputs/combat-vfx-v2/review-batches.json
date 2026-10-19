@@ -1,0 +1,172 @@
+{
+  "game_title": "Cloudstitch",
+  "scope": 54,
+  "representative_controls": 6,
+  "residual_targets": 48,
+  "batches": [
+    {
+      "id": "runtime-gun-cannon",
+      "title": "기관총·함포 필수6",
+      "effect_ids": [
+        "machine-gun-muzzle",
+        "machine-gun-projectile",
+        "machine-gun-hit",
+        "cannon-muzzle",
+        "cannon-projectile",
+        "cannon-hit"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/runtime-gun-cannon.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "aee28e67673a25d349876338474e43f46f00252950fcb187ee5facd1299f1e74",
+      "page_bytes": 47358154
+    },
+    {
+      "id": "mortar-harpoon",
+      "title": "박격포·작살포",
+      "effect_ids": [
+        "mortar-launch",
+        "mortar-projectile",
+        "mortar-hit",
+        "harpoon-launch",
+        "harpoon-projectile",
+        "harpoon-hit"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/mortar-harpoon.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "f2eec2b2aa02f7e1248e5bdc7b42c5581b12fc796dab22f4e8c84a2c2bc4c569",
+      "page_bytes": 47370638
+    },
+    {
+      "id": "chain-flame",
+      "title": "사슬탄·화염방사기",
+      "effect_ids": [
+        "chain-shot-launch",
+        "chain-shot-projectile",
+        "chain-shot-hit",
+        "flamethrower-ignite",
+        "flamethrower-stream",
+        "flamethrower-hit"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/chain-flame.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "a6ee04567844a8b09b86dc036e3628be78076b52ce6400d3abef849f72fcf3e9",
+      "page_bytes": 52177022
+    },
+    {
+      "id": "material-impacts",
+      "title": "재질·결과별 피격",
+      "effect_ids": [
+        "wood-hit",
+        "metal-hit",
+        "fabric-hit",
+        "armor-hit",
+        "ricochet-hit",
+        "weakpoint-hit",
+        "cloud-miss",
+        "penetration-exit"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/material-impacts.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "4085c38bb94f502613cc5f9de055dbf91d085c1a02b4218feecd2cbfc1baef44",
+      "page_bytes": 28239465
+    },
+    {
+      "id": "explosions-air",
+      "title": "폭발·공중·배기",
+      "effect_ids": [
+        "small-explosion",
+        "large-explosion",
+        "airburst",
+        "shrapnel-burst",
+        "smoke-puff",
+        "steam-vent"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/explosions-air.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "d2e5b62d9c90f1a2da61e6ab3a0e190a192abdc15cab4c8c1fe88b4cd391d786",
+      "page_bytes": 58246518
+    },
+    {
+      "id": "fire-damage",
+      "title": "지속 손상·잔불",
+      "effect_ids": [
+        "smoldering-fire",
+        "ember-drift",
+        "burning-state",
+        "heavy-smoke-state",
+        "gas-leak-state",
+        "overheat-state",
+        "short-circuit-state",
+        "engine-stall-state"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/fire-damage.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "82fd7c67c798750a83b9c9b29f2831222093cd939c590110415c3cd0431c3022",
+      "page_bytes": 43671385
+    },
+    {
+      "id": "break-support",
+      "title": "분리·방어·복구·인양",
+      "effect_ids": [
+        "envelope-rupture-state",
+        "module-detach-state",
+        "shield-pulse",
+        "armor-block",
+        "repair-stitch",
+        "healing-pulse",
+        "salvage-tether",
+        "mount-lock"
+      ],
+      "sequence_ids": [],
+      "page": "outputs/combat-vfx-v2/review/break-support.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "d2f860456daf8e5c6e71f6400d89400a7194814cf8b78e8074bde31abc82504b",
+      "page_bytes": 25451571
+    },
+    {
+      "id": "sequence-gun-cannon",
+      "title": "공격 시연 · 기관총·함포",
+      "effect_ids": [],
+      "sequence_ids": [
+        "01-machine-gun",
+        "02-deck-cannon"
+      ],
+      "page": "outputs/combat-vfx-v2/review/sequence-gun-cannon.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "76a43b91c2cb53647c453a41f06893cb2bc7087c14e8e55e6a6de81bb2f50875",
+      "page_bytes": 66839177
+    },
+    {
+      "id": "sequence-mortar-harpoon",
+      "title": "공격 시연 · 박격포·작살포",
+      "effect_ids": [],
+      "sequence_ids": [
+        "03-mortar",
+        "04-harpoon"
+      ],
+      "page": "outputs/combat-vfx-v2/review/sequence-mortar-harpoon.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "d95cd5d56a486843c8271fc51f51c53dabdc362b29f19e5b43a103c640a180f1",
+      "page_bytes": 67369021
+    },
+    {
+      "id": "sequence-chain-flame",
+      "title": "공격 시연 · 사슬탄·화염",
+      "effect_ids": [],
+      "sequence_ids": [
+        "05-chain-shot",
+        "06-flamethrower"
+      ],
+      "page": "outputs/combat-vfx-v2/review/sequence-chain-flame.html",
+      "status": "built_browser_not_run",
+      "page_sha256": "f5714c292a1e9799db1f8bb7447db832f9941c39371506407911e1d835968fa3",
+      "page_bytes": 72101964
+    }
+  ]
+}

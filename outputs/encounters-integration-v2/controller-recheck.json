@@ -1,0 +1,107 @@
+{
+  "version": "encounters-integration-v2-final",
+  "checkedAt": "2026-10-18T06:38:20.131Z",
+  "status": "resolved",
+  "findingsResolved": [
+    "opening-warning-budget",
+    "defeat-clearance",
+    "boss-metadata",
+    "spawn-overlap"
+  ],
+  "policyAndContractTests": {
+    "passed": 22,
+    "failed": 0,
+    "workspace": "shared"
+  },
+  "soleSimHostTests": {
+    "passed": 3,
+    "failed": 0,
+    "workspace": "shared and latest integration worktree",
+    "command": "node --test tools/encounters/attack-budget-host.test.mjs"
+  },
+  "actualControllerWarningRecheck": {
+    "seconds": 10,
+    "openingBudget": 1,
+    "peakWarnings": 1,
+    "firedEnemies": 2,
+    "playerHp": 73,
+    "teleportOrForcedDamage": false
+  },
+  "statePlacementRechecks": {
+    "scope": "In-memory state placement/forced opening deaths, separate from input-based sorties",
+    "defeat": {
+      "enemies": 0,
+      "warnings": 0,
+      "projectiles": 0,
+      "clearance": null
+    },
+    "retry": {
+      "playerHp": 100,
+      "openingEnemies": 2
+    },
+    "occupiedSpawn": {
+      "player": {
+        "x": -32,
+        "z": -16
+      },
+      "midboss": {
+        "x": 28,
+        "z": -27
+      },
+      "distance": 61
+    },
+    "bossMetadata": [
+      "scout/normal",
+      "blockade/midboss",
+      "bell/finalboss"
+    ],
+    "maintenanceClear": true,
+    "victoryClear": true
+  },
+  "integrationRules": {
+    "path": "outputs/integration-v1/rules-verification.json",
+    "sha256": "d0add2366e6ec67126f240aa39f21081415ce464effee1e6985f9415a11c0132",
+    "passed": true,
+    "checks": 7,
+    "sorties": [
+      {
+        "done": true,
+        "returned": true,
+        "steps": 185,
+        "observed": {
+          "hits": 17,
+          "detached": 1,
+          "recovered": 1,
+          "shots": 17,
+          "damage": 0
+        }
+      },
+      {
+        "done": true,
+        "returned": true,
+        "steps": 185,
+        "observed": {
+          "hits": 17,
+          "detached": 1,
+          "recovered": 1,
+          "shots": 17,
+          "damage": 0
+        }
+      }
+    ],
+    "scope": "Headless integration over actual simulation inputs, not browser performance or human playtesting."
+  },
+  "observedSourceHashes": [
+    {
+      "path": "tools/integration/session.mjs",
+      "sha256": "ef42a5af1667d5ebe0f9e1c4fab89a6053ef9e516d3aef43c453f13650964cbd"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    }
+  ],
+  "browserQAPerformedHere": false,
+  "fullBossVictoryCertifiedHere": false,
+  "remainingScope": "Integration owner is separately checking sustained browser execution, ghosting, mobile and Edge. This follow-up resolves fleet/encounter wiring checks only."
+}

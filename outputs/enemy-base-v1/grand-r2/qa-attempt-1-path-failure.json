@@ -1,0 +1,203 @@
+{
+  "schema": "cloudstitch-enemy-base-grand-r2-browser-qa",
+  "startedAt": "2026-10-18T13:32:42.545Z",
+  "harness": "tools/enemy-base/grand-r2/qa.cjs",
+  "harnessSha256": "a6261ecbc8ad69dbd776e8b78890df47d8bca0541bbe8f6cb5dc199073314c38",
+  "entry": "outputs/enemy-base-v1/grand-r2/index.html",
+  "checks": [
+    {
+      "name": "glb-v2-nonempty-triangle-geometry",
+      "passed": true,
+      "detail": {
+        "bytes": 22564476,
+        "sha256": "d7f3bc614ba95e18fb2b5477db1e47b0d5bab4891b0f483c05f17878b017b1c1",
+        "version": "2.0",
+        "binaryBytes": 22454712,
+        "nodesInScene": 110,
+        "primitiveInstances": 101,
+        "triangleCount": 207914,
+        "vertexInstances": 623742,
+        "meshDefinitions": 101,
+        "materials": 34,
+        "images": 0,
+        "animations": 0,
+        "nonTriangleModes": [],
+        "externalUris": []
+      }
+    },
+    {
+      "name": "glb-self-contained",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "model-manifest-present-and-valid-json",
+      "passed": true
+    },
+    {
+      "name": "fatal-exception",
+      "passed": false,
+      "detail": {
+        "message": "Cannot find module '../lib/runtime.cjs'\nRequire stack:\n- C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\enemy-base\\grand-r2\\qa.cjs",
+        "stack": "Error: Cannot find module '../lib/runtime.cjs'\nRequire stack:\n- C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\enemy-base\\grand-r2\\qa.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1517:15)\n    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)\n    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1122:12)\n    at Module._load (node:internal/modules/cjs/loader:1294:5)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.require (node:internal/modules/cjs/loader:1617:12)\n    at require (node:internal/modules/helpers:153:16)\n    at run (C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\enemy-base\\grand-r2\\qa.cjs:97:31)\n    at Object.<anonymous> (C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\enemy-base\\grand-r2\\qa.cjs:330:8)"
+      }
+    }
+  ],
+  "ghosting": [],
+  "screenshots": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "limits": [
+    "Static 3D asset and local review page verification only; no campaign, combat, collision or game balance is tested.",
+    "The 390px viewport is browser emulation, not a physical mobile-device performance test.",
+    "Same-pose canvas pixels before and after a clean render detect accumulated frames; they do not substitute for human art approval."
+  ],
+  "model": {
+    "path": "outputs/enemy-base-v1/grand-r2/enemy-base.glb",
+    "bytes": 22564476,
+    "sha256": "d7f3bc614ba95e18fb2b5477db1e47b0d5bab4891b0f483c05f17878b017b1c1",
+    "version": "2.0",
+    "binaryBytes": 22454712,
+    "nodesInScene": 110,
+    "primitiveInstances": 101,
+    "triangleCount": 207914,
+    "vertexInstances": 623742,
+    "meshDefinitions": 101,
+    "materials": 34,
+    "images": 0,
+    "animations": 0,
+    "nonTriangleModes": [],
+    "externalUris": []
+  },
+  "modelManifest": {
+    "schema_version": 1,
+    "title": "Cloudstitch · 봉쇄자의 공중 요새",
+    "revision": "enemy-base-grand-r2",
+    "asset_status": "static_3d_art_prototype",
+    "source": {
+      "reference": "outputs/enemy-base-moodboard-v2/moodboard.png",
+      "sha256": "49ea92ea7a8dc01b1ee79679d550e22f1a417a4f922243ba21306c521f6327f3",
+      "preserved": true,
+      "method": "original code-authored volumetric architecture and vertex painting"
+    },
+    "model": {
+      "path": "enemy-base.glb",
+      "bytes": 22564476,
+      "sha256": "d7f3bc614ba95e18fb2b5477db1e47b0d5bab4891b0f483c05f17878b017b1c1",
+      "triangles": 207914,
+      "vertices": 623742,
+      "meshes": 101,
+      "materials": 34,
+      "textures": 0,
+      "animations": 0,
+      "bounds": {
+        "min": [
+          -16.850000381469727,
+          -8.539999961853027,
+          -14.300000190734863
+        ],
+        "max": [
+          16.850000381469727,
+          35.95000076293945,
+          20.459999084472656
+        ],
+        "size": [
+          33.70000076293945,
+          44.49000072479248,
+          34.75999927520752
+        ]
+      },
+      "coordinates": "+Y up, +Z front/dock; relative design units",
+      "authored_components": 5947,
+      "semantic_groups": [
+        {
+          "id": "hull",
+          "name_ko": "철갑 선체",
+          "nodeName": "hull",
+          "description": "겹 판금·황동 리벳·하부 용골을 가진 먹색의 부유 선체",
+          "triangles": 18896,
+          "meshes": 7
+        },
+        {
+          "id": "buoyancy",
+          "name_ko": "봉제 부력낭",
+          "nodeName": "buoyancy",
+          "description": "크림색 수선 천과 조임 띠가 있는 하부 부력낭",
+          "triangles": 16780,
+          "meshes": 5
+        },
+        {
+          "id": "keep",
+          "name_ko": "성채와 겹지붕",
+          "nodeName": "keep",
+          "description": "비대칭 회랑·청록 겹지붕·따뜻한 창·겹겹의 보강대",
+          "triangles": 45170,
+          "meshes": 21
+        },
+        {
+          "id": "bell_tower",
+          "name_ko": "봉쇄의 종탑",
+          "nodeName": "bell_tower",
+          "description": "열린 철제 우리와 커다란 황동 종, 층진 첨탑",
+          "triangles": 15596,
+          "meshes": 12
+        },
+        {
+          "id": "bastions",
+          "name_ko": "외향 포대",
+          "nodeName": "bastions",
+          "description": "가시 난간과 독립 실루엣을 가진 여섯 개의 경계 함포",
+          "triangles": 16380,
+          "meshes": 7
+        },
+        {
+          "id": "dock",
+          "name_ko": "봉쇄 관문과 계류장",
+          "nodeName": "dock",
+          "description": "철창 관문·목재 선창·늘어진 사슬·기중기와 인양물",
+          "triangles": 23832,
+          "meshes": 22
+        },
+        {
+          "id": "machinery",
+          "name_ko": "기관·배관·연통",
+          "nodeName": "machinery",
+          "description": "그을린 공장 굴뚝과 배관, 황동 팬과 압력통",
+          "triangles": 16876,
+          "meshes": 16
+        },
+        {
+          "id": "banners",
+          "name_ko": "검붉은 봉제 깃발",
+          "nodeName": "banners",
+          "description": "독창적인 봉쇄 매듭 문양과 꿰맨 가장자리를 가진 굴곡 천",
+          "triangles": 54384,
+          "meshes": 11
+        }
+      ]
+    },
+    "appearance": {
+      "surfaces": "matte vertex-painted metal, plaster, canvas and timber",
+      "palette": "soot navy armor, weathered teal roofs, brass trim, cream quilted buoyancy, oxblood banners, warm amber windows",
+      "material": "glTF metallic-roughness, roughness 1, metalness 0; review can replace with hand-painted unlit or toon shading",
+      "runtime": "Outline and cel shading belong to review runtime; they are not automatically reproduced by importing the GLB into an engine."
+    },
+    "limitations": [
+      "Art review prototype only; no gameplay or enemy AI.",
+      "No authored collision, LOD, navmesh, engine sockets, gameplay statistics or destruction.",
+      "Static geometry; no rig or animation; the crane, bell, banners and cannons are modeled in a fixed pose.",
+      "Building interiors are not authored; open gate is represented by a closed portcullis.",
+      "Artist/user approval is still required."
+    ]
+  },
+  "modelManifestSha256": "b9c6d0fb80be650ed42799edb3d3bea67f0488470899ea236c7755faea15551e",
+  "completedAt": "2026-10-18T13:32:42.631Z",
+  "summary": {
+    "total": 4,
+    "passed": 3,
+    "failed": 1
+  },
+  "passed": false
+}

@@ -1,0 +1,185 @@
+{
+  "title": "Cloudstitch · 판타지 무기 12종 무드보드 v1",
+  "created_date": "2026-10-18",
+  "timezone": "Asia/Seoul",
+  "revision": "v1",
+  "type": "static_concept_moodboard",
+  "status": "ready_for_human_art_review",
+  "request": "무기를 단순 포 뿐 아니라 엄청 다양하게 구현해줘 전기탑이라던지 화살이라던지 판타지적 요소가 충만하게. 무드보드 만들어줘",
+  "scope": "최신 요청의 무드보드 제작: 새 PNG 한 장에 신규 판타지 무기 시각 후보 12종. 전투 코드·GLB 제작은 이 산출물의 범위가 아니다.",
+  "method": {
+    "tool": "built-in image_gen",
+    "intent": "generate",
+    "calls": 1,
+    "image_inputs": [],
+    "postprocessing": false,
+    "meshy_calls": 0
+  },
+  "file": {
+    "path": "outputs/fantasy-weapon-moodboard-v1/moodboard.png",
+    "format": "PNG",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3642607,
+    "sha256": "52c758cd7a20f96ccf41068264a330e79b4b7c4f119ebcd191f52a3beceee699"
+  },
+  "prompt": "outputs/fantasy-weapon-moodboard-v1/prompt.txt",
+  "concepts": [
+    {
+      "id": "01",
+      "name": "폭풍 전기탑",
+      "silhouette": "폭풍 실타래와 두 갈래 애자 기둥",
+      "attack_concept": "전하 축적 → 굵은 갈래 번개 → 잔광",
+      "accent": "청록·금빛",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "02",
+      "name": "별깃 마법궁",
+      "silhouette": "초승달 활날과 깃털 화살집",
+      "attack_concept": "시위 당김 → 실체가 보이는 화살 궤적 → 집중 명중",
+      "accent": "황금·하늘빛",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "03",
+      "name": "수정 공명기",
+      "silhouette": "부유 수정 군집과 열린 황동 조율틀",
+      "attack_concept": "수정 정렬 → 프리즘 공명 → 결정 파열",
+      "accent": "호박·보라·청록",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "04",
+      "name": "천둥 종각",
+      "silhouette": "겹지붕 종루와 거대한 종·타종목",
+      "attack_concept": "타종 예비 동작 → 종 충격 → 겹 음파",
+      "accent": "황동·금빛",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "05",
+      "name": "불씨 용주전자",
+      "silhouette": "둥근 도자기 몸통과 용머리 주둥이",
+      "attack_concept": "풀무 압축 → 불꽃 리본 → 불씨 정령 잔상",
+      "accent": "테라코타·주황",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "06",
+      "name": "가시덩굴 화관",
+      "silhouette": "갑판 화분과 큰 꽃·뻗는 줄기",
+      "attack_concept": "꽃받침 펼침 → 덩굴 찌르기 → 꽃잎 흩날림",
+      "accent": "초록·산호",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "07",
+      "name": "종이새 부적집",
+      "silhouette": "비대칭 작은 부적집과 봉인 리본",
+      "attack_concept": "종이새 펼침 → 무리 비행 → 붓획·종이 조각",
+      "accent": "크림·산호·금빛",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "08",
+      "name": "서리 직조틀",
+      "silhouette": "목재 베틀과 큰 수정 북·실",
+      "attack_concept": "북 왕복 → 서리 리본 직조 → 얼음 결정",
+      "accent": "남청·얼음빛",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "09",
+      "name": "궤도 룬검환",
+      "silhouette": "가운데가 열린 고리와 부유 검",
+      "attack_concept": "검 펼침 → 초승달 궤적의 검 돌진 → 금속 섬광",
+      "accent": "청색·황동",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "10",
+      "name": "연금 투석기",
+      "silhouette": "숟가락형 투척팔과 색유리병 선반",
+      "attack_concept": "팔 젖힘 → 병 곡사 → 층을 이룬 연금 구름",
+      "accent": "분홍·초록·호박",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "11",
+      "name": "중력 방적륜",
+      "silhouette": "기울어진 큰 목재 물레와 부유 돌",
+      "attack_concept": "바퀴 회전 → 압축 구체 → 안으로 휘는 잔해",
+      "accent": "진보라·목재",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "12",
+      "name": "풍압 오르간",
+      "silhouette": "길이가 다른 목관 부채와 커다란 풀무",
+      "attack_concept": "풀무 압축 → 바람 고리 → 말리는 구름",
+      "accent": "크림·청록",
+      "status": "static_visual_proposal"
+    }
+  ],
+  "read_dependencies": [
+    "AGENTS.md",
+    "README.md",
+    "docs/HANDOFF.md",
+    "docs/CONTINUE_PROMPT.md",
+    "docs/ART_DIRECTION.txt",
+    "outputs/project-command/COORDINATION.txt",
+    "outputs/112-system-rules-reference.txt",
+    "outputs/114-production-decision-register.txt",
+    "outputs/21-weapons-combat-roles.txt",
+    "outputs/72-weapon-mount-readability.txt"
+  ],
+  "visually_reviewed_baselines": [
+    "outputs/selected-airship-toon3d/reference.png",
+    "outputs/weapon-modules/overview.png"
+  ],
+  "art_direction": {
+    "style": "따뜻한 수공예 판타지, 2D 손그림처럼 읽히는 입체 구조",
+    "materials": [
+      "꿀빛 목재",
+      "청록 도장 금속",
+      "황동",
+      "크림 천",
+      "산호색 직물",
+      "도자기",
+      "색유리·수정"
+    ],
+    "intensity_target": "최신 10배 이상 과감한 표현 목표. 단일 크기·광량 배수나 실제 수치 측정 결과가 아니다.",
+    "concrete_changes": [
+      "종류별 큰 구조를 기둥·활·수정군·종루·주전자·꽃·새집·베틀·검환·투척팔·물레·관악기로 구별",
+      "큰 기능 형태 위에 황동 지지물·밧줄·천·문양·생활 소품의 재료층 추가",
+      "번개·화살·프리즘·음파·화염·덩굴·새·얼음실·검·병·중력·바람의 전달/명중 언어 구별"
+    ],
+    "comparison": "기존 선택선 원화와 기본6종 전체 이미지를 직접 보고 색·재료·사선 시점·기능 형태를 비교했다. 새12종은 기존무기의 동일버전 전후 리렌더가 아니므로 같은 프레임의 정량 비교나 실제 동작 개선을 주장하지 않는다.",
+    "human_art_approval": "pending"
+  },
+  "verification": {
+    "png_signature": "89-50-4E-47-0D-0A-1A-0A",
+    "source_copy_sha256_matches": true,
+    "lfs_filter": "lfs",
+    "visual_review": "실제 생성 이미지에서 4×3 구성·12종 명칭·전기탑/화살 포함·서로 다른 주 실루엣·공격 궤적·따뜻한 종이와 재료 견본을 확인했다.",
+    "dimensions_verified": true,
+    "gameplay_or_animation_test": false
+  },
+  "observed_limitations": [
+    "1536×1024 정지 래스터 이미지이며 요청 프롬프트의 권장 해상도와 실제 생성 해상도를 구분한다.",
+    "갑판 장면 중심의 콘셉트로 일부 하부 장착 구조는 갑판/패널 끝에 가려진다. 후면·분리 부품·소켓 도면이 아니다.",
+    "종이새의 접힘/종이 단면 같은 세부 재료 판독은 후속 단품 제작에서 강화할 수 있다.",
+    "준비→발사→명중의 시간 구성은 설계 제안이고 정지 이미지의 실제 애니메이션 구현이 아니다.",
+    "장비 수·사거리·피해·전력·중량·상태 효과·연쇄/빙결/중력 규칙은 확정하지 않았다.",
+    "새12종을 기존6종의 완료 자산 수나 기존 시뮬레이션의 지원 무기 수에 더하지 않는다.",
+    "시각적 인상과 파일 검사는 사용자 미술 승인·전투/성능/밸런스 검증과 구분한다."
+  ],
+  "preservation": {
+    "existing_assets": "기존 PNG·GLB·무기/전장/음향/뷰어·공통 문서 수정 없음; 이 새 출력 폴더만 작성",
+    "generated_original_retained": true
+  },
+  "browser_or_model_exporter_used": false,
+  "git_commit_or_push": false,
+  "deployment": false
+}

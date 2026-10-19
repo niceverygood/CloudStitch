@@ -1,0 +1,286 @@
+{
+  "id": "06-flamethrower",
+  "order": 6,
+  "name_ko": "화염 분사",
+  "name_en": "Flamethrower Attack Sequence v2",
+  "category": "weapon-sequence",
+  "weapon_id": "06-flamethrower",
+  "model": "sequences/06-flamethrower.glb",
+  "preview": "sequence-previews/06-flamethrower.png",
+  "duration": 3,
+  "loop": true,
+  "purpose": "원본 무기와 v2 효과를 연결한 연출 시제품. 실제 전투 판정은 별도 구현.",
+  "status": "residual_source_reviewed_render_pending",
+  "triangles": 10646,
+  "mesh_count": 12,
+  "node_count": 57,
+  "material_count": 8,
+  "texture_count": 5,
+  "animation_count": 1,
+  "animation_channels": 26,
+  "channel_paths": [
+    "scale",
+    "translation",
+    "rotation"
+  ],
+  "actual_clip_duration": 3,
+  "bytes": 18510076,
+  "sha256": "f3de4241a4b14922a79b8edf0fffb30baa30ca65601f7fbc90057c13c46a2273",
+  "component_effects": [
+    {
+      "id": "flamethrower-ignite",
+      "original_id": "flamethrower-ignite",
+      "model": "outputs/combat-vfx-v2/assets/flamethrower-ignite.glb",
+      "bytes": 3676304,
+      "sha256": "b3a36205afe2b98fe756a8d219880a26911888c3df5b16e5accc83399a4ddf50",
+      "source_duration": 0.4000000059604645,
+      "start": 0,
+      "end": 0.4,
+      "visible_until": 0.4,
+      "wrapper": {
+        "name": "flamethrower-ignite_sequence_wrapper",
+        "translation": [
+          0.11841320381106613,
+          0.6469771102689745,
+          -0.02150336848870915
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "source_root_nodes": [
+        {
+          "name": "flamethrower-ignite_flame_flow_0",
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "flamethrower-ignite_flame_flow_4",
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "flamethrower-ignite_flame_pilot_wick_8",
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "projectile_geometry_subtree": null,
+      "motion_owner": "choreography_clip_preview_only",
+      "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+    },
+    {
+      "id": "flamethrower-stream",
+      "original_id": "flamethrower-stream",
+      "model": "outputs/combat-vfx-v2/assets/flamethrower-stream.glb",
+      "bytes": 3690504,
+      "sha256": "160308a30de3080c7307766c52f67e47c0305d7f6ebba56aca3d89729ec9c077",
+      "source_duration": 1.2000000476837158,
+      "start": 0.15,
+      "end": 2.6,
+      "visible_until": 2.6,
+      "wrapper": {
+        "name": "flamethrower-stream_sequence_wrapper",
+        "translation": [
+          0.11841320381106613,
+          0.6469771102689745,
+          -0.02150336848870915
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "source_root_nodes": [
+        {
+          "name": "flamethrower-stream_authored_silhouette_scale",
+          "scale": [
+            1.8,
+            1.8,
+            1.8
+          ]
+        }
+      ],
+      "projectile_geometry_subtree": null,
+      "motion_owner": "choreography_clip_preview_only",
+      "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+    },
+    {
+      "id": "flamethrower-hit",
+      "original_id": "flamethrower-hit",
+      "model": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+      "bytes": 7348288,
+      "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97",
+      "source_duration": 0.8999999761581421,
+      "start": 0.5,
+      "end": 2.9,
+      "visible_until": 2.9,
+      "wrapper": {
+        "name": "flamethrower-hit_sequence_wrapper",
+        "translation": [
+          0.11841320381106613,
+          0.6469771102689745,
+          1.828496631511291
+        ],
+        "rotation": [
+          -0.7071067811865475,
+          0,
+          0,
+          0.7071067811865476
+        ]
+      },
+      "source_root_nodes": [
+        {
+          "name": "flamethrower-hit_flame_flow_0",
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "flamethrower-hit_flame_flow_4",
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "flamethrower-hit_curled_smoke_8",
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "projectile_geometry_subtree": null,
+      "motion_owner": "choreography_clip_preview_only",
+      "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS"
+    }
+  ],
+  "approximate_muzzle": [
+    0.11841320381106613,
+    0.6469771102689745,
+    -0.02150336848870915
+  ],
+  "source_weapon_model": "outputs/weapon-modules/06-flamethrower/weapon.glb",
+  "source_weapon_sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd",
+  "copied_weapon_zero_normals_repaired": 0,
+  "runtime_fade_recipes": 12,
+  "source": "Existing original weapon plus generated v2 component GLBs; local binary composition and standard TRS retiming.",
+  "meshy_credits_used_by_composition": 0,
+  "verification": {
+    "GLTFLoader_geometry_roundtrip": true,
+    "animation_changes_transforms": true,
+    "unique_sample_states": 6,
+    "sample_fractions": [
+      0,
+      0.15,
+      0.35,
+      0.65,
+      0.9,
+      1
+    ],
+    "original_weapon_unchanged": true,
+    "browser_render_pending": true,
+    "standard_validator_pending": true,
+    "art_review_pending": true
+  },
+  "runtime": {
+    "opacity": "Node extras.runtime_fade is a separate browser/engine opacity recipe, not an embedded material animation.",
+    "fade_time_mapping": "start + sourceSeconds / sourceDuration * (end - start); harpoon end may extend to visible_until.",
+    "loop": "loop=true is optional comparison playback repetition only. A gameplay one-shot uses LoopOnce; state adapters stop when their real state ends.",
+    "axes": "+Y up; muzzle +Z; impact source +Y normal rotated toward -Z in this preview.",
+    "mortar_launch": "Only the mortar launch wrapper rotates X -PI/2 so source +Z points +Y. Projectile +Y arc and local Z4 arrival remain unchanged.",
+    "target_distance": 1.85,
+    "target_front_offset": 0.04,
+    "harpoon_hold": "Projectile and tether wrapper persists until 2.7 seconds; source final TRS must remain visible. Preview cable endpoints are not runtime physics.",
+    "flame_overlap": "Ignition 0–0.4s, stream 0.15–2.6s, contact 0.5–2.9s. Stream authored scale is preserved; target at Z1.85 is a visual hypothesis needing fresh render.",
+    "reset": [
+      "stop and reset action/mixer/time to zero",
+      "restore wrapper and child translation/rotation/scale",
+      "restore per-instance opacity and outline settings",
+      "clear parent/host/projectile/target/endpoint references",
+      "clear loop and preview-motion state"
+    ]
+  },
+  "limits": [
+    "Visual prototype, not a collision/damage/fuel/physics implementation.",
+    "Approximate muzzle from source geometry, not a validated engine socket or muzzleFrame authority.",
+    "Embedded projectile translation is a study; gameplay uses only the geometry subtree and owns projectile world motion. Only actual collision/contact events select impacts.",
+    "Resolve v2 by effect ID after integration checks; missing or unverified v2 uses v1 fallback. Do not use this whole sequence as a combat event source.",
+    "The target is an abstract comparison prop. Source dimensions and clip time are art hypotheses.",
+    "Original weapon texture remains embedded; four zero normals may be repaired only in a copied chain-shot weapon."
+  ],
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/sequences.mjs",
+      "bytes": 24847,
+      "sha256": "677347ee413c827c71f9d9de9ff08a910f2f44971c64c976286b5a246647d83f"
+    },
+    {
+      "path": "tools/combat-vfx/core.mjs",
+      "bytes": 6059,
+      "sha256": "c0ad34671b9a4dd86c6a8928a0c471dcb0b4714a5840e0f8421c00feef322dd9",
+      "read_only": true
+    }
+  ],
+  "output_file": {
+    "path": "outputs/combat-vfx-v2/sequences/06-flamethrower.glb",
+    "bytes": 18510076,
+    "sha256": "f3de4241a4b14922a79b8edf0fffb30baa30ca65601f7fbc90057c13c46a2273"
+  },
+  "visual_reviewed": false,
+  "art_preflight_review": {
+    "audit_report": "tools/combat-vfx-v2/review-sequences.json",
+    "status": "source_binary_reviewed_new_render_required",
+    "changes": [
+      "Add stable component wrapper names, transform/geometry-subtree and byte/hash metadata; expose preview loop/reset/fallback limitations."
+    ],
+    "concerns": [
+      "Fresh game-camera render must check authored stream scale1.8 against local target distance1.85. Source reach and temporal overlap do not prove visual contact.",
+      "Current output snapshot precedes source-only correction and the parent asset refresh. Do not claim this audit as v2 visual approval."
+    ],
+    "expected_observations": [
+      "0.12s: ignition is small; 0.3s: ignition overlaps the beginning of the stream.",
+      "0.6s→1.7s: ignition 0–0.4s, stream 0.15–2.6s and contact 0.5–2.9s form one overlapping flow, not three ballistic shots.",
+      "Stream authored root scale1.8 is retained. Verify stream visually reaches the target at local Z1.85 without hiding the entire target; geometry reach alone is not art approval.",
+      "2.6s→2.9s: stream ends before contact/after-smoke; 3s final hold is clean before optional repeat."
+    ],
+    "loop_boundary_sample_seconds": null,
+    "sample_times_seconds": [
+      0,
+      0.12,
+      0.3,
+      0.6,
+      1.1,
+      1.7,
+      2.55,
+      2.6,
+      2.9,
+      3
+    ],
+    "current_output": {
+      "path": "outputs/combat-vfx-v2/sequences/06-flamethrower.glb",
+      "bytes": 18510076,
+      "sha256": "f3de4241a4b14922a79b8edf0fffb30baa30ca65601f7fbc90057c13c46a2273"
+    },
+    "scope": "Source/binary review only; queued fresh renders are not completed art approval."
+  }
+}

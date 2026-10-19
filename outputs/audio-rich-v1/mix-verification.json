@@ -1,0 +1,6054 @@
+{
+  "schema": "cloudstitch-audio-rich-offline-mix-verification/v1",
+  "generatedAt": "2026-10-18T09:39:24.163Z",
+  "passed": true,
+  "summary": {
+    "checks": 31,
+    "passed": 31,
+    "failed": 0,
+    "actualWavs": 49,
+    "previewMixCases": 10,
+    "uncappedFullTailMixCases": 2,
+    "maximumMeasuredPreviewMixPeak": 0.790975034236908,
+    "maximumUncappedRawSumPeak": 0.78997802734375,
+    "maximumUncappedHeadroomPeak": 0.1974945068359375,
+    "minimumMonoRmsRetention": 0.5770353352967411
+  },
+  "scope": "Offline arithmetic on actual rendered PCM16 WAVs and actual read-only review player scheduling. No browser, audible playback, human listening, game install, paid generation or extra WAV export.",
+  "evidence": {
+    "catalog": {
+      "file": "outputs/audio-rich-v1/catalog.json",
+      "sha256": "c0667a319be13783705c4e7073f7c8df3112f457090e09ce381c0c8684369d50"
+    },
+    "review": {
+      "file": "tools/audio/rich-v1/review.mjs",
+      "sha256": "4f4bfdadbd0b774a3308ff6c47898454de710ea61157c2d607456e67c2fa1457"
+    },
+    "script": {
+      "file": "tools/audio/rich-v1/verify-mix.mjs",
+      "sha256": "4cb0f7c39ad1be0d525d8dd926476de3714247d930f8ef4863b93c9386581832"
+    }
+  },
+  "limits": [
+    "Numerical gain automation is a local model, not Native Web Audio final QA.",
+    "Per-voice/settled headroom bound is conservative; source phase, 3 ms master reserve ramp, 12 ms recovery and 5 ms release are measured only for the named actual PCM fixtures.",
+    "This does not prove arbitrary future cue combinations or smoothing transients always remain below 0.8.",
+    "Mono finite/RMS retention does not establish timbral quality or human three-cue distinguishability.",
+    "The six shots are a verification fixture at the real 0.22 s cooldown; no attack timeline or new game event was installed.",
+    "The ten preview cases use RichReviewPlayer cap=3. The separate two uncapped machine gun cases preserve all six complete tails, reach four-way overlap, and evict zero shots."
+  ],
+  "checks": [
+    {
+      "name": "49 WAV hashes and native Float32 source receipts",
+      "passed": true,
+      "detail": {
+        "count": 49
+      }
+    },
+    {
+      "name": "49 per-voice normalization peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "maximum": 0.8000000000000002
+      }
+    },
+    {
+      "name": "49 mono downmix finite and audible signal",
+      "passed": true,
+      "detail": {
+        "minimumMonoRmsRetention": 0.5770353352967411,
+        "note": "Signal survival only; not human audibility or stereo quality approval."
+      }
+    },
+    {
+      "name": "49 unmatched mode does not increase per-voice peaks beyond 0.8",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "Machine gun 6 shots at 0.22 seconds, full review volume finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.7825202941894531,
+        "rms": 0.06087705030867807,
+        "monoPeak": 0.7584022283554077
+      }
+    },
+    {
+      "name": "Machine gun 6 shots at 0.22 seconds, full review volume voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 6
+      }
+    },
+    {
+      "name": "Machine gun 6 shots at 0.22 seconds, mono finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.790975034236908,
+        "rms": 0.05881029678682676,
+        "monoPeak": 0.790975034236908
+      }
+    },
+    {
+      "name": "Machine gun 6 shots at 0.22 seconds, mono voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 6
+      }
+    },
+    {
+      "name": "Three cues lift-danger-loop + hit-wood + fire-machinegun finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.439242959022522,
+        "rms": 0.02661875044758806,
+        "monoPeak": 0.41555920243263245
+      }
+    },
+    {
+      "name": "Three cues lift-danger-loop + hit-wood + fire-machinegun voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 3
+      }
+    },
+    {
+      "name": "Three cues lift-danger-loop + hit-wood + fire-machinegun mono finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.44200289249420166,
+        "rms": 0.028601230054483992,
+        "monoPeak": 0.44200289249420166
+      }
+    },
+    {
+      "name": "Three cues lift-danger-loop + hit-wood + fire-machinegun mono voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 3
+      }
+    },
+    {
+      "name": "Three cues incoming-warning + hit-armor + fire-cannon finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.49332717061042786,
+        "rms": 0.03270145014733981,
+        "monoPeak": 0.48744237422943115
+      }
+    },
+    {
+      "name": "Three cues incoming-warning + hit-armor + fire-cannon voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 3
+      }
+    },
+    {
+      "name": "Three cues incoming-warning + hit-armor + fire-cannon mono finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.4965399205684662,
+        "rms": 0.033311075589478455,
+        "monoPeak": 0.4965399205684662
+      }
+    },
+    {
+      "name": "Three cues incoming-warning + hit-armor + fire-cannon mono voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 3
+      }
+    },
+    {
+      "name": "Three cues lift-warning + hit-engine + mortar-launch-a finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.3322058916091919,
+        "rms": 0.04837631033961446,
+        "monoPeak": 0.3209109604358673
+      }
+    },
+    {
+      "name": "Three cues lift-warning + hit-engine + mortar-launch-a voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 3
+      }
+    },
+    {
+      "name": "Three cues lift-warning + hit-engine + mortar-launch-a mono finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.32589203119277954,
+        "rms": 0.04884780273418327,
+        "monoPeak": 0.32589203119277954
+      }
+    },
+    {
+      "name": "Three cues lift-warning + hit-engine + mortar-launch-a mono voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 3
+      }
+    },
+    {
+      "name": "Three cues mortar-impact + fire-cannon + module-break finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.3519173860549927,
+        "rms": 0.027007793372571084,
+        "monoPeak": 0.3192433714866638
+      }
+    },
+    {
+      "name": "Three cues mortar-impact + fire-cannon + module-break voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 3
+      }
+    },
+    {
+      "name": "Three cues mortar-impact + fire-cannon + module-break mono finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "peak": 0.3274723291397095,
+        "rms": 0.027115347984036503,
+        "monoPeak": 0.3274723291397095
+      }
+    },
+    {
+      "name": "Three cues mortar-impact + fire-cannon + module-break mono voice cap/lifecycle",
+      "passed": true,
+      "detail": {
+        "maxVoices": 3,
+        "sourceMaxActive": 3,
+        "remaining": 0,
+        "releasing": 0,
+        "createdSources": 3
+      }
+    },
+    {
+      "name": "Uncapped six complete machine gun WAVs at 0.22 seconds (stereo) six starts/no eviction/four complete overlapping tails",
+      "passed": true,
+      "detail": {
+        "starts": 6,
+        "evictions": 0,
+        "maximumOverlap": 4,
+        "sourceDuration": 0.8450113378684807
+      }
+    },
+    {
+      "name": "Uncapped six complete machine gun WAVs at 0.22 seconds (stereo) fixed headroom finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "gain": 0.25,
+        "rawPeak": 0.78997802734375,
+        "scaledPeak": 0.1974945068359375,
+        "monoPeak": 0.189361572265625
+      }
+    },
+    {
+      "name": "Uncapped six complete machine gun WAVs at 0.22 seconds (stereo) LF proxy finite and bass attack metadata present",
+      "passed": true,
+      "detail": {
+        "rawLfRatio": 0.08529845132914447,
+        "totalAttachedBassAttacks": 6
+      }
+    },
+    {
+      "name": "Uncapped six complete machine gun WAVs at 0.22 seconds (mono) six starts/no eviction/four complete overlapping tails",
+      "passed": true,
+      "detail": {
+        "starts": 6,
+        "evictions": 0,
+        "maximumOverlap": 4,
+        "sourceDuration": 0.8450113378684807
+      }
+    },
+    {
+      "name": "Uncapped six complete machine gun WAVs at 0.22 seconds (mono) fixed headroom finite/peak <= 0.8",
+      "passed": true,
+      "detail": {
+        "gain": 0.25,
+        "rawPeak": 0.7574462890625,
+        "scaledPeak": 0.189361572265625,
+        "monoPeak": 0.189361572265625
+      }
+    },
+    {
+      "name": "Uncapped six complete machine gun WAVs at 0.22 seconds (mono) LF proxy finite and bass attack metadata present",
+      "passed": true,
+      "detail": {
+        "rawLfRatio": 0.10080366379785424,
+        "totalAttachedBassAttacks": 6
+      }
+    },
+    {
+      "name": "Settled headroom bound <= 0.8 at all review volumes",
+      "passed": true,
+      "detail": [
+        {
+          "volume": 0,
+          "levels": [
+            1
+          ],
+          "sumAuditionLevels": 1,
+          "master": 0,
+          "settledPeakUpperBound": 0
+        },
+        {
+          "volume": 0,
+          "levels": [
+            0.36,
+            0.36,
+            0.36
+          ],
+          "sumAuditionLevels": 1.08,
+          "master": 0,
+          "settledPeakUpperBound": 0
+        },
+        {
+          "volume": 0,
+          "levels": [
+            1,
+            1,
+            1
+          ],
+          "sumAuditionLevels": 3,
+          "master": 0,
+          "settledPeakUpperBound": 0
+        },
+        {
+          "volume": 0,
+          "levels": [
+            0.1,
+            0.5,
+            1
+          ],
+          "sumAuditionLevels": 1.6,
+          "master": 0,
+          "settledPeakUpperBound": 0
+        },
+        {
+          "volume": 0.4,
+          "levels": [
+            1
+          ],
+          "sumAuditionLevels": 1,
+          "master": 0.4,
+          "settledPeakUpperBound": 0.32000000000000006
+        },
+        {
+          "volume": 0.4,
+          "levels": [
+            0.36,
+            0.36,
+            0.36
+          ],
+          "sumAuditionLevels": 1.08,
+          "master": 0.37037037037037035,
+          "settledPeakUpperBound": 0.32
+        },
+        {
+          "volume": 0.4,
+          "levels": [
+            1,
+            1,
+            1
+          ],
+          "sumAuditionLevels": 3,
+          "master": 0.13333333333333333,
+          "settledPeakUpperBound": 0.32000000000000006
+        },
+        {
+          "volume": 0.4,
+          "levels": [
+            0.1,
+            0.5,
+            1
+          ],
+          "sumAuditionLevels": 1.6,
+          "master": 0.25,
+          "settledPeakUpperBound": 0.32000000000000006
+        },
+        {
+          "volume": 1,
+          "levels": [
+            1
+          ],
+          "sumAuditionLevels": 1,
+          "master": 1,
+          "settledPeakUpperBound": 0.8
+        },
+        {
+          "volume": 1,
+          "levels": [
+            0.36,
+            0.36,
+            0.36
+          ],
+          "sumAuditionLevels": 1.08,
+          "master": 0.9259259259259258,
+          "settledPeakUpperBound": 0.8
+        },
+        {
+          "volume": 1,
+          "levels": [
+            1,
+            1,
+            1
+          ],
+          "sumAuditionLevels": 3,
+          "master": 0.3333333333333333,
+          "settledPeakUpperBound": 0.8
+        },
+        {
+          "volume": 1,
+          "levels": [
+            0.1,
+            0.5,
+            1
+          ],
+          "sumAuditionLevels": 1.6,
+          "master": 0.625,
+          "settledPeakUpperBound": 0.8000000000000002
+        }
+      ]
+    }
+  ],
+  "boundCases": [
+    {
+      "volume": 0,
+      "levels": [
+        1
+      ],
+      "sumAuditionLevels": 1,
+      "master": 0,
+      "settledPeakUpperBound": 0
+    },
+    {
+      "volume": 0,
+      "levels": [
+        0.36,
+        0.36,
+        0.36
+      ],
+      "sumAuditionLevels": 1.08,
+      "master": 0,
+      "settledPeakUpperBound": 0
+    },
+    {
+      "volume": 0,
+      "levels": [
+        1,
+        1,
+        1
+      ],
+      "sumAuditionLevels": 3,
+      "master": 0,
+      "settledPeakUpperBound": 0
+    },
+    {
+      "volume": 0,
+      "levels": [
+        0.1,
+        0.5,
+        1
+      ],
+      "sumAuditionLevels": 1.6,
+      "master": 0,
+      "settledPeakUpperBound": 0
+    },
+    {
+      "volume": 0.4,
+      "levels": [
+        1
+      ],
+      "sumAuditionLevels": 1,
+      "master": 0.4,
+      "settledPeakUpperBound": 0.32000000000000006
+    },
+    {
+      "volume": 0.4,
+      "levels": [
+        0.36,
+        0.36,
+        0.36
+      ],
+      "sumAuditionLevels": 1.08,
+      "master": 0.37037037037037035,
+      "settledPeakUpperBound": 0.32
+    },
+    {
+      "volume": 0.4,
+      "levels": [
+        1,
+        1,
+        1
+      ],
+      "sumAuditionLevels": 3,
+      "master": 0.13333333333333333,
+      "settledPeakUpperBound": 0.32000000000000006
+    },
+    {
+      "volume": 0.4,
+      "levels": [
+        0.1,
+        0.5,
+        1
+      ],
+      "sumAuditionLevels": 1.6,
+      "master": 0.25,
+      "settledPeakUpperBound": 0.32000000000000006
+    },
+    {
+      "volume": 1,
+      "levels": [
+        1
+      ],
+      "sumAuditionLevels": 1,
+      "master": 1,
+      "settledPeakUpperBound": 0.8
+    },
+    {
+      "volume": 1,
+      "levels": [
+        0.36,
+        0.36,
+        0.36
+      ],
+      "sumAuditionLevels": 1.08,
+      "master": 0.9259259259259258,
+      "settledPeakUpperBound": 0.8
+    },
+    {
+      "volume": 1,
+      "levels": [
+        1,
+        1,
+        1
+      ],
+      "sumAuditionLevels": 3,
+      "master": 0.3333333333333333,
+      "settledPeakUpperBound": 0.8
+    },
+    {
+      "volume": 1,
+      "levels": [
+        0.1,
+        0.5,
+        1
+      ],
+      "sumAuditionLevels": 1.6,
+      "master": 0.625,
+      "settledPeakUpperBound": 0.8000000000000002
+    }
+  ],
+  "previewMixes": [
+    {
+      "name": "Machine gun 6 shots at 0.22 seconds, full review volume",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": false,
+      "starts": [
+        {
+          "id": "fire-machinegun",
+          "at": 0.03,
+          "level": 1,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.25,
+          "level": 1,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.47,
+          "level": 1,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.6900000000000001,
+          "level": 1,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.91,
+          "level": 1,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 1.1300000000000001,
+          "level": 1,
+          "normalizationGain": 1.0126863941899096
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 6,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 2
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.03,
+            "constant": 0.012,
+            "order": 3
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.25,
+            "order": 4
+          },
+          {
+            "type": "linear",
+            "value": 0.5,
+            "time": 0.253,
+            "order": 5
+          },
+          {
+            "type": "set",
+            "value": 0.5,
+            "time": 0.47,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.3333333333333333,
+            "time": 0.473,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.3333333333333333,
+            "time": 0.6900000000000001,
+            "order": 10
+          },
+          {
+            "type": "linear",
+            "value": 0.25,
+            "time": 0.6930000000000001,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 0.25,
+            "time": 0.6960000000000001,
+            "order": 12
+          },
+          {
+            "type": "target",
+            "value": 0.3333333333333333,
+            "time": 0.6960000000000001,
+            "constant": 0.012,
+            "order": 13
+          },
+          {
+            "type": "set",
+            "value": 0.33333333183399205,
+            "time": 0.91,
+            "order": 16
+          },
+          {
+            "type": "linear",
+            "value": 0.25,
+            "time": 0.913,
+            "order": 17
+          },
+          {
+            "type": "set",
+            "value": 0.25,
+            "time": 0.916,
+            "order": 18
+          },
+          {
+            "type": "target",
+            "value": 0.3333333333333333,
+            "time": 0.916,
+            "constant": 0.012,
+            "order": 19
+          },
+          {
+            "type": "set",
+            "value": 0.33333333183399205,
+            "time": 1.1300000000000001,
+            "order": 22
+          },
+          {
+            "type": "linear",
+            "value": 0.25,
+            "time": 1.133,
+            "order": 23
+          },
+          {
+            "type": "set",
+            "value": 0.25,
+            "time": 1.136,
+            "order": 24
+          },
+          {
+            "type": "target",
+            "value": 0.3333333333333333,
+            "time": 1.136,
+            "constant": 0.012,
+            "order": 25
+          },
+          {
+            "type": "set",
+            "value": 0.33333333333333315,
+            "time": 1.5430113378684807,
+            "order": 26
+          },
+          {
+            "type": "target",
+            "value": 0.5,
+            "time": 1.5430113378684807,
+            "constant": 0.012,
+            "order": 27
+          },
+          {
+            "type": "set",
+            "value": 0.4999999981812071,
+            "time": 1.7630113378684809,
+            "order": 28
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 1.7630113378684809,
+            "constant": 0.012,
+            "order": 29
+          },
+          {
+            "type": "set",
+            "value": 0.9999999945436213,
+            "time": 1.9830113378684808,
+            "order": 30
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.9830113378684808,
+            "order": 31
+          }
+        ],
+        "voices": [
+          {
+            "id": "fire-machinegun",
+            "start": 0.038,
+            "stop": 0.6960000000000001,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.038,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0126863941899096,
+                "time": 0.041999999999999996,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0126863941899096,
+                "time": 0.6900000000000001,
+                "order": 4
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.6950000000000001,
+                "order": 5
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.258,
+            "stop": 0.916,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.258,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0126863941899096,
+                "time": 0.262,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0126863941899096,
+                "time": 0.91,
+                "order": 4
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.915,
+                "order": 5
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.478,
+            "stop": 1.136,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.478,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0126863941899096,
+                "time": 0.482,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0126863941899096,
+                "time": 1.1300000000000001,
+                "order": 4
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.135,
+                "order": 5
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.6980000000000001,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.6980000000000001,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0126863941899096,
+                "time": 0.7020000000000001,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0126863941899096,
+                "time": 1.5350113378684807,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.5430113378684807,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.918,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.918,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0126863941899096,
+                "time": 0.922,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0126863941899096,
+                "time": 1.7550113378684808,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.7630113378684809,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 1.1380000000000001,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 1.1380000000000001,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0126863941899096,
+                "time": 1.1420000000000001,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0126863941899096,
+                "time": 1.9750113378684808,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.9830113378684808,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 1.993015873015873,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 87892,
+        "peak": 0.7825202941894531,
+        "rms": 0.06087705030867807,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 1.993015873015873,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 87892,
+        "peak": 0.7584022283554077,
+        "rms": 0.056388455749039224,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 1.993015873015873,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 87892,
+        "peak": 0.7825202941894531,
+        "rms": 0.1147253164538931,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Machine gun 6 shots at 0.22 seconds, mono",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": true,
+      "starts": [
+        {
+          "id": "fire-machinegun",
+          "at": 0.03,
+          "level": 1,
+          "normalizationGain": 1.0561804995970991
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.25,
+          "level": 1,
+          "normalizationGain": 1.0561804995970991
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.47,
+          "level": 1,
+          "normalizationGain": 1.0561804995970991
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.6900000000000001,
+          "level": 1,
+          "normalizationGain": 1.0561804995970991
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.91,
+          "level": 1,
+          "normalizationGain": 1.0561804995970991
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 1.1300000000000001,
+          "level": 1,
+          "normalizationGain": 1.0561804995970991
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 6,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 2
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.03,
+            "constant": 0.012,
+            "order": 3
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.25,
+            "order": 4
+          },
+          {
+            "type": "linear",
+            "value": 0.5,
+            "time": 0.253,
+            "order": 5
+          },
+          {
+            "type": "set",
+            "value": 0.5,
+            "time": 0.47,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.3333333333333333,
+            "time": 0.473,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.3333333333333333,
+            "time": 0.6900000000000001,
+            "order": 10
+          },
+          {
+            "type": "linear",
+            "value": 0.25,
+            "time": 0.6930000000000001,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 0.25,
+            "time": 0.6960000000000001,
+            "order": 12
+          },
+          {
+            "type": "target",
+            "value": 0.3333333333333333,
+            "time": 0.6960000000000001,
+            "constant": 0.012,
+            "order": 13
+          },
+          {
+            "type": "set",
+            "value": 0.33333333183399205,
+            "time": 0.91,
+            "order": 16
+          },
+          {
+            "type": "linear",
+            "value": 0.25,
+            "time": 0.913,
+            "order": 17
+          },
+          {
+            "type": "set",
+            "value": 0.25,
+            "time": 0.916,
+            "order": 18
+          },
+          {
+            "type": "target",
+            "value": 0.3333333333333333,
+            "time": 0.916,
+            "constant": 0.012,
+            "order": 19
+          },
+          {
+            "type": "set",
+            "value": 0.33333333183399205,
+            "time": 1.1300000000000001,
+            "order": 22
+          },
+          {
+            "type": "linear",
+            "value": 0.25,
+            "time": 1.133,
+            "order": 23
+          },
+          {
+            "type": "set",
+            "value": 0.25,
+            "time": 1.136,
+            "order": 24
+          },
+          {
+            "type": "target",
+            "value": 0.3333333333333333,
+            "time": 1.136,
+            "constant": 0.012,
+            "order": 25
+          },
+          {
+            "type": "set",
+            "value": 0.33333333333333315,
+            "time": 1.5430113378684807,
+            "order": 26
+          },
+          {
+            "type": "target",
+            "value": 0.5,
+            "time": 1.5430113378684807,
+            "constant": 0.012,
+            "order": 27
+          },
+          {
+            "type": "set",
+            "value": 0.4999999981812071,
+            "time": 1.7630113378684809,
+            "order": 28
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 1.7630113378684809,
+            "constant": 0.012,
+            "order": 29
+          },
+          {
+            "type": "set",
+            "value": 0.9999999945436213,
+            "time": 1.9830113378684808,
+            "order": 30
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.9830113378684808,
+            "order": 31
+          }
+        ],
+        "voices": [
+          {
+            "id": "fire-machinegun",
+            "start": 0.038,
+            "stop": 0.6960000000000001,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.038,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0561804995970991,
+                "time": 0.041999999999999996,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0561804995970991,
+                "time": 0.6900000000000001,
+                "order": 4
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.6950000000000001,
+                "order": 5
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.258,
+            "stop": 0.916,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.258,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0561804995970991,
+                "time": 0.262,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0561804995970991,
+                "time": 0.91,
+                "order": 4
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.915,
+                "order": 5
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.478,
+            "stop": 1.136,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.478,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0561804995970991,
+                "time": 0.482,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0561804995970991,
+                "time": 1.1300000000000001,
+                "order": 4
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.135,
+                "order": 5
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.6980000000000001,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.6980000000000001,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0561804995970991,
+                "time": 0.7020000000000001,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0561804995970991,
+                "time": 1.5350113378684807,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.5430113378684807,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.918,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.918,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0561804995970991,
+                "time": 0.922,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0561804995970991,
+                "time": 1.7550113378684808,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.7630113378684809,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 1.1380000000000001,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 1.1380000000000001,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 1.0561804995970991,
+                "time": 1.1420000000000001,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 1.0561804995970991,
+                "time": 1.9750113378684808,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.9830113378684808,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 1.993015873015873,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 87892,
+        "peak": 0.790975034236908,
+        "rms": 0.05881029678682676,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 1.993015873015873,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 87892,
+        "peak": 0.790975034236908,
+        "rms": 0.05881029678682676,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 1.993015873015873,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 87892,
+        "peak": 0.790975034236908,
+        "rms": 0.11082130595786974,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Three cues lift-danger-loop + hit-wood + fire-machinegun",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": false,
+      "starts": [
+        {
+          "id": "lift-danger-loop",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.045041909356984
+        },
+        {
+          "id": "hit-wood",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899096
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 3,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.9259259259259258,
+            "time": 0.033,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.9259259259259258,
+            "time": 0.8252494331065761,
+            "order": 8
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.8252494331065761,
+            "constant": 0.012,
+            "order": 9
+          },
+          {
+            "type": "set",
+            "value": 0.9996643746608738,
+            "time": 0.8900113378684807,
+            "order": 10
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.8900113378684807,
+            "constant": 0.012,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 4.045,
+            "order": 12
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 4.045,
+            "order": 13
+          }
+        ],
+        "voices": [
+          {
+            "id": "lift-danger-loop",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3762150873685142,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3762150873685142,
+                "time": 4.037,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 4.045,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "hit-wood",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.36456710190836744,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.36456710190836744,
+                "time": 0.817249433106576,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.8252494331065761,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.36456710190836744,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.36456710190836744,
+                "time": 0.8820113378684807,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.8900113378684807,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 4.055011337868481,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 178826,
+        "peak": 0.439242959022522,
+        "rms": 0.02661875044758806,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 4.055011337868481,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 178826,
+        "peak": 0.41555920243263245,
+        "rms": 0.022453303006656565,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 4.055011337868481,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 178826,
+        "peak": 0.4743824005126953,
+        "rms": 0.02826698777938468,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Three cues lift-danger-loop + hit-wood + fire-machinegun mono",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": true,
+      "starts": [
+        {
+          "id": "lift-danger-loop",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.4345189887271534
+        },
+        {
+          "id": "hit-wood",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0387494303885245
+        },
+        {
+          "id": "fire-machinegun",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0561804995970991
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 3,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.9259259259259258,
+            "time": 0.033,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.9259259259259258,
+            "time": 0.8252494331065761,
+            "order": 8
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.8252494331065761,
+            "constant": 0.012,
+            "order": 9
+          },
+          {
+            "type": "set",
+            "value": 0.9996643746608738,
+            "time": 0.8900113378684807,
+            "order": 10
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.8900113378684807,
+            "constant": 0.012,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 4.045,
+            "order": 12
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 4.045,
+            "order": 13
+          }
+        ],
+        "voices": [
+          {
+            "id": "lift-danger-loop",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.5164268359417752,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.5164268359417752,
+                "time": 4.037,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 4.045,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "hit-wood",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3739497949398688,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3739497949398688,
+                "time": 0.817249433106576,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.8252494331065761,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-machinegun",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3802249798549557,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3802249798549557,
+                "time": 0.8820113378684807,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.8900113378684807,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 4.055011337868481,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 178826,
+        "peak": 0.44200289249420166,
+        "rms": 0.028601230054483992,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 4.055011337868481,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 178826,
+        "peak": 0.44200289249420166,
+        "rms": 0.028601230054483992,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 4.055011337868481,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 178826,
+        "peak": 0.47736310958862305,
+        "rms": 0.03039994145984318,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Three cues incoming-warning + hit-armor + fire-cannon",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": false,
+      "starts": [
+        {
+          "id": "incoming-warning",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899098
+        },
+        {
+          "id": "hit-armor",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "fire-cannon",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899096
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 3,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.9259259259259258,
+            "time": 0.033,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.9259259259259258,
+            "time": 0.895,
+            "order": 8
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.895,
+            "constant": 0.012,
+            "order": 9
+          },
+          {
+            "type": "set",
+            "value": 0.9999993648193257,
+            "time": 1.035,
+            "order": 10
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 1.035,
+            "constant": 0.012,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.405,
+            "order": 12
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.405,
+            "order": 13
+          }
+        ],
+        "voices": [
+          {
+            "id": "incoming-warning",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3645671019083675,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3645671019083675,
+                "time": 0.887,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.895,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "hit-armor",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.36456710190836744,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.36456710190836744,
+                "time": 1.027,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.035,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-cannon",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.36456710190836744,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.36456710190836744,
+                "time": 1.397,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.405,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 1.4150113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 62402,
+        "peak": 0.49332717061042786,
+        "rms": 0.03270145014733981,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 1.4150113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 62402,
+        "peak": 0.48744237422943115,
+        "rms": 0.03211430534426995,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 1.4150113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 62402,
+        "peak": 0.5327933430671692,
+        "rms": 0.035317565014010115,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Three cues incoming-warning + hit-armor + fire-cannon mono",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": true,
+      "starts": [
+        {
+          "id": "incoming-warning",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.1780429165262332
+        },
+        {
+          "id": "hit-armor",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0308454581203303
+        },
+        {
+          "id": "fire-cannon",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0319004881121083
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 3,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.9259259259259258,
+            "time": 0.033,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.9259259259259258,
+            "time": 0.895,
+            "order": 8
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.895,
+            "constant": 0.012,
+            "order": 9
+          },
+          {
+            "type": "set",
+            "value": 0.9999993648193257,
+            "time": 1.035,
+            "order": 10
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 1.035,
+            "constant": 0.012,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.405,
+            "order": 12
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.405,
+            "order": 13
+          }
+        ],
+        "voices": [
+          {
+            "id": "incoming-warning",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.4240954499494439,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.4240954499494439,
+                "time": 0.887,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.895,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "hit-armor",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3711043649233189,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3711043649233189,
+                "time": 1.027,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.035,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-cannon",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.37148417572035897,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.37148417572035897,
+                "time": 1.397,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.405,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 1.4150113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 62402,
+        "peak": 0.4965399205684662,
+        "rms": 0.033311075589478455,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 1.4150113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 62402,
+        "peak": 0.4965399205684662,
+        "rms": 0.033311075589478455,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 1.4150113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 62402,
+        "peak": 0.536263108253479,
+        "rms": 0.03597596094315291,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Three cues lift-warning + hit-engine + mortar-launch-a",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": false,
+      "starts": [
+        {
+          "id": "lift-warning",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0682749908309224
+        },
+        {
+          "id": "hit-engine",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "mortar-launch-a",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899096
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 3,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.9259259259259258,
+            "time": 0.033,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.9259259259259258,
+            "time": 0.7700113378684807,
+            "order": 8
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.7700113378684807,
+            "constant": 0.012,
+            "order": 9
+          },
+          {
+            "type": "set",
+            "value": 0.9999999981400006,
+            "time": 0.9800113378684807,
+            "order": 10
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.9800113378684807,
+            "constant": 0.012,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.2449999999999999,
+            "order": 12
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.2449999999999999,
+            "order": 13
+          }
+        ],
+        "voices": [
+          {
+            "id": "lift-warning",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.38457899669913204,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.38457899669913204,
+                "time": 0.9720113378684807,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.9800113378684807,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "hit-engine",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.36456710190836744,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.36456710190836744,
+                "time": 1.2369999999999999,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.2449999999999999,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "mortar-launch-a",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.36456710190836744,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.36456710190836744,
+                "time": 0.7620113378684807,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.7700113378684807,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 1.2550113378684806,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 55346,
+        "peak": 0.3322058916091919,
+        "rms": 0.04837631033961446,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 1.2550113378684806,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 55346,
+        "peak": 0.3209109604358673,
+        "rms": 0.04771119537469756,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 1.2550113378684806,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 55346,
+        "peak": 0.3587823510169983,
+        "rms": 0.052223591479595356,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Three cues lift-warning + hit-engine + mortar-launch-a mono",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": true,
+      "starts": [
+        {
+          "id": "lift-warning",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0970663318685918
+        },
+        {
+          "id": "hit-engine",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0129211746522413
+        },
+        {
+          "id": "mortar-launch-a",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0764120147001457
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 3,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.9259259259259258,
+            "time": 0.033,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.9259259259259258,
+            "time": 0.7700113378684807,
+            "order": 8
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.7700113378684807,
+            "constant": 0.012,
+            "order": 9
+          },
+          {
+            "type": "set",
+            "value": 0.9999999981400006,
+            "time": 0.9800113378684807,
+            "order": 10
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 0.9800113378684807,
+            "constant": 0.012,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.2449999999999999,
+            "order": 12
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.2449999999999999,
+            "order": 13
+          }
+        ],
+        "voices": [
+          {
+            "id": "lift-warning",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.39494387947269305,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.39494387947269305,
+                "time": 0.9720113378684807,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.9800113378684807,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "hit-engine",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.36465162287480685,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.36465162287480685,
+                "time": 1.2369999999999999,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.2449999999999999,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "mortar-launch-a",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3875083252920524,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3875083252920524,
+                "time": 0.7620113378684807,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 0.7700113378684807,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 1.2550113378684806,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 55346,
+        "peak": 0.32589203119277954,
+        "rms": 0.04884780273418327,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 1.2550113378684806,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 55346,
+        "peak": 0.32589203119277954,
+        "rms": 0.04884780273418327,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 1.2550113378684806,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 55346,
+        "peak": 0.3519634008407593,
+        "rms": 0.05273317359054011,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Three cues mortar-impact + fire-cannon + module-break",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": false,
+      "starts": [
+        {
+          "id": "mortar-impact",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899098
+        },
+        {
+          "id": "fire-cannon",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899096
+        },
+        {
+          "id": "module-break",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0126863941899098
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 3,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.9259259259259258,
+            "time": 0.033,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.9259259259259258,
+            "time": 1.265,
+            "order": 8
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 1.265,
+            "constant": 0.012,
+            "order": 9
+          },
+          {
+            "type": "set",
+            "value": 0.9999993648193257,
+            "time": 1.405,
+            "order": 10
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 1.405,
+            "constant": 0.012,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.7049999999999998,
+            "order": 12
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.7049999999999998,
+            "order": 13
+          }
+        ],
+        "voices": [
+          {
+            "id": "mortar-impact",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3645671019083675,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3645671019083675,
+                "time": 1.6969999999999998,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.7049999999999998,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-cannon",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.36456710190836744,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.36456710190836744,
+                "time": 1.397,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.405,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "module-break",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3645671019083675,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3645671019083675,
+                "time": 1.257,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.265,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 1.7150113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 75632,
+        "peak": 0.3519173860549927,
+        "rms": 0.027007793372571084,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 1.7150113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 75632,
+        "peak": 0.3192433714866638,
+        "rms": 0.026470191243670907,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 1.7150113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 75632,
+        "peak": 0.3800707757472992,
+        "rms": 0.02916841544147567,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    },
+    {
+      "name": "Three cues mortar-impact + fire-cannon + module-break mono",
+      "method": "Actual RichReviewPlayer.start/lifecycle + numerical model of Web Audio gain envelopes. No native rendering/playback.",
+      "volume": 1,
+      "mono": true,
+      "starts": [
+        {
+          "id": "mortar-impact",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0247805945935382
+        },
+        {
+          "id": "fire-cannon",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0319004881121083
+        },
+        {
+          "id": "module-break",
+          "at": 0.03,
+          "level": 0.36,
+          "normalizationGain": 1.0543326563034168
+        }
+      ],
+      "maxVoices": 3,
+      "sourceMaxActive": 3,
+      "createdSources": 3,
+      "activeAfterNaturalEnds": 0,
+      "releasesAfterNaturalEnds": 0,
+      "actualParamSchedules": {
+        "master": [
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 0
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0,
+            "order": 1
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 0.03,
+            "order": 6
+          },
+          {
+            "type": "linear",
+            "value": 0.9259259259259258,
+            "time": 0.033,
+            "order": 7
+          },
+          {
+            "type": "set",
+            "value": 0.9259259259259258,
+            "time": 1.265,
+            "order": 8
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 1.265,
+            "constant": 0.012,
+            "order": 9
+          },
+          {
+            "type": "set",
+            "value": 0.9999993648193257,
+            "time": 1.405,
+            "order": 10
+          },
+          {
+            "type": "target",
+            "value": 1,
+            "time": 1.405,
+            "constant": 0.012,
+            "order": 11
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.7049999999999998,
+            "order": 12
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "time": 1.7049999999999998,
+            "order": 13
+          }
+        ],
+        "voices": [
+          {
+            "id": "mortar-impact",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.3689210140536737,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.3689210140536737,
+                "time": 1.6969999999999998,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.7049999999999998,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "fire-cannon",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.37148417572035897,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.37148417572035897,
+                "time": 1.397,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.405,
+                "order": 3
+              }
+            ]
+          },
+          {
+            "id": "module-break",
+            "start": 0.045,
+            "stop": null,
+            "gain": [
+              {
+                "type": "set",
+                "value": 0,
+                "time": 0.045,
+                "order": 0
+              },
+              {
+                "type": "linear",
+                "value": 0.37955975626923,
+                "time": 0.049,
+                "order": 1
+              },
+              {
+                "type": "set",
+                "value": 0.37955975626923,
+                "time": 1.257,
+                "order": 2
+              },
+              {
+                "type": "linear",
+                "value": 0,
+                "time": 1.265,
+                "order": 3
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "duration": 1.7150113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 75632,
+        "peak": 0.3274723291397095,
+        "rms": 0.027115347984036503,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoDownmix": {
+        "duration": 1.7150113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 75632,
+        "peak": 0.3274723291397095,
+        "rms": 0.027115347984036503,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "beforeMaster": {
+        "duration": 1.7150113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 75632,
+        "peak": 0.3536701202392578,
+        "rms": 0.029284574411370553,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "maxMasterGain": 1,
+      "staticPeakBound": 0.8,
+      "masterAutomation": {
+        "reserveLinearMilliseconds": 3,
+        "recoveryTargetMilliseconds": 12,
+        "releaseMilliseconds": 5
+      },
+      "includesReleaseTailAndDeferredReplacement": true
+    }
+  ],
+  "uncappedMachinegun": [
+    {
+      "name": "Uncapped six complete machine gun WAVs at 0.22 seconds (stereo)",
+      "method": "Direct complete rendered WAV sample scheduling; no RichReviewPlayer cap, evictions, fade steals, pairNormalization or Web Audio. Numerical offline fixture only.",
+      "sourceId": "fire-machinegun",
+      "sourceFile": "enhanced/fire-machinegun.wav",
+      "sourceSha256": "a69cac1346cd6e20f78c07b576dc3acd87fa0814d86559c8e8cdf9fddb146c92",
+      "channels": 2,
+      "sampleRate": 44100,
+      "sourceFrames": 37265,
+      "sourceDuration": 0.8450113378684807,
+      "intervalSeconds": 0.22,
+      "sourceStarts": [
+        0.03,
+        0.25,
+        0.47,
+        0.6900000000000001,
+        0.91,
+        1.1300000000000001
+      ],
+      "starts": 6,
+      "evictions": 0,
+      "completeTailsPreserved": true,
+      "maximumOverlap": 4,
+      "attackTiming": {
+        "sourceStartSeconds": [
+          0.03,
+          0.25,
+          0.47,
+          0.6900000000000001,
+          0.91,
+          1.1300000000000001
+        ],
+        "bassAttackRelativeSeconds": [
+          0.01616780045351474
+        ],
+        "bassAttackAbsoluteSeconds": [
+          [
+            0.046167800453514735
+          ],
+          [
+            0.26616780045351474
+          ],
+          [
+            0.4861678004535147
+          ],
+          [
+            0.7061678004535148
+          ],
+          [
+            0.9261678004535148
+          ],
+          [
+            1.146167800453515
+          ]
+        ],
+        "totalAttachedBassAttacks": 6,
+        "bassMode": "measured-attack-pulses",
+        "bassHz": 94,
+        "maxPulseSeconds": 0.13,
+        "sourceAddedBassMetrics": {
+          "energy": 2.2462254295741304,
+          "rms": 0.007763831603270223,
+          "relativeEnergy": 0.0069987464545280586,
+          "limit": 0.024,
+          "attacks": [
+            0.01616780045351474
+          ],
+          "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+        },
+        "note": "Metadata is inherited from deterministic source rendering. Full WAV sums already include its attached bass. No new bass note, pulse, gunshot or event is generated by this fixture."
+      },
+      "rawSum": {
+        "duration": 1.9850113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 87539,
+        "peak": 0.78997802734375,
+        "rms": 0.11596353000663126,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true,
+        "lowFrequencyProxy": {
+          "method": "160 Hz two cascaded one-pole lowpasses; approximate LF energy proxy",
+          "energy": 200.82398342560236,
+          "rms": 0.033868190991838576,
+          "energyRatio": 0.08529845132914447
+        },
+        "mono": {
+          "duration": 1.9850113378684808,
+          "sampleRate": 44100,
+          "channels": 1,
+          "frames": 87539,
+          "peak": 0.7574462890625,
+          "rms": 0.10639382026653615,
+          "firstAbs": 0,
+          "lastAbs": 0,
+          "seamDelta": 0,
+          "finite": true
+        }
+      },
+      "constantHeadroom": {
+        "gain": 0.25,
+        "reason": "1 / measured maximum full-tail overlap, independent of signal phase.",
+        "conservativePeakBound": 0.78997802734375,
+        "duration": 1.9850113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 87539,
+        "peak": 0.1974945068359375,
+        "rms": 0.028990882501657815,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true,
+        "lowFrequencyProxy": {
+          "method": "160 Hz two cascaded one-pole lowpasses; approximate LF energy proxy",
+          "energy": 12.551498964100148,
+          "rms": 0.008467047747959644,
+          "energyRatio": 0.08529845132914447
+        },
+        "mono": {
+          "duration": 1.9850113378684808,
+          "sampleRate": 44100,
+          "channels": 1,
+          "frames": 87539,
+          "peak": 0.189361572265625,
+          "rms": 0.02659845506663404,
+          "firstAbs": 0,
+          "lastAbs": 0,
+          "seamDelta": 0,
+          "finite": true
+        }
+      },
+      "limitations": [
+        "Offline numeric output only. No Native audio rendering, human listening or game installation.",
+        "Raw sum may exceed 1.0 and is measured without clipping. It must not be exported or played at unity gain.",
+        "Fixed 1/4 headroom is a conservative analysis mix; it is not installed as a game mixer or a change to attack events."
+      ]
+    },
+    {
+      "name": "Uncapped six complete machine gun WAVs at 0.22 seconds (mono)",
+      "method": "Direct complete rendered WAV sample scheduling; no RichReviewPlayer cap, evictions, fade steals, pairNormalization or Web Audio. Numerical offline fixture only.",
+      "sourceId": "fire-machinegun",
+      "sourceFile": "enhanced/fire-machinegun.wav",
+      "sourceSha256": "a69cac1346cd6e20f78c07b576dc3acd87fa0814d86559c8e8cdf9fddb146c92",
+      "channels": 1,
+      "sampleRate": 44100,
+      "sourceFrames": 37265,
+      "sourceDuration": 0.8450113378684807,
+      "intervalSeconds": 0.22,
+      "sourceStarts": [
+        0.03,
+        0.25,
+        0.47,
+        0.6900000000000001,
+        0.91,
+        1.1300000000000001
+      ],
+      "starts": 6,
+      "evictions": 0,
+      "completeTailsPreserved": true,
+      "maximumOverlap": 4,
+      "attackTiming": {
+        "sourceStartSeconds": [
+          0.03,
+          0.25,
+          0.47,
+          0.6900000000000001,
+          0.91,
+          1.1300000000000001
+        ],
+        "bassAttackRelativeSeconds": [
+          0.01616780045351474
+        ],
+        "bassAttackAbsoluteSeconds": [
+          [
+            0.046167800453514735
+          ],
+          [
+            0.26616780045351474
+          ],
+          [
+            0.4861678004535147
+          ],
+          [
+            0.7061678004535148
+          ],
+          [
+            0.9261678004535148
+          ],
+          [
+            1.146167800453515
+          ]
+        ],
+        "totalAttachedBassAttacks": 6,
+        "bassMode": "measured-attack-pulses",
+        "bassHz": 94,
+        "maxPulseSeconds": 0.13,
+        "sourceAddedBassMetrics": {
+          "energy": 2.2462254295741304,
+          "rms": 0.007763831603270223,
+          "relativeEnergy": 0.0069987464545280586,
+          "limit": 0.024,
+          "attacks": [
+            0.01616780045351474
+          ],
+          "denominator": "mean channel energy after safe-level normalization/highpass; before final shared gain"
+        },
+        "note": "Metadata is inherited from deterministic source rendering. Full WAV sums already include its attached bass. No new bass note, pulse, gunshot or event is generated by this fixture."
+      },
+      "rawSum": {
+        "duration": 1.9850113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 87539,
+        "peak": 0.7574462890625,
+        "rms": 0.10639382026653615,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true,
+        "lowFrequencyProxy": {
+          "method": "160 Hz two cascaded one-pole lowpasses; approximate LF energy proxy",
+          "energy": 99.88739910360457,
+          "rms": 0.03377960461542667,
+          "energyRatio": 0.10080366379785424
+        },
+        "mono": {
+          "duration": 1.9850113378684808,
+          "sampleRate": 44100,
+          "channels": 1,
+          "frames": 87539,
+          "peak": 0.7574462890625,
+          "rms": 0.10639382026653615,
+          "firstAbs": 0,
+          "lastAbs": 0,
+          "seamDelta": 0,
+          "finite": true
+        }
+      },
+      "constantHeadroom": {
+        "gain": 0.25,
+        "reason": "1 / measured maximum full-tail overlap, independent of signal phase.",
+        "conservativePeakBound": 0.78997802734375,
+        "duration": 1.9850113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 87539,
+        "peak": 0.189361572265625,
+        "rms": 0.02659845506663404,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true,
+        "lowFrequencyProxy": {
+          "method": "160 Hz two cascaded one-pole lowpasses; approximate LF energy proxy",
+          "energy": 6.242962443975285,
+          "rms": 0.008444901153856668,
+          "energyRatio": 0.10080366379785424
+        },
+        "mono": {
+          "duration": 1.9850113378684808,
+          "sampleRate": 44100,
+          "channels": 1,
+          "frames": 87539,
+          "peak": 0.189361572265625,
+          "rms": 0.02659845506663404,
+          "firstAbs": 0,
+          "lastAbs": 0,
+          "seamDelta": 0,
+          "finite": true
+        }
+      },
+      "limitations": [
+        "Offline numeric output only. No Native audio rendering, human listening or game installation.",
+        "Raw sum may exceed 1.0 and is measured without clipping. It must not be exported or played at unity gain.",
+        "Fixed 1/4 headroom is a conservative analysis mix; it is not installed as a game mixer or a change to attack events."
+      ]
+    }
+  ],
+  "monoRows": [
+    {
+      "id": "fire-machinegun",
+      "file": "enhanced/fire-machinegun.wav",
+      "sha256": "a69cac1346cd6e20f78c07b576dc3acd87fa0814d86559c8e8cdf9fddb146c92",
+      "sampleRate": 44100,
+      "frames": 37265,
+      "stereo": {
+        "duration": 0.8450113378684807,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 37265,
+        "peak": 0.78997802734375,
+        "rms": 0.07256630987638345,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.8450113378684807,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 37265,
+        "peak": 0.7574462890625,
+        "rms": 0.0665790071107988,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9174919769823764,
+      "pairNormalization": {
+        "targetRms": 0.07348691468838238,
+        "original": 0.5600495792858889,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.07031944899296229,
+        "original": 0.5862689995052176,
+        "enhanced": 1.0561804995970991
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "machinegun-feed",
+      "file": "enhanced/machinegun-feed.wav",
+      "sha256": "6420bbb03d6b282ae4bfa07031932812c2d52c12abb76f0e86131687dfafa5e5",
+      "sampleRate": 44100,
+      "frames": 36824,
+      "stereo": {
+        "duration": 0.8350113378684807,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 36824,
+        "peak": 0.78997802734375,
+        "rms": 0.07712439294842288,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.8350113378684807,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 36824,
+        "peak": 0.6983184814453125,
+        "rms": 0.06489792936184745,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.841470861303869,
+      "pairNormalization": {
+        "targetRms": 0.07810282339902407,
+        "original": 0.7669843584278314,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.07434765779365078,
+        "original": 0.8702715401628891,
+        "enhanced": 1.1456090899158748
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "fire-cannon",
+      "file": "enhanced/fire-cannon.wav",
+      "sha256": "be23687876739af41290b459cf135686ec984b519f45c5d75c7292e28de44f77",
+      "sampleRate": 44100,
+      "frames": 59976,
+      "stereo": {
+        "duration": 1.36,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 59976,
+        "peak": 0.78997802734375,
+        "rms": 0.06787951939512628,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.36,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 59976,
+        "peak": 0.7752685546875,
+        "rms": 0.06779687968719461,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9987825531372634,
+      "pairNormalization": {
+        "targetRms": 0.06874066573559447,
+        "original": 0.7007940322763537,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8172577657699107,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.069959633241694,
+        "original": 0.7133646262727961,
+        "enhanced": 1.0319004881121083
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "cannon-breech",
+      "file": "enhanced/cannon-breech.wav",
+      "sha256": "0006e41c0e993714178b3a573020648b62d034171f6947800428fa33019b4243",
+      "sampleRate": 44100,
+      "frames": 59976,
+      "stereo": {
+        "duration": 1.36,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 59976,
+        "peak": 0.78997802734375,
+        "rms": 0.06586397282112537,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.36,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 59976,
+        "peak": 0.735321044921875,
+        "rms": 0.059932567395084305,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.909944615060654,
+      "pairNormalization": {
+        "targetRms": 0.06669954914324766,
+        "original": 0.7197092517434172,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.06520424547506529,
+        "original": 0.774504013419618,
+        "enhanced": 1.0879601577090683
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "fire-mortar",
+      "file": "enhanced/fire-mortar.wav",
+      "sha256": "8ca17f7142007efc1473e57b9d41ff266b82aec5f993bdfc3089388cc6f6a995",
+      "sampleRate": 44100,
+      "frames": 39690,
+      "stereo": {
+        "duration": 0.9,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 39690,
+        "peak": 0.78997802734375,
+        "rms": 0.09646078250606971,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.9,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 39690,
+        "peak": 0.787261962890625,
+        "rms": 0.09600987837327161,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9953255186088739,
+      "pairNormalization": {
+        "targetRms": 0.09768452201680886,
+        "original": 0.7758014612533765,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8397806747566116,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.09756333510207744,
+        "original": 0.7752786688101524,
+        "enhanced": 1.0161801759894562
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "mortar-fall",
+      "file": "enhanced/mortar-fall.wav",
+      "sha256": "b3e792545fb815fa6da3f7ebe7291551c3eb9b194fa492d7042a6757db089108",
+      "sampleRate": 44100,
+      "frames": 57330,
+      "stereo": {
+        "duration": 1.3,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 57330,
+        "peak": 0.63671875,
+        "rms": 0.1182399179798516,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.3,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 57330,
+        "peak": 0.617950439453125,
+        "rms": 0.11807813700655695,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9986317567192307,
+      "pairNormalization": {
+        "targetRms": 0.12041257086952076,
+        "original": 0.8882019740096929,
+        "enhanced": 1.0183749526115147
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.888201974009693,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.12527849775250496,
+        "original": 0.9252051674775849,
+        "enhanced": 1.0609796269528555
+      },
+      "normalizedPeak": 0.6484184268581129,
+      "monoNormalizedPeak": 0.6556328267263297
+    },
+    {
+      "id": "fire-harpoon",
+      "file": "enhanced/fire-harpoon.wav",
+      "sha256": "89a09c8f083e57660e78016ac6caa3b358133113315fd04148acf5e4e667b088",
+      "sampleRate": 44100,
+      "frames": 47628,
+      "stereo": {
+        "duration": 1.08,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 47628,
+        "peak": 0.744049072265625,
+        "rms": 0.054751467366824715,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.08,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 47628,
+        "peak": 0.7416229248046875,
+        "rms": 0.054396953585824026,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9935250359844146,
+      "pairNormalization": {
+        "targetRms": 0.05569124381199201,
+        "original": 0.8,
+        "enhanced": 1.0171644065513525
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.055353483737443046,
+        "original": 0.8,
+        "enhanced": 1.017584259569056
+      },
+      "normalizedPeak": 0.7568202330361489,
+      "monoNormalizedPeak": 0.7546638148168157
+    },
+    {
+      "id": "harpoon-embed",
+      "file": "enhanced/harpoon-embed.wav",
+      "sha256": "391ada0ff4880ea546b1bdb482d3a2862f998167c8b2d902502c448e37046dd8",
+      "sampleRate": 44100,
+      "frames": 34409,
+      "stereo": {
+        "duration": 0.780249433106576,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 34409,
+        "peak": 0.7286376953125,
+        "rms": 0.08256769380565253,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.780249433106576,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 34409,
+        "peak": 0.6700286865234375,
+        "rms": 0.06806616375775666,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.8243679897124231,
+      "pairNormalization": {
+        "targetRms": 0.09065432034255728,
+        "original": 0.5020382742658155,
+        "enhanced": 1.0979393533255153
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.0812695517392606,
+        "original": 0.5543811869537334,
+        "enhanced": 1.1939787297032634
+      },
+      "normalizedPeak": 0.8,
+      "monoNormalizedPeak": 0.7999999999999999
+    },
+    {
+      "id": "harpoon-tension-loop",
+      "file": "enhanced/harpoon-tension-loop.wav",
+      "sha256": "486e60cb3404320cf7729f4156c8bf20ae8753164df5ca64524c1a162f05540d",
+      "sampleRate": 44100,
+      "frames": 176400,
+      "stereo": {
+        "duration": 4,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 176400,
+        "peak": 0.78997802734375,
+        "rms": 0.05442320569084961,
+        "firstAbs": 0.001556396484375,
+        "lastAbs": 0.001556396484375,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 4,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 176400,
+        "peak": 0.788299560546875,
+        "rms": 0.05435421873319839,
+        "firstAbs": 0.001434326171875,
+        "lastAbs": 0.001434326171875,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9987323981236405,
+      "pairNormalization": {
+        "targetRms": 0.05511363993132226,
+        "original": 0.8445684417948836,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.849719256159556,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.05516097834228469,
+        "original": 0.8462543485937395,
+        "enhanced": 1.0148426309473115
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "fire-chain",
+      "file": "enhanced/fire-chain.wav",
+      "sha256": "0664dce52b491fb524280326ebe2cec2118c2f01178108f1a32d459511ad5c5a",
+      "sampleRate": 44100,
+      "frames": 48510,
+      "stereo": {
+        "duration": 1.1,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 48510,
+        "peak": 0.78997802734375,
+        "rms": 0.0591220140821464,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.1,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 48510,
+        "peak": 0.7741851806640625,
+        "rms": 0.05899909879788419,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9979209895642014,
+      "pairNormalization": {
+        "targetRms": 0.059872059258093906,
+        "original": 0.6512902485264975,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.06096639436810436,
+        "original": 0.6641715458403304,
+        "enhanced": 1.0333445020399314
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "chain-spin",
+      "file": "enhanced/chain-spin.wav",
+      "sha256": "01be5cb40477af841cd01a6358d9604ce3f6c3476fa8b7ebbdf88752c68e52cf",
+      "sampleRate": 44100,
+      "frames": 62843,
+      "stereo": {
+        "duration": 1.4250113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 62843,
+        "peak": 0.78997802734375,
+        "rms": 0.12364682276513468,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.4250113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 62843,
+        "peak": 0.7486419677734375,
+        "rms": 0.12350951730561001,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.998889535076971,
+      "pairNormalization": {
+        "targetRms": 0.12521545509906307,
+        "original": 1.785800366845325,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.13198246705077893,
+        "original": 1.8844039878851282,
+        "enhanced": 1.0686015938691071
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "flame-ignite",
+      "file": "enhanced/flame-ignite.wav",
+      "sha256": "3428d1af0e791da642951b2ee8dd8b2901bea1ee7ca760267b35390149c471d7",
+      "sampleRate": 44100,
+      "frames": 39249,
+      "stereo": {
+        "duration": 0.89,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 39249,
+        "peak": 0.78997802734375,
+        "rms": 0.08787089265909896,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.89,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 39249,
+        "peak": 0.7557525634765625,
+        "rms": 0.08555215220543495,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9736119620104496,
+      "pairNormalization": {
+        "targetRms": 0.08898565744119152,
+        "original": 0.647951068578863,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8323141291776868,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.09056101834376443,
+        "original": 0.675492163275364,
+        "enhanced": 1.0585475176159422
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "flame-spray-loop",
+      "file": "enhanced/flame-spray-loop.wav",
+      "sha256": "afdd57fa12da67b1267f9572c3d7c14fd9c9011a19e9327cd89a62c528a0fb17",
+      "sampleRate": 44100,
+      "frames": 176400,
+      "stereo": {
+        "duration": 4,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 176400,
+        "peak": 0.78997802734375,
+        "rms": 0.11764696058604295,
+        "firstAbs": 0.0093994140625,
+        "lastAbs": 0.0093994140625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 4,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 176400,
+        "peak": 0.749847412109375,
+        "rms": 0.11522632281063304,
+        "firstAbs": 0.00927734375,
+        "lastAbs": 0.00927734375,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9794245617281414,
+      "pairNormalization": {
+        "targetRms": 0.11913947630328225,
+        "original": 1.0855891580859751,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.12293308846555122,
+        "original": 1.1440152373678854,
+        "enhanced": 1.066883724716129
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "flame-stop",
+      "file": "enhanced/flame-stop.wav",
+      "sha256": "2078f5e95b0e556a6c2996d5e01d576aa1bf2ec311c1beb81fdbaa3a84df0064",
+      "sampleRate": 44100,
+      "frames": 32425,
+      "stereo": {
+        "duration": 0.7352607709750567,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 32425,
+        "peak": 0.78997802734375,
+        "rms": 0.13378726971917398,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.7352607709750567,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 32425,
+        "peak": 0.5569000244140625,
+        "rms": 0.09987626492671409,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.7465304070885014,
+      "pairNormalization": {
+        "targetRms": 0.13548454776042318,
+        "original": 0.7117337067380449,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.1434746066413598,
+        "original": 1.0127139957685,
+        "enhanced": 1.4365235498808124
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "hit-wood",
+      "file": "enhanced/hit-wood.wav",
+      "sha256": "1a4ea6b0bef405ae841bf6a5af4526680d6167e988fdf9e99d177777c44307f0",
+      "sampleRate": 44100,
+      "frames": 34409,
+      "stereo": {
+        "duration": 0.780249433106576,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 34409,
+        "peak": 0.78997802734375,
+        "rms": 0.05428229199684588,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.780249433106576,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 34409,
+        "peak": 0.7701568603515625,
+        "rms": 0.05305486963309303,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9773881625369804,
+      "pairNormalization": {
+        "targetRms": 0.05497093855064964,
+        "original": 0.6710974617099549,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.05511071561071281,
+        "original": 0.6868775599927814,
+        "enhanced": 1.0387494303885245
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.7999999999999999
+    },
+    {
+      "id": "hit-cloth",
+      "file": "enhanced/hit-cloth.wav",
+      "sha256": "1372fa0d05a6cc4fa5cebe40b2bd528a5dfb24935f2eef2c017a85ae748a4ccd",
+      "sampleRate": 44100,
+      "frames": 41234,
+      "stereo": {
+        "duration": 0.9350113378684807,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 41234,
+        "peak": 0.78997802734375,
+        "rms": 0.11701617601567936,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.9350113378684807,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 41234,
+        "peak": 0.781005859375,
+        "rms": 0.11621998468622068,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9931958866152659,
+      "pairNormalization": {
+        "targetRms": 0.11850068935121012,
+        "original": 0.6142333452696066,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.11904646633942105,
+        "original": 0.6210660860365207,
+        "enhanced": 1.0243201000312598
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "hit-armor",
+      "file": "enhanced/hit-armor.wav",
+      "sha256": "cc969a109d101e74316b8da82ec4d1e54d119bba7735994f80bbd9dda0a4f99c",
+      "sampleRate": 44100,
+      "frames": 43659,
+      "stereo": {
+        "duration": 0.99,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 43659,
+        "peak": 0.78997802734375,
+        "rms": 0.0761008501900319,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.99,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 43659,
+        "peak": 0.77606201171875,
+        "rms": 0.07522611552413742,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9885055861569197,
+      "pairNormalization": {
+        "targetRms": 0.0770662955737299,
+        "original": 0.6486261265420409,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.07754649952009234,
+        "original": 0.6597790456402896,
+        "enhanced": 1.0308454581203303
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "hit-engine",
+      "file": "enhanced/hit-engine.wav",
+      "sha256": "a2064029b673fbcf89d39970c795fdb4100bbf0e99656e0e7b20fb96938c0945",
+      "sampleRate": 44100,
+      "frames": 52920,
+      "stereo": {
+        "duration": 1.2,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 52920,
+        "peak": 0.78997802734375,
+        "rms": 0.07457668988366462,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.2,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 52920,
+        "peak": 0.789794921875,
+        "rms": 0.07410805443584892,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9937160599572502,
+      "pairNormalization": {
+        "targetRms": 0.07552279916890743,
+        "original": 0.845653731007595,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.9056917366410063,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.07506561755035232,
+        "original": 0.845759722775112,
+        "enhanced": 1.0129211746522413
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "mortar-impact",
+      "file": "enhanced/mortar-impact.wav",
+      "sha256": "27cd81134549b0d5b53a7b06384c3b41f497fcb589116f86c64fff0ca552fcbb",
+      "sampleRate": 44100,
+      "frames": 73206,
+      "stereo": {
+        "duration": 1.66,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 73206,
+        "peak": 0.78997802734375,
+        "rms": 0.029034001832378063,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.66,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 73206,
+        "peak": 0.7806549072265625,
+        "rms": 0.02886499107678312,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9941788680537154,
+      "pairNormalization": {
+        "targetRms": 0.02940233862453417,
+        "original": 0.7481103565942507,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8081879946223458,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.02958028271860298,
+        "original": 0.7533716018297231,
+        "enhanced": 1.0247805945935382
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "connector-cut",
+      "file": "enhanced/connector-cut.wav",
+      "sha256": "3b61460b821e4ba24b00434bdcee5a1663f6fce461394aedb33473e43b44c30d",
+      "sampleRate": 44100,
+      "frames": 50715,
+      "stereo": {
+        "duration": 1.15,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 50715,
+        "peak": 0.78997802734375,
+        "rms": 0.06053970042465625,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.15,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 50715,
+        "peak": 0.784210205078125,
+        "rms": 0.06045357308089001,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9985773410974601,
+      "pairNormalization": {
+        "targetRms": 0.06130773092838248,
+        "original": 0.7165223362144472,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.061670784378397604,
+        "original": 0.7214810457763661,
+        "enhanced": 1.0201346460676344
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "module-break",
+      "file": "enhanced/module-break.wav",
+      "sha256": "172f75863e2b4c715ef18752beded285473f455760d8dd24bf92a9952a053737",
+      "sampleRate": 44100,
+      "frames": 53802,
+      "stereo": {
+        "duration": 1.22,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 53802,
+        "peak": 0.78997802734375,
+        "rms": 0.058624157075579414,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.22,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 53802,
+        "peak": 0.7587738037109375,
+        "rms": 0.0547653221856228,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9341767100381209,
+      "pairNormalization": {
+        "targetRms": 0.0593678862412914,
+        "original": 0.6998246556657048,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.05774086761328013,
+        "original": 0.7300876329822871,
+        "enhanced": 1.0543326563034168
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "bundle-detach",
+      "file": "enhanced/bundle-detach.wav",
+      "sha256": "e53b2a069056bc05da4e73b1ff5ac8bf0a667bbe3aef675afb5cfd0679ec3f6e",
+      "sampleRate": 44100,
+      "frames": 65268,
+      "stereo": {
+        "duration": 1.48,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 65268,
+        "peak": 0.78997802734375,
+        "rms": 0.04292759810817559,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.48,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 65268,
+        "peak": 0.7876129150390625,
+        "rms": 0.04283339929260209,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.997805635075689,
+      "pairNormalization": {
+        "targetRms": 0.043472194539401925,
+        "original": 0.6798608685309342,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.04350705629602605,
+        "original": 0.6811419318717468,
+        "enhanced": 1.0157273766394794
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "winch-loop",
+      "file": "enhanced/winch-loop.wav",
+      "sha256": "256cd86b0aef43bf7302e6db673a3344904fd154bf574bc943e5586aaf2bda34",
+      "sampleRate": 44100,
+      "frames": 176400,
+      "stereo": {
+        "duration": 4,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 176400,
+        "peak": 0.78997802734375,
+        "rms": 0.07559493122670784,
+        "firstAbs": 0.024444580078125,
+        "lastAbs": 0.024444580078125,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 4,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 176400,
+        "peak": 0.742889404296875,
+        "rms": 0.06511229050899126,
+        "firstAbs": 0.0194549560546875,
+        "lastAbs": 0.0194549560546875,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.86133143389893,
+      "pairNormalization": {
+        "targetRms": 0.07655395832300896,
+        "original": 0.7830499814891042,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.07011788310064086,
+        "original": 0.8334278425551298,
+        "enhanced": 1.0768763094113298
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "salvage-complete",
+      "file": "enhanced/salvage-complete.wav",
+      "sha256": "88aa338fe9fbcbe6a9eb5c1248dad6cb4b8c8aad862a5b3039fd9d0509bed70f",
+      "sampleRate": 44100,
+      "frames": 57330,
+      "stereo": {
+        "duration": 1.3,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 57330,
+        "peak": 0.78997802734375,
+        "rms": 0.08452125965932787,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.3,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 57330,
+        "peak": 0.7889862060546875,
+        "rms": 0.08439250146524016,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9984766176627432,
+      "pairNormalization": {
+        "targetRms": 0.08559352967679382,
+        "original": 0.7610749886113296,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.08557057227881686,
+        "original": 0.7617238516920658,
+        "enhanced": 1.0139594252228905
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "cargo-drop",
+      "file": "enhanced/cargo-drop.wav",
+      "sha256": "13778f3a718fd6dddea646f2c761101fab6bf9f96a1947877fcf0b6a690ebe32",
+      "sampleRate": 44100,
+      "frames": 48951,
+      "stereo": {
+        "duration": 1.11,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 48951,
+        "peak": 0.78997802734375,
+        "rms": 0.09447667519312188,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.11,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 48951,
+        "peak": 0.782012939453125,
+        "rms": 0.09407317543892793,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9957291071751928,
+      "pairNormalization": {
+        "targetRms": 0.09567524353637388,
+        "original": 0.9125823645900549,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.9443871515297017,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.09623695025273103,
+        "original": 0.9215434788750494,
+        "enhanced": 1.0230009756097562
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "bundle-lost",
+      "file": "enhanced/bundle-lost.wav",
+      "sha256": "9eadb0bbe72cca3fc306f1e6b36189522855b2d4bb5ca1da4042535fd1961c0b",
+      "sampleRate": 44100,
+      "frames": 61299,
+      "stereo": {
+        "duration": 1.39,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 61299,
+        "peak": 0.783538818359375,
+        "rms": 0.05927671166860553,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.39,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 61299,
+        "peak": 0.7649383544921875,
+        "rms": 0.05462053886135971,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9214502175276391,
+      "pairNormalization": {
+        "targetRms": 0.060522042078500204,
+        "original": 3.996038124079193,
+        "enhanced": 1.0210087633885103
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.05712412096017347,
+        "original": 4.084371309624511,
+        "enhanced": 1.0458359099160202
+      },
+      "normalizedPeak": 0.8,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "engine-idle-loop",
+      "file": "enhanced/engine-idle-loop.wav",
+      "sha256": "f335e2f5bb1ee2dbf15f851152c1b1a76ea7bf5aee617f998a1e56124b4221a2",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "stereo": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 264600,
+        "peak": 0.78997802734375,
+        "rms": 0.23748245011238012,
+        "firstAbs": 0.055572509765625,
+        "lastAbs": 0.055572509765625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 264600,
+        "peak": 0.7149505615234375,
+        "rms": 0.2292112206870418,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.965171197191943,
+      "pairNormalization": {
+        "targetRms": 0.18,
+        "original": 1.0481094624082892,
+        "enhanced": 0.7579507450543036
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.18,
+        "original": 1.0881891426687351,
+        "enhanced": 0.7853018689943048
+      },
+      "normalizedPeak": 0.5987644344017243,
+      "monoNormalizedPeak": 0.5614520122028831
+    },
+    {
+      "id": "engine-cruise-loop",
+      "file": "enhanced/engine-cruise-loop.wav",
+      "sha256": "be0af082153e6fe43db264f434e43013b58e1a383e6b6b3ef5ecc3255b6c17c4",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "stereo": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 264600,
+        "peak": 0.78997802734375,
+        "rms": 0.19819392267161906,
+        "firstAbs": 0.15283203125,
+        "lastAbs": 0.15283203125,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 264600,
+        "peak": 0.4644775390625,
+        "rms": 0.11436489662259408,
+        "firstAbs": 0.079559326171875,
+        "lastAbs": 0.079559326171875,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.5770353352967411,
+      "pairNormalization": {
+        "targetRms": 0.18,
+        "original": 0.6780588592900346,
+        "enhanced": 0.9082014098799388
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8353692177227993,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.18,
+        "original": 1.1883098485502896,
+        "enhanced": 1.5739095239512415
+      },
+      "normalizedPeak": 0.7174591582077666,
+      "monoNormalizedPeak": 0.7310456223919035
+    },
+    {
+      "id": "wind-calm-loop",
+      "file": "enhanced/wind-calm-loop.wav",
+      "sha256": "8f4ab5ac6b16ce70fdae27cc091c9a1722658c3f7131787afc34a308df4ecdc7",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "stereo": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 264600,
+        "peak": 0.458251953125,
+        "rms": 0.08306861061466046,
+        "firstAbs": 0.004058837890625,
+        "lastAbs": 0.004058837890625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 264600,
+        "peak": 0.4171905517578125,
+        "rms": 0.0686737793116026,
+        "firstAbs": 0.00250244140625,
+        "lastAbs": 0.00250244140625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.8267115436680076,
+      "pairNormalization": {
+        "targetRms": 0.13311044348947418,
+        "original": 4.044480638401129,
+        "enhanced": 1.6024156718709104
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.12643767208129902,
+        "original": 4.167971537321864,
+        "enhanced": 1.8411346127842578
+      },
+      "normalizedPeak": 0.7343101113529538,
+      "monoNormalizedPeak": 0.768103964967871
+    },
+    {
+      "id": "wind-fast-loop",
+      "file": "enhanced/wind-fast-loop.wav",
+      "sha256": "3fc9a26ff9afc772c5beb4b91aad1ab07c48b811f49808b47fee6153f3f1642f",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "stereo": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 264600,
+        "peak": 0.78997802734375,
+        "rms": 0.12278112802788473,
+        "firstAbs": 0.059478759765625,
+        "lastAbs": 0.059478759765625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 264600,
+        "peak": 0.740753173828125,
+        "rms": 0.1149606620493066,
+        "firstAbs": 0.0369873046875,
+        "lastAbs": 0.0369873046875,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9363056350418769,
+      "pairNormalization": {
+        "targetRms": 0.12433877781712824,
+        "original": 0.7040862953189702,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8309493314155922,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.12415543110556353,
+        "original": 0.7487541371148934,
+        "enhanced": 1.0799818728628519
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "hull-creak-loop",
+      "file": "enhanced/hull-creak-loop.wav",
+      "sha256": "05e9df7ff31a7edc27a75dab6331f7d3ac86f0c8ffd632e2b540800012b50b7e",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "stereo": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 264600,
+        "peak": 0.7603759765625,
+        "rms": 0.07221547694427491,
+        "firstAbs": 0.017730712890625,
+        "lastAbs": 0.017730712890625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 264600,
+        "peak": 0.5884857177734375,
+        "rms": 0.06518178141287846,
+        "firstAbs": 0.016510009765625,
+        "lastAbs": 0.016510009765625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9026012728985505,
+      "pairNormalization": {
+        "targetRms": 0.075978704399101,
+        "original": 1.5715786239106184,
+        "enhanced": 1.0521110932733988
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.08860949986619447,
+        "original": 2.010428638037089,
+        "enhanced": 1.359421266886198
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.7999999999999999
+    },
+    {
+      "id": "harbor-workshop-loop",
+      "file": "enhanced/harbor-workshop-loop.wav",
+      "sha256": "53dd6c73e4de47473a90b2b4d9ead8a2e350d6b0b5ab817ce640ecc1a7aa1f3a",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "stereo": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 264600,
+        "peak": 0.78997802734375,
+        "rms": 0.07671083977541786,
+        "firstAbs": 0.06207275390625,
+        "lastAbs": 0.06207275390625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 6,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 264600,
+        "peak": 0.69024658203125,
+        "rms": 0.07138204231598134,
+        "firstAbs": 0.0352935791015625,
+        "lastAbs": 0.0352935791015625,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9305339704918191,
+      "pairNormalization": {
+        "targetRms": 0.0776840237274478,
+        "original": 1.2694522654388234,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.08273222256999123,
+        "original": 1.4440359021533868,
+        "enhanced": 1.15900610133522
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "lift-danger-loop",
+      "file": "enhanced/lift-danger-loop.wav",
+      "sha256": "b4c1218c21c89af275009f3b4d67619f693a0c69b450e2ca42ad4e623e4f9c52",
+      "sampleRate": 44100,
+      "frames": 176400,
+      "stereo": {
+        "duration": 4,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 176400,
+        "peak": 0.76434326171875,
+        "rms": 0.07590521687359882,
+        "firstAbs": 0.02557373046875,
+        "lastAbs": 0.02557373046875,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 4,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 176400,
+        "peak": 0.55767822265625,
+        "rms": 0.05959257320091751,
+        "firstAbs": 0.024749755859375,
+        "lastAbs": 0.024749755859375,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.7850919298492232,
+      "pairNormalization": {
+        "targetRms": 0.07932413277174166,
+        "original": 1.6491619290753756,
+        "enhanced": 1.045041909356984
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.08548667784382905,
+        "original": 2.270390368540447,
+        "enhanced": 1.4345189887271534
+      },
+      "normalizedPeak": 0.7987707416307075,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "lift-warning",
+      "file": "enhanced/lift-warning.wav",
+      "sha256": "e4ccd4c9d3c21a61f1e227cc80b696088e29015e344c47f5f772140af0d5d833",
+      "sampleRate": 44100,
+      "frames": 41234,
+      "stereo": {
+        "duration": 0.9350113378684807,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 41234,
+        "peak": 0.748870849609375,
+        "rms": 0.14249525721764067,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.9350113378684807,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 41234,
+        "peak": 0.729217529296875,
+        "rms": 0.13989940035164342,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9817828542740025,
+      "pairNormalization": {
+        "targetRms": 0.152224119597625,
+        "original": 0.9804614711476961,
+        "enhanced": 1.0682749908309224
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.988243211492855,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.15347892197439303,
+        "original": 1.005602054313325,
+        "enhanced": 1.0970663318685918
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "incoming-warning",
+      "file": "enhanced/incoming-warning.wav",
+      "sha256": "b5773b13f0a31bdcc3ccc880a9d75085e8a10fccdd592e18042bc8782dc77ae9",
+      "sampleRate": 44100,
+      "frames": 37485,
+      "stereo": {
+        "duration": 0.85,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 37485,
+        "peak": 0.78997802734375,
+        "rms": 0.05658164050707601,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.85,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 37485,
+        "peak": 0.6790924072265625,
+        "rms": 0.0517156844971362,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9140011500845175,
+      "pairNormalization": {
+        "targetRms": 0.05729945750246054,
+        "original": 0.7419189925584367,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8038554089867789,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.060923295795156825,
+        "original": 0.8619085805326838,
+        "enhanced": 1.1780429165262332
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "defeat",
+      "file": "enhanced/defeat.wav",
+      "sha256": "add62d31d54059940ce1dead142c6d1a0e01d80f99fa3561604a2928102cc909",
+      "sampleRate": 44100,
+      "frames": 83790,
+      "stereo": {
+        "duration": 1.9,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 83790,
+        "peak": 0.78997802734375,
+        "rms": 0.15465716992208975,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.9,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 83790,
+        "peak": 0.623748779296875,
+        "rms": 0.14498471372008884,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.937458727539929,
+      "pairNormalization": {
+        "targetRms": 0.15661921174401722,
+        "original": 0.5658919653346633,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8266384850149068,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.18,
+        "original": 0.681196823645601,
+        "enhanced": 1.2415101936022894
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.774390467744055
+    },
+    {
+      "id": "return",
+      "file": "enhanced/return.wav",
+      "sha256": "490b2ec9bdc600e197b9d2e4e57996cda930ff65a27cc44d12e43e662fda680c",
+      "sampleRate": 44100,
+      "frames": 70560,
+      "stereo": {
+        "duration": 1.6,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 70560,
+        "peak": 0.78997802734375,
+        "rms": 0.04372703197888072,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.6,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 70560,
+        "peak": 0.7727203369140625,
+        "rms": 0.04350833481505116,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.994998582022782,
+      "pairNormalization": {
+        "targetRms": 0.04428177034331958,
+        "original": 0.7519168773681673,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.045044327409635564,
+        "original": 0.7683560780431301,
+        "enhanced": 1.035303410280208
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "harbor-repair",
+      "file": "enhanced/harbor-repair.wav",
+      "sha256": "0176ddfa852c5ca29d28d0093ae5554f5a87e68820c19c571885bf57679eb44e",
+      "sampleRate": 44100,
+      "frames": 63284,
+      "stereo": {
+        "duration": 1.4350113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 63284,
+        "peak": 0.78997802734375,
+        "rms": 0.04227897912726391,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.4350113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 63284,
+        "peak": 0.773284912109375,
+        "rms": 0.04060705486744574,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9604549519801433,
+      "pairNormalization": {
+        "targetRms": 0.042815346922419346,
+        "original": 0.7828064679749663,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8028555390672218,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.04200992853376888,
+        "original": 0.7997190662364936,
+        "enhanced": 1.034547535419709
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "harbor-equip",
+      "file": "enhanced/harbor-equip.wav",
+      "sha256": "f8a49cb49fb0cc09a8d92c1046d28d30694dadd27c4d1e7560f4bf2580a71f52",
+      "sampleRate": 44100,
+      "frames": 51377,
+      "stereo": {
+        "duration": 1.1650113378684808,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 51377,
+        "peak": 0.78997802734375,
+        "rms": 0.0936257856876356,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.1650113378684808,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 51377,
+        "peak": 0.785675048828125,
+        "rms": 0.09349248056143417,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.99857619217588,
+      "pairNormalization": {
+        "targetRms": 0.09481355931120895,
+        "original": 1.2606712173563015,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.09519709778324567,
+        "original": 1.2675461464663036,
+        "enhanced": 1.0182326665371917
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "harbor-store",
+      "file": "enhanced/harbor-store.wav",
+      "sha256": "169c22ec1d870eb6f1b587c3e18a25c0316233c1a1e7c2e3cebcad6999724c1e",
+      "sampleRate": 44100,
+      "frames": 56889,
+      "stereo": {
+        "duration": 1.29,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 56889,
+        "peak": 0.78997802734375,
+        "rms": 0.05497699098194757,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.29,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 56889,
+        "peak": 0.7392730712890625,
+        "rms": 0.05274141679904742,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9593361851390843,
+      "pairNormalization": {
+        "targetRms": 0.05567445076091966,
+        "original": 0.7177176145398706,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.05707381355804862,
+        "original": 0.7690504823465112,
+        "enhanced": 1.0821441103015543
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "harbor-depart",
+      "file": "enhanced/harbor-depart.wav",
+      "sha256": "63d07b50734cb3bbe2609507c2d019ce7e8e0a7244093df50396ef905dcfdd55",
+      "sampleRate": 44100,
+      "frames": 61079,
+      "stereo": {
+        "duration": 1.3850113378684807,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 61079,
+        "peak": 0.78997802734375,
+        "rms": 0.08563414997774993,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 1.3850113378684807,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 61079,
+        "peak": 0.7654876708984375,
+        "rms": 0.08413291823471312,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9824692398601859,
+      "pairNormalization": {
+        "targetRms": 0.0867205385604855,
+        "original": 1.0193483978559281,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.08792608574449594,
+        "original": 1.0515723395221912,
+        "enhanced": 1.0450854147148525
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "save-ok",
+      "file": "enhanced/save-ok.wav",
+      "sha256": "58fed881fb05278752bd81db11ca0872f1deda315465befbbf628950c500b04b",
+      "sampleRate": 44100,
+      "frames": 31984,
+      "stereo": {
+        "duration": 0.7252607709750567,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 31984,
+        "peak": 0.78997802734375,
+        "rms": 0.06997733124861234,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.7252607709750567,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 31984,
+        "peak": 0.5892791748046875,
+        "rms": 0.05368333431920803,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.7671532103515676,
+      "pairNormalization": {
+        "targetRms": 0.07086509125719012,
+        "original": 0.8744594758565252,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.911650756998101,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.07288000202892085,
+        "original": 1.1743857331593706,
+        "enhanced": 1.3575908231699425
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "ui-fail",
+      "file": "enhanced/ui-fail.wav",
+      "sha256": "769234c6ef461659ee99ee26ed5b895d79035d238574c3fa8ec07e946865fa61",
+      "sampleRate": 44100,
+      "frames": 28004,
+      "stereo": {
+        "duration": 0.6350113378684807,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 28004,
+        "peak": 0.78997802734375,
+        "rms": 0.06976887477272938,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.6350113378684807,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 28004,
+        "peak": 0.6494293212890625,
+        "rms": 0.059541394377636774,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.8534091250803686,
+      "pairNormalization": {
+        "targetRms": 0.07065399022028265,
+        "original": 0.7554937066857922,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.07333852902148505,
+        "original": 0.9256395034482758,
+        "enhanced": 1.2317234050036012
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.7999172949273418
+    },
+    {
+      "id": "ui-hover",
+      "file": "enhanced/ui-hover.wav",
+      "sha256": "f9992a0c04159bc174262b8a0437834cf9de4de1a9ce9196d35389ee9d932b20",
+      "sampleRate": 44100,
+      "frames": 21962,
+      "stereo": {
+        "duration": 0.4980045351473923,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 21962,
+        "peak": 0.78997802734375,
+        "rms": 0.0687464759514505,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.4980045351473923,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 21962,
+        "peak": 0.7810211181640625,
+        "rms": 0.06865764042506947,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9987077806512763,
+      "pairNormalization": {
+        "targetRms": 0.06961862084453775,
+        "original": 0.7386593855261174,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8172231818150821,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.07032602712352999,
+        "original": 0.7472205933786681,
+        "enhanced": 1.024300087916382
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.8000000000000002
+    },
+    {
+      "id": "ui-confirm",
+      "file": "enhanced/ui-confirm.wav",
+      "sha256": "3c80ba3a882debd8b0c6e4e684474fddeb8ea12b7efd4dd2dc8237a8d5c36194",
+      "sampleRate": 44100,
+      "frames": 28224,
+      "stereo": {
+        "duration": 0.64,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 28224,
+        "peak": 0.78997802734375,
+        "rms": 0.06526184111028424,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.64,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 28224,
+        "peak": 0.774078369140625,
+        "rms": 0.06443707749576984,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9873622380171492,
+      "pairNormalization": {
+        "targetRms": 0.06608977855216856,
+        "original": 98.50490520670046,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.06659488761305377,
+        "original": 100.62325124467809,
+        "enhanced": 1.0334870885077863
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.7999999999999999
+    },
+    {
+      "id": "ui-back",
+      "file": "enhanced/ui-back.wav",
+      "sha256": "e02bf2c2a3e655857760c3cbec4cbddb9bc46c5c5b6688a81024ef76ccf26d2e",
+      "sampleRate": 44100,
+      "frames": 27783,
+      "stereo": {
+        "duration": 0.63,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 27783,
+        "peak": 0.78997802734375,
+        "rms": 0.07836395037759457,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.63,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 27783,
+        "peak": 0.7454833984375,
+        "rms": 0.07665017781700793,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9781306002016378,
+      "pairNormalization": {
+        "targetRms": 0.07935810634236325,
+        "original": 0.6195262703454738,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8213601812873335,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.0822555436943742,
+        "original": 0.6558348083780863,
+        "enhanced": 1.073129196004585
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.8
+    },
+    {
+      "id": "restore-ok",
+      "file": "enhanced/restore-ok.wav",
+      "sha256": "8ca714997f043a74947e29c2dd5eb3bb2a615124aabb7ff4955c24d8e3324b18",
+      "sampleRate": 44100,
+      "frames": 41013,
+      "stereo": {
+        "duration": 0.93,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 41013,
+        "peak": 0.78997802734375,
+        "rms": 0.05868329455199169,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.93,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 41013,
+        "peak": 0.77374267578125,
+        "rms": 0.053704801791184954,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9151633731743548,
+      "pairNormalization": {
+        "targetRms": 0.059427773959040836,
+        "original": 0.7321258282806032,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8066993603214159,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.05552729967953139,
+        "original": 0.7497771485395109,
+        "enhanced": 1.033935473692514
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.7999999999999999
+    },
+    {
+      "id": "mortar-launch-a",
+      "file": "enhanced/mortar-launch-a.wav",
+      "sha256": "8580c574297d1f2d6fce10b33df1cca9a8e45536851dd074a8a48ffcbbe68649",
+      "sampleRate": 44100,
+      "frames": 31973,
+      "stereo": {
+        "duration": 0.7250113378684807,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 31973,
+        "peak": 0.78997802734375,
+        "rms": 0.03844281063670043,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.7250113378684807,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 31973,
+        "peak": 0.7432098388671875,
+        "rms": 0.038206695103109194,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9938580054454753,
+      "pairNormalization": {
+        "targetRms": 0.03893051128620566,
+        "original": 3.9386864420760754,
+        "enhanced": 1.0126863941899096
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 1,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.04112614565097196,
+        "original": 4.185959196555438,
+        "enhanced": 1.0764120147001457
+      },
+      "normalizedPeak": 0.7999999999999999,
+      "monoNormalizedPeak": 0.7999999999999999
+    },
+    {
+      "id": "mortar-launch-b",
+      "file": "enhanced/mortar-launch-b.wav",
+      "sha256": "4025260c4ee452970f67ad6616796b2ed9b42616dd4b0455b5c8272940691f7f",
+      "sampleRate": 44100,
+      "frames": 36383,
+      "stereo": {
+        "duration": 0.8250113378684807,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frames": 36383,
+        "peak": 0.78997802734375,
+        "rms": 0.030991366888171647,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "mono": {
+        "duration": 0.8250113378684807,
+        "sampleRate": 44100,
+        "channels": 1,
+        "frames": 36383,
+        "peak": 0.7885894775390625,
+        "rms": 0.030896213783959754,
+        "firstAbs": 0,
+        "lastAbs": 0,
+        "seamDelta": 0,
+        "finite": true
+      },
+      "monoRmsRetention": 0.9969296899825283,
+      "pairNormalization": {
+        "targetRms": 0.03138453558499911,
+        "original": 0.5818776842152085,
+        "enhanced": 1.0126863941899098
+      },
+      "unmatchedPairNormalization": {
+        "targetRms": null,
+        "original": 0.8341665797081039,
+        "enhanced": 1
+      },
+      "monoPairNormalization": {
+        "targetRms": 0.0313432676077566,
+        "original": 0.5813929546623285,
+        "enhanced": 1.014469534258238
+      },
+      "normalizedPeak": 0.8000000000000002,
+      "monoNormalizedPeak": 0.7999999999999999
+    }
+  ]
+}

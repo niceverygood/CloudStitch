@@ -1,0 +1,416 @@
+{
+  "version": "enemy-fleet-gallery-1",
+  "counts": {
+    "enemy": 19,
+    "context": 7,
+    "total": 26,
+    "standard": 7,
+    "mission": 7,
+    "boss": 5
+  },
+  "sourceFiles": [
+    {
+      "path": "outputs/fleet-comparison-v1/inventory.json",
+      "bytes": 389455,
+      "sha256": "0ce854a63192b2c75584b61f2211a680839603d808b3bec7b1a68d7bcf02d7bc"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/catalog.json",
+      "bytes": 45863,
+      "sha256": "75c0af5918a15ca4f3ff65d4604e338aec5a30c1ab4f4137bbacb744622d74d5"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/previews/enemy-pirate-scout.png",
+      "bytes": 435736,
+      "sha256": "5d1a7a7471d2b2da6a38e91ead635c7e6b5f896d8fad8f65b41d127c196daf7c"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-pirate-scout.glb",
+      "bytes": 6882024,
+      "sha256": "c2c8e5cd4392cd5715884911c28811e46aecd6affd612add739c9bc45c08983c"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-pirate-scout.html",
+      "bytes": 16056593,
+      "sha256": "5a975847660920b26415bbb810899921881f8e962c94dd15834a42628b92bdfc"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/previews/enemy-cult-blockade.png",
+      "bytes": 536285,
+      "sha256": "8fd65c5677b73398fe9fe7f7ef541aa2c6f1c5c0b16d1d1637f5f1a53c8ed289"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-cult-blockade.glb",
+      "bytes": 10181604,
+      "sha256": "26d5a1ef979ef51fc6c16b04e66d4d9f1ce909ddbd88f8002eb871a7e4b2c5db"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-cult-blockade.html",
+      "bytes": 20456034,
+      "sha256": "556e26de7f04416b553d6cec2c5a13432cd150f819d22d4f5440b444fda43dbf"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/previews/enemy-union-salvage.png",
+      "bytes": 537949,
+      "sha256": "d47fe9fb6da2b9be5d600b2d00c01b8fa6c1e563303c9f61dca606aa3196ccc3"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-union-salvage.glb",
+      "bytes": 9444220,
+      "sha256": "452d699009053773abd7d5c34cac6ed040bbeee03eb4c2fb7ebc694bea3b1177"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-union-salvage.html",
+      "bytes": 19472857,
+      "sha256": "e8569345ee7e98a9d335e9778c4d1a1425b98ee88153c815df3044678c6311e4"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/previews/enemy-union-repair.png",
+      "bytes": 533339,
+      "sha256": "c5e77d2f4956548fed53fdc4e10590c5932447ab5842962b07b5910426373411"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-union-repair.glb",
+      "bytes": 9360548,
+      "sha256": "18ebc6cb6a3ca37aba27ad868fcaf2496b6f69d445e3bdd6211479abe90863f3"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-union-repair.html",
+      "bytes": 19361293,
+      "sha256": "477c2161fd9f5001fb76ee09121c547e40dfa8965cb4362db70ef4ae5b5a7be2"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/previews/enemy-ghost-chaser.png",
+      "bytes": 491839,
+      "sha256": "0ad7901a486d663d687eddfda1d0824b12fc793af3d343de4b82bde7a9c178a6"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-ghost-chaser.glb",
+      "bytes": 8407156,
+      "sha256": "c05629e92252812fa8e1abb8d6b1f20163f2cbcee6167f9c5ee4295eded72edd"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-ghost-chaser.html",
+      "bytes": 18090105,
+      "sha256": "7d5c526c6bba3ce0f2b9314225f752a61b59846ad7963f873f0733d3716e16d7"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/previews/enemy-disguised-wreck.png",
+      "bytes": 601694,
+      "sha256": "1718a368a2720b108aabfc79c02501312c67115e95d55751eb5e4737a39aaf61"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-disguised-wreck.glb",
+      "bytes": 7416712,
+      "sha256": "4bdd357b3a5f3fb1fe7c875db1dfd54755e153b3685c010bb0f408a68a107a8a"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v1/ships/enemy-disguised-wreck.html",
+      "bytes": 16769513,
+      "sha256": "dfbc80073cc906faa3aa4100e7c7b10b8f63d9c428362cae599bbb8a76be6dc5"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/enemy-tax-cutter.png",
+      "bytes": 464352,
+      "sha256": "bf9302c8309a636663ad3e41544013175c3f7025ec208ef66c5eb05f235aeeb3"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/enemy-tax-cutter.glb",
+      "bytes": 7850040,
+      "sha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/enemy-tax-cutter.html",
+      "bytes": 17342916,
+      "sha256": "d5d96c8777722638a42342a6ace44d510b82a77a6c4fcf9120abde0a030b5b69"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-union-guard.png",
+      "bytes": 433328,
+      "sha256": "4f76f48e04e553bb37d63ab38676049f3e173614daed5bc62458bd4172614c50"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-union-guard.glb",
+      "bytes": 8822356,
+      "sha256": "aeae096526a7bc3414395dacc05aaff69a867aae93387e3c2e69db9aaf976acd"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-union-guard.html",
+      "bytes": 18639340,
+      "sha256": "83a70e3ccc70c6f45348220f475cc6c52898b68c552b942f0c85d5ce5b65af85"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-bridge-tug.png",
+      "bytes": 404224,
+      "sha256": "c8c9fde0ad34a4ca387880a5e662414954e96539cc7923da0b824aaeebbf93e9"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-bridge-tug.glb",
+      "bytes": 6973148,
+      "sha256": "fb17a797ab6e73a90c5b2d9db41e30977db1c717fefc3a1ad50f9f9608be675e"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-bridge-tug.html",
+      "bytes": 16173728,
+      "sha256": "50e25c788eab6fc6446faf242af38428920197e5712ea4e2e9005fd2c71ae4d6"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-guard-scout.png",
+      "bytes": 517433,
+      "sha256": "f50dbcd38e4ab14c181dba8a9330722f162592fa60b8f421a2ca470da913a352"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-guard-scout.glb",
+      "bytes": 6174960,
+      "sha256": "b2b12705ff4a9a6ac2553ec6e07577fdfaeaea3afa4799be1d458459fc550c34"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-guard-scout.html",
+      "bytes": 15109520,
+      "sha256": "8c1a91905479aad96eda7345384a622be9eb011d42b60bff78cbb81b51aeffca"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-cult-purifier.png",
+      "bytes": 456472,
+      "sha256": "da4075ddd3c7cc0c4b70eb540c234b41f9d0482f3b64e1e12e8b97cfbccff244"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-cult-purifier.glb",
+      "bytes": 7387588,
+      "sha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-cult-purifier.html",
+      "bytes": 16726316,
+      "sha256": "b2d99b6e56a7e2ea66202f0da5d42f616e8cee5ebc642bcdeecc5cce150bd95a"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mission-ghost-artillery.png",
+      "bytes": 468686,
+      "sha256": "f6e76ca9c8df61e227d80e7501c2badf39f751f3f23863bc5571b040313476b4"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-ghost-artillery.glb",
+      "bytes": 7505328,
+      "sha256": "9904a65b67e7e2d4ac2da36825f4d68cf65a1bb2321edbe4e761b964866a8037"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mission-ghost-artillery.html",
+      "bytes": 16883300,
+      "sha256": "915a3d1857fe8c89c0a64a8171d0112d549530464a1bbc0e63f7b1fe7331b4a0"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/role-enemy-artillery.png",
+      "bytes": 523780,
+      "sha256": "60d0aa9409c7f746839ae189cbb7247ea0f105bc18ea73129b2314772cff87a7"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/role-enemy-artillery.glb",
+      "bytes": 7341916,
+      "sha256": "88690c94770cf0d841fc56043cee1397bdc8140e23ca9f297240664527d2f278"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/role-enemy-artillery.html",
+      "bytes": 16665448,
+      "sha256": "547dbc6191dc89f0df3304cbdd995d15bc755c9417878a40880293e05afc37c2"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/role-enemy-defense.png",
+      "bytes": 487223,
+      "sha256": "d1ba8bd7d879535209150b9b2777909b58c1aa17983df3845a437ce66bae0c48"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/role-enemy-defense.glb",
+      "bytes": 7713696,
+      "sha256": "914264be543cd2fdaee0e1a685c39f51e5b33cab396ccb4f12f1fd9b79b3da16"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/role-enemy-defense.html",
+      "bytes": 17161152,
+      "sha256": "16ef02891bfce4542aa5e4378437fecfb93251c8bbdb17583937731fed9931a7"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/mini-funeral-guard.png",
+      "bytes": 454873,
+      "sha256": "b10a629af2cc4670b37a1228702003a705725f7f9339af2ce110dd03f62f29e3"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mini-funeral-guard.glb",
+      "bytes": 7836684,
+      "sha256": "1cbe87cd77948a6b8f1e9638826b1e90e8435125c7ef4255762374895712e42d"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/mini-funeral-guard.html",
+      "bytes": 17325136,
+      "sha256": "009dbd70bff4fc2c38b25db56fac8a6ac3eaa365a9cb467f99752c4cf27d76ef"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-bell-devourer.png",
+      "bytes": 473178,
+      "sha256": "a87a2a8ed22cfc06dc7ede976aae483ec545e0eac6556a767d0665f8bc439ea9"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-bell-devourer.glb",
+      "bytes": 15542616,
+      "sha256": "e0eeb724714cc5364dc7334c1e5f0d66d3cffc970395dea6210b9873b82ce245"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-bell-devourer.html",
+      "bytes": 27599757,
+      "sha256": "d43863ac3c5b3f3cfc3b53a12c2364115e5149db6ede7191b51cc9e6e0bfd2bb"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-shipyard-ribs.png",
+      "bytes": 486167,
+      "sha256": "d18677c4bf99625aa0c83f0826d5142fcb1266b5aa201304bbbb6b4184bb5efa"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-shipyard-ribs.glb",
+      "bytes": 6857624,
+      "sha256": "e679afa86e3ce0ad2c3699cc239804e6cb6574e22ebef23b27e47587a00cde94"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-shipyard-ribs.html",
+      "bytes": 16019808,
+      "sha256": "43fe399a36e7307bfa8d25e6bbba6312f8561e08595d0028570865181176d798"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-shipwright-command.png",
+      "bytes": 462570,
+      "sha256": "7140758052c159dd1673ad8585aaad59abd1de659d065e595ae26b45ac6a5536"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-shipwright-command.glb",
+      "bytes": 13194524,
+      "sha256": "8516d86bbcea0acd155cc8ae50ee46943c8b89f8d81153129f017737688207ae"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-shipwright-command.html",
+      "bytes": 24468949,
+      "sha256": "ae0049000ac57ef2b15fc4964d63606e61d064a0828725c8ceb6f0cf444e14b1"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-last-inhale.png",
+      "bytes": 446410,
+      "sha256": "0db5c4bb40c9dbda6a1b461bb6fad9c0f7677bbab287b696cc26623662cd9c9f"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-last-inhale.glb",
+      "bytes": 6658952,
+      "sha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-last-inhale.html",
+      "bytes": 15754900,
+      "sha256": "e03973dbef604e7b0d6e5b327b4fd3c7794bd248d981039efbd889581b5acd7c"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-change.png",
+      "bytes": 529544,
+      "sha256": "1bb6c9d428497496090331d0f0666634792b808302a6b9ce86072666d0e1dbca"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-change.glb",
+      "bytes": 6594720,
+      "sha256": "08945d2aef9919af8cfb3117580b94c0bbd07a23d80a1196d7d2b6c3865b9756"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-change.html",
+      "bytes": 15669140,
+      "sha256": "91d47ccbbd69d08fcb6ed2511b7b8ef10b24b4374a57f76c69fc2e58f07136b6"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-debts-end.png",
+      "bytes": 426407,
+      "sha256": "f8dc9b80a8430f7b24e5ef777414fc83cbe2946724277c70a7912402b9c5eefc"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-debts-end.glb",
+      "bytes": 9297056,
+      "sha256": "a428a10b62d0a4c991fc3728efc4ab22e1cff307e5d7b442046f44a4a60bfdfb"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-debts-end.html",
+      "bytes": 19272248,
+      "sha256": "04a36f6742d104910f039890516e267b338cbb9512735a696011fc12babee24e"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-quiet-answer.png",
+      "bytes": 453273,
+      "sha256": "846b6cca6a41b7a50f4e8ada7115434cf54220fb1297aa90f2caad194dba5b18"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-quiet-answer.glb",
+      "bytes": 7229712,
+      "sha256": "83362b371fbd58209292c5a483ff5bee372858bba582a09476c1525200548b47"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-quiet-answer.html",
+      "bytes": 16515800,
+      "sha256": "6f7734db16efbc4b55a89882db5401cf7465adcff5ab3771c7b4ad4f005c1517"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-night-shift.png",
+      "bytes": 531276,
+      "sha256": "6d16eca718ba94518ded28042f459cf986ea4986e39464a080c8d600029e92cb"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-night-shift.glb",
+      "bytes": 8524612,
+      "sha256": "4aa59e5b0c3efeea751a61f553896ee10e6bb71ebf0e8666711d73fdb3ceab93"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-night-shift.html",
+      "bytes": 18242320,
+      "sha256": "fb49c2df17708d2ecf4d4e1f984f5fc81e52da9a61a10ec06eb3e28739997186"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-go-first.png",
+      "bytes": 423907,
+      "sha256": "a3fc9a03f18e39eefb8d2c54c35348c80cdcdd2830524bc8dbf0c31405c7ebf1"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-go-first.glb",
+      "bytes": 6874440,
+      "sha256": "6525e0cdecbd29fa3e3ae3e2212bdca8d40c332f396005330c926c03af4d3605"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-go-first.html",
+      "bytes": 16042104,
+      "sha256": "ddd813e171509965937ac921e1e5bef673cf63e97fa3efd11a97947a62871524"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/rival-unfinished.png",
+      "bytes": 578742,
+      "sha256": "03269e062adcf115e5ead46b4062ef9c8ffa994e9c8cf430dd05d73cac36b2d8"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-unfinished.glb",
+      "bytes": 8955692,
+      "sha256": "9a456b8dfd9de675161081f16bf91f70c4fb44093fc803fe533b34161118861b"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/rival-unfinished.html",
+      "bytes": 18817148,
+      "sha256": "e147bbb10935aeac73edeec0346d7a896df11a3e07cda4596384f31d6872e700"
+    },
+    {
+      "path": "outputs/fleet-comparison-v1/previews/boss-fleet-king.png",
+      "bytes": 458507,
+      "sha256": "80ef7cb62a306e6c37c5a4f7bbce925656bda2f77d0bae339ed400892057a2ff"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-fleet-king.glb",
+      "bytes": 12880000,
+      "sha256": "b0063fd4ee2bf859449b363306d100dcf1adb8327ba4095954a2be31192418a3"
+    },
+    {
+      "path": "outputs/fleet-v2/ships/boss-fleet-king.html",
+      "bytes": 24049565,
+      "sha256": "1f748c7ac88f4be21d82f9a9d332d3fe4e2013492ee9761fdac619e024fdf434"
+    }
+  ],
+  "changes": "New overview gallery only; existing images, models, viewers and manifests preserved.",
+  "newGenerationCalls": 0,
+  "combatImplemented": false
+}

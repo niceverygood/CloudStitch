@@ -1,0 +1,792 @@
+{
+  "version": "enemy-villain-1",
+  "title": "Cloudstitch · 악당의 실루엣",
+  "ownedModelCount": 12,
+  "referenceSixReadOnly": [
+    "enemy-pirate-scout",
+    "enemy-cult-blockade",
+    "enemy-union-salvage",
+    "enemy-union-repair",
+    "enemy-ghost-chaser",
+    "enemy-disguised-wreck"
+  ],
+  "pipelineSha256": "251ec7b507e9b6d79bd3510c2ba6df28a520bf33ce93ddce22ecaecd79f2bf9b",
+  "ships": [
+    {
+      "id": "enemy-tax-cutter",
+      "name": "녹슨 징세정",
+      "shortName": "녹슨 징세정",
+      "group": "standard",
+      "groupLabel": "일반 적선",
+      "index": 7,
+      "faction": "세부 소속 미정",
+      "description": "단일 부모 연결 구조를 보여주는 표준 중형 적. 세력 스타일은 별도 변형으로 기록한다.",
+      "context": "",
+      "detail": "",
+      "category": "enemy-standard",
+      "visual": "기체별 악당 강화 외형",
+      "latest": true,
+      "previewPath": "previews/enemy-tax-cutter.png",
+      "viewerPath": "ships/enemy-tax-cutter.html",
+      "assetPath": "ships/enemy-tax-cutter.glb",
+      "sourceModelSha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+      "sourcePreviewSha256": "bf9302c8309a636663ad3e41544013175c3f7025ec208ef66c5eb05f235aeeb3",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/67-playable-slice-priorities.txt",
+        "outputs/102-advanced-encounter.txt",
+        "outputs/103-bridge-mission-script.txt"
+      ],
+      "metrics": {
+        "triangles": 52980
+      },
+      "status": "asset-built",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/enemy-tax-cutter.png",
+      "previousViewerPath": "../fleet-v2/ships/enemy-tax-cutter.html",
+      "sourceAssetPath": "../fleet-v2/ships/enemy-tax-cutter.glb",
+      "pipelineSha256": "251ec7b507e9b6d79bd3510c2ba6df28a520bf33ce93ddce22ecaecd79f2bf9b",
+      "sha256": "9f61d09782217cb9ab60303f567ed861808682cb821a912a97193689e5ed8a67",
+      "bytes": 12956664,
+      "features": [
+        "철제 금고처럼 벌어진 거대한 압류 턱",
+        "상아빛 윗니와 어긋난 황동 아랫니",
+        "기울어진 징세 저울과 대형 족쇄",
+        "붉은 봉인 띠를 두른 외장 징세 장부",
+        "보석처럼 낮게 빛나는 가느다란 눈",
+        "녹슨 판금과 목재·황동의 겹구조"
+      ],
+      "addedMeshes": 139,
+      "sourceClips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 16
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 16
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 16
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 16
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 16
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 16
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 16
+        }
+      ],
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "bounds": {
+        "min": [
+          -7.672019355901126,
+          -1.850000023841858,
+          -2.4327125549316406
+        ],
+        "max": [
+          5.664249897003174,
+          5.227508281182943,
+          5.550000190734863
+        ],
+        "size": [
+          13.3362692529043,
+          7.077508305024801,
+          7.982712745666504
+        ],
+        "axisRatios": [
+          1,
+          0.5306962667601736,
+          0.5985716540574548
+        ]
+      },
+      "geometrySignature": "255f3dc495e1ea8cd497b2b7d628d6aa7f2c181e28d1109497158f2da81e1700",
+      "gameplayIntegration": false
+    },
+    {
+      "id": "mission-union-guard",
+      "name": "연합 경비선",
+      "shortName": "연합 경비선",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 1,
+      "faction": "쇠갈비 연합",
+      "description": "노동자 도크 사건/오르 임무에서 포격하는 경비 비행선",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/mission-union-guard.png",
+      "viewerPath": "ships/mission-union-guard.html",
+      "assetPath": "ships/mission-union-guard.glb",
+      "sourceModelSha256": "aeae096526a7bc3414395dacc05aaff69a867aae93387e3c2e69db9aaf976acd",
+      "sourcePreviewSha256": "4f76f48e04e553bb37d63ab38676049f3e173614daed5bc62458bd4172614c50",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/27-act2-main-quests.txt",
+        "outputs/61-or-personal-quest.txt"
+      ],
+      "metrics": {
+        "triangles": 51524
+      },
+      "status": "source-ready",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/mission-union-guard.png",
+      "previousViewerPath": "../fleet-v2/ships/mission-union-guard.html",
+      "sourceAssetPath": "../fleet-v2/ships/mission-union-guard.glb"
+    },
+    {
+      "id": "mission-bridge-tug",
+      "name": "교량 견인정",
+      "shortName": "교량 견인정",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 2,
+      "faction": "소속 미정",
+      "description": "윈치로 교량 잔해를 당겨 안쪽 길을 좁히는 적",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/mission-bridge-tug.png",
+      "viewerPath": "ships/mission-bridge-tug.html",
+      "assetPath": "ships/mission-bridge-tug.glb",
+      "sourceModelSha256": "fb17a797ab6e73a90c5b2d9db41e30977db1c717fefc3a1ad50f9f9608be675e",
+      "sourcePreviewSha256": "c8c9fde0ad34a4ca387880a5e662414954e96539cc7923da0b824aaeebbf93e9",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/102-advanced-encounter.txt",
+        "outputs/103-bridge-mission-script.txt"
+      ],
+      "metrics": {
+        "triangles": 33088
+      },
+      "status": "source-ready",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/mission-bridge-tug.png",
+      "previousViewerPath": "../fleet-v2/ships/mission-bridge-tug.html",
+      "sourceAssetPath": "../fleet-v2/ships/mission-bridge-tug.glb"
+    },
+    {
+      "id": "mission-guard-scout",
+      "name": "경비 정찰선·정찰정",
+      "shortName": "경비 정찰선",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 3,
+      "faction": "소속 미정",
+      "description": "경량 정찰선/정찰정 역할; 해적 소속과 동일 선체라고 확정하지 않음",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/mission-guard-scout.png",
+      "viewerPath": "ships/mission-guard-scout.html",
+      "assetPath": "ships/mission-guard-scout.glb",
+      "sourceModelSha256": "b2b12705ff4a9a6ac2553ec6e07577fdfaeaea3afa4799be1d458459fc550c34",
+      "sourcePreviewSha256": "f50dbcd38e4ab14c181dba8a9330722f162592fa60b8f421a2ca470da913a352",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/62-eda-personal-quest.txt",
+        "outputs/102-advanced-encounter.txt",
+        "outputs/103-bridge-mission-script.txt",
+        "outputs/17-prologue-mission-script.txt"
+      ],
+      "metrics": {
+        "triangles": 27188
+      },
+      "status": "source-ready",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/mission-guard-scout.png",
+      "previousViewerPath": "../fleet-v2/ships/mission-guard-scout.html",
+      "sourceAssetPath": "../fleet-v2/ships/mission-guard-scout.glb"
+    },
+    {
+      "id": "mission-cult-purifier",
+      "name": "교단 정화선",
+      "shortName": "교단 정화선",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 4,
+      "faction": "마지막 숨 교단",
+      "description": "포탑 반환 사건의 잔해 도크에 접근하는 교단 함선. 정화라는 이름만으로 화염 무장을 확정하지 않음",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "기체별 악당 강화 외형",
+      "latest": true,
+      "previewPath": "previews/mission-cult-purifier.png",
+      "viewerPath": "ships/mission-cult-purifier.html",
+      "assetPath": "ships/mission-cult-purifier.glb",
+      "sourceModelSha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+      "sourcePreviewSha256": "da4075ddd3c7cc0c4b70eb540c234b41f9d0482f3b64e1e12e8b97cfbccff244",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/31-act3-main-quests.txt"
+      ],
+      "metrics": {
+        "triangles": 72764
+      },
+      "status": "asset-built",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/mission-cult-purifier.png",
+      "previousViewerPath": "../fleet-v2/ships/mission-cult-purifier.html",
+      "sourceAssetPath": "../fleet-v2/ships/mission-cult-purifier.glb",
+      "pipelineSha256": "251ec7b507e9b6d79bd3510c2ba6df28a520bf33ce93ddce22ecaecd79f2bf9b",
+      "sha256": "392a5be5de17ff99a9f23dfd67dbc281c25d1ed0a361f3e081b18fab94d4ba3d",
+      "bytes": 13161980,
+      "features": [
+        "거대한 심문 아치와 찢긴 흰 봉인 장막",
+        "좌우 대형 향로 탱크 열과 붉은 잿불",
+        "길게 늘어진 진홍 서약 천",
+        "선수의 가면형 방패와 집행 집게",
+        "비대칭 검은 압력 굴뚝과 황동 띠"
+      ],
+      "addedMeshes": 159,
+      "sourceClips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 17
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 17
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 17
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 17
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 17
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 17
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 17
+        }
+      ],
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "bounds": {
+        "min": [
+          -7.627124953571176,
+          -4.876890675751242,
+          -3.6878672044609133
+        ],
+        "max": [
+          6.626500129699707,
+          4.978309154510498,
+          3.6878672044609133
+        ],
+        "size": [
+          14.253625083270883,
+          9.85519983026174,
+          7.375734408921827
+        ],
+        "axisRatios": [
+          1,
+          0.6914170797033616,
+          0.5174637585759526
+        ]
+      },
+      "geometrySignature": "20cf7bf94adf0a028b2a2e804c5aff169a780f8fd28fae29d950b2a54dd0457b",
+      "gameplayIntegration": false
+    },
+    {
+      "id": "mission-ghost-artillery",
+      "name": "망령 포격선",
+      "shortName": "망령 포격선",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 5,
+      "faction": "이름 없는 함대",
+      "description": "왕의 시험에서 이동하며 포격하는 함선",
+      "context": "",
+      "detail": "",
+      "category": "mission-enemy-role",
+      "visual": "기체별 악당 강화 외형",
+      "latest": true,
+      "previewPath": "previews/mission-ghost-artillery.png",
+      "viewerPath": "ships/mission-ghost-artillery.html",
+      "assetPath": "ships/mission-ghost-artillery.glb",
+      "sourceModelSha256": "9904a65b67e7e2d4ac2da36825f4d68cf65a1bb2321edbe4e761b964866a8037",
+      "sourcePreviewSha256": "f6e76ca9c8df61e227d80e7501c2badf39f751f3f23863bc5571b040313476b4",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/31-act3-main-quests.txt"
+      ],
+      "metrics": {
+        "triangles": 54700
+      },
+      "status": "asset-built",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/mission-ghost-artillery.png",
+      "previousViewerPath": "../fleet-v2/ships/mission-ghost-artillery.html",
+      "sourceAssetPath": "../fleet-v2/ships/mission-ghost-artillery.glb",
+      "pipelineSha256": "251ec7b507e9b6d79bd3510c2ba6df28a520bf33ce93ddce22ecaecd79f2bf9b",
+      "sha256": "ea383b305351a2fb0672107d3883bec90418054fa3759d8c117991ee59c3f243",
+      "bytes": 12503444,
+      "features": [
+        "쥐가오리처럼 좌우로 크게 펼친 빈 늑골 날개",
+        "검은 파손천과 창백한 골조의 교차 면",
+        "선체를 관통하는 특대 척추 포신",
+        "장막 아래 푸른 혼등과 좁은 잔광 균열",
+        "극단적으로 긴 해골 창선수"
+      ],
+      "addedMeshes": 88,
+      "sourceClips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 17
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 17
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 17
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 17
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 17
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 17
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 17
+        }
+      ],
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "bounds": {
+        "min": [
+          -10.655234901833076,
+          -2.507649416622199,
+          -6.023060452530102
+        ],
+        "max": [
+          7.87217592616557,
+          4.725825084681172,
+          6.023060452530102
+        ],
+        "size": [
+          18.527410827998647,
+          7.233474501303371,
+          12.046120905060205
+        ],
+        "axisRatios": [
+          1,
+          0.3904201492834679,
+          0.6501783231824325
+        ]
+      },
+      "geometrySignature": "9b9d7f79e63670d8851b61126d4f466aa7318f47d55a74acf213ff7a644eeed9",
+      "gameplayIntegration": false
+    },
+    {
+      "id": "role-enemy-artillery",
+      "name": "일반 포격선 역할",
+      "shortName": "일반 포격선 역할",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 6,
+      "faction": "소속 미정",
+      "description": "인양선과 조합되는 포격선이라는 역할만 존재. 별도 함명·독자 선체는 미정",
+      "context": "",
+      "detail": "함명 · 독자 선체 미정",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/role-enemy-artillery.png",
+      "viewerPath": "ships/role-enemy-artillery.html",
+      "assetPath": "ships/role-enemy-artillery.glb",
+      "sourceModelSha256": "88690c94770cf0d841fc56043cee1397bdc8140e23ca9f297240664527d2f278",
+      "sourcePreviewSha256": "60d0aa9409c7f746839ae189cbb7247ea0f105bc18ea73129b2314772cff87a7",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt",
+        "outputs/25-enemy-ai-encounters.txt"
+      ],
+      "metrics": {
+        "triangles": 38164
+      },
+      "status": "source-ready",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/role-enemy-artillery.png",
+      "previousViewerPath": "../fleet-v2/ships/role-enemy-artillery.html",
+      "sourceAssetPath": "../fleet-v2/ships/role-enemy-artillery.glb"
+    },
+    {
+      "id": "role-enemy-defense",
+      "name": "일반 방어선 역할",
+      "shortName": "일반 방어선 역할",
+      "group": "mission",
+      "groupLabel": "임무 · 역할",
+      "index": 7,
+      "faction": "소속 미정",
+      "description": "정찰선과 조합되는 방어선이라는 역할만 존재. 봉쇄선 재사용 여부 미정",
+      "context": "",
+      "detail": "함명 · 독자 선체 미정",
+      "category": "mission-enemy-role",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/role-enemy-defense.png",
+      "viewerPath": "ships/role-enemy-defense.html",
+      "assetPath": "ships/role-enemy-defense.glb",
+      "sourceModelSha256": "914264be543cd2fdaee0e1a685c39f51e5b33cab396ccb4f12f1fd9b79b3da16",
+      "sourcePreviewSha256": "d1ba8bd7d879535209150b9b2777909b58c1aa17983df3845a437ce66bae0c48",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/09-enemies.txt"
+      ],
+      "metrics": {
+        "triangles": 40752
+      },
+      "status": "source-ready",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/role-enemy-defense.png",
+      "previousViewerPath": "../fleet-v2/ships/role-enemy-defense.html",
+      "sourceAssetPath": "../fleet-v2/ships/role-enemy-defense.glb"
+    },
+    {
+      "id": "mini-funeral-guard",
+      "name": "소형 장례 경비선",
+      "shortName": "소형 장례 경비선",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 1,
+      "faction": "마지막 숨 교단",
+      "description": "첫 공개 데모 후보의 미니보스. 본편 장례전함을 축소한 동일 보스로 합치지 않는다.",
+      "context": "",
+      "detail": "중간보스",
+      "category": "mini-boss",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/mini-funeral-guard.png",
+      "viewerPath": "ships/mini-funeral-guard.html",
+      "assetPath": "ships/mini-funeral-guard.glb",
+      "sourceModelSha256": "1cbe87cd77948a6b8f1e9638826b1e90e8435125c7ef4255762374895712e42d",
+      "sourcePreviewSha256": "b10a629af2cc4670b37a1228702003a705725f7f9339af2ce110dd03f62f29e3",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/97-visual-production-scope.txt"
+      ],
+      "metrics": {
+        "triangles": 42032
+      },
+      "status": "source-ready",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/mini-funeral-guard.png",
+      "previousViewerPath": "../fleet-v2/ships/mini-funeral-guard.html",
+      "sourceAssetPath": "../fleet-v2/ships/mini-funeral-guard.glb"
+    },
+    {
+      "id": "boss-bell-devourer",
+      "name": "종을 삼킨 자 — 장례전함",
+      "shortName": "종을 삼킨 자",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 2,
+      "faction": "마지막 숨 교단",
+      "description": "종항에서 훔친 큰 종이 선체 안에 매달린 첫 본편 보스. 종을 삼킨 자는 보스 조우명이다.",
+      "context": "",
+      "detail": "장례전함",
+      "category": "boss-vessel",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/boss-bell-devourer.png",
+      "viewerPath": "ships/boss-bell-devourer.html",
+      "assetPath": "ships/boss-bell-devourer.glb",
+      "sourceModelSha256": "e0eeb724714cc5364dc7334c1e5f0d66d3cffc970395dea6210b9873b82ce245",
+      "sourcePreviewSha256": "a87a2a8ed22cfc06dc7ede976aae483ec545e0eac6556a767d0665f8bc439ea9",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/10-first-boss.txt",
+        "outputs/23-act1-main-quests.txt",
+        "outputs/68-bell-boss-arena.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ],
+      "metrics": {
+        "triangles": 108764
+      },
+      "status": "delegated-readonly",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/boss-bell-devourer.png",
+      "previousViewerPath": "../fleet-v2/ships/boss-bell-devourer.html",
+      "sourceAssetPath": "../fleet-v2/ships/boss-bell-devourer.glb",
+      "productionNote": "Historical source candidate only; new art owned by chapter1-boss-review."
+    },
+    {
+      "id": "boss-shipyard-ribs",
+      "name": "거신의 늑골 — 살아 있는 조선소",
+      "shortName": "거신의 늑골",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 3,
+      "faction": "쇠갈비 연합·수석 조선공",
+      "description": "한 척의 비행선이 아닌 갈비뼈형 부유 조선소/전장 보스 시설.",
+      "context": "",
+      "detail": "살아 있는 조선소 · 시설",
+      "category": "boss-facility",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/boss-shipyard-ribs.png",
+      "viewerPath": "ships/boss-shipyard-ribs.html",
+      "assetPath": "ships/boss-shipyard-ribs.glb",
+      "sourceModelSha256": "e679afa86e3ce0ad2c3699cc239804e6cb6574e22ebef23b27e47587a00cde94",
+      "sourcePreviewSha256": "d18677c4bf99625aa0c83f0826d5142fcb1266b5aa201304bbbb6b4184bb5efa",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/14-living-shipyard-boss.txt",
+        "outputs/27-act2-main-quests.txt"
+      ],
+      "metrics": {
+        "triangles": 40288
+      },
+      "status": "source-ready",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/boss-shipyard-ribs.png",
+      "previousViewerPath": "../fleet-v2/ships/boss-shipyard-ribs.html",
+      "sourceAssetPath": "../fleet-v2/ships/boss-shipyard-ribs.glb"
+    },
+    {
+      "id": "boss-shipwright-command",
+      "name": "수석 조선공의 지휘함",
+      "shortName": "수석 조선공의 지휘함",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 4,
+      "faction": "쇠갈비 연합·수석 조선공",
+      "description": "외곽 발사 도크에서 크레인과 결합해 출구를 막는 지휘함. 거신의 늑골 시설 전체와 구분한다.",
+      "context": "",
+      "detail": "",
+      "category": "boss-vessel",
+      "visual": "함대 v2 외형",
+      "latest": false,
+      "previewPath": "previews/boss-shipwright-command.png",
+      "viewerPath": "ships/boss-shipwright-command.html",
+      "assetPath": "ships/boss-shipwright-command.glb",
+      "sourceModelSha256": "8516d86bbcea0acd155cc8ae50ee46943c8b89f8d81153129f017737688207ae",
+      "sourcePreviewSha256": "7140758052c159dd1673ad8585aaad59abd1de659d065e595ae26b45ac6a5536",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/14-living-shipyard-boss.txt",
+        "outputs/27-act2-main-quests.txt"
+      ],
+      "metrics": {
+        "triangles": 84708
+      },
+      "status": "source-ready",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/boss-shipwright-command.png",
+      "previousViewerPath": "../fleet-v2/ships/boss-shipwright-command.html",
+      "sourceAssetPath": "../fleet-v2/ships/boss-shipwright-command.glb"
+    },
+    {
+      "id": "boss-last-inhale",
+      "name": "마지막 들숨 — 원숨 순환 장치",
+      "shortName": "마지막 들숨",
+      "group": "boss",
+      "groupLabel": "보스 · 시설",
+      "index": 5,
+      "faction": "황궁·원숨",
+      "description": "황궁과 접합선이 연결된 원숨 순환 장치. 인간형 신이나 비행선으로 대체하지 않는다.",
+      "context": "",
+      "detail": "원숨 순환 장치 · 시설",
+      "category": "boss-facility",
+      "visual": "기체별 악당 강화 외형",
+      "latest": true,
+      "previewPath": "previews/boss-last-inhale.png",
+      "viewerPath": "ships/boss-last-inhale.html",
+      "assetPath": "ships/boss-last-inhale.glb",
+      "sourceModelSha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+      "sourcePreviewSha256": "0db5c4bb40c9dbda6a1b461bb6fad9c0f7677bbab287b696cc26623662cd9c9f",
+      "weakpoints": [],
+      "sources": [
+        "tools/fleet/catalog.json",
+        "outputs/43-final-boss-encounter.txt",
+        "outputs/35-act4-palace-truth.txt",
+        "outputs/96-final-departure-preparation.txt"
+      ],
+      "metrics": {
+        "triangles": 49784
+      },
+      "status": "asset-built",
+      "previousPreviewPath": "../fleet-comparison-v1/previews/boss-last-inhale.png",
+      "previousViewerPath": "../fleet-v2/ships/boss-last-inhale.html",
+      "sourceAssetPath": "../fleet-v2/ships/boss-last-inhale.glb",
+      "pipelineSha256": "251ec7b507e9b6d79bd3510c2ba6df28a520bf33ce93ddce22ecaecd79f2bf9b",
+      "sha256": "b29eb4d5455fe27bd91d8989a89f9666f55c0c6e20a46e3b8da3b81621585719",
+      "bytes": 11678176,
+      "features": [
+        "황궁의 검은 심장을 닮은 거대 봉인 구체",
+        "높이 솟은 3개의 황동 관 봉인탑",
+        "심장을 죄는 황동 갈비와 흰 봉합 띠",
+        "비스듬한 거대 왕관 고리",
+        "탑과 심장을 연결하는 육중한 굴곡 관",
+        "찢긴 흰 봉인 천과 진홍 리본",
+        "함선과 구별되는 저층 순환 고리와 부유 석재"
+      ],
+      "addedMeshes": 91,
+      "sourceClips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 12
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 12
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 12
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 12
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 12
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 12
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 12
+        }
+      ],
+      "observedClips": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "bounds": {
+        "min": [
+          -17.067045211791992,
+          -7.1035047969621194,
+          -16.354407045893268
+        ],
+        "max": [
+          18.09607679669557,
+          21.108750900125997,
+          16.587476999550475
+        ],
+        "size": [
+          35.16312200848756,
+          28.212255697088118,
+          32.94188404544374
+        ],
+        "axisRatios": [
+          1,
+          0.8023251089672394,
+          0.9368304679400292
+        ]
+      },
+      "geometrySignature": "dfdb13a5b015e9dbd086ed95ba5c445556d45fa869cbb4cbbc89d254f1d00c72",
+      "gameplayIntegration": false
+    }
+  ],
+  "productionWhitelist": [
+    "enemy-tax-cutter",
+    "mission-union-guard",
+    "mission-bridge-tug",
+    "mission-guard-scout",
+    "mission-cult-purifier",
+    "mission-ghost-artillery",
+    "role-enemy-artillery",
+    "role-enemy-defense",
+    "mini-funeral-guard",
+    "boss-shipyard-ribs",
+    "boss-shipwright-command",
+    "boss-last-inhale"
+  ],
+  "readOnlyBoss": "boss-bell-devourer"
+}

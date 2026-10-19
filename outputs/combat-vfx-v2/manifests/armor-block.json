@@ -1,0 +1,89 @@
+{
+  "id": "armor-block",
+  "original_id": "armor-block",
+  "order": 44,
+  "name_ko": "장갑 막음",
+  "name_en": "Armor Block",
+  "category": "defense-support",
+  "weapon_id": null,
+  "model": "assets/armor-block.glb",
+  "duration": 0.55,
+  "loop": false,
+  "purpose": "확정된 막음 반응을 일반 장갑 접촉보다 짧고 납작하게 보인다.",
+  "status": "residual_source_reviewed_render_pending",
+  "representative": false,
+  "placement_scale": 0.32,
+  "triangles": 1008,
+  "mesh_count": 4,
+  "animation_count": 1,
+  "bytes": 116360,
+  "sha256": "e82779236fe594050f6394a102ece92fe205a56fd0d206928544a248d56775e7",
+  "meshy_bases": [],
+  "runtime_features": [
+    "node extras.runtime_fade drives viewer opacity; standard GLB uses TRS alone"
+  ],
+  "source_type": "Local authored swept brush/fabric volumes and TRS",
+  "task_ids": [],
+  "new_paid_task_for_this_effect": false,
+  "axes": "+Y up, +Z forward, +Y impact surface normal",
+  "limits": [
+    "Art choreography prototype; runtime combat integration pending.",
+    "GLB embeds standardTRS only. Runtime opacity/outline/cel are separate browser features.",
+    "Fixed projectile movement belongs to preview clip; disable root translation when gameplay projectile owns motion.",
+    "Only representative6 initially receives direct visual review; catalog status records later checks."
+  ],
+  "visual_reviewed": false,
+  "review_scope": "File/TRS checks only; visual review pending.",
+  "verification": {
+    "structure": "verification/structure.json",
+    "browser": null
+  },
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/core.cjs",
+      "bytes": 9366,
+      "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+    },
+    {
+      "path": "tools/combat-vfx-v2/generate.cjs",
+      "bytes": 4019,
+      "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/secondary.cjs",
+      "bytes": 15360,
+      "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+    }
+  ],
+  "output_file": {
+    "path": "outputs/combat-vfx-v2/assets/armor-block.glb",
+    "bytes": 116360,
+    "sha256": "e82779236fe594050f6394a102ece92fe205a56fd0d206928544a248d56775e7"
+  },
+  "art_preflight_review": {
+    "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+    "status": "source_binary_reviewed_new_render_required",
+    "changes": "No geometry/time/scale change: evidence is insufficient for an art-driven scale adjustment without new renders.",
+    "concerns": [
+      "한 chevron은 매우 낮은높이0.13이라 게임크기에서 작은 더블화살표로 보일 수 있다.",
+      "막음 판정이 없는 일반 armor-hit를 이효과로 대체하지 않는다."
+    ],
+    "expected_observations": [
+      "실제block이벤트에서 공격폭발/보호막과 다른 짧은맞섬이 읽힌다.",
+      "원점의 +Y법선을 맞춰 선체안으로 눕지 않고 과도한차폐면이 없는지 확인한다."
+    ],
+    "loop_boundary_sample_seconds": [],
+    "sample_times_seconds": [
+      0.02475,
+      0.1265,
+      0.264,
+      0.3575
+    ],
+    "current_output": {
+      "path": "outputs/combat-vfx-v2/assets/armor-block.glb",
+      "bytes": 116360,
+      "sha256": "e82779236fe594050f6394a102ece92fe205a56fd0d206928544a248d56775e7"
+    },
+    "scope": "Source/binary review only; queued fresh renders are not completed art approval."
+  }
+}

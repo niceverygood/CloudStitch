@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-19",
+  "contract": {
+    "path": "docs/SHIP_WEAPON_MOUNTING.json",
+    "sha256": "cad9db05b14e956c31af02fdbb6d380d12bbc62f5071c02cad4eba888e2d418c"
+  },
+  "sources": [
+    {
+      "path": "outputs/ship-states-v1/ranks-1to5-v2/mobility-r5.glb",
+      "bytes": 5039104,
+      "sha256": "7b73b0500c382d689ed8e395595343c89582bb098dbffdf94199e099ac97acbc"
+    },
+    {
+      "path": "outputs/grounded-weapons-v1/assets/03-repeating-crossbow.glb",
+      "bytes": 2745896,
+      "sha256": "c757745a51cebbf053e40d9e3956be4639f848c79b6589891d55b73eefd4b277"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-1to5-v2/artillery-r5.glb",
+      "bytes": 3171964,
+      "sha256": "3aa2f9091edc07f5c8798599300a388b2df00dbea93f48138fc35e14153fcc98"
+    },
+    {
+      "path": "outputs/grounded-weapons-v2/assets/13-comet-rocket-rack.glb",
+      "bytes": 4174696,
+      "sha256": "8f09f6693ba1bd5f4b5f5dc175c03a57f79852933e574bee7ea7485ed4f0f059"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-1to5-v2/salvage-r5.glb",
+      "bytes": 3336532,
+      "sha256": "a65659468b40062765ad0035096029f76bbcf711087ebf9b86006eabcf8cf77b"
+    },
+    {
+      "path": "outputs/grounded-weapons-v1/assets/04-harpoon-winch.glb",
+      "bytes": 3095440,
+      "sha256": "b90101534883fa6ae24864dc5599abe69ad9050a726254237814f6678bfe092a"
+    }
+  ],
+  "delivery": [
+    {
+      "id": "mobility",
+      "path": "mobility-assembled.glb",
+      "bytes": 6928508,
+      "sha256": "d488cb7c29849cf3857e876cb1e8ce46e88995ab67755ce0a20187eb4ce34b04"
+    },
+    {
+      "id": "artillery",
+      "path": "artillery-assembled.glb",
+      "bytes": 5833076,
+      "sha256": "0b8768d2ce660ef237b933b8be30b3b9247ef3e24171c334a0c821408c13cb14"
+    },
+    {
+      "id": "salvage",
+      "path": "salvage-assembled.glb",
+      "bytes": 5687900,
+      "sha256": "2b11cd365f8f063262dc13c186bfb9b49780bc042b672dd234de8b53623850aa"
+    }
+  ],
+  "viewer_sha256": "5fab5cef4c1832dad16fb2808265fc21548292824ac5586b9eb5df3aab82c19f"
+}

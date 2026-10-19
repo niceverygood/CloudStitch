@@ -1,0 +1,16 @@
+.camera-panel{position:absolute;z-index:7;right:24px;bottom:100px;width:355px;padding:11px 12px;pointer-events:auto;}
+.camera-panel-heading{display:flex;align-items:center;gap:10px;font-size:11px;margin-bottom:8px;}
+.camera-panel-heading>span{color:var(--soft);font-size:9px;}
+#compare-button{margin-left:auto;border:0;border-radius:12px;padding:5px 9px;background:#e1e7d3;font-size:10px;}
+.camera-options{display:flex;gap:5px;}
+.camera-options button{flex:1;border:1px solid #c7c9ad;background:#faf6e5;border-radius:5px;padding:8px 3px;font-size:10px;white-space:nowrap;}
+.camera-options button[aria-pressed="true"]{background:#376e62;border-color:#376e62;color:#fff6de;}
+.camera-options small{font-size:8px;opacity:.7;}
+#camera-description{margin-top:8px;color:#6d7d68;font-size:10px;line-height:1.5;}
+.compare-notice{display:none;font-size:10px;margin-top:6px;color:#a16c45;}
+.camera-comparing .compare-notice{display:block;}
+.camera-comparing #pause-screen{display:none!important;}
+.camera-comparing .flight-actions,.camera-comparing .touch-pad,.camera-comparing .view-help,.camera-comparing .target-arrow-label{visibility:hidden;}
+.app:not([data-phase="sailing"]) #compare-button{visibility:hidden;}
+@media(max-width:900px){.camera-panel{right:12px;bottom:124px;width:calc(100% - 24px);max-width:355px;}.camera-panel-heading{margin-bottom:5px;}.camera-options button{padding:7px 2px;}#camera-description{font-size:9px;margin-top:5px;}.target-arrow-label{bottom:245px;}.touch-pad{bottom:245px;}}
+@media(max-width:900px){.camera-comparing .camera-panel{bottom:24px;}}

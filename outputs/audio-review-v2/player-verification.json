@@ -1,0 +1,239 @@
+{
+  "version": "audio-review-v2-player-verification-1",
+  "createdAt": "2026-10-18T09:01:10.341Z",
+  "passed": true,
+  "checksPassed": 32,
+  "checksFailed": 0,
+  "checks": [
+    {
+      "name": "pure module import leaves DOM, browser and network untouched",
+      "passed": true,
+      "evidence": "Module boot is guarded by typeof document; no browser is created."
+    },
+    {
+      "name": "settings recover malformed input and discard unknown keys",
+      "passed": true,
+      "evidence": {
+        "clean": {
+          "master": 1,
+          "sfx": 0,
+          "ambience": 0.3,
+          "mute": false,
+          "mono": false,
+          "lowDynamic": false
+        },
+        "valid": {
+          "master": 0.2,
+          "sfx": 0.3,
+          "ambience": 0.4,
+          "mute": true,
+          "mono": true,
+          "lowDynamic": true
+        }
+      }
+    },
+    {
+      "name": "safeAssetFile accepts local audio and blocks remote/traversal/encoded paths",
+      "passed": true,
+      "evidence": "3 local fixtures accepted; 13 unsafe/non-audio fixtures rejected."
+    },
+    {
+      "name": "review JSON valid schema/version/hash preserves decisions without prototypes",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "review JSON rejects malformed root/schema/version/decisions",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "review JSON rejects unknown/duplicate/prototype IDs and invalid decisions",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "review JSON enforces note length/type and rejects changed audio hash",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "measureBuffer reports fixture peak/RMS/seam and rejects nonfinite samples",
+      "passed": true,
+      "evidence": {
+        "duration": 0.2,
+        "sampleRate": 8000,
+        "channels": 2,
+        "frames": 1600,
+        "peak": 1.399999976158142,
+        "rms": 0.81918779986668,
+        "firstAbs": 0.16886892914772034,
+        "lastAbs": 1.3952687978744507,
+        "seamDelta": 1.3952687978744507,
+        "head10msPeak": 1.3991917371749878,
+        "tail10msPeak": 1.3999733924865723,
+        "finite": true
+      }
+    },
+    {
+      "name": "normalization caps fixture at 0.7, caches variants and preserves original",
+      "passed": true,
+      "evidence": {
+        "stereoPeak": 0.699999988079071,
+        "monoPeak": 0.699999988079071
+      }
+    },
+    {
+      "name": "silent audio and fully phase-cancelled mono do not start sources",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "locked play/playMany drop requests without fetch/context/backlog",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "decode pending stopAll invalidates old work and permits only new explicit play",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "decode pending stopAsset cancels selected asset only",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "decode pending group stop cancels ambience but preserves unrelated SFX",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "hidden tab cancels pending audio, suspends and never auto-replays on return",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "concurrent same-loop decode requests share fetch/cache and start once",
+      "passed": true,
+      "evidence": {
+        "playRequests": 122,
+        "fetches": 1,
+        "nativeSourcesMocked": 1
+      }
+    },
+    {
+      "name": "lower priority cannot replace three critical SFX",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "critical warning replaces oldest lower priority cue at logical group cap",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "rapid repeated SFX stay at three logical voices and twelve bounded release tails",
+      "passed": true,
+      "evidence": {
+        "requests": 100,
+        "logicalHigh": 3,
+        "releaseHigh": 12,
+        "physicalReleaseTailsAreSeparate": true
+      }
+    },
+    {
+      "name": "ambience has a separate two-loop cap and group stop releases it",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "playMany starts at most three cues on the same mock audio time",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "stopAll cancels an awaiting three-cue group before any source starts",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "six-shot audition uses a finite mixed fixture buffer capped at 0.7",
+      "passed": true,
+      "evidence": {
+        "mixedDuration": 1.3,
+        "peak": 0.699999988079071,
+        "sourceCount": 1,
+        "timing": "Preview-only 0.22s offsets, not authoritative gameplay timing."
+      }
+    },
+    {
+      "name": "mute stops active/pending audio and unmute does not replay backlog",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "mono changes cancel active/pending audio and next explicit play uses mono",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "volume/low-dynamic settings update buses/compressor without new sources",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "failed fetch/decode clears failed cache and pending count for explicit retry",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "dispose cancels pending decode and clears caches, voices and resources",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "dispose wins pending unlock/resume and prevents source creation",
+      "passed": true,
+      "evidence": "Mock close is terminal, matching AudioContext closed-state contract; no hardware/browser race was measured."
+    },
+    {
+      "name": "dispose clears active loops and faded one-shot tails once",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "whenIdle waits pending/one-shot work, ignores deliberate loops and times out boundedly",
+      "passed": true,
+      "evidence": "Idle means no pending request/non-loop logical voice; intentional loops and short releasing fade tails are excluded."
+    },
+    {
+      "name": "inspectAll mock decode produces no sources and release option drops idle cache",
+      "passed": true,
+      "evidence": "Mock PCM metrics only; generated MP3 files were not decoded."
+    }
+  ],
+  "source": {
+    "path": "tools/audio/review-v2/review.mjs",
+    "bytes": 42962,
+    "sha256": "5f05996a6a760388ce918ec892b8770106db07bedcbe4acc355d1bf8f726f03e"
+  },
+  "method": "Node public exports + in-memory fake AudioContext, fetch responses and synthetic PCM fixtures. Scheduling/lifecycle validation only.",
+  "nativeAudioContextUsed": false,
+  "browserLaunched": false,
+  "networkRequests": 0,
+  "generatedAssetsDecoded": 0,
+  "humanListeningPerformed": false,
+  "notPerformed": [
+    "Native Web Audio/MP3 decoding/playback and runtime network capture",
+    "Actual generated-file PCM peak/RMS/seam/silence/clipping measurements",
+    "Human listening, mono/headphones, three-cue perceptual identification and long-loop comfort",
+    "DOM interactions/localStorage restrictions/import download UX/mobile layout",
+    "Gameplay installation or authoritative event/command-result hooks"
+  ],
+  "notes": [
+    "Voice caps count admitted logical voices. Up to twelve bounded fade release tails are tracked separately.",
+    "Fake resume never reopens a closed context; this test verifies cancellation/control state, not browser hardware races.",
+    "whenIdle intentionally excludes active loops and short releasing fade tails."
+  ]
+}

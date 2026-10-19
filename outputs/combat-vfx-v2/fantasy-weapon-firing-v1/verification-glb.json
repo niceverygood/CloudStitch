@@ -1,0 +1,1386 @@
+{
+  "passed": true,
+  "scope": "24 official glTF validations; actual geometry/animation reload and pose sampling; browser separately validates full embedded texture renders",
+  "items": [
+    {
+      "id": "classic-01-machine-gun",
+      "clips": 1,
+      "tracks": 212,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "NODE_MATRIX_DEFAULT",
+            "message": "Do not specify default transform matrix.",
+            "severity": 2,
+            "pointer": "/nodes/0/matrix"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/1"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "6a964a30a006b14ef5b503be8cd2e4d0f26d5f8116077ccdd0596a810f544529"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "9eff9d4dc7212993799ddaf52f7daccb381b8647dd38a9fccdb4b31fd2789c6a"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "b395d322172aba7226af3bb39a08a57d3822eb4ef65f182d4b319ca7c953a380"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "c3991fa2f3eafdb204b25de0940eabdb212079983de4ab4e3490c206171a9165"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "9ef96acfc583a571feabdccf5520636c754bca690d2bf465d5c851b63bb667e7"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "1d9ca187e76622ec2389b925061ace8cbdfb3ef310652dde23c71487873c57f1"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "6a964a30a006b14ef5b503be8cd2e4d0f26d5f8116077ccdd0596a810f544529"
+        }
+      ]
+    },
+    {
+      "id": "classic-02-deck-cannon",
+      "clips": 1,
+      "tracks": 44,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "NODE_MATRIX_DEFAULT",
+            "message": "Do not specify default transform matrix.",
+            "severity": 2,
+            "pointer": "/nodes/0/matrix"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/1"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "09adc84714d30c548143d7bad2d3f259a0be75685df78222cccd173b03b5fb71"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "d03e779339cea1715a98996bd9d3d9780461694be9feacdfe4ace06db1871277"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "4bbb32b18bb5f2996bd3f3ef50b4b9c9b427c775842cdaf2a4938a721f517077"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "427c74a316b2a90afa469d2e31dfdda95cb5b3df7262cd052c0a77e37206700d"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "d89175b9b08e0ffb6f5db15c66e96ec31636a51aa9a18d15b3ebd94f88d6ad5e"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "2f8fe91b9c46bbebc3dcf2f9d598ff0cd04608569292bc62eb7a81731abfc461"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "09adc84714d30c548143d7bad2d3f259a0be75685df78222cccd173b03b5fb71"
+        }
+      ]
+    },
+    {
+      "id": "classic-03-mortar",
+      "clips": 1,
+      "tracks": 44,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "NODE_MATRIX_DEFAULT",
+            "message": "Do not specify default transform matrix.",
+            "severity": 2,
+            "pointer": "/nodes/0/matrix"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/1"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "3f6ba92af8670f3720ae198fb2e0ae37cf4010f45176944ece455c5ab3995b67"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "f64d9829ba72c818c74031d27004947e6ad426d333e43e5191aa3ad2352c7ab1"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "5f1320544a604bab500e230e2e2aa469c0dd2186b4e408485c734af259c1436c"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "64d2e723f8a5d27d1994c619955d161a4bd54a764bf6ffd07680ded4928aa369"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "7268597c52eb19d58badb3f9099c68a8e6bfbd9f1bbe124e5065f520482eee51"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "6afed1a29ed1815cd925fd46b62b225cf4880f0ea7ff8ce11c67bf893aaf047f"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "3f6ba92af8670f3720ae198fb2e0ae37cf4010f45176944ece455c5ab3995b67"
+        }
+      ]
+    },
+    {
+      "id": "classic-04-harpoon",
+      "clips": 1,
+      "tracks": 38,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "NODE_MATRIX_DEFAULT",
+            "message": "Do not specify default transform matrix.",
+            "severity": 2,
+            "pointer": "/nodes/0/matrix"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/1"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "27046d4849884b45a5d4b3f61236abb49160819b3059995accc0966e0bd9d1d4"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "6252844280134398ecfdfe33b78092c216170a32c459ebb7e4fa3fec6c4ad2fe"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "9017c659803ba40583cc1a46f64cc977aac40a2d80bd96e949e788164305e5ed"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "9ef4e8632c7546245a13d7d295e01a30869e9ccf48a893ca21e79e4035162525"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "e3dac6f7de95aacaad6020cb2e11062a6b0e0b9ac6a71bb0e0fd44f5e7cc50ed"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "ff71c8a1651a3566697eaab31931bcf46fd9373bd913f9a4ff182cdef0110ced"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "27046d4849884b45a5d4b3f61236abb49160819b3059995accc0966e0bd9d1d4"
+        }
+      ]
+    },
+    {
+      "id": "classic-05-chain-shot",
+      "clips": 1,
+      "tracks": 45,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "NODE_MATRIX_DEFAULT",
+            "message": "Do not specify default transform matrix.",
+            "severity": 2,
+            "pointer": "/nodes/0/matrix"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/2"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/1"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "de68f0fc91bdb97c10f936300052bebd7dff852969f129439eb58fe4df553993"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "503d0a44773cde1ba2149bb942eed077ecced979f708f227597cdc64a5641290"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "0dfd928fea2c9cacf3de14806c317d44a85eab2ea799e48cbe6c2694aec124c3"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "dcfc8650a3d62b3101c072c5a2c2f3b64e9a99a553aadc2adc18ba654e880857"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "afd34a02e4237cd88fa789aec0dc9e8020afd480969b3b5f796550f8714463ea"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "5712024372340f50cfbcceea14e260cca689c6179707cb243c53c8a7a0595837"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "de68f0fc91bdb97c10f936300052bebd7dff852969f129439eb58fe4df553993"
+        }
+      ]
+    },
+    {
+      "id": "classic-06-flamethrower",
+      "clips": 1,
+      "tracks": 64,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "NODE_MATRIX_DEFAULT",
+            "message": "Do not specify default transform matrix.",
+            "severity": 2,
+            "pointer": "/nodes/0/matrix"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/1"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "aabd5b5d76165822ba0ca314ec182018cb44dab672fb908adaeff55911557816"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "85527f99246826cfd46db35d5cbd1df7ca8188ef8f09a3029a4003939bb7f935"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "903d3d17869e2b332a7653c489a84d1c1357e07f0915b0d6ec0ecad789c7ca87"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "154d1305852763cb0585d352650150b0963ea604d414ea042d2e830e5ff2fc3e"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "5f9fcd9f41839d0118e85da4bc3852edad43acdd62262e9f15a25518cc391e0b"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "d459f9231becb94d9b1584c8a51187e46b7ed548fa935950fae98b016d10147d"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "aabd5b5d76165822ba0ca314ec182018cb44dab672fb908adaeff55911557816"
+        }
+      ]
+    },
+    {
+      "id": "new-01-capacitor-tower",
+      "clips": 1,
+      "tracks": 74,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "eea91727ab8aa15f9685ff232bf2595cfcc6d9a2f73f613338c2cc979a51f2de"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "d9cfef051d78e3931dc34a219eec2aa8abfcce64912a1dc4d2000ead8be21567"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "36acedbb215655d8fbc4ba0eb94f3f7ddfc1f0fe839def276fffc9e60283fea9"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "07fb7487707fb77358fb194022aeb0485a0bef73543be9d69425831b0aa75e18"
+        },
+        {
+          "time": 0.87,
+          "finite": true,
+          "poseHash": "b57f658a6c065488420ae656d7e154e4ce247b7d6577538b5b28a4fd8921a7f8"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "63ded60f7005e3437099a3d6e1f2eb494b5f3c363b9bb282018d421acc210d1d"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "eea91727ab8aa15f9685ff232bf2595cfcc6d9a2f73f613338c2cc979a51f2de"
+        }
+      ]
+    },
+    {
+      "id": "new-02-deck-greatbow",
+      "clips": 1,
+      "tracks": 37,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "e53e07b8da99a96c7eacd89000f811e9bd5e8095a9e515f3256dbaac570a6687"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "da88af3aa0e2ab74fb95b9307eca0133274e7547c7a79bc6cc596a0545b82b4d"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "78d2bbcc4dbd5a96e388ae4a69b777da8e3e6de53d95fd88782f08c311fcbfaf"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "4ce6ef83c1157443bc96f9a0123d330e93fc6706e74d2d2b031661dc841fa7f9"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "7349458ca1512f4fd70aba147f70a56704cc18b068a5751b79754e28fb6744de"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "1681978beaf1990fb93a82eba4d8e9e4e072a7d8df5231af7650f0560f23ebac"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "e53e07b8da99a96c7eacd89000f811e9bd5e8095a9e515f3256dbaac570a6687"
+        }
+      ]
+    },
+    {
+      "id": "new-03-repeating-crossbow",
+      "clips": 1,
+      "tracks": 104,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "042e07ca0feb27f91c48a41ff8fb94b0c4c77d0d44cffe30089b748925800e48"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "04dee97d299c035912d668cb1d9cf83cda1fb944c6120f37ff976b032e7c9424"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "26ba1fed8c6ce921ef581f17b0814992d014da2f1be33c24925a49e602c6533a"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "8eb0460363f6a4251c64781f2b862102c49f1c101791ca12adb1c50ffa0f4994"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "a971e5198304cdb7913a84184fa7e4e9ebc3304e03770f7302ed34d88fcd7f12"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "627b42f630778601ff0f21f539a6ba6e4ed3d54b115af531226cc9bc8412db15"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "042e07ca0feb27f91c48a41ff8fb94b0c4c77d0d44cffe30089b748925800e48"
+        }
+      ]
+    },
+    {
+      "id": "new-04-harpoon-winch",
+      "clips": 1,
+      "tracks": 39,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "2bc679617df692e7ed3b529444825da9e1c930f12eeda1e7c1cd0b2e43c18988"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "b022d183631f6a18151a7ec9e7f55dd62835ab75dbd5e4a9c4572f5a12095c65"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "f6debcd644c9a23f747c372224fc5310a46a6f6986b9ce4f1c988772ec805de6"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "49b1e9d80f104fbd2b8cc1a6a5a0e9b622254f462cff01f51abe84b643a57c18"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "0fdd9b742f68b90fc4b5a23f6ccd95f64f22385faa5e05c3e75c2af55776f595"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "e456d66b88d76428452f8302393ce593ac380070c4ce45d4420071a539a0cae4"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "ef21f860fd9d5a16a897ece6ef5c7c68e325ab368dafaafcf53618a0580039a4"
+        }
+      ]
+    },
+    {
+      "id": "new-05-small-catapult",
+      "clips": 1,
+      "tracks": 44,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "df923384c2af6a75b708cd3e509eea9a498faa1ec7492baf70decde8d174415e"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "98759e0a2b4b4b217ce0f08f22bd9d7ebfb568b199bc235005a1c9536d07fc8e"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "7442f2dada461f4177a2ec0a72d32c35e1e785b9d0c8b9e2f01a1abaddf3cae0"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "e9a5276c01a024e184de06f042f36f845037b8ec0566e472828d6a5fdd073135"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "1d3e85430c08d31dcd9f9d2d36b4a73d10b228bf9f52d0f6c88f6f3e507dbc4b"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "37e1410b5ea36aee2f982fc0f7f181dd83ee3cde9f03076a1cfc1bb775d8c4f4"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "df923384c2af6a75b708cd3e509eea9a498faa1ec7492baf70decde8d174415e"
+        }
+      ]
+    },
+    {
+      "id": "new-06-net-launcher",
+      "clips": 1,
+      "tracks": 3,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/textures/0"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "d145ab3966469faf2a0e97a0e548024735df174deb6005e30c9b73655e4960f9"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "d145ab3966469faf2a0e97a0e548024735df174deb6005e30c9b73655e4960f9"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "ebecab5da28816009d427ed93bf8eac0f16a2f19663eefa3f46fba22658bdf61"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "02554447c7599bfca21f8b12d2f3308010760c9c2607d12768fce6c82e9cb8ae"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "a45337752984d69b3649c3c0b4f14659b57a54440fbf702ab07b7ccb82b966df"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "37e9da7247d0af4ffbd04220dcbf0b17a866867f933814a0cd6164d14ffc595b"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "d145ab3966469faf2a0e97a0e548024735df174deb6005e30c9b73655e4960f9"
+        }
+      ]
+    },
+    {
+      "id": "new-07-folding-shield",
+      "clips": 1,
+      "tracks": 8,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "NODE_EMPTY",
+            "message": "Empty node encountered.",
+            "severity": 2,
+            "pointer": "/nodes/299"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "2a56ffaa94a3ccb4ddf61138c0e33ce9171ef8e621f83ebf1566981c1055a228"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "45193e6b41b762ce43e3e70918ddb5a01453a96eac8140a13eb2481869992f3a"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "2a2254bd8fd053ae64160b9e7f506d2f5bed6dd8f4cd98239891d285064ee858"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "032f1fa7f7b46dfe758c32d2654b3c388f7a2d2f4523cbc1e6f5cf9b7d601a63"
+        },
+        {
+          "time": 1.3199999999999998,
+          "finite": true,
+          "poseHash": "89f4cad67b0a241fb2a4992a70c21f772f509ed9f8d49a43539f1d334b0bd959"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "c67ca245936c38c1c093df9144aeeed37a02dc1110e24007e9ee2b9d1fece08b"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "2a56ffaa94a3ccb4ddf61138c0e33ce9171ef8e621f83ebf1566981c1055a228"
+        }
+      ]
+    },
+    {
+      "id": "new-08-steam-projector",
+      "clips": 1,
+      "tracks": 63,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "4ffdb8936b0911983834372541a40ee8f0b3b38508462c11240a521dae5cc3c4"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "f343d0889ae281da764753650e285950cbc776cc2d8388bcf272c5226be04777"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "ab62eb7387f942e3740ae1de51cff19282f5ebc112f675b57d107d6511a8324b"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "10b52e8ba65dec7b49a0643efd495d45cb4f9e6ecaddef5c7041d0cc204385a8"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "7a2045cf31cfd692bca6c6798d0499c9eaf85d61871bbe031b304caaa318449c"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "89969450466c0264a29135fe4e02506f1e8cdbd29b7638d1208191972ddb2bab"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "4ffdb8936b0911983834372541a40ee8f0b3b38508462c11240a521dae5cc3c4"
+        }
+      ]
+    },
+    {
+      "id": "new-09-side-circular-saw",
+      "clips": 1,
+      "tracks": 35,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "d2fd8c311fdf54cfa1b12f28cb76f3f829cfd24f83942d21deda0dd29d2772d0"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "6199e9a323ca1d0ccc423f296f00ca2171ca18cb095c158371a56cb325446368"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "2c31e7e4c6f5f6d37638ae6e35ae1f3c46bafa99954abc48e84e03f3038e2dcd"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "75539aeb5898e79318e994179eb02f5fc97e6850b52fba480178e49d4f8d2a72"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "0384746e3768c5b06b2e4c01995a4234c29b7b7c7a01f3146822f64113ce477f"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "cc1d5dcf8c7503fdc35f0b436639bec2c0a0bdb56bd63fb0c32201f73724c176"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "6b3f08e0fb74458718069699ad32702868eb6b6180328df8a5ff0cab69a84913"
+        }
+      ]
+    },
+    {
+      "id": "new-10-chain-flail",
+      "clips": 1,
+      "tracks": 34,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "681d97d5d70187b29a8353de79e04692c7af5b3bf1df25d565c881f1bfa2d8d8"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "18be7f759d2ffd8f92886ee5bb48faef23507aee20c968f01d7abed0bdda2820"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "cffcfc3630893eb682f6d0eb03b7a916834060c0ca4df9dba260ed7669302cbb"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "963c80c0c16531ca6f7404c40a47f8d2d60e2914499aaa9b7e0ac71ceb54a78f"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "c98f2ee4e0e4241d61c1a5269291680a46d5bec90ef94e02935f87f1fdd31711"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "26e760b5159c67a446bad50a14fe7f1e834127007ce2010b85fd8ebc60d3d85f"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "681d97d5d70187b29a8353de79e04692c7af5b3bf1df25d565c881f1bfa2d8d8"
+        }
+      ]
+    },
+    {
+      "id": "new-11-pneumatic-fan",
+      "clips": 1,
+      "tracks": 51,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "7c50ed8ca7398446420aa82dbc393ccc2ef5fa898f32f5d2b818171eecd92601"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "262cdccd6925b1590ddd3f31089fff015dd289203d87283c9b871715c3f6077a"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "282a3a0c89c301770b9fa7d5398c64e3fae02dce91ad3db7a3f5bb649652decb"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "1535a5fb47d6984246ca3474530595551f7bcec631694857d0f121404bc8d04e"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "3da1caec662855f8e6a3d6fedcd7578bdb75ba3aef86f295661672553ca35bf9"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "3b4957ec3456495f471e4c2d67e4943a66bb38f6a62e8810d14f72f7c6c13a7c"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "fec811d14f6ea7658f84bc93eeb12df4fdd2aa3f70ae5cb4d550aa7588c47df4"
+        }
+      ]
+    },
+    {
+      "id": "new-12-folding-ram",
+      "clips": 1,
+      "tracks": 34,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "b84654b959d5252df3c423b820c3fc7211c0f1ced97325c41884707e0ff7594b"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "b701958605f56f53965e2dbff404c045e4dec468b33f0167a3068653beaed273"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "98b1da7d2c9ebc983cdeb3e7d30b1f4b230433f20af3ff02a058d0faf21e4bcb"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "d6ad66e24a00d82bd7ea967208da62a6f434870026fe6e9f5de5108c03d7fc4b"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "ed389e166680d89ababdc38e509431fcf4443215060c1c31e70a91739019f2e8"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "b4c51503013f1eb939c570b1be8c1b5488f49edb42c0d6dcfa8295fa62f3f9d9"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "b84654b959d5252df3c423b820c3fc7211c0f1ced97325c41884707e0ff7594b"
+        }
+      ]
+    },
+    {
+      "id": "extra-13-comet-rocket-rack",
+      "clips": 1,
+      "tracks": 134,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "e41cb19bbfc0c82f76446bdc8544396005d05f0d861e66241b0a7da56b07705e"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "cf37350550dc8aab5c7b8fac20ff93941f4bf2f3f7504865aa2e735c7db52098"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "b41de25bc494580d1d2b3c0562b288bc16154831ef9d3bc0f94aa5e705ee367a"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "584d33937fd0b6e30fa6a17c8ca6331b81aacebcf6f0ef06a9e78cf1f81d6192"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "16a62d2816746bcef8512906c4f75f00f69f4889ff393841a79403b0b3c71440"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "ccd628eb9d39387c53969d28b286377a43e0de8badcc5c9b1c8438f502f705c1"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "e41cb19bbfc0c82f76446bdc8544396005d05f0d861e66241b0a7da56b07705e"
+        }
+      ]
+    },
+    {
+      "id": "extra-14-disc-slinger",
+      "clips": 1,
+      "tracks": 45,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "7d93490ae95ce05d59b97a8f5afec4a0f90591cbb72e96049e646752fe8ffd04"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "99f0d2e8d8b55233ca4554bbbd202441ecc08f7235276e8d32ca9a0cc74be37e"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "753ef97fd165ffbc4922a8c723c3c8349a1db9b7a563bc54ea624ef3ce563798"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "31233f37bbe1e101fb8b6fa21109dc08e557b5f0b52136e96c80ef5ce3cb4ff3"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "71ad50c543a4ea05bbca35538fc6d5d5b5ecc4310e43720eff941e94a883eda6"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "30ded335290428a53e5966396554eaa241193b9763aca07964ba77c60f5e3537"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "7d93490ae95ce05d59b97a8f5afec4a0f90591cbb72e96049e646752fe8ffd04"
+        }
+      ]
+    },
+    {
+      "id": "extra-15-piston-hammer",
+      "clips": 1,
+      "tracks": 34,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "5fea5ef8293ebfc6312415a2ee707f4664d37cd784faa7df52e95da3dfd724fd"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "dd9adbcdbcae683559ef6b6da31eae5a67b745bbb479696b827f261cc09edc73"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "f2f207576cf6f7b31cc361b12e27bd3b9e9302e9fce825a6c4c765826954ecf5"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "777dc6ffd3734e2e613118070453fc163a9dc2735d67e0760809d58e9eff3dcd"
+        },
+        {
+          "time": 1.2200000000000002,
+          "finite": true,
+          "poseHash": "6173aa27548da28a4461e016268e86d7031928b76d1ed0763adabffe9b3df7d8"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "93aa717953d2f36afad322ec07b3b5e8bd42e49e902884b2b102997dbe3f188b"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "5fea5ef8293ebfc6312415a2ee707f4664d37cd784faa7df52e95da3dfd724fd"
+        }
+      ]
+    },
+    {
+      "id": "extra-16-drill-lance",
+      "clips": 1,
+      "tracks": 35,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "d91ed0c66d4ea6a62e637e153aa2639ce683f42a0820e0ea7f32882d9169d7ac"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "376c0d73b885ea3ab14dd64508197858112e9124eea63aba508c093fc063bd58"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "4c40ce5d830e447a3477ef3f47b2243fd1d13ab63c18729d72a688ae709fbbd3"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "e49dfb7880097f7adb8948f77cf2fa74804bd5925edc356fe3a808e4f352164a"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "6fd93942d6d1aa8bbe78746317b86380b8d3272b46cb3a5126255e1f363510aa"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "023bf0dc47bea5f9698f19308ef21e63bc3d5463bab000608f957df603d0fde8"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "ba2cc06b0dbaea2d8d4d8597cbb8ca8aeb727d409a8d8ecd70f301ddc8345664"
+        }
+      ]
+    },
+    {
+      "id": "extra-17-bomb-dropper",
+      "clips": 1,
+      "tracks": 34,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "467d107afb0a644d487acfcb67e2141610700f37eaee8f80328f82e23902d995"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "556429c9c5adf3908291c87df41f8a8e54bf55b4ab6d6b473ebaa0fdb40238ad"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "6bb81cc3382e2d0e362d42cf8c32cd510a51e5fc055531b2bb45fcca39b24068"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "140bd8e6da1efe6f5533ad99ea6078cf80fa64dde98495090f7dae13fecbeb27"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "4991258c9db56df21c3f3827f21d3202c912c91aa2b1cfad7e2dae25c32b6836"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "6a62b96fba59a98f9374ca3207d7542d74756a40ef0f76acacf91f89b00fe4c8"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "467d107afb0a644d487acfcb67e2141610700f37eaee8f80328f82e23902d995"
+        }
+      ]
+    },
+    {
+      "id": "extra-18-salvage-claw",
+      "clips": 1,
+      "tracks": 5,
+      "sourceBinaryAndMeshesPreserved": true,
+      "standard": {
+        "errors": 0,
+        "warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/textures/0"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 1254x1254.",
+            "severity": 2,
+            "pointer": "/images/0"
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time": 0,
+          "finite": true,
+          "poseHash": "624ca50f9125d2e67f38ca25d4ad9ebfea2f73eb0123bbedcc447de9ea700f19"
+        },
+        {
+          "time": 0.4,
+          "finite": true,
+          "poseHash": "b373ff2b066ebd3fbf0326ac2b760e2cc222e766fe129b2b1f7fe2eb335e607f"
+        },
+        {
+          "time": 0.73,
+          "finite": true,
+          "poseHash": "d17c2e14457c58ffde93bc9a1698378fe2cb3df356cef617eac2d8b6c8404c7d"
+        },
+        {
+          "time": 1.1,
+          "finite": true,
+          "poseHash": "60830eebe7944cf2d4bf238fbb5ed156dbaaec5b01300b5ef7c65fe150d6dca5"
+        },
+        {
+          "time": 1.5699999999999998,
+          "finite": true,
+          "poseHash": "da61ea47036d0cbe6fd616ad7c75bcab30f4590b8cf0a46754e1611ee3c7ba80"
+        },
+        {
+          "time": 2.7,
+          "finite": true,
+          "poseHash": "04c79366572c16c1b2c80bbfb23e9ecc8cb5f05fb878b858b8fff325636b3098"
+        },
+        {
+          "time": 4.2,
+          "finite": true,
+          "poseHash": "624ca50f9125d2e67f38ca25d4ad9ebfea2f73eb0123bbedcc447de9ea700f19"
+        }
+      ]
+    }
+  ]
+}

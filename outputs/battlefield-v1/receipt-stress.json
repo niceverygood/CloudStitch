@@ -1,0 +1,42 @@
+{
+  "version": "battlefield-authority-0.2.1",
+  "status": "passed_headless_logic_checks",
+  "date": "2026-10-18",
+  "command": "node --test tools/battlefield/receipt.test.mjs",
+  "passed": 7,
+  "failed": 0,
+  "stress": {
+    "ticks": 72000,
+    "simulatedSeconds": 1199.9999999992374,
+    "shots": 5143,
+    "hits": 5142,
+    "activeNative": 1,
+    "maxActiveNative": 2,
+    "damageRecords": 4096,
+    "completedRecords": 4096,
+    "damageLookupKeys": 4096,
+    "completedLookupKeys": 4096,
+    "fieldsAdded": 0,
+    "inspectedFieldOwners": ["sim", "player", "enemy", "rootModule"],
+    "observedLoopWallMilliseconds": 205.377,
+    "tailDrainSeconds": 1,
+    "tailHits": 5143,
+    "tailActiveNative": 0
+  },
+  "checks": [
+    "native replay stays blocked after oldest recent receipt eviction",
+    "clear-combat cancelled native shots cannot hit a newly spawned target",
+    "a newer TTL expiry preserves older live projectile registration",
+    "one live attack can damage three distinct targets once each",
+    "active target receipts survive 5000 unrelated custom receipt insertions",
+    "unissued native IDs cannot damage or reserve future authority IDs",
+    "enemy role and tier tags validate and survive snapshots",
+    "cooldown elapses without attack target and a new telegraph permits later fire"
+  ],
+  "limits": [
+    "Headless logical simulation; not 20 minutes of browser gameplay or renderer profiling",
+    "Native shot-N replay guarantee is within one authority generation",
+    "Custom arbitrary IDs retain only a recent 4096-receipt replay window",
+    "Existing browser integration checks remain owned by the integration chat"
+  ]
+}

@@ -1,0 +1,171 @@
+Cloudstitch 세션별 이어가기
+기준: 2026-10-19 KST. 진행중 스냅샷이며 완료확정/원문대화 백업이 아니다.
+
+사용량 5% 미만 대비 인수인계
+ID: 01a151da-95db-7631-8947-afdd1ab0295c
+담당: 이관·사용량 감시 / 조회상태: active / 보관: false
+소유: tools/handoff/, outputs/handoff/usage-continuity-2026-10-19/
+현재: 남은69% 확인. 30분 heartbeat(id5) 생성. 기본 인계와 이식 도구 준비 중.
+다음: 임계치 충족 시 최신 세션/두 작업공간을 다시 읽어 새 타임스탬프 패키지를 동결.
+한계·금지: 지금은 조건 미충족이며 전체 자산 백업·복구 검증은 실행하지 않음.
+
+Cloudstitch 총괄 지휘
+ID: 01a14dc7-786a-72d1-a413-d016665d2cfe
+담당: 총괄 / 조회상태: active / 보관: false
+소유: outputs/project-command/
+현재: 담당14개 경계·READY·QA 순서를 관리. 장착3종 아트/공격시연 인계 및 로더·표시 후속 진행.
+다음: operations-2026-10-19.json과 정확 READY/manifest를 읽고 최신 실제 QA부터 인계.
+한계·금지: 단순 목록의 active/완료 문구는 실시간 증거 아님. 모든 게임/아트/청감 승인 아님.
+
+Cloudstitch 데스크톱 통합·QA
+ID: 01a14d9f-fd0c-72b3-a5e0-b2e83776c21b
+담당: 중앙 통합·QA / 조회상태: notLoaded / 보관: true
+소유: tools/integration*/, outputs/integration-*/
+현재: 별도 통합 worktree. 첫 지역 두 항해·항구·저장 복원 기술검증 기록. 최근 턴 interrupted; reference6 UI104 보고 수신.
+다음: queue.json 반영/검증 여부부터 확인. 허브4+alias4, flight recovery7 및 새 정확READY 후속.
+한계·금지: 보관된 채팅이며 자동 재개 금지. READY6 기존11PASS/1FAIL+timeout을18PASS로 쓰지 않음.
+
+적군 기지 구현
+ID: 01a14eca-49db-7ab3-b6e7-ea6c7d4d6d1b
+담당: 기지 / 조회상태: active / 보관: false
+소유: tools/enemy-base/, outputs/enemy-base-v1/
+현재: 1탄 dense-r4 기술검수 기록. 최신 직접요청은 2탄 무드보드 기반 더 화려한3D; chapter2-r1 형상 구현 중.
+다음: chapter2-r1 소스 준비→정확 SOURCE_READY→순차 GLB/export/리뷰 QA.
+한계·금지: chapter2-r1 실제 GLB/리뷰 통과는 아직 확인하지 않음.
+
+2탄 적군함선 기획
+ID: 01a151d7-7dc3-7191-a7d8-9a299ad2f534
+담당: 2탄 함대 기획 / 조회상태: idle / 보관: false
+소유: outputs/chapter2-enemy-fleet-plan-v1/
+현재: 적조 사냥함대 일반8+중간보스1 기획. PLAN.txt 저장 보고.
+다음: 보스 확정 방향과 최신 세계관 조정을 맞춘 뒤 사용자 후속요청 범위에서 제작.
+한계·금지: 기획 완료와 이미지/3D/플레이 검증을 구분.
+
+적군 보스 일단 1탄의 최종보스 이미지 무드보드로 만들어줘 진짜 악당, 괴물처럼 보이면서 웅장해 보이게 만들어줘
+ID: 01a14ee4-3cad-72a2-856f-fb8f3fe26cc3
+담당: 1탄 보스·함대 / 조회상태: active / 보관: false
+소유: tools/chapter1-boss-review/, tools/chapter1-fleet-assets/, outputs/chapter1-fleet-assets-v1/, outputs/chapter1-boss-grand-v2/
+현재: 최신 요청은 적군함대3D.11종 형상데이터 검사·애니메이션/리뷰 준비 보고.
+다음: 예약 순서에 실제 GLB 로딩·리뷰·다운로드·원본 보존 확인.
+한계·금지: 형상데이터 통과를 실제 브라우저·사람 미술승인으로 쓰지 않음.
+
+세계관과 맵 무드보드 만들기
+ID: 01a151d1-30d4-73d1-acb3-edb26e3b0646
+담당: 세계관·10탄 이상 맵 / 조회상태: active / 보관: false
+소유: tools/world-moodboards-v1/, outputs/world-moodboards-v1/
+현재: 10탄 이상 세계관·맵 보드 제작 중. 최신 사용자는1탄·2탄 보스 확정 기준으로 조정 요청.
+다음: 2탄 기획과 선택근거를 읽고 지역 순서·세계관·보드를 맞춤.
+한계·금지: 확정 보스 기준을 유지하되 나머지 지역/시스템 확정으로 확대하지 않음.
+
+Cloudstitch 프로젝트 안에서 전투 효과 v2 제작을 지금 시작해줘. 사용자가 이 새 세션을 명시적으로 요청했고, 기존 효과 48종+무기별 공격 시연 6종의 시각 품질을 Meshy를 실제 이용해 감성적인 손그림 2D 인상의 3D 비행선과 잘 어울리도록 개선해 달라고 했어.
+
+작업의 완전한 브리프는 outputs/combat-vfx-v2/brief/BRIEF.txt에 저장해 두었어. 먼저 해당 파일 및 AGENTS.md, README.md, docs/HANDOFF.md, docs/CONTINUE_PROMPT.md와 실제 git status를 읽고 시작해. 최신 사용자가 첨부한 비행선·건물 이미지를 outputs/combat-vfx-v2/brief/references/user-airship.png와 user-observatory.png에 편집 없이 보존했으니 실제로 열어 아트 기준으로 삼아. 예전 임시 절대 경로나 이 채팅은 필요 없어.
+
+기존 실제 렌더를 검토하면 큰 불투명 다면체 불/연기와 반복되는 굵은 고리, 포구/표적 가림이 선체의 세밀한 붓결과 어긋나. 색만 바꾸는 방식으로 완료하지 말고 Meshy 메시/텍스처 기반 형상과 의도한 시간 연출을 개선해줘. 우선 포구 섬광·연기·함포 명중·화염·보호막·수리의 대표6종을 한 개씩 제작하고 실제 비행선+무기 장면에서 v1/v2를 비교해줘. 작은 대표 묶음부터 실제 결과를 만든 다음 전체48+6 개선 범위를 계속 이어가. 필요한 최초 유료 작업은 최신 사용자의 Meshy 명시 요청 범위로 진행하되 공식 가격/CLI dry-run 및 잔액을 확인해 비용을 알리고, 무작정54개별 생성/반복 유료 재시도를 하지 마.
+
+최초 54GLB 및 선체/무기 원본을 보존해. 새 outputs/combat-vfx-v2/, tools/combat-vfx-v2/, work/combat-vfx-v2/를 사용하고 다른 세션의 리그/항해/항구 등 작업과 미추적 파일을 건드리지 마. 실제 현재 폴더를 확인해 오래된 문서의 미구현 설명을 최신 상태로 단정하지 마. 표준 GLB transform 애니메이션과 별도 런타임 셰이더/투명도/파티클을 정확히 구분해 전달해. 계획이나 썸네일만 남기지 말고 실제 모델과 재생 가능한 비교 장면까지 제작·검증해줘. 완료/미완료 상태·작업ID·비용·해시·한계를 기록해. 한국어로 짧게 진행을 알리고 지금 작업을 이어가줘.
+ID: 01a14dc6-cc26-78e3-b031-d346860e1af1
+담당: VFX·발사체 아트 / 조회상태: idle / 보관: false
+소유: tools/combat-vfx-v2/, outputs/combat-vfx-v2/
+현재: 최근 직접요청에 따라 발사체 재설계6종 무드보드 제작 완료 보고.
+다음: projectile-redesign-moodboard-v1을 읽고 최신 선택/후속 구현 요청을 확인.
+한계·금지: 새 콘셉트 PNG와 기존 GLB를 구분. 화염 abundance-v2 중단 유지; helper usage-limit 소스0 기록 보존.
+
+Cloudstitch의 음향효과·오디오 전담으로 지금 구현을 시작해 주세요. 사용자가 이 새 채팅을 명시적으로 요청했습니다. 제목은 ‘Cloudstitch 음향효과·오디오’입니다.
+
+먼저 현재 저장소의 AGENTS.md, README.md, docs/HANDOFF.md, docs/CONTINUE_PROMPT.md, git status와 실제 파일을 확인하고 기존 수정·미추적 파일을 보존하세요. 공유 체크아웃의 오래된 문서만 보고 현재 전투가 없다고 단정하지 마세요. outputs/handoff/DESKTOP_INTEGRATION_LOCAL-2026-10-18.md를 읽으면 실제 완료된 통합 작업 공간/서버를 알 수 있습니다. 이번 PC의 통합 루트는 C:/Users/nicev/.codex/worktrees/desktop-integration/CloudStitch이며 tools/integration/{HANDOFF.md,contract.mjs,session.mjs,renderer.js,ui.js}와 tools/battlefield/{sim.mjs,integration.mjs}를 읽기 참조하세요. 동결된 v1 코드와 다른 담당 파일은 직접 수정하지 마세요.
+
+담당 소스 tools/audio/, 사용자 확인용 출력 outputs/audio-v1/, 중간 자료 work/audio/만 소유하세요. 공통 package.json/잠금/의존성/LFS설정/통합소스 변경은 요청 사항을 HANDOFF에 기록하고 통합·QA 담당에게 인계합니다. 별도 pull/reset/일괄복사/외부배포/자동화/유료 서비스 호출은 하지 않습니다. 새 의존성 없이 Web Audio API와 로컬 코드로 실제 들을 수 있는 첫 묶음을 구현하세요. 기존 실제 음향 파일이 있다면 먼저 소유권·출처를 확인해 활용하고, 없다면 결정적 seed의 절차적 합성으로 임시 SFX와 짧은 WAV 미리보기를 만드세요. 합성 시제품을 최종 녹음/상용 사운드로 표시하지 마세요. 무단 외부 음원 다운로드나 음악/음성 제작으로 범위를 넓히지 않습니다.
+
+아트와 소리 방향은 따뜻한 손그림 비행선: 목재 충격, 천과 밧줄, 황동·부드러운 기계 소리, 바람. 우선 기관총 발사/함포 발사/명중/연결부 절단/부품 분리/인양·회수/엔진·바람 ambience/양력 위험/귀환/항구 수리·장착·저장 성공·실패를 구분해 실제 청취 가능한 라이브러리와 audition 화면을 만드세요. 모든 종류를 한 잡음의 음높이만 바꿔 완료하지 말고, 작은 대표 묶음의 envelope·재료·길이·변주를 먼저 검토한 뒤 확장하세요. 현재 지원하는 실제 전장 이벤트/상태와 대응되는 것만 연결 완료로 표시하고 존재하지 않는 event는 연결 대기 규격으로 분리하세요.
+
+전장의 이동·시간·피해 권위는 battlefield/sim.mjs 하나입니다. 음향은 읽기 전용 이벤트 소비자이며 피해/보상/전투 상태를 바꾸면 안 됩니다. 현재 renderer.onEvents 또는 session snapshot을 받는 별도 어댑터로 연결하고, 실제 player-fire/enemy-fire/hit/bundle-detached/salvaged/combat-cleared 등 정확한 이벤트 이름/필드를 원본에서 확인하세요. 공격시연 고정 타임라인으로 발사·피해음을 결정하지 않습니다. 공통 항해ID+generation+단조 seq로 중복/과거 이벤트를 차단하고 메모리가 무한히 증가하지 않게 하세요. 실제 탄 발사 때 발사음, 실제 충돌 때 재료/무기별 명중음을 재생합니다. 거리 감쇠/좌우 pan은 임시 XZ 게임좌표와 카메라 방향을 명시해 적용합니다.
+
+사용자 첫 클릭/키 입력 뒤 오디오를 활성화하고 잠금/음소거 상태를 표시하세요. 전체/SFX/환경 볼륨, 음소거, 동시 발음 상한·우선순위·연사 제한·짧은 변주·peak 제어를 제공하세요. 엔진/바람/위험 loop는 상태 전환으로 시작·정지하며 매 프레임 새로 시작하지 않습니다. 일시정지/탭 숨김/재시도/패배/정비/귀환/맵 전환에서 예약음·one-shot·loop를 정리하고 재개 때 오래된 명중
+ID: 01a14dd0-fc09-7c51-8f63-cdfff1bc8e6f
+담당: 오디오 / 조회상태: idle / 보관: false
+소유: tools/audio/, outputs/audio-*/
+현재: 쇠뇌·로켓·작살3계열×4phase×basic/enhanced=24cue, 비교본 포함45WAV·CPU225/225 보고.
+다음: outputs/audio-ship-weapon-attack-v1/HANDOFF와 sound-contract를 대조해 실제 시연 sync/취소/중복/headroom 검수.
+한계·금지: 직접청취/Native/browser·사람승인·게임연결은 별도. 구본/실패 보존.
+
+판타지 무기 무드보드 만들기
+ID: 01a14ef7-0b81-72a3-97ca-ee45fc21d6e4
+담당: 무기·함선 조립·공격시연 / 조회상태: active / 보관: false
+소유: tools/grounded-weapons-v1/, tools/grounded-weapons-v2/, tools/ship-weapon-attack-v1/, outputs/ship-weapon-attack-v1/
+현재: 장착3종·공격시연. 최신 실제렌더에서 포구노드 Group/Object3D 차 수정, 명중효과 가림 수정 후 확인 중.
+다음: 새 정확READY와 sound-contract 기준으로 최종 표시·음향 sync·생명주기 검사.
+한계·금지: 기술PASS·기존 조립READY와 새 공격표시 후속을 합산하지 않음.
+
+무기 SFX와 임팩트 강화 방향 찾기
+ID: 01a151cc-ce15-7931-be58-6fe4db96eddc
+담당: 10배 공격 비교 / 조회상태: active / 보관: false
+소유: tools/combat-impact-comparison-v1/, outputs/combat-impact-comparison-v1/
+현재: 함포1발/기관총2초연사: 실제 함선에서 발사체·임팩트·반동·소리 비교. 포구/명중표시 수정 후 연사음·재시작·모바일 확인 중.
+다음: 이 소유경로에서 비교와 실제검증을 마무리.
+한계·금지: 사용자가 '다른 채팅에는 보내지 않기' 명시. 이 세션 관련 타채팅 전송 금지 유지.
+
+주인공 함선 형태 단계별 구현
+ID: 01a14ec2-d205-74b1-9054-ce509b544b01
+담당: 주인공 함선 상태 / 조회상태: active / 보관: false
+소유: tools/ship-states/, outputs/ship-states-v1/
+현재: ranks-grand-v3 리뷰 뒤 최신 요청은 인양계열을 더 화려하게.
+다음: 최신 요청을 소유 하위revision으로 구현하고 같은조건 비교.
+한계·금지: 과거 exactRaster FAIL 보존. 시각레벨/성장 제안은 실제 save/sim 구현 아님.
+
+적 함선 종류 한눈에 보기
+ID: 01a14ec4-81b5-7583-8d51-e35ad3b30d55
+담당: 적 함선 갤러리 / 조회상태: idle / 보관: false
+소유: tools/enemy-fleet-gallery/, outputs/enemy-fleet-gallery-v1/, outputs/enemy-fleet-villain-*/
+현재: 전체함선/악당13 갤러리. 최신 보고는 보스 전후 정렬에 크기보정이 있음을 안내.
+다음: 최신 HANDOFF/READY와 미술선택을 읽고 필요한 후속만.
+한계·금지: 화면 정렬 비교를 실제 함선 크기비교·전투 적용으로 쓰지 않음.
+
+스티치 맵과 공간
+ID: 01a14da1-2962-70f0-8405-eae46ad90ba5
+담당: 지도·비행 / 조회상태: notLoaded / 보관: false
+소유: tools/levels/, tools/flight3d/, tools/flight3d-ready6-recovery-qa/, outputs/flight3d-ready*/
+현재: 이동 구현 보존, 시간형 하강 뒤 반동/흔들림 감쇠 관찰 하네스 보완; 실제 후속 QA 대기.
+다음: READY6 실패/timeout과 별도 recovery7 근거를 분리해 중앙 슬롯에서 확인.
+한계·금지: 완전비행물리/실기기/장기성능 검증으로 확대 금지.
+
+맵 요소 효과 구현 및 배치
+ID: 01a14ee2-1775-78f1-9012-1b8093c51e7b
+담당: 기상 효과 / 조회상태: idle / 보관: false
+소유: tools/map-weather-v1/, outputs/map-weather-v1/
+현재: 원본 검수본 보존. 맵24 리뷰와 시험장의 별도 연결 화면 왕복 인계.
+다음: linked 화면의 왕복 링크 실제QA/소유manifest 확인.
+한계·금지: 날씨시험장과 실제전장 단일sim 소비자 연결을 구분.
+
+스티치 항구
+ID: 01a14da1-40b3-7193-aff8-ae79a119b6d9
+담당: 항구·저장·공간항해 / 조회상태: idle / 보관: false
+소유: tools/harbor/, tools/shipyard/, tools/save/, tools/voyage-campaign/, tools/voyage-spatial/
+현재: 6항로를 실제 회전·줌3D 공간에 배치하는 소스/READY 준비 보고. 최근 턴 usage-limit 실패.
+다음: 동결한 voyage-spatial READY·중앙의 실제캡처/QA 여부부터 확인.
+한계·금지: 마지막 진행중 보고를 최종통과로 쓰지 않음. 기존 사용자 브라우저 저장은 이관하지 않음.
+
+맵 요소 무드보드 기획
+ID: 01a14ed1-7324-70e2-b00b-403141be4086
+담당: 맵24 / 조회상태: idle / 보관: false
+소유: tools/map-atmosphere-v1/, outputs/map-atmosphere-v1/
+현재: 섬6·식생2·구름4·새4·소품8의24자산. 날씨 시험장 링크 별도 linked-r2로 분리 보고.
+다음: 원본 검수본/linked-r2·중앙 실행물 보존 후 후속을 확인.
+한계·금지: 24논리에셋/mesh/GLB/조립씬 수를 구분.
+
+Cloudstitch 함대·교전 연결
+ID: 01a14da1-193b-77e3-818c-ae25dc7dac62
+담당: 함대·교전 / 조회상태: notLoaded / 보관: false
+소유: tools/fleet/, tools/fleet-v2/, tools/encounters/, tools/enemy-fleet-reference/
+현재: 기존reference6 악당화 소유. 최근 턴 usage-limit 실패지만 중앙 후속 reference6 UI104 보고가 존재.
+다음: 최근 중앙 실제report와 소유READY를 대조해 미완만 이어감.
+한계·금지: 6과 다른소유13 중복제작 금지. 턴실패와 후속검수의 시간순서를 확인.
+
+스티치 탄환
+ID: 01a14da1-0f0d-72e2-8712-76a46fe4463c
+담당: 전장·VFX 소비자 / 조회상태: notLoaded / 보관: false
+소유: tools/battlefield/, outputs/battlefield-*/
+현재: 작살 가독성·더 풍성한 피격 요구. 새 비교판 실제캡처 보고 뒤 실전연결 도중 usage-limit 실패.
+다음: impactful-vfx/harpoon 최신 HANDOFF·실제소비자 상태를 확인하고 남은 연결만.
+한계·금지: 단일sim의 피해/시간/충돌범위 보존. 시연을 실전연결 완료로 표시하지 않음.
+

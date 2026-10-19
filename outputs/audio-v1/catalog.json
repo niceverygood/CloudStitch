@@ -1,0 +1,579 @@
+{
+  "version": "audio-v1.0.0",
+  "title": "Cloudstitch 절차 합성 SFX 시제품",
+  "sampleRate": 22050,
+  "generatedBy": "node tools/audio/generate.mjs",
+  "sourceReferences": [
+    "outputs/34-sound-music-direction.txt",
+    "outputs/16-audio-accessibility-production.txt"
+  ],
+  "scope": "Temporary SFX and short ambience only. No music, voices or external audio. Current event mappings are read-only contracts, not claims of live integration.",
+  "sourceAuthority": "tools/battlefield/sim.mjs and frozen desktop-integration tools/integration/session.mjs inspected 2026-10-18; material resolution is adapter policy because hit has no material field.",
+  "hitWeaponPolicy": "Material recipes remain distinct. Read-only adapter uses 01-machine-gun gain×0.72/rate1.04 and 02-deck-cannon gain×0.95/rate0.9; one-shot runtime rate clamp 0.8..1.2. Preview WAVs retain each recipe at its default rate.",
+  "loopPolicy": "2-second periodic carriers, seeded phases, 5ms raised-cosine edge taper; exact zero endpoints and small seam derivatives. No long loop files.",
+  "totalWavBytes": 604966,
+  "assets": [
+    {
+      "id": "fire-machinegun",
+      "label": "기관총 발사",
+      "category": "sfx",
+      "duration": 0.16,
+      "seed": 340101,
+      "priority": 2,
+      "interval": 0.065,
+      "loop": false,
+      "description": "짧은 압력 충격, 목재 총좌 공명, 급탄·황동 탄피. 한 실제 탄 발사에 한 큐.",
+      "eventMapping": {
+        "status": "supported_event",
+        "events": [
+          "player-fire",
+          "enemy-fire"
+        ],
+        "note": "weaponId === 01-machine-gun. 실제 발사 이벤트만 소비."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "짧은 압력 충격, 목재 총좌 공명, 급탄·황동 탄피. 한 실제 탄 발사에 한 큐.",
+      "path": "previews/fire-machinegun.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 7100,
+      "sha256": "69fbd610867166c9bd1393e442be08872e33125ab0acadb7df361fed9c7a4caf",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "fire-cannon",
+      "label": "함포 발사",
+      "category": "sfx",
+      "duration": 0.62,
+      "seed": 340102,
+      "priority": 2,
+      "interval": 0.2,
+      "loop": false,
+      "description": "즉시 낮은 발사압, 닫힌 약실 금속, 뒤따르는 목재 선체 반동. 별도 장전 예고는 후속 범위.",
+      "eventMapping": {
+        "status": "supported_event",
+        "events": [
+          "player-fire",
+          "enemy-fire"
+        ],
+        "note": "weaponId === 02-deck-cannon. 현재 적 탄은 trainingPattern 간이 탄."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "즉시 낮은 발사압, 닫힌 약실 금속, 뒤따르는 목재 선체 반동. 별도 장전 예고는 후속 범위.",
+      "path": "previews/fire-cannon.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 27386,
+      "sha256": "97100b6284d19f17cdef2ed3ba07e2c62fd2c7b89734c66e39f58cdd09895e05",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "hit-wood",
+      "label": "목재 피격",
+      "category": "sfx",
+      "duration": 0.34,
+      "seed": 340103,
+      "priority": 2,
+      "interval": 0.08,
+      "loop": false,
+      "description": "빈 목재의 둔한 모드 공명과 불규칙한 짧은 가시·균열. 무기별 충격은 같은 재료 음의 강도·속도로 구별.",
+      "eventMapping": {
+        "status": "supported_event_with_material_resolution",
+        "events": [
+          "hit"
+        ],
+        "note": "원본 hit에는 material 없음. snapshot의 피격 module.type/hull/deck 및 obstacle 대체 재질을 읽어 선택. 무기 충격은 재료 recipe를 유지하며 01-machine-gun은 gain×0.72/rate1.04, 02-deck-cannon은 gain×0.95/rate0.9로 읽기 어댑터에서 구분."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "빈 목재의 둔한 모드 공명과 불규칙한 짧은 가시·균열. 무기별 충격은 같은 재료 음의 강도·속도로 구별.",
+      "path": "previews/hit-wood.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 15038,
+      "sha256": "bf940b5c5a58c5c9aadb69519b58afd52c2e24f94b7af40ed04e8abd69d55220",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "hit-cloth",
+      "label": "천 피격",
+      "category": "sfx",
+      "duration": 0.36,
+      "seed": 340104,
+      "priority": 2,
+      "interval": 0.08,
+      "loop": false,
+      "description": "기낭 천 찢김, 부드러운 공기 분출, 마른 천의 짧은 펄럭임. 무기별 충격은 같은 재료 음의 강도·속도로 구별.",
+      "eventMapping": {
+        "status": "supported_event_with_material_resolution",
+        "events": [
+          "hit"
+        ],
+        "note": "피격 module.type === balloon을 read-only 해석. 원본 이벤트에 재질 필드 추가하지 않음. 무기 충격은 재료 recipe를 유지하며 01-machine-gun은 gain×0.72/rate1.04, 02-deck-cannon은 gain×0.95/rate0.9로 읽기 어댑터에서 구분."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "기낭 천 찢김, 부드러운 공기 분출, 마른 천의 짧은 펄럭임. 무기별 충격은 같은 재료 음의 강도·속도로 구별.",
+      "path": "previews/hit-cloth.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 15920,
+      "sha256": "4204aa0f19f8b05762a319398d1ae026fe3a172004faea5f21fa2881464e7da2",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "hit-armor",
+      "label": "금속 장갑 피격",
+      "category": "sfx",
+      "duration": 0.5,
+      "seed": 340105,
+      "priority": 2,
+      "interval": 0.08,
+      "loop": false,
+      "description": "단단한 충격 뒤 비정수 배음의 황동·금속판 울림과 짧은 긁힘. 무기별 충격은 같은 재료 음의 강도·속도로 구별.",
+      "eventMapping": {
+        "status": "supported_event_with_material_resolution",
+        "events": [
+          "hit"
+        ],
+        "note": "cannon/machinegun/harpoon/connector 등의 금속 대체 재질. 전용 armor material은 현재 원본에 없음. 무기 충격은 재료 recipe를 유지하며 01-machine-gun은 gain×0.72/rate1.04, 02-deck-cannon은 gain×0.95/rate0.9로 읽기 어댑터에서 구분."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "단단한 충격 뒤 비정수 배음의 황동·금속판 울림과 짧은 긁힘. 무기별 충격은 같은 재료 음의 강도·속도로 구별.",
+      "path": "previews/hit-armor.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 22094,
+      "sha256": "e4362e3eb3ec93810f53090f54708e619efd89ec6ff3c018b19a8458ed7d1ea7",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "hit-engine",
+      "label": "엔진 피격",
+      "category": "sfx",
+      "duration": 0.56,
+      "seed": 340106,
+      "priority": 2,
+      "interval": 0.08,
+      "loop": false,
+      "description": "케이스 충격 뒤 불규칙한 점화 헛돎과 증기 빠짐. 무기별 충격은 같은 재료 음의 강도·속도로 구별.",
+      "eventMapping": {
+        "status": "supported_event_with_material_resolution",
+        "events": [
+          "hit"
+        ],
+        "note": "피격 module.type === engine을 read-only 해석. 무기 충격은 재료 recipe를 유지하며 01-machine-gun은 gain×0.72/rate1.04, 02-deck-cannon은 gain×0.95/rate0.9로 읽기 어댑터에서 구분."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "케이스 충격 뒤 불규칙한 점화 헛돎과 증기 빠짐. 무기별 충격은 같은 재료 음의 강도·속도로 구별.",
+      "path": "previews/hit-engine.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 24740,
+      "sha256": "ec658aa5357e986093f4583d63a286c915715fa36d855f8d75eba63f28c869a7",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "connector-cut",
+      "label": "연결부 절단",
+      "category": "sfx",
+      "duration": 0.55,
+      "seed": 340107,
+      "priority": 2,
+      "interval": 0.08,
+      "loop": false,
+      "description": "팽팽한 밧줄의 풀림, 골조 균열, 흩어지는 황동 볼트. 파괴 순간 신호이며 사전 균열 예고는 없음.",
+      "eventMapping": {
+        "status": "supported_event",
+        "events": [
+          "module-destroyed"
+        ],
+        "note": "moduleType === connector. connector-cut이라는 새 sim 이벤트를 만들지 않음."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "팽팽한 밧줄의 풀림, 골조 균열, 흩어지는 황동 볼트. 파괴 순간 신호이며 사전 균열 예고는 없음.",
+      "path": "previews/connector-cut.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 24300,
+      "sha256": "063c13a7d148921c38883a2e9dd6c23bf4cfe8b8fa36e64360811b95da2450dd",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "bundle-detach",
+      "label": "부품 묶음 분리",
+      "category": "sfx",
+      "duration": 0.7,
+      "seed": 340108,
+      "priority": 2,
+      "interval": 0.15,
+      "loop": false,
+      "description": "빈 목재 연결부의 이격, 두 번의 작은 후속 볼트, 공기 속으로 멀어지는 천.",
+      "eventMapping": {
+        "status": "supported_event",
+        "events": [
+          "bundle-detached"
+        ],
+        "note": "절단/회수와 별도 큐. moduleIds 및 위치를 읽음."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "빈 목재 연결부의 이격, 두 번의 작은 후속 볼트, 공기 속으로 멀어지는 천.",
+      "path": "previews/bundle-detach.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 30914,
+      "sha256": "fccd176a8d4fa09c3b427086bb7d02a72b1c8e3e805cdfa33c80954ddfb79358",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "salvage",
+      "label": "인양·회수",
+      "category": "sfx",
+      "duration": 0.85,
+      "seed": 340109,
+      "priority": 2,
+      "interval": 0.35,
+      "loop": false,
+      "description": "짧은 윈치 회전, 장력을 받는 케이블, 래칫, 마지막 화물 고정 걸쇠.",
+      "eventMapping": {
+        "status": "supported_event",
+        "events": [
+          "salvaged"
+        ],
+        "note": "실제 회수 성공 뒤 한 번. 선행 인양 진행 상태는 원본에 없어 예고하지 않음."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "짧은 윈치 회전, 장력을 받는 케이블, 래칫, 마지막 화물 고정 걸쇠.",
+      "path": "previews/salvage.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 37530,
+      "sha256": "759548b430757e7861e00a06adf271d7c5bb3c3d154817869a4030c2bff76b44",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "engine-loop",
+      "label": "프로펠러·엔진 환경",
+      "category": "ambience",
+      "duration": 2,
+      "seed": 340110,
+      "priority": 1,
+      "interval": 0,
+      "loop": true,
+      "description": "낮은 모터 배음, 프로펠러 박자, 작은 베어링 떨림. 속도는 재생률/혼합으로 변화.",
+      "eventMapping": {
+        "status": "supported_snapshot",
+        "events": [],
+        "note": "sailing && !paused && sim.outcome === sailing. 속도는 임시 XZ 게임 좌표."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "낮은 모터 배음, 프로펠러 박자, 작은 베어링 떨림. 속도는 재생률/혼합으로 변화.",
+      "path": "previews/engine-loop.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 88244,
+      "sha256": "99010d644f79e656986ae3f5a0047e86e0ccbf1854f62b340b396e18a8f3d15a",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "wind-loop",
+      "label": "바람·천 환경",
+      "category": "ambience",
+      "duration": 2,
+      "seed": 340111,
+      "priority": 1,
+      "interval": 0,
+      "loop": true,
+      "description": "주기적 대역 바람과 부드러운 천 플러터. 빠를 때 고역 층이 드러나는 별도 환경 루프.",
+      "eventMapping": {
+        "status": "supported_snapshot",
+        "events": [],
+        "note": "sailing && !paused. 상태 전환으로 한 loop를 유지/정리."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "주기적 대역 바람과 부드러운 천 플러터. 빠를 때 고역 층이 드러나는 별도 환경 루프.",
+      "path": "previews/wind-loop.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 88244,
+      "sha256": "f36803e1c7338b7d8f8e5fcec0831f7cffece43549c8c3c7cb36b4e419030978",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "lift-danger-loop",
+      "label": "양력 부족 천 장력",
+      "category": "ambience",
+      "duration": 2,
+      "seed": 340112,
+      "priority": 3,
+      "interval": 0,
+      "loop": true,
+      "description": "늘어나는 천·밧줄의 거친 공명과 마찰. 반복 전자 경보/음량 증폭 대신 재료 장력.",
+      "eventMapping": {
+        "status": "supported_snapshot",
+        "events": [],
+        "note": "sim.player.weight > sim.player.lift 또는 liftMargin으로 read-only 상태 감지."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "늘어나는 천·밧줄의 거친 공명과 마찰. 반복 전자 경보/음량 증폭 대신 재료 장력.",
+      "path": "previews/lift-danger-loop.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 88244,
+      "sha256": "8053d8908f2a1cbc41ea91ecb94c406283027241eda4ed685d4cf78c18927132",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "lift-warning",
+      "label": "양력 위험 짧은 경고",
+      "category": "sfx",
+      "duration": 0.52,
+      "seed": 340113,
+      "priority": 3,
+      "interval": 1.5,
+      "loop": false,
+      "description": "짧은 장력 끊김과 두 번의 구별되는 황동 장치 신호. 시각 경고를 계속 유지해야 함.",
+      "eventMapping": {
+        "status": "supported_snapshot_transition",
+        "events": [],
+        "note": "양력 위험 상태 진입. 원본 lift-warning 이벤트는 없음."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "짧은 장력 끊김과 두 번의 구별되는 황동 장치 신호. 시각 경고를 계속 유지해야 함.",
+      "path": "previews/lift-warning.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 22976,
+      "sha256": "6e85ef8291d62d5f378b54927581e2155096ac70cbaf55c1b4d781109b7e6bbf",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "return",
+      "label": "항구 귀환",
+      "category": "sfx",
+      "duration": 0.85,
+      "seed": 340114,
+      "priority": 2,
+      "interval": 0.5,
+      "loop": false,
+      "description": "느슨해지는 로프와 목재 선체의 착좌, 짧은 황동 계류 장치 공명. 음악 아님.",
+      "eventMapping": {
+        "status": "supported_snapshot_transition",
+        "events": [],
+        "note": "실제 sailing→harbor 또는 sim.outcome→victory 전환에 한 번. 귀환 정산 뒤 저장 실패여도 실제 귀환이면 재생하며 command(return)의 ok 자체를 조건으로 삼지 않음."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "느슨해지는 로프와 목재 선체의 착좌, 짧은 황동 계류 장치 공명. 음악 아님.",
+      "path": "previews/return.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 37530,
+      "sha256": "54bb16d3390d7f4b66150977604320d1b7e64e36c92ade7a62c91d1d8c487b05",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "harbor-repair",
+      "label": "항구 수리 완료",
+      "category": "sfx",
+      "duration": 0.55,
+      "seed": 340115,
+      "priority": 2,
+      "interval": 0.25,
+      "loop": false,
+      "description": "두 작은 망치 타격, 천 브러시, 마지막 공구 걸림.",
+      "eventMapping": {
+        "status": "supported_event_or_command_result",
+        "events": [
+          "player-repaired"
+        ],
+        "note": "전장 player-repaired의 restored > 0은 snapshot player 위치를 anchor로 재생. 항구 controller.command(repair)는 실제 결과 ok === true일 때 재생. UI 클릭만으로 재생하지 않음."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "두 작은 망치 타격, 천 브러시, 마지막 공구 걸림.",
+      "path": "previews/harbor-repair.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 24300,
+      "sha256": "11c368fc371ce8f05b28fd62f51f5754e6c0d7540d487d47fce2d782e2661d50",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "harbor-equip",
+      "label": "항구 장착 완료",
+      "category": "sfx",
+      "duration": 0.5,
+      "seed": 340116,
+      "priority": 2,
+      "interval": 0.2,
+      "loop": false,
+      "description": "짧은 레일 마찰, 목재 받침 착좌, 황동 걸쇠 잠금.",
+      "eventMapping": {
+        "status": "supported_command_result",
+        "events": [],
+        "note": "controller.command(equip) 결과 ok === true."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "짧은 레일 마찰, 목재 받침 착좌, 황동 걸쇠 잠금.",
+      "path": "previews/harbor-equip.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 22094,
+      "sha256": "af8c03839f263ff2f2934cb51fcc9bbead47f09bc2c1452f3c5656094593c9bc",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "save-ok",
+      "label": "저장 성공",
+      "category": "sfx",
+      "duration": 0.34,
+      "seed": 340117,
+      "priority": 2,
+      "interval": 0.25,
+      "loop": false,
+      "description": "작은 두 기계식 걸쇠가 맞물리는 부드러운 확인음. 임무 보상이나 새 항해 생성 없음.",
+      "eventMapping": {
+        "status": "supported_command_result",
+        "events": [],
+        "note": "controller.command(save)의 실제 ok 결과. 자동 저장은 별도 저장 결과 어댑터 연결 대기."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "작은 두 기계식 걸쇠가 맞물리는 부드러운 확인음. 임무 보상이나 새 항해 생성 없음.",
+      "path": "previews/save-ok.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 15038,
+      "sha256": "b28b3dae35de5402abaea25cd5242afc39b6878844da14bc1dfe2952f21627cc",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    },
+    {
+      "id": "ui-fail",
+      "label": "조작·저장 실패",
+      "category": "sfx",
+      "duration": 0.3,
+      "seed": 340118,
+      "priority": 2,
+      "interval": 0.25,
+      "loop": false,
+      "description": "맞물리지 않는 둔한 걸쇠와 낮은 목재 노크. 위험 경고와 다른 재료·길이.",
+      "eventMapping": {
+        "status": "supported_command_result",
+        "events": [],
+        "note": "현재 어댑터는 repair/equip/save의 실제 command 결과 ok === false만 지원. return 등 다른 실패 연결은 대기. 성공음과 동시에 내지 않음."
+      },
+      "status": "temporary_procedural_prototype",
+      "use": "맞물리지 않는 둔한 걸쇠와 낮은 목재 노크. 위험 경고와 다른 재료·길이.",
+      "path": "previews/ui-fail.wav",
+      "format": {
+        "container": "WAV",
+        "codec": "PCM_S16LE",
+        "sampleRate": 22050,
+        "channels": 1
+      },
+      "bytes": 13274,
+      "sha256": "e59b4d96bed71d0f74fe58c0661765a687af0c98c31e06427060c2b9008da621",
+      "source": "Authored locally with tools/audio/synthesis.mjs; seeded procedural synthesis; no third-party samples or downloads",
+      "rights": "Project-authored procedural prototype; no third-party source audio. Not a final recorded or commercial sound asset.",
+      "completion": "synthesis_and_wav_export_complete; integration and human listening recorded separately"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "status": "READY_art_review",
+  "revision": "chapter2-volley-r1",
+  "model": {
+    "path": "outputs/enemy-base-v1/chapter2-volley-r1/enemy-base.glb",
+    "bytes": 48484232,
+    "sha256": "1ad20985307c5d0f4113181fd3dffd172010faed151e418d7316a3c05287101f"
+  },
+  "checks": {
+    "total": 63,
+    "passed": 63,
+    "failed": 0
+  },
+  "peak": {
+    "time": 2.65,
+    "playing": false,
+    "clouds": 192,
+    "activeClouds": 156,
+    "activeArrows": 3744,
+    "sectors": 48,
+    "first": {
+      "name": "arrow_cloud_0_0_0",
+      "active": true,
+      "position": [
+        0,
+        -3.1111115820615884,
+        42.622222740267745
+      ],
+      "scale": [
+        2.3533333707738846,
+        1.9022222083291953,
+        1
+      ],
+      "scatter": 1
+    },
+    "racks": 48,
+    "recoiling": 32,
+    "geometries": 60,
+    "meshes": 298
+  },
+  "structure": {
+    "path": "outputs/enemy-base-v1/chapter2-volley-r1/structure-verification.json",
+    "bytes": 1794,
+    "sha256": "0462ca4bb1af649f1c2a9a94e97d644e34832bfa27c6e59a10b87662b891d586"
+  },
+  "sourcePreserved": true,
+  "external": 0,
+  "pageErrors": 0,
+  "consoleErrors": 0,
+  "ghosting": [
+    {
+      "mode": "handdrawn",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 132711,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 441.6438960209874,
+      "outlineAutoClear": true
+    },
+    {
+      "mode": "cel",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 132711,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 441.6438960209874,
+      "outlineAutoClear": true
+    },
+    {
+      "mode": "original",
+      "rotationFrames": 120,
+      "changedPixels": 0,
+      "totalChannelDifference": 0,
+      "paintedPixels": 132711,
+      "pixelCount": 831440,
+      "cameraDelta": 0,
+      "targetDelta": 0,
+      "rotationDistance": 441.64389602098663,
+      "outlineAutoClear": true
+    }
+  ],
+  "previews": [
+    "outputs/enemy-base-v1/chapter2-volley-r1/review-desktop.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/model-iso.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/model-back.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/model-front.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/detail-shell.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/detail-harbour.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/detail-coral.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/review-mobile-390.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/volley-peak.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/volley-review.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/volley-top.png",
+    "outputs/enemy-base-v1/chapter2-volley-r1/detail-arrow-rack.png"
+  ],
+  "visualReview": {
+    "actualRendersInspected": true,
+    "userArtApproval": false,
+    "notes": "outputs/enemy-base-v1/chapter2-volley-r1/ART_REVIEW.txt",
+    "beforeAfter": "Pre-scatter square formations versus final individual arrow scatter inspected"
+  },
+  "limits": [
+    "Art-only animated GLB; no physics, collision, damage or sim changes",
+    "48x24x4 is authored visual quantity, not approved weapon/module balance",
+    "No SFX produced",
+    "Arrows within a 24-arrow batch share a flight transform"
+  ],
+  "animation": {
+    "durationSeconds": 8,
+    "clips": 1,
+    "batteries": 48,
+    "portsPerBattery": 24,
+    "burstWaves": 4,
+    "arrowsPerCycle": 4608,
+    "verifiedActiveAt2_65Seconds": 3744,
+    "independentScatterMorph": true
+  }
+}

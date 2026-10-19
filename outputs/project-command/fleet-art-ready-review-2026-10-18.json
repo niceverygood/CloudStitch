@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:31:33Z",
+  "reviewBy": "delegated read-only metadata/LFS audit /root/integration_audit",
+  "sourceManifest": "outputs/fleet-v2/source-manifest.json",
+  "version": "fleet-v2-art-ready-1",
+  "sealedAt": "2026-10-18T16:29:55+09:00",
+  "manifestEntries": 174,
+  "entriesExistAndSizeMatch": 174,
+  "actualFilesIncludingSelf": 175,
+  "hashesRecomputed": false,
+  "glb": {
+    "files": 62,
+    "bytes": 488978292,
+    "lfs": true
+  },
+  "standaloneHtml": {
+    "files": 62,
+    "bytes": 1078296495,
+    "minBytes": 12190296,
+    "maxBytes": 27599757,
+    "lfs": false
+  },
+  "galleryIndex": {
+    "path": "outputs/fleet-v2/index.html",
+    "bytes": 450159
+  },
+  "lfsAction": {
+    "ownerThreadId": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+    "pathPattern": "outputs/fleet-v2/ships/*.html",
+    "status": "documented handoff; existing attrs unspecified filter/diff/merge and text=auto; rule needed before commit"
+  },
+  "integrationConstraints": [
+    "preserve fleet-v1 originals",
+    "no automatic collider/muzzle/socket/cut-tree/ownership replacement",
+    "battlefield remains sole combat authority"
+  ],
+  "qa": {
+    "tool": "tools/fleet-v2/browser-qa.cjs",
+    "order": "after audio",
+    "scope": "representative13, gallery13/62, model loading, 3 modes, 7 clips, controls/comparison/mobile/requests",
+    "interactivePassed": false
+  },
+  "limits": "static13 previews/structural62 checks/PNG equality are not interactive, ghosting, performance or art approval"
+}

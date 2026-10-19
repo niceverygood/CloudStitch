@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18T09:36:00Z",
+  "type": "existing evidence index review, not a new QA run",
+  "integrationWorkspace": "local integration owner worktree; see outputs/handoff/DESKTOP_REVIEW_QA_LOCAL-2026-10-18.md",
+  "entry": "http://127.0.0.1:8840/outputs/desktop-review-qa-v1/",
+  "manifest": {
+    "path": "outputs/desktop-review-qa-v1/delivery-manifest.json",
+    "sha256": "469f8ed813a51446ea0f7c2acfbefb8619630282636039ff9300bc4812d02ff0",
+    "files": 36,
+    "bytes": 11842521,
+    "selfExcluded": true
+  },
+  "summary": {
+    "path": "outputs/desktop-review-qa-v1/verification.json",
+    "sha256": "bfa9b01be2d564dbd19164fccada50516a1522197e367b217abe0556ae0f0a37",
+    "passed": null
+  },
+  "rootVerified": {
+    "pathsAndSizes": 36,
+    "mismatches": 0,
+    "manifestAndSummaryShaMatched": true,
+    "large36HashesRepeated": false
+  },
+  "delegatedStaticReview": {
+    "blockingIssue": false,
+    "sourceImportHarnessReportBindingPresent": true,
+    "htmlLinks18": true,
+    "linkHttpRetested": false
+  },
+  "preservedEvidence": [
+    "originalaudio34of35 false and later8of8 separate",
+    "rich strict PNG failure with separate fixedpixel diagnosis",
+    "fleet88 and viewercontrols16 are distinct scopes",
+    "flight17 standalone scope"
+  ],
+  "ownerReportedProtection": {
+    "fileLocationChecks": 544,
+    "bytes": 91347064,
+    "mismatches": 0,
+    "composition": "audio114 both+fleet96 both+mortar19 both+rich86 root",
+    "uniqueFilesNot544": true,
+    "receiptPath": "outputs/desktop-review-freeze-v1/verification.json",
+    "receiptSha256": "dbc24b94b233237c4cc7eedf3bcb09f864be34faf48199df7f36833fe3da1b59",
+    "rootDidNotRepeat544": true
+  },
+  "latest49": {
+    "outsideThisSealed36FinalNativeEvidence": true,
+    "sealedIndexOnlyIncludesProductionFloat32Decode": true,
+    "subsequentDspReady": "outputs/audio-rich-v1/delivery-manifest.json",
+    "nativeFinalPending": true
+  },
+  "aggregateQaPass": null
+}

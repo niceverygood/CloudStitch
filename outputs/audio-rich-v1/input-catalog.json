@@ -1,0 +1,1417 @@
+{
+  "version": "audio-rich-v1.0.0",
+  "title": "Cloudstitch · 풍성한 소리 검수실",
+  "purpose": "Full SFX body/space enhancement with subtle short bass accents; original sources preserved",
+  "assets": [
+    {
+      "id": "fire-machinegun",
+      "label": "기관총 · 단발",
+      "category": "weapon",
+      "loop": false,
+      "description": "기존 ElevenLabs 기관총 시안 재사용. 한 발의 압력 충격·황동 급탄·목재 총좌 반동이며 연사본은 검수용 배치다.",
+      "source": {
+        "file": "original/fire-machinegun.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/fire-machinegun.mp3",
+        "sha256": "bd3a66b2b94b175b1e45ba17bfd93a8654d2efd0d33d287d14407a548c224d22",
+        "bytes": 13835,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "existing_reused",
+        "prompt": "Exactly one isolated shot from a small handcrafted airship machine gun. Immediate dry punchy tak, rounded low-mid pressure crack, short warm wooden mount knock, crisp brass bolt snap and tiny shell tick, fast natural decay. Tactile, sturdy, slightly stylized game SFX with smooth treble. No burst, repeated shots, voices, music, wind, background, long reverb or explosion.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/fire-machinegun.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "player-fire",
+          "enemy-fire"
+        ],
+        "note": "기존 기관총 MP3/WAV 재사용. weaponId === 01-machine-gun일 때만. 실제 현재 player-fire에 존재하며 새 자산 설치는 별도."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.8,
+      "priority": 2
+    },
+    {
+      "id": "machinegun-feed",
+      "label": "기관총 · 급탄·장전",
+      "category": "weapon",
+      "loop": false,
+      "description": "작은 급탄 레버가 당겨지고 황동 탄띠가 짧게 이동한 뒤 볼트가 닫히는 소리. 발사 없음.",
+      "source": {
+        "file": "original/machinegun-feed.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/machinegun-feed.mp3",
+        "sha256": "3c12abb43c780eff189d2dba0916f9b68c2071c9c44647e9aadfad97063aa50e",
+        "bytes": 13835,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One compact mechanical reload: a small hand lever pulls, several brass links slide through a feed gate, a short spring snaps the bolt closed. Small precise parts, no gunshot. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/machinegun-feed.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "현재 sim에는 기관총 장전·급탄·과열 이벤트가 없음. 발사 뒤 고정 지연으로 장전음을 예약하지 않는다."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.8,
+      "priority": 2
+    },
+    {
+      "id": "fire-cannon",
+      "label": "함포 · 발사·목재 반동",
+      "category": "weapon",
+      "loop": false,
+      "description": "낮고 짧은 공기압 발사와 뒤따르는 목재 갑판·반동 레일의 충격. 잔향은 짧게.",
+      "source": {
+        "file": "original/fire-cannon.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/fire-cannon.mp3",
+        "sha256": "63751d20bcfb5264fe6fcc6a28e3b5628a426fcb13d943c65ac5cfa82d75a4e3",
+        "bytes": 20105,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One deck cannon firing from a small wooden airship: a compact low pressure report, immediate heavy wooden carriage recoil and brief brass rail rattle. Firm and readable, short decay, no huge explosion tail. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/fire-cannon.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "player-fire",
+          "enemy-fire"
+        ],
+        "note": "weaponId === 02-deck-cannon. 현재 enemy-fire의 trainingPattern 간이 탄은 실제 이벤트지만 완전한 함포 역학 구현과 구분."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.2,
+      "priority": 2
+    },
+    {
+      "id": "cannon-breech",
+      "label": "함포 · 약실 장전",
+      "category": "weapon",
+      "loop": false,
+      "description": "포탄 삽입의 둔한 금속 이동 뒤 황동 약실 걸쇠가 무겁게 닫힌다. 발사음과 분리.",
+      "source": {
+        "file": "original/cannon-breech.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/cannon-breech.mp3",
+        "sha256": "caf670455fdb87f9e4d6e0b362454e7015aa72c4b89bbeaa43ba1fe1bcb47d34",
+        "bytes": 21358,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One small naval cannon breech reload: a solid shell slides into a padded metal chamber, a heavy brass breech rotates shut, a firm mechanical locking clunk. No shot, no explosion. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/cannon-breech.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "현재 sim에는 함포 약실/장전 단계 없음. 실제 장전 상태 hook 추가 시 연결."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.3,
+      "priority": 2
+    },
+    {
+      "id": "fire-mortar",
+      "label": "박격포 · 둔한 출발",
+      "category": "weapon",
+      "loop": false,
+      "description": "짧은 통 안에서 압력이 풀리는 낮은 퍽 소리와 받침의 떨림. 함포보다 공명 짧음.",
+      "source": {
+        "file": "original/fire-mortar.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/fire-mortar.mp3",
+        "sha256": "8ebc96fe85251128e7eaeb8b78e807aa0031ab48a8e43b31a3033b830fb01e32",
+        "bytes": 13835,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One mortar shell leaving a short upward-facing tube: a hollow low poomp of pressure, soft air puff and a little wooden base vibration. Rounded attack, no large detonation. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/fire-mortar.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "03-mortar는 자산/기획만 존재. 현재 권위 sim의 실제 발사 이벤트 미지원."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "revision_requested",
+      "durationRequested": 0.8,
+      "priority": 2
+    },
+    {
+      "id": "mortar-fall",
+      "label": "박격포 · 낙하 공기음",
+      "category": "weapon",
+      "loop": false,
+      "description": "공기를 가르는 짧은 낙하 휘파람. 폭발은 별도 큐이며 접근 경고의 시각 표시를 유지.",
+      "source": {
+        "file": "original/mortar-fall.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/mortar-fall.mp3",
+        "sha256": "2854c434a196869bcc6f4c82bf8b2934e1697d188773e2b185ec43a35b7a54f0",
+        "bytes": 20105,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A single mortar shell descending through open air, a short airy falling whistle with a gentle downward sweep and fast pass, no impact or explosion. Physical airflow, restrained and readable. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/mortar-fall.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "현재 탄도/낙하 시점 상태 미지원. 검수용 자산이며 공격시연 timeline에 자동 연결하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.2,
+      "priority": 2
+    },
+    {
+      "id": "fire-harpoon",
+      "label": "작살포 · 압력 발사",
+      "category": "weapon",
+      "loop": false,
+      "description": "밸브가 압력을 풀어 작살을 밀어내고 감긴 케이블이 빠르게 풀린다. 총성 없음.",
+      "source": {
+        "file": "original/fire-harpoon.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/fire-harpoon.mp3",
+        "sha256": "108638ecda8fd70ad6f4142c608d8635e57bb9605c16f4bc9dd3df7516b312b8",
+        "bytes": 17179,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One pneumatic harpoon launcher: a brass pressure valve releases with a sharp chuff, a heavy metal dart launches, a short spool of cable rapidly unreels and settles. No firearm report, no impact. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/fire-harpoon.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "04-harpoon의 실제 발사/줄 lifecycle 미지원. enemy module.type harpoon은 현재 간이 함포 탄으로 발사되므로 이 자산과 혼동 금지."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1,
+      "priority": 2
+    },
+    {
+      "id": "harpoon-embed",
+      "label": "작살 · 박힘",
+      "category": "weapon",
+      "loop": false,
+      "description": "작살촉이 목재와 보강 금속에 박히는 두꺼운 충격, 이어진 아주 짧은 줄 떨림.",
+      "source": {
+        "file": "original/harpoon-embed.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/harpoon-embed.mp3",
+        "sha256": "bf82b9ab3ccf56f48cfea66e973946acc079ddd7b3b08c83e6156758e26bb795",
+        "bytes": 12163,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A heavy steel harpoon tip bites into a wooden panel with a thin brass reinforcement: one deep wooden thunk, brief metal bite and a tiny taut cable vibration. No launch, no explosion. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/harpoon-embed.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "작살 실제 collision/견인 시작 hook 대기. 일반 hit를 작살 명중으로 변조하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.7,
+      "priority": 2
+    },
+    {
+      "id": "harpoon-tension-loop",
+      "label": "작살 · 케이블 장력",
+      "category": "weapon",
+      "loop": true,
+      "description": "줄이 팽팽하게 당겨진 상태의 낮은 금속 장력·밧줄 마찰. 실제 견인 중만 유지할 후속 루프.",
+      "source": {
+        "file": "original/harpoon-tension-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/harpoon-tension-loop.mp3",
+        "sha256": "b3ed5c6551ec30934ad6af6e3ad1e09cdc1be6e45614211ee40dd60f138cea45",
+        "bytes": 65244,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A taut winch cable under a steady moderate load: low cable singing, fine wire strain and occasional soft rope friction, gentle restrained mechanical texture, not a warning siren. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/harpoon-tension-loop.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "현재 작살 연결/과장력/해제 상태 없음. 견인 lifecycle 전용 시작·갱신·정지 hook 필요."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 4,
+      "priority": 2
+    },
+    {
+      "id": "fire-chain",
+      "label": "사슬탄 · 두 탄구 발사",
+      "category": "weapon",
+      "loop": false,
+      "description": "두 쇠구슬이 넓은 포구를 빠져나가며 사슬이 짧게 끌린다. 전기·레이저 없음.",
+      "source": {
+        "file": "original/fire-chain.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/fire-chain.mp3",
+        "sha256": "056d63c406b0419333a134668cfc2c7be2e941cdd9c437c48c63ea41914f6475",
+        "bytes": 17179,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One twin-ball chain shot launcher firing: compact pneumatic thump, two weighty iron balls knock past a wide muzzle and a short chain rapidly scrapes out behind them. No electric or laser sound. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/fire-chain.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "05-chain-shot 실제 발사/엔진 둔화 hook 미지원."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1,
+      "priority": 2
+    },
+    {
+      "id": "chain-spin",
+      "label": "사슬탄 · 회전 마찰",
+      "category": "weapon",
+      "loop": false,
+      "description": "공중의 두 탄구 사이 사슬 고리가 회전하며 바람을 긁는 소리. 명중과 별도.",
+      "source": {
+        "file": "original/chain-spin.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/chain-spin.mp3",
+        "sha256": "d855590f652b3c372ec9b1546a52f75b05170ff896b00cde6450720c803f1ac1",
+        "bytes": 23030,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "Two heavy iron balls linked by a short chain spinning through air: uneven metallic link friction and a rhythmic air swish, passing quickly and fading. Physical chain movement, no impact, no magic. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/chain-spin.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "현재 chain projectile 없음. 실제 투사체 위치/수명에 연결할 후속 자산."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.4,
+      "priority": 2
+    },
+    {
+      "id": "flame-ignite",
+      "label": "화염 · 점화",
+      "category": "weapon",
+      "loop": false,
+      "description": "작은 점화기 클릭과 짧은 연료 점화 푹 소리. 지속 분사와 별도.",
+      "source": {
+        "file": "original/flame-ignite.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/flame-ignite.mp3",
+        "sha256": "6bcf3a8f8ea7570b46d40516f4cb623ab0adac62fde60ae02c17ed2657fdf4a8",
+        "bytes": 13835,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A compact brass flamethrower igniting once: tiny mechanical igniter click, brief fuel hiss, a small soft ignition whoof. Short controlled onset, no sustained flame, no explosion. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/flame-ignite.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "06-flamethrower의 실제 점화/분사 상태 미지원."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.8,
+      "priority": 2
+    },
+    {
+      "id": "flame-spray-loop",
+      "label": "화염 · 압력 분사",
+      "category": "weapon",
+      "loop": true,
+      "description": "가압 연료와 불꽃의 압력 분사. 짧은 거리 무기로 들리고 최대 음량으로 경고를 가리지 않음.",
+      "source": {
+        "file": "original/flame-spray-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/flame-spray-loop.mp3",
+        "sha256": "16f88b3e0460f2a40e30534373bb2c642c919aca101aa03d2d14e36505e1b20d",
+        "bytes": 65244,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A short-range brass flamethrower spraying steadily: controlled pressurized fuel hiss underneath a soft dense fluttering flame roar. Medium intensity, no crackling bonfire, no explosion, no dramatic swell. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/flame-spray-loop.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "실제 held-fire/분사 시간/냉각 상태 hook 필요. 최대3초 연속 분사 초기 기획과 loop 파일 길이를 게임 판정으로 혼동하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 4,
+      "priority": 2
+    },
+    {
+      "id": "flame-stop",
+      "label": "화염 · 밸브 차단",
+      "category": "weapon",
+      "loop": false,
+      "description": "연료 밸브 잠금 클릭과 압력이 빠지는 짧은 쉭 소리. 불꽃이 급히 사라짐.",
+      "source": {
+        "file": "original/flame-stop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/flame-stop.mp3",
+        "sha256": "be69dfec112ba63a1bfc192c5011599fb80e83aa20608f4f5e6c1f276cea116d",
+        "bytes": 12163,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small pressurized flame nozzle shutting off: a firm brass valve click, pressure rapidly hisses down and the flame snuffs with a soft puff. Clean short ending, no explosion. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/flame-stop.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "현재 분사 종료/연료 밸브 이벤트 없음. 실제 stop/cancel에만 연결할 후속 자산."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.7,
+      "priority": 2
+    },
+    {
+      "id": "hit-wood",
+      "label": "목재 · 피격",
+      "category": "impact",
+      "loop": false,
+      "description": "속이 빈 목재 판의 둔한 충격과 작은 가시 파편. 황동 장갑 타격과 음색 구분.",
+      "source": {
+        "file": "original/hit-wood.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/hit-wood.mp3",
+        "sha256": "5bd0d809b97e19f0a4627ac17cc7c52ca24ed01dfa313cb2142c91a6e450055d",
+        "bytes": 12163,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One projectile impact on warm dry wooden airship planking: a hollow woody knock, a short sharp splinter crack and tiny dry fragments falling. No metallic ring, no explosion. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/hit-wood.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "hit"
+        ],
+        "note": "이벤트에 material 필드 없음. moduleId→snapshot module.type hull/deck 또는 obstacle의 명시적 목재 대체값. 새 재질을 sim에 쓰지 않는다."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.7,
+      "priority": 2
+    },
+    {
+      "id": "hit-cloth",
+      "label": "천 기낭 · 피격·공기샘",
+      "category": "impact",
+      "loop": false,
+      "description": "두꺼운 천의 찢김과 부드러운 공기 빠짐. 선체 폭발과 구별되는 가벼운 재료음.",
+      "source": {
+        "file": "original/hit-cloth.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/hit-cloth.mp3",
+        "sha256": "a552784a00baecf63d1271115fa7dc83938aaa5b64b431ae6c0367efe21de2e8",
+        "bytes": 15089,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small projectile punctures heavy woven airship canvas: a quick dry fabric rip, short soft pressurized air escape and a loose cloth flutter. No glass, no explosion, no loud impact boom. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/hit-cloth.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "hit"
+        ],
+        "note": "snapshot 피격 module.type === balloon/fabric/canvas일 때 읽기 선택. 이벤트 자체에는 재질 없음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.9,
+      "priority": 2
+    },
+    {
+      "id": "hit-armor",
+      "label": "황동·장갑 · 피격",
+      "category": "impact",
+      "loop": false,
+      "description": "황동 보강판의 단단한 타격과 짧은 비정수 배음. 길게 울리는 종소리 없음.",
+      "source": {
+        "file": "original/hit-armor.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/hit-armor.mp3",
+        "sha256": "b2eb18f3e53fc89022758d8bfecfa5ba5623d4e0b858d9802e118818bcd89206",
+        "bytes": 15089,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One bullet strikes a small thick brass armor plate: hard compact metallic tick-clang, short irregular bright resonance and a tiny scrape. Damp quickly, not a bell, no huge ricochet tail. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/hit-armor.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "hit"
+        ],
+        "note": "snapshot module.type connector/cannon/machinegun/harpoon/weapon 등 금속 대체 재료. 전용 armor 재질 메타데이터가 현재 sim에 있는 것처럼 주장하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.9,
+      "priority": 2
+    },
+    {
+      "id": "hit-engine",
+      "label": "엔진 · 피격·헛돎",
+      "category": "impact",
+      "loop": false,
+      "description": "엔진 외함 타격 뒤 작은 기계 헛돎과 증기 배출. 점화 실패의 불규칙한 박자.",
+      "source": {
+        "file": "original/hit-engine.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/hit-engine.mp3",
+        "sha256": "0fb9cb175b86c6d5118e21da3f2d24e8f25d8d4c4c06bf744e0cda1daffe4214",
+        "bytes": 18433,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A compact propeller engine casing is hit once: a dull metal body strike, a brief irregular mechanical sputter, a loose bearing rattle and soft escaping steam. Small engine, no large explosion. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/hit-engine.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "hit"
+        ],
+        "note": "snapshot 피격 module.type === engine. 별도 실제 엔진 고장 상태를 만들어내지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.1,
+      "priority": 2
+    },
+    {
+      "id": "mortar-impact",
+      "label": "박격탄 · 착탄",
+      "category": "impact",
+      "loop": false,
+      "description": "짧고 낮은 착탄 압력과 목재 파편·황동 조각. 초대형 영화 폭발을 피함.",
+      "source": {
+        "file": "original/mortar-impact.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/mortar-impact.mp3",
+        "sha256": "d627442320dfeabb593c0aacb3e844198c3534cd5a0f7f00420e0388e1d81e0a",
+        "bytes": 24702,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A single small mortar shell detonates against a wooden airship deck: tight low pressure burst, snapping planks, several tiny brass fragments and a short open-air decay. Compact scale, no massive sub bass, no long cinematic tail. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/mortar-impact.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "03-mortar 실제 착탄/범위 피해 이벤트 미지원. 타임라인으로 실제 피해를 추정하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.5,
+      "priority": 2
+    },
+    {
+      "id": "connector-cut",
+      "label": "연결 골조 · 절단",
+      "category": "impact",
+      "loop": false,
+      "description": "나무 골조 균열과 팽팽한 로프 풀림, 황동 볼트가 튀는 짧은 연속 재료음.",
+      "source": {
+        "file": "original/connector-cut.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/connector-cut.mp3",
+        "sha256": "e77be730c82c49245ed78ba08b126c7f5f4497f8abe67489760ab1f73bc4f1c1",
+        "bytes": 18433,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A stressed wooden airship connector snaps: one sharp structural wood crack, a taut rope releases with a low twang, three tiny brass bolts scatter and settle quickly. Clear release, no explosion. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/connector-cut.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "module-destroyed"
+        ],
+        "note": "event.moduleType === connector. 실제 절단과 하위 묶음 bundle-detached는 별도 사건."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.1,
+      "priority": 2
+    },
+    {
+      "id": "module-break",
+      "label": "부품 · 파괴",
+      "category": "impact",
+      "loop": false,
+      "description": "작은 목재·황동 장치가 부서지는 소리. 회수 가능한 분리 부품과 전파괴를 구별.",
+      "source": {
+        "file": "original/module-break.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/module-break.mp3",
+        "sha256": "67ac2d17028b180d95c246322d48f0e136d508bb772be19683fd5124c9bf3d83",
+        "bytes": 18433,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small wooden and brass mechanism breaks apart once: firm wooden crunch, one short metal housing crack, a few loose gears rattle down. Controlled scale, no giant explosion, no long debris rain. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/module-break.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "module-destroyed"
+        ],
+        "note": "moduleType !== connector인 실제 파괴. enemy-defeated와 같은 프레임 중복 시 우선순위/발음 제한 필요."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.1,
+      "priority": 2
+    },
+    {
+      "id": "bundle-detach",
+      "label": "부품 묶음 · 분리",
+      "category": "salvage",
+      "loop": false,
+      "description": "살아 있는 하위 묶음이 본체에서 떨어져 나가며 나무 맞물림·작은 볼트·천이 멀어진다.",
+      "source": {
+        "file": "original/bundle-detach.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/bundle-detach.mp3",
+        "sha256": "328917cd1a76f9ad0a86f70739e6247367c405dd1bc1ea924360a0d9010cff18",
+        "bytes": 23030,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A wooden airship side module separates without exploding: wooden joints pull apart, two small bolts drop, loosened canvas flutters and a small mechanical assembly gently drifts away. No hard ground crash. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/bundle-detach.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "bundle-detached"
+        ],
+        "note": "bundleId/moduleIds/위치를 읽음. 파괴음·회수음과 구별하며 생성된 묶음에만 한 번."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.4,
+      "priority": 2
+    },
+    {
+      "id": "winch-loop",
+      "label": "인양 · 윈치 작동",
+      "category": "salvage",
+      "loop": true,
+      "description": "하중을 들어 올리는 작은 윈치의 기어·래칫·밧줄 움직임. 완료음 별도.",
+      "source": {
+        "file": "original/winch-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/winch-loop.mp3",
+        "sha256": "97be3435109069dc52c466e80dd57a4f8390ef025cba6291a07a50aedced506a",
+        "bytes": 65244,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small wooden airship salvage winch running steadily under load: low hand-built gear rotation, measured ratchet clicks and a rope sliding over a wooden pulley. Slow working mechanism, no completion clunk. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/winch-loop.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "현재 salvage는 즉시 완료 액션이며 진행률/시작/취소 상태 없음. salvaged 뒤 이 루프를 재생해 인양 중으로 오표시하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 4,
+      "priority": 2
+    },
+    {
+      "id": "salvage-complete",
+      "label": "인양 · 회수 완료",
+      "category": "salvage",
+      "loop": false,
+      "description": "윈치의 마지막 한 바퀴 뒤 화물이 받침에 닿고 걸쇠가 잠기는 완료 신호.",
+      "source": {
+        "file": "original/salvage-complete.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/salvage-complete.mp3",
+        "sha256": "344f2b6adf06bcd10db398bba1724056fc19e7c5b703c0aa50176ecf0c872924",
+        "bytes": 20105,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A salvaged airship part reaches its cradle: one final winch ratchet, a padded wooden cargo thunk, taut rope settles and a brass cargo latch locks firmly. Satisfying physical completion, no musical reward chime. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/salvage-complete.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "salvaged"
+        ],
+        "note": "권위의 실제 회수 성공 뒤 bundleId별 한 번. 화물 소유권/보상/장착을 추가하지 않음. audio-v1 salvage 대응 교체 후보."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.2,
+      "priority": 2
+    },
+    {
+      "id": "cargo-drop",
+      "label": "화물 · 방출",
+      "category": "salvage",
+      "loop": false,
+      "description": "고정 걸쇠 해제와 밧줄 이완 뒤 화물이 공중으로 빠져나간다. 추락 착지음 없음.",
+      "source": {
+        "file": "original/cargo-drop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/cargo-drop.mp3",
+        "sha256": "aa6d1facdeb64ed436bcbf941792eebbc926b8bbc83a611d7351564c1bd230b7",
+        "bytes": 17179,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A cargo bundle is released from a small airship: brass latch unlocks, rope slackens, a padded wooden frame slides outward with a brief air swish. It drifts into open air, no ground impact. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/cargo-drop.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "cargo-dropped"
+        ],
+        "note": "실제 화물 방출 event. 회수 성공/새 전리품 보상을 생성하지 않음. 신규 자산 어댑터 연결 대기."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1,
+      "priority": 2
+    },
+    {
+      "id": "bundle-lost",
+      "label": "부유 잔해 · 소실",
+      "category": "salvage",
+      "loop": false,
+      "description": "멀어지는 천과 작은 목재 마찰. 회수 가능 시간이 끝나는 작은 환경 신호.",
+      "source": {
+        "file": "original/bundle-lost.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/bundle-lost.mp3",
+        "sha256": "d70a39bbb96c6add4a08c3715c4894ae40c5c52afc3da0b839817150d77d6021",
+        "bytes": 21358,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small floating wood-and-canvas wreck slowly drifts out of reach: very soft cloth flutter, a tiny distant wood creak and a gentle fading air swish. Quiet and unobtrusive, no failure buzzer. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/bundle-lost.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "bundle-lost"
+        ],
+        "note": "실제 debris.remaining 종료 이벤트. 낮은 우선순위; 화면 밖 다중 소실은 rate limit로 묶고 중요한 경고를 덮지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.3,
+      "priority": 1
+    },
+    {
+      "id": "engine-idle-loop",
+      "label": "엔진 · 낮은 회전",
+      "category": "ambience",
+      "loop": true,
+      "description": "작은 프로펠러의 낮은 박자·베어링 떨림. 항해 중 저속 상태용 환경 층.",
+      "source": {
+        "file": "original/engine-idle-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/engine-idle-loop.mp3",
+        "sha256": "b3f6b2dfb06b32e65ce021058173601f58c55458243e86d437a4348842ca2f96",
+        "bytes": 97009,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small handmade propeller airship engine idling gently: warm low mechanical putter, soft regular propeller beats, tiny brass bearing vibration. Stable quiet close mechanical bed, no engine startup or shutdown. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/engine-idle-loop.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "phase === sailing && sim.outcome === sailing && !paused. sim.player vx/vz의 낮은 속도에 혼합 후보. 현재 audio-v1 단일 engine-loop와 새 두 층 mixer 연결은 별도."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 6,
+      "priority": 1
+    },
+    {
+      "id": "engine-cruise-loop",
+      "label": "엔진 · 항해 회전",
+      "category": "ambience",
+      "loop": true,
+      "description": "더 빠른 프로펠러 박자와 안정적인 기계 회전. 단순 음량 상승만으로 속도 표현하지 않음.",
+      "source": {
+        "file": "original/engine-cruise-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/engine-cruise-loop.mp3",
+        "sha256": "263112425f0905519cf5408190fd7174077241139ad9244f3647a4eab588392a",
+        "bytes": 97009,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small propeller airship engine cruising steadily: light rhythmic blade thrum, warm mid-low mechanical rotation and fine bearing chatter. Faster than idle but gentle and stable, no acceleration sweep or jet roar. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/engine-cruise-loop.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "sim.player vx/vz로 읽은 실제 속도/boosting 혼합. 매 프레임 루프 재시작 금지, 상태 경계 정리 필요."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 6,
+      "priority": 1
+    },
+    {
+      "id": "wind-calm-loop",
+      "label": "바람 · 부드러운 천",
+      "category": "ambience",
+      "loop": true,
+      "description": "바람이 기낭의 두꺼운 천을 스치는 고요한 환경. 새·사람·음악 없음.",
+      "source": {
+        "file": "original/wind-calm-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/wind-calm-loop.mp3",
+        "sha256": "7e901d35c778e12273441173a0a9d8bc1c76ab92a5e9df2fcef3ac99a4b16aff",
+        "bytes": 97009,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "Gentle open-sky wind across thick woven canvas on a small airship, soft airy movement with a subtle close fabric flutter. Warm calm texture, no birds, no thunder, no whistling melody. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/wind-calm-loop.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "항해 running 상태의 낮은 우선순위 환경. audio-v1 wind-loop 대응 교체 후보."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 6,
+      "priority": 1
+    },
+    {
+      "id": "wind-fast-loop",
+      "label": "바람 · 빠른 항해",
+      "category": "ambience",
+      "loop": true,
+      "description": "고역의 공기 흐름과 조금 더 빠른 천의 떨림. 크기보다 대역·리듬으로 속도 차이.",
+      "source": {
+        "file": "original/wind-fast-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/wind-fast-loop.mp3",
+        "sha256": "5574718554af153e6a4df9ec958459bdf6bccdca44c35dfdfd5f3e76ea138fea",
+        "bytes": 97009,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "Air moving faster along an airship canvas balloon: fine brighter rushing wind, quick soft cloth flutter and gentle rope vibration. Stable open-air flow, not a violent storm, no dramatic gust peak. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/wind-fast-loop.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "sim.player의 실제 속도에 따른 고역 층. 위험 경고보다 낮은 우선순위, source speed가 없는 검수 화면에서는 수동 audition만."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 6,
+      "priority": 1
+    },
+    {
+      "id": "hull-creak-loop",
+      "label": "선체 · 나무·밧줄",
+      "category": "ambience",
+      "loop": true,
+      "description": "서로 다른 목재 맞물림과 부드러운 밧줄 마찰. 균열 경고보다 작고 편안함.",
+      "source": {
+        "file": "original/hull-creak-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/hull-creak-loop.mp3",
+        "sha256": "fd742c41d58dca06528161b71981afb7bcd86fbfa9936f31701cff3d6bce79f7",
+        "bytes": 97009,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A gently flexing wooden airship hull in flight: sparse soft timber joint creaks, subtle rope rub and a little padded wood resonance. Comfortable old craft, no structural snapping, no footsteps. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/hull-creak-loop.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "항해 환경 후보. 실제 구조 손상 전조 상태는 없으므로 임박한 파괴 경고로 표시하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 6,
+      "priority": 1
+    },
+    {
+      "id": "harbor-workshop-loop",
+      "label": "항구 · 조용한 작업장",
+      "category": "ambience",
+      "loop": true,
+      "description": "먼 작은 목재 도구·가벼운 황동 작업과 부드러운 천. 음악·사람 목소리 제외.",
+      "source": {
+        "file": "original/harbor-workshop-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/harbor-workshop-loop.mp3",
+        "sha256": "fd5e9461f681e23a8cabc2a00783f187514d0ea802e374bc4435fb990c36059b",
+        "bytes": 97009,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A quiet handmade airship repair dock ambience: sparse distant small wooden tool knocks, gentle light brass work and faint canvas movement in soft air. A restrained ambient texture, no voices, no sea waves, no bell melody. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/harbor-workshop-loop.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "실제 phase === harbor에서만 환경 후보. 현재 audio-v1 항구 환경 mixer 미지원, 검수 전용 자산."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 6,
+      "priority": 1
+    },
+    {
+      "id": "lift-danger-loop",
+      "label": "양력 부족 · 천 장력",
+      "category": "warning",
+      "loop": true,
+      "description": "팽팽한 천·밧줄의 힘든 마찰과 장력 박자. 전자경보 반복·음량만 증폭하는 위험 연출 없음.",
+      "source": {
+        "file": "original/lift-danger-loop.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/lift-danger-loop.mp3",
+        "sha256": "dd2fde52a8e3600abf6f831336683e42b896a45719343ff55e33e4a7695c4d91",
+        "bytes": 65244,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "Heavy airship canvas and suspension rope straining under too much weight: close dry fabric tension, low rope groans and a restrained uneven stress pulse. Clear material warning texture, no breaking or explosion, no electronic alarm. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/lift-danger-loop.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "running && sim.player.weight > sim.player.lift. 과하중 상태에서 한 루프 유지, 위험 해소/pause/defeat/harbor에서 정리."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 4,
+      "priority": 3
+    },
+    {
+      "id": "lift-warning",
+      "label": "양력 위험 · 짧은 경고",
+      "category": "warning",
+      "loop": false,
+      "description": "천 장력 소리 뒤 두 번의 황동 경고 핀. 조작 확인음과 다른 불균등한 리듬.",
+      "source": {
+        "file": "original/lift-warning.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/lift-warning.mp3",
+        "sha256": "a29c0d96cdf351db4d5230f50200aedb124c9446aba240c3554d51ea2e65c275",
+        "bytes": 15089,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A short mechanical airship lift warning: brief tight canvas strain followed by two distinct muted brass warning-pin ticks, first strong then short. Urgent but not piercing, no electronic beep, no melody. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/lift-warning.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "실제 weight > lift 진입 경계에서 한 번. 시각 양력 경고 유지, 반복 재진입은 cooldown 제한. audio-v1 기존 위험 매핑 대응."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.9,
+      "priority": 3
+    },
+    {
+      "id": "incoming-warning",
+      "label": "적 공격 · 준비 경고",
+      "category": "warning",
+      "loop": false,
+      "description": "상대 장치의 가압 장전·작은 금속 당김. 발사 자체가 아닌 실제 공격 예고 상태의 경고.",
+      "source": {
+        "file": "original/incoming-warning.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/incoming-warning.mp3",
+        "sha256": "f13f60ecc90a7bdfdcdee804886f252172b4b25f8457c77d8e93c424b49eb1ba",
+        "bytes": 13835,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A restrained hostile cannon preparation cue: quick tightening metal spring, short rising pressure hiss and one muted brass latch click. Clear brief mechanical threat signal, no shot, no siren, no musical sting. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/incoming-warning.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "실제 sim.enemies[].telegraph의 null→object 경계 감지 후보. 전장에 enemy-warning라는 가짜 이벤트를 추가하지 않음. 시각 예고 유지."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.8,
+      "priority": 3
+    },
+    {
+      "id": "defeat",
+      "label": "패배 · 동력 멎음",
+      "category": "warning",
+      "loop": false,
+      "description": "작은 엔진이 박자를 잃고 정지, 느슨한 천이 한 번 펄럭임. 폭발·음악·사망 목소리 없음.",
+      "source": {
+        "file": "original/defeat.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/defeat.mp3",
+        "sha256": "8d25a0733a752ad6664b4b811e97e0ee04da7c2ccd02dcd02e306d9d9c52c775",
+        "bytes": 29300,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small wooden airship engine losing power and stopping: two irregular mechanical sputters, rotating parts gently slow down, a loose canvas flap and a soft final wooden settle. Short and restrained, no explosion or music. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/defeat.wav",
+      "eventMapping": {
+        "status": "source_event_adapter_pending",
+        "events": [
+          "defeat"
+        ],
+        "note": "실제 defeat 또는 phase 전환 한 번. 먼저 예약음·one-shot·환경 loop 정리. 기존 audio-v1은 패배 정리만 하며 이 신규 큐 연결 대기."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.8,
+      "priority": 3
+    },
+    {
+      "id": "return",
+      "label": "귀환 · 계류 완료",
+      "category": "harbor",
+      "loop": false,
+      "description": "목재 받침에 부드럽게 자리 잡은 선체와 밧줄·황동 계류 걸쇠. 승리 음악 없음.",
+      "source": {
+        "file": "original/return.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/return.mp3",
+        "sha256": "dd82fd9fc9c535382ce0bbf84f30ca04ebc249e8610fb9f4931602e829da9f75",
+        "bytes": 24702,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small wooden airship gently mooring at a dock: padded timber settle, rope takes slack and a brass mooring clasp locks with a warm compact clunk. Safe physical arrival, no bell melody or celebration. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/return.wav",
+      "eventMapping": {
+        "status": "source_snapshot_adapter_pending",
+        "events": [],
+        "note": "실제 sailing→harbor 또는 sim.outcome→victory 경계. 저장 실패라도 실제 귀환은 따로 판단. audio-v1 귀환 매핑 대응."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.5,
+      "priority": 2
+    },
+    {
+      "id": "harbor-repair",
+      "label": "항구 · 수리 완료",
+      "category": "harbor",
+      "loop": false,
+      "description": "두 작은 목재 망치, 수선 천을 쓸어 펴는 소리와 마지막 공구 걸쇠.",
+      "source": {
+        "file": "original/harbor-repair.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/harbor-repair.mp3",
+        "sha256": "03bcd5ee9fb8770005798061b95658e7186130a46ab625a5b66fbf0604e386ec",
+        "bytes": 23030,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A brief airship repair completion: two small wooden mallet taps, a brush smoothing thick canvas, one brass tool clasp closes. Handmade careful workmanship, no power tools, no musical success chime. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/harbor-repair.wav",
+      "eventMapping": {
+        "status": "source_event_or_command_adapter_pending",
+        "events": [
+          "player-repaired"
+        ],
+        "note": "전장 player-repaired restored > 0은 snapshot player anchor 사용. 항구 command(repair)의 실제 result.ok === true만."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.4,
+      "priority": 2
+    },
+    {
+      "id": "harbor-equip",
+      "label": "항구 · 장착 완료",
+      "category": "harbor",
+      "loop": false,
+      "description": "레일에 부품이 미끄러져 들어와 목재 받침에 닿고 황동 잠금 핀이 걸린다.",
+      "source": {
+        "file": "original/harbor-equip.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/harbor-equip.mp3",
+        "sha256": "66cc33bd2a0cb9fa0d26c1d8dee61ebf46f5d76813e374c6ac60b2128f5304bf",
+        "bytes": 18433,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One small airship module being installed: a short metal guide-rail slide, firm padded wooden base contact and a brass locking pin clicks fully into place. Precise satisfying mechanical fit, no music. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/harbor-equip.wav",
+      "eventMapping": {
+        "status": "source_command_result_adapter_pending",
+        "events": [],
+        "note": "controller.command(equip) 실제 result.ok === true. previewEquip는 성공 장착이 아니므로 이 큐를 내지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.1,
+      "priority": 2
+    },
+    {
+      "id": "harbor-store",
+      "label": "항구 · 화물 보관",
+      "category": "harbor",
+      "loop": false,
+      "description": "작은 나무 화물 상자가 창고 받침에 놓이고 로프가 정리된다. 회수와 다른 착좌음.",
+      "source": {
+        "file": "original/harbor-store.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/harbor-store.mp3",
+        "sha256": "0c7d4cc43d098fd59f8563b2e20478b637def237b10fe5bb18f788b24ca1f7a7",
+        "bytes": 20105,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small wooden cargo crate placed into a dock storage rack: low padded wood thunk, short rope slide and a small inventory drawer latch closing. Close physical storage action, no coins, no reward jingle. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/harbor-store.wav",
+      "eventMapping": {
+        "status": "source_command_result_adapter_pending",
+        "events": [],
+        "note": "controller.command(store) 실제 result.ok === true. 새 보상/아이템/항해ID 만들지 않음. 신규 store 결과 bridge 연결 대기."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.2,
+      "priority": 2
+    },
+    {
+      "id": "harbor-depart",
+      "label": "출항 · 계류 해제",
+      "category": "harbor",
+      "loop": false,
+      "description": "계류 걸쇠와 밧줄을 풀고 선체가 목재 받침에서 가볍게 떠오른다. 지속 엔진은 별도.",
+      "source": {
+        "file": "original/harbor-depart.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/harbor-depart.mp3",
+        "sha256": "e285331303656c96e06681460552a1bb8d3262ab1e129b173a00ae86696d666f",
+        "bytes": 21358,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small airship leaving its mooring: brass clasp releases, rope slides free over a wooden post, the wooden hull softly lifts away with a brief propeller stir. Short departure action, no ongoing engine loop, no music. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/harbor-depart.wav",
+      "eventMapping": {
+        "status": "source_command_result_adapter_pending",
+        "events": [],
+        "note": "controller.command(depart) 실제 ok 이후 phase === sailing일 때. 실제 출항 저장 실패/commit 실패에서는 재생하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 1.3,
+      "priority": 2
+    },
+    {
+      "id": "save-ok",
+      "label": "저장 · 성공",
+      "category": "ui",
+      "loop": false,
+      "description": "작은 두 기계식 걸쇠가 순서대로 맞물리는 건조한 확인. 보상·성취 음악 없음.",
+      "source": {
+        "file": "original/save-ok.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/save-ok.mp3",
+        "sha256": "0379f5cce23cd96d638c10165de851d11c87a8011896e8526861a7d06bba8a07",
+        "bytes": 12163,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A tiny handmade mechanical confirmation: two small polished brass latches fit together in a quick tidy sequence, soft padded wooden support underneath. Short dry tactile success, no notes or musical chime. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/save-ok.wav",
+      "eventMapping": {
+        "status": "source_command_result_adapter_pending",
+        "events": [],
+        "note": "command(save) 실제 result.ok === true. 자동저장은 실제 persist/repository 결과 hook 대기이며 클릭이나 항구 입장만으로 성공 판정 금지."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.7,
+      "priority": 2
+    },
+    {
+      "id": "ui-fail",
+      "label": "조작·저장 · 실패",
+      "category": "ui",
+      "loop": false,
+      "description": "맞물리지 않는 걸쇠와 낮은 목재 노크. 위험 경고와 다른 둔하고 짧은 피드백.",
+      "source": {
+        "file": "original/ui-fail.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/ui-fail.mp3",
+        "sha256": "9e36e2692ff6d46cf28548292751d9d4e7ad9ede461191761d264ccf4e853e7a",
+        "bytes": 10492,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small brass latch fails to engage: one dull wooden knock and a brief soft mechanical spring slip, ending immediately. Mild readable failure feedback, no buzzer, no alarm, no music. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/ui-fail.wav",
+      "eventMapping": {
+        "status": "source_command_result_adapter_pending",
+        "events": [],
+        "note": "실제 command 결과 ok === false만. audio-v1은 repair/equip/save만 지원하므로 다른 command 실패는 새 bridge 대기. 성공음과 동시에 재생 금지."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.6,
+      "priority": 2
+    },
+    {
+      "id": "ui-hover",
+      "label": "UI · 초점 이동",
+      "category": "ui",
+      "loop": false,
+      "description": "아주 작은 마른 목재·천 마찰. 키보드 초점과 포인터 hover가 겹쳐도 한 번만.",
+      "source": {
+        "file": "original/ui-hover.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/ui-hover.mp3",
+        "sha256": "0dd663a824d969036c1388aedd14314fe1d10be5b2047ed984c30901583852df",
+        "bytes": 8820,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A single tiny tactile wooden selector tick against soft canvas padding, very brief and quiet, dry intimate detail, no ringing, no clicky computer mouse, no musical tone. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/ui-hover.wav",
+      "eventMapping": {
+        "status": "ui_hook_required",
+        "events": [],
+        "note": "실제 focus 이동에 한 번, pointer/focus 중복 제한. 게임 이벤트 없음. 접근성상 끄기 가능."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.5,
+      "priority": 1
+    },
+    {
+      "id": "ui-confirm",
+      "label": "UI · 선택 확인",
+      "category": "ui",
+      "loop": false,
+      "description": "작은 목재 버튼과 황동 스프링의 깔끔한 잠금. 게임 명령 성공음을 대체하지 않음.",
+      "source": {
+        "file": "original/ui-confirm.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/ui-confirm.mp3",
+        "sha256": "859c278b4a6be0d89689debc2f7152b31aaba56cdf1ba1b743d62e93669bdd5e",
+        "bytes": 10492,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One small wooden control button pressed and a tiny brass spring latches cleanly, a soft compact tactile knock with a short crisp top. No musical chime, no electronic tone. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/ui-confirm.wav",
+      "eventMapping": {
+        "status": "ui_hook_required",
+        "events": [],
+        "note": "탭/설정 선택의 실제 UI 수락에만. repair/equip/save 결과음과 중복하지 않으며 거래 성공으로 오표시 금지."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.6,
+      "priority": 1
+    },
+    {
+      "id": "ui-back",
+      "label": "UI · 뒤로·닫기",
+      "category": "ui",
+      "loop": false,
+      "description": "작은 나무 서랍이 부드럽게 물러나며 걸쇠가 풀리는 소리. 실패와 구별.",
+      "source": {
+        "file": "original/ui-back.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/ui-back.mp3",
+        "sha256": "1af5962de6ca7ceec0d83ac3e55015d6642c3cf51e0c31a78f52632cc8d2556f",
+        "bytes": 10492,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A tiny wooden drawer slides back a short distance and a soft brass catch releases, light downward tactile movement, very short dry sound. No failure buzzer, no music. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/ui-back.wav",
+      "eventMapping": {
+        "status": "ui_hook_required",
+        "events": [],
+        "note": "실제 패널 닫기/뒤로 수락 때. pause/resume 등 Web Audio lifecycle과 따로 전달."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.6,
+      "priority": 1
+    },
+    {
+      "id": "restore-ok",
+      "label": "저장 · 불러오기 완료",
+      "category": "ui",
+      "loop": false,
+      "description": "작은 나무 서랍을 열고 황동 기록 걸쇠가 자리 잡는 소리. 저장 성공음과 구별.",
+      "source": {
+        "file": "original/restore-ok.mp3",
+        "originalRelative": "outputs/audio-review-v2/audio/restore-ok.mp3",
+        "sha256": "82b5ad95be4c2a8083bce672476b5a46816b26284a112cb011051a16badcb04f",
+        "bytes": 15089,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "A small wooden record drawer opens, a lightweight brass index mechanism slides into place and settles with one soft precise click. Brief tactile retrieval confirmation, no paper voice, no musical notes. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/restore-ok.wav",
+      "eventMapping": {
+        "status": "source_command_result_adapter_pending",
+        "events": [],
+        "note": "controller.command(restore)의 실제 ok 이후 재생. 실제 identity/phase reset 정리를 먼저 하고, 이전 항해 큐 backlog를 재생하지 않음."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "unreviewed",
+      "durationRequested": 0.9,
+      "priority": 2
+    },
+    {
+      "id": "mortar-launch-a",
+      "label": "새 발사 A · 실물 관형 발사음",
+      "category": "weapon",
+      "loop": false,
+      "description": "단발 압력 충격과 짧은 포신 공명. 장식과 낙하음 없이 발사만 비교합니다.",
+      "source": {
+        "file": "original/mortar-launch-a.mp3",
+        "originalRelative": "outputs/audio-mortar-r1/audio/mortar-launch-a.mp3",
+        "sha256": "2f434daa0e135c22cb76e986a2d8d078fd2283fe2524ea1880a5e246ae162cc6",
+        "bytes": 11327,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One live round fired from a compact mortar tube, close outdoor recording. A sharp propellant ignition crack, a dense low air-pressure report from the short steel tube, then a brief gritty exhaust decay. One discharge only. Natural unpitched weapon sound, dry open air. No shell flight or impact, no voice, music, cartoon sound, tonal sweep, or cinematic sub-bass.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/mortar-launch-a.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "박격포 새 발사 후보 A/B. 현재 실제 박격포 고유탄도/발사 hook 연결 대기. 사용자 음색 승인 전."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "candidate_unapproved",
+      "durationRequested": 0.65,
+      "priority": 2
+    },
+    {
+      "id": "mortar-launch-b",
+      "label": "새 발사 B · 짧고 묵직한 게임용",
+      "category": "weapon",
+      "loop": false,
+      "description": "단단한 발사 충격 뒤 아주 작은 받침 반동. 길게 부푸는 저음과 휘파람을 줄인 후보입니다.",
+      "source": {
+        "file": "original/mortar-launch-b.mp3",
+        "originalRelative": "outputs/audio-mortar-r1/audio/mortar-launch-b.mp3",
+        "sha256": "269a76bb91af3023e87b93a3c9675fc74c3ef9d8f713857bb9d7e2fac1af0451",
+        "bytes": 12581,
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2",
+        "generationStatus": "generated_unreviewed",
+        "prompt": "One compact mortar fired from a wooden airship mount. Sharp ignition crack and short dense steel-tube pressure report; a faint dry wooden mounting knock follows immediately underneath. The launch dominates; wood is a quiet secondary detail. One shot, dry outdoor decay. No flight, impact, spring, cartoon tone, voice, music, or cinematic bass.",
+        "rights": "Generated through the user-supplied ElevenLabs account. Account/subscription license terms remain applicable; no claim of final legal clearance or third-party sample ownership."
+      },
+      "file": "enhanced/mortar-launch-b.wav",
+      "eventMapping": {
+        "status": "future_hook_required",
+        "events": [],
+        "note": "박격포 새 발사 후보 A/B. 현재 실제 박격포 고유탄도/발사 hook 연결 대기. 사용자 음색 승인 전."
+      },
+      "status": "enhancement_pending",
+      "sourceHumanReview": "candidate_unapproved",
+      "durationRequested": 0.75,
+      "priority": 2
+    }
+  ],
+  "counts": {
+    "logicalOriginalCues": 47,
+    "mortarAlternatives": 2,
+    "sources": 49
+  },
+  "paidGenerationRequests": 0,
+  "gameplayInstalled": false,
+  "humanApproved": false
+}

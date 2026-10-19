@@ -1,0 +1,85 @@
+{
+  "revision": "BOLD-V2-CONSUMER-SOURCE-READY-2",
+  "supersedesConsumerOnly": "CONSUMER_SOURCE_READY.json",
+  "producerUnchanged": "SOURCE_READY.json",
+  "entry": "tools/enemy-fleet-gallery/villain-v2/gallery-r2.cjs",
+  "state": "Source only; actual owner6 and boss1 metadata accepted, own12 actual exports pending. No model/PNG copy or browser.",
+  "files": [
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/gallery-r2.cjs",
+      "bytes": 16403,
+      "sha256": "93acef75122c22faf6fdf86ee3dcea910cd9353fffd32e132cf90ba0d42a95f8"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/adapt-reference6.cjs",
+      "bytes": 4801,
+      "sha256": "075eb8df8c12df39ba8f6108672295fe3019a8b5c92ed967184ccd77aca7c8d5"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/adapt-independent-boss.cjs",
+      "bytes": 4544,
+      "sha256": "c79936e810ee45352c74db1104e2f259d729a692fa2d54a39250f6ba7d58cc17"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v2/GALLERY_CONSUMER_HANDOFF_2.md",
+      "bytes": 2817,
+      "sha256": "145e798c7c75107c056d940b11541230e4828a08ddf34ef36a89bed4d6609670"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "tools/enemy-fleet-gallery/template.html",
+      "bytes": 20128,
+      "sha256": "6794c1917adab90b8553e487cddeeac21f622f505040a502c84d0e831a30d71d"
+    },
+    {
+      "path": "outputs/enemy-fleet-gallery-v1/catalog.json",
+      "bytes": 32098,
+      "sha256": "ea48a624bf473e5eac4824634990fcbab3282c92d79e4928029ff588054ed885"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v2/REFERENCE6_ADAPTER_READY.json",
+      "bytes": 1348,
+      "sha256": "4ae798db1c1970df230033cd0c19d7f83573d2c029854ad36ffc3260d17e9b2f"
+    },
+    {
+      "path": "outputs/chapter1-boss-review-v1/READY-r2.json",
+      "bytes": 4824,
+      "sha256": "1619c6a148948600a6b7264ac6ead964ddb8140d94d8cd4580ed01b489bf1318"
+    },
+    {
+      "path": "outputs/chapter1-boss-review-v1/catalog.json",
+      "bytes": 1344,
+      "sha256": "b0852aa8f011b816b43ac4e124e1c2ace1729d7c049228051944624cd1a7a1b6"
+    },
+    {
+      "path": "outputs/chapter1-boss-review-v1/verification.json",
+      "bytes": 26375,
+      "sha256": "c34d6dbb47c8b8010cb71b0855aa52bbcb7b393240ee0a43dea68cd286b9c202"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/source-manifest.json",
+      "bytes": 25619,
+      "sha256": "2d483be0d2f5f864c6756b404b8b288101f8b35d2d9534d9f1766cfac335dfed"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/catalog.json",
+      "bytes": 67809,
+      "sha256": "ea8059d3e4d1c1207d2220cbed2aa6ffadc9100d84bd5caa7d3aa33d09bc3594"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/preview-bindings.json",
+      "bytes": 8366,
+      "sha256": "4c7681babc58b6d23424e4d329a363913fc0fc6a6d99161a3a22834a8b6cab2b"
+    }
+  ],
+  "lightChecks": {
+    "reference6Contract": true,
+    "boss1Contract": true,
+    "generatedInlineSyntax": 1,
+    "actualAssetBytesRead": 0,
+    "browser": false
+  },
+  "humanArtApproval": "pending",
+  "artTargetApproved": false
+}

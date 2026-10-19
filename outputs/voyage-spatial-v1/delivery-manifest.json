@@ -1,0 +1,162 @@
+{
+  "status": "SOURCE_READY",
+  "revision": 5,
+  "productRevision": 3,
+  "previousDelivery": "68959b63375f65b770aed36eedaa6ab39954c925eac75a3f51c8eadac14ba96b",
+  "preserved": [
+    "work/voyage-spatial/history/r3",
+    "work/voyage-spatial/history/r4"
+  ],
+  "change": "Reset behind the displayed harbor craft, not its stale returned sim heading. Whole-map orbit pivot/distance fix retained. Controller/sim/save unchanged.",
+  "scope": "Perspective six-region placement with existing sequential campaign save",
+  "browserQA": "Prepared 12-check native harness; not yet run",
+  "files": [
+    {
+      "path": "outputs/voyage-spatial-v1/index.html",
+      "bytes": 11491,
+      "sha256": "4f2e7c860b6f7c38c0b0a84f5cb4b091bb6ccca1f0626e5e05ca56b8f91db8cf"
+    },
+    {
+      "path": "outputs/voyage-spatial-v1/qa-driver.js",
+      "bytes": 9618,
+      "sha256": "10b885c7d77e57190c9367cc4f70bc3c80e386166c71b3c4fee7f1f6e19ce548"
+    },
+    {
+      "path": "outputs/voyage-spatial-v1/README.md",
+      "bytes": 6185,
+      "sha256": "1d80be7257b2ffff18cb9619f7b1e3981788c2619cc4802b3ba66bd78ec17349"
+    },
+    {
+      "path": "outputs/voyage-spatial-v1/source-manifest.json",
+      "bytes": 8606,
+      "sha256": "6c053fa92d92f0248c41c2d4c70f08bc97663fe1da8b6c7da67bd002699dc766"
+    },
+    {
+      "path": "outputs/voyage-spatial-v1/spatial.js",
+      "bytes": 1102806,
+      "sha256": "9fcaee69f2bfbe541f18adecacede2f41ddd5ff2c80dbadeb39b9ab79e0509f1"
+    },
+    {
+      "path": "outputs/voyage-spatial-v1/style.css",
+      "bytes": 28808,
+      "sha256": "201a394b68281b05fa73f15db046005633053d86454ba547296af1e20d6a51d1"
+    }
+  ],
+  "sources": [
+    {
+      "path": "tools/voyage-spatial/app.js",
+      "bytes": 34810,
+      "sha256": "ef6ab2cddbdee2177b51f78290c9188ac78f8f459c058452aeeb64ef762b9403"
+    },
+    {
+      "path": "tools/voyage-spatial/base-renderer.js",
+      "bytes": 35752,
+      "sha256": "b024f3274179ac42ba1ed47f34cc48bc0a0dec9a5fa545bd5105706e02ab6326"
+    },
+    {
+      "path": "tools/voyage-spatial/build.cjs",
+      "bytes": 3530,
+      "sha256": "843deac15c659c5ac2b86bb320f63fb4e5b46905d58b19c26815137e8b4b6b6d"
+    },
+    {
+      "path": "tools/voyage-spatial/finalize.cjs",
+      "bytes": 2041,
+      "sha256": "0163726fde5144158f7b62d010b17979b07a0b0b340a7bc755f16a18bebbbc10"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/camera-geometry.mjs",
+      "bytes": 3523,
+      "sha256": "a2c4d670c27595bbea56e3b830a9cf04b2459c32d399e035c3e70e110d01c21f"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/environment-layout.mjs",
+      "bytes": 9654,
+      "sha256": "449ec795708f52f823ffa451ac1caaaee70a5d7101e5c58b7683091251242cd9"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/environment-models.js",
+      "bytes": 11371,
+      "sha256": "a504e52a25a7a505c001ac5020e49b7a767c59ad85320cc19e02153ec1b7ebeb"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/environment-source/core.mjs",
+      "bytes": 7840,
+      "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/environment-source/props.mjs",
+      "bytes": 40911,
+      "sha256": "83b91fedef9e2613bd283e1e5cedc8abeaeffceb67d6aed1122704b137cea326"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/environment-source/provenance.json",
+      "bytes": 1376,
+      "sha256": "a1416b216cd7e0472e4709aa83596976ca743564cf96daf3a71de3835d8b7cd2"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/environment-source/sky.mjs",
+      "bytes": 26359,
+      "sha256": "6fdb50cdff504c6e8da2917917de0aa4cb8eef2449dde27697d9a25e4ddd6f5e"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/environment-source/terrain.mjs",
+      "bytes": 34613,
+      "sha256": "de025448731fc8185248e958312f8aae73575e816342b8f9165fb49d07d8ae6c"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/environment.js",
+      "bytes": 9139,
+      "sha256": "1363ab6cfd0abb7ba9beb2adf3d47304a261d946d3d700ad288c793c1bd79af8"
+    },
+    {
+      "path": "tools/voyage-spatial/flight-source/sim.mjs",
+      "bytes": 27606,
+      "sha256": "23bbbfe1f98493f4e6a0b26f0dd1090b3a1ee6a9da87bf4670b6e7576e42fc44"
+    },
+    {
+      "path": "tools/voyage-spatial/gesture.mjs",
+      "bytes": 1226,
+      "sha256": "14933c5492924dc7d895b05fdf5b183054a673d0bb69b9641662321e60a5ff08"
+    },
+    {
+      "path": "tools/voyage-spatial/HANDOFF.md",
+      "bytes": 6185,
+      "sha256": "1d80be7257b2ffff18cb9619f7b1e3981788c2619cc4802b3ba66bd78ec17349"
+    },
+    {
+      "path": "tools/voyage-spatial/provenance.json",
+      "bytes": 3512,
+      "sha256": "a399e7b194142c47b7d2be7d6501112e06bc87abc6d92ba7116bcaacb19cdbda"
+    },
+    {
+      "path": "tools/voyage-spatial/renderer.mjs",
+      "bytes": 152,
+      "sha256": "248a13788d4f715ffdf0a32ec8feff3197581c4ac43ae68218a4ad53f1597e1a"
+    },
+    {
+      "path": "tools/voyage-spatial/spatial-contract.mjs",
+      "bytes": 1296,
+      "sha256": "704b21e58673307b4dceb4d7176c0a78b398724727016b597aef2803c14c1b60"
+    },
+    {
+      "path": "tools/voyage-spatial/spatial.test.mjs",
+      "bytes": 2904,
+      "sha256": "645a69431cb0184080877727c59eb267354df35b2ea4a7465724fdcd8f6e1823"
+    },
+    {
+      "path": "tools/voyage-spatial/style.css",
+      "bytes": 28808,
+      "sha256": "201a394b68281b05fa73f15db046005633053d86454ba547296af1e20d6a51d1"
+    },
+    {
+      "path": "tools/voyage-spatial/template.html",
+      "bytes": 11491,
+      "sha256": "4f2e7c860b6f7c38c0b0a84f5cb4b091bb6ccca1f0626e5e05ca56b8f91db8cf"
+    },
+    {
+      "path": "tools/voyage-spatial/verify-browser.cjs",
+      "bytes": 14898,
+      "sha256": "2957f67aa268f009ae4fed94b4bc98f7a33474876bda8c2e467b3a2689e905e5"
+    }
+  ]
+}

@@ -1,0 +1,1007 @@
+{
+  "scope": "One representative translucent ghost ship; three modes,180actualRAF rotation frames each, camera and actualOutlineEffect.autoClear observations, three PNGs. Separate from273QA and53source.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "actual-ghost-model-ready",
+      "passed": true
+    },
+    {
+      "name": "handdrawn:actual180frames-camera-rotation-and-runtime-clear",
+      "passed": true,
+      "detail": {
+        "distance": 2.3294568015872485,
+        "before": {
+          "mode": "handdrawn",
+          "autoRotate": false,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -7.417381199564246,
+            5.827942371086193,
+            -7.417381199564245
+          ],
+          "cameraQuaternion": [
+            0.09599682455801845,
+            0.8943389512129171,
+            0.23175683579271875,
+            -0.3704473229509201
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        "trajectory": [
+          {
+            "mode": "handdrawn",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -6.853702136876308,
+              5.827942371086193,
+              -7.941149459509966
+            ],
+            "cameraQuaternion": [
+              0.0874321666634257,
+              0.907324001507797,
+              0.2351217503643912,
+              -0.3373967027491571
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          },
+          {
+            "mode": "handdrawn",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -6.253330479047338,
+              5.827942371086191,
+              -8.422051153912323
+            ],
+            "cameraQuaternion": [
+              0.07875247614554014,
+              0.9190847869378679,
+              0.23816941189586505,
+              -0.3039021769541931
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          },
+          {
+            "mode": "handdrawn",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -5.619136808497574,
+              5.82794237108619,
+              -8.85778692714416
+            ],
+            "cameraQuaternion": [
+              0.0699642285577467,
+              0.9296125332739403,
+              0.24089754665457982,
+              -0.26998873442818166
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          }
+        ],
+        "after": {
+          "mode": "handdrawn",
+          "autoRotate": false,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -5.597498076150558,
+            5.827942371086191,
+            -8.871476934918396
+          ],
+          "cameraQuaternion": [
+            0.06967015895737483,
+            0.9299413644091333,
+            0.24098275916075454,
+            -0.2688539333894956
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        "screenshot": "handdrawn-after-rotation.png",
+        "meaning": "No pixel-equality or decoded ghosting assertion. The three captured post-rotation frames require separate visual review."
+      }
+    },
+    {
+      "name": "cel:actual180frames-camera-rotation-and-runtime-clear",
+      "passed": true,
+      "detail": {
+        "distance": 2.329456801587235,
+        "before": {
+          "mode": "cel",
+          "autoRotate": false,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -7.417381199564246,
+            5.827942371086193,
+            -7.417381199564245
+          ],
+          "cameraQuaternion": [
+            0.09599682455801845,
+            0.8943389512129171,
+            0.23175683579271875,
+            -0.3704473229509201
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        "trajectory": [
+          {
+            "mode": "cel",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -6.853760348358041,
+              5.827942371086191,
+              -7.941099219035949
+            ],
+            "cameraQuaternion": [
+              0.08743302842906264,
+              0.9073227648781995,
+              0.23512142990718396,
+              -0.3374000282630447
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          },
+          {
+            "mode": "cel",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -6.253330479047346,
+              5.827942371086191,
+              -8.422051153912317
+            ],
+            "cameraQuaternion": [
+              0.07875247614554023,
+              0.9190847869378679,
+              0.23816941189586502,
+              -0.30390217695419347
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          },
+          {
+            "mode": "cel",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -5.61920173931607,
+              5.82794237108619,
+              -8.857745736482029
+            ],
+            "cameraQuaternion": [
+              0.06996511149290022,
+              0.9296115437073006,
+              0.24089729022067086,
+              -0.2699921416342582
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          }
+        ],
+        "after": {
+          "mode": "cel",
+          "autoRotate": false,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -5.597498076150569,
+            5.827942371086191,
+            -8.87147693491839
+          ],
+          "cameraQuaternion": [
+            0.06967015895737498,
+            0.9299413644091332,
+            0.24098275916075448,
+            -0.26885393338949615
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        "screenshot": "cel-after-rotation.png",
+        "meaning": "No pixel-equality or decoded ghosting assertion. The three captured post-rotation frames require separate visual review."
+      }
+    },
+    {
+      "name": "original:actual180frames-camera-rotation-and-runtime-clear",
+      "passed": true,
+      "detail": {
+        "distance": 2.3548260102470002,
+        "before": {
+          "mode": "original",
+          "autoRotate": false,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -7.417381199564246,
+            5.827942371086193,
+            -7.417381199564245
+          ],
+          "cameraQuaternion": [
+            0.09599682455801845,
+            0.8943389512129171,
+            0.23175683579271875,
+            -0.3704473229509201
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        "trajectory": [
+          {
+            "mode": "original",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -6.853760348358041,
+              5.827942371086191,
+              -7.941099219035949
+            ],
+            "cameraQuaternion": [
+              0.08743302842906264,
+              0.9073227648781995,
+              0.23512142990718396,
+              -0.3374000282630447
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          },
+          {
+            "mode": "original",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -6.232691646109342,
+              5.827942371086191,
+              -8.4373362244145
+            ],
+            "cameraQuaternion": [
+              0.078460856422351,
+              0.9194561272984927,
+              0.23826564014004897,
+              -0.30277682987867804
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          },
+          {
+            "mode": "original",
+            "autoRotate": true,
+            "playing": false,
+            "time": 0.4,
+            "camera": [
+              -5.597563107322664,
+              5.82794237108619,
+              -8.871435902876069
+            ],
+            "cameraQuaternion": [
+              0.0696710422048509,
+              0.9299403790017541,
+              0.24098250380466624,
+              -0.2688573418008105
+            ],
+            "rigPosition": [
+              0,
+              0,
+              0
+            ],
+            "rigQuaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outlineAutoClear": true,
+            "rendererAutoClear": true,
+            "renderCalls": 51
+          }
+        ],
+        "after": {
+          "mode": "original",
+          "autoRotate": false,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -5.575891121894364,
+            5.827942371086191,
+            -8.885073208256525
+          ],
+          "cameraQuaternion": [
+            0.06937686913193139,
+            0.9302678290185069,
+            0.241067358411144,
+            -0.26772214146633044
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        "screenshot": "original-after-rotation.png",
+        "meaning": "No pixel-equality or decoded ghosting assertion. The three captured post-rotation frames require separate visual review."
+      }
+    },
+    {
+      "name": "page-external-and-failed-requests-zero",
+      "passed": true,
+      "detail": {
+        "errors": [],
+        "external": [],
+        "failed": []
+      }
+    }
+  ],
+  "samples": [
+    {
+      "mode": "handdrawn",
+      "file": "handdrawn-after-rotation.png",
+      "before": {
+        "mode": "handdrawn",
+        "autoRotate": false,
+        "playing": false,
+        "time": 0.4,
+        "camera": [
+          -7.417381199564246,
+          5.827942371086193,
+          -7.417381199564245
+        ],
+        "cameraQuaternion": [
+          0.09599682455801845,
+          0.8943389512129171,
+          0.23175683579271875,
+          -0.3704473229509201
+        ],
+        "rigPosition": [
+          0,
+          0,
+          0
+        ],
+        "rigQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outlineAutoClear": true,
+        "rendererAutoClear": true,
+        "renderCalls": 51
+      },
+      "trajectory": [
+        {
+          "mode": "handdrawn",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -6.853702136876308,
+            5.827942371086193,
+            -7.941149459509966
+          ],
+          "cameraQuaternion": [
+            0.0874321666634257,
+            0.907324001507797,
+            0.2351217503643912,
+            -0.3373967027491571
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        {
+          "mode": "handdrawn",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -6.253330479047338,
+            5.827942371086191,
+            -8.422051153912323
+          ],
+          "cameraQuaternion": [
+            0.07875247614554014,
+            0.9190847869378679,
+            0.23816941189586505,
+            -0.3039021769541931
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        {
+          "mode": "handdrawn",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -5.619136808497574,
+            5.82794237108619,
+            -8.85778692714416
+          ],
+          "cameraQuaternion": [
+            0.0699642285577467,
+            0.9296125332739403,
+            0.24089754665457982,
+            -0.26998873442818166
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        }
+      ],
+      "after": {
+        "mode": "handdrawn",
+        "autoRotate": false,
+        "playing": false,
+        "time": 0.4,
+        "camera": [
+          -5.597498076150558,
+          5.827942371086191,
+          -8.871476934918396
+        ],
+        "cameraQuaternion": [
+          0.06967015895737483,
+          0.9299413644091333,
+          0.24098275916075454,
+          -0.2688539333894956
+        ],
+        "rigPosition": [
+          0,
+          0,
+          0
+        ],
+        "rigQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outlineAutoClear": true,
+        "rendererAutoClear": true,
+        "renderCalls": 51
+      }
+    },
+    {
+      "mode": "cel",
+      "file": "cel-after-rotation.png",
+      "before": {
+        "mode": "cel",
+        "autoRotate": false,
+        "playing": false,
+        "time": 0.4,
+        "camera": [
+          -7.417381199564246,
+          5.827942371086193,
+          -7.417381199564245
+        ],
+        "cameraQuaternion": [
+          0.09599682455801845,
+          0.8943389512129171,
+          0.23175683579271875,
+          -0.3704473229509201
+        ],
+        "rigPosition": [
+          0,
+          0,
+          0
+        ],
+        "rigQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outlineAutoClear": true,
+        "rendererAutoClear": true,
+        "renderCalls": 51
+      },
+      "trajectory": [
+        {
+          "mode": "cel",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -6.853760348358041,
+            5.827942371086191,
+            -7.941099219035949
+          ],
+          "cameraQuaternion": [
+            0.08743302842906264,
+            0.9073227648781995,
+            0.23512142990718396,
+            -0.3374000282630447
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        {
+          "mode": "cel",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -6.253330479047346,
+            5.827942371086191,
+            -8.422051153912317
+          ],
+          "cameraQuaternion": [
+            0.07875247614554023,
+            0.9190847869378679,
+            0.23816941189586502,
+            -0.30390217695419347
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        {
+          "mode": "cel",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -5.61920173931607,
+            5.82794237108619,
+            -8.857745736482029
+          ],
+          "cameraQuaternion": [
+            0.06996511149290022,
+            0.9296115437073006,
+            0.24089729022067086,
+            -0.2699921416342582
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        }
+      ],
+      "after": {
+        "mode": "cel",
+        "autoRotate": false,
+        "playing": false,
+        "time": 0.4,
+        "camera": [
+          -5.597498076150569,
+          5.827942371086191,
+          -8.87147693491839
+        ],
+        "cameraQuaternion": [
+          0.06967015895737498,
+          0.9299413644091332,
+          0.24098275916075448,
+          -0.26885393338949615
+        ],
+        "rigPosition": [
+          0,
+          0,
+          0
+        ],
+        "rigQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outlineAutoClear": true,
+        "rendererAutoClear": true,
+        "renderCalls": 51
+      }
+    },
+    {
+      "mode": "original",
+      "file": "original-after-rotation.png",
+      "before": {
+        "mode": "original",
+        "autoRotate": false,
+        "playing": false,
+        "time": 0.4,
+        "camera": [
+          -7.417381199564246,
+          5.827942371086193,
+          -7.417381199564245
+        ],
+        "cameraQuaternion": [
+          0.09599682455801845,
+          0.8943389512129171,
+          0.23175683579271875,
+          -0.3704473229509201
+        ],
+        "rigPosition": [
+          0,
+          0,
+          0
+        ],
+        "rigQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outlineAutoClear": true,
+        "rendererAutoClear": true,
+        "renderCalls": 51
+      },
+      "trajectory": [
+        {
+          "mode": "original",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -6.853760348358041,
+            5.827942371086191,
+            -7.941099219035949
+          ],
+          "cameraQuaternion": [
+            0.08743302842906264,
+            0.9073227648781995,
+            0.23512142990718396,
+            -0.3374000282630447
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        {
+          "mode": "original",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -6.232691646109342,
+            5.827942371086191,
+            -8.4373362244145
+          ],
+          "cameraQuaternion": [
+            0.078460856422351,
+            0.9194561272984927,
+            0.23826564014004897,
+            -0.30277682987867804
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        },
+        {
+          "mode": "original",
+          "autoRotate": true,
+          "playing": false,
+          "time": 0.4,
+          "camera": [
+            -5.597563107322664,
+            5.82794237108619,
+            -8.871435902876069
+          ],
+          "cameraQuaternion": [
+            0.0696710422048509,
+            0.9299403790017541,
+            0.24098250380466624,
+            -0.2688573418008105
+          ],
+          "rigPosition": [
+            0,
+            0,
+            0
+          ],
+          "rigQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineAutoClear": true,
+          "rendererAutoClear": true,
+          "renderCalls": 51
+        }
+      ],
+      "after": {
+        "mode": "original",
+        "autoRotate": false,
+        "playing": false,
+        "time": 0.4,
+        "camera": [
+          -5.575891121894364,
+          5.827942371086191,
+          -8.885073208256525
+        ],
+        "cameraQuaternion": [
+          0.06937686913193139,
+          0.9302678290185069,
+          0.241067358411144,
+          -0.26772214146633044
+        ],
+        "rigPosition": [
+          0,
+          0,
+          0
+        ],
+        "rigQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outlineAutoClear": true,
+        "rendererAutoClear": true,
+        "renderCalls": 51
+      }
+    }
+  ],
+  "visualReview": "pending-separate-PNG-inspection",
+  "preciseGhosting": "not-run",
+  "longPerformance": "not-run",
+  "sourceManifestSha256": "679421632594a7864b1790aecd85267580ad362bf96ee966879c479d5cf62d8f",
+  "harnessSha256": "a3ec41d280a473babd0c9bece4c0d4eb0077481afd9ffb68968581bc0486ede1"
+}

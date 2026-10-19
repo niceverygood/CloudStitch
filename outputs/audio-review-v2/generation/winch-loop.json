@@ -1,0 +1,25 @@
+{
+  "id": "winch-loop",
+  "startedAt": "2026-10-18T08:53:31.853Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A small wooden airship salvage winch running steadily under load: low hand-built gear rotation, measured ratchet clicks and a rope sliding over a wooden pulley. Slow working mechanism, no completion clunk. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 4,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:34.925Z",
+  "output": {
+    "file": "audio/winch-loop.mp3",
+    "bytes": 65244,
+    "sha256": "97be3435109069dc52c466e80dd57a4f8390ef025cba6291a07a50aedced506a",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "40"
+}

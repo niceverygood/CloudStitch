@@ -1,0 +1,170 @@
+{
+  "id": "mission-cult-purifier",
+  "bounds": {
+    "before": {
+      "min": [
+        -6.1531129392424555,
+        -4.277699779592476,
+        -2.5466743347174345
+      ],
+      "max": [
+        6.633044674609489,
+        5.094455048111809,
+        2.6770972678369893
+      ]
+    },
+    "after": {
+      "min": [
+        -7.654746349693433,
+        -4.825096257973169,
+        -3.71323631785409
+      ],
+      "max": [
+        6.633044674609489,
+        5.094455048111809,
+        3.661582927135809
+      ]
+    },
+    "union": {
+      "min": [
+        -7.654746349693433,
+        -4.825096257973169,
+        -3.71323631785409
+      ],
+      "max": [
+        6.633044674609489,
+        5.094455048111809,
+        3.661582927135809
+      ]
+    }
+  },
+  "camera": {
+    "type": "OrthographicCamera",
+    "position": [
+      -21.777340798072697,
+      15.446552166651442,
+      -27.246933844838466
+    ],
+    "target": [
+      -0.5108508375419718,
+      0.1346793950693197,
+      -0.025826695359140395
+    ],
+    "left": -10.791476131908341,
+    "right": 10.791476131908341,
+    "top": 8.3933703248176,
+    "bottom": -8.3933703248176,
+    "near": 0.09446248320953625,
+    "far": 75.569986567629,
+    "matrixWorld": [
+      -0.7880243737245636,
+      5.551115123125783e-17,
+      0.615644041972315,
+      0,
+      0.24948167047314623,
+      0.9142117213560403,
+      0.31933653820562724,
+      0,
+      -0.5628289993541005,
+      0.40523687953495247,
+      -0.720421119173249,
+      0,
+      -21.777340798072697,
+      15.446552166651442,
+      -27.246933844838466,
+      1
+    ],
+    "projectionMatrix": [
+      0.09266572874522609,
+      0,
+      0,
+      0,
+      0,
+      0.1191416512438621,
+      0,
+      0,
+      0,
+      0,
+      -0.026498656673956945,
+      0,
+      0,
+      0,
+      -1.002503128911139,
+      1
+    ]
+  },
+  "animation": {
+    "before": {
+      "clip": "FloatIdle",
+      "duration": 10,
+      "sampleTimeSeconds": 2,
+      "stopped": true,
+      "missingFloatIdle": false
+    },
+    "after": {
+      "clip": "FloatIdle",
+      "duration": 10,
+      "sampleTimeSeconds": 2,
+      "stopped": true,
+      "missingFloatIdle": false
+    }
+  },
+  "render": {
+    "width": 900,
+    "height": 700,
+    "dpr": 1,
+    "background": "#f1e6cf",
+    "material": "MeshBasicMaterial preserving source maps/colors/vertexColors/alpha",
+    "outlineAutoClear": true,
+    "nativeCoordinates": true,
+    "toneMapping": "NoToneMapping",
+    "outputColorSpace": "SRGBColorSpace",
+    "lights": {
+      "ambient": {
+        "color": 16777215,
+        "intensity": 1.5
+      },
+      "directional": {
+        "color": 16773077,
+        "intensity": 2,
+        "position": [
+          6,
+          10,
+          8
+        ]
+      }
+    },
+    "content": {
+      "before": {
+        "nonBackgroundPixels": 152366,
+        "fraction": 0.24185079365079365
+      },
+      "after": {
+        "nonBackgroundPixels": 181285,
+        "fraction": 0.28775396825396826
+      }
+    },
+    "changedPixels": 127330,
+    "changedFraction": 0.2021111111111111
+  },
+  "artApproval": "PENDING_HUMAN_REVIEW",
+  "sources": {
+    "before": {
+      "assetPath": "outputs/fleet-v2/ships/mission-cult-purifier.glb",
+      "sha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+      "bytes": 7387588
+    },
+    "after": {
+      "assetPath": "outputs/enemy-fleet-villain-v1/ships/mission-cult-purifier.glb",
+      "sha256": "392a5be5de17ff99a9f23dfd67dbc281c25d1ed0a361f3e081b18fab94d4ba3d",
+      "bytes": 13161980
+    }
+  },
+  "beforePngSha256": "f523bd627478cc5e737b7e1951fd705c13a761ddf6f2975d34449613ca897ebd",
+  "afterPngSha256": "fbd0c56720a9db21ce03a2258c4d353a258965d2877dcc4bc80eaf9d08534c1f",
+  "pairPngSha256": "34c3c9994308fd6c18bf84ae7efa54fc38f732b27b12b8b10da2b17b1bb00ecd",
+  "beforeSha256": "d50a5733df49d4c16d880e83733129a8a791fad527256369d802f6fc4e33807a",
+  "afterSha256": "392a5be5de17ff99a9f23dfd67dbc281c25d1ed0a361f3e081b18fab94d4ba3d",
+  "sameCamera": true,
+  "passed": true
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T06:54:51.9901243Z",
+  "integrationReports": [
+    {
+      "path": "outputs/integration-v1/verification.json",
+      "bytes": 2421,
+      "sha256": "400746bfce94c7e19b75af762fd51132e08e5c2158423f2e4128a7d363d5abcb",
+      "passed": true,
+      "tests": null,
+      "pass": null,
+      "fail": null,
+      "checkCount": 9,
+      "summary": {
+        "restoredMedia": 841,
+        "old686Preserved": true,
+        "sourceTests": 134,
+        "sourceFailures": 0,
+        "browserChecks": 21,
+        "levelChecks": 22,
+        "presentationChecks": 5,
+        "inputVoyages": 2,
+        "simulatedReceiptStressSeconds": 1199.9999999992374,
+        "browserRenderStressSeconds": 300
+      },
+      "completedAt": "2026-10-18T06:50:30.763Z"
+    },
+    {
+      "path": "outputs/integration-v1/source-verification.json",
+      "bytes": 735,
+      "sha256": "9e0432e525e95073f550a858f9315df9c54fd4f80b3f98b4db42656f44456358",
+      "passed": true,
+      "tests": 134,
+      "pass": 134,
+      "fail": 0,
+      "checkCount": 1,
+      "summary": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/rules-verification.json",
+      "bytes": 2014,
+      "sha256": "d0add2366e6ec67126f240aa39f21081415ce464effee1e6985f9415a11c0132",
+      "passed": true,
+      "tests": null,
+      "pass": null,
+      "fail": null,
+      "checkCount": 7,
+      "summary": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/browser-verification.json",
+      "bytes": 87927,
+      "sha256": "526428d9f8ca6a46796fec738ece8212cf1d3e6d50e09a5aea8cc602b60c571d",
+      "passed": true,
+      "tests": null,
+      "pass": null,
+      "fail": null,
+      "checkCount": 21,
+      "summary": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/level-browser-verification.json",
+      "bytes": 95393,
+      "sha256": "108328fe8d7864c7196284b10b432648a60608d3bee7db8641f631cc2d0318da",
+      "passed": true,
+      "tests": null,
+      "pass": null,
+      "fail": null,
+      "checkCount": 22,
+      "summary": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/presentation-verification.json",
+      "bytes": 7136,
+      "sha256": "1c6722563166298b6b993c5424faace2257fb5ee34cb5bfab4d0688ae485a1a8",
+      "passed": true,
+      "tests": null,
+      "pass": null,
+      "fail": null,
+      "checkCount": 6,
+      "summary": null,
+      "completedAt": null
+    },
+    {
+      "path": "outputs/integration-v1/delivery-manifest.json",
+      "bytes": 6316,
+      "sha256": "fc337ec9324748db12904181bf4348b6e46a3c4719b87b6005813417d4ed0fcb",
+      "passed": null,
+      "tests": null,
+      "pass": null,
+      "fail": null,
+      "checkCount": 1,
+      "summary": null,
+      "completedAt": null
+    }
+  ],
+  "localServerStatus": 200,
+  "status": "interim snapshot during final targeted fixes; not final frozen delivery",
+  "reviewNotes": [
+    "presentation report has 6 checks after save-conflict UI fix; aggregate verification still records earlier 5",
+    "delivery manifest has five changed files during authorized follow-up edits; final digest regeneration pending",
+    "independent levels warm resource leak detected after prior 22 display checks; ready-4 targeted correction pending"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "revision": "REFERENCE6-CONSUMER-ADAPTER-READY-1",
+  "state": "Owner actual ART READY metadata accepted; no GLB or PNG bytes consumed by this adapter yet.",
+  "ownerManifest": "outputs/enemy-fleet-reference-v3/source-manifest.json",
+  "ownerManifestSha256": "2d483be0d2f5f864c6756b404b8b288101f8b35d2d9534d9f1766cfac335dfed",
+  "files": [
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v2/adapt-reference6.cjs",
+      "bytes": 4801,
+      "sha256": "075eb8df8c12df39ba8f6108672295fe3019a8b5c92ed967184ccd77aca7c8d5"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "outputs/enemy-fleet-reference-v3/source-manifest.json",
+      "bytes": 25619,
+      "sha256": "2d483be0d2f5f864c6756b404b8b288101f8b35d2d9534d9f1766cfac335dfed"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/catalog.json",
+      "bytes": 67809,
+      "sha256": "ea8059d3e4d1c1207d2220cbed2aa6ffadc9100d84bd5caa7d3aa33d09bc3594"
+    },
+    {
+      "path": "outputs/enemy-fleet-reference-v3/preview-bindings.json",
+      "bytes": 8366,
+      "sha256": "4c7681babc58b6d23424e4d329a363913fc0fc6a6d99161a3a22834a8b6cab2b"
+    }
+  ],
+  "jsonContractChecks": 6,
+  "jsonContractPassed": true,
+  "modelBytesRead": 0,
+  "pngBytesRead": 0,
+  "browserStarted": false,
+  "ownerUIQA": "pending integration narrow QA",
+  "artApproval": "PENDING_HUMAN_REVIEW"
+}

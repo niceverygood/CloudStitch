@@ -1,0 +1,123 @@
+{
+  "title": "Cloudstitch · 비행선 무기 공방 · 절제한 판타지 v2",
+  "created_date": "2026-10-18",
+  "timezone": "Asia/Seoul",
+  "revision": "v2",
+  "type": "static_concept_moodboard",
+  "status": "ready_for_human_art_review",
+  "latest_request": "너무 판타지야 적당히 만들어줘 가시덩굴화관 종이새 부적집 같은거는 너무 심했어",
+  "direction": "최신 사용자 수정에 따라 마법 설정의 강도를 낮춤. 따뜻한 손그림·입체감·풍성한 재료 표현은 유지하되 기존10배 표현 지시를 마법 과장으로 확대하지 않는다.",
+  "supersedes_for_current_weapon_art_direction": "outputs/fantasy-weapon-moodboard-v1/moodboard.png",
+  "method": {
+    "tool": "built-in image_gen",
+    "intent": "edit",
+    "calls": 2,
+    "successful_outputs": 1,
+    "blocked_attempts": 1,
+    "blocked_attempt_record": "prompt-attempt1.txt",
+    "blocked_attempt_reason": "image tool output moderation blocked; no image returned",
+    "final_prompt": "prompt.txt",
+    "image_inputs": [
+      "outputs/fantasy-weapon-moodboard-v1/moodboard.png"
+    ],
+    "postprocessing": false,
+    "meshy_calls": 0
+  },
+  "file": {
+    "path": "outputs/fantasy-weapon-moodboard-v2/moodboard.png",
+    "format": "PNG",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3379202,
+    "sha256": "d365d79e036b8d33139561b9b17901e2b7ec5b3b93b490ea93ee2964d9b4c372"
+  },
+  "concepts": [
+    {
+      "id": "01",
+      "name": "축전 전기탑",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "02",
+      "name": "갑판 대궁",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "03",
+      "name": "연발 쇠뇌",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "04",
+      "name": "작살 윈치",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "05",
+      "name": "소형 투석기",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "06",
+      "name": "투망 발사대",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "07",
+      "name": "접이식 방패",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "08",
+      "name": "증기 분사기",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "09",
+      "name": "측면 회전톱",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "10",
+      "name": "사슬추 타격기",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "11",
+      "name": "공압 바람개비",
+      "status": "static_visual_proposal"
+    },
+    {
+      "id": "12",
+      "name": "접이식 충각",
+      "status": "static_visual_proposal"
+    }
+  ],
+  "changes": [
+    "가시덩굴·종이새 부적집 제거",
+    "수정·부유검·마법 직조·중력·용·종각 같은 강한 마법 모티프 교체",
+    "전기탑은 코일과 짧은 방전으로 축소, 화살은 물리적인 활/쇠뇌 형태로 표현",
+    "밧줄·그물·방패·증기·회전톱·사슬추·바람개비·충각의 기계적 구조로 종류 구별",
+    "같은4×3 구성·목재/청록/황동 팔레트·사선 시점으로 v1과 비교 가능"
+  ],
+  "verification": {
+    "png_signature": "89-50-4E-47-0D-0A-1A-0A",
+    "copy_sha256_matches": true,
+    "v1_image_sha256_unchanged": true,
+    "lfs_filter": "lfs",
+    "visual_review": "반환된 실제 이미지를 v1과 직접 비교. 12패널·표제·전기탑/화살 유지·덩굴/부적/부유검/수정/마법직조/중력 제거·물리 구조와 차분한 효과를 확인.",
+    "human_art_approval": "pending",
+    "gameplay_or_3d_test": false
+  },
+  "observed_limitations": [
+    "정지1536×1024 콘셉트이며 실제무기·3D·리그·애니메이션·전투 구현이 아니다.",
+    "갑판 대궁은 결과에서 기계식 거대활/쇠뇌에 가까운 형태이며 연발쇠뇌와 크기·비율로 구별된다.",
+    "일부 갑판 받침은 패널 끝과 겹친다. 정밀한 장착/조립/소켓 도면이 아니다.",
+    "회전톱·투망·사슬추 등의 실제 작동·범위·물리·밸런스는 검증하지 않았다.",
+    "원본의 문양/표현은 아트 제안으로 게임 수치·부품 개수 규칙이 아니다."
+  ],
+  "preservation": "v1 이미지와 기록·기존 무기/뷰어/전장·공통 파일 보존. 이번 쓰기는 v2폴더에 한정.",
+  "browser_or_model_exporter_used": false,
+  "git_commit_or_push": false,
+  "deployment": false
+}

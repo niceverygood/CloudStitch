@@ -1,0 +1,170 @@
+{
+  "id": "boss-last-inhale",
+  "bounds": {
+    "before": {
+      "min": [
+        -17.047968621528376,
+        -3.126385122419485,
+        -13.302627448259708
+      ],
+      "max": [
+        17.094623628148394,
+        7.642523337159064,
+        13.43841395210319
+      ]
+    },
+    "after": {
+      "min": [
+        -17.047968621528376,
+        -7.013435464373803,
+        -15.399143243017464
+      ],
+      "max": [
+        17.094623628148394,
+        21.40339643561417,
+        16.626107400380963
+      ]
+    },
+    "union": {
+      "min": [
+        -17.047968621528376,
+        -7.013435464373803,
+        -15.399143243017464
+      ],
+      "max": [
+        17.094623628148394,
+        21.40339643561417,
+        16.626107400380963
+      ]
+    }
+  },
+  "camera": {
+    "type": "OrthographicCamera",
+    "position": [
+      -61.61967807116601,
+      51.57794449924292,
+      -78.28956505664755
+    ],
+    "target": [
+      0.02332750331000888,
+      7.194980485620183,
+      0.6134820786817494
+    ],
+    "left": -32.20112479041828,
+    "right": 32.20112479041828,
+    "top": 25.045319281436438,
+    "bottom": -25.045319281436438,
+    "near": 0.27380876627366924,
+    "far": 219.0470130189354,
+    "matrixWorld": [
+      -0.7880243737245636,
+      5.551115123125783e-17,
+      0.615644041972315,
+      0,
+      0.24948167047314623,
+      0.9142117213560403,
+      0.31933653820562724,
+      0,
+      -0.5628289993541005,
+      0.40523687953495247,
+      -0.720421119173249,
+      0,
+      -61.61967807116601,
+      51.57794449924292,
+      -78.28956505664755,
+      1
+    ],
+    "projectionMatrix": [
+      0.031054815833562392,
+      0,
+      0,
+      0,
+      0,
+      0.03992762035743736,
+      0,
+      0,
+      0,
+      0,
+      -0.009141887402673844,
+      0,
+      0,
+      0,
+      -1.002503128911139,
+      1
+    ]
+  },
+  "animation": {
+    "before": {
+      "clip": "FloatIdle",
+      "duration": 10,
+      "sampleTimeSeconds": 2,
+      "stopped": true,
+      "missingFloatIdle": false
+    },
+    "after": {
+      "clip": "FloatIdle",
+      "duration": 10,
+      "sampleTimeSeconds": 2,
+      "stopped": true,
+      "missingFloatIdle": false
+    }
+  },
+  "render": {
+    "width": 900,
+    "height": 700,
+    "dpr": 1,
+    "background": "#f1e6cf",
+    "material": "MeshBasicMaterial preserving source maps/colors/vertexColors/alpha",
+    "outlineAutoClear": true,
+    "nativeCoordinates": true,
+    "toneMapping": "NoToneMapping",
+    "outputColorSpace": "SRGBColorSpace",
+    "lights": {
+      "ambient": {
+        "color": 16777215,
+        "intensity": 1.5
+      },
+      "directional": {
+        "color": 16773077,
+        "intensity": 2,
+        "position": [
+          6,
+          10,
+          8
+        ]
+      }
+    },
+    "content": {
+      "before": {
+        "nonBackgroundPixels": 36178,
+        "fraction": 0.057425396825396824
+      },
+      "after": {
+        "nonBackgroundPixels": 105888,
+        "fraction": 0.16807619047619046
+      }
+    },
+    "changedPixels": 102869,
+    "changedFraction": 0.16328412698412698
+  },
+  "artApproval": "PENDING_HUMAN_REVIEW",
+  "sources": {
+    "before": {
+      "assetPath": "outputs/fleet-v2/ships/boss-last-inhale.glb",
+      "sha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+      "bytes": 6658952
+    },
+    "after": {
+      "assetPath": "outputs/enemy-fleet-villain-v1/ships/boss-last-inhale.glb",
+      "sha256": "b29eb4d5455fe27bd91d8989a89f9666f55c0c6e20a46e3b8da3b81621585719",
+      "bytes": 11678176
+    }
+  },
+  "beforePngSha256": "67b4cd813008b9da9e9d5a256035f7975531ecae77320fd2ee609c1ff6fec53d",
+  "afterPngSha256": "432416df9c4ba90891e1a17d1c5530523c0ebb5809348ebebe9734c63286b0e6",
+  "pairPngSha256": "d3def097eb7bec55f288cea433b4d241469eb1c77ea0d4360af970aeca1976e6",
+  "beforeSha256": "828db6d1ae60cd99bed5c0fe504af6053e5e7125073115a6389d034e9254dc80",
+  "afterSha256": "b29eb4d5455fe27bd91d8989a89f9666f55c0c6e20a46e3b8da3b81621585719",
+  "sameCamera": true,
+  "passed": true
+}

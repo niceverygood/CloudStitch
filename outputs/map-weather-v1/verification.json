@@ -1,0 +1,286 @@
+{
+  "revision": "map-weather-v1-ready-1",
+  "date": "2026-10-18",
+  "url": "http://127.0.0.1:8860/outputs/map-weather-v1/index.html",
+  "scope": "Six functional weather effects in a local opt-in single-authority battlefield trial. Not a full campaign installation or human art approval.",
+  "passed": true,
+  "sourceTests": {
+    "passed": 23,
+    "failed": 0,
+    "environment": 15,
+    "authority": 8
+  },
+  "geometryPreflight": {
+    "originalFailure": "outputs/map-weather-v1/geometry-preflight.json",
+    "followup": "outputs/map-weather-v1/geometry-preflight-followup.json",
+    "passed": true
+  },
+  "browser": {
+    "passed": true,
+    "checks": 192,
+    "failed": [],
+    "raw": "outputs/map-weather-v1/qa/browser-verification.json",
+    "ghosting": [
+      {
+        "mode": "handdrawn",
+        "frames": 60,
+        "width": 1572,
+        "height": 897,
+        "different_pixels": 0,
+        "painted_pixels": 167526,
+        "outline_autoclear": true,
+        "state_unchanged": true,
+        "webgl_error": 0
+      },
+      {
+        "mode": "cel",
+        "frames": 60,
+        "width": 1572,
+        "height": 897,
+        "different_pixels": 0,
+        "painted_pixels": 167526,
+        "outline_autoclear": true,
+        "state_unchanged": true,
+        "webgl_error": 0
+      },
+      {
+        "mode": "original",
+        "frames": 60,
+        "width": 1572,
+        "height": 897,
+        "different_pixels": 0,
+        "painted_pixels": 167526,
+        "outline_autoclear": true,
+        "state_unchanged": true,
+        "webgl_error": 0
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "outputs/map-weather-v1/qa/desktop-overview.png",
+        "bytes": 452368,
+        "sha256": "800b8c3d40245c464a5f87e58aa96b3c43f320fc970a99f5f776a9b203843d3a"
+      },
+      {
+        "path": "outputs/map-weather-v1/qa/desktop-cloud.png",
+        "bytes": 464750,
+        "sha256": "d004613f43ea816bd9c38ad76d03fd7183e3257845d7c816593a825c600f6c67"
+      },
+      {
+        "path": "outputs/map-weather-v1/qa/desktop-storm-warning.png",
+        "bytes": 469696,
+        "sha256": "79bec188c9f78dcae10e50b4acdd5d7aedd4c57f38ee6223679e011da0da07ea"
+      },
+      {
+        "path": "outputs/map-weather-v1/qa/desktop-thermal-burst.png",
+        "bytes": 466512,
+        "sha256": "f8d3d6e1a6ce668bacb89ccb7181f6f5061f40971b9c576ce4101c7419f6fc1a"
+      },
+      {
+        "path": "outputs/map-weather-v1/qa/desktop-expression-standard.png",
+        "bytes": 451258,
+        "sha256": "f9daac7186027f65b266d43e98adbe5dc560e3ca88477901c7b3dfa76e189755"
+      },
+      {
+        "path": "outputs/map-weather-v1/qa/desktop-expression-dramatic.png",
+        "bytes": 466512,
+        "sha256": "f8d3d6e1a6ce668bacb89ccb7181f6f5061f40971b9c576ce4101c7419f6fc1a"
+      },
+      {
+        "path": "outputs/map-weather-v1/qa/mobile.png",
+        "bytes": 156879,
+        "sha256": "dd7242a19cd3f0631c277c30a3ae3091b370566a21a6f93f3aa870a11959cfea"
+      }
+    ]
+  },
+  "assets": {
+    "assemblies": 6,
+    "newFixtureAssemblies": 5,
+    "reusedCloudAssets": 4,
+    "validationErrors": 0,
+    "validationWarnings": 0,
+    "animations": 0,
+    "runtimeMotion": "tools/map-weather-v1/assets.mjs"
+  },
+  "preservation": {
+    "owned": 20,
+    "readonly": 6,
+    "passed": true,
+    "files": [
+      {
+        "path": "tools/map-weather-v1/adapter.mjs",
+        "bytes": 14003,
+        "sha256": "39b9c884c8bf6489b4d44fe5c3a2269816d94400d078226a286d9b434ed6b4b5",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/app.js",
+        "bytes": 11332,
+        "sha256": "fdd17ca1f9d13e2c9e21b4deeb45e43c7a9ec8a4b69e2e0d1a11048ef70a4bf2",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/asset-catalog.mjs",
+        "bytes": 3581,
+        "sha256": "45a0a9d998b7adb70d20b1e912ee0af23aaa282b6dfcd78d7d43f2d6dcbf388d",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/assets.mjs",
+        "bytes": 33334,
+        "sha256": "44d9fd02b758bc04d83ab1f388be7a88740a2e4a89cd94c4a986249378a14142",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/authority.mjs",
+        "bytes": 36755,
+        "sha256": "03c7b3d35db380aa79b17b45fe7ca8907be0d1f067866b19c883fbab8d7fb622",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/authority.test.mjs",
+        "bytes": 4987,
+        "sha256": "f3d45020f03c2df17d24fc01cc6498c8c13b0cd5ffd23d3cc6f9ee70631b664e",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/build.cjs",
+        "bytes": 2334,
+        "sha256": "9fb09f5e44cf576f92bdb0b4ce5809b098be59f670ed905d4432c1f6dfcb0f4a",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/export.mjs",
+        "bytes": 3995,
+        "sha256": "df6371c6168adc8813521e79f8e8994daaac2c5a866375ffcc877f6f938067e9",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/HANDOFF.md",
+        "bytes": 6448,
+        "sha256": "f01c554d6448ed0ef120963972c1c842d436b2ca3991a947ed03d584d765f6e9",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/prepare-authority.cjs",
+        "bytes": 6852,
+        "sha256": "4169170ada6f37b9e2e3da5b9f7cde775ae9ad5911b91a0c0d81c208a491b2ea",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/README-assets.md",
+        "bytes": 4401,
+        "sha256": "84fff5d82b55d2131964bae956a6de020c58060612217f5064c5c00bac8e559e",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/renderer.js",
+        "bytes": 11640,
+        "sha256": "2915cd1f5c6e8257613eda51902fc53a8a4f661aa1d88bfee1eb139971293041",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/seal.cjs",
+        "bytes": 2052,
+        "sha256": "938243849d3ade6e1848261a637ba3b16d9505581848830403eff31a5a2f4e5a",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/session.mjs",
+        "bytes": 1629,
+        "sha256": "84b9ed394c93036f12352560476a6196d9fc25d2d3989170c3f58785cae01030",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/sim.mjs",
+        "bytes": 13560,
+        "sha256": "1c86e2997e3cc58e65abcca66c4de577fd8cd62bd6cf4c887a57dcaee55a8912",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/sim.test.mjs",
+        "bytes": 14550,
+        "sha256": "d2e4ed5ce0ac34aac77df504f828e900b195e5492d0764faeaa5b4ee48eb92ce",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/style.css",
+        "bytes": 10788,
+        "sha256": "6f1f09981de8b1eecdf427a6ec04095268bf4326b77f5f0441d258d7ec425a12",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/template.html",
+        "bytes": 5791,
+        "sha256": "04a7183c03b7f8d7604db4bf4e760a256c531aa1a4adb80262908099cdd95d59",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/verify-browser.cjs",
+        "bytes": 24714,
+        "sha256": "76791100fd469fa63ebd8caef1e28ada653174884998820109aeff2412fcabad",
+        "passed": true
+      },
+      {
+        "path": "tools/map-weather-v1/verify-geometry.mjs",
+        "bytes": 2029,
+        "sha256": "1102b7b668b457b48cdd0a6738d094379b9dcaede04958a698a13845cf25303d",
+        "passed": true
+      },
+      {
+        "path": "tools/battlefield/sim.mjs",
+        "bytes": 31917,
+        "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7",
+        "passed": true
+      },
+      {
+        "path": "tools/world-assets/core.mjs",
+        "bytes": 7840,
+        "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c",
+        "passed": true
+      },
+      {
+        "path": "tools/map-atmosphere-v1/sky.mjs",
+        "bytes": 26359,
+        "sha256": "6fdb50cdff504c6e8da2917917de0aa4cb8eef2449dde27697d9a25e4ddd6f5e",
+        "passed": true
+      },
+      {
+        "path": "tools/map-atmosphere-v1/terrain.mjs",
+        "bytes": 34613,
+        "sha256": "de025448731fc8185248e958312f8aae73575e816342b8f9165fb49d07d8ae6c",
+        "passed": true
+      },
+      {
+        "path": "tools/map-atmosphere-v1/props.mjs",
+        "bytes": 40911,
+        "sha256": "83b91fedef9e2613bd283e1e5cedc8abeaeffceb67d6aed1122704b137cea326",
+        "passed": true
+      },
+      {
+        "path": "outputs/selected-airship-toon3d/airship.glb",
+        "bytes": 3645884,
+        "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+        "passed": true
+      }
+    ]
+  },
+  "buildMatches": true,
+  "limits": [
+    "Only the new weather trial opts into the isolated authority revision; canonical battlefield and campaign remain preserved.",
+    "Provisional altitude/environment shapes do not turn original XZ projectiles/collision into full 3D physics.",
+    "Static GLBs do not contain procedural weather motion, outlines, controller rules or audio.",
+    "Human art/feel approval and final performance budget remain open."
+  ],
+  "mapGalleryLink": {
+    "mapUrl": "http://127.0.0.1:8860/outputs/map-atmosphere-v1/index.html",
+    "weatherUrl": "http://127.0.0.1:8860/outputs/map-weather-v1/index.html",
+    "mapStatus": 200,
+    "weatherStatus": 200,
+    "weatherLinkInMap": true,
+    "mapLinkInWeather": true,
+    "mapHtmlSha256": "aa5efbb4e2984d1acfce605c14673e6322cdd61a8313512be2211dd498c86ea0",
+    "weatherHtmlSha256": "deca02810ec34a3f518ce63a3872f18ac711bba5472c6b5b03b514f9b1df3882",
+    "passed": true
+  }
+}

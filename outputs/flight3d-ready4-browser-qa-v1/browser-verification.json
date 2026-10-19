@@ -1,0 +1,1998 @@
+{
+  "version": 4,
+  "url": "http://127.0.0.1:8840/outputs/flight3d-ready4/index.html",
+  "expectedChecks": 20,
+  "passed": true,
+  "scope": "READY4 short actual-browser input QA: grab camera, click/J/button fire separation, cancellation/capture/chords and mobile touch. DOM pointercancel and blur are explicitly injected event-path checks. Flight physics, human feel, real tab hiding and long-session performance are separate.",
+  "omitted": [
+    "Real browser-tab hiding was not exercised. The blur check dispatches a DOM window blur event and verifies its input cleanup path."
+  ],
+  "checks": [
+    {
+      "name": "six-real-models-and-perspective-camera",
+      "passed": true,
+      "detail": {
+        "projection": "perspective",
+        "fov": 57,
+        "position": [
+          0,
+          17.655673539959768,
+          61.197463295856835
+        ],
+        "target": [
+          0,
+          11,
+          34
+        ],
+        "yaw": 0,
+        "followYaw": 0,
+        "freeYaw": 0,
+        "looking": false,
+        "elevation": 0.24,
+        "distance": 28,
+        "visualPose": {
+          "position": [
+            0,
+            8,
+            40
+          ],
+          "rotation": [
+            0,
+            3.141592653589793,
+            0,
+            "YXZ"
+          ]
+        },
+        "ships": 6,
+        "shots": 0,
+        "memory": {
+          "geometries": 102,
+          "textures": 265
+        },
+        "drawCalls": 273,
+        "triangles": 200462,
+        "outlineAutoClear": true,
+        "altitude": 8
+      }
+    },
+    {
+      "name": "left-button-held-still-does-not-fire",
+      "passed": true,
+      "detail": {
+        "camera": {
+          "projection": "perspective",
+          "fov": 57,
+          "position": [
+            0,
+            17.655673539959768,
+            61.197463295856835
+          ],
+          "target": [
+            0,
+            11,
+            34
+          ],
+          "yaw": 0,
+          "followYaw": 0,
+          "freeYaw": 0,
+          "looking": false,
+          "elevation": 0.24,
+          "distance": 28,
+          "visualPose": {
+            "position": [
+              0,
+              8.070187845504634,
+              40
+            ],
+            "rotation": [
+              0.0049626443221750145,
+              3.141592653589793,
+              0.002628043129524661,
+              "YXZ"
+            ]
+          },
+          "ships": 6,
+          "shots": 0,
+          "memory": {
+            "geometries": 102,
+            "textures": 265
+          },
+          "drawCalls": 273,
+          "triangles": 200462,
+          "outlineAutoClear": true,
+          "altitude": 8
+        },
+        "heading": 3.141592653589793,
+        "shots": 0,
+        "paused": false,
+        "grabbing": true,
+        "cursor": "grabbing",
+        "focused": "scene"
+      }
+    },
+    {
+      "name": "left-grab-orbits-without-firing-or-turning-the-ship",
+      "passed": true,
+      "detail": {
+        "camera": {
+          "projection": "perspective",
+          "fov": 57,
+          "position": [
+            -11.723946680215388,
+            20.83684459792719,
+            55.64091237860381
+          ],
+          "target": [
+            3.5121175091609595,
+            11,
+            35.36396040238547
+          ],
+          "yaw": -0.8099999999999999,
+          "followYaw": 0,
+          "freeYaw": -0.8099999999999999,
+          "looking": true,
+          "elevation": 0.39000000000000007,
+          "distance": 28,
+          "visualPose": {
+            "position": [
+              0,
+              8.160049187928427,
+              40
+            ],
+            "rotation": [
+              0.006718808911119176,
+              3.141592653589793,
+              0.006687060790101475,
+              "YXZ"
+            ]
+          },
+          "ships": 6,
+          "shots": 0,
+          "memory": {
+            "geometries": 109,
+            "textures": 265
+          },
+          "drawCalls": 270,
+          "triangles": 199158,
+          "outlineAutoClear": true,
+          "altitude": 8
+        },
+        "heading": 3.141592653589793,
+        "shots": 0,
+        "paused": false,
+        "grabbing": true,
+        "cursor": "grabbing",
+        "focused": "scene"
+      }
+    },
+    {
+      "name": "left-grab-release-restores-cursor-without-click-shot",
+      "passed": true,
+      "detail": {
+        "camera": {
+          "projection": "perspective",
+          "fov": 57,
+          "position": [
+            -14.180364718341425,
+            21.57575695246642,
+            53.88450975852883
+          ],
+          "target": [
+            4.274039566455402,
+            11,
+            35.82009513733302
+          ],
+          "yaw": -0.8099999999999999,
+          "followYaw": 0,
+          "freeYaw": -0.8099999999999999,
+          "looking": false,
+          "elevation": 0.39000000000000007,
+          "distance": 28,
+          "visualPose": {
+            "position": [
+              0,
+              8.173164812099166,
+              40
+            ],
+            "rotation": [
+              0.005289520905741154,
+              3.141592653589793,
+              0.00882858034332142,
+              "YXZ"
+            ]
+          },
+          "ships": 6,
+          "shots": 0,
+          "memory": {
+            "geometries": 110,
+            "textures": 265
+          },
+          "drawCalls": 268,
+          "triangles": 198082,
+          "outlineAutoClear": true,
+          "altitude": 8
+        },
+        "heading": 3.141592653589793,
+        "shots": 0,
+        "paused": false,
+        "grabbing": false,
+        "cursor": "grab",
+        "focused": "scene"
+      }
+    },
+    {
+      "name": "sub-six-pixel-jitter-click-fires-one-shot-without-continuing",
+      "passed": true,
+      "detail": {
+        "clicked": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.014716053791526,
+                40
+              ],
+              "rotation": [
+                0.001996447206462213,
+                3.141592653589793,
+                0.0005318137484356007,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 1,
+            "memory": {
+              "geometries": 111,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 200462,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 1,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "clickedLater": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.114734415093682,
+                40
+              ],
+              "rotation": [
+                0.0062273467280805975,
+                3.141592653589793,
+                0.004458343941636087,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 1,
+            "memory": {
+              "geometries": 111,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 200462,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 1,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "right-and-middle-button-orbits-remain-fire-free",
+      "passed": true,
+      "detail": [
+        {
+          "button": "right",
+          "during": {
+            "camera": {
+              "projection": "perspective",
+              "fov": 57,
+              "position": [
+                -4.270457307613388,
+                18.77160849144426,
+                59.7925453223893
+              ],
+              "target": [
+                1.2532231764191941,
+                11,
+                34.31652599543362
+              ],
+              "yaw": -0.63,
+              "followYaw": 0,
+              "freeYaw": -0.63,
+              "looking": true,
+              "elevation": 0.3600000000000001,
+              "distance": 28,
+              "visualPose": {
+                "position": [
+                  0,
+                  8.016936277107773,
+                  40
+                ],
+                "rotation": [
+                  0.002178404617659009,
+                  3.141592653589793,
+                  0.0006130007597379349,
+                  "YXZ"
+                ]
+              },
+              "ships": 6,
+              "shots": 0,
+              "memory": {
+                "geometries": 110,
+                "textures": 265
+              },
+              "drawCalls": 273,
+              "triangles": 199698,
+              "outlineAutoClear": true,
+              "altitude": 8
+            },
+            "heading": 3.141592653589793,
+            "shots": 0,
+            "paused": false,
+            "grabbing": true,
+            "cursor": "grabbing",
+            "focused": "scene"
+          },
+          "after": {
+            "camera": {
+              "projection": "perspective",
+              "fov": 57,
+              "position": [
+                -8.52190396621975,
+                19.936812251906225,
+                57.861969936841234
+              ],
+              "target": [
+                2.5240132147272774,
+                11,
+                34.78176143995833
+              ],
+              "yaw": -0.63,
+              "followYaw": 0,
+              "freeYaw": -0.63,
+              "looking": false,
+              "elevation": 0.3600000000000001,
+              "distance": 28,
+              "visualPose": {
+                "position": [
+                  0,
+                  8.036700348211697,
+                  40
+                ],
+                "rotation": [
+                  0.0034683019793008067,
+                  3.141592653589793,
+                  0.00134510807422003,
+                  "YXZ"
+                ]
+              },
+              "ships": 6,
+              "shots": 0,
+              "memory": {
+                "geometries": 110,
+                "textures": 265
+              },
+              "drawCalls": 273,
+              "triangles": 199598,
+              "outlineAutoClear": true,
+              "altitude": 8
+            },
+            "heading": 3.141592653589793,
+            "shots": 0,
+            "paused": false,
+            "grabbing": false,
+            "cursor": "grab",
+            "focused": "scene"
+          },
+          "passed": true
+        },
+        {
+          "button": "middle",
+          "during": {
+            "camera": {
+              "projection": "perspective",
+              "fov": 57,
+              "position": [
+                -3.525566611041223,
+                18.57532051044709,
+                60.06280963469298
+              ],
+              "target": [
+                1.0336306948536342,
+                11,
+                34.254382192011526
+              ],
+              "yaw": -0.63,
+              "followYaw": 0,
+              "freeYaw": -0.63,
+              "looking": true,
+              "elevation": 0.3600000000000001,
+              "distance": 28,
+              "visualPose": {
+                "position": [
+                  0,
+                  8.012659160805612,
+                  40
+                ],
+                "rotation": [
+                  0.001817015355672642,
+                  3.141592653589793,
+                  0.000456794785971794,
+                  "YXZ"
+                ]
+              },
+              "ships": 6,
+              "shots": 0,
+              "memory": {
+                "geometries": 110,
+                "textures": 265
+              },
+              "drawCalls": 273,
+              "triangles": 199698,
+              "outlineAutoClear": true,
+              "altitude": 8
+            },
+            "heading": 3.141592653589793,
+            "shots": 0,
+            "paused": false,
+            "grabbing": true,
+            "cursor": "grabbing",
+            "focused": "scene"
+          },
+          "after": {
+            "camera": {
+              "projection": "perspective",
+              "fov": 57,
+              "position": [
+                -8.212617414516615,
+                19.85551081734761,
+                57.972462812372314
+              ],
+              "target": [
+                2.4329136849560777,
+                11,
+                34.75644974925957
+              ],
+              "yaw": -0.63,
+              "followYaw": 0,
+              "freeYaw": -0.63,
+              "looking": false,
+              "elevation": 0.3600000000000001,
+              "distance": 28,
+              "visualPose": {
+                "position": [
+                  0,
+                  8.03035382133582,
+                  40
+                ],
+                "rotation": [
+                  0.0031027658343704034,
+                  3.141592653589793,
+                  0.0011081704778292784,
+                  "YXZ"
+                ]
+              },
+              "ships": 6,
+              "shots": 0,
+              "memory": {
+                "geometries": 110,
+                "textures": 265
+              },
+              "drawCalls": 272,
+              "triangles": 199518,
+              "outlineAutoClear": true,
+              "altitude": 8
+            },
+            "heading": 3.141592653589793,
+            "shots": 0,
+            "paused": false,
+            "grabbing": false,
+            "cursor": "grab",
+            "focused": "scene"
+          },
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "pointer-capture-over-header-releases-without-camera-or-fire-latch",
+      "passed": true,
+      "detail": {
+        "captured": true,
+        "overHeader": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -16.535067069931017,
+              8.056770039983341,
+              35.10297789115469
+            ],
+            "target": [
+              4.617326302472849,
+              11,
+              41.33254726161587
+            ],
+            "yaw": -2.583,
+            "followYaw": 0,
+            "freeYaw": -2.583,
+            "looking": true,
+            "elevation": -0.18,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.114734415093682,
+                40
+              ],
+              "rotation": [
+                0.0062273467280805975,
+                3.141592653589793,
+                0.004458343941636087,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 119,
+              "textures": 265
+            },
+            "drawCalls": 264,
+            "triangles": 195882,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": true,
+          "cursor": "grabbing",
+          "focused": "scene"
+        },
+        "headerReleased": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -13.958337987771921,
+              7.014184782594915,
+              28.36495613051477
+            ],
+            "target": [
+              3.8932353858669715,
+              11,
+              43.22440788162913
+            ],
+            "yaw": -2.583,
+            "followYaw": 0,
+            "freeYaw": -2.583,
+            "looking": false,
+            "elevation": -0.18,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.13673478870038,
+                40
+              ],
+              "rotation": [
+                0.006594270022896745,
+                3.141592653589793,
+                0.005458425967853148,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 264,
+            "triangles": 195882,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "returned": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -11.970761063524321,
+              6.209979787396266,
+              23.16753873058216
+            ],
+            "target": [
+              3.3347030951159344,
+              11,
+              44.6837070133331
+            ],
+            "yaw": -2.583,
+            "followYaw": 0,
+            "freeYaw": -2.583,
+            "looking": false,
+            "elevation": -0.18,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.169999470497405,
+                40
+              ],
+              "rotation": [
+                0.006594206230433269,
+                3.141592653589793,
+                0.007358410608473824,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 264,
+            "triangles": 195882,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "Escape-during-grab-clears-input-and-resumes-without-ghost-shot",
+      "passed": true,
+      "detail": {
+        "escaped": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -5.216502908857111,
+              19.11706128924368,
+              59.53718397527871
+            ],
+            "target": [
+              1.5316110729083676,
+              11,
+              34.361854259583374
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.009042786007795,
+                40
+              ],
+              "rotation": [
+                0.001468708436211275,
+                3.141592653589793,
+                0.00032537167522430114,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 199698,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": true,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "resumed": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -5.2579429281565355,
+              19.129244917492247,
+              59.5184062033586
+            ],
+            "target": [
+              1.5440386222872673,
+              11,
+              34.36628982955225
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.009042786007795,
+                40
+              ],
+              "rotation": [
+                0.001468708436211275,
+                3.141592653589793,
+                0.00032537167522430114,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 199698,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "resumedLater": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -9.52438691885552,
+              20.38360648403551,
+              57.585146674969415
+            ],
+            "target": [
+              2.823513011128994,
+              11,
+              34.8229525232226
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.036700348211697,
+                40
+              ],
+              "rotation": [
+                0.0034683019793008067,
+                3.141592653589793,
+                0.00134510807422003,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 271,
+            "triangles": 199338,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "keyboard-reset-clears-held-grab-and-late-release-does-not-fire",
+      "passed": true,
+      "detail": {
+        "resetHeld": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8,
+                40
+              ],
+              "rotation": [
+                0,
+                3.141592653589793,
+                0,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 200462,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "resetReleased": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.002876954926615,
+                40
+              ],
+              "rotation": [
+                0.0006980818797249549,
+                3.141592653589793,
+                0.0001028622691942766,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 200462,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "DOM-pointercancel-releases-real-capture-without-late-click-shot",
+      "passed": true,
+      "detail": {
+        "cancellation": {
+          "pointerId": 1,
+          "captureRemaining": false
+        },
+        "cancelled": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -4.14902602606357,
+              18.822251661354358,
+              59.83797607660671
+            ],
+            "target": [
+              1.2200349302768505,
+              11,
+              34.29873432460917
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.007484475259735,
+                40
+              ],
+              "rotation": [
+                0.0013014133401652722,
+                3.141592653589793,
+                0.00026893691024472205,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 199698,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "cancelledLater": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -8.402616656280241,
+              20.061280897221497,
+              58.02155982693759
+            ],
+            "target": [
+              2.4904640417419617,
+              11,
+              34.7229831544722
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.02454264603482,
+                40
+              ],
+              "rotation": [
+                0.00273259849974934,
+                3.141592653589793,
+                0.0008927616828356173,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 272,
+            "triangles": 199518,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "real-capture-loss-clears-grab-without-late-click-shot",
+      "passed": true,
+      "detail": {
+        "captureRelease": {
+          "pointerId": 1,
+          "hadCapture": true
+        },
+        "lost": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -7.1346408254901785,
+              19.69367880028392,
+              58.54951082357468
+            ],
+            "target": [
+              2.112434061887388,
+              11,
+              34.60035321202177
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.012659160805612,
+                40
+              ],
+              "rotation": [
+                0.001817015355672642,
+                3.141592653589793,
+                0.000456794785971794,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 199698,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "lostLater": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -9.161079133648856,
+              20.283080420597674,
+              57.69096629572601
+            ],
+            "target": [
+              2.7173326667354814,
+              11,
+              34.80053534359412
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.027377973057948,
+                40
+              ],
+              "rotation": [
+                0.002917998999489581,
+                3.141592653589793,
+                0.000997679727589259,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 271,
+            "triangles": 199338,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "left-right-chord-left-released-first-without-motion-has-no-ghost-shot",
+      "passed": true,
+      "detail": {
+        "camera": {
+          "projection": "perspective",
+          "fov": 57,
+          "position": [
+            0,
+            17.655673539959768,
+            61.197463295856835
+          ],
+          "target": [
+            0,
+            11,
+            34
+          ],
+          "yaw": 0,
+          "followYaw": 0,
+          "freeYaw": 0,
+          "looking": false,
+          "elevation": 0.24,
+          "distance": 28,
+          "visualPose": {
+            "position": [
+              0,
+              8.006091686200126,
+              40
+            ],
+            "rotation": [
+              0.0011398042254201167,
+              3.141592653589793,
+              0.00021860378809044603,
+              "YXZ"
+            ]
+          },
+          "ships": 6,
+          "shots": 0,
+          "memory": {
+            "geometries": 120,
+            "textures": 265
+          },
+          "drawCalls": 273,
+          "triangles": 200462,
+          "outlineAutoClear": true,
+          "altitude": 8
+        },
+        "heading": 3.141592653589793,
+        "shots": 0,
+        "paused": false,
+        "grabbing": false,
+        "cursor": "grab",
+        "focused": "scene"
+      }
+    },
+    {
+      "name": "left-right-chord-right-released-first-does-not-latch-or-fire",
+      "passed": true,
+      "detail": {
+        "camera": {
+          "projection": "perspective",
+          "fov": 57,
+          "position": [
+            -8.108715150428809,
+            20.23462044476732,
+            57.684363551780486
+          ],
+          "target": [
+            2.4356193168792495,
+            11,
+            34.807516058681514
+          ],
+          "yaw": -0.6749999999999999,
+          "followYaw": 0,
+          "freeYaw": -0.6749999999999999,
+          "looking": false,
+          "elevation": 0.3900000000000001,
+          "distance": 28,
+          "visualPose": {
+            "position": [
+              0,
+              8.010767699636242,
+              40
+            ],
+            "rotation": [
+              0.0016408451275955545,
+              3.141592653589793,
+              0.0003879798783858759,
+              "YXZ"
+            ]
+          },
+          "ships": 6,
+          "shots": 0,
+          "memory": {
+            "geometries": 120,
+            "textures": 265
+          },
+          "drawCalls": 272,
+          "triangles": 199518,
+          "outlineAutoClear": true,
+          "altitude": 8
+        },
+        "heading": 3.141592653589793,
+        "shots": 0,
+        "paused": false,
+        "grabbing": false,
+        "cursor": "grab",
+        "focused": "scene"
+      }
+    },
+    {
+      "name": "dispatched-blur-event-clears-grab-without-ghost-shot-after-resume",
+      "passed": true,
+      "detail": {
+        "blurred": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -6.147779360123301,
+              19.359056820655972,
+              59.421407520852625
+            ],
+            "target": [
+              1.7965872873532922,
+              11,
+              34.375932401709555
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.047094557095422,
+                40
+              ],
+              "rotation": [
+                0.0039995603619787275,
+                3.141592653589793,
+                0.0017371305604492013,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 273,
+            "triangles": 199698,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": true,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "blurResumed": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -9.662841734047877,
+              20.41482492535825,
+              57.61375720183083
+            ],
+            "target": [
+              2.8607666785893833,
+              11,
+              34.812235700697535
+            ],
+            "yaw": -0.585,
+            "followYaw": 0,
+            "freeYaw": -0.585,
+            "looking": false,
+            "elevation": 0.3600000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.082390118136752,
+                40
+              ],
+              "rotation": [
+                0.005378569257481906,
+                3.141592653589793,
+                0.0031120724049988834,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 271,
+            "triangles": 199338,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "J-hold-hits-elevated-target-and-release-stops-firing",
+      "passed": true,
+      "detail": {
+        "targetResult": {
+          "stats": {
+            "shots": 7,
+            "hits": 3,
+            "kills": 1,
+            "checkpoints": 0,
+            "collisions": 0,
+            "enemyShots": 0,
+            "damageTaken": 0
+          },
+          "target": {
+            "id": "target-mid",
+            "label": "중층 표적",
+            "x": 18,
+            "y": 25,
+            "z": -42,
+            "radius": 3,
+            "hp": 0,
+            "maxHp": 60,
+            "defeated": true,
+            "telegraph": null,
+            "shotCooldown": 4.1
+          }
+        },
+        "jReleased": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.003720532950886,
+                40
+              ],
+              "rotation": [
+                -0.001698467180641377,
+                3.141592653589793,
+                0.007160964412510245,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 4,
+            "memory": {
+              "geometries": 127,
+              "textures": 265
+            },
+            "drawCalls": 224,
+            "triangles": 163818,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 7,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "jLater": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                7.81876386768116,
+                40
+              ],
+              "rotation": [
+                -0.006910230036333687,
+                3.141592653589793,
+                -0.0021700328978357625,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 4,
+            "memory": {
+              "geometries": 124,
+              "textures": 265
+            },
+            "drawCalls": 224,
+            "triangles": 163818,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 7,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "mobile-layout-has-no-overflow",
+      "passed": true
+    },
+    {
+      "name": "CDP-touch-drag-orbits-and-releases-without-firing-or-steering",
+      "passed": true,
+      "detail": {
+        "touchBefore": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.004862123635043,
+                40
+              ],
+              "rotation": [
+                0.0009847618664562898,
+                3.141592653589793,
+                0.0001742593243143632,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 262,
+            "triangles": 198166,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "touchDuring": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -5.82243604879695,
+              20.049973459394405,
+              59.341923309341965
+            ],
+            "target": [
+              1.7263347020430397,
+              11,
+              34.333659511974076
+            ],
+            "yaw": -0.49499999999999994,
+            "followYaw": 0,
+            "freeYaw": -0.49499999999999994,
+            "looking": true,
+            "elevation": 0.3900000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.160399741879077,
+                40
+              ],
+              "rotation": [
+                0.00436690328322219,
+                3.141592653589793,
+                0.00910442835552969,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 263,
+            "triangles": 197530,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": true,
+          "cursor": "grabbing",
+          "focused": "scene"
+        },
+        "touchAfter": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              -8.559403034956564,
+              21.25297892322327,
+              57.95983255150862
+            ],
+            "target": [
+              2.5738255306348043,
+              11,
+              34.62513756666427
+            ],
+            "yaw": -0.49499999999999994,
+            "followYaw": 0,
+            "freeYaw": -0.49499999999999994,
+            "looking": false,
+            "elevation": 0.3900000000000001,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.120699957090418,
+                40
+              ],
+              "rotation": [
+                0.002448674718597484,
+                3.141592653589793,
+                0.009039478780102058,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 0,
+            "memory": {
+              "geometries": 120,
+              "textures": 265
+            },
+            "drawCalls": 262,
+            "triangles": 197450,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 0,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "mobile-up-button-accepts-a-real-touch-hold",
+      "passed": true,
+      "detail": {
+        "altitudeBefore": 8,
+        "altitudeAfter": 12.165940806294493
+      }
+    },
+    {
+      "name": "screen-fire-button-touch-hold-fires-continuously-and-release-stops",
+      "passed": true,
+      "detail": {
+        "buttonHeld": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.168327073262098,
+                40
+              ],
+              "rotation": [
+                0.006631013859830958,
+                3.141592653589793,
+                0.007231195770923771,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 4,
+            "memory": {
+              "geometries": 125,
+              "textures": 265
+            },
+            "drawCalls": 262,
+            "triangles": 198166,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 4,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        },
+        "buttonReleased": {
+          "camera": {
+            "projection": "perspective",
+            "fov": 57,
+            "position": [
+              0,
+              17.655673539959768,
+              61.197463295856835
+            ],
+            "target": [
+              0,
+              11,
+              34
+            ],
+            "yaw": 0,
+            "followYaw": 0,
+            "freeYaw": 0,
+            "looking": false,
+            "elevation": 0.24,
+            "distance": 28,
+            "visualPose": {
+              "position": [
+                0,
+                8.157909732214891,
+                40
+              ],
+              "rotation": [
+                0.004221445423919605,
+                3.141592653589793,
+                0.009124858807005372,
+                "YXZ"
+              ]
+            },
+            "ships": 6,
+            "shots": 4,
+            "memory": {
+              "geometries": 124,
+              "textures": 265
+            },
+            "drawCalls": 262,
+            "triangles": 198166,
+            "outlineAutoClear": true,
+            "altitude": 8
+          },
+          "heading": 3.141592653589793,
+          "shots": 4,
+          "paused": false,
+          "grabbing": false,
+          "cursor": "grab",
+          "focused": "scene"
+        }
+      }
+    },
+    {
+      "name": "page-errors-external-requests-and-failed-requests-all-zero",
+      "passed": true,
+      "detail": {
+        "errors": [],
+        "external": [],
+        "failed": []
+      }
+    }
+  ],
+  "samples": [
+    {
+      "camera": {
+        "projection": "perspective",
+        "fov": 57,
+        "position": [
+          -11.723946680215388,
+          20.83684459792719,
+          55.64091237860381
+        ],
+        "target": [
+          3.5121175091609595,
+          11,
+          35.36396040238547
+        ],
+        "yaw": -0.8099999999999999,
+        "followYaw": 0,
+        "freeYaw": -0.8099999999999999,
+        "looking": true,
+        "elevation": 0.39000000000000007,
+        "distance": 28,
+        "visualPose": {
+          "position": [
+            0,
+            8.160049187928427,
+            40
+          ],
+          "rotation": [
+            0.006718808911119176,
+            3.141592653589793,
+            0.006687060790101475,
+            "YXZ"
+          ]
+        },
+        "ships": 6,
+        "shots": 0,
+        "memory": {
+          "geometries": 109,
+          "textures": 265
+        },
+        "drawCalls": 270,
+        "triangles": 199158,
+        "outlineAutoClear": true,
+        "altitude": 8
+      },
+      "heading": 3.141592653589793,
+      "shots": 0,
+      "paused": false,
+      "grabbing": true,
+      "cursor": "grabbing",
+      "focused": "scene"
+    },
+    {
+      "camera": {
+        "projection": "perspective",
+        "fov": 57,
+        "position": [
+          -5.82243604879695,
+          20.049973459394405,
+          59.341923309341965
+        ],
+        "target": [
+          1.7263347020430397,
+          11,
+          34.333659511974076
+        ],
+        "yaw": -0.49499999999999994,
+        "followYaw": 0,
+        "freeYaw": -0.49499999999999994,
+        "looking": true,
+        "elevation": 0.3900000000000001,
+        "distance": 28,
+        "visualPose": {
+          "position": [
+            0,
+            8.160399741879077,
+            40
+          ],
+          "rotation": [
+            0.00436690328322219,
+            3.141592653589793,
+            0.00910442835552969,
+            "YXZ"
+          ]
+        },
+        "ships": 6,
+        "shots": 0,
+        "memory": {
+          "geometries": 120,
+          "textures": 265
+        },
+        "drawCalls": 263,
+        "triangles": 197530,
+        "outlineAutoClear": true,
+        "altitude": 8
+      },
+      "heading": 3.141592653589793,
+      "shots": 0,
+      "paused": false,
+      "grabbing": true,
+      "cursor": "grabbing",
+      "focused": "scene"
+    },
+    {
+      "camera": {
+        "projection": "perspective",
+        "fov": 57,
+        "position": [
+          0,
+          17.655673539959768,
+          61.197463295856835
+        ],
+        "target": [
+          0,
+          11,
+          34
+        ],
+        "yaw": 0,
+        "followYaw": 0,
+        "freeYaw": 0,
+        "looking": false,
+        "elevation": 0.24,
+        "distance": 28,
+        "visualPose": {
+          "position": [
+            0,
+            8.157909732214891,
+            40
+          ],
+          "rotation": [
+            0.004221445423919605,
+            3.141592653589793,
+            0.009124858807005372,
+            "YXZ"
+          ]
+        },
+        "ships": 6,
+        "shots": 4,
+        "memory": {
+          "geometries": 124,
+          "textures": 265
+        },
+        "drawCalls": 262,
+        "triangles": 198166,
+        "outlineAutoClear": true,
+        "altitude": 8
+      },
+      "heading": 3.141592653589793,
+      "shots": 4,
+      "paused": false,
+      "grabbing": false,
+      "cursor": "grab",
+      "focused": "scene"
+    }
+  ],
+  "errors": [],
+  "harnessErrors": [],
+  "externalRequests": [],
+  "failedRequests": []
+}

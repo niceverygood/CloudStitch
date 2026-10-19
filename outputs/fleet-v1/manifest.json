@@ -1,0 +1,4193 @@
+{
+  "title": "Cloudstitch",
+  "revision": 1,
+  "catalogEntries": 71,
+  "uniqueCanonHullCount": null,
+  "scopeCounts": {
+    "coreEntries": 24,
+    "variantEntries": 14,
+    "roleAndSupportEntries": 29,
+    "facilityEntries": 3,
+    "recordEntries": 1
+  },
+  "files": [
+    {
+      "file": "catalog.json",
+      "bytes": 469686,
+      "sha256": "d73ea3d133167ce78d468c8df25ecae6dffb058457050993349fd2a138e1fda9"
+    },
+    {
+      "file": "index.html",
+      "bytes": 341287,
+      "sha256": "5cf39051c003ab25e6c0528f3d75d4683b516522ae27e108354f38631cd39151"
+    },
+    {
+      "file": "verification.json",
+      "bytes": 799002,
+      "sha256": "a3b0a697cf726a5203c2403016d8272ab73a15158d300a1f466783b008ed5bb0"
+    },
+    {
+      "file": "verification-summary.txt",
+      "bytes": 3706,
+      "sha256": "769d823746de2be7c174295c86bd598b406d9c3e052276291a55fa577f9c26c6"
+    },
+    {
+      "file": "ghosting-verification.json",
+      "bytes": 810,
+      "sha256": "394f5e82b3176ae8d5e08c83503a9a5551c7215f12c619f64a48adab44f5e2aa"
+    },
+    {
+      "file": "labels-verification.json",
+      "bytes": 3710,
+      "sha256": "81050dffe1031e210c49ecaf67b979b83e82f676e30f1fdb5f7eebe3365ba85c"
+    },
+    {
+      "file": "handpainted-atlas.png",
+      "bytes": 3222851,
+      "sha256": "d8624f4a14dec970b05f051ae5a0754b13e957e3556f439f31e94eb485a3498f"
+    },
+    {
+      "file": "handpainted-atlas-v2.png",
+      "bytes": 2634886,
+      "sha256": "44a307de31612829a6588e63d3f14822127ddc1653132f06d21be28298a82145"
+    },
+    {
+      "file": "README.txt",
+      "bytes": 5948,
+      "sha256": "49ebd55e2c7b5cd1815706ef27df803fc0fe4bf9ed934cf8c29f900e46af496d"
+    },
+    {
+      "file": "fleet-overview.png",
+      "bytes": 952958,
+      "sha256": "903212e6f440751e1f5b3bc711dd648cc1acfb8ed745dd36557d7ef82caf27e5"
+    }
+  ],
+  "assets": [
+    {
+      "id": "player-homeward",
+      "name": "귀환호",
+      "model": "ships/player-homeward.glb",
+      "viewer": "ships/player-homeward.html",
+      "preview": "previews/player-homeward.png",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004",
+      "authoredUnits": "selected-original",
+      "recommendedFleetScale": 10.548523206751055,
+      "triangles": 11986,
+      "bones": 9,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "player-cloud-scout",
+      "name": "구름 정찰선",
+      "model": "ships/player-cloud-scout.glb",
+      "viewer": "ships/player-cloud-scout.html",
+      "preview": "previews/player-cloud-scout.png",
+      "bytes": 6710128,
+      "sha256": "e8527ed7932390fed4a6a3de5b59fca9402bf1c1ce8f18e99ca16c03c668bd89",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 38978,
+      "bones": 18,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "player-mixed-raider",
+      "name": "혼성 습격선",
+      "model": "ships/player-mixed-raider.glb",
+      "viewer": "ships/player-mixed-raider.html",
+      "preview": "previews/player-mixed-raider.png",
+      "bytes": 9219388,
+      "sha256": "dab5976c8a6e24f316b9a1e4cb2e208dacbf05cc2640e02b37a494ddc6ba5b51",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 65740,
+      "bones": 29,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 24,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "player-broadside",
+      "name": "측면 전함",
+      "model": "ships/player-broadside.glb",
+      "viewer": "ships/player-broadside.html",
+      "preview": "previews/player-broadside.png",
+      "bytes": 9983948,
+      "sha256": "917f3d18f849fadce3851dba372ded4feeadc28723a5bcae9b350aa508b0af10",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 74262,
+      "bones": 34,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 26,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 26,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 26,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 26,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 26,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 26,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 26,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "player-rescue-workshop",
+      "name": "구조 공방선",
+      "model": "ships/player-rescue-workshop.glb",
+      "viewer": "ships/player-rescue-workshop.html",
+      "preview": "previews/player-rescue-workshop.png",
+      "bytes": 11386388,
+      "sha256": "ff848985e7b673dfd59d6890444d6d8a6520c70c2caef7d73a5cacc7a1f132fc",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 81558,
+      "bones": 41,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 33,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 33,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 33,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 33,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 33,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 33,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 33,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "player-control",
+      "name": "전장 통제선",
+      "model": "ships/player-control.glb",
+      "viewer": "ships/player-control.html",
+      "preview": "previews/player-control.png",
+      "bytes": 9246764,
+      "sha256": "7e38d0ec105bc7fe4e1b9c1fd53ed0c2dd2f47dd9eef6073c791b3b40ea08310",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 64048,
+      "bones": 32,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 25,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 25,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 25,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 25,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 25,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 25,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 25,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "player-close-flame",
+      "name": "근접 화염선",
+      "model": "ships/player-close-flame.glb",
+      "viewer": "ships/player-close-flame.html",
+      "preview": "previews/player-close-flame.png",
+      "bytes": 8777292,
+      "sha256": "ee4f8d70d6495992ad9406a576d82343f6931fa676137c93092f4583a556aa0f",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 59292,
+      "bones": 29,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 22,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "enemy-pirate-scout",
+      "name": "해적 정찰선",
+      "model": "ships/enemy-pirate-scout.glb",
+      "viewer": "ships/enemy-pirate-scout.html",
+      "preview": "previews/enemy-pirate-scout.png",
+      "bytes": 6699020,
+      "sha256": "bce2d9891de2225d6823cb1c347a4b8d6b7e3dd2f59e056db78530661d131923",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 36644,
+      "bones": 19,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "enemy-cult-blockade",
+      "name": "교단 봉쇄선",
+      "model": "ships/enemy-cult-blockade.glb",
+      "viewer": "ships/enemy-cult-blockade.html",
+      "preview": "previews/enemy-cult-blockade.png",
+      "bytes": 8808632,
+      "sha256": "4ec693e705c8d83da58a5a74d87f3248e9775bb5ca93dec60ec48eb1cc2feac8",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 57764,
+      "bones": 30,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 20,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 20,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "enemy-union-salvage",
+      "name": "연합 인양선",
+      "model": "ships/enemy-union-salvage.glb",
+      "viewer": "ships/enemy-union-salvage.html",
+      "preview": "previews/enemy-union-salvage.png",
+      "bytes": 8922572,
+      "sha256": "abc322a91da27a88799300b9f2b339a76b07394236d6924b9051d0ffaeb14382",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 56732,
+      "bones": 31,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 29,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "enemy-union-repair",
+      "name": "연합 수리선",
+      "model": "ships/enemy-union-repair.glb",
+      "viewer": "ships/enemy-union-repair.html",
+      "preview": "previews/enemy-union-repair.png",
+      "bytes": 8206696,
+      "sha256": "5d63d412b28c69141d013f84209278cc3f2b4d49dd2280f4853c4afc195ebf8d",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 46972,
+      "bones": 26,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 20,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 20,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 20,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "enemy-ghost-chaser",
+      "name": "망령 추격선",
+      "model": "ships/enemy-ghost-chaser.glb",
+      "viewer": "ships/enemy-ghost-chaser.html",
+      "preview": "previews/enemy-ghost-chaser.png",
+      "bytes": 7121960,
+      "sha256": "f372e83c0026a36ce72cb33ec826bfcea98416d7d05f2c81861672c11455492e",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 36356,
+      "bones": 20,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 16,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "enemy-disguised-wreck",
+      "name": "위장 잔해선",
+      "model": "ships/enemy-disguised-wreck.glb",
+      "viewer": "ships/enemy-disguised-wreck.html",
+      "preview": "previews/enemy-disguised-wreck.png",
+      "bytes": 7100040,
+      "sha256": "b0426a691baaca6c0ad4ef9e8c6724900f9108ab5626c9abeff38c77eef220f5",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 41712,
+      "bones": 21,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 16,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "enemy-tax-cutter",
+      "name": "녹슨 징세정",
+      "model": "ships/enemy-tax-cutter.glb",
+      "viewer": "ships/enemy-tax-cutter.html",
+      "preview": "previews/enemy-tax-cutter.png",
+      "bytes": 7587232,
+      "sha256": "82e9d32173a6eeb2e7352ab8db1498e24d57e35108a8b48901b529642f3bfc50",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 43760,
+      "bones": 22,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 16,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "faction-cult-modular",
+      "name": "교단 모듈선 스타일",
+      "model": "ships/faction-cult-modular.glb",
+      "viewer": "ships/faction-cult-modular.html",
+      "preview": "previews/faction-cult-modular.png",
+      "bytes": 7032404,
+      "sha256": "60f9659978eb884064a80e892723a1a79c95db556eebb43e8bddd1dfff2a21ff",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 40444,
+      "bones": 21,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "faction-ghost-modular",
+      "name": "이름 없는 함대 모듈선 스타일",
+      "model": "ships/faction-ghost-modular.glb",
+      "viewer": "ships/faction-ghost-modular.html",
+      "preview": "previews/faction-ghost-modular.png",
+      "bytes": 7169484,
+      "sha256": "205e1f45c72ef1b115af9ea172cd4df95f01332cdf6bea268438bb3dd62a32fb",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37368,
+      "bones": 20,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 16,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "faction-salvager-modular",
+      "name": "닻 없는 인양자 모듈선 스타일",
+      "model": "ships/faction-salvager-modular.glb",
+      "viewer": "ships/faction-salvager-modular.html",
+      "preview": "previews/faction-salvager-modular.png",
+      "bytes": 7498620,
+      "sha256": "e3b13e5d71c5f0600adb1cf6612f537ecebb995afde8b43742a3abd834ab64a2",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 43468,
+      "bones": 25,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 22,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "rival-change",
+      "name": "거스름돈",
+      "model": "ships/rival-change.glb",
+      "viewer": "ships/rival-change.html",
+      "preview": "previews/rival-change.png",
+      "bytes": 7754376,
+      "sha256": "00f4923103ec32abba216cb8e5a4d597fc20980295e7078d116f3b7390288781",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 38064,
+      "bones": 23,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 19,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "rival-debts-end",
+      "name": "빚의 끝",
+      "model": "ships/rival-debts-end.glb",
+      "viewer": "ships/rival-debts-end.html",
+      "preview": "previews/rival-debts-end.png",
+      "bytes": 8569188,
+      "sha256": "76e5b2bdf8161184d5748e9da7e14dcf351ba3aaae40f57cb17e8bb7abcad1bf",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 56860,
+      "bones": 27,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 24,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 24,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "rival-quiet-answer",
+      "name": "고요한 답",
+      "model": "ships/rival-quiet-answer.glb",
+      "viewer": "ships/rival-quiet-answer.html",
+      "preview": "previews/rival-quiet-answer.png",
+      "bytes": 6995580,
+      "sha256": "8bca6abf7962fe5966e723a78a383cae52b5f0bf87240180dfa3d9060c6180b3",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 41120,
+      "bones": 21,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "rival-night-shift",
+      "name": "야간조",
+      "model": "ships/rival-night-shift.glb",
+      "viewer": "ships/rival-night-shift.html",
+      "preview": "previews/rival-night-shift.png",
+      "bytes": 8288468,
+      "sha256": "f512f3081465a4310fe29d069654c28685098fa6759873edc2936e88590f2184",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 52144,
+      "bones": 27,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 18,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 18,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "rival-go-first",
+      "name": "먼저 간다",
+      "model": "ships/rival-go-first.glb",
+      "viewer": "ships/rival-go-first.html",
+      "preview": "previews/rival-go-first.png",
+      "bytes": 6578900,
+      "sha256": "34cb52fc32816fa51613dcd16776de36acceb024874a5fe97622321a82459283",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 31048,
+      "bones": 15,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "rival-unfinished",
+      "name": "완성되지 않은 것",
+      "model": "ships/rival-unfinished.glb",
+      "viewer": "ships/rival-unfinished.html",
+      "preview": "previews/rival-unfinished.png",
+      "bytes": 9559412,
+      "sha256": "75e7bc3d16e193aa15a3634a553efedc08a420c0105ba42c139b76b0844be4e5",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 63408,
+      "bones": 37,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 29,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "boss-bell-devourer",
+      "name": "종을 삼킨 자 — 장례전함",
+      "model": "ships/boss-bell-devourer.glb",
+      "viewer": "ships/boss-bell-devourer.html",
+      "preview": "previews/boss-bell-devourer.png",
+      "bytes": 13800368,
+      "sha256": "da116ad02e6f4e130988c6c634863f6fbe03df3ef08bc2a1c12d9bb6dcb6b3b6",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 109860,
+      "bones": 58,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 41,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 41,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 41,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 41,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 41,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 41,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 41,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "boss-shipyard-ribs",
+      "name": "거신의 늑골 — 살아 있는 조선소",
+      "model": "ships/boss-shipyard-ribs.glb",
+      "viewer": "ships/boss-shipyard-ribs.html",
+      "preview": "previews/boss-shipyard-ribs.png",
+      "bytes": 4920404,
+      "sha256": "2307737f9528983be858966a2eca3fbcbdd382577ade407eabf46128003401f8",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 9336,
+      "bones": 23,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 17,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "boss-shipwright-command",
+      "name": "수석 조선공의 지휘함",
+      "model": "ships/boss-shipwright-command.glb",
+      "viewer": "ships/boss-shipwright-command.html",
+      "preview": "previews/boss-shipwright-command.png",
+      "bytes": 10187192,
+      "sha256": "d6240f4ec7611155a5694d3f0630d56c557d1375cd7882db3568e492c865e2f2",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 66028,
+      "bones": 41,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 32,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 32,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 32,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 32,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 32,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 32,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 32,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "boss-fleet-king",
+      "name": "죽은 함대 왕의 배",
+      "model": "ships/boss-fleet-king.glb",
+      "viewer": "ships/boss-fleet-king.html",
+      "preview": "previews/boss-fleet-king.png",
+      "bytes": 10938244,
+      "sha256": "4bc4ec164b14d1c5630ea331c7459007bc8bde611e510f6c261d0682acfe5f0e",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 75228,
+      "bones": 43,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 29,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 29,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 29,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "boss-last-inhale",
+      "name": "마지막 들숨 — 원숨 순환 장치",
+      "model": "ships/boss-last-inhale.glb",
+      "viewer": "ships/boss-last-inhale.html",
+      "preview": "previews/boss-last-inhale.png",
+      "bytes": 5528760,
+      "sha256": "0631ec4f85d291407a5a7184c54c9cd79f276f3851d2b35cf41fb639048d1ff9",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 11260,
+      "bones": 26,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 19,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "mini-funeral-guard",
+      "name": "소형 장례 경비선",
+      "model": "ships/mini-funeral-guard.glb",
+      "viewer": "ships/mini-funeral-guard.html",
+      "preview": "previews/mini-funeral-guard.png",
+      "bytes": 6937200,
+      "sha256": "e7d21258a49351ed966f60b3c66d3b9351a8ba38bb6457c280cea9d8dc022139",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 38080,
+      "bones": 21,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "mission-union-guard",
+      "name": "연합 경비선",
+      "model": "ships/mission-union-guard.glb",
+      "viewer": "ships/mission-union-guard.html",
+      "preview": "previews/mission-union-guard.png",
+      "bytes": 6141340,
+      "sha256": "ba521a6e6bc1f9eefd3307f8e0ded5cd219c4a58118561e6bd7365379ad31b3d",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 29816,
+      "bones": 15,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 11,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "mission-bridge-tug",
+      "name": "교량 견인정",
+      "model": "ships/mission-bridge-tug.glb",
+      "viewer": "ships/mission-bridge-tug.html",
+      "preview": "previews/mission-bridge-tug.png",
+      "bytes": 7097168,
+      "sha256": "2c9941b42c4a98d4c63987595dd2f87052ec287037a7f22eda05e302426655e8",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 38400,
+      "bones": 23,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 22,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 22,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 22,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "mission-guard-scout",
+      "name": "경비 정찰선·정찰정",
+      "model": "ships/mission-guard-scout.glb",
+      "viewer": "ships/mission-guard-scout.html",
+      "preview": "previews/mission-guard-scout.png",
+      "bytes": 6070128,
+      "sha256": "c308b0c9091f36aa280d4324c740e7091b2a3ebf8a0b971e89ea7d7f4e5ea613",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 30608,
+      "bones": 14,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 11,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "mission-cult-purifier",
+      "name": "교단 정화선",
+      "model": "ships/mission-cult-purifier.glb",
+      "viewer": "ships/mission-cult-purifier.html",
+      "preview": "previews/mission-cult-purifier.png",
+      "bytes": 7172724,
+      "sha256": "00ed4d0481d3941bf9355508fedf570a6d97c8aa747118b7a26dcab50d1e8d6c",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 42400,
+      "bones": 23,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 17,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 17,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "mission-ghost-artillery",
+      "name": "망령 포격선",
+      "model": "ships/mission-ghost-artillery.glb",
+      "viewer": "ships/mission-ghost-artillery.html",
+      "preview": "previews/mission-ghost-artillery.png",
+      "bytes": 7542280,
+      "sha256": "9493b52eab1fa9c1e0511bcbb26b3dc8f726ed26ddea2723ffb5e904c2593f23",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 46296,
+      "bones": 25,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 19,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 19,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 19,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "role-enemy-artillery",
+      "name": "일반 포격선 역할",
+      "model": "ships/role-enemy-artillery.glb",
+      "viewer": "ships/role-enemy-artillery.html",
+      "preview": "previews/role-enemy-artillery.png",
+      "bytes": 7168560,
+      "sha256": "dd910a1f6a70fa5cf18e144e20e114c2de84d2f8870f1cfd67d53beb367f32bd",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 42072,
+      "bones": 22,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 18,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 18,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "role-enemy-defense",
+      "name": "일반 방어선 역할",
+      "model": "ships/role-enemy-defense.glb",
+      "viewer": "ships/role-enemy-defense.html",
+      "preview": "previews/role-enemy-defense.png",
+      "bytes": 7289664,
+      "sha256": "5dbea405e0c5ba09ab9ff45b5f3329ccb395023cb1e7bc9d7f33e801fe28d6b2",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 43560,
+      "bones": 22,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-mara-repair",
+      "name": "마라가 탄 수리선",
+      "model": "ships/story-mara-repair.glb",
+      "viewer": "ships/story-mara-repair.html",
+      "preview": "previews/story-mara-repair.png",
+      "bytes": 6640936,
+      "sha256": "3f044c85c0c5ce2ba23e586273c34a2e80c50713c16911577f62c5d09960a4e8",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 34040,
+      "bones": 19,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-or-ship",
+      "name": "오르의 배",
+      "model": "ships/story-or-ship.glb",
+      "viewer": "ships/story-or-ship.html",
+      "preview": "previews/story-or-ship.png",
+      "bytes": 6775084,
+      "sha256": "822242a160a03712a65e6825359740837911e96e5461a5f2f3f1f514480f3c56",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 34668,
+      "bones": 21,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 18,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-compressor-wreck",
+      "name": "압축기 난파선·격리선",
+      "model": "ships/story-compressor-wreck.glb",
+      "viewer": "ships/story-compressor-wreck.html",
+      "preview": "previews/story-compressor-wreck.png",
+      "bytes": 5920660,
+      "sha256": "ae1dffa220497415248f3bafe8142c3fbcf19929f976200400340ad12c08acb0",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 27260,
+      "bones": 15,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 10,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 10,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 10,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 10,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 10,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 10,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 10,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-cult-storage",
+      "name": "교단 보관선",
+      "model": "ships/story-cult-storage.glb",
+      "viewer": "ships/story-cult-storage.html",
+      "preview": "previews/story-cult-storage.png",
+      "bytes": 6957656,
+      "sha256": "74f3ad952b56df7aad8e9badc0f37e4eee088eb9c63edd4d34048cfed2bb0180",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 40248,
+      "bones": 21,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-union-cooling",
+      "name": "연합 냉각선",
+      "model": "ships/story-union-cooling.glb",
+      "viewer": "ships/story-union-cooling.html",
+      "preview": "previews/story-union-cooling.png",
+      "bytes": 6381428,
+      "sha256": "a8529d1893e59374adf69de29831e54f33c11be1cd85b03bfcee0407bc48baf4",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 31168,
+      "bones": 18,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-mothers-escort",
+      "name": "어머니의 옛 호위선",
+      "model": "ships/story-mothers-escort.glb",
+      "viewer": "ships/story-mothers-escort.html",
+      "preview": "previews/story-mothers-escort.png",
+      "bytes": 6136676,
+      "sha256": "d5694fb74d101e4870fc04e8f6f62b44bcf4bc0e845ad2506053e726d3d2bd43",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 29768,
+      "bones": 15,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 12,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-turret-owner",
+      "name": "기억 포탑 원래 선장의 배",
+      "model": "ships/story-turret-owner.glb",
+      "viewer": "ships/story-turret-owner.html",
+      "preview": "previews/story-turret-owner.png",
+      "bytes": 6047820,
+      "sha256": "953b1aef99ba139db79696fc15dec3cd150bdcceaca5f54becab34bece5b2933",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 28512,
+      "bones": 15,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 12,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-cult-transport",
+      "name": "교단 수송선",
+      "model": "ships/story-cult-transport.glb",
+      "viewer": "ships/story-cult-transport.html",
+      "preview": "previews/story-cult-transport.png",
+      "bytes": 6732492,
+      "sha256": "154e9e18550b05e856e79d02facb23626792952aeb4dc623865a9f04b04e3492",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37312,
+      "bones": 19,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-union-contact",
+      "name": "연합 연락선",
+      "model": "ships/story-union-contact.glb",
+      "viewer": "ships/story-union-contact.html",
+      "preview": "previews/story-union-contact.png",
+      "bytes": 6537248,
+      "sha256": "ebec911d03589e52dd207cb5b049eb16c8aa88bdb8ee066b6dd73464ad7da100",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 31644,
+      "bones": 14,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 12,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-union-carrier",
+      "name": "고장난 운반선",
+      "model": "ships/story-union-carrier.glb",
+      "viewer": "ships/story-union-carrier.html",
+      "preview": "previews/story-union-carrier.png",
+      "bytes": 6910008,
+      "sha256": "a58e639527568f422983a5637ff000106fd3959028edf4a539295a6c12f87395",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37056,
+      "bones": 21,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 16,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 16,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 16,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-morning",
+      "name": "아침호",
+      "model": "ships/story-morning.glb",
+      "viewer": "ships/story-morning.html",
+      "preview": "previews/story-morning.png",
+      "bytes": 5905696,
+      "sha256": "f12433451e00d77e6829e859b670d2cb91179ec230f8380a34dff00d1fdf1552",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 28704,
+      "bones": 14,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 9,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 9,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "story-royal-funeral",
+      "name": "왕실 장례선",
+      "model": "ships/story-royal-funeral.glb",
+      "viewer": "ships/story-royal-funeral.html",
+      "preview": "previews/story-royal-funeral.png",
+      "bytes": 7510176,
+      "sha256": "221b2c70a255c6c0a5aaa8bc7b965b05c1a9c0945c936a05e14b35b9643feb94",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 45856,
+      "bones": 24,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 17,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 17,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 17,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-maintenance",
+      "name": "민간 정비선·정비정",
+      "model": "ships/civil-maintenance.glb",
+      "viewer": "ships/civil-maintenance.html",
+      "preview": "previews/civil-maintenance.png",
+      "bytes": 6192288,
+      "sha256": "96019e5bcd546fee2b7d29bf7da25b51f40f49be7ed736aa8ef758295bcea6a3",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 28416,
+      "bones": 16,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-transport",
+      "name": "민간 수송선·호위 대상",
+      "model": "ships/civil-transport.glb",
+      "viewer": "ships/civil-transport.html",
+      "preview": "previews/civil-transport.png",
+      "bytes": 6270164,
+      "sha256": "d11c8c1eb14a4b8ff9eff4722629fb6d4bd370f8ade90de5f20c0ac0b75fcca3",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 33028,
+      "bones": 15,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 11,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-merchant",
+      "name": "상인선",
+      "model": "ships/civil-merchant.glb",
+      "viewer": "ships/civil-merchant.html",
+      "preview": "previews/civil-merchant.png",
+      "bytes": 6096280,
+      "sha256": "d6a1c8e95b435c70021b69c921c995a4e4e6a3081a2c94c2d1beb49eba164b14",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 29456,
+      "bones": 16,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 10,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 10,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 10,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 10,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 10,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 10,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 10,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-relief",
+      "name": "구호선",
+      "model": "ships/civil-relief.glb",
+      "viewer": "ships/civil-relief.html",
+      "preview": "previews/civil-relief.png",
+      "bytes": 6198780,
+      "sha256": "d501ad08024d4e76aa0ef78fbf705d8bc48f091290f469132d9c07771df0f028",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 29056,
+      "bones": 16,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 12,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 12,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 12,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-research",
+      "name": "피뢰 연구선",
+      "model": "ships/civil-research.glb",
+      "viewer": "ships/civil-research.html",
+      "preview": "previews/civil-research.png",
+      "bytes": 5933540,
+      "sha256": "64721e411acc07fd602b707a9e1344b3ab39783f728775fa358f0eead78e8aae",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 26540,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-salvager",
+      "name": "경쟁 인양꾼의 배",
+      "model": "ships/civil-salvager.glb",
+      "viewer": "ships/civil-salvager.html",
+      "preview": "previews/civil-salvager.png",
+      "bytes": 6775400,
+      "sha256": "7ae458863eece9ab6eae4c48d2d6e5478f6ba725174e430e044782f0c2f71447",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 34668,
+      "bones": 21,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 18,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 18,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 18,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-mail",
+      "name": "우편선",
+      "model": "ships/civil-mail.glb",
+      "viewer": "ships/civil-mail.html",
+      "preview": "previews/civil-mail.png",
+      "bytes": 6813840,
+      "sha256": "81d90bb7e7601073d543796720eba9663ac773b599af4ff1b50f9cbd2e00d44e",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 34192,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-ghost-signal",
+      "name": "교섭·구조 신호 망령선",
+      "model": "ships/civil-ghost-signal.glb",
+      "viewer": "ships/civil-ghost-signal.html",
+      "preview": "previews/civil-ghost-signal.png",
+      "bytes": 6114700,
+      "sha256": "37723441bee3f8e99318d61f690c223e85f4b33d680f7d867b2d320b0dfe5643",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 26776,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 13,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 13,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "civil-evacuation",
+      "name": "주민 구조선·피난 민간선",
+      "model": "ships/civil-evacuation.glb",
+      "viewer": "ships/civil-evacuation.html",
+      "preview": "previews/civil-evacuation.png",
+      "bytes": 6280232,
+      "sha256": "a8a606f563bfbc84926d9c84d9a559bcc9cba5c409ca909b71004471e0b04d34",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 33988,
+      "bones": 15,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 11,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 11,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 11,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "record-descent-ship",
+      "name": "오래된 강하선",
+      "model": "ships/record-descent-ship.glb",
+      "viewer": "ships/record-descent-ship.html",
+      "preview": "previews/record-descent-ship.png",
+      "bytes": 5782260,
+      "sha256": "8dacbfaf4b575609d56bde009130ba0aa09c923a432f640c76d474c5a924a835",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 26492,
+      "bones": 13,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 9,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 9,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "unfinished-stitch-hull",
+      "name": "미완성 접합선 골격",
+      "model": "ships/unfinished-stitch-hull.glb",
+      "viewer": "ships/unfinished-stitch-hull.html",
+      "preview": "previews/unfinished-stitch-hull.png",
+      "bytes": 4010556,
+      "sha256": "55c08f40ab4a8e4babe8dc97fbe92794756e02ab530a1a76e69f449dcc231611",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 8192,
+      "bones": 4,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 4,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 4,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 4,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 4,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 4,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 4,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 4,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "support-independent-rescue",
+      "name": "독립 추진 구조정",
+      "model": "ships/support-independent-rescue.glb",
+      "viewer": "ships/support-independent-rescue.html",
+      "preview": "previews/support-independent-rescue.png",
+      "bytes": 5583508,
+      "sha256": "1acfb96e5aed19b02bd1d3fc585ae499499378304fdb8ad43418b3003cae40c6",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 24084,
+      "bones": 11,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 9,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 9,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "ending-mobile-harbor",
+      "name": "귀환호 — 이동항구 형태",
+      "model": "ships/ending-mobile-harbor.glb",
+      "viewer": "ships/ending-mobile-harbor.html",
+      "preview": "previews/ending-mobile-harbor.png",
+      "bytes": 12387116,
+      "sha256": "b269a73eacc6f50f108d668b49f882bf7d8cc51f24300ed1a2431f09ebbdbd30",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 85088,
+      "bones": 52,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 43,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 43,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 43,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 43,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 43,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 43,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 43,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "ending-light-descent",
+      "name": "귀환호 — 작아진 하강 형태",
+      "model": "ships/ending-light-descent.glb",
+      "viewer": "ships/ending-light-descent.html",
+      "preview": "previews/ending-light-descent.png",
+      "bytes": 5579364,
+      "sha256": "98304ab4af3176333139dcb48c7f18e9efe27e98cdcd72def429bc01dad2d31e",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 23764,
+      "bones": 11,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 9,
+          "ambientOnly": true
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 9,
+          "ambientOnly": true
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 9,
+          "ambientOnly": true
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-a1",
+      "name": "둥근 귀환호",
+      "model": "ships/design-a1.glb",
+      "viewer": "ships/design-a1.html",
+      "preview": "previews/design-a1.png",
+      "bytes": 6611808,
+      "sha256": "8ed1f5967457845b61757463114c9d02562eae905e6d9dadc0a8023395d16aa6",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37162,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-a2",
+      "name": "낮은 구름선",
+      "model": "ships/design-a2.glb",
+      "viewer": "ships/design-a2.html",
+      "preview": "previews/design-a2.png",
+      "bytes": 6611896,
+      "sha256": "6aeb2ebcb05631a5702e443c010b5e2d66bd670fb3daa3c836dfafb8f0a91528",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37162,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-a3",
+      "name": "높은 뱃머리",
+      "model": "ships/design-a3.glb",
+      "viewer": "ships/design-a3.html",
+      "preview": "previews/design-a3.png",
+      "bytes": 6611196,
+      "sha256": "dffaa50dad8d5cdf50725029c6d5777256656cb7d65bb5543ec6703a8294e6f9",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37162,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-b1",
+      "name": "쇠테 인양선",
+      "model": "ships/design-b1.glb",
+      "viewer": "ships/design-b1.html",
+      "preview": "previews/design-b1.png",
+      "bytes": 6611928,
+      "sha256": "91622b5d5495be0c982ce6b6e29e3b20db31fc1900df6061e495b2952ccae107",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37162,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-b2",
+      "name": "깊은 용골",
+      "model": "ships/design-b2.glb",
+      "viewer": "ships/design-b2.html",
+      "preview": "previews/design-b2.png",
+      "bytes": 6611920,
+      "sha256": "7d3fee904f0cced3c9df783f66607dc12ad681990092adfa869fc045fef11242",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37162,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-b3",
+      "name": "무딘 작업선",
+      "model": "ships/design-b3.glb",
+      "viewer": "ships/design-b3.html",
+      "preview": "previews/design-b3.png",
+      "bytes": 6611808,
+      "sha256": "96ac7db6b155e2d2f9694c279bedf0a0363ab535726f6a0265e1f21541c32de5",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37162,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-c1",
+      "name": "바늘뱃머리",
+      "model": "ships/design-c1.glb",
+      "viewer": "ships/design-c1.html",
+      "preview": "previews/design-c1.png",
+      "bytes": 6611844,
+      "sha256": "3e11d1cf67d3d2cca42c00f8ba5d24c3bf390d6feb7d0e9a3b1407006c5f3e00",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37162,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-c2",
+      "name": "초승달 선체",
+      "model": "ships/design-c2.glb",
+      "viewer": "ships/design-c2.html",
+      "preview": "previews/design-c2.png",
+      "bytes": 6611984,
+      "sha256": "4701cea1964432f5b02fac5ca4275eb8d652e19ed9a31806e4ec0302f76b69ed",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37162,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    },
+    {
+      "id": "design-c3",
+      "name": "날렵한 재봉선",
+      "model": "ships/design-c3.glb",
+      "viewer": "ships/design-c3.html",
+      "preview": "previews/design-c3.png",
+      "bytes": 6606360,
+      "sha256": "f6d749a55d92283463300dbaafe4e12ce31197168376fdfdf410def1e6655dbf",
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "triangles": 37114,
+      "bones": 17,
+      "clips": [
+        {
+          "name": "FloatIdle",
+          "duration": 10,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "Cruise",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "BankTurn",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "GustRecovery",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "TurretScan",
+          "duration": 12,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "WinchCycle",
+          "duration": 16,
+          "tracks": 15,
+          "ambientOnly": false
+        },
+        {
+          "name": "FireBurst",
+          "duration": 8,
+          "tracks": 15,
+          "ambientOnly": false
+        }
+      ],
+      "qaStatus": "passed"
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "fullCorpusPassed": true,
+    "report": "verification.json",
+    "representativeGhostingReport": "ghosting-verification.json",
+    "presentationLabelsReport": "labels-verification.json",
+    "verifiedAt": "2026-10-18T02:41:39.561Z",
+    "scope": "Asset structure, source coverage, rig clips, offline browser presentation. No engine/gameplay/performance certification."
+  },
+  "limitations": [
+    "Source-unspecified shapes, counts and dimensions remain artistic proposals.",
+    "Seven clips per model; device-only actions are enabled only when supported.",
+    "Toon shading and outlines are viewer runtime features, not baked into GLB.",
+    "Final engine scale, collision, LOD, AI, gameplay and target-device performance remain unverified."
+  ]
+}

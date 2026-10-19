@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "game_title": "Cloudstitch",
+  "purpose": "Read-only preservation baseline for VFX v1, selected airship, weapon originals and the two unedited user attachments.",
+  "created_at_utc": "2026-10-18T06:54:33.007Z",
+  "source_count": 63,
+  "total_bytes": 61278641,
+  "counts": {
+    "original-effect": 48,
+    "original-sequence": 6,
+    "original-airship": 1,
+    "original-weapon": 6,
+    "user-reference": 2
+  },
+  "files": [
+    {
+      "id": "machine-gun-muzzle",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+      "bytes": 43532,
+      "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9"
+    },
+    {
+      "id": "machine-gun-projectile",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+      "bytes": 8856,
+      "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b"
+    },
+    {
+      "id": "machine-gun-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+      "bytes": 71820,
+      "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d"
+    },
+    {
+      "id": "cannon-muzzle",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/cannon-muzzle.glb",
+      "bytes": 115812,
+      "sha256": "2e4c5d1b6a78251f970207b1fc35c66ce0d37e92aeb2ab3497387f85ac61d479"
+    },
+    {
+      "id": "cannon-projectile",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/cannon-projectile.glb",
+      "bytes": 120868,
+      "sha256": "cf543abd2fcca020693ad3c46eec6473d39afba172f998dee18fcf73600bf5b4"
+    },
+    {
+      "id": "cannon-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/cannon-hit.glb",
+      "bytes": 185004,
+      "sha256": "89f0bff8c05aed3c73fd09b80a984695d72ceb597ef349f188613e438d36369a"
+    },
+    {
+      "id": "mortar-launch",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/mortar-launch.glb",
+      "bytes": 115688,
+      "sha256": "40f966857dac52b207511c89845864706eea004a67dea3f540daefcaa6205fc0"
+    },
+    {
+      "id": "mortar-projectile",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/mortar-projectile.glb",
+      "bytes": 120504,
+      "sha256": "d49772da574e4cec3f42a2812c58151f1ffcac28e2fa4f0b913809747492602d"
+    },
+    {
+      "id": "mortar-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/mortar-hit.glb",
+      "bytes": 223176,
+      "sha256": "3b7f007e2cdd93e1c1ec3944b910f418d40216d25a63262c830f72d2a2a182e8"
+    },
+    {
+      "id": "harpoon-launch",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/harpoon-launch.glb",
+      "bytes": 69840,
+      "sha256": "df3f3c26cf5b1a0288f3346d1fb5ed5c834ce3888de833e426800dd838f18582"
+    },
+    {
+      "id": "harpoon-projectile",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/harpoon-projectile.glb",
+      "bytes": 44064,
+      "sha256": "415412f33532d6cb2698f8e136c57513b243b3e0b69257ca38f87bf67a310702"
+    },
+    {
+      "id": "harpoon-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/harpoon-hit.glb",
+      "bytes": 110768,
+      "sha256": "04c7ae0d0a5bd73fd57e5ecdff6a1488bc64ef5e42316674d67282c26fde4096"
+    },
+    {
+      "id": "chain-shot-launch",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/chain-shot-launch.glb",
+      "bytes": 61900,
+      "sha256": "892b0434490dd105440ff2833ce1a21bda13b5587ef42bb80f1aa8c66b3c8db0"
+    },
+    {
+      "id": "chain-shot-projectile",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/chain-shot-projectile.glb",
+      "bytes": 197460,
+      "sha256": "f03e5354f4c1437afb108412c0d0f0cd8100b9ff76ab3c7f8f70520fe48965e5"
+    },
+    {
+      "id": "chain-shot-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/chain-shot-hit.glb",
+      "bytes": 306208,
+      "sha256": "3a081a0265a901b0fbc47e943b6a9ad5f0d224a6195d052ff95967193f38001c"
+    },
+    {
+      "id": "flamethrower-ignite",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/flamethrower-ignite.glb",
+      "bytes": 38948,
+      "sha256": "4f555ba6865758cab0f551bf4a8a174446b293571e98b471273a287174da9333"
+    },
+    {
+      "id": "flamethrower-stream",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/flamethrower-stream.glb",
+      "bytes": 98396,
+      "sha256": "c5f78003c4fb2edba318217ac142fc267e52d712d9d19be4a02fe0759fdee0ea"
+    },
+    {
+      "id": "flamethrower-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/flamethrower-hit.glb",
+      "bytes": 152336,
+      "sha256": "6f4225f2e835caa76dcd894d40bcae856b8dc342ffb5408a61550c3fa7543b33"
+    },
+    {
+      "id": "wood-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/wood-hit.glb",
+      "bytes": 125780,
+      "sha256": "3bde0d4ebd511ecb357c27dc9628eab6f0f47b95d5878841e622224037fbb652"
+    },
+    {
+      "id": "metal-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/metal-hit.glb",
+      "bytes": 144904,
+      "sha256": "47f624feff5b1709e9fbe9bb709007e34c3559b4811e4d34a741b63fdb6f86da"
+    },
+    {
+      "id": "fabric-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/fabric-hit.glb",
+      "bytes": 116964,
+      "sha256": "18d9c13549e5edb18272c884303ec15a6b4b685fa43cf964fc5c4e19a25f1bfc"
+    },
+    {
+      "id": "armor-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/armor-hit.glb",
+      "bytes": 134764,
+      "sha256": "1aa2b599f8d41625d1f0d73555ac542e2da39d33bbac00e58deb9162fe77a47c"
+    },
+    {
+      "id": "ricochet-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/ricochet-hit.glb",
+      "bytes": 19036,
+      "sha256": "8e4c4dd2879cfc55eed368f5e8c79024d8fa17357cae9c6e3a3650334653d8ff"
+    },
+    {
+      "id": "weakpoint-hit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/weakpoint-hit.glb",
+      "bytes": 83828,
+      "sha256": "69c13b41011376ed9e737dc66129f1c4c82cf1880fc44813ee70ab63cb8c25be"
+    },
+    {
+      "id": "cloud-miss",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/cloud-miss.glb",
+      "bytes": 107972,
+      "sha256": "285a2fc78263489b81e550e986677b61c54f4fc4594703edd3655b4131a9aa38"
+    },
+    {
+      "id": "penetration-exit",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/penetration-exit.glb",
+      "bytes": 97976,
+      "sha256": "7bbf5af2d3b02ca6590160d54215f5e08c613601e5c276be9aa5d1dbb747092f"
+    },
+    {
+      "id": "small-explosion",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/small-explosion.glb",
+      "bytes": 224208,
+      "sha256": "0d29ece131d7ebc128cd5dc04e3cf027bb99b75870ed33a3b528a0a84c03a74a"
+    },
+    {
+      "id": "large-explosion",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/large-explosion.glb",
+      "bytes": 338232,
+      "sha256": "c52d07092b84c67ecdfb17a8c3999dd03f7cfcb4e3ab3c08d51787abe858d6a3"
+    },
+    {
+      "id": "airburst",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/airburst.glb",
+      "bytes": 363300,
+      "sha256": "8f58822cf7624741127e7bea2e40afaa8c4d9d6c3c3fa18b665023caa637afb2"
+    },
+    {
+      "id": "shrapnel-burst",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/shrapnel-burst.glb",
+      "bytes": 304264,
+      "sha256": "b0e04ac28bc04ed5812247fface388e5175760c299330f9f3f56e085c5e529a0"
+    },
+    {
+      "id": "smoke-puff",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/smoke-puff.glb",
+      "bytes": 113964,
+      "sha256": "e9eac110ce92f95715d8c7dcf288db5424f0a62d6da0a57e94eda66aabb02829"
+    },
+    {
+      "id": "steam-vent",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/steam-vent.glb",
+      "bytes": 229388,
+      "sha256": "628243b610f3240fec8ce945ef1fb97f3d50d443195d1f44717dba7301abfaca"
+    },
+    {
+      "id": "smoldering-fire",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/smoldering-fire.glb",
+      "bytes": 123912,
+      "sha256": "600b131806e3a02f562b1ce709ebeedffc62ff1426a2a843884180f1b4794e3d"
+    },
+    {
+      "id": "ember-drift",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/ember-drift.glb",
+      "bytes": 106756,
+      "sha256": "e5e1cdb7e46953faa0c9ea13a8d950c5e0ef570e6ed5ff50f4ea4e271a21817a"
+    },
+    {
+      "id": "burning-state",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/burning-state.glb",
+      "bytes": 167904,
+      "sha256": "63ef5ff24cca143094c3d5048c32b9ddd637941d0ab668da4075770dd80ab044"
+    },
+    {
+      "id": "heavy-smoke-state",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/heavy-smoke-state.glb",
+      "bytes": 234864,
+      "sha256": "95e79fefd88daa6357f0e6e7bc70985ca60f73778799d4c2e6bf9de7a6fe89b5"
+    },
+    {
+      "id": "gas-leak-state",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/gas-leak-state.glb",
+      "bytes": 268136,
+      "sha256": "b9f0e0258fdb2cc6131ae6318b9adce6ba1b5c73cffab6895f851f2cc9d7a290"
+    },
+    {
+      "id": "overheat-state",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/overheat-state.glb",
+      "bytes": 239536,
+      "sha256": "ff778659a98705b0a061fa8e4022facd92d768226f6decbede6ed66c74befadc"
+    },
+    {
+      "id": "short-circuit-state",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/short-circuit-state.glb",
+      "bytes": 276940,
+      "sha256": "6bac2599d74024cbb044bd1910fd9ef36e6cf707944d4c0f5847e6d3f4beb710"
+    },
+    {
+      "id": "engine-stall-state",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/engine-stall-state.glb",
+      "bytes": 136368,
+      "sha256": "8631484f882ed6971fe0b00ebb0717970783ba9cbd60ea6fdab6b1e22b154484"
+    },
+    {
+      "id": "envelope-rupture-state",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/envelope-rupture-state.glb",
+      "bytes": 128884,
+      "sha256": "50e5c1ddf4c227c7b49e70fa5e6afc17c90d9b2731b823dd48018325da92b642"
+    },
+    {
+      "id": "module-detach-state",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/module-detach-state.glb",
+      "bytes": 133624,
+      "sha256": "5ab66177070d315574612622b757517ab1c919a491300f722482d5d813cf8a21"
+    },
+    {
+      "id": "shield-pulse",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/shield-pulse.glb",
+      "bytes": 659600,
+      "sha256": "3b04e24ba9dd5d8fc50a94b18fb9b6de06f65ac24de374bbf191578fe9bbebe0"
+    },
+    {
+      "id": "armor-block",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/armor-block.glb",
+      "bytes": 98556,
+      "sha256": "6ae0a31316887237d1a69004ec3bdefd49d9ac1e6b130568663757c2759ce19b"
+    },
+    {
+      "id": "repair-stitch",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/repair-stitch.glb",
+      "bytes": 213672,
+      "sha256": "508616e3772786ed036f6c6047b2dfa36d46463ce89ac6c07c70031a56d458dd"
+    },
+    {
+      "id": "healing-pulse",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/healing-pulse.glb",
+      "bytes": 110112,
+      "sha256": "e914ff7233861ca80d82631c0a545a9c270eaa29cdabadf4aaecf814cbaef46d"
+    },
+    {
+      "id": "salvage-tether",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/salvage-tether.glb",
+      "bytes": 403264,
+      "sha256": "a09824bb95b1ffb69331c860e8337439185256d33bbb3b760e6942962fca717c"
+    },
+    {
+      "id": "mount-lock",
+      "kind": "original-effect",
+      "path": "outputs/combat-vfx/assets/mount-lock.glb",
+      "bytes": 106712,
+      "sha256": "47e29dab2cf93f0fdbef76fc8e67474db41c007e4d1d23a6fde62ededdeada9a"
+    },
+    {
+      "id": "01-machine-gun",
+      "kind": "original-sequence",
+      "path": "outputs/combat-vfx/sequences/01-machine-gun.glb",
+      "bytes": 3444188,
+      "sha256": "ab8307c1ab29c94f9d4aba9c30a4b75b6fd67e98725ad6114f429175905bbc65"
+    },
+    {
+      "id": "02-deck-cannon",
+      "kind": "original-sequence",
+      "path": "outputs/combat-vfx/sequences/02-deck-cannon.glb",
+      "bytes": 4414328,
+      "sha256": "ab07861e5fea19d1ac6aadf5722f52cf6849e0f859afc988ae3baa2d0bcc5b7d"
+    },
+    {
+      "id": "03-mortar",
+      "kind": "original-sequence",
+      "path": "outputs/combat-vfx/sequences/03-mortar.glb",
+      "bytes": 4169176,
+      "sha256": "1e5d92c00abfe468ac31675f68126714032244444791fbfdbdbd9060b97a44b3"
+    },
+    {
+      "id": "04-harpoon",
+      "kind": "original-sequence",
+      "path": "outputs/combat-vfx/sequences/04-harpoon.glb",
+      "bytes": 4024428,
+      "sha256": "0e62fc452465ea53c1464ff13bc17eb110cb2296b98aa40d1cda552142302c5e"
+    },
+    {
+      "id": "05-chain-shot",
+      "kind": "original-sequence",
+      "path": "outputs/combat-vfx/sequences/05-chain-shot.glb",
+      "bytes": 4242020,
+      "sha256": "59d6e1ac08997f59ba893119aa38171c3fc35dc6ad94bf8c1de06f51048dbbbf"
+    },
+    {
+      "id": "06-flamethrower",
+      "kind": "original-sequence",
+      "path": "outputs/combat-vfx/sequences/06-flamethrower.glb",
+      "bytes": 4088896,
+      "sha256": "fb112cfaf9b31b967148f55687942d71a49b1856533cd88d4dd169a4ac5b47c8"
+    },
+    {
+      "id": "selected-airship",
+      "kind": "original-airship",
+      "path": "outputs/selected-airship-toon3d/airship.glb",
+      "bytes": 3645884,
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74"
+    },
+    {
+      "id": "01-machine-gun",
+      "kind": "original-weapon",
+      "path": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+      "bytes": 3299860,
+      "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6"
+    },
+    {
+      "id": "02-deck-cannon",
+      "kind": "original-weapon",
+      "path": "outputs/weapon-modules/02-deck-cannon/weapon.glb",
+      "bytes": 3961552,
+      "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd"
+    },
+    {
+      "id": "03-mortar",
+      "kind": "original-weapon",
+      "path": "outputs/weapon-modules/03-mortar/weapon.glb",
+      "bytes": 3674748,
+      "sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f"
+    },
+    {
+      "id": "04-harpoon",
+      "kind": "original-weapon",
+      "path": "outputs/weapon-modules/04-harpoon/weapon.glb",
+      "bytes": 3777952,
+      "sha256": "3cd771525d68d73357593064408db32ee9a148366fa3e8d6cb5dde7d71c72d64"
+    },
+    {
+      "id": "05-chain-shot",
+      "kind": "original-weapon",
+      "path": "outputs/weapon-modules/05-chain-shot/weapon.glb",
+      "bytes": 3654140,
+      "sha256": "b8b75b33b6a98a2d99a9a61431a43ab558065ebe2bda8e275fece870a7051219"
+    },
+    {
+      "id": "06-flamethrower",
+      "kind": "original-weapon",
+      "path": "outputs/weapon-modules/06-flamethrower/weapon.glb",
+      "bytes": 3776868,
+      "sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd"
+    },
+    {
+      "id": "user-observatory",
+      "kind": "user-reference",
+      "path": "outputs/combat-vfx-v2/brief/references/user-observatory.png",
+      "bytes": 1811904,
+      "sha256": "d4232df3d3ad150807d0a9b240e660f8c613f5e80292cc525fa008891e3e54ed"
+    },
+    {
+      "id": "user-airship",
+      "kind": "user-reference",
+      "path": "outputs/combat-vfx-v2/brief/references/user-airship.png",
+      "bytes": 1394097,
+      "sha256": "c1a971973d3e68b4a17bd5c88e4e0af263cc388319486596dc8c19b1e9f0daa7"
+    }
+  ]
+}

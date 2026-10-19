@@ -1,0 +1,67 @@
+{
+  "source_revision": "MG-SOFT-RUNTIME-READY1-2026-10-18",
+  "source_manifest_sha256": "97c285c820a6053ee2ea67d6393a481005a284f217726e5706e5bdc4b1badcaf",
+  "delivery_manifest_sha256": "9cd9f0cc302f6e042fd730ee97cabaadbaaf42c64eb19da7bd59b5d27ba42fd1",
+  "status": "actual_combat_connected_technical_qa_passed",
+  "actual_url": "http://127.0.0.1:8840/outputs/integration-impactful-v1/",
+  "actual_source": "tools/integration-impactful-v1/",
+  "integration_owner_thread": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+  "qa": {
+    "path": "outputs/integration-impactful-browser-qa-v1/runtime/verification-browser.json",
+    "bytes": 1174636,
+    "sha256": "16098fb22a3ce1d212845ec07f131ab5c5a0f7e93d98a618b5675a7bda07e797",
+    "passed": true,
+    "actual": {
+      "total": 26,
+      "passed": 26
+    },
+    "legacy_fixture": {
+      "total": 1,
+      "passed": 1
+    },
+    "sim_injection": false,
+    "page_errors": 0,
+    "console_errors": 0,
+    "external_requests": 0
+  },
+  "source_post_preservation": {
+    "consumer": 14,
+    "soft": 12,
+    "impactful": 15,
+    "passed": true,
+    "evidence": "Integration owner report; central coordinator independently reviewed the small actual report."
+  },
+  "controls": {
+    "movement": "WASD / arrow keys",
+    "aim": "Mouse",
+    "fire": "Click / J / fire button",
+    "pause": "Esc",
+    "zoom": "Mouse wheel"
+  },
+  "screenshots": [
+    {
+      "path": "outputs/integration-impactful-browser-qa-v1/runtime/actual-cannon-impact-desktop.png",
+      "sim_time": 5.249999999999987
+    },
+    {
+      "path": "outputs/integration-impactful-browser-qa-v1/runtime/actual-machinegun-desktop.png",
+      "sim_time": 7.09999999999998
+    },
+    {
+      "path": "outputs/integration-impactful-browser-qa-v1/runtime/actual-machinegun-mobile.png",
+      "sim_time": 7.09999999999998
+    },
+    {
+      "path": "outputs/integration-impactful-browser-qa-v1/runtime/actual-reduced-motion-desktop.png",
+      "sim_time": 0.15
+    }
+  ],
+  "visual_review": {
+    "existing_images_read": true,
+    "machinegun_capture_at_hit_age_zero": true,
+    "additional_visible_impact_capture_requested": true,
+    "latest_tenfold_expression_approved": false,
+    "human_art_approved": false
+  },
+  "scope": "Actual firing, live projectile XYZ, real HP contact normal and terminal display linked. Existing soft baseline; dramatic-v2 is a separate design, not implemented by this receipt."
+}

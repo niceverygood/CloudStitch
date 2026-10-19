@@ -1,0 +1,2324 @@
+{
+  "checks": [
+    {
+      "name": "real GLB runtime ready",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mobility actual groups and coupled recoil",
+      "pass": true,
+      "detail": {
+        "branch": "mobility",
+        "time": 0.88,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "mobility",
+          "rich": false,
+          "time": 0.88,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.0027270416264486563,
+          "hullRecoil": 0.001361180553784102,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "mobility",
+          "rich": true,
+          "time": 0.88,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.007791547504139018,
+          "hullRecoil": 0.003889087296526006,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 2,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 741,
+          "textures": 8,
+          "programs": 8
+        }
+      }
+    },
+    {
+      "name": "mobility synchronized world origins",
+      "pass": true
+    },
+    {
+      "name": "mobility all swept plane hits",
+      "pass": true,
+      "detail": {
+        "branch": "mobility",
+        "time": 2.5,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "mobility",
+          "rich": false,
+          "time": 2.5,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [
+            0,
+            1,
+            2
+          ],
+          "projectileVisible": 0,
+          "mechanismRecoil": -0.00000415226128369639,
+          "hullRecoil": -0.000047841351880738074,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "mobility",
+          "rich": true,
+          "time": 2.5,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "03-repeating-crossbow_ready_bolt_0_140",
+            "03-repeating-crossbow_ready_bolt_1_146",
+            "03-repeating-crossbow_ready_bolt_2_152"
+          ],
+          "launchOrigins": [
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.056437499999999974
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.04031249999999997
+            ],
+            [
+              -0.5062235288918019,
+              -0.010749999999999996,
+              -0.024187499999999987
+            ]
+          ],
+          "hits": [
+            0,
+            1,
+            2
+          ],
+          "projectileVisible": 0,
+          "mechanismRecoil": -0.000011863603667672251,
+          "hullRecoil": -0.0001366895768021088,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 6,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 876,
+          "textures": 8,
+          "programs": 8
+        }
+      }
+    },
+    {
+      "name": "mobility painted renders",
+      "pass": true
+    },
+    {
+      "name": "mobility cel renders",
+      "pass": true
+    },
+    {
+      "name": "mobility original renders",
+      "pass": true
+    },
+    {
+      "name": "artillery actual groups and coupled recoil",
+      "pass": true,
+      "detail": {
+        "branch": "artillery",
+        "time": 0.98,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "artillery",
+          "rich": false,
+          "time": 0.98,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.005908590190638718,
+          "hullRecoil": 0.001361180553784102,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "artillery",
+          "rich": true,
+          "time": 0.98,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.01688168625896791,
+          "hullRecoil": 0.003889087296526006,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 8,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 7
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 8
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 1450,
+          "textures": 17,
+          "programs": 11
+        }
+      }
+    },
+    {
+      "name": "artillery synchronized world origins",
+      "pass": true
+    },
+    {
+      "name": "artillery all swept plane hits",
+      "pass": true,
+      "detail": {
+        "branch": "artillery",
+        "time": 2.5,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "artillery",
+          "rich": false,
+          "time": 2.5,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [
+            0,
+            1,
+            2
+          ],
+          "projectileVisible": 0,
+          "mechanismRecoil": 0.000036859611903028444,
+          "hullRecoil": 0.00006520593804761,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "right": {
+          "branch": "artillery",
+          "rich": true,
+          "time": 2.5,
+          "actualProjectileGroups": 3,
+          "sourceGroups": [
+            "13-comet-rocket-rack_individual_comet_prop_0_147",
+            "13-comet-rocket-rack_individual_comet_prop_1_176",
+            "13-comet-rocket-rack_individual_comet_prop_2_205"
+          ],
+          "launchOrigins": [
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              -0.0792
+            ],
+            [
+              -0.611258220975841,
+              0.10899027944179052,
+              -2.0816681711721685e-17
+            ],
+            [
+              -0.6177896855001603,
+              0.08341099150862952,
+              0.07919999999999998
+            ]
+          ],
+          "hits": [
+            0,
+            1,
+            2
+          ],
+          "projectileVisible": 0,
+          "mechanismRecoil": 0.00010531317686590658,
+          "hullRecoil": 0.0001863026801360286,
+          "hitstop": false,
+          "cableSegmentsVisible": 0,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 12,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 7
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 8
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 9
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 10
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 11
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 12
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 1604,
+          "textures": 17,
+          "programs": 11
+        }
+      }
+    },
+    {
+      "name": "artillery painted renders",
+      "pass": true
+    },
+    {
+      "name": "artillery cel renders",
+      "pass": true
+    },
+    {
+      "name": "artillery original renders",
+      "pass": true
+    },
+    {
+      "name": "salvage actual groups and coupled recoil",
+      "pass": true,
+      "detail": {
+        "branch": "salvage",
+        "time": 1.03,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "salvage",
+          "rich": false,
+          "time": 1.03,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.0027270416264486563,
+          "hullRecoil": 0.0013611805537841067,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "right": {
+          "branch": "salvage",
+          "rich": true,
+          "time": 1.03,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.007791547504139018,
+          "hullRecoil": 0.0038890872965260193,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 14,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 7
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 8
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 9
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 10
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 11
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 12
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 13
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 14
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 2253,
+          "textures": 25,
+          "programs": 12
+        }
+      }
+    },
+    {
+      "name": "salvage synchronized world origins",
+      "pass": true
+    },
+    {
+      "name": "salvage all swept plane hits",
+      "pass": true,
+      "detail": {
+        "branch": "salvage",
+        "time": 2.5,
+        "playing": false,
+        "effects": true,
+        "reduced": false,
+        "mode": "painted",
+        "oneClock": true,
+        "sourceModel": "ship-weapon-harmony-v1 final r2",
+        "left": {
+          "branch": "salvage",
+          "rich": false,
+          "time": 2.5,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 1,
+          "mechanismRecoil": 6.161866038245645e-7,
+          "hullRecoil": 0.000051836579307873485,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "right": {
+          "branch": "salvage",
+          "rich": true,
+          "time": 2.5,
+          "actualProjectileGroups": 1,
+          "sourceGroups": [
+            "04-harpoon-winch_loaded_forged_harpoon_156"
+          ],
+          "launchOrigins": [
+            [
+              0.016602745479345336,
+              -0.010382499962300066,
+              0.29
+            ]
+          ],
+          "hits": [
+            0
+          ],
+          "projectileVisible": 1,
+          "mechanismRecoil": 0.0000017605331538023128,
+          "hullRecoil": 0.00014810451230820996,
+          "hitstop": false,
+          "cableSegmentsVisible": 14,
+          "finite": true
+        },
+        "sharedCamera": true,
+        "outlineAutoClear": true,
+        "audio": {
+          "unlocked": false,
+          "muted": false,
+          "volume": 0.7,
+          "variant": "enhanced",
+          "generation": 18,
+          "active": 0,
+          "state": "locked",
+          "history": [
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 1
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 2
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 3
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 4
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 5
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 6
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 7
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 8
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 9
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 10
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 11
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 12
+            },
+            {
+              "type": "cancel",
+              "reason": "branch",
+              "generation": 13
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 14
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 15
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 16
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 17
+            },
+            {
+              "type": "cancel",
+              "reason": "seek",
+              "generation": 18
+            }
+          ]
+        },
+        "resources": {
+          "geometries": 2297,
+          "textures": 25,
+          "programs": 12
+        }
+      }
+    },
+    {
+      "name": "harpoon cable after contact",
+      "pass": true
+    },
+    {
+      "name": "salvage painted renders",
+      "pass": true
+    },
+    {
+      "name": "salvage cel renders",
+      "pass": true
+    },
+    {
+      "name": "salvage original renders",
+      "pass": true
+    },
+    {
+      "name": "user gesture unlock audio",
+      "pass": true
+    },
+    {
+      "name": "live audio schedules matching events",
+      "pass": true,
+      "detail": {
+        "unlocked": true,
+        "muted": false,
+        "volume": 0.7,
+        "variant": "enhanced",
+        "generation": 20,
+        "active": 2,
+        "state": "running",
+        "history": [
+          {
+            "type": "cancel",
+            "reason": "branch",
+            "generation": 1
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 2
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 3
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 4
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 5
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 6
+          },
+          {
+            "type": "cancel",
+            "reason": "branch",
+            "generation": 7
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 8
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 9
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 10
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 11
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 12
+          },
+          {
+            "type": "cancel",
+            "reason": "branch",
+            "generation": 13
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 14
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 15
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 16
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 17
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 18
+          },
+          {
+            "type": "cancel",
+            "reason": "restart",
+            "generation": 19
+          },
+          {
+            "type": "cancel",
+            "reason": "reschedule",
+            "generation": 20
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-launch",
+            "phase": "launch",
+            "time": 0.95,
+            "when": 1.3313333333333333,
+            "epoch": 20,
+            "variant": "enhanced",
+            "cue": "salvage-launch-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-flight",
+            "phase": "flight",
+            "time": 1.01,
+            "when": 1.3913333333333333,
+            "epoch": 20,
+            "variant": "enhanced",
+            "cue": "salvage-flight-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-hit",
+            "phase": "hit",
+            "time": 1.65,
+            "when": 2.0313333333333334,
+            "epoch": 20,
+            "variant": "enhanced",
+            "cue": "salvage-hit-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-recovery",
+            "phase": "recovery",
+            "time": 3.6,
+            "when": 3.9813333333333336,
+            "epoch": 20,
+            "variant": "enhanced",
+            "cue": "salvage-recovery-enhanced"
+          }
+        ]
+      }
+    },
+    {
+      "name": "pause cancels all cue reservations",
+      "pass": true
+    },
+    {
+      "name": "seek cancels all cue reservations",
+      "pass": true
+    },
+    {
+      "name": "variant cancels then schedules one side",
+      "pass": true,
+      "detail": {
+        "unlocked": true,
+        "muted": false,
+        "volume": 0.7,
+        "variant": "basic",
+        "generation": 26,
+        "active": 4,
+        "state": "running",
+        "history": [
+          {
+            "type": "cancel",
+            "reason": "branch",
+            "generation": 1
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 2
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 3
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 4
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 5
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 6
+          },
+          {
+            "type": "cancel",
+            "reason": "branch",
+            "generation": 7
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 8
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 9
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 10
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 11
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 12
+          },
+          {
+            "type": "cancel",
+            "reason": "branch",
+            "generation": 13
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 14
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 15
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 16
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 17
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 18
+          },
+          {
+            "type": "cancel",
+            "reason": "restart",
+            "generation": 19
+          },
+          {
+            "type": "cancel",
+            "reason": "reschedule",
+            "generation": 20
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-launch",
+            "phase": "launch",
+            "time": 0.95,
+            "when": 1.3313333333333333,
+            "epoch": 20,
+            "variant": "enhanced",
+            "cue": "salvage-launch-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-flight",
+            "phase": "flight",
+            "time": 1.01,
+            "when": 1.3913333333333333,
+            "epoch": 20,
+            "variant": "enhanced",
+            "cue": "salvage-flight-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-hit",
+            "phase": "hit",
+            "time": 1.65,
+            "when": 2.0313333333333334,
+            "epoch": 20,
+            "variant": "enhanced",
+            "cue": "salvage-hit-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-recovery",
+            "phase": "recovery",
+            "time": 3.6,
+            "when": 3.9813333333333336,
+            "epoch": 20,
+            "variant": "enhanced",
+            "cue": "salvage-recovery-enhanced"
+          },
+          {
+            "type": "cancel",
+            "reason": "pause",
+            "generation": 21
+          },
+          {
+            "type": "cancel",
+            "reason": "seek",
+            "generation": 22
+          },
+          {
+            "type": "cancel",
+            "reason": "restart",
+            "generation": 23
+          },
+          {
+            "type": "cancel",
+            "reason": "reschedule",
+            "generation": 24
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-launch",
+            "phase": "launch",
+            "time": 0.95,
+            "when": 3.3499999999999996,
+            "epoch": 24,
+            "variant": "enhanced",
+            "cue": "salvage-launch-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-flight",
+            "phase": "flight",
+            "time": 1.01,
+            "when": 3.41,
+            "epoch": 24,
+            "variant": "enhanced",
+            "cue": "salvage-flight-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-hit",
+            "phase": "hit",
+            "time": 1.65,
+            "when": 4.05,
+            "epoch": 24,
+            "variant": "enhanced",
+            "cue": "salvage-hit-enhanced"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-recovery",
+            "phase": "recovery",
+            "time": 3.6,
+            "when": 6,
+            "epoch": 24,
+            "variant": "enhanced",
+            "cue": "salvage-recovery-enhanced"
+          },
+          {
+            "type": "cancel",
+            "reason": "variant",
+            "generation": 25
+          },
+          {
+            "type": "cancel",
+            "reason": "reschedule",
+            "generation": 26
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-launch",
+            "phase": "launch",
+            "time": 0.95,
+            "when": 3.351233333333333,
+            "epoch": 26,
+            "variant": "basic",
+            "cue": "salvage-launch-basic"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-flight",
+            "phase": "flight",
+            "time": 1.01,
+            "when": 3.4112333333333327,
+            "epoch": 26,
+            "variant": "basic",
+            "cue": "salvage-flight-basic"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-0-hit",
+            "phase": "hit",
+            "time": 1.65,
+            "when": 4.051233333333333,
+            "epoch": 26,
+            "variant": "basic",
+            "cue": "salvage-hit-basic"
+          },
+          {
+            "type": "scheduled",
+            "event": "salvage-recovery",
+            "phase": "recovery",
+            "time": 3.6,
+            "when": 6.0012333333333325,
+            "epoch": 26,
+            "variant": "basic",
+            "cue": "salvage-recovery-basic"
+          }
+        ]
+      }
+    },
+    {
+      "name": "mute cancels audio",
+      "pass": true
+    },
+    {
+      "name": "synthetic hidden handler pauses and cancels",
+      "pass": true
+    },
+    {
+      "name": "reduced motion disables ship roll",
+      "pass": true
+    },
+    {
+      "name": "effects control",
+      "pass": true
+    },
+    {
+      "name": "mobility-basic-6s.wav finite headroom and event mapping",
+      "pass": true,
+      "detail": {
+        "branch": "mobility",
+        "variant": "basic",
+        "sampleRate": 44100,
+        "frames": 264600,
+        "channels": 2,
+        "peak": 0.44051432609558105,
+        "rms": 0.038197281115194,
+        "finite": true,
+        "events": [
+          {
+            "id": "mobility-0-launch",
+            "time": 0.8,
+            "cue": "mobility-launch-basic",
+            "duration": 0.34
+          },
+          {
+            "id": "mobility-0-flight",
+            "time": 0.8600000000000001,
+            "cue": "mobility-flight-basic",
+            "duration": 0.3
+          },
+          {
+            "id": "mobility-1-launch",
+            "time": 1.03,
+            "cue": "mobility-launch-basic",
+            "duration": 0.34
+          },
+          {
+            "id": "mobility-1-flight",
+            "time": 1.09,
+            "cue": "mobility-flight-basic",
+            "duration": 0.3
+          },
+          {
+            "id": "mobility-0-hit",
+            "time": 1.25,
+            "cue": "mobility-hit-basic",
+            "duration": 0.64
+          },
+          {
+            "id": "mobility-2-launch",
+            "time": 1.26,
+            "cue": "mobility-launch-basic",
+            "duration": 0.34
+          },
+          {
+            "id": "mobility-2-flight",
+            "time": 1.32,
+            "cue": "mobility-flight-basic",
+            "duration": 0.3
+          },
+          {
+            "id": "mobility-1-hit",
+            "time": 1.48,
+            "cue": "mobility-hit-basic",
+            "duration": 0.64
+          },
+          {
+            "id": "mobility-2-hit",
+            "time": 1.71,
+            "cue": "mobility-hit-basic",
+            "duration": 0.64
+          },
+          {
+            "id": "mobility-recovery",
+            "time": 3.4,
+            "cue": "mobility-recovery-basic",
+            "duration": 0.4
+          }
+        ],
+        "clipping": false
+      }
+    },
+    {
+      "name": "mobility-enhanced-6s.wav finite headroom and event mapping",
+      "pass": true,
+      "detail": {
+        "branch": "mobility",
+        "variant": "enhanced",
+        "sampleRate": 44100,
+        "frames": 264600,
+        "channels": 2,
+        "peak": 0.3211507797241211,
+        "rms": 0.03707212229994783,
+        "finite": true,
+        "events": [
+          {
+            "id": "mobility-0-launch",
+            "time": 0.8,
+            "cue": "mobility-launch-enhanced",
+            "duration": 0.34
+          },
+          {
+            "id": "mobility-0-flight",
+            "time": 0.8600000000000001,
+            "cue": "mobility-flight-enhanced",
+            "duration": 0.3
+          },
+          {
+            "id": "mobility-1-launch",
+            "time": 1.03,
+            "cue": "mobility-launch-enhanced",
+            "duration": 0.34
+          },
+          {
+            "id": "mobility-1-flight",
+            "time": 1.09,
+            "cue": "mobility-flight-enhanced",
+            "duration": 0.3
+          },
+          {
+            "id": "mobility-0-hit",
+            "time": 1.25,
+            "cue": "mobility-hit-enhanced",
+            "duration": 0.64
+          },
+          {
+            "id": "mobility-2-launch",
+            "time": 1.26,
+            "cue": "mobility-launch-enhanced",
+            "duration": 0.34
+          },
+          {
+            "id": "mobility-2-flight",
+            "time": 1.32,
+            "cue": "mobility-flight-enhanced",
+            "duration": 0.3
+          },
+          {
+            "id": "mobility-1-hit",
+            "time": 1.48,
+            "cue": "mobility-hit-enhanced",
+            "duration": 0.64
+          },
+          {
+            "id": "mobility-2-hit",
+            "time": 1.71,
+            "cue": "mobility-hit-enhanced",
+            "duration": 0.64
+          },
+          {
+            "id": "mobility-recovery",
+            "time": 3.4,
+            "cue": "mobility-recovery-enhanced",
+            "duration": 0.4
+          }
+        ],
+        "clipping": false
+      }
+    },
+    {
+      "name": "artillery-basic-6s.wav finite headroom and event mapping",
+      "pass": true,
+      "detail": {
+        "branch": "artillery",
+        "variant": "basic",
+        "sampleRate": 44100,
+        "frames": 264600,
+        "channels": 2,
+        "peak": 0.3983071446418762,
+        "rms": 0.040477154743386784,
+        "finite": true,
+        "events": [
+          {
+            "id": "artillery-0-launch",
+            "time": 0.9,
+            "cue": "artillery-launch-basic",
+            "duration": 0.46
+          },
+          {
+            "id": "artillery-0-flight",
+            "time": 0.96,
+            "cue": "artillery-flight-basic",
+            "duration": 0.65
+          },
+          {
+            "id": "artillery-1-launch",
+            "time": 1.2,
+            "cue": "artillery-launch-basic",
+            "duration": 0.46
+          },
+          {
+            "id": "artillery-1-flight",
+            "time": 1.26,
+            "cue": "artillery-flight-basic",
+            "duration": 0.65
+          },
+          {
+            "id": "artillery-2-launch",
+            "time": 1.5,
+            "cue": "artillery-launch-basic",
+            "duration": 0.46
+          },
+          {
+            "id": "artillery-0-hit",
+            "time": 1.55,
+            "cue": "artillery-hit-basic",
+            "duration": 1.25
+          },
+          {
+            "id": "artillery-2-flight",
+            "time": 1.56,
+            "cue": "artillery-flight-basic",
+            "duration": 0.65
+          },
+          {
+            "id": "artillery-1-hit",
+            "time": 1.85,
+            "cue": "artillery-hit-basic",
+            "duration": 1.25
+          },
+          {
+            "id": "artillery-2-hit",
+            "time": 2.15,
+            "cue": "artillery-hit-basic",
+            "duration": 1.25
+          },
+          {
+            "id": "artillery-recovery",
+            "time": 3.9,
+            "cue": "artillery-recovery-basic",
+            "duration": 0.48
+          }
+        ],
+        "clipping": false
+      }
+    },
+    {
+      "name": "artillery-enhanced-6s.wav finite headroom and event mapping",
+      "pass": true,
+      "detail": {
+        "branch": "artillery",
+        "variant": "enhanced",
+        "sampleRate": 44100,
+        "frames": 264600,
+        "channels": 2,
+        "peak": 0.3070533275604248,
+        "rms": 0.04179312501010958,
+        "finite": true,
+        "events": [
+          {
+            "id": "artillery-0-launch",
+            "time": 0.9,
+            "cue": "artillery-launch-enhanced",
+            "duration": 0.46
+          },
+          {
+            "id": "artillery-0-flight",
+            "time": 0.96,
+            "cue": "artillery-flight-enhanced",
+            "duration": 0.65
+          },
+          {
+            "id": "artillery-1-launch",
+            "time": 1.2,
+            "cue": "artillery-launch-enhanced",
+            "duration": 0.46
+          },
+          {
+            "id": "artillery-1-flight",
+            "time": 1.26,
+            "cue": "artillery-flight-enhanced",
+            "duration": 0.65
+          },
+          {
+            "id": "artillery-2-launch",
+            "time": 1.5,
+            "cue": "artillery-launch-enhanced",
+            "duration": 0.46
+          },
+          {
+            "id": "artillery-0-hit",
+            "time": 1.55,
+            "cue": "artillery-hit-enhanced",
+            "duration": 1.25
+          },
+          {
+            "id": "artillery-2-flight",
+            "time": 1.56,
+            "cue": "artillery-flight-enhanced",
+            "duration": 0.65
+          },
+          {
+            "id": "artillery-1-hit",
+            "time": 1.85,
+            "cue": "artillery-hit-enhanced",
+            "duration": 1.25
+          },
+          {
+            "id": "artillery-2-hit",
+            "time": 2.15,
+            "cue": "artillery-hit-enhanced",
+            "duration": 1.25
+          },
+          {
+            "id": "artillery-recovery",
+            "time": 3.9,
+            "cue": "artillery-recovery-enhanced",
+            "duration": 0.48
+          }
+        ],
+        "clipping": false
+      }
+    },
+    {
+      "name": "salvage-basic-6s.wav finite headroom and event mapping",
+      "pass": true,
+      "detail": {
+        "branch": "salvage",
+        "variant": "basic",
+        "sampleRate": 44100,
+        "frames": 264600,
+        "channels": 2,
+        "peak": 0.3343372941017151,
+        "rms": 0.03237555809817836,
+        "finite": true,
+        "events": [
+          {
+            "id": "salvage-0-launch",
+            "time": 0.95,
+            "cue": "salvage-launch-basic",
+            "duration": 0.54
+          },
+          {
+            "id": "salvage-0-flight",
+            "time": 1.01,
+            "cue": "salvage-flight-basic",
+            "duration": 0.65
+          },
+          {
+            "id": "salvage-0-hit",
+            "time": 1.65,
+            "cue": "salvage-hit-basic",
+            "duration": 0.95
+          },
+          {
+            "id": "salvage-recovery",
+            "time": 3.6,
+            "cue": "salvage-recovery-basic",
+            "duration": 0.9
+          }
+        ],
+        "clipping": false
+      }
+    },
+    {
+      "name": "salvage-enhanced-6s.wav finite headroom and event mapping",
+      "pass": true,
+      "detail": {
+        "branch": "salvage",
+        "variant": "enhanced",
+        "sampleRate": 44100,
+        "frames": 264600,
+        "channels": 2,
+        "peak": 0.19486600160598755,
+        "rms": 0.03227182386290741,
+        "finite": true,
+        "events": [
+          {
+            "id": "salvage-0-launch",
+            "time": 0.95,
+            "cue": "salvage-launch-enhanced",
+            "duration": 0.54
+          },
+          {
+            "id": "salvage-0-flight",
+            "time": 1.01,
+            "cue": "salvage-flight-enhanced",
+            "duration": 0.65
+          },
+          {
+            "id": "salvage-0-hit",
+            "time": 1.65,
+            "cue": "salvage-hit-enhanced",
+            "duration": 0.95
+          },
+          {
+            "id": "salvage-recovery",
+            "time": 3.6,
+            "cue": "salvage-recovery-enhanced",
+            "duration": 0.9
+          }
+        ],
+        "clipping": false
+      }
+    },
+    {
+      "name": "actual WAV download",
+      "pass": true
+    },
+    {
+      "name": "actual event record download",
+      "pass": true
+    },
+    {
+      "name": "ends once without loop or pending cue",
+      "pass": true
+    },
+    {
+      "name": "painted 240 static frames no accumulated trails",
+      "pass": true
+    },
+    {
+      "name": "cel 240 static frames no accumulated trails",
+      "pass": true
+    },
+    {
+      "name": "original 240 static frames no accumulated trails",
+      "pass": true
+    },
+    {
+      "name": "mobile no document overflow",
+      "pass": true
+    },
+    {
+      "name": "OutlineEffect autoClear explicit",
+      "pass": true
+    },
+    {
+      "name": "no external request",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no JS errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "screenshots": [
+    "mobility-launch.png",
+    "mobility-impact.png",
+    "mobility-recovery.png",
+    "artillery-launch.png",
+    "artillery-impact.png",
+    "artillery-recovery.png",
+    "salvage-launch.png",
+    "salvage-impact.png",
+    "salvage-recovery.png"
+  ],
+  "mixes": [
+    {
+      "file": "mobility-basic-6s.wav",
+      "branch": "mobility",
+      "variant": "basic",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "channels": 2,
+      "peak": 0.44051432609558105,
+      "rms": 0.038197281115194,
+      "finite": true,
+      "events": [
+        {
+          "id": "mobility-0-launch",
+          "time": 0.8,
+          "cue": "mobility-launch-basic",
+          "duration": 0.34
+        },
+        {
+          "id": "mobility-0-flight",
+          "time": 0.8600000000000001,
+          "cue": "mobility-flight-basic",
+          "duration": 0.3
+        },
+        {
+          "id": "mobility-1-launch",
+          "time": 1.03,
+          "cue": "mobility-launch-basic",
+          "duration": 0.34
+        },
+        {
+          "id": "mobility-1-flight",
+          "time": 1.09,
+          "cue": "mobility-flight-basic",
+          "duration": 0.3
+        },
+        {
+          "id": "mobility-0-hit",
+          "time": 1.25,
+          "cue": "mobility-hit-basic",
+          "duration": 0.64
+        },
+        {
+          "id": "mobility-2-launch",
+          "time": 1.26,
+          "cue": "mobility-launch-basic",
+          "duration": 0.34
+        },
+        {
+          "id": "mobility-2-flight",
+          "time": 1.32,
+          "cue": "mobility-flight-basic",
+          "duration": 0.3
+        },
+        {
+          "id": "mobility-1-hit",
+          "time": 1.48,
+          "cue": "mobility-hit-basic",
+          "duration": 0.64
+        },
+        {
+          "id": "mobility-2-hit",
+          "time": 1.71,
+          "cue": "mobility-hit-basic",
+          "duration": 0.64
+        },
+        {
+          "id": "mobility-recovery",
+          "time": 3.4,
+          "cue": "mobility-recovery-basic",
+          "duration": 0.4
+        }
+      ],
+      "clipping": false
+    },
+    {
+      "file": "mobility-enhanced-6s.wav",
+      "branch": "mobility",
+      "variant": "enhanced",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "channels": 2,
+      "peak": 0.3211507797241211,
+      "rms": 0.03707212229994783,
+      "finite": true,
+      "events": [
+        {
+          "id": "mobility-0-launch",
+          "time": 0.8,
+          "cue": "mobility-launch-enhanced",
+          "duration": 0.34
+        },
+        {
+          "id": "mobility-0-flight",
+          "time": 0.8600000000000001,
+          "cue": "mobility-flight-enhanced",
+          "duration": 0.3
+        },
+        {
+          "id": "mobility-1-launch",
+          "time": 1.03,
+          "cue": "mobility-launch-enhanced",
+          "duration": 0.34
+        },
+        {
+          "id": "mobility-1-flight",
+          "time": 1.09,
+          "cue": "mobility-flight-enhanced",
+          "duration": 0.3
+        },
+        {
+          "id": "mobility-0-hit",
+          "time": 1.25,
+          "cue": "mobility-hit-enhanced",
+          "duration": 0.64
+        },
+        {
+          "id": "mobility-2-launch",
+          "time": 1.26,
+          "cue": "mobility-launch-enhanced",
+          "duration": 0.34
+        },
+        {
+          "id": "mobility-2-flight",
+          "time": 1.32,
+          "cue": "mobility-flight-enhanced",
+          "duration": 0.3
+        },
+        {
+          "id": "mobility-1-hit",
+          "time": 1.48,
+          "cue": "mobility-hit-enhanced",
+          "duration": 0.64
+        },
+        {
+          "id": "mobility-2-hit",
+          "time": 1.71,
+          "cue": "mobility-hit-enhanced",
+          "duration": 0.64
+        },
+        {
+          "id": "mobility-recovery",
+          "time": 3.4,
+          "cue": "mobility-recovery-enhanced",
+          "duration": 0.4
+        }
+      ],
+      "clipping": false
+    },
+    {
+      "file": "artillery-basic-6s.wav",
+      "branch": "artillery",
+      "variant": "basic",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "channels": 2,
+      "peak": 0.3983071446418762,
+      "rms": 0.040477154743386784,
+      "finite": true,
+      "events": [
+        {
+          "id": "artillery-0-launch",
+          "time": 0.9,
+          "cue": "artillery-launch-basic",
+          "duration": 0.46
+        },
+        {
+          "id": "artillery-0-flight",
+          "time": 0.96,
+          "cue": "artillery-flight-basic",
+          "duration": 0.65
+        },
+        {
+          "id": "artillery-1-launch",
+          "time": 1.2,
+          "cue": "artillery-launch-basic",
+          "duration": 0.46
+        },
+        {
+          "id": "artillery-1-flight",
+          "time": 1.26,
+          "cue": "artillery-flight-basic",
+          "duration": 0.65
+        },
+        {
+          "id": "artillery-2-launch",
+          "time": 1.5,
+          "cue": "artillery-launch-basic",
+          "duration": 0.46
+        },
+        {
+          "id": "artillery-0-hit",
+          "time": 1.55,
+          "cue": "artillery-hit-basic",
+          "duration": 1.25
+        },
+        {
+          "id": "artillery-2-flight",
+          "time": 1.56,
+          "cue": "artillery-flight-basic",
+          "duration": 0.65
+        },
+        {
+          "id": "artillery-1-hit",
+          "time": 1.85,
+          "cue": "artillery-hit-basic",
+          "duration": 1.25
+        },
+        {
+          "id": "artillery-2-hit",
+          "time": 2.15,
+          "cue": "artillery-hit-basic",
+          "duration": 1.25
+        },
+        {
+          "id": "artillery-recovery",
+          "time": 3.9,
+          "cue": "artillery-recovery-basic",
+          "duration": 0.48
+        }
+      ],
+      "clipping": false
+    },
+    {
+      "file": "artillery-enhanced-6s.wav",
+      "branch": "artillery",
+      "variant": "enhanced",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "channels": 2,
+      "peak": 0.3070533275604248,
+      "rms": 0.04179312501010958,
+      "finite": true,
+      "events": [
+        {
+          "id": "artillery-0-launch",
+          "time": 0.9,
+          "cue": "artillery-launch-enhanced",
+          "duration": 0.46
+        },
+        {
+          "id": "artillery-0-flight",
+          "time": 0.96,
+          "cue": "artillery-flight-enhanced",
+          "duration": 0.65
+        },
+        {
+          "id": "artillery-1-launch",
+          "time": 1.2,
+          "cue": "artillery-launch-enhanced",
+          "duration": 0.46
+        },
+        {
+          "id": "artillery-1-flight",
+          "time": 1.26,
+          "cue": "artillery-flight-enhanced",
+          "duration": 0.65
+        },
+        {
+          "id": "artillery-2-launch",
+          "time": 1.5,
+          "cue": "artillery-launch-enhanced",
+          "duration": 0.46
+        },
+        {
+          "id": "artillery-0-hit",
+          "time": 1.55,
+          "cue": "artillery-hit-enhanced",
+          "duration": 1.25
+        },
+        {
+          "id": "artillery-2-flight",
+          "time": 1.56,
+          "cue": "artillery-flight-enhanced",
+          "duration": 0.65
+        },
+        {
+          "id": "artillery-1-hit",
+          "time": 1.85,
+          "cue": "artillery-hit-enhanced",
+          "duration": 1.25
+        },
+        {
+          "id": "artillery-2-hit",
+          "time": 2.15,
+          "cue": "artillery-hit-enhanced",
+          "duration": 1.25
+        },
+        {
+          "id": "artillery-recovery",
+          "time": 3.9,
+          "cue": "artillery-recovery-enhanced",
+          "duration": 0.48
+        }
+      ],
+      "clipping": false
+    },
+    {
+      "file": "salvage-basic-6s.wav",
+      "branch": "salvage",
+      "variant": "basic",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "channels": 2,
+      "peak": 0.3343372941017151,
+      "rms": 0.03237555809817836,
+      "finite": true,
+      "events": [
+        {
+          "id": "salvage-0-launch",
+          "time": 0.95,
+          "cue": "salvage-launch-basic",
+          "duration": 0.54
+        },
+        {
+          "id": "salvage-0-flight",
+          "time": 1.01,
+          "cue": "salvage-flight-basic",
+          "duration": 0.65
+        },
+        {
+          "id": "salvage-0-hit",
+          "time": 1.65,
+          "cue": "salvage-hit-basic",
+          "duration": 0.95
+        },
+        {
+          "id": "salvage-recovery",
+          "time": 3.6,
+          "cue": "salvage-recovery-basic",
+          "duration": 0.9
+        }
+      ],
+      "clipping": false
+    },
+    {
+      "file": "salvage-enhanced-6s.wav",
+      "branch": "salvage",
+      "variant": "enhanced",
+      "sampleRate": 44100,
+      "frames": 264600,
+      "channels": 2,
+      "peak": 0.19486600160598755,
+      "rms": 0.03227182386290741,
+      "finite": true,
+      "events": [
+        {
+          "id": "salvage-0-launch",
+          "time": 0.95,
+          "cue": "salvage-launch-enhanced",
+          "duration": 0.54
+        },
+        {
+          "id": "salvage-0-flight",
+          "time": 1.01,
+          "cue": "salvage-flight-enhanced",
+          "duration": 0.65
+        },
+        {
+          "id": "salvage-0-hit",
+          "time": 1.65,
+          "cue": "salvage-hit-enhanced",
+          "duration": 0.95
+        },
+        {
+          "id": "salvage-recovery",
+          "time": 3.6,
+          "cue": "salvage-recovery-enhanced",
+          "duration": 0.9
+        }
+      ],
+      "clipping": false
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "browserClosed": true,
+  "originals": [
+    {
+      "path": "outputs/ship-weapon-harmony-v1/mobility-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/artillery-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/salvage-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-recovery.wav",
+      "preserved": true
+    }
+  ],
+  "passed": true
+}

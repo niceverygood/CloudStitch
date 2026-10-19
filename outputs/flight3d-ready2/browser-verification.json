@@ -1,0 +1,220 @@
+{
+  "version": 2,
+  "passed": true,
+  "scope": "READY2 Q/E and gentle strafe. One Chromium page, actual keyboard and mouse/touch buttons. New independent XYZ sandbox only.",
+  "checks": [
+    {
+      "name": "real-models-and-perspective-camera",
+      "passed": true
+    },
+    {
+      "name": "actual-Q-key-rises-in-world-y",
+      "passed": true,
+      "detail": {
+        "y0": 8,
+        "y1": 16.74512104745199
+      }
+    },
+    {
+      "name": "actual-E-key-descends",
+      "passed": true,
+      "detail": {
+        "y1": 16.74512104745199,
+        "y2": 7.034953176899025
+      }
+    },
+    {
+      "name": "simultaneous-horizontal-and-vertical-motion",
+      "passed": true,
+      "detail": {
+        "before": {
+          "id": "player",
+          "x": 0,
+          "y": 6.608250914855625,
+          "z": 40,
+          "vx": 0,
+          "vy": -12.199585149361583,
+          "vz": 0,
+          "radius": 1.8,
+          "hp": 100,
+          "maxHp": 100,
+          "heading": 3.141592653589793,
+          "pitch": -1.538020068660001,
+          "boost": 100,
+          "maxBoost": 100,
+          "boostActive": false,
+          "collisionCooldown": 0
+        },
+        "moved": {
+          "id": "player",
+          "x": 0,
+          "y": 9.09770779153235,
+          "z": 34.68294314350621,
+          "vx": 0,
+          "vy": 8.052424084808315,
+          "vz": -8.456968321235152,
+          "radius": 1.8,
+          "hp": 100,
+          "maxHp": 100,
+          "heading": 3.141592653589793,
+          "pitch": 0.7608991820048235,
+          "boost": 100,
+          "maxBoost": 100,
+          "boostActive": false,
+          "collisionCooldown": 0
+        }
+      }
+    },
+    {
+      "name": "pause-freezes-entire-simulation",
+      "passed": true
+    },
+    {
+      "name": "right-drag-orbits-in-3d",
+      "passed": true,
+      "detail": {
+        "projection": "perspective",
+        "fov": 57,
+        "position": [
+          -9.148056928919388,
+          22.255218472679367,
+          50.17939952145929
+        ],
+        "target": [
+          2.8202808765594005,
+          12.668318150864211,
+          29.3652591090676
+        ],
+        "yaw": -0.96,
+        "elevation": 0.43999999999999995,
+        "distance": 28,
+        "ships": 6,
+        "shots": 0,
+        "memory": {
+          "geometries": 110,
+          "textures": 265
+        },
+        "drawCalls": 270,
+        "triangles": 199306,
+        "outlineAutoClear": true,
+        "altitude": 10.207987555623433
+      }
+    },
+    {
+      "name": "reset-restores-scene-focus-for-ascent",
+      "passed": true
+    },
+    {
+      "name": "short-D-tap-is-gentle-and-turn-is-rate-limited",
+      "passed": true,
+      "detail": {
+        "lateralStart": {
+          "x": 0,
+          "heading": 3.141592653589793,
+          "time": 0.35000000000000026
+        },
+        "lateralEnd": {
+          "x": 0.743217180116903,
+          "vx": 3.8546972511794544,
+          "heading": 2.6441738167714064,
+          "time": 0.7
+        },
+        "angleDelta": -0.4974188368183867
+      }
+    },
+    {
+      "name": "actual-mouse-fire-hits-a-target-at-another-altitude",
+      "passed": true,
+      "detail": {
+        "shots": 7,
+        "hits": 3,
+        "kills": 1,
+        "target": {
+          "id": "target-mid",
+          "label": "중층 표적",
+          "x": 18,
+          "y": 25,
+          "z": -42,
+          "radius": 3,
+          "hp": 0,
+          "maxHp": 60,
+          "defeated": true,
+          "telegraph": null,
+          "shotCooldown": 4.1
+        }
+      }
+    },
+    {
+      "name": "enemy-attacks-are-explicit-and-create-3d-fire",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "shots": 1,
+        "warnings": 1
+      }
+    },
+    {
+      "name": "safe-flight-clears-enemy-hazards",
+      "passed": true
+    },
+    {
+      "name": "mobile-no-overflow",
+      "passed": true
+    },
+    {
+      "name": "touch-ascent-button-drives-world-y",
+      "passed": true
+    },
+    {
+      "name": "mobile-pause-is-visible",
+      "passed": true
+    },
+    {
+      "name": "page-errors-zero",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "external-requests-zero",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "failed-requests-zero",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "samples": [
+    {
+      "projection": "perspective",
+      "fov": 57,
+      "position": [
+        0,
+        25.693121267296778,
+        61.197463295856835
+      ],
+      "target": [
+        0,
+        19.03744772733701,
+        34
+      ],
+      "yaw": 0,
+      "elevation": 0.24,
+      "distance": 28,
+      "ships": 6,
+      "shots": 0,
+      "memory": {
+        "geometries": 113,
+        "textures": 265
+      },
+      "drawCalls": 262,
+      "triangles": 198166,
+      "outlineAutoClear": true,
+      "altitude": 17.252533231304426
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "failedRequests": []
+}

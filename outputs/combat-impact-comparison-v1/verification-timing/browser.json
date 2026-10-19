@@ -1,0 +1,208 @@
+{
+  "revision": "combat-impact-comparison-v1-r2-sequence",
+  "scope": "audio sequence/absolute playback clock/file URL impact only; preceding visual 31 checks preserved separately",
+  "checks": [
+    {
+      "name": "self contained file URL loads actual models without server",
+      "passed": true
+    },
+    {
+      "name": "pause cancels pending decode start",
+      "passed": true
+    },
+    {
+      "name": "Native sequence uses actual 10fire/10hit receipts",
+      "passed": true,
+      "data": {
+        "cueCount": 20,
+        "counts": {
+          "fire": 10,
+          "hit": 10
+        }
+      }
+    },
+    {
+      "name": "Native buffer preserves .22s cadence and final1.98s",
+      "passed": true,
+      "data": {
+        "sampleRate": 48000,
+        "frames": [
+          0,
+          10560,
+          21120,
+          31680,
+          42240,
+          52800,
+          63360,
+          73920,
+          84480,
+          95040
+        ]
+      }
+    },
+    {
+      "name": "one source owns bus and PCM headroom finite",
+      "passed": true,
+      "data": {
+        "voices": 1,
+        "overlap": 3,
+        "masterPeak": 0.15008420944213868
+      }
+    },
+    {
+      "name": "visual clock follows wall time after render stall",
+      "passed": true,
+      "data": {
+        "cursor": 3.0464999999880793,
+        "wall": 3.077099999964237
+      }
+    },
+    {
+      "name": "sequence stop releases voice",
+      "passed": true
+    },
+    {
+      "name": "resume schedules remaining actual cues and prior tail",
+      "passed": true,
+      "data": [
+        {
+          "index": 5,
+          "id": "impact-machinegun",
+          "time": 0.68,
+          "startFrame": -10560,
+          "endFrame": 1440
+        },
+        {
+          "index": 6,
+          "id": "fire-machinegun",
+          "time": 0.88,
+          "startFrame": -960,
+          "endFrame": 8160
+        },
+        {
+          "index": 7,
+          "id": "impact-machinegun",
+          "time": 0.9,
+          "startFrame": 0,
+          "endFrame": 12000
+        },
+        {
+          "index": 8,
+          "id": "fire-machinegun",
+          "time": 1.1,
+          "startFrame": 9600,
+          "endFrame": 18720
+        },
+        {
+          "index": 9,
+          "id": "impact-machinegun",
+          "time": 1.12,
+          "startFrame": 10560,
+          "endFrame": 22560
+        },
+        {
+          "index": 10,
+          "id": "fire-machinegun",
+          "time": 1.32,
+          "startFrame": 20160,
+          "endFrame": 29280
+        },
+        {
+          "index": 11,
+          "id": "impact-machinegun",
+          "time": 1.34,
+          "startFrame": 21120,
+          "endFrame": 33120
+        },
+        {
+          "index": 12,
+          "id": "fire-machinegun",
+          "time": 1.54,
+          "startFrame": 30720,
+          "endFrame": 39840
+        },
+        {
+          "index": 13,
+          "id": "impact-machinegun",
+          "time": 1.56,
+          "startFrame": 31680,
+          "endFrame": 43680
+        },
+        {
+          "index": 14,
+          "id": "fire-machinegun",
+          "time": 1.76,
+          "startFrame": 41280,
+          "endFrame": 50400
+        },
+        {
+          "index": 15,
+          "id": "impact-machinegun",
+          "time": 1.78,
+          "startFrame": 42240,
+          "endFrame": 54240
+        },
+        {
+          "index": 16,
+          "id": "fire-machinegun",
+          "time": 1.98,
+          "startFrame": 51840,
+          "endFrame": 60960
+        },
+        {
+          "index": 17,
+          "id": "impact-machinegun",
+          "time": 2,
+          "startFrame": 52800,
+          "endFrame": 64800
+        },
+        {
+          "index": 18,
+          "id": "impact-machinegun",
+          "time": 2.22,
+          "startFrame": 63360,
+          "endFrame": 75360
+        },
+        {
+          "index": 19,
+          "id": "impact-machinegun",
+          "time": 2.44,
+          "startFrame": 73920,
+          "endFrame": 85920
+        }
+      ]
+    },
+    {
+      "name": "old cannon sequence fires and hits at original time",
+      "passed": true
+    },
+    {
+      "name": "slow playback is muted",
+      "passed": true
+    },
+    {
+      "name": "original eleven asset/source pins unchanged",
+      "passed": true
+    },
+    {
+      "name": "final sequence disposal removes canvas and context voices",
+      "passed": true
+    },
+    {
+      "name": "file URL produces zero external HTTP requests",
+      "passed": true,
+      "data": []
+    },
+    {
+      "name": "no script or GL errors",
+      "passed": true,
+      "data": []
+    }
+  ],
+  "passed": true,
+  "errors": [],
+  "browserClosed": true,
+  "externalHTTP": [],
+  "humanArtApproved": false,
+  "humanListeningApproved": false
+}

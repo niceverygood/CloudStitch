@@ -1,0 +1,96 @@
+{
+  "id": "flamethrower-hit",
+  "original_id": "flamethrower-hit",
+  "order": 18,
+  "name_ko": "화염 접촉 그을림",
+  "name_en": "Flamethrower Contact Hit",
+  "category": "weapon",
+  "weapon_id": "06-flamethrower",
+  "model": "assets/flamethrower-hit.glb",
+  "duration": 0.9,
+  "loop": false,
+  "purpose": "짧은 불꽃이 표면에 닿는 순간을 나타낸다.",
+  "status": "residual_source_reviewed_render_pending",
+  "representative": false,
+  "placement_scale": 0.32,
+  "triangles": 3133,
+  "mesh_count": 2,
+  "animation_count": 1,
+  "bytes": 7348288,
+  "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97",
+  "meshy_bases": [
+    "flame",
+    "smoke"
+  ],
+  "runtime_features": [
+    "node extras.runtime_fade drives viewer opacity; standard GLB uses TRS alone"
+  ],
+  "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS",
+  "task_ids": [
+    "01a14dcc-674d-7248-8d4b-fc604c7d5e06",
+    "01a14dca-e074-7440-aba5-de317145911e"
+  ],
+  "new_paid_task_for_this_effect": false,
+  "axes": "+Y up, +Z forward, +Y impact surface normal",
+  "limits": [
+    "Art choreography prototype; runtime combat integration pending.",
+    "GLB embeds standardTRS only. Runtime opacity/outline/cel are separate browser features.",
+    "Fixed projectile movement belongs to preview clip; disable root translation when gameplay projectile owns motion.",
+    "Only representative6 initially receives direct visual review; catalog status records later checks."
+  ],
+  "visual_reviewed": false,
+  "review_scope": "File/TRS checks only; visual review pending.",
+  "verification": {
+    "structure": "verification/structure.json",
+    "browser": null
+  },
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/core.cjs",
+      "bytes": 9366,
+      "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+    },
+    {
+      "path": "tools/combat-vfx-v2/generate.cjs",
+      "bytes": 4019,
+      "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/primary.cjs",
+      "bytes": 13239,
+      "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+    }
+  ],
+  "output_file": {
+    "path": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+    "bytes": 7348288,
+    "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97"
+  },
+  "art_preflight_review": {
+    "audit_report": "tools/combat-vfx-v2/review-primary.json",
+    "status": "source_binary_reviewed_new_render_required",
+    "changes": [],
+    "concerns": [
+      "Two normal-oriented flame tongues and late smoke are source-distinct from the stream; contact size and peak/late visibility still need a fresh scene render.",
+      "Separate runtime fade needs per-instance materials; standard GLB only contracts transforms."
+    ],
+    "expected_observations": [
+      "Short +Y contact flames sit close to the actual surface; they do not imply a second outward cone.",
+      "Late smoke stays small and thin while stream/contact overlap can remain legible."
+    ],
+    "loop_boundary_sample_seconds": null,
+    "sample_times_seconds": [
+      0,
+      0.108,
+      0.405,
+      0.675,
+      0.9
+    ],
+    "current_output": {
+      "path": "outputs/combat-vfx-v2/assets/flamethrower-hit.glb",
+      "bytes": 7348288,
+      "sha256": "ca2f977764660c819a99f20d74ef34aeb08e226b8965d738e2f1f3fb5806db97"
+    },
+    "scope": "Source/binary review only; queued fresh renders are not completed art approval."
+  }
+}

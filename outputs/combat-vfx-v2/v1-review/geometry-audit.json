@@ -1,0 +1,6036 @@
+{
+  "source_sha256": "48b1e4df6966a7c573df6a2986ad34c0bd60c0a4df9f884e4686261215e23245",
+  "browser_run": false,
+  "paid_calls": 0,
+  "items": [
+    {
+      "id": "01-machine-gun",
+      "kind": "sequence",
+      "clip_duration": 2,
+      "source_children": [
+        "01-machine-gun_attack_sequence_part_1",
+        "01-machine-gun_attack_sequence_part_14",
+        "01-machine-gun_attack_sequence_part_19",
+        "01-machine-gun_attack_sequence_part_44",
+        "01-machine-gun_attack_sequence_part_51"
+      ],
+      "tracks": 42,
+      "echo_count": 2,
+      "echo_tracks": [
+        5,
+        33
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "machine-gun-muzzle",
+          "role": "weapon",
+          "node": "01-machine-gun_attack_sequence_part_14",
+          "anchor_position": [
+            0.0007595372312182436,
+            0.6299396781481901,
+            -0.008382503840366984
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "machine-gun-projectile",
+          "role": "flight",
+          "node": "01-machine-gun_attack_sequence_part_19",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0.0007595372312182436,
+            0.6299396781481901,
+            -0.008382503840366984
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "machine-gun-hit",
+          "role": "hit",
+          "node": "01-machine-gun_attack_sequence_part_44",
+          "anchor_position": [
+            0.0007595372312182436,
+            0.6299396781481901,
+            3.991617496159633
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.06999999999999999,
+          "bounds_min": [
+            -0.6592404889948255,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.9439689890818631,
+            1.1549396543063322,
+            4.08661749586161
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.485,
+          "bounds_min": [
+            -0.6592404889948255,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.660759563457262,
+            1.1549396543063322,
+            4.08661749586161
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.04,
+          "bounds_min": [
+            -0.6592404889948255,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.660759563457262,
+            1.1549396543063322,
+            4.198401302902612
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 1.99,
+          "bounds_min": [
+            -0.6592404889948255,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.660759563457262,
+            1.1549396543063322,
+            4.08661749586161
+          ],
+          "echo_visible": 0
+        }
+      ],
+      "parts": [
+        {
+          "id": "machine-gun-muzzle",
+          "name": "01-machine-gun_attack_sequence_part_14",
+          "correct_component": true
+        },
+        {
+          "id": "machine-gun-projectile",
+          "name": "01-machine-gun_attack_sequence_part_19",
+          "correct_component": true
+        },
+        {
+          "id": "machine-gun-hit",
+          "name": "01-machine-gun_attack_sequence_part_44",
+          "correct_component": true
+        }
+      ],
+      "hit_focus_box": {
+        "min": [
+          -0.6964387507674242,
+          -0.07319825068922495,
+          3.4176588714004965
+        ],
+        "max": [
+          0.5012913018077884,
+          1.3738575901589831,
+          4.227025914957453
+        ],
+        "anchor": [
+          0.0007595372312182436,
+          0.6299396781481901,
+          3.991617496159633
+        ],
+        "center": [
+          -0.09757372447981794,
+          0.650329669734879,
+          3.8223423931789746
+        ],
+        "span": [
+          1.1977300525752126,
+          1.4470558408482082,
+          0.8093670435569567
+        ]
+      }
+    },
+    {
+      "id": "02-deck-cannon",
+      "kind": "sequence",
+      "clip_duration": 2.799999952316284,
+      "source_children": [
+        "02-deck-cannon_attack_sequence_part_1",
+        "02-deck-cannon_attack_sequence_part_25",
+        "02-deck-cannon_attack_sequence_part_38",
+        "02-deck-cannon_attack_sequence_part_97",
+        "02-deck-cannon_attack_sequence_part_104"
+      ],
+      "tracks": 109,
+      "echo_count": 4,
+      "echo_tracks": [
+        14,
+        14,
+        77,
+        77
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "cannon-muzzle",
+          "role": "weapon",
+          "node": "02-deck-cannon_attack_sequence_part_25",
+          "anchor_position": [
+            0.0037513940745979024,
+            0.5826191776634596,
+            -0.008071764725575914
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "cannon-projectile",
+          "role": "flight",
+          "node": "02-deck-cannon_attack_sequence_part_38",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0.0037513940745979024,
+            0.5826191776634596,
+            -0.008071764725575914
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "cannon-hit",
+          "role": "hit",
+          "node": "02-deck-cannon_attack_sequence_part_97",
+          "anchor_position": [
+            0.0037513940745979024,
+            0.5826191776634596,
+            3.991928235274424
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.1925,
+          "bounds_min": [
+            -0.9099312446768631,
+            -0.25492952123927126,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.8413000929773288,
+            1.665543867500592,
+            4.086928234976401
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.775,
+          "bounds_min": [
+            -0.9099312446768631,
+            -0.2408209424886197,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.7739113605918402,
+            1.665543867500592,
+            4.086928234976401
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.44,
+          "bounds_min": [
+            -0.6562486321514458,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.6637514203006416,
+            1.1680591830233902,
+            4.225098830613312
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 2.7899999523162844,
+          "bounds_min": [
+            -0.6562486321514458,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.6637514203006416,
+            1.1282708608595569,
+            4.086928234976401
+          ],
+          "echo_visible": 0
+        }
+      ],
+      "parts": [
+        {
+          "id": "cannon-muzzle",
+          "name": "02-deck-cannon_attack_sequence_part_25",
+          "correct_component": true
+        },
+        {
+          "id": "cannon-projectile",
+          "name": "02-deck-cannon_attack_sequence_part_38",
+          "correct_component": true
+        },
+        {
+          "id": "cannon-hit",
+          "name": "02-deck-cannon_attack_sequence_part_97",
+          "correct_component": true
+        }
+      ],
+      "hit_focus_box": {
+        "min": [
+          -1.4482315917934663,
+          -1.1723498460799555,
+          1.086532409161526
+        ],
+        "max": [
+          1.5992905747009873,
+          2.225788552342362,
+          4.20373762155867
+        ],
+        "anchor": [
+          0.0037513940745979024,
+          0.5826191776634596,
+          3.991928235274424
+        ],
+        "center": [
+          0.07552949145376053,
+          0.5267193531312033,
+          2.645135015360098
+        ],
+        "span": [
+          3.0475221664944536,
+          3.3981383984223177,
+          3.1172052123971437
+        ]
+      }
+    },
+    {
+      "id": "03-mortar",
+      "kind": "sequence",
+      "clip_duration": 3.5,
+      "source_children": [
+        "03-mortar_attack_sequence_part_1",
+        "03-mortar_attack_sequence_part_24",
+        "03-mortar_attack_sequence_part_41",
+        "03-mortar_attack_sequence_part_112",
+        "03-mortar_attack_sequence_part_119"
+      ],
+      "tracks": 125,
+      "echo_count": 4,
+      "echo_tracks": [
+        14,
+        14,
+        93,
+        93
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "mortar-launch",
+          "role": "weapon",
+          "node": "03-mortar_attack_sequence_part_24",
+          "anchor_position": [
+            0.05058962163923053,
+            1.2502621778112957,
+            -0.3191355178333415
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "mortar-projectile",
+          "role": "flight",
+          "node": "03-mortar_attack_sequence_part_41",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0.05058962163923053,
+            1.2502621778112957,
+            -0.3191355178333415
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "mortar-hit",
+          "role": "hit",
+          "node": "03-mortar_attack_sequence_part_112",
+          "anchor_position": [
+            0.05058962163923053,
+            1.2502621778112957,
+            3.6808644821666583
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.1925,
+          "bounds_min": [
+            -1.125910501646039,
+            -1.1102230246251565e-16,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.9966405478981517,
+            2.759076723457524,
+            3.775864481868635
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 1.025,
+          "bounds_min": [
+            -1.125910501646039,
+            -1.1102230246251565e-16,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.9966405478981517,
+            3.5810121656497205,
+            3.775864481868635
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.94,
+          "bounds_min": [
+            -0.6094104045868132,
+            -1.1102230246251565e-16,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.7105896478652742,
+            2.1277679354456613,
+            4.085252102506026
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 3.49,
+          "bounds_min": [
+            -0.6094104045868132,
+            -1.1102230246251565e-16,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.7105896478652742,
+            2.1277679354456613,
+            3.8007895677962256
+          ],
+          "echo_visible": 0
+        }
+      ],
+      "parts": [
+        {
+          "id": "mortar-launch",
+          "name": "03-mortar_attack_sequence_part_24",
+          "correct_component": true
+        },
+        {
+          "id": "mortar-projectile",
+          "name": "03-mortar_attack_sequence_part_41",
+          "correct_component": true
+        },
+        {
+          "id": "mortar-hit",
+          "name": "03-mortar_attack_sequence_part_112",
+          "correct_component": true
+        }
+      ],
+      "hit_focus_box": {
+        "min": [
+          -2.1327271311831106,
+          -0.5483846153439301,
+          -0.6443270573014337
+        ],
+        "max": [
+          1.8198418770484295,
+          3.3749106311366392,
+          4.039320986107858
+        ],
+        "anchor": [
+          0.05058962163923053,
+          1.2502621778112957,
+          3.6808644821666583
+        ],
+        "center": [
+          -0.15644262706734058,
+          1.4132630078963546,
+          1.697496964403212
+        ],
+        "span": [
+          3.9525690082315403,
+          3.9232952464805693,
+          4.683648043409291
+        ]
+      }
+    },
+    {
+      "id": "04-harpoon",
+      "kind": "sequence",
+      "clip_duration": 2.799999952316284,
+      "source_children": [
+        "04-harpoon_attack_sequence_part_1",
+        "04-harpoon_attack_sequence_part_13",
+        "04-harpoon_attack_sequence_part_23",
+        "04-harpoon_attack_sequence_part_53",
+        "04-harpoon_attack_sequence_part_60"
+      ],
+      "tracks": 52,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "harpoon-launch",
+          "role": "weapon",
+          "node": "04-harpoon_attack_sequence_part_13",
+          "anchor_position": [
+            0.08148356695017034,
+            0.7218403923108203,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "harpoon-projectile",
+          "role": "flight",
+          "node": "04-harpoon_attack_sequence_part_23",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0.08148356695017034,
+            0.7218403923108203,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "harpoon-hit",
+          "role": "hit",
+          "node": "04-harpoon_attack_sequence_part_53",
+          "anchor_position": [
+            0.08148356695017034,
+            0.7218403923108203,
+            4
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.13999999999999999,
+          "bounds_min": [
+            -0.578670435964219,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.741483593176214,
+            1.2468403684689624,
+            4.094999999701977
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.75,
+          "bounds_min": [
+            -0.578670435964219,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.741483593176214,
+            1.2468403684689624,
+            4.094999999701977
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.49,
+          "bounds_min": [
+            -0.578670435964219,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.741483593176214,
+            1.2468403684689624,
+            5.032750004827976
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 2.7899999523162844,
+          "bounds_min": [
+            -0.578670435964219,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.741483593176214,
+            1.2468403684689624,
+            4.094999999701977
+          ],
+          "echo_visible": 0
+        }
+      ],
+      "parts": [
+        {
+          "id": "harpoon-launch",
+          "name": "04-harpoon_attack_sequence_part_13",
+          "correct_component": true
+        },
+        {
+          "id": "harpoon-projectile",
+          "name": "04-harpoon_attack_sequence_part_23",
+          "correct_component": true
+        },
+        {
+          "id": "harpoon-hit",
+          "name": "04-harpoon_attack_sequence_part_53",
+          "correct_component": true
+        }
+      ],
+      "hit_focus_box": {
+        "min": [
+          -0.7639684050713125,
+          -0.2033901358143254,
+          2.556707161508238
+        ],
+        "max": [
+          0.9969270951726678,
+          1.5986988073792794,
+          4.3
+        ],
+        "anchor": [
+          0.08148356695017034,
+          0.7218403923108203,
+          4
+        ],
+        "center": [
+          0.11647934505067764,
+          0.6976543357824769,
+          3.428353580754119
+        ],
+        "span": [
+          1.7608955002439801,
+          1.802088943193605,
+          1.7432928384917616
+        ]
+      },
+      "harpoon": [
+        {
+          "t": 1.3,
+          "original": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rich": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1.8,
+          "original": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rich": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 2.68,
+          "original": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rich": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 2.7,
+          "original": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rich": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 2.704,
+          "original": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rich": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05-chain-shot",
+      "kind": "sequence",
+      "clip_duration": 2.799999952316284,
+      "source_children": [
+        "05-chain-shot_attack_sequence_part_1",
+        "05-chain-shot_attack_sequence_part_14",
+        "05-chain-shot_attack_sequence_part_26",
+        "05-chain-shot_attack_sequence_part_60",
+        "05-chain-shot_attack_sequence_part_67"
+      ],
+      "tracks": 59,
+      "echo_count": 2,
+      "echo_tracks": [
+        4,
+        51
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "chain-shot-launch",
+          "role": "weapon",
+          "node": "05-chain-shot_attack_sequence_part_14",
+          "anchor_position": [
+            -0.016747484945607294,
+            0.9123164319584125,
+            -0.020826190379907406
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "chain-shot-projectile",
+          "role": "flight",
+          "node": "05-chain-shot_attack_sequence_part_26",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            -0.016747484945607294,
+            0.9123164319584125,
+            -0.020826190379907406
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "chain-shot-hit",
+          "role": "hit",
+          "node": "05-chain-shot_attack_sequence_part_60",
+          "anchor_position": [
+            -0.016747484945607294,
+            0.9123164319584125,
+            3.9791738096200926
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.13999999999999999,
+          "bounds_min": [
+            -0.6893518765040582,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.689351876504058,
+            1.5703904343080692,
+            4.074173809322069
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.725,
+          "bounds_min": [
+            -0.7187475639388219,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.689351876504058,
+            1.4601857226497892,
+            4.074173809322069
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.44,
+          "bounds_min": [
+            -0.6893518765040582,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.689351876504058,
+            1.5184421567675899,
+            4.221568089413788
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 2.7899999523162844,
+          "bounds_min": [
+            -0.6893518765040582,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.689351876504058,
+            1.4601857226497892,
+            4.074173809322069
+          ],
+          "echo_visible": 0
+        }
+      ],
+      "parts": [
+        {
+          "id": "chain-shot-launch",
+          "name": "05-chain-shot_attack_sequence_part_14",
+          "correct_component": true
+        },
+        {
+          "id": "chain-shot-projectile",
+          "name": "05-chain-shot_attack_sequence_part_26",
+          "correct_component": true
+        },
+        {
+          "id": "chain-shot-hit",
+          "name": "05-chain-shot_attack_sequence_part_60",
+          "correct_component": true
+        }
+      ],
+      "hit_focus_box": {
+        "min": [
+          -1.0040318418644998,
+          0.03975337050636457,
+          3.4225416170166
+        ],
+        "max": [
+          1.0731012278482428,
+          1.8775297430108708,
+          4.199825068492504
+        ],
+        "anchor": [
+          -0.016747484945607294,
+          0.9123164319584125,
+          3.9791738096200926
+        ],
+        "center": [
+          0.03453469299187151,
+          0.9586415567586177,
+          3.8111833427545516
+        ],
+        "span": [
+          2.0771330697127426,
+          1.8377763725045062,
+          0.7772834514759039
+        ]
+      }
+    },
+    {
+      "id": "06-flamethrower",
+      "kind": "sequence",
+      "clip_duration": 3,
+      "source_children": [
+        "06-flamethrower_attack_sequence_part_1",
+        "06-flamethrower_attack_sequence_part_14",
+        "06-flamethrower_attack_sequence_part_34",
+        "06-flamethrower_attack_sequence_part_65",
+        "06-flamethrower_attack_sequence_part_72"
+      ],
+      "tracks": 51,
+      "echo_count": 2,
+      "echo_tracks": [
+        3,
+        29
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "flamethrower-ignite",
+          "role": "weapon",
+          "node": "06-flamethrower_attack_sequence_part_14",
+          "anchor_position": [
+            0.11841320381106613,
+            0.6469771102689745,
+            -0.02150336848870915
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "flamethrower-stream",
+          "role": "flight",
+          "node": "06-flamethrower_attack_sequence_part_34",
+          "anchor_position": [
+            0.11841320381106613,
+            0.6469771102689745,
+            -0.02150336848870915
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "flamethrower-hit",
+          "role": "hit",
+          "node": "06-flamethrower_attack_sequence_part_65",
+          "anchor_position": [
+            0.11841320381106613,
+            0.6469771102689745,
+            1.828496631511291
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.13999999999999999,
+          "bounds_min": [
+            -0.6055132783863242,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.7784132300371098,
+            1.1719770864271166,
+            1.9234966312132677
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 1.375,
+          "bounds_min": [
+            -0.6055132783863242,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.7784132300371098,
+            1.236368438952391,
+            2.8133846534538387
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.7,
+          "bounds_min": [
+            -0.6055132783863242,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.7784132300371098,
+            1.1719770864271166,
+            3.0657796459581728
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 2.99,
+          "bounds_min": [
+            -0.6055132783863242,
+            0,
+            -1.8000000000000003
+          ],
+          "bounds_max": [
+            0.7784132300371098,
+            1.1719770864271166,
+            1.9234966312132677
+          ],
+          "echo_visible": 0
+        }
+      ],
+      "parts": [
+        {
+          "id": "flamethrower-ignite",
+          "name": "06-flamethrower_attack_sequence_part_14",
+          "correct_component": true
+        },
+        {
+          "id": "flamethrower-stream",
+          "name": "06-flamethrower_attack_sequence_part_34",
+          "correct_component": true
+        },
+        {
+          "id": "flamethrower-hit",
+          "name": "06-flamethrower_attack_sequence_part_65",
+          "correct_component": true
+        }
+      ],
+      "hit_focus_box": {
+        "min": [
+          -0.5928327691999554,
+          0.04868758758665287,
+          -1.7716249259939012
+        ],
+        "max": [
+          0.8936566937495,
+          1.5693524430130152,
+          1.828769849828187
+        ],
+        "anchor": [
+          0.11841320381106613,
+          0.6469771102689745,
+          1.828496631511291
+        ],
+        "center": [
+          0.15041196227477227,
+          0.809020015299834,
+          0.02857246191714291
+        ],
+        "span": [
+          1.4864894629494554,
+          1.5206648554263624,
+          3.600394775822088
+        ]
+      }
+    },
+    {
+      "id": "machine-gun-muzzle",
+      "kind": "effect",
+      "clip_duration": 0.20000000298023224,
+      "source_children": [
+        "machine-gun-muzzle"
+      ],
+      "tracks": 4,
+      "echo_count": 1,
+      "echo_tracks": [
+        4
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "machine-gun-muzzle",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.02400000035762787,
+          "bounds_min": [
+            -0.20860173027865242,
+            -0.18273976505040987,
+            -0.19041260596564666
+          ],
+          "bounds_max": [
+            0.41297114208074365,
+            0.31586084243679435,
+            0.4771205891945307
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.0800000011920929,
+          "bounds_min": [
+            -0.19272828219631513,
+            -0.14287451360190162,
+            -0.40611262949067006
+          ],
+          "bounds_max": [
+            1.0377797121880206,
+            0.1810598318777762,
+            0.28326076014547197
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.05600000083446503,
+          "bounds_min": [
+            -0.2123837208830589,
+            -0.14286926678129322,
+            -0.33087583347188065
+          ],
+          "bounds_max": [
+            0.805468043459663,
+            0.27002007619860924,
+            0.37302154090915707
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.19000000298023223,
+          "bounds_min": [
+            -0.09820019426421009,
+            -0.5312083418699947,
+            -0.42412891128816543
+          ],
+          "bounds_max": [
+            1.3819216684471083,
+            0.035168333606882575,
+            0.04949507559329986
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "machine-gun-projectile",
+      "kind": "effect",
+      "clip_duration": 0.44999998807907104,
+      "source_children": [
+        "machine-gun-projectile"
+      ],
+      "tracks": 3,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "machine-gun-projectile",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.053999998569488526,
+          "bounds_min": [
+            -0.09450000040233136,
+            -0.0945000004023314,
+            -0.7687500160932542
+          ],
+          "bounds_max": [
+            0.09450000040233136,
+            0.0945000004023314,
+            0.64875
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.17999999523162843,
+          "bounds_min": [
+            -0.09450000040233136,
+            -0.0945000004023314,
+            0.35124993092483103
+          ],
+          "bounds_max": [
+            0.09450000040233136,
+            0.0945000004023314,
+            1.7687499470180852
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.1259999966621399,
+          "bounds_min": [
+            -0.09450000040233136,
+            -0.0945000004023314,
+            -0.12875003198782442
+          ],
+          "bounds_max": [
+            0.09450000040233136,
+            0.0945000004023314,
+            1.2887499841054297
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.43999998807907104,
+          "bounds_min": [
+            -0.01687770718919745,
+            -0.01687770718919746,
+            3.6880842265102385
+          ],
+          "bounds_max": [
+            0.01687770718919745,
+            0.01687770718919746,
+            3.9412498361446104
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "machine-gun-hit",
+      "kind": "effect",
+      "clip_duration": 0.3499999940395355,
+      "source_children": [
+        "machine-gun-hit"
+      ],
+      "tracks": 32,
+      "echo_count": 1,
+      "echo_tracks": [
+        32
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "machine-gun-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.04199999928474426,
+          "bounds_min": [
+            -0.29492638056675063,
+            -0.21731248803198655,
+            -0.21123647254305755
+          ],
+          "bounds_max": [
+            0.31814734316752086,
+            0.5007900117499817,
+            0.29163442116393923
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.13999999761581422,
+          "bounds_min": [
+            -0.42100367822318224,
+            -0.08205259481022056,
+            -0.4847292673560646
+          ],
+          "bounds_max": [
+            0.3505860706452972,
+            0.46685568426758856,
+            0.5058259087418697
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.09799999833106995,
+          "bounds_min": [
+            -0.39605471710508544,
+            -0.15386894033539333,
+            -0.396083158945589
+          ],
+          "bounds_max": [
+            0.3213765163120653,
+            0.5256441472685693,
+            0.4424694377816837
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.3399999940395355,
+          "bounds_min": [
+            -0.6917959179276132,
+            -0.003321620499734984,
+            -0.699026073523868
+          ],
+          "bounds_max": [
+            0.4608070820110696,
+            0.36843642226495177,
+            0.7391646199963033
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "cannon-muzzle",
+      "kind": "effect",
+      "clip_duration": 0.44999998807907104,
+      "source_children": [
+        "cannon-muzzle"
+      ],
+      "tracks": 13,
+      "echo_count": 2,
+      "echo_tracks": [
+        13,
+        13
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "cannon-muzzle",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.053999998569488526,
+          "bounds_min": [
+            -0.5840799748726434,
+            -0.5840799748726434,
+            -0.309399978950736
+          ],
+          "bounds_max": [
+            0.5840799748726434,
+            0.5840799748726434,
+            1.0337611444839045
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.17999999523162843,
+          "bounds_min": [
+            -0.8926505749890562,
+            -0.8926505749890562,
+            -0.17470736414628213
+          ],
+          "bounds_max": [
+            0.8926505749890562,
+            0.8926505749890562,
+            0.8702940654626806
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.1259999966621399,
+          "bounds_min": [
+            -0.7604060422253925,
+            -0.7604060422253925,
+            -0.2418945535244542
+          ],
+          "bounds_max": [
+            0.7604060422253925,
+            0.7604060422253925,
+            0.8082133403625043
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.43999998807907104,
+          "bounds_min": [
+            -0.3052782071233705,
+            -0.22844221805096862,
+            -0.00023800001631118378
+          ],
+          "bounds_max": [
+            0.2422182622928161,
+            0.34411290053041327,
+            2.317935029181962
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "cannon-projectile",
+      "kind": "effect",
+      "clip_duration": 0.800000011920929,
+      "source_children": [
+        "cannon-projectile"
+      ],
+      "tracks": 17,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "cannon-projectile",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.09600000143051148,
+          "bounds_min": [
+            -0.29025000482797625,
+            -0.29025000482797625,
+            -0.08920000228387477
+          ],
+          "bounds_max": [
+            0.29025000482797625,
+            0.29025000482797625,
+            2.7001720476977265
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.3200000047683716,
+          "bounds_min": [
+            -0.29025000482797625,
+            -0.29025000482797625,
+            -0.013600002911626424
+          ],
+          "bounds_max": [
+            0.29025000482797625,
+            0.3663027013935129,
+            2.7001720476977265
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.22400000333786013,
+          "bounds_min": [
+            -0.29025000482797625,
+            -0.29025000482797625,
+            -0.04600000264259
+          ],
+          "bounds_max": [
+            0.29025000482797625,
+            0.29025000482797625,
+            2.7001720476977265
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.790000011920929,
+          "bounds_min": [
+            -0.029286218586372717,
+            -0.029286218586372717,
+            -0.00010000000623986132
+          ],
+          "bounds_max": [
+            0.10065732191734997,
+            0.4001600059644878,
+            3.9772430059075576
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "cannon-hit",
+      "kind": "effect",
+      "clip_duration": 0.75,
+      "source_children": [
+        "cannon-hit"
+      ],
+      "tracks": 76,
+      "echo_count": 2,
+      "echo_tracks": [
+        76,
+        76
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "cannon-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.09,
+          "bounds_min": [
+            -0.42899996490597875,
+            -0.24899996490597875,
+            -0.42899996490597875
+          ],
+          "bounds_max": [
+            0.42899996490597875,
+            0.6756678802486963,
+            0.5128280300482212
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.30000000000000004,
+          "bounds_min": [
+            -0.856988181803177,
+            -0.06592216989181827,
+            -0.856988181803177
+          ],
+          "bounds_max": [
+            1.0037966270158711,
+            1.2156639726561496,
+            0.856988181803177
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.21000000000000002,
+          "bounds_min": [
+            -0.6505825203033462,
+            -0.09989738345918509,
+            -0.6505825203033462
+          ],
+          "bounds_max": [
+            0.6505825203033462,
+            0.8447696481728358,
+            0.7071260625538867
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.74,
+          "bounds_min": [
+            -1.4361465069002561,
+            -0.0038111074451547744,
+            -1.7340863546802983
+          ],
+          "bounds_max": [
+            1.5779282439359403,
+            2.8587293908948315,
+            1.6232041285857373
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "mortar-launch",
+      "kind": "effect",
+      "clip_duration": 0.6000000238418579,
+      "source_children": [
+        "mortar-launch"
+      ],
+      "tracks": 13,
+      "echo_count": 2,
+      "echo_tracks": [
+        13,
+        13
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "mortar-launch",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.07200000286102294,
+          "bounds_min": [
+            -0.33376002004122635,
+            -0.20230000718967495,
+            -0.23847260188198202
+          ],
+          "bounds_max": [
+            0.33376002004122635,
+            0.6759208183229999,
+            0.6137600373340708
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.24000000953674316,
+          "bounds_min": [
+            -0.5100860782798476,
+            -0.11424767362508681,
+            -0.2868825772167711
+          ],
+          "bounds_max": [
+            0.5100860782798476,
+            1.6773800744805,
+            1.1598974330325533
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.16800000667572024,
+          "bounds_min": [
+            -0.43451776760615285,
+            -0.15816182327526174,
+            -0.1864422153949134
+          ],
+          "bounds_max": [
+            0.43451776760615285,
+            1.1809481810802682,
+            0.9258385491617753
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.5900000238418579,
+          "bounds_min": [
+            -0.4040044917582149,
+            -0.0019439995975109885,
+            -0.49194490996965146
+          ],
+          "bounds_max": [
+            0.4460603820173092,
+            3.920207227839937,
+            1.278850632076568
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "mortar-projectile",
+      "kind": "effect",
+      "clip_duration": 1.600000023841858,
+      "source_children": [
+        "mortar-projectile"
+      ],
+      "tracks": 17,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "mortar-projectile",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.19200000286102295,
+          "bounds_min": [
+            -0.3307500064373017,
+            -0.0013621664801161115,
+            -0.08920000228387477
+          ],
+          "bounds_max": [
+            0.3307500064373017,
+            1.9755247252057753,
+            2.7001720476977265
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.6400000095367432,
+          "bounds_min": [
+            -0.3307500064373017,
+            0.33910269557026,
+            -0.013600002911626424
+          ],
+          "bounds_max": [
+            0.3307500064373017,
+            2.2407344850228887,
+            2.7001720476977265
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.44800000667572026,
+          "bounds_min": [
+            -0.3307500064373017,
+            0.193189183262956,
+            -0.04600000264259
+          ],
+          "bounds_max": [
+            0.3307500064373017,
+            1.9755247252057753,
+            2.7001720476977265
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.590000023841858,
+          "bounds_min": [
+            -0.01685170890400128,
+            0.014689331498556259,
+            -0.00010000000623986132
+          ],
+          "bounds_max": [
+            0.10017200150412693,
+            2.3755247013639176,
+            3.999776868326186
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "mortar-hit",
+      "kind": "effect",
+      "clip_duration": 1.2000000476837158,
+      "source_children": [
+        "mortar-hit"
+      ],
+      "tracks": 92,
+      "echo_count": 2,
+      "echo_tracks": [
+        92,
+        92
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "mortar-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.14400000572204588,
+          "bounds_min": [
+            -0.584999989164263,
+            -0.404999989164263,
+            -0.584999989164263
+          ],
+          "bounds_max": [
+            0.584999989164263,
+            0.8225612942960799,
+            0.584999989164263
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.48000001907348633,
+          "bounds_min": [
+            -1.1686204168656273,
+            -0.08989387959430276,
+            -1.2221143432654173
+          ],
+          "bounds_max": [
+            1.1686204168656273,
+            1.9685033824578233,
+            1.1686204168656273
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.3360000133514405,
+          "bounds_min": [
+            -0.8871581069662593,
+            -0.20167823625278147,
+            -0.8880129006761623
+          ],
+          "bounds_max": [
+            0.8871581069662593,
+            1.2304852481724289,
+            0.8871581069662593
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 1.1900000476837158,
+          "bounds_min": [
+            -2.1961732133488,
+            -0.0032691961051711047,
+            -1.809704898797448
+          ],
+          "bounds_max": [
+            1.7791604200153623,
+            4.358826350953367,
+            2.1379734016302203
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "harpoon-launch",
+      "kind": "effect",
+      "clip_duration": 0.3499999940395355,
+      "source_children": [
+        "harpoon-launch"
+      ],
+      "tracks": 10,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "harpoon-launch",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.04199999928474426,
+          "bounds_min": [
+            -0.2059371996380585,
+            -0.2059371996380585,
+            -0.00015723714681258063
+          ],
+          "bounds_max": [
+            0.2059371996380585,
+            0.2059371996380585,
+            0.2899559658579083
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.13999999761581422,
+          "bounds_min": [
+            -0.4287500092573464,
+            -0.4287500092573464,
+            0.12687834487888044
+          ],
+          "bounds_max": [
+            0.4287500092573464,
+            0.4287500092573464,
+            0.7497385824624329
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.09799999833106995,
+          "bounds_min": [
+            -0.37730000661313523,
+            -0.37730000661313523,
+            0.01239810054972456
+          ],
+          "bounds_max": [
+            0.37730000661313523,
+            0.37730000661313523,
+            0.596259687043226
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.3399999940395355,
+          "bounds_min": [
+            -0.25287586033062004,
+            -0.26237295434203545,
+            1.1945126900406067
+          ],
+          "bounds_max": [
+            0.2850136293890296,
+            0.06457720984147486,
+            1.5867870703938198
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "harpoon-projectile",
+      "kind": "effect",
+      "clip_duration": 1,
+      "source_children": [
+        "harpoon-projectile"
+      ],
+      "tracks": 4,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "harpoon-projectile",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.12,
+          "bounds_min": [
+            -0.32276240126973776,
+            -0.21599999517202384,
+            -0.16124999195337297
+          ],
+          "bounds_max": [
+            0.32276240126973776,
+            0.21599999517202384,
+            1.5127500048279765
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.4,
+          "bounds_min": [
+            -0.32276240126973776,
+            -0.21599999517202384,
+            -0.007006392627954483
+          ],
+          "bounds_max": [
+            0.32276240126973776,
+            0.21599999517202384,
+            2.6327500048279764
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.28,
+          "bounds_min": [
+            -0.32276240126973776,
+            -0.21599999517202384,
+            -0.004904474839568139
+          ],
+          "bounds_max": [
+            0.32276240126973776,
+            0.21599999517202384,
+            2.1527500048279764
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.99,
+          "bounds_min": [
+            -0.32276240126973776,
+            -0.21599999517202384,
+            -0.017340821754187344
+          ],
+          "bounds_max": [
+            0.32276240126973776,
+            0.21599999517202384,
+            4.992750004827977
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "harpoon-hit",
+      "kind": "effect",
+      "clip_duration": 0.6499999761581421,
+      "source_children": [
+        "harpoon-hit"
+      ],
+      "tracks": 35,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "harpoon-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.07799999713897705,
+          "bounds_min": [
+            -0.28768605117047824,
+            -0.1416613745258266,
+            -0.23833598178860305
+          ],
+          "bounds_max": [
+            0.3156781484362737,
+            0.6958260645429681,
+            0.30179643237525366
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.25999999046325684,
+          "bounds_min": [
+            -0.42849407643580517,
+            -0.3,
+            -0.5593680036456206
+          ],
+          "bounds_max": [
+            0.4882091161861523,
+            1.2212576239594028,
+            0.4769225088125466
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.1819999933242798,
+          "bounds_min": [
+            -0.3641815135678179,
+            -0.29999999576771763,
+            -0.44743119507640927
+          ],
+          "bounds_max": [
+            0.428262489179067,
+            1.4652079754672298,
+            0.40756438911835713
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.6399999761581421,
+          "bounds_min": [
+            -0.8358354863071177,
+            -0.3,
+            -0.9165884796248291
+          ],
+          "bounds_max": [
+            0.9053422204281625,
+            0.45,
+            0.8673745605091965
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "chain-shot-launch",
+      "kind": "effect",
+      "clip_duration": 0.5,
+      "source_children": [
+        "chain-shot-launch"
+      ],
+      "tracks": 3,
+      "echo_count": 1,
+      "echo_tracks": [
+        3
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "chain-shot-launch",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.06,
+          "bounds_min": [
+            -0.4589200243857451,
+            -0.4589200243857451,
+            -0.22610000109229578
+          ],
+          "bounds_max": [
+            0.4589200243857451,
+            0.4589200243857451,
+            0.7554408913977326
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.2,
+          "bounds_min": [
+            -0.7013683476080715,
+            -0.7013683476080715,
+            -0.1276831672149076
+          ],
+          "bounds_max": [
+            0.7013683476080715,
+            0.7013683476080715,
+            0.6921758603340081
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.14,
+          "bounds_min": [
+            -0.5974619233699316,
+            -0.5974619233699316,
+            -0.17676909814449746
+          ],
+          "bounds_max": [
+            0.5974619233699316,
+            0.5974619233699316,
+            0.5906174455051902
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.49,
+          "bounds_min": [
+            -0.09820839259083243,
+            -0.07534105381064415,
+            -0.00023800001631118378
+          ],
+          "bounds_max": [
+            0.16878510686197945,
+            0.14534105381064416,
+            1.2471917283816767
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "chain-shot-projectile",
+      "kind": "effect",
+      "clip_duration": 1.100000023841858,
+      "source_children": [
+        "chain-shot-projectile"
+      ],
+      "tracks": 3,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "chain-shot-projectile",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.13200000286102295,
+          "bounds_min": [
+            -0.28659946417867355,
+            -0.7158728549343252,
+            0.23699999034404756
+          ],
+          "bounds_max": [
+            0.28659946417867355,
+            0.7158728549343252,
+            0.7230000096559526
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.4400000095367432,
+          "bounds_min": [
+            -0.44803676544457705,
+            -0.7427328064241239,
+            1.3570000336928745
+          ],
+          "bounds_max": [
+            0.44803676544457705,
+            0.7427328064241239,
+            1.8430000530047792
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.30800000667572025,
+          "bounds_min": [
+            -0.7421573672723305,
+            -0.48435915338121494,
+            0.8770000033486985
+          ],
+          "bounds_max": [
+            0.7421573672723305,
+            0.48435915338121494,
+            1.3630000226606036
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.090000023841858,
+          "bounds_min": [
+            -0.053408667368646176,
+            -0.02367536277465512,
+            3.9457383271021733
+          ],
+          "bounds_max": [
+            0.053408667368646176,
+            0.02367536277465512,
+            3.9815344253916845
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "chain-shot-hit",
+      "kind": "effect",
+      "clip_duration": 1,
+      "source_children": [
+        "chain-shot-hit"
+      ],
+      "tracks": 50,
+      "echo_count": 1,
+      "echo_tracks": [
+        50
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "chain-shot-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.12,
+          "bounds_min": [
+            -0.5129455266879738,
+            -0.212379422013485,
+            -0.48347863060966123
+          ],
+          "bounds_max": [
+            0.5370684791443308,
+            0.4710512900975621,
+            0.5309915772346974
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.4,
+          "bounds_min": [
+            -0.8856025233226037,
+            -0.04195047421871982,
+            -0.8322858715717361
+          ],
+          "bounds_max": [
+            0.9292499736417087,
+            0.5238306120167133,
+            0.9182546126381581
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.28,
+          "bounds_min": [
+            -0.8221732743169303,
+            -0.14011651860835478,
+            -0.7738291532061103
+          ],
+          "bounds_max": [
+            0.8617499862145637,
+            0.5278358730260907,
+            0.8517800840317464
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.99,
+          "bounds_min": [
+            -0.9809443890396775,
+            -0.001825499957944607,
+            -0.8498562083799444
+          ],
+          "bounds_max": [
+            1.0830506886900093,
+            0.5495845161826468,
+            0.9448783226999605
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "flamethrower-ignite",
+      "kind": "effect",
+      "clip_duration": 0.4000000059604645,
+      "source_children": [
+        "flamethrower-ignite"
+      ],
+      "tracks": 2,
+      "echo_count": 1,
+      "echo_tracks": [
+        2
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "flamethrower-ignite",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.04800000071525574,
+          "bounds_min": [
+            -0.1564512873476297,
+            -0.13705481471102549,
+            -0.10709999930706209
+          ],
+          "bounds_max": [
+            0.1487750554204034,
+            0.12625019569261353,
+            0.5039999947794584
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.1600000023841858,
+          "bounds_min": [
+            -0.16136830743145186,
+            -0.07742860465492801,
+            -0.060505743795825
+          ],
+          "bounds_max": [
+            0.08404991078168034,
+            0.08828332354610546,
+            0.4236701528036131
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.11200000166893007,
+          "bounds_min": [
+            -0.17610988237860967,
+            -0.10715194926080743,
+            -0.0837327292425257
+          ],
+          "bounds_max": [
+            0.11631504681753035,
+            0.1006787959727323,
+            0.45809722793611823
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.39000000596046447,
+          "bounds_min": [
+            -0.09820019426421009,
+            -0.00030456627775719754,
+            -0.00023800001631118378
+          ],
+          "bounds_max": [
+            0.0003306112590648587,
+            0.035168333606882575,
+            0.28022400000563263
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "flamethrower-stream",
+      "kind": "effect",
+      "clip_duration": 1.2000000476837158,
+      "source_children": [
+        "flamethrower-stream"
+      ],
+      "tracks": 18,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "flamethrower-stream",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.14400000572204588,
+          "bounds_min": [
+            -0.46308910378788487,
+            -0.5367865046260215,
+            0.17629317275692574
+          ],
+          "bounds_max": [
+            0.46071240459145923,
+            0.4252929946282551,
+            2.9626974138255844
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.48000001907348633,
+          "bounds_min": [
+            -0.40683322131757915,
+            -0.4574306239107006,
+            0.18843999486664928
+          ],
+          "bounds_max": [
+            0.4840749864780023,
+            0.4869826782799004,
+            2.9989680028925294
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.3360000133514405,
+          "bounds_min": [
+            -0.4454545553542562,
+            -0.4841519526526772,
+            0.21130666745611149
+          ],
+          "bounds_max": [
+            0.5471671683048718,
+            0.5552163631375798,
+            3.1258155050963947
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.1900000476837158,
+          "bounds_min": [
+            -0.06740947269696851,
+            -0.12172183159061756,
+            0.33407360123348523
+          ],
+          "bounds_max": [
+            0.09497406299899239,
+            0.11076963544266548,
+            2.298593936968938
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "flamethrower-hit",
+      "kind": "effect",
+      "clip_duration": 0.8999999761581421,
+      "source_children": [
+        "flamethrower-hit"
+      ],
+      "tracks": 28,
+      "echo_count": 1,
+      "echo_tracks": [
+        28
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "flamethrower-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.10799999713897705,
+          "bounds_min": [
+            -0.49616688061360137,
+            -0.0002732183168960116,
+            -0.4556710530652558
+          ],
+          "bounds_max": [
+            0.4936204190873397,
+            3.174318631587086,
+            0.5751283815116056
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.35999999046325687,
+          "bounds_min": [
+            -0.4358927473705266,
+            -0.0002244129063981191,
+            -0.5217671880126012
+          ],
+          "bounds_max": [
+            0.5186517985258267,
+            3.213180057674652,
+            0.6454887662815516
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.2519999933242798,
+          "bounds_min": [
+            -0.47727274751652554,
+            -0.0002732183168960116,
+            -0.5948746568612162
+          ],
+          "bounds_max": [
+            0.586250527943926,
+            3.349088022765456,
+            0.5187342508100984
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.8899999761581421,
+          "bounds_min": [
+            -0.704098107014981,
+            0.20293918692238083,
+            -0.263141897111819
+          ],
+          "bounds_max": [
+            0.7671090650925597,
+            3.565547889870764,
+            0.9146182241665498
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "wood-hit",
+      "kind": "effect",
+      "clip_duration": 0.699999988079071,
+      "source_children": [
+        "wood-hit"
+      ],
+      "tracks": 74,
+      "echo_count": 2,
+      "echo_tracks": [
+        74,
+        74
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "wood-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.08399999856948852,
+          "bounds_min": [
+            -0.3821131306008457,
+            -0.23414165237165538,
+            -0.29548929509878563
+          ],
+          "bounds_max": [
+            0.6798313456631533,
+            0.8462315608798344,
+            0.4406923852272039
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.27999999523162844,
+          "bounds_min": [
+            -0.550695913694239,
+            -0.038954007849477466,
+            -0.7515592996328385
+          ],
+          "bounds_max": [
+            1.2041032436047405,
+            1.103295192732127,
+            0.7155350299658741
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.1959999966621399,
+          "bounds_min": [
+            -0.5265827702227841,
+            -0.13623858549522125,
+            -0.5735805004845025
+          ],
+          "bounds_max": [
+            1.1629047323071036,
+            1.0858917067231533,
+            0.6788381231263751
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.689999988079071,
+          "bounds_min": [
+            -0.9972316466564624,
+            -0.002411135455510805,
+            -1.550008546661118
+          ],
+          "bounds_max": [
+            1.5089352007875254,
+            1.114760594070941,
+            1.4806845162821844
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "metal-hit",
+      "kind": "effect",
+      "clip_duration": 0.44999998807907104,
+      "source_children": [
+        "metal-hit"
+      ],
+      "tracks": 92,
+      "echo_count": 1,
+      "echo_tracks": [
+        92
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "metal-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.053999998569488526,
+          "bounds_min": [
+            -0.3870416284379278,
+            -0.25761194687301053,
+            -0.3203757679282962
+          ],
+          "bounds_max": [
+            0.4941906543038196,
+            0.5808119174087063,
+            0.5273968709549492
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.17999999523162843,
+          "bounds_min": [
+            -0.8037697891442158,
+            -0.12587658830015852,
+            -0.7879710982032178
+          ],
+          "bounds_max": [
+            0.7734297339681322,
+            0.7517206868097012,
+            0.9134631575100056
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.1259999966621399,
+          "bounds_min": [
+            -0.6385053351856504,
+            -0.21316486876561702,
+            -0.6166063856687829
+          ],
+          "bounds_max": [
+            0.6812522858839447,
+            0.7180299027004415,
+            0.7656637237002857
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.43999998807907104,
+          "bounds_min": [
+            -1.7722535931088057,
+            -0.00431205394674862,
+            -1.4387531417924653
+          ],
+          "bounds_max": [
+            1.4808452577913067,
+            1.000964889720486,
+            1.6995820415841363
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "fabric-hit",
+      "kind": "effect",
+      "clip_duration": 0.8500000238418579,
+      "source_children": [
+        "fabric-hit"
+      ],
+      "tracks": 34,
+      "echo_count": 1,
+      "echo_tracks": [
+        34
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "fabric-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.10200000286102294,
+          "bounds_min": [
+            -0.42129653352590224,
+            -0.1207528200778585,
+            -0.431793027613858
+          ],
+          "bounds_max": [
+            0.5144271060558919,
+            0.5864194731465909,
+            0.5923556704353217
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.3400000095367432,
+          "bounds_min": [
+            -0.6352352360286986,
+            -0.022780766538446823,
+            -0.4911757582845286
+          ],
+          "bounds_max": [
+            1.0495268191318639,
+            0.8373643814358949,
+            1.1879950557553736
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.23800000667572024,
+          "bounds_min": [
+            -0.6368783943347298,
+            -0.12575951256882673,
+            -0.7073379333791049
+          ],
+          "bounds_max": [
+            0.9758140626236615,
+            0.9743244724673518,
+            1.031474966607531
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.8400000238418579,
+          "bounds_min": [
+            -1.2889572194487928,
+            -0.14245529547848412,
+            -1.4501097756385626
+          ],
+          "bounds_max": [
+            1.4879635335187107,
+            0.03776459994708616,
+            0.5548425263558464
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "armor-hit",
+      "kind": "effect",
+      "clip_duration": 0.6000000238418579,
+      "source_children": [
+        "armor-hit"
+      ],
+      "tracks": 57,
+      "echo_count": 2,
+      "echo_tracks": [
+        57,
+        57
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "armor-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.07200000286102294,
+          "bounds_min": [
+            -0.5915271850358768,
+            -0.27287123061159735,
+            -0.5915271850358768
+          ],
+          "bounds_max": [
+            0.5915271850358768,
+            0.48693794299585896,
+            0.5915271850358768
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.24000000953674316,
+          "bounds_min": [
+            -0.5628476118083623,
+            -0.12350926366931642,
+            -0.5874328012978158
+          ],
+          "bounds_max": [
+            0.4918284893021031,
+            0.5066160763191507,
+            0.6066397529952171
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.16800000667572024,
+          "bounds_min": [
+            -0.6084645840519727,
+            -0.22247627979543796,
+            -0.5540797130517015
+          ],
+          "bounds_max": [
+            0.5540797130517015,
+            0.5406851546496041,
+            0.5709645840519727
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.5900000238418579,
+          "bounds_min": [
+            -1.1043779448288467,
+            -0.0025928567211883787,
+            -1.0377752061978907
+          ],
+          "bounds_max": [
+            0.903340239522337,
+            0.4809226979574322,
+            1.0998682256528576
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "ricochet-hit",
+      "kind": "effect",
+      "clip_duration": 0.5,
+      "source_children": [
+        "ricochet-hit"
+      ],
+      "tracks": 3,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "ricochet-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.06,
+          "bounds_min": [
+            -1.9606258174860853,
+            -0.034615437915939004,
+            -0.6600000330805779
+          ],
+          "bounds_max": [
+            0.48000001221895194,
+            0.5700000092387194,
+            0.7773522318312371
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.2,
+          "bounds_min": [
+            -1.0150632917781879,
+            -0.045000006258487685,
+            -0.014160912168744821
+          ],
+          "bounds_max": [
+            0.01188695287938002,
+            0.28253042066743633,
+            0.40245400640774576
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.14,
+          "bounds_min": [
+            -1.4203043742244292,
+            -0.06999996950229126,
+            -0.18000003308057777
+          ],
+          "bounds_max": [
+            0.16000002016623754,
+            0.3953243069429365,
+            0.5631246744463847
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.49,
+          "bounds_min": [
+            -1.9036139309356273,
+            -0.00003461543972000305,
+            -0.00002735223672166784
+          ],
+          "bounds_max": [
+            0.000022960014523198057,
+            0.5161139912853298,
+            0.32861400581396194
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "weakpoint-hit",
+      "kind": "effect",
+      "clip_duration": 0.800000011920929,
+      "source_children": [
+        "weakpoint-hit"
+      ],
+      "tracks": 40,
+      "echo_count": 2,
+      "echo_tracks": [
+        40,
+        40
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "weakpoint-hit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.09600000143051148,
+          "bounds_min": [
+            -0.7000492910331475,
+            -0.24899998124547956,
+            -0.7000483373587758
+          ],
+          "bounds_max": [
+            0.7000500658935743,
+            0.6089999812454796,
+            0.7000498274749816
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.3200000047683716,
+          "bounds_min": [
+            -1.4067552035457898,
+            -0.06592217369054378,
+            -1.4067531882643927
+          ],
+          "bounds_max": [
+            1.406756791123579,
+            0.7165103573998802,
+            1.4067563803348082
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.22400000333786013,
+          "bounds_min": [
+            -1.2121608521329217,
+            -0.09989737086696132,
+            -1.2121591558169218
+          ],
+          "bounds_max": [
+            1.2121622077358767,
+            0.698388992622931,
+            1.2121618259439604
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.790000011920929,
+          "bounds_min": [
+            -1.7959769242788286,
+            -0.003575490803219904,
+            -1.7959740756735132
+          ],
+          "bounds_max": [
+            1.795979236442341,
+            0.7962517519175643,
+            1.7959785286371839
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "cloud-miss",
+      "kind": "effect",
+      "clip_duration": 1.100000023841858,
+      "source_children": [
+        "cloud-miss"
+      ],
+      "tracks": 20,
+      "echo_count": 2,
+      "echo_tracks": [
+        20,
+        20
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "cloud-miss",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.13200000286102295,
+          "bounds_min": [
+            -0.4764194654404126,
+            -0.2663469317935946,
+            -0.6743258635871408
+          ],
+          "bounds_max": [
+            0.37391051219153537,
+            0.5223469385901661,
+            0.8418805658189082
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.4400000095367432,
+          "bounds_min": [
+            -1.2671794378444132,
+            -0.26141441334422205,
+            -1.253168945352079
+          ],
+          "bounds_max": [
+            1.2148210119816947,
+            0.8761379981939221,
+            1.3742831439416503
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.30800000667572025,
+          "bounds_min": [
+            -0.9120039071391404,
+            -0.2844275281106168,
+            -1.1164332784867246
+          ],
+          "bounds_max": [
+            0.9065128855888228,
+            0.8817608604009515,
+            1.3289835760362192
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 1.090000023841858,
+          "bounds_min": [
+            -1.7948761337228951,
+            0.46933971354658094,
+            -1.8421010010057648
+          ],
+          "bounds_max": [
+            1.656879000900702,
+            1.0574753012111768,
+            2.072043837019962
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "penetration-exit",
+      "kind": "effect",
+      "clip_duration": 0.6499999761581421,
+      "source_children": [
+        "penetration-exit"
+      ],
+      "tracks": 51,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "penetration-exit",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.07799999713897705,
+          "bounds_min": [
+            -0.3892915742511877,
+            -0.17104212372752656,
+            -0.3600150000007124
+          ],
+          "bounds_max": [
+            0.3546990450996598,
+            1.3680569828358542,
+            0.38559950618292893
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.25999999046325684,
+          "bounds_min": [
+            -0.5453561330025466,
+            -0.0422446721070672,
+            -0.6173930991382853
+          ],
+          "bounds_max": [
+            0.5453561330025466,
+            0.6322562089542683,
+            0.5998862204436548
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.1819999933242798,
+          "bounds_min": [
+            -0.5049383665712122,
+            -0.1198598704549789,
+            -0.48786386044143776
+          ],
+          "bounds_max": [
+            0.41484112565127373,
+            0.912512988573837,
+            0.5356049938683282
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.6399999761581421,
+          "bounds_min": [
+            -1.0518092242155173,
+            -0.0027943275103535217,
+            -1.097126372350517
+          ],
+          "bounds_max": [
+            0.8187273296868811,
+            0.8601448300031297,
+            0.9500735249828861
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "small-explosion",
+      "kind": "effect",
+      "clip_duration": 0.800000011920929,
+      "source_children": [
+        "small-explosion"
+      ],
+      "tracks": 67,
+      "echo_count": 2,
+      "echo_tracks": [
+        67,
+        67
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "small-explosion",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.09600000143051148,
+          "bounds_min": [
+            -0.40724541307740303,
+            -0.0992582363029949,
+            -0.41356566604304656
+          ],
+          "bounds_max": [
+            0.43292792639280564,
+            0.5944006406989079,
+            0.43595674120482336
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.3200000047683716,
+          "bounds_min": [
+            -1.0365420805048697,
+            0.0898859794327011,
+            -1.0365420805048697
+          ],
+          "bounds_max": [
+            1.0365420805048697,
+            1.4534948279184694,
+            1.0365420805048697
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.22400000333786013,
+          "bounds_min": [
+            -0.9570272249762696,
+            -0.02168256282392081,
+            -0.9673218745241223
+          ],
+          "bounds_max": [
+            1.0253680789482522,
+            1.4947948953003896,
+            1.029223449546523
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.790000011920929,
+          "bounds_min": [
+            -1.2987607144399915,
+            0.18013811153373158,
+            -1.2672425531066176
+          ],
+          "bounds_max": [
+            1.4063968847956794,
+            2.005169379762767,
+            1.6613016173137212
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "large-explosion",
+      "kind": "effect",
+      "clip_duration": 1.7999999523162842,
+      "source_children": [
+        "large-explosion"
+      ],
+      "tracks": 112,
+      "echo_count": 2,
+      "echo_tracks": [
+        112,
+        112
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "large-explosion",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.2159999942779541,
+          "bounds_min": [
+            -0.8514875086058222,
+            -0.1894415578623791,
+            -0.8590154056989854
+          ],
+          "bounds_max": [
+            0.7588771526036799,
+            1.0190388227668057,
+            0.8465736993349863
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.7199999809265137,
+          "bounds_min": [
+            -2.0133986188741972,
+            0.13598820056517752,
+            -1.9689722557968095
+          ],
+          "bounds_max": [
+            1.926904972019406,
+            2.7265442613436037,
+            1.9982572680179933
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.5039999866485596,
+          "bounds_min": [
+            -2.0190954071530784,
+            -0.045230395147958014,
+            -2.0185402199925164
+          ],
+          "bounds_max": [
+            1.796582022006211,
+            2.5796135748965985,
+            2.006401649514296
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 1.7899999523162842,
+          "bounds_min": [
+            -2.4395070455350867,
+            0.26319890183669614,
+            -2.693975841717257
+          ],
+          "bounds_max": [
+            2.9445746901559904,
+            3.716947509565477,
+            2.410487686745609
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "airburst",
+      "kind": "effect",
+      "clip_duration": 1.2999999523162842,
+      "source_children": [
+        "airburst"
+      ],
+      "tracks": 113,
+      "echo_count": 2,
+      "echo_tracks": [
+        113,
+        113
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "airburst",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.1559999942779541,
+          "bounds_min": [
+            -0.5574369384719667,
+            0.8449246533931538,
+            -0.5772310306882932
+          ],
+          "bounds_max": [
+            0.6460516859180803,
+            2.1525647427474084,
+            0.647655476116594
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.5199999809265137,
+          "bounds_min": [
+            -1.39534502415664,
+            0.14152212386166407,
+            -1.39534502415664
+          ],
+          "bounds_max": [
+            1.514087313496208,
+            3.4357381673265683,
+            1.4911837455649328
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.3639999866485596,
+          "bounds_min": [
+            -1.305454378980751,
+            0.4363340110952332,
+            -1.3591110993615994
+          ],
+          "bounds_max": [
+            1.527948014923926,
+            3.2380867364253483,
+            1.5238547522407244
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 1.2899999523162842,
+          "bounds_min": [
+            -2.242501238929764,
+            0.9272080844876156,
+            -2.143699001501434
+          ],
+          "bounds_max": [
+            1.9012832377199809,
+            4.116767621368688,
+            2.0804468664097735
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "shrapnel-burst",
+      "kind": "effect",
+      "clip_duration": 1.100000023841858,
+      "source_children": [
+        "shrapnel-burst"
+      ],
+      "tracks": 127,
+      "echo_count": 2,
+      "echo_tracks": [
+        127,
+        127
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "shrapnel-burst",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.13200000286102295,
+          "bounds_min": [
+            -0.4759033508758027,
+            0.07140095110695599,
+            -0.5462427358634772
+          ],
+          "bounds_max": [
+            0.5522639724435139,
+            0.8541970498055169,
+            0.503760040702142
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.4400000095367432,
+          "bounds_min": [
+            -1.270909994989759,
+            0.195806082272237,
+            -1.6283267909447148
+          ],
+          "bounds_max": [
+            1.5085356002465082,
+            1.7732488701350806,
+            1.344828737975344
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.30800000667572025,
+          "bounds_min": [
+            -1.1264602261544603,
+            0.13016512332264485,
+            -1.3097917571409006
+          ],
+          "bounds_max": [
+            1.3014832517046164,
+            1.8746690896767673,
+            1.1952321646402297
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 1.090000023841858,
+          "bounds_min": [
+            -2.173267660421285,
+            0.2872201067852649,
+            -2.8496654697827197
+          ],
+          "bounds_max": [
+            2.6549378591492676,
+            2.4421712915722287,
+            2.356367330640587
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "smoke-puff",
+      "kind": "effect",
+      "clip_duration": 1.7999999523162842,
+      "source_children": [
+        "smoke-puff"
+      ],
+      "tracks": 28,
+      "echo_count": 2,
+      "echo_tracks": [
+        28,
+        28
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "smoke-puff",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.2159999942779541,
+          "bounds_min": [
+            -0.4062723642415821,
+            -0.40023999323941756,
+            -0.7037539703929557
+          ],
+          "bounds_max": [
+            0.523954045652673,
+            0.6210698886507149,
+            0.40023999323941756
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.7199999809265137,
+          "bounds_min": [
+            -1.1184621861752824,
+            -0.34072511109103815,
+            -1.5966971162050854
+          ],
+          "bounds_max": [
+            1.3101576648083089,
+            1.85871862958019,
+            1.4889364538821428
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.5039999866485596,
+          "bounds_min": [
+            -0.8765032386856726,
+            -0.5039659687199737,
+            -1.2833753418318157
+          ],
+          "bounds_max": [
+            0.9091345180263086,
+            1.4286166084060183,
+            1.2047992979205522
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 1.7899999523162842,
+          "bounds_min": [
+            -0.5122933557122921,
+            -0.0006400000399351125,
+            -0.8724167074398774
+          ],
+          "bounds_max": [
+            0.5822251067111355,
+            1.3607711572777086,
+            0.9695673868029259
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "steam-vent",
+      "kind": "effect",
+      "clip_duration": 1.5,
+      "source_children": [
+        "steam-vent"
+      ],
+      "tracks": 36,
+      "echo_count": 2,
+      "echo_tracks": [
+        36,
+        36
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "steam-vent",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.18,
+          "bounds_min": [
+            -0.4294889016021874,
+            -2.3841857654804954e-9,
+            -0.34079999923706056
+          ],
+          "bounds_max": [
+            0.3792890426807033,
+            1.550880476488723,
+            0.34079999923706056
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.6000000000000001,
+          "bounds_min": [
+            -1.1662829902663812,
+            -2.3841857654804954e-9,
+            -0.8176362074240364
+          ],
+          "bounds_max": [
+            0.8939965951743517,
+            3.938111129673713,
+            0.7755985525694471
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 0.42000000000000004,
+          "bounds_min": [
+            -0.8740967746978647,
+            -2.3841857654804954e-9,
+            -0.7837110960996221
+          ],
+          "bounds_max": [
+            0.6058929188284035,
+            3.006635852472624,
+            0.6622369790242844
+          ],
+          "echo_visible": 2
+        },
+        {
+          "t": 1.49,
+          "bounds_min": [
+            -0.4294889016021874,
+            -2.3841857654804954e-9,
+            -0.34079999923706056
+          ],
+          "bounds_max": [
+            0.3792890426807033,
+            3.87278828997724,
+            0.34079999923706056
+          ],
+          "echo_visible": 2
+        }
+      ]
+    },
+    {
+      "id": "smoldering-fire",
+      "kind": "effect",
+      "clip_duration": 2.4000000953674316,
+      "source_children": [
+        "smoldering-fire"
+      ],
+      "tracks": 48,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "smoldering-fire",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.28800001144409176,
+          "bounds_min": [
+            -0.7119999809265136,
+            0.06400000143051147,
+            -0.6321133516049384
+          ],
+          "bounds_max": [
+            0.6456928862174109,
+            1.0389608958106271,
+            0.7293264267183274
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.9600000381469727,
+          "bounds_min": [
+            -0.9001245161314964,
+            0.06400000143051147,
+            -0.7680558922473519
+          ],
+          "bounds_max": [
+            0.8536470377106443,
+            2.4579905118979886,
+            0.6908934806296987
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.672000026702881,
+          "bounds_min": [
+            -0.7119999809265136,
+            0.06400000143051147,
+            -0.7147986297987753
+          ],
+          "bounds_max": [
+            0.6456928862174109,
+            1.8869589948823244,
+            0.7844797852034768
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 2.390000095367432,
+          "bounds_min": [
+            -0.7119999809265136,
+            0.06400000143051147,
+            -0.5896544111998033
+          ],
+          "bounds_max": [
+            0.6456928862174109,
+            0.9337559275230741,
+            0.6549112202428076
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "ember-drift",
+      "kind": "effect",
+      "clip_duration": 2,
+      "source_children": [
+        "ember-drift"
+      ],
+      "tracks": 66,
+      "echo_count": 1,
+      "echo_tracks": [
+        66
+      ],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "ember-drift",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.24,
+          "bounds_min": [
+            -0.1806481348597915,
+            0.0798943039939268,
+            -0.23872230850958903
+          ],
+          "bounds_max": [
+            0.30259045210172103,
+            0.7347934870593134,
+            0.2386082773425874
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.8,
+          "bounds_min": [
+            -0.7529926748548708,
+            0.47137994902658426,
+            -0.6352381681233266
+          ],
+          "bounds_max": [
+            0.7468306333710306,
+            1.7709058939901863,
+            0.7789443666332904
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 0.56,
+          "bounds_min": [
+            -0.5947397794579126,
+            0.086347041820681,
+            -0.5362227505957684
+          ],
+          "bounds_max": [
+            0.6118720707984313,
+            1.3798848755868072,
+            0.6409065116385299
+          ],
+          "echo_visible": 1
+        },
+        {
+          "t": 1.99,
+          "bounds_min": [
+            -1.3938597488666804,
+            1.9423450764907635,
+            -1.1192083936348154
+          ],
+          "bounds_max": [
+            1.2757917121604991,
+            3.2800945431176896,
+            1.3217254587248584
+          ],
+          "echo_visible": 1
+        }
+      ]
+    },
+    {
+      "id": "burning-state",
+      "kind": "effect",
+      "clip_duration": 1.5,
+      "source_children": [
+        "burning-state"
+      ],
+      "tracks": 75,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "burning-state",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.18,
+          "bounds_min": [
+            -0.6611332386304947,
+            -0.06166020135062056,
+            -0.7785700093545151
+          ],
+          "bounds_max": [
+            0.581179014083102,
+            1.261192148135107,
+            0.7680005763264581
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.6000000000000001,
+          "bounds_min": [
+            -0.7016632701642316,
+            -0.039505031439903915,
+            -0.7700846716878913
+          ],
+          "bounds_max": [
+            0.7624820453035872,
+            3.108148400452458,
+            0.8555976412737805
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.42000000000000004,
+          "bounds_min": [
+            -0.6692893332470782,
+            -0.07396418061881893,
+            -0.8002250950588896
+          ],
+          "bounds_max": [
+            0.6197136183522078,
+            2.3945133178478777,
+            0.8449940126902385
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.49,
+          "bounds_min": [
+            -0.6649438975949034,
+            -0.04021448727661692,
+            -0.7308770581710209
+          ],
+          "bounds_max": [
+            0.5220857248291909,
+            1.820484292984029,
+            0.6470912205340188
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "heavy-smoke-state",
+      "kind": "effect",
+      "clip_duration": 3,
+      "source_children": [
+        "heavy-smoke-state"
+      ],
+      "tracks": 53,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "heavy-smoke-state",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.36,
+          "bounds_min": [
+            -0.6351008084201141,
+            -0.08003346576152659,
+            -0.5700182810828763
+          ],
+          "bounds_max": [
+            0.6557906141010419,
+            1.581140497074332,
+            0.5922221227891211
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.2000000000000002,
+          "bounds_min": [
+            -1.2240369877646349,
+            -0.08962943945848945,
+            -1.3437125605362226
+          ],
+          "bounds_max": [
+            1.43930871562074,
+            3.667895296967693,
+            1.2297357089747936
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.8400000000000001,
+          "bounds_min": [
+            -0.8569370165724057,
+            -0.1001406004428041,
+            -1.0690474375780756
+          ],
+          "bounds_max": [
+            1.1732500452708114,
+            2.8786770370153425,
+            1.031899635562378
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 2.99,
+          "bounds_min": [
+            -0.5529081214339908,
+            -0.06655133120525575,
+            -0.5087371660180371
+          ],
+          "bounds_max": [
+            0.5534315589352425,
+            1.1171564454809553,
+            0.5089788077068544
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "gas-leak-state",
+      "kind": "effect",
+      "clip_duration": 2,
+      "source_children": [
+        "gas-leak-state"
+      ],
+      "tracks": 41,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "gas-leak-state",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.24,
+          "bounds_min": [
+            -0.18719999194145204,
+            2.3245811525685056e-9,
+            -0.2532593208081172
+          ],
+          "bounds_max": [
+            0.6584572816708839,
+            0.6650596482047925,
+            0.4137095460501586
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.8,
+          "bounds_min": [
+            -0.18719999194145204,
+            2.3245811525685056e-9,
+            -0.8687852941269865
+          ],
+          "bounds_max": [
+            1.9128330847480428,
+            1.5459892179159307,
+            1.1882694232955182
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.56,
+          "bounds_min": [
+            -0.18719999194145204,
+            2.3245811525685056e-9,
+            -0.7488306940279736
+          ],
+          "bounds_max": [
+            1.4836502267623755,
+            1.2196375665801389,
+            0.924636119867734
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.99,
+          "bounds_min": [
+            -0.18719999194145204,
+            2.3245811525685056e-9,
+            -0.18719999194145204
+          ],
+          "bounds_max": [
+            0.6274346124594874,
+            0.598478092374609,
+            0.31893730556634203
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "overheat-state",
+      "kind": "effect",
+      "clip_duration": 1.2000000476837158,
+      "source_children": [
+        "overheat-state"
+      ],
+      "tracks": 20,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "overheat-state",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.14400000572204588,
+          "bounds_min": [
+            -0.39000001549720764,
+            0.02600000348687173,
+            -0.39000001549720764
+          ],
+          "bounds_max": [
+            0.39000001549720764,
+            0.6293207433760242,
+            0.39000001549720764
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.48000001907348633,
+          "bounds_min": [
+            -0.45562505798679287,
+            0.02600000348687173,
+            -0.39000001549720764
+          ],
+          "bounds_max": [
+            0.5446964620375138,
+            1.8601426315657361,
+            0.39000001549720764
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.3360000133514405,
+          "bounds_min": [
+            -0.39123595595719196,
+            0.02600000348687173,
+            -0.39000001549720764
+          ],
+          "bounds_max": [
+            0.41972519503110417,
+            1.4189995261032402,
+            0.39000001549720764
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.1900000476837158,
+          "bounds_min": [
+            -0.39000001549720764,
+            0.02600000348687173,
+            -0.39000001549720764
+          ],
+          "bounds_max": [
+            0.39000001549720764,
+            1.3508488035722277,
+            0.39000001549720764
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "short-circuit-state",
+      "kind": "effect",
+      "clip_duration": 0.800000011920929,
+      "source_children": [
+        "short-circuit-state"
+      ],
+      "tracks": 35,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "short-circuit-state",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.09600000143051148,
+          "bounds_min": [
+            -0.39000001549720764,
+            -9.685754837063243e-10,
+            -0.19500000774860382
+          ],
+          "bounds_max": [
+            0.39000001549720764,
+            0.39018616626274905,
+            0.19500000774860382
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.3200000047683716,
+          "bounds_min": [
+            -0.39000001549720764,
+            -9.685754837063243e-10,
+            -0.34123375413681956
+          ],
+          "bounds_max": [
+            0.39000001549720764,
+            1.38845164901715,
+            0.41064358039676774
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.22400000333786013,
+          "bounds_min": [
+            -0.39000001549720764,
+            -9.685754837063243e-10,
+            -0.264504610962107
+          ],
+          "bounds_max": [
+            0.39000001549720764,
+            1.1275106566400392,
+            0.2844087260883579
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.790000011920929,
+          "bounds_min": [
+            -0.39000001549720764,
+            -9.685754837063243e-10,
+            -0.19500000774860382
+          ],
+          "bounds_max": [
+            0.39000001549720764,
+            1.2308522940499977,
+            0.19500000774860382
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "engine-stall-state",
+      "kind": "effect",
+      "clip_duration": 2.200000047683716,
+      "source_children": [
+        "engine-stall-state"
+      ],
+      "tracks": 25,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "engine-stall-state",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.2640000057220459,
+          "bounds_min": [
+            -0.4680000185966492,
+            -0.21012066515096267,
+            -0.3796685068424328
+          ],
+          "bounds_max": [
+            0.6690879879126516,
+            0.9946339561463087,
+            0.4654676888585091
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.8800000190734864,
+          "bounds_min": [
+            -0.6517891055276046,
+            -0.2443114676508263,
+            -1.1621010481200331
+          ],
+          "bounds_max": [
+            0.5178323772391396,
+            1.4938006900398202,
+            0.4654676888585091
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.6160000133514405,
+          "bounds_min": [
+            -0.6126973626639896,
+            -0.252040489745285,
+            -0.8090020577089609
+          ],
+          "bounds_max": [
+            0.5972702422914247,
+            0.9871625438483388,
+            0.4654676888585091
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 2.190000047683716,
+          "bounds_min": [
+            -0.5893928615505777,
+            -0.0454999860525131,
+            -0.47007105667141275
+          ],
+          "bounds_max": [
+            0.6188094398222878,
+            1.0847780403129457,
+            0.4654676888585091
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "envelope-rupture-state",
+      "kind": "effect",
+      "clip_duration": 1.399999976158142,
+      "source_children": [
+        "envelope-rupture-state"
+      ],
+      "tracks": 49,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "envelope-rupture-state",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.16799999713897704,
+          "bounds_min": [
+            -0.5812659793347961,
+            0.7077962836262515,
+            -0.4549999922513962
+          ],
+          "bounds_max": [
+            0.5812659793347961,
+            1.0428619470132037,
+            0.4549999922513962
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.5599999904632569,
+          "bounds_min": [
+            -0.8053342438061846,
+            0.7114300554689645,
+            -0.7301978522312376
+          ],
+          "bounds_max": [
+            0.8254248996507879,
+            2.452363106757172,
+            0.6868251897333033
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.3919999933242798,
+          "bounds_min": [
+            -0.6889017519129321,
+            0.7054268526293634,
+            -0.5863318215552245
+          ],
+          "bounds_max": [
+            0.6889017519129321,
+            1.867488149462465,
+            0.590003851057022
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.389999976158142,
+          "bounds_min": [
+            -1.3650204156282946,
+            0.26091724993761023,
+            -1.170185548472364
+          ],
+          "bounds_max": [
+            1.3652468821847772,
+            2.7953221822804917,
+            1.1702187669916897
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "module-detach-state",
+      "kind": "effect",
+      "clip_duration": 1,
+      "source_children": [
+        "module-detach-state"
+      ],
+      "tracks": 39,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "module-detach-state",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.12,
+          "bounds_min": [
+            -0.4029999982565642,
+            -0.000365065245032742,
+            -0.4029999982565642
+          ],
+          "bounds_max": [
+            0.4283557642706136,
+            1.0219478919446732,
+            0.4029999982565642
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.4,
+          "bounds_min": [
+            -0.5383624234035429,
+            0.026000001743435863,
+            -0.6289825233570018
+          ],
+          "bounds_max": [
+            0.9290612090303699,
+            1.4117591689975848,
+            0.7532398129906719
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.28,
+          "bounds_min": [
+            -0.4029999982565642,
+            -0.00023663771651771733,
+            -0.4637465101912854
+          ],
+          "bounds_max": [
+            0.7558603039418181,
+            1.4331693107001455,
+            0.6128998130200058
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.99,
+          "bounds_min": [
+            -0.8817419839857302,
+            0.026000001743435863,
+            -0.9906741939886409
+          ],
+          "bounds_max": [
+            1.300365338703393,
+            0.9103555914576092,
+            0.9873888375081498
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "shield-pulse",
+      "kind": "effect",
+      "clip_duration": 1.100000023841858,
+      "source_children": [
+        "shield-pulse"
+      ],
+      "tracks": 4,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "shield-pulse",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.13200000286102295,
+          "bounds_min": [
+            -0.8162700052373519,
+            0.048229998877332994,
+            -0.8162700052373519
+          ],
+          "bounds_max": [
+            0.8162700052373519,
+            0.8808799863624577,
+            0.9490325000020279
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.4400000095367432,
+          "bounds_min": [
+            -1.1794268652450144,
+            0.06968742698088357,
+            -1.1794268652450144
+          ],
+          "bounds_max": [
+            1.1794268652450144,
+            1.2727816951578996,
+            1.1794268652450144
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.30800000667572025,
+          "bounds_min": [
+            -1.096134028552479,
+            0.06476599976391417,
+            -1.096134028552479
+          ],
+          "bounds_max": [
+            1.096134028552479,
+            1.1828960049095163,
+            1.096134028552479
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.090000023841858,
+          "bounds_min": [
+            -0.0443444146172914,
+            0.00262012698431331,
+            -0.0443444146172914
+          ],
+          "bounds_max": [
+            0.3645291000319497,
+            0.6765291000319498,
+            0.9490325000020279
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "armor-block",
+      "kind": "effect",
+      "clip_duration": 0.550000011920929,
+      "source_children": [
+        "armor-block"
+      ],
+      "tracks": 42,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "armor-block",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.06600000143051148,
+          "bounds_min": [
+            -0.4897408914856476,
+            -0.012238882420874536,
+            -0.35750000774860385
+          ],
+          "bounds_max": [
+            0.4897408914856476,
+            0.4174072712294813,
+            0.35750000774860385
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.2200000047683716,
+          "bounds_min": [
+            -0.8526228666176989,
+            0.005092326705742969,
+            -0.8611039745511737
+          ],
+          "bounds_max": [
+            0.7141804004663689,
+            0.5306638810375099,
+            0.8069567207133402
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.15400000333786013,
+          "bounds_min": [
+            -0.6923252076121876,
+            0.033694459187028736,
+            -0.7261409653270074
+          ],
+          "bounds_max": [
+            0.6249575943498769,
+            0.6237050611169974,
+            0.6627008873257937
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.540000011920929,
+          "bounds_min": [
+            -1.2410936133712156,
+            0.00008461096033459173,
+            -1.2525906234556357
+          ],
+          "bounds_max": [
+            1.0959869779961326,
+            0.24001980850176735,
+            1.2897337891487282
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "repair-stitch",
+      "kind": "effect",
+      "clip_duration": 2,
+      "source_children": [
+        "repair-stitch"
+      ],
+      "tracks": 14,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "repair-stitch",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.24,
+          "bounds_min": [
+            -0.5849999914765358,
+            0.00007941527967357922,
+            -0.5200000077486039
+          ],
+          "bounds_max": [
+            0.5849999914765358,
+            0.3540333337498208,
+            0.5200000077486039
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.8,
+          "bounds_min": [
+            -0.5849999914765358,
+            0.00007941527967357922,
+            -0.5200000077486039
+          ],
+          "bounds_max": [
+            0.5849999914765358,
+            0.3756999964614713,
+            0.5200000077486039
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.56,
+          "bounds_min": [
+            -0.5849999914765358,
+            0.00007941527967357922,
+            -0.5200000077486039
+          ],
+          "bounds_max": [
+            0.5849999914765358,
+            0.3757000003357727,
+            0.5200000077486039
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.99,
+          "bounds_min": [
+            -0.5849999914765358,
+            0.0001712369343611256,
+            -0.5200000077486039
+          ],
+          "bounds_max": [
+            0.5849999914765358,
+            0.292450191262429,
+            0.6213489613570511
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "healing-pulse",
+      "kind": "effect",
+      "clip_duration": 1.7999999523162842,
+      "source_children": [
+        "healing-pulse"
+      ],
+      "tracks": 20,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "healing-pulse",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.2159999942779541,
+          "bounds_min": [
+            -0.5647384411087581,
+            0.051967498835681476,
+            -0.6083997993045712
+          ],
+          "bounds_max": [
+            0.6357166365914775,
+            0.39326726709907045,
+            0.6063006459385851
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.7199999809265137,
+          "bounds_min": [
+            -0.7464242629679211,
+            0.4979631735249744,
+            -0.7464242629679211
+          ],
+          "bounds_max": [
+            0.7464242629679211,
+            1.1920174999484021,
+            0.7464242629679211
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.5039999866485596,
+          "bounds_min": [
+            -0.7060510245351921,
+            0.08627483325943439,
+            -0.7060510245351921
+          ],
+          "bounds_max": [
+            0.7060510245351921,
+            0.9352251349738281,
+            0.7060510245351921
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.7899999523162842,
+          "bounds_min": [
+            -0.28120956655882984,
+            1.8169228494576337,
+            -0.3042222930365467
+          ],
+          "bounds_max": [
+            0.3121072792663494,
+            2.0830771505423664,
+            0.3042222930365467
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "salvage-tether",
+      "kind": "effect",
+      "clip_duration": 2,
+      "source_children": [
+        "salvage-tether"
+      ],
+      "tracks": 16,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "salvage-tether",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.24,
+          "bounds_min": [
+            -0.28275000193715094,
+            -7.748603703117141e-10,
+            -0.2079999953508377
+          ],
+          "bounds_max": [
+            0.28275000193715094,
+            0.4058197634220124,
+            0.7800055072427717
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.8,
+          "bounds_min": [
+            -0.28275000193715094,
+            -7.748603703117141e-10,
+            -0.2079999953508377
+          ],
+          "bounds_max": [
+            0.28275000193715094,
+            0.4058197634220124,
+            1.8406261348215882
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.56,
+          "bounds_min": [
+            -0.28275000193715094,
+            -7.748603703117141e-10,
+            -0.2079999953508377
+          ],
+          "bounds_max": [
+            0.28275000193715094,
+            0.4058197634220124,
+            1.3860744372878095
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 1.99,
+          "bounds_min": [
+            -0.28275000193715094,
+            -7.748603703117141e-10,
+            -0.2079999953508377
+          ],
+          "bounds_max": [
+            0.28275000193715094,
+            0.4058197634220124,
+            0.23402694614661734
+          ],
+          "echo_visible": 0
+        }
+      ]
+    },
+    {
+      "id": "mount-lock",
+      "kind": "effect",
+      "clip_duration": 1,
+      "source_children": [
+        "mount-lock"
+      ],
+      "tracks": 10,
+      "echo_count": 0,
+      "echo_tracks": [],
+      "sample_count": 10,
+      "original_diff": 0,
+      "projectile_path_diff": 0,
+      "wrapper_anchors": [
+        {
+          "id": "mount-lock",
+          "role": "effect",
+          "node": "AuxScene",
+          "anchor_position": [
+            0,
+            0,
+            0
+          ],
+          "part_position": [
+            0,
+            0,
+            0
+          ],
+          "part_quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "finite": true,
+      "phases": [
+        {
+          "t": 0.12,
+          "bounds_min": [
+            -1.0952499644169584,
+            0.00012740000620614736,
+            -1.121249965579249
+          ],
+          "bounds_max": [
+            1.0952499644169584,
+            0.35100000658631325,
+            1.0952499644169584
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.4,
+          "bounds_min": [
+            -0.7767499957745895,
+            0.00012740000620614736,
+            -0.80274999693688
+          ],
+          "bounds_max": [
+            0.7767499957745895,
+            0.35100000658631325,
+            0.7767499957745895
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.28,
+          "bounds_min": [
+            -0.9132499823356046,
+            0.00012740000620614736,
+            -0.9392499834978951
+          ],
+          "bounds_max": [
+            0.9132499823356046,
+            0.35100000658631325,
+            0.9132499823356046
+          ],
+          "echo_visible": 0
+        },
+        {
+          "t": 0.99,
+          "bounds_min": [
+            -0.7085000216960907,
+            0.00012740000620614736,
+            -0.7085000216960907
+          ],
+          "bounds_max": [
+            0.7085000216960907,
+            0.35100000658631325,
+            0.7085000216960907
+          ],
+          "echo_visible": 0
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "ui_static": {
+    "missing_literal_ids": [],
+    "duplicate_ids": [],
+    "single_lane_css": true,
+    "view_pressed_update": true,
+    "board_cleanup": true,
+    "findings": [],
+    "resolved_during_review": [
+      "Standalone target geometry/material cleanup now owned by lane.board cleanup.",
+      "data-view pressed states now synchronized by setFocus; reset clears autoRotate pressed state."
+    ]
+  },
+  "compare_viewport_static_spy": {
+    "viewport": {
+      "width": 1600,
+      "height": 680
+    },
+    "original": {
+      "scene_order": [
+        0
+      ],
+      "viewports": [
+        [
+          0,
+          0,
+          1600,
+          680
+        ]
+      ]
+    },
+    "rich": {
+      "scene_order": [
+        1
+      ],
+      "viewports": [
+        [
+          0,
+          0,
+          1600,
+          680
+        ]
+      ]
+    },
+    "compare": {
+      "scene_order": [
+        0,
+        1
+      ],
+      "viewports": [
+        [
+          0,
+          0,
+          800,
+          680
+        ],
+        [
+          800,
+          0,
+          800,
+          680
+        ]
+      ],
+      "same_camera": true
+    }
+  },
+  "reviewed_sources": [
+    {
+      "path": "tools/combat-vfx-v2/review-v1/viewer.js",
+      "bytes": 17440,
+      "sha256": "48b1e4df6966a7c573df6a2986ad34c0bd60c0a4df9f884e4686261215e23245"
+    },
+    {
+      "path": "tools/combat-vfx-v2/review-v1/build.cjs",
+      "bytes": 3062,
+      "sha256": "b09c44e1f3beda818ebb903143971d9c97044b3b56288c0fe3a4423761e4968c"
+    },
+    {
+      "path": "tools/combat-vfx-v2/review-v1/template.html",
+      "bytes": 19321,
+      "sha256": "ef0b8059ea5095ab20f61afb81fb712b4a298faf601559ba4fa292a9fc9116b6"
+    }
+  ],
+  "limits": [
+    "Geometry-only GLTFLoader/AnimationMixer check; textures were omitted only in temporary in-memory copies.",
+    "No browser or fresh render: actual appearance, external requests, mobile, rotation ghosting and texture upload remain unverified.",
+    "The source workbench loads54v1 originals: sequence previews contain weapon/target but do not include an actual airship."
+  ],
+  "method": "Actual GLB geometry/animation load with texture-free in-memory copies; no browser or visual approval"
+}

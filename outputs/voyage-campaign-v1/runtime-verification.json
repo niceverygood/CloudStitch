@@ -1,0 +1,980 @@
+{
+  "version": "voyage-campaign-v1",
+  "revision": 2,
+  "passed": true,
+  "sourceManifestSha256": "3179f3617d2ef0258017ad9efd5ac83696202c80eac21eda119bea7820bc312a",
+  "checks": [
+    "locked-next-stage",
+    "actual-early-retreat-does-not-unlock",
+    "real-safe-legacy-import-and-failure-preserve-source",
+    "actual-defeat-retry-keeps-same-voyage-assets-and-progress",
+    "actual-victory-return-save-failure-retries-one-atomic-completion"
+  ],
+  "voyages": [
+    {
+      "stage": 1,
+      "mapId": "map-01-harbor",
+      "voyageId": "example-captain:voyage-1",
+      "steps": 467,
+      "proof": {
+        "version": "campaign-input-pilot-1",
+        "done": true,
+        "returned": true,
+        "stageCleared": true,
+        "saved": false,
+        "reason": "settlement-save-failed",
+        "voyageId": "example-captain:voyage-1",
+        "steps": 467,
+        "calls": 469,
+        "simulatedSeconds": 23.350000000000197,
+        "observed": {
+          "shots": 86,
+          "hits": 77,
+          "obstacleHits": 4,
+          "detached": 6,
+          "recovered": 1,
+          "enemyShots": 4,
+          "damage": 9
+        },
+        "visited": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "transitions": [
+          {
+            "phase": "opening",
+            "time": 0
+          },
+          {
+            "phase": "midboss",
+            "time": 6.349999999999985
+          },
+          {
+            "phase": "maintenance",
+            "time": 9.45
+          },
+          {
+            "phase": "late",
+            "time": 9.45
+          },
+          {
+            "phase": "finalboss",
+            "time": 13.900000000000063
+          },
+          {
+            "phase": "victory",
+            "time": 19.95000000000015
+          }
+        ],
+        "kills": [
+          {
+            "enemyId": "encounter-1-stage-01-harbor-opening-0",
+            "time": 7.316666666666646
+          },
+          {
+            "enemyId": "encounter-1-stage-01-harbor-opening-1",
+            "time": 10.633333333333441
+          },
+          {
+            "enemyId": "encounter-1-stage-01-harbor-midboss-0",
+            "time": 13.716666666666928
+          },
+          {
+            "enemyId": "encounter-1-stage-01-harbor-late-0",
+            "time": 15.850000000000367
+          },
+          {
+            "enemyId": "encounter-1-stage-01-harbor-late-1",
+            "time": 18.183333333333582
+          },
+          {
+            "enemyId": "encounter-1-stage-01-harbor-finalboss-0",
+            "time": 24.23333333333324
+          }
+        ],
+        "commands": [
+          {
+            "type": "maintenance",
+            "ok": true,
+            "time": 9.45,
+            "reason": null
+          },
+          {
+            "type": "salvage",
+            "ok": true,
+            "time": 20.65000000000016,
+            "reason": null
+          },
+          {
+            "type": "return",
+            "ok": false,
+            "time": 23.350000000000197,
+            "reason": "저장하지 못했습니다. 현재 세션을 유지하며 마지막 정상 저장을 보존했습니다."
+          }
+        ],
+        "finalStage": {
+          "stageId": "stage-01-harbor",
+          "phase": "victory",
+          "runId": 1,
+          "activeEnemyIds": [],
+          "bossSpawnCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          },
+          "bossDefeatCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          }
+        },
+        "diagnostic": {
+          "phase": "harbor",
+          "stagePhase": "victory",
+          "currentStage": 0,
+          "hp": 91,
+          "cargoWeight": 4,
+          "weight": 54,
+          "lift": 65,
+          "outcome": "victory",
+          "endReason": "battle-cleared",
+          "targetId": "encounter-1-stage-01-harbor-finalboss-0",
+          "remaining": [],
+          "settlementsBefore": 0,
+          "settlementsAfter": 1,
+          "status": "저장하지 못했습니다. 현재 세션을 유지하며 마지막 정상 저장을 보존했습니다."
+        },
+        "commandReason": "저장하지 못했습니다. 현재 세션을 유지하며 마지막 정상 저장을 보존했습니다."
+      },
+      "damagePreludeSteps": 86,
+      "repairCost": 3,
+      "resourcesBefore": {
+        "S": 120,
+        "F": 40,
+        "C": 2
+      },
+      "resourcesAfter": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 7,
+      "equippedId": "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-0:main-engine"
+    },
+    {
+      "stage": 2,
+      "mapId": "map-02-canyon",
+      "voyageId": "example-captain:voyage-2",
+      "steps": 571,
+      "proof": {
+        "version": "campaign-input-pilot-1",
+        "done": true,
+        "returned": true,
+        "stageCleared": true,
+        "saved": true,
+        "reason": null,
+        "voyageId": "example-captain:voyage-2",
+        "steps": 571,
+        "calls": 573,
+        "simulatedSeconds": 28.55000000000027,
+        "observed": {
+          "shots": 105,
+          "hits": 91,
+          "obstacleHits": 8,
+          "detached": 8,
+          "recovered": 0,
+          "enemyShots": 4,
+          "damage": 0
+        },
+        "visited": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "transitions": [
+          {
+            "phase": "opening",
+            "time": 0
+          },
+          {
+            "phase": "midboss",
+            "time": 9.299999999999997
+          },
+          {
+            "phase": "maintenance",
+            "time": 13.300000000000054
+          },
+          {
+            "phase": "late",
+            "time": 13.300000000000054
+          },
+          {
+            "phase": "finalboss",
+            "time": 22.350000000000183
+          },
+          {
+            "phase": "victory",
+            "time": 24.500000000000213
+          }
+        ],
+        "kills": [
+          {
+            "enemyId": "encounter-1-stage-02-canyon-opening-0",
+            "time": 3.016666666666661
+          },
+          {
+            "enemyId": "encounter-1-stage-02-canyon-opening-1",
+            "time": 6.183333333333317
+          },
+          {
+            "enemyId": "encounter-1-stage-02-canyon-opening-2",
+            "time": 9.283333333333374
+          },
+          {
+            "enemyId": "encounter-1-stage-02-canyon-midboss-0",
+            "time": 13.283333333333573
+          },
+          {
+            "enemyId": "encounter-1-stage-02-canyon-late-0",
+            "time": 16.31666666666702
+          },
+          {
+            "enemyId": "encounter-1-stage-02-canyon-late-1",
+            "time": 18.73333333333355
+          },
+          {
+            "enemyId": "encounter-1-stage-02-canyon-late-2",
+            "time": 22.350000000000012
+          },
+          {
+            "enemyId": "encounter-1-stage-02-canyon-finalboss-0",
+            "time": 24.483333333333224
+          }
+        ],
+        "commands": [
+          {
+            "type": "maintenance",
+            "ok": true,
+            "time": 13.300000000000054,
+            "reason": null
+          },
+          {
+            "type": "return",
+            "ok": true,
+            "time": 28.55000000000027,
+            "reason": null
+          }
+        ],
+        "finalStage": {
+          "stageId": "stage-02-canyon",
+          "phase": "victory",
+          "runId": 1,
+          "activeEnemyIds": [],
+          "bossSpawnCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          },
+          "bossDefeatCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          }
+        },
+        "diagnostic": {
+          "phase": "harbor",
+          "stagePhase": "victory",
+          "currentStage": 1,
+          "hp": 100,
+          "cargoWeight": 0,
+          "weight": 52,
+          "lift": 65,
+          "outcome": "victory",
+          "endReason": "battle-cleared",
+          "targetId": "encounter-1-stage-02-canyon-finalboss-0",
+          "remaining": [],
+          "settlementsBefore": 1,
+          "settlementsAfter": 2,
+          "status": "항로 완료와 귀환 정산을 함께 저장했습니다. 정비 후 다음 항로로 이동하세요."
+        }
+      },
+      "damagePreludeSteps": 0,
+      "repairCost": 0,
+      "resourcesBefore": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "resourcesAfter": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 7,
+      "equippedId": "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-0:main-engine"
+    },
+    {
+      "stage": 3,
+      "mapId": "map-03-storm",
+      "voyageId": "example-captain:voyage-3",
+      "steps": 632,
+      "proof": {
+        "version": "campaign-input-pilot-1",
+        "done": true,
+        "returned": true,
+        "stageCleared": true,
+        "saved": true,
+        "reason": null,
+        "voyageId": "example-captain:voyage-3",
+        "steps": 632,
+        "calls": 634,
+        "simulatedSeconds": 31.600000000000314,
+        "observed": {
+          "shots": 118,
+          "hits": 106,
+          "obstacleHits": 1,
+          "detached": 8,
+          "recovered": 1,
+          "enemyShots": 6,
+          "damage": 0
+        },
+        "visited": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "transitions": [
+          {
+            "phase": "opening",
+            "time": 0
+          },
+          {
+            "phase": "midboss",
+            "time": 9.5
+          },
+          {
+            "phase": "maintenance",
+            "time": 13.450000000000056
+          },
+          {
+            "phase": "late",
+            "time": 13.450000000000056
+          },
+          {
+            "phase": "finalboss",
+            "time": 22.05000000000018
+          },
+          {
+            "phase": "victory",
+            "time": 27.400000000000254
+          }
+        ],
+        "kills": [
+          {
+            "enemyId": "encounter-1-stage-03-storm-opening-0",
+            "time": 3.0333333333333274
+          },
+          {
+            "enemyId": "encounter-1-stage-03-storm-opening-1",
+            "time": 6.399999999999983
+          },
+          {
+            "enemyId": "encounter-1-stage-03-storm-opening-2",
+            "time": 9.500000000000052
+          },
+          {
+            "enemyId": "encounter-1-stage-03-storm-midboss-0",
+            "time": 13.43333333333358
+          },
+          {
+            "enemyId": "encounter-1-stage-03-storm-late-0",
+            "time": 15.50000000000035
+          },
+          {
+            "enemyId": "encounter-1-stage-03-storm-late-1",
+            "time": 18.716666666666885
+          },
+          {
+            "enemyId": "encounter-1-stage-03-storm-late-2",
+            "time": 22.016666666666698
+          },
+          {
+            "enemyId": "encounter-1-stage-03-storm-finalboss-0",
+            "time": 27.399999999999725
+          }
+        ],
+        "commands": [
+          {
+            "type": "maintenance",
+            "ok": true,
+            "time": 13.450000000000056,
+            "reason": null
+          },
+          {
+            "type": "salvage",
+            "ok": true,
+            "time": 28.200000000000266,
+            "reason": null
+          },
+          {
+            "type": "return",
+            "ok": true,
+            "time": 31.600000000000314,
+            "reason": null
+          }
+        ],
+        "finalStage": {
+          "stageId": "stage-03-storm",
+          "phase": "victory",
+          "runId": 1,
+          "activeEnemyIds": [],
+          "bossSpawnCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          },
+          "bossDefeatCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          }
+        },
+        "diagnostic": {
+          "phase": "harbor",
+          "stagePhase": "victory",
+          "currentStage": 2,
+          "hp": 100,
+          "cargoWeight": 7,
+          "weight": 59,
+          "lift": 65,
+          "outcome": "victory",
+          "endReason": "battle-cleared",
+          "targetId": "encounter-1-stage-03-storm-finalboss-0",
+          "remaining": [],
+          "settlementsBefore": 2,
+          "settlementsAfter": 3,
+          "status": "항로 완료와 귀환 정산을 함께 저장했습니다. 정비 후 다음 항로로 이동하세요."
+        }
+      },
+      "damagePreludeSteps": 0,
+      "repairCost": 0,
+      "resourcesBefore": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "resourcesAfter": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 10,
+      "equippedId": "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-0:main-engine"
+    },
+    {
+      "stage": 4,
+      "mapId": "map-04-industry",
+      "voyageId": "example-captain:voyage-4",
+      "steps": 678,
+      "proof": {
+        "version": "campaign-input-pilot-1",
+        "done": true,
+        "returned": true,
+        "stageCleared": true,
+        "saved": true,
+        "reason": null,
+        "voyageId": "example-captain:voyage-4",
+        "steps": 678,
+        "calls": 680,
+        "simulatedSeconds": 33.90000000000021,
+        "observed": {
+          "shots": 122,
+          "hits": 98,
+          "obstacleHits": 8,
+          "detached": 9,
+          "recovered": 1,
+          "enemyShots": 2,
+          "damage": 0
+        },
+        "visited": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "transitions": [
+          {
+            "phase": "opening",
+            "time": 0
+          },
+          {
+            "phase": "midboss",
+            "time": 9.299999999999997
+          },
+          {
+            "phase": "maintenance",
+            "time": 13.300000000000054
+          },
+          {
+            "phase": "late",
+            "time": 13.300000000000054
+          },
+          {
+            "phase": "finalboss",
+            "time": 23.6500000000002
+          },
+          {
+            "phase": "victory",
+            "time": 28.250000000000266
+          }
+        ],
+        "kills": [
+          {
+            "enemyId": "encounter-1-stage-04-industry-opening-1",
+            "time": 3.049999999999994
+          },
+          {
+            "enemyId": "encounter-1-stage-04-industry-opening-0",
+            "time": 6.283333333333316
+          },
+          {
+            "enemyId": "encounter-1-stage-04-industry-opening-2",
+            "time": 9.283333333333374
+          },
+          {
+            "enemyId": "encounter-1-stage-04-industry-midboss-0",
+            "time": 13.283333333333573
+          },
+          {
+            "enemyId": "encounter-1-stage-04-industry-late-0",
+            "time": 15.383333333333677
+          },
+          {
+            "enemyId": "encounter-1-stage-04-industry-late-3",
+            "time": 17.53333333333362
+          },
+          {
+            "enemyId": "encounter-1-stage-04-industry-late-1",
+            "time": 21.200000000000077
+          },
+          {
+            "enemyId": "encounter-1-stage-04-industry-late-2",
+            "time": 23.649999999999938
+          },
+          {
+            "enemyId": "encounter-1-stage-04-industry-finalboss-0",
+            "time": 28.216666666666345
+          }
+        ],
+        "commands": [
+          {
+            "type": "maintenance",
+            "ok": true,
+            "time": 13.300000000000054,
+            "reason": null
+          },
+          {
+            "type": "salvage",
+            "ok": true,
+            "time": 29.30000000000028,
+            "reason": null
+          },
+          {
+            "type": "return",
+            "ok": true,
+            "time": 33.90000000000021,
+            "reason": null
+          }
+        ],
+        "finalStage": {
+          "stageId": "stage-04-industry",
+          "phase": "victory",
+          "runId": 1,
+          "activeEnemyIds": [],
+          "bossSpawnCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          },
+          "bossDefeatCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          }
+        },
+        "diagnostic": {
+          "phase": "harbor",
+          "stagePhase": "victory",
+          "currentStage": 3,
+          "hp": 100,
+          "cargoWeight": 7,
+          "weight": 59,
+          "lift": 65,
+          "outcome": "victory",
+          "endReason": "battle-cleared",
+          "targetId": "encounter-1-stage-04-industry-finalboss-0",
+          "remaining": [],
+          "settlementsBefore": 3,
+          "settlementsAfter": 4,
+          "status": "항로 완료와 귀환 정산을 함께 저장했습니다. 정비 후 다음 항로로 이동하세요."
+        }
+      },
+      "damagePreludeSteps": 0,
+      "repairCost": 0,
+      "resourcesBefore": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "resourcesAfter": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 13,
+      "equippedId": "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-0:main-engine"
+    },
+    {
+      "stage": 5,
+      "mapId": "map-05-fog",
+      "voyageId": "example-captain:voyage-5",
+      "steps": 681,
+      "proof": {
+        "version": "campaign-input-pilot-1",
+        "done": true,
+        "returned": true,
+        "stageCleared": true,
+        "saved": true,
+        "reason": null,
+        "voyageId": "example-captain:voyage-5",
+        "steps": 681,
+        "calls": 683,
+        "simulatedSeconds": 34.0500000000002,
+        "observed": {
+          "shots": 125,
+          "hits": 111,
+          "obstacleHits": 5,
+          "detached": 9,
+          "recovered": 1,
+          "enemyShots": 5,
+          "damage": 0
+        },
+        "visited": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "transitions": [
+          {
+            "phase": "opening",
+            "time": 0
+          },
+          {
+            "phase": "midboss",
+            "time": 9.349999999999998
+          },
+          {
+            "phase": "maintenance",
+            "time": 13.450000000000056
+          },
+          {
+            "phase": "late",
+            "time": 13.450000000000056
+          },
+          {
+            "phase": "finalboss",
+            "time": 23.750000000000203
+          },
+          {
+            "phase": "victory",
+            "time": 29.050000000000278
+          }
+        ],
+        "kills": [
+          {
+            "enemyId": "encounter-1-stage-05-fog-opening-0",
+            "time": 3.016666666666661
+          },
+          {
+            "enemyId": "encounter-1-stage-05-fog-opening-1",
+            "time": 6.21666666666665
+          },
+          {
+            "enemyId": "encounter-1-stage-05-fog-opening-2",
+            "time": 9.333333333333377
+          },
+          {
+            "enemyId": "encounter-1-stage-05-fog-midboss-0",
+            "time": 13.416666666666913
+          },
+          {
+            "enemyId": "encounter-1-stage-05-fog-late-0",
+            "time": 15.50000000000035
+          },
+          {
+            "enemyId": "encounter-1-stage-05-fog-late-1",
+            "time": 18.666666666666888
+          },
+          {
+            "enemyId": "encounter-1-stage-05-fog-late-2",
+            "time": 21.283333333333406
+          },
+          {
+            "enemyId": "encounter-1-stage-05-fog-late-3",
+            "time": 23.7166666666666
+          },
+          {
+            "enemyId": "encounter-1-stage-05-fog-finalboss-0",
+            "time": 29.033333333332966
+          }
+        ],
+        "commands": [
+          {
+            "type": "maintenance",
+            "ok": true,
+            "time": 13.450000000000056,
+            "reason": null
+          },
+          {
+            "type": "salvage",
+            "ok": true,
+            "time": 29.050000000000278,
+            "reason": null
+          },
+          {
+            "type": "return",
+            "ok": true,
+            "time": 34.0500000000002,
+            "reason": null
+          }
+        ],
+        "finalStage": {
+          "stageId": "stage-05-fog",
+          "phase": "victory",
+          "runId": 1,
+          "activeEnemyIds": [],
+          "bossSpawnCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          },
+          "bossDefeatCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          }
+        },
+        "diagnostic": {
+          "phase": "harbor",
+          "stagePhase": "victory",
+          "currentStage": 4,
+          "hp": 100,
+          "cargoWeight": 4,
+          "weight": 56,
+          "lift": 65,
+          "outcome": "victory",
+          "endReason": "battle-cleared",
+          "targetId": "encounter-1-stage-05-fog-finalboss-0",
+          "remaining": [],
+          "settlementsBefore": 4,
+          "settlementsAfter": 5,
+          "status": "항로 완료와 귀환 정산을 함께 저장했습니다. 정비 후 다음 항로로 이동하세요."
+        }
+      },
+      "damagePreludeSteps": 0,
+      "repairCost": 0,
+      "resourcesBefore": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "resourcesAfter": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 15,
+      "equippedId": "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-0:main-engine"
+    },
+    {
+      "stage": 6,
+      "mapId": "map-06-palace",
+      "voyageId": "example-captain:voyage-6",
+      "steps": 667,
+      "proof": {
+        "version": "campaign-input-pilot-1",
+        "done": true,
+        "returned": true,
+        "stageCleared": true,
+        "saved": true,
+        "reason": null,
+        "voyageId": "example-captain:voyage-6",
+        "steps": 667,
+        "calls": 669,
+        "simulatedSeconds": 33.35000000000024,
+        "observed": {
+          "shots": 117,
+          "hits": 105,
+          "obstacleHits": 4,
+          "detached": 8,
+          "recovered": 1,
+          "enemyShots": 5,
+          "damage": 0
+        },
+        "visited": [
+          "opening",
+          "midboss",
+          "maintenance",
+          "late",
+          "finalboss",
+          "victory"
+        ],
+        "transitions": [
+          {
+            "phase": "opening",
+            "time": 0
+          },
+          {
+            "phase": "midboss",
+            "time": 9.45
+          },
+          {
+            "phase": "maintenance",
+            "time": 13.550000000000058
+          },
+          {
+            "phase": "late",
+            "time": 13.550000000000058
+          },
+          {
+            "phase": "finalboss",
+            "time": 21.600000000000172
+          },
+          {
+            "phase": "victory",
+            "time": 27.10000000000025
+          }
+        ],
+        "kills": [
+          {
+            "enemyId": "encounter-1-stage-06-palace-opening-0",
+            "time": 3.049999999999994
+          },
+          {
+            "enemyId": "encounter-1-stage-06-palace-opening-1",
+            "time": 6.249999999999983
+          },
+          {
+            "enemyId": "encounter-1-stage-06-palace-opening-2",
+            "time": 9.416666666666714
+          },
+          {
+            "enemyId": "encounter-1-stage-06-palace-midboss-0",
+            "time": 13.533333333333585
+          },
+          {
+            "enemyId": "encounter-1-stage-06-palace-late-1",
+            "time": 16.466666666667013
+          },
+          {
+            "enemyId": "encounter-1-stage-06-palace-late-0",
+            "time": 18.650000000000222
+          },
+          {
+            "enemyId": "encounter-1-stage-06-palace-late-2",
+            "time": 21.600000000000055
+          },
+          {
+            "enemyId": "encounter-1-stage-06-palace-finalboss-0",
+            "time": 27.06666666666641
+          }
+        ],
+        "commands": [
+          {
+            "type": "maintenance",
+            "ok": true,
+            "time": 13.550000000000058,
+            "reason": null
+          },
+          {
+            "type": "salvage",
+            "ok": true,
+            "time": 28.150000000000265,
+            "reason": null
+          },
+          {
+            "type": "return",
+            "ok": true,
+            "time": 33.35000000000024,
+            "reason": null
+          }
+        ],
+        "finalStage": {
+          "stageId": "stage-06-palace",
+          "phase": "victory",
+          "runId": 1,
+          "activeEnemyIds": [],
+          "bossSpawnCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          },
+          "bossDefeatCounts": {
+            "midboss": 1,
+            "finalboss": 1
+          }
+        },
+        "diagnostic": {
+          "phase": "harbor",
+          "stagePhase": "victory",
+          "currentStage": 5,
+          "hp": 100,
+          "cargoWeight": 4,
+          "weight": 56,
+          "lift": 65,
+          "outcome": "victory",
+          "endReason": "battle-cleared",
+          "targetId": "encounter-1-stage-06-palace-finalboss-0",
+          "remaining": [],
+          "settlementsBefore": 5,
+          "settlementsAfter": 6,
+          "status": "여섯 항로의 완료와 귀환 정산을 저장했습니다. 함선과 항해 기록을 보관했습니다."
+        }
+      },
+      "damagePreludeSteps": 0,
+      "repairCost": 0,
+      "resourcesBefore": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "resourcesAfter": {
+        "S": 117,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 17,
+      "equippedId": "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-0:main-engine"
+    }
+  ],
+  "stageTransitionFailuresPreserved": true,
+  "duplicateCompletionAndNextBlocked": true,
+  "sharedAssetsPreserved": true,
+  "departureRestarts": 6,
+  "restart": {
+    "freshProcess": true,
+    "campaignComplete": true,
+    "completed": 6,
+    "parts": 17,
+    "resources": {
+      "S": 117,
+      "F": 40,
+      "C": 2
+    }
+  },
+  "scope": "Actual controller/sim/director with Node provisional planar muzzle, real movement/fire/maintenance/return inputs. No HP edits, teleports, artificial enemy deaths, or fabricated returns. Full prototype encounter sequence, not canonical story boss implementation. Actual GLB muzzle browser results remain separate."
+}

@@ -1,0 +1,112 @@
+{
+  "version": "harbor-linked-v1",
+  "passed": true,
+  "scope": "actual integrated sim.mjs/controller plus authored first-region route; automated public movement/fire/salvage/return input; safe retreat rather than full boss route",
+  "directHpEdits": false,
+  "teleports": false,
+  "fixtureReturns": false,
+  "customEnemySpawns": false,
+  "browser": false,
+  "muzzle": "default provisional planar muzzle; actual GLB socket browser check belongs to integration QA",
+  "stagedVoyageResume": true,
+  "cargoDepartureGate": true,
+  "dirtyRestoreGate": true,
+  "returnAutoSave": true,
+  "equippedRecoveredEngine": "example-captain:voyage-1:battle:encounter-1-stage-01-harbor-opening-1:main-engine",
+  "voyages": [
+    {
+      "number": 1,
+      "id": "example-captain:voyage-1",
+      "pilotSteps": 165,
+      "repairPreludeSteps": 103,
+      "simulatedSeconds": 13.400000000000245,
+      "retainedEnemyFireEvents": 4,
+      "observed": {
+        "hits": 15,
+        "detached": 1,
+        "recovered": 1,
+        "shots": 16,
+        "damage": 18
+      },
+      "fieldRepairSpent": 2.5,
+      "repairSpent": 4,
+      "resources": {
+        "S": 113.5,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 8,
+      "ledger": 1
+    },
+    {
+      "number": 2,
+      "id": "example-captain:voyage-2",
+      "pilotSteps": 185,
+      "repairPreludeSteps": 0,
+      "simulatedSeconds": 9.250000000000039,
+      "retainedEnemyFireEvents": 1,
+      "observed": {
+        "hits": 17,
+        "detached": 1,
+        "recovered": 1,
+        "shots": 17,
+        "damage": 0
+      },
+      "fieldRepairSpent": 0,
+      "repairSpent": 0,
+      "resources": {
+        "S": 113.5,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 10,
+      "ledger": 2
+    }
+  ],
+  "restart": {
+    "processRestart": true,
+    "partIdsUnique": true,
+    "settlements": 2,
+    "parts": 10,
+    "resources": {
+      "S": 113.5,
+      "F": 40,
+      "C": 2
+    },
+    "duplicateReturnsUnchanged": true
+  },
+  "sourceHashes": [
+    {
+      "path": "tools/integration/session.mjs",
+      "sha256": "cc0b99831a49091fefb4027b9a6f342e519d4fcd3e5cc05adef9e404542aa6f2"
+    },
+    {
+      "path": "tools/integration/pilot.mjs",
+      "sha256": "9ab1a8a5b0962eff4326f9c777539ceed3431375259c37005f52de35129b3fe0"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "path": "tools/harbor/core.mjs",
+      "sha256": "9cae5e9bcb1c6fe453795a8fe4eb8eedcff9bb1e5c06958344125be8c5429a7c"
+    },
+    {
+      "path": "tools/harbor/adapters.mjs",
+      "sha256": "aac641234a776f0089eb3ac17d5746861789f2f9159ce05490d7eb2cc5197ab7"
+    },
+    {
+      "path": "tools/shipyard/shipyard.mjs",
+      "sha256": "413839ac4b7a6208036562b9bf50ea364384a7fcdff7af84b5faa19b6ab788d9"
+    },
+    {
+      "path": "tools/save/save.mjs",
+      "sha256": "8d975cd44dcc88590e96a8fd2ba6772051a9f3051cff669688c0ba3be3073414"
+    }
+  ]
+}

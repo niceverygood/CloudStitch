@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18T12:10:05.425Z",
+  "method": "coordinator read-only reviewers verified small report/harness/receipt bindings; no browser or full source/WAV rerun",
+  "audioRichV2": {
+    "raw": "outputs/audio-rich-v2-browser-qa-v1/verification.json",
+    "rawSha256": "0caf6cc7014ee12e9aebcc4340840b0f43c48afac295fa7a75d393ea8f00638f",
+    "post": "outputs/audio-rich-v2-source-finalization-v1/verification.json",
+    "postSha256": "8f78d3cd7745282d9f300d757dc28ec629262bdcfca3a93ab5a930fbb2b9c854",
+    "sourceManifest": "26cb7743a373c99126fab156fa80c9927bea2904a4757406a73067e3198db823",
+    "smallBindingsMatched": 5,
+    "nativeChecksPassed": 10,
+    "postOwnedFiles": 120,
+    "directPreservedFiles": 170,
+    "preservationCountsNotQaCounts": true,
+    "priorV1FailuresAndFollowup8Retained": true,
+    "limits": [
+      "raw resampled peak and normalized pair gain distinct",
+      "no speaker/truepeak/LUFS/human approval or game hook-up",
+      "newgrand-v3/latest tenfold expression not approved by these technical checks"
+    ]
+  },
+  "flightReady4": {
+    "actualUrl": "http://127.0.0.1:8840/outputs/flight3d-ready4/index.html",
+    "sourceManifest": "d1c7b8a4c51ec5140fbaf2bb1c43b5446da7f12bd5e45a2021e2b81daa9c8c3c",
+    "harnessSha256": "04ab6aeb3ff81aa3b70743c8401e16b965370249084cedb38b2fbebae0e62dd1",
+    "rawSha256": "b4043c64277875601ffdea99a1282682fba475e9c67ec640212ea99aa1c784ea",
+    "deliverySha256": "f6a1824929892ff419cf8b52d01ed006ae901f8bce3417d602e3a1c0a3e3abb0",
+    "deliveryFiles": 44,
+    "deliveryBytes": 2050169,
+    "browserChecksPassed": 20,
+    "source31Mapped31Deps4PreservedReported": true,
+    "mapped32PostChecksPassed": true,
+    "limits": [
+      "actual hidden tab skipped; blur/pointercancel DOM injected",
+      "CDP390 touch not physical mobile",
+      "previous37/20 not re-counted",
+      "no harbor/save/campaign/long performance or human feel approval"
+    ]
+  },
+  "aggregateQaPass": null
+}

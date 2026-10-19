@@ -1,0 +1,25 @@
+{
+  "id": "salvage-complete",
+  "startedAt": "2026-10-18T08:53:33.336Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A salvaged airship part reaches its cradle: one final winch ratchet, a padded wooden cargo thunk, taut rope settles and a brass cargo latch locks firmly. Satisfying physical completion, no musical reward chime. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:34.925Z",
+  "output": {
+    "file": "audio/salvage-complete.mp3",
+    "bytes": 20105,
+    "sha256": "344f2b6adf06bcd10db398bba1724056fc19e7c5b703c0aa50176ecf0c872924",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "12"
+}

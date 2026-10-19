@@ -1,0 +1,43 @@
+{
+  "revision": "ship-weapon-harmony-r2",
+  "date": "2026-10-19",
+  "logical_combinations": 3,
+  "final_GLBS": 3,
+  "final_bytes": 18449484.0,
+  "final_model_records": [
+    {
+      "id": "mobility",
+      "model": "mobility-assembled.glb",
+      "bytes": 6928508,
+      "sha256": "d488cb7c29849cf3857e876cb1e8ce46e88995ab67755ce0a20187eb4ce34b04",
+      "official_errors": 0,
+      "official_warnings": 0,
+      "official_infos": 0
+    },
+    {
+      "id": "artillery",
+      "model": "artillery-assembled.glb",
+      "bytes": 5833076,
+      "sha256": "0b8768d2ce660ef237b933b8be30b3b9247ef3e24171c334a0c821408c13cb14",
+      "official_errors": 0,
+      "official_warnings": 0,
+      "official_infos": 0
+    },
+    {
+      "id": "salvage",
+      "model": "salvage-assembled.glb",
+      "bytes": 5687900,
+      "sha256": "2b11cd365f8f063262dc13c186bfb9b49780bc042b672dd234de8b53623850aa",
+      "official_errors": 0,
+      "official_warnings": 0,
+      "official_infos": 0
+    }
+  ],
+  "preserved_initial_failure": "qa-initial/verification.json",
+  "preserved_initial_technical_pass_and_artillery_art_fail": "qa-r1-technical/verification.json",
+  "unchanged_mobility_salvage_evidence": "qa-r1-technical/verification.json",
+  "artillery_followup_evidence": "verification.json",
+  "human_art_approval": "pending",
+  "gameplay_implemented": false,
+  "browser_exporter_closed": true
+}

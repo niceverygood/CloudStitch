@@ -1,0 +1,165 @@
+{
+  "revision": "enemy-base-v1-source-ready",
+  "status": "SOURCE_READY_NOT_EXPORTED",
+  "ownership": [
+    "tools/enemy-base/",
+    "outputs/enemy-base-v1/"
+  ],
+  "files": [
+    {
+      "path": "tools/enemy-base/build.cjs",
+      "bytes": 1835,
+      "sha256": "e180748c279faada27af17d2615402d1df724cf560ad6d346a6dcfc1b33cc29c"
+    },
+    {
+      "path": "tools/enemy-base/finalize.cjs",
+      "bytes": 7997,
+      "sha256": "669db7f9cfa3337d9f1051fd14000b6459ae0df79f2b47cac44a07ac65e8dd55"
+    },
+    {
+      "path": "tools/enemy-base/fortress.mjs",
+      "bytes": 42870,
+      "sha256": "fbd079c4945b147e5d3332c95c94422be4d21da7161b7c947a36ee29546bbfe0"
+    },
+    {
+      "path": "tools/enemy-base/generate.cjs",
+      "bytes": 1194,
+      "sha256": "dddbd053e67d575bea0f8bcc9fc17de62ceda470bc4844468f9f6850e71c3bf3"
+    },
+    {
+      "path": "tools/enemy-base/generate.mjs",
+      "bytes": 4757,
+      "sha256": "70f2846664e5e0b92358a21e819a49a778ac53002795da7eeb42a52b23d08ad3"
+    },
+    {
+      "path": "tools/enemy-base/inspect.cjs",
+      "bytes": 4780,
+      "sha256": "c609ff29adc888d6b2c31baa7e569b81c446271ed50114a375dde47d29269873"
+    },
+    {
+      "path": "tools/enemy-base/qa.cjs",
+      "bytes": 27286,
+      "sha256": "745004b103304bf4695b3c7f3b2e45e38c3ac2e832354962c2fd20921e28ce05"
+    },
+    {
+      "path": "tools/enemy-base/README.txt",
+      "bytes": 2768,
+      "sha256": "9e594ae03e87d11d71d170920cab96cbbd27b39b0886b1a35100d58d0f9d1944"
+    },
+    {
+      "path": "tools/enemy-base/review.js",
+      "bytes": 22029,
+      "sha256": "a31c4e94340d6e5d0c1701e86941aaa7f860208bcc7447636278bffded38e71b"
+    },
+    {
+      "path": "tools/enemy-base/source-ready.cjs",
+      "bytes": 3774,
+      "sha256": "d4d60955d08ded28f4e8dcbd819892f32b6f7235650efa810f912c15eb13ad3f"
+    },
+    {
+      "path": "tools/enemy-base/SOURCE_HANDOFF.txt",
+      "bytes": 2725,
+      "sha256": "ff04cefd5b4b3be56806338ada5a42aaa42bd18dbfb51fa0501d6053896ee00f"
+    },
+    {
+      "path": "tools/enemy-base/template.html",
+      "bytes": 24699,
+      "sha256": "e215ed6b9e80d0b53616d0b8ad93dbbe19ece8cd6e906c0c3ffaa78ef8765eef"
+    },
+    {
+      "path": "outputs/enemy-base-v1/production-spec.json",
+      "bytes": 2593,
+      "sha256": "e272fb0dcd59175491b6bfce00ed5a3781654c56f03955864e1d37a9b8856861"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "outputs/enemy-base-moodboard-v2/moodboard.png",
+      "bytes": 3102262,
+      "sha256": "49ea92ea7a8dc01b1ee79679d550e22f1a417a4f922243ba21306c521f6327f3"
+    }
+  ],
+  "dependencies": {
+    "three": "0.180.0",
+    "esbuild": "0.25.10",
+    "playwright": "1.62.1",
+    "gltf-validator": "2.0.0-dev.3.10",
+    "resolution": "Existing installed modules via node_modules or NODE_PATH; no new installation."
+  },
+  "sourceCensus": {
+    "triangles": 149998,
+    "mergedMeshes": 78,
+    "authoredComponents": 5296,
+    "semanticGroups": 8,
+    "scope": "Before export. Actual GLB and actual render must be measured separately."
+  },
+  "stages": [
+    {
+      "name": "export",
+      "command": "node tools/enemy-base/generate.cjs",
+      "expectedOutput": [
+        "outputs/enemy-base-v1/enemy-base.glb",
+        "outputs/enemy-base-v1/model-manifest.json"
+      ],
+      "resource": "One Node GLTFExporter, no browser, only new asset."
+    },
+    {
+      "name": "structure",
+      "command": "node tools/enemy-base/inspect.cjs",
+      "expectedOutput": [
+        "outputs/enemy-base-v1/structure-verification.json"
+      ],
+      "resource": "One GLB read and official validator / GLTFLoader."
+    },
+    {
+      "name": "review-build",
+      "command": "node tools/enemy-base/build.cjs",
+      "expectedOutput": [
+        "outputs/enemy-base-v1/index.html"
+      ],
+      "resource": "esbuild plus one GLB/PNG read; no browser."
+    },
+    {
+      "name": "browser-qa",
+      "command": "node tools/enemy-base/qa.cjs",
+      "expectedOutput": [
+        "work/verification/enemy-base-v1/qa-result.json",
+        "work/verification/enemy-base-v1/*.png"
+      ],
+      "resource": "One Chromium. Actual file:// GLB, three display modes and 120 rotation frames each, controls, notes, exact download hash, 390px emulation, seven PNGs."
+    },
+    {
+      "name": "finalize",
+      "command": "node tools/enemy-base/finalize.cjs",
+      "expectedOutput": [
+        "outputs/enemy-base-v1/verification.json",
+        "outputs/enemy-base-v1/delivery-manifest.json",
+        "outputs/enemy-base-v1/HANDOFF.txt"
+      ],
+      "resource": "Copies only this asset QA evidence after PASS; no browser."
+    }
+  ],
+  "checksCompleted": [
+    "Source syntax checks",
+    "Generator bundle-only, no export",
+    "Lightweight pre-export geometry census",
+    "Reference SHA preserved"
+  ],
+  "pending": [
+    "Actual GLB export",
+    "Official format validation",
+    "Actual representative renders and human visual assessment",
+    "Real browser control/offline/mobile/ghost regression",
+    "Actual output LFS check"
+  ],
+  "limitations": [
+    "Static art prototype",
+    "No AI/combat/collision/interiors/navmesh/LOD/engine sockets/campaign integration",
+    "No approved engine scale or performance budget",
+    "No user art approval implied"
+  ],
+  "browserStarted": false,
+  "exporterStarted": false,
+  "commonFilesChanged": false,
+  "paidGeneration": false
+}

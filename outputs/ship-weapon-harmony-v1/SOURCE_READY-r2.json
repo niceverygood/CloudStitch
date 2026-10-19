@@ -1,0 +1,31 @@
+{
+  "revision": "artillery-art-fix-source-r2",
+  "files": [
+    {
+      "path": "tools/ship-weapon-harmony-v1/assembly.js",
+      "bytes": 7170,
+      "sha256": "33f1656bdbd72ac717340ac0f80628bc94ee5f6e17ab3ee8e6618a3df7a41561"
+    },
+    {
+      "path": "tools/ship-weapon-harmony-v1/verify.cjs",
+      "bytes": 9869,
+      "sha256": "b634f795097a2cbec6e31a05ee5c25fb3a316068ff8d94bf927cb78d0d621a21"
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/build-manifest.json",
+      "bytes": 1825,
+      "sha256": "e7fc9be05fc7b744c961b30bb5d573b4948acfc8a10e1a1677a5701437f11c9e"
+    }
+  ],
+  "scope": "artillery assembly only; existing mobility/salvage GLBs preserved",
+  "new_position": [
+    -0.52,
+    0.02,
+    0
+  ],
+  "uniform_scale": 0.11,
+  "command": "node tools/ship-weapon-harmony-v1/verify.cjs --slot-start --branch artillery",
+  "estimated": "under one minute, not measured",
+  "preserved_failure": "qa-r1-technical/",
+  "browser_exporter_used": false
+}

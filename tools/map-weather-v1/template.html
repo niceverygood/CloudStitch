@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>Cloudstitch · 바람과 폭풍 시험 항로</title><style>/* WEATHER_STYLE */</style></head>
+<body><div class="shell">
+<header><a class="brand" href="../map-atmosphere-v1/index.html">CLOUDSTITCH<span>클라우드스티치 · 항로 실험실</span></a><nav><a href="../map-atmosphere-v1/index.html">맵 요소 모음 ↗</a><button id="help" aria-expanded="false">조작 안내</button></nav></header>
+<div class="heading"><div><p class="eyebrow">FIELD NOTES / 06 WEATHER STUDIES</p><h1>바람을 읽는 항해</h1><p class="intro">구름 속에 숨고, 바람을 타고, 폭풍을 빠져나오세요.</p></div><span class="prototype">직접 조종하는 시험 항로</span></div>
+<main><section class="viewport" aria-label="환경 효과를 시험하는 3D 항로"><div id="stage"></div><div id="loading" role="status">비행선과 항로를 준비하고 있습니다…</div><div class="stage-top"><div><span class="live-dot"></span><span id="place">여섯 개의 하늘</span><small id="clock">00:00</small></div><div class="camera-tools"><button id="overview" aria-pressed="true">전체 지도</button><button id="follow" aria-pressed="false">배 따라가기</button><button id="rotate" aria-pressed="false">자동 회전</button><button id="fit">시점 초기화</button></div></div>
+<div id="world-labels" aria-hidden="true"></div><div class="stage-bottom"><span id="state-callout" role="status">WASD로 이동 · Q/E로 하강/상승 · F를 누르고 예열</span><span class="compass">N ↖<br><b>구름해 시험 항로</b></span></div>
+<div id="paused-overlay" hidden><strong>항해를 잠시 멈췄습니다</strong><span>재개하면 같은 순간부터 이어집니다.</span><button id="resume">항해 재개</button></div>
+<div id="defeat-overlay" hidden><strong>선체를 수리할 시간입니다</strong><span>시험 항로의 모든 상태를 초기화하고 다시 출항합니다.</span><button id="retry">수리하고 재출항</button></div></section>
+<aside><div class="log-heading"><span class="eyebrow">CAPTAIN’S INSTRUMENTS</span><button id="pause" aria-pressed="false">일시정지</button></div><h2 id="active-title">하늘의 여섯 규칙</h2><p id="active-description">아래 카드를 선택하면 해당 구역의 접근 지점으로 이동합니다. 배를 직접 움직여 효과를 확인하세요.</p>
+<div class="instrument"><span>선체</span><strong id="hp-value">100</strong><progress id="hp" max="100" value="100"></progress></div>
+<div class="instrument"><span>고도</span><strong id="altitude">8.0</strong><span class="unit">시험 단위</span></div>
+<div class="instrument"><span>착빙</span><strong id="ice-value">0%</strong><progress id="ice" max="100" value="0"></progress></div>
+<div class="instrument"><span>예열 여력</span><strong id="heat-value">100%</strong><progress id="heat" max="100" value="100"></progress></div>
+<div class="readouts"><span>적 조준 <b id="lock">포착 중</b></span><span>풍속 <b id="wind">0.0</b></span><span>대기 <b id="weather-status">맑음</b></span></div>
+<button id="preheat" class="preheat" aria-pressed="false">F · 누르고 예열하기</button>
+<div class="mode-row"><span>그림 표현</span><button data-mode="handdrawn" aria-pressed="true">손그림</button><button data-mode="cel" aria-pressed="false">셀</button><button data-mode="original" aria-pressed="false">원본</button></div><label class="outline-row"><input type="checkbox" id="outline" checked>윤곽선</label>
+<div class="mode-row"><span>같은 장면 비교</span><button data-expression="standard" aria-pressed="false">기본</button><button data-expression="dramatic" aria-pressed="true">풍성하게</button></div>
+<div class="journal"><h3>항해 기록</h3><ol id="event-log"><li>출항 준비 완료</li></ol></div><button id="reset" class="reset">항로 처음부터</button></aside></main>
+<section class="weather-collection" aria-label="여섯 환경 구역"><div class="collection-title"><div><p class="eyebrow">CHOOSE A PATCH OF SKY</p><h2>어떤 하늘을 건너볼까요?</h2></div><span id="checked-count">0 / 6 경험</span></div><div id="station-cards"></div></section>
+<section id="help-panel" hidden><h2>배를 움직여 확인하세요</h2><p>W/S 앞뒤 · A/D 좌우 · Q/E 하강/상승 · F 누른 동안 예열 · Space 일시정지 · R 처음부터. 화면 드래그로 회전하고 휠로 확대합니다. 구역 카드는 접근 지점으로 이동하며 구역 안으로 들어가야 효과가 적용됩니다.</p><p>낙뢰의 붉은 바닥 표식은 한 번 정해진 뒤 따라오지 않습니다. 열풍의 압력등이 밝아지면 분사가 시작되므로 빈 틈이나 높은 고도로 우회하세요. 예열 여력이 소진되면 쉬면서 다시 충전합니다.</p></section>
+<div id="touch-controls" aria-label="터치 조종"><div class="dpad"><button data-key="KeyW" aria-label="앞으로">↑</button><button data-key="KeyA" aria-label="왼쪽">←</button><button data-key="KeyS" aria-label="뒤로">↓</button><button data-key="KeyD" aria-label="오른쪽">→</button></div><div><button data-key="KeyQ">하강</button><button data-key="KeyE">상승</button></div></div>
+<footer><p>기존 맵 요소의 입체 에셋을 재사용한 로컬 플레이 시제품입니다. 전장 단일 시뮬레이션이 이동·고도·피해를 처리합니다. 수치는 시험용이며 최종 밸런스가 아닙니다.</p><p><a href="../map-atmosphere-v1/index.html">항로의 작은 세계</a> · <a href="HANDOFF.md">구현과 검증 기록</a></p></footer>
+</div><script>/* WEATHER_APP */</script></body></html>

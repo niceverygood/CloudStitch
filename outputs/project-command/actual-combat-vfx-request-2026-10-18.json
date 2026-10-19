@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T08:42:49Z",
+  "authorization": {
+    "directHumanRead": true,
+    "sourceThreadId": "01a14da1-0f0d-72e2-8712-76a46fe4463c",
+    "sourceTitle": "스티치 탄환",
+    "turnId": "01a14e2b-42bd-7543-b860-783da6acab37",
+    "userMessageId": "01a14e2b-4337-7bb0-93ac-8a1eb0f39640",
+    "request": "새 손그림 효과를 실제 전투에도 적용해서 사격부터 명중까지 볼 수 있게 해줘",
+    "scope": "actual opt-in gameplay display, not only documentation or scripted comparison"
+  },
+  "owners": {
+    "battlefield": "01a14da1-0f0d-72e2-8712-76a46fe4463c implements VFX source/contract and lightweight checks",
+    "integration": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b owns new executable output/build/common dependencies/browser QA",
+    "vfxArt": "01a14dc6-cc26-78e3-b031-d346860e1af1 owns art/catalog/recipes/source-output inventory",
+    "command": "outputs/project-command records only"
+  },
+  "scope": {
+    "requiredEffects": [
+      "machine-gun-muzzle",
+      "machine-gun-projectile",
+      "machine-gun-hit",
+      "cannon-muzzle",
+      "cannon-projectile",
+      "cannon-hit"
+    ],
+    "default": "v1",
+    "newScreen": "explicit opt-in v2 per-effect, validated fallback to v1",
+    "preserved": [
+      "original integration39",
+      "follow-up339 evidence/12-file index",
+      "existing saves",
+      "single battlefield physics/collision/damage authority",
+      "all original media"
+    ]
+  },
+  "implementationSnapshot": {
+    "at": "2026-10-18T08:41:23Z",
+    "reviewer": "integration_audit",
+    "note": "reviewer snapshot time17:41:23KST equals08:41:23Z; initial source still v1 fixed when read; not a later READY review",
+    "newImplementationReady": false,
+    "findings": [
+      "v1 fixed ASSET_BASE and two-argument factory in both checkouts",
+      "v2 lifecycle_contract/moving_payload incompatible until adapter implemented",
+      "instance fade requires separated owned materials/reset/dispose; no new leak confirmed",
+      "existing sim projectile placement and actual-hit authority preserved in snapshot"
+    ]
+  },
+  "gates": [
+    "exact source/asset hashes and READY handoff",
+    "per-effect schema/ID/model/clip/duration validation and fallback behavior",
+    "actual fire creates muzzle and sim-position projectile",
+    "actual collision alone creates impact and damage",
+    "no embedded-preview motion added to sim movement",
+    "per-instance opacity/material ownership and pool reset/dispose",
+    "pause dt0, retry generation reset and old events suppressed, clear cleans one-shots/projectiles",
+    "new output and scoped sequential browser report; no original frozen overwrite",
+    "unreviewed four of runtime6 remain art-review pending until actual rendering reviewed"
+  ],
+  "coordination": {
+    "messagesSentToBattlefieldAndIntegration": true,
+    "heavyBrowserOwnerOnly": true,
+    "noNewPaidGeneration": true,
+    "noNewUserOwnedThreads": true
+  },
+  "status": "historical v2-direction request; superseded by later verified v1 preference, actual-combat requirement retained",
+  "supersededBy": "v1-rich-effects-request-2026-10-18.json"
+}

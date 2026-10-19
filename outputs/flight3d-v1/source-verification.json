@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "passed": true,
+  "checks": [
+    {
+      "name": "unique-controls-and-app-references",
+      "passed": true,
+      "detail": {
+        "ids": 35,
+        "refs": 30,
+        "missing": []
+      }
+    },
+    {
+      "name": "preserved-outputs/playable-battlefield-v1/handoff-files.json",
+      "passed": true,
+      "detail": {
+        "files": 25,
+        "changed": []
+      }
+    },
+    {
+      "name": "preserved-outputs/playable-camera-v1/delivery-manifest.json",
+      "passed": true,
+      "detail": {
+        "files": 20,
+        "changed": []
+      }
+    },
+    {
+      "name": "single-xyz-state-owner",
+      "passed": true
+    },
+    {
+      "name": "ready2-playable-and-browser-report-preserved",
+      "passed": true,
+      "detail": {
+        "files": 5,
+        "changed": []
+      }
+    },
+    {
+      "name": "ready3-source-playable-and-manifest-preserved",
+      "passed": true,
+      "detail": {
+        "files": 30,
+        "changed": []
+      }
+    },
+    {
+      "name": "ready4-source-playable-and-manifest-preserved",
+      "passed": true,
+      "detail": {
+        "files": 32,
+        "changed": []
+      }
+    },
+    {
+      "name": "approved-map-recipes-preserved-as-readonly-versioned-copies",
+      "passed": true,
+      "detail": {
+        "revision": "source-ready-3-bold-r2",
+        "files": 4,
+        "changed": []
+      }
+    },
+    {
+      "name": "original-helm-grab-and-fire-code-retained",
+      "passed": true
+    },
+    {
+      "name": "ready5-environment-and-pre-motion-physics-preserved",
+      "passed": true,
+      "detail": {
+        "files": 46,
+        "changed": []
+      }
+    }
+  ],
+  "scope": "Static controls and previous artifacts preservation only; physics and browser checks are separate."
+}

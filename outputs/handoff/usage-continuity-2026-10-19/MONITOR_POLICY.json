@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-19T10:54:37+09:00",
+  "automation": {
+    "id": "5",
+    "name": "사용량 5% 미만 인수인계",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "intervalMinutes": 30,
+    "destination": "current-thread"
+  },
+  "threshold": {
+    "metric": "remainingPercent",
+    "operator": "<",
+    "value": 5,
+    "calculation": "max(0,100-usedPercent)",
+    "prefer": "rateLimitsByLimitId",
+    "unknownIsZero": false
+  },
+  "lastObserved": {
+    "timeZone": "Asia/Seoul",
+    "date": "2026-10-19",
+    "limitId": "codex",
+    "usedPercent": 31,
+    "remainingPercent": 69,
+    "windowDurationMins": 10080,
+    "resetsAt": 1792940943,
+    "thresholdMet": false
+  },
+  "baseline": {
+    "documentsCreated": true,
+    "fullProjectArchiveCreated": false,
+    "otherProjectsSourceCopied": false,
+    "nativeConversationExport": false
+  },
+  "lastCompletedThresholdSnapshot": null,
+  "deduplication": "동일reset주기 대형 snapshot 반복 금지. 회복 후 새주기에 임계치 재충족시 새revision.",
+  "notification": "의미있는 인계완료·새실패·필수조치만; 변화없으면 조용히 종료",
+  "runtimeRequirement": "컴퓨터/로컬앱 실행·접근권한·남은사용량 필요. 즉시감지/소진전 완료 보장 없음."
+}

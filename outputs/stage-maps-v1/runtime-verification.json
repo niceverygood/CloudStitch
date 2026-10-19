@@ -1,0 +1,118 @@
+{
+  "version": "stage-maps-v1",
+  "passed": true,
+  "sourceManifestSha256": "68d21152291888c91912d9dc9ff519e1007b10e374c282046e017749040cc292",
+  "scope": "six actual controller departure/restart smoke checks plus map 1 two real combat/salvage/safe-retreat voyages and fresh-process disk restore; not six full boss completions",
+  "browser": false,
+  "noTeleport": true,
+  "noHpInjection": true,
+  "noFixtureReturn": true,
+  "smoke": [
+    {
+      "map": "map-01-harbor",
+      "stageId": "stage-01-harbor",
+      "levelId": "map-01-harbor-sea",
+      "spawned": 2,
+      "obstacles": 5,
+      "departureRestart": true
+    },
+    {
+      "map": "map-02-canyon",
+      "stageId": "stage-02-canyon",
+      "levelId": "map-02-canyon-sea",
+      "spawned": 3,
+      "obstacles": 6,
+      "departureRestart": true
+    },
+    {
+      "map": "map-03-storm",
+      "stageId": "stage-03-storm",
+      "levelId": "map-03-storm-sea",
+      "spawned": 3,
+      "obstacles": 6,
+      "departureRestart": true
+    },
+    {
+      "map": "map-04-industry",
+      "stageId": "stage-04-industry",
+      "levelId": "map-04-industry-sea",
+      "spawned": 3,
+      "obstacles": 6,
+      "departureRestart": true
+    },
+    {
+      "map": "map-05-fog",
+      "stageId": "stage-05-fog",
+      "levelId": "map-05-fog-sea",
+      "spawned": 3,
+      "obstacles": 5,
+      "departureRestart": true
+    },
+    {
+      "map": "map-06-palace",
+      "stageId": "stage-06-palace",
+      "levelId": "map-06-palace-sea",
+      "spawned": 3,
+      "obstacles": 7,
+      "departureRestart": true
+    }
+  ],
+  "twoSorties": {
+    "map": "map-01-harbor",
+    "voyages": [
+      {
+        "voyageId": "example-captain:voyage-1",
+        "steps": 214,
+        "observed": {
+          "hits": 12,
+          "detached": 1,
+          "recovered": 1,
+          "shots": 20,
+          "damage": 9
+        },
+        "parts": 7,
+        "resources": {
+          "S": 117,
+          "F": 40,
+          "C": 2
+        }
+      },
+      {
+        "voyageId": "example-captain:voyage-2",
+        "steps": 214,
+        "observed": {
+          "hits": 12,
+          "detached": 1,
+          "recovered": 1,
+          "shots": 20,
+          "damage": 9
+        },
+        "parts": 9,
+        "resources": {
+          "S": 114,
+          "F": 40,
+          "C": 2
+        }
+      }
+    ],
+    "duplicateReturnUnchanged": true,
+    "cargoDepartureGate": true,
+    "restart": {
+      "newProcessRestored": true,
+      "settlements": 2,
+      "resources": {
+        "S": 114,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 9,
+      "route": {
+        "routeId": "map-01-harbor",
+        "routeVersion": 1,
+        "stageId": "stage-01-harbor",
+        "levelId": "map-01-harbor-sea",
+        "layoutHash": "fnv1a32:74e72073"
+      }
+    }
+  }
+}

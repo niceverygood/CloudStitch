@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-19",
+  "id": "02",
+  "title": "CROWN OF THE RED TIDE",
+  "mode": "built-in image_gen",
+  "status": "assistant_visual_review_complete_user_approval_pending",
+  "image": "outputs/world-moodboards-v2/images/02-crown-of-red-tide.png",
+  "prompt": "outputs/world-moodboards-v2/prompts/02-crown-of-red-tide.txt",
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3373745,
+  "sha256": "2F12A28E917C24E991FB27817428630F4821F4D7345FB7488480F52F5F9EF4A8",
+  "lfs": "filter=lfs",
+  "references": [
+    "outputs/enemy-base-v1/chapter2-moodboard-v1/moodboard.png",
+    "outputs/ship-states-v1/three-lineages-selected-v1/three-lineages.png"
+  ],
+  "planning_reference": "outputs/chapter2-enemy-fleet-plan-v1/PLAN.txt first 40 lines",
+  "purpose": "최신 사용자 승인한 적조의 왕관 시각 기준을 2탄의 공중 심해 암초 환경으로 연결하는 신규 월드 무드보드",
+  "preservation": "기존 v1 세계12보드와 2탄 기지 원본 보존. 생성 원본 PNG 후처리 없이 복사.",
+  "generation_count": 2,
+  "revision": "타깃 수정1회: 주인공선 절반 축소, 오른쪽 항구 수면을 구름 빈 공간과 공중 계류 갑판으로 변경, 피난 쉼터를 작은 천막/랜턴으로 단순화",
+  "visual_review": [
+    "원본의 진주층 나선 패각·붉은 산호 포대·뼈 이빨 항구 정체성을 중원경 랜드마크로 유지",
+    "보라 구름바다·거대 초승달 뼈아치·진주 패각 테라스·넓은 비행 접근로·작은 배의 스케일 대비 확인",
+    "목재/밧줄/와인 천/진주층·작은 생활 계류점과 그물에 걸린 배 확인",
+    "오른쪽 수정본은 수면 없이 구름 아래로 열린 공중 항구로 확인",
+    "Cloudstitch, 02, CROWN OF THE RED TIDE 표기와 하단5색 확인"
+  ],
+  "limits": [
+    "정지 이미지의 배경 소형 구조는 세부 식별에 한계가 있음",
+    "일부 나부끼는 천은 해초 직물보다 와인색 범포로 읽힘",
+    "미술 시안이며 실제 맵·보스 스탯·이동 방식·종족·수중전 구현을 확정하지 않음"
+  ]
+}

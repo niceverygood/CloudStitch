@@ -1,0 +1,62 @@
+{
+  "scope": "first visual smoke",
+  "checks": [
+    {
+      "name": "actual ship/2 weapons/legacy GLBs loaded",
+      "passed": true
+    },
+    {
+      "name": "single authority cannon shot/hit",
+      "passed": true,
+      "data": {
+        "shots": 1,
+        "hits": 1,
+        "damage": 9,
+        "damagePerShot": 9,
+        "burstDuration": 0,
+        "cooldown": null,
+        "finalProjectiles": 0,
+        "finalTargetHp": 91
+      }
+    },
+    {
+      "name": "same canonical muzzle on A/B",
+      "passed": true
+    },
+    {
+      "name": "MG 2s exactly ten shots/hits and damage80",
+      "passed": true,
+      "data": {
+        "shots": 10,
+        "hits": 10,
+        "damage": 80,
+        "damagePerShot": 8,
+        "burstDuration": 2,
+        "cooldown": 0.22,
+        "finalProjectiles": 0,
+        "finalTargetHp": 99920
+      }
+    },
+    {
+      "name": "no browser JS/GL errors",
+      "passed": true,
+      "data": []
+    },
+    {
+      "name": "no external network requests",
+      "passed": true,
+      "data": []
+    },
+    {
+      "name": "read-only original source/assets preserved",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "errors": [],
+  "externalRequests": [],
+  "browserClosed": true,
+  "serverClosed": true,
+  "humanArtApproved": false,
+  "humanListeningApproved": false
+}

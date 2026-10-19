@@ -1,0 +1,121 @@
+{
+  "title": "Cloudstitch · 적군 공중요새",
+  "revision": "enemy-base-grand-r2",
+  "status": "READY_art_review",
+  "scope": "Actual static 3D art asset and offline review page; not combat or game integration.",
+  "model": {
+    "path": "outputs/enemy-base-v1/grand-r2/enemy-base.glb",
+    "bytes": 22564476,
+    "sha256": "d7f3bc614ba95e18fb2b5477db1e47b0d5bab4891b0f483c05f17878b017b1c1"
+  },
+  "structural": {
+    "path": "outputs/enemy-base-v1/grand-r2/structure-verification.json",
+    "bytes": 1773,
+    "sha256": "f773da8b68df3b7ba73ac1aa65876a70f47fe293264c51695baa696a17310e51"
+  },
+  "browser": {
+    "path": "outputs/enemy-base-v1/grand-r2/browser-verification.json",
+    "bytes": 33783,
+    "sha256": "160bccd30e30d90b453800e51789ee3c7f47516099a3c182de87853b605c0a1b",
+    "checks": {
+      "total": 48,
+      "passed": 48,
+      "failed": 0
+    },
+    "passed": true,
+    "externalRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "ghosting": [
+      {
+        "mode": "handdrawn",
+        "frames": 120,
+        "changedPixels": 0
+      },
+      {
+        "mode": "cel",
+        "frames": 120,
+        "changedPixels": 0
+      },
+      {
+        "mode": "original",
+        "frames": 120,
+        "changedPixels": 0
+      }
+    ]
+  },
+  "previews": [
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/review-desktop.png",
+      "bytes": 710315,
+      "sha256": "9f8e234e00c0856a08333cb4bf26a770e265c4b27e98cf0d90332a9cebc4594f",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/review-desktop.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/model-iso.png",
+      "bytes": 222236,
+      "sha256": "384f591e6df47793125b7e476e57d5aed39a383a70c0550d28f23a59bf322ac5",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/model-iso.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/model-back.png",
+      "bytes": 177505,
+      "sha256": "1222bc5a194e557d43dca77786fd0b998774f806b0ca26dfbf9d0f95fddb8871",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/model-back.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/model-front.png",
+      "bytes": 245654,
+      "sha256": "8d88873a16c286dc88d2adf9ff8fe6793a9d20f0894e2edf0d6b6ddf164a42fb",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/model-front.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/detail-bell.png",
+      "bytes": 265388,
+      "sha256": "bf77070baf8eb714e42ce7c94533a36c52b45c9246c28639046a5d9adc2e4227",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/detail-bell.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/detail-dock.png",
+      "bytes": 434747,
+      "sha256": "a6adf82a154787e86ef928eaa68145bc652f3e58723c1bbc6e81dc7ed1fb3ba5",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/detail-dock.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/review-mobile-390.png",
+      "bytes": 253633,
+      "sha256": "cede565f49df07c853c1a70e66db2531b16a5823d7e970b5945c225704d59c1e",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/review-mobile-390.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/comparison-v1-matched.png",
+      "bytes": 217787,
+      "sha256": "09755b5db050ae47277fcfda10c78caf490a5a3ea0251f4ef816090e8d70f1f0",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/comparison-v1-matched.png"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/comparison-r2-matched.png",
+      "bytes": 233323,
+      "sha256": "644a6952e0509fe2ceb4b226d7d25f1937be6c2a8a1a502fef48b2f382c9e1f6",
+      "generated_from": "work/verification/enemy-base-v1/grand-r2/comparison-r2-matched.png"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-moodboard-v2/moodboard.png",
+    "sha256": "49ea92ea7a8dc01b1ee79679d550e22f1a417a4f922243ba21306c521f6327f3",
+    "preserved": true
+  },
+  "visual_review": {
+    "status": "actual_renders_observed",
+    "user_art_approval": false
+  },
+  "limitations": [
+    "No combat, enemy AI, damage, module cutting or campaign integration.",
+    "No collision, navmesh, interiors, LOD or approved engine sockets.",
+    "Static mesh; camera rotation is not GLB animation.",
+    "Toon shading and outline are review runtime effects, separate from GLB materials.",
+    "Browser checks are not target-device performance or gameplay approval."
+  ],
+  "git_commit_or_push": false,
+  "deployment": false
+}

@@ -1,0 +1,165 @@
+{
+  "revision": "source-ready-3",
+  "date": "2026-10-18",
+  "scope": "6 weather gameplay effects in an isolated single-authority battlefield trial",
+  "stateAuthority": "tools/map-weather-v1/authority.mjs",
+  "canonicalUntouched": true,
+  "sourceTests": {
+    "passed": 23,
+    "failed": 0,
+    "environment": 15,
+    "authority": 8
+  },
+  "browserChecked": false,
+  "exported": false,
+  "files": [
+    {
+      "path": "tools/map-weather-v1/adapter.mjs",
+      "bytes": 14003,
+      "sha256": "39b9c884c8bf6489b4d44fe5c3a2269816d94400d078226a286d9b434ed6b4b5"
+    },
+    {
+      "path": "tools/map-weather-v1/app.js",
+      "bytes": 11332,
+      "sha256": "fdd17ca1f9d13e2c9e21b4deeb45e43c7a9ec8a4b69e2e0d1a11048ef70a4bf2"
+    },
+    {
+      "path": "tools/map-weather-v1/asset-catalog.mjs",
+      "bytes": 3581,
+      "sha256": "45a0a9d998b7adb70d20b1e912ee0af23aaa282b6dfcd78d7d43f2d6dcbf388d"
+    },
+    {
+      "path": "tools/map-weather-v1/assets.mjs",
+      "bytes": 33334,
+      "sha256": "44d9fd02b758bc04d83ab1f388be7a88740a2e4a89cd94c4a986249378a14142"
+    },
+    {
+      "path": "tools/map-weather-v1/authority.mjs",
+      "bytes": 36755,
+      "sha256": "03c7b3d35db380aa79b17b45fe7ca8907be0d1f067866b19c883fbab8d7fb622"
+    },
+    {
+      "path": "tools/map-weather-v1/authority.test.mjs",
+      "bytes": 4987,
+      "sha256": "f3d45020f03c2df17d24fc01cc6498c8c13b0cd5ffd23d3cc6f9ee70631b664e"
+    },
+    {
+      "path": "tools/map-weather-v1/build.cjs",
+      "bytes": 2326,
+      "sha256": "938742b2d355c209e56192f62ac84251e47257232d5c86403cd8734bc75a660e"
+    },
+    {
+      "path": "tools/map-weather-v1/export.mjs",
+      "bytes": 3995,
+      "sha256": "df6371c6168adc8813521e79f8e8994daaac2c5a866375ffcc877f6f938067e9"
+    },
+    {
+      "path": "tools/map-weather-v1/HANDOFF.md",
+      "bytes": 5819,
+      "sha256": "13ba59a8f0d685a30ba9abac306c8c79eab6b3be87eeb6d8d0fefecec3e82bb0"
+    },
+    {
+      "path": "tools/map-weather-v1/prepare-authority.cjs",
+      "bytes": 6852,
+      "sha256": "4169170ada6f37b9e2e3da5b9f7cde775ae9ad5911b91a0c0d81c208a491b2ea"
+    },
+    {
+      "path": "tools/map-weather-v1/README-assets.md",
+      "bytes": 4401,
+      "sha256": "84fff5d82b55d2131964bae956a6de020c58060612217f5064c5c00bac8e559e"
+    },
+    {
+      "path": "tools/map-weather-v1/renderer.js",
+      "bytes": 11420,
+      "sha256": "c0810f42f2df5721f0bef7e33acc0d234dd5f97d6d84cb22743e2f5b0871d1a3"
+    },
+    {
+      "path": "tools/map-weather-v1/seal.cjs",
+      "bytes": 2052,
+      "sha256": "de0f70ececa39b9321bcbb6bf3fe8469aa835ddadd0a71159d7602e140ad4e3d"
+    },
+    {
+      "path": "tools/map-weather-v1/session.mjs",
+      "bytes": 1629,
+      "sha256": "84b9ed394c93036f12352560476a6196d9fc25d2d3989170c3f58785cae01030"
+    },
+    {
+      "path": "tools/map-weather-v1/sim.mjs",
+      "bytes": 13560,
+      "sha256": "1c86e2997e3cc58e65abcca66c4de577fd8cd62bd6cf4c887a57dcaee55a8912"
+    },
+    {
+      "path": "tools/map-weather-v1/sim.test.mjs",
+      "bytes": 14550,
+      "sha256": "d2e4ed5ce0ac34aac77df504f828e900b195e5492d0764faeaa5b4ee48eb92ce"
+    },
+    {
+      "path": "tools/map-weather-v1/style.css",
+      "bytes": 10662,
+      "sha256": "1851a9c226e9eccce416fe6abc3c2c948081909546795e81c644f89b2c7f8a9e"
+    },
+    {
+      "path": "tools/map-weather-v1/template.html",
+      "bytes": 5791,
+      "sha256": "04a7183c03b7f8d7604db4bf4e760a256c531aa1a4adb80262908099cdd95d59"
+    },
+    {
+      "path": "tools/map-weather-v1/verify-browser.cjs",
+      "bytes": 24704,
+      "sha256": "a685c7fc057a9b7cf24f580bbcf9012023656eb0e74ef9174dbd0b21438ca5f1"
+    },
+    {
+      "path": "tools/map-weather-v1/verify-geometry.mjs",
+      "bytes": 2029,
+      "sha256": "1102b7b668b457b48cdd0a6738d094379b9dcaede04958a698a13845cf25303d"
+    }
+  ],
+  "readonlyInputs": [
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/world-assets/core.mjs",
+      "bytes": 7840,
+      "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/sky.mjs",
+      "bytes": 26359,
+      "sha256": "6fdb50cdff504c6e8da2917917de0aa4cb8eef2449dde27697d9a25e4ddd6f5e"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/terrain.mjs",
+      "bytes": 34613,
+      "sha256": "de025448731fc8185248e958312f8aae73575e816342b8f9165fb49d07d8ae6c"
+    },
+    {
+      "path": "tools/map-atmosphere-v1/props.mjs",
+      "bytes": 40911,
+      "sha256": "83b91fedef9e2613bd283e1e5cedc8abeaeffceb67d6aed1122704b137cea326"
+    },
+    {
+      "path": "outputs/selected-airship-toon3d/airship.glb",
+      "bytes": 3645884,
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74"
+    }
+  ],
+  "slotBudget": {
+    "buildSeconds": 20,
+    "exportSeconds": 30,
+    "browserSeconds": 120
+  },
+  "dependencies": [
+    "three@0.180.0",
+    "esbuild@0.25.10",
+    "playwright@1.62.1",
+    "gltf-validator@2.0.0-dev.3.10"
+  ],
+  "commands": [
+    "node tools/map-weather-v1/build.cjs",
+    "node --no-warnings --experimental-loader ./tools/map-atmosphere-v1/deps-loader.mjs tools/map-weather-v1/export.mjs",
+    "node tools/map-weather-v1/verify-browser.cjs"
+  ]
+}

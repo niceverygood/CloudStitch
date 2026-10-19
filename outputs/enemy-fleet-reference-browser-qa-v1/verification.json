@@ -1,0 +1,2646 @@
+{
+  "version": "enemy-reference-browser-qa-1.0.0",
+  "startedAt": "2026-10-18T09:48:29.331Z",
+  "passed": true,
+  "selection": {
+    "requestedIds": [
+      "enemy-pirate-scout",
+      "enemy-cult-blockade",
+      "enemy-union-salvage",
+      "enemy-union-repair",
+      "enemy-ghost-chaser",
+      "enemy-disguised-wreck"
+    ],
+    "inspectedIds": [
+      "enemy-pirate-scout",
+      "enemy-cult-blockade",
+      "enemy-union-salvage",
+      "enemy-union-repair",
+      "enemy-ghost-chaser",
+      "enemy-disguised-wreck"
+    ],
+    "directViewerCount": 6,
+    "fullSixDirectViewerInspection": true,
+    "galleryOnly": false,
+    "galleryInspected": true,
+    "galleryAlwaysIncludesSixModalLoads": true
+  },
+  "source": {
+    "catalogSha256": "75c0af5918a15ca4f3ff65d4604e338aec5a30c1ab4f4137bbacb744622d74d5"
+  },
+  "browser": {
+    "version": "155.0.8059.40",
+    "requestedChannel": "chrome",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "pageCount": 1,
+    "desktop": {
+      "width": 1280,
+      "height": 1000
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "checks": [
+    {
+      "section": "startup",
+      "name": "chrome-not-edge",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "actual-embedded-glb-load",
+      "passed": true,
+      "detail": {
+        "id": "enemy-pirate-scout",
+        "bytes": 6882024,
+        "meshes": 42,
+        "triangles": 28848,
+        "texturesReady": true
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "outline-autoclear",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "actual-clip-set",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "expected": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "note": "Uses actual GLB clips; catalog metrics may describe the seven standard clips only."
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "mode:handdrawn",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "mode:cel",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "mode:original",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-time:FloatIdle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 10,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FloatIdle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-button-availability:FloatIdle",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-time:Cruise",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "Cruise",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-button-availability:Cruise",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-time:BankTurn",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "BankTurn",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-button-availability:BankTurn",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-time:GustRecovery",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "GustRecovery",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-button-availability:GustRecovery",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-time:TurretScan",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "TurretScan",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-button-availability:TurretScan",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-time:WinchCycle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 16,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "WinchCycle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-button-availability:WinchCycle",
+      "passed": true,
+      "detail": {
+        "enabled": false,
+        "expectedEnabled": false,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-time:FireBurst",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FireBurst",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "clip-button-availability:FireBurst",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "playback-and-pause",
+      "passed": true,
+      "detail": {
+        "time": 0.12539999997615814
+      }
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "all-weakpoint-targets-resolve",
+      "passed": true,
+      "detail": [
+        {
+          "nodeName": "enemy-pirate-scout-exposed-brass-stern-engine",
+          "present": true
+        }
+      ]
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "weakpoint-labels-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "노출 후방 엔진",
+          "hidden": false,
+          "display": "block",
+          "left": 431.222,
+          "top": 371.366
+        }
+      ]
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "weakpoint-labels-off-after-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "노출 후방 엔진",
+          "hidden": true,
+          "display": "none"
+        }
+      ]
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "no-deployment-controls-on-other-ships",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "view:front",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "view:side",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "view:top",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "view:perspective",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "hero-size-reference",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "silhouette-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "silhouette-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "outline-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "outline-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "pointer-orbit",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "wheel-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "fit-resets-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "auto-rotate",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "section": "enemy-pirate-scout",
+      "name": "mobile-390-maximum-width",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": {
+          "left": 13,
+          "right": 377,
+          "width": 364
+        },
+        "passed": true
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "actual-embedded-glb-load",
+      "passed": true,
+      "detail": {
+        "id": "enemy-cult-blockade",
+        "bytes": 10181604,
+        "meshes": 123,
+        "triangles": 66312,
+        "texturesReady": true
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "outline-autoclear",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "actual-clip-set",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "expected": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "note": "Uses actual GLB clips; catalog metrics may describe the seven standard clips only."
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "mode:handdrawn",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "mode:cel",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "mode:original",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-time:FloatIdle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 10,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FloatIdle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-button-availability:FloatIdle",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-time:Cruise",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "Cruise",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-button-availability:Cruise",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-time:BankTurn",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "BankTurn",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-button-availability:BankTurn",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-time:GustRecovery",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "GustRecovery",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-button-availability:GustRecovery",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-time:TurretScan",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "TurretScan",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-button-availability:TurretScan",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-time:WinchCycle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 16,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "WinchCycle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-button-availability:WinchCycle",
+      "passed": true,
+      "detail": {
+        "enabled": false,
+        "expectedEnabled": false,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-time:FireBurst",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FireBurst",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "clip-button-availability:FireBurst",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "playback-and-pause",
+      "passed": true,
+      "detail": {
+        "time": 0.12340000000000009
+      }
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "all-weakpoint-targets-resolve",
+      "passed": true,
+      "detail": [
+        {
+          "nodeName": "enemy-cult-blockade-small-exposed-rear-engine",
+          "present": true
+        },
+        {
+          "nodeName": "enemy-cult-blockade-open-central-bell-support",
+          "present": true
+        }
+      ]
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "weakpoint-labels-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "후방 추진부",
+          "hidden": false,
+          "display": "block",
+          "left": 445.182,
+          "top": 325.623
+        },
+        {
+          "text": "노출 종 지지대",
+          "hidden": false,
+          "display": "block",
+          "left": 719.586,
+          "top": 387.055
+        }
+      ]
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "weakpoint-labels-off-after-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "후방 추진부",
+          "hidden": true,
+          "display": "none"
+        },
+        {
+          "text": "노출 종 지지대",
+          "hidden": true,
+          "display": "none"
+        }
+      ]
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "no-deployment-controls-on-other-ships",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "view:front",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "view:side",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "view:top",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "view:perspective",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "hero-size-reference",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "silhouette-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "silhouette-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "outline-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "outline-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "pointer-orbit",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "wheel-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "fit-resets-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "auto-rotate",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "section": "enemy-cult-blockade",
+      "name": "mobile-390-maximum-width",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": {
+          "left": 13,
+          "right": 377,
+          "width": 364
+        },
+        "passed": true
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "actual-embedded-glb-load",
+      "passed": true,
+      "detail": {
+        "id": "enemy-union-salvage",
+        "bytes": 9444220,
+        "meshes": 82,
+        "triangles": 53856,
+        "texturesReady": true
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "outline-autoclear",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "actual-clip-set",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "expected": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "note": "Uses actual GLB clips; catalog metrics may describe the seven standard clips only."
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "mode:handdrawn",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "mode:cel",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "mode:original",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-time:FloatIdle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 10,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FloatIdle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-button-availability:FloatIdle",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-time:Cruise",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "Cruise",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-button-availability:Cruise",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-time:BankTurn",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "BankTurn",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-button-availability:BankTurn",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-time:GustRecovery",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "GustRecovery",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-button-availability:GustRecovery",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-time:TurretScan",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "TurretScan",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-button-availability:TurretScan",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-time:WinchCycle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 16,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "WinchCycle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-button-availability:WinchCycle",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-time:FireBurst",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FireBurst",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "clip-button-availability:FireBurst",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "playback-and-pause",
+      "passed": true,
+      "detail": {
+        "time": 0.12490000002384181
+      }
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "all-weakpoint-targets-resolve",
+      "passed": true,
+      "detail": [
+        {
+          "nodeName": "enemy-union-salvage-weakpoint-exposed-cable-drum",
+          "present": true
+        },
+        {
+          "nodeName": "enemy-union-salvage-two-section-truss-crane",
+          "present": true
+        }
+      ]
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "weakpoint-labels-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "노출 케이블 드럼",
+          "hidden": false,
+          "display": "block",
+          "left": 587.888,
+          "top": 382.633
+        },
+        {
+          "text": "크레인·견인 케이블",
+          "hidden": false,
+          "display": "block",
+          "left": 658.853,
+          "top": 411.311
+        }
+      ]
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "weakpoint-labels-off-after-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "노출 케이블 드럼",
+          "hidden": true,
+          "display": "none"
+        },
+        {
+          "text": "크레인·견인 케이블",
+          "hidden": true,
+          "display": "none"
+        }
+      ]
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "no-deployment-controls-on-other-ships",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "view:front",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "view:side",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "view:top",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "view:perspective",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "hero-size-reference",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "silhouette-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "silhouette-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "outline-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "outline-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "pointer-orbit",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "wheel-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "fit-resets-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "auto-rotate",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-salvage",
+      "name": "mobile-390-maximum-width",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": {
+          "left": 13,
+          "right": 377,
+          "width": 364
+        },
+        "passed": true
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "actual-embedded-glb-load",
+      "passed": true,
+      "detail": {
+        "id": "enemy-union-repair",
+        "bytes": 9360548,
+        "meshes": 108,
+        "triangles": 49100,
+        "texturesReady": true
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "outline-autoclear",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "actual-clip-set",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "expected": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "note": "Uses actual GLB clips; catalog metrics may describe the seven standard clips only."
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "mode:handdrawn",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "mode:cel",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "mode:original",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-time:FloatIdle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 10,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FloatIdle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-button-availability:FloatIdle",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-time:Cruise",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "Cruise",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-button-availability:Cruise",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-time:BankTurn",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "BankTurn",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-button-availability:BankTurn",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-time:GustRecovery",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "GustRecovery",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-button-availability:GustRecovery",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-time:TurretScan",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "TurretScan",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-button-availability:TurretScan",
+      "passed": true,
+      "detail": {
+        "enabled": false,
+        "expectedEnabled": false,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-time:WinchCycle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 16,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "WinchCycle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-button-availability:WinchCycle",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-time:FireBurst",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FireBurst",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "clip-button-availability:FireBurst",
+      "passed": true,
+      "detail": {
+        "enabled": false,
+        "expectedEnabled": false,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "playback-and-pause",
+      "passed": true,
+      "detail": {
+        "time": 0.12229999999999996
+      }
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "all-weakpoint-targets-resolve",
+      "passed": true,
+      "detail": [
+        {
+          "nodeName": "enemy-union-repair-high-side-hydraulic-repair-boom",
+          "present": true
+        },
+        {
+          "nodeName": "enemy-union-repair-lower-side-hydraulic-repair-boom",
+          "present": true
+        }
+      ]
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "weakpoint-labels-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "측면 수리 장치",
+          "hidden": false,
+          "display": "block",
+          "left": 596.712,
+          "top": 419.795
+        },
+        {
+          "text": "하부 수리팔 관절",
+          "hidden": false,
+          "display": "block",
+          "left": 698.465,
+          "top": 418.386
+        }
+      ]
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "weakpoint-labels-off-after-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "측면 수리 장치",
+          "hidden": true,
+          "display": "none"
+        },
+        {
+          "text": "하부 수리팔 관절",
+          "hidden": true,
+          "display": "none"
+        }
+      ]
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "no-deployment-controls-on-other-ships",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "view:front",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "view:side",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "view:top",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "view:perspective",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "hero-size-reference",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "silhouette-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "silhouette-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "outline-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "outline-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "pointer-orbit",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "wheel-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "fit-resets-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "auto-rotate",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "section": "enemy-union-repair",
+      "name": "mobile-390-maximum-width",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": {
+          "left": 13,
+          "right": 377,
+          "width": 364
+        },
+        "passed": true
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "actual-embedded-glb-load",
+      "passed": true,
+      "detail": {
+        "id": "enemy-ghost-chaser",
+        "bytes": 8407156,
+        "meshes": 51,
+        "triangles": 24220,
+        "texturesReady": true
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "outline-autoclear",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "actual-clip-set",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "expected": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst"
+        ],
+        "note": "Uses actual GLB clips; catalog metrics may describe the seven standard clips only."
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "mode:handdrawn",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "mode:cel",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "mode:original",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-time:FloatIdle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 10,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FloatIdle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-button-availability:FloatIdle",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-time:Cruise",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "Cruise",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-button-availability:Cruise",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-time:BankTurn",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "BankTurn",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-button-availability:BankTurn",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-time:GustRecovery",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "GustRecovery",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-button-availability:GustRecovery",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-time:TurretScan",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "TurretScan",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-button-availability:TurretScan",
+      "passed": true,
+      "detail": {
+        "enabled": false,
+        "expectedEnabled": false,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-time:WinchCycle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 16,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "WinchCycle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-button-availability:WinchCycle",
+      "passed": true,
+      "detail": {
+        "enabled": false,
+        "expectedEnabled": false,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-time:FireBurst",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FireBurst",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "clip-button-availability:FireBurst",
+      "passed": true,
+      "detail": {
+        "enabled": false,
+        "expectedEnabled": false,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "playback-and-pause",
+      "passed": true,
+      "detail": {
+        "time": 0.12320000000000006
+      }
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "all-weakpoint-targets-resolve",
+      "passed": true,
+      "detail": [
+        {
+          "nodeName": "enemy-ghost-chaser-exposed-midship-connector",
+          "present": true
+        },
+        {
+          "nodeName": "enemy-ghost-chaser-exposed-aft-propulsion",
+          "present": true
+        }
+      ]
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "weakpoint-labels-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "노출 측면 연결 골조",
+          "hidden": false,
+          "display": "block",
+          "left": 539.283,
+          "top": 396.716
+        },
+        {
+          "text": "후방 노출 추진부",
+          "hidden": false,
+          "display": "block",
+          "left": 360.695,
+          "top": 284.992
+        }
+      ]
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "weakpoint-labels-off-after-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "노출 측면 연결 골조",
+          "hidden": true,
+          "display": "none"
+        },
+        {
+          "text": "후방 노출 추진부",
+          "hidden": true,
+          "display": "none"
+        }
+      ]
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "no-deployment-controls-on-other-ships",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "view:front",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "view:side",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "view:top",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "view:perspective",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "hero-size-reference",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "silhouette-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "silhouette-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "outline-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "outline-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "pointer-orbit",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "wheel-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "fit-resets-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "auto-rotate",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "section": "enemy-ghost-chaser",
+      "name": "mobile-390-maximum-width",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": {
+          "left": 13,
+          "right": 377,
+          "width": 364
+        },
+        "passed": true
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "actual-embedded-glb-load",
+      "passed": true,
+      "detail": {
+        "id": "enemy-disguised-wreck",
+        "bytes": 7416712,
+        "meshes": 54,
+        "triangles": 33904,
+        "texturesReady": true
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "outline-autoclear",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "actual-clip-set",
+      "passed": true,
+      "detail": {
+        "observed": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst",
+          "AmbushReveal"
+        ],
+        "expected": [
+          "FloatIdle",
+          "Cruise",
+          "BankTurn",
+          "GustRecovery",
+          "TurretScan",
+          "WinchCycle",
+          "FireBurst",
+          "AmbushReveal"
+        ],
+        "note": "Uses actual GLB clips; catalog metrics may describe the seven standard clips only."
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "mode:handdrawn",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "mode:cel",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "mode:original",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-time:FloatIdle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 10,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FloatIdle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-button-availability:FloatIdle",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-time:Cruise",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "Cruise",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-button-availability:Cruise",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-time:BankTurn",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "BankTurn",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-button-availability:BankTurn",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-time:GustRecovery",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "GustRecovery",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-button-availability:GustRecovery",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-time:TurretScan",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 12,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "TurretScan",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-button-availability:TurretScan",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-time:WinchCycle",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 16,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "WinchCycle",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-button-availability:WinchCycle",
+      "passed": true,
+      "detail": {
+        "enabled": false,
+        "expectedEnabled": false,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-time:FireBurst",
+      "passed": true,
+      "detail": {
+        "accepted": true,
+        "duration": 8,
+        "time": 1.17,
+        "observedTime": 1.17,
+        "playing": false,
+        "profile": "FireBurst",
+        "invalidTransforms": 0
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "clip-button-availability:FireBurst",
+      "passed": true,
+      "detail": {
+        "enabled": true,
+        "expectedEnabled": true,
+        "note": "Embedded neutral clips do not imply that every device action must be enabled."
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "playback-and-pause",
+      "passed": true,
+      "detail": {
+        "time": 0.12420000002384178
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "all-weakpoint-targets-resolve",
+      "passed": true,
+      "detail": [
+        {
+          "nodeName": "enemy-disguised-wreck-concealed-rear-engine",
+          "present": true
+        },
+        {
+          "nodeName": "enemy-disguised-wreck-hidden-broadside-cannon--1",
+          "present": true
+        },
+        {
+          "nodeName": "enemy-disguised-wreck-hidden-broadside-cannon-1",
+          "present": true
+        }
+      ]
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "weakpoint-labels-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "전개 후 드러나는 후방 추진부",
+          "hidden": false,
+          "display": "block",
+          "left": 451.793,
+          "top": 317.006
+        },
+        {
+          "text": "위장 외피 안의 함포",
+          "hidden": false,
+          "display": "block",
+          "left": 633.889,
+          "top": 430.045
+        },
+        {
+          "text": "위장 외피 안의 함포",
+          "hidden": false,
+          "display": "block",
+          "left": 719.076,
+          "top": 388.916
+        }
+      ]
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "weakpoint-labels-off-after-on",
+      "passed": true,
+      "detail": [
+        {
+          "text": "전개 후 드러나는 후방 추진부",
+          "hidden": true,
+          "display": "none"
+        },
+        {
+          "text": "위장 외피 안의 함포",
+          "hidden": true,
+          "display": "none"
+        },
+        {
+          "text": "위장 외피 안의 함포",
+          "hidden": true,
+          "display": "none"
+        }
+      ]
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "three-deployment-bones-open",
+      "passed": true,
+      "detail": {
+        "deltas": [
+          {
+            "name": "enemy-disguised-wreck-camouflage-fold-port",
+            "radians": 1.3500000289679444
+          },
+          {
+            "name": "enemy-disguised-wreck-camouflage-fold-starboard",
+            "radians": 1.3500000289679444
+          },
+          {
+            "name": "enemy-disguised-wreck-camouflage-fold-bow-curtain",
+            "radians": 1.1999999754743103
+          }
+        ],
+        "time": 3.39
+      }
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "deployment-returns-to-closed-pose",
+      "passed": true,
+      "detail": [
+        {
+          "name": "enemy-disguised-wreck-camouflage-fold-port",
+          "maxDifference": 0
+        },
+        {
+          "name": "enemy-disguised-wreck-camouflage-fold-starboard",
+          "maxDifference": 0
+        },
+        {
+          "name": "enemy-disguised-wreck-camouflage-fold-bow-curtain",
+          "maxDifference": 0
+        }
+      ]
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "view:front",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "view:side",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "view:top",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "view:perspective",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "hero-size-reference",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "silhouette-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "silhouette-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "outline-off",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "outline-on",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "pointer-orbit",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "wheel-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "fit-resets-zoom",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "auto-rotate",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "section": "enemy-disguised-wreck",
+      "name": "mobile-390-maximum-width",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": {
+          "left": 13,
+          "right": 377,
+          "width": 364
+        },
+        "passed": true
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "six-unique-cards",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "initial-zero-iframes",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "six-preview-images-plus-reference-decode",
+      "passed": true,
+      "detail": [
+        {
+          "id": "enemy-pirate-scout",
+          "passed": true,
+          "width": 1030,
+          "height": 627
+        },
+        {
+          "id": "enemy-cult-blockade",
+          "passed": true,
+          "width": 1030,
+          "height": 627
+        },
+        {
+          "id": "enemy-union-salvage",
+          "passed": true,
+          "width": 1030,
+          "height": 627
+        },
+        {
+          "id": "enemy-union-repair",
+          "passed": true,
+          "width": 1030,
+          "height": 627
+        },
+        {
+          "id": "enemy-ghost-chaser",
+          "passed": true,
+          "width": 1030,
+          "height": 627
+        },
+        {
+          "id": "enemy-disguised-wreck",
+          "passed": true,
+          "width": 1030,
+          "height": 627
+        },
+        {
+          "id": "reference-sheet",
+          "passed": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "section": "gallery",
+      "name": "compare-selection:enemy-pirate-scout",
+      "passed": true,
+      "detail": {
+        "id": "enemy-pirate-scout",
+        "left": "0%",
+        "top": "0%",
+        "result": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-pirate-scout.png",
+        "expected": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-pirate-scout.png"
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "modal-load:enemy-pirate-scout",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "modal-close:enemy-pirate-scout",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "compare-selection:enemy-cult-blockade",
+      "passed": true,
+      "detail": {
+        "id": "enemy-cult-blockade",
+        "left": "-100%",
+        "top": "0%",
+        "result": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-cult-blockade.png",
+        "expected": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-cult-blockade.png"
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "modal-load:enemy-cult-blockade",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "modal-close:enemy-cult-blockade",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "compare-selection:enemy-union-salvage",
+      "passed": true,
+      "detail": {
+        "id": "enemy-union-salvage",
+        "left": "-200%",
+        "top": "0%",
+        "result": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-union-salvage.png",
+        "expected": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-union-salvage.png"
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "modal-load:enemy-union-salvage",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "modal-close:enemy-union-salvage",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "compare-selection:enemy-union-repair",
+      "passed": true,
+      "detail": {
+        "id": "enemy-union-repair",
+        "left": "0%",
+        "top": "-100%",
+        "result": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-union-repair.png",
+        "expected": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-union-repair.png"
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "modal-load:enemy-union-repair",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "modal-close:enemy-union-repair",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "compare-selection:enemy-ghost-chaser",
+      "passed": true,
+      "detail": {
+        "id": "enemy-ghost-chaser",
+        "left": "-100%",
+        "top": "-100%",
+        "result": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-ghost-chaser.png",
+        "expected": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-ghost-chaser.png"
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "modal-load:enemy-ghost-chaser",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "modal-close:enemy-ghost-chaser",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "compare-selection:enemy-disguised-wreck",
+      "passed": true,
+      "detail": {
+        "id": "enemy-disguised-wreck",
+        "left": "-200%",
+        "top": "-100%",
+        "result": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-disguised-wreck.png",
+        "expected": "http://127.0.0.1:64072/outputs/enemy-fleet-reference-v1/previews/enemy-disguised-wreck.png"
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "modal-load:enemy-disguised-wreck",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "modal-close:enemy-disguised-wreck",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "api-replaces-one-existing-viewer",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "escape-removes-viewer",
+      "passed": true
+    },
+    {
+      "section": "gallery",
+      "name": "maximum-one-concurrent-iframe",
+      "passed": true,
+      "detail": {
+        "maximum": 1
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "desktop-maximum-width",
+      "passed": true,
+      "detail": {
+        "viewport": 1280,
+        "document": 1280,
+        "body": 1280,
+        "canvas": null,
+        "passed": true
+      }
+    },
+    {
+      "section": "gallery",
+      "name": "gallery-mobile-390-maximum-width",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "canvas": null,
+        "passed": true
+      }
+    },
+    {
+      "section": "network",
+      "name": "no-external-requests",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "no-page-errors",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "no-console-errors",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "no-http-errors",
+      "passed": true
+    },
+    {
+      "section": "network",
+      "name": "no-failed-requests",
+      "passed": true,
+      "detail": {
+        "ignoredLocalIframeNavigationAborts": 0
+      }
+    }
+  ],
+  "screenshots": [
+    "work/enemy-fleet-reference-browser-qa/gallery-desktop.png",
+    "work/enemy-fleet-reference-browser-qa/gallery-mobile.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "localNavigationAborts": [],
+  "httpErrors": [],
+  "ghosting": {
+    "status": "not-run",
+    "reason": "This run checks loading/UI/rig controls. PNG encoded equality and tiny MSAA/camera changes are not a precise rotating-frame accumulation test. No ghosting pass is claimed."
+  },
+  "limits": [
+    "Six newly authored models and presentation controls only; no existing frozen fleet artifacts are modified.",
+    "No combat/AI/weakpoint damage, collision/socket, long-run resource stability, performance or art-quality approval.",
+    "Chrome desktop and 390px mobile viewport only; no physical mobile device or other browser coverage.",
+    "Unavailable device buttons are valid even when the seven standard animation clips are embedded.",
+    "Static render quality is captured and reviewed separately by the integration owner."
+  ],
+  "completedAt": "2026-10-18T09:49:27.784Z",
+  "summary": {
+    "checks": 273,
+    "passed": 273,
+    "failed": 0
+  }
+}

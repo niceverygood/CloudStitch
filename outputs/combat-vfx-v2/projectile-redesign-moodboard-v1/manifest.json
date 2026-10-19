@@ -1,0 +1,72 @@
+{
+  "title": "Cloudstitch · 발사체·공격 조형 재설계 무드보드",
+  "revision": "PROJECTILE-REDESIGN-MOODBOARD-V1",
+  "status": "concept_art_for_user_review",
+  "request": "발사되는 무기 자체를 새로 만드는게 낫겠어 지금 너무 조악해 우선 무드보드부터 만들어줘",
+  "generation": "built-in image_gen via imagegen skill",
+  "files": [
+    {
+      "path": "outputs/combat-vfx-v2/projectile-redesign-moodboard-v1/moodboard.png",
+      "bytes": 3352887,
+      "sha256": "035449ed3831eb9a9e785807edc0fc2d49dd160a46ca6ab5a4c7d050ef3ec352"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/projectile-redesign-moodboard-v1/prompt.txt",
+      "bytes": 5009,
+      "sha256": "0b0dccb79b991252d48ca89c54681d94c24fdec5e646c5a9361897397234d51c"
+    }
+  ],
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "기관총 탄환",
+      "focus": "황동 재킷·청록 금속 촉, 빠른 연사 궤적과 작은 목재 명중"
+    },
+    {
+      "id": 2,
+      "name": "함포탄",
+      "focus": "묵직한 단조 철·황동 띠, 큰 분출·목재 파편·연기"
+    },
+    {
+      "id": 3,
+      "name": "박격포탄",
+      "focus": "크림·청록 탄체, 높은 곡사와 세로 화염 폭발"
+    },
+    {
+      "id": 4,
+      "name": "로켓",
+      "focus": "봉제 천·목재 날개·황동, 뚜렷한 탄체와 길게 이어지는 배기"
+    },
+    {
+      "id": 5,
+      "name": "화염 분사",
+      "focus": "연결된 두꺼운 백열 코어, 겹겹의 불꽃과 접촉 화염"
+    },
+    {
+      "id": 6,
+      "name": "작살",
+      "focus": "목재 축·단조 촉·굵은 밧줄, 걸림·회수와 비화염 타격"
+    }
+  ],
+  "visualInspection": {
+    "sixPanelsPresent": true,
+    "titleAndLabelsReadable": true,
+    "heroProjectilesAndLauncherContext": true,
+    "launchFlightContactStudies": true,
+    "richFlameAndMaterialDifferences": true
+  },
+  "limitations": [
+    "2D concept moodboard; not a newly implemented weapon/GLB/texture atlas",
+    "Hero art and sequence miniatures are design proposals, not exact physical or animation continuity specifications",
+    "Human art approval pending"
+  ],
+  "preservation": {
+    "oldWeaponsAndGLBsUnchanged": true,
+    "interruptedFlame5NotResumed": true,
+    "newGLBs": 0
+  }
+}

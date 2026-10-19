@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
+const tests=spawnSync(process.execPath,['--test','tools/harbor/core.test.mjs','tools/shipyard/shipyard.test.mjs','tools/save/save.test.mjs'],{encoding:'utf8',cwd:root});
+if(tests.status!==0)throw new Error(tests.stdout+tests.stderr);
+const count=Number(tests.stdout.match(/tests (\d+)/)?.[1]);
+if(count!==48)throw new Error(`Expected 48 rule tests, got ${count}`);
+const sourceFiles=['tools/harbor/core.mjs','tools/harbor/adapters.mjs','tools/harbor/core.test.mjs','tools/shipyard/shipyard.mjs','tools/harbor/verify-linked.mjs','tools/harbor/finalize-linked.mjs','tools/harbor/LINKED_HANDOFF.md'];
+const hash=file=>({path:file,bytes:fs.statSync(path.join(root,file)).size,sha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex')});
+const out=path.join(root,'outputs/harbor-linked-v1');fs.mkdirSync(out,{recursive:true});
+fs.writeFileSync(path.join(out,'source-manifest.json'),JSON.stringify({version:'harbor-v1.0.2-ready',scope:'source patch; actual integrated run is separately recorded in verification.json',ruleTests:{passed:48,harbor:12,shipyard:11,save:25},files:sourceFiles.map(hash)},null,2)+'\n');
+console.log(`Ready harbor-v1.0.2-ready: 48/48 rules, ${sourceFiles.length} source files.`);

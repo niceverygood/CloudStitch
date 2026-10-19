@@ -1,0 +1,165 @@
+{
+  "revision": "MG-SOFT-RUNTIME-READY1-2026-10-18",
+  "kind": "bounded-delivery-manifest",
+  "files": [
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.js",
+      "bytes": 12956,
+      "sha256": "1bfe6f5f7678946ee142f6886b392b027df7747f84c9a43607a983b5737a78c7"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/painted-effects.js",
+      "bytes": 19321,
+      "sha256": "210e4a2a69ee3932bd66a3cda8540e687fc1bb78b373e85835732a323d519d6a"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.test.cjs",
+      "bytes": 24549,
+      "sha256": "059a43ee8dae9ba3a267c255d91309350bb7922a10f78de253bcbdb401c168e6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/build.cjs",
+      "bytes": 4075,
+      "sha256": "0b956a04b0849ddf64920ae7410c587d99bcd2e3a62eba424239a73d08aad4f6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/HANDOFF.md",
+      "bytes": 4449,
+      "sha256": "2d64c23d507452227486990ce7582644ed0d788d2dacedd5f79aced000a9e4c1"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-soft-runtime-v1/QA_PLAN.md",
+      "bytes": 2058,
+      "sha256": "cc4fc3cd0708723d3263a1bc73bba13b7cd7d6615b0aee4b0346567dc4dc72c8"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/runtime.js",
+      "bytes": 12956,
+      "sha256": "1bfe6f5f7678946ee142f6886b392b027df7747f84c9a43607a983b5737a78c7"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/painted-effects.js",
+      "bytes": 19321,
+      "sha256": "210e4a2a69ee3932bd66a3cda8540e687fc1bb78b373e85835732a323d519d6a"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/textures/soft-vfx-atlas.png",
+      "bytes": 432876,
+      "sha256": "c4ce60208e6dc66f3d5d8bec6a04399786e1ffb29b9cec55f8ab77d3ae4202ee"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/textures/soft-material-atlas.png",
+      "bytes": 2132005,
+      "sha256": "20deb2347094dcc8ba0ca8d6b6c7fcc66a7a770f582aa356e251bcee9b2911fb"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/verification/runtime-tests.json",
+      "bytes": 3453,
+      "sha256": "1eb2393d63bc9b22ba0bbb0c99775bf38fc10e2ee5a92a15860c124941146e00"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/manifest.json",
+      "bytes": 6949,
+      "sha256": "97c285c820a6053ee2ea67d6393a481005a284f217726e5706e5bdc4b1badcaf"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "path": "docs/ART_DIRECTION.txt",
+      "bytes": 5091,
+      "sha256": "af7dc6c10e788f2c866d34ab3077cdcfef9565cb0676a94af93da3ac37b987f0"
+    }
+  ],
+  "source_manifest": {
+    "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/manifest.json",
+    "bytes": 6949,
+    "sha256": "97c285c820a6053ee2ea67d6393a481005a284f217726e5706e5bdc4b1badcaf"
+  },
+  "original_manifest_unchanged": true,
+  "qa": {
+    "cpu": true,
+    "cases": [
+      {
+        "name": "one fire uses its event frame while the bullet follows actual state for any age",
+        "passed": true,
+        "duration_ms": 32.772
+      },
+      {
+        "name": "duplicate fire/hit and terminal replays never add logical effects",
+        "passed": true,
+        "duration_ms": 17.308
+      },
+      {
+        "name": "expiry, disappearance and cancelled projectiles do not invent contact",
+        "passed": true,
+        "duration_ms": 13.884
+      },
+      {
+        "name": "combat-clear, defeat and harbor-return hide all layers and bar stale state replay",
+        "passed": true,
+        "duration_ms": 10.425
+      },
+      {
+        "name": "missing projectile height and zero velocity use the fire frame without changing sim data",
+        "passed": true,
+        "duration_ms": 4.092
+      },
+      {
+        "name": "generation filters stale high sequences before current events and allows retry IDs",
+        "passed": true,
+        "duration_ms": 11.301
+      },
+      {
+        "name": "dt0 pauses ages and opacity; normal update resumes only once",
+        "passed": true,
+        "duration_ms": 5.257
+      },
+      {
+        "name": "hit core and six soft spark planes keep actual surface normals while orbiting",
+        "passed": true,
+        "duration_ms": 3.191
+      },
+      {
+        "name": "reset detaches and clears references; reused effects match a fresh instance",
+        "passed": true,
+        "duration_ms": 14.169
+      },
+      {
+        "name": "unsupported weapons and invalid contacts do not attach soft MG effects",
+        "passed": true,
+        "duration_ms": 1.273
+      },
+      {
+        "name": "simultaneous shots respect active/pool caps while receipts and input stay independent",
+        "passed": true,
+        "duration_ms": 198.102
+      },
+      {
+        "name": "real swept sim contact alone creates a soft impact and cannot be mutated by display",
+        "passed": true,
+        "duration_ms": 10.641
+      },
+      {
+        "name": "dispose is idempotent and owns only cloned textures, not caller atlases",
+        "passed": true,
+        "duration_ms": 6.304
+      }
+    ],
+    "actual_browser_integration": false,
+    "user_art_approval": false
+  },
+  "excluded": [
+    "The delivery manifest itself is excluded from its file list.",
+    "Browser/actual gameplay reports are delivered by the integration owner."
+  ]
+}

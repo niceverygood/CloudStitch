@@ -1,0 +1,264 @@
+{
+  "version": "voyage-spatial-v1",
+  "revision": 3,
+  "saveKey": "cloudstitch.voyage-campaign.v1",
+  "frame": {
+    "worldEqualsLocalXZ": true,
+    "yUp": true,
+    "flightY": 0
+  },
+  "stateOwner": "unchanged tools/voyage-campaign/session.mjs → verified battlefield/sim.mjs",
+  "policy": "Perspective camera and world scenery only. No second flight state, flight app or RAF. Flight camera module only consumes frozen distance/sweep math.",
+  "sources": [
+    {
+      "scope": "integration",
+      "path": "tools/encounters/catalog.json",
+      "bytes": 37831,
+      "sha256": "d20a707fba219927519e409756eec3662e3fe8ea85cb5540c321b05800c95b37"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/encounters/attack-intents.mjs",
+      "bytes": 6762,
+      "sha256": "4ee7c439d3d7a7d991db94f720ab085de33466fb46af9f6d8ab3b5115cca90fd"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/encounters/director.mjs",
+      "bytes": 10742,
+      "sha256": "e8a0cdb2c951994896cc06d35e6a5120fc372d26747e647ca4ee5f6a5f389e4f"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/encounters/attack-budget.mjs",
+      "bytes": 1499,
+      "sha256": "4d98568fc15a4316a20c310dc5f8ce1db625a2410f9b8acbea91b1e72e1cb5c4"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/levels/levels.mjs",
+      "bytes": 8567,
+      "sha256": "bd628ba20f5ae4ac745f962cf463265471791ebc208c6f059e2711f021a9a1fd"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/shipyard/shipyard.mjs",
+      "bytes": 21081,
+      "sha256": "413839ac4b7a6208036562b9bf50ea364384a7fcdff7af84b5faa19b6ab788d9"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/harbor/core.mjs",
+      "bytes": 10270,
+      "sha256": "9cae5e9bcb1c6fe453795a8fe4eb8eedcff9bb1e5c06958344125be8c5429a7c"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/harbor/adapters.mjs",
+      "bytes": 6118,
+      "sha256": "aac641234a776f0089eb3ac17d5746861789f2f9159ce05490d7eb2cc5197ab7"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/save/save.mjs",
+      "bytes": 20307,
+      "sha256": "8d975cd44dcc88590e96a8fd2ba6772051a9f3051cff669688c0ba3be3073414"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/integration/contract.mjs",
+      "bytes": 2040,
+      "sha256": "4cc138ee25d478aa3623072243d0e1565bab7664b029c59b1b00f0c9193dcb26"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/stage-maps/maps.mjs",
+      "bytes": 14981,
+      "sha256": "004f21544639c3516662e8d731967b3163aaab6a6ebdfdcd98bbfd0fabe66004"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/harbor/fixtures.mjs",
+      "bytes": 2891,
+      "sha256": "e70474fdb940c021b4abd9230f4a41f722a14d36cc04deac4cf0286d1a409930"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-campaign/campaign.mjs",
+      "bytes": 10070,
+      "sha256": "6c8e91bb5fb7fa5d72e222c5fe1a407f1c1150e8d9905400a90fa8b695e64263"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-campaign/storage.mjs",
+      "bytes": 5025,
+      "sha256": "fdd66259854fd95a09b0caef8282da948ac794f63181e3abe03ae7bf2ed102e7"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-campaign/session.mjs",
+      "bytes": 21074,
+      "sha256": "cac12bcaad42563681a6d76e034a7eac82953bb211406c8a0042426cffc4c74b"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/assets.js",
+      "bytes": 15505,
+      "sha256": "624532b463d498c5b0ad3ccc1c2ade75ea903af819b6871b6c0fb6aff0f3834b"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/environment-layout.mjs",
+      "bytes": 9654,
+      "sha256": "449ec795708f52f823ffa451ac1caaaee70a5d7101e5c58b7683091251242cd9"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/environment-source/core.mjs",
+      "bytes": 7840,
+      "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/environment-source/sky.mjs",
+      "bytes": 26359,
+      "sha256": "6fdb50cdff504c6e8da2917917de0aa4cb8eef2449dde27697d9a25e4ddd6f5e"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/environment-source/props.mjs",
+      "bytes": 40911,
+      "sha256": "83b91fedef9e2613bd283e1e5cedc8abeaeffceb67d6aed1122704b137cea326"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/environment-source/terrain.mjs",
+      "bytes": 34613,
+      "sha256": "de025448731fc8185248e958312f8aae73575e816342b8f9165fb49d07d8ae6c"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/environment-models.js",
+      "bytes": 11371,
+      "sha256": "a504e52a25a7a505c001ac5020e49b7a767c59ad85320cc19e02153ec1b7ebeb"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/environment.js",
+      "bytes": 9139,
+      "sha256": "1363ab6cfd0abb7ba9beb2adf3d47304a261d946d3d700ad288c793c1bd79af8"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/sim.mjs",
+      "bytes": 27606,
+      "sha256": "23bbbfe1f98493f4e6a0b26f0dd1090b3a1ee6a9da87bf4670b6e7576e42fc44"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/flight-source/camera-geometry.mjs",
+      "bytes": 3523,
+      "sha256": "a2c4d670c27595bbea56e3b830a9cf04b2459c32d399e035c3e70e110d01c21f"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/spatial-contract.mjs",
+      "bytes": 1296,
+      "sha256": "704b21e58673307b4dceb4d7176c0a78b398724727016b597aef2803c14c1b60"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/base-renderer.js",
+      "bytes": 35752,
+      "sha256": "b024f3274179ac42ba1ed47f34cc48bc0a0dec9a5fa545bd5105706e02ab6326"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/stage-maps/renderer-bridge.mjs",
+      "bytes": 825,
+      "sha256": "1d37518ad78e9a3c0a496cc37de0d915ee9a3deaeb12dee18515f4c51d62f76c"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-campaign/socket-aim.mjs",
+      "bytes": 3351,
+      "sha256": "d2ff65f930cc89476b4e626b01cf2c77ba19453b966c29c9e951ba9a27ae0f89"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-campaign/renderer.mjs",
+      "bytes": 1284,
+      "sha256": "d16722a355ad87bffad568aa9731cff86f6542edae605af921f02977c72c244e"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/renderer.mjs",
+      "bytes": 152,
+      "sha256": "248a13788d4f715ffdf0a32ec8feff3197581c4ac43ae68218a4ad53f1597e1a"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/vfx-contract.mjs",
+      "bytes": 7041,
+      "sha256": "d8d173bd83830cdbb37802523a959e0cef2c41d57e55b0918055ccc8372f23c4"
+    },
+    {
+      "scope": "integration",
+      "path": "tools/battlefield/vfx.js",
+      "bytes": 12815,
+      "sha256": "982595ffa38eff702bb7133aa61639b786cd098e724da891400ad5e12c200813"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-campaign/navigation.mjs",
+      "bytes": 5361,
+      "sha256": "8538cef1c6cc9b2d64799de664816be89f4219562d531851be3959f83ca13482"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/gesture.mjs",
+      "bytes": 1226,
+      "sha256": "14933c5492924dc7d895b05fdf5b183054a673d0bb69b9641662321e60a5ff08"
+    },
+    {
+      "scope": "shared",
+      "path": "tools/voyage-spatial/app.js",
+      "bytes": 34810,
+      "sha256": "ef6ab2cddbdee2177b51f78290c9188ac78f8f459c058452aeeb64ef762b9403"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "index.html",
+      "bytes": 11491,
+      "sha256": "4f2e7c860b6f7c38c0b0a84f5cb4b091bb6ccca1f0626e5e05ca56b8f91db8cf"
+    },
+    {
+      "path": "style.css",
+      "bytes": 28808,
+      "sha256": "201a394b68281b05fa73f15db046005633053d86454ba547296af1e20d6a51d1"
+    },
+    {
+      "path": "spatial.js",
+      "bytes": 1102806,
+      "sha256": "9fcaee69f2bfbe541f18adecacede2f41ddd5ff2c80dbadeb39b9ab79e0509f1"
+    },
+    {
+      "path": "qa-driver.js",
+      "bytes": 9618,
+      "sha256": "10b885c7d77e57190c9367cc4f70bc3c80e386166c71b3c4fee7f1f6e19ce548"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "revision": "HERO-WEAPON-REVIEW-V3",
+  "heroOwner": "주인공 함선 형태 단계별 구현",
+  "sources": {
+    "hero": {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-artillery.glb",
+      "bytes": 2119084,
+      "sha256": "619cc056ad7eca05faf9d6f90070fa6b8d493f8d925c76cf3ba2e602cc732e16"
+    },
+    "weapon": {
+      "path": "outputs/weapon-modules/01-machine-gun/weapon.glb",
+      "bytes": 3299860,
+      "sha256": "2a4b945ad3e2fb21f118e47b8eee90ab62bc55c891fdedae64500785372a41c6"
+    },
+    "atlas": {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/textures/soft-vfx-atlas.png",
+      "bytes": 432876,
+      "sha256": "c4ce60208e6dc66f3d5d8bec6a04399786e1ffb29b9cec55f8ab77d3ae4202ee"
+    },
+    "metal": {
+      "path": "outputs/combat-vfx-v2/machine-gun-soft-runtime-v1/textures/soft-material-atlas.png",
+      "bytes": 2132005,
+      "sha256": "20deb2347094dcc8ba0ca8d6b6c7fcc66a7a770f582aa356e251bcee9b2911fb"
+    }
+  },
+  "sourceHeroUnchanged": true,
+  "output": {
+    "bytes": 11476562,
+    "sha256": "12b2cc11497de5cadee602ed56f8a8724391792cb3729bf8f4b05f1f9db818c6"
+  },
+  "simulation": "existing battlefield adapter",
+  "mount": "review-only external platform, not production socket",
+  "browserVerified": true,
+  "browserVerification": "browser-verification.json",
+  "reviewLimitations": [
+    "GPU numeric plane-normal and opacity inspection unavailable through supported DOM inspection",
+    "No performance budget measurement or human art approval",
+    "No production sockets or campaign equipment installation"
+  ]
+}

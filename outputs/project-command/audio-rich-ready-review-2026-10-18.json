@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18T09:36:00Z",
+  "requestReference": "audio-rich-request-2026-10-18.json",
+  "version": "audio-rich-v1.0.0-ready",
+  "manifest": {
+    "path": "outputs/audio-rich-v1/delivery-manifest.json",
+    "sha256": "85e9a88f020adf5071ef190941998c5b5b640a788fa6a7c9a72670006773202d",
+    "files": 126,
+    "bytes": 19148860,
+    "selfExcluded": true
+  },
+  "rootVerified": {
+    "pathsAndSizes": 126,
+    "mismatches": 0,
+    "manifestShaMatched": true,
+    "large98MediaHashesRepeated": false
+  },
+  "sourceComposition": {
+    "logicalCues": 47,
+    "mortarAlternatives": 2,
+    "sourceMp3": 49,
+    "outputPcm16Wav": 49,
+    "outputBytes": 16582724,
+    "sampleRate": 44100,
+    "channels": 2
+  },
+  "processing": "local ID-specific resonance/soft saturation/short positive reflections/gentle60-100Hz bass; single tails max+.18s, loops sameframes",
+  "bassBudget": {
+    "maxAddedLayerSourceEnergyRatio": 0.024,
+    "loops": 0.004,
+    "ui": 0.003,
+    "warning": 0.004,
+    "notPerceivedBassOrTotalLowFrequencyIncrease": true
+  },
+  "comparison": "pairwise common RMS target with peak ceiling; raw RMS is not an improvement verdict",
+  "ownerReportedChecks": {
+    "file": 592,
+    "dspFixture": 26,
+    "fakePlayer": 36,
+    "offlineMix": 25,
+    "http": 107,
+    "allPassed": true,
+    "notNativeFinalPlayback": true
+  },
+  "nativeHarness": {
+    "path": "tools/audio/rich-v1/verify-browser.cjs",
+    "sha256": "720f5ce2c46e395690c1ac84d393dabc3fd24a69d0f71595bfbd6141f0bc3155",
+    "executor": "integration owner single browser slot",
+    "output": "outputs/audio-rich-browser-qa-v1/",
+    "status": "held, not executed/imported"
+  },
+  "sourcePreservation": {
+    "ownerReportedOriginal11318And46Matched": true,
+    "rootDidNotRepeat": true,
+    "originalMortarLaunchHumanRejected": true,
+    "mortarABUnselected": true
+  },
+  "paidGenerationRequests": 0,
+  "automaticGameInstall": false,
+  "humanListeningApproval": false,
+  "entry": "http://127.0.0.1:8866/outputs/audio-rich-v1/",
+  "aggregateQaPass": null,
+  "status": "historical READY1 held; Native/import0; READY2 pending targeted corrections",
+  "delegatedStaticReview": {
+    "ready1Source24ShaMatched": true,
+    "immediateStopDiscontinuityRisk": true,
+    "cap3DoesNotProveUncapped6ShotTailPreservation": true,
+    "pairRmsNotPerceivedLoudness": true,
+    "loop5msCrossblendAndCircularReflections": true,
+    "loopSeamHumanApproval": false,
+    "ready2NotYetReviewed": true
+  }
+}

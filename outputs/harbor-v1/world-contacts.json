@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "version": 1,
+  "contacts": [
+    {
+      "id": "workshop",
+      "label": "공방",
+      "sceneId": "jonghang-harbor",
+      "assetId": "repair-workshop",
+      "action": "shipyard",
+      "model": "outputs/world-assets/hero/repair-workshop/model-closed-roof.glb",
+      "preview": "outputs/world-assets/previews/repair-workshop.png",
+      "coordinateStatus": "semantic-contact-only; XZ/Y-up LU; authored interaction positions pending"
+    },
+    {
+      "id": "market",
+      "label": "천 시장",
+      "sceneId": "jonghang-harbor",
+      "assetId": "canvas-market",
+      "action": "market",
+      "model": "outputs/world-assets/hero/canvas-market/model-repaired.glb",
+      "preview": "outputs/world-assets/previews/canvas-market.png",
+      "coordinateStatus": "semantic-contact-only; XZ/Y-up LU; authored interaction positions pending"
+    },
+    {
+      "id": "warehouse",
+      "label": "보관함",
+      "sceneId": "jonghang-harbor",
+      "assetId": "storage-chest",
+      "action": "warehouse",
+      "model": "outputs/world-assets/assets/storage-chest.glb",
+      "preview": "outputs/world-assets/previews/storage-chest.png",
+      "coordinateStatus": "semantic-contact-only; XZ/Y-up LU; authored interaction positions pending"
+    },
+    {
+      "id": "departure",
+      "label": "출항 부두",
+      "sceneId": "jonghang-harbor",
+      "assetId": "dock-endcap",
+      "action": "departure",
+      "model": "outputs/world-assets/assets/dock-endcap.glb",
+      "preview": "outputs/world-assets/previews/dock-endcap.png",
+      "coordinateStatus": "semantic-contact-only; XZ/Y-up LU; authored interaction positions pending"
+    }
+  ],
+  "errors": [],
+  "scene": {
+    "id": "jonghang-harbor",
+    "model": "outputs/world-assets/scenes/jonghang-harbor.glb",
+    "preview": "outputs/world-assets/scene-previews/jonghang-harbor.png"
+  }
+}

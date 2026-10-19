@@ -1,0 +1,308 @@
+{
+  "revision": "world-moodboards-v2",
+  "date": "2026-10-19",
+  "title": "Cloudstitch · 열두 항로와 적조의 왕관",
+  "userConfirmed": [
+    "1탄 종을 삼킨 자·대장례함 비주얼",
+    "2탄 적조의 왕관 보스권역 비주얼 방향"
+  ],
+  "proposals": [
+    "7권역·12탄의 공간과 사건 연결",
+    "3~12탄의 환경 구성",
+    "2탄과 기존 조선소 정사의 연결"
+  ],
+  "counts": {
+    "regions": 7,
+    "stages": 12,
+    "mapBoards": 13,
+    "atlas": 1,
+    "finalImageFiles": 14,
+    "reusedV1Images": 11,
+    "newV2Images": 3
+  },
+  "generation": {
+    "mode": "built-in image_gen",
+    "fallbackCLI": false,
+    "rawImagesReencoded": false,
+    "totalCallsAcrossRevisions": 21,
+    "v1Calls": 17,
+    "v2Calls": 4,
+    "prompts": [
+      {
+        "path": "outputs/world-moodboards-v1/prompts/00-world-atlas.txt",
+        "bytes": 2950,
+        "sha256": "8cfb287851bae3d262601d90a2ce54b4d725d8794080d1d00af7f462b11cbc96"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/01-homecoming-docks.txt",
+        "bytes": 2247,
+        "sha256": "44847112d101570fae77ac48dccdec056320751d8a7f774b9d198ef7c63dcf12"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/02-stolen-bell-reach.txt",
+        "bytes": 2394,
+        "sha256": "ce943403ccea53d94057fc7a9b4d066799aa20cd27af798d12d1fa76f2c24e8a"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/03-ribbon-cliff-refuge.txt",
+        "bytes": 2321,
+        "sha256": "cc1d7217a39ec5c73523ce5db6b9aa4499dd8095c4adebadc9593968f61c91b3"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/04-great-updraft-rift.txt",
+        "bytes": 2331,
+        "sha256": "55b12aee85cce995a154c1399f81c98552a89d2518531225911cce1655a2f08f"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/05-stormbreak-mooring-targeted-revision.txt",
+        "bytes": 1090,
+        "sha256": "236723d745f99e28e3515625e1d1c7ac4a8a7037d72ea1be7bff90bb32416fe1"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/05-stormbreak-mooring.txt",
+        "bytes": 3196,
+        "sha256": "4cd4afb8d58f75fa5fea75e0382a5bab3e4ed1fb45b5cfd80b7331154d04a6ed"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/06-thunderwall-passage-targeted-revision.txt",
+        "bytes": 1137,
+        "sha256": "cd8b65aa5b23d1328d5933183fe0ef3f48b9a3e8aefc6c49d1884b491b6b5e71"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/06-thunderwall-passage.txt",
+        "bytes": 3248,
+        "sha256": "a52acf7ed8732115fa02d6735366596f04e0c5fb6012b8cbd0688901337b0836"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/07-iron-rib-commons-targeted-revision.txt",
+        "bytes": 893,
+        "sha256": "3fb8a536c1acde3c576ea47fc9000472bc7ef7b8eea77f8fb9e53a5084773108"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/07-iron-rib-commons.txt",
+        "bytes": 3241,
+        "sha256": "e4a4de651c7d838eafc678ec2c2b0f1fe38593304677a3b26d464baf0592c582"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/08-colossal-keel-yard.txt",
+        "bytes": 3288,
+        "sha256": "fb3b6214dfd24e6c6cb8fddf66ed316cdbfe097dbcd208c1c75fde5c8dba0f7b"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/09-lantern-below-clouds.txt",
+        "bytes": 3244,
+        "sha256": "40ef0d934c7633402d831bddf6c66ddd8be29b99aa15848b872b9a322c2535b5"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/10-fleet-of-forgotten-names.txt",
+        "bytes": 2337,
+        "sha256": "3ff76d07cbb9e0d69aaab1e4b1d07df837a3a68c54b04720b1d777570bad1a8b"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/11-palace-beneath-black-canopy.txt",
+        "bytes": 2372,
+        "sha256": "8b65a0d0aa6168732cd20177b95985800c171e239bf44908f5f6612fea733fd4"
+      },
+      {
+        "path": "outputs/world-moodboards-v1/prompts/12-last-service-deck.txt",
+        "bytes": 2514,
+        "sha256": "c691e7cf8551e58aa6e77ddd29811495c918d85372f0cf15db49d10e823b9da2"
+      },
+      {
+        "path": "outputs/world-moodboards-v2/prompts/00-world-atlas.txt",
+        "bytes": 3301,
+        "sha256": "ae32fcb8fe032ab34bb8c2b08f4ebcb39fc15ec6a82b94b0589c66e277394de1"
+      },
+      {
+        "path": "outputs/world-moodboards-v2/prompts/01-stolen-bell-reach.txt",
+        "bytes": 648,
+        "sha256": "33d6fe8ccea90acee123a3f6f57b495caabd2030dde0c6ef6f42764fdfb0ebd7"
+      },
+      {
+        "path": "outputs/world-moodboards-v2/prompts/02-crown-of-red-tide.txt",
+        "bytes": 4469,
+        "sha256": "d4cf6fd76dd6d30ac51099e579a089816a0dbfa9bb2a558db085893c8e265875"
+      }
+    ]
+  },
+  "images": [
+    {
+      "path": "outputs/world-moodboards-v2/images/00-world-atlas.png",
+      "bytes": 3693331,
+      "sha256": "3d203ec24588304495231013968ed51834167a85e44100c5d3add60c4cc071bd",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/01-homecoming-docks.png",
+      "bytes": 3339739,
+      "sha256": "111468fa04959b7075f6d9f7f4809c43e488863c3f8361d44357657dc49b73ce",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v2/images/01-stolen-bell-reach.png",
+      "bytes": 2842694,
+      "sha256": "1a87c3def810a00e7b11af026fdc3818322ca5327c20f808e7803a29555ee263",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v2/images/02-crown-of-red-tide.png",
+      "bytes": 3373745,
+      "sha256": "2f12a28e917c24e991fb27817428630f4821f4d7345fb7488480f52f5f9ef4a8",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/03-ribbon-cliff-refuge.png",
+      "bytes": 3196182,
+      "sha256": "d6728e8e233c9189072c5c86118483e74ad66c9d9d3ebfe7b3d66c64dfebde40",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/04-great-updraft-rift.png",
+      "bytes": 3253621,
+      "sha256": "823b38f8919900c0e7bc006f24e85b36426ed1f30496ab8df0cef739bd7d9b42",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/05-stormbreak-mooring.png",
+      "bytes": 2954824,
+      "sha256": "328b66c54e6c86b9b03de03d32a43f928583d42d8afad5c148a560cde8b619d1",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/06-thunderwall-passage.png",
+      "bytes": 2982787,
+      "sha256": "8fe894753768a4457eeb6e987b450bb9c374a5ae3768e9e18946c5c5e2762a69",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/07-iron-rib-commons.png",
+      "bytes": 3069107,
+      "sha256": "5e7148b64a9faf75fbaa2291ab932870751716835451c650fc11ad1d64f4faf1",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/08-colossal-keel-yard.png",
+      "bytes": 3371664,
+      "sha256": "57951213ef2032c131635a7b419d43fd18f381a04452f88b400160cb599b333d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/09-lantern-below-clouds.png",
+      "bytes": 2392873,
+      "sha256": "4e5cb1bc756cc2d388459cc5999807cdb2f70079a2c86614321c1e94b77f0140",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/10-fleet-of-forgotten-names.png",
+      "bytes": 3300008,
+      "sha256": "aedaa50feed94cde9cdefd972e10752547702b41ff2a088bd2280384f67ef886",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/11-palace-beneath-black-canopy.png",
+      "bytes": 3089156,
+      "sha256": "80dbe1412188a5755fdb706882e4eeeb5bde77f2d730da30865da634c14a8288",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/world-moodboards-v1/images/12-last-service-deck.png",
+      "bytes": 3069874,
+      "sha256": "b29b72a510df5c785b0487136112a9f3a4b55af34e8a54a36b37653b16f40ea4",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "references": [
+    {
+      "path": "outputs/ship-states-v1/three-lineages-selected-v1/three-lineages.png",
+      "bytes": 2573843,
+      "sha256": "1e272951acfb03aee26e350fb5502a5f36e2cad4f284af03a58b2b1dd631f85b",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/enemy-base-moodboard-v2/moodboard.png",
+      "bytes": 3102262,
+      "sha256": "49ea92ea7a8dc01b1ee79679d550e22f1a417a4f922243ba21306c521f6327f3",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/chapter1-final-boss-moodboard-v2/moodboard.png",
+      "bytes": 3291142,
+      "sha256": "1a2d5a915b85a8a09ace06ef62fb02e4b1cdf9da9802b82085595054168b0f64",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-moodboard-v1/moodboard.png",
+      "bytes": 3613828,
+      "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "documents": [
+    {
+      "path": "outputs/world-moodboards-v2/index.html",
+      "bytes": 54097,
+      "sha256": "dc9b4a9f2caf6d343689c0ab2268af48eba7ec9b73c7b529930fc7cc058e50c9"
+    },
+    {
+      "path": "outputs/world-moodboards-v2/catalog.json",
+      "bytes": 20598,
+      "sha256": "ecb1a543e76aec19409bd23043d0791bfa7c4c262f881ab9fba16b4e64491532"
+    },
+    {
+      "path": "outputs/world-moodboards-v2/WORLD_GUIDE.txt",
+      "bytes": 16134,
+      "sha256": "8b64a5078f6326f0bdd85da6f79928d6d77b92d99ba449ea06c15a5c8f01fdb9"
+    },
+    {
+      "path": "outputs/world-moodboards-v2/HANDOFF.txt",
+      "bytes": 4296,
+      "sha256": "b8ae91934edda0ae40a671e7369b4022ef1e27e9b777e7c4d45fe464ed564bd5"
+    }
+  ],
+  "verification": {
+    "pngSignatureIHDRIEND": true,
+    "dimensionsAll": "1536x1024",
+    "sha256Recorded": true,
+    "relativeLinksChecked": 51,
+    "missingLinks": 0,
+    "lfsAllFinalImages": true,
+    "referenceImagesUnchanged": 4,
+    "knownExplicitSpoilerPhrasesOutsideCollapsedNotes": 0,
+    "assistantVisualReview": true,
+    "browserLayoutTest": false,
+    "userArtApproval": "new boards awaiting review; two boss visual directions user-confirmed"
+  },
+  "limitations": [
+    "정지 콘셉트. 실제 게임 맵·3D·전투·밸런스 검증 아님",
+    "총람 점선은 분위기 연결로 실제 진행순서·거리·좌표를 확정하지 않음",
+    "11탄 상승 비의 방향은 정지 이미지로 확정하기 어려움",
+    "생성 이미지의 작은 문양·포대 수·장치 배치를 시스템 명세로 삼지 않음",
+    "v2는 v1의 채택 보드를 상대경로로 참조하므로 두 폴더를 함께 보존"
+  ],
+  "sources": [
+    "tools/world-moodboards-v1/stage-plan.json",
+    "tools/world-moodboards-v1/stage-plan-v2.json",
+    "tools/world-moodboards-v1/build.mjs",
+    "outputs/world-moodboards-v1/records/05-08.json",
+    "outputs/world-moodboards-v1/records/09-12.json",
+    "outputs/world-moodboards-v2/records/02.json"
+  ]
+}

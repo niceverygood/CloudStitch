@@ -1,0 +1,227 @@
+{
+  "checks": [
+    {
+      "name": "five unchanged consumer/audio sources",
+      "pass": true
+    },
+    {
+      "name": "final ready and original AA restored",
+      "pass": true
+    },
+    {
+      "name": "mobility actual groups/all hits",
+      "pass": true
+    },
+    {
+      "name": "artillery actual groups/all hits",
+      "pass": true
+    },
+    {
+      "name": "salvage actual groups/all hits",
+      "pass": true
+    },
+    {
+      "name": "AA restored actual audio schedules",
+      "pass": true
+    },
+    {
+      "name": "final pause cancels",
+      "pass": true
+    },
+    {
+      "name": "fixed scene/camera/opacity no accumulated transformations",
+      "pass": true,
+      "detail": {
+        "initialTo240": {
+          "pixels": 214,
+          "max": 20,
+          "bounds": [
+            113,
+            294,
+            1095,
+            357
+          ]
+        },
+        "initialTo480": {
+          "pixels": 172,
+          "max": 20,
+          "bounds": [
+            108,
+            294,
+            1095,
+            377
+          ]
+        },
+        "step240To480": {
+          "pixels": 159,
+          "max": 12,
+          "bounds": [
+            108,
+            298,
+            1083,
+            377
+          ]
+        }
+      }
+    },
+    {
+      "name": "final mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "final no JS error",
+      "pass": true
+    }
+  ],
+  "strictPixelEquality": false,
+  "browserClosed": true,
+  "audioValidation": "qa-r4/verification.json: unchanged audio/events/rig/effects/template; viewer AA flag restored only",
+  "errors": [],
+  "pixelDiff": {
+    "initialTo240": {
+      "pixels": 214,
+      "max": 20,
+      "bounds": [
+        113,
+        294,
+        1095,
+        357
+      ]
+    },
+    "initialTo480": {
+      "pixels": 172,
+      "max": 20,
+      "bounds": [
+        108,
+        294,
+        1095,
+        377
+      ]
+    },
+    "step240To480": {
+      "pixels": 159,
+      "max": 12,
+      "bounds": [
+        108,
+        298,
+        1083,
+        377
+      ]
+    }
+  },
+  "originals": [
+    {
+      "path": "outputs/ship-weapon-harmony-v1/mobility-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/artillery-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/ship-weapon-harmony-v1/salvage-assembled.glb",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/mobility-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/mobility-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/artillery-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/artillery-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-launch.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-flight.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-hit.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/basic/salvage-recovery.wav",
+      "preserved": true
+    },
+    {
+      "path": "outputs/audio-ship-weapon-attack-v1/enhanced/salvage-recovery.wav",
+      "preserved": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "AA true can vary transparent edge readback; strict equality retained separately; visual nonaccumulation reviewed from 0/240/480 PNG",
+    "Audio timing uses common event timeline; visual presentation depends on browser frame rate. No subjective listening approval."
+  ]
+}

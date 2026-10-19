@@ -1,0 +1,41 @@
+Cloudstitch fleet-v1 독립 QA 결과
+
+전체 판정: 통과. fullCorpusPassed=true, 카탈로그 71행 중 71행 검사, 실패 0건.
+71행에는 함선, 장착안, 세력 역할, 시설, 기록·결말안, 기존 9개 디자인 대안이 포함된다. 71개의 독립된 정사 선체라는 의미가 아니다.
+
+실제 GLB 합계: 512,660,524 bytes / 2,887,058 triangles.
+개별 GLB 삼각형 범위: 8,192~109,860.
+전 71개 Khronos glTF Validator: 오류 0, 경고 0, 힌트 0.
+정보 70건은 모두 IMAGE_NPOT_DIMENSIONS이며 1536×1024 공유 아틀라스의 너비1536이2의 거듭제곱이 아니라는 크기 안내이다.
+정확히 동일한 geometry fingerprint 후보: 0개. C1/C3 중복 수정이 반영되었다.
+
+검증 내용:
+소스·산출 카탈로그 ID 전수 대조, 확정 장치 수 및 지정된 수치 구조, 실제 스킨 메시·본 트리·조인트 소속, 가중치·역바인드·키프레임의 유한값, 7개 클립의 루프 경계 검사를 통과했다.
+71개 독립 HTML에서 실제 GLB·내장 텍스처를 로드했다. 각 7개 클립을 대표 시점 5곳에서 평가하여 CPU 스킨 좌표와 바운드가 유효함을 확인했다.
+손그림·셀·원본의 3개 표시 모드, 윤곽선 autoClear, 화면 표시 픽셀, 390px 모바일 가로 넘침, 55도 카메라 캡처를 확인했다.
+71개 미리보기의 previewSourceSha256 및 실제 다운로드 bytes/SHA가 해당 GLB와 모두 일치한다.
+전수 브라우저 JavaScript 오류 0건, 외부 HTTP 요청 0건, 모바일 가로 넘침 0건.
+
+원본 자산 15개 SHA 변경 없음.
+선택 귀환호 rig BIN chunk SHA: 40812af6237a029ec687b6ae5dc86045c351f9198690936044d05d9ad551430e
+귀환호의 기존 rig-v1과 fleet-v1 BIN chunk가 정확히 같다. 기하·UV·텍스처·애니메이션을 보존하고 JSON 메타데이터만 추가했다.
+
+갤러리:
+20회 선택 전환과 귀환호 재선택 동안 최대 iframe 1개.
+귀환호 재선택 후 현재 renderer geometry 11개, texture 12개로 시작값과 정확히 같다. texture 수에는 GPU 본 텍스처가 포함된다.
+71개 썸네일 모두 loading=lazy, 테스트 시점 32개 decode / 39개 미decode.
+갤러리 JavaScript 오류·외부 요청·모바일 넘침 없음.
+
+판정의 범위:
+기획 원문에 수치가 없는 장치 수는 제작 해석값이며 원문 확정값으로 인증하지 않는다. 문자열 present로 명시된 구조 특징은 별도 수동 검토 대상이다.
+geometry fingerprint는 정확한 복제 여부만 검사한다. 사람의 실루엣 구분·55도 가독성·미감은 자동 인증하지 않는다.
+캡처는 각 모델을 개별 정규화하고 화면에 맞췄다. 공통 게임 단위나 상대 크기 비교를 인증하지 않는다.
+하나의 현재 iframe 및 현재 renderer 자원 복귀를 확인했다. 브라우저 내부 GPU 회수, 실기기 성능, 엔진 통합, LOD·충돌, 실제 전투·캠페인은 검증 범위 밖이다.
+
+실행:
+node tools/qa/fleet.cjs outputs/fleet-v1 work/verification/fleet tools/fleet/catalog.json
+상세 근거: work/verification/fleet/qa-result.json
+상세 JSON SHA256: ab559e87f775328b597660bea99ca35724559b629977438da2ec915da1dd5c48
+
+후속 표시문구 수정:
+전체 QA 완료 후 비무장 FireBurst 표시를 장치 반응, 지원 WinchCycle 표시를 인양·지원 작업으로 정정하여71개 HTML을 재번들했다. 동작·렌더·GLB는 변경하지 않았다. 대표3개 뷰어의 문구·지원 버튼·7개 클립과 실제HTTP 갤러리 검사가 통과했다. 보완 근거는 labels-verification.json이다. 이 문서의 전수 결과는 표시문구 변경 전 HTML과 동일한 GLB에 대한 결과이다.

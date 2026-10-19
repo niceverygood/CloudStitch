@@ -1,0 +1,93 @@
+{
+  "id": "large-explosion",
+  "original_id": "large-explosion",
+  "order": 28,
+  "name_ko": "대형 폭발",
+  "name_en": "Large Explosion",
+  "category": "explosion-environment",
+  "weapon_id": null,
+  "model": "assets/large-explosion.glb",
+  "duration": 1.8,
+  "loop": false,
+  "purpose": "큰 충격을 작은 타격보다 느리고 넓게 보여준다.",
+  "status": "residual_source_reviewed_render_pending",
+  "representative": false,
+  "placement_scale": 0.32,
+  "authored_silhouette_scale": 1,
+  "triangles": 4141,
+  "mesh_count": 6,
+  "animation_count": 1,
+  "bytes": 7468008,
+  "sha256": "f5659a1ea44bd023d953ca5afdac4548d10d806a1cc23047fc639ebf8a21ffbb",
+  "meshy_bases": [
+    "flame",
+    "smoke"
+  ],
+  "runtime_features": [
+    "node extras.runtime_fade drives viewer opacity; standard GLB uses TRS alone"
+  ],
+  "source_type": "Meshy mesh/texture reused + local authored brush volumes/TRS",
+  "task_ids": [
+    "01a14dcc-674d-7248-8d4b-fc604c7d5e06",
+    "01a14dca-e074-7440-aba5-de317145911e"
+  ],
+  "new_paid_task_for_this_effect": false,
+  "axes": "+Y up, +Z forward, +Y impact surface normal",
+  "limits": [
+    "Art choreography prototype; runtime combat integration pending.",
+    "GLB embeds standardTRS only. Runtime opacity/outline/cel are separate browser features.",
+    "Fixed projectile movement belongs to preview clip; disable root translation when gameplay projectile owns motion.",
+    "Only representative6 initially receives direct visual review; catalog status records later checks."
+  ],
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/core.cjs",
+      "bytes": 9366,
+      "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+    },
+    {
+      "path": "tools/combat-vfx-v2/generate.cjs",
+      "bytes": 4019,
+      "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/secondary.cjs",
+      "bytes": 15360,
+      "sha256": "c4a18ad86e420226a25802c222fb50cc6aaf1109f8bdd7c448307c262b15f7fc"
+    }
+  ],
+  "output_file": {
+    "path": "outputs/combat-vfx-v2/assets/large-explosion.glb",
+    "bytes": 7468008,
+    "sha256": "f5659a1ea44bd023d953ca5afdac4548d10d806a1cc23047fc639ebf8a21ffbb"
+  },
+  "visual_reviewed": false,
+  "art_preflight_review": {
+    "audit_report": "tools/combat-vfx-v2/review-secondary.json",
+    "status": "source_binary_reviewed_new_render_required",
+    "changes": "X-long Meshy flame import instance rotated +Z pi/2; X/Y authored scales swapped to retain width/height/depth roles; parent TRS and duration unchanged.",
+    "concerns": [
+      "flame은 parent yaw만 있고 X→Y 보정이 없어 수정 전 수평으로 퍼진다. 새 inner rotation으로 보정했다.",
+      "가장 큰 불꽃 높이0.64는 대표 cannon-hit의 authored_scale1.9가 적용된 높이와 비교하면 작을 수 있다. 출력 렌더 없이 이름만 보고 확대하지 않았다."
+    ],
+    "expected_observations": [
+      "3개 불꽃이 +Y로 솟고 개별 면 사이에 여백이 남는지 확인한다.",
+      "small/cannon-hit보다 큰 폭발로 읽히되 기낭 면을 불투명하게 덮지 않는지 확인한다.",
+      "불꽃 다음에 두 잔연기가 지연되어 남는지 확인한다."
+    ],
+    "loop_boundary_sample_seconds": [],
+    "sample_times_seconds": [
+      0.216,
+      0.36,
+      0.522,
+      1.062,
+      1.53
+    ],
+    "current_output": {
+      "path": "outputs/combat-vfx-v2/assets/large-explosion.glb",
+      "bytes": 7468008,
+      "sha256": "f5659a1ea44bd023d953ca5afdac4548d10d806a1cc23047fc639ebf8a21ffbb"
+    },
+    "scope": "Source/binary review only; queued fresh renders are not completed art approval."
+  }
+}

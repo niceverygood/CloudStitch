@@ -1,0 +1,94 @@
+{
+  "title": "Cloudstitch · 1막 적군 10종 + 중간보스 무드보드",
+  "method": "built-in image_gen",
+  "calls": 3,
+  "status": "static-concepts-for-review",
+  "regularEnemies": [
+    {
+      "number": 1,
+      "name": "가시까마귀",
+      "role": "정찰정",
+      "design": "A low, long needle-like raven beak bow, a narrow cream envelope, two long swept mechanical tail fins, an asymmetrical tall signal mast, small lookout cage; fastest-looking thin reconnaissance silhouette, not a literal bird."
+    },
+    {
+      "number": 2,
+      "name": "철턱 들이받이",
+      "role": "돌격정",
+      "design": "A brutally squat compact bulldog-like armored ram tug, huge forward forged two-jaw impact clamp, oversized paired rear propellers and two short fat cream buoyancy sacs; broad muscular low silhouette."
+    },
+    {
+      "number": 3,
+      "name": "검은 관 포격함",
+      "role": "함포정",
+      "design": "A broad low coffin-shaped armored gunboat with one enormous broadside cannon dominating a protruding recoil cradle, heavy stepped dark shield around the barrel, modest pale balloon and oxblood canopy."
+    },
+    {
+      "number": 4,
+      "name": "갈고리 사냥꾼",
+      "role": "견인정",
+      "design": "An open skeletal scorpion-like salvage vessel, tall swept A-frame crane, huge exposed brass winch drum, TWO long hooked towing cables, twin separated cream buoyancy sacks; open negative space through frame."
+    },
+    {
+      "number": 5,
+      "name": "장송 방패함",
+      "role": "방어정",
+      "design": "A short wide shield barge with gigantic layered forward pavise shaped like a pointed black iron funeral door, brass ribs, narrow amber view slit, armoured shoulders and squat cream buoyancy; shield is main readable mass."
+    },
+    {
+      "number": 6,
+      "name": "향로 불씨함",
+      "role": "화염정",
+      "design": "A low aggressive furnace tanker, three huge black spherical censer tanks, bundled brass pipes and a short wide flame nozzle, tiny restrained orange furnace flame, ivory heatproof shrouds, round swollen paired cream buoyancy, no human face."
+    },
+    {
+      "number": 7,
+      "name": "묘지기 박격함",
+      "role": "박격포정",
+      "design": "A deep high-sided cauldron mortar boat with ONE immense upward-tilted hollow mortar cup recessed in a circular brass recoil cage, broad cream balloon above aft, chunky counterweights, bulky vertical silhouette unlike the low gunboat."
+    },
+    {
+      "number": 8,
+      "name": "사슬 거미함",
+      "role": "사슬탄정",
+      "design": "A wide flat mechanically spider-like trapper boat with four spread articulated cable-support booms, paired open chain-shot launching forks, a conspicuous heavy chain reel, small split cream airbags. It is a flying ship, no walking legs."
+    },
+    {
+      "number": 9,
+      "name": "봉인 수복선",
+      "role": "수리 지원정",
+      "design": "An asymmetrical tall armored workshop carrier, one huge folded articulated brass repair arm with clamp, hanging replacement armor shields, stitched cream fabric spool and compact enclosed foundry, broad black funeral shroud. Hostile workshop, not friendly shop."
+    },
+    {
+      "number": 10,
+      "name": "검은 종 지휘정",
+      "role": "지휘정",
+      "design": "A slender tall command vessel with enormous black-and-brass speaking horn array and one SMALL signal bell under an iron ceremonial arch, narrow cream balloon, elevated angular observation cabin and long oxblood pennants; elegant authoritarian spire silhouette. Its small bell is much smaller than the final boss's giant bell."
+    }
+  ],
+  "miniboss": {
+    "name": "장례 집행관",
+    "role": "장례 호위함 / 쌍윈치·집행 집게",
+    "proposedSourceId": "mini-funeral-guard",
+    "mapping": "기존 장례 경비 정체성의 외형 제안. 정사 이름/수치 변경 아님.",
+    "board": "miniboss-executor.png"
+  },
+  "boards": [
+    "fleet-front-5.png",
+    "fleet-support-5.png",
+    "miniboss-executor.png"
+  ],
+  "bossSelection": "boss-selection.json",
+  "visualReview": {
+    "count": "5+5 일반 적과 중간보스1 확인",
+    "identity": "먹청 철갑·황동·크림 기낭·검붉은 장막·청록 추진기 유지",
+    "differences": "일반10종의 선체 비율/주기능 장치 구별, 중간보스는 집행집게/쌍윈치/장례장막 중심",
+    "note": "생성글씨에는 일부 자형/띄어쓰기 차이 가능. 이름 기준은 이 JSON과 갤러리의 텍스트."
+  },
+  "limitations": [
+    "정지 무드보드. 일반적10/중간보스의 실제 GLB·전투·AI·피해·장착 구현 없음.",
+    "그림 속 포대수·장비 배치·상대크기는 시각 제안이며 시스템 수치가 아님.",
+    "일반적10종은 이 요청용 새시각카탈로그이며 기존전체19종과의 통합/대체관계 미확정.",
+    "새11종의 사람 미술 승인은 대기. 기존최종보스외형 선택과 별도."
+  ],
+  "existingAssetsModified": false
+}

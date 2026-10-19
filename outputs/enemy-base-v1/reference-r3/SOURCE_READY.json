@@ -1,0 +1,144 @@
+{
+  "revision": "reference-r3",
+  "date": "2026-10-19",
+  "status": "SOURCE_READY",
+  "ownership": [
+    "tools/enemy-base/reference-r3/",
+    "outputs/enemy-base-v1/reference-r3/"
+  ],
+  "files": [
+    {
+      "path": "tools/enemy-base/reference-r3/build.cjs",
+      "bytes": 1867,
+      "sha256": "e449f165fad4f8216fe0c47f903cd5174b216bab22f12015f86ab5cc6190e45c"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/finalize.cjs",
+      "bytes": 8132,
+      "sha256": "a3190a6915de269ba390f77dbc365b07f02ac5938a81f8d112b61be4be704eee"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/generate.cjs",
+      "bytes": 1210,
+      "sha256": "921ae86e3741b51c7feb7c4e40fb39e16e09fdeef8d1e033191c7ec31f74e97a"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/generate.mjs",
+      "bytes": 4769,
+      "sha256": "00b1eba602d5a0000094e33e7a0a5b6ef523ae01ac2f06f50a8b0150435aef1c"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/inspect.cjs",
+      "bytes": 5082,
+      "sha256": "f4ebf94ce43274f22969c2242d2374f7bb902b680247a02778a1281dfb29ea02"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/model.mjs",
+      "bytes": 12841,
+      "sha256": "c78f068972139552749c89999f732d76cd6f4878e3140d40ea45fa75c074080e"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/paint-export.js",
+      "bytes": 3301,
+      "sha256": "6efdc05ab4b96394067d53cf18a222bb5d359687f64fc99d5ccca527123de41f"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/paint.cjs",
+      "bytes": 3388,
+      "sha256": "1d17881b334d26e3827e0626dd3916a4338ba90b865507731f32faeda55b3a6f"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/prepare.cjs",
+      "bytes": 3815,
+      "sha256": "ffd64ed5ba9692071933dd94fbaca6d3241a36a82fbd3f2d37af5d9a5f532933"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/qa.cjs",
+      "bytes": 27344,
+      "sha256": "d02d84878593869e0e64027ebec693bfba04859770029c8bd26995749a8d13e4"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/README.txt",
+      "bytes": 2115,
+      "sha256": "8b83b82f860159cda440078688912f55d7c04920698c263ecfd21e931bcbee09"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/repair-colors.cjs",
+      "bytes": 2031,
+      "sha256": "58a09957ceac39313e1c588bc082fbab0d1fa2e06d75cbba841c430e6ac47956"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/review.js",
+      "bytes": 22049,
+      "sha256": "741ddb599fa60fabbeed5533cf3586307183ebbd48aec201fc64fd7d44d29ca0"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/source-ready.cjs",
+      "bytes": 2008,
+      "sha256": "2a685608d74a1e8cde5bf1cc896ec31bced5943ed02189feb14eda63648232f6"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/template.html",
+      "bytes": 24690,
+      "sha256": "cacf1b476c12a87eb63979a3a3ef6a8e404d5dc55fc862afa5e69f85ec335941"
+    },
+    {
+      "path": "tools/enemy-base/reference-r3/verify-surface.cjs",
+      "bytes": 1763,
+      "sha256": "5ed9fad9b03386ed8416d08f7293f439a427814e3f2397a213c9e0f0d503c3a1"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "tools/enemy-base/fortress.mjs",
+      "bytes": 42870,
+      "sha256": "fbd079c4945b147e5d3332c95c94422be4d21da7161b7c947a36ee29546bbfe0"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/enemy-base.glb",
+      "bytes": 22564476,
+      "sha256": "d7f3bc614ba95e18fb2b5477db1e47b0d5bab4891b0f483c05f17878b017b1c1"
+    },
+    {
+      "path": "outputs/enemy-base-v1/grand-r2/index.html",
+      "bytes": 34856263,
+      "sha256": "ba096661240680b43d3562b814d0d6c6819aefdefabf6f3731cb6a1e923cfd4f"
+    },
+    {
+      "path": "outputs/enemy-base-v1/reference-r3/painted-atlas.png",
+      "bytes": 3810987,
+      "sha256": "13984610dd7647659d97beb02a4b29e0092fe787e06adacf9c7e0bfc32920c0a"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/reference-r3/reference.png",
+    "bytes": 3267432,
+    "sha256": "6b7ef9aae13dec2fb73373a517063340a0cf75978c42ff986e594c7cfea6b7cb"
+  },
+  "commands": [
+    "node tools/enemy-base/reference-r3/generate.cjs",
+    "node tools/enemy-base/reference-r3/paint.cjs",
+    "node tools/enemy-base/reference-r3/inspect.cjs",
+    "node tools/enemy-base/reference-r3/build.cjs",
+    "node tools/enemy-base/reference-r3/qa.cjs",
+    "node tools/enemy-base/reference-r3/finalize.cjs"
+  ],
+  "scope": "One actual static 3D fortress, embedded offline review, three material modes, controls, notes, download, mobile and ghosting regression; user art approval separate.",
+  "changes": [
+    "Broad armor hull and quilted buoyancy proportions",
+    "Twelve substantial tower masses and layered tile roofs",
+    "Projecting timber galleries, furnace windows, stairs and pipes",
+    "Curved plates with rivets and overlap seams",
+    "Tall bell cage and original cannon/gate/crane parts",
+    "Red military standards and ivory sealing cloth",
+    "Reference-matched front-quarter camera"
+  ],
+  "limits": [
+    "Hidden geometry interpreted from a single image",
+    "Relative design scale only",
+    "No gameplay/collision/LOD/AI/interiors",
+    "No exact-pixel reproduction claim"
+  ],
+  "exporterStarted": false,
+  "browserStarted": false
+}

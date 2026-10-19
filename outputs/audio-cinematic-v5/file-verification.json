@@ -1,0 +1,3644 @@
+{
+  "schema": "cinematic-v5-file-qa/v1",
+  "scope": "full49",
+  "catalogSha256": "6e173fa261368d86079832f24aea7026f6d51b0a1405eb851c25402f2a8fa6e0",
+  "dspSha256": "8065fc4b6226cd654785f1319cacb216cd696773177ef80f2c02eec954deb292",
+  "passed": true,
+  "total": 645,
+  "passCount": 645,
+  "checks": [
+    {
+      "id": "expected_unique_candidate_count",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.698577880859375,
+      "rms": 0.17061789622428766,
+      "dc": -0.0013750542716829742
+    },
+    {
+      "id": "fire-machinegun:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:timing",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 257.93628678284585
+    },
+    {
+      "id": "fire-machinegun:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:donor:fire-machinegun",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:donor:machinegun-feed",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9973814388216191,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "fire-machinegun:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.723724365234375,
+      "rms": 0.17398814440569801,
+      "dc": 0.00028791590110746677
+    },
+    {
+      "id": "machinegun-feed:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:timing",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 141.85647896118462
+    },
+    {
+      "id": "machinegun-feed:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:donor:machinegun-feed",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "machinegun-feed:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9997788209156979,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "machinegun-feed:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.71728515625,
+      "rms": 0.17679078481947064,
+      "dc": -0.0004507931146374424
+    },
+    {
+      "id": "fire-cannon:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:timing",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 288.8954682685435
+    },
+    {
+      "id": "fire-cannon:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:fire-cannon",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:mortar-impact",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:donor:chain-spin",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999998748459357,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "fire-cannon:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.71282958984375,
+      "rms": 0.1773931680561925,
+      "dc": 0.0001578107759100664
+    },
+    {
+      "id": "cannon-breech:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:timing",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 106.89371232129633
+    },
+    {
+      "id": "cannon-breech:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:donor:cannon-breech",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "cannon-breech:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9997853955490339,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "cannon-breech:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.6767578125,
+      "rms": 0.17982415913832014,
+      "dc": -0.0005288706422045195
+    },
+    {
+      "id": "fire-mortar:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:timing",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 228.6139650195837
+    },
+    {
+      "id": "fire-mortar:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:donor:fire-mortar",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "fire-mortar:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999601299500541,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "fire-mortar:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.65484619140625,
+      "rms": 0.18653669121453936,
+      "dc": 0.00022853385448301346
+    },
+    {
+      "id": "mortar-fall:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:timing",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 118.3772829156369
+    },
+    {
+      "id": "mortar-fall:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:donor:mortar-fall",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "mortar-fall:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999973345441251,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "mortar-fall:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.71014404296875,
+      "rms": 0.17519956375315535,
+      "dc": -0.0011535867358010913
+    },
+    {
+      "id": "fire-harpoon:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:timing",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 229.03066055476665
+    },
+    {
+      "id": "fire-harpoon:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:donor:fire-harpoon",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:donor:chain-spin",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "fire-harpoon:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9996117977714682,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "fire-harpoon:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.70819091796875,
+      "rms": 0.17555601161703152,
+      "dc": -0.0012777238011089853
+    },
+    {
+      "id": "harpoon-embed:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:timing",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 216.80523182079196
+    },
+    {
+      "id": "harpoon-embed:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:donor:harpoon-embed",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:donor:chain-spin",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "harpoon-embed:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9997231107245415,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "harpoon-embed:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.638153076171875,
+      "rms": 0.14539562771653708,
+      "dc": -0.000833932266754358
+    },
+    {
+      "id": "harpoon-tension-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 6.256203365512192
+    },
+    {
+      "id": "harpoon-tension-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:donor:engine-cruise-loop",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:donor:wind-calm-loop",
+      "passed": true
+    },
+    {
+      "id": "harpoon-tension-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9992245769008412,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "harpoon-tension-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.70855712890625,
+      "rms": 0.17511691681154357,
+      "dc": -0.0010783856104290674
+    },
+    {
+      "id": "fire-chain:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:timing",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 216.54488326236606
+    },
+    {
+      "id": "fire-chain:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:donor:fire-chain",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:donor:chain-spin",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "fire-chain:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9990221282967492,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "fire-chain:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.665771484375,
+      "rms": 0.18542513895155355,
+      "dc": -0.00099562429138322
+    },
+    {
+      "id": "chain-spin:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:timing",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 181.9716524053365
+    },
+    {
+      "id": "chain-spin:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:donor:chain-spin",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:donor:chain-spin",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "chain-spin:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999999989266931,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "chain-spin:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.69061279296875,
+      "rms": 0.1758445126349731,
+      "dc": 0.0001573746903275199
+    },
+    {
+      "id": "flame-ignite:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:timing",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 156.10632319934666
+    },
+    {
+      "id": "flame-ignite:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:donor:flame-ignite",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:donor:flame-ignite",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "flame-ignite:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9996177680812146,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "flame-ignite:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "flame-spray-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "flame-spray-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "flame-spray-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.611236572265625,
+      "rms": 0.1436137979851593,
+      "dc": -0.00012763535895315157
+    },
+    {
+      "id": "flame-spray-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "flame-spray-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "flame-spray-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 3.6810078592970967
+    },
+    {
+      "id": "flame-spray-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "flame-spray-loop:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "flame-spray-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "flame-spray-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9986564069229732,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "flame-spray-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.69171142578125,
+      "rms": 0.17620674250098972,
+      "dc": -0.00018560579071038138
+    },
+    {
+      "id": "flame-stop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:timing",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 160.60205321013927
+    },
+    {
+      "id": "flame-stop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:donor:flame-stop",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:donor:flame-ignite",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "flame-stop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9996225802395518,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "flame-stop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.7337646484375,
+      "rms": 0.1709956656310965,
+      "dc": -0.0014519819608500536
+    },
+    {
+      "id": "hit-wood:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:timing",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 258.1434983946383
+    },
+    {
+      "id": "hit-wood:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9990740398195589,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "hit-wood:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.595367431640625,
+      "rms": 0.1876923143727666,
+      "dc": -0.0013399781299238446
+    },
+    {
+      "id": "hit-cloth:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:timing",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 142.76983295194805
+    },
+    {
+      "id": "hit-cloth:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:donor:hit-cloth",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:donor:hit-cloth",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "hit-cloth:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9997161403914452,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "hit-cloth:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.733123779296875,
+      "rms": 0.1705511871499016,
+      "dc": 0.0005331859808556622
+    },
+    {
+      "id": "hit-armor:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:timing",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 295.97030164301395
+    },
+    {
+      "id": "hit-armor:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "hit-armor:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.998867618972236,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "hit-armor:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.683563232421875,
+      "rms": 0.18017499357519456,
+      "dc": -0.001210206091107764
+    },
+    {
+      "id": "hit-engine:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:timing",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 195.6608926653862
+    },
+    {
+      "id": "hit-engine:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "hit-engine:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999591537923992,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "hit-engine:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.718963623046875,
+      "rms": 0.17669945685474697,
+      "dc": -0.000739095244642241
+    },
+    {
+      "id": "mortar-impact:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:timing",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 325.43560980819166
+    },
+    {
+      "id": "mortar-impact:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:donor:mortar-impact",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:donor:mortar-impact",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:donor:chain-spin",
+      "passed": true
+    },
+    {
+      "id": "mortar-impact:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9998918130393409,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "mortar-impact:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.71539306640625,
+      "rms": 0.17620605884049495,
+      "dc": 0.0004436699413506054
+    },
+    {
+      "id": "connector-cut:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:timing",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 298.21376237273216
+    },
+    {
+      "id": "connector-cut:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:donor:connector-cut",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "connector-cut:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999996555940204,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "connector-cut:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "module-break:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "module-break:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "module-break:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.712982177734375,
+      "rms": 0.17709723452439013,
+      "dc": 0.00020837868651066196
+    },
+    {
+      "id": "module-break:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "module-break:timing",
+      "passed": true
+    },
+    {
+      "id": "module-break:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 294.39534771442413
+    },
+    {
+      "id": "module-break:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "module-break:donor:module-break",
+      "passed": true
+    },
+    {
+      "id": "module-break:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "module-break:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "module-break:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "module-break:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "module-break:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "module-break:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9983428007122133,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "module-break:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.7213134765625,
+      "rms": 0.17562181494480644,
+      "dc": 0.0003469980291879706
+    },
+    {
+      "id": "bundle-detach:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:timing",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 285.54655464179814
+    },
+    {
+      "id": "bundle-detach:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:donor:bundle-detach",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "bundle-detach:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9997839239653371,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "bundle-detach:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.640533447265625,
+      "rms": 0.14519156886404666,
+      "dc": -0.0007442340288573112
+    },
+    {
+      "id": "winch-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 6.4019890781491995
+    },
+    {
+      "id": "winch-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:donor:engine-cruise-loop",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:donor:wind-calm-loop",
+      "passed": true
+    },
+    {
+      "id": "winch-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999813601406954,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "winch-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.67596435546875,
+      "rms": 0.18073167997616302,
+      "dc": 0.00045746783820950254
+    },
+    {
+      "id": "salvage-complete:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:timing",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 147.22216795384884
+    },
+    {
+      "id": "salvage-complete:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:donor:salvage-complete",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "salvage-complete:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9998430334413948,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "salvage-complete:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.712921142578125,
+      "rms": 0.17529752663031173,
+      "dc": 0.00045556778038131175
+    },
+    {
+      "id": "cargo-drop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:timing",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 135.16250638850033
+    },
+    {
+      "id": "cargo-drop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:donor:cargo-drop",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "cargo-drop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9994870570234388,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "cargo-drop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.71722412109375,
+      "rms": 0.17627520328119126,
+      "dc": 0.00019584233015455113
+    },
+    {
+      "id": "bundle-lost:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:timing",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 291.06575464457273
+    },
+    {
+      "id": "bundle-lost:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:donor:bundle-lost",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "bundle-lost:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9998837572667711,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "bundle-lost:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.439697265625,
+      "rms": 0.14524840018271046,
+      "dc": -0.00034813457786000686
+    },
+    {
+      "id": "engine-idle-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 4.639717758633196
+    },
+    {
+      "id": "engine-idle-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:donor:engine-cruise-loop",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:donor:wind-calm-loop",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999994739532441,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "engine-idle-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.44427490234375,
+      "rms": 0.14522979405642264,
+      "dc": -0.00014639839293464782
+    },
+    {
+      "id": "engine-cruise-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 12.908903653733432
+    },
+    {
+      "id": "engine-cruise-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:donor:engine-cruise-loop",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:donor:wind-calm-loop",
+      "passed": true
+    },
+    {
+      "id": "engine-cruise-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9987200800639422,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "engine-cruise-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "wind-calm-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "wind-calm-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "wind-calm-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.65252685546875,
+      "rms": 0.14315575715794995,
+      "dc": 0.00001606048099578373
+    },
+    {
+      "id": "wind-calm-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "wind-calm-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "wind-calm-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 5.196999317035079
+    },
+    {
+      "id": "wind-calm-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "wind-calm-loop:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "wind-calm-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "wind-calm-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999659903198108,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "wind-calm-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "wind-fast-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "wind-fast-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "wind-fast-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.626861572265625,
+      "rms": 0.14169693490286378,
+      "dc": 0.00006408212766986135
+    },
+    {
+      "id": "wind-fast-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "wind-fast-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "wind-fast-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 2.768865211866796
+    },
+    {
+      "id": "wind-fast-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "wind-fast-loop:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "wind-fast-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "wind-fast-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9998870821779018,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "wind-fast-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.582977294921875,
+      "rms": 0.14300922830834695,
+      "dc": -0.00044178306020216244
+    },
+    {
+      "id": "hull-creak-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 7.28660789784044
+    },
+    {
+      "id": "hull-creak-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:donor:engine-cruise-loop",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:donor:wind-calm-loop",
+      "passed": true
+    },
+    {
+      "id": "hull-creak-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9997052472689464,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "hull-creak-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "harbor-workshop-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "harbor-workshop-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "harbor-workshop-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.594390869140625,
+      "rms": 0.1406714615328739,
+      "dc": 0.0002448675800072633
+    },
+    {
+      "id": "harbor-workshop-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "harbor-workshop-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "harbor-workshop-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 2.25858043320477
+    },
+    {
+      "id": "harbor-workshop-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "harbor-workshop-loop:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "harbor-workshop-loop:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "harbor-workshop-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999734266322509,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "harbor-workshop-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "lift-danger-loop:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "lift-danger-loop:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "lift-danger-loop:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.7562255859375,
+      "rms": 0.13689282134474698,
+      "dc": -0.000013071955466757016
+    },
+    {
+      "id": "lift-danger-loop:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "lift-danger-loop:timing",
+      "passed": true
+    },
+    {
+      "id": "lift-danger-loop:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 5.533591684885323
+    },
+    {
+      "id": "lift-danger-loop:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "lift-danger-loop:donor:engine-idle-loop",
+      "passed": true
+    },
+    {
+      "id": "lift-danger-loop:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "lift-danger-loop:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999835592074222,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "lift-danger-loop:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "lift-warning:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "lift-warning:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "lift-warning:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.60491943359375,
+      "rms": 0.18682562710046938,
+      "dc": -0.00047233866996505635
+    },
+    {
+      "id": "lift-warning:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "lift-warning:timing",
+      "passed": true
+    },
+    {
+      "id": "lift-warning:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 106.04327638074756
+    },
+    {
+      "id": "lift-warning:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "lift-warning:donor:lift-warning",
+      "passed": true
+    },
+    {
+      "id": "lift-warning:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "lift-warning:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9995200480114229,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "lift-warning:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "incoming-warning:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "incoming-warning:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "incoming-warning:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.726043701171875,
+      "rms": 0.17387444348899836,
+      "dc": -0.0006895590801628269
+    },
+    {
+      "id": "incoming-warning:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "incoming-warning:timing",
+      "passed": true
+    },
+    {
+      "id": "incoming-warning:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 187.939624177292
+    },
+    {
+      "id": "incoming-warning:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "incoming-warning:donor:incoming-warning",
+      "passed": true
+    },
+    {
+      "id": "incoming-warning:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "incoming-warning:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9998283971764785,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "incoming-warning:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "defeat:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "defeat:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "defeat:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.60986328125,
+      "rms": 0.18752687886259803,
+      "dc": 0.0006123748225690016
+    },
+    {
+      "id": "defeat:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "defeat:timing",
+      "passed": true
+    },
+    {
+      "id": "defeat:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 122.55278792977333
+    },
+    {
+      "id": "defeat:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "defeat:donor:defeat",
+      "passed": true
+    },
+    {
+      "id": "defeat:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "defeat:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999739378078397,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "defeat:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "return:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "return:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "return:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.70166015625,
+      "rms": 0.17793431955962116,
+      "dc": 0.00042154295451439505
+    },
+    {
+      "id": "return:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "return:timing",
+      "passed": true
+    },
+    {
+      "id": "return:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 147.0149854887277
+    },
+    {
+      "id": "return:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "return:donor:return",
+      "passed": true
+    },
+    {
+      "id": "return:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "return:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "return:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "return:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9996797831314237,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "return:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.725738525390625,
+      "rms": 0.17458534824343547,
+      "dc": 0.0005414760726765595
+    },
+    {
+      "id": "harbor-repair:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:timing",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 204.36829416826367
+    },
+    {
+      "id": "harbor-repair:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:donor:harbor-repair",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "harbor-repair:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999124753315098,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "harbor-repair:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.70123291015625,
+      "rms": 0.17578242021935395,
+      "dc": 0.0006999646956997084
+    },
+    {
+      "id": "harbor-equip:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:timing",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 135.93465998210013
+    },
+    {
+      "id": "harbor-equip:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:donor:harbor-equip",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "harbor-equip:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9996983051123062,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "harbor-equip:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.69677734375,
+      "rms": 0.17774837454542192,
+      "dc": 0.0003994681281413235
+    },
+    {
+      "id": "harbor-store:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:timing",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 158.76375493966043
+    },
+    {
+      "id": "harbor-store:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:donor:harbor-store",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "harbor-store:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9988578476723486,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "harbor-store:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.6597900390625,
+      "rms": 0.18375308888929248,
+      "dc": 0.00047324056721135253
+    },
+    {
+      "id": "harbor-depart:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:timing",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 112.58606537804008
+    },
+    {
+      "id": "harbor-depart:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:donor:harbor-depart",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:donor:hull-creak-loop",
+      "passed": true
+    },
+    {
+      "id": "harbor-depart:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999256787828735,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "harbor-depart:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "save-ok:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "save-ok:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "save-ok:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.618408203125,
+      "rms": 0.10917842399737542,
+      "dc": -0.0002429049744897959
+    },
+    {
+      "id": "save-ok:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "save-ok:timing",
+      "passed": true
+    },
+    {
+      "id": "save-ok:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 105.90439932979643
+    },
+    {
+      "id": "save-ok:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "save-ok:donor:save-ok",
+      "passed": true
+    },
+    {
+      "id": "save-ok:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "save-ok:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "save-ok:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9996934918070484,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "save-ok:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.58636474609375,
+      "rms": 0.109714040747085,
+      "dc": -0.0002894274871749687
+    },
+    {
+      "id": "ui-fail:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:timing",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 100.95217102766037
+    },
+    {
+      "id": "ui-fail:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:donor:ui-fail",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "ui-fail:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9997051056502988,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "ui-fail:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.5819091796875,
+      "rms": 0.10770671018346525,
+      "dc": -0.0001740325443328373
+    },
+    {
+      "id": "ui-hover:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:timing",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 94.71598164737225
+    },
+    {
+      "id": "ui-hover:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:donor:ui-hover",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "ui-hover:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9872016266278296,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "ui-hover:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.64508056640625,
+      "rms": 0.1077861107116873,
+      "dc": -0.00014432447783801022
+    },
+    {
+      "id": "ui-confirm:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:timing",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 119.94846064597368
+    },
+    {
+      "id": "ui-confirm:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:donor:ui-confirm",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "ui-confirm:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9999844879762733,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "ui-confirm:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "ui-back:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "ui-back:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "ui-back:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.629974365234375,
+      "rms": 0.10852960989120221,
+      "dc": -0.00014952090862386622
+    },
+    {
+      "id": "ui-back:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "ui-back:timing",
+      "passed": true
+    },
+    {
+      "id": "ui-back:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 62.35404207929969
+    },
+    {
+      "id": "ui-back:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "ui-back:donor:ui-back",
+      "passed": true
+    },
+    {
+      "id": "ui-back:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "ui-back:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "ui-back:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9953108858150722,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "ui-back:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.6134033203125,
+      "rms": 0.11253654900597244,
+      "dc": -0.00030592065927933674
+    },
+    {
+      "id": "restore-ok:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:timing",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 42.23707013763487
+    },
+    {
+      "id": "restore-ok:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:donor:restore-ok",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:donor:hit-armor",
+      "passed": true
+    },
+    {
+      "id": "restore-ok:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9988379649370992,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "restore-ok:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.707489013671875,
+      "rms": 0.1756868837224345,
+      "dc": -0.0007482237672203367
+    },
+    {
+      "id": "mortar-launch-a:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:timing",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 247.20836032181978
+    },
+    {
+      "id": "mortar-launch-a:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:donor:mortar-launch-a",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9998992004030904,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "mortar-launch-a:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:frozen_comparison_sha",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:output_sha_bytes",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:finite_headroom_dc",
+      "passed": true,
+      "peak": 0.712982177734375,
+      "rms": 0.17471299730329115,
+      "dc": -0.000852961118529443
+    },
+    {
+      "id": "mortar-launch-b:channel_rate",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:timing",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:immediate_non_silent_start",
+      "passed": true,
+      "first10msEnergy": 293.3206804152578
+    },
+    {
+      "id": "mortar-launch-b:mono_non_silent",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:donor:mortar-launch-b",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:donor:hit-engine",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:donor:hit-wood",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:donor:wind-fast-loop",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b:beyond_uniform_gain",
+      "passed": true,
+      "bestFitResidualFraction": 0.9992990091066324,
+      "note": "Not a perceptual quality score."
+    },
+    {
+      "id": "mortar-launch-b:not_human_approved_or_installed",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:pair_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:pair_order_gap",
+      "passed": true
+    },
+    {
+      "id": "fire-machinegun:v4:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.07337161504290862,
+      "peak": 0.719970703125,
+      "error": 0.00003647800939921009
+    },
+    {
+      "id": "fire-machinegun:v5:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.07337164120661832,
+      "peak": 0.3004150390625,
+      "error": 0.000024064070834162177
+    },
+    {
+      "id": "fire-machinegun:digital_silence",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:pair_sha",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:pair_order_gap",
+      "passed": true
+    },
+    {
+      "id": "fire-cannon:v4:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.06910886584651098,
+      "peak": 0.719970703125,
+      "error": 0.00003586269946798115
+    },
+    {
+      "id": "fire-cannon:v5:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.06910891679704827,
+      "peak": 0.2803955078125,
+      "error": 0.000023665950486695397
+    },
+    {
+      "id": "fire-cannon:digital_silence",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:pair_sha",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:pair_order_gap",
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-a:v4:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.04590984518950153,
+      "peak": 0.719970703125,
+      "error": 0.00003177417039401664
+    },
+    {
+      "id": "mortar-launch-a:v5:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.04590986422936664,
+      "peak": 0.18487548828125,
+      "error": 0.00002067393198074141
+    },
+    {
+      "id": "mortar-launch-a:digital_silence",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:pair_sha",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:pair_order_gap",
+      "passed": true
+    },
+    {
+      "id": "hit-wood:v4:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.05898234872708264,
+      "peak": 0.719970703125,
+      "error": 0.000035213861520833056
+    },
+    {
+      "id": "hit-wood:v5:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.0589823790747483,
+      "peak": 0.25311279296875,
+      "error": 0.000022933283766291
+    },
+    {
+      "id": "hit-wood:digital_silence",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:pair_sha",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:pair_order_gap",
+      "passed": true
+    },
+    {
+      "id": "engine-idle-loop:v4:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.12999603192177717,
+      "peak": 0.49169921875,
+      "error": 0.000029241428233850453
+    },
+    {
+      "id": "engine-idle-loop:v5:actual_gain_rms_peak",
+      "passed": true,
+      "rms": 0.1299960414220417,
+      "peak": 0.393524169921875,
+      "error": 0.000026784689415138008
+    },
+    {
+      "id": "engine-idle-loop:digital_silence",
+      "passed": true
+    },
+    {
+      "id": "actual_primary_unchanged",
+      "passed": true
+    },
+    {
+      "id": "deterministic_output",
+      "passed": true
+    },
+    {
+      "id": "silent_input_does_not_trigger_blast",
+      "passed": true
+    },
+    {
+      "id": "six_actual_shots_fixed_headroom",
+      "passed": true,
+      "rawPeak": 0.86334228515625,
+      "headroom": 0.16666666666666666,
+      "headroomPeak": 0.143890380859375,
+      "starts": 6,
+      "evicted": 0,
+      "intervalSeconds": 0.22,
+      "notActualGameMixer": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "fire-machinegun",
+      "peak": 0.698577880859375,
+      "rms": 0.17061789622428766,
+      "dc": -0.0013750542716829742,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 33516,
+      "duration": 0.76,
+      "layers": 9,
+      "residual": 0.9973814388216191
+    },
+    {
+      "id": "machinegun-feed",
+      "peak": 0.723724365234375,
+      "rms": 0.17398814440569801,
+      "dc": 0.00028791590110746677,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 77175,
+      "duration": 1.75,
+      "layers": 8,
+      "residual": 0.9997788209156979
+    },
+    {
+      "id": "fire-cannon",
+      "peak": 0.71728515625,
+      "rms": 0.17679078481947064,
+      "dc": -0.0004507931146374424,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 202860,
+      "duration": 4.6,
+      "layers": 12,
+      "residual": 0.9999998748459357
+    },
+    {
+      "id": "cannon-breech",
+      "peak": 0.71282958984375,
+      "rms": 0.1773931680561925,
+      "dc": 0.0001578107759100664,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 77175,
+      "duration": 1.75,
+      "layers": 8,
+      "residual": 0.9997853955490339
+    },
+    {
+      "id": "fire-mortar",
+      "peak": 0.6767578125,
+      "rms": 0.17982415913832014,
+      "dc": -0.0005288706422045195,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9999601299500541
+    },
+    {
+      "id": "mortar-fall",
+      "peak": 0.65484619140625,
+      "rms": 0.18653669121453936,
+      "dc": 0.00022853385448301346,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 77175,
+      "duration": 1.75,
+      "layers": 8,
+      "residual": 0.9999973345441251
+    },
+    {
+      "id": "fire-harpoon",
+      "peak": 0.71014404296875,
+      "rms": 0.17519956375315535,
+      "dc": -0.0011535867358010913,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 110250,
+      "duration": 2.5,
+      "layers": 9,
+      "residual": 0.9996117977714682
+    },
+    {
+      "id": "harpoon-embed",
+      "peak": 0.70819091796875,
+      "rms": 0.17555601161703152,
+      "dc": -0.0012777238011089853,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 110250,
+      "duration": 2.5,
+      "layers": 9,
+      "residual": 0.9997231107245415
+    },
+    {
+      "id": "harpoon-tension-loop",
+      "peak": 0.638153076171875,
+      "rms": 0.14539562771653708,
+      "dc": -0.000833932266754358,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 176400,
+      "duration": 4,
+      "layers": 4,
+      "residual": 0.9992245769008412
+    },
+    {
+      "id": "fire-chain",
+      "peak": 0.70855712890625,
+      "rms": 0.17511691681154357,
+      "dc": -0.0010783856104290674,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 110250,
+      "duration": 2.5,
+      "layers": 9,
+      "residual": 0.9990221282967492
+    },
+    {
+      "id": "chain-spin",
+      "peak": 0.665771484375,
+      "rms": 0.18542513895155355,
+      "dc": -0.00099562429138322,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 110250,
+      "duration": 2.5,
+      "layers": 9,
+      "residual": 0.9999999989266931
+    },
+    {
+      "id": "flame-ignite",
+      "peak": 0.69061279296875,
+      "rms": 0.1758445126349731,
+      "dc": 0.0001573746903275199,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 112455,
+      "duration": 2.55,
+      "layers": 8,
+      "residual": 0.9996177680812146
+    },
+    {
+      "id": "flame-spray-loop",
+      "peak": 0.611236572265625,
+      "rms": 0.1436137979851593,
+      "dc": -0.00012763535895315157,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 176400,
+      "duration": 4,
+      "layers": 2,
+      "residual": 0.9986564069229732
+    },
+    {
+      "id": "flame-stop",
+      "peak": 0.69171142578125,
+      "rms": 0.17620674250098972,
+      "dc": -0.00018560579071038138,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 112455,
+      "duration": 2.55,
+      "layers": 8,
+      "residual": 0.9996225802395518
+    },
+    {
+      "id": "hit-wood",
+      "peak": 0.7337646484375,
+      "rms": 0.1709956656310965,
+      "dc": -0.0014519819608500536,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 103635,
+      "duration": 2.35,
+      "layers": 8,
+      "residual": 0.9990740398195589
+    },
+    {
+      "id": "hit-cloth",
+      "peak": 0.595367431640625,
+      "rms": 0.1876923143727666,
+      "dc": -0.0013399781299238446,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 74970,
+      "duration": 1.7,
+      "layers": 8,
+      "residual": 0.9997161403914452
+    },
+    {
+      "id": "hit-armor",
+      "peak": 0.733123779296875,
+      "rms": 0.1705511871499016,
+      "dc": 0.0005331859808556622,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 103635,
+      "duration": 2.35,
+      "layers": 8,
+      "residual": 0.998867618972236
+    },
+    {
+      "id": "hit-engine",
+      "peak": 0.683563232421875,
+      "rms": 0.18017499357519456,
+      "dc": -0.001210206091107764,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 103635,
+      "duration": 2.35,
+      "layers": 8,
+      "residual": 0.9999591537923992
+    },
+    {
+      "id": "mortar-impact",
+      "peak": 0.718963623046875,
+      "rms": 0.17669945685474697,
+      "dc": -0.000739095244642241,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 202860,
+      "duration": 4.6,
+      "layers": 12,
+      "residual": 0.9998918130393409
+    },
+    {
+      "id": "connector-cut",
+      "peak": 0.71539306640625,
+      "rms": 0.17620605884049495,
+      "dc": 0.0004436699413506054,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 171990,
+      "duration": 3.9,
+      "layers": 11,
+      "residual": 0.9999996555940204
+    },
+    {
+      "id": "module-break",
+      "peak": 0.712982177734375,
+      "rms": 0.17709723452439013,
+      "dc": 0.00020837868651066196,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 171990,
+      "duration": 3.9,
+      "layers": 11,
+      "residual": 0.9983428007122133
+    },
+    {
+      "id": "bundle-detach",
+      "peak": 0.7213134765625,
+      "rms": 0.17562181494480644,
+      "dc": 0.0003469980291879706,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 171990,
+      "duration": 3.9,
+      "layers": 11,
+      "residual": 0.9997839239653371
+    },
+    {
+      "id": "winch-loop",
+      "peak": 0.640533447265625,
+      "rms": 0.14519156886404666,
+      "dc": -0.0007442340288573112,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 176400,
+      "duration": 4,
+      "layers": 4,
+      "residual": 0.9999813601406954
+    },
+    {
+      "id": "salvage-complete",
+      "peak": 0.67596435546875,
+      "rms": 0.18073167997616302,
+      "dc": 0.00045746783820950254,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9998430334413948
+    },
+    {
+      "id": "cargo-drop",
+      "peak": 0.712921142578125,
+      "rms": 0.17529752663031173,
+      "dc": 0.00045556778038131175,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9994870570234388
+    },
+    {
+      "id": "bundle-lost",
+      "peak": 0.71722412109375,
+      "rms": 0.17627520328119126,
+      "dc": 0.00019584233015455113,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 171990,
+      "duration": 3.9,
+      "layers": 11,
+      "residual": 0.9998837572667711
+    },
+    {
+      "id": "engine-idle-loop",
+      "peak": 0.439697265625,
+      "rms": 0.14524840018271046,
+      "dc": -0.00034813457786000686,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 264600,
+      "duration": 6,
+      "layers": 4,
+      "residual": 0.9999994739532441
+    },
+    {
+      "id": "engine-cruise-loop",
+      "peak": 0.44427490234375,
+      "rms": 0.14522979405642264,
+      "dc": -0.00014639839293464782,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 264600,
+      "duration": 6,
+      "layers": 4,
+      "residual": 0.9987200800639422
+    },
+    {
+      "id": "wind-calm-loop",
+      "peak": 0.65252685546875,
+      "rms": 0.14315575715794995,
+      "dc": 0.00001606048099578373,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 264600,
+      "duration": 6,
+      "layers": 2,
+      "residual": 0.9999659903198108
+    },
+    {
+      "id": "wind-fast-loop",
+      "peak": 0.626861572265625,
+      "rms": 0.14169693490286378,
+      "dc": 0.00006408212766986135,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 264600,
+      "duration": 6,
+      "layers": 2,
+      "residual": 0.9998870821779018
+    },
+    {
+      "id": "hull-creak-loop",
+      "peak": 0.582977294921875,
+      "rms": 0.14300922830834695,
+      "dc": -0.00044178306020216244,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 264600,
+      "duration": 6,
+      "layers": 4,
+      "residual": 0.9997052472689464
+    },
+    {
+      "id": "harbor-workshop-loop",
+      "peak": 0.594390869140625,
+      "rms": 0.1406714615328739,
+      "dc": 0.0002448675800072633,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 264600,
+      "duration": 6,
+      "layers": 2,
+      "residual": 0.9999734266322509
+    },
+    {
+      "id": "lift-danger-loop",
+      "peak": 0.7562255859375,
+      "rms": 0.13689282134474698,
+      "dc": -0.000013071955466757016,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 176400,
+      "duration": 4,
+      "layers": 2,
+      "residual": 0.9999835592074222
+    },
+    {
+      "id": "lift-warning",
+      "peak": 0.60491943359375,
+      "rms": 0.18682562710046938,
+      "dc": -0.00047233866996505635,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 70560,
+      "duration": 1.6,
+      "layers": 7,
+      "residual": 0.9995200480114229
+    },
+    {
+      "id": "incoming-warning",
+      "peak": 0.726043701171875,
+      "rms": 0.17387444348899836,
+      "dc": -0.0006895590801628269,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 70560,
+      "duration": 1.6,
+      "layers": 7,
+      "residual": 0.9998283971764785
+    },
+    {
+      "id": "defeat",
+      "peak": 0.60986328125,
+      "rms": 0.18752687886259803,
+      "dc": 0.0006123748225690016,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 176400,
+      "duration": 4,
+      "layers": 7,
+      "residual": 0.9999739378078397
+    },
+    {
+      "id": "return",
+      "peak": 0.70166015625,
+      "rms": 0.17793431955962116,
+      "dc": 0.00042154295451439505,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9996797831314237
+    },
+    {
+      "id": "harbor-repair",
+      "peak": 0.725738525390625,
+      "rms": 0.17458534824343547,
+      "dc": 0.0005414760726765595,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9999124753315098
+    },
+    {
+      "id": "harbor-equip",
+      "peak": 0.70123291015625,
+      "rms": 0.17578242021935395,
+      "dc": 0.0006999646956997084,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9996983051123062
+    },
+    {
+      "id": "harbor-store",
+      "peak": 0.69677734375,
+      "rms": 0.17774837454542192,
+      "dc": 0.0003994681281413235,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9988578476723486
+    },
+    {
+      "id": "harbor-depart",
+      "peak": 0.6597900390625,
+      "rms": 0.18375308888929248,
+      "dc": 0.00047324056721135253,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9999256787828735
+    },
+    {
+      "id": "save-ok",
+      "peak": 0.618408203125,
+      "rms": 0.10917842399737542,
+      "dc": -0.0002429049744897959,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 55125,
+      "duration": 1.25,
+      "layers": 7,
+      "residual": 0.9996934918070484
+    },
+    {
+      "id": "ui-fail",
+      "peak": 0.58636474609375,
+      "rms": 0.109714040747085,
+      "dc": -0.0002894274871749687,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 41895,
+      "duration": 0.95,
+      "layers": 7,
+      "residual": 0.9997051056502988
+    },
+    {
+      "id": "ui-hover",
+      "peak": 0.5819091796875,
+      "rms": 0.10770671018346525,
+      "dc": -0.0001740325443328373,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 22050,
+      "duration": 0.5,
+      "layers": 7,
+      "residual": 0.9872016266278296
+    },
+    {
+      "id": "ui-confirm",
+      "peak": 0.64508056640625,
+      "rms": 0.1077861107116873,
+      "dc": -0.00014432447783801022,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 55125,
+      "duration": 1.25,
+      "layers": 7,
+      "residual": 0.9999844879762733
+    },
+    {
+      "id": "ui-back",
+      "peak": 0.629974365234375,
+      "rms": 0.10852960989120221,
+      "dc": -0.00014952090862386622,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 55125,
+      "duration": 1.25,
+      "layers": 7,
+      "residual": 0.9953108858150722
+    },
+    {
+      "id": "restore-ok",
+      "peak": 0.6134033203125,
+      "rms": 0.11253654900597244,
+      "dc": -0.00030592065927933674,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 55125,
+      "duration": 1.25,
+      "layers": 7,
+      "residual": 0.9988379649370992
+    },
+    {
+      "id": "mortar-launch-a",
+      "peak": 0.707489013671875,
+      "rms": 0.1756868837224345,
+      "dc": -0.0007482237672203367,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9998992004030904
+    },
+    {
+      "id": "mortar-launch-b",
+      "peak": 0.712982177734375,
+      "rms": 0.17471299730329115,
+      "dc": -0.000852961118529443,
+      "finite": true,
+      "clipped": 0,
+      "seam": 0,
+      "frames": 123480,
+      "duration": 2.8,
+      "layers": 9,
+      "residual": 0.9992990091066324
+    }
+  ],
+  "pairedAuditions": [
+    {
+      "id": "fire-machinegun",
+      "segments": [
+        {
+          "version": "v4",
+          "rms": 0.07337161504290862,
+          "peak": 0.719970703125
+        },
+        {
+          "version": "v5",
+          "rms": 0.07337164120661832,
+          "peak": 0.3004150390625
+        }
+      ]
+    },
+    {
+      "id": "fire-cannon",
+      "segments": [
+        {
+          "version": "v4",
+          "rms": 0.06910886584651098,
+          "peak": 0.719970703125
+        },
+        {
+          "version": "v5",
+          "rms": 0.06910891679704827,
+          "peak": 0.2803955078125
+        }
+      ]
+    },
+    {
+      "id": "mortar-launch-a",
+      "segments": [
+        {
+          "version": "v4",
+          "rms": 0.04590984518950153,
+          "peak": 0.719970703125
+        },
+        {
+          "version": "v5",
+          "rms": 0.04590986422936664,
+          "peak": 0.18487548828125
+        }
+      ]
+    },
+    {
+      "id": "hit-wood",
+      "segments": [
+        {
+          "version": "v4",
+          "rms": 0.05898234872708264,
+          "peak": 0.719970703125
+        },
+        {
+          "version": "v5",
+          "rms": 0.0589823790747483,
+          "peak": 0.25311279296875
+        }
+      ]
+    },
+    {
+      "id": "engine-idle-loop",
+      "segments": [
+        {
+          "version": "v4",
+          "rms": 0.12999603192177717,
+          "peak": 0.49169921875
+        },
+        {
+          "version": "v5",
+          "rms": 0.1299960414220417,
+          "peak": 0.393524169921875
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Numerical checks do not establish dramatic quality, tenfold improvement, subjective loudness or human approval.",
+    "No Native/browser or actual game test here. Synthesis and recorded material layers are both declared."
+  ],
+  "humanApproval": false,
+  "gameplayInstalled": false
+}

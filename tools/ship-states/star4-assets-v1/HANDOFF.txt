@@ -1,0 +1,15 @@
+tools/ship-states/star4-assets-v1/ → outputs/ship-states-v1/star4-assets-v1/
+4성3계열 실제GLB, 동결3성GLB와 동일카메라/단위/방향/조명 비교. 새 source4개와readOnly9개 핀.
+createLibrary(gltf).create('mobility'|'artillery'|'salvage') API. 원핵심선체/기낭scale1유지.
+3성가변돛→하부분절활주판,3성약실드럼→반동레일단포/지지대,3성전개크레인/슬링→회수레일/하부플랫폼.
+위변경은실제게임해금/부품수량·피해량/인양판정/생산소켓확정아님. 부품이름/원점은리뷰용.
+unlit+버텍스명암+embeddedatlas/붓결은GLB에저장,윤곽선/셀모드/prop는viewerruntime,애니클립0.
+
+기존 NODE_PATH work/combat-vfx-v2/deps/node_modules 읽기 사용,설치0:
+node tools/ship-states/star4-assets-v1/check-source.cjs
+node tools/ship-states/star4-assets-v1/build.cjs --authoring
+명시START후만: node tools/ship-states/star4-assets-v1/export-verify.cjs
+단browser/page 신규export3→productionbuild→실제4성GLBreload/3성reference9표시/scale1·sharedcamera검사,
+불투명3모드120frame잔상,조작/프로펠러/맞춤/모바일390·768·1440/실download3SHA,대표PNG9/390모바일3/overview.
+예산3분. 처음실패raw/PNG보존, 영향범위만수정후좁은추가슬롯요청. 기존3성/2성전체검사반복0.
+browser/exporterclose+postsource/readonly대조후먼저RETURN,로컬PNG미술확인후정확deliveryREADY1회.

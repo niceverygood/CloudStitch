@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:12:27.9864801Z",
+  "manifest": {
+    "path": "outputs/stage-maps-v1/delivery-manifest.json",
+    "status": "READY",
+    "sha256": "bc626b224c1460377a9010a541318ecdb39f1279b2b001c076536cfd774eff54",
+    "sourceFiles": 18,
+    "outputFiles": 7,
+    "totalFiles": 25,
+    "passed": false,
+    "failures": [
+      {
+        "path": "tools/stage-maps/HANDOFF.md",
+        "reason": "size-or-hash-mismatch"
+      },
+      {
+        "path": "tools/stage-maps/app.js",
+        "reason": "size-or-hash-mismatch"
+      }
+    ]
+  },
+  "sourceManifest": {
+    "path": "outputs/stage-maps-v1/source-manifest.json",
+    "sha256": "ebbfcf28218c394ec4f8c8a2bdf17c03aa62c5c9a8c5af0ad929b1eb1eab37e9",
+    "matchesOwnerReport": true,
+    "matchesRuntimeReport": true,
+    "keys": [
+      "version",
+      "routeVersion",
+      "controllerPolicy",
+      "interceptedImports",
+      "inputs",
+      "outputs"
+    ]
+  },
+  "unitReport": {
+    "version": "stage-maps-v1",
+    "passed": true,
+    "tests": 25,
+    "pass": 25,
+    "fail": 0,
+    "scope": "authored spatial clearance, selection whitelist, strict route-bound journal and failure preservation"
+  },
+  "runtimeReport": {
+    "passed": true,
+    "browser": false,
+    "noTeleport": true,
+    "noHpInjection": true,
+    "noFixtureReturn": true,
+    "mapSmokeChecks": 6,
+    "allDepartureRestart": true,
+    "voyages": 2,
+    "restart": {
+      "newProcessRestored": true,
+      "settlements": 2,
+      "resources": {
+        "S": 114,
+        "F": 40,
+        "C": 2
+      },
+      "parts": 9,
+      "route": {
+        "routeId": "map-01-harbor",
+        "routeVersion": 1,
+        "stageId": "stage-01-harbor",
+        "levelId": "map-01-harbor-sea",
+        "layoutHash": "fnv1a32:74e72073"
+      }
+    },
+    "duplicateReturnUnchanged": true,
+    "cargoDepartureGate": true
+  },
+  "scope": "command read-only hash/report verification; no code edits, test rerun or browser QA",
+  "nextQa": "playable battlefield first, then this READY stage-map handoff, then audio",
+  "status": "READY reported; 2 source drifts detected; stage-map import held pending owner re-freeze"
+}

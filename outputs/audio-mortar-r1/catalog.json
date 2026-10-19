@@ -1,0 +1,51 @@
+{
+  "version": "mortar-r1",
+  "feedback": "사용자: 박격포 소리 완전이상해 / 대상: 발사음 — 둔한 출발",
+  "assets": [
+    {
+      "id": "mortar-launch-a",
+      "label": "새 발사 A · 실물 관형 발사음",
+      "duration": 0.65,
+      "description": "단발 압력 충격과 짧은 포신 공명. 장식과 낙하음 없이 발사만 비교합니다.",
+      "prompt": "One live round fired from a compact mortar tube, close outdoor recording. A sharp propellant ignition crack, a dense low air-pressure report from the short steel tube, then a brief gritty exhaust decay. One discharge only. Natural unpitched weapon sound, dry open air. No shell flight or impact, no voice, music, cartoon sound, tonal sweep, or cinematic sub-bass.",
+      "file": "audio/mortar-launch-a.mp3",
+      "bytes": 11327,
+      "sha256": "2f434daa0e135c22cb76e986a2d8d078fd2283fe2524ea1880a5e246ae162cc6",
+      "format": "mp3_44100_128",
+      "provider": "ElevenLabs",
+      "status": "generated_unreviewed",
+      "billedCharacterCost": "6",
+      "old": false
+    },
+    {
+      "id": "mortar-launch-b",
+      "label": "새 발사 B · 짧고 묵직한 게임용",
+      "duration": 0.75,
+      "description": "단단한 발사 충격 뒤 아주 작은 받침 반동. 길게 부푸는 저음과 휘파람을 줄인 후보입니다.",
+      "prompt": "One compact mortar fired from a wooden airship mount. Sharp ignition crack and short dense steel-tube pressure report; a faint dry wooden mounting knock follows immediately underneath. The launch dominates; wood is a quiet secondary detail. One shot, dry outdoor decay. No flight, impact, spring, cartoon tone, voice, music, or cinematic bass.",
+      "file": "audio/mortar-launch-b.mp3",
+      "bytes": 12581,
+      "sha256": "269a76bb91af3023e87b93a3c9675fc74c3ef9d8f713857bb9d7e2fac1af0451",
+      "format": "mp3_44100_128",
+      "provider": "ElevenLabs",
+      "status": "generated_unreviewed",
+      "billedCharacterCost": "8",
+      "old": false
+    },
+    {
+      "id": "mortar-previous",
+      "label": "기존 · 둔한 출발",
+      "description": "사용자가 이상하다고 지적한 기존 발사음입니다. 원본을 보존하고 같은 음량 기준으로 비교합니다.",
+      "duration": 0.8,
+      "file": "audio/mortar-previous.mp3",
+      "bytes": 13835,
+      "sha256": "8ebc96fe85251128e7eaeb8b78e807aa0031ab48a8e43b31a3033b830fb01e32",
+      "prompt": "One mortar shell leaving a short upward-facing tube: a hollow low poomp of pressure, soft air puff and a little wooden base vibration. Rounded attack, no large detonation. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+      "old": true,
+      "status": "user_revision_requested",
+      "source": "outputs/audio-review-v2/audio/fire-mortar.mp3"
+    }
+  ],
+  "humanApproved": false,
+  "gameplayInstalled": false
+}

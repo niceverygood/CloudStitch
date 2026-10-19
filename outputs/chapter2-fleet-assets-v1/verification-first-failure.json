@@ -1,0 +1,77 @@
+{
+  "checks": [
+    {
+      "name": "needle:actual-glb-reload",
+      "passed": true,
+      "detail": {
+        "triangles": 125420,
+        "meshes": 137,
+        "materials": 15,
+        "vertices": 136031,
+        "geometries": 137,
+        "bytes": 7319280,
+        "animations": 1,
+        "groups": [
+          "hull",
+          "buoyancy",
+          "keep",
+          "bell_tower",
+          "bastions",
+          "dock",
+          "machinery",
+          "banners"
+        ],
+        "bounds": [
+          23.74052413225174,
+          8.314171314446158,
+          5.343520879745483
+        ],
+        "mode": "handdrawn",
+        "view": "iso",
+        "focus": null,
+        "outline": true,
+        "outlineEnabled": true
+      }
+    },
+    {
+      "name": "needle:embedded-texture-decoded",
+      "passed": true
+    },
+    {
+      "name": "needle:mode:handdrawn",
+      "passed": true
+    },
+    {
+      "name": "needle:mode:cel",
+      "passed": true
+    },
+    {
+      "name": "needle:mode:original",
+      "passed": true
+    },
+    {
+      "name": "needle:actual-propeller-clip",
+      "passed": true
+    },
+    {
+      "name": "needle:download-sha",
+      "passed": true
+    },
+    {
+      "name": "needle:reference-decoded",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "closed": true,
+  "previewBindings": [
+    {
+      "path": "previews/needle.png",
+      "sha256": "980b5c3cb3f2dd8dc078ea53308fdd8546afe5e1f327fb6421d3874a7ad8934d",
+      "sourceGlbSha256": "52a7f3816dccb467d2e2c9bebc51d8ff86121188e095e6011a18b5cf420cdeb8"
+    }
+  ],
+  "failure": "locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('#outline-width')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"8\" step=\"0.25\" value=\"1.5\" type=\"range\" id=\"outline-width\" aria-label=\"윤곽선 두께\"/>\u001b[22m\n\u001b[2m    - fill(\"1.2\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at C:\\Users\\nicev\\OneDrive\\문서\\CloudStitch\\tools\\chapter2-fleet-assets\\qa.cjs:16:39",
+  "passed": false
+}

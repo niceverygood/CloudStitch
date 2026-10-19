@@ -1,0 +1,175 @@
+{
+  "revision": "chapter2-r2",
+  "status": "READY_art_review",
+  "scope": "Actual static 3D art and offline review",
+  "model": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/enemy-base.glb",
+    "bytes": 47284180,
+    "sha256": "d478dfa063f9f475f962da048493fb4de898da1dcc38d73c2e40de4df65143de"
+  },
+  "structure": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/structure-verification.json",
+    "bytes": 1777,
+    "sha256": "377dd76096f8c26c565d71d1eac7d60d2c6882da90d8cfb44c6dee44b2e5c0cc"
+  },
+  "surface": {
+    "positionNormalTransformPreserved": true,
+    "colourUvIndicesPreserved": true,
+    "meshCount": 57,
+    "beforeSha256": "6f40fd171d80293a89bb8dd4acb74426ee943cc83ab4a9aa6ef03674cf2f2a7f",
+    "afterSha256": "c441078575bc15ed6277a4dc04fc043caa118d7399b166163711ab7b1f7b956b",
+    "textures": 1,
+    "images": 1,
+    "scope": "Exact per-mesh POSITION/NORMAL/COLOR_0/UV/indices bytes and node transform comparison; only textures and materials added.",
+    "phase": "Before the intentional crown orientation change; the transform exception is documented separately."
+  },
+  "browser": {
+    "report": {
+      "path": "outputs/enemy-base-v1/chapter2-r2/browser-verification.json",
+      "bytes": 31123,
+      "sha256": "1573478a5d0451b32dd0c1c3d8e11bcb863e1f6850c4df6a71dbb83608f61b17"
+    },
+    "checks": {
+      "total": 49,
+      "passed": 49,
+      "failed": 0
+    },
+    "externalRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "ghosting": [
+      {
+        "mode": "handdrawn",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 128502,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 445.13889892847425,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "cel",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 126738,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 440.2842295052939,
+        "outlineAutoClear": true
+      },
+      {
+        "mode": "original",
+        "rotationFrames": 120,
+        "changedPixels": 0,
+        "totalChannelDifference": 0,
+        "paintedPixels": 128489,
+        "pixelCount": 831440,
+        "cameraDelta": 0,
+        "targetDelta": 0,
+        "rotationDistance": 445.12519987895456,
+        "outlineAutoClear": true
+      }
+    ]
+  },
+  "previews": [
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/review-desktop.png",
+      "bytes": 855482,
+      "sha256": "3068dae5d339bc394c7fc0443f847a335d6aaa6e6ba939a884a9031ffefacd58"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-iso.png",
+      "bytes": 374870,
+      "sha256": "dea791cf439ce358f804c352fdb6932f45c58adb51d667452f6ca7730f55b28a"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-back.png",
+      "bytes": 568667,
+      "sha256": "2701062b405abef4b648ba7a38822b7f3d572f8ddd01cf78096593217a9b4483"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/model-front.png",
+      "bytes": 566363,
+      "sha256": "b198d69206d5e49dddf0d041378e1a53bccdc48342cea549bd5c826fae9c7852"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-shell.png",
+      "bytes": 667166,
+      "sha256": "9f657efc012b3908b3833398c59272ca96caea8b2d712eecc65a8e947b0f7e46"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-harbour.png",
+      "bytes": 1114306,
+      "sha256": "c764f7f8bd41df54825ba5ffb84545560ea4d984c008d014aa2e27714d1d991b"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/detail-coral.png",
+      "bytes": 520393,
+      "sha256": "fb58f2f4038a3976bb85ab0259929ec6f1caaab45c350f5be376a7195f681e5f"
+    },
+    {
+      "path": "outputs/enemy-base-v1/chapter2-r2/review-mobile-390.png",
+      "bytes": 271153,
+      "sha256": "5f236a06770c9f24e33047a1b0ffeccf63622c3bf6be582bebb3d9d648464327"
+    }
+  ],
+  "reference": {
+    "path": "outputs/enemy-base-v1/chapter2-r2/reference.png",
+    "bytes": 3613828,
+    "sha256": "41d2d5856fe540d2c4cae01fb37507c365f883e93cf89ac622349c908a321192"
+  },
+  "visualReview": {
+    "actualRendersInspected": true,
+    "userArtApproval": false,
+    "status": "delivered_for_user_art_review",
+    "notes": "outputs/enemy-base-v1/chapter2-r2/ART_REVIEW.txt",
+    "referenceComparison": "Major forms/material culture translated; fine organic architecture and cinematic atmosphere remain simplified."
+  },
+  "limitations": [
+    "Hidden/rear architecture interpreted from one image",
+    "No chapter-one model geometry reused",
+    "R2: closed ornate nacre endcap, faceted chamber facades, monumental halls/bridges, foreground coral fans and convex fossil armour",
+    "Relative design scale; engine/performance budget undecided",
+    "No gameplay/AI/collision/LOD/rig/animation/interior/sockets"
+  ],
+  "finalOrientation": {
+    "scope": "Only bell_tower group rigid transform changed: Y180 around x5.5/z-8.5. All other JSON and all binary bytes exact.",
+    "beforeSha256": "c441078575bc15ed6277a4dc04fc043caa118d7399b166163711ab7b1f7b956b",
+    "afterSha256": "d478dfa063f9f475f962da048493fb4de898da1dcc38d73c2e40de4df65143de",
+    "allBinaryBytesPreserved": true,
+    "allOtherJsonPreserved": true,
+    "transform": {
+      "translation": [
+        11,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "reason": "Expose the spiral face toward the front harbour camera, following actual front/back render inspection."
+  },
+  "indexPreservation": {
+    "method": "Exact bitwise duplicate-vertex indexing; no quantization, decimation or shape change. UVs exactly follow the frozen first-paint per-triangle formula; UV is part of each welding key. Material primitives remain separate.",
+    "beforeSha256": "acbfd123d4085a63267e531edffe231ecb5bc355f35308d67720e28d085fac0f",
+    "afterSha256": "6f40fd171d80293a89bb8dd4acb74426ee943cc83ab4a9aa6ef03674cf2f2a7f",
+    "beforeBytes": 79900904,
+    "afterBytes": 46231848,
+    "beforeVertices": 2217732,
+    "afterVertices": 851623,
+    "triangles": 739244,
+    "checkedComponents": 24264732,
+    "expandedPositionNormalColourBytesIdentical": true,
+    "expectedFrozenTriangleUVBytesIdentical": true,
+    "materialBoundariesPreserved": true
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "game_title": "Cloudstitch",
+  "date_seoul": "2026-10-18",
+  "status": "painted_machine_gun_art_prototype",
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-painted-v1/build.cjs",
+      "bytes": 3346,
+      "sha256": "46565e74c87a9b354760db7b5bcb48534e7be734bfe67097f66c552feab6bb19"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-painted-v1/viewer.js",
+      "bytes": 20708,
+      "sha256": "da4f31593ea1aa593e01f2f4f65fbcd1cf5d7ef6b03537bd89881a01b82d9c4c"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-painted-v1/template.html",
+      "bytes": 19516,
+      "sha256": "95f5982f9e3dbfcb1d98bfb9c5e7459f18d647e93025b1a1598abd4e8b9eda42"
+    },
+    {
+      "path": "tools/combat-vfx-v2/machine-gun-painted-v1/painted-effects.js",
+      "bytes": 19243,
+      "sha256": "91e852c25c743f96e3530fa685a191164e6fd8cfa5a8470eaa20df8047d77f54"
+    }
+  ],
+  "original_assets": [
+    {
+      "id": "machine-gun-muzzle",
+      "path": "outputs/combat-vfx/assets/machine-gun-muzzle.glb",
+      "bytes": 43532,
+      "sha256": "c2cef79ea3031153e4a8eec4ee85696067e8f42ce8eb4926dccb9269e722fef9",
+      "mime": "model/gltf-binary"
+    },
+    {
+      "id": "machine-gun-projectile",
+      "path": "outputs/combat-vfx/assets/machine-gun-projectile.glb",
+      "bytes": 8856,
+      "sha256": "3ff211f522b9b86d9755e653d68bdc72ef3742b8cb8f58250b8203a37b2e540b",
+      "mime": "model/gltf-binary"
+    },
+    {
+      "id": "machine-gun-hit",
+      "path": "outputs/combat-vfx/assets/machine-gun-hit.glb",
+      "bytes": 71820,
+      "sha256": "ab536e31b06d5c2140fa9efeca4e42133e5e8d78cf2d591040ce3752e1bd8a3d",
+      "mime": "model/gltf-binary"
+    },
+    {
+      "id": "01-machine-gun",
+      "path": "outputs/combat-vfx/sequences/01-machine-gun.glb",
+      "bytes": 3444188,
+      "sha256": "ab8307c1ab29c94f9d4aba9c30a4b75b6fd67e98725ad6114f429175905bbc65",
+      "mime": "model/gltf-binary"
+    }
+  ],
+  "textures": {
+    "atlas": {
+      "path": "outputs/combat-vfx-v2/machine-gun-painted-v1/textures/painted-vfx-atlas.png",
+      "bytes": 1411461,
+      "sha256": "bd7773dfb5af91f026acdee110dd705f94e7124fd478a9661a9333895d31c3c3",
+      "mime": "image/png"
+    },
+    "metal": {
+      "path": "outputs/combat-vfx-v2/machine-gun-painted-v1/textures/painted-material-atlas.png",
+      "bytes": 3121602,
+      "sha256": "9aac15cb86bc2fc56a83ddee72bd30b0223cb47680b7d543fbe5c32650d663a8",
+      "mime": "image/png"
+    }
+  },
+  "output": {
+    "path": "outputs/combat-vfx-v2/machine-gun-painted-v1/index.html",
+    "bytes": 11625472,
+    "sha256": "983d5e3a37552db54e0f19f399b2474277ca989e3f047d9187d674a453916fe7"
+  },
+  "image_generation": {
+    "method": "built-in image_gen",
+    "images": 2,
+    "prompts": "textures/*prompt.json"
+  },
+  "meshy_calls": 0,
+  "gameplay_integrated": false,
+  "render_qa": "targeted_native_IAB_visual_review",
+  "references": [
+    {
+      "purpose": "Weapon style source",
+      "path": "outputs/weapon-modules/01-machine-gun/reference.png"
+    },
+    {
+      "purpose": "Broad action readability reference; no copied art or scene",
+      "url": "https://store.steampowered.com/app/3624140/Wanderburg/"
+    }
+  ],
+  "render_evidence": "verification/browser-review.json"
+}

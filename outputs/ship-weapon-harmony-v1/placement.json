@@ -1,0 +1,324 @@
+{
+  "date": "2026-10-19",
+  "contract": {
+    "path": "docs/SHIP_WEAPON_MOUNTING.json",
+    "sha256": "cad9db05b14e956c31af02fdbb6d380d12bbc62f5071c02cad4eba888e2d418c"
+  },
+  "ship_baseline": "ranks-1to5-v2 final structure revision",
+  "assembly_hull_scale": [
+    1,
+    1,
+    1
+  ],
+  "placements": [
+    {
+      "id": "mobility",
+      "mount_id": "mobility-prow-saddle",
+      "parent": "hull_root_preserved coordinate frame",
+      "position": [
+        -0.43,
+        -0.055,
+        0
+      ],
+      "quaternion": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "uniform_scale": 0.075,
+      "weapon_local_mount_datum": [
+        0,
+        0.4,
+        0
+      ],
+      "source_forward": "+Z",
+      "assembly_forward": "-X",
+      "removed_source_copy_nodes": [
+        "03-repeating-crossbow_teal_mounting_skid_1",
+        "03-repeating-crossbow_brass_anchor_shoe_2",
+        "03-repeating-crossbow_brass_anchor_shoe_4",
+        "03-repeating-crossbow_teal_mounting_skid_6",
+        "03-repeating-crossbow_brass_anchor_shoe_7",
+        "03-repeating-crossbow_brass_anchor_shoe_9",
+        "03-repeating-crossbow_individual_wood_plinth_11",
+        "03-repeating-crossbow_cross_mount_rail_105",
+        "03-repeating-crossbow_cross_mount_rail_106"
+      ],
+      "ship_copy_removed_groups": [],
+      "copy_only_color_components_clamped": 11300,
+      "added_groups": [
+        "fitted_adapter_and_load_path"
+      ],
+      "load_path": [
+        [
+          -0.31,
+          -0.15,
+          -0.06
+        ],
+        [
+          -0.31,
+          -0.15,
+          0.06
+        ]
+      ],
+      "control_cable": [
+        [
+          -0.4,
+          -0.04,
+          0.08
+        ],
+        [
+          -0.27,
+          -0.13,
+          0.1
+        ],
+        [
+          -0.08,
+          -0.13,
+          0.1
+        ]
+      ],
+      "static_clearance_notes": "초기 중앙 후보는 부채돛에 가려져 선수 쪽으로 이동. 낮은 선수 안장에 결속하고 큰 날개·후방 추진기는 보존.",
+      "movement_clearance": "Unverified: static visual placement, no swept-volume physics or aim limits.",
+      "assembled": {
+        "id": "mobility",
+        "path": "mobility-assembled.glb",
+        "bytes": 6928508,
+        "sha256": "d488cb7c29849cf3857e876cb1e8ce46e88995ab67755ce0a20187eb4ce34b04",
+        "stats": {
+          "meshes": 360,
+          "triangles": 120811,
+          "finite": true,
+          "embedded_maps": 4
+        },
+        "validator": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 0,
+          "messages": []
+        }
+      },
+      "source_ship": {
+        "path": "outputs/ship-states-v1/ranks-1to5-v2/mobility-r5.glb",
+        "bytes": 5039104,
+        "sha256": "7b73b0500c382d689ed8e395595343c89582bb098dbffdf94199e099ac97acbc"
+      },
+      "source_weapon": {
+        "path": "outputs/grounded-weapons-v1/assets/03-repeating-crossbow.glb",
+        "bytes": 2745896,
+        "sha256": "c757745a51cebbf053e40d9e3956be4639f848c79b6589891d55b73eefd4b277"
+      }
+    },
+    {
+      "id": "artillery",
+      "mount_id": "artillery-battery-replacement",
+      "parent": "hull_root_preserved coordinate frame",
+      "position": [
+        -0.52,
+        0.02,
+        0
+      ],
+      "quaternion": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "uniform_scale": 0.11,
+      "weapon_local_mount_datum": [
+        0,
+        0.75,
+        0
+      ],
+      "source_forward": "+Z",
+      "assembly_forward": "-X",
+      "removed_source_copy_nodes": [
+        "13-comet-rocket-rack_separate_deck_sill_0",
+        "13-comet-rocket-rack_deep_teal_skid_94",
+        "13-comet-rocket-rack_brass_anchor_plate_95",
+        "13-comet-rocket-rack_deck_lock_pin_96",
+        "13-comet-rocket-rack_brass_anchor_plate_99",
+        "13-comet-rocket-rack_deck_lock_pin_100",
+        "13-comet-rocket-rack_deep_teal_skid_103",
+        "13-comet-rocket-rack_brass_anchor_plate_104",
+        "13-comet-rocket-rack_deck_lock_pin_105",
+        "13-comet-rocket-rack_brass_anchor_plate_108",
+        "13-comet-rocket-rack_deck_lock_pin_109",
+        "13-comet-rocket-rack_rear_tripod_leg_112",
+        "13-comet-rocket-rack_front_tripod_leg_119",
+        "13-comet-rocket-rack_tilt_lock_pivot_126",
+        "13-comet-rocket-rack_rear_tripod_leg_127",
+        "13-comet-rocket-rack_front_tripod_leg_134",
+        "13-comet-rocket-rack_tilt_lock_pivot_141"
+      ],
+      "ship_copy_removed_groups": [
+        "Active_cannon_barrel",
+        "Active_cannon_barrel_1"
+      ],
+      "copy_only_color_components_clamped": 3564,
+      "added_groups": [
+        "fitted_adapter_and_load_path"
+      ],
+      "load_path": [
+        [
+          -0.28,
+          -0.17,
+          -0.15
+        ],
+        [
+          -0.28,
+          -0.17,
+          0.15
+        ]
+      ],
+      "control_cable": [
+        [
+          -0.48,
+          0.04,
+          0.12
+        ],
+        [
+          -0.35,
+          -0.06,
+          0.15
+        ],
+        [
+          -0.1,
+          -0.16,
+          0.12
+        ]
+      ],
+      "static_clearance_notes": "쌍포 포신 두 개를 로켓으로 교체. 포대 몸체 안에 가리던 초기 배치를 앞쪽으로 옮기고, 기존 포방패·반동 지지 구조에서 이어진 경사 안장으로 지지.",
+      "movement_clearance": "Unverified: static visual placement, no swept-volume physics or aim limits.",
+      "assembled": {
+        "id": "artillery",
+        "path": "artillery-assembled.glb",
+        "bytes": 5833076,
+        "sha256": "0b8768d2ce660ef237b933b8be30b3b9247ef3e24171c334a0c821408c13cb14",
+        "stats": {
+          "meshes": 272,
+          "triangles": 70032,
+          "finite": true,
+          "embedded_maps": 4
+        },
+        "validator": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 0,
+          "messages": []
+        }
+      },
+      "source_ship": {
+        "path": "outputs/ship-states-v1/ranks-1to5-v2/artillery-r5.glb",
+        "bytes": 3171964,
+        "sha256": "3aa2f9091edc07f5c8798599300a388b2df00dbea93f48138fc35e14153fcc98"
+      },
+      "source_weapon": {
+        "path": "outputs/grounded-weapons-v2/assets/13-comet-rocket-rack.glb",
+        "bytes": 4174696,
+        "sha256": "8f09f6693ba1bd5f4b5f5dc175c03a57f79852933e574bee7ea7485ed4f0f059"
+      }
+    },
+    {
+      "id": "salvage",
+      "mount_id": "salvage-starboard-winch-bracket",
+      "parent": "hull_root_preserved coordinate frame",
+      "position": [
+        0.1,
+        -0.095,
+        0.29
+      ],
+      "quaternion": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "uniform_scale": 0.055,
+      "weapon_local_mount_datum": [
+        0,
+        0.4,
+        0
+      ],
+      "source_forward": "+Z",
+      "assembly_forward": "-X",
+      "removed_source_copy_nodes": [
+        "04-harpoon-winch_teal_mounting_skid_1",
+        "04-harpoon-winch_brass_anchor_shoe_2",
+        "04-harpoon-winch_brass_anchor_shoe_4",
+        "04-harpoon-winch_teal_mounting_skid_6",
+        "04-harpoon-winch_brass_anchor_shoe_7",
+        "04-harpoon-winch_brass_anchor_shoe_9",
+        "04-harpoon-winch_individual_wood_plinth_11",
+        "04-harpoon-winch_cross_mount_rail_98",
+        "04-harpoon-winch_cross_mount_rail_99"
+      ],
+      "ship_copy_removed_groups": [],
+      "copy_only_color_components_clamped": 3763,
+      "added_groups": [
+        "fitted_adapter_and_load_path"
+      ],
+      "load_path": [
+        [
+          0.02,
+          -0.17,
+          0.15
+        ],
+        [
+          0.19,
+          -0.16,
+          0.16
+        ]
+      ],
+      "control_cable": [
+        [
+          0.13,
+          -0.08,
+          0.29
+        ],
+        [
+          0.2,
+          -0.12,
+          0.23
+        ],
+        [
+          0.2,
+          -0.14,
+          0.14
+        ]
+      ],
+      "static_clearance_notes": "함선 담당의 후반 우현 후보 공간에 맞춘 작은 보조 작살. 중앙 회수 갑판·하부 화물받침·앞쪽 작업팔은 보존.",
+      "movement_clearance": "Unverified: static visual placement, no swept-volume physics or aim limits.",
+      "assembled": {
+        "id": "salvage",
+        "path": "salvage-assembled.glb",
+        "bytes": 5687900,
+        "sha256": "2b11cd365f8f063262dc13c186bfb9b49780bc042b672dd234de8b53623850aa",
+        "stats": {
+          "meshes": 300,
+          "triangles": 73744,
+          "finite": true,
+          "embedded_maps": 4
+        },
+        "validator": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 0,
+          "messages": []
+        }
+      },
+      "source_ship": {
+        "path": "outputs/ship-states-v1/ranks-1to5-v2/salvage-r5.glb",
+        "bytes": 3336532,
+        "sha256": "a65659468b40062765ad0035096029f76bbcf711087ebf9b86006eabcf8cf77b"
+      },
+      "source_weapon": {
+        "path": "outputs/grounded-weapons-v1/assets/04-harpoon-winch.glb",
+        "bytes": 3095440,
+        "sha256": "b90101534883fa6ae24864dc5599abe69ad9050a726254237814f6678bfe092a"
+      }
+    }
+  ],
+  "limitations": "Static art placement; no gameplay sockets, aiming, firing, physics, damage, load budget or swept movement clearance."
+}

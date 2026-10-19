@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:52:32Z",
+  "ownerThreadId": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+  "locationRef": "local-locations.json",
+  "report": {
+    "path": "outputs/integration-followup-v1/verification.json",
+    "sha256": "fcf61a3de21a0f21efc1b24768d1666b6de9f5f37cf43fbc6026b2ac649bff17",
+    "rootHashMatched": true,
+    "integrityAndEvidenceLinksPassed": true,
+    "issues": 0,
+    "aggregateQaPass": null
+  },
+  "deliveryIndex": {
+    "path": "outputs/integration-followup-v1/delivery-manifest.json",
+    "sha256": "cf261e80f979d3fa6a7d6dd490c2e33646cf316c64ae492d8821bdf8e23a7783",
+    "indexedSmallFiles": 12,
+    "independentSizeShaMatches": 12,
+    "failures": 0,
+    "composition": "tools9+common LFS rule1+README1+aggregate report1; index itself not included in12"
+  },
+  "streamVerification": {
+    "uniqueWorkspaceRelativePathKeys": 339,
+    "totalBytes": 1594352901,
+    "meaning": "file SHA/size bookkeeping count, not QA checks; same relative path in separate workspaces remains distinct",
+    "ownerRun": true,
+    "rootRepeatedBulkHashes": false
+  },
+  "readyBoundaries": {
+    "manifests": 5,
+    "declaredFiles": {
+      "frozenIntegration": 39,
+      "audio": 46,
+      "fleet": 174,
+      "playableBattlefield": 25,
+      "stageMapsOutput": 7
+    },
+    "stageMapsSource19": "read in shared checkout, not imported as a second copy",
+    "original841Corpus": "not fully re-audited by this follow-up"
+  },
+  "qaPolicy": {
+    "originalFleet": {
+      "checks": 553,
+      "passed": 528,
+      "failed": 25,
+      "reportedPassed": false
+    },
+    "originalPlayableTargeted": {
+      "checks": 24,
+      "passed": 23,
+      "failed": 1,
+      "reportedPassed": false
+    },
+    "supplementary": [
+      "READY-3 camera11",
+      "stage final CSS fault6",
+      "audio retry23",
+      "fleet decoded25pairs"
+    ],
+    "combineCountsOrReplaceFailures": false,
+    "audioOffline54": "nested samples inside native33; not extra independent check count"
+  },
+  "execution": {
+    "browser0": "reported by integration owner",
+    "httpServersRetained": [
+      8840,
+      8853
+    ],
+    "newVfxReadyImported": false,
+    "commitPushDeploy": false
+  },
+  "sharedLocationGuide": {
+    "path": "outputs/handoff/DESKTOP_FOLLOWUP_QA_LOCAL-2026-10-18.md",
+    "sha256": "c9de227ed627c47207166019241eab52b2c3cf3c712809026772ff6d9d620a4b",
+    "rootRead": true
+  },
+  "independentReviewer": "integration_audit",
+  "remaining": [
+    "VFX54 remaining art review and READY handoff",
+    "v2 compatibility adapter and gameplay mapping",
+    "human audio listening and final UI/auto-save hook",
+    "full62 model browser coverage, art approval",
+    "six-region/boss campaign and long-duration performance"
+  ]
+}

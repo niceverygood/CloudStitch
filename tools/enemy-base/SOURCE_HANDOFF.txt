@@ -1,0 +1,43 @@
+Cloudstitch · 적군 공중요새 · SOURCE_READY
+2026-10-18 (Asia/Seoul)
+
+직접 요청
+악당 요새 무드보드 v2를 웅장한 실제 3D 에셋과 회전 가능한 검수 페이지로 구현한다.
+
+소유
+tools/enemy-base/와 outputs/enemy-base-v1/만 소유한다.
+원화는 outputs/enemy-base-moodboard-v2/moodboard.png를 읽기 전용 참조한다.
+원본·타 담당·공통 package/lock·LFS·허브·서버는 수정하지 않는다.
+
+현재 상태
+실제 입체 형상 소스·오프라인 리뷰 소스·좁은 QA 하네스를 작성했고 문법 검사를 통과했다.
+export 전 geometry census는 149,998삼각형·병합 메시78개·8개 구역이다.
+이는 성능 예산 승인이 아니며 실제 GLB/렌더 draw call은 내보내기·렌더 뒤 별도로 기록한다.
+중앙 고종탑·비대칭 겹지붕·철갑 선체·부력낭·포대·관문/돌출선창/기중기·뒤쪽 기계와 깃발을 포함한다.
+면 방향과 넓은 정점 명암을 점검해 손그림 표시에서도 부피가 남도록 했다.
+
+검수 페이지
+세 표시 모드, OutlineEffect.autoClear=true, 회전/이동/확대, 4방향,
+8구역 확대/표시, 원화 비교, GLB 원본 다운로드, 브라우저 로컬 의견·체크·JSON 내보내기.
+배경은 CSS 전시 장식이다. 모델 GLB나 실제 캔버스 렌더 PNG에 포함하지 않는다.
+
+재현 단계와 정확한 파일 해시
+outputs/enemy-base-v1/SOURCE_READY.json을 확인한다.
+Node.js20+, three0.180.0/esbuild0.25.10/playwright1.62.1/gltf-validator2.0.0-dev.3.10.
+현재 PC의 기존 설치를 NODE_PATH로 읽기 전용 사용하며 새 설치나 절대경로 의존성을 소스에 추가하지 않는다.
+
+통합 슬롯 필요
+exporter/브라우저/캡처 미시작. 통합 슬롯을 승인받은 뒤 아래 순서로 실행한다.
+1. node tools/enemy-base/generate.cjs
+2. node tools/enemy-base/inspect.cjs
+3. node tools/enemy-base/build.cjs
+4. node tools/enemy-base/qa.cjs
+5. 실제 대표 PNG를 직접 보고 형상·색·후면·세부를 평가한다. 필요할 때 좁게 수정/재검사한다.
+6. node tools/enemy-base/finalize.cjs (PASS 전에는 READY로 발행하지 않음)
+최종 GLB/HTML 크기에 따른 LFS 규칙은 통합 담당이 처리한다.
+
+미구현
+전투·AI·피해·절단·회수·캠페인 연결, 충돌/navmesh/내부 탐사/LOD/소켓은 미구현이다.
+정적 모델이고 카메라 회전은 자산 애니메이션이 아니다. 구역명·포대 수는 게임 규칙이 아니다.
+셀 명암/윤곽은 뷰어 런타임이다. 실제 엔진 통합과 성능 프로파일은 후속이다.
+실제 렌더 확인과 사용자의 미술 승인은 구분한다. 새 유료 생성/배포/commit/push 없음.

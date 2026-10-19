@@ -1,0 +1,25 @@
+{
+  "id": "harpoon-tension-loop",
+  "startedAt": "2026-10-18T08:53:16.473Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A taut winch cable under a steady moderate load: low cable singing, fine wire strain and occasional soft rope friction, gentle restrained mechanical texture, not a warning siren. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 4,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:22.303Z",
+  "output": {
+    "file": "audio/harpoon-tension-loop.mp3",
+    "bytes": 65244,
+    "sha256": "b3ed5c6551ec30934ad6af6e3ad1e09cdc1be6e45614211ee40dd60f138cea45",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "40"
+}

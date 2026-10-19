@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "title": "Cloudstitch · 봉쇄자의 공중 요새",
+  "revision": "reference-r3",
+  "asset_status": "static_3d_art_prototype",
+  "source": {
+    "reference": "outputs/enemy-base-v1/reference-r3/reference.png",
+    "sha256": "6b7ef9aae13dec2fb73373a517063340a0cf75978c42ff986e594c7cfea6b7cb",
+    "preserved": true,
+    "method": "original code-authored volumetric architecture and vertex painting"
+  },
+  "model": {
+    "path": "enemy-base.glb",
+    "bytes": 57483904,
+    "sha256": "58a231c5334c31ff4de6224b8de70d9538da3d728d7c9c8a6570271106d82c14",
+    "triangles": 402202,
+    "vertices": 1206606,
+    "meshes": 104,
+    "materials": 40,
+    "textures": 1,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -26.84618377685547,
+        -14.090999603271484,
+        -20.474000930786133
+      ],
+      "max": [
+        26.563491821289062,
+        40.263999938964844,
+        28.62099838256836
+      ],
+      "size": [
+        53.40967559814453,
+        54.35499954223633,
+        49.09499931335449
+      ]
+    },
+    "coordinates": "+Y up, +Z front/dock; relative design units",
+    "authored_components": 11065,
+    "semantic_groups": [
+      {
+        "id": "hull",
+        "name_ko": "철갑 선체",
+        "nodeName": "hull",
+        "description": "겹 판금·황동 리벳·하부 용골을 가진 먹색의 부유 선체",
+        "triangles": 52512,
+        "meshes": 12
+      },
+      {
+        "id": "buoyancy",
+        "name_ko": "봉제 부력낭",
+        "nodeName": "buoyancy",
+        "description": "크림색 수선 천과 조임 띠가 있는 하부 부력낭",
+        "triangles": 16780,
+        "meshes": 5
+      },
+      {
+        "id": "keep",
+        "name_ko": "성채와 겹지붕",
+        "nodeName": "keep",
+        "description": "비대칭 회랑·청록 겹지붕·따뜻한 창·겹겹의 보강대",
+        "triangles": 196658,
+        "meshes": 24
+      },
+      {
+        "id": "bell_tower",
+        "name_ko": "봉쇄의 종탑",
+        "nodeName": "bell_tower",
+        "description": "열린 철제 우리와 커다란 황동 종, 층진 첨탑",
+        "triangles": 15500,
+        "meshes": 11
+      },
+      {
+        "id": "bastions",
+        "name_ko": "외향 포대",
+        "nodeName": "bastions",
+        "description": "가시 난간과 독립 실루엣을 가진 여섯 개의 경계 함포",
+        "triangles": 26332,
+        "meshes": 10
+      },
+      {
+        "id": "dock",
+        "name_ko": "봉쇄 관문과 계류장",
+        "nodeName": "dock",
+        "description": "철창 관문·목재 선창·늘어진 사슬·기중기와 인양물",
+        "triangles": 22100,
+        "meshes": 17
+      },
+      {
+        "id": "machinery",
+        "name_ko": "기관·배관·연통",
+        "nodeName": "machinery",
+        "description": "그을린 공장 굴뚝과 배관, 황동 팬과 압력통",
+        "triangles": 28288,
+        "meshes": 13
+      },
+      {
+        "id": "banners",
+        "name_ko": "검붉은 봉제 깃발",
+        "nodeName": "banners",
+        "description": "독창적인 봉쇄 매듭 문양과 꿰맨 가장자리를 가진 굴곡 천",
+        "triangles": 44032,
+        "meshes": 12
+      }
+    ],
+    "texture_images": 1
+  },
+  "appearance": {
+    "surfaces": "Embedded existing painted atlas: timber, woven cloth, weathered iron, patinated brass, chipped teal; vertex-painted volume.",
+    "palette": "soot navy armor, weathered teal roofs, brass trim, cream quilted buoyancy, oxblood banners, warm amber windows",
+    "material": "glTF metallic-roughness, roughness 1, metalness 0; review can replace with hand-painted unlit or toon shading",
+    "runtime": "Outline and cel shading belong to review runtime; they are not automatically reproduced by importing the GLB into an engine.",
+    "atlas": {
+      "path": "painted-atlas.png",
+      "sha256": "13984610dd7647659d97beb02a4b29e0092fe787e06adacf9c7e0bfc32920c0a",
+      "width": 1536,
+      "height": 1024
+    },
+    "painting": "Actual UV texture and matte glTF material, not a rendered overlay."
+  },
+  "limitations": [
+    "Art review prototype only; no gameplay or enemy AI.",
+    "No authored collision, LOD, navmesh, engine sockets, gameplay statistics or destruction.",
+    "Static geometry; no rig or animation; the crane, bell, banners and cannons are modeled in a fixed pose.",
+    "Building interiors are not authored; open gate is represented by a closed portcullis.",
+    "Artist/user approval is still required."
+  ],
+  "conformanceRepair": {
+    "only": "COLOR_0 float clamp [0,1]",
+    "changedComponents": 147915,
+    "failedInputSha256": "f0ec8d4e79b11d3dfc465b054764cfe4247f9d6b08b3d8224d4c9dbec005a756",
+    "repairedSha256": "58a231c5334c31ff4de6224b8de70d9538da3d728d7c9c8a6570271106d82c14",
+    "failedFile": "work/verification/enemy-base-v1/reference-r3/paint-attempt-1-invalid-colors.glb"
+  }
+}

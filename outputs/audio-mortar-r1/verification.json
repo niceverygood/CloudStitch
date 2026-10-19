@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "scope": "3 MP3 files / framing and SHA; existing frozen113 unchanged. No Native decode or human listening claim.",
+  "newGeneration": 2,
+  "newSuccess": 2,
+  "newFailure": 0,
+  "automaticPaidRetries": 0,
+  "billedCharacterCost": 14,
+  "checks": [
+    {
+      "id": "mortar-launch-a",
+      "bytes": 11327,
+      "sha256": "2f434daa0e135c22cb76e986a2d8d078fd2283fe2524ea1880a5e246ae162cc6",
+      "mp3": {
+        "format": "MPEG Layer III",
+        "version": 1,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frameCount": 27,
+        "encodedSamples": 31104,
+        "encodedDurationSeconds": 0.705306,
+        "bitrateKbps": [
+          128
+        ],
+        "variableBitrate": false,
+        "audioBytes": 11283,
+        "id3v2Bytes": 44,
+        "id3v1Bytes": 0,
+        "xing": {
+          "marker": "Info",
+          "advertisedFrames": 26,
+          "advertisedBytes": 11283
+        },
+        "pcmDecoded": false,
+        "durationMeaning": "Compressed frame duration includes encoder delay/padding and may include an Info/Xing frame; native decoded duration still requires browser QA."
+      },
+      "passed": true
+    },
+    {
+      "id": "mortar-launch-b",
+      "bytes": 12581,
+      "sha256": "269a76bb91af3023e87b93a3c9675fc74c3ef9d8f713857bb9d7e2fac1af0451",
+      "mp3": {
+        "format": "MPEG Layer III",
+        "version": 1,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frameCount": 30,
+        "encodedSamples": 34560,
+        "encodedDurationSeconds": 0.783673,
+        "bitrateKbps": [
+          128
+        ],
+        "variableBitrate": false,
+        "audioBytes": 12537,
+        "id3v2Bytes": 44,
+        "id3v1Bytes": 0,
+        "xing": {
+          "marker": "Info",
+          "advertisedFrames": 29,
+          "advertisedBytes": 12537
+        },
+        "pcmDecoded": false,
+        "durationMeaning": "Compressed frame duration includes encoder delay/padding and may include an Info/Xing frame; native decoded duration still requires browser QA."
+      },
+      "passed": true
+    },
+    {
+      "id": "mortar-previous",
+      "bytes": 13835,
+      "sha256": "8ebc96fe85251128e7eaeb8b78e807aa0031ab48a8e43b31a3033b830fb01e32",
+      "mp3": {
+        "format": "MPEG Layer III",
+        "version": 1,
+        "sampleRate": 44100,
+        "channels": 2,
+        "frameCount": 33,
+        "encodedSamples": 38016,
+        "encodedDurationSeconds": 0.862041,
+        "bitrateKbps": [
+          128
+        ],
+        "variableBitrate": false,
+        "audioBytes": 13791,
+        "id3v2Bytes": 44,
+        "id3v1Bytes": 0,
+        "xing": {
+          "marker": "Info",
+          "advertisedFrames": 32,
+          "advertisedBytes": 13791
+        },
+        "pcmDecoded": false,
+        "durationMeaning": "Compressed frame duration includes encoder delay/padding and may include an Info/Xing frame; native decoded duration still requires browser QA."
+      },
+      "passed": true
+    }
+  ],
+  "preservedReviewV2": 113,
+  "humanApproved": false,
+  "gameplayInstalled": false
+}

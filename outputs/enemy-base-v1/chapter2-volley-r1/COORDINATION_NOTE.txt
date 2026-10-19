@@ -1,0 +1,4 @@
+2026-10-19: 신규 직접사용자 요청에 따른 독립 기지 화살포화 시연. 중앙 메시지는 기본/hostId local 두 번 모두 thread not found로 실패했다. list_threads에서 중앙 notLoaded, 다른 모든 프로젝트 담당 idle/notLoaded, 현재 작업만 active를 확인했다. operations 현 슬롯 available, 대기열 비어 있음. 공유파일/서버/설치 없이 소유 경로에서 한 번에 하나의 로컬 생성·검수를 직렬 실행한다. 기존 중앙을 재생성/재개/자동화하지 않는다. 다른 담당 코드와 게임 sim은 변경하지 않는다.
+生成/검수 종료: arm→fullinspect→build→QA62 모두 exit0, 브라우저 finally close. source9/readonly3/reference 사후 보존 확인. 로컬 heavy 사용 종료, 이후 PNG 읽기·포장만 수행.
+동료 1막담당 RETURN/finallyclose 수신 후 화살 scatter 보강 단일 직렬 생성/검수 시작. 중앙/공통파일 변경 없음.
+scatter보강 QA63 PASS,공식0/0/0,browserfinallyclose/source9·readonly3사후불일치0. Heavy RETURN. PNG읽기/포장만 수행.

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-10-19",
+  "mode": "metadata-only",
+  "fileContentsRead": false,
+  "hashesComputed": false,
+  "archiveCreated": false,
+  "selection": "git tracked + nonignored untracked after credential/local-state exclusions; counts change while sessions work",
+  "workspaces": [
+    {
+      "label": "workspace-001",
+      "role": "shared-development",
+      "branch": "main",
+      "head": "fb850f72f544ef5b4fbb9ddb52462db22ed3c5bd",
+      "selectedFiles": 5534,
+      "selectedBytes": 8798941188,
+      "excludedFiles": 38,
+      "inspectionWarnings": 0
+    },
+    {
+      "label": "workspace-002",
+      "role": "separate-integration",
+      "branch": "codex/desktop-integration",
+      "head": "e65ab87d2af0c4b08e51f312c9eb0998aa895c69",
+      "selectedFiles": 3970,
+      "selectedBytes": 5525042351,
+      "excludedFiles": 32,
+      "inspectionWarnings": 0
+    }
+  ],
+  "selectedBytesTotal": 14323983539,
+  "notes": [
+    "작업중 파일은 원자적으로 동결되지 않으며 이 메타데이터는 백업이 아님",
+    "별개worktree의 중복자산도 각각 보존하므로 실제ZIP은 약14.3GB 이상일 수 있음",
+    "임계치실행시실제선별목록/제외/여유공간/쓰기중변화를다시확인"
+  ]
+}

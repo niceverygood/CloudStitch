@@ -1,0 +1,63 @@
+{
+  "title": "Cloudstitch · 종을 삼킨 자",
+  "revision": "chapter1-boss-review-v1",
+  "sourceId": "boss-bell-devourer",
+  "status": "actual-3d-art-prototype-awaiting-visual-QA",
+  "model": {
+    "path": "boss.glb",
+    "bytes": 21826096,
+    "sha256": "bd7313e3def250b7610dd3c9cbd19d5e1943b3a1472720b471e6e022b638c641",
+    "triangles": 201696,
+    "vertices": 605088,
+    "meshes": 41,
+    "materials": 12,
+    "textures": 0,
+    "animations": [
+      {
+        "name": "Exhibition_bell_and_propellers",
+        "duration": 6,
+        "tracks": 4
+      }
+    ],
+    "zones": [
+      "hull",
+      "buoyancy",
+      "keep",
+      "bell_tower",
+      "bastions",
+      "dock",
+      "machinery",
+      "banners"
+    ],
+    "components": 1073,
+    "bounds": {
+      "min": [
+        -21.00678825378418,
+        -6.252723693847656,
+        -6.649999952316284
+      ],
+      "max": [
+        18.74999998807907,
+        13,
+        6.649999952316284
+      ],
+      "size": [
+        39.75678824186325,
+        19.252723693847656,
+        13.299999904632568
+      ]
+    }
+  },
+  "reference": {
+    "path": "outputs/chapter1-final-boss-moodboard-v1/moodboard.png",
+    "sha256": "5c9560e99ba105a9da2aeb8690903686ba2536c1484a1262fffb697b486d08ea"
+  },
+  "coordinates": "+Y up; -X bow, +X engines; relative design units, no fixed meters",
+  "appearance": "Matte vertex-painted sculptural surfaces; toon and outline belong to HTML runtime.",
+  "limitations": [
+    "전투 AI/피해/충돌/절단/실제 장착/LOD/성능 예산 미구현",
+    "종·프로펠러는 GLB 전시 클립1개; 실제 공격 패턴이 아님",
+    "무드보드의 시각 재해석이며 그림과 일대일 복제 또는 사람 미술 승인 아님",
+    "기존 모델·정사·게임 수치 변경 없음"
+  ]
+}

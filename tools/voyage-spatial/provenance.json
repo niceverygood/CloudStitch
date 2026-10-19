@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "flightManifest": {
+    "path": "outputs/flight3d-v1/delivery-manifest.json",
+    "sha256": "ab210425602cad48e3b3c86d027e5dc2ecb9acc68aa2f7698d9e7cb640904562",
+    "scope": "READY4 grab camera verified; READY5 environment browser checks pending at reuse"
+  },
+  "flightSources": [
+    {
+      "source": "tools/flight3d/environment.js",
+      "target": "tools/voyage-spatial/flight-source/environment.js",
+      "bytes": 9139,
+      "sha256": "1363ab6cfd0abb7ba9beb2adf3d47304a261d946d3d700ad288c793c1bd79af8"
+    },
+    {
+      "source": "tools/flight3d/environment-layout.mjs",
+      "target": "tools/voyage-spatial/flight-source/environment-layout.mjs",
+      "bytes": 9654,
+      "sha256": "449ec795708f52f823ffa451ac1caaaee70a5d7101e5c58b7683091251242cd9"
+    },
+    {
+      "source": "tools/flight3d/environment-models.js",
+      "target": "tools/voyage-spatial/flight-source/environment-models.js",
+      "bytes": 11371,
+      "sha256": "a504e52a25a7a505c001ac5020e49b7a767c59ad85320cc19e02153ec1b7ebeb"
+    },
+    {
+      "source": "tools/flight3d/camera-geometry.mjs",
+      "target": "tools/voyage-spatial/flight-source/camera-geometry.mjs",
+      "bytes": 3523,
+      "sha256": "a2c4d670c27595bbea56e3b830a9cf04b2459c32d399e035c3e70e110d01c21f"
+    },
+    {
+      "source": "tools/flight3d/sim.mjs",
+      "target": "tools/voyage-spatial/flight-source/sim.mjs",
+      "bytes": 27606,
+      "sha256": "23bbbfe1f98493f4e6a0b26f0dd1090b3a1ee6a9da87bf4670b6e7576e42fc44"
+    },
+    {
+      "source": "tools/flight3d/environment-source/core.mjs",
+      "target": "tools/voyage-spatial/flight-source/environment-source/core.mjs",
+      "bytes": 7840,
+      "sha256": "3b95c147693b959c0b3c7e7cef1ede26685389897acd923cabd5fa18fa66282c"
+    },
+    {
+      "source": "tools/flight3d/environment-source/props.mjs",
+      "target": "tools/voyage-spatial/flight-source/environment-source/props.mjs",
+      "bytes": 40911,
+      "sha256": "83b91fedef9e2613bd283e1e5cedc8abeaeffceb67d6aed1122704b137cea326"
+    },
+    {
+      "source": "tools/flight3d/environment-source/sky.mjs",
+      "target": "tools/voyage-spatial/flight-source/environment-source/sky.mjs",
+      "bytes": 26359,
+      "sha256": "6fdb50cdff504c6e8da2917917de0aa4cb8eef2449dde27697d9a25e4ddd6f5e"
+    },
+    {
+      "source": "tools/flight3d/environment-source/terrain.mjs",
+      "target": "tools/voyage-spatial/flight-source/environment-source/terrain.mjs",
+      "bytes": 34613,
+      "sha256": "de025448731fc8185248e958312f8aae73575e816342b8f9165fb49d07d8ae6c"
+    },
+    {
+      "source": "tools/flight3d/environment-source/provenance.json",
+      "target": "tools/voyage-spatial/flight-source/environment-source/provenance.json",
+      "bytes": 1376,
+      "sha256": "a1416b216cd7e0472e4709aa83596976ca743564cf96daf3a71de3835d8b7cd2"
+    }
+  ],
+  "rendererOrigin": {
+    "path": "tools/integration/renderer.js",
+    "sha256": "f1cf7b08799f5624f4f86aa938ae372cdc0cca92693c95d256c1ec292d935cf0",
+    "policy": "Own derivative; frozen original untouched"
+  },
+  "campaignSources": [
+    {
+      "path": "tools/voyage-campaign/app.js",
+      "sha256": "4da151b102932dfb605d2ad5942355ae5858473cd74b8e46e6e0b189b1263f9d"
+    },
+    {
+      "path": "tools/voyage-campaign/template.html",
+      "sha256": "7b861516d0721ace79a601b277537f867399e21633b84f020e99d4980bccafdf"
+    },
+    {
+      "path": "tools/voyage-campaign/style.css",
+      "sha256": "2c294474df54e1329365b39a1dcc7d3358d365146ef254db31cdedbdcfc01e0d"
+    }
+  ]
+}

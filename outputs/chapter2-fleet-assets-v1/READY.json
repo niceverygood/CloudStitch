@@ -1,0 +1,601 @@
+{
+  "revision": "chapter2-fleet-assets-v1-art-r2",
+  "date": "2026-10-19",
+  "timezone": "Asia/Seoul",
+  "status": "ART_ASSETS_READY_FOR_USER_REVIEW",
+  "entry": "outputs/chapter2-fleet-assets-v1/index.html",
+  "handoff": "outputs/chapter2-fleet-assets-v1/HANDOFF.txt",
+  "logicalShips": 9,
+  "regularShips": 8,
+  "miniboss": 1,
+  "currentGLBBytes": 95247012.0,
+  "triangles": 1665156.0,
+  "meshes": 1685.0,
+  "actualEmbeddedTextures": 9,
+  "actualAnimationClips": 9,
+  "browserChecks": 104,
+  "browserPassed": true,
+  "browserFinallyClosed": true,
+  "officialPassedModels": 9,
+  "officialErrors": 0.0,
+  "officialWarnings": 0.0,
+  "officialInfo": 12.0,
+  "matchedPairs": 2,
+  "matchedConditions": "same camera/origin0/scale1/clip0 within same browser page",
+  "originalSourcesPreserved": true,
+  "newPaidCalls": 0,
+  "humanArtApproval": false,
+  "gameplayImplemented": false,
+  "performanceProfiled": false,
+  "limitations": [
+    "Single-image hidden-side reconstruction",
+    "Painting microdetail is an interpretation; not exact full-detail reproduction",
+    "No engine sockets, damage, AI, collision, LOD or game integration",
+    "Large embedded HTML LFS rules pending common owner if committing"
+  ],
+  "sourceReadySha256": "1a76dcd2ec40155a0cd5d0bc85e8d06426d6c4349e71e66845662de1f9d1bac8",
+  "source": [
+    {
+      "path": "tools/chapter2-fleet-assets/build.cjs",
+      "bytes": 5130,
+      "sha256": "41085385f05f24f5d1c6a0062cd703ce3fb11dc5503c3e0796f13a091c974c1e"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/capture-initial.cjs",
+      "bytes": 1840,
+      "sha256": "fb5fe8b53157f8a1d10cbaadd97dfe79be61c9dff276db8d3f9f3fa63284319b"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/generate.mjs",
+      "bytes": 7132,
+      "sha256": "ae45a4184794d29003813a46d8e310019e9106ba2ffb5890dc6f7cae16f83794"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/kit.mjs",
+      "bytes": 21409,
+      "sha256": "2862c6f9e90c9e27994bd50589b05cc2ff2472fe4a9e9db53d719474b41fee83"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/models.mjs",
+      "bytes": 17520,
+      "sha256": "3116912edac6dce89fec96387383fa9b54a74b2d73f212b82222e4b909cb3593"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/qa.cjs",
+      "bytes": 10098,
+      "sha256": "ffc1166f2b968ea2738bdbf2a7b640f3332dce3f43bb73d4a75fc98fe3eecf2f"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/review.js",
+      "bytes": 24520,
+      "sha256": "1e128f3e935a699c781faf8ee9528a5f770f24211f6a279d054fca1de9c5c9ef"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/template.html",
+      "bytes": 25544,
+      "sha256": "8f438953b6a17e71303e709258c3246498542123c05885bc126ef80ca6e10051"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/verify.cjs",
+      "bytes": 2879,
+      "sha256": "c60fa0e145ef08554320c030946600cfab3cf3ebc8d375f5b20684b653d38e5d"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/history/source-r1/kit.mjs",
+      "bytes": 20288,
+      "sha256": "9db86654f0489f515c94db951e3569abfeef14ba5237127aac234507072f63de"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/history/source-r1/models.mjs",
+      "bytes": 15904,
+      "sha256": "1fa81e838a08b2b9378eb3df51bbd08faa3cda6b1119aa59df3ee314f1ca8616"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/history/source-r1/qa.cjs",
+      "bytes": 8605,
+      "sha256": "24f2c4e2801abbe07637cfc56c4477163d844427024f75b8e3887d501564ccd9"
+    },
+    {
+      "path": "tools/chapter2-fleet-assets/history/source-r1/review.js",
+      "bytes": 23876,
+      "sha256": "8b1b5a8cb4090112b052516cac024fc97ab27620edf61c8c28a4f6bd36cf962d"
+    }
+  ],
+  "readOnlyInputs": [
+    {
+      "path": "outputs/chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "bytes": 3624446,
+      "sha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf"
+    },
+    {
+      "path": "outputs/chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "bytes": 3575518,
+      "sha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71"
+    },
+    {
+      "path": "outputs/chapter2-enemy-moodboards-v1/miniboss-gatekeeper.png",
+      "bytes": 3666183,
+      "sha256": "bfaa907653e5d015d03972c587e89f7d03c01cfc45f84e5d44ad34947f2eb003"
+    },
+    {
+      "path": "outputs/chapter2-enemy-moodboards-v1/catalog.json",
+      "bytes": 1961,
+      "sha256": "9424a81e16a4fa0848926c26828e4a778c877b5c0d8822d536d2a59fe6a1c18b"
+    },
+    {
+      "path": "outputs/chapter2-enemy-fleet-plan-v1/PLAN.txt",
+      "bytes": 19206,
+      "sha256": "aad196c0a5f327c4abdb887ecc155bdd9287fe1ce8b148d19a26da43a2acd4ee"
+    },
+    {
+      "path": "docs/ART_DIRECTION.txt",
+      "bytes": 9045,
+      "sha256": "37d051ea071979c618918393f7e38a0a6053d77df312949ae07bbe4acf540ad8"
+    },
+    {
+      "path": "docs/SHIP_WEAPON_MOUNTING.json",
+      "bytes": 2831,
+      "sha256": "cad9db05b14e956c31af02fdbb6d380d12bbc62f5071c02cad4eba888e2d418c"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/review.js",
+      "bytes": 23763,
+      "sha256": "73b39889e0dab0037af68aa27b5674702d4cdfb577061fd447606c7c28a4e7cb"
+    },
+    {
+      "path": "tools/chapter1-fleet-assets/template.html",
+      "bytes": 25533,
+      "sha256": "5aaf959e0b7180d911a978ea2bc9938915d56d77f2b671ce93f882faac0fdb8f"
+    },
+    {
+      "path": "tools/lib/runtime.cjs",
+      "bytes": 1969,
+      "sha256": "b001b146fb6132a83e4aca903acba14e1477d5224f92cf975a834158c759a8bc"
+    },
+    {
+      "path": "tools/lib/paths.cjs",
+      "bytes": 187,
+      "sha256": "950b9b717d2b00b8d5c126a0c6334861395fa36aa53810d810dc9a8dca4ad54a"
+    }
+  ],
+  "files": [
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ART_REVIEW-r1.txt",
+      "bytes": 2555,
+      "sha256": "41022e9df4648ab61a67871e1dffd839aa6ee398519d999287df7fed75ac4dd2",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/catalog.json",
+      "bytes": 14293,
+      "sha256": "4ae9b6c6bb74d0d53d080857968fbab77d0078587ca610871b7d105f372e4b2b",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/gallery-preview.png",
+      "bytes": 321275,
+      "sha256": "c070bfb597cf7589fa761589a75a7c6e28c88dff8928307cdad93395746a3ffa",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/gltf-validation.json",
+      "bytes": 3799,
+      "sha256": "0ec6ba553d18bab3b14027c05841de34bcc7446c7f3ed53c55aceebf4d61a67a",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/HANDOFF.txt",
+      "bytes": 6073,
+      "sha256": "27fdafba9bedd2ba105349b9262504d4694e2cacb69585b42d503e64ac1419f0",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/index.html",
+      "bytes": 5669,
+      "sha256": "d76c39abadb1858e109ce269849e002ad2f03a1c94dd96c0f8b529bd6aa5d851",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/initial-capture.json",
+      "bytes": 1695,
+      "sha256": "0b086774eeccfed9b1881b858487547ee25cf99224593449f712a4116b352cb3",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/post-preservation.json",
+      "bytes": 133,
+      "sha256": "0db23379ffbec1aa4ac15d1cf71e73fec2dfe77f5e8046189d6701d7c166a656",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/README.txt",
+      "bytes": 3934,
+      "sha256": "34d4ee474f389ed16cd29c6d7530a947f0214a212de18ebfc1663fb7a470276d",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/SOURCE_READY-r1.json",
+      "bytes": 13193,
+      "sha256": "be7f074d994dfdb8ca10c11b2d38ff409bbf39956e2cfb3deb601fc69cae67a9",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/SOURCE_READY.json",
+      "bytes": 14065,
+      "sha256": "1a76dcd2ec40155a0cd5d0bc85e8d06426d6c4349e71e66845662de1f9d1bac8",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/source-census.json",
+      "bytes": 8273,
+      "sha256": "c3ef37ea31219fa804af45225b5c42ecf9864d475a998481bba3645862e136fd",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/verification-first-failure.json",
+      "bytes": 2164,
+      "sha256": "6c3959d02a532a658d23380f19bffd61e7b04b269b221fbdd993e0f639bfdf01",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/verification.json",
+      "bytes": 18367,
+      "sha256": "5db6c8622d18625ded6c96ca5232cdcafb08eb746e75e1652a500696285258d9",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/catalog.json",
+      "bytes": 14282,
+      "sha256": "38f86548abf8fc303b68c5886f54d71f26389cced42fa26c3e81025aefd5b0bd",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/gltf-validation.json",
+      "bytes": 3799,
+      "sha256": "cd83e76558b789c70873860172a460537383f9e0730d33fa9b8f0527fac825e3",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/capture.glb",
+      "bytes": 7883424,
+      "sha256": "b3034d8fbe783f5cd4e87485501defbb5ec171092c93ea5291b1ce73aff6bbd4",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/chain.glb",
+      "bytes": 7970228,
+      "sha256": "d1c3b7ae3b71df954ae651c868ba14ea3fbee7d8bc4c4fd7d9e81ca3e2a90bad",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/conch.glb",
+      "bytes": 6444476,
+      "sha256": "0badf09c8c24b439857fec5e826217a52ad5002f9cfc9273928f434b57e69787",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/gatekeeper.glb",
+      "bytes": 14609100,
+      "sha256": "62b2b66ffc8d654bb88b977a4dc1b15c66004ce44b96e5b9db25615e64fa392f",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/lantern.glb",
+      "bytes": 8516636,
+      "sha256": "03cfa649e1a7d92d6fda1d5c28ed38c5ce63f54464c346c982889955cf219609",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/needle.glb",
+      "bytes": 7319280,
+      "sha256": "52a7f3816dccb467d2e2c9bebc51d8ff86121188e095e6011a18b5cf420cdeb8",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/shield.glb",
+      "bytes": 8424236,
+      "sha256": "8b1b16ae96baccdb62f4551e8834c2caa196345c3ed80dd89d99431c4a1c00cb",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/trumpet.glb",
+      "bytes": 8329412,
+      "sha256": "507ea576b01464ff17b5f59ae0f91851a1a712ca942595a58d68bd6e09547950",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/geometry-baseline-r1/ships/weaver.glb",
+      "bytes": 6580160,
+      "sha256": "4ef84486ed357694d40dc3d3023a7a195a37268071fafa4e72cb3830027f7d58",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/matched-after/gatekeeper.png",
+      "bytes": 254671,
+      "sha256": "a506435baeb093bd62b33d8829af69689d5f927e413cf3a483b74ce5b9714004",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/matched-after/needle.png",
+      "bytes": 301713,
+      "sha256": "83afed472c684271c42f05c011af8029db7a11a091d80929fa91914a7bfa6a2e",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/matched-before/gatekeeper.png",
+      "bytes": 236957,
+      "sha256": "b9c974d990effb45b582267968a882e710fffc2fcaed1c63e3d2ce646131847c",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/matched-before/needle.png",
+      "bytes": 296606,
+      "sha256": "312b9519e1925c5d2a4ab51c9ba78f757f8c6722958f0b531a57c9b7598407b4",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/capture.png",
+      "bytes": 303485,
+      "sha256": "a8d3f4e870eb4fc2ed4c01390005e499b96f758382aa3f44e33f1a666b324458",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/chain-top.png",
+      "bytes": 434149,
+      "sha256": "9542b327499f09d36d6ea45a452aff3b1e751fac3302df5bbc0354c7ef4d35e0",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/chain.png",
+      "bytes": 355183,
+      "sha256": "517a7f33479be18918dc6dcfbced9969c8b06ce8243a604bef18a1976ae9ef20",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/conch.png",
+      "bytes": 279090,
+      "sha256": "feba32c87bf10ece58501b2990a7426689e762368668de3eef9c0a82823a29d6",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/gatekeeper-bastions.png",
+      "bytes": 652389,
+      "sha256": "6f972f7bf7a0c2aa09053171b37963997aa6ca5d143ed9bd3c689307b3ef7ea5",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/gatekeeper-bell_tower.png",
+      "bytes": 379410,
+      "sha256": "9387971b993f7f5b608700b37256679f066ad57397519430ccddfb90a99af408",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/gatekeeper-dock.png",
+      "bytes": 634563,
+      "sha256": "0145690bd69f54e633e6a4a9ba6a847a5fcff0f648ea2d2311b0d4a5a96c4ec8",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/gatekeeper-top.png",
+      "bytes": 458379,
+      "sha256": "6f01d5c0597d5485f59c0c3aa1beacb67259bd67b483de916fb307a3bb92ccfe",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/gatekeeper.png",
+      "bytes": 254671,
+      "sha256": "a506435baeb093bd62b33d8829af69689d5f927e413cf3a483b74ce5b9714004",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/lantern.png",
+      "bytes": 331726,
+      "sha256": "80b286317c00b6ad4e2d03c6c2ca193853c3729b57fcff9a349ba6913d35802a",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/needle-top.png",
+      "bytes": 208574,
+      "sha256": "f997d388b1e4fafbd49a3f213ca77d7efc9da4f55834ddf6b9c74cf9554934ec",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/needle.png",
+      "bytes": 301713,
+      "sha256": "83afed472c684271c42f05c011af8029db7a11a091d80929fa91914a7bfa6a2e",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/shield-top.png",
+      "bytes": 393771,
+      "sha256": "6583035c5d0a1f44964c45caed4e72076dfe066e946c0ee7b98b59dd96ae03ef",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/shield.png",
+      "bytes": 283657,
+      "sha256": "05d7267177a0baf6cd90b6304324b72e08c3546476afbc9c98c2aa62117bc903",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/trumpet.png",
+      "bytes": 287099,
+      "sha256": "e133b58f307d11e2b63a70463585c4c0cf138b3d679929b301a766e037fb77e3",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews/weaver.png",
+      "bytes": 260043,
+      "sha256": "af89b0fab436fbf47a409516c14b6476815ead41fea5a816efc5676ff15056ca",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/capture.png",
+      "bytes": 265109,
+      "sha256": "1a5a8cfd9ec98a598525d586b08a09d7aefc9e2432f988f290590ee9f003652f",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/chain.png",
+      "bytes": 331481,
+      "sha256": "896024eb0a0fd02c2ed7961be5575df4accda31892d37e0c7b7cbabe68058b2b",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/conch.png",
+      "bytes": 237705,
+      "sha256": "4b79f8b9c3ce53df5aa4c2088e08534480c2b1df3fc06cfcb10644153b0d4859",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/gatekeeper.png",
+      "bytes": 215673,
+      "sha256": "3bfd9a09411f7e9d98f5db1b0052fb4ba5eb71e35fcf11552b146f2a0bad7224",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/lantern.png",
+      "bytes": 287362,
+      "sha256": "745db5a8595f76d5f5f98e56cc0936fc943dbca7ad3b0c3b8c55636f10cb6964",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/needle.png",
+      "bytes": 265951,
+      "sha256": "980b5c3cb3f2dd8dc078ea53308fdd8546afe5e1f327fb6421d3874a7ad8934d",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/shield.png",
+      "bytes": 241910,
+      "sha256": "0ef380183035ac5bedd86679bdbeaaeecb103144197616913fdc104d0b72598b",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/trumpet.png",
+      "bytes": 258444,
+      "sha256": "7ae01685cd96baa543691ff7cdb8a7756d7fb39ccf1ed460e47c9d128c463ff4",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/previews-initial/weaver.png",
+      "bytes": 242049,
+      "sha256": "3e86bc48d86efeab9a0875c6dbd3034ddf049ab0baafb45090e4f787d43f0c66",
+      "category": "preserved-initial-revision"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/capture.glb",
+      "bytes": 9769356,
+      "sha256": "f7b2f0a50e5313f2aa876658a88851a0dbd45c817685e94970c79989919596ff",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/capture.html",
+      "bytes": 18508660,
+      "sha256": "134d53fa5db68058723bdfc8c07c55a045163418489b9db16905d14139951415",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/chain.glb",
+      "bytes": 9582944,
+      "sha256": "3def7bd873eb3d3f48004177fee967426566012f79ce5194d0e30269b5dff07f",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/chain.html",
+      "bytes": 18194876,
+      "sha256": "4d2b4e2bbba7d9c6ebf0f8e8d7c79a73b18de76fc294122cfe46aac58e5d32bd",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/conch.glb",
+      "bytes": 9364276,
+      "sha256": "6b49100358ea8ab6c2acb40c5e2b8071428a3e0071a73379b8ab1822db4e14b8",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/conch.html",
+      "bytes": 17903277,
+      "sha256": "d918866dca09f72eb82b8b8e8ba7cfe00480be0de3d6bc32ce1d8eeb6e71ec9d",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/gatekeeper.glb",
+      "bytes": 18013156,
+      "sha256": "07d2d8aaa7bdd6e31dcd3ad924c09934bd5861d60af67b32d052cc8b3cee239f",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/gatekeeper.html",
+      "bytes": 29556026,
+      "sha256": "50c7ed7a88221f64d97a5f36e328a59dad1dae83c97e286eab723c77bdeca694",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/lantern.glb",
+      "bytes": 10970532,
+      "sha256": "229ed3a03f92aa36bdbd00be581ec42daf62932bfb2b42d47849c6dd5e5de88a",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/lantern.html",
+      "bytes": 20044955,
+      "sha256": "01abc687590e0decb2f925c9a4d234236e53e3755dafb1920c07dba099fb0de0",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/needle.glb",
+      "bytes": 9190304,
+      "sha256": "06b419bdb30ec75160bdf0726e65bf253822f5865fc004e9537955987b520d3e",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/needle.html",
+      "bytes": 17736573,
+      "sha256": "e5187ea37d53b6e4ad5857e5782a0fa6382fc2abfb1acd8fca9df54a815f12a3",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/shield.glb",
+      "bytes": 10138860,
+      "sha256": "61c42a3b36f6bc41cf7df93083d98c3798e402051374c13bf37663b429c46b5f",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/shield.html",
+      "bytes": 19001320,
+      "sha256": "0e01b6adb824de45b4a2c5a508dd73f3cb1f4b8420b16ad79c3fde7942eb2eab",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/trumpet.glb",
+      "bytes": 10001264,
+      "sha256": "d7fd5af82df757cbe9d1b96d123a4f683078dff0aa584c8f5a7b7eb1fe442b8f",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/trumpet.html",
+      "bytes": 18817838,
+      "sha256": "1d9e530a93fe175cc288c55f345a29e36471e3fa5c8b64eddc0d31e33b602783",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/weaver.glb",
+      "bytes": 8216320,
+      "sha256": "991ca94339962f25eb6782b1928a70cdf49517675bef418f0333d4e6b53fa0a4",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/ships/weaver.html",
+      "bytes": 16372713,
+      "sha256": "a299364346b7a14005199a369b627165fedcd07bae0f8ad69d54d91c4d5e80ef",
+      "category": "current-delivery-or-evidence"
+    },
+    {
+      "path": "outputs/chapter2-fleet-assets-v1/textures/handpainted-atlas.png",
+      "bytes": 382603,
+      "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468",
+      "category": "current-delivery-or-evidence"
+    }
+  ]
+}

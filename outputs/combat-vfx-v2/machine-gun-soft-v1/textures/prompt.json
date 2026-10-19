@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "project_title": "Cloudstitch",
+  "date": "2026-10-18",
+  "tool": "built-in image_gen.imagegen",
+  "top_level_mode": "built-in",
+  "use_case": "stylized-concept",
+  "status": "generated_saved_alpha_preserved_runtime_review_pending",
+  "request_ko": "더 부드러운 전통 손그림 일본 판타지 애니메이션 인상. 기존의 공격적인 불꽃·강한 주황·큰 파편 대신 둥근 크림/연한꿀빛/살구색 효과와 가벼운 세이지·라일락 연기.",
+  "style_translation": "gentle traditional hand-painted Japanese fantasy animation, warm nostalgic watercolor and cel-paint; original Cloudstitch shapes; rounded organic 2-3 cel value shading, subtle tactile watercolor pigment inside silhouettes",
+  "source_references": [
+    {
+      "path": "outputs/weapon-modules/01-machine-gun/reference.png",
+      "bytes": 1326285,
+      "sha256": "be20dcfdfeed16b172be4aa3015e05168d869d1bf412aff73beb42d570e39f90",
+      "role": "positive style/palette reference; actual hand-painted machine gun",
+      "inspected_before_generation": true
+    },
+    {
+      "path": "outputs/combat-vfx-v2/machine-gun-painted-v1/textures/painted-vfx-atlas.png",
+      "bytes": 1411461,
+      "sha256": "bd7773dfb5af91f026acdee110dd705f94e7124fd478a9661a9333895d31c3c3",
+      "role": "previous atlas as negative comparison: reduce jagged fire, saturated orange, heavy smoke; preserve previous file",
+      "inspected_before_generation": true
+    }
+  ],
+  "transparent_background": true,
+  "method": "Built-in imagegen generated a new atlas using local references, then imagegen made one targeted size/centering/padding correction. Final generated PNG copied with Node fs.copyFileSync(COPYFILE_EXCL), bytes compared identical. No crop, resize, repaint, alpha rewrite, threshold bake or Python image processing.",
+  "attempts": [
+    {
+      "number": 1,
+      "intent": "Generate softer four-cell atlas",
+      "prompt": "Use case: stylized-concept.\nAsset type: one NEW transparent PNG combat VFX texture atlas for Cloudstitch, square 1024x1024 target, exactly 2 columns by 2 rows of equal square cells.\nVisual style: gentle traditional hand-painted Japanese fantasy animation, warm nostalgic watercolor and cel-paint. Rounded organic design, restrained movement implied in the brushwork, soft 2-3 cel-shaded value shapes, subtle tactile watercolor-paper pigment INSIDE the painted shapes, readable contours. Delicate, kind, airy and warm rather than explosive or aggressive.\nReference image 1: Cloudstitch machine gun, STYLE AND PALETTE REFERENCE ONLY. Keep its cream cloth and aged pale-honey brass warmth, sage shadows and painted illustration quality. Do not depict the gun.\nReference image 2: PREVIOUS ATLAS TO REPLACE IN SPIRIT. Its sharp flame spikes, saturated orange, huge violent explosion and heavy dirty smoke are specifically UNWANTED. Do NOT copy its shapes or intensity.\nLayout is strict: a square texture with four separate isolated sprites centered in the four equal quadrants. EACH effect must fit inside the CENTRAL 60% of its own cell in BOTH directions. Keep the remaining outer 20% margins of EACH cell completely empty with ALPHA ZERO. This must produce broad totally transparent gutters along the middle horizontal and vertical cross and the outer image edges. No painted fleck, dust, glow, fog, cast shadow, grain or nearly-transparent haze may extend into the empty margins. Do not enlarge sprites to fill their cells. No grid or border is visible.\nTOP LEFT: SMALL ROUNDED DIRECTIONAL MUZZLE PUFF traveling horizontally TO THE RIGHT. Soft cream main puff with pale-honey underside, a gentle round nose and two tiny curved trailing strokes on the left. More like a warm hand-painted puff of air and light; no sharp tongue of flame, no starburst.\nTOP RIGHT: SOFT SCALLOPED IMPACT BURST. Ivory center, a few small rounded pale-apricot lobes, and only 3-4 fine curved ochre accent strokes. Gentle asymmetric composition with generous negative gaps. No wood chunks, debris, jagged fire, spiky explosion, dazzling glare, radial ring or violent shards.\nBOTTOM LEFT: AIRY ROUNDED SMOKE made from THREE soft cloud lobes. Cream highlight planes with subdued sage and a trace of light lilac shadow; small transparent notches between lobes. Light clean watercolor, not a thick dark or dirty cloud. No noisy grain outside the three-lobe shape.\nBOTTOM RIGHT: SHORT NARROW PAINTED COMET TRAIL directed horizontally TO THE RIGHT, rounded cream-honey head and a soft slender leftward trailing brush ribbon, 2-3 pale warm color layers. Short, quiet and graceful; no spear tip, flame spikes, long fiery tongues or energetic blast.\nPalette: warm ivory, pale honey, pale apricot, gentle sage, a trace of muted lilac, fine muted ochre edges. Low-to-moderate saturation; no bright saturated orange or scarlet.\nTrue transparent background and alpha-zero empty space around all four sprites. Natural soft fringe is permitted ONLY immediately on the painted silhouette; no full-cell translucent wash.\nNo text, glyphs, numbers, symbols, logos, characters, film scenes, recognizable props, grid, borders, checkerboard, backdrop, UI, watermark. No flat vector art, low-poly 3D, photorealistic PBR, neon, bloom, hard glossy highlights or grainy noisy fire. This is an original effect sheet, not a reproduction of any existing film scene or character.",
+      "referenced_images": [
+        "outputs/weapon-modules/01-machine-gun/reference.png",
+        "outputs/combat-vfx-v2/machine-gun-painted-v1/textures/painted-vfx-atlas.png"
+      ],
+      "transparent_background": true,
+      "generated_file_basename": "exec-bf4029ca-27ce-4cd9-9fdf-c7a779485e69.png",
+      "bytes": 951471,
+      "sha256": "e31da53563e5dfedd8474f3ef0a9f047620a4a78107d1441f48e1524761e4cf1",
+      "width": 1254,
+      "height": 1254,
+      "selected": false,
+      "reason": "Gentler rounded style achieved, but visible shapes intruded into requested 12% padding; corrected through imagegen rather than editing PNG pixels."
+    },
+    {
+      "number": 2,
+      "intent": "Preserve softer style and shrink/recenter each sprite for transparent gutters",
+      "prompt": "Edit the attached transparent 2x2 Cloudstitch VFX atlas. Preserve its exact gentle cream/honey/apricot/sage/lilac watercolor-and-cel painted style and all four roles, but FIX ONLY SPRITE SIZE, CENTERING AND EMPTY PADDING. This is a production texture, not a full composition.\nKeep four equal square quadrants. Make EACH of the FOUR sprites only 55% AS WIDE AND 55% AS TALL as it currently appears, then CENTER that smaller sprite at the exact center of its own quadrant. Leave at least 22% of EACH quadrant's width and height as absolutely empty ALPHA ZERO margin on every side. The four sprites should look noticeably small with abundant invisible empty space; do not enlarge them again to fill the sheet. The middle cross gutters and the outer border margins must be completely transparent with zero opacity, no faint haze, no nearly invisible colored residue, no paper grain or shadow outside the sprite silhouette.\nTop left retains the small rounded cream/pale honey directional puff pointed right. Top right retains a soft scalloped ivory and pale apricot impact with only a few fine curved ochre strokes; no jagged fire, no wood fragments. Bottom left retains airy three-lobe cream/sage/lilac smoke. Bottom right retains a short narrow rounded cream-honey comet trail pointed right with trailing leftward wisps.\nPreserve the gentle traditional hand-painted Japanese fantasy animation, warm nostalgic watercolor and cel-paint look. Smooth 2-3 value shape shading, subtle pigment INSIDE shapes only. No saturated orange, glare, neon, noise or dirty thick smoke. No text, glyphs, grid, border, checkerboard or backdrop. True transparent PNG.",
+      "referenced_images": [
+        "generated attempt 1 (same imagegen session)"
+      ],
+      "transparent_background": true,
+      "generated_file_basename": "exec-585b3605-3005-41c2-a88a-26589c0d6840.png",
+      "bytes": 432876,
+      "sha256": "c4ce60208e6dc66f3d5d8bec6a04399786e1ffb29b9cec55f8ab77d3ae4202ee",
+      "width": 1254,
+      "height": 1254,
+      "selected": true,
+      "reason": "Visible shape alpha>8 is separated by at least 132px within 627px cells; no further generation."
+    }
+  ],
+  "final_prompt": "Edit the attached transparent 2x2 Cloudstitch VFX atlas. Preserve its exact gentle cream/honey/apricot/sage/lilac watercolor-and-cel painted style and all four roles, but FIX ONLY SPRITE SIZE, CENTERING AND EMPTY PADDING. This is a production texture, not a full composition.\nKeep four equal square quadrants. Make EACH of the FOUR sprites only 55% AS WIDE AND 55% AS TALL as it currently appears, then CENTER that smaller sprite at the exact center of its own quadrant. Leave at least 22% of EACH quadrant's width and height as absolutely empty ALPHA ZERO margin on every side. The four sprites should look noticeably small with abundant invisible empty space; do not enlarge them again to fill the sheet. The middle cross gutters and the outer border margins must be completely transparent with zero opacity, no faint haze, no nearly invisible colored residue, no paper grain or shadow outside the sprite silhouette.\nTop left retains the small rounded cream/pale honey directional puff pointed right. Top right retains a soft scalloped ivory and pale apricot impact with only a few fine curved ochre strokes; no jagged fire, no wood fragments. Bottom left retains airy three-lobe cream/sage/lilac smoke. Bottom right retains a short narrow rounded cream-honey comet trail pointed right with trailing leftward wisps.\nPreserve the gentle traditional hand-painted Japanese fantasy animation, warm nostalgic watercolor and cel-paint look. Smooth 2-3 value shape shading, subtle pigment INSIDE shapes only. No saturated orange, glare, neon, noise or dirty thick smoke. No text, glyphs, grid, border, checkerboard or backdrop. True transparent PNG.",
+  "actual_attempt_count": 2,
+  "new_meshy_calls": 0,
+  "reported_cost": null,
+  "cost_note": "Built-in imagegen did not report a credit or monetary cost; no estimate presented as actual.",
+  "output": {
+    "path": "outputs/combat-vfx-v2/machine-gun-soft-v1/textures/soft-vfx-atlas.png",
+    "bytes": 432876,
+    "sha256": "c4ce60208e6dc66f3d5d8bec6a04399786e1ffb29b9cec55f8ab77d3ae4202ee",
+    "width": 1254,
+    "height": 1254,
+    "png_format": "RGBA 8-bit",
+    "byte_identical_to_selected_generation": true,
+    "alpha_untouched": true
+  },
+  "atlas": {
+    "columns": 2,
+    "rows": 2,
+    "cell_width": 627,
+    "cell_height": 627,
+    "cells": [
+      {
+        "cell": "TL",
+        "name": "rounded-muzzle-puff",
+        "pixel_rect": [
+          0,
+          0,
+          627,
+          627
+        ],
+        "direction": "right",
+        "description": "Small cream/pale honey rounded puff; restrained leftward curved accents."
+      },
+      {
+        "cell": "TR",
+        "name": "soft-scalloped-impact",
+        "pixel_rect": [
+          627,
+          0,
+          627,
+          627
+        ],
+        "direction": "asymmetric outward",
+        "description": "Ivory center, pale apricot rounded lobes and few fine curved ochre strokes; no wood chunks."
+      },
+      {
+        "cell": "BL",
+        "name": "airy-three-lobe-smoke",
+        "pixel_rect": [
+          0,
+          627,
+          627,
+          627
+        ],
+        "direction": "rising",
+        "description": "Light cream/sage/lilac large smoke lobes; watercolor/cel planes."
+      },
+      {
+        "cell": "BR",
+        "name": "short-painted-comet-trail",
+        "pixel_rect": [
+          627,
+          627,
+          627,
+          627
+        ],
+        "direction": "right; wisps trail left",
+        "description": "Narrow cream/honey soft rounded head with short curved trailing ribbons."
+      }
+    ]
+  },
+  "validation": {
+    "visual_output_inspected": true,
+    "inspection_method": "Read-only PNG IHDR/IDAT inflate/filter decode with Node built-ins. Per-cell alpha bounds measured; no image rewrite.",
+    "alpha_counts": {
+      "transparent": 1387986,
+      "partial": 184174,
+      "opaque": 356
+    },
+    "per_cell_alpha_bounds": [
+      {
+        "cell": "TL",
+        "origin": [
+          0,
+          0
+        ],
+        "size": [
+          627,
+          627
+        ],
+        "bounds": [
+          {
+            "alpha_above": 0,
+            "bbox": [
+              33,
+              134,
+              606,
+              610
+            ],
+            "padding_px": {
+              "left": 33,
+              "top": 134,
+              "right": 20,
+              "bottom": 16
+            },
+            "count": 35069,
+            "requested_12percent_margin_nonzero_count": 160,
+            "requested_12percent_margin_max_alpha": 1
+          },
+          {
+            "alpha_above": 8,
+            "bbox": [
+              174,
+              272,
+              484,
+              445
+            ],
+            "padding_px": {
+              "left": 174,
+              "top": 272,
+              "right": 142,
+              "bottom": 181
+            },
+            "count": 27868,
+            "requested_12percent_margin_nonzero_count": 0,
+            "requested_12percent_margin_max_alpha": 1
+          },
+          {
+            "alpha_above": 127,
+            "bbox": [
+              175,
+              273,
+              482,
+              444
+            ],
+            "padding_px": {
+              "left": 175,
+              "top": 273,
+              "right": 144,
+              "bottom": 182
+            },
+            "count": 26715,
+            "requested_12percent_margin_nonzero_count": 0,
+            "requested_12percent_margin_max_alpha": 1
+          }
+        ]
+      },
+      {
+        "cell": "TR",
+        "origin": [
+          627,
+          0
+        ],
+        "size": [
+          627,
+          627
+        ],
+        "bounds": [
+          {
+            "alpha_above": 0,
+            "bbox": [
+              17,
+              20,
+              606,
+              626
+            ],
+            "padding_px": {
+              "left": 17,
+              "top": 20,
+              "right": 20,
+              "bottom": 0
+            },
+            "count": 57861,
+            "requested_12percent_margin_nonzero_count": 178,
+            "requested_12percent_margin_max_alpha": 1
+          },
+          {
+            "alpha_above": 8,
+            "bbox": [
+              188,
+              218,
+              478,
+              494
+            ],
+            "padding_px": {
+              "left": 188,
+              "top": 218,
+              "right": 148,
+              "bottom": 132
+            },
+            "count": 44550,
+            "requested_12percent_margin_nonzero_count": 0,
+            "requested_12percent_margin_max_alpha": 1
+          },
+          {
+            "alpha_above": 127,
+            "bbox": [
+              189,
+              220,
+              476,
+              493
+            ],
+            "padding_px": {
+              "left": 189,
+              "top": 220,
+              "right": 150,
+              "bottom": 133
+            },
+            "count": 42215,
+            "requested_12percent_margin_nonzero_count": 0,
+            "requested_12percent_margin_max_alpha": 1
+          }
+        ]
+      },
+      {
+        "cell": "BL",
+        "origin": [
+          0,
+          627
+        ],
+        "size": [
+          627,
+          627
+        ],
+        "bounds": [
+          {
+            "alpha_above": 0,
+            "bbox": [
+              0,
+              8,
+              596,
+              626
+            ],
+            "padding_px": {
+              "left": 0,
+              "top": 8,
+              "right": 30,
+              "bottom": 0
+            },
+            "count": 63326,
+            "requested_12percent_margin_nonzero_count": 163,
+            "requested_12percent_margin_max_alpha": 1
+          },
+          {
+            "alpha_above": 8,
+            "bbox": [
+              157,
+              190,
+              482,
+              448
+            ],
+            "padding_px": {
+              "left": 157,
+              "top": 190,
+              "right": 144,
+              "bottom": 178
+            },
+            "count": 54778,
+            "requested_12percent_margin_nonzero_count": 0,
+            "requested_12percent_margin_max_alpha": 1
+          },
+          {
+            "alpha_above": 127,
+            "bbox": [
+              158,
+              191,
+              481,
+              447
+            ],
+            "padding_px": {
+              "left": 158,
+              "top": 191,
+              "right": 145,
+              "bottom": 179
+            },
+            "count": 53335,
+            "requested_12percent_margin_nonzero_count": 0,
+            "requested_12percent_margin_max_alpha": 1
+          }
+        ]
+      },
+      {
+        "cell": "BR",
+        "origin": [
+          627,
+          627
+        ],
+        "size": [
+          627,
+          627
+        ],
+        "bounds": [
+          {
+            "alpha_above": 0,
+            "bbox": [
+              9,
+              1,
+              606,
+              530
+            ],
+            "padding_px": {
+              "left": 9,
+              "top": 1,
+              "right": 20,
+              "bottom": 96
+            },
+            "count": 28274,
+            "requested_12percent_margin_nonzero_count": 458,
+            "requested_12percent_margin_max_alpha": 1
+          },
+          {
+            "alpha_above": 8,
+            "bbox": [
+              174,
+              269,
+              481,
+              390
+            ],
+            "padding_px": {
+              "left": 174,
+              "top": 269,
+              "right": 145,
+              "bottom": 236
+            },
+            "count": 21976,
+            "requested_12percent_margin_nonzero_count": 0,
+            "requested_12percent_margin_max_alpha": 1
+          },
+          {
+            "alpha_above": 127,
+            "bbox": [
+              175,
+              270,
+              480,
+              390
+            ],
+            "padding_px": {
+              "left": 175,
+              "top": 270,
+              "right": 146,
+              "bottom": 236
+            },
+            "count": 20867,
+            "requested_12percent_margin_nonzero_count": 0,
+            "requested_12percent_margin_max_alpha": 1
+          }
+        ]
+      }
+    ],
+    "strict_12percent_alpha0_padding": false,
+    "requested_margin_max_alpha": 1,
+    "requested_margin_nonzero_pixel_count": 959,
+    "visible_alpha_above_8_min_padding_px": 132,
+    "visible_min_padding_fraction": 0.21052631578947367,
+    "observations_ko": [
+      "네 셀은 동일627×627이며 가시형상은 각셀 중앙에 충분한 여백을 두고 완전 분리된다.",
+      "강한 주황 불꽃과 목재 파편이 제거되고 크림·연꿀빛·살구·세이지·라일락의 둥근 구아슈/셀 명암으로 바뀌었다.",
+      "글자·기호·격자·테두리·체커보드·고유 영화 캐릭터·로고·장면은 없다.",
+      "원본 알파와 생성 PNG를 그대로 보존했다."
+    ],
+    "limitations_ko": [
+      "요청한 엄격12% alpha0 padding은 false다. 그 여백에 959개 픽셀의 alpha1/255 극미세잔여가 있으나, 가시형상 alpha>8은 최소132px(셀의21.05%) 여백을 확보한다.",
+      "요청한1024×1024 목표와 달리 도구 결과는1254×1254다. 사이즈를 변경하지 않고 보존했다.",
+      "표현은 PNG 스프라이트이며 3D GLB 형상/내장 애니메이션이 아니다. 실제3D탄체와 시간연출은 root 담당이다.",
+      "선체·무기 장면 합성, 실제게임크기·깊이·가림·모션·다운로드·브라우저 검수는 이 이미지 작업에서 실행하지 않았다."
+    ]
+  },
+  "runtime_handoff": {
+    "recommended_alpha_test": 0.03,
+    "alpha_note": "Runtime alphaTest0.03 removes the alpha1/255 margin residue without modifying the source PNG.",
+    "uv_layout": "equal 2x2 quadrants; inspect engine texture.flipY convention; crop not required",
+    "sprite_centering": "Generated visible silhouettes are smaller than the cell; preserve gutters and size deliberately in runtime.",
+    "originals_preserved": true,
+    "full_atlas_gameplay_or_art_approval": false
+  },
+  "scope": {
+    "written_files": [
+      "outputs/combat-vfx-v2/machine-gun-soft-v1/textures/soft-vfx-atlas.png",
+      "outputs/combat-vfx-v2/machine-gun-soft-v1/textures/prompt.json"
+    ],
+    "browser_started": false,
+    "shared_code_or_dependencies_modified": false,
+    "previous_painted_assets_modified": false,
+    "network_tools_used": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "crescent-pass",
+  "name_ko": "초승달 바람 통로섬",
+  "category": "islands",
+  "role": "한쪽이 크게 열린 초승달 암반과 서로 다른 높이의 초지로 우회 공간을 읽힌다.",
+  "motion_ko": "정적 형태 원형 · 통과 판정과 충돌은 별도",
+  "order": 2,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/crescent-pass.glb",
+  "preview": "previews/crescent-pass.png",
+  "triangles": 14468,
+  "mesh_count": 417,
+  "vertices": 43404,
+  "material_count": 1,
+  "animation_count": 0,
+  "animation_duration": 0,
+  "encoded_color_components": 0,
+  "bytes": 2016296,
+  "sha256": "84897b7ff6b57b4ff4678743ae3eb0de38e64794ec9894426a82422e92f93b27",
+  "bounds": {
+    "min": [
+      -5.637774991989136,
+      -2.955113229751587,
+      -3.284362796614127
+    ],
+    "max": [
+      5.076240420341492,
+      3.141898822784424,
+      3.423964262008667
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

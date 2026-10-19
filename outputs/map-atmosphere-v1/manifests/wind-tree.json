@@ -1,0 +1,42 @@
+{
+  "id": "wind-tree",
+  "name_ko": "바람에 누운 수관나무",
+  "category": "nature",
+  "role": "휘어진 줄기·비대칭 수관·독립 잎과 작은 리본으로 바람의 인상을 만든다.",
+  "motion_ko": "8초 반복 수관 흔들림 · 실제 풍압과 무관",
+  "order": 7,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/wind-tree.glb",
+  "preview": "previews/wind-tree.png",
+  "triangles": 15308,
+  "mesh_count": 421,
+  "vertices": 45924,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_duration": 8,
+  "encoded_color_components": 0,
+  "bytes": 2106728,
+  "sha256": "a62c8c7baaf1a72bd04ad28eedccb9b37a7abfcd7aa92320e685886813306eb1",
+  "bounds": {
+    "min": [
+      -3.1295400000000004,
+      -3.2390010356903076,
+      -2.5061076051246522
+    ],
+    "max": [
+      6.156168807861578,
+      5.83561183443886,
+      2.2885131333602162
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

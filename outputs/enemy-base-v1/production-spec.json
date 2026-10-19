@@ -1,0 +1,36 @@
+{
+  "title": "Cloudstitch · 구름 위 봉쇄 전초기지",
+  "revision": 1,
+  "created_date": "2026-10-18",
+  "timezone": "Asia/Seoul",
+  "request": "3d에셋으로 구현해줘 웅장하게 만들어줘 리뷰페이지로 검수할수 있게해줘",
+  "reference": {
+    "path": "outputs/enemy-base-moodboard-v2/moodboard.png",
+    "sha256": "49ea92ea7a8dc01b1ee79679d550e22f1a417a4f922243ba21306c521f6327f3"
+  },
+  "method": "Local authored 3D geometry with vertex-painted matte materials; no paid model generation.",
+  "art_direction": {
+    "feeling": "Nostalgic handmade mechanical fantasy, painterly 2D-looking dimensional 3D; magnificent villain stronghold.",
+    "silhouette": "Tall caged central bell tower above asymmetric roof clusters, layered bastions, broad armored floating hull and projecting guarded dock.",
+    "materials": ["charcoal navy iron", "dark teal roofs", "aged brass", "oxblood stitched banners", "weathered ivory buoyancy cloth", "honey timber"],
+    "details": ["outward cannons", "spiked parapets", "barred entrance", "blockade chains", "furnace slits", "crane", "pipes and chimney clusters"],
+    "not_a_replica": true
+  },
+  "deliverables": [
+    "outputs/enemy-base-v1/enemy-base.glb",
+    "outputs/enemy-base-v1/index.html",
+    "authored source and reproducible build tools under tools/enemy-base/",
+    "actual GLB renders, structure verification, browser verification, manifest and handoff"
+  ],
+  "asset_contract": {
+    "axes": "+Y up, +Z front",
+    "units": "relative authored design units; engine scale undecided",
+    "groups": ["hull", "buoyancy", "keep", "bell_tower", "bastions", "dock", "machinery", "banners"],
+    "geometry": "complete three dimensional static mesh, including rear and underside; not a projected moodboard",
+    "rendering": "vertex-painted base colors in GLB; additional toon shading and outline in review runtime",
+    "animation": "static geometry; review camera rotation is not asset animation"
+  },
+  "review_contract": ["three material modes", "outline", "orbit/pan/zoom", "fit/reset/automatic rotation", "front/back/top/isometric views", "part focus and visibility", "moodboard comparison", "local review notes and JSON export", "exact original GLB download", "offline and responsive"],
+  "limits": ["art prototype only", "no implemented battle or AI", "no collision/navmesh/LOD or interiors", "not engine performance or gameplay balance approval", "image equipment counts are not system specifications"],
+  "preservation": "New owned namespace only; moodboards, other assets and shared source remain unchanged."
+}

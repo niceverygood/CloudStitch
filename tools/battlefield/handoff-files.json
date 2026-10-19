@@ -1,0 +1,143 @@
+{
+  "status": "READY",
+  "handedOffAt": "2026-10-18T15:57:35.5322652+09:00",
+  "validation": {
+    "browser": "pending_integration_owner",
+    "authority": 15,
+    "originalRules": 16,
+    "passed": 48,
+    "failed": 0,
+    "vfxContract": 10,
+    "headlessExample": "passed_3_hits_1_recovered_generation_2",
+    "receiptMetadataCooldown": 7,
+    "skeletonLifecycle": {
+      "browserGPU": "pending_integration_owner",
+      "twiceDisposed": true,
+      "sourceTextureDisposals": 0,
+      "clonedSkeletons": 2,
+      "geometryDisposals": 0,
+      "mapDisposals": 0,
+      "cloneTextureDisposals": 2,
+      "passed": true
+    }
+  },
+  "runtimeContractVersion": "battlefield-authority-0.2.1",
+  "previousVersion": "battlefield-authority-0.2.1",
+  "sourceCommit": "e65ab87d2af0c4b08e51f312c9eb0998aa895c69",
+  "previousReceiptSha256": "1ee006367df92746a195e4f76727f2aa949bd19b8c2cc99c547a9d0dab03acf9",
+  "files": [
+    {
+      "sha256": "624532b463d498c5b0ad3ccc1c2ade75ea903af819b6871b6c0fb6aff0f3834b",
+      "bytes": 15505,
+      "path": "tools/battlefield/assets.js"
+    },
+    {
+      "sha256": "60dc61e4afe76318df72a31f19730f02d8b2454070afadc09c363d7fd0f49773",
+      "bytes": 871,
+      "path": "tools/battlefield/build.cjs"
+    },
+    {
+      "sha256": "a71058450d56fc3cd1d470834300e265116f55fcdfbf64737bf80c0372cd9bac",
+      "bytes": 2568,
+      "path": "tools/battlefield/example-adapter.mjs"
+    },
+    {
+      "sha256": "401e61b3b1a972e00e8d0dbf22258c05e5eec1523786e8e886630a307d202df2",
+      "bytes": 6589,
+      "path": "tools/battlefield/index.html"
+    },
+    {
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f",
+      "bytes": 5525,
+      "path": "tools/battlefield/integration.mjs"
+    },
+    {
+      "sha256": "285f24708bc69869f24bcb5abb604ce8f157d86c0f9114c408c87aca35b51ea2",
+      "bytes": 21185,
+      "path": "tools/battlefield/integration.test.mjs"
+    },
+    {
+      "sha256": "43f60c65f48045112ff1a080b6e9b193d7c14763c2446a08fda5f67a398c0d17",
+      "bytes": 27379,
+      "path": "tools/battlefield/main.js"
+    },
+    {
+      "sha256": "9ff13112248a01d5fbe50036792f19298e7ea2a675946aac2d0a393015960e08",
+      "bytes": 6302,
+      "path": "tools/battlefield/README.md"
+    },
+    {
+      "sha256": "47574696e65bf1a57d1266a5078a36e6cd092030ba72b3dc3c1f72440289c958",
+      "bytes": 13419,
+      "path": "tools/battlefield/receipt.test.mjs"
+    },
+    {
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7",
+      "bytes": 31917,
+      "path": "tools/battlefield/sim.mjs"
+    },
+    {
+      "sha256": "63de8c7cfd49f0ed5df04298ee490ea96de23cfe36e3c8a1869528432448990f",
+      "bytes": 11654,
+      "path": "tools/battlefield/sim.test.mjs"
+    },
+    {
+      "sha256": "f62e71e4fc0e39a836b348f22654b1e6191f895bfeb7bb47d516be91ec835c59",
+      "bytes": 13649,
+      "path": "tools/battlefield/style.css"
+    },
+    {
+      "sha256": "a666a1815759c24f6032d4d20c757f1608ee73fe9d394308329a09deab384aa9",
+      "bytes": 5156,
+      "path": "tools/battlefield/verify-bindings.mjs"
+    },
+    {
+      "sha256": "385d659cc568acce0c0f76e68d27cea3584843f49096eba6e4bfee55a3ee2072",
+      "bytes": 22963,
+      "path": "tools/battlefield/verify.cjs"
+    },
+    {
+      "sha256": "d8d173bd83830cdbb37802523a959e0cef2c41d57e55b0918055ccc8372f23c4",
+      "bytes": 7041,
+      "path": "tools/battlefield/vfx-contract.mjs"
+    },
+    {
+      "sha256": "618a38236c90b90471edeb3c82cde2aee9a5b5006e1ffa4b87a865ad51edc8e2",
+      "bytes": 7389,
+      "path": "tools/battlefield/vfx-contract.test.mjs"
+    },
+    {
+      "sha256": "39ae3acc1e6cdb84e15e531d35c5e4a5bb3cf4aca94e7386ed3f0123c1174d8e",
+      "bytes": 13781,
+      "path": "tools/battlefield/VFX-V2-INTERFACE.md"
+    },
+    {
+      "sha256": "982595ffa38eff702bb7133aa61639b786cd098e724da891400ad5e12c200813",
+      "bytes": 12815,
+      "path": "tools/battlefield/vfx.js"
+    },
+    {
+      "sha256": "7260d294fd8a97cc6f13202e3f1d6f7b51db9837905acb850874833a6133f13e",
+      "bytes": 25281,
+      "path": "tools/battlefield/world.js"
+    },
+    {
+      "sha256": "3630a2c9ede1b5d051614468afa069691768b789ab75b27cb872c685d402c434",
+      "bytes": 5754,
+      "path": "outputs/battlefield-v1/integration-preparation.json"
+    },
+    {
+      "sha256": "c678b0834045b6feadd9eaed310e66c1b03df47672e7b4d441aec5b753b5131b",
+      "bytes": 1654,
+      "path": "outputs/battlefield-v1/receipt-stress.json"
+    },
+    {
+      "sha256": "5aa557622299d6b7fa89f0b0e6560320423a8ec09435bdb68f5025fd46709150",
+      "bytes": 18255,
+      "path": "tools/battlefield/HANDOFF.md"
+    }
+  ],
+  "version": "battlefield-authority-0.2.2",
+  "documentationRevision": 2,
+  "documentationNote": "v2 has54 GLBs/structure records with6 representative visual reviews; document lifecycle_contract/moving_payload incompatibility and opt-in per-effect adapter/fallback; no implementation change."
+}

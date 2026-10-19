@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "starts locked; no automatic audio",
+    "one context sixteen buffers",
+    "four source voices",
+    "fifth suppressed; decode reused",
+    "stop scheduled with 5ms release",
+    "release voices still counted",
+    "ended disconnect removes voices",
+    "stop cancels pending play",
+    "dispose closes context and clears"
+  ],
+  "contextCount": 1,
+  "decodeCount": 16,
+  "browserOrNative": false,
+  "actualListening": false
+}

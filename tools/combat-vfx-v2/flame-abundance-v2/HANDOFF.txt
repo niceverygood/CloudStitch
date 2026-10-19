@@ -1,0 +1,15 @@
+Cloudstitch 화염 풍성함 v2 / 직접사용자 첨부4장 최소표현기준
+새소유 tools/combat-vfx-v2/flame-abundance-v2 및 대응출력만변경. 기존원24무기/이전GLB24/softatlas보존.
+목표: 얇고약한반복그림면 → 큰백열코어/말리는산호·금빛화염혀/입체나선/불티/늦게상승하는연기/불붙는불규칙바닥.
+화염방사: 연속으로굵어지는3층꼬임제트와3곳착화. 로켓: 시간차3연폭발. 함포: 폭넓은주폭발+양옆보조폭발.
+박격포: 높은나선기둥. 투하: 실제수직투하후지면잔불+화염기둥. 무기의실루엣·공격방향은유지.
+독자적인손그림3D조형/vertex색,첨부의게임캐릭터·UI·무기·장면복제아님. 색/scale/입자수만배수증가한완료판정아님.
+표준TRS clip1/4.2초 GLB5,카메라종속sprite/opacity확장/런타임bloom필수0. 새fire메시는윤곽검은선제외.
+이전·새실제GLB를동일camera/time에나란히재생하며자동zoom으로표현차이를숨기지않는다.
+CPU: 원BIN/원메시/텍스처보존,SHA,공식validator5,실GLTF geometryanimreload5×7poses.
+브라우저: 원텍스처before/after5/양수hot픽셀차/7시점scrub/PNG5/다운로드SHA/390px.
+빛나는픽셀수는가시성기술근거일뿐미술승인·첨부와동일품질증명아님. 직접PNG미술읽기별도.
+실제전투sim/데미지·충돌반경/사거리/장비수/소켓/음향변경0. 공격장면시연이며실게임설치완료아님.
+기존deps NODE_PATH,GLTF_VALIDATOR_PATH 현재중앙설치읽기. sourceReady build.cjs.
+중앙START후: build.cjs --export --slot-start → verify.cjs --slot-start → qa.cjs --slot-start.
+공통서버·패키지·의존성변경/유료0. preview는기본정지/반복재생사용자선택.

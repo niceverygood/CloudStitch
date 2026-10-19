@@ -1,0 +1,11 @@
+{
+  "step": "paint browser export",
+  "exitCode": 1,
+  "error": "page.evaluate: Target page, context or browser has been closed",
+  "source": "tools/enemy-base/chapter2-r1/paint.cjs:11:101",
+  "browserFinallyCloseCalled": true,
+  "qaStarted": false,
+  "initialGeometryPreserved": "geometry-baseline/enemy-base.glb",
+  "sourceMismatches": [],
+  "diagnosis": "Cause not yet confirmed. Large unindexed geometry serialization is the suspected memory pressure point."
+}

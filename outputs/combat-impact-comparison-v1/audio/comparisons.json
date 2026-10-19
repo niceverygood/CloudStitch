@@ -1,0 +1,1358 @@
+{
+  "passed": true,
+  "sampleRate": 44100,
+  "channels": 2,
+  "codec": "PCM_S16LE",
+  "masterGain": 0.28,
+  "volume": 0.9,
+  "linearMixGain": 0.25200000000000006,
+  "matched": true,
+  "matching": "Uses existing per-clip whole-stereo-RMS matched assets without additional gain/EQ/limiting/normalization; complete-scene old/new RMS may differ due to lengths and overlap; not LUFS equality",
+  "eventSource": "tools/combat-impact-comparison-v1/timeline.mjs makeTape; actual existing battlefield authority fire/hit times; no authored .1s impact delay",
+  "playOrder": "old -> .4 seconds silence -> new",
+  "humanListeningApproval": false,
+  "tenfoldApproved": false,
+  "browserOrNativeRun": false,
+  "gameplayInstalled": false,
+  "paidRequests": 0,
+  "sourcePreservation": {
+    "count": 19,
+    "files": [
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/assets.json",
+        "bytes": 7721,
+        "sha256": "def7a722a9dcf9c52be4cb4b6287602d51359597fead0a248382e642a205b864",
+        "afterSha256": "def7a722a9dcf9c52be4cb4b6287602d51359597fead0a248382e642a205b864",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/verification.json",
+        "bytes": 16266,
+        "sha256": "edc77f6ab3aa5198d50650252199758e8681cca4c48e7844b7f5ae46056ce377",
+        "afterSha256": "edc77f6ab3aa5198d50650252199758e8681cca4c48e7844b7f5ae46056ce377",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/player-verification.json",
+        "bytes": 466,
+        "sha256": "fa1b5ab550db979cabce45c484b094f10d1dddce35d9556bb80f060ae93a80fb",
+        "afterSha256": "fa1b5ab550db979cabce45c484b094f10d1dddce35d9556bb80f060ae93a80fb",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/fire-cannon-old.wav",
+        "bytes": 109412,
+        "sha256": "fb6ad7aa78513e9f3ecb61b27aa02b904f47c535558c94492102e19d42ea22ef",
+        "afterSha256": "fb6ad7aa78513e9f3ecb61b27aa02b904f47c535558c94492102e19d42ea22ef",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/fire-cannon-new.wav",
+        "bytes": 282284,
+        "sha256": "05b051f3a6b93741b7f055352a6a7cbbc15e410729465427f8753121b04b4cee",
+        "afterSha256": "05b051f3a6b93741b7f055352a6a7cbbc15e410729465427f8753121b04b4cee",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/fire-cannon-oldMatched.wav",
+        "bytes": 109412,
+        "sha256": "e202a8e1e68410de352f811c240662708f546b8bad5c8d3cd5fb916957171a68",
+        "afterSha256": "e202a8e1e68410de352f811c240662708f546b8bad5c8d3cd5fb916957171a68",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/fire-cannon-newMatched.wav",
+        "bytes": 282284,
+        "sha256": "5852618e2aa11766d917d4d4cf0b93cf7221b4fd4bb95d5430fa44b26ffe5698",
+        "afterSha256": "5852618e2aa11766d917d4d4cf0b93cf7221b4fd4bb95d5430fa44b26ffe5698",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/impact-cannon-old.wav",
+        "bytes": 66684,
+        "sha256": "b76b1617855f3a5ca04e2fba742d5e50570a8f5f735de86c49b13fe98e79ad45",
+        "afterSha256": "b76b1617855f3a5ca04e2fba742d5e50570a8f5f735de86c49b13fe98e79ad45",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/impact-cannon-new.wav",
+        "bytes": 370484,
+        "sha256": "2b36cbe3ac9fbd05073926568789c339e8587b5136d5a49755a1fb819e299a01",
+        "afterSha256": "2b36cbe3ac9fbd05073926568789c339e8587b5136d5a49755a1fb819e299a01",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/impact-cannon-oldMatched.wav",
+        "bytes": 66684,
+        "sha256": "d479ec56075c70a3bb042073b22d27fbc1273944cc848db308e9255e9b665bc5",
+        "afterSha256": "d479ec56075c70a3bb042073b22d27fbc1273944cc848db308e9255e9b665bc5",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/impact-cannon-newMatched.wav",
+        "bytes": 370484,
+        "sha256": "ee7446ae226eaccaa6b654771197e97dd61b34302275d2cbf8d6040887194ba7",
+        "afterSha256": "ee7446ae226eaccaa6b654771197e97dd61b34302275d2cbf8d6040887194ba7",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/fire-machinegun-old.wav",
+        "bytes": 28268,
+        "sha256": "6b51a7d22ef11234b9333093bd3f3cb6a4f434be493cc3110a6e8e8ecb8710b8",
+        "afterSha256": "6b51a7d22ef11234b9333093bd3f3cb6a4f434be493cc3110a6e8e8ecb8710b8",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/fire-machinegun-new.wav",
+        "bytes": 33560,
+        "sha256": "1eb4ca2abe5f8ca51dfc0b2ac2419a1614f2c89d51172ae326a84ebea7d589bf",
+        "afterSha256": "1eb4ca2abe5f8ca51dfc0b2ac2419a1614f2c89d51172ae326a84ebea7d589bf",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/fire-machinegun-oldMatched.wav",
+        "bytes": 28268,
+        "sha256": "d0027bd40fe3582c5672ea4dd4fb7c3af8cc57fdd10c4d1e862ce9d7ddcbf508",
+        "afterSha256": "d0027bd40fe3582c5672ea4dd4fb7c3af8cc57fdd10c4d1e862ce9d7ddcbf508",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/fire-machinegun-newMatched.wav",
+        "bytes": 33560,
+        "sha256": "1305abed5ff0fac9e3ea4c67714b1ef44f0f54263b0e2c8096f10a5a2ec3e33d",
+        "afterSha256": "1305abed5ff0fac9e3ea4c67714b1ef44f0f54263b0e2c8096f10a5a2ec3e33d",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/impact-machinegun-old.wav",
+        "bytes": 57716,
+        "sha256": "99c3c06ef49dee87ea76e200d58e9360130200bb55668fd8d5e10170f194ff64",
+        "afterSha256": "99c3c06ef49dee87ea76e200d58e9360130200bb55668fd8d5e10170f194ff64",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/impact-machinegun-new.wav",
+        "bytes": 44144,
+        "sha256": "7f06b7e4d6db64e84e1dcad8d84e1193adbcb6cde0827f0f4d8d51d2335a02c8",
+        "afterSha256": "7f06b7e4d6db64e84e1dcad8d84e1193adbcb6cde0827f0f4d8d51d2335a02c8",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/impact-machinegun-oldMatched.wav",
+        "bytes": 57716,
+        "sha256": "99c3c06ef49dee87ea76e200d58e9360130200bb55668fd8d5e10170f194ff64",
+        "afterSha256": "99c3c06ef49dee87ea76e200d58e9360130200bb55668fd8d5e10170f194ff64",
+        "preserved": true
+      },
+      {
+        "path": "outputs/combat-impact-comparison-v1/audio/impact-machinegun-newMatched.wav",
+        "bytes": 44144,
+        "sha256": "fa4ca01b9656f7baa18c846ca0688185528bad82539ec5bf86e166f8fdcc1e6d",
+        "afterSha256": "fa4ca01b9656f7baa18c846ca0688185528bad82539ec5bf86e166f8fdcc1e6d",
+        "preserved": true
+      }
+    ],
+    "readme": {
+      "sha256": "8e3031d123f52dff87e449e3d7a1421ab05668a7c97e39c87568234c452528fd",
+      "preserved": true
+    }
+  },
+  "exports": [
+    {
+      "weapon": "cannon",
+      "file": "outputs/combat-impact-comparison-v1/audio/comparison-cannon.wav",
+      "bytes": 1340684,
+      "sha256": "10709741733e894210eafa5bcaa76dbf64d7cbf35a8dc477349ab5618500f6a6",
+      "peak": 0.15118408203125,
+      "rms": 0.010448649840168559,
+      "finite": true,
+      "duration": 7.6,
+      "segments": {
+        "old": {
+          "start": 0,
+          "end": 3.6,
+          "peak": 0.078826904296875,
+          "rms": 0.0073584255689023385,
+          "finite": true,
+          "duration": 3.6,
+          "maxVoices": 1
+        },
+        "silence": {
+          "start": 3.6,
+          "end": 4
+        },
+        "new": {
+          "start": 4,
+          "end": 7.6000000000000005,
+          "peak": 0.15119384229183197,
+          "rms": 0.013279562586616733,
+          "finite": true,
+          "duration": 3.6,
+          "maxVoices": 2
+        }
+      },
+      "events": [
+        {
+          "type": "fire",
+          "time": 0,
+          "id": "shot-1",
+          "authorityType": "enemy-fire",
+          "weaponId": "02-deck-cannon"
+        },
+        {
+          "type": "hit",
+          "time": 1.19,
+          "id": "shot-1",
+          "authorityType": "hit",
+          "weaponId": "02-deck-cannon"
+        }
+      ],
+      "filesUsed": [
+        {
+          "id": "fire-cannon",
+          "version": "old",
+          "path": "outputs/combat-impact-comparison-v1/audio/fire-cannon-oldMatched.wav",
+          "sha256": "e202a8e1e68410de352f811c240662708f546b8bad5c8d3cd5fb916957171a68"
+        },
+        {
+          "id": "impact-cannon",
+          "version": "old",
+          "path": "outputs/combat-impact-comparison-v1/audio/impact-cannon-oldMatched.wav",
+          "sha256": "d479ec56075c70a3bb042073b22d27fbc1273944cc848db308e9255e9b665bc5"
+        },
+        {
+          "id": "fire-cannon",
+          "version": "new",
+          "path": "outputs/combat-impact-comparison-v1/audio/fire-cannon-newMatched.wav",
+          "sha256": "5852618e2aa11766d917d4d4cf0b93cf7221b4fd4bb95d5430fa44b26ffe5698"
+        },
+        {
+          "id": "impact-cannon",
+          "version": "new",
+          "path": "outputs/combat-impact-comparison-v1/audio/impact-cannon-newMatched.wav",
+          "sha256": "ee7446ae226eaccaa6b654771197e97dd61b34302275d2cbf8d6040887194ba7"
+        }
+      ],
+      "authority": {
+        "source": "tools/battlefield/sim.mjs + integration.mjs",
+        "version": "battlefield-authority-0.2.1",
+        "projectileMovement": "existing-authority-snapshots",
+        "collision": "existing-swept-circle",
+        "actorRole": "enemy-cannon-training-actor-mapped-to-review-ship",
+        "targetRole": "existing-player-proxy-mapped-to-training-target",
+        "targetSetup": "Original player radius3 HP100, existing enemyDamage9",
+        "canonicalMuzzle": [
+          0,
+          1.3,
+          4
+        ],
+        "timeOffset": 2.4999999999999907,
+        "frameInterval": 0.01,
+        "fireWindow": "single actual enemy-fire; subsequent attacks disabled with intent API",
+        "displayTransform": {
+          "origin": [
+            0,
+            1.3,
+            4
+          ],
+          "muzzle": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        },
+        "limits": [
+          "Planar prototype collision; displayed target art is not a GLB mesh collider",
+          "Cannon is the existing slow enemy training pattern, not a player cannon implementation",
+          "Frame sampling uses recorded authority positions without a second projectile integration"
+        ]
+      },
+      "stats": {
+        "shots": 1,
+        "hits": 1,
+        "damage": 9,
+        "damagePerShot": 9,
+        "burstDuration": 0,
+        "cooldown": null,
+        "finalProjectiles": 0,
+        "finalTargetHp": 91
+      }
+    },
+    {
+      "weapon": "machinegun",
+      "file": "outputs/combat-impact-comparison-v1/audio/comparison-machinegun-2s.wav",
+      "bytes": 1129004,
+      "sha256": "765141e6ef6d231d9b3fe1f87f8be839fdce285ccfa2c2bf08c98cbdfd9afee7",
+      "peak": 0.1517333984375,
+      "rms": 0.0195961487284546,
+      "finite": true,
+      "duration": 6.4,
+      "segments": {
+        "old": {
+          "start": 0,
+          "end": 3,
+          "peak": 0.13505932688713074,
+          "rms": 0.020599208389467865,
+          "finite": true,
+          "duration": 3,
+          "maxVoices": 3
+        },
+        "silence": {
+          "start": 3,
+          "end": 3.4
+        },
+        "new": {
+          "start": 3.4,
+          "end": 6.4,
+          "peak": 0.15172448754310608,
+          "rms": 0.019873284108918296,
+          "finite": true,
+          "duration": 3,
+          "maxVoices": 3
+        }
+      },
+      "events": [
+        {
+          "type": "fire",
+          "time": 0,
+          "id": "shot-1",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 0.22,
+          "id": "shot-2",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 0.44,
+          "id": "shot-3",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 0.47,
+          "id": "shot-1",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 0.66,
+          "id": "shot-4",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 0.68,
+          "id": "shot-2",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 0.88,
+          "id": "shot-5",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 0.9,
+          "id": "shot-3",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.1,
+          "id": "shot-6",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 1.12,
+          "id": "shot-4",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.32,
+          "id": "shot-7",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 1.34,
+          "id": "shot-5",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.54,
+          "id": "shot-8",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 1.56,
+          "id": "shot-6",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.76,
+          "id": "shot-9",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 1.78,
+          "id": "shot-7",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.98,
+          "id": "shot-10",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 2,
+          "id": "shot-8",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 2.22,
+          "id": "shot-9",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 2.44,
+          "id": "shot-10",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        }
+      ],
+      "filesUsed": [
+        {
+          "id": "fire-machinegun",
+          "version": "old",
+          "path": "outputs/combat-impact-comparison-v1/audio/fire-machinegun-oldMatched.wav",
+          "sha256": "d0027bd40fe3582c5672ea4dd4fb7c3af8cc57fdd10c4d1e862ce9d7ddcbf508"
+        },
+        {
+          "id": "impact-machinegun",
+          "version": "old",
+          "path": "outputs/combat-impact-comparison-v1/audio/impact-machinegun-oldMatched.wav",
+          "sha256": "99c3c06ef49dee87ea76e200d58e9360130200bb55668fd8d5e10170f194ff64"
+        },
+        {
+          "id": "fire-machinegun",
+          "version": "new",
+          "path": "outputs/combat-impact-comparison-v1/audio/fire-machinegun-newMatched.wav",
+          "sha256": "1305abed5ff0fac9e3ea4c67714b1ef44f0f54263b0e2c8096f10a5a2ec3e33d"
+        },
+        {
+          "id": "impact-machinegun",
+          "version": "new",
+          "path": "outputs/combat-impact-comparison-v1/audio/impact-machinegun-newMatched.wav",
+          "sha256": "fa4ca01b9656f7baa18c846ca0688185528bad82539ec5bf86e166f8fdcc1e6d"
+        }
+      ],
+      "authority": {
+        "source": "tools/battlefield/sim.mjs + integration.mjs",
+        "version": "battlefield-authority-0.2.1",
+        "projectileMovement": "existing-authority-snapshots",
+        "collision": "existing-swept-circle",
+        "actorRole": "player-machinegun",
+        "targetRole": "explicit-high-HP-training-hull",
+        "targetSetup": "Review hull radius3 HP100000, existing playerDamage8",
+        "canonicalMuzzle": [
+          0,
+          1.3,
+          0
+        ],
+        "timeOffset": 0,
+        "frameInterval": 0.01,
+        "fireWindow": "[0,2) seconds held fire",
+        "displayTransform": {
+          "origin": [
+            0,
+            1.3,
+            0
+          ],
+          "muzzle": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        },
+        "limits": [
+          "Planar prototype collision; displayed target art is not a GLB mesh collider",
+          "Cannon is the existing slow enemy training pattern, not a player cannon implementation",
+          "Frame sampling uses recorded authority positions without a second projectile integration"
+        ]
+      },
+      "stats": {
+        "shots": 10,
+        "hits": 10,
+        "damage": 80,
+        "damagePerShot": 8,
+        "burstDuration": 2,
+        "cooldown": 0.22,
+        "finalProjectiles": 0,
+        "finalTargetHp": 99920
+      }
+    }
+  ],
+  "checks": [
+    {
+      "label": "cannon exact event counts",
+      "passed": true,
+      "detail": [
+        {
+          "type": "fire",
+          "time": 0,
+          "id": "shot-1",
+          "authorityType": "enemy-fire",
+          "weaponId": "02-deck-cannon"
+        },
+        {
+          "type": "hit",
+          "time": 1.19,
+          "id": "shot-1",
+          "authorityType": "hit",
+          "weaponId": "02-deck-cannon"
+        }
+      ]
+    },
+    {
+      "label": "cannon/old/fire@0 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "cannon/old/fire@0 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0,
+        "clipDuration": 0.62,
+        "segmentDuration": 3.6
+      }
+    },
+    {
+      "label": "cannon/old/hit@1.19 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "cannon/old/hit@1.19 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.19,
+        "clipDuration": 0.37777777777777777,
+        "segmentDuration": 3.6
+      }
+    },
+    {
+      "label": "cannon/old headroom and cap",
+      "passed": true,
+      "detail": {
+        "peak": 0.078826904296875,
+        "rms": 0.0073584255689023385,
+        "finite": true,
+        "duration": 3.6,
+        "maxVoices": 1
+      }
+    },
+    {
+      "label": "cannon/new/fire@0 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "cannon/new/fire@0 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0,
+        "clipDuration": 1.6,
+        "segmentDuration": 3.6
+      }
+    },
+    {
+      "label": "cannon/new/hit@1.19 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "cannon/new/hit@1.19 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.19,
+        "clipDuration": 2.1,
+        "segmentDuration": 3.6
+      }
+    },
+    {
+      "label": "cannon/new headroom and cap",
+      "passed": true,
+      "detail": {
+        "peak": 0.15119384229183197,
+        "rms": 0.013279562586616733,
+        "finite": true,
+        "duration": 3.6,
+        "maxVoices": 2
+      }
+    },
+    {
+      "label": "cannon exact silent .4s separator",
+      "passed": true
+    },
+    {
+      "label": "cannon export safe finite PCM",
+      "passed": true,
+      "detail": {
+        "peak": 0.15118408203125,
+        "rms": 0.010448649840168559,
+        "finite": true,
+        "duration": 7.6
+      }
+    },
+    {
+      "label": "machinegun exact event counts",
+      "passed": true,
+      "detail": [
+        {
+          "type": "fire",
+          "time": 0,
+          "id": "shot-1",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 0.22,
+          "id": "shot-2",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 0.44,
+          "id": "shot-3",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 0.47,
+          "id": "shot-1",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 0.66,
+          "id": "shot-4",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 0.68,
+          "id": "shot-2",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 0.88,
+          "id": "shot-5",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 0.9,
+          "id": "shot-3",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.1,
+          "id": "shot-6",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 1.12,
+          "id": "shot-4",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.32,
+          "id": "shot-7",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 1.34,
+          "id": "shot-5",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.54,
+          "id": "shot-8",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 1.56,
+          "id": "shot-6",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.76,
+          "id": "shot-9",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 1.78,
+          "id": "shot-7",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "fire",
+          "time": 1.98,
+          "id": "shot-10",
+          "authorityType": "player-fire",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 2,
+          "id": "shot-8",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 2.22,
+          "id": "shot-9",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        },
+        {
+          "type": "hit",
+          "time": 2.44,
+          "id": "shot-10",
+          "authorityType": "hit",
+          "weaponId": "01-machine-gun"
+        }
+      ]
+    },
+    {
+      "label": "machinegun/old/fire@0 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@0 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@0.22 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@0.22 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.22,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@0.44 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@0.44 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.44,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@0.47 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@0.47 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.47,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@0.66 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@0.66 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.66,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@0.68 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@0.68 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.68,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@0.88 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@0.88 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.88,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@0.9 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@0.9 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.9,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@1.1 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@1.1 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.1,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@1.12 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@1.12 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.12,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@1.32 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@1.32 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.32,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@1.34 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@1.34 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.34,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@1.54 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@1.54 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.54,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@1.56 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@1.56 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.56,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@1.76 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@1.76 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.76,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@1.78 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@1.78 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.78,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/fire@1.98 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/fire@1.98 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.98,
+        "clipDuration": 0.16,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@2 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@2 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 2,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@2.22 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@2.22 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 2.22,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old/hit@2.44 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/old/hit@2.44 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 2.44,
+        "clipDuration": 0.32693877551020406,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/old headroom and cap",
+      "passed": true,
+      "detail": {
+        "peak": 0.13505932688713074,
+        "rms": 0.020599208389467865,
+        "finite": true,
+        "duration": 3,
+        "maxVoices": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@0 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@0 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@0.22 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@0.22 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.22,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@0.44 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@0.44 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.44,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@0.47 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@0.47 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.47,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@0.66 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@0.66 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.66,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@0.68 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@0.68 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.68,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@0.88 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@0.88 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.88,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@0.9 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@0.9 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 0.9,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@1.1 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@1.1 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.1,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@1.12 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@1.12 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.12,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@1.32 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@1.32 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.32,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@1.34 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@1.34 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.34,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@1.54 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@1.54 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.54,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@1.56 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@1.56 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.56,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@1.76 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@1.76 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.76,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@1.78 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@1.78 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.78,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/fire@1.98 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/fire@1.98 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 1.98,
+        "clipDuration": 0.19,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@2 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@2 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 2,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@2.22 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@2.22 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 2.22,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new/hit@2.44 valid sample rate",
+      "passed": true
+    },
+    {
+      "label": "machinegun/new/hit@2.44 full tail retained",
+      "passed": true,
+      "detail": {
+        "eventTime": 2.44,
+        "clipDuration": 0.25,
+        "segmentDuration": 3
+      }
+    },
+    {
+      "label": "machinegun/new headroom and cap",
+      "passed": true,
+      "detail": {
+        "peak": 0.15172448754310608,
+        "rms": 0.019873284108918296,
+        "finite": true,
+        "duration": 3,
+        "maxVoices": 3
+      }
+    },
+    {
+      "label": "machinegun exact silent .4s separator",
+      "passed": true
+    },
+    {
+      "label": "machinegun export safe finite PCM",
+      "passed": true,
+      "detail": {
+        "peak": 0.1517333984375,
+        "rms": 0.0195961487284546,
+        "finite": true,
+        "duration": 6.4
+      }
+    },
+    {
+      "label": "all 19 original core files preserved",
+      "passed": true
+    },
+    {
+      "label": "original README preserved",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+Cloudstitch · 1막 함대 무장 발사 리뷰 v1
+요청: 기존 적군 함선에 포/화살/각자의 특수기술을 배치하고 발사 가능하게 제작.
+소유: tools/chapter1-enemy-weapon-review/ → outputs/chapter1-enemy-weapon-review-v1/만 신규 작성.
+읽기 입력: outputs/chapter1-fleet-detail-v2/catalog.json 및 ships/*.glb 11종.
+읽기 코드: tools/combat-vfx-v2/fantasy-weapon-firing-v1/glb.cjs의 비파괴 GLB 조립기,
+tools/lib/runtime.cjs의 기존 브라우저 실행기. 기존 코드는 수정하지 않음.
+
+일반10/중간보스1 총11척. 함포24/쇠뇌22/특수장치11 = 장착/포구57개.
+기존 선체/텍스처/프로펠러 clip 보존, fitted 목재 받침/황동띠/지지대/리벳 추가.
+무기 장착 GLB에는 실제 무기 mesh와 Mount_*/Aim_*/Recoil_*/Muzzle_* 노드 포함.
+좌표 +Y up, -X 전방. 부모/위치/회전/균일스케일/전방/포구는 catalog.json 기록.
+공유 포대 구조에 연동 다중포신/작살권양기/연료통/박격컵/장갑/압력계 역할별 차등.
+전용: 화살비/철턱충격파/파열탄/삼중작살/방벽/화염분사/낙하탄/연결탄/수복/종공명/집행.
+
+리뷰: 각 HTML을 file://로 바로 열기, 네트워크/서버/설치 불필요.
+포/화살/기술/일제사격, 6초 시퀀스, 일시정지/느리게/스크럽/반복/초기화.
+공격 전체/함선 확대/위에서, 회전/이동/줌/자동회전/화면맞춤.
+손그림/셀/원재질, 윤곽 on/off/두께/색, 효과절제. OutlineEffect.autoClear=true.
+장치 발사구 실제 world transform을 읽어서 투사 궤적/반동/연기/명중/잔해를 표시.
+피해/충돌/전투 AI/재사용대기/밸런스/세이브는 미구현이며 전장 sim.mjs를 변경하지 않음.
+리뷰 타임라인은 시각화만 담당하며 두번째 전투 simulation이 아님.
+방벽·수복은 지원 효과, 표적은 접촉 위치 확인용 고정 목재 더미.
+발사 효과/윤곽선/조작 로직은 HTML 런타임이며 GLB만으로 자동 재생되지 않음.
+회전포구는 art socket 초안. 엔진 장착 계약/물리/충돌/기구학적 전체 간섭 검증은 후속.
+별도 음향 연결은 하지 않음. 최종 인간 미술 승인/10배 체감 완수로 선언하지 않음.
+
+빌드: 기존 NODE_PATH에 three/esbuild 및 validator/playwright/pngjs가 존재하는 환경 사용.
+node tools/chapter1-enemy-weapon-review/build.cjs --execute (중앙 heavy 슬롯 내 직렬 export)
+node tools/chapter1-enemy-weapon-review/build.cjs --pages (GLB 그대로 HTML/bundle만 갱신)
+node tools/chapter1-enemy-weapon-review/qa.cjs (중앙 슬롯 내 브라우저1/11척 직렬, finally.close)
+공통 package/lock/설치/서버/전장/다른담당 소스 변경0. 유료 API0.
+
+첫 QA 모바일검사: viewport 변경 직후 resize 이벤트 이전 판정이 command에서 실패.
+초기 실패 보고서 verification-initial-failure.json 보존.
+실제 모바일 새 로딩에서 overflow0 확인, 하네스가 canvas resize 완료를 기다리도록 수정.
+최종 검사는 verification.json, 출력/원본 SHA/READY는 READY.json 참고.
+슬롯: 총괄 thread not found/통합 archived, 적기지 담당 heavy RETURN 및 2탄함대 현재 사용0 확인 후 독립 직렬 실행.

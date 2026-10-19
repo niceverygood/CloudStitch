@@ -1,0 +1,76 @@
+{
+  "version": "encounters-integration-v2",
+  "status": "helper-and-single-sim-passed-controller-retest-pending",
+  "helperVerification": {
+    "command": "node --test tools/encounters/attack-budget.test.mjs tools/encounters/director.test.mjs",
+    "tests": 22,
+    "passed": 22,
+    "failed": 0,
+    "newPolicyTests": 6,
+    "originalContractTests": 16
+  },
+  "actualVoyageEvidence": {
+    "source": "integration owner message; formal report still being prepared",
+    "plannedReport": "outputs/integration-v1/verification.json",
+    "firstReturnPassed": true,
+    "steps": 195,
+    "stepSeconds": 0.05,
+    "shots": 19,
+    "hits": 19,
+    "detachments": 1,
+    "salvages": 1,
+    "settlements": 1,
+    "damageTaken": 9,
+    "teleportOrForcedDamage": false,
+    "scope": "First-region opening, salvage and voluntary return; not full boss victory",
+    "rulesReport": {
+      "path": "outputs/integration-v1/rules-verification.json",
+      "sha256": "346e07863cf8ab5ef91d82cbfee6a7ee89751253712be020333c3e3711b000ee",
+      "passed": true,
+      "checks": 6,
+      "sorties": 2,
+      "scope": "Headless integration over actual simulation inputs, not browser performance or human playtesting."
+    }
+  },
+  "reproductions": [
+    {
+      "id": "opening-warning-budget",
+      "method": "headless createVoyageController depart, 126 advance(1/60,{}) calls",
+      "observed": {
+        "simTime": 2.1,
+        "phase": "opening",
+        "budget": 1,
+        "warnings": 2
+      },
+      "status": "policy-helper-ready, host-application-pending"
+    },
+    {
+      "id": "defeat-clearance",
+      "method": "in-memory state placement",
+      "observed": "2 enemies, 1 warning and pending clearance after defeat",
+      "status": "reported-to-integration-owner"
+    },
+    {
+      "id": "boss-metadata",
+      "method": "in-memory spawn inspection",
+      "observed": "sim enemy role/tier undefined; renderer boss predicate cannot match",
+      "status": "reported-to-integration-owner"
+    },
+    {
+      "id": "spawn-overlap",
+      "method": "forced opening defeats, player placement at (-32,-16)",
+      "observed": "midboss spawned at player position",
+      "status": "reported-to-integration-owner"
+    }
+  ],
+  "hostCooldownCaveat": "Battlefield must tick cooldown before attackTarget-null early return. The helper must never tick it separately.",
+  "completeIntegrationVerifiedHere": false,
+  "browserQARunHere": false,
+  "singleSimVerification": {
+    "command": "node --test tools/encounters/attack-budget-host.test.mjs",
+    "tests": 3,
+    "passed": 3,
+    "failed": 0,
+    "scope": "One authoritative battlefield, fixture spawns, no forced damage/kills; cooldown continues when target is withheld; max warning1/2 and both enemies fire"
+  }
+}

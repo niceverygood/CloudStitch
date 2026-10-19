@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f2efdf">
+  <title>Cloudstitch · 구름 속 여섯 항로</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app" aria-label="Cloudstitch 항해와 항구">
+    <header class="masthead">
+      <div class="wordmark"><span class="brand-mark" aria-hidden="true">✦</span><div><strong>Cloudstitch</strong><span>클라우드스티치 · 항해 기록</span></div></div>
+      <div class="route-title"><span class="eyebrow" id="place-label">구름이 머무는 곳</span><h1 id="route-title">종항의 작은 부두</h1></div>
+      <div class="header-actions"><span class="phase-chip" id="phase-chip">항구</span><button id="pause-button" class="icon-button" title="일시정지 · Esc" aria-label="일시정지" aria-pressed="false" disabled>Ⅱ</button></div>
+    </header>
+    <nav class="spatial-tools" aria-label="3D 항로 둘러보기">
+      <label for="spatial-map-select">공간 둘러보기</label><select id="spatial-map-select"><option value="">현재 항로</option></select>
+      <button id="camera-reset" class="view-button" title="함선 뒤에서 보기">↶ 뒤에서</button>
+      <button id="routes-toggle" class="view-button" aria-expanded="false">항로 수첩</button>
+      <button id="inventory-toggle" class="view-button" aria-expanded="false">항구 · 창고</button>
+      <button id="quick-depart" class="primary">현재 항로로 출항 →</button>
+    </nav>
+    <p id="preview-banner" class="preview-banner" hidden></p>
+
+    <section class="map-atlas" aria-label="여섯 항로 진행 상황">
+      <div class="atlas-heading"><h2>이어지는 여섯 항로</h2><span id="route-progress">항해 기록 확인 중</span><span>같은 함선으로, 첫 구름부터 마지막까지</span></div>
+      <div id="map-list" class="map-list" role="list" aria-label="순서대로 이어지는 여섯 항로"></div>
+      <div class="campaign-actions"><p id="map-hint" role="status">저장한 항해 순서를 확인하고 있어요.</p><button data-command="next-stage" id="next-stage-button" class="primary" disabled>다음 항로 →</button></div>
+      <div id="campaign-finish" class="campaign-finish" role="status" hidden><span aria-hidden="true">✦</span><div><strong>여섯 항로의 항해를 모두 마쳤어요.</strong><p>이어 온 함선과 장착품, 창고와 자원은 그대로 남습니다. 종항에서 정비하고 저장할 수 있어요.</p></div></div>
+    </section>
+    <div class="workspace">
+      <aside class="left-panel paper" aria-label="귀환호와 항로">
+        <div class="eyebrow">오늘도, 무사히</div><h2>귀환호 <span class="tiny-star" aria-hidden="true">✦</span></h2><p class="soft-text ship-subtitle">작은 조각을 이어, 더 먼 구름으로.</p>
+        <div class="ship-gauges"><div class="gauge-heading"><span>선체</span><output id="hull-text">100 / 100</output></div><div class="gauge-track"><i id="hull-fill"></i></div><div class="gauge-heading"><span>기동 여유</span><output id="boost-text">100%</output></div><div class="gauge-track pale"><i id="boost-fill"></i></div></div>
+        <dl class="ship-numbers"><div><dt>중량</dt><dd id="weight-text">—</dd></div><div><dt>양력</dt><dd id="lift-text">—</dd></div><div><dt>적재 화물</dt><dd id="cargo-count">0</dd></div><div><dt>항해 시간</dt><dd id="time-text">00:00</dd></div></dl>
+        <p id="lift-warning" class="warning" hidden>양력이 부족해요. 부두로 서둘러 돌아오세요.</p>
+        <div class="divider"></div><div class="section-heading"><h3>항로 수첩</h3><span class="small-tag" id="voyage-number">출항 준비</span></div>
+        <canvas id="chart" width="240" height="210" aria-label="항로 지도: 청록은 귀환호, 산호는 적선, 황동은 인양물"></canvas>
+        <div class="chart-legend"><span><i class="dot teal"></i>귀환호</span><span><i class="dot coral"></i>적선</span><span><i class="dot gold"></i>인양물</span></div>
+        <p id="map-description" class="soft-text"></p><ol id="map-objectives" class="journey-steps"></ol>
+        <div class="divider"></div><h3>이어지는 항해 안내</h3><ol class="journey-steps"><li>연결부를 겨냥하고 부품을 인양하세요.</li><li>중간 정비 뒤 최종 교전까지 승리하세요.</li><li>남쪽 귀환 원 안에서 귀환·정산을 저장하세요.</li><li>화물을 보관하고 정비한 뒤 다음 항로를 여세요.</li></ol><p class="soft-text guide-note">전투 전체 승리 → 남쪽 원 안 귀환 → 정산 저장 → 다음 항로.<br>조기 철수하면 현재 단계를 유지합니다.</p>
+      </aside>
+
+      <section class="viewport" aria-label="구름 위 항해">
+        <div id="scene" tabindex="0" aria-label="마우스로 잡아 360도 시점 회전, 휠 확대 축소, WASD 또는 방향키 이동, 클릭 단발, J 연사, F 인양, H 귀환"></div>
+        <div id="world-labels" aria-hidden="true"></div><div class="scene-grain" aria-hidden="true"></div>
+        <div class="view-heading"><span class="weather-mark" aria-hidden="true">≈</span><span id="view-caption">구름 아래 작은 불빛, 종항</span><button id="camera-button" class="view-button" title="공간 전체 화면 맞춤 · M" aria-pressed="false">⌖ 전체 보기</button></div>
+        <div id="aim-reticle" aria-hidden="true"><i></i></div>
+        <div id="scene-toast" class="scene-toast" role="status" aria-live="polite"></div>
+        <div id="flight-actions" class="flight-actions" hidden><button id="fire-button" class="flight-action"><span>⌁</span><b>사격</b><small>누르기</small></button><button id="boost-button" class="flight-action"><span>»</span><b>가속</b><small>Space</small></button><button data-command="salvage" class="flight-action"><span>♧</span><b>인양</b><small>F</small></button><button data-command="return" class="flight-action"><span>⌂</span><b>귀환</b><small>H</small></button></div>
+        <div class="touch-pad" aria-label="터치 이동"><button data-move="up" aria-label="앞으로">↑</button><button data-move="left" aria-label="왼쪽">←</button><span aria-hidden="true">✦</span><button data-move="right" aria-label="오른쪽">→</button><button data-move="down" aria-label="뒤로">↓</button></div>
+        <div class="view-help" id="view-help">화면을 잡아 회전 <span>·</span> 휠 확대·축소 <span>·</span> <kbd>WASD</kbd> 항해 <span>·</span> 클릭 단발 / <kbd>J</kbd> 연사</div>
+        <div id="loading-screen" class="scene-overlay"><div class="overlay-paper"><span class="eyebrow">CLOUDSTITCH</span><div class="loading-star" aria-hidden="true">✦</div><h2>항해를 준비하고 있어요</h2><p id="loading-message">비행선과 구름을 불러오는 중입니다.</p><div class="loading-thread"><i></i></div></div></div>
+        <div id="pause-screen" class="scene-overlay" hidden><div class="overlay-paper"><span class="eyebrow">잠깐, 바람을 고르며</span><h2>항해 일시정지</h2><p>배와 포탄, 위험의 시간이 멈췄습니다.</p><button data-command="resume" class="primary">계속 항해하기 <span>→</span></button></div></div>
+        <div id="defeat-screen" class="scene-overlay" hidden><div class="overlay-paper"><span class="eyebrow">다시 이을 수 있어요</span><h2>이번에는 바람이 거셌어요.</h2><p id="defeat-reason">출항할 때의 상태에서 다시 시작할 수 있어요.</p><button data-command="retry" class="primary">다시 항해하기 <span>→</span></button></div></div>
+        <div id="maintenance-screen" class="maintenance-card paper" hidden><div class="eyebrow">잠시 머무는 안전 정비</div><h2>다음 바람을 기다리며</h2><p>잔류 공격이 사라졌습니다. 준비되면 다음 교전으로 나아가세요.</p><button data-command="maintenance" class="primary">항해 계속하기 <span>→</span></button></div>
+      </section>
+
+      <aside class="right-panel paper" aria-label="항구와 화물">
+        <div class="eyebrow" id="harbor-eyebrow">작은 부두에 닻을 내리고</div><h2 id="harbor-title">종항 공방</h2><p id="harbor-description" class="soft-text">돌아온 조각을 정리하고, 다음 항해를 준비하세요.</p>
+        <div class="resource-box"><span>보유 자원</span><strong id="resources-text">—</strong><small id="totals-text">중량·양력·전력 확인 중</small></div>
+        <section id="cargo-section"><div class="section-heading"><h3>회수 화물</h3><span class="small-tag" id="cargo-tag">0묶음</span></div><ul id="cargo-list" class="part-list"></ul><button data-command="store" id="store-button" class="secondary full">회수품 창고에 보관</button></section>
+        <section id="harbor-section"><div class="section-heading"><h3>창고와 장착품</h3><span class="small-tag" id="inventory-count">0개</span></div><label class="select-label" for="slot-select">장착 위치</label><select id="slot-select" aria-label="부품을 장착할 위치"></select><ul id="inventory-list" class="part-list inventory-list"></ul><div class="repair-box"><div><span>수리 견적</span><strong id="repair-cost">—</strong></div><button data-command="repair" id="repair-button" class="secondary">수리하기</button></div><p class="soft-text repair-note">수리하기를 누르면 견적만큼 자원을 사용합니다.</p><button data-command="depart" id="depart-button" class="primary full">현재 항로로 출항 <span>→</span></button><p id="depart-hint" class="soft-text depart-hint">현재 단계를 마치면 다음 항로를 열 수 있어요.</p></section>
+        <section id="sailing-section" hidden><div class="voyage-note"><span aria-hidden="true">◇</span><h3>연결부를 살펴보세요</h3><p>주황색 고리를 겨냥하면 하위 부품을 묶음으로 분리할 수 있어요. 함포를 직접 부수면 회수할 수 없어요.</p></div><p id="return-hint" class="return-hint">남쪽의 청록색 귀환 원 안에서 H를 누르세요.</p></section>
+        <div class="save-box"><div class="save-heading"><span class="save-dot" id="save-dot"></span><span id="save-status" role="status">저장 상태 확인 중</span></div><div class="save-actions"><button data-command="save" id="save-button" class="text-button">저장하기</button><button data-command="restore" id="restore-button" class="text-button">불러오기</button></div></div>
+        <details id="legacy-import" class="legacy-import" hidden><summary>기존 단일 항로 기록 가져오기</summary><p>기존 단일 항로의 함선·창고·자원으로 1단계부터 시작합니다. 이전 기록은 보존합니다.</p><label class="select-label" for="legacy-map-select">가져올 단일 항로 기록</label><select id="legacy-map-select" aria-label="가져올 단일 항로 기록"></select><button id="import-legacy-button" class="secondary full" disabled>기록 가져오기</button></details>
+      </aside>
+    </div>
+    <footer class="app-footer"><span>구름을 꿰매는 배, Cloudstitch</span><p id="app-status" role="status">항해를 준비하고 있습니다.</p><span>함선·창고·자원·진행을 함께 저장합니다</span></footer>
+  </main>
+  <script src="spatial.js"></script>
+</body>
+</html>

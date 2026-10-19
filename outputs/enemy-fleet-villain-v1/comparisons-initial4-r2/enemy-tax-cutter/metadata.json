@@ -1,0 +1,170 @@
+{
+  "id": "enemy-tax-cutter",
+  "bounds": {
+    "before": {
+      "min": [
+        -5.247094305510124,
+        -1.7748445522407934,
+        -2.351555909760039
+      ],
+      "max": [
+        5.66288374480891,
+        4.360389200382166,
+        5.601209056183416
+      ]
+    },
+    "after": {
+      "min": [
+        -7.672525082278139,
+        -1.7748445522407934,
+        -2.351555909760039
+      ],
+      "max": [
+        5.66288374480891,
+        5.291497216804728,
+        5.601209056183416
+      ]
+    },
+    "union": {
+      "min": [
+        -7.672525082278139,
+        -1.7748445522407934,
+        -2.351555909760039
+      ],
+      "max": [
+        5.66288374480891,
+        5.291497216804728,
+        5.601209056183416
+      ]
+    }
+  },
+  "camera": {
+    "type": "OrthographicCamera",
+    "position": [
+      -20.207529483672154,
+      15.584276679037,
+      -22.954640709908368
+    ],
+    "target": [
+      -1.0048206687346144,
+      1.758326332281967,
+      1.6248265732116884
+    ],
+    "left": -8.875210302994025,
+    "right": 8.875210302994025,
+    "top": 6.902941346773131,
+    "bottom": -6.902941346773131,
+    "near": 0.08529548422777819,
+    "far": 68.23638738222255,
+    "matrixWorld": [
+      -0.7880243737245636,
+      5.551115123125783e-17,
+      0.615644041972315,
+      0,
+      0.24948167047314623,
+      0.9142117213560403,
+      0.31933653820562724,
+      0,
+      -0.5628289993541005,
+      0.40523687953495247,
+      -0.720421119173249,
+      0,
+      -20.207529483672154,
+      15.584276679037,
+      -22.954640709908368,
+      1
+    ],
+    "projectionMatrix": [
+      0.1126733864168439,
+      0,
+      0,
+      0,
+      0,
+      0.14486578253594215,
+      0,
+      0,
+      0,
+      0,
+      -0.02934655842335589,
+      0,
+      0,
+      0,
+      -1.0025031289111388,
+      1
+    ]
+  },
+  "animation": {
+    "before": {
+      "clip": "FloatIdle",
+      "duration": 10,
+      "sampleTimeSeconds": 2,
+      "stopped": true,
+      "missingFloatIdle": false
+    },
+    "after": {
+      "clip": "FloatIdle",
+      "duration": 10,
+      "sampleTimeSeconds": 2,
+      "stopped": true,
+      "missingFloatIdle": false
+    }
+  },
+  "render": {
+    "width": 900,
+    "height": 700,
+    "dpr": 1,
+    "background": "#f1e6cf",
+    "material": "MeshBasicMaterial preserving source maps/colors/vertexColors/alpha",
+    "outlineAutoClear": true,
+    "nativeCoordinates": true,
+    "toneMapping": "NoToneMapping",
+    "outputColorSpace": "SRGBColorSpace",
+    "lights": {
+      "ambient": {
+        "color": 16777215,
+        "intensity": 1.5
+      },
+      "directional": {
+        "color": 16773077,
+        "intensity": 2,
+        "position": [
+          6,
+          10,
+          8
+        ]
+      }
+    },
+    "content": {
+      "before": {
+        "nonBackgroundPixels": 130548,
+        "fraction": 0.2072190476190476
+      },
+      "after": {
+        "nonBackgroundPixels": 169427,
+        "fraction": 0.268931746031746
+      }
+    },
+    "changedPixels": 83887,
+    "changedFraction": 0.13315396825396825
+  },
+  "artApproval": "PENDING_HUMAN_REVIEW",
+  "sources": {
+    "before": {
+      "assetPath": "outputs/fleet-v2/ships/enemy-tax-cutter.glb",
+      "sha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+      "bytes": 7850040
+    },
+    "after": {
+      "assetPath": "outputs/enemy-fleet-villain-v1/ships/enemy-tax-cutter.glb",
+      "sha256": "9f61d09782217cb9ab60303f567ed861808682cb821a912a97193689e5ed8a67",
+      "bytes": 12956664
+    }
+  },
+  "beforePngSha256": "0c7b9cc7dc3aa9751f0f8c092099e5f2e29841ac1194403f98cdad182c592d9e",
+  "afterPngSha256": "1ee35b643d5c5838a50d4cf23ac71bfd82b7e965992e711fba7c452d3ef931ba",
+  "pairPngSha256": "3c1a834ff457a2bb8b04ee2e46c73c0c760b87ad687b665970c788b89a5d5d93",
+  "beforeSha256": "b79545d510fd9acf2296526a32d46950c45353e946e7ddf5f1265e450d183f2c",
+  "afterSha256": "9f61d09782217cb9ab60303f567ed861808682cb821a912a97193689e5ed8a67",
+  "sameCamera": true,
+  "passed": true
+}

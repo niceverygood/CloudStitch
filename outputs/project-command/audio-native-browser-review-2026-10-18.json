@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:37:35Z",
+  "status": "native graph33/33 and Offline54 PASS; retry/listening/final UI incomplete",
+  "report": {
+    "path": "outputs/audio-browser-qa-v1/verification.json",
+    "sha256": "241dd6a99bb841188f0ec04a3d2c0f28823a52cb86850d9a8caefa9054845d96",
+    "passed": true,
+    "checkCount": 33,
+    "checkNames": [
+      {
+        "name": "frozen-v1-declared-count",
+        "passed": true
+      },
+      {
+        "name": "frozen-v1-declared-hashes",
+        "passed": true
+      },
+      {
+        "name": "audio-ready-declared-count",
+        "passed": true
+      },
+      {
+        "name": "audio-ready-declared-hashes",
+        "passed": true
+      },
+      {
+        "name": "source-boundary-declared-count",
+        "passed": true
+      },
+      {
+        "name": "source-boundary-declared-hashes",
+        "passed": true
+      },
+      {
+        "name": "native-host-serves-frozen-source-bytes",
+        "passed": true
+      },
+      {
+        "name": "first-gesture-gate-no-backlog",
+        "passed": true
+      },
+      {
+        "name": "native-first-gesture-unlock",
+        "passed": true
+      },
+      {
+        "name": "18-audition-cards",
+        "passed": true
+      },
+      {
+        "name": "18-cues-create-native-sources",
+        "passed": true
+      },
+      {
+        "name": "volume-ui-applies-settings",
+        "passed": true
+      },
+      {
+        "name": "mono-native-pan-zero",
+        "passed": true
+      },
+      {
+        "name": "low-dynamic-native-compressor",
+        "passed": true
+      },
+      {
+        "name": "mute-clears-no-backlog",
+        "passed": true
+      },
+      {
+        "name": "important-three-native-cap",
+        "passed": true
+      },
+      {
+        "name": "three-loops-no-restarts",
+        "passed": true
+      },
+      {
+        "name": "audition-pause-clear-no-backlog",
+        "passed": true
+      },
+      {
+        "name": "real-mono-buffer-sources-and-release-tail",
+        "passed": true
+      },
+      {
+        "name": "audition-dispose-idempotent-closes-native-context",
+        "passed": true
+      },
+      {
+        "name": "provided-native-offline-judge",
+        "passed": true
+      },
+      {
+        "name": "54-numerical-renders",
+        "passed": true
+      },
+      {
+        "name": "18-ids-three-variants",
+        "passed": true
+      },
+      {
+        "name": "finite-peak-rms-duration-loop-seam-thresholds",
+        "passed": true
+      },
+      {
+        "name": "frozen-source-mounted",
+        "passed": true
+      },
+      {
+        "name": "actual-controller-fire-collision-enemy-fire",
+        "passed": true
+      },
+      {
+        "name": "authority-snapshot-read-only-and-history-dedupe",
+        "passed": true
+      },
+      {
+        "name": "actual-pause-and-hidden-callback-clear-loops",
+        "passed": true
+      },
+      {
+        "name": "host-dispose-cleans-native-graph",
+        "passed": true
+      },
+      {
+        "name": "adapter-and-native-voice-bounds",
+        "passed": true
+      },
+      {
+        "name": "frozen-v1-and-ready46-and-source-preserved",
+        "passed": true
+      },
+      {
+        "name": "no-normal-page-or-console-errors",
+        "passed": true
+      },
+      {
+        "name": "no-http-errors-failed-or-external-requests",
+        "passed": true
+      }
+    ],
+    "summary": null,
+    "scope": [
+      "One private native Chrome context; real Web Audio nodes and UI controls.",
+      "54 native OfflineAudioContext renders using the provided numerical judge.",
+      "Accelerated public controller inputs, read-only adapter, and representative lifecycle boundaries."
+    ],
+    "limitations": null,
+    "keys": [
+      "schema",
+      "startedAt",
+      "passed",
+      "browserAudioGraphPerformed",
+      "humanListeningPerformed",
+      "headphoneTestPerformed",
+      "auditoryThreeCueIdentificationPerformed",
+      "scope",
+      "limits",
+      "testedDelivery",
+      "sourceBoundary",
+      "servedSourceBoundary",
+      "finishedAt",
+      "checks",
+      "samples",
+      "fatal",
+      "protectedFiles",
+      "changedFiles",
+      "expectedAutoplayDenials",
+      "pageErrors",
+      "consoleErrors",
+      "httpErrors",
+      "failedRequests",
+      "externalRequests"
+    ]
+  },
+  "compositeCheckCounts": {
+    "setup": 7,
+    "nativeAudition": 13,
+    "nativeController": 6,
+    "offlineJudge": 4,
+    "finalPreservation": 3,
+    "total": 33
+  },
+  "protectedUniqueFiles": 89,
+  "scopeClarifications": [
+    "54 renders are18 cues times3 variants with fixed single-cue gain/rate1, not simultaneous mixing or auditory quality",
+    "actual native controller test uses215 accelerated ticks, not real-time combat timing certification",
+    "hidden behavior was tested through bridge callback, not actual OS background-tab transition",
+    "retry and staleSuppressed remain null in this report; no new retry result was found by read audit"
+  ],
+  "scope": {
+    "nativeWebAudio": true,
+    "nativeOfflineAudioContext": true,
+    "numericalRenders": 54,
+    "humanListening": false,
+    "headphones": false,
+    "auditoryThreeCueIdentification": false
+  },
+  "preservation": "reported checks verify frozen39/audio46/sourceBoundary7 and readonly mount; no overall game installation implied",
+  "pending": [
+    "short fresh no-fire native defeat/retry test; first-fire host did not naturally lose within2400ticks",
+    "human listening/headphones/three-cue identification",
+    "final gameUI integration and actual autosave result hook"
+  ],
+  "commandReview": "read report/SHA only; no browser/audio replay or duplicate33/54 suite"
+}

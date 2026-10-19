@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cloudstitch · 종항의 작은 공방</title><style>
+*{box-sizing:border-box}body{margin:0;background:#ede5d3;color:#253e40;font:16px/1.6 system-ui,sans-serif}button,select{font:inherit}button{cursor:pointer;border:1px solid #9c8465;border-radius:9px;background:#fff9e9;color:#233f40;padding:9px 15px}button:hover,button:focus-visible{outline:3px solid #bd755c;outline-offset:2px}button:disabled{opacity:.45;cursor:not-allowed}button.primary{background:#326f70;color:#fff7e8;border-color:#326f70}h1,h2,h3,p{margin:0 0 12px}h1{font-size:clamp(26px,4vw,42px);letter-spacing:-1.4px}h2{font-size:24px}h3{font-size:18px}.wrap{max-width:1240px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;gap:20px;align-items:center}.brand{letter-spacing:2px;font-weight:750;font-size:14px}.tag{color:#687674;font-size:13px}.hero{display:grid;grid-template-columns:1.15fr 1fr;background:#fcf6e8;border:1px solid #c8b595;border-radius:20px;overflow:hidden;margin:24px 0}.hero img{width:100%;height:290px;object-fit:cover}.hero .copy{padding:28px}.badge{display:inline-block;background:#dce8df;border-radius:20px;padding:3px 12px;font-size:13px;margin-bottom:12px}.steps{display:flex;flex-wrap:wrap;gap:8px;font-size:13px;margin:14px 0}.steps span{padding:5px 9px;border-bottom:2px solid #a9b8aa}.grid{display:grid;grid-template-columns:1.55fr 1fr;gap:20px}.panel{background:#fffaf0;border:1px solid #c9b899;border-radius:16px;padding:22px;margin-bottom:20px;min-width:0}.row{display:flex;flex-wrap:wrap;gap:9px;align-items:center}.contacts{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}.contacts button[aria-pressed=true]{background:#326f70;color:#fff7e8}.muted{color:#687674;font-size:14px}.small{font-size:13px}.status{background:#e2ecdf;border-left:4px solid #508369;padding:12px;border-radius:6px;margin-bottom:18px;overflow-wrap:anywhere}.status.error{background:#f5e1d6;border-color:#b56d50}.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.number{font-size:24px;font-weight:650;font-variant-numeric:tabular-nums}.metric{background:#efe9d9;padding:12px;border-radius:9px}.metric span{display:block;font-size:13px}.parts{display:grid;gap:12px}.part{border:1px solid #d4c4a5;border-radius:12px;padding:15px}.part .row{justify-content:space-between}.part code{font-size:11px;overflow-wrap:anywhere}select{max-width:100%;border:1px solid #b4a484;padding:8px;border-radius:6px;background:white}table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:8px 5px;border-bottom:1px solid #ddcfb4;font-variant-numeric:tabular-nums}details{margin-top:12px}summary{cursor:pointer}.warn{color:#935435}.log{max-height:170px;overflow:auto;font-size:13px;padding-left:20px}.log li{margin-bottom:5px}footer{font-size:13px;color:#687674;padding-bottom:24px}a{color:#326f70}#repair-detail{margin:12px 0}#import-file{max-width:100%}code{font-family:ui-monospace,monospace}body[data-phase=sailing] .hero{border-color:#a17a4e}@media(max-width:800px){.hero,.grid{grid-template-columns:1fr}.hero img{height:220px}.wrap{padding:16px}.top{align-items:flex-start}.panel{padding:17px}.numbers{gap:5px}.metric{padding:9px}.number{font-size:21px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style></head><body><main class="wrap"><header class="top"><div><div class="brand">CLOUDSTITCH</div><span class="tag">클라우드스티치 · 항구 순환 예시 v1</span></div><span class="tag">독립 데이터 / 항해 엔진 연결 대기</span></header>
+<section class="hero"><img src="../world-assets/scene-previews/jonghang-harbor.png" alt="기존 종항 항구 조립 장면의 미리보기" onerror="this.hidden=true"><div class="copy"><span class="badge" id="phase-label">안전한 항구</span><h1>돌아온 배에<br>다음 항해를 꿰매요.</h1><p class="muted">회수한 물건을 보관하고, 빈 장착 위치를 살펴보세요. 수리는 견적을 확인한 뒤 결정할 수 있습니다.</p><div class="steps"><span>귀환 결과</span><span>회수품 보관</span><span>장착 위치</span><span>수리 · 정산</span><span>저장 · 재출항</span></div></div></section>
+<div id="status" class="status" role="status" aria-live="polite">항구를 준비하고 있습니다.</div><nav class="contacts" aria-label="항구 접점"><button data-contact="warehouse">보관함</button><button data-contact="shipyard">공방</button><button data-contact="market">천 시장</button><button data-contact="departure">출항 부두</button></nav>
+<div class="grid"><div><section class="panel"><h2 id="section-title">회수품과 장착 위치</h2><p id="contact-note" class="muted"></p><div class="row"><button id="store">선내 회수품 모두 보관</button><label for="location-filter" class="small">보기</label><select id="location-filter"><option value="all">전체 부품</option><option value="cargo">선내 화물</option><option value="warehouse">항구 보관</option><option value="installed">실제 장착</option></select></div><div id="parts" class="parts" style="margin-top:16px"></div></section>
+<section class="panel"><h2>공방 수리</h2><p class="muted">항구 수리 0.25 S / 복구 내구도, 전체 합산 후 올림. 예시 정책입니다.</p><div class="row"><button id="quote">미지불 견적 보기</button><button id="repair" class="primary" disabled>견적대로 수리 확정</button></div><div id="repair-detail" aria-live="polite">아직 견적을 요청하지 않았습니다.</div></section>
+<section class="panel"><h2>귀환 결과와 정산</h2><p class="muted">화물은 자동 판매·장착되지 않습니다. 선택 철수에는 미완료 계약 보상이 지급되지 않습니다.</p><div id="settlements"></div><details><summary>이번 세션 작업 기록</summary><ol id="log" class="log"></ol></details></section></div>
+<aside><section class="panel"><h2>귀환호 예산</h2><div id="budgets"></div><h3 style="margin-top:20px">보유 자원</h3><div id="resources" class="numbers"></div><p class="muted small" style="margin-top:12px">총중량 = 장착 + 선내 화물 + 구조 인원. 항구 보관품은 제외합니다. 창고의 엔진·기낭은 출력을 내지 않습니다.</p></section>
+<section class="panel"><h2>저장과 재출항</h2><p id="save-info" class="muted"></p><div class="row"><button id="save" class="primary">안전 지점 저장</button><button id="load">마지막 저장 불러오기</button></div><div class="row" style="margin-top:10px"><button id="export">저장 사본 내려받기</button><button id="recover" hidden>정상 백업 복구</button></div><details><summary>저장 실패 예시</summary><label><input type="checkbox" id="fail-save"> 다음 저장에 쓰기 실패 주입</label><p class="muted small">실제 저장소를 손상시키지 않고, 현재 세션과 마지막 성공 저장의 차이를 확인합니다.</p></details><hr><p id="departure-reasons" class="muted"></p><button id="depart" class="primary">저장 후 예시 출항</button><div class="row" style="margin-top:10px"><button id="return">예시 임무 완료 · 귀환</button><button id="withdraw">예시 선택 철수</button></div><p class="muted small" style="margin-top:12px">출항과 귀환은 버튼으로 전달하는 독립 데이터입니다. 이 화면에서 전장 이동·전투는 실행하지 않습니다.</p></section>
+<section class="panel"><h3>천 시장</h3><p class="muted">봉인 천은 별도 자원 C로 보관합니다. 이번 예시는 카탈로그의 시장 접점을 연결하며 매매·제작·봉인 기능은 후속 범위입니다.</p><details><summary>연결 상태</summary><div id="contracts" class="small"></div></details></section></aside></div>
+<footer>기존 종항 그림과 카탈로그를 재사용했습니다. 브라우저 저장은 이 기기·이 주소에 속합니다. 예시 규칙 검증과 실제 항해 검증은 별도입니다. <a href="README.md">범위와 사용 안내</a></footer></main><script>const WORLD_CONTACTS = {"ok":true,"version":1,"contacts":[{"id":"workshop","label":"공방","sceneId":"jonghang-harbor","assetId":"repair-workshop","action":"shipyard","model":"outputs/world-assets/hero/repair-workshop/model-closed-roof.glb","preview":"outputs/world-assets/previews/repair-workshop.png","coordinateStatus":"semantic-contact-only; XZ/Y-up LU; authored interaction positions pending"},{"id":"market","label":"천 시장","sceneId":"jonghang-harbor","assetId":"canvas-market","action":"market","model":"outputs/world-assets/hero/canvas-market/model-repaired.glb","preview":"outputs/world-assets/previews/canvas-market.png","coordinateStatus":"semantic-contact-only; XZ/Y-up LU; authored interaction positions pending"},{"id":"warehouse","label":"보관함","sceneId":"jonghang-harbor","assetId":"storage-chest","action":"warehouse","model":"outputs/world-assets/assets/storage-chest.glb","preview":"outputs/world-assets/previews/storage-chest.png","coordinateStatus":"semantic-contact-only; XZ/Y-up LU; authored interaction positions pending"},{"id":"departure","label":"출항 부두","sceneId":"jonghang-harbor","assetId":"dock-endcap","action":"departure","model":"outputs/world-assets/assets/dock-endcap.glb","preview":"outputs/world-assets/previews/dock-endcap.png","coordinateStatus":"semantic-contact-only; XZ/Y-up LU; authored interaction positions pending"}],"errors":[],"scene":{"id":"jonghang-harbor","model":"outputs/world-assets/scenes/jonghang-harbor.glb","preview":"outputs/world-assets/scene-previews/jonghang-harbor.png"}};
+const module1 = (() => {
+/** Independent rule examples, never imported MacBook gameplay or final balance. */
+const EXAMPLE_VERSION = 'harbor-v1.0.0';
+
+function createExampleState() {
+  const part = (id, kind, name, weight, extra = {}) => ({
+    id, kind, name, hp: 100, maxHp: 100, weight, lift: 0,
+    powerSupply: 0, powerDemand: 0, ownerId: 'player',
+    source: { originId: 'starter-support', assetId: 'player-homeward', acquiredVoyageId: null },
+    location: 'installed', parentId: 'homeward:hull', socketId: null, ...extra,
+  });
+  return {
+    schemaVersion: 1, profileId: 'example-captain', ownerId: 'player', revision: 0,
+    phase: 'harbor', boundary: 'harbor', voyageSequence: 0, activeVoyage: null,
+    resources: { S: 120, F: 40, C: 2 }, settlements: [], repairReceipts: [],
+    ship: {
+      id: 'player-homeward', rootId: 'homeward:hull', passengerWeight: 0,
+      sockets: [
+        ['L1', 'balloon'], ['E1', 'engine'], ['E2', 'engine'],
+        ['W1', 'machinegun'], ['W2', 'machinegun'], ['S1', 'hook'],
+        ['A1', 'armor'], ['A2', 'armor'],
+      ].map(([id, kind]) => ({ id, parentId: 'homeward:hull', kinds: [kind], enabled: true })),
+    },
+    parts: [
+      part('homeward:hull', 'hull', '귀환호 핵심 선체', 24, { parentId: null }),
+      part('homeward:balloon', 'balloon', '패치 부양낭', 6, { socketId: 'L1', lift: 65 }),
+      part('homeward:engine', 'engine', '청록 엔진', 8, { socketId: 'E1', powerSupply: 14, powerDemand: 6 }),
+      part('homeward:gun', 'machinegun', '경량 기관총', 8, { socketId: 'W1', powerDemand: 2 }),
+      part('homeward:hook', 'hook', '회수 갈고리', 4, { socketId: 'S1', powerDemand: 2 }),
+    ],
+    notes: { verification: 'independent-example', economy: '기획 초기값과 독립 예시. 실제 항해·밸런스 검증 아님.' },
+  };
+}
+
+function exampleReturn(state, outcome = 'completed') {
+  const voyageId = state.activeVoyage?.id;
+  if (!voyageId) throw new Error('먼저 예시 출항을 시작하세요.');
+  const n = state.voyageSequence;
+  const make = (suffix, kind, name, weight, extra = {}) => ({
+    id: `${voyageId}:${suffix}`, kind, name, hp: 60, maxHp: 100, weight,
+    lift: 0, powerSupply: 0, powerDemand: 0, ownerId: 'player',
+    source: { originId: `example-wreck-${n}`, assetId: 'independent-example-wreck', acquiredVoyageId: voyageId },
+    location: 'cargo', parentId: null, socketId: null, ...extra,
+  });
+  return {
+    version: 1, voyageId, settlementId: `${voyageId}:final`, outcome,
+    evidence: 'independent-example',
+    gained: { S: 90, F: 0, C: n === 1 ? 1 : 0 },
+    spent: { S: 12, F: 3, C: 0 }, contractReward: { S: 30, F: 0, C: 0 },
+    recovered: [
+      make('engine', 'engine', `회수 엔진 ${n}`, 8, { powerSupply: 6, powerDemand: 2 }),
+      make('armor', 'armor', `중량 장갑 ${n}`, 12),
+    ],
+    damage: [{ partId: 'homeward:hull', hp: 76 }],
+  };
+}
+
+return {EXAMPLE_VERSION,createExampleState,exampleReturn};
+})();
+const module3 = (() => {
+/**
+ * Cloudstitch harbor example rules, v1. No GLB or live voyage state is modified.
+ * Costs, departure equipment, and the five fuel gate are provisional examples.
+ * Public operations return new state objects; previews and quotes never mutate.
+ */
+const SHIPYARD_VERSION = '1.0.0';
+
+const LOCATIONS = new Set(['installed', 'warehouse', 'cargo']);
+const PHASES = new Set(['harbor', 'debrief', 'sailing']);
+const EPSILON = 1e-9;
+const textId = value => typeof value === 'string' && value.trim().length > 0;
+const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+const nonnegative = value => typeof value === 'number' && Number.isFinite(value) && value >= 0;
+const amount = value => value === undefined ? 0 : value;
+const error = (code, message) => `${code}: ${message}`;
+const unique = values => [...new Set(values)];
+
+/** Structural and numeric validation; unsafe budgets are handled at departure. */
+function validateParts(state) {
+  const errors = [];
+  if (!record(state)) return [error('state-invalid', '상태 객체가 필요합니다.')];
+  if (state.schemaVersion !== 1) errors.push(error('schema-invalid', '지원하는 상태 형식은 1입니다.'));
+  if (!textId(state.ownerId)) errors.push(error('owner-invalid', '선주 ID가 필요합니다.'));
+  if (!PHASES.has(state.phase)) errors.push(error('phase-invalid', '안전 경계 또는 항해 단계가 잘못되었습니다.'));
+  if (!Number.isSafeInteger(state.revision) || state.revision < 0) errors.push(error('revision-invalid', '수정 번호는 0 이상의 안전한 정수여야 합니다.'));
+  if (!record(state.resources)) errors.push(error('resources-invalid', 'S/F/C 자원이 필요합니다.'));
+  else for (const key of ['S', 'F', 'C']) {
+    if (!nonnegative(state.resources[key])) errors.push(error('resource-invalid', `${key} 자원은 유한한 0 이상 수여야 합니다.`));
+  }
+  if (!record(state.ship)) return [...errors, error('ship-invalid', '함선 정보가 필요합니다.')];
+  if (!textId(state.ship.id) || !textId(state.ship.rootId)) errors.push(error('ship-id-invalid', '함선과 핵심 선체 ID가 필요합니다.'));
+  if (!nonnegative(state.ship.passengerWeight)) errors.push(error('passenger-weight-invalid', '탑승 인원 중량은 유한한 0 이상 수여야 합니다.'));
+  if (!Array.isArray(state.parts)) return [...errors, error('parts-invalid', '부품 배열이 필요합니다.')];
+  if (!Array.isArray(state.ship.sockets)) errors.push(error('sockets-invalid', '장착 소켓 배열이 필요합니다.'));
+
+  const parts = new Map();
+  for (const part of state.parts) {
+    if (!record(part)) { errors.push(error('part-invalid', '부품은 객체여야 합니다.')); continue; }
+    if (!textId(part.id)) errors.push(error('part-id-invalid', '빈 부품 ID는 사용할 수 없습니다.'));
+    else if (parts.has(part.id)) errors.push(error('part-id-duplicate', `${part.id} 부품 ID가 중복됩니다.`));
+    else parts.set(part.id, part);
+    if (!textId(part.kind) || !textId(part.name)) errors.push(error('part-label-invalid', `${part.id}의 종류/이름이 필요합니다.`));
+    if (!nonnegative(part.hp) || !nonnegative(part.maxHp) || part.maxHp <= 0 || part.hp > part.maxHp) errors.push(error('hp-invalid', `${part.id} 내구도는 0 ≤ HP ≤ 최대 HP, 최대 HP > 0이어야 합니다.`));
+    if (!nonnegative(part.weight)) errors.push(error('weight-invalid', `${part.id} 중량은 유한한 0 이상 수여야 합니다.`));
+    for (const key of ['lift', 'powerSupply', 'powerDemand']) {
+      if (part[key] !== undefined && !nonnegative(part[key])) errors.push(error('budget-invalid', `${part.id}의 ${key} 값이 잘못되었습니다.`));
+    }
+    if (part.ownerId !== state.ownerId) errors.push(error('part-not-owned', `${part.id} 부품의 소유권이 현재 선주에게 없습니다.`));
+    if (!LOCATIONS.has(part.location)) errors.push(error('location-invalid', `${part.id}의 보관/화물/장착 상태가 잘못되었습니다.`));
+    if (part.parentId !== null && !textId(part.parentId)) errors.push(error('parent-invalid', `${part.id}의 부모 ID는 문자열 또는 null이어야 합니다.`));
+    if (part.socketId !== null && !textId(part.socketId)) errors.push(error('socket-invalid', `${part.id}의 소켓 ID는 문자열 또는 null이어야 합니다.`));
+    if (!record(part.source) || !textId(part.source.originId) || !textId(part.source.assetId)
+      || (part.source.acquiredVoyageId !== null && !textId(part.source.acquiredVoyageId))) {
+      errors.push(error('source-invalid', `${part.id}의 원본 개체/자산/회수 항해 출처가 필요합니다.`));
+    }
+  }
+
+  const sockets = new Map();
+  for (const socket of Array.isArray(state.ship.sockets) ? state.ship.sockets : []) {
+    if (!record(socket)) { errors.push(error('socket-invalid', '소켓은 객체여야 합니다.')); continue; }
+    if (!textId(socket.id)) errors.push(error('socket-id-invalid', '빈 소켓 ID는 사용할 수 없습니다.'));
+    else if (sockets.has(socket.id)) errors.push(error('socket-id-duplicate', `${socket.id} 소켓 ID가 중복됩니다.`));
+    else sockets.set(socket.id, socket);
+    if (!textId(socket.parentId) || !parts.has(socket.parentId)) errors.push(error('socket-parent-missing', `${socket.id} 소켓의 부모 부품을 찾을 수 없습니다.`));
+    if (!Array.isArray(socket.kinds) || socket.kinds.length === 0 || socket.kinds.some(kind => !textId(kind)) || unique(socket.kinds).length !== socket.kinds.length) errors.push(error('socket-kinds-invalid', `${socket.id} 소켓의 호환 부품 종류가 잘못되었습니다.`));
+    if (typeof socket.enabled !== 'boolean') errors.push(error('socket-enabled-invalid', `${socket.id} 소켓의 활성 상태가 필요합니다.`));
+  }
+  const root = parts.get(state.ship.rootId);
+  if (!root || root.kind !== 'hull' || root.location !== 'installed' || root.parentId !== null || root.socketId !== null) errors.push(error('root-invalid', '핵심 선체는 부모와 소켓이 없는 장착 hull이어야 합니다.'));
+
+  const occupied = new Set();
+  for (const part of parts.values()) {
+    const parent = parts.get(part.parentId);
+    if (part.parentId !== null) {
+      if (!parent) errors.push(error('parent-missing', `${part.id}의 부모 부품을 찾을 수 없습니다.`));
+      else if (parent.location !== part.location) errors.push(error('location-crossing', `${part.id}와 부모의 위치 상태가 다릅니다.`));
+      if (!textId(part.socketId)) errors.push(error('connector-missing', `${part.id}의 부모 연결 소켓이 필요합니다.`));
+    } else if (part.socketId !== null) errors.push(error('loose-root-socket', `${part.id} 묶음 루트의 소켓은 null이어야 합니다.`));
+    if (part.location === 'installed' && part.id !== state.ship.rootId) {
+      if (part.parentId === null) errors.push(error('installed-root-extra', `${part.id}가 핵심 선체에 연결되지 않았습니다.`));
+      const socket = sockets.get(part.socketId);
+      if (!socket) errors.push(error('installed-socket-missing', `${part.id}의 실제 장착 소켓이 없습니다.`));
+      else {
+        if (socket.parentId !== part.parentId) errors.push(error('socket-parent-mismatch', `${part.id}의 소켓과 부모 부품이 다릅니다.`));
+        if (!Array.isArray(socket.kinds) || !socket.kinds.includes(part.kind)) errors.push(error('socket-incompatible', `${part.id} 종류를 해당 소켓에 장착할 수 없습니다.`));
+      }
+      if (occupied.has(part.socketId)) errors.push(error('socket-occupied', `${part.socketId} 소켓이 중복 점유되었습니다.`));
+      occupied.add(part.socketId);
+    }
+    const visited = new Set();
+    let current = part;
+    while (current) {
+      if (visited.has(current.id)) { errors.push(error('part-cycle', `${part.id} 부모 연결에 순환이 있습니다.`)); break; }
+      visited.add(current.id);
+      if (current.parentId === null) {
+        if (part.location === 'installed' && current.id !== state.ship.rootId) errors.push(error('root-unreachable', `${part.id}가 핵심 선체까지 연결되지 않습니다.`));
+        break;
+      }
+      current = parts.get(current.parentId);
+    }
+  }
+  if (state.repairReceipts !== undefined) {
+    if (!Array.isArray(state.repairReceipts)) errors.push(error('repair-receipts-invalid', '수리 영수증은 배열이어야 합니다.'));
+    else {
+      const receiptIds = new Set();
+      for (const receipt of state.repairReceipts) {
+        if (!record(receipt) || !textId(receipt.quoteId) || receiptIds.has(receipt.quoteId)
+          || !Number.isSafeInteger(receipt.revision) || receipt.revision < 0 || !nonnegative(receipt.recovery)
+          || !record(receipt.cost) || !['S', 'F', 'C'].every(key => nonnegative(receipt.cost[key]))) errors.push(error('repair-receipt-invalid', '수리 영수증의 ID/수정 번호/실소비가 잘못되었습니다.'));
+        receiptIds.add(receipt?.quoteId);
+      }
+    }
+  }
+  return unique(errors);
+}
+
+/** Cargo adds weight only. Warehouse parts provide neither weight nor output. */
+function computeBudget(state) {
+  let installedWeight = 0, cargoWeight = 0, lift = 0, powerSupply = 0, powerDemand = 0;
+  for (const part of Array.isArray(state?.parts) ? state.parts : []) {
+    if (part?.location === 'cargo') cargoWeight += part.weight;
+    if (part?.location !== 'installed') continue;
+    installedWeight += part.weight;
+    if (part.hp <= 0) continue;
+    const liftScale = part.kind === 'balloon' ? Math.min(1, part.hp / (part.maxHp * 0.5)) : 1;
+    lift += amount(part.lift) * liftScale;
+    powerSupply += amount(part.powerSupply);
+    powerDemand += amount(part.powerDemand);
+  }
+  const passengerWeight = state?.ship?.passengerWeight ?? 0;
+  const weight = installedWeight + cargoWeight + passengerWeight;
+  const liftMargin = lift - weight;
+  const powerMargin = powerSupply - powerDemand;
+  return { installedWeight, cargoWeight, passengerWeight, weight, totalWeight: weight, lift, powerSupply, powerDemand,
+    liftMargin, powerMargin, canLift: liftMargin >= -EPSILON, hasPower: powerMargin >= -EPSILON };
+}
+
+function mutationReasons(state) {
+  const reasons = validateParts(state);
+  if (!['harbor', 'debrief'].includes(state?.phase)) reasons.push(error('unsafe-phase', '항구 또는 귀환 정산 경계에서만 개조/수리할 수 있습니다.'));
+  if (state?.revision === Number.MAX_SAFE_INTEGER) reasons.push(error('revision-overflow', '수정 번호 한계에 도달했습니다.'));
+  return unique(reasons);
+}
+
+function subtree(state, rootId) {
+  const ids = new Set([rootId]);
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const part of state.parts) if (ids.has(part.parentId) && !ids.has(part.id)) { ids.add(part.id); changed = true; }
+  }
+  return [...ids];
+}
+
+function budgetReasons(budget) {
+  const reasons = [];
+  if (!budget.canLift) reasons.push(error('underlift', `중량 ${budget.weight}이 유효 양력 ${budget.lift}을 초과합니다.`));
+  if (!budget.hasPower) reasons.push(error('overpower', `소비 전력 ${budget.powerDemand}이 발전 ${budget.powerSupply}을 초과합니다.`));
+  return reasons;
+}
+
+function previewInstall(state, partId, socketId) {
+  const before = computeBudget(state);
+  const result = { ok: false, reasons: mutationReasons(state), before, after: before, partIds: [] };
+  if (result.reasons.length) return result;
+  const root = state.parts.find(part => part.id === partId);
+  const socket = state.ship.sockets.find(item => item.id === socketId);
+  if (!root) result.reasons.push(error('part-missing', '장착할 부품을 찾을 수 없습니다.'));
+  else {
+    result.partIds = subtree(state, partId);
+    if (!['warehouse', 'cargo'].includes(root.location)) result.reasons.push(error('already-installed', '창고 또는 화물의 부품만 장착할 수 있습니다.'));
+    if (root.parentId !== null) result.reasons.push(error('bundle-root-required', '묶음의 루트 부품을 선택해야 합니다.'));
+    for (const part of state.parts.filter(part => result.partIds.includes(part.id))) {
+      if (part.ownerId !== state.ownerId) result.reasons.push(error('part-not-owned', `${part.id}의 소유권이 없습니다.`));
+      if (part.hp <= 0) result.reasons.push(error('part-destroyed', `${part.id}를 먼저 수리해야 합니다.`));
+    }
+  }
+  if (!socket) result.reasons.push(error('socket-missing', '장착 위치를 찾을 수 없습니다.'));
+  else {
+    const parent = state.parts.find(part => part.id === socket.parentId);
+    if (!socket.enabled) result.reasons.push(error('socket-disabled', '장착 위치가 비활성 상태입니다.'));
+    if (parent?.location !== 'installed') result.reasons.push(error('parent-not-installed', '장착 위치의 부모가 함선에 장착되어 있지 않습니다.'));
+    if (root && !socket.kinds.includes(root.kind)) result.reasons.push(error('socket-incompatible', '해당 부품 종류와 장착 위치가 호환되지 않습니다.'));
+    if (state.parts.some(part => part.location === 'installed' && part.socketId === socket.id)) result.reasons.push(error('socket-occupied', '선택한 장착 위치를 다른 부품이 사용 중입니다.'));
+    if (result.partIds.includes(socket.parentId)) result.reasons.push(error('part-cycle', '자기 묶음 안에 부품을 연결할 수 없습니다.'));
+  }
+  if (result.reasons.length) return result;
+  const next = structuredClone(state);
+  const ids = new Set(result.partIds);
+  for (const part of next.parts) if (ids.has(part.id)) {
+    part.location = 'installed';
+    if (part.id === partId) { part.parentId = socket.parentId; part.socketId = socketId; }
+  }
+  result.after = computeBudget(next);
+  result.reasons = [...validateParts(next), ...budgetReasons(result.after)];
+  result.ok = result.reasons.length === 0;
+  if (result.ok) result.state = next;
+  return result;
+}
+
+function installPart(state, partId, socketId) {
+  const result = previewInstall(state, partId, socketId);
+  if (result.ok) result.state.revision += 1;
+  return result;
+}
+
+/** Maintenance may leave a ship underpowered/underlift; departure checks it. */
+function removePart(state, partId, { destination } = {}) {
+  const before = computeBudget(state);
+  const result = { ok: false, reasons: mutationReasons(state), before, after: before, partIds: [] };
+  if (result.reasons.length) return result;
+  const root = state.parts.find(part => part.id === partId);
+  if (!['warehouse', 'cargo'].includes(destination)) result.reasons.push(error('destination-invalid', '분리한 묶음은 창고 또는 화물에 보관해야 합니다.'));
+  if (!root) result.reasons.push(error('part-missing', '분리할 부품을 찾을 수 없습니다.'));
+  else if (root.id === state.ship.rootId || root.kind === 'hull') result.reasons.push(error('hull-removal-forbidden', '핵심 선체는 분리할 수 없습니다.'));
+  else if (root.location !== 'installed') result.reasons.push(error('part-not-installed', '장착한 부품만 분리할 수 있습니다.'));
+  if (result.reasons.length) return result;
+  result.partIds = subtree(state, partId);
+  const ids = new Set(result.partIds);
+  const next = structuredClone(state);
+  for (const part of next.parts) if (ids.has(part.id)) {
+    part.location = destination;
+    if (part.id === partId) { part.parentId = null; part.socketId = null; }
+  }
+  result.after = computeBudget(next);
+  result.reasons = validateParts(next);
+  result.ok = result.reasons.length === 0;
+  if (result.ok) { next.revision += 1; result.state = next; }
+  return result;
+}
+
+// Change detector, not a security signature. Confirm also recomputes the quote.
+function fingerprint(state, ids) {
+  return JSON.stringify({ revision: state.revision, ownerId: state.ownerId,
+    parts: state.parts.filter(part => ids.includes(part.id)).map(part => ({ id: part.id, hp: part.hp, maxHp: part.maxHp, ownerId: part.ownerId })).sort((a, b) => a.id.localeCompare(b.id)) });
+}
+function shortHash(value) {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) hash = Math.imul(hash ^ value.charCodeAt(index), 16777619);
+  return (hash >>> 0).toString(16).padStart(8, '0');
+}
+
+function quoteRepair(state, partIds) {
+  const reasons = mutationReasons(state);
+  const ids = partIds === undefined
+    ? (Array.isArray(state?.parts) ? state.parts.filter(part => part?.ownerId === state.ownerId && part.hp < part.maxHp).map(part => part.id) : [])
+    : Array.isArray(partIds) ? [...partIds] : [];
+  if (partIds !== undefined && !Array.isArray(partIds)) reasons.push(error('repair-selection-invalid', '수리 대상은 부품 ID 배열이어야 합니다.'));
+  if (unique(ids).length !== ids.length || ids.some(id => !textId(id))) reasons.push(error('repair-selection-invalid', '수리 대상 ID는 중복 없이 지정해야 합니다.'));
+  if (reasons.length) return { ok: false, reasons: unique(reasons), partIds: ids, recovery: 0, cost: { S: 0, F: 0, C: 0 } };
+  let recovery = 0;
+  for (const id of ids) {
+    const part = state.parts.find(item => item.id === id);
+    if (!part) reasons.push(error('part-missing', `${id} 수리 대상을 찾을 수 없습니다.`));
+    else if (part.ownerId !== state.ownerId) reasons.push(error('part-not-owned', `${id} 수리 대상의 소유권이 없습니다.`));
+    else recovery += part.maxHp - part.hp;
+  }
+  const sortedIds = [...ids].sort();
+  const stamp = fingerprint(state, sortedIds);
+  return { ok: reasons.length === 0, reasons: unique(reasons), quoteId: `repair:${state.revision}:${shortHash(stamp)}`,
+    revision: state.revision, fingerprint: stamp, partIds: sortedIds, recovery, cost: { S: Math.ceil(recovery * 0.25), F: 0, C: 0 } };
+}
+
+function confirmRepair(state, quote) {
+  const before = computeBudget(state);
+  const result = { ok: false, reasons: mutationReasons(state), before, after: before, partIds: [], recovery: 0, actualCost: { S: 0, F: 0, C: 0 } };
+  if (!record(quote) || !quote.ok || !Array.isArray(quote.partIds)) result.reasons.push(error('quote-invalid', '유효한 미지불 수리 견적이 필요합니다.'));
+  if (result.reasons.length) return result;
+  if (state.repairReceipts?.some(receipt => receipt.quoteId === quote.quoteId)) result.reasons.push(error('quote-already-paid', '이미 확정한 수리 견적입니다.'));
+  const current = quoteRepair(state, quote.partIds);
+  if (!current.ok) result.reasons.push(...current.reasons);
+  if (quote.revision !== state.revision || quote.fingerprint !== current.fingerprint || quote.quoteId !== current.quoteId
+    || quote.recovery !== current.recovery || !record(quote.cost) || ['S', 'F', 'C'].some(key => quote.cost[key] !== current.cost[key])) result.reasons.push(error('quote-stale', '상태가 바뀌었거나 견적이 변조되었습니다. 새 견적을 받아야 합니다.'));
+  if (state.resources.S < current.cost.S) result.reasons.push(error('scrap-insufficient', `수리에 스크랩 ${current.cost.S}S가 필요합니다.`));
+  if (result.reasons.length) { result.reasons = unique(result.reasons); return result; }
+  const next = structuredClone(state);
+  const ids = new Set(current.partIds);
+  for (const part of next.parts) if (ids.has(part.id)) part.hp = part.maxHp;
+  next.resources.S -= current.cost.S;
+  next.revision += 1;
+  next.repairReceipts = [...(next.repairReceipts ?? []), { quoteId: current.quoteId, revision: next.revision, recovery: current.recovery, cost: { ...current.cost } }];
+  return { ...result, ok: true, reasons: [], state: next, after: computeBudget(next), partIds: current.partIds,
+    quoteId: current.quoteId, recovery: current.recovery, actualCost: { ...current.cost } };
+}
+
+function departureReasons(state) {
+  const reasons = validateParts(state);
+  if (reasons.length) return reasons;
+  if (!['harbor', 'debrief'].includes(state.phase)) reasons.push(error('departure-phase', '항구 또는 귀환 정산 단계에서 출항해야 합니다.'));
+  if (state.parts.find(part => part.id === state.ship.rootId).hp <= 0) reasons.push(error('hull-destroyed', '핵심 선체를 먼저 수리해야 합니다.'));
+  for (const [kind, label] of [['engine', '엔진'], ['balloon', '기낭'], ['hook', '갈고리'], ['machinegun', '기관총']]) {
+    if (!state.parts.some(part => part.location === 'installed' && part.kind === kind && part.hp > 0)) reasons.push(error(`required-${kind}`, `출항 예시에 필요한 작동 ${label}이 없습니다.`));
+  }
+  reasons.push(...budgetReasons(computeBudget(state)));
+  if (state.resources.F < 5) reasons.push(error('fuel-insufficient', '출항 예시에는 연료 5F가 필요합니다.'));
+  return unique(reasons);
+}
+
+return {SHIPYARD_VERSION,validateParts,computeBudget,previewInstall,installPart,removePart,quoteRepair,confirmRepair,departureReasons};
+})();
+const module2 = (() => {
+const { validateParts, departureReasons } = module3;
+const clone = value => JSON.parse(JSON.stringify(value));
+const fail = (code, message) => ({ ok: false, code, message });
+const resourceKeys = ['S', 'F', 'C'];
+const validId = v => typeof v === 'string' && v.length > 0 && v.length <= 200;
+const validAmount = v => Number.isFinite(v) && v >= 0 && v <= 1e9;
+const resourceErrors = v => !v || resourceKeys.some(k => !validAmount(v[k]));
+const canonical = value => {
+  if (Array.isArray(value)) return `[${value.map(canonical).join(',')}]`;
+  if (value && typeof value === 'object') return `{${Object.keys(value).sort().map(k => `${JSON.stringify(k)}:${canonical(value[k])}`).join(',')}}`;
+  return JSON.stringify(value);
+};
+
+function validateState(state) {
+  if (!state || typeof state !== 'object') return ['저장 상태가 객체가 아닙니다.'];
+  const errors = [];
+  if (state.schemaVersion !== 1) errors.push('지원하지 않는 상태 버전입니다.');
+  if (!validId(state.profileId) || !validId(state.ownerId)) errors.push('선장/소유자 ID가 없습니다.');
+  if (!Number.isSafeInteger(state.revision) || state.revision < 0 || state.revision >= Number.MAX_SAFE_INTEGER) errors.push('수정 번호가 잘못되었습니다.');
+  if (!Number.isSafeInteger(state.voyageSequence) || state.voyageSequence < 0 || state.voyageSequence >= Number.MAX_SAFE_INTEGER) errors.push('항해 순번이 잘못되었습니다.');
+  if (!['harbor', 'debrief', 'sailing'].includes(state.phase)) errors.push('항해 상태가 잘못되었습니다.');
+  if (!['harbor', 'return', 'departure'].includes(state.boundary)) errors.push('안전 경계가 잘못되었습니다.');
+  if (resourceErrors(state.resources)) errors.push('S/F/C 자원이 잘못되었습니다.');
+  if (!Array.isArray(state.settlements)) errors.push('정산 원장이 없습니다.');
+  else {
+    const voyages = new Set(), settlements = new Set();
+    for (const entry of state.settlements) {
+      if (!validId(entry?.voyageId) || !validId(entry?.settlementId) || typeof entry?.fingerprint !== 'string' ||
+          voyages.has(entry.voyageId) || settlements.has(entry.settlementId) ||
+          !Array.isArray(entry.partIds) || entry.partIds.some(id => !validId(id)) || new Set(entry.partIds).size !== entry.partIds.length ||
+          !['completed','withdrawn'].includes(entry.outcome) ||
+          [entry.gained, entry.spent, entry.contractPaid].some(resourceErrors) ||
+          !resourceKeys.every(k => Number.isFinite(entry.net?.[k]) && Math.abs(entry.net[k]) <= 1e9 && entry.net[k] === entry.gained?.[k] - entry.spent?.[k] + entry.contractPaid?.[k])) errors.push('정산 원장 충돌 또는 형식 오류입니다.');
+      voyages.add(entry?.voyageId); settlements.add(entry?.settlementId);
+    }
+  }
+  if (state.activeVoyage !== null && (!state.activeVoyage || !validId(state.activeVoyage.id) || resourceErrors(state.activeVoyage.departureResources))) errors.push('진행 중 항해가 잘못되었습니다.');
+  if (state.phase === 'sailing' && !state.activeVoyage) errors.push('항해 ID 없는 출항 상태입니다.');
+  if (state.activeVoyage && Array.isArray(state.settlements) && state.settlements.some(e => e?.voyageId === state.activeVoyage.id)) errors.push('정산된 항해가 다시 진행 중입니다.');
+  if (!Array.isArray(state.repairReceipts)) errors.push('수리 영수증 원장이 없습니다.');
+  try { errors.push(...validateParts(state)); } catch { errors.push('부품 구조를 읽을 수 없습니다.'); }
+  return errors;
+}
+
+function acceptReturn(state, result) {
+  const invalid = validateState(state);
+  if (invalid.length) return fail('INVALID_STATE', invalid.join(' '));
+  if (!result || result.version !== 1 || !validId(result.voyageId) || !validId(result.settlementId) ||
+      !['completed', 'withdrawn'].includes(result.outcome) ||
+      !['independent-example', 'battlefield-adapter'].includes(result.evidence) ||
+      [result.gained, result.spent, result.contractReward].some(resourceErrors) ||
+      !Array.isArray(result.recovered) || !Array.isArray(result.damage)) return fail('INVALID_RETURN', '귀환 결과 형식이 잘못되었습니다.');
+  const fingerprint = canonical(result);
+  const prior = state.settlements.find(e => e.voyageId === result.voyageId || e.settlementId === result.settlementId);
+  if (prior) return prior.voyageId === result.voyageId && prior.settlementId === result.settlementId && prior.fingerprint === fingerprint
+    ? { ok: true, duplicate: true, state, receipt: prior }
+    : fail('SETTLEMENT_CONFLICT', '이미 정산한 항해/정산 ID와 내용이 충돌합니다.');
+  if (state.phase !== 'sailing' || state.activeVoyage?.id !== result.voyageId) return fail('WRONG_VOYAGE', '현재 출항한 항해와 귀환 ID가 다릅니다.');
+  const next = clone(state);
+  const net = {};
+  for (const key of resourceKeys) {
+    net[key] = result.gained[key] - result.spent[key] + (result.outcome === 'completed' ? result.contractReward[key] : 0);
+    next.resources[key] += net[key];
+    if (!validAmount(next.resources[key])) return fail('RESOURCE_UNDERFLOW', `${key} 실제 지출이 보유량을 넘습니다.`);
+  }
+  const incomingIds = new Set();
+  for (const part of result.recovered) {
+    if (!part || incomingIds.has(part.id) || next.parts.some(p => p.id === part.id)) return fail('PART_ID_CONFLICT', '회수품 ID가 중복됩니다.');
+    if (part.ownerId !== state.ownerId || part.location !== 'cargo' || part.source?.acquiredVoyageId !== result.voyageId) return fail('RECOVERY_NOT_CONFIRMED', '회수 완료·소유권·화물 상태를 확인할 수 없습니다.');
+    incomingIds.add(part.id); next.parts.push(clone(part));
+  }
+  if (result.recoveredSockets !== undefined && !Array.isArray(result.recoveredSockets)) return fail('INVALID_SOCKET', '회수 묶음 소켓 형식이 잘못되었습니다.');
+  for (const socket of result.recoveredSockets || []) {
+    if (!incomingIds.has(socket?.parentId) || next.ship.sockets.some(s => s.id === socket?.id)) return fail('SOCKET_ID_CONFLICT', '회수 묶음 소켓의 부모 또는 ID가 충돌합니다.');
+    next.ship.sockets.push(clone(socket));
+  }
+  const damagedIds = new Set();
+  for (const damage of result.damage) {
+    const part = next.parts.find(p => p.id === damage?.partId && p.location === 'installed');
+    if (!part || damagedIds.has(part.id) || !validAmount(damage.hp) || damage.hp > part.hp) return fail('INVALID_DAMAGE', '손상 결과는 장착 부품의 실제 남은 내구도여야 합니다.');
+    damagedIds.add(part.id); part.hp = damage.hp;
+  }
+  const receipt = {
+    voyageId: result.voyageId, settlementId: result.settlementId, fingerprint,
+    outcome: result.outcome, evidence: result.evidence,
+    gained: clone(result.gained), spent: clone(result.spent),
+    contractPaid: result.outcome === 'completed' ? clone(result.contractReward) : { S: 0, F: 0, C: 0 },
+    net, partIds: [...incomingIds],
+  };
+  next.settlements.push(receipt); next.activeVoyage = null;
+  next.phase = 'debrief'; next.boundary = 'return'; next.revision += 1;
+  const errors = validateState(next);
+  return errors.length ? fail('INVALID_RETURN', errors.join(' ')) : { ok: true, state: next, receipt };
+}
+
+function storeCargo(state) {
+  if (!['harbor', 'debrief'].includes(state.phase)) return fail('UNSAFE_BOUNDARY', '항구에서만 화물을 보관할 수 있습니다.');
+  const next = clone(state), partIds = [];
+  for (const part of next.parts) if (part.location === 'cargo') { part.location = 'warehouse'; partIds.push(part.id); }
+  next.phase = 'harbor'; next.boundary = 'harbor'; next.revision += 1;
+  const errors = validateState(next);
+  return errors.length ? fail('INVALID_STATE', errors.join(' ')) : { ok: true, state: next, partIds };
+}
+
+function prepareDeparture(state) {
+  const errors = validateState(state);
+  if (errors.length) return fail('INVALID_STATE', errors.join(' '));
+  if (!['harbor', 'debrief'].includes(state.phase)) return fail('ALREADY_SAILING', '이미 출항 중입니다.');
+  if (state.activeVoyage) return fail('DEPARTURE_PENDING', '저장된 출항 준비를 이어가세요.');
+  const reasons = departureReasons(state);
+  if (reasons.length) return { ok: false, code: 'DEPARTURE_BLOCKED', message: reasons.join(' '), reasons };
+  const next = clone(state); next.voyageSequence += 1;
+  next.activeVoyage = { id: `${next.profileId}:voyage-${next.voyageSequence}`, departureResources: clone(next.resources) };
+  next.boundary = 'departure'; next.phase = 'harbor'; next.revision += 1;
+  return { ok: true, state: next, voyageId: next.activeVoyage.id };
+}
+
+function commitDeparture(state) {
+  const errors = validateState(state);
+  if (errors.length) return fail('INVALID_STATE', errors.join(' '));
+  if (state.phase !== 'harbor' || state.boundary !== 'departure' || !state.activeVoyage) return fail('NOT_PREPARED', '출항 직전 안전 저장이 필요합니다.');
+  const reasons = departureReasons(state);
+  if (reasons.length) return { ok:false, code:'DEPARTURE_BLOCKED', message:reasons.join(' '), reasons };
+  const next = clone(state); next.phase = 'sailing'; next.revision += 1;
+  // Fuel is charged once with the return's actual field spending, never here.
+  return { ok: true, state: next, voyageId: next.activeVoyage.id };
+}
+
+return {validateState,acceptReturn,storeCargo,prepareDeparture,commitDeparture};
+})();
+const module4 = (() => {
+/**
+ * Synchronous safe-boundary storage for the independent harbor example.
+ * The storage adapter must implement localStorage's atomic setItem contract:
+ * a throwing write leaves the existing value unchanged. This is not a
+ * cross-tab compare-and-swap or an OS filesystem durability guarantee.
+ */
+const SAVE_FORMAT = 'cloudstitch.safe-boundary';
+const JOURNAL_FORMAT = `${SAVE_FORMAT}.journal`;
+const SAVE_VERSION = 1;
+const MAX_BACKUPS = 3;
+
+const BOUNDARIES = new Set(['harbor', 'departure', 'return']);
+const PHASES = new Set(['harbor', 'debrief']);
+const own = (value, key) => Object.prototype.hasOwnProperty.call(value, key);
+const copy = (value) => JSON.parse(JSON.stringify(value));
+const failure = (code, message, details = {}) => ({ ok: false, code, message, ...details });
+
+function stableJSON(value) {
+  if (Array.isArray(value)) return `[${value.map(stableJSON).join(',')}]`;
+  if (value && typeof value === 'object') {
+    return `{${Object.keys(value).sort().map((key) => `${JSON.stringify(key)}:${stableJSON(value[key])}`).join(',')}}`;
+  }
+  return JSON.stringify(value);
+}
+
+/** FNV-1a over UTF-8. Detects accidental corruption; not authentication. */
+function checksumFNV1a(text) {
+  let hash = 0x811c9dc5;
+  const consume = (byte) => { hash = Math.imul(hash ^ byte, 0x01000193) >>> 0; };
+  for (const character of text) {
+    let point = character.codePointAt(0);
+    if (point >= 0xd800 && point <= 0xdfff) point = 0xfffd;
+    if (point < 0x80) consume(point);
+    else if (point < 0x800) {
+      consume(0xc0 | (point >> 6)); consume(0x80 | (point & 0x3f));
+    } else if (point < 0x10000) {
+      consume(0xe0 | (point >> 12)); consume(0x80 | ((point >> 6) & 0x3f)); consume(0x80 | (point & 0x3f));
+    } else {
+      consume(0xf0 | (point >> 18)); consume(0x80 | ((point >> 12) & 0x3f));
+      consume(0x80 | ((point >> 6) & 0x3f)); consume(0x80 | (point & 0x3f));
+    }
+  }
+  return `fnv1a32:${hash.toString(16).padStart(8, '0')}`;
+}
+
+function envelopeChecksum(envelope) {
+  const { checksum, ...payload } = envelope;
+  return checksumFNV1a(stableJSON(payload));
+}
+
+function jsonProblems(value, path = 'state', seen = new Set(), depth = 0) {
+  if (depth > 64) return [`${path}: 저장 객체의 중첩 깊이가 너무 큽니다.`];
+  if (value === null || typeof value === 'string' || typeof value === 'boolean') return [];
+  if (typeof value === 'number') return Number.isFinite(value) ? [] : [`${path}: 유한한 숫자가 필요합니다.`];
+  if (typeof value !== 'object') return [`${path}: JSON으로 보존할 수 없는 값입니다.`];
+  if (seen.has(value)) return [`${path}: 순환 참조가 있습니다.`];
+  if (!Array.isArray(value) && ![Object.prototype, null].includes(Object.getPrototypeOf(value))) {
+    return [`${path}: 일반 JSON 객체가 필요합니다.`];
+  }
+  seen.add(value);
+  const issues = [];
+  const descriptors = Object.getOwnPropertyDescriptors(value);
+  if (Object.getOwnPropertySymbols(value).length) issues.push(`${path}: Symbol 키는 저장할 수 없습니다.`);
+  if (Array.isArray(value)) {
+    for (let index = 0; index < value.length; index += 1) {
+      if (!own(descriptors, String(index))) issues.push(`${path}[${index}]: 비어 있는 배열 원소입니다.`);
+    }
+  }
+  for (const [key, descriptor] of Object.entries(descriptors)) {
+    if (Array.isArray(value) && key === 'length') continue;
+    if (!descriptor.enumerable || descriptor.get || descriptor.set) {
+      issues.push(`${path}.${key}: 열거 가능한 값 속성만 저장할 수 있습니다.`);
+      continue;
+    }
+    if (Array.isArray(value) && !/^(0|[1-9]\d*)$/.test(key)) {
+      issues.push(`${path}.${key}: 배열의 별도 속성은 저장할 수 없습니다.`);
+      continue;
+    }
+    issues.push(...jsonProblems(descriptor.value, `${path}.${key}`, seen, depth + 1));
+  }
+  seen.delete(value);
+  return issues;
+}
+
+function validRevision(value, minimum = 1) {
+  return Number.isSafeInteger(value) && value >= minimum;
+}
+
+function isoTime(value) {
+  const date = value instanceof Date ? value : new Date(value);
+  return date.toISOString();
+}
+
+function createMemoryStorage(initial = {}) {
+  const values = new Map(Object.entries(initial).map(([key, value]) => [String(key), String(value)]));
+  return {
+    get length() { return values.size; },
+    key(index) { return [...values.keys()][index] ?? null; },
+    getItem(key) { return values.get(String(key)) ?? null; },
+    setItem(key, value) { values.set(String(key), String(value)); },
+    removeItem(key) { values.delete(String(key)); },
+    clear() { values.clear(); },
+    dump() { return Object.fromEntries(values); },
+  };
+}
+
+function createSaveRepository({
+  storage,
+  key = 'cloudstitch.harbor.v1',
+  validateState = () => [],
+  now = () => new Date(),
+} = {}) {
+  if (!storage || typeof storage.getItem !== 'function' || typeof storage.setItem !== 'function') {
+    throw new TypeError('getItem/setItem을 제공하는 저장 장치가 필요합니다.');
+  }
+  if (typeof validateState !== 'function' || typeof now !== 'function' || typeof key !== 'string' || !key) {
+    throw new TypeError('저장 키와 검증·시간 함수를 확인하세요.');
+  }
+  let lastKnownGood = null;
+
+  function stateIssues(state) {
+    const issues = jsonProblems(state);
+    if (issues.length) return issues;
+    if (!state || Array.isArray(state) || typeof state !== 'object') return ['state: 저장 상태 객체가 필요합니다.'];
+    if (state.schemaVersion !== SAVE_VERSION) issues.push('지원하지 않는 상태 버전입니다.');
+    if (!PHASES.has(state.phase)) issues.push('항구 또는 귀환 정산의 안전 지점에서만 저장할 수 있습니다.');
+    try {
+      // A validator cannot mutate the caller's state or the stored candidate.
+      const domainIssues = validateState(copy(state));
+      if (!Array.isArray(domainIssues) || domainIssues.some((entry) => typeof entry !== 'string')) {
+        issues.push('상태 검증 함수는 문자열 배열을 반환해야 합니다.');
+      } else issues.push(...domainIssues);
+    } catch {
+      issues.push('상태 검증을 완료하지 못했습니다.');
+    }
+    return issues;
+  }
+
+  function envelopeIssues(envelope) {
+    if (!envelope || Array.isArray(envelope) || typeof envelope !== 'object') return ['저장 스냅샷 형식이 잘못되었습니다.'];
+    const issues = [];
+    const envelopeKeys = new Set(['format', 'version', 'revision', 'savedAt', 'boundary', 'state', 'checksum']);
+    if (Object.keys(envelope).some((name) => !envelopeKeys.has(name))) issues.push('저장 스냅샷에 알 수 없는 필드가 있습니다.');
+    if (envelope.format !== SAVE_FORMAT) issues.push('저장 스냅샷 형식이 다릅니다.');
+    if (envelope.version !== SAVE_VERSION) issues.push('지원하지 않는 저장 버전입니다.');
+    if (!validRevision(envelope.revision)) issues.push('저장 revision이 잘못되었습니다.');
+    if (!BOUNDARIES.has(envelope.boundary)) issues.push('저장 안전 경계가 잘못되었습니다.');
+    try {
+      if (typeof envelope.savedAt !== 'string' || isoTime(envelope.savedAt) !== envelope.savedAt) {
+        issues.push('저장 시각이 올바른 ISO 시각이 아닙니다.');
+      }
+    } catch { issues.push('저장 시각이 잘못되었습니다.'); }
+    const snapshotIssues = stateIssues(envelope.state);
+    issues.push(...snapshotIssues);
+    if (typeof envelope.checksum !== 'string' || (!issues.length && envelope.checksum !== envelopeChecksum(envelope))) {
+      issues.push('저장 무결성 검사가 일치하지 않습니다.');
+    }
+    return issues;
+  }
+
+  function readJournal() {
+    let raw;
+    try { raw = storage.getItem(key); }
+    catch { return failure('READ_FAILED', '저장 데이터를 읽지 못했습니다. 마지막 정상 저장은 변경하지 않았습니다.', { lastGoodRevision: lastKnownGood?.revision ?? null }); }
+    if (raw === null) return { ok: true, empty: true, raw: null, journal: null };
+    let journal;
+    try { journal = JSON.parse(raw); }
+    catch { return failure('CORRUPT_JOURNAL', '저장 데이터를 해석하지 못했습니다. 원본을 보존했으며 덮어쓰지 않습니다.', { readOnly: true, rawAvailable: true, raw }); }
+    if (!journal || Array.isArray(journal) || typeof journal !== 'object' || journal.format !== JOURNAL_FORMAT) {
+      return failure('INVALID_JOURNAL', '저장 기록 형식이 잘못되었습니다. 기존 데이터를 덮어쓰지 않습니다.', { readOnly: true, rawAvailable: true, raw });
+    }
+    const versionedSnapshots = [journal.current, ...(Array.isArray(journal.backups) ? journal.backups : [])];
+    const hasUnsupportedVersion = versionedSnapshots.some((envelope) =>
+      envelope && ((own(envelope, 'version') && envelope.version !== SAVE_VERSION) ||
+      (envelope.state && own(envelope.state, 'schemaVersion') && envelope.state.schemaVersion !== SAVE_VERSION)));
+    if (journal.version !== SAVE_VERSION || hasUnsupportedVersion) {
+      return failure('UNSUPPORTED_VERSION', '이 저장 버전은 지원하지 않습니다. 원본을 보존하고 불러오기를 중단했습니다.', { readOnly: true, rawAvailable: true, raw });
+    }
+    if (!Array.isArray(journal.backups) || journal.backups.length > MAX_BACKUPS) {
+      return failure('INVALID_JOURNAL', '정상 저장 백업 목록이 잘못되었습니다. 기존 데이터를 덮어쓰지 않습니다.', { readOnly: true, rawAvailable: true, raw });
+    }
+    if (Object.keys(journal).some((name) => !['format', 'version', 'current', 'backups'].includes(name))) {
+      return failure('INVALID_JOURNAL', '저장 기록에 알 수 없는 필드가 있습니다. 기존 데이터를 덮어쓰지 않습니다.', { readOnly: true, rawAvailable: true, raw });
+    }
+    const currentIssues = envelopeIssues(journal.current);
+    const backupChecks = journal.backups.map((envelope, index) => ({ envelope, index, issues: envelopeIssues(envelope) }));
+    const revisions = journal.backups.map((envelope) => envelope?.revision);
+    const sequenceIssues = [];
+    if (new Set(revisions).size !== revisions.length) sequenceIssues.push('백업 revision이 중복되었습니다.');
+    for (let index = 1; index < revisions.length; index += 1) {
+      if (!(revisions[index - 1] > revisions[index])) sequenceIssues.push('백업 revision 순서가 잘못되었습니다.');
+    }
+    if (!currentIssues.length && revisions.some((revision) => revision >= journal.current.revision)) {
+      sequenceIssues.push('현재 저장보다 새로운 백업이 있습니다.');
+    }
+    const validBackups = backupChecks.filter((entry) => !entry.issues.length).map((entry) => entry.envelope);
+    return { ok: true, empty: false, raw, journal, currentIssues, backupChecks, sequenceIssues, validBackups };
+  }
+
+  function journalIssueResult(read) {
+    if (!read.ok || read.empty) return read;
+    if (read.currentIssues.length) {
+      return failure(read.validBackups.length ? 'RECOVERY_AVAILABLE' : 'INVALID_CURRENT',
+        read.validBackups.length ? '현재 저장이 손상되었습니다. 정상 백업을 확인한 뒤 명시적으로 복구하세요.' : '현재 저장이 손상되었고 정상 백업을 찾지 못했습니다. 기존 데이터를 덮어쓰지 않습니다.',
+        { readOnly: true, recoveryAvailable: read.validBackups.length > 0, issues: read.currentIssues, backups: read.validBackups.map(summary), rawAvailable: true });
+    }
+    if (read.sequenceIssues.length || read.backupChecks.some((entry) => entry.issues.length)) {
+      return failure('INVALID_JOURNAL', '백업 기록이 손상되었습니다. 기존 데이터를 덮어쓰지 않습니다.', {
+        readOnly: true,
+        issues: [...read.sequenceIssues, ...read.backupChecks.flatMap((entry) => entry.issues)],
+        rawAvailable: true,
+      });
+    }
+    return read;
+  }
+
+  function summary(envelope) {
+    return { revision: envelope.revision, savedAt: envelope.savedAt, boundary: envelope.boundary };
+  }
+
+  function remember(envelope) { lastKnownGood = copy(envelope); }
+
+  function load() {
+    const read = journalIssueResult(readJournal());
+    if (!read.ok) return read;
+    if (read.empty) return failure('NOT_FOUND', '저장된 항해가 없습니다.');
+    remember(read.journal.current);
+    return { ok: true, code: 'LOADED', message: '최근 안전 지점에서 재개합니다.', ...summary(read.journal.current), state: copy(read.journal.current.state), envelope: copy(read.journal.current), backupCount: read.journal.backups.length };
+  }
+
+  function buildEnvelope(state, revision, boundary) {
+    const envelope = { format: SAVE_FORMAT, version: SAVE_VERSION, revision, savedAt: isoTime(now()), boundary, state: copy(state) };
+    envelope.checksum = envelopeChecksum(envelope);
+    return envelope;
+  }
+
+  function save(state, { expectedRevision, boundary = 'harbor' } = {}) {
+    const issues = stateIssues(state);
+    if (issues.length) return failure('INVALID_STATE', '안전하게 저장할 수 없는 상태입니다.', { issues });
+    if (!BOUNDARIES.has(boundary)) return failure('INVALID_BOUNDARY', '지원하지 않는 저장 안전 경계입니다.');
+    if (expectedRevision !== undefined && !validRevision(expectedRevision, 0)) return failure('INVALID_REVISION', '예상 저장 revision이 잘못되었습니다.');
+    const read = journalIssueResult(readJournal());
+    if (!read.ok) return read;
+    const revision = read.empty ? 0 : read.journal.current.revision;
+    if (expectedRevision !== undefined && expectedRevision !== revision) {
+      return failure('REVISION_CONFLICT', '다른 저장이 먼저 반영되었습니다. 다시 불러온 뒤 확인하세요.', { expectedRevision, actualRevision: revision, lastGoodRevision: revision });
+    }
+    if (!validRevision(revision + 1)) return failure('REVISION_EXHAUSTED', '저장 revision 범위를 초과했습니다. 기존 저장을 보존했습니다.');
+    let envelope;
+    try { envelope = buildEnvelope(state, revision + 1, boundary); }
+    catch { return failure('INVALID_TIME', '저장 시각을 확인하지 못했습니다. 기존 저장을 보존했습니다.'); }
+    const backups = read.empty ? [] : [read.journal.current, ...read.journal.backups].slice(0, MAX_BACKUPS);
+    const journal = { format: JOURNAL_FORMAT, version: SAVE_VERSION, current: envelope, backups };
+    try { storage.setItem(key, JSON.stringify(journal)); }
+    catch { return failure('WRITE_FAILED', '저장하지 못했습니다. 현재 세션을 유지하며 마지막 정상 저장을 보존했습니다.', { lastGoodRevision: revision || null, lastGoodSavedAt: read.empty ? null : read.journal.current.savedAt }); }
+    remember(envelope);
+    return { ok: true, code: 'SAVED', message: '안전 지점에 저장했습니다.', ...summary(envelope), envelope: copy(envelope), backupCount: backups.length };
+  }
+
+  function exportCurrent() {
+    try {
+      const raw = storage.getItem(key);
+      return { ok: true, code: 'EXPORTED', message: raw === null ? '저장 데이터가 없습니다.' : '저장 원본을 내보냈습니다.', key, raw, hasData: raw !== null };
+    } catch { return failure('READ_FAILED', '저장 원본을 읽지 못했습니다.'); }
+  }
+
+  function inspect() {
+    const read = readJournal();
+    if (!read.ok) {
+      const { raw, ...result } = read;
+      return { ...result, key, lastKnownGood: lastKnownGood ? summary(lastKnownGood) : null };
+    }
+    if (read.empty) return { ok: true, code: 'EMPTY', message: '저장된 항해가 없습니다.', key, current: null, backups: [], backupCount: 0, readOnly: false };
+    const status = journalIssueResult(read);
+    return {
+      ok: status.ok,
+      code: status.ok ? 'VALID' : status.code,
+      message: status.ok ? '저장 기록이 정상입니다.' : status.message,
+      key,
+      current: read.currentIssues.length ? null : summary(read.journal.current),
+      backups: read.backupChecks.map((entry) => ({ ...summary(entry.envelope ?? {}), valid: entry.issues.length === 0, issues: [...entry.issues] })),
+      backupCount: read.journal.backups.length,
+      readOnly: !status.ok,
+      recoveryAvailable: read.currentIssues.length > 0 && read.validBackups.length > 0,
+      issues: status.issues ?? [],
+    };
+  }
+
+  function recoverBackup({ revision, expectedRevision } = {}) {
+    const read = readJournal();
+    if (!read.ok) return read;
+    if (read.empty) return failure('NOT_FOUND', '복구할 저장 데이터가 없습니다.');
+    if (!read.currentIssues.length) return failure('RECOVERY_NOT_REQUIRED', '현재 저장이 정상입니다. 손상 복구가 필요하지 않습니다.');
+    if (!read.validBackups.length) return failure('NO_VALID_BACKUP', '정상 백업을 찾지 못했습니다. 원본을 보존했습니다.');
+    if (revision !== undefined && !validRevision(revision)) return failure('INVALID_REVISION', '복구할 백업 revision이 잘못되었습니다.');
+    const candidate = revision === undefined
+      ? [...read.validBackups].sort((a, b) => b.revision - a.revision)[0]
+      : read.validBackups.find((envelope) => envelope.revision === revision);
+    if (!candidate) return failure('BACKUP_NOT_FOUND', '요청한 정상 백업을 찾지 못했습니다.');
+    const currentRevision = validRevision(read.journal.current?.revision) ? read.journal.current.revision : 0;
+    if (expectedRevision !== undefined && (!validRevision(expectedRevision, 0) || expectedRevision !== currentRevision)) {
+      return failure('REVISION_CONFLICT', '복구할 저장 revision이 달라졌습니다. 다시 확인하세요.', { actualRevision: currentRevision, expectedRevision });
+    }
+    const nextRevision = Math.max(currentRevision, ...read.validBackups.map((envelope) => envelope.revision)) + 1;
+    if (!validRevision(nextRevision)) return failure('REVISION_EXHAUSTED', '복구 revision 범위를 초과했습니다. 원본을 보존했습니다.');
+    let envelope;
+    try { envelope = buildEnvelope(candidate.state, nextRevision, candidate.boundary); }
+    catch { return failure('INVALID_TIME', '복구 저장 시각을 확인하지 못했습니다. 원본을 보존했습니다.'); }
+    const uniqueBackups = [...new Map(read.validBackups.map((entry) => [entry.revision, entry])).values()];
+    const backups = [candidate, ...uniqueBackups.filter((entry) => entry.revision !== candidate.revision).sort((a, b) => b.revision - a.revision)].slice(0, MAX_BACKUPS);
+    // Restoring an older selected backup must still keep descending revisions.
+    backups.sort((a, b) => b.revision - a.revision);
+    const journal = { format: JOURNAL_FORMAT, version: SAVE_VERSION, current: envelope, backups };
+    let quarantineKey = `${key}.quarantine.${envelope.savedAt}`;
+    try {
+      let suffix = 0;
+      while (storage.getItem(quarantineKey) !== null) {
+        suffix += 1;
+        quarantineKey = `${key}.quarantine.${envelope.savedAt}.${suffix}`;
+      }
+      storage.setItem(quarantineKey, read.raw);
+      if (storage.getItem(quarantineKey) !== read.raw) return failure('QUARANTINE_FAILED', '손상 원본 보존을 확인하지 못했습니다. 복구하지 않았습니다.');
+      if (storage.getItem(key) !== read.raw) return failure('REVISION_CONFLICT', '원본 보존 중 저장이 변경되었습니다. 복구하지 않았습니다.', { quarantineKey });
+    } catch {
+      return failure('QUARANTINE_FAILED', '손상 원본을 보존·확인하지 못했습니다. 기존 저장을 변경하지 않았습니다.');
+    }
+    try { storage.setItem(key, JSON.stringify(journal)); }
+    catch { return failure('WRITE_FAILED', '백업을 복구해 저장하지 못했습니다. 손상 원본과 정상 백업을 보존했습니다.', { quarantineKey, lastGoodRevision: candidate.revision }); }
+    remember(envelope);
+    return { ok: true, code: 'RECOVERED', message: '정상 백업의 안전 지점을 복구했습니다. 손상 원본도 별도로 보존했습니다.', ...summary(envelope), recoveredFromRevision: candidate.revision, quarantineKey, state: copy(envelope.state), envelope: copy(envelope), backupCount: backups.length };
+  }
+
+  return { load, save, exportCurrent, inspect, recoverBackup };
+}
+
+return {SAVE_FORMAT,JOURNAL_FORMAT,SAVE_VERSION,MAX_BACKUPS,checksumFNV1a,createMemoryStorage,createSaveRepository};
+})();
+const module5 = (() => {
+/** Read-only boundaries. Battlefield remains the sole simulation/time/damage owner. */
+const HARBOR_CONTRACT_VERSION = 1;
+
+function createWorldContacts(assetCatalog, sceneCatalog) {
+  const scene = sceneCatalog?.items?.find(item => item.id === 'jonghang-harbor');
+  const defs = [
+    ['workshop', '공방', 'repair-workshop', 'shipyard'],
+    ['market', '천 시장', 'canvas-market', 'market'],
+    ['warehouse', '보관함', 'storage-chest', 'warehouse'],
+    ['departure', '출항 부두', 'dock-endcap', 'departure'],
+  ];
+  const errors = [], contacts = [];
+  if (!scene) errors.push('jonghang-harbor 장면이 카탈로그에 없습니다.');
+  for (const [id, label, assetId, action] of defs) {
+    const asset = assetCatalog?.items?.find(item => item.id === assetId);
+    if (!asset) { errors.push(`${assetId} 자산이 없습니다.`); continue; }
+    contacts.push({ id, label, sceneId: 'jonghang-harbor', assetId, action,
+      model: `outputs/world-assets/${asset.model}`, preview: `outputs/world-assets/${asset.preview}`,
+      coordinateStatus: 'semantic-contact-only; XZ/Y-up LU; authored interaction positions pending',
+    });
+  }
+  return { ok: errors.length === 0, version: 1, contacts, errors,
+    scene: scene ? { id: scene.id, model: `outputs/world-assets/${scene.model}`, preview: `outputs/world-assets/${scene.preview}` } : null };
+}
+
+function createDepartureManifest(state) {
+  return {
+    version: 1, voyageId: state.activeVoyage?.id || null, shipId: state.ship.id,
+    rootId: state.ship.rootId, ownerId: state.ownerId,
+    installed: state.parts.filter(p => p.location === 'installed').map(p => structuredClone(p)),
+    cargo: state.parts.filter(p => p.location === 'cargo').map(p => structuredClone(p)),
+    sockets: structuredClone(state.ship.sockets), resources: structuredClone(state.resources),
+    integrationStatus: 'manifest-ready; battlefield owner must explicitly apply module graph/budgets; no simulation mutation here',
+  };
+}
+
+/** sim victory is a safe arrival; safe-retreat pays no incomplete contract. */
+function adaptBattlefieldReturn(sim, { voyageId, settlementId, ownerId = 'player', rootId = 'homeward:hull', installedParts, gained, spent, contractReward } = {}) {
+  const fail = message => ({ ok: false, code: 'ADAPTER_REJECTED', message });
+  if (!sim || sim.outcome !== 'victory' || !['battle-cleared', 'safe-retreat-with-cargo'].includes(sim.endReason)) return fail('전장 안전 귀환 결과만 받을 수 있습니다.');
+  if (!voyageId || !settlementId || !Array.isArray(sim.cargo)) return fail('호출자가 항해/정산 ID를 제공해야 합니다.');
+  // Existing battlefield snapshot has no S/F/C economy. Never invent rewards from kill counts.
+  const zero = () => ({ S: 0, F: 0, C: 0 });
+  const recovered = [], recoveredSockets = [], seen = new Set();
+  const kindMap = { machinegun: 'machinegun', cannon: 'cannon', harpoon: 'harpoon',
+    engine: 'engine', balloon: 'balloon', connector: 'connector', deck: 'deck', hull: 'hull' };
+  for (const bundle of sim.cargo) {
+    if (bundle.owner !== ownerId || bundle.status !== 'cargo' || !bundle.salvaged || !Array.isArray(bundle.modules)) return fail('회수 완료·화물·소유권이 확인되지 않은 묶음입니다.');
+    const ids = new Map(bundle.modules.map(m => [m.id, m.harborPartId || `${voyageId}:battle:${m.id}`]));
+    for (const module of bundle.modules) {
+      if (module.owner !== ownerId || module.hp <= 0 || !kindMap[module.type]) return fail('지원하지 않거나 소유권이 확인되지 않은 부품입니다.');
+      const id = ids.get(module.id);
+      if (seen.has(id)) return fail('전장 화물에 부품 ID가 중복됩니다.');
+      seen.add(id);
+      const parentId = ids.get(module.parentId) || null;
+      const socketId = parentId ? `${parentId}:joint:${id}` : null;
+      const kind = kindMap[module.type];
+      recovered.push({ id, kind, name: module.name, hp: module.hp, maxHp: module.maxHp,
+        weight: module.weight, lift: 0, powerSupply: 0, powerDemand: 0, ownerId,
+        source: { originId: bundle.enemyId, originalPartId: module.id,
+          assetId: bundle.source?.assetId || null, acquiredVoyageId: voyageId,
+          budgetStatus: 'battlefield-source has weight only; functional outputs intentionally zero until catalog mapping approved' },
+        location: 'cargo', parentId, socketId });
+      if (parentId) recoveredSockets.push({ id: socketId, parentId, kinds: [kind], enabled: true });
+    }
+  }
+  const damage = [];
+  if (Array.isArray(sim.player?.modules)) {
+    const known = Array.isArray(installedParts) ? new Map(installedParts.map(p => [p.id,p])) : null;
+    for (const module of sim.player.modules) {
+      const partId = module.harborPartId || module.id;
+      if (known && !known.has(partId)) continue;
+      if (typeof partId !== 'string' || !Number.isFinite(module.hp) || module.hp < 0 || damage.some(d => d.partId === partId)) return fail('장착 부품 손상 ID/내구도가 잘못되었습니다.');
+      if (known && module.hp > known.get(partId).hp) return fail('전장 손상 결과에 미확정 수리가 포함되어 있습니다.');
+      damage.push({partId,hp:module.hp});
+    }
+  }
+  if (!damage.some(d => d.partId === rootId)) damage.push({partId:rootId,hp:sim.player?.hp});
+  return { ok: true, result: {
+    version: 1, voyageId, settlementId, evidence: 'battlefield-adapter',
+    outcome: sim.endReason === 'battle-cleared' ? 'completed' : 'withdrawn',
+    gained: gained || zero(), spent: spent || zero(), contractReward: contractReward || zero(),
+    recovered, recoveredSockets,
+    damage,
+  } };
+}
+
+return {HARBOR_CONTRACT_VERSION,createWorldContacts,createDepartureManifest,adaptBattlefieldReturn};
+})();
+const module0 = (() => {
+const { createExampleState, exampleReturn } = module1;
+const { validateState, acceptReturn, storeCargo, prepareDeparture, commitDeparture } = module2;
+const { computeBudget, previewInstall, installPart, removePart, quoteRepair, confirmRepair, departureReasons } = module3;
+const { createSaveRepository } = module4;
+const { createDepartureManifest } = module5;
+const byId = id => document.getElementById(id);
+const escape = value => String(value ?? '').replace(/[&<>"']/g, ch => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch]));
+const signed = n => `${n >= 0 ? '+' : ''}${n}`;
+let state = createExampleState(), quote = null, saveRevision = 0, persistedStateRevision = null;
+let storageBlocked = false, lastSavedAt = null, saveNotice = '아직 저장하지 않았습니다.';
+let currentContact = 'warehouse';
+const storage = {
+  getItem: key => localStorage.getItem(key),
+  setItem: (key, value) => {
+    if (byId('fail-save').checked) { byId('fail-save').checked = false; throw new Error('예시 쓰기 실패 주입'); }
+    localStorage.setItem(key, value);
+  },
+};
+const repo = createSaveRepository({ storage, validateState, key: 'cloudstitch.harbor.v1' });
+
+function announce(message, error = false) {
+  const el = byId('status'); el.textContent = message; el.classList.toggle('error', error);
+  const li = document.createElement('li'); li.textContent = message; byId('log').prepend(li);
+}
+function apply(result, message) {
+  if (!result.ok) { announce(result.message || result.reasons?.join(' ') || '처리하지 못했습니다.', true); return false; }
+  state = result.state; quote = null; announce(message); render(); return true;
+}
+function saveNow() {
+  const result = repo.save(state, { expectedRevision: saveRevision, boundary: state.boundary });
+  if (result.ok) {
+    saveRevision = result.revision ?? result.envelope?.revision ?? saveRevision + 1;
+    lastSavedAt = result.savedAt ?? result.envelope?.savedAt;
+    persistedStateRevision = state.revision; storageBlocked = false;
+    saveNotice = '안전 지점 저장 완료'; announce(saveNotice);
+  } else { saveNotice = result.message || '저장하지 못했습니다. 현재 세션을 유지합니다.'; announce(saveNotice, true); }
+  render(); return result.ok;
+}
+function loadNow(initial = false) {
+  const result = repo.load();
+  if (result.ok && result.state) {
+    state = result.state; saveRevision = result.revision ?? result.envelope?.revision ?? 0;
+    lastSavedAt = result.savedAt ?? result.envelope?.savedAt; persistedStateRevision = state.revision;
+    quote = null; storageBlocked = false; saveNotice = '최근 안전 지점에서 재개했습니다.'; announce(saveNotice);
+  } else if (['EMPTY', 'NO_SAVE', 'NOT_FOUND'].includes(result.code)) {
+    if (!initial) announce('저장된 항해가 없습니다. 현재 세션을 유지합니다.', true);
+    else announce('저장된 항해가 없어 독립 예시 상태를 준비했습니다. 첫 출항 전에 안전 저장합니다.');
+  } else {
+    storageBlocked = true; saveNotice = result.message || '저장을 읽지 못했습니다. 원본을 덮어쓰지 않습니다.';
+    announce(saveNotice, true); byId('recover').hidden = !result.recoveryAvailable;
+  }
+  render();
+}
+function render() {
+  document.body.dataset.phase = state.phase;
+  const budget = computeBudget(state), sailing = state.phase === 'sailing';
+  byId('phase-label').textContent = sailing ? `예시 항해 ${state.voyageSequence} 진행 중` : state.phase === 'debrief' ? '귀환 · 정산 완료' : state.activeVoyage ? '출항 직전 안전 지점' : '안전한 종항';
+  byId('budgets').innerHTML = `<table><tbody><tr><th>총중량</th><td>${budget.weight} W</td></tr><tr><th>장착 / 선내 화물</th><td>${budget.installedWeight} / ${budget.cargoWeight}</td></tr><tr><th>유효 양력 / 여유</th><td>${budget.lift} L / ${signed(budget.liftMargin)}</td></tr><tr><th>발전 / 소비 / 여유</th><td>${budget.powerSupply} / ${budget.powerDemand} / ${signed(budget.powerMargin)} P</td></tr></tbody></table>`;
+  byId('resources').innerHTML = ['S','F','C'].map(k => `<div class="metric"><span>${{S:'스크랩 S',F:'연료 F',C:'봉인 천 C'}[k]}</span><div class="number">${state.resources[k]}</div></div>`).join('');
+  byId('save-info').textContent = `${saveNotice}${lastSavedAt ? ` · ${new Date(lastSavedAt).toLocaleString('ko-KR')}` : ''} · ${persistedStateRevision === state.revision ? '현재 상태 저장됨' : '현재 세션에 미저장 변경 있음'}`;
+  const reasons = departureReasons(state);
+  byId('departure-reasons').textContent = sailing ? '예시 귀환 결과를 받으면 항구에서 안전 저장합니다.' : reasons.length ? reasons.join(' ') : '중량·양력·전력·기본 장비 확인. 재출항할 수 있습니다.';
+  byId('depart').disabled = sailing || storageBlocked || reasons.length > 0;
+  byId('depart').textContent = state.activeVoyage && !sailing ? '저장된 출항 준비에서 이어가기' : '저장 후 예시 출항';
+  byId('return').disabled = byId('withdraw').disabled = !sailing;
+  byId('store').disabled = sailing || !state.parts.some(p => p.location === 'cargo');
+  byId('quote').disabled = sailing; byId('repair').disabled = sailing || !quote;
+  byId('save').disabled = sailing || storageBlocked;
+  const filter = byId('location-filter').value;
+  byId('parts').innerHTML = state.parts.filter(p => filter === 'all' || p.location === filter).map(part => {
+    const installable = part.location !== 'installed' && !part.parentId;
+    const choices = state.ship.sockets.filter(s => s.parentId && s.kinds.includes(part.kind));
+    return `<article class="part" data-part="${escape(part.id)}"><div class="row"><strong>${escape(part.name)}</strong><span class="badge">${{installed:'실제 장착',cargo:'선내 화물',warehouse:'항구 보관'}[part.location]}</span></div><p class="small">내구도 ${part.hp}/${part.maxHp} · 중량 ${part.weight} · 전력 ${part.powerDemand} · 출처 ${escape(part.source.originId)}</p>${installable ? `<div class="row"><select aria-label="${escape(part.name)} 장착 위치">${choices.map(s => `<option value="${escape(s.id)}">${escape(s.id)} · ${escape(s.parentId)}</option>`).join('')}</select><button data-action="preview" ${sailing || !choices.length ? 'disabled' : ''}>장착 비교</button><button data-action="install" ${sailing || !choices.length ? 'disabled' : ''}>장착 확정</button></div><p class="comparison muted small"></p>` : part.location === 'installed' && part.parentId ? `<button data-action="remove" ${sailing ? 'disabled' : ''}>하위 묶음과 보관함으로</button>` : ''}<details><summary>부품 · 연결 정보</summary><code>${escape(part.id)}</code><p class="small">소유자 ${escape(part.ownerId)} · 부모 ${escape(part.parentId || '없음')} · 소켓 ${escape(part.socketId || '없음')}</p></details></article>`;
+  }).join('');
+  byId('settlements').innerHTML = state.settlements.length ? [...state.settlements].reverse().map(e => `<div class="part"><strong>${e.outcome === 'completed' ? '임무 완료' : '선택 철수'} · 항해 ${escape(e.voyageId.split('-').at(-1))}</strong><table><tr><th></th><th>획득</th><th>현장 지출</th><th>계약 지급</th><th>순변동</th></tr>${['S','F','C'].map(k => `<tr><th>${k}</th><td>+${e.gained[k]}</td><td>-${e.spent[k]}</td><td>+${e.contractPaid[k]}</td><td>${signed(e.net[k])}</td></tr>`).join('')}</table><p class="small muted">회수 ${e.partIds.length}개 · 항구 수리는 별도 실소비 · ${e.evidence === 'independent-example' ? '독립 예시 검증용' : '전장 어댑터 입력'}</p></div>`).join('') : '<p class="muted">아직 정산된 항해가 없습니다.</p>';
+  const receipt = state.repairReceipts.at(-1);
+  byId('repair-detail').textContent = (quote ? `미지불 견적: ${quote.recovery} 내구도 복구 / ${quote.cost.S} S. 확정 전에는 소비하지 않습니다.` : '견적을 요청하면 미지불 금액을 표시합니다.') + (receipt ? ` 마지막 실제 수리: ${receipt.recovery} 복구 / ${receipt.cost.S} S 지불.` : '');
+  byId('contracts').textContent = `세계 접점 ${WORLD_CONTACTS.contacts.map(c => `${c.label}: ${c.assetId}`).join(' / ')}. 실제 3D 좌표·충돌과 전장 적용은 통합 담당 연결 범위입니다.`;
+  document.querySelectorAll('[data-contact]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.contact === currentContact)));
+  byId('contact-note').textContent = {warehouse:'보관은 화물 무게를 배에서 내립니다. 실제 장착과 출력은 별도로 유지됩니다.',shipyard:'부품과 장착 위치를 선택해 전후 예산과 거부 이유를 확인하세요.',market:'천 시장은 종항 카탈로그 접점입니다. 매매·제작 가격은 아직 적용하지 않았습니다.',departure:'출항 직전 안전 저장이 성공한 뒤 예시 항해를 시작합니다.'}[currentContact];
+}
+
+byId('store').onclick = () => apply(storeCargo(state), '회수 화물을 항구 보관함으로 옮겼습니다.');
+byId('location-filter').onchange = render;
+byId('quote').onclick = () => { const result = quoteRepair(state); if (result.ok === false) { announce(result.message || result.reasons?.join(' '), true); return; } quote = result.quote || result; announce('수리 견적을 확인했습니다. 아직 지불하지 않았습니다.'); render(); };
+byId('repair').onclick = () => { const result = confirmRepair(state, quote); if (apply(result, `실제 복구 ${quote?.recovery || 0} / ${quote?.cost.S || 0} S 지불`)) saveNow(); };
+byId('save').onclick = saveNow;
+byId('load').onclick = () => { if (persistedStateRevision !== state.revision && !confirm('현재 미저장 작업을 버리고 마지막 안전 지점으로 돌아갈까요?')) return; loadNow(); };
+byId('depart').onclick = () => {
+  if (!state.activeVoyage) { const prepared = prepareDeparture(state); if (!apply(prepared, '출항 직전 상태를 준비했습니다.')) return; }
+  if (!saveNow()) return;
+  const result = commitDeparture(state); if (apply(result, '예시 출항을 시작했습니다. 안전 저장은 출항 직전 상태입니다.')) window.cloudstitchDepartureManifest = createDepartureManifest(state);
+};
+function receive(outcome) { const result = acceptReturn(state, exampleReturn(state, outcome)); if (apply(result, outcome === 'completed' ? '예시 임무 완료. 보상과 회수품을 한 번 정산했습니다.' : '선택 철수. 확정 회수품은 보존하고 미완료 계약 보상은 지급하지 않았습니다.')) saveNow(); }
+byId('return').onclick = () => receive('completed'); byId('withdraw').onclick = () => receive('withdrawn');
+byId('recover').onclick = () => { const result = repo.recoverBackup(); if (result.ok) { byId('recover').hidden = true; loadNow(); } else announce(result.message, true); };
+byId('export').onclick = () => {
+  const result = repo.exportCurrent();
+  const raw = typeof result === 'string' ? result : result.raw || result.data || result.json;
+  if (!raw) { announce(result.message || '내려받을 저장이 없습니다.', true); return; }
+  const url = URL.createObjectURL(new Blob([raw], {type:'application/json'}));
+  const a = document.createElement('a'); a.href = url; a.download = 'Cloudstitch-harbor-save.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+byId('parts').onclick = event => {
+  const button = event.target.closest('[data-action]'); if (!button) return;
+  const card = button.closest('[data-part]'), id = card.dataset.part, socketId = card.querySelector('select')?.value;
+  if (button.dataset.action === 'preview') {
+    const result = previewInstall(state, id, socketId);
+    card.querySelector('.comparison').textContent = `중량 W ${result.before?.weight} → ${result.after?.weight ?? '—'} / 양력 L ${result.before?.lift} → ${result.after?.lift ?? '—'} / 전력 발전·소비 ${result.before?.powerSupply}·${result.before?.powerDemand} → ${result.after?.powerSupply ?? '—'}·${result.after?.powerDemand ?? '—'}. ${result.ok ? '장착 가능' : (result.reasons || []).join(' ')}`;
+  } else if (button.dataset.action === 'install') apply(installPart(state, id, socketId), '선택한 위치에 장착했습니다. 부품 ID와 소유권을 유지합니다.');
+  else apply(removePart(state, id, {destination:'warehouse'}), '선택 부품과 하위 묶음을 보관함으로 옮겼습니다.');
+};
+document.querySelectorAll('[data-contact]').forEach(button => button.onclick = () => {currentContact = button.dataset.contact; render();});
+window.cloudstitchHarbor = { getState: () => structuredClone(state), validate: () => validateState(state), repo, version:'harbor-v1.0.0' };
+loadNow(true);
+
+return {};
+})();</script></body></html>

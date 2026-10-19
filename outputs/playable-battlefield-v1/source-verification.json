@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "failures": [],
+  "domIds": 67,
+  "requiredControlIds": 62,
+  "relativeImports": [
+    {
+      "source": "tools/levels/playable-presentation.test.mjs",
+      "import": "./playable-presentation.mjs"
+    },
+    {
+      "source": "tools/levels/playable-qa-driver.mjs",
+      "import": "./playable-pilot.mjs"
+    },
+    {
+      "source": "tools/levels/playable-renderer.js",
+      "import": "../battlefield/assets.js"
+    },
+    {
+      "source": "tools/levels/playable-renderer.js",
+      "import": "../battlefield/world.js"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../encounters/catalog.json"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../encounters/director.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../encounters/attack-intents.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../encounters/attack-budget.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../battlefield/integration.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../battlefield/sim.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../levels/levels.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../harbor/fixtures.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../harbor/core.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../harbor/adapters.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../shipyard/shipyard.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "../save/save.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.mjs",
+      "import": "./playable-contract.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.test.mjs",
+      "import": "./playable-session.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.test.mjs",
+      "import": "./playable-pilot.mjs"
+    },
+    {
+      "source": "tools/levels/playable-session.test.mjs",
+      "import": "../harbor/core.mjs"
+    },
+    {
+      "source": "tools/levels/playable-ui.js",
+      "import": "./playable-session.mjs"
+    },
+    {
+      "source": "tools/levels/playable-ui.js",
+      "import": "./playable-renderer.js"
+    },
+    {
+      "source": "tools/levels/playable-ui.js",
+      "import": "../battlefield/sim.mjs"
+    },
+    {
+      "source": "tools/levels/playable-ui.js",
+      "import": "../battlefield/vfx.js"
+    },
+    {
+      "source": "tools/levels/playable-ui.js",
+      "import": "./playable-presentation.mjs"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    },
+    {
+      "path": "tools/battlefield/assets.js",
+      "sha256": "624532b463d498c5b0ad3ccc1c2ade75ea903af819b6871b6c0fb6aff0f3834b"
+    },
+    {
+      "path": "tools/battlefield/vfx.js",
+      "sha256": "982595ffa38eff702bb7133aa61639b786cd098e724da891400ad5e12c200813"
+    },
+    {
+      "path": "tools/battlefield/world.js",
+      "sha256": "7260d294fd8a97cc6f13202e3f1d6f7b51db9837905acb850874833a6133f13e"
+    },
+    {
+      "path": "tools/encounters/director.mjs",
+      "sha256": "e8a0cdb2c951994896cc06d35e6a5120fc372d26747e647ca4ee5f6a5f389e4f"
+    },
+    {
+      "path": "tools/harbor/core.mjs",
+      "sha256": "9cae5e9bcb1c6fe453795a8fe4eb8eedcff9bb1e5c06958344125be8c5429a7c"
+    },
+    {
+      "path": "tools/shipyard/shipyard.mjs",
+      "sha256": "413839ac4b7a6208036562b9bf50ea364384a7fcdff7af84b5faa19b6ab788d9"
+    },
+    {
+      "path": "tools/save/save.mjs",
+      "sha256": "8d975cd44dcc88590e96a8fd2ba6772051a9f3051cff669688c0ba3be3073414"
+    },
+    {
+      "path": "tools/levels/levels.mjs",
+      "sha256": "bd628ba20f5ae4ac745f962cf463265471791ebc208c6f059e2711f021a9a1fd"
+    }
+  ],
+  "scope": "Portable relative imports and UI contract; no browser/layout/gameplay claim. Shared dependency SHA records preserve the build input baseline."
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#275b59">
+  <title>Cloudstitch · 소리 검수실</title>
+  <link rel="stylesheet" href="../../tools/audio/review-v2/review.css">
+  <script type="module" src="../../tools/audio/review-v2/review.mjs"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="#main"><span aria-hidden="true">✧</span> Cloudstitch</a>
+    <div class="header-note">SOUND WORKSHOP <span>소리 검수실</span></div>
+    <button type="button" class="status-pill" id="unlock"><span class="status-dot" aria-hidden="true"></span><span id="audio-state">오디오 잠김 · 클릭하여 활성화</span></button>
+  </header>
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">목재, 천, 황동, 그리고 바람</p><h1 id="page-title">항해에 소리를 입히다.</h1><p class="lede">효과음을 하나씩 들어보고, 마음에 드는 소리와 고칠 소리를 남겨 주세요.</p></div>
+      <div class="intro-card"><span class="small-caps">REVIEW COLLECTION</span><strong id="collection-count">카탈로그 읽는 중</strong><span id="collection-version">생성 음원 · 검수 전</span></div>
+    </section>
+    <p class="scope-note">이 화면은 수동 청취·검수용입니다. 생성 음원과 기존 음원을 구별하며, 실제 게임 연결·사람 청취 완료 여부는 각각 따로 기록합니다. 음악·목소리는 포함하지 않습니다.</p>
+    <section class="mixer panel" aria-labelledby="mixer-title">
+      <div class="mixer-title"><h2 id="mixer-title">듣기 설정</h2><span id="output-hint">첫 클릭 뒤 활성화 · 자동 재생 없음</span></div>
+      <div class="mixer-controls">
+        <label class="slider-control" for="master-volume"><span>전체 <output id="master-output">45%</output></span><input id="master-volume" type="range" min="0" max="100" value="45"></label>
+        <label class="slider-control" for="sfx-volume"><span>효과음 <output id="sfx-output">65%</output></span><input id="sfx-volume" type="range" min="0" max="100" value="65"></label>
+        <label class="slider-control" for="ambience-volume"><span>환경음 <output id="ambience-output">30%</output></span><input id="ambience-volume" type="range" min="0" max="100" value="30"></label>
+        <div class="switches"><label><input type="checkbox" id="mute"> 음소거</label><label><input type="checkbox" id="mono"> 모노</label><label><input type="checkbox" id="low-dynamic"> 작은 음량 차이</label></div>
+        <button class="button stop" id="stop-all" type="button">■ 모두 정지</button>
+      </div>
+      <p id="notice" class="notice" role="status" aria-live="polite">목록에서 소리를 선택해 주세요.</p>
+    </section>
+    <div class="workspace">
+      <section class="catalog panel" aria-labelledby="catalog-title">
+        <div class="section-heading"><div><p class="eyebrow">01 / COLLECTION</p><h2 id="catalog-title">소리 목록</h2></div><span id="filtered-count" class="count-badge">—</span></div>
+        <label class="search-label" for="search">소리 찾기<input id="search" type="search" placeholder="이름 · 용도 · 이벤트 검색" autocomplete="off"></label>
+        <div class="filters" id="filters" role="group" aria-label="소리 범주"></div>
+        <div class="catalog-legend"><span>○ 검수 전</span><span>✓ 승인</span><span>↺ 수정 요청</span><span>— 보류</span></div>
+        <div id="asset-list" class="asset-list" aria-label="효과음 목록"></div>
+      </section>
+      <div class="detail-column">
+        <section class="player panel" aria-labelledby="selected-title">
+          <div class="section-heading"><div><p class="eyebrow" id="selected-category">02 / LISTEN</p><h2 id="selected-title">소리를 선택해 주세요</h2></div><span id="selected-status" class="source-status">검수 전</span></div>
+          <p id="selected-description" class="description">각 소리의 원인과 재료가 구별되는지 확인합니다.</p>
+          <div class="waveform-wrap"><canvas id="waveform" height="140" aria-label="선택 음원의 파형. 음원 재생 후 표시됩니다."></canvas><div class="waveform-empty" id="waveform-empty">재생하면 파형과 길이를 확인할 수 있어요.</div></div>
+          <div class="track-info"><span id="track-time">0:00 / —</span><span id="track-format">—</span></div>
+          <div class="transport"><button type="button" class="icon-button" id="previous" aria-label="목록의 이전 소리">←</button><button type="button" class="button primary" id="play-selected" disabled>▶ 소리 듣기</button><button type="button" class="button secondary" id="stop-selected">■ 정지</button><button type="button" class="icon-button" id="next" aria-label="목록의 다음 소리">→</button><label class="loop-control"><input type="checkbox" id="repeat-selected"> 반복</label></div>
+          <div class="sequence-row"><button type="button" class="text-button" id="play-sequence">현재 목록 차례로 듣기 →</button><button type="button" class="text-button" id="stop-sequence" hidden>순차 듣기 중지</button><span id="sequence-status">선택한 범주·검색 결과 기준</span></div>
+          <details class="metadata"><summary>음원 정보 · 생성 프롬프트 · 게임 연결 규격</summary><dl id="metadata"></dl><a id="download-audio" class="text-button" download>원본 음원 내려받기 ↗</a><p class="fine-print">재생 시 디코딩한 peak를 기준으로 크기를 맞춥니다. 수치와 파형은 브라우저 표시용이며, 청감·상용 품질 검수 완료를 뜻하지 않습니다.</p></details>
+        </section>
+        <section class="review panel" aria-labelledby="review-title">
+          <div class="section-heading"><div><p class="eyebrow">03 / YOUR NOTES</p><h2 id="review-title">이 소리는 어떤가요?</h2></div><span id="heard-count" class="subtle">아직 재생하지 않음</span></div>
+          <fieldset class="decisions"><legend class="sr-only">선택 음원의 검수 판정</legend><label><input type="radio" name="decision" value="approved"><span>✓ 승인</span></label><label><input type="radio" name="decision" value="revision"><span>↺ 수정 요청</span></label><label><input type="radio" name="decision" value="hold"><span>— 보류</span></label><label><input type="radio" name="decision" value="unreviewed"><span>○ 검수 전</span></label></fieldset>
+          <label class="note-label" for="review-note">검수 메모<textarea id="review-note" rows="3" maxlength="4000" placeholder="예: 목재 울림은 좋지만 끝의 금속 잔향을 조금 줄여 주세요."></textarea></label>
+          <div class="review-save"><span id="save-state">이 브라우저에 자동 저장</span><span id="review-progress">0 / 0 검수</span></div>
+          <div class="review-counts" id="review-counts"></div>
+          <div class="file-actions"><button type="button" id="export-review" class="button secondary">검수 결과 JSON 내보내기</button><label class="button secondary import-label" for="import-review">검수 결과 가져오기<input id="import-review" type="file" accept="application/json,.json" class="sr-only"></label><button type="button" id="inspect-files" class="button secondary">파일 수치 검사 · JSON</button></div>
+          <p class="fine-print">판정과 메모는 로컬에만 저장됩니다. 다른 기기나 담당자에게 전달하려면 JSON을 내보내세요. 파일 가져오기는 같은 카탈로그 버전과 ID만 허용합니다.</p>
+        </section>
+        <section class="comparison panel" aria-labelledby="comparison-title">
+          <div class="section-heading"><div><p class="eyebrow">04 / IN CONTEXT</p><h2 id="comparison-title">겹쳐서 들어보기</h2></div><span class="subtle">검수용 재생</span></div>
+          <div class="comparison-block"><h3>기관총 기준음</h3><p>기존 음원의 단발과 0.22초 간격 6연사를 비교합니다.</p><div class="button-row"><button type="button" class="button secondary" id="machinegun-single">기관총 단발</button><button type="button" class="button secondary" id="machinegun-burst">기관총 6연사</button></div></div>
+          <div class="comparison-block"><h3>중요한 소리 세 개</h3><p>위험 경고·피격·발사를 함께 듣고, 작은 볼륨에서도 각각 구별되는지 확인해 주세요.</p><div class="cue-selects"><label for="cue-warning">위험 경고<select id="cue-warning"></select></label><label for="cue-impact">피격 / 충격<select id="cue-impact"></select></label><label for="cue-weapon">무기 발사<select id="cue-weapon"></select></label></div><button type="button" class="button secondary" id="play-three">세 소리 함께 듣기</button></div>
+          <div class="comparison-block"><h3>환경음 위에서</h3><p>환경음을 켠 채 목록의 효과음을 재생할 수 있습니다. 환경음은 동시에 두 개까지 유지됩니다.</p><div class="ambience-row"><label class="sr-only" for="ambience-select">비교할 환경음</label><select id="ambience-select"></select><button type="button" class="button secondary" id="toggle-ambience">환경음 켜기</button><button type="button" class="text-button" id="stop-ambience">환경음 정지</button></div><p id="active-ambience" class="fine-print">재생 중인 환경음 없음</p></div>
+        </section>
+      </div>
+    </div>
+    <footer><span>Cloudstitch · 클라우드스티치</span><span>탭을 숨기거나 모두 정지하면 예약음과 반복음을 정리합니다. 다시 표시해도 자동 재생하지 않습니다.</span></footer>
+  </main>
+</body>
+</html>

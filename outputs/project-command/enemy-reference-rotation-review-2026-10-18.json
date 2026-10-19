@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "scope": "one ghost ship shortrotation3modes, separate from273 and source53",
+  "manifest": {
+    "path": "outputs/enemy-reference-rotation-qa-v1/delivery-manifest.json",
+    "sha256": "1aa051ff37587fef88c0530a229ed6c555cb08708bd01de15674a27b52f8d511",
+    "files": 6,
+    "bytes": 1966904
+  },
+  "report": {
+    "path": "outputs/enemy-reference-rotation-qa-v1/verification.json",
+    "sha256": "a34c8681cc119ac7acbcccdd7a9f8431d2c85220bc1bfdbdc82e66ff3759944b",
+    "passed": true,
+    "checks": 5,
+    "framesPerMode": 180,
+    "actualCameraRotationAndOutlineEffectAutoClearTrue": true,
+    "harnessSha256": "a3ec41d280a473babd0c9bece4c0d4eb0077481afd9ffb68968581bc0486ede1",
+    "source53ManifestSha256": "679421632594a7864b1790aecd85267580ad362bf96ee966879c479d5cf62d8f"
+  },
+  "ownerVisual": {
+    "path": "outputs/enemy-reference-rotation-qa-v1/visual-review.json",
+    "sha256": "e2ab083c1a671c904b574c080ac91643b4c486b1fcf9e0fcae4ef0aad79bb923",
+    "selectedHtmlAndGlb2PostShaMatched": true,
+    "notWhole53Rehash": true
+  },
+  "rootVisual": {
+    "directlyViewed": [
+      "handdrawn-after-rotation.png",
+      "cel-after-rotation.png",
+      "original-after-rotation.png"
+    ],
+    "observation": "no obvious overlapping previous hull poses visible in these3samples",
+    "notGeneralGhostingGuarantee": true
+  },
+  "rootSmallReportManifestVisualHarnessShaMatched": true,
+  "preciseDecodedRotationRegression": "not-run",
+  "longPerformance": "not-run",
+  "all6ArtApproval": false,
+  "original273Unchanged": true,
+  "sealedHubV2Unchanged": true
+}

@@ -1,0 +1,18 @@
+소유 tools/ship-states/star2-assets-v1/ → outputs/ship-states-v1/star2-assets-v1/
+최신 직접 사용자 2성급3D/2D느낌 요청. 최신refits무드보드 2성3계열을 소비.
+
+명령 (기존 work/combat-vfx-v2/deps/node_modules NODE_PATH 사용, 설치0)
+node tools/ship-states/star2-assets-v1/check-source.cjs
+node tools/ship-states/star2-assets-v1/build.cjs
+명시 heavy START 이후에만: node tools/ship-states/star2-assets-v1/export-verify.cjs
+
+export-verify는 단일 browser/page에서 소스-preview를 로드→GLB3저장→productionHTML 재빌드→그 정확GLB3 재로드.
+실제GLB 자급텍스처/unlit/기하/3모드9표시와좌우pane픽셀,불투명3×120회전잔상,조작/반응형/대표PNG/overview 검사.
+browser finally.close. 실행예산3분. 실패원raw/PNG보존, 영향범위만수정/후속슬롯요청.
+QA후각manifest와원본SHA대조/정확deliveryREADY작성. 원본/기존뷰어/공통package변경0.
+
+모델 API createLibrary(gltf).create('original'|'mobility'|'artillery'|'salvage')→root/parts/counts/update(t)/dispose.
+세2성장착물은독립3D구조. 재질버텍스명암/unlit은GLB에저장,윤곽선/셀모드/프로펠러재생은viewerruntime.
+게임용미터/표준socket/충돌/LOD/손상트리/애니클립/무기스탯은미정. root+Y위/-X전방/scale1.
+참고장착영역은source좌표: 안정돛지지대[-.17,-.10,±.105],포대기부[-.31,-.093,0],회수받침[-.52,-.12,0],윈치[.035,-.12,-.20].
+이좌표는3D시안그룹의localorigin이며엔진용확정socket이아니다.

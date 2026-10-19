@@ -1,0 +1,42 @@
+{
+  "id": "lightning-mast",
+  "name_ko": "나선 피뢰 관측주",
+  "category": "props",
+  "role": "겹절연체와 구리봉, 보호망, 케이블을 갖춘 폭풍 항로의 시각 표지.",
+  "motion_ko": "정적 관측주. 번개 포집·피해·전력 기능은 구현하지 않습니다.",
+  "order": 19,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/lightning-mast.glb",
+  "preview": "previews/lightning-mast.png",
+  "triangles": 19696,
+  "mesh_count": 165,
+  "vertices": 59088,
+  "material_count": 1,
+  "animation_count": 0,
+  "animation_duration": 0,
+  "encoded_color_components": 0,
+  "bytes": 2294648,
+  "sha256": "156ae7418e75fb7ad4c973c815361f4e16b711bbc2c14f4e8a4d90c37a29e1bd",
+  "bounds": {
+    "min": [
+      -1.5714871883392334,
+      -1.9099999986588956,
+      -1.1774999988079071
+    ],
+    "max": [
+      1.6416773796081543,
+      3.2399999916553495,
+      1.1774999988079071
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

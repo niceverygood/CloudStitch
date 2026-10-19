@@ -1,0 +1,64 @@
+{
+  "id": "repair-stitch",
+  "original_id": "repair-stitch",
+  "order": 45,
+  "name_ko": "수리 봉합",
+  "name_en": "Repair Stitch",
+  "category": "defense-support",
+  "weapon_id": null,
+  "model": "assets/repair-stitch.glb",
+  "duration": 2,
+  "loop": false,
+  "purpose": "Cloudstitch의 수선 감성을 결합부 봉합으로 보여준다.",
+  "status": "representative_comparison_verified",
+  "representative": true,
+  "placement_scale": 0.32,
+  "authored_silhouette_scale": 1.8,
+  "triangles": 1624,
+  "mesh_count": 7,
+  "animation_count": 1,
+  "bytes": 188308,
+  "sha256": "4f306bc541434dbf953a2d28e3acb5bc7d6e11c3018565778002e414f7e08418",
+  "meshy_bases": [],
+  "runtime_features": [
+    "node extras.runtime_fade drives viewer opacity; standard GLB uses TRS alone"
+  ],
+  "source_type": "Local authored swept brush/fabric volumes and TRS",
+  "task_ids": [],
+  "new_paid_task_for_this_effect": false,
+  "axes": "+Y up, +Z forward, +Y impact surface normal",
+  "limits": [
+    "Art choreography prototype; runtime combat integration pending.",
+    "GLB embeds standardTRS only. Runtime opacity/outline/cel are separate browser features.",
+    "Fixed projectile movement belongs to preview clip; disable root translation when gameplay projectile owns motion.",
+    "Only representative6 initially receives direct visual review; catalog status records later checks."
+  ],
+  "visual_reviewed": true,
+  "review_scope": "Directly inspected same-camera fullship and detail comparison renders; prototype direction, not final engine/game approval.",
+  "verification": {
+    "structure": "verification/structure.json",
+    "browser": "verification/browser-smoke.json"
+  },
+  "source_files": [
+    {
+      "path": "tools/combat-vfx-v2/core.cjs",
+      "bytes": 9366,
+      "sha256": "ea21f9d29dfabeabd976009d6e0d3aeee67365894b65231af74af3fe0c60ff12"
+    },
+    {
+      "path": "tools/combat-vfx-v2/generate.cjs",
+      "bytes": 4019,
+      "sha256": "84cc9b5609e276e0c0cae17cdd85e48cfe4dba68938a25504f5a4470a0fb87c6"
+    },
+    {
+      "path": "tools/combat-vfx-v2/primary.cjs",
+      "bytes": 13239,
+      "sha256": "c323f6edcdddb4b024e3ecde10ec30e886ad1ecf8b91ed294e30f70b4cd357c9"
+    }
+  ],
+  "output_file": {
+    "path": "outputs/combat-vfx-v2/assets/repair-stitch.glb",
+    "bytes": 188308,
+    "sha256": "4f306bc541434dbf953a2d28e3acb5bc7d6e11c3018565778002e414f7e08418"
+  }
+}

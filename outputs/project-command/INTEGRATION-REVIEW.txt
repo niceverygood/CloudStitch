@@ -1,0 +1,64 @@
+Cloudstitch 첫 총괄 교차 검토
+2026-10-18 / 읽기 전용 검토, 코드 변경·npm 설치·중복 브라우저 검사 없음
+
+구체적 검토 조치
+- 공유 checkout과 별도 통합 worktree의 실제 폴더·계약·검증 보고서를 읽었다.
+- 공유 핵심8소스는 최신 항구 연결 증거의 SHA-256과 일치했다.
+- VFX 원본54/54는 package-manifest의 실제 SHA-256과 일치했다.
+- 선택 선체1+무기6+첨부원본2도 기존 기록과 일치했다. 보존 확인 총63파일.
+- 실제 통합 서버의 HTTP HEAD 응답200을 확인했다. 이 응답 자체를 플레이 재검증으로 세지 않는다.
+- 실제 사용자 입력 항해2회와 source/Chrome·Edge/레벨/표시 회귀의 기존 보고서를 읽었다.
+- 생성 상태 조회와 로컬 파일 부재만으로 Meshy 작업 미제출을 단정하지 않았다.
+
+한 항해의 실제 접합
+1. createVoyageController().command('depart')가 항구 확정 장착 트리/자원과 출항ID를 전달.
+2. battlefield 어댑터만 advance로 이동·탄환·충돌·피해·절단·회수를 갱신.
+3. encounter director는 스폰/의도/clear 요청만 전달. 기존 독립 시뮬레이터는 동시에 실행하지 않음.
+4. 레벨은 시각과 collision footprint·현재 점유 기반 스폰·귀환 위치를 제공.
+5. 실제 GLB Muzzle → 실제 탄 이동/swept 접촉 → hit → projectile-ended 순서.
+6. adaptBattlefieldReturn → acceptReturn으로 살아 있는 회수품/소유권·설치품 손상·실제 수리 지출을 정산.
+7. 귀환 자동 저장 실패 시 정산을 다시 지급하지 않고 같은 결과를 재저장.
+8. 새 controller/새 프로세스의 부품·자원·정산 원장 복원을 기존 증거로 확인.
+
+효과 아트에 전달할 최소 계약
+- event: seq/type/projectileId/weaponId/x/y/z/direction, hit에는 실제 normal. position 객체는 API 원문 필드가 아님.
+- asset: 기존 effect ID 또는 명시 매핑, model 상대경로, clip/duration/loop, SHA-256/작업 출처.
+- axis: 효과 +Z 진행, +Y 위; 피격 +Y 법선, +Z 진행 접선.
+- 리그 원시 Muzzle은 -X. assets.js의 muzzleFrame()이 월드 방향으로 이미 변환함. 원시 quaternion 직접 복사만 피함.
+- projectile: 현재 전장은 effectId_projectile_carrier_0 노드만 사용. 내장 비행 animation을 중복 실행하지 않음.
+- lifecycle: load/consume/update/reset/dispose/debug. pause dt0, retry/depart reset, projectile-ended/상태 종료 반영.
+- clear 뒤 one-shot 잔류 가능성은 VFX API 단독 사용의 한계다. 기존 통합 renderer는 combat-cleared에서 effects.reset()하므로 그 경로의 잔류 결함으로 단정하지 않음.
+- pool 반환: action/mixer/time/child·root 변환/parent·host·끝점 참조 초기화.
+- 현재 실제 런타임은 기관총·훈련 함포의6 GLB 연결. 새 대표6종 아트와 전체48효과 통합은 별도 범위.
+- 현재 필수6GLB와 대표6아트는 서로 다르다. 직접 교체는 machine-gun-muzzle/cannon-hit이며 effect별 선택+v1 fallback이 필요하다.
+- smoke/shield/repair/flame은 host/state 수명 소비가 별도 필요하다. 새 전장 문서 VFX-V2-INTERFACE.md에 실제 제약을 인계했다.
+- 플레이어는 실제 Muzzle resolver를 쓰지만 현 적 함포는 모듈 평면 중심+y1.3의 근사 포구다. 적까지 실제 무기 끝점 검증이 완료됐다고 쓰지 않는다.
+
+새 결과를 완료본에 합치기 전 확인할 사항
+A. 마지막 UI 후속 수정의 digest 재동결
+   delivery-manifest37개 중5개 drift: session.mjs/session.test.mjs/ui.js/verify-presentation.cjs/integration.js.
+   담당의 진행 중인 저장충돌 UI 수정과 일치해 새 동작 결함으로 확정하지 않음.
+   저장충돌 표적 회귀6/6 PASS. 최종 집계5→6 및 manifest39파일 재생성 완료. 총괄의 실제39파일 크기/SHA-256 대조도 실패0.
+B. 독립 레벨 warm GPU 자원 회귀
+   최초22 표시검사는 PASS. 후속 재선택에서 texture62→122, tax-cutter skin60개 boneTexture 미해제 발견.
+   지도 ready-4와 전장 assets0.2.2 수정본이 전달됐다. 통합 잔해 clone skeleton도 같은 소유 원칙으로 보정.
+   후속 lifecycle-verification.json7/7 PASS를 실제로 읽어 확인했다.
+   레벨 재선택 texture65→65. 같은 renderer 실제 회수·귀환4회 뒤 geometry407/texture18→407/18 유지. 페이지 오류0.
+   원래2회는 항구 저장/복원 검증, 추가4회는 같은 renderer 자원 해제 검증이며 목적을 구분한다. 최종 manifest 갱신과 총괄 대조 완료.
+   주 통합 항구5분 geometry286/texture17 안정성은 이미 PASS이며 이 독립 결함과 구분.
+C. 실행 위치
+   공유 root에는 통합 실행물이 없고 별도 worktree에 존재.
+   outputs/handoff/DESKTOP_INTEGRATION_LOCAL-2026-10-18.md가 새로 제공됨. 전체 덮어쓰기 없이 선별 인계.
+D. 신규 범위
+   outputs/playable-battlefield-v1, fleet-v2, combat-vfx-v2는 위 기존 PASS에 포함하지 않음.
+   먼저 기관총 포구1종을 같은 Muzzle/카메라/배율/시간으로 비교하고, 나머지 대표 묶음으로 확장.
+E. 항구 API 검토 결과
+   PLAYABLE-HANDOFF.md로 실제 저장/귀환 ID 계약이 인계됐다. 화면은 receipt나 보상을 직접 만들지 않음.
+   새 화면은 localStorage/saveKey를 명시하고 command 실패 뒤 최신 snapshot을 표시해야 함.
+   draft playable 파일들의 import/entry/별도 build는 작업 중이며 완료본 PASS를 새 화면에 옮겨 적지 않음.
+
+검증 한계
+첫 지역2회 회수·안전 철수만 실제 왕복. 보스 표시 회귀는 강제 진입 fixture이며 통합 보스 완주가 아님.
+20분 가속 탄환장부와5분 실제 브라우저 렌더는 분리. 실기기 모바일·GPU 시간/FPS·재미·밸런스 인증 아님.
+최종 엔진·플랫폼·성능예산, 다른4무기와 특수 보스 패턴은 여전히 후속 범위.
+

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "sourceReady2": "9a50e6f105ff5497795fb33095cbc0dc71f2df88ac062372e6c6028e85709523",
+  "originalNativeReview": "audio-rich-native-review-2026-10-18.json",
+  "original21Of24FalsePreserved": true,
+  "navigationTimeoutPreserved": true,
+  "followup": {
+    "path": "outputs/audio-rich-browser-qa-v1/followup/verification.json",
+    "sha256": "1add1ee4d69be8d1c66e0182e9d027302aafedace33e7bae85848f2b308f3a97",
+    "passed": true,
+    "checks": 8,
+    "composition": "gain3+release1+dispose2+offlineburst1+errors1",
+    "harness": {
+      "path": "tools/audio-rich-qa/followup.cjs",
+      "sha256": "00d12c5f073655f4e9f75a02518f9175b533b7164d0be41bce79cb862d1026c5"
+    }
+  },
+  "observations": {
+    "idleStoredGain": 0.27,
+    "idleSources": 0,
+    "nextRealPlaybackGainApprox": 0.27,
+    "activeGainApprox": 0.31,
+    "releaseNativeStartedEqualsEnded": true,
+    "releaseActive": 0,
+    "createdContextDisposedClosedAndCache0": true,
+    "neverCreatedContextDisposedLockedNoContextCreated": true,
+    "offlineBurst": {
+      "wavFiles": 1,
+      "method": "Native Offline48kHz/gain1",
+      "shots": 6,
+      "intervalSeconds": 0.22,
+      "maxOverlap": 4,
+      "truncated": 0,
+      "startedAndEnded": 6,
+      "finite": true,
+      "peakApprox": 0.78877818,
+      "bypassesPreviewCap3": true
+    },
+    "errorsOrExternalRequests": 0
+  },
+  "sourceFollowup": {
+    "path": "outputs/audio-rich-source-followup-v1/verification.json",
+    "sha256": "57818c6c628b3fd11a52e0b9ffc65c97cd7eb670eab20d3110d43f8ea159c5a7",
+    "passed": true,
+    "source126AndManifestMatched": true,
+    "notExtraQaCount": true
+  },
+  "independentReview": {
+    "rootReportAndFinalizerShaMatched": true,
+    "delegatedSmallBindings5Passed": true,
+    "no98DecodeRepeated": true,
+    "noLargeMediaRehashByCommand": true
+  },
+  "scopedStatus": "49pair review UI technical evidence delivered with original failures and separate passing followup; no total-pass claim",
+  "limits": [
+    "raw resampled10 peaks>.81/max.86524 failure retained",
+    "AudioParam and Offline PCM are not speaker output/audibleclick/quality/LUFS approval",
+    "single WAV uncappedOffline sixshot is not preview4voice or game-event integration",
+    "oldmortarlaunch rejected;A/Bunselected;humanquality/gameinstall pending"
+  ],
+  "aggregateQaPass": null
+}

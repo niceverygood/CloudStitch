@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T08:53:35Z",
+  "authorization": {
+    "directHumanRead": true,
+    "sourceThreadId": "01a14da1-193b-77e3-818c-ae25dc7dac62",
+    "sourceTitle": "Cloudstitch 함대·교전 연결",
+    "turnId": "01a14e33-ec65-7cc1-b5cb-54d9e21f271e",
+    "messageId": "01a14e33-f067-7b92-9570-8c5de4a26f1e",
+    "request": "함대를 우리편 적군 비교해서 볼수 있게 만들어줘 제작한 비행선 모두 보여줘 각 판의 중간보스랑 최종 보스까지"
+  },
+  "slot": {
+    "allocatedBy": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+    "browserWorker": "01a14da1-193b-77e3-818c-ae25dc7dac62",
+    "observedAt": "2026-10-18T08:51:41Z",
+    "plannedDurationMinutes": [
+      4,
+      6
+    ],
+    "scope": "Chrome1/page1, new comparison-path static58 previews only",
+    "state": "returned: integration owner explicitly confirmed normal release",
+    "notAnAutomationOrDeadline": true,
+    "exclusiveWith": [
+      "other browser/native-decode QA",
+      "bulk asset IO"
+    ],
+    "next": [
+      "confirm browser closed and slot returned",
+      "v1-rich runtime6 READY and sequential combat QA",
+      "full audio-review-v2 READY native/browser QA"
+    ],
+    "returnEvidence": {
+      "sourceThreadId": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+      "ownerMessage": "fleet캡처는정상반환이미확인",
+      "checkedAt": "2026-10-18T08:58:11Z"
+    }
+  },
+  "staticSnapshot": {
+    "reviewer": "stage_ready_review",
+    "atKst": "17:51~17:52",
+    "newComparisonOutputsFound": false,
+    "new58DefinitionConfirmed": false,
+    "newCompletionManifestFound": false,
+    "existingSealedSource": "outputs/fleet-v2/source-manifest.json",
+    "existingCounts": {
+      "declaredFiles": 174,
+      "models": 62,
+      "viewers": 62,
+      "normalPreviews": 13,
+      "silhouettePreviews": 13
+    },
+    "newProtectedBeforeAfterEvidence": "not yet present in snapshot"
+  },
+  "acceptanceBoundaries": [
+    "all-produced ships coverage explicitly maps catalog IDs, variants and original9 references",
+    "58 target vs62 catalog difference explained; no silent omission",
+    "friendly/enemy and regional mid/final boss role data distinguish confirmed canon from proposals",
+    "planning priority112/114 and canon39/107 govern boss mapping; image labels not system spec",
+    "only comparison/static-preview UI deliverable; not implemented campaign or boss combat",
+    "new paths only; preserve existing fleet-v2174/original9/integration39/followup12",
+    "report completed/failed/missing IDs and source/output manifest",
+    "no full animation/gameplay/performance QA expansion during static slot"
+  ],
+  "commandActions": {
+    "notifiedFleet": true,
+    "notifiedBattlefield": true,
+    "notifiedAudio": true,
+    "duplicateBrowserOrBulkIo": false,
+    "returnFirstRequested": true,
+    "furtherUiQaRequiresSeparateScope": true
+  },
+  "status": "in progress / not accepted",
+  "updatedAt": "2026-10-18T08:58:11Z",
+  "staticCaptureSnapshot": {
+    "reviewer": "stage_ready_review",
+    "atKst": "17:54~17:55",
+    "source": "tools/fleet-comparison/",
+    "output": "outputs/fleet-comparison-v1/",
+    "metadata": "outputs/fleet-comparison-v1/previews.json",
+    "metadataSha256": "9875327418997ecdd9337fb4e69f23c874e637d081edf5d77e974d780dd5e9cb",
+    "rootSmallMetadataHashRead": true,
+    "uniqueIds": 71,
+    "v2Ids": 62,
+    "v1OriginalAlternatives": 9,
+    "pngFiles": 71,
+    "missingCatalogIds": [],
+    "extraCatalogIds": [],
+    "newActualGlbRenders": 49,
+    "reusedV2": 13,
+    "reusedOriginalAlternatives": 9,
+    "initial58PlanExplanation": "71 minus existingv2 13=58 planned; original9 reused too so new capture49. Final explicit owner handoff explanation still pending.",
+    "uiAtSnapshot": "template/build sources present; roster.mjs/finalindex/inventory/build verification not present; six-region boss mapping not yet checked",
+    "preservation": "read-only snapshot inputs; final before/after manifest evidence pending"
+  }
+}

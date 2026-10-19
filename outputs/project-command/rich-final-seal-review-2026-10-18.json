@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T09:17:16Z",
+  "locationRef": "local-locations.json",
+  "version": "integration-rich-vfx-v1-final",
+  "functionalScopeAccepted": true,
+  "aggregateQaPass": null,
+  "sourceVersions": {
+    "actualRuntime": {
+      "version": "battlefield-v1-rich-0.1.0",
+      "sha256": "43a3ca2d3ca630a474f36d4a453008b8a93a29189191229e7c6017b6413d80b7"
+    },
+    "preview": {
+      "version": "battlefield-v1-rich-0.1.1",
+      "sha256": "a5cd43acce2903c882196f60ed844b3c12fe53c4a872f46312a9daa8495bfd6f"
+    },
+    "runtimeProfileTestFiles9Unchanged": true,
+    "newCameraFlightAudioWorkNotImported": true
+  },
+  "finalSeal": {
+    "verification": {
+      "path": "outputs/integration-rich-vfx-v1/verification.json",
+      "sha256": "a1b623ebe406177b34995248905c76dd84949a7e6d56007cf2bed636e2dd1abd"
+    },
+    "delivery": {
+      "path": "outputs/integration-rich-vfx-v1/delivery-manifest.json",
+      "sha256": "8eeaa6f4315597a8fcca242c9218485d26891d21f252a0b64e694f5a5e909f4e",
+      "files": 85,
+      "bytes": 12636565,
+      "rootMetadataSizeMatched": 85,
+      "rootRepeatedFullAssetHashes": false
+    },
+    "evidenceFilesRootSizeShaMatched": 12,
+    "evidenceFailures": [],
+    "actualBrowserSha256": "612faeb7e3f3f906fc06868a51087fa9d0c06924dd5fbc94e54f2f36da21bf33",
+    "actualDigestEqualsEarlierRootObservation": true,
+    "protectedFiles": 202,
+    "protectedChanged": 0
+  },
+  "scopedReports": {
+    "actualCombat": {
+      "pass": 13,
+      "total": 13,
+      "scope": "accelerated public controller/playerMG+enemytrainingcannon6effects; actualinput/projectileposition12samples/hp/hit/end,pause,defeat/retry/mobile/request/sentinel"
+    },
+    "initialPreview": {
+      "pass": 66,
+      "total": 66,
+      "scope": "48 handdrawn clip37percent static samples+5representatives3modes+mobile+requests; originalpreview revision retained"
+    },
+    "cameraReady2": {
+      "pass": 5,
+      "total": 5,
+      "path": "outputs/battlefield-rich-vfx-v1/camera-verification.json",
+      "sha256": "0acacca8c381144aac65c40ab44bb531f791de0a5a448df0a0f8e3bae01a33d6",
+      "scope": "default-Z/focus/cannonhit.22/mobile/errors; actualruntime unchanged"
+    },
+    "expandedImpact": {
+      "pass": 7,
+      "total": 8,
+      "failed": 1,
+      "scope": "actualhit+.1s4captures/actualbounds/depthTest/poolreturn; strict repeatedPNG failure retained"
+    },
+    "fixedClear": {
+      "withinBand": true,
+      "draw16ChangedPixels": 2,
+      "maxChannelDifference": 1,
+      "draw64ChangedPixels": 0,
+      "draw64PngEqual": true,
+      "cancelsFailure": false
+    },
+    "separateControls": {
+      "path": "outputs/rich-preview-controls-qa-v1/verification.json",
+      "sha256": "799c536da1373eab5d2b5044c220d4c5b0f3f52e5280721fcc5b0356d20d6c01",
+      "pass": 16,
+      "total": 16,
+      "testedBuildImportDeliveryHashesPresent": true,
+      "scope": [
+        "actual UI play/pause/speed/loop/scrub",
+        "outline off/on/autoclear",
+        "focus/fit/pointerorbit/wheelzoom/reset/autorotate",
+        "short rotation3mode screenshots",
+        "no page/http/external errors"
+      ],
+      "rootViewedThreeAfterRotationPngs": true,
+      "rootVisualObservation": "no obvious accumulated prior ship poses in these3captured frames; no decoded rotating-frame or longresource plateau claim"
+    }
+  },
+  "urls": {
+    "actual": "http://127.0.0.1:8840/outputs/integration-rich-vfx-v1/",
+    "comparison": "http://127.0.0.1:8840/outputs/battlefield-rich-vfx-v1/preview.html?effect=cannon-hit"
+  },
+  "handoff": "tools/integration-rich/HANDOFF.md",
+  "remaining": [
+    "human approval acrossall48 effects",
+    "worst-case telegraph/crosshair occlusion",
+    "decoded rotating-frame comparison if required later",
+    "long-duration/performance/campaign",
+    "other4weapon combat implementation"
+  ],
+  "commitPushDeploy": false
+}

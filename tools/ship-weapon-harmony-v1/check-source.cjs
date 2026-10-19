@@ -1,0 +1,3 @@
+const fs=require('node:fs'),path=require('node:path'),{spawnSync}=require('node:child_process');
+async function main(){const root=path.resolve(__dirname,'../..'),out=path.join(root,'work/ship-weapon-harmony-v1/source.mjs');fs.mkdirSync(path.dirname(out),{recursive:true});await require('esbuild').build({entryPoints:[path.join(__dirname,'check-source.mjs')],outfile:out,bundle:true,format:'esm',platform:'node',target:'node20',nodePaths:(process.env.NODE_PATH||'').split(path.delimiter).filter(Boolean),logLevel:'warning'});const r=spawnSync(process.execPath,[out],{cwd:root,env:process.env,stdio:'inherit'});if(r.error)throw r.error;process.exitCode=r.status??1;}
+main().catch(e=>{console.error(e.stack);process.exitCode=1;});

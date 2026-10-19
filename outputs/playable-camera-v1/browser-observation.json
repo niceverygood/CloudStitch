@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "method": "Existing user in-app browser tab; product controls and read-only DOM observations. No additional browser process or full regression.",
+  "passed": true,
+  "observed": {
+    "realDepartureAndModels": true,
+    "threeViewButtonsSwitched": true,
+    "pauseComparisonTimeText": "00:00",
+    "pauseComparisonHullText": "100 / 100",
+    "pauseOverlayHiddenDuringComparison": true,
+    "comparisonControlsAccessible": true,
+    "mobileViewport": [390, 844],
+    "mobileScrollSize": [390, 844],
+    "mobileViewButtons": 3,
+    "mobilePanelBounds": {"left": 23, "right": 378, "top": 701.5, "bottom": 820},
+    "consoleErrorsAndWarnings": 0,
+    "temporaryViewportRestored": true
+  },
+  "screenshots": ["oblique.jpg", "side.jpg", "high.jpg", "mobile.jpg"],
+  "limits": [
+    "Cursor ray projection and screen movement were verified in Node; live browser shooting/hits were not repeated.",
+    "Lower cameras can have island occlusion; merged terrain has no individual island transparency.",
+    "No full two-sortie, save-failure or resource-plateau regression was run for this camera experiment."
+  ]
+}

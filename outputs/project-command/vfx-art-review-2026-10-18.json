@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:51:37Z",
+  "scope": "metadata/GLB header+JSON and existing report/capture review; no generation, browser or whole-asset hashing",
+  "independentReviewer": "vfx_audit",
+  "ownerThreadId": "01a14dc6-cc26-78e3-b031-d346860e1af1",
+  "reports": [
+    {
+      "path": "outputs/combat-vfx-v2/catalog.json",
+      "sha256": "6080ab6e53192ddf14a4056442c2d957e6fe8835761bb05b6a3d53f44fc0394c",
+      "verification": "root small-report SHA read"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/delivery.json",
+      "sha256": "1299001daf975519e5beffc0134377f412c0e68b0aac4eb6a6974c0795ebba54",
+      "verification": "root small-report SHA read"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/verification/structure.json",
+      "sha256": "66d30ceba4c60bdd5e11ee5ad0b94c495b3edb721b65809436dc6fd59c9bd911",
+      "verification": "root small-report SHA read"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/verification/browser-smoke.json",
+      "sha256": "dd4d7c10aacfe2efb036807af906e714ff6c8923b5b21cf80c4598baeffdf971",
+      "verification": "root small-report SHA read"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/verification/source-preservation.json",
+      "sha256": "6f3cd0d24a219b491f8c8ce62c7add00ca6ccc4851ecb30fb8b8915c2ec63010",
+      "verification": "root small-report SHA read"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/production-ledger.json",
+      "sha256": "d3615975b5e46f6a0f9376e6d5fca43687d720cf9877ea03ec4bfb5ab3ea2b0b",
+      "verification": "root small-report SHA read"
+    },
+    {
+      "path": "outputs/combat-vfx-v2/integration-handoff.json",
+      "sha256": "3b3b0ca07b8d1b63cd6986a84d6ff3b8056d06109afff3bfcf11216b4246820f",
+      "verification": "root small-report SHA read"
+    }
+  ],
+  "assetAudit": {
+    "effects": 48,
+    "demos": 6,
+    "reusableMeshyBases": 2,
+    "catalogPathsAndSizesMatch": 54,
+    "independentGlbHeaderJsonChecks": 54,
+    "standardTrsAnimationAndEmbeddedResources": true,
+    "khronosValidatorRun": false
+  },
+  "renderEvidence": {
+    "representatives": 6,
+    "representativeIds": [
+      "machine-gun-muzzle",
+      "smoke-puff",
+      "cannon-hit",
+      "flamethrower-stream",
+      "shield-pulse",
+      "repair-stitch"
+    ],
+    "timeSamplesPerRepresentative": 3,
+    "existingCloseAndShipPngs": 12,
+    "independentlyViewedByReviewer": 7,
+    "remainingArtReview": {
+      "effects": 42,
+      "demos": 6
+    }
+  },
+  "protection": {
+    "reportedUnchanged": 63,
+    "composition": "54 old effects/demos+ship1+weapons6+user references2",
+    "noOriginalPathGitDiff": true,
+    "wholeAssetHashesRepeated": false
+  },
+  "cost": {
+    "meshyCredits": 30,
+    "taskSnapshotStates": [
+      "SUCCEEDED",
+      "SUCCEEDED"
+    ],
+    "consumedCreditsPerTask": [
+      15,
+      15
+    ],
+    "ledgerBalanceBefore": 4599,
+    "ledgerBalanceAfter": 4569,
+    "accountRequeried": false
+  },
+  "compatibility": {
+    "currentRuntime": "v1 fixed; no v2 wiring completed",
+    "currentRecipeKey": "integration_contract",
+    "v2RecipeKey": "lifecycle_contract",
+    "currentProjectileSuffix": "_projectile_carrier_0",
+    "v2ProjectileSuffix": "_moving_payload_0",
+    "actualMovingPayloadNodesPresent": true,
+    "idsClipDurationsOfRequired6Match": true,
+    "requires": "per-effect version adapter/v1 fallback/projectile ownership and per-instance fade/reset",
+    "comparisonForwardCorrection": 0.24,
+    "comparisonCorrectionIsGameplayCoordinate": false
+  },
+  "lfs": {
+    "comparisonHtmlBytes": 53716167,
+    "comparisonHtmlFilter": "lfs",
+    "comparisonHtmlDiff": "lfs",
+    "comparisonHtmlMerge": "lfs",
+    "comparisonHtmlText": "unset",
+    "galleryHtmlBytes": 41600,
+    "galleryFilter": "unspecified"
+  },
+  "continuation": {
+    "originalScope": "representative6 followed by remaining full48 effects+6 demos",
+    "messageSentToOwner": true,
+    "work": "existing2 bases/local assets reused; remaining art review, narrow fixes, replayable comparison and exact source/output READY manifest",
+    "extraPaidGeneration": false,
+    "heavyQa": "sole integration owner, after scoped READY",
+    "battlefieldOwnerNotified": "refresh outdated brief-stage statement and exact loader compatibility; no baseURL swap or new combat loop"
+  },
+  "remaining": [
+    "42effects+6demo art review",
+    "all54 browser/download/mobile/display/loop coverage",
+    "current schema/node adapter and state-effect trigger/anchor/lifecycle",
+    "actual combat integration"
+  ],
+  "fullCompletion": false,
+  "compatibilityDocumentUpdate": {
+    "checkedAt": "2026-10-18T07:53:36Z",
+    "ownerReport": "documentation only; code/baseURL/package/heavyQA unchanged",
+    "rootMatchedSmallHashes": true,
+    "files": [
+      {
+        "path": "tools/battlefield/VFX-V2-INTERFACE.md",
+        "sha256": "39ae3acc1e6cdb84e15e531d35c5e4a5bb3cf4aca94e7386ed3f0123c1174d8e"
+      },
+      {
+        "path": "tools/battlefield/HANDOFF.md",
+        "sha256": "5aa557622299d6b7fa89f0b0e6560320423a8ec09435bdb68f5025fd46709150"
+      },
+      {
+        "path": "tools/battlefield/handoff-files.json",
+        "sha256": "005485d3f43ec354e906f47a8d4bbf2bd4df8fa63750ae9d9a147557d9425cc7"
+      }
+    ],
+    "release": "battlefield-authority-0.2.2",
+    "docsRevision": 2,
+    "sourceLocation": "shared checkout; not copied over sealed integration artifacts",
+    "adapterImplemented": false
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T06:58:00Z",
+  "note": "Point-in-time wait_threads snapshot; timestamps for report collection are approximate.",
+  "polls": [
+    {
+      "threadId": "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      },
+      "cursor": "161c62ec-9884-4ec4-b376-bff4e2df79d0:34",
+      "latestComment": "텍스처 증가의 원인은 복제한 함선의 뼈대 텍스처를 해제하지 않은 데 있었습니다. 레벨 미리보기 수정본을 받았고, 전장 함선·회수 잔해의 같은 문제도 함께 보정하고 있습니다. 새로고침 없이 장면과 항해를 반복해 자원 수가 안정되는지 확인하겠습니다."
+    },
+    {
+      "threadId": "01a14da1-0f0d-72e2-8712-76a46fe4463c",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      },
+      "cursor": "60a78aa9-704d-40c6-956c-a0c03fc94b4d:3",
+      "latestComment": "확인해보니 지금 갤러리의 효과는 표면 질감 없이 다면체·원뿔·고리를 조합한 초기 버전입니다. 기술 검사만 통과한 결과를 비행선과의 아트 검수 없이 보여드렸습니다. 새 손그림 효과 제작은 이미 진행 중입니다. 크림빛 연기, 황동빛의 짧은 불꽃, 붓결과 둥근 흐름을 비행선에 붙여 비교하는 기준으로 맞추고 있습니다."
+    },
+    {
+      "threadId": "01a14da1-193b-77e3-818c-ae25dc7dac62",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      },
+      "cursor": "e445b0d6-bd20-421e-97aa-6aa7b78034cf:2",
+      "latestComment": "형태를 세력별로 나누고 있습니다. 교단은 두꺼운 장갑과 종실을 가진 성채형, 연합은 크레인·작업 공간이 드러나는 산업선, 망령은 부서진 골조와 찢어진 천이 만드는 길쭉한 형태로 바꾸겠습니다. 귀환호의 둥근 기낭과 작은 목조 선실은 주인공의 특징으로 유지합니다."
+    },
+    {
+      "threadId": "01a14da1-2962-70f0-8405-eae46ad90ba5",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      },
+      "cursor": "9d849c51-f05b-4383-bb32-a0e541378b2e:4",
+      "latestComment": "기존 전투·항구·저장 연결 코드를 새 플레이 화면에 재사용하고 있습니다. 반복 전환 때 생기던 스켈레톤 텍스처 누수도 별도로 수정해 통합 담당에게 넘겼습니다. 전장 구도와 조작 화면 개선을 계속하겠습니다."
+    },
+    {
+      "threadId": "01a14da1-40b3-7193-aff8-ae79a119b6d9",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      },
+      "cursor": "a4d51b93-cfb9-4468-a207-c3f3ce996951:3",
+      "latestComment": "현재 공유 폴더에는 통합 실행물과 새 플레이 화면 HTML이 아직 없습니다. 검증된 별도 통합본의 계약을 기준으로 문서를 작성하되, 새 화면 소스의 import 경로는 작업 중인 연결 항목으로 구분해 기록하겠습니다."
+    },
+    {
+      "threadId": "01a14dc6-cc26-78e3-b031-d346860e1af1",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      },
+      "cursor": "9ed5e4aa-01ca-42fa-b8e2-177b7be916c6:7",
+      "latestComment": "연기 기본형 작업이 접수됐습니다: 01a14dca-e074-7440-aba5-de317145911e. 첫 요청은 smart-topology가 지원하지 않는 옵션 때문에 생성 전에 거절됐고, 해당 옵션을 제거한 요청만 접수됐습니다. 이 작업을 그대로 기다리며 메시 재사용과 애니메이션 코드를 준비하겠습니다."
+    }
+  ],
+  "newVfxJobReported": {
+    "taskId": "01a14dca-e074-7440-aba5-de317145911e",
+    "kind": "smoke base mesh",
+    "state": "submitted; completion not verified by command session",
+    "cost": "owner ledger pending"
+  }
+}

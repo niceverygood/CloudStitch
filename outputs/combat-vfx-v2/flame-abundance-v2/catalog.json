@@ -1,0 +1,243 @@
+{
+  "title": "Cloudstitch · 풍성한 화염 v2",
+  "count": 5,
+  "items": [
+    {
+      "title": "Cloudstitch",
+      "weapon": "classic-06-flamethrower",
+      "name": "화염방사기",
+      "action": "projectile",
+      "mode": "flame",
+      "description": "압력 준비 → 겹겹의 화염 분사 → 연기 여운",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [],
+      "flameAbundance": {
+        "newVisualNodes": 359,
+        "design": "Ivory hot rolling cores, coral/gold pointed tongues, ivory twist ribbons, ember trajectories, scalloped burning beds, late lifted smoke; five distinct rhythms",
+        "runtimeBloomRequired": false
+      },
+      "sourceNormalRepairs": [],
+      "id": "classic-06-flamethrower",
+      "model": "assets/classic-06-flamethrower.glb",
+      "before": "../fantasy-weapon-firing-v1/assets/classic-06-flamethrower.glb",
+      "bytes": 5221260,
+      "sha256": "d6f10c1aebde464814e8059ee67f596a8ad5809af5bece27d0d403b7e84dcad5",
+      "source": {
+        "path": "outputs/weapon-modules/06-flamethrower/weapon.glb",
+        "bytes": 3776868,
+        "sha256": "8064c695bbc2b5e845fb0df0fbdc8fbc046d2293d2e4f93306d05c2f4dc8f2cd"
+      },
+      "tracks": 717
+    },
+    {
+      "title": "Cloudstitch",
+      "weapon": "extra-13-comet-rocket-rack",
+      "name": "혜성 로켓 선반",
+      "action": "projectile",
+      "mode": "rocket",
+      "description": "레일 점화 → 삼발 로켓 순차 가속 → 세 차례 충격",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "inclined_triple_rail_carriage",
+          "node": "13-comet-rocket-rack_inclined_triple_rail_carriage_STATIC_142"
+        },
+        {
+          "semantic": "individual_comet_prop_0",
+          "node": "13-comet-rocket-rack_individual_comet_prop_0_147"
+        },
+        {
+          "semantic": "individual_comet_prop_1",
+          "node": "13-comet-rocket-rack_individual_comet_prop_1_176"
+        },
+        {
+          "semantic": "individual_comet_prop_2",
+          "node": "13-comet-rocket-rack_individual_comet_prop_2_205"
+        }
+      ],
+      "flameAbundance": {
+        "newVisualNodes": 270,
+        "design": "Ivory hot rolling cores, coral/gold pointed tongues, ivory twist ribbons, ember trajectories, scalloped burning beds, late lifted smoke; five distinct rhythms",
+        "runtimeBloomRequired": false
+      },
+      "sourceNormalRepairs": [],
+      "id": "extra-13-comet-rocket-rack",
+      "model": "assets/extra-13-comet-rocket-rack.glb",
+      "before": "../fantasy-weapon-firing-v1/assets/extra-13-comet-rocket-rack.glb",
+      "bytes": 5527208,
+      "sha256": "31a714693e9cd4cd23629879b2d829d47032076455e922c6df50af276884608c",
+      "source": {
+        "path": "outputs/grounded-weapons-v2/assets/13-comet-rocket-rack.glb",
+        "bytes": 4174696,
+        "sha256": "8f09f6693ba1bd5f4b5f5dc175c03a57f79852933e574bee7ea7485ed4f0f059"
+      },
+      "tracks": 674
+    },
+    {
+      "title": "Cloudstitch",
+      "weapon": "classic-02-deck-cannon",
+      "name": "함포",
+      "action": "projectile",
+      "mode": "cannon",
+      "description": "묵직한 반동 → 포탄 비행 → 목재 분출",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [],
+      "flameAbundance": {
+        "newVisualNodes": 264,
+        "design": "Ivory hot rolling cores, coral/gold pointed tongues, ivory twist ribbons, ember trajectories, scalloped burning beds, late lifted smoke; five distinct rhythms",
+        "runtimeBloomRequired": false
+      },
+      "sourceNormalRepairs": [],
+      "id": "classic-02-deck-cannon",
+      "model": "assets/classic-02-deck-cannon.glb",
+      "before": "../fantasy-weapon-firing-v1/assets/classic-02-deck-cannon.glb",
+      "bytes": 5242788,
+      "sha256": "6eb20dbf844c2942b2794c9a1a4f8cdecb6e89a98ae84aa855d11074343b88c9",
+      "source": {
+        "path": "outputs/weapon-modules/02-deck-cannon/weapon.glb",
+        "bytes": 3961552,
+        "sha256": "562e59a148eb164d02a4ad0bfe2cffd88ea3fbf72c36598a982d5eea698f03cd"
+      },
+      "tracks": 572
+    },
+    {
+      "title": "Cloudstitch",
+      "weapon": "classic-03-mortar",
+      "name": "박격포",
+      "action": "projectile",
+      "mode": "lob",
+      "description": "예비 장전 → 포물선 투척 → 상부 명중",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [],
+      "flameAbundance": {
+        "newVisualNodes": 90,
+        "design": "Ivory hot rolling cores, coral/gold pointed tongues, ivory twist ribbons, ember trajectories, scalloped burning beds, late lifted smoke; five distinct rhythms",
+        "runtimeBloomRequired": false
+      },
+      "sourceNormalRepairs": [],
+      "id": "classic-03-mortar",
+      "model": "assets/classic-03-mortar.glb",
+      "before": "../fantasy-weapon-firing-v1/assets/classic-03-mortar.glb",
+      "bytes": 4708440,
+      "sha256": "111c761a09f517cf93ca9a3845445882f931f6c57f7a2509ae466ca6ff438591",
+      "source": {
+        "path": "outputs/weapon-modules/03-mortar/weapon.glb",
+        "bytes": 3674748,
+        "sha256": "f323b2129defc4b81efa36679e585101948e7aaf9b2437772e910bc0f0ee3f8f"
+      },
+      "tracks": 224
+    },
+    {
+      "title": "Cloudstitch",
+      "weapon": "extra-17-bomb-dropper",
+      "name": "구름방울 투하대",
+      "action": "drop",
+      "mode": "drop",
+      "description": "걸쇠 해제 → 실제 수직 투하 → 지면 충격",
+      "duration": 4.2,
+      "fireTime": 0.65,
+      "contactTime": 1.45,
+      "phases": [
+        "anticipation",
+        "actuation",
+        "travel_or_extension",
+        "contact_or_capture",
+        "settle"
+      ],
+      "coordinates": "+Y up; normalized review scale; source coordinates preserved under wrapper",
+      "reviewOnly": true,
+      "productionSocket": false,
+      "gameplayPhysics": false,
+      "damage": false,
+      "audio": false,
+      "standardAnimation": "glTF TRS only; embedded unlit vertex colours and painted planes; no opacity extension or runtime billboards",
+      "bindings": [
+        {
+          "semantic": "individual_cloud_drop_prop_1",
+          "node": "17-bomb-dropper_individual_cloud_drop_prop_1_166"
+        }
+      ],
+      "flameAbundance": {
+        "newVisualNodes": 106,
+        "design": "Ivory hot rolling cores, coral/gold pointed tongues, ivory twist ribbons, ember trajectories, scalloped burning beds, late lifted smoke; five distinct rhythms",
+        "runtimeBloomRequired": false
+      },
+      "sourceNormalRepairs": [],
+      "id": "extra-17-bomb-dropper",
+      "model": "assets/extra-17-bomb-dropper.glb",
+      "before": "../fantasy-weapon-firing-v1/assets/extra-17-bomb-dropper.glb",
+      "bytes": 4265980,
+      "sha256": "40a12099fd07a86580ce5d1c44d064293e7fc175f4853e2b752c88fbff135047",
+      "source": {
+        "path": "outputs/grounded-weapons-v2/assets/17-bomb-dropper.glb",
+        "bytes": 3180492,
+        "sha256": "6cc94e9e298f18adba66a7ea10fb85648c78c678f3881b00900702007653b906"
+      },
+      "tracks": 245
+    }
+  ]
+}

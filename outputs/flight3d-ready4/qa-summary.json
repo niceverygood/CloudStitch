@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "status": "ready-for-user-flight-test",
+  "testedManifestSha256": "015a0e28694b17f64e3202e3fe4537fe7c9ad98e3b1a7210e154a27b7cb29724",
+  "nodeTests": {
+    "passed": 25,
+    "total": 25
+  },
+  "sourceChecks": {
+    "passed": 4,
+    "total": 4
+  },
+  "browserChecks": {
+    "passed": 17,
+    "total": 17
+  },
+  "controls": {
+    "rise": "Q",
+    "descend": "E",
+    "horizontal": "WASD",
+    "boost": "Shift",
+    "shoot": "left click",
+    "orbit": "right drag"
+  },
+  "changes": "Half-speed lateral movement with gentler acceleration and a 90-degrees-per-second heading limit.",
+  "scope": "Independent XYZ gameplay sandbox. Real browser keyboard/mouse/touch tests; no long-session performance, campaign or save integration certification.",
+  "evidenceAddedAfterTestedManifest": true
+}

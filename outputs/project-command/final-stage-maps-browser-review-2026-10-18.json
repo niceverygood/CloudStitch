@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T07:31:33Z",
+  "status": "stage-map scoped browser acceptance complete",
+  "faultReport": {
+    "path": "outputs/stage-maps-browser-qa-v1/fault-verification.json",
+    "sha256": "e2cad1dce8f16e3c6194763f886c14695b5f4eea585f62806935a6799457e6d0",
+    "passed": true,
+    "checks": 6,
+    "tested": {
+      "sourceManifest": "68d21152291888c91912d9dc9ff519e1007b10e374c282046e017749040cc292",
+      "delivery": "c7dac569a5d2e3ae3f7f38039a41602d8f6d3729344d83b39117466e6727f646"
+    },
+    "errors": []
+  },
+  "boundRevisionMatchesCssHandoff": true,
+  "sameJsAsNormal133": "2b5e564c9a532ed7396cda3ef1654f84b1d440ae68b0efb9e6df165f974f8cf6",
+  "normalEvidence": "source5ff5/delivery4c62 normal133 retained; current CSS fault6 verified separately",
+  "observed": {
+    "loadFailurePaused": true,
+    "timeAtFailure": 0,
+    "hpAtFailure": 100,
+    "reloadUncovered": true,
+    "actualRecoveryMode": "product-button",
+    "sameVoyage": true,
+    "sameSequence": true,
+    "sameResources": true,
+    "sameParts": true,
+    "busyBlur": {
+      "loadingTime": 0,
+      "paused": {
+        "paused": true,
+        "time": 0
+      },
+      "afterBlur": {
+        "paused": true,
+        "time": 0
+      }
+    },
+    "connector": {
+      "injectedTaxPresentationFixture": true,
+      "before": {
+        "rings": 1,
+        "labels": 1
+      },
+      "after": {
+        "rings": 0,
+        "labels": 0
+      },
+      "sameSim": true,
+      "enemyViews": 0,
+      "presentationResets": 1,
+      "action": {
+        "ok": true,
+        "value": true,
+        "generation": 1
+      }
+    }
+  },
+  "scope": "one GLB abort, delayed load/synthetic blur, actual product-button restore, explicit public-adapter tax spawn/clear display fixture; not six-region/boss completion",
+  "notes": [
+    "old connector before0 failure was a fixture precondition issue; final fixture starts1/1 and clears0/0 in same sim",
+    "fault scope text has old manual-reload wording, but actual recoveryMode is product-button; documentation-only clarification requested"
+  ],
+  "commandReview": "read-only report and SHA verification; browser/tests not rerun"
+}

@@ -1,0 +1,38 @@
+{
+  "version": "flight3d-ready-4",
+  "deliveryManifest": "outputs/flight3d-v1/delivery-manifest.json",
+  "deliveryManifestSha256": "d1c7b8a4c51ec5140fbaf2bb1c43b5446da7f12bd5e45a2021e2b81daa9c8c3c",
+  "harness": "tools/flight3d/verify-grab-browser.cjs",
+  "harnessSha256": "04ab6aeb3ff81aa3b70743c8401e16b965370249084cedb38b2fbebae0e62dd1",
+  "testedUrl": "http://127.0.0.1:8840/outputs/flight3d-ready4/index.html",
+  "playableUrl": "http://127.0.0.1:8860/outputs/flight3d-v1/index.html",
+  "equivalence": "Integration imported all 31 owned files byte-for-byte into separate READY4 namespace and compared 4 read-only dependencies. This receipt rechecked shared31+4 after browser QA.",
+  "sourceChecks": {
+    "passed": 6,
+    "total": 6
+  },
+  "browserChecks": {
+    "passed": 20,
+    "total": 20
+  },
+  "previousPhysicsEvidence": "READY3 37 checks; sim/renderer/test sources remain byte-identical. Not rerun or counted as new READY4 checks.",
+  "previousArtifacts": "READY3 owned29+manifest archived exactly; READY2 and original planar/camera outputs preserved.",
+  "scope": "READY4 short actual-browser input QA: grab camera, click/J/button fire separation, cancellation/capture/chords and mobile touch. DOM pointercancel and blur are explicitly injected event-path checks. Flight physics, human feel, real tab hiding and long-session performance are separate.",
+  "omitted": [
+    "Real browser-tab hiding was not exercised. The blur check dispatches a DOM window blur event and verifies its input cleanup path."
+  ],
+  "evidence": [
+    {
+      "path": "outputs/flight3d-ready4-browser-qa-v1/browser-verification.json",
+      "sha256": "b4043c64277875601ffdea99a1282682fba475e9c67ec640212ea99aa1c784ea"
+    },
+    {
+      "path": "outputs/flight3d-ready4-browser-qa-v1/preview-grab.png",
+      "sha256": "a282d090217c85fc795a3858d8cb0f6e27a7b963e89329e4258156c6d6936a28"
+    },
+    {
+      "path": "outputs/flight3d-ready4-browser-qa-v1/preview-mobile.png",
+      "sha256": "6ae350e563c677df4425879622ee7bc1744b39fed154b25e9c7f36ab7bbfb4ed"
+    }
+  ]
+}

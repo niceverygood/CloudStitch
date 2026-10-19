@@ -1,0 +1,21 @@
+Cloudstitch · 무기 발사/작동 표준 애니메이션 GLB24종
+사용자 직접 요청: '판타지 무기 무드보드 만들기'에서 제작한 무기들의 실제발사장면 GLB.
+범위: 기존6/신규12/최신6 실제GLB를 읽기조립. 사격/투척/근접/압력/방어/인양을 구별한다.
+각4.2초 clip1개: 예비동작→기구작동→투사/전개→명중/회수→잔해/복귀.
+비파괴 binary assembler: 원GLB BIN 접두사·메시·이미지·재질은 그대로 유지하고 wrapper/표적/효과/애니메이션을 덧붙인다.
+새18 multipart의 semantic 부품들을 표시용 wrapper pivot에서 회전·이동시킨다.
+원6 단일메시는 분리하지 않고 전체 표시반동만 적용. 표준게임 socket/정밀기구학을 추정하지 않는다.
+공통 아트: 실제원본 손그림/vertex색을 보존, 크림/황동/청록 주형태와 부드러운 기존 수채atlas를 재사용.
+순차연사, 포물선, 순차로켓, 방전분기, 회전원반, 접이방패, 나선절삭, 수직투하, 집게회수를 구별한다.
+화려함은 다층 시간구조/그림면/재료파편으로 설계. 크기만 곱한 최신10배 목표완료나 사람 미술승인으로 표시하지 않는다.
+모든 효과는 표준노드TRS·embeddedunlit/vertex색/alpha 그림면. 런타임sprite/billboard/opacity애니확장 의존0.
+표면접촉 그림면은 고정방향이며 지면투하에서는 지면방향으로 회전. 카메라를따르는sprite아님.
+실제게임sim/충돌/피해/장착/물리/음향 미구현, 연출시연장면과 실제게임권위를 구별한다.
+기존original24GLB/무드보드/리뷰/READY 원본 읽기보존. 새유료·설치·게임코드변경0.
+기존deps NODE_PATH work/combat-vfx-v2/deps/node_modules.
+CPU소스준비: node --check glb.cjs/scenes.cjs/build.cjs/verify.cjs, node build.cjs.
+중앙슬롯 START 후만: node build.cjs --export --slot-start; node verify.cjs --slot-start.
+이후 실제browser에서 index.html GLB24 순차로딩/clip1/움직임/대표시간카메라/렌더/다운로드/모바일 검수.
+viewer는 로컬HTTP로 제공. index.html/catalog.json/assets 경로 유지, 외부요청 없이 offline-local.
+검증은 verification-glb.json / verification-browser.json과 실제PNG를 별도로 기록한다.
+최종 기술검사: 공식 glTF validator 오류0/경고0 ×24. 실제 geometry animation reload24 ×7poses. 실제 원텍스처 browser reload/render/scrub24/24, 다운로드SHA 및390px PASS. 원본사슬탄의0법선4개만새GLB복사본에서보정,원BIN·원본파일보존. 시연점·경로·카메라·기구학은아트리뷰용근사이며게임소켓/물리확정아님. 미술승인은사용자검토대기.

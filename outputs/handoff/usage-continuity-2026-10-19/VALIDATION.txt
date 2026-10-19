@@ -1,0 +1,24 @@
+검증과 한계 · 2026-10-19 KST
+
+실제 확인
+- 사용량 API: codex used31 / remaining69 / 7일창. 조건 미충족.
+- 자동화 tool create: ID5, ACTIVE. view로 등록카드를 확인.
+- git worktree list: 공유main과 별도codex/desktop-integration checkout의 실제위치/HEAD 확인.
+- 세션목록: 비보관50+보관3=53. 보관 nextCursor=null.
+- Cloudstitch 세션19+그외33=52개에 별도인계기록. ‘플랜 업그레이드 초기화 확인’ 1개는 SESSION_REGISTRY의 목록만 보존.
+- JSON 문서 전체 파싱 PASS.
+- 실제 두 checkout metadata-only 검사: 공유5534파일/8,798,941,188B,통합3970파일/5,525,042,351B,stat경고0. 본문/해시/복사없이 확인했고 제외목록은각38/32개다. WORKSPACE_METADATA.json 참조.
+- 이식도구 임시 Git/worktree fixture 6건 PASS: 무복사기본,미커밋/미추적/한글/다중worktree격리,일반session/runtime/auth소스포함,인증이름제외,파일변동/LFS포인터/의심비밀중단,ZIP전체/개별SHA·크기검증 및 변조실패.
+- 원본소스/자산/공통package를 바꾸지 않고 tools/handoff와 이인계폴더만 새로 작성.
+
+실행하지 않은 것
+- 실제 프로젝트 대형ZIP/전체자산해시/새PC복구·게임실행 검증.
+- 다른게임 실제소스복사·과거경로존재확인·원격최신상태독립검증.
+- native채팅원문·첨부전체export/계정간자동복원/브라우저저장/인증복사.
+- 타채팅메시지/작업재개/기존PAUSED자동화변경/commit/push/외부업로드/배포/유료생성.
+
+범위
+비보관목록은50개상한이며 이전비보관/다른호스트·계정은 누락가능. 세션읽기중에도 작업은 계속변경된다.
+기본인계는10월19일의준비본이다. 임계치에서 최신상태로 별도revision을 만든다.
+COMPLETE/VERIFIED는선별파일·manifest 일치이며 전체계정/게임완성/모든비밀탐지/원자적동결보장이 아니다.
+점검은로컬앱·컴퓨터·권한·잔여사용량에 의존하고30분사이소진시완료를보장하지않는다.

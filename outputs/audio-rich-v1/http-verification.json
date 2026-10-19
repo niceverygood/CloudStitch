@@ -1,0 +1,541 @@
+{
+  "version": "audio-rich-http-qa/v1",
+  "createdAt": "2026-10-18T09:39:44.459Z",
+  "base": "http://127.0.0.1:8866/outputs/audio-rich-v1/",
+  "passed": true,
+  "total": 107,
+  "passedCount": 107,
+  "checks": [
+    {
+      "name": "entry_and_self_csp",
+      "passed": true
+    },
+    {
+      "name": "local_resource:../../tools/audio/rich-v1/review.mjs",
+      "passed": true
+    },
+    {
+      "name": "local_resource:../../tools/audio/rich-v1/review.css",
+      "passed": true
+    },
+    {
+      "name": "local_resource:catalog.json",
+      "passed": true
+    },
+    {
+      "name": "audio:original/fire-machinegun.mp3",
+      "passed": true,
+      "bytes": 13835
+    },
+    {
+      "name": "audio:enhanced/fire-machinegun.wav",
+      "passed": true,
+      "bytes": 149104
+    },
+    {
+      "name": "audio:original/machinegun-feed.mp3",
+      "passed": true,
+      "bytes": 13835
+    },
+    {
+      "name": "audio:enhanced/machinegun-feed.wav",
+      "passed": true,
+      "bytes": 147340
+    },
+    {
+      "name": "audio:original/fire-cannon.mp3",
+      "passed": true,
+      "bytes": 20105
+    },
+    {
+      "name": "audio:enhanced/fire-cannon.wav",
+      "passed": true,
+      "bytes": 239948
+    },
+    {
+      "name": "audio:enhanced/cannon-breech.wav",
+      "passed": true,
+      "bytes": 239948
+    },
+    {
+      "name": "audio:enhanced/fire-mortar.wav",
+      "passed": true,
+      "bytes": 158804
+    },
+    {
+      "name": "audio:original/fire-mortar.mp3",
+      "passed": true,
+      "bytes": 13835
+    },
+    {
+      "name": "audio:original/cannon-breech.mp3",
+      "passed": true,
+      "bytes": 21358
+    },
+    {
+      "name": "audio:original/mortar-fall.mp3",
+      "passed": true,
+      "bytes": 20105
+    },
+    {
+      "name": "audio:enhanced/mortar-fall.wav",
+      "passed": true,
+      "bytes": 229364
+    },
+    {
+      "name": "audio:enhanced/fire-harpoon.wav",
+      "passed": true,
+      "bytes": 190556
+    },
+    {
+      "name": "audio:original/fire-harpoon.mp3",
+      "passed": true,
+      "bytes": 17179
+    },
+    {
+      "name": "audio:original/harpoon-embed.mp3",
+      "passed": true,
+      "bytes": 12163
+    },
+    {
+      "name": "audio:enhanced/harpoon-embed.wav",
+      "passed": true,
+      "bytes": 137680
+    },
+    {
+      "name": "audio:enhanced/harpoon-tension-loop.wav",
+      "passed": true,
+      "bytes": 705644
+    },
+    {
+      "name": "audio:original/harpoon-tension-loop.mp3",
+      "passed": true,
+      "bytes": 65244
+    },
+    {
+      "name": "audio:enhanced/fire-chain.wav",
+      "passed": true,
+      "bytes": 194084
+    },
+    {
+      "name": "audio:original/chain-spin.mp3",
+      "passed": true,
+      "bytes": 23030
+    },
+    {
+      "name": "audio:original/fire-chain.mp3",
+      "passed": true,
+      "bytes": 17179
+    },
+    {
+      "name": "audio:enhanced/chain-spin.wav",
+      "passed": true,
+      "bytes": 251416
+    },
+    {
+      "name": "audio:enhanced/flame-ignite.wav",
+      "passed": true,
+      "bytes": 157040
+    },
+    {
+      "name": "audio:original/flame-ignite.mp3",
+      "passed": true,
+      "bytes": 13835
+    },
+    {
+      "name": "audio:enhanced/flame-stop.wav",
+      "passed": true,
+      "bytes": 129744
+    },
+    {
+      "name": "audio:enhanced/hit-wood.wav",
+      "passed": true,
+      "bytes": 137680
+    },
+    {
+      "name": "audio:original/flame-spray-loop.mp3",
+      "passed": true,
+      "bytes": 65244
+    },
+    {
+      "name": "audio:enhanced/flame-spray-loop.wav",
+      "passed": true,
+      "bytes": 705644
+    },
+    {
+      "name": "audio:original/hit-wood.mp3",
+      "passed": true,
+      "bytes": 12163
+    },
+    {
+      "name": "audio:original/flame-stop.mp3",
+      "passed": true,
+      "bytes": 12163
+    },
+    {
+      "name": "audio:enhanced/hit-cloth.wav",
+      "passed": true,
+      "bytes": 164980
+    },
+    {
+      "name": "audio:enhanced/hit-armor.wav",
+      "passed": true,
+      "bytes": 174680
+    },
+    {
+      "name": "audio:original/hit-armor.mp3",
+      "passed": true,
+      "bytes": 15089
+    },
+    {
+      "name": "audio:original/hit-cloth.mp3",
+      "passed": true,
+      "bytes": 15089
+    },
+    {
+      "name": "audio:enhanced/hit-engine.wav",
+      "passed": true,
+      "bytes": 211724
+    },
+    {
+      "name": "audio:original/hit-engine.mp3",
+      "passed": true,
+      "bytes": 18433
+    },
+    {
+      "name": "audio:enhanced/module-break.wav",
+      "passed": true,
+      "bytes": 215252
+    },
+    {
+      "name": "audio:enhanced/mortar-impact.wav",
+      "passed": true,
+      "bytes": 292868
+    },
+    {
+      "name": "audio:enhanced/connector-cut.wav",
+      "passed": true,
+      "bytes": 202904
+    },
+    {
+      "name": "audio:original/mortar-impact.mp3",
+      "passed": true,
+      "bytes": 24702
+    },
+    {
+      "name": "audio:original/connector-cut.mp3",
+      "passed": true,
+      "bytes": 18433
+    },
+    {
+      "name": "audio:original/module-break.mp3",
+      "passed": true,
+      "bytes": 18433
+    },
+    {
+      "name": "audio:enhanced/bundle-detach.wav",
+      "passed": true,
+      "bytes": 261116
+    },
+    {
+      "name": "audio:original/bundle-detach.mp3",
+      "passed": true,
+      "bytes": 23030
+    },
+    {
+      "name": "audio:enhanced/winch-loop.wav",
+      "passed": true,
+      "bytes": 705644
+    },
+    {
+      "name": "audio:original/winch-loop.mp3",
+      "passed": true,
+      "bytes": 65244
+    },
+    {
+      "name": "audio:original/salvage-complete.mp3",
+      "passed": true,
+      "bytes": 20105
+    },
+    {
+      "name": "audio:enhanced/salvage-complete.wav",
+      "passed": true,
+      "bytes": 229364
+    },
+    {
+      "name": "audio:original/cargo-drop.mp3",
+      "passed": true,
+      "bytes": 17179
+    },
+    {
+      "name": "audio:original/engine-idle-loop.mp3",
+      "passed": true,
+      "bytes": 97009
+    },
+    {
+      "name": "audio:original/bundle-lost.mp3",
+      "passed": true,
+      "bytes": 21358
+    },
+    {
+      "name": "audio:enhanced/engine-idle-loop.wav",
+      "passed": true,
+      "bytes": 1058444
+    },
+    {
+      "name": "audio:enhanced/cargo-drop.wav",
+      "passed": true,
+      "bytes": 195848
+    },
+    {
+      "name": "audio:enhanced/bundle-lost.wav",
+      "passed": true,
+      "bytes": 245240
+    },
+    {
+      "name": "audio:original/engine-cruise-loop.mp3",
+      "passed": true,
+      "bytes": 97009
+    },
+    {
+      "name": "audio:enhanced/engine-cruise-loop.wav",
+      "passed": true,
+      "bytes": 1058444
+    },
+    {
+      "name": "audio:enhanced/wind-calm-loop.wav",
+      "passed": true,
+      "bytes": 1058444
+    },
+    {
+      "name": "audio:original/wind-calm-loop.mp3",
+      "passed": true,
+      "bytes": 97009
+    },
+    {
+      "name": "audio:original/wind-fast-loop.mp3",
+      "passed": true,
+      "bytes": 97009
+    },
+    {
+      "name": "audio:enhanced/wind-fast-loop.wav",
+      "passed": true,
+      "bytes": 1058444
+    },
+    {
+      "name": "audio:enhanced/harbor-workshop-loop.wav",
+      "passed": true,
+      "bytes": 1058444
+    },
+    {
+      "name": "audio:enhanced/lift-danger-loop.wav",
+      "passed": true,
+      "bytes": 705644
+    },
+    {
+      "name": "audio:enhanced/hull-creak-loop.wav",
+      "passed": true,
+      "bytes": 1058444
+    },
+    {
+      "name": "audio:original/lift-danger-loop.mp3",
+      "passed": true,
+      "bytes": 65244
+    },
+    {
+      "name": "audio:original/hull-creak-loop.mp3",
+      "passed": true,
+      "bytes": 97009
+    },
+    {
+      "name": "audio:original/harbor-workshop-loop.mp3",
+      "passed": true,
+      "bytes": 97009
+    },
+    {
+      "name": "audio:original/lift-warning.mp3",
+      "passed": true,
+      "bytes": 15089
+    },
+    {
+      "name": "audio:enhanced/incoming-warning.wav",
+      "passed": true,
+      "bytes": 149984
+    },
+    {
+      "name": "audio:enhanced/lift-warning.wav",
+      "passed": true,
+      "bytes": 164980
+    },
+    {
+      "name": "audio:enhanced/defeat.wav",
+      "passed": true,
+      "bytes": 335204
+    },
+    {
+      "name": "audio:original/incoming-warning.mp3",
+      "passed": true,
+      "bytes": 13835
+    },
+    {
+      "name": "audio:original/defeat.mp3",
+      "passed": true,
+      "bytes": 29300
+    },
+    {
+      "name": "audio:enhanced/harbor-repair.wav",
+      "passed": true,
+      "bytes": 253180
+    },
+    {
+      "name": "audio:original/harbor-repair.mp3",
+      "passed": true,
+      "bytes": 23030
+    },
+    {
+      "name": "audio:enhanced/harbor-equip.wav",
+      "passed": true,
+      "bytes": 205552
+    },
+    {
+      "name": "audio:original/harbor-equip.mp3",
+      "passed": true,
+      "bytes": 18433
+    },
+    {
+      "name": "audio:original/return.mp3",
+      "passed": true,
+      "bytes": 24702
+    },
+    {
+      "name": "audio:enhanced/return.wav",
+      "passed": true,
+      "bytes": 282284
+    },
+    {
+      "name": "audio:original/harbor-store.mp3",
+      "passed": true,
+      "bytes": 20105
+    },
+    {
+      "name": "audio:enhanced/harbor-store.wav",
+      "passed": true,
+      "bytes": 227600
+    },
+    {
+      "name": "audio:enhanced/harbor-depart.wav",
+      "passed": true,
+      "bytes": 244360
+    },
+    {
+      "name": "audio:enhanced/save-ok.wav",
+      "passed": true,
+      "bytes": 127980
+    },
+    {
+      "name": "audio:original/harbor-depart.mp3",
+      "passed": true,
+      "bytes": 21358
+    },
+    {
+      "name": "audio:original/save-ok.mp3",
+      "passed": true,
+      "bytes": 12163
+    },
+    {
+      "name": "audio:original/ui-fail.mp3",
+      "passed": true,
+      "bytes": 10492
+    },
+    {
+      "name": "audio:enhanced/ui-fail.wav",
+      "passed": true,
+      "bytes": 112060
+    },
+    {
+      "name": "audio:enhanced/ui-hover.wav",
+      "passed": true,
+      "bytes": 87892
+    },
+    {
+      "name": "audio:enhanced/ui-confirm.wav",
+      "passed": true,
+      "bytes": 112940
+    },
+    {
+      "name": "audio:original/ui-hover.mp3",
+      "passed": true,
+      "bytes": 8820
+    },
+    {
+      "name": "audio:original/ui-confirm.mp3",
+      "passed": true,
+      "bytes": 10492
+    },
+    {
+      "name": "audio:original/ui-back.mp3",
+      "passed": true,
+      "bytes": 10492
+    },
+    {
+      "name": "audio:enhanced/restore-ok.wav",
+      "passed": true,
+      "bytes": 164096
+    },
+    {
+      "name": "audio:enhanced/ui-back.wav",
+      "passed": true,
+      "bytes": 111176
+    },
+    {
+      "name": "audio:enhanced/mortar-launch-a.wav",
+      "passed": true,
+      "bytes": 127936
+    },
+    {
+      "name": "audio:original/mortar-launch-a.mp3",
+      "passed": true,
+      "bytes": 11327
+    },
+    {
+      "name": "audio:original/restore-ok.mp3",
+      "passed": true,
+      "bytes": 15089
+    },
+    {
+      "name": "audio:enhanced/mortar-launch-b.wav",
+      "passed": true,
+      "bytes": 145576
+    },
+    {
+      "name": "audio:original/mortar-launch-b.mp3",
+      "passed": true,
+      "bytes": 12581
+    },
+    {
+      "name": "boundary:/README.md",
+      "passed": true,
+      "status": 403
+    },
+    {
+      "name": "boundary:/outputs/audio-review-v2/catalog.json",
+      "passed": true,
+      "status": 403
+    },
+    {
+      "name": "boundary:/outputs/audio-rich-v1/%2e%2e%5c%2e%2e%5cREADME.md",
+      "passed": true,
+      "status": 403
+    },
+    {
+      "name": "read_only_server",
+      "passed": true
+    },
+    {
+      "name": "all_audio_requested",
+      "passed": true
+    }
+  ],
+  "scope": "Local HTTP MIME, actual downloaded byte counts and SHA, dependency loading, read-only boundary. No browser playback or human listening.",
+  "externalRequests": 0
+}

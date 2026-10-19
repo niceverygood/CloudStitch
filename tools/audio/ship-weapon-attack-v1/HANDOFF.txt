@@ -1,0 +1,26 @@
+Cloudstitch · 장착 무기 3계열 전용 음향 v1
+
+요청: 사용자 직접 '세 계열 함선에 장착한 무기로 실제 공격하는 비교 시안, 발사·반동·명중 효과와 음향 연결, 한몸처럼 움직이고 과감하고 풍성한 타격감'. 총괄의 실제 사용자 턴을 직접 읽어 확인했다.
+소유: tools/audio/ship-weapon-attack-v1/ 및 outputs/audio-ship-weapon-attack-v1/만. tools/ship-weapon-attack-v1 소비자와 원 audio-cinematic-v5는 읽기 보존.
+
+새3계열×4이벤트(launch/flight/hit/recovery)×2variant(basic/enhanced)=24개 독립 PCM16 WAV, 이벤트별 동일 RMS 비교12개, 실제 contract clock 시퀀스6개+비교3개=9개. 총45WAV.
+합성/믹싱은 로컬 절차적 시제품. 직접 청취를 수행하지 않았으며 기술PASS를 청감·10배 표현 승인으로 표시하지 않는다.
+
+기동: 활줄의 비조화 배음/짧은 광대역 release, 황동 rack, 낮은 받침 반응, 목재 관통과 섬유 잔해.
+포격: 실제 각 로켓 event당 짧은 점화1개, 낮은 pressure sweep와 배기 wash, 명중의 큰 저역 몸통·파열·시간차 잔해.
+인양: 무거운 release/기계 몸통, 케이블 spool·배음 장력, 목재·금속 관통과 윈치 정착.
+강화는 레이어/재료·위치·짧은 enclosure stereo 반사·리듬을 달리하며 같은event의 basic/enhanced를 실제 PCM RMS 맞춤. 단순 gain 증가 아님.
+
+실제 전달 peak최대 .8499756 (-1.41dBFS 이하), clip0. launch≤.55/hit≤1.3/flight≤.65/recovery≤.9초. loop false. 최초10ms 신호/끝fade/mono 유한성 확인.
+기존 v5의 기록/합성된 프로젝트 큐를 짧게 추출하고 새로운 oscillator/noise/material layers를 합성한다. 원파일 SHA와 라이선스 참고를 cue.source에 기록하고 recipe.layers로 합성기여를 공개한다. 새로운 외부샘플·유료·음악·음성0. 기존 제공자 계정 원소스 약관은 계속 적용한다.
+
+cue-map.json cues [{branch,variant,phase,path,duration,peak,rms,...}] 제공하며 mode/event/file alias도 함께 있다. path는cue-map 폴더상대. 샘플 시퀀스 파일은 actual event cue가 아니므로 발사 이벤트에 사용하지 않는다.
+소비자 sound-contract.json의 db3bc403014e689926a481c750bc646d4342cd4db835221c73f3ba676869d635 revision ship-weapon-attack-clock-r1에 결속했다. 복사본 viewer-sound-contract.json 참조.
+mobility launch .8/1.03/1.26 hit1.25/1.48/1.71 recovery3.4; artillery .9/1.2/1.5 hit1.55/1.85/2.15 recovery3.9; salvage .95/hit1.65/recovery3.6. flight=각launch+.06, gain.16; 다른cue gain.45/master.7/branchpan. 실제중첩·pan을반영한offline6초mix peak최대.392609/clip0. 기본·강화각cue RMS맞춤과순차paired 전체RMS맞춤은 구분한다.
+
+검사225/225 PASS: 24실WAV ID/bytes/hash/format/finite/peak/DC/mono/첫10ms/상한시간/원sourceSHA,12쌍실RMS/무음gap,9sample실hash/actualclock수/혼합peak/pairedRMS,contractSHA,합성결정성·원본입력불변.
+CPU 검사이며 Native playback/실제viewer cue sync·취소/디바이스truepeak/직접청감은0/대기다. 단일viewer쪽user unlock/mute/volume/한variant재생/pause·seek·reset·hidden·end cancellation/중복event 방지는 소비자소유다. 오디오는 자체시뮬레이션·피해·실게임설치0이다.
+
+재현: node tools/audio/ship-weapon-attack-v1/generate.mjs → node tools/audio/ship-weapon-attack-v1/bind-contract.mjs → node tools/audio/ship-weapon-attack-v1/verify.mjs → node tools/audio/ship-weapon-attack-v1/package.mjs
+읽기의존성: v5 catalog와참조12개내외WAV, 소비자sound-contract. 기존deps만/node빌트인. 별도server/browser/추가agent0/추론medium.
+중앙선별import와45WAV폴더scopedLFS는중앙담당. source/output manifest만전달하고 기존수백자산·v5전체를새검사하지 않는다.

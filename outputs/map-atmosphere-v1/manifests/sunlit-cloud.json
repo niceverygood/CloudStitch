@@ -1,0 +1,42 @@
+{
+  "id": "sunlit-cloud",
+  "name_ko": "햇살 이불구름",
+  "category": "clouds",
+  "role": "항로 양옆을 풍성하게 감싸는 넓고 낮은 구름 둑",
+  "motion_ko": "서로 다른 속도로 솟고 가라앉는 세 겹의 구름 숨결",
+  "order": 9,
+  "build_method": "local_vertex_painted_multipart",
+  "status": "visual_asset_prototype",
+  "model": "assets/sunlit-cloud.glb",
+  "preview": "previews/sunlit-cloud.png",
+  "triangles": 9696,
+  "mesh_count": 50,
+  "vertices": 29088,
+  "material_count": 1,
+  "animation_count": 1,
+  "animation_duration": 15,
+  "encoded_color_components": 1167,
+  "bytes": 1106516,
+  "sha256": "b74a176a011a0b6924bbc7de1ca04d5175174c889c46f7df00bc4ce6f88dfa90",
+  "bounds": {
+    "min": [
+      -5.408645926713944,
+      -0.9410192584991455,
+      -2.28193062543869
+    ],
+    "max": [
+      5.3810861611366265,
+      4.16943131685257,
+      2.601460301876068
+    ]
+  },
+  "format": "glTF 2 binary",
+  "vertex_colors": true,
+  "texture_count": 0,
+  "units": "Relative art units; not approved engine meters",
+  "limits": [
+    "Visual prototype: collider, LOD, weather rules, bird AI, interaction and gameplay integration are not implemented.",
+    "Baked vertex color and actual geometry are saved in GLB; outline and display modes belong to the review viewer.",
+    "Animation is keyed mesh/group transformation; fluid simulation, cloth simulation and skeletal bird rig are not included."
+  ]
+}

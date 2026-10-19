@@ -1,0 +1,622 @@
+{
+  "title": "Cloudstitch",
+  "revision": "ranks-grand-v3",
+  "modelCount": 13,
+  "technicalQA": true,
+  "humanArtApproved": false,
+  "growthEvidence": {
+    "minLengthRatio": 1.5865318330981784,
+    "allRootScaleOne": true,
+    "colorRange": [
+      0,
+      1
+    ],
+    "limit": "1.5x richness is an art target; measured length and boundary volume are not equivalent to aesthetic approval."
+  },
+  "files": [
+    {
+      "path": "tools/ship-states/ranks-grand-v3/build.cjs",
+      "bytes": 2909,
+      "sha256": "9156ab2166381fa1ae3322370059b9d138557aaace3ca72938eeffa9d1b13c0b"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/catalog.js",
+      "bytes": 1225,
+      "sha256": "2fd764e92c39a5753f1768a4cb61b1844ef3588b2b3e977bd403f7a88d93a02a"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/check-growth.cjs",
+      "bytes": 2407,
+      "sha256": "e4639b55f4332adddc3bd0f053100ed29479151f9200b103d6ac36023dd04151"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/check-source.cjs",
+      "bytes": 2015,
+      "sha256": "47d699388fb4208f66344f8b0fc0908f37b9bd3dd21e842afde2fe564e25305b"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/export-verify.cjs",
+      "bytes": 7998,
+      "sha256": "3d31bf442693c158f26984a79218a14af8b42cbf29f341ba39c4d538ebf8062d"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/finalize.cjs",
+      "bytes": 2510,
+      "sha256": "95163451e353cc2b09e8a0eb8605365925198d1173fbef39c2df1b931d9ea552"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/models.js",
+      "bytes": 14369,
+      "sha256": "fd367b974dc71fda15f93a64000d77a7f0bc96554feda904d69ab63992bcc4e5"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/parse-glb.cjs",
+      "bytes": 3676,
+      "sha256": "a9a7ef33a82ed0e0645413dae573fc32849bec97110aea301a568299d3167822"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/template.html",
+      "bytes": 6142,
+      "sha256": "f31aa44956ed35d3c57a57cd7c72a3821c223431b1d8184b189332bad768dfc5"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/verify-structure.cjs",
+      "bytes": 5693,
+      "sha256": "58dd707f4143266585e523e1cba27d34a02dc6f25533346c166ec3d871ef89c1"
+    },
+    {
+      "path": "tools/ship-states/ranks-grand-v3/viewer.js",
+      "bytes": 11133,
+      "sha256": "ceaf66e57d2898e272fc499b4b1eb4909df3a000b056085ecb6134f520b16adf"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/all-ranks.png",
+      "bytes": 1064904,
+      "sha256": "4118946542b2d11f305d94545e8dd55ff3dee20b52d1e927dee68e6a23d7487e"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/art-review.json",
+      "bytes": 715,
+      "sha256": "76f43646967cecfcc284349c1bd460f2fd3f21b4764a1d6f147a62b5e309c931"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r2-comparison.png",
+      "bytes": 270488,
+      "sha256": "63347c4fe17aa66dd73de85378f2df5952d700b5f017aaf59b8349c679b75f8c"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r2.glb",
+      "bytes": 2671808,
+      "sha256": "ba01e1fa42d7a65ad120375dc595b9f691da5cddfa503b8d3736e0dab91aa5f8"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r3-comparison.png",
+      "bytes": 280922,
+      "sha256": "4ad88b517eb0dc324c2775cd697a33ae02bea10d724a5bdf7af20655406d3dde"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r3.glb",
+      "bytes": 3491492,
+      "sha256": "d356e49bd48d237257b2fa7559994c0770aef8aa73455b62231e52cdcc8411cb"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r4-comparison.png",
+      "bytes": 282069,
+      "sha256": "7d6d3110e7dc3104ddb8aea2f392b2abf1b6fd950d50d1a8331e3d0f95e40896"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r4.glb",
+      "bytes": 4317028,
+      "sha256": "8fc8df5675d1b9df36f0154a2ec09913dd5fd5461dfc1f4fabb7175b59a1b55f"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r5-comparison.png",
+      "bytes": 305666,
+      "sha256": "f28b09571d8ed7234b3a4095b4637008aaaf4646bfdb9fd26487f016cdc6b479"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r5-mobile390.png",
+      "bytes": 52237,
+      "sha256": "4290f7f0cdc965ed10a11f088f718f619c5e84bd0a74e6c77df1c53906c0838d"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/artillery-r5.glb",
+      "bytes": 5326856,
+      "sha256": "089dc068111bae8b384ff3500819ef444c8efe61d1b2d3a796e3b9d83a46121d"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/build-manifest.json",
+      "bytes": 5369,
+      "sha256": "2cddc0f0bdd403b7b42f45dfb2ff1f4c512ebdfe7a384fbadbd5f17eda9c2b4b"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/catalog.json",
+      "bytes": 2579,
+      "sha256": "6286f2eee7c49aef93d03026d8bd0e0fbbecdf134c81a651e8cf4751260f440d"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/growth-verification.json",
+      "bytes": 5424,
+      "sha256": "d0720a7503d63df18448565d3796cc5e821e4757e37a4c63bcbc2c23485d1b1e"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/HANDOFF.txt",
+      "bytes": 2390,
+      "sha256": "518f4b6769fb480df5d5d53d42eb5ccb101519514d43375206690d7f8a313c10"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/index.html",
+      "bytes": 75620158,
+      "sha256": "61ac186a4cf8c7cbcfdd2b894a6f76d1c4f257a5cee0812a3e176d6603a4c36a"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r2-comparison.png",
+      "bytes": 289902,
+      "sha256": "3ccd97ba268786bfb4d0b7c4300f817cd886fcd3c0d7d66fce88e1eb038f377c"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r2.glb",
+      "bytes": 2888900,
+      "sha256": "0a130575afffe8455a89c5b3bf7921b9e035804b109a7f4811417c39c91ec9cc"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r3-comparison.png",
+      "bytes": 298671,
+      "sha256": "18f75935adbee407c673acaaf3c31d5330ef1e514a4dfdd47827fab8b0a2b0fe"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r3.glb",
+      "bytes": 3569284,
+      "sha256": "065416d43d9ac069932db63a53c5b4fe03cd4c1f6e708eee7c544c6b5268610a"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r4-comparison.png",
+      "bytes": 320443,
+      "sha256": "a3138e8060aaaacfe912131fcaa80ca9140f03b96d0c399972ec7dc858b0d6e4"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r4.glb",
+      "bytes": 4888744,
+      "sha256": "a263a755fbd101773336feb76b75e88b29772252f9e7729e9c2e3e80d22b366a"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r5-comparison.png",
+      "bytes": 342407,
+      "sha256": "ea517ab2bf5640d9fa8c89a1f7f793d8211a59d028960adceb11e64961a23eb5"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r5-mobile390.png",
+      "bytes": 49937,
+      "sha256": "0ee4cf7d4e3200fa1841a0ab3f185415b188c7fb1a5ae6caaeb98855f1391ab8"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/mobility-r5.glb",
+      "bytes": 6144372,
+      "sha256": "b2c7c12a0e4c9bac60cb50a93bf162d8c47b15c6ee088e65584205e73510eb5b"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/overview.png",
+      "bytes": 1462281,
+      "sha256": "ad5a06f84c41ccbb08a020f4ef93fe29ae179fc2e2d3ba4c88740e1e479f9510"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/post-preservation.json",
+      "bytes": 87,
+      "sha256": "cf4d02ce3dba5d880e075e964aea5a93595ddb4cc568ae648dda25dd95297eb3"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/post-verification.json",
+      "bytes": 116,
+      "sha256": "48ca430ab34f440b4e20ef042326730d21e93752e433688f6caac1643120550b"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/all-ranks.png",
+      "bytes": 1063790,
+      "sha256": "43678ef2e7063b26d65d96e3ed13c1c7af7dc081687b485a5d678102ee2267c5"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r2-comparison.png",
+      "bytes": 270542,
+      "sha256": "8ec9a5f36b778c1d89247427921e17ddd469497762e1223c03ff81e694b058fa"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r2.glb",
+      "bytes": 2404968,
+      "sha256": "e7754bbd90824a9fce26a68ba337c24e0730b5eadd67ea8be109232d37c33388"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r3-comparison.png",
+      "bytes": 278696,
+      "sha256": "650a9cb037ea29b096b2b6c56a140fc2d29b89b0d3ad4d41f9f363582ad5052b"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r3.glb",
+      "bytes": 2930616,
+      "sha256": "3a1e4160118f73dbf7dbc1e9d54cb05bd85c5347f82ec3ba556521fd419cb49e"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r4-comparison.png",
+      "bytes": 279783,
+      "sha256": "e58c85f557100b6621cbb67951db4fb44b01a4923346dedfb7b1075028838be2"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r4.glb",
+      "bytes": 3320896,
+      "sha256": "a08f2c4dfaafe690bafc0898f13c4e2df92c9c495640e072cd2f667e35b30cee"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r5-comparison.png",
+      "bytes": 302696,
+      "sha256": "c80154e8421e974749b972019c058963c1f18b3ed5bd5df3689091d8e0619874"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r5-mobile390.png",
+      "bytes": 52097,
+      "sha256": "21b50d2ddac60f8bc584de22b3853319db8e1b3f3a6804b2f91c2ea551e6a8ae"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/artillery-r5.glb",
+      "bytes": 3754304,
+      "sha256": "933e609685240c85a2d32fcce72a39afdc872eecdea20a79df157ec271a6eb58"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/build-manifest.json",
+      "bytes": 5369,
+      "sha256": "d89dd57ee98ab864a864bc80786ff3c340312223ef8a304920d5420b81fccb48"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/catalog.json",
+      "bytes": 2579,
+      "sha256": "6286f2eee7c49aef93d03026d8bd0e0fbbecdf134c81a651e8cf4751260f440d"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/growth-verification.json",
+      "bytes": 5423,
+      "sha256": "e00e1ba0be74965d381af1e97e305c7a7d63ebe8a01cdcad4b322e58e36496d0"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/HANDOFF.txt",
+      "bytes": 1396,
+      "sha256": "be11b4c6883d5982d3945149c09ef18247df701786d3736e483e319d31980d4f"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/index.html",
+      "bytes": 61634398,
+      "sha256": "be39bf05ec0723e88df8b5f79bee8b588fd57d8a69e08d850b061c0ade1bdb23"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r2-comparison.png",
+      "bytes": 291225,
+      "sha256": "1ec7173534e9613aa82a212b5ada37ac539cfbc2d0ed97e5dc52f1887b1b5ca5"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r2.glb",
+      "bytes": 2622124,
+      "sha256": "c74d931785438413f193be56c7287ffaa4c84bf7e901b310a3b083be08b88799"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r3-comparison.png",
+      "bytes": 298510,
+      "sha256": "5eff4ec8694336456652175d159d76d24ff56bb8a9588f003f8954100e574b2e"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r3.glb",
+      "bytes": 3008352,
+      "sha256": "8447ce1f45d76b6add16b7f3d3b165bad6a36ceb52b9790b1d9704f4582ea8e8"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r4-comparison.png",
+      "bytes": 318283,
+      "sha256": "6665e5e4559e65a0615a284db9361294dc43e79417cde0d30629ca4f5aad93e5"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r4.glb",
+      "bytes": 3892592,
+      "sha256": "43f3c5fd4f51573c9052b236be7b3f765d42377d645bbd7023f12feeca64541b"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r5-comparison.png",
+      "bytes": 338387,
+      "sha256": "8fe99c1c03a7b0e87c73ea993888d5eaa196af659b2290991aa516ecb00ff25a"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r5-mobile390.png",
+      "bytes": 49842,
+      "sha256": "3dac24bf1c531f09a01d5b797300f9fc22c0120731f9b18d82a35f0b2a7dae93"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/mobility-r5.glb",
+      "bytes": 4571816,
+      "sha256": "34ab5a7f76c0901bef3616d3ad6f79f6fb7c456bd8fcd550f35b1f9bbc9ec23d"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/models.before.js",
+      "bytes": 12245,
+      "sha256": "bf0ffb8c96b077cc3bd9831c15312d9a4f067e73a3ae834c1150693349611249"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/overview.png",
+      "bytes": 1457103,
+      "sha256": "dbedd3c80898023d83a98fd4c0c5aacaf94f7429ecdb3a91cdafeca914469eb9"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/post-preservation.json",
+      "bytes": 87,
+      "sha256": "9b7dff43e5f0fa1da9eb631cb115edde997014f0a95f65f946491527286c9dba"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/README.txt",
+      "bytes": 1193,
+      "sha256": "fda036fd60c11ff5f9fe04fa356ba282fedce5660334450f5a3bebd26c8f6e9d"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/returnship-r1.glb",
+      "bytes": 2628036,
+      "sha256": "74f47e231e1acaca9888ae6d1ed61a02117c30f0c91eb23b1c310a3448087055"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r2-comparison.png",
+      "bytes": 262817,
+      "sha256": "76f2629caba77868af054e29df15678bbc7bd11407adb22af5cc3cc4874f0ce5"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r2.glb",
+      "bytes": 2399656,
+      "sha256": "b680ca07b71baa1f51d2e8ec4e9ef5a4c306b14639c355e42160235558e3b5a7"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r3-comparison.png",
+      "bytes": 288512,
+      "sha256": "951a9b7122bab76fda0d9dfd91632122049c114bb53237926c0900194ab5d14c"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r3.glb",
+      "bytes": 2981632,
+      "sha256": "56c883ff9f3bfd358b87edf30bde1efcd53c7053b33122f32b28011e11167202"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r4-comparison.png",
+      "bytes": 311984,
+      "sha256": "a0de683b7b06275ea748a5ce1e171baef11de0e0cbfd11ecdb5c7ae0b01fcba8"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r4.glb",
+      "bytes": 3541740,
+      "sha256": "4bcd2182bcdde0ad5b3920757fa4bf80dc8281b5f9a466bc0568747163690fe5"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r5-comparison.png",
+      "bytes": 327714,
+      "sha256": "271d03e1a325bca543e9f619ebd9a1905caa334c8e8f8e4b6155587985eff69a"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r5-mobile390.png",
+      "bytes": 44909,
+      "sha256": "28f52cd31f8f69a4e8a55d6b5b97d781a8b57868a3c41ff281fd0250c418e63d"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/salvage-r5.glb",
+      "bytes": 3879312,
+      "sha256": "cf61055daac9969c1854af05785e0f76355975e869c8d93193ed79f826efcdeb"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/source-ready.json",
+      "bytes": 6465,
+      "sha256": "a2c82633237a6a26eb6f6ed337a500c0634cb5cb1a77c74905bb76941898afb8"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/source-verification.json",
+      "bytes": 3281,
+      "sha256": "56c1fd963ed91377dc3d5faff6c599d45c41abcbc16ea97c442b767decae00ee"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/starter-r1-comparison.png",
+      "bytes": 390633,
+      "sha256": "6ef035977d588847b7a522191d71a2478072e11135ff7f242ed500a8e0b40135"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/qa-initial/verification.json",
+      "bytes": 34714,
+      "sha256": "fff50091fbe159d0e645b9857551c28c710d33edfaf2d098b8edb3ff4af12627"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/README.txt",
+      "bytes": 1538,
+      "sha256": "41eff152111df5040c290145939f8095846446e4b42e1ba5ea17e8432ca46bc7"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/returnship-r1.glb",
+      "bytes": 2628036,
+      "sha256": "74f47e231e1acaca9888ae6d1ed61a02117c30f0c91eb23b1c310a3448087055"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r2-comparison.png",
+      "bytes": 262616,
+      "sha256": "4449d4e872f1ca46022b8ac555560f7e2fb3f50f3b5de3c87242a71550b7add2"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r2.glb",
+      "bytes": 2666448,
+      "sha256": "90593e8e615a5feb38725d6a0e25c7e7075a6f6fcf38da4d4e2bde994e009e59"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r3-comparison.png",
+      "bytes": 289941,
+      "sha256": "56f6957fea23f51f3ab8f3f02a08b5d277b6e88b93431711923210d2c9138b64"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r3.glb",
+      "bytes": 3542680,
+      "sha256": "b35c7847448dc96846aff4e5092a34181bfd3cbc4e5ab4b5a7a219466b5d8318"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r4-comparison.png",
+      "bytes": 314362,
+      "sha256": "5dc7810d46b42a1160bac991218bf78642fada7884634ecceeaa9cf700fea48f"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r4.glb",
+      "bytes": 4537856,
+      "sha256": "989bfd349ff503df9f48b2baaeeaad0a524e91a7a8736c6642cf7ccd3c92e393"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r5-comparison.png",
+      "bytes": 330547,
+      "sha256": "b72337929927daec6327f32bcc4ab81bdcfd24f8d92e9434172096b85c4f2bef"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r5-mobile390.png",
+      "bytes": 45168,
+      "sha256": "ad5a4bb96179aa063a3bec6e32c8f5c808f6567f30a1cfc5456ca9ec64ca94f9"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/salvage-r5.glb",
+      "bytes": 5750592,
+      "sha256": "a37f7a8a1113c1324e814fb626818d0a5e7e6ea1475f8ded2840fd408d988d81"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/source-ready.json",
+      "bytes": 6785,
+      "sha256": "ce2bc4a41b37aee239e9111832a6377a226507d38028a8eac489aad07ca75755"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/source-verification.json",
+      "bytes": 3283,
+      "sha256": "11caabfd5181d5552809d64d2517a1f3e63868a808268acf075e321635792700"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/starter-r1-comparison.png",
+      "bytes": 390633,
+      "sha256": "6ef035977d588847b7a522191d71a2478072e11135ff7f242ed500a8e0b40135"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/verification-structure.json",
+      "bytes": 34454,
+      "sha256": "b57ef3e395fb951ed745efdf311a89e791600a551acd601f115dc267c5086a5a"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-grand-v3/verification.json",
+      "bytes": 34714,
+      "sha256": "fff50091fbe159d0e645b9857551c28c710d33edfaf2d098b8edb3ff4af12627"
+    }
+  ],
+  "readOnly": [
+    {
+      "path": "tools/ship-states/ranks-1to5-v2/models.js",
+      "bytes": 16974,
+      "sha256": "a47ff2ac208b367a17c9c46405a6bef3a21a5a20f6a50f4cc8710b476982d252"
+    },
+    {
+      "path": "tools/ship-states/ranks-1to5-v2/catalog.js",
+      "bytes": 1223,
+      "sha256": "b7bae6b8664ee8e494c74daf446bb1fa094e2b825f7b6ab8f1875662d696ea65"
+    },
+    {
+      "path": "outputs/ship-states-v1/ranks-1to5-v2/delivery-manifest.json",
+      "bytes": 27399,
+      "sha256": "c4f628a41a74839173710547e0885d68af3b51a1d0b50662a1747a789980801b"
+    },
+    {
+      "path": "tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "path": "tools/airship-rig/part-map.json",
+      "bytes": 98796,
+      "sha256": "ef833195fbfb97edb62a1e46a6411b9ce6dbb25b8cc17b1e5c0bcd82f1d86f42"
+    },
+    {
+      "path": "outputs/selected-airship-toon3d/airship.glb",
+      "bytes": 3645884,
+      "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74"
+    },
+    {
+      "path": "outputs/ship-states-v1/star-rank-refits-moodboard-v1/star-rank-refits.png",
+      "bytes": 2734905,
+      "sha256": "a4779b8cea7cde1ba502fdf779b9d2b301f5c43b8954bbfca4c68c40b23b3c96"
+    },
+    {
+      "path": "tools/ship-states/star2-assets-v1/models.js",
+      "bytes": 11475,
+      "sha256": "6ccfa6387b16a34c541c113a2c80c5567509ddcda2f9f49c40317650f9797a94"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/delivery-manifest.json",
+      "bytes": 12660,
+      "sha256": "cd8e0cbad9ff9a1639a2e35122751918f2627b1f9b2e391abb46385dd9282839"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-mobility.glb",
+      "bytes": 2419328,
+      "sha256": "4f65fa51524e941e611b55d0f46e460e45cecc1bc32091df1749f91b38ea0132"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-artillery.glb",
+      "bytes": 2084092,
+      "sha256": "3f39b816b1dbb9aa58ca3b3c850b8466a8e846e144f97d52e93173fd12476946"
+    },
+    {
+      "path": "outputs/ship-states-v1/star2-assets-v1/star2-salvage.glb",
+      "bytes": 2240688,
+      "sha256": "b4e5e940106d9d23daf1ecc5e58b47ce88335cdfb13e67e3a71f309c67167fea"
+    },
+    {
+      "path": "tools/ship-states/star3-assets-v1/models.js",
+      "bytes": 14637,
+      "sha256": "73d850fa6153094827287f3acc7861ecc7a785c3883994f8f23cbc47083e6c9f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/delivery-manifest.json",
+      "bytes": 8497,
+      "sha256": "684db8fb00cf3173f4de77f4f79f036f3c2e1dfafdcdeba506d24ff3006fbbc9"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-mobility.glb",
+      "bytes": 2788424,
+      "sha256": "af7e13de349ba7701c31dbe02fc91806fcec2a2b58de4a3163caad36eb6f6e7f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-artillery.glb",
+      "bytes": 2508648,
+      "sha256": "31baac29f2a4af37fabfa9f62aad7161d479eb1a60a65fb0d9edd125eb407018"
+    },
+    {
+      "path": "outputs/ship-states-v1/star3-assets-v1/star3-salvage.glb",
+      "bytes": 2448220,
+      "sha256": "65ca689f5b41204d897ffd55e1a6c3da1f17fb54a81f3dfa14f051fe330422e3"
+    },
+    {
+      "path": "tools/ship-states/star4-assets-v1/models.js",
+      "bytes": 14169,
+      "sha256": "38a8700f92c99ef065d172050c28ac91440872b24da791211c38d70cefc0d142"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/delivery-manifest.json",
+      "bytes": 12785,
+      "sha256": "7c2a0be6c1819e10d7e1bce9b7c9967362b8725bd6e84f9776ad383163f6829f"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-mobility.glb",
+      "bytes": 2805956,
+      "sha256": "dc1cb4475ac54fa7f6d51dc53267e9d65c69450578c526600dba1cc830b86824"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-artillery.glb",
+      "bytes": 2119084,
+      "sha256": "619cc056ad7eca05faf9d6f90070fa6b8d493f8d925c76cf3ba2e602cc732e16"
+    },
+    {
+      "path": "outputs/ship-states-v1/star4-assets-v1/star4-salvage.glb",
+      "bytes": 2431336,
+      "sha256": "2e9418afe34a1860cc3387acfc409319ac2aadbe0830278000db8185b24f01c6"
+    }
+  ],
+  "post": {
+    "passed": true,
+    "sourcePins": 9,
+    "readOnlyPins": 22,
+    "finallyClosed": true,
+    "originalPreserved": true
+  }
+}

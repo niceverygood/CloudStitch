@@ -1,0 +1,292 @@
+{
+  "version": "audio-v1.0.0-ready",
+  "status": "READY_FOR_NEXT_INTEGRATION_REVISION",
+  "scope": "18 temporary procedural SFX, audition, read-only adapter and frozen-controller host; browser/audio QA pending",
+  "owners": [
+    "tools/audio/",
+    "outputs/audio-v1/",
+    "work/audio/ (ignored intermediates; not included)"
+  ],
+  "files": [
+    {
+      "path": "outputs/audio-v1/README.txt",
+      "bytes": 2197,
+      "sha256": "e5e3ae8e230a9e5214c789ac5c03202783906439001c669087e1a4753bb7b193"
+    },
+    {
+      "path": "outputs/audio-v1/adapter-verification.json",
+      "bytes": 5355,
+      "sha256": "1b8c723650f0b245768da4ad4e5c39c113a81ebd3b2f1fe95e2d8cdd0bdf4cb5"
+    },
+    {
+      "path": "outputs/audio-v1/catalog.json",
+      "bytes": 27417,
+      "sha256": "4d127ecdaad2e116589522a3db456ddbe5e92e2a20e6e4e1b3c3e09daa3c224b"
+    },
+    {
+      "path": "outputs/audio-v1/controller-verification.json",
+      "bytes": 3191,
+      "sha256": "9da27d379e3490dbd82d1ab4d6485545cb1e0ee8ac355cd7a1e0560fe15098b2"
+    },
+    {
+      "path": "outputs/audio-v1/http-verification.json",
+      "bytes": 4102,
+      "sha256": "31a58bc88004944285e596279dd7774e2cb0a5b2937850a85352afb39690c329"
+    },
+    {
+      "path": "outputs/audio-v1/index.html",
+      "bytes": 2402,
+      "sha256": "e06156298da635a217996889450edc9604189d671f696792e0a8ca7885972abd"
+    },
+    {
+      "path": "outputs/audio-v1/previews/bundle-detach.wav",
+      "bytes": 30914,
+      "sha256": "fccd176a8d4fa09c3b427086bb7d02a72b1c8e3e805cdfa33c80954ddfb79358"
+    },
+    {
+      "path": "outputs/audio-v1/previews/connector-cut.wav",
+      "bytes": 24300,
+      "sha256": "063c13a7d148921c38883a2e9dd6c23bf4cfe8b8fa36e64360811b95da2450dd"
+    },
+    {
+      "path": "outputs/audio-v1/previews/engine-loop.wav",
+      "bytes": 88244,
+      "sha256": "99010d644f79e656986ae3f5a0047e86e0ccbf1854f62b340b396e18a8f3d15a"
+    },
+    {
+      "path": "outputs/audio-v1/previews/fire-cannon.wav",
+      "bytes": 27386,
+      "sha256": "97100b6284d19f17cdef2ed3ba07e2c62fd2c7b89734c66e39f58cdd09895e05"
+    },
+    {
+      "path": "outputs/audio-v1/previews/fire-machinegun.wav",
+      "bytes": 7100,
+      "sha256": "69fbd610867166c9bd1393e442be08872e33125ab0acadb7df361fed9c7a4caf"
+    },
+    {
+      "path": "outputs/audio-v1/previews/harbor-equip.wav",
+      "bytes": 22094,
+      "sha256": "af8c03839f263ff2f2934cb51fcc9bbead47f09bc2c1452f3c5656094593c9bc"
+    },
+    {
+      "path": "outputs/audio-v1/previews/harbor-repair.wav",
+      "bytes": 24300,
+      "sha256": "11c368fc371ce8f05b28fd62f51f5754e6c0d7540d487d47fce2d782e2661d50"
+    },
+    {
+      "path": "outputs/audio-v1/previews/hit-armor.wav",
+      "bytes": 22094,
+      "sha256": "e4362e3eb3ec93810f53090f54708e619efd89ec6ff3c018b19a8458ed7d1ea7"
+    },
+    {
+      "path": "outputs/audio-v1/previews/hit-cloth.wav",
+      "bytes": 15920,
+      "sha256": "4204aa0f19f8b05762a319398d1ae026fe3a172004faea5f21fa2881464e7da2"
+    },
+    {
+      "path": "outputs/audio-v1/previews/hit-engine.wav",
+      "bytes": 24740,
+      "sha256": "ec658aa5357e986093f4583d63a286c915715fa36d855f8d75eba63f28c869a7"
+    },
+    {
+      "path": "outputs/audio-v1/previews/hit-wood.wav",
+      "bytes": 15038,
+      "sha256": "bf940b5c5a58c5c9aadb69519b58afd52c2e24f94b7af40ed04e8abd69d55220"
+    },
+    {
+      "path": "outputs/audio-v1/previews/lift-danger-loop.wav",
+      "bytes": 88244,
+      "sha256": "8053d8908f2a1cbc41ea91ecb94c406283027241eda4ed685d4cf78c18927132"
+    },
+    {
+      "path": "outputs/audio-v1/previews/lift-warning.wav",
+      "bytes": 22976,
+      "sha256": "6e85ef8291d62d5f378b54927581e2155096ac70cbaf55c1b4d781109b7e6bbf"
+    },
+    {
+      "path": "outputs/audio-v1/previews/return.wav",
+      "bytes": 37530,
+      "sha256": "54bb16d3390d7f4b66150977604320d1b7e64e36c92ade7a62c91d1d8c487b05"
+    },
+    {
+      "path": "outputs/audio-v1/previews/salvage.wav",
+      "bytes": 37530,
+      "sha256": "759548b430757e7861e00a06adf271d7c5bb3c3d154817869a4030c2bff76b44"
+    },
+    {
+      "path": "outputs/audio-v1/previews/save-ok.wav",
+      "bytes": 15038,
+      "sha256": "b28b3dae35de5402abaea25cd5242afc39b6878844da14bc1dfe2952f21627cc"
+    },
+    {
+      "path": "outputs/audio-v1/previews/ui-fail.wav",
+      "bytes": 13274,
+      "sha256": "e59b4d96bed71d0f74fe58c0661765a687af0c98c31e06427060c2b9008da621"
+    },
+    {
+      "path": "outputs/audio-v1/previews/wind-loop.wav",
+      "bytes": 88244,
+      "sha256": "f36803e1c7338b7d8f8e5fcec0831f7cffece43549c8c3c7cb36b4e419030978"
+    },
+    {
+      "path": "outputs/audio-v1/runtime-verification.json",
+      "bytes": 4423,
+      "sha256": "35b57c537ee280c4e7d69486bfb89d6f8aa970b9e79a863fd0dc40e00bf2af5e"
+    },
+    {
+      "path": "outputs/audio-v1/signal-verification.json",
+      "bytes": 14168,
+      "sha256": "458b92c322f47fb250b5fb14751f862a7741be1605e1ae15e0c40d68a4325a11"
+    },
+    {
+      "path": "outputs/audio-v1/verification.json",
+      "bytes": 876,
+      "sha256": "4441ecabbdaa690aa0bb19fb95366592d4e2695e4163910665cce1ba4b643f88"
+    },
+    {
+      "path": "tools/audio/HANDOFF.md",
+      "bytes": 15322,
+      "sha256": "982e68d988ddab4384cf70f16aa45db066183d210f3811052d17087abb94a1c4"
+    },
+    {
+      "path": "tools/audio/adapter.mjs",
+      "bytes": 16223,
+      "sha256": "82f8d635dab582c1703705fc5a10724271920cc45f6295c6389789fcd201c6c3"
+    },
+    {
+      "path": "tools/audio/audition.mjs",
+      "bytes": 4164,
+      "sha256": "c730b0156f09c42fc1ddea2fde9195e933443ba336a93f155fe7a65a2f229183"
+    },
+    {
+      "path": "tools/audio/finalize.mjs",
+      "bytes": 2741,
+      "sha256": "564ac2c7701a24f66008a42208e1098bebc67e7468402d6ac872bd3ee61827c6"
+    },
+    {
+      "path": "tools/audio/generate.mjs",
+      "bytes": 7060,
+      "sha256": "049bb43b8b9cb53b19d153d235ef31975092c5952a60352c3acd0e76dc6dfac4"
+    },
+    {
+      "path": "tools/audio/host.html",
+      "bytes": 1877,
+      "sha256": "89576ddcb1a346247f55aa3aafa74830a1d59adc39491944d43fc8c7c12c1b6d"
+    },
+    {
+      "path": "tools/audio/host.mjs",
+      "bytes": 6678,
+      "sha256": "bd2c316c9a2a719ca0f7b74380b151c05d84cd593e6f68d41e692806c0f35d9c"
+    },
+    {
+      "path": "tools/audio/offline-check.html",
+      "bytes": 4250,
+      "sha256": "87d634b1d3305cac7478974e810136d220249895d9dbea3e97693d02d2d32a19"
+    },
+    {
+      "path": "tools/audio/offline-check.mjs",
+      "bytes": 7074,
+      "sha256": "7bdc985b9e4a7116b6b128a22c5e6bb795a300b5ad0bfe320830563e31f4a924"
+    },
+    {
+      "path": "tools/audio/panel.mjs",
+      "bytes": 2522,
+      "sha256": "7492c94c82ae47cef405129317e7a4c6422b99c2c0d8816a5c4ca8c0dcc11dd5"
+    },
+    {
+      "path": "tools/audio/runtime.mjs",
+      "bytes": 9306,
+      "sha256": "58b0a35a0116fad6da7abca52c5386092fb7ad76c44321eafc06f54e3357290f"
+    },
+    {
+      "path": "tools/audio/serve.mjs",
+      "bytes": 2344,
+      "sha256": "8b8aa070d6ac82d6102cbb6f4169a72013be8dd3f746de4d10adde3f5b0848c7"
+    },
+    {
+      "path": "tools/audio/style.css",
+      "bytes": 4188,
+      "sha256": "b285632e84203b07c6202b4c9487ce16c65b3b71c0163fedc1b7a2b7f7754bf0"
+    },
+    {
+      "path": "tools/audio/synthesis.mjs",
+      "bytes": 16674,
+      "sha256": "2dbefd33be86a10b7aca0deb9e6fd677ab75a26865ba1ffbe6144329e9356d45"
+    },
+    {
+      "path": "tools/audio/verify-adapter.mjs",
+      "bytes": 23590,
+      "sha256": "30e21425633c3db2c19f4ce5e4caa2c495fced5d05e25c8eb742399a237a726d"
+    },
+    {
+      "path": "tools/audio/verify-all.mjs",
+      "bytes": 2358,
+      "sha256": "6b66fcd70c345899a26bbe5abe900f157803d8aa850768aecd3751d87929b432"
+    },
+    {
+      "path": "tools/audio/verify-controller.mjs",
+      "bytes": 5612,
+      "sha256": "a689918b75e101b0deed8890a014cf1679f1100698ac0a84d76e382e020fb451"
+    },
+    {
+      "path": "tools/audio/verify-http.mjs",
+      "bytes": 2980,
+      "sha256": "89ba716951b5067fdf8a8cf3115fa614294490b49df478fbe1cd9d9303a7f38d"
+    },
+    {
+      "path": "tools/audio/verify-runtime.mjs",
+      "bytes": 18481,
+      "sha256": "f0f1ecad6563df7c4ddf32625bc730ada64ba83eb743782830cbb861e87ca3e7"
+    }
+  ],
+  "totalBytes": 822541,
+  "sourceBoundary": [
+    {
+      "path": "tools/integration/HANDOFF.md",
+      "bytes": 16920,
+      "sha256": "80b34934557421291b4f28ef2899ecc0176c7f4f8b08c1a97da27f329b010dbd"
+    },
+    {
+      "path": "tools/integration/contract.mjs",
+      "bytes": 2040,
+      "sha256": "4cc138ee25d478aa3623072243d0e1565bab7664b029c59b1b00f0c9193dcb26"
+    },
+    {
+      "path": "tools/integration/session.mjs",
+      "bytes": 16568,
+      "sha256": "04a419d1c7158b65f450ccb23981b2d7ece5137ac35edb1fa1ab250b82f279f8"
+    },
+    {
+      "path": "tools/integration/renderer.js",
+      "bytes": 31052,
+      "sha256": "f1cf7b08799f5624f4f86aa938ae372cdc0cca92693c95d256c1ec292d935cf0"
+    },
+    {
+      "path": "tools/integration/ui.js",
+      "bytes": 25370,
+      "sha256": "6395834470e98709372716451124f12b2b2059cd9dbef53e447b75c07527d0d6"
+    },
+    {
+      "path": "tools/battlefield/sim.mjs",
+      "bytes": 31917,
+      "sha256": "49d915d5f906857f28ec2bb6109a97c2739091c8d8b1ecd336768fd393a7fce7"
+    },
+    {
+      "path": "tools/battlefield/integration.mjs",
+      "bytes": 5525,
+      "sha256": "39cf6a211874b56ba5769ec6103c4db7665273376934abd54fab6a421dd2fe7f"
+    }
+  ],
+  "sourceBoundaryPolicy": "No copied/edited integration source. Host imports /integration-source/tools/integration/session.mjs from an explicitly supplied read-only local root. Recheck hashes before reuse.",
+  "exclusions": [
+    {
+      "path": "outputs/audio-v1/handoff-files.json",
+      "reason": "Manifest cannot hash itself; all other owned source/output files are included."
+    }
+  ],
+  "verification": "outputs/audio-v1/verification.json",
+  "handoff": "tools/audio/HANDOFF.md",
+  "browserQa": "pending sequential integration QA",
+  "humanListening": "not performed; numerical checks are not a listening result",
+  "commonFilesChanged": false
+}

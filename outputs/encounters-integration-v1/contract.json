@@ -1,0 +1,2485 @@
+{
+  "version": "encounters-integration-v1",
+  "title": "Cloudstitch",
+  "preparedAt": "2026-10-18T06:27:04.778Z",
+  "readiness": "ready-for-battlefield-integration",
+  "sourceCommit": "e65ab87d2af0c4b08e51f312c9eb0998aa895c69",
+  "ownership": {
+    "sequencing": "encounters director",
+    "spawnPositions": "world adapter candidates",
+    "stateTimeMovementShotsDamage": "battlefield sim.mjs only",
+    "independentRegression": "tools/encounters/core.js; never instantiate it in final integration"
+  },
+  "coordinates": {
+    "plane": "XZ",
+    "up": "+Y",
+    "units": "provisional LU, not metres",
+    "worldCandidateFormat": {
+      "id": "world-safe-point",
+      "x": 0,
+      "z": -40,
+      "safe": true
+    }
+  },
+  "phaseFlow": [
+    "opening",
+    "midboss",
+    "maintenance",
+    "late",
+    "finalboss",
+    "victory"
+  ],
+  "sourceSpawnCounts": {
+    "regions": 6,
+    "normal": 36,
+    "midboss": 6,
+    "finalboss": 6,
+    "total": 48,
+    "distinctEnemyModels": 18,
+    "modelsWithPlayer": 19
+  },
+  "assetBindings": [
+    {
+      "assetId": "player-homeward",
+      "modelPath": "outputs/fleet-v1/ships/player-homeward.glb",
+      "bytes": 4675348,
+      "sha256": "6c0c90123fccf10e7ae315c4a1ee8d63c8e3eb3122b40c95e3c7bebb5a3fb004",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "authoredUnits": "selected-original",
+      "recommendedFleetScale": 10.548523206751055,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "enemy-pirate-scout",
+      "modelPath": "outputs/fleet-v1/ships/enemy-pirate-scout.glb",
+      "bytes": 6699020,
+      "sha256": "bce2d9891de2225d6823cb1c347a4b8d6b7e3dd2f59e056db78530661d131923",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "enemy-cult-blockade",
+      "modelPath": "outputs/fleet-v1/ships/enemy-cult-blockade.glb",
+      "bytes": 8808632,
+      "sha256": "4ec693e705c8d83da58a5a74d87f3248e9775bb5ca93dec60ec48eb1cc2feac8",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "mini-funeral-guard",
+      "modelPath": "outputs/fleet-v1/ships/mini-funeral-guard.glb",
+      "bytes": 6937200,
+      "sha256": "e7d21258a49351ed966f60b3c66d3b9351a8ba38bb6457c280cea9d8dc022139",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "boss-bell-devourer",
+      "modelPath": "outputs/fleet-v1/ships/boss-bell-devourer.glb",
+      "bytes": 13800368,
+      "sha256": "da116ad02e6f4e130988c6c634863f6fbe03df3ef08bc2a1c12d9bb6dcb6b3b6",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "enemy-union-salvage",
+      "modelPath": "outputs/fleet-v1/ships/enemy-union-salvage.glb",
+      "bytes": 8922572,
+      "sha256": "abc322a91da27a88799300b9f2b339a76b07394236d6924b9051d0ffaeb14382",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "enemy-tax-cutter",
+      "modelPath": "outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+      "bytes": 7587232,
+      "sha256": "82e9d32173a6eeb2e7352ab8db1498e24d57e35108a8b48901b529642f3bfc50",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "enemy-union-repair",
+      "modelPath": "outputs/fleet-v1/ships/enemy-union-repair.glb",
+      "bytes": 8206696,
+      "sha256": "5d63d412b28c69141d013f84209278cc3f2b4d49dd2280f4853c4afc195ebf8d",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "WinchCycle"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "enemy-ghost-chaser",
+      "modelPath": "outputs/fleet-v1/ships/enemy-ghost-chaser.glb",
+      "bytes": 7121960,
+      "sha256": "f372e83c0026a36ce72cb33ec826bfcea98416d7d05f2c81861672c11455492e",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "role-enemy-artillery",
+      "modelPath": "outputs/fleet-v1/ships/role-enemy-artillery.glb",
+      "bytes": 7168560,
+      "sha256": "dd910a1f6a70fa5cf18e144e20e114c2de84d2f8870f1cfd67d53beb367f32bd",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "enemy-disguised-wreck",
+      "modelPath": "outputs/fleet-v1/ships/enemy-disguised-wreck.glb",
+      "bytes": 7100040,
+      "sha256": "b0426a691baaca6c0ad4ef9e8c6724900f9108ab5626c9abeff38c77eef220f5",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "mission-bridge-tug",
+      "modelPath": "outputs/fleet-v1/ships/mission-bridge-tug.glb",
+      "bytes": 7097168,
+      "sha256": "2c9941b42c4a98d4c63987595dd2f87052ec287037a7f22eda05e302426655e8",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "WinchCycle"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "mission-union-guard",
+      "modelPath": "outputs/fleet-v1/ships/mission-union-guard.glb",
+      "bytes": 6141340,
+      "sha256": "ba521a6e6bc1f9eefd3307f8e0ded5cd219c4a58118561e6bd7365379ad31b3d",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "rival-night-shift",
+      "modelPath": "outputs/fleet-v1/ships/rival-night-shift.glb",
+      "bytes": 8288468,
+      "sha256": "f512f3081465a4310fe29d069654c28685098fa6759873edc2936e88590f2184",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "boss-shipwright-command",
+      "modelPath": "outputs/fleet-v1/ships/boss-shipwright-command.glb",
+      "bytes": 10187192,
+      "sha256": "d6240f4ec7611155a5694d3f0630d56c557d1375cd7882db3568e492c865e2f2",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "mission-ghost-artillery",
+      "modelPath": "outputs/fleet-v1/ships/mission-ghost-artillery.glb",
+      "bytes": 7542280,
+      "sha256": "9493b52eab1fa9c1e0511bcbb26b3dc8f726ed26ddea2723ffb5e904c2593f23",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "mission-cult-purifier",
+      "modelPath": "outputs/fleet-v1/ships/mission-cult-purifier.glb",
+      "bytes": 7172724,
+      "sha256": "00ed4d0481d3941bf9355508fedf570a6d97c8aa747118b7a26dcab50d1e8d6c",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "boss-fleet-king",
+      "modelPath": "outputs/fleet-v1/ships/boss-fleet-king.glb",
+      "bytes": 10938244,
+      "sha256": "4bc4ec164b14d1c5630ea331c7459007bc8bde611e510f6c261d0682acfe5f0e",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "TurretScan",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    },
+    {
+      "assetId": "boss-last-inhale",
+      "modelPath": "outputs/fleet-v1/ships/boss-last-inhale.glb",
+      "bytes": 5528760,
+      "sha256": "0631ec4f85d291407a5a7184c54c9cd79f276f3851d2b35cf41fb639048d1ff9",
+      "availableActions": [
+        "FloatIdle",
+        "Cruise",
+        "BankTurn",
+        "GustRecovery",
+        "WinchCycle",
+        "FireBurst"
+      ],
+      "authoredUnits": "fleet-kit",
+      "recommendedFleetScale": 1,
+      "status": "asset-built",
+      "note": "Binding only. Battlefield owns LU scale, pose, collision and combat; GLB clips are visual."
+    }
+  ],
+  "regions": [
+    {
+      "id": "stage-01-harbor",
+      "region": "종항 잔해해역",
+      "opening": [
+        {
+          "assetId": "enemy-pirate-scout",
+          "role": "scout",
+          "count": 2,
+          "name": "해적 정찰선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "mini-funeral-guard",
+        "role": "blockade",
+        "name": "소형 장례 경비선",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/40-demo-flow-playtest.txt",
+          "outputs/25-enemy-ai-encounters.txt"
+        ],
+        "roleVariantOf": "mini-funeral-guard",
+        "mechanics": [
+          "느린 방향 전환 뒤 부채꼴 포격",
+          "발사 전 포신 방향과 경계 고정",
+          "장전 뒤 후방 접근 기회"
+        ],
+        "sourceConcept": "원문 데모 미니보스 외형을 이번 판의 중간 교전 역할로 편성",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "maintenance": {
+        "manual": true,
+        "name": "수동 정비",
+        "description": "중간 지휘선 교전 후 사용자가 정비/다음 구간을 선택하는 별도 시제품 흐름. 실제 항구 경제·부품 편집·저장을 자동 구현한 것으로 보지 않음."
+      },
+      "late": [
+        {
+          "assetId": "enemy-pirate-scout",
+          "role": "scout",
+          "count": 1,
+          "name": "해적 정찰선"
+        },
+        {
+          "assetId": "enemy-cult-blockade",
+          "role": "blockade",
+          "count": 1,
+          "name": "교단 봉쇄선"
+        }
+      ],
+      "finalBoss": {
+        "assetId": "boss-bell-devourer",
+        "role": "bell",
+        "name": "종을 삼킨 자",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/10-first-boss.txt",
+          "outputs/68-bell-boss-arena.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "boss-bell-devourer",
+        "mechanics": [
+          "측면 포격 예고와 회복 틈",
+          "넓은 충격파 띠에 안전 간격 유지",
+          "종소리 없이도 경계·HUD로 대응"
+        ],
+        "sourceConcept": "원문 첫 본편 보스의 외형·경고 언어를 참고한 교전 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/17-prologue-mission-script.txt",
+        "outputs/23-act1-main-quests.txt",
+        "outputs/40-demo-flow-playtest.txt",
+        "outputs/10-first-boss.txt",
+        "outputs/68-bell-boss-arena.txt"
+      ]
+    },
+    {
+      "id": "stage-02-canyon",
+      "region": "청록빛 상승기류 협곡",
+      "opening": [
+        {
+          "assetId": "enemy-pirate-scout",
+          "role": "scout",
+          "count": 2,
+          "name": "협곡 정찰선"
+        },
+        {
+          "assetId": "enemy-union-salvage",
+          "role": "salvage",
+          "count": 1,
+          "name": "연합 인양선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "enemy-tax-cutter",
+        "role": "artillery",
+        "name": "협곡 관문 지휘정",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/65-enemy-modular-anatomy.txt",
+          "outputs/102-advanced-encounter.txt",
+          "outputs/25-enemy-ai-encounters.txt"
+        ],
+        "roleVariantOf": "enemy-tax-cutter",
+        "mechanics": [
+          "방향 고정 뒤 느린 포탄",
+          "포격 뒤 회복 중 측후방 접근",
+          "사격 위험과 안전 우회가 함께 보임"
+        ],
+        "sourceConcept": "표준 징세정 외형의 새 제작용 지휘 역할. 새 고유 정사 함명을 추가하지 않음",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "maintenance": {
+        "manual": true,
+        "name": "수동 정비",
+        "description": "중간 지휘선 교전 후 사용자가 정비/다음 구간을 선택하는 별도 시제품 흐름. 실제 항구 경제·부품 편집·저장을 자동 구현한 것으로 보지 않음."
+      },
+      "late": [
+        {
+          "assetId": "enemy-union-salvage",
+          "role": "salvage",
+          "count": 1,
+          "name": "연합 인양선"
+        },
+        {
+          "assetId": "enemy-tax-cutter",
+          "role": "artillery",
+          "count": 1,
+          "name": "녹슨 징세정"
+        },
+        {
+          "assetId": "enemy-union-repair",
+          "role": "repair",
+          "count": 1,
+          "name": "연합 수리선"
+        }
+      ],
+      "finalBoss": {
+        "assetId": "enemy-union-salvage",
+        "role": "salvage",
+        "name": "사슬협곡 인양 지휘선",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/09-enemies.txt",
+          "outputs/25-enemy-ai-encounters.txt",
+          "outputs/33-level-layouts.txt"
+        ],
+        "roleVariantOf": "enemy-union-salvage",
+        "mechanics": [
+          "작살의 얇은 선과 발사 방향 표시",
+          "견인 중 입력 전체 봉쇄 금지",
+          "케이블 공격 뒤 긴 회복 틈"
+        ],
+        "sourceConcept": "일반 인양선 외형의 새 제작용 최종 교전 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/28-weather-and-hazards.txt",
+        "outputs/65-enemy-modular-anatomy.txt",
+        "outputs/102-advanced-encounter.txt",
+        "outputs/103-bridge-mission-script.txt"
+      ]
+    },
+    {
+      "id": "stage-03-storm",
+      "region": "천둥 폭풍벽",
+      "opening": [
+        {
+          "assetId": "enemy-pirate-scout",
+          "role": "scout",
+          "count": 1,
+          "name": "폭풍 정찰선"
+        },
+        {
+          "assetId": "enemy-union-salvage",
+          "role": "salvage",
+          "count": 1,
+          "name": "인양선"
+        },
+        {
+          "assetId": "enemy-ghost-chaser",
+          "role": "charger",
+          "count": 1,
+          "name": "망령 추격선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "mission-bridge-tug",
+        "role": "salvage",
+        "name": "폭풍 견인대장",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/102-advanced-encounter.txt",
+          "outputs/103-bridge-mission-script.txt",
+          "outputs/28-weather-and-hazards.txt"
+        ],
+        "roleVariantOf": "mission-bridge-tug",
+        "mechanics": [
+          "먼 윈치의 준비 동작과 작살 방향 예고",
+          "견인 뒤 선회/회복 틈",
+          "환경과 공격이 모든 회피 방향을 동시에 막지 않음"
+        ],
+        "sourceConcept": "교량 견인정 외형의 폭풍 판 제작용 지휘 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "maintenance": {
+        "manual": true,
+        "name": "수동 정비",
+        "description": "중간 지휘선 교전 후 사용자가 정비/다음 구간을 선택하는 별도 시제품 흐름. 실제 항구 경제·부품 편집·저장을 자동 구현한 것으로 보지 않음."
+      },
+      "late": [
+        {
+          "assetId": "enemy-cult-blockade",
+          "role": "blockade",
+          "count": 1,
+          "name": "교단 봉쇄선"
+        },
+        {
+          "assetId": "role-enemy-artillery",
+          "role": "artillery",
+          "count": 1,
+          "name": "폭풍 포격선"
+        },
+        {
+          "assetId": "enemy-disguised-wreck",
+          "role": "ambush",
+          "count": 1,
+          "name": "위장 잔해선"
+        }
+      ],
+      "finalBoss": {
+        "assetId": "enemy-cult-blockade",
+        "role": "blockade",
+        "name": "폭풍 봉쇄 지휘선",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/09-enemies.txt",
+          "outputs/25-enemy-ai-encounters.txt",
+          "outputs/28-weather-and-hazards.txt"
+        ],
+        "roleVariantOf": "enemy-cult-blockade",
+        "mechanics": [
+          "넓은 측면 포격과 긴 재장전",
+          "돌아가는 선체와 포신이 같은 방향을 가리킴",
+          "공격 종료 뒤 분명한 회피·반격 기회"
+        ],
+        "sourceConcept": "일반 봉쇄선 외형의 새 제작용 최종 교전 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/28-weather-and-hazards.txt",
+        "outputs/91-boss-attack-readability.txt",
+        "outputs/102-advanced-encounter.txt"
+      ]
+    },
+    {
+      "id": "stage-04-industry",
+      "region": "쇠갈비 공업지대",
+      "opening": [
+        {
+          "assetId": "mission-union-guard",
+          "role": "artillery",
+          "count": 1,
+          "name": "연합 경비선"
+        },
+        {
+          "assetId": "enemy-union-repair",
+          "role": "repair",
+          "count": 1,
+          "name": "연합 수리선"
+        },
+        {
+          "assetId": "enemy-union-salvage",
+          "role": "salvage",
+          "count": 1,
+          "name": "연합 인양선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "enemy-union-repair",
+        "role": "repair",
+        "name": "도크 수리 지휘정",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/14-living-shipyard-boss.txt",
+          "outputs/25-enemy-ai-encounters.txt"
+        ],
+        "roleVariantOf": "enemy-union-repair",
+        "mechanics": [
+          "손상 동료를 향한 눈에 보이는 수리 연결",
+          "무한 수리·전투 무한 반복 금지",
+          "기동과 지원 대상 선택으로 역할 구분"
+        ],
+        "sourceConcept": "원문 조선소 수리선의 새 제작용 중간 지휘 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "maintenance": {
+        "manual": true,
+        "name": "수동 정비",
+        "description": "중간 지휘선 교전 후 사용자가 정비/다음 구간을 선택하는 별도 시제품 흐름. 실제 항구 경제·부품 편집·저장을 자동 구현한 것으로 보지 않음."
+      },
+      "late": [
+        {
+          "assetId": "mission-union-guard",
+          "role": "artillery",
+          "count": 2,
+          "name": "연합 경비선"
+        },
+        {
+          "assetId": "rival-night-shift",
+          "role": "flame",
+          "count": 1,
+          "name": "화염 작업선 역할 변형"
+        },
+        {
+          "assetId": "enemy-union-repair",
+          "role": "repair",
+          "count": 1,
+          "name": "연합 수리선"
+        }
+      ],
+      "finalBoss": {
+        "assetId": "boss-shipwright-command",
+        "role": "shipyard",
+        "name": "수석 조선공의 지휘함",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/14-living-shipyard-boss.txt",
+          "outputs/27-act2-main-quests.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "boss-shipwright-command",
+        "mechanics": [
+          "충각의 굵은 진행 띠",
+          "외곽 포격과 작살의 별도 경고",
+          "장치 공격 뒤 핵심부 반격 틈"
+        ],
+        "sourceConcept": "거신의 늑골3단계 지휘함 외형을 참고한 단독 교전 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/27-act2-main-quests.txt",
+        "outputs/14-living-shipyard-boss.txt",
+        "outputs/28-weather-and-hazards.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    {
+      "id": "stage-05-fog",
+      "region": "이름 없는 함대의 저층 안개",
+      "opening": [
+        {
+          "assetId": "enemy-ghost-chaser",
+          "role": "charger",
+          "count": 2,
+          "name": "망령 추격선"
+        },
+        {
+          "assetId": "enemy-disguised-wreck",
+          "role": "ambush",
+          "count": 1,
+          "name": "위장 잔해선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "enemy-ghost-chaser",
+        "role": "charger",
+        "name": "안개 돌격대장",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/25-enemy-ai-encounters.txt",
+          "outputs/31-act3-main-quests.txt"
+        ],
+        "roleVariantOf": "enemy-ghost-chaser",
+        "mechanics": [
+          "돛과 잔광으로 돌진 준비 표시",
+          "굵은 직선 경고 뒤 목표 고정",
+          "돌진 종료 뒤 관성 회복과 측면 노출"
+        ],
+        "sourceConcept": "일반 망령 추격선의 새 제작용 중간 지휘 역할",
+        "originalBossVisual": false,
+        "canonEncounterCompleted": false
+      },
+      "maintenance": {
+        "manual": true,
+        "name": "수동 정비",
+        "description": "중간 지휘선 교전 후 사용자가 정비/다음 구간을 선택하는 별도 시제품 흐름. 실제 항구 경제·부품 편집·저장을 자동 구현한 것으로 보지 않음."
+      },
+      "late": [
+        {
+          "assetId": "mission-ghost-artillery",
+          "role": "artillery",
+          "count": 2,
+          "name": "망령 포격선"
+        },
+        {
+          "assetId": "enemy-ghost-chaser",
+          "role": "charger",
+          "count": 1,
+          "name": "망령 추격선"
+        },
+        {
+          "assetId": "mission-cult-purifier",
+          "role": "flame",
+          "count": 1,
+          "name": "도크 정화선 역할 변형"
+        }
+      ],
+      "finalBoss": {
+        "assetId": "boss-fleet-king",
+        "role": "king",
+        "name": "죽은 함대 왕의 배",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/31-act3-main-quests.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "boss-fleet-king",
+        "mechanics": [
+          "이동 포격과 견인 작살의 서로 다른 선",
+          "공격마다 한 방향 이상 회피 공간",
+          "케이블 방향과 회복 틈"
+        ],
+        "sourceConcept": "왕의 시험 외형·공격 언어를 참고한 교전 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/31-act3-main-quests.txt",
+        "outputs/20-faction-quest-chains.txt",
+        "outputs/39-story-canon-timeline.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    },
+    {
+      "id": "stage-06-palace",
+      "region": "황궁 검은 천정",
+      "opening": [
+        {
+          "assetId": "enemy-cult-blockade",
+          "role": "blockade",
+          "count": 1,
+          "name": "교단 잔존 봉쇄선"
+        },
+        {
+          "assetId": "mission-cult-purifier",
+          "role": "flame",
+          "count": 1,
+          "name": "정화선 역할 변형"
+        },
+        {
+          "assetId": "role-enemy-artillery",
+          "role": "artillery",
+          "count": 1,
+          "name": "황궁 경비 포격선"
+        }
+      ],
+      "midBoss": {
+        "assetId": "mini-funeral-guard",
+        "role": "bell",
+        "name": "황궁 외곽 종 관문함",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/40-demo-flow-playtest.txt",
+          "outputs/35-act4-palace-truth.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "mini-funeral-guard",
+        "mechanics": [
+          "측면 포격 전 포신 경고",
+          "종/장치 반응과 넓은 압력 경계",
+          "회복 틈에 관문함 반격"
+        ],
+        "sourceConcept": "소형 장례 경비선 외형을 빌린 새 제작용 황궁 관문 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "maintenance": {
+        "manual": true,
+        "name": "수동 정비",
+        "description": "중간 지휘선 교전 후 사용자가 정비/다음 구간을 선택하는 별도 시제품 흐름. 실제 항구 경제·부품 편집·저장을 자동 구현한 것으로 보지 않음."
+      },
+      "late": [
+        {
+          "assetId": "enemy-cult-blockade",
+          "role": "blockade",
+          "count": 1,
+          "name": "교단 잔존 봉쇄선"
+        },
+        {
+          "assetId": "mission-ghost-artillery",
+          "role": "artillery",
+          "count": 1,
+          "name": "회수 포격선 역할 변형"
+        },
+        {
+          "assetId": "enemy-ghost-chaser",
+          "role": "charger",
+          "count": 1,
+          "name": "추격선 역할 변형"
+        }
+      ],
+      "finalBoss": {
+        "assetId": "boss-last-inhale",
+        "role": "heart",
+        "name": "마지막 들숨 · 봉인 심장",
+        "sourceKind": "prototypeCommander",
+        "sourceRefs": [
+          "outputs/43-final-boss-encounter.txt",
+          "outputs/35-act4-palace-truth.txt",
+          "outputs/91-boss-attack-readability.txt"
+        ],
+        "roleVariantOf": "boss-last-inhale",
+        "mechanics": [
+          "직선/부채꼴 압력 예고",
+          "장력 공격의 고정점·방향 표시",
+          "넓은 공격 사이 안전한 회전 방향 유지"
+        ],
+        "sourceConcept": "원숨 순환 장치의 시설 외형을 참고한 최종 교전 역할",
+        "originalBossVisual": true,
+        "canonEncounterCompleted": false
+      },
+      "sourceRefs": [
+        "outputs/08-world-map.txt",
+        "outputs/33-level-layouts.txt",
+        "outputs/25-enemy-ai-encounters.txt",
+        "outputs/48-mission-composition-rules.txt",
+        "outputs/112-system-rules-reference.txt",
+        "outputs/114-production-decision-register.txt",
+        "outputs/35-act4-palace-truth.txt",
+        "outputs/43-final-boss-encounter.txt",
+        "outputs/15-endings-and-final-mission.txt",
+        "outputs/91-boss-attack-readability.txt"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "scout",
+      "profile": {
+        "hp": 30,
+        "speed": 2.7,
+        "range": 9,
+        "attack": "shot",
+        "recovery": 2.4,
+        "movement": "flank-and-orbit"
+      },
+      "name": "정찰·측면 연사",
+      "warning": "포신 방향·짧은 준비 동작·추적선",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "scout",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "shot",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "short-tracer",
+            "icon": "barrel",
+            "weaponId": "01-machine-gun",
+            "vfx": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "machine-gun-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 2.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "flank-and-orbit",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "scout",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "shot",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "short-tracer",
+            "icon": "barrel",
+            "weaponId": "01-machine-gun",
+            "vfx": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "machine-gun-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 2.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "flank-and-orbit",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "scout",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "shot",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "short-tracer",
+            "icon": "barrel",
+            "weaponId": "01-machine-gun",
+            "vfx": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "machine-gun-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 2.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "flank-and-orbit",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "blockade",
+      "profile": {
+        "hp": 55,
+        "speed": 1.1,
+        "range": 11,
+        "attack": "fan",
+        "recovery": 3.5,
+        "movement": "block-route-broadside"
+      },
+      "name": "봉쇄·부채꼴 포격",
+      "warning": "굵은 부채꼴 외곽·낮은 불투명 내부·포신 고정",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "blockade",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "fan",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "solid-fan-boundary",
+            "icon": "broadside",
+            "weaponId": "02-deck-cannon",
+            "vfx": [
+              "cannon-muzzle",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.5,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "block-route-broadside",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "blockade",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "fan",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "solid-fan-boundary",
+            "icon": "broadside",
+            "weaponId": "02-deck-cannon",
+            "vfx": [
+              "cannon-muzzle",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.5,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "block-route-broadside",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "blockade",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "fan",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "solid-fan-boundary",
+            "icon": "broadside",
+            "weaponId": "02-deck-cannon",
+            "vfx": [
+              "cannon-muzzle",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.5,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "block-route-broadside",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "salvage",
+      "profile": {
+        "hp": 42,
+        "speed": 1.6,
+        "range": 10,
+        "attack": "harpoon",
+        "recovery": 3,
+        "movement": "keep-range-tether"
+      },
+      "name": "작살·견인",
+      "warning": "길고 얇은 선·갈고리 표식·케이블 고정점",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "salvage",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "harpoon",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "thin-hook-line",
+            "icon": "hook",
+            "weaponId": "04-harpoon",
+            "vfx": [
+              "harpoon-launch",
+              "harpoon-projectile",
+              "harpoon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "keep-range-tether",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "WinchCycle",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "salvage",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "harpoon",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "thin-hook-line",
+            "icon": "hook",
+            "weaponId": "04-harpoon",
+            "vfx": [
+              "harpoon-launch",
+              "harpoon-projectile",
+              "harpoon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "keep-range-tether",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "WinchCycle",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "salvage",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "harpoon",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "thin-hook-line",
+            "icon": "hook",
+            "weaponId": "04-harpoon",
+            "vfx": [
+              "harpoon-launch",
+              "harpoon-projectile",
+              "harpoon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "keep-range-tether",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "WinchCycle",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "repair",
+      "profile": {
+        "hp": 35,
+        "speed": 1.8,
+        "range": 10,
+        "attack": "shot",
+        "recovery": 3.3,
+        "movement": "approach-damaged-ally",
+        "healBudget": 36,
+        "bossHealBudget": 70
+      },
+      "name": "수리 지원",
+      "warning": "수리 대상과 용접 연결선",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "repair",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "shot",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "short-tracer",
+            "icon": "barrel",
+            "weaponId": "01-machine-gun",
+            "vfx": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "machine-gun-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "approach-damaged-ally",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "repair",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "shot",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "short-tracer",
+            "icon": "barrel",
+            "weaponId": "01-machine-gun",
+            "vfx": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "machine-gun-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "approach-damaged-ally",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "repair",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "shot",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "short-tracer",
+            "icon": "barrel",
+            "weaponId": "01-machine-gun",
+            "vfx": [
+              "machine-gun-muzzle",
+              "machine-gun-projectile",
+              "machine-gun-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "approach-damaged-ally",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": {
+        "kind": "repair-ally",
+        "targetPolicy": "damaged-ally-in-host-line-of-sight",
+        "amountHint": 7,
+        "rangeHint": 7,
+        "recovery": 2,
+        "telegraph": {
+          "shape": "line",
+          "lineStyle": "stitched-support-link",
+          "icon": "repair",
+          "color": "#4c9690",
+          "vfx": [
+            "repair-stitch",
+            "healing-pulse"
+          ]
+        },
+        "clip": "WinchCycle",
+        "authority": "battlefield chooses target and deducts finite budget once; no HP mutation here"
+      }
+    },
+    {
+      "role": "charger",
+      "profile": {
+        "hp": 43,
+        "speed": 2.1,
+        "range": 8,
+        "attack": "charge",
+        "recovery": 3.4,
+        "movement": "locked-straight-charge"
+      },
+      "name": "직선 돌진",
+      "warning": "기낭/돛 준비·굵은 진행 띠",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "charger",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "charge",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "thick-direction-band",
+            "icon": "ram",
+            "weaponId": null,
+            "vfx": [],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "locked-straight-charge",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "charger",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "charge",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "thick-direction-band",
+            "icon": "ram",
+            "weaponId": null,
+            "vfx": [],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "locked-straight-charge",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "charger",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "charge",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "thick-direction-band",
+            "icon": "ram",
+            "weaponId": null,
+            "vfx": [],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "locked-straight-charge",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "ambush",
+      "profile": {
+        "hp": 35,
+        "speed": 0.7,
+        "range": 9,
+        "attack": "fan",
+        "recovery": 3.3,
+        "movement": "visible-warning-before-deploy"
+      },
+      "name": "위장 잔해 전개",
+      "warning": "잔해의 불규칙 등·작은 움직임·전개 경계",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "ambush",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "fan",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "solid-fan-boundary",
+            "icon": "broadside",
+            "weaponId": "02-deck-cannon",
+            "vfx": [
+              "cannon-muzzle",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "visible-warning-before-deploy",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "ambush",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "fan",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "solid-fan-boundary",
+            "icon": "broadside",
+            "weaponId": "02-deck-cannon",
+            "vfx": [
+              "cannon-muzzle",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "visible-warning-before-deploy",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "ambush",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "fan",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "solid-fan-boundary",
+            "icon": "broadside",
+            "weaponId": "02-deck-cannon",
+            "vfx": [
+              "cannon-muzzle",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "visible-warning-before-deploy",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "artillery",
+      "profile": {
+        "hp": 44,
+        "speed": 1,
+        "range": 15,
+        "attack": "mortar",
+        "recovery": 3.4,
+        "movement": "fixed-bearing-artillery"
+      },
+      "name": "방향 고정 포격",
+      "warning": "포신과 부채꼴/직선 위험선",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "artillery",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "mortar",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "circle",
+            "lineStyle": "closed-landing-circle",
+            "icon": "falling-shell",
+            "weaponId": "03-mortar",
+            "vfx": [
+              "mortar-launch",
+              "mortar-projectile",
+              "mortar-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "fixed-bearing-artillery",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "artillery",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "mortar",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "circle",
+            "lineStyle": "closed-landing-circle",
+            "icon": "falling-shell",
+            "weaponId": "03-mortar",
+            "vfx": [
+              "mortar-launch",
+              "mortar-projectile",
+              "mortar-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "fixed-bearing-artillery",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "artillery",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "mortar",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "circle",
+            "lineStyle": "closed-landing-circle",
+            "icon": "falling-shell",
+            "weaponId": "03-mortar",
+            "vfx": [
+              "mortar-launch",
+              "mortar-projectile",
+              "mortar-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "fixed-bearing-artillery",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "flame",
+      "profile": {
+        "hp": 48,
+        "speed": 1.7,
+        "range": 6,
+        "attack": "flame",
+        "recovery": 3.3,
+        "movement": "short-cone-then-cooldown"
+      },
+      "name": "근거리 화염",
+      "warning": "연료 펌프 준비·짧은 원뿔·냉각 상태",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "flame",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "flame",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "short-pump-cone",
+            "icon": "pump",
+            "weaponId": "06-flamethrower",
+            "vfx": [
+              "flamethrower-ignite",
+              "flamethrower-stream",
+              "flamethrower-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "short-cone-then-cooldown",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "flame",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "flame",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "short-pump-cone",
+            "icon": "pump",
+            "weaponId": "06-flamethrower",
+            "vfx": [
+              "flamethrower-ignite",
+              "flamethrower-stream",
+              "flamethrower-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "short-cone-then-cooldown",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "flame",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "flame",
+          "patternTransition": {
+            "branch": "role-default",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "short-pump-cone",
+            "icon": "pump",
+            "weaponId": "06-flamethrower",
+            "vfx": [
+              "flamethrower-ignite",
+              "flamethrower-stream",
+              "flamethrower-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "short-cone-then-cooldown",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "bell",
+      "profile": {
+        "hp": 80,
+        "speed": 0.8,
+        "range": 12,
+        "attack": "ring",
+        "recovery": 3.6,
+        "movement": "slow-broadside"
+      },
+      "name": "종·충격파",
+      "warning": "공간 띠와 안전 틈·HUD 경고. 소리만 요구하지 않음",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "bell",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "ring",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "ring",
+            "lineStyle": "horizontal-band-with-safe-gap",
+            "icon": "bell",
+            "weaponId": null,
+            "vfx": [],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.6,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "slow-broadside",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "bell",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "fan",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "solid-fan-boundary",
+            "icon": "broadside",
+            "weaponId": "02-deck-cannon",
+            "vfx": [
+              "cannon-muzzle",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.6,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "slow-broadside",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "bell",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "ring",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "ring",
+            "lineStyle": "horizontal-band-with-safe-gap",
+            "icon": "bell",
+            "weaponId": null,
+            "vfx": [],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.6,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "slow-broadside",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "shipyard",
+      "profile": {
+        "hp": 90,
+        "speed": 0,
+        "range": 30,
+        "attack": "mortar",
+        "recovery": 3.4,
+        "movement": "stationary-device"
+      },
+      "name": "조선소 지휘·충각",
+      "warning": "굵은 진행 띠·포격 경계·얇은 작살선 구분",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "shipyard",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "mortar",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "circle",
+            "lineStyle": "closed-landing-circle",
+            "icon": "falling-shell",
+            "weaponId": "03-mortar",
+            "vfx": [
+              "mortar-launch",
+              "mortar-projectile",
+              "mortar-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "stationary-device",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "shipyard",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "pressure",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "parallel-edges-and-arrow",
+            "icon": "pressure",
+            "weaponId": null,
+            "vfx": [
+              "steam-vent"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "stationary-device",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "shipyard",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "mortar",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "circle",
+            "lineStyle": "closed-landing-circle",
+            "icon": "falling-shell",
+            "weaponId": "03-mortar",
+            "vfx": [
+              "mortar-launch",
+              "mortar-projectile",
+              "mortar-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "stationary-device",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "king",
+      "profile": {
+        "hp": 90,
+        "speed": 1.3,
+        "range": 14,
+        "attack": "harpoon",
+        "recovery": 3,
+        "movement": "moving-command-ship"
+      },
+      "name": "함대 왕 견인",
+      "warning": "포격과 케이블 경고를 다른 선으로 표시",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "king",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "harpoon",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "thin-hook-line",
+            "icon": "hook",
+            "weaponId": "04-harpoon",
+            "vfx": [
+              "harpoon-launch",
+              "harpoon-projectile",
+              "harpoon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "moving-command-ship",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "WinchCycle",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "king",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "fan",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "cone",
+            "lineStyle": "solid-fan-boundary",
+            "icon": "broadside",
+            "weaponId": "02-deck-cannon",
+            "vfx": [
+              "cannon-muzzle",
+              "cannon-projectile",
+              "cannon-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "moving-command-ship",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "king",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "charge",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "thick-direction-band",
+            "icon": "ram",
+            "weaponId": null,
+            "vfx": [],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "moving-command-ship",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    },
+    {
+      "role": "heart",
+      "profile": {
+        "hp": 100,
+        "speed": 0,
+        "range": 30,
+        "attack": "pressure",
+        "recovery": 3.4,
+        "movement": "stationary-device"
+      },
+      "name": "봉인 심장 압력",
+      "warning": "직선/부채꼴 압력과 장력 방향. 안전 방향 최소1개",
+      "examples": [
+        {
+          "version": "encounters-integration-v1",
+          "role": "heart",
+          "tier": "finalboss",
+          "attackIndex": 0,
+          "pattern": "pressure",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "parallel-edges-and-arrow",
+            "icon": "pressure",
+            "weaponId": null,
+            "vfx": [
+              "steam-vent"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "stationary-device",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "heart",
+          "tier": "finalboss",
+          "attackIndex": 1,
+          "pattern": "mortar",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "circle",
+            "lineStyle": "closed-landing-circle",
+            "icon": "falling-shell",
+            "weaponId": "03-mortar",
+            "vfx": [
+              "mortar-launch",
+              "mortar-projectile",
+              "mortar-hit"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "stationary-device",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        },
+        {
+          "version": "encounters-integration-v1",
+          "role": "heart",
+          "tier": "finalboss",
+          "attackIndex": 2,
+          "pattern": "pressure",
+          "patternTransition": {
+            "branch": "boss-cycle",
+            "healthFraction": 1,
+            "source": "tools/encounters/core.js choosePattern; prototype combat, not canonical boss phases"
+          },
+          "telegraph": {
+            "shape": "line",
+            "lineStyle": "parallel-edges-and-arrow",
+            "icon": "pressure",
+            "weaponId": null,
+            "vfx": [
+              "steam-vent"
+            ],
+            "duration": 1.85,
+            "lockBeforeRelease": 0.4,
+            "offscreenDirectionRequired": true,
+            "color": "#c66752",
+            "soundOnly": false,
+            "preserveSafePath": true,
+            "geometryAuthority": "battlefield"
+          },
+          "recovery": 3.4,
+          "majorAttackTokenCost": 1,
+          "movementIntent": "stationary-device",
+          "damageHint": 19,
+          "cancelOnSourceDisabled": true,
+          "clip": "FireBurst",
+          "authority": "battlefield alone advances warning/recovery, moves, fires, collides and applies damage"
+        }
+      ],
+      "support": null
+    }
+  ],
+  "limitations": [
+    "Intent data is not actual special attack execution. Current battlefield host supports only move/attackTarget and basic warned projectiles.",
+    "Use training-intent.mjs downgrade explicitly; source telegraph shapes must not be displayed as hit geometry when the host cannot execute them.",
+    "Host acknowledges clear-combat only after pending spawns/loading/attacks, enemy actors and all hazards are cancelled.",
+    "Initial region selection remains a prototype feature; nextStage is sequential, not a campaign unlock implementation.",
+    "Canonical boss multi-device goals, rescue checkpoints, story/economy and final balance are not completed by this contract."
+  ]
+}

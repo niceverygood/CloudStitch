@@ -1,0 +1,25 @@
+{
+  "id": "mortar-fall",
+  "startedAt": "2026-10-18T08:51:35.663Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A single mortar shell descending through open air, a short airy falling whistle with a gentle downward sweep and fast pass, no impact or explosion. Physical airflow, restrained and readable. Isolated game sound effect, close perspective, dry and clean, warm handmade airship materials. No music, no speech, no crowd, no cinematic trailer boom, no long reverb.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:51:37.197Z",
+  "output": {
+    "file": "audio/mortar-fall.mp3",
+    "bytes": 20105,
+    "sha256": "2854c434a196869bcc6f4c82bf8b2934e1697d188773e2b185ec43a35b7a54f0",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "12"
+}

@@ -1,0 +1,1819 @@
+{
+  "schemaVersion": 1,
+  "gameTitle": "Cloudstitch",
+  "sourceCatalog": "outputs/world-assets/catalog.json",
+  "sourceSceneCatalog": "outputs/world-assets/scene-catalog.json",
+  "independentWorldAssetCount": 96,
+  "preservedSceneCount": 7,
+  "frameId": "levels-lu-yup-v1",
+  "unitStatus": "LU is provisional, not meters or finalized U",
+  "coordinateProfiles": {
+    "battlefield": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerArtUnit": 1,
+      "yawRadians": 0,
+      "hostUnitsPerLU": 1,
+      "note": "Existing battlefield XZ coordinates; LU is provisional and not meters."
+    },
+    "harborArt": {
+      "origin": [
+        0,
+        -4,
+        64
+      ],
+      "unitsPerArtUnit": 3,
+      "yawRadians": 0,
+      "note": "Optional full-scene art comparison only. It does not transform the independent layout/colliders."
+    },
+    "encountersExample": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerArtUnit": 0.2,
+      "yawRadians": 0,
+      "hostUnitsPerLU": 0.2,
+      "note": "Scale example only; ±18×±12 encounter arena needs its own spawn/obstacle review. Do not adopt automatically."
+    }
+  },
+  "player": {
+    "id": "selected-original-space-reference",
+    "path": "outputs/selected-airship-toon3d/airship.glb",
+    "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+    "bytes": 3645884,
+    "triangles": 11026,
+    "meshCount": 1,
+    "textureCount": 1,
+    "originalBounds": {
+      "min": [
+        -0.4748539924621582,
+        -0.2595210075378418,
+        -0.1496579945087433
+      ],
+      "max": [
+        0.47338899970054626,
+        0.2600100040435791,
+        0.13598600029945374
+      ]
+    },
+    "rawSize": [
+      0.9482429921627045,
+      0.5195310115814209,
+      0.285643994808197
+    ],
+    "authoredForward": "-X",
+    "authoredUp": "+Y",
+    "normalizeYawRadians": 1.5707963267948966,
+    "lengthLU": 10,
+    "widthLU": 3.0123501799545567,
+    "heightLU": 5.478880580983793,
+    "turnRadiusLU": 5.221931003150852,
+    "conservativeHalfExtents": [
+      5.221931003150852,
+      2.7394402904918964,
+      5.221931003150852
+    ],
+    "note": "Actual approved original GLB at the battlefield display length 10 LU. This is a spatial reference, not a replacement for the restored animated fleet ship or its gameplay radius 3."
+  },
+  "assets": [
+    {
+      "id": "repair-workshop",
+      "name": "수리 공방",
+      "path": "outputs/world-assets/hero/repair-workshop/model-closed-roof.glb",
+      "bytes": 3838916,
+      "sha256": "c3bbd9c8675e6cd3b16f28fe1425186d9a0b324da629fbec49094262ec6deba5",
+      "triangles": 8052,
+      "meshCount": 4,
+      "textureCount": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.4748539924621582,
+          -0.32348600029945374,
+          -0.3527829945087433
+        ],
+        "max": [
+          0.47290000319480896,
+          0.32348600029945374,
+          0.35082998871803284
+        ]
+      },
+      "sourceModel": "outputs/world-assets/hero/repair-workshop/model.glb",
+      "roofRepaired": true,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "canvas-market",
+      "name": "천 시장",
+      "path": "outputs/world-assets/hero/canvas-market/model-repaired.glb",
+      "bytes": 3838872,
+      "sha256": "1b69ca4f8658ade79ae04d3e3c1014f52059e4c99fa99ec29a6c463f2bc7161a",
+      "triangles": 7680,
+      "meshCount": 1,
+      "textureCount": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.4748539924621582,
+          -0.2282709926366806,
+          -0.35522499680519104
+        ],
+        "max": [
+          0.4748539924621582,
+          0.22729499638080597,
+          0.35522499680519104
+        ]
+      },
+      "sourceModel": "outputs/world-assets/hero/canvas-market/model.glb",
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "beacon-lighthouse",
+      "name": "항로 등대",
+      "path": "outputs/world-assets/hero/beacon-lighthouse/model-repaired.glb",
+      "bytes": 4043752,
+      "sha256": "afe88415d29f50685d41c35421ba485a2e1d3beaf75f407ae06a8eede610f343",
+      "triangles": 7518,
+      "meshCount": 1,
+      "textureCount": 1,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.2761229872703552,
+          -0.47582998871803284,
+          -0.2785640060901642
+        ],
+        "max": [
+          0.2780759930610657,
+          0.4753420054912567,
+          0.2761229872703552
+        ]
+      },
+      "sourceModel": "outputs/world-assets/hero/beacon-lighthouse/model.glb",
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "dock-straight",
+      "name": "직선 부두",
+      "path": "outputs/world-assets/assets/dock-straight.glb",
+      "bytes": 275952,
+      "sha256": "625888f3c74f0931367a3df9a35e3727f97f75ec2c072995db6f7ad4a45094fb",
+      "triangles": 2112,
+      "meshCount": 50,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.252499998807907,
+          -0.11000000357627869,
+          -1.5524999988079071
+        ],
+        "max": [
+          1.252499998807907,
+          1.3350000001490117,
+          1.5524999988079071
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "dock-endcap",
+      "name": "부두 끝판",
+      "path": "outputs/world-assets/assets/dock-endcap.glb",
+      "bytes": 346040,
+      "sha256": "a6c870e5187b6185372e5a004f31a91bed0ce4d79a96305bd341576c8295facb",
+      "triangles": 2688,
+      "meshCount": 58,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.252499998807907,
+          -0.11000000357627869,
+          -1.1524999988079072
+        ],
+        "max": [
+          1.252499998807907,
+          1.3350000001490117,
+          1.1524999988079072
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "platform-square",
+      "name": "사각 갑판",
+      "path": "outputs/world-assets/assets/platform-square.glb",
+      "bytes": 279864,
+      "sha256": "65f1778dfc241c22eea6c39e1ed7d09dc41cf77d42d0fcc1ada0bb56b78d59d6",
+      "triangles": 2040,
+      "meshCount": 62,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.952499998807907,
+          -0.11000000357627869,
+          -1.952499998807907
+        ],
+        "max": [
+          1.952499998807907,
+          0.8350000001490117,
+          1.952499998807907
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "island-grass-small",
+      "name": "작은 초지 부유섬",
+      "path": "outputs/world-assets/assets/island-grass-small.glb",
+      "bytes": 52968,
+      "sha256": "3753c90d7d02495811fce6b455ebe52dd141b221751d533fc9d7e96f2aabb805",
+      "triangles": 384,
+      "meshCount": 10,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.5345731973648071,
+          -1.7814888954162598,
+          -1.3400639295578003
+        ],
+        "max": [
+          1.4847321510314941,
+          -1.7881393449270533e-9,
+          1.356077790260315
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "island-grass-medium",
+      "name": "넓은 초지 부유섬",
+      "path": "outputs/world-assets/assets/island-grass-medium.glb",
+      "bytes": 82044,
+      "sha256": "3cfef1ee6a6144646e292a418032e47d751ae95f2a06bab0474f774c406ce8c6",
+      "triangles": 624,
+      "meshCount": 13,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -2.9560561180114746,
+          -2.3753185272216797,
+          -2.261873245239258
+        ],
+        "max": [
+          2.828798770904541,
+          0.18000000149011613,
+          2.4133200645446777
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "island-rock-small",
+      "name": "작은 암석 부유섬",
+      "path": "outputs/world-assets/assets/island-rock-small.glb",
+      "bytes": 52960,
+      "sha256": "be0e5762c96cb875da3ab7c790c63525c9d72a7606a3a2cdefefeee05d28dc17",
+      "triangles": 384,
+      "meshCount": 10,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.4317033290863037,
+          -2.177375316619873,
+          -1.260116696357727
+        ],
+        "max": [
+          1.4807108640670776,
+          -1.7881393449270533e-9,
+          1.199142575263977
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "island-rock-tall",
+      "name": "긴 암석 부유섬",
+      "path": "outputs/world-assets/assets/island-rock-tall.glb",
+      "bytes": 94812,
+      "sha256": "185e754e8ebdb5586ce52b115fc4e9276747c0c657a575849c76a3e6aeaedd4b",
+      "triangles": 744,
+      "meshCount": 13,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.3857500553131104,
+          -5.740353107452393,
+          -1.3205469846725464
+        ],
+        "max": [
+          1.4532195329666138,
+          -1.7881393449270533e-9,
+          1.2772947549819946
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "cloud-bank",
+      "name": "구름 둑",
+      "path": "outputs/world-assets/assets/cloud-bank.glb",
+      "bytes": 185512,
+      "sha256": "d4b4b4123a2a1af623c951e99464f2d154ed2570b60a96988083360cc9d48b15",
+      "triangles": 1620,
+      "meshCount": 9,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.8178179817199709,
+          -0.2203722238540649,
+          -1.3664621819571312
+        ],
+        "max": [
+          1.8178179817199709,
+          0.43637222385406493,
+          1.3999900729502301
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "wreckage-shoal",
+      "name": "잔해해역 부유 더미",
+      "path": "outputs/world-assets/assets/wreckage-shoal.glb",
+      "bytes": 164712,
+      "sha256": "2049c0d6eb1efac43abae2e5fe36a2a1ec58d574f8a740be0ce93fc84c5168e7",
+      "triangles": 1344,
+      "meshCount": 18,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.8414877653121948,
+          -0.6928012371063232,
+          -1.3916049003601074
+        ],
+        "max": [
+          1.781678557395935,
+          0.8986128807177145,
+          1.5000000238418578
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "mooring-ring",
+      "name": "계류 고리",
+      "path": "outputs/world-assets/assets/mooring-ring.glb",
+      "bytes": 63288,
+      "sha256": "0650e80f253da2b2ef3f7e51dc71af34691254e22e1cb5b55a627f0882bfc5be",
+      "triangles": 476,
+      "meshCount": 11,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -0.2750000059604645,
+          6.705522526129215e-10,
+          -0.1899999976158142
+        ],
+        "max": [
+          0.2750000059604645,
+          0.5350000047683716,
+          0.1899999976158142
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "beacon-buoy",
+      "name": "항로 계류등",
+      "path": "outputs/world-assets/assets/beacon-buoy.glb",
+      "bytes": 155444,
+      "sha256": "7aa9d19e756a1f3c555d92ed855fca4d5eeb5dde793b58560b8f4846c7b131a3",
+      "triangles": 1288,
+      "meshCount": 15,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -0.524999998807907,
+          0.004000004827976217,
+          -0.47999998927116394
+        ],
+        "max": [
+          0.524999998807907,
+          1.779258508682251,
+          0.47999998927116394
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "boundary-marker",
+      "name": "안전 경계 말뚝",
+      "path": "outputs/world-assets/assets/boundary-marker.glb",
+      "bytes": 49180,
+      "sha256": "2ea4dfc3c41eafc3b5749f3e7dab78430c15fa2c6678705d20a5b49482357788",
+      "triangles": 400,
+      "meshCount": 5,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -0.26629582047462463,
+          -1.490116086078075e-10,
+          -0.2800000011920929
+        ],
+        "max": [
+          0.26629582047462463,
+          1.034999998807907,
+          0.2800000011920929
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "repair-station",
+      "name": "정비 작업대",
+      "path": "outputs/world-assets/assets/repair-station.glb",
+      "bytes": 374948,
+      "sha256": "edaf1e202015ab6618d91fabf866242abb494df7991a10ea495077fa28653c64",
+      "triangles": 2728,
+      "meshCount": 83,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -1.0499999523162842,
+          2.384185793236071e-8,
+          -0.6000000238418579
+        ],
+        "max": [
+          1.0499999523162842,
+          1.4600000001490117,
+          0.6000000238418579
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "storage-chest",
+      "name": "보관 상자",
+      "path": "outputs/world-assets/assets/storage-chest.glb",
+      "bytes": 177944,
+      "sha256": "19a61567d003c6ca147bd3ddd546954b8f5a2a86b3e34d42e5454aad2ed3af27",
+      "triangles": 1500,
+      "meshCount": 15,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -0.7819999998807907,
+          0.02999998807907106,
+          -0.5199999993294477
+        ],
+        "max": [
+          0.7819999998807907,
+          1.1449999856948851,
+          0.5679999992251397
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "departure-console",
+      "name": "출항 항법대",
+      "path": "outputs/world-assets/assets/departure-console.glb",
+      "bytes": 314484,
+      "sha256": "4955dfbd2a85e8779aa181d597db6a60920b216ecde72b2738a18559efa67b45",
+      "triangles": 2532,
+      "meshCount": 39,
+      "textureCount": 0,
+      "textures": [],
+      "bounds": {
+        "min": [
+          -0.9911274313926697,
+          5.960464455334602e-9,
+          -0.6442820098860937
+        ],
+        "max": [
+          0.9911274313926697,
+          1.4662529473525219,
+          0.6442820098860937
+        ]
+      },
+      "sourceModel": null,
+      "roofRepaired": false,
+      "scope": "catalog-reference-no-source-mutation"
+    },
+    {
+      "id": "scene:jonghang-harbor",
+      "name": "종항 귀환 항구",
+      "path": "outputs/world-assets/scenes/jonghang-harbor.glb",
+      "bytes": 28270444,
+      "sha256": "86c7d5aad58d70704a0d1e241d80c42c3151dbc09b7cad55f6f60f9221666c12",
+      "triangles": 165329,
+      "meshCount": 1634,
+      "textureCount": 6,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "bounds": {
+        "min": [
+          -9.600000381469727,
+          -3.9,
+          -6.564999985694885
+        ],
+        "max": [
+          9.839269914346506,
+          10.294999992847442,
+          10.75
+        ]
+      },
+      "scope": "optional-preserved-art-comparison"
+    }
+  ],
+  "levels": [
+    {
+      "id": "first-voyage",
+      "name": "첫 항해 · 종항 잔해해역 공간 검사",
+      "frameId": "levels-lu-yup-v1",
+      "provenance": {
+        "sourceWorld": "tools/battlefield/world.js",
+        "sourceSimulation": "tools/battlefield/sim.mjs",
+        "inheritedCommit": "e65ab87d2af0c4b08e51f312c9eb0998aa895c69",
+        "status": "new-independent-spatial-proposal",
+        "note": "Existing positions and circle radii are retained as provenance. AABBs are conservative inspection proxies, not a silent host physics replacement."
+      },
+      "bounds": {
+        "min": [
+          -90,
+          -10,
+          -90
+        ],
+        "max": [
+          90,
+          10,
+          90
+        ]
+      },
+      "flightY": 0,
+      "artFrame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "unitsPerArtUnit": 1,
+        "yawRadians": 0,
+        "hostUnitsPerLU": 1,
+        "note": "Existing battlefield XZ coordinates; LU is provisional and not meters."
+      },
+      "playerStart": {
+        "position": [
+          0,
+          0,
+          35
+        ],
+        "headingRadians": 3.141592653589793
+      },
+      "camera": {
+        "elevationDegrees": 55,
+        "projection": "orthographic",
+        "halfHeightLU": 35,
+        "followOffsetLU": [
+          0,
+          55,
+          38.51
+        ],
+        "occlusionSamples": [
+          "center",
+          "top",
+          "left",
+          "right"
+        ],
+        "fadeOpacity": 0.22,
+        "restoreOnClear": true
+      },
+      "visuals": [
+        {
+          "id": "terrain-0",
+          "assetId": "island-rock-tall",
+          "position": [
+            -15,
+            -6,
+            -5
+          ],
+          "longestLU": 25,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "terrain-1",
+          "assetId": "island-grass-medium",
+          "position": [
+            40,
+            -6,
+            5
+          ],
+          "longestLU": 24,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "terrain-2",
+          "assetId": "island-grass-medium",
+          "position": [
+            -49,
+            -6,
+            26
+          ],
+          "longestLU": 28,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "terrain-3",
+          "assetId": "island-rock-small",
+          "position": [
+            -51,
+            -6,
+            -48
+          ],
+          "longestLU": 23,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "terrain-4",
+          "assetId": "island-grass-medium",
+          "position": [
+            44,
+            -6,
+            -64
+          ],
+          "longestLU": 28,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "terrain-5",
+          "assetId": "island-rock-small",
+          "position": [
+            -8,
+            -6,
+            -77
+          ],
+          "longestLU": 18,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "terrain-6",
+          "assetId": "island-grass-small",
+          "position": [
+            73,
+            -6,
+            43
+          ],
+          "longestLU": 22,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "terrain-7",
+          "assetId": "island-grass-small",
+          "position": [
+            -78,
+            -6,
+            -8
+          ],
+          "longestLU": 19,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "wreck-marker",
+          "assetId": "wreckage-shoal",
+          "position": [
+            -15,
+            -1,
+            -5
+          ],
+          "longestLU": 12,
+          "priority": "landmark",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "return-buoy-west",
+          "assetId": "beacon-buoy",
+          "position": [
+            -12,
+            -1,
+            48
+          ],
+          "longestLU": 4,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "return-buoy-east",
+          "assetId": "beacon-buoy",
+          "position": [
+            12,
+            -1,
+            48
+          ],
+          "longestLU": 4,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "north-beacon",
+          "assetId": "boundary-marker",
+          "position": [
+            -8,
+            5,
+            -77
+          ],
+          "longestLU": 5,
+          "priority": "landmark",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "cloud-west",
+          "assetId": "cloud-bank",
+          "position": [
+            -55,
+            -25,
+            -20
+          ],
+          "longestLU": 45,
+          "priority": "decoration",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "cloud-east",
+          "assetId": "cloud-bank",
+          "position": [
+            55,
+            -25,
+            0
+          ],
+          "longestLU": 50,
+          "priority": "decoration",
+          "yawRadians": 0,
+          "anchor": "center"
+        }
+      ],
+      "colliders": [
+        {
+          "id": "terrain-solid-0",
+          "kind": "solid",
+          "center": [
+            -15,
+            0,
+            -5
+          ],
+          "halfExtents": [
+            8.4,
+            9,
+            8.4
+          ],
+          "visualIds": [
+            "terrain-0",
+            "wreck-marker"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only",
+          "legacyCircleXZ": {
+            "x": -15,
+            "z": -5,
+            "radius": 8.4
+          },
+          "note": "Legacy planar avoidance footprint. Visual mesh and proxy are intentionally independent."
+        },
+        {
+          "id": "terrain-solid-1",
+          "kind": "solid",
+          "center": [
+            40,
+            0,
+            5
+          ],
+          "halfExtents": [
+            8,
+            9,
+            8
+          ],
+          "visualIds": [
+            "terrain-1"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only",
+          "legacyCircleXZ": {
+            "x": 40,
+            "z": 5,
+            "radius": 8
+          },
+          "note": "Legacy planar avoidance footprint. Visual mesh and proxy are intentionally independent."
+        },
+        {
+          "id": "terrain-solid-2",
+          "kind": "solid",
+          "center": [
+            -49,
+            0,
+            26
+          ],
+          "halfExtents": [
+            10,
+            9,
+            10
+          ],
+          "visualIds": [
+            "terrain-2"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only",
+          "legacyCircleXZ": {
+            "x": -49,
+            "z": 26,
+            "radius": 10
+          },
+          "note": "Legacy planar avoidance footprint. Visual mesh and proxy are intentionally independent."
+        },
+        {
+          "id": "terrain-solid-3",
+          "kind": "solid",
+          "center": [
+            -51,
+            0,
+            -48
+          ],
+          "halfExtents": [
+            8.8,
+            9,
+            8.8
+          ],
+          "visualIds": [
+            "terrain-3"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only",
+          "legacyCircleXZ": {
+            "x": -51,
+            "z": -48,
+            "radius": 8.8
+          },
+          "note": "Legacy planar avoidance footprint. Visual mesh and proxy are intentionally independent."
+        },
+        {
+          "id": "terrain-solid-4",
+          "kind": "solid",
+          "center": [
+            44,
+            0,
+            -64
+          ],
+          "halfExtents": [
+            10.4,
+            9,
+            10.4
+          ],
+          "visualIds": [
+            "terrain-4"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only",
+          "legacyCircleXZ": {
+            "x": 44,
+            "z": -64,
+            "radius": 10.4
+          },
+          "note": "Legacy planar avoidance footprint. Visual mesh and proxy are intentionally independent."
+        },
+        {
+          "id": "terrain-solid-5",
+          "kind": "solid",
+          "center": [
+            -8,
+            0,
+            -77
+          ],
+          "halfExtents": [
+            6.4,
+            9,
+            6.4
+          ],
+          "visualIds": [
+            "terrain-5"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only",
+          "legacyCircleXZ": {
+            "x": -8,
+            "z": -77,
+            "radius": 6.4
+          },
+          "note": "Legacy planar avoidance footprint. Visual mesh and proxy are intentionally independent."
+        },
+        {
+          "id": "terrain-solid-6",
+          "kind": "solid",
+          "center": [
+            73,
+            0,
+            43
+          ],
+          "halfExtents": [
+            8,
+            9,
+            8
+          ],
+          "visualIds": [
+            "terrain-6"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only",
+          "legacyCircleXZ": {
+            "x": 73,
+            "z": 43,
+            "radius": 8
+          },
+          "note": "Legacy planar avoidance footprint. Visual mesh and proxy are intentionally independent."
+        },
+        {
+          "id": "terrain-solid-7",
+          "kind": "solid",
+          "center": [
+            -78,
+            0,
+            -8
+          ],
+          "halfExtents": [
+            6.8,
+            9,
+            6.8
+          ],
+          "visualIds": [
+            "terrain-7"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only",
+          "legacyCircleXZ": {
+            "x": -78,
+            "z": -8,
+            "radius": 6.8
+          },
+          "note": "Legacy planar avoidance footprint. Visual mesh and proxy are intentionally independent."
+        }
+      ],
+      "spawnAnchors": [
+        {
+          "id": "player-entry",
+          "position": [
+            0,
+            0,
+            35
+          ],
+          "headingRadians": 3.141592653589793,
+          "tags": [
+            "player",
+            "entry"
+          ]
+        },
+        {
+          "id": "west-patrol",
+          "position": [
+            -32,
+            0,
+            -16
+          ],
+          "headingRadians": 0,
+          "tags": [
+            "enemy",
+            "opening-candidate"
+          ],
+          "note": "Shifted proposal from legacy (-28,-12) to leave conservative full-ship rotation room; encounters owns acceptance and order."
+        },
+        {
+          "id": "east-patrol",
+          "position": [
+            28,
+            0,
+            -27
+          ],
+          "headingRadians": 0,
+          "tags": [
+            "enemy",
+            "opening-candidate"
+          ]
+        },
+        {
+          "id": "north-target",
+          "position": [
+            5,
+            0,
+            -52
+          ],
+          "headingRadians": 0,
+          "tags": [
+            "enemy",
+            "objective-candidate"
+          ]
+        }
+      ],
+      "legacyHostAnchors": [
+        {
+          "id": "tax-1",
+          "position": [
+            -28,
+            0,
+            -12
+          ]
+        },
+        {
+          "id": "scout-1",
+          "position": [
+            28,
+            0,
+            -27
+          ]
+        },
+        {
+          "id": "salvager-1",
+          "position": [
+            5,
+            0,
+            -52
+          ]
+        }
+      ],
+      "triggers": [
+        {
+          "id": "return-to-jonghang",
+          "type": "return-request",
+          "center": [
+            0,
+            0,
+            48
+          ],
+          "halfExtents": [
+            8,
+            5,
+            8
+          ],
+          "target": "jonghang-harbor",
+          "requiresConfirmation": true,
+          "hostLegacyCircleXZ": {
+            "x": 0,
+            "z": 48,
+            "radius": 12
+          },
+          "owner": "harbor",
+          "note": "Query advertises docking availability; battlefield existing return eligibility remains authoritative."
+        }
+      ],
+      "corridors": [
+        {
+          "id": "main-flight",
+          "name": "주 항로",
+          "widthLU": 18,
+          "points": [
+            [
+              0,
+              0,
+              35
+            ],
+            [
+              14,
+              0,
+              22
+            ],
+            [
+              14,
+              0,
+              -36
+            ],
+            [
+              5,
+              0,
+              -52
+            ]
+          ]
+        },
+        {
+          "id": "east-bypass",
+          "name": "동쪽 넓은 우회",
+          "widthLU": 18,
+          "points": [
+            [
+              0,
+              0,
+              35
+            ],
+            [
+              27,
+              0,
+              30
+            ],
+            [
+              51,
+              0,
+              23.9
+            ],
+            [
+              62,
+              0,
+              23.9
+            ],
+            [
+              62,
+              0,
+              -28
+            ],
+            [
+              20,
+              0,
+              -39
+            ],
+            [
+              5,
+              0,
+              -52
+            ]
+          ]
+        },
+        {
+          "id": "return-approach",
+          "name": "귀환 접근",
+          "widthLU": 18,
+          "points": [
+            [
+              14,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              35
+            ],
+            [
+              0,
+              0,
+              48
+            ]
+          ]
+        }
+      ],
+      "turningPockets": [
+        {
+          "id": "return-turn",
+          "center": [
+            0,
+            0,
+            35
+          ],
+          "radiusLU": 9
+        },
+        {
+          "id": "north-turn",
+          "center": [
+            5,
+            0,
+            -52
+          ],
+          "radiusLU": 9
+        }
+      ],
+      "referenceTargets": [
+        {
+          "id": "readability-target",
+          "position": [
+            5,
+            0,
+            -52
+          ],
+          "radiusLU": 2,
+          "note": "Diagnostic target only; no enemy, damage or boss completion."
+        }
+      ]
+    },
+    {
+      "id": "jonghang-harbor",
+      "name": "종항 · 귀환·정비 접점 공간 검사",
+      "frameId": "levels-lu-yup-v1",
+      "provenance": {
+        "sceneReference": "outputs/world-assets/scenes/jonghang-harbor.glb",
+        "status": "new-independent-priority-layout",
+        "note": "Small independent asset layout follows existing harbor art. Full source scene is preserved as an optional comparison; this layout is not its replacement."
+      },
+      "bounds": {
+        "min": [
+          -45,
+          -10,
+          20
+        ],
+        "max": [
+          45,
+          30,
+          90
+        ]
+      },
+      "flightY": 0,
+      "artFrame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "unitsPerArtUnit": 1,
+        "yawRadians": 0,
+        "hostUnitsPerLU": 1,
+        "note": "Existing battlefield XZ coordinates; LU is provisional and not meters."
+      },
+      "playerStart": {
+        "position": [
+          0,
+          0,
+          40
+        ],
+        "headingRadians": 0
+      },
+      "camera": {
+        "elevationDegrees": 55,
+        "projection": "orthographic",
+        "halfHeightLU": 28,
+        "followOffsetLU": [
+          0,
+          55,
+          38.51
+        ],
+        "occlusionSamples": [
+          "center",
+          "top",
+          "left",
+          "right"
+        ],
+        "fadeOpacity": 0.22,
+        "restoreOnClear": true
+      },
+      "visuals": [
+        {
+          "id": "dock-main",
+          "assetId": "dock-straight",
+          "position": [
+            0,
+            -9,
+            64
+          ],
+          "longestLU": 20,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "dock-end",
+          "assetId": "dock-endcap",
+          "position": [
+            0,
+            -7,
+            56
+          ],
+          "longestLU": 9,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "platform-west",
+          "assetId": "platform-square",
+          "position": [
+            -17,
+            -7,
+            66
+          ],
+          "longestLU": 19,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "platform-east",
+          "assetId": "platform-square",
+          "position": [
+            17,
+            -7,
+            66
+          ],
+          "longestLU": 19,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "service-console",
+          "assetId": "departure-console",
+          "position": [
+            -11,
+            -3.3,
+            56
+          ],
+          "longestLU": 3,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "repair-point",
+          "assetId": "repair-station",
+          "position": [
+            -13,
+            -3,
+            59
+          ],
+          "longestLU": 4,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "storage-point",
+          "assetId": "storage-chest",
+          "position": [
+            13,
+            -3,
+            59
+          ],
+          "longestLU": 4,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "mooring-point",
+          "assetId": "mooring-ring",
+          "position": [
+            11,
+            -3,
+            56
+          ],
+          "longestLU": 3,
+          "priority": "required",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "workshop",
+          "assetId": "repair-workshop",
+          "position": [
+            -17,
+            0,
+            67
+          ],
+          "longestLU": 14,
+          "priority": "landmark",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "market",
+          "assetId": "canvas-market",
+          "position": [
+            17,
+            0,
+            67
+          ],
+          "longestLU": 14,
+          "priority": "landmark",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "lighthouse",
+          "assetId": "beacon-lighthouse",
+          "position": [
+            28,
+            6,
+            72
+          ],
+          "longestLU": 20,
+          "priority": "landmark",
+          "yawRadians": 0,
+          "anchor": "center"
+        },
+        {
+          "id": "harbor-cloud",
+          "assetId": "cloud-bank",
+          "position": [
+            0,
+            -25,
+            68
+          ],
+          "longestLU": 70,
+          "priority": "decoration",
+          "yawRadians": 0,
+          "anchor": "center"
+        }
+      ],
+      "colliders": [
+        {
+          "id": "workshop-space",
+          "kind": "solid",
+          "center": [
+            -17,
+            1,
+            67
+          ],
+          "halfExtents": [
+            6,
+            9,
+            8
+          ],
+          "visualIds": [
+            "workshop"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only"
+        },
+        {
+          "id": "market-space",
+          "kind": "solid",
+          "center": [
+            17,
+            1,
+            67
+          ],
+          "halfExtents": [
+            6,
+            9,
+            8
+          ],
+          "visualIds": [
+            "market"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only"
+        },
+        {
+          "id": "lighthouse-space",
+          "kind": "solid",
+          "center": [
+            28,
+            7,
+            72
+          ],
+          "halfExtents": [
+            4,
+            13,
+            4
+          ],
+          "visualIds": [
+            "lighthouse"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only"
+        },
+        {
+          "id": "deck-below-flight",
+          "kind": "solid",
+          "center": [
+            0,
+            -8,
+            70
+          ],
+          "halfExtents": [
+            28,
+            3,
+            15
+          ],
+          "visualIds": [
+            "dock-main",
+            "dock-end",
+            "platform-west",
+            "platform-east"
+          ],
+          "occludesCamera": true,
+          "cameraPolicy": "fade-visual-only"
+        }
+      ],
+      "spawnAnchors": [
+        {
+          "id": "harbor-arrival",
+          "position": [
+            0,
+            0,
+            40
+          ],
+          "headingRadians": 0,
+          "tags": [
+            "player",
+            "return"
+          ]
+        },
+        {
+          "id": "harbor-berth",
+          "position": [
+            0,
+            0,
+            52
+          ],
+          "headingRadians": 0,
+          "tags": [
+            "player",
+            "berth"
+          ]
+        }
+      ],
+      "triggers": [
+        {
+          "id": "harbor-repair",
+          "type": "harbor-interaction",
+          "center": [
+            0,
+            0,
+            52
+          ],
+          "halfExtents": [
+            6,
+            5,
+            7
+          ],
+          "target": "harbor:repair",
+          "requiresConfirmation": true,
+          "owner": "harbor"
+        },
+        {
+          "id": "harbor-storage",
+          "type": "harbor-interaction",
+          "center": [
+            0,
+            0,
+            52
+          ],
+          "halfExtents": [
+            6,
+            5,
+            7
+          ],
+          "target": "harbor:storage",
+          "requiresConfirmation": true,
+          "owner": "harbor"
+        },
+        {
+          "id": "harbor-settlement",
+          "type": "harbor-interaction",
+          "center": [
+            0,
+            0,
+            52
+          ],
+          "halfExtents": [
+            6,
+            5,
+            7
+          ],
+          "target": "harbor:settlement",
+          "requiresConfirmation": true,
+          "owner": "harbor"
+        },
+        {
+          "id": "harbor-departure",
+          "type": "departure-request",
+          "center": [
+            0,
+            0,
+            52
+          ],
+          "halfExtents": [
+            6,
+            5,
+            7
+          ],
+          "target": "encounters:departure",
+          "requiresConfirmation": true,
+          "owner": "encounters"
+        }
+      ],
+      "corridors": [
+        {
+          "id": "harbor-approach",
+          "name": "귀환 진입",
+          "widthLU": 18,
+          "points": [
+            [
+              0,
+              0,
+              32
+            ],
+            [
+              0,
+              0,
+              40
+            ],
+            [
+              0,
+              0,
+              52
+            ]
+          ]
+        },
+        {
+          "id": "harbor-departure",
+          "name": "출항 통로",
+          "widthLU": 18,
+          "points": [
+            [
+              0,
+              0,
+              52
+            ],
+            [
+              0,
+              0,
+              40
+            ],
+            [
+              0,
+              0,
+              32
+            ]
+          ]
+        }
+      ],
+      "turningPockets": [
+        {
+          "id": "harbor-turn",
+          "center": [
+            0,
+            0,
+            45
+          ],
+          "radiusLU": 9
+        }
+      ],
+      "referenceTargets": [
+        {
+          "id": "mooring-marker",
+          "position": [
+            0,
+            0,
+            52
+          ],
+          "radiusLU": 2,
+          "note": "Spatial marker. No automatic harbor operation."
+        }
+      ],
+      "fullSceneComparison": {
+        "assetId": "scene:jonghang-harbor",
+        "artFrame": {
+          "origin": [
+            0,
+            -4,
+            64
+          ],
+          "unitsPerArtUnit": 3,
+          "yawRadians": 0,
+          "note": "Optional full-scene art comparison only. It does not transform the independent layout/colliders."
+        },
+        "excludeRootNameIncludes": [
+          "@selected-airship"
+        ],
+        "cameraFadeRootNameIncludes": [
+          "@suspension-beam",
+          "@suspension-link"
+        ],
+        "note": "Full scene includes a ship copy; exclude it. Hiding roots does not reduce file transfer. Full-scene collision is not authored by this proposal."
+      }
+    }
+  ],
+  "runtimeMeasurements": {
+    "status": "pending-integrated-browser-QA",
+    "loadTimesMs": null,
+    "simultaneousMeshCount": null,
+    "textureMemoryBytes": null,
+    "targetPixels": null,
+    "occlusionSamples": null
+  },
+  "limits": [
+    "No combat/time/damage/state loop.",
+    "Conservative AABB spatial proposal; host chooses collision response.",
+    "Reference static model dimensions do not certify fleet attachments or largest bosses.",
+    "Full legacy scene comparison does not include a new physics map."
+  ],
+  "readabilityReference": {
+    "id": "enemy-tax-cutter",
+    "path": "outputs/fleet-v1/ships/enemy-tax-cutter.glb",
+    "bytes": 7587232,
+    "sha256": "82e9d32173a6eeb2e7352ab8db1498e24d57e35108a8b48901b529642f3bfc50",
+    "lengthLU": 12,
+    "normalizeYawRadians": 1.5707963267948966,
+    "authoredForward": "-X",
+    "note": "Restored fleet source, static reference pose only; no enemy state, damage, animation loop or encounter sequence."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T08:45:24Z",
+  "authorization": {
+    "directHumanRead": true,
+    "sourceThreadId": "01a14da1-0f0d-72e2-8712-76a46fe4463c",
+    "sourceTitle": "스티치 탄환",
+    "turnId": "01a14e2b-42bd-7543-b860-783da6acab37",
+    "userMessageId": "01a14e2d-822d-7882-8341-dd2ad2e5122b",
+    "request": "모든 효과가 버전 1이 더 함선디자인에 어울려 대신 효과를 좀 더 크고 풍성하게 만들어줘"
+  },
+  "supersession": {
+    "priorRecord": "actual-combat-vfx-request-2026-10-18.json",
+    "replaced": "v2 art promotion to actual combat",
+    "retained": "actual playable fire through sim projectile to real hit/end",
+    "current": "v1 form/color/style retained with enlarged and enriched visual presentation"
+  },
+  "owners": {
+    "battlefield": "v1-rich option, per-effect visual profiles/source and lightweight checks",
+    "integration": "new executable output/build and sequential actual gameplay browser QA",
+    "vfxArt": "preserve original v2/54/comparisons/manifests/cost ledger; avoid duplicate further v2 work",
+    "command": "root evidence/status only"
+  },
+  "scope": {
+    "visualProfiles": 48,
+    "currentRuntimeWeapons": [
+      "01-machine-gun",
+      "02-deck-cannon"
+    ],
+    "currentRuntimeEffects": 6,
+    "implementedRuntimeCoverageNot48": true,
+    "preserve": [
+      "original v1 effects and all v2 art",
+      "old default behavior and frozen integration output",
+      "existing save format",
+      "actual sim movement/collision/damage values",
+      "all prior reports/failures/sealed339/12 index"
+    ],
+    "noNewPaidGeneration": true,
+    "noNewArtServiceRequest": true
+  },
+  "qaGates": [
+    "v1 identity/form/color remains clear",
+    "larger/richer scale/layers/counts bounded per semantic role",
+    "actual player input fire→physics position→real collision/hit→end",
+    "damage/collider/simulation unchanged",
+    "no duplicated movement or preview hit authority",
+    "pause/retry/clear/generation/pool reset/dispose",
+    "actual camera view shows muzzle/aim/ship/enemy telegraphs without excessive occlusion",
+    "MG/cannon6 tested coverage distinct from48 profile metadata"
+  ],
+  "status": "implementation and READY/browser acceptance pending",
+  "notifiedThreads": [
+    "01a14da1-0f0d-72e2-8712-76a46fe4463c",
+    "01a14d9f-fd0c-72b3-a5e0-b2e83776c21b",
+    "01a14dc6-cc26-78e3-b031-d346860e1af1"
+  ],
+  "v2HistoricalAudit": {
+    "sourceFiles": 23,
+    "readOnlyReferences": 7,
+    "outputFiles": 167,
+    "allPathsAndSizesChecked": 197,
+    "smallSourceShaChecks": 23,
+    "smallOutputShaChecks": 80,
+    "changedEffects": 19,
+    "regeneratedDemos": 6,
+    "onlyChangedRequiredRuntimeEffect": "cannon-projectile",
+    "representative6HashesRetained": true,
+    "remaining48ActualRenderApproved": false,
+    "repeatedLargeGlbHashes": false,
+    "manifest": {
+      "path": "outputs/combat-vfx-v2/handoff-inventory.json",
+      "sha256": "bf31fab796a4d184da087bece825c29c6ca0b0d462504cd0dbde025b0488e40a"
+    }
+  }
+}

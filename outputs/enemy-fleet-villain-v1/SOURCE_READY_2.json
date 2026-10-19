@@ -1,0 +1,113 @@
+{
+  "revision": "SOURCE-READY-2",
+  "state": "Same model source; corrected lightweight-report binding; actual GLB/render still pending",
+  "ownedModelIds": [
+    "enemy-tax-cutter",
+    "mission-union-guard",
+    "mission-bridge-tug",
+    "mission-guard-scout",
+    "mission-cult-purifier",
+    "mission-ghost-artillery",
+    "role-enemy-artillery",
+    "role-enemy-defense",
+    "mini-funeral-guard",
+    "boss-bell-devourer",
+    "boss-shipyard-ribs",
+    "boss-shipwright-command",
+    "boss-last-inhale"
+  ],
+  "referenceSixReadOnly": true,
+  "files": [
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/build.cjs",
+      "bytes": 4790,
+      "sha256": "84bb0f47cb62bbb806fa7a25879ce3df7b12ec583f1fc8e5046c73919ca9a833"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/capture-gallery.cjs",
+      "bytes": 2181,
+      "sha256": "d1a566dc7904aaee43e3d4709731b147099671a395d19db44387e6f49330d7de"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/capture.cjs",
+      "bytes": 2756,
+      "sha256": "385cb0d662c80cb1e3acf5815bc9aa9cb0f060310cddb0fdcb40ae4eaa53bd53"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/core.js",
+      "bytes": 3278,
+      "sha256": "c7d4145514ed9d5b37c3b1628ba2f630a986b5f19895284c6514fad9403a6c12"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/cult-boss.js",
+      "bytes": 22618,
+      "sha256": "5ebc186d6657992108bf8ff0471f76f2a62978083dc6bc21147172d640dbc733"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/export.js",
+      "bytes": 3316,
+      "sha256": "ebb7757434e492431498c0ed6449b653d262901db6eee444258d2b10216563c4"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/gallery.cjs",
+      "bytes": 5064,
+      "sha256": "0fbd309105b782f39266b8ac22b4bbdc8ed89e3a076ba1f8ac2e7aed7ddf1b31"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/industrial.js",
+      "bytes": 19489,
+      "sha256": "cb5c16332c7dea05fd9a3e8703167ff441b6818a0c708bce17c8ca4dd872f96b"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/preflight.cjs",
+      "bytes": 2713,
+      "sha256": "9f3b84b7aec4202e60dc184de1d3842ff14291c52f2a19dbae92628a02d016b4"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/scout-ghost.js",
+      "bytes": 3312,
+      "sha256": "20d3a3f726e82e3a4335cedf3be2ea294afe76a2b6ffb0883473081bd6a7480c"
+    },
+    {
+      "path": "tools/enemy-fleet-gallery/villain-v1/viewers.cjs",
+      "bytes": 2252,
+      "sha256": "3fe2dc66bca77c595f94be5eac613007d7d555dd2721963e9d68bd60a19eeb85"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v1/HANDOFF.md",
+      "bytes": 6169,
+      "sha256": "7e1831f1b43f86e77f95b7c61107f10643f88472b4914af0fecf6d4b2620c2cb"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v1/source-preflight-r2.json",
+      "bytes": 4421,
+      "sha256": "fba48717dff58139007d97ff4993f794e7e5b7a73072153b2ebc4f5f9bc5bc5e"
+    },
+    {
+      "path": "outputs/enemy-fleet-villain-v1/FREEZE_ORDER_CORRECTION.json",
+      "bytes": 902,
+      "sha256": "24535cb8011c59e984c1331ebc5f0725d2b32c6006fa9c48fdf29710ae079609"
+    }
+  ],
+  "browserUsed": false,
+  "exporterUsed": false,
+  "priorGalleryPreserved": true,
+  "actualModelRenderVerified": false,
+  "readonlyDependencies": [
+    "tools/enemy-fleet-reference/kit.js",
+    "tools/fleet/body.js",
+    "tools/fleet-v2/viewer.js",
+    "tools/fleet-v2/viewer-template.html",
+    "tools/fleet-v2/verify.mjs",
+    "tools/airship-rig/motion.js",
+    "tools/lib/runtime.cjs",
+    "tools/lib/paths.cjs",
+    "outputs/fleet-v2/ships/ (13 source IDs)",
+    "outputs/enemy-fleet-reference-v1/painted-atlas.png",
+    "outputs/fleet-v1/ships/player-homeward.glb",
+    "outputs/enemy-fleet-gallery-v1/catalog.json",
+    "outputs/enemy-fleet-reference-v2/ (6 READY model/catalog/preview/viewer dependencies)"
+  ],
+  "supersedesManifest": "outputs/enemy-fleet-villain-v1/SOURCE_READY.json",
+  "freezeOrderCorrection": "outputs/enemy-fleet-villain-v1/FREEZE_ORDER_CORRECTION.json"
+}

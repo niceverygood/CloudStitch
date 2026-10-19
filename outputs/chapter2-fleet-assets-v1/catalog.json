@@ -1,0 +1,469 @@
+{
+  "title": "Cloudstitch · 적조 사냥함대 3D 에셋",
+  "revision": "chapter2-fleet-assets-v1",
+  "coordinate": "+Y up, -X bow; relative art units",
+  "artMethod": "original curved geometry, matte vertex brush shading and embedded material atlas",
+  "gameplayImplemented": false,
+  "newPaidGeneration": false,
+  "models": [
+    {
+      "id": "C2-01",
+      "kind": "needle",
+      "name": "붉은바늘 정찰정",
+      "role": "정찰 · 기관총",
+      "board": "fleet-hunters-4.png",
+      "panel": "top-left",
+      "shape": "long needle hull, swept stitched fins",
+      "triangles": 164344,
+      "vertices": 172657,
+      "meshes": 155,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        23.74052413225174,
+        8.453198474376705,
+        5.343520879745483
+      ],
+      "authoredComponents": 2161,
+      "featureCounts": {
+        "shellPlates": 14,
+        "clothPanels": 10,
+        "coralHorns": 0,
+        "ropePaths": 96,
+        "windows": 14,
+        "lanterns": 4,
+        "winches": 0
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "referenceSha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf",
+      "assetPath": "ships/needle.glb",
+      "viewerPath": "ships/needle.html",
+      "previewPath": "previews/needle.png",
+      "bytes": 9190304,
+      "sha256": "06b419bdb30ec75160bdf0726e65bf253822f5865fc004e9537955987b520d3e",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 2
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    },
+    {
+      "id": "C2-02",
+      "kind": "capture",
+      "name": "집게갈고리 포획선",
+      "role": "포획 · 작살과 윈치",
+      "board": "fleet-hunters-4.png",
+      "panel": "top-right",
+      "shape": "open C-shaped fossil crane and capture cradle",
+      "triangles": 173672,
+      "vertices": 183790,
+      "meshes": 178,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        16.991465711593627,
+        12.702851160528216,
+        7.397253839969635
+      ],
+      "authoredComponents": 1886,
+      "featureCounts": {
+        "shellPlates": 19,
+        "clothPanels": 7,
+        "coralHorns": 0,
+        "ropePaths": 94,
+        "windows": 14,
+        "lanterns": 4,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "referenceSha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf",
+      "assetPath": "ships/capture.glb",
+      "viewerPath": "ships/capture.html",
+      "previewPath": "previews/capture.png",
+      "bytes": 9769356,
+      "sha256": "f7b2f0a50e5313f2aa876658a88851a0dbd45c817685e94970c79989919596ff",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 3
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    },
+    {
+      "id": "C2-03",
+      "kind": "shield",
+      "name": "거울패각 방패함",
+      "role": "전면 장갑 · 기관총",
+      "board": "fleet-hunters-4.png",
+      "panel": "bottom-left",
+      "shape": "upright overlapping perforated scallop fan",
+      "triangles": 159456,
+      "vertices": 194129,
+      "meshes": 178,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        12.595000162124634,
+        10.255341485751797,
+        9.0171194635991
+      ],
+      "authoredComponents": 1683,
+      "featureCounts": {
+        "shellPlates": 21,
+        "clothPanels": 7,
+        "coralHorns": 0,
+        "ropePaths": 66,
+        "windows": 14,
+        "lanterns": 4,
+        "winches": 0
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "referenceSha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf",
+      "assetPath": "ships/shield.glb",
+      "viewerPath": "ships/shield.html",
+      "previewPath": "previews/shield.png",
+      "bytes": 10138860,
+      "sha256": "61c42a3b36f6bc41cf7df93083d98c3798e402051374c13bf37663b429c46b5f",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 2
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    },
+    {
+      "id": "C2-04",
+      "kind": "trumpet",
+      "name": "적산호 나팔함",
+      "role": "측면 중포격",
+      "board": "fleet-hunters-4.png",
+      "panel": "bottom-right",
+      "shape": "low broadside deck and dominant hollow coral trumpet",
+      "triangles": 169848,
+      "vertices": 189682,
+      "meshes": 175,
+      "materials": 17,
+      "invalid": 0,
+      "bounds": [
+        15.803469212678246,
+        9.678452730178833,
+        13.951111404788684
+      ],
+      "authoredComponents": 1787,
+      "featureCounts": {
+        "shellPlates": 20,
+        "clothPanels": 7,
+        "coralHorns": 1,
+        "ropePaths": 66,
+        "windows": 14,
+        "lanterns": 4,
+        "winches": 0
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-hunters-4.png",
+      "referenceSha256": "75d11a5b6b8b37826d2e012c99f5da26116fcffe9db463a8748e5459fdfb2fbf",
+      "assetPath": "ships/trumpet.glb",
+      "viewerPath": "ships/trumpet.html",
+      "previewPath": "previews/trumpet.png",
+      "bytes": 10001264,
+      "sha256": "d7fd5af82df757cbe9d1b96d123a4f683078dff0aa584c8f5a7b7eb1fe442b8f",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 2
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    },
+    {
+      "id": "C2-05",
+      "kind": "conch",
+      "name": "소라 곡사함",
+      "role": "곡사 · 박격포",
+      "board": "fleet-specialists-4.png",
+      "panel": "top-left",
+      "shape": "tilted volumetric conch mortar and suspended shell basket",
+      "triangles": 169424,
+      "vertices": 175115,
+      "meshes": 179,
+      "materials": 16,
+      "invalid": 0,
+      "bounds": [
+        13.058082901951993,
+        10.86607261986434,
+        8.10350391149521
+      ],
+      "authoredComponents": 1817,
+      "featureCounts": {
+        "shellPlates": 20,
+        "clothPanels": 7,
+        "coralHorns": 0,
+        "ropePaths": 69,
+        "windows": 14,
+        "lanterns": 4,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "referenceSha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71",
+      "assetPath": "ships/conch.glb",
+      "viewerPath": "ships/conch.html",
+      "previewPath": "previews/conch.png",
+      "bytes": 9364276,
+      "sha256": "6b49100358ea8ab6c2acb40c5e2b8071428a3e0071a73379b8ab1822db4e14b8",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 3
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    },
+    {
+      "id": "C2-06",
+      "kind": "lantern",
+      "name": "해파리 등불함",
+      "role": "근접 화염",
+      "board": "fleet-specialists-4.png",
+      "panel": "top-right",
+      "shape": "wide stitched bell canopy and hanging furnace gondola",
+      "triangles": 191004,
+      "vertices": 207486,
+      "meshes": 216,
+      "materials": 17,
+      "invalid": 0,
+      "bounds": [
+        14.627999106884001,
+        12.667500327641829,
+        11.090776560748221
+      ],
+      "authoredComponents": 1939,
+      "featureCounts": {
+        "shellPlates": 24,
+        "clothPanels": 8,
+        "coralHorns": 1,
+        "ropePaths": 53,
+        "windows": 14,
+        "lanterns": 12,
+        "winches": 0
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "referenceSha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71",
+      "assetPath": "ships/lantern.glb",
+      "viewerPath": "ships/lantern.html",
+      "previewPath": "previews/lantern.png",
+      "bytes": 10970532,
+      "sha256": "229ed3a03f92aa36bdbd00be581ec42daf62932bfb2b42d47849c6dd5e5de88a",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 2
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    },
+    {
+      "id": "C2-07",
+      "kind": "chain",
+      "name": "톱지느러미 사슬정",
+      "role": "추진 방해 · 사슬탄",
+      "board": "fleet-specialists-4.png",
+      "panel": "bottom-left",
+      "shape": "broad low wedge, fixed rib fins, linked shot and chain reel",
+      "triangles": 165820,
+      "vertices": 180553,
+      "meshes": 180,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        15.803469212678246,
+        8.418364357607253,
+        11.9085111618042
+      ],
+      "authoredComponents": 1769,
+      "featureCounts": {
+        "shellPlates": 20,
+        "clothPanels": 7,
+        "coralHorns": 0,
+        "ropePaths": 83,
+        "windows": 14,
+        "lanterns": 4,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "referenceSha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71",
+      "assetPath": "ships/chain.glb",
+      "viewerPath": "ships/chain.html",
+      "previewPath": "previews/chain.png",
+      "bytes": 9582944,
+      "sha256": "3def7bd873eb3d3f48004177fee967426566012f79ce5194d0e30269b5dff07f",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 3
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    },
+    {
+      "id": "C2-08",
+      "kind": "weaver",
+      "name": "진주 실잣기 수복선",
+      "role": "기계식 제한 수복",
+      "board": "fleet-specialists-4.png",
+      "panel": "bottom-right",
+      "shape": "asymmetric sewn pearl buoyancy cluster and repair arm/spool",
+      "triangles": 152788,
+      "vertices": 152332,
+      "meshes": 148,
+      "materials": 15,
+      "invalid": 0,
+      "bounds": [
+        17.20459433555603,
+        12.503895221177086,
+        8.528615474700928
+      ],
+      "authoredComponents": 1859,
+      "featureCounts": {
+        "shellPlates": 12,
+        "clothPanels": 7,
+        "coralHorns": 0,
+        "ropePaths": 94,
+        "windows": 14,
+        "lanterns": 4,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/fleet-specialists-4.png",
+      "referenceSha256": "5131412226c3018bb1d8c6b747c92cf4e189bbcfc5defd4b2ff43e0eb2f53d71",
+      "assetPath": "ships/weaver.glb",
+      "viewerPath": "ships/weaver.html",
+      "previewPath": "previews/weaver.png",
+      "bytes": 8216320,
+      "sha256": "991ca94339962f25eb6782b1928a70cdf49517675bef418f0333d4e6b53fa0a4",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 3
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    },
+    {
+      "id": "C2-MINI-01",
+      "kind": "gatekeeper",
+      "name": "적조의 문지기",
+      "role": "중간보스 · 관문 호위함",
+      "board": "miniboss-gatekeeper.png",
+      "panel": "hero-left",
+      "shape": "open inverted-U fossil arch, asymmetric capture and cannon decks",
+      "triangles": 318800,
+      "vertices": 348129,
+      "meshes": 276,
+      "materials": 18,
+      "invalid": 0,
+      "bounds": [
+        25.137498269081117,
+        21.865657635604673,
+        16.581151977137964
+      ],
+      "authoredComponents": 3157,
+      "featureCounts": {
+        "shellPlates": 34,
+        "clothPanels": 10,
+        "coralHorns": 2,
+        "ropePaths": 128,
+        "windows": 28,
+        "lanterns": 8,
+        "winches": 1
+      },
+      "reference": "../chapter2-enemy-moodboards-v1/miniboss-gatekeeper.png",
+      "referenceSha256": "bfaa907653e5d015d03972c587e89f7d03c01cfc45f84e5d44ad34947f2eb003",
+      "assetPath": "ships/gatekeeper.glb",
+      "viewerPath": "ships/gatekeeper.html",
+      "previewPath": "previews/gatekeeper.png",
+      "bytes": 18013156,
+      "sha256": "07d2d8aaa7bdd6e31dcd3ad924c09934bd5861d60af67b32d052cc8b3cee239f",
+      "embeddedAtlas": {
+        "images": 1,
+        "width": 1024,
+        "height": 512,
+        "sha256": "eec6aef63d4d68124f810c5c935db38f280399201b58c83bff201bbb715b5468"
+      },
+      "animations": [
+        {
+          "name": "MechanicalExhibition",
+          "duration": 6,
+          "tracks": 3
+        }
+      ],
+      "artApproval": "pending",
+      "status": "exported_needs_actual_render"
+    }
+  ]
+}

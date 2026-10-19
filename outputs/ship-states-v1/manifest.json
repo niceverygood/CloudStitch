@@ -1,0 +1,73 @@
+{
+  "title": "Cloudstitch",
+  "purpose": "주인공 함선 6항목·31개 외형 단계 및 에너지 0 폭발 시각 시제품",
+  "source": {
+    "path": "outputs/selected-airship-toon3d/airship.glb",
+    "bytes": 3645884,
+    "sha256": "dae35b13806d553a8b124d502a81d7dff58c183a266db25efc0d9a060198ce74",
+    "triangles": 11026
+  },
+  "readOnlyDependencies": [
+    "outputs/selected-airship-toon3d/airship.glb",
+    "tools/airship-rig/part-map.json"
+  ],
+  "preservedSource": true,
+  "offline": true,
+  "categories": {
+    "normal": 3,
+    "damage": 4,
+    "weapons": 5,
+    "armor": 5,
+    "growth": 9,
+    "explosion": 5
+  },
+  "total": 31,
+  "sources": [
+    {
+      "path": "tools/ship-states/catalog.js",
+      "bytes": 3559,
+      "sha256": "a6e915387de60f6363373b55c8d8a04b36e1587dfaa6e1b6439446066408e87f"
+    },
+    {
+      "path": "tools/ship-states/variants.js",
+      "bytes": 40141,
+      "sha256": "0de6095588159955212cf202dd6946ae6c2678a5b6e5fdd48a41a00506ec4918"
+    },
+    {
+      "path": "tools/ship-states/viewer.js",
+      "bytes": 18646,
+      "sha256": "5ea41210b4eca3973f9d87b4be02719fc35179ff76e5471362f533dc405318e8"
+    },
+    {
+      "path": "tools/ship-states/template.html",
+      "bytes": 12457,
+      "sha256": "365bbcb8e35aff9ad05224e3ea7ecf52ded47540160d7f01485446b08c86cfb3"
+    },
+    {
+      "path": "tools/ship-states/build.cjs",
+      "bytes": 3280,
+      "sha256": "b63a3e7f1c432b72f9b0cbe5b14fcce5556d226717e280cbe2468d898129dc5f"
+    }
+  ],
+  "output": {
+    "path": "outputs/ship-states-v1/index.html",
+    "bytes": 5676372,
+    "sha256": "fb93ad57951dd1e7099e0b0d2c10328a5a6307e333576ccc4b4edea9b427ab9d"
+  },
+  "paidGenerationCalls": 0,
+  "gameplayImplemented": false,
+  "engineShadersExported": false,
+  "browserVerified": false,
+  "readyForArtReview": true,
+  "exactRasterPassed": false,
+  "verification": {
+    "path": "outputs/ship-states-v1/finish-verification.json",
+    "sha256": "09d9cd3f1ccfd1baa88e7867fa66dab84b45ec646f1329aea0aa1a0bc856e9c0",
+    "testedHTML": "e0bab6661caccda015181a5b97fee230c003dcfbe64d889871b1af0da3b6e309"
+  },
+  "finalCapture": {
+    "path": "outputs/ship-states-v1/capture-verification.json",
+    "sha256": "dec69029414ad7c90903de9f0dc2fb22c2f0739c112a0459ac60932f225d523c"
+  },
+  "postQAChange": "One line disables outlines on transparent thumbnail materials from creation; the main workbench already applies the same condition during resize. Final capture is separate from the preserved animation checks."
+}

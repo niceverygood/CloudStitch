@@ -1,0 +1,25 @@
+{
+  "id": "engine-idle-loop",
+  "startedAt": "2026-10-18T08:53:36.512Z",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "request": {
+    "text": "A small handmade propeller airship engine idling gently: warm low mechanical putter, soft regular propeller beats, tiny brass bearing vibration. Stable quiet close mechanical bed, no engine startup or shutdown. Steady seamless looping game ambience, consistent texture at the start and end, no distinct beginning or ending, no large one-shot accents. No music, no speech, no crowd, no modern electronic siren.",
+    "duration_seconds": 6,
+    "prompt_influence": 0.65,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "status": "generated_unreviewed",
+  "credentialPersisted": false,
+  "requestRetried": false,
+  "httpStatus": 200,
+  "completedAt": "2026-10-18T08:53:40.592Z",
+  "output": {
+    "file": "audio/engine-idle-loop.mp3",
+    "bytes": 97009,
+    "sha256": "b3f6b2dfb06b32e65ce021058173601f58c55458243e86d437a4348842ca2f96",
+    "format": "mp3_44100_128"
+  },
+  "billedCharacterCost": "60"
+}

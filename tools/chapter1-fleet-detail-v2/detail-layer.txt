@@ -1,0 +1,61 @@
+ // Rebuild intermediate structure and mechanical joints; not decoration-only noise.
+ function gear(z,at,r=.45){ring(z,'brass',at,r,.09);for(let j=0;j<12;j++){const a=j*Math.PI/6;box(z,'brass',[at[0]+Math.cos(a)*r,at[1]+Math.sin(a)*r,at[2]],[.16,.18,.16],[0,0,a]);}cyl(z,'dark',at,r*.4,r*.4,.2,[Math.PI/2,0,0]);}
+ function lamp(at,size=.35){const[x,y,z]=at;box('machinery','ember',at,[size*.65,size,size*.65]);for(const a of[-1,1])for(const b of[-1,1])rod('machinery','dark',[x+a*size*.36,y-size*.55,z+b*size*.36],[x+a*size*.36,y+size*.55,z+b*size*.36],.035);add(new T.ConeGeometry(size*.63,size*.45,4),'brass','machinery',[x,y+size*.75,z],[0,Math.PI/4,0]);}
+ function cabin(at,size){const[x,y,z]=at,[w,h,d]=size;box('keep','iron',at,size);for(const side of[-1,1]){for(let i=0;i<3;i++){const xx=x+(i-1)*w*.26;box('keep','dark',[xx,y+.2,z+side*(d/2+.04)],[w*.2,h*.55,.1]);box('keep','ember',[xx,y+.2,z+side*(d/2+.1)],[w*.13,h*.43,.035]);rod('keep','brass',[xx,y-h*.05,z+side*(d/2+.13)],[xx,y+h*.43,z+side*(d/2+.13)],.035);}tube('keep','brass',[[x-w/2,y-h/2,z+side*d/2],[x-w/2,y+h/2,z+side*d/2],[x+w/2,y+h/2,z+side*d/2],[x+w/2,y-h/2,z+side*d/2]],.07);}box('keep','dark',[x,y+h/2+.1,z],[w+.6,.24,d+.5]);for(const side of[-1,1])panel('keep','iron',[[x-w*.64,y+h/2+.23,z+side*d*.7],[x+w*.64,y+h/2+.23,z+side*d*.7],[x+w*.55,y+h*.9,z],[x-w*.55,y+h*.9,z]]);}
+ // Thick overlapping side armor with three-dimensional edge flanges and ribs.
+ for(const side of[-1,1]){
+  for(let i=0;i<Math.ceil(L/1.8);i++){
+   const x=-L*.37+i*1.6,z=side*(W*.9-Math.pow(x/L,2));
+   box('hull',i%2?'iron':'dark',[x,-.15,z],[1.66,D*.9,.27],[0,side*.06,0]);
+   box('hull','brass',[x,-D*.52,z+side*.19],[1.7,.07,.12]);
+   for(const dx of[-.62,.62])for(const yy of[-D*.3,D*.25])ell('hull','brass',[x+dx,yy,z+side*.22],[.065,.065,.04]);
+   tube('hull','dark',[[x,-D*.85,side*W*.25],[x,-D*.3,side*W*.85],[x,D*.72,side*W*.99]],.13);
+  }
+  tube('hull','iron',[[-L*.5,D*.6,side*W*.65],[-L*.2,D*.7,side*W],[L*.3,D*.7,side*W*.95],[L*.5,D*.55,side*W*.68]],.14);
+  // Footings and rope eyelets attach the railing to real bearing pads.
+  for(let x=-L*.32;x<L*.37;x+=2.1){box('hull','dark',[x,D*.64,side*W*.75],[.4,.13,.35]);ring('hull','brass',[x,D*.86,side*W*.78],.15,.035);}
+  for(let i=0;i<3;i++)box('hull','brass',[L*.25+i*.24,-.15,side*W*.98],[.07,.6,.04]);
+ }
+ // Buoyancy straps now have actual suspension struts, buckles and stitched repairs.
+ const podBoxes=[];for(const[id,list]of buckets)if(id==='buoyancy:cream')for(const g of list){g.computeBoundingBox();const b=g.boundingBox,sz=b.getSize(new T.Vector3());if(sz.x>2&&sz.y>1)podBoxes.push({at:b.getCenter(new T.Vector3()).toArray(),size:sz.multiplyScalar(.5).toArray()});}
+ for(const{at,size}of podBoxes){const[x,y,z]=at,[rx,ry,rz]=size;for(const xx of[x-rx*.52,x+rx*.52])for(const side of[-1,1]){const top=[xx,y-ry*.5,z+side*rz*.8],bottom=[xx,D*.68,Math.max(-W*.8,Math.min(W*.8,z+side*rz))];rod('buoyancy','dark',top,bottom,.065);box('buoyancy','brass',top,[.25,.28,.16]);ring('buoyancy','brass',bottom,.14,.035);}
+  for(let j=0;j<18;j++){const t=-.8+j/18*1.6,rr=Math.sqrt(1-t*t);rod('buoyancy','cloth',[x+t*rx-.035,y+ry*rr*.71,z+rz*rr*.72],[x+t*rx+.035,y+ry*rr*.76,z+rz*rr*.69],.018);}
+  const patch=new T.PlaneGeometry(rx*.36,ry*.45,6,5);add(patch,'cloth','buoyancy',[x-rx*.2,y+ry*.2,z+rz*.97]);for(const t of[-.13,0,.13])box('buoyancy','dark',[x+t*rx,y+ry*.2,z+rz*1.005],[.025,ry*.37,.025]);
+ }
+ // Every engine gets layered casing bands, cooling vents, bolted feet and pipes.
+ for(const r of rotors){const[x,y,z]=r.position.toArray(),scale=kind==='executor'?1.7:1;
+  for(let i=0;i<12;i++){const a=i*Math.PI/6;box('machinery','dark',[x-.9*scale,y+Math.cos(a)*.72*scale,z+Math.sin(a)*.72*scale],[.8*scale,.05,.11],[a,0,0]);}
+  ring('machinery','dark',[x,y,z],1.52*scale,.1,[0,Math.PI/2,0]);for(let j=0;j<6;j++){const a=j*Math.PI/3;rod('machinery','brass',[x,y+Math.cos(a)*.23,z+Math.sin(a)*.23],[x,y+Math.cos(a)*1.5*scale,z+Math.sin(a)*1.5*scale],.035);}
+  box('machinery','iron',[x-1.3*scale,y-.8*scale,z],[1.8*scale,.25,.8]);tube('machinery','brass',[[x-1.9*scale,y,z],[x-1.9*scale,y+1.2*scale,z],[x-1*scale,y+1.3*scale,z]],.08);
+ }
+ if(kind==='scout'){
+  // Crow-like hull is a working scout: raised bridge, windscreen and open lookout.
+  cabin([2,1.8,0],[2.8,1.8,1.8]);
+  for(const side of[-1,1]){tube('keep','brass',[[-8.8,.7,0],[-6.5,1.05,side*.7],[-4,1.1,side*1.6]],.08);panel('keep','dark',[[-8.8,.75,0],[-4,1.1,side*1.6],[-4,.65,side*1.7]]);box('keep','ember',[-5.3,1,side*.95],[1.2,.1,.08],[0,side*.2,0]);}
+  // Lookout cage, visible binocular-like optical signal device and guy rigging.
+  ring('machinery','dark',[2,6.25,0],.9,.12,[Math.PI/2,0,0]);for(let i=0;i<8;i++){const a=i*Math.PI/4;rod('machinery','brass',[2+Math.cos(a)*.85,6.2,Math.sin(a)*.85],[2+Math.cos(a)*.85,7.2,Math.sin(a)*.85],.045);}add(new T.ConeGeometry(1.2,.7,8),'dark','machinery',[2,7.5,0]);
+  for(const side of[-1,1]){tube('machinery','brass',[[-3,1.3,side*1.2],[2,7.9,0],[5,1.3,side*1.2]],.026);cyl('machinery','brass',[1.1,6.8,side*.4],.22,.26,.6,[0,0,Math.PI/2]);lamp([2.5,3,side],.32);}
+  for(let i=0;i<5;i++){box('hull','iron',[4,1+i*.3,1.3],[1.6,.07,.5]);}
+ }
+ if(kind==='command'){
+  // Command tower: enclosed raised pilot house with tiered balconies, not a box.
+  cabin([1,4,0],[3.1,3.8,2.6]);for(const y of[1.5,3.2,5.4]){box('keep','dark',[1,y,0],[4,.22,3.6]);for(const side of[-1,1]){rod('keep','brass',[-1,y+.7,side*1.8],[3,y+.7,side*1.8],.05);for(let x=-1;x<=3;x+=.7)rod('keep','brass',[x,y,side*1.8],[x,y+.7,side*1.8],.035);}}
+  for(const side of[-1,1]){tube('machinery','brass',[[2.5,1,side],[3.4,2,side*1.5],[3.4,6.7,side*1.5]],.12);lamp([1,6.7,side*1.75],.4);for(let j=0;j<4;j++)box('machinery','brass',[3.4,2+j,side*1.5],[.45,.18,.45]);}
+  for(let i=0;i<3;i++){const y=4.5+i*1.5,x=-3-i*.3;gear('machinery',[x+.6,y,2.05],.38);tube('machinery','dark',[[x+.6,y,1.7],[-.5,y,1.5],[-.3,2.3,1.5]],.09);ring('machinery','brass',[x-1.22,y,1.7],1.22,.06,[0,Math.PI/2,0]);for(let j=0;j<8;j++){const a=j*Math.PI/4;ell('machinery','brass',[x-1.3,y+Math.cos(a)*1.1,1.7+Math.sin(a)*1.1],[.045,.06,.06]);}}
+  for(let j=0;j<5;j++){box('keep','brass',[2.6,1.5+j*.35,0],[.06,.06,1.2]);rod('keep','brass',[2.6,1.5,-.65],[2.6,3.2,-.65],.04);rod('keep','brass',[2.6,1.5,.65],[2.6,3.2,.65],.04);}
+ }
+ if(kind==='executor'){
+  // Cohesive arched hearse canopy: roof skin, ribs, end cap and golden swept edging.
+  const roof=new T.CylinderGeometry(3.6,3.6,9,32,6,true,0,Math.PI);add(roof,'dark','keep',[1,4.1,0],[0,0,Math.PI/2]);
+  for(const x of[-3.5,-1,1.5,4,5.5]){const pts=[];for(let j=0;j<=24;j++){const a=j/24*Math.PI;pts.push([x,4.1+Math.sin(a)*3.65,Math.cos(a)*3.65]);}tube('keep','brass',pts,.12);for(const s of[-1,1]){box('keep','dark',[x,3.5,s*3.6],[.4,2,.4]);lamp([x,4.7,s*3.9],.36);}}
+  for(const side of[-1,1]){
+   // Thick hinge cheek plates, joint bearings, return cylinders and industrial jaw teeth.
+   box('keep','iron',[-8,1.3,side*3.2],[4.1,2.8,.7],[0,side*.13,-.1]);gear('keep',[-8,1.3,side*3.65],1.1);ring('keep','gold',[-8,1.3,side*3.65],.72,.08);
+   tube('keep','dark',[[-8,1.5,side*3.5],[-11,1.3,side*4],[-13.2,1.5,side*2.3]],.45);tube('keep','brass',[[-5,2,side*3],[-8,3.1,side*3.5],[-11,2,side*3.8]],.15);
+   for(let i=0;i<5;i++){const x=-9.2-i*.65;add(new T.ConeGeometry(.3,.95,4),'edge','keep',[x,1.3,side*(3.5-i*.15)],[side>0?Math.PI/2:-Math.PI/2,0,0]);}
+   // The giant reels now have ridged drum, cable layering and complete gearboxes.
+   for(let i=0;i<14;i++)ring('dock','dark',[-3,2.5,side*4.8+(i-6.5)*.15],1.15,.1);
+   for(const z of[side*3.2,side*6.45]){gear('dock',[-3,2.5,z],1.45);for(let j=0;j<6;j++){const a=j*Math.PI/3;rod('dock','brass',[-3,2.5,z],[-3+Math.cos(a)*1.15,2.5+Math.sin(a)*1.15,z],.065);}}
+   box('dock','iron',[-.9,2.2,side*4.8],[1.1,1.5,1.5]);tube('dock','brass',[[-.9,2.8,side*4.8],[.5,3.5,side*4.8],[2,3.5,side*4]],.1);
+  }
+ }

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "gameTitle": "Cloudstitch",
+  "status": "first-battlefield-implemented-and-verified",
+  "testedReady3ManifestSha256": "619c06c01c3715146f51748a5b1946b8b75e15d0faa918d9159a519978836d27",
+  "testedArtifactFiles": 25,
+  "sourceTests": {
+    "total": 13,
+    "passed": 13
+  },
+  "browserEvidence": {
+    "ready2Normal": {
+      "total": 18,
+      "passed": 18
+    },
+    "ready2Targeted": {
+      "total": 24,
+      "passed": 23,
+      "failure": "narrow-warning-label-clipped-10px"
+    },
+    "ready3CameraWarning": {
+      "total": 11,
+      "passed": 11,
+      "resolved": "narrow-warning-label-inside-viewport"
+    }
+  },
+  "scope": "First battlefield and return harbor. READY-3 only changes label bounds; earlier normal and targeted evidence remains versioned separately.",
+  "resourceEvidence": "Four warm return cycles: geometries500, textures21, programs12, meshes418 plateau. Short-run evidence; no performance budget or long-session certification.",
+  "limitations": [
+    "Local browser prototype, not a completed campaign.",
+    "QA pilot aims outer hull; detached bundle is not evidence of direct connector aim.",
+    "Clear-combat fixture explicitly spawns a tax cutter; it is display regression evidence.",
+    "Human play balance and device performance remain unverified."
+  ],
+  "evidence": [
+    {
+      "path": "outputs/playable-battlefield-v1/ready-2-normal-flow.json",
+      "bytes": 30963,
+      "sha256": "8127aa5066e19cac97c9a4ed59a7b809931cf1b799a08d31a80825f183712781"
+    },
+    {
+      "path": "outputs/playable-battlefield-v1/ready-2-targeted-verification.json",
+      "bytes": 93441,
+      "sha256": "1ff6629c803ff85dd6ebf22f9541dc89391bf4635614d7e3d8683a20e5704977"
+    },
+    {
+      "path": "outputs/playable-battlefield-v1/ready-3-camera-verification.json",
+      "bytes": 38119,
+      "sha256": "6a52fb2f5ca5bb9b77cfde40b26026f746b87bd765dfb826e88aec3fda8cc83a"
+    },
+    {
+      "path": "outputs/playable-battlefield-v1/preview-ready3-wide.png",
+      "bytes": 760211,
+      "sha256": "70ff8516051d0c04fdf4d1c5fcb6ce4b22f24881e663032283483b1bfb5b3a1c"
+    },
+    {
+      "path": "outputs/playable-battlefield-v1/preview-ready3-mobile.png",
+      "bytes": 287785,
+      "sha256": "00c8f7d881d95e30a57bde3e50f2dcaa21a0b585e0e7b79ce509f1184904eabd"
+    }
+  ],
+  "note": "QA evidence was added after the tested 25-file snapshot. Its original files and handoff-files.json were preserved."
+}
